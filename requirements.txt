@@ -1,0 +1,6 @@
+# Core reproduction environment; exact local versions are in provenance/environment.json.
+numpy>=2.0,<3
+matplotlib>=3.9,<4
+reportlab>=4.0,<5
+Pillow>=10,<13
+pypdf>=5,<7

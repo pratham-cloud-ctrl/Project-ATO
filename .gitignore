@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.tools/
+.pytest_cache/
+.DS_Store
+*.blend1
+*.FCStd1
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*-backups/
+tmp/
+build/
+CONTRACT.md

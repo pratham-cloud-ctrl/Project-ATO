@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this digital engineering project and its primary references separately."
+title: "Project ATO: a digital engineering study of invasive spinal interfaces"
+type: software
+authors:
+  - family-names: Varma
+    given-names: Pratham
+version: 1.0.0
+date-released: 2026-10-07
+abstract: >-
+  An AI-assisted, entirely digital engineering proof of concept linking spinal
+  interface literature, synthetic motor-learning and physiological-control
+  studies, reference electronics, parametric CAD, and reproducible results.
+  Simulations do not establish biological or clinical effectiveness.
+license: LicenseRef-Proprietary
