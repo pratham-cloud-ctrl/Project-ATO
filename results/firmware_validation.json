@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "compiler": "zig.exe",
+  "compiler_version": "0.15.2",
+  "build_flags": [
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-pedantic",
+    "-O2",
+    "-UNDEBUG"
+  ],
+  "validation": "C host validation: 23 assertions passed; pulse charge = 0 nC",
+  "shared_library": "ato_pulse.dll",
+  "deployment": "host simulation only; no MCU timer or analog driver tested"
+}

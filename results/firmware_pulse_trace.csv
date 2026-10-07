@@ -1,0 +1,5 @@
+start_us,current_ua,duration_us,state
+0,100,200,1
+200,0,50,2
+250,-100,200,3
+450,0,19550,4
