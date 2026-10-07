@@ -1,0 +1,893 @@
+{
+  "board_mm": [
+    80,
+    50,
+    1.6
+  ],
+  "mounting_holes_mm": [
+    [
+      10,
+      10
+    ],
+    [
+      70,
+      10
+    ],
+    [
+      10,
+      40
+    ],
+    [
+      70,
+      40
+    ]
+  ],
+  "parts": [
+    {
+      "ref": "J1",
+      "value": "5V INPUT",
+      "footprint": "ato:PinHeader_1x02_P2.54mm_Vertical",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "xy": [
+        5,
+        24
+      ],
+      "group": "power",
+      "description": "External regulated 5 V only; no isolation or regulator",
+      "mpn": ""
+    },
+    {
+      "ref": "J2",
+      "value": "ARTIFICIAL IN",
+      "footprint": "ato:PinHeader_1x03_P2.54mm_Vertical",
+      "nets": {
+        "1": "SIG_IN",
+        "2": "GND",
+        "3": "MID"
+      },
+      "xy": [
+        3,
+        13
+      ],
+      "group": "recording",
+      "description": "Function-generator input and midpoint monitor",
+      "mpn": ""
+    },
+    {
+      "ref": "J3",
+      "value": "ANALOG OUT",
+      "footprint": "ato:PinHeader_1x03_P2.54mm_Vertical",
+      "nets": {
+        "1": "REC_OUT",
+        "2": "GND",
+        "3": "MID"
+      },
+      "xy": [
+        3,
+        32
+      ],
+      "group": "recording",
+      "description": "High-impedance external ADC/scope, not populated",
+      "mpn": ""
+    },
+    {
+      "ref": "U1",
+      "value": "OPA2333AID",
+      "footprint": "ato:SOIC-8_3.9x4.9mm_P1.27mm",
+      "nets": {
+        "1": "REC_AMP",
+        "2": "REC_FB",
+        "3": "REC_IN",
+        "4": "GND",
+        "5": "MID_RAW",
+        "6": "MID",
+        "7": "MID",
+        "8": "+5V"
+      },
+      "xy": [
+        25,
+        20
+      ],
+      "group": "recording",
+      "description": "A: AC-coupled gain 21; B: midpoint follower",
+      "mpn": "OPA2333AID"
+    },
+    {
+      "ref": "R1",
+      "value": "10k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "SIG_IN",
+        "2": "AC_IN"
+      },
+      "xy": [
+        16,
+        13
+      ],
+      "group": "recording",
+      "description": "Input series impedance; not patient protection",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "C1",
+      "value": "1u",
+      "footprint": "ato:C_0805_2012Metric",
+      "nets": {
+        "1": "AC_IN",
+        "2": "REC_IN"
+      },
+      "xy": [
+        20,
+        13
+      ],
+      "group": "recording",
+      "description": "Input AC coupling, 0.158 Hz corner with R1+R2",
+      "mpn": "0805 ceramic, X7R, >=10 V, 10%"
+    },
+    {
+      "ref": "R2",
+      "value": "1M",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "REC_IN",
+        "2": "MID"
+      },
+      "xy": [
+        22,
+        10
+      ],
+      "group": "recording",
+      "description": "Amplifier input bias return",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "R3",
+      "value": "1k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "REC_FB",
+        "2": "MID"
+      },
+      "xy": [
+        22,
+        28
+      ],
+      "group": "recording",
+      "description": "Gain denominator",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "R4",
+      "value": "20k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "REC_AMP",
+        "2": "REC_FB"
+      },
+      "xy": [
+        27,
+        28
+      ],
+      "group": "recording",
+      "description": "Gain numerator",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "R5",
+      "value": "1k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "REC_AMP",
+        "2": "REC_OUT"
+      },
+      "xy": [
+        33,
+        21
+      ],
+      "group": "recording",
+      "description": "Output RC and capacitive-load isolation",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "C2",
+      "value": "47n",
+      "footprint": "ato:C_0805_2012Metric",
+      "nets": {
+        "1": "REC_OUT",
+        "2": "GND"
+      },
+      "xy": [
+        38,
+        21
+      ],
+      "group": "recording",
+      "description": "Output low-pass capacitor",
+      "mpn": "0805 ceramic, X7R, >=10 V, 10%"
+    },
+    {
+      "ref": "R6",
+      "value": "10k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "+5V",
+        "2": "MID_RAW"
+      },
+      "xy": [
+        14,
+        28
+      ],
+      "group": "power",
+      "description": "Midpoint divider upper",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "R7",
+      "value": "10k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "MID_RAW",
+        "2": "GND"
+      },
+      "xy": [
+        14,
+        33
+      ],
+      "group": "power",
+      "description": "Midpoint divider lower",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "C3",
+      "value": "10u",
+      "footprint": "ato:C_0805_2012Metric",
+      "nets": {
+        "1": "MID_RAW",
+        "2": "GND"
+      },
+      "xy": [
+        19,
+        35
+      ],
+      "group": "power",
+      "description": "Midpoint bulk bypass",
+      "mpn": "0805 ceramic, X7R, >=10 V, 10%"
+    },
+    {
+      "ref": "C5",
+      "value": "100n",
+      "footprint": "ato:C_0805_2012Metric",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "xy": [
+        30,
+        14
+      ],
+      "group": "power",
+      "description": "U1 local supply bypass",
+      "mpn": "0805 ceramic, X7R, >=10 V, 10%"
+    },
+    {
+      "ref": "C8",
+      "value": "10u",
+      "footprint": "ato:C_0805_2012Metric",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "xy": [
+        8,
+        21
+      ],
+      "group": "power",
+      "description": "Input supply bulk bypass",
+      "mpn": "0805 ceramic, X7R, >=10 V, 10%"
+    },
+    {
+      "ref": "U2",
+      "value": "OPA2333AID",
+      "footprint": "ato:SOIC-8_3.9x4.9mm_P1.27mm",
+      "nets": {
+        "1": "I_REF",
+        "2": "I_REF",
+        "3": "I_REF_RAW",
+        "4": "GND",
+        "5": "I_REF",
+        "6": "I_SENSE",
+        "7": "GATE_DRV",
+        "8": "+5V"
+      },
+      "xy": [
+        47,
+        30
+      ],
+      "group": "stimulation",
+      "description": "A: reference follower; B: current servo",
+      "mpn": "OPA2333AID"
+    },
+    {
+      "ref": "R8",
+      "value": "49.9k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "+5V",
+        "2": "I_REF_RAW"
+      },
+      "xy": [
+        38,
+        29
+      ],
+      "group": "stimulation",
+      "description": "Current-reference divider upper",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "R9",
+      "value": "1.02k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "I_REF_RAW",
+        "2": "GND"
+      },
+      "xy": [
+        38,
+        34
+      ],
+      "group": "stimulation",
+      "description": "Current-reference divider lower",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "C4",
+      "value": "100n",
+      "footprint": "ato:C_0805_2012Metric",
+      "nets": {
+        "1": "I_REF_RAW",
+        "2": "GND"
+      },
+      "xy": [
+        42,
+        37
+      ],
+      "group": "stimulation",
+      "description": "Reference low-pass",
+      "mpn": "0805 ceramic, X7R, >=10 V, 10%"
+    },
+    {
+      "ref": "R10",
+      "value": "1k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "I_SENSE",
+        "2": "GND"
+      },
+      "xy": [
+        48,
+        40
+      ],
+      "group": "stimulation",
+      "description": "Current sense, I = Vref / R10",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "R11",
+      "value": "1k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "GATE_DRV",
+        "2": "GATE"
+      },
+      "xy": [
+        54,
+        37
+      ],
+      "group": "stimulation",
+      "description": "MOSFET gate isolation",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "Q1",
+      "value": "2N7002",
+      "footprint": "ato:SOT-23",
+      "nets": {
+        "1": "GATE",
+        "2": "I_SENSE",
+        "3": "SINK"
+      },
+      "xy": [
+        57,
+        32
+      ],
+      "group": "stimulation",
+      "description": "N-MOSFET current sink; stability not hardware-validated",
+      "mpn": "2N7002"
+    },
+    {
+      "ref": "Q2",
+      "value": "2N7002",
+      "footprint": "ato:SOT-23",
+      "nets": {
+        "1": "INHIBIT",
+        "2": "SINK",
+        "3": "+5V"
+      },
+      "xy": [
+        57,
+        41
+      ],
+      "group": "stimulation",
+      "description": "Idle source-follower bypass keeps sink servo supplied while INHIBIT=1",
+      "mpn": "2N7002"
+    },
+    {
+      "ref": "C6",
+      "value": "100n",
+      "footprint": "ato:C_0805_2012Metric",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "xy": [
+        46,
+        24
+      ],
+      "group": "power",
+      "description": "U2 local supply bypass",
+      "mpn": "0805 ceramic, X7R, >=10 V, 10%"
+    },
+    {
+      "ref": "U3",
+      "value": "74HC4053D",
+      "footprint": "ato:SOIC-16_3.9x9.9mm_P1.27mm",
+      "nets": {
+        "1": "+5V",
+        "2": "SINK",
+        "3": "GND",
+        "4": "GND",
+        "5": "GND",
+        "6": "INHIBIT",
+        "7": "GND",
+        "8": "GND",
+        "9": "GND",
+        "10": "PHASE",
+        "11": "PHASE",
+        "12": "+5V",
+        "13": "SINK",
+        "14": "SW_A",
+        "15": "SW_B",
+        "16": "+5V"
+      },
+      "xy": [
+        60,
+        18
+      ],
+      "group": "stimulation",
+      "description": "A/B SPDT sections reverse one regulated sink; C grounded unused",
+      "mpn": "74HC4053D"
+    },
+    {
+      "ref": "R12",
+      "value": "100k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "INHIBIT",
+        "2": "+5V"
+      },
+      "xy": [
+        63,
+        10
+      ],
+      "group": "control",
+      "description": "Default-off pull-up; externally driven low to enable",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "R13",
+      "value": "100k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "PHASE",
+        "2": "GND"
+      },
+      "xy": [
+        65,
+        29
+      ],
+      "group": "control",
+      "description": "Defined polarity while logic is disconnected",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "C7",
+      "value": "100n",
+      "footprint": "ato:C_0805_2012Metric",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "xy": [
+        55,
+        10
+      ],
+      "group": "power",
+      "description": "U3 local supply bypass",
+      "mpn": "0805 ceramic, X7R, >=10 V, 10%"
+    },
+    {
+      "ref": "R14",
+      "value": "12k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "SW_A",
+        "2": "DUT_A"
+      },
+      "xy": [
+        68,
+        27
+      ],
+      "group": "stimulation",
+      "description": "Revision B series output resistance, leg A",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "R15",
+      "value": "12k",
+      "footprint": "ato:R_0805_2012Metric",
+      "nets": {
+        "1": "SW_B",
+        "2": "DUT_B"
+      },
+      "xy": [
+        66,
+        34
+      ],
+      "group": "stimulation",
+      "description": "Revision B series output resistance, leg B",
+      "mpn": "0805 thin-film, 0.1%, >=0.125 W"
+    },
+    {
+      "ref": "J4",
+      "value": "5V LOGIC",
+      "footprint": "ato:PinHeader_1x04_P2.54mm_Vertical",
+      "nets": {
+        "1": "PHASE",
+        "2": "INHIBIT",
+        "3": "+5V",
+        "4": "GND"
+      },
+      "xy": [
+        74,
+        16
+      ],
+      "group": "control",
+      "description": "External phase/inhibit sequencer; 5 V CMOS logic required",
+      "mpn": ""
+    },
+    {
+      "ref": "J5",
+      "value": "DUMMY LOAD",
+      "footprint": "ato:PinHeader_1x02_P2.54mm_Vertical",
+      "nets": {
+        "1": "DUT_A",
+        "2": "DUT_B"
+      },
+      "xy": [
+        74,
+        32
+      ],
+      "group": "stimulation",
+      "description": "External electrical test load only",
+      "mpn": ""
+    }
+  ],
+  "routes": [
+    {
+      "net": "/PHASE",
+      "points": 6
+    },
+    {
+      "net": "/PHASE",
+      "points": 40
+    },
+    {
+      "net": "/PHASE",
+      "points": 63
+    },
+    {
+      "net": "/INHIBIT",
+      "points": 101
+    },
+    {
+      "net": "/INHIBIT",
+      "points": 59
+    },
+    {
+      "net": "/INHIBIT",
+      "points": 83
+    },
+    {
+      "net": "/AC_IN",
+      "points": 9
+    },
+    {
+      "net": "/DUT_A",
+      "points": 41
+    },
+    {
+      "net": "/DUT_B",
+      "points": 31
+    },
+    {
+      "net": "/GATE",
+      "points": 31
+    },
+    {
+      "net": "/GATE_DRV",
+      "points": 46
+    },
+    {
+      "net": "/SIG_IN",
+      "points": 49
+    },
+    {
+      "net": "/SW_A",
+      "points": 109
+    },
+    {
+      "net": "/SW_B",
+      "points": 142
+    },
+    {
+      "net": "/I_REF",
+      "points": 6
+    },
+    {
+      "net": "/I_REF",
+      "points": 32
+    },
+    {
+      "net": "/I_SENSE",
+      "points": 72
+    },
+    {
+      "net": "/I_SENSE",
+      "points": 62
+    },
+    {
+      "net": "/REC_AMP",
+      "points": 59
+    },
+    {
+      "net": "/REC_AMP",
+      "points": 53
+    },
+    {
+      "net": "/REC_FB",
+      "points": 44
+    },
+    {
+      "net": "/REC_FB",
+      "points": 41
+    },
+    {
+      "net": "/REC_IN",
+      "points": 58
+    },
+    {
+      "net": "/REC_IN",
+      "points": 13
+    },
+    {
+      "net": "/REC_OUT",
+      "points": 169
+    },
+    {
+      "net": "/REC_OUT",
+      "points": 13
+    },
+    {
+      "net": "/I_REF_RAW",
+      "points": 30
+    },
+    {
+      "net": "/I_REF_RAW",
+      "points": 29
+    },
+    {
+      "net": "/I_REF_RAW",
+      "points": 29
+    },
+    {
+      "net": "/MID_RAW",
+      "points": 77
+    },
+    {
+      "net": "/MID_RAW",
+      "points": 31
+    },
+    {
+      "net": "/MID_RAW",
+      "points": 29
+    },
+    {
+      "net": "/SINK",
+      "points": 65
+    },
+    {
+      "net": "/SINK",
+      "points": 90
+    },
+    {
+      "net": "/SINK",
+      "points": 79
+    },
+    {
+      "net": "/MID",
+      "points": 89
+    },
+    {
+      "net": "/MID",
+      "points": 128
+    },
+    {
+      "net": "/MID",
+      "points": 7
+    },
+    {
+      "net": "/MID",
+      "points": 62
+    },
+    {
+      "net": "/MID",
+      "points": 62
+    },
+    {
+      "net": "/+5V",
+      "points": 21
+    },
+    {
+      "net": "/+5V",
+      "points": 49
+    },
+    {
+      "net": "/+5V",
+      "points": 131
+    },
+    {
+      "net": "/+5V",
+      "points": 33
+    },
+    {
+      "net": "/+5V",
+      "points": 85
+    },
+    {
+      "net": "/+5V",
+      "points": 53
+    },
+    {
+      "net": "/+5V",
+      "points": 35
+    },
+    {
+      "net": "/+5V",
+      "points": 91
+    },
+    {
+      "net": "/+5V",
+      "points": 170
+    },
+    {
+      "net": "/+5V",
+      "points": 74
+    },
+    {
+      "net": "/+5V",
+      "points": 53
+    },
+    {
+      "net": "/+5V",
+      "points": 21
+    },
+    {
+      "net": "/+5V",
+      "points": 29
+    },
+    {
+      "net": "/+5V",
+      "points": 106
+    },
+    {
+      "net": "/GND",
+      "points": 63
+    },
+    {
+      "net": "/GND",
+      "points": 43
+    },
+    {
+      "net": "/GND",
+      "points": 49
+    },
+    {
+      "net": "/GND",
+      "points": 57
+    },
+    {
+      "net": "/GND",
+      "points": 29
+    },
+    {
+      "net": "/GND",
+      "points": 79
+    },
+    {
+      "net": "/GND",
+      "points": 125
+    },
+    {
+      "net": "/GND",
+      "points": 61
+    },
+    {
+      "net": "/GND",
+      "points": 45
+    },
+    {
+      "net": "/GND",
+      "points": 45
+    },
+    {
+      "net": "/GND",
+      "points": 27
+    },
+    {
+      "net": "/GND",
+      "points": 29
+    },
+    {
+      "net": "/GND",
+      "points": 49
+    },
+    {
+      "net": "/GND",
+      "points": 87
+    },
+    {
+      "net": "/GND",
+      "points": 6
+    },
+    {
+      "net": "/GND",
+      "points": 23
+    },
+    {
+      "net": "/GND",
+      "points": 7
+    },
+    {
+      "net": "/GND",
+      "points": 6
+    },
+    {
+      "net": "/GND",
+      "points": 21
+    },
+    {
+      "net": "/GND",
+      "points": 69
+    },
+    {
+      "net": "/GND",
+      "points": 53
+    },
+    {
+      "net": "/GND",
+      "points": 53
+    }
+  ]
+}

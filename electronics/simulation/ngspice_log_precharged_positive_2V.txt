@@ -1,0 +1,54 @@
+stderr Warning: can't find the initialization file spinit.
+stdout ******
+stdout ** ngspice-46 shared library
+stdout ** Creation Date: Apr 14 2026   05:15:29
+stdout ******
+Source Deck
+stdout Note: No compatibility mode selected!
+stdout Circuit: ato generic-device current-sink and switch test (not vendor macromodels)
+Prepare Deck
+Parse
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+Device Setup
+stdout Using SPARSE 1.3 as Direct Linear Solver
+op
+stderr Note: Starting dynamic gmin stepping
+stderr Note: Dynamic gmin stepping completed
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout vdd                                          5
+stdout refraw                                0.100157
+stdout ref                                   0.100157
+stdout amp_internal                           1.37905
+stdout sense                                 0.100143
+stdout amp_state                              1.37905
+stdout gate_drv                               1.37905
+stdout gate                                   1.37905
+stdout sink                                   3.71932
+stdout inhibit                                      5
+stdout phase                                        0
+stdout ca0                                          0
+stdout ca1                                          0
+stdout sw_a                                         2
+stdout sw_b                               1.04632e-07
+stdout duta                                         2
+stdout dutb                                         0
+stdout load_a                                       2
+stdout polar                                        2
+stdout bca1#branch                                  0
+stdout bca0#branch                                  0
+stdout bservo#branch                       2.1684e-19
+stdout eamp#branch                       -3.38813e-21
+stdout eref#branch                                  0
+stdout vcurrent#branch                   -1.99528e-09
+stdout vinhibit#branch                              0
+stdout vphase#branch                                0
+stdout vdd#branch                        -0.000198337
+ Reference value :  0.00000e+00
+tran init
+tran
+tran: 61.5%
+--ready--
+stdout No. of Data Rows : 12147

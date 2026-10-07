@@ -1,0 +1,53 @@
+{
+  "units": "mm",
+  "enclosure": [
+    100.0,
+    70.0,
+    32.0
+  ],
+  "pcb": [
+    80.0,
+    50.0,
+    1.6
+  ],
+  "pcb_mounting_plane": 8.0,
+  "parts": {
+    "base": {
+      "valid": true,
+      "volume_mm3": 40127.93099,
+      "step_volume_error_mm3": 4.3655745685100555e-10
+    },
+    "lid": {
+      "valid": true,
+      "volume_mm3": 16607.82915,
+      "step_volume_error_mm3": 5.20230969414115e-10
+    },
+    "pcb-envelope": {
+      "valid": true,
+      "volume_mm3": 6343.03434,
+      "step_volume_error_mm3": 7.275957614183426e-12
+    },
+    "lead-paddle": {
+      "valid": true,
+      "volume_mm3": 313.81947,
+      "step_volume_error_mm3": 6.650680006714538e-12
+    },
+    "lead-contacts": {
+      "valid": true,
+      "volume_mm3": 4.8,
+      "step_volume_error_mm3": 0.0
+    },
+    "recording-cuff": {
+      "valid": true,
+      "volume_mm3": 103.48406,
+      "step_volume_error_mm3": 3.865352482534945e-12
+    },
+    "recording-contacts": {
+      "valid": true,
+      "volume_mm3": 1.00112,
+      "step_volume_error_mm3": 9.78994663114463e-13
+    }
+  },
+  "pcb_base_overlap_mm3": 0,
+  "lid_base_overlap_mm3": 0
+}

@@ -1,0 +1,14 @@
+{
+  "base": true,
+  "lid": true,
+  "pcb_valid": true,
+  "pcb_bounding_box_mm": [
+    80.0,
+    50.0,
+    11.54000000000044
+  ],
+  "substrate_bottom_z_mm": 8,
+  "substrate_thickness_mm": 1.51,
+  "pcb_base_overlap_mm3": 0.0,
+  "pcb_lid_overlap_mm3": 0.0
+}

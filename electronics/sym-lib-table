@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "ATO") (type "KiCad") (uri "${KIPRJMOD}/ATO.kicad_sym") (options "") (descr "ATO embedded pin-accurate reference symbols")))

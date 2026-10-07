@@ -3,14 +3,15 @@
 *.md text eol=lf
 *.csv text eol=lf
 *.json text eol=lf
+*.sha256 text eol=lf
 *.svg text eol=lf
 *.kicad_sch text eol=lf
 *.kicad_pcb text eol=lf
 *.step -text
-*.stl -text
-*.png -text
-*.pdf -text
-*.blend -text
-*.FCStd -text
-*.mp4 -text
-*.zip -text
+*.stl binary
+*.png binary
+*.pdf binary
+*.blend binary
+*.FCStd binary
+*.mp4 binary
+*.zip binary

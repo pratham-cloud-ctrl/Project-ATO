@@ -1,0 +1,73 @@
+{
+  "release": "1.0.0",
+  "date": "2026-10-07",
+  "scope": "Executed digital checks on the documented Windows toolchain; no biological or fabricated-hardware validation",
+  "studies": {
+    "paired_synthetic_trials_per_application": 40,
+    "python_unit_tests_passed": 14,
+    "compiled_C_binding_tests_included": 5,
+    "zero_beta_retained_advantage": 0,
+    "stale_sensor_nonzero_application_commands": 0,
+    "available_fresh_pressure_measurements_all_finite": true,
+    "missing_sensor_measurements": "NaN only for flagged unavailable or invalid/stale observations; preserved in CSV, represented as null in presentation data",
+    "receipts": ["results/summary.json", "results/study_metadata.json"]
+  },
+  "digital_protocol": {
+    "compiled_C_host_assertions_passed": 23,
+    "compiler_warnings_treated_as_errors": true,
+    "adapter_checks_passed": 7,
+    "accepted_pressure_pulses": 5704,
+    "accepted_motor_pulses": 10,
+    "receipts": ["results/firmware_validation.json", "results/adapter_validation.json"],
+    "limit": "Host timing and ideal protocol only; no MCU, ADC or fitted stimulation-to-physiology mapping"
+  },
+  "electronics": {
+    "ERC_violations": 0,
+    "PCB_DRC_violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 0,
+    "excluded_violations": 0,
+    "analytical_invariant_checks_passed": 6,
+    "complete_generic_ngspice_runs": 5,
+    "checks_passed_per_ngspice_run": 4,
+    "revision_B_nominal_peak_uA": 102.57838127378785,
+    "largest_peak_in_selected_sensitivity_runs_uA": 128.38351796540968,
+    "receipts": ["electronics/reports/erc.json", "electronics/reports/drc.json", "electronics/simulation/metrics.json"],
+    "limit": "Generic device/RC models and selected cases; clean rule checks do not establish analog, fabrication or implant safety"
+  },
+  "CAD": {
+    "valid_positive_volume_parts": 7,
+    "STEP_round_trip_volume_error_below_mm3": 0.001,
+    "nominal_base_lid_overlap_mm3": 0,
+    "nominal_PCB_base_overlap_mm3": 0,
+    "actual_KiCad_assembly_base_overlap_mm3": 0,
+    "actual_KiCad_assembly_lid_overlap_mm3": 0,
+    "receipts": ["cad/exports/geometry-checks.json", "cad/exports/electronics-assembly-checks.json"],
+    "limit": "Nominal geometry only; no fabrication fit, materials, thermal or anatomical validation"
+  },
+  "presentation": {
+    "engineering_paper_pages": 20,
+    "PDF_visual_review": "All pages reviewed as rendered contact sheets; equations, tables and final engineering plates inspected at larger resolution; image/caption groups kept together",
+    "walkthrough_seconds": 72,
+    "walkthrough_frames": 864,
+    "walkthrough_resolution": [1280, 720],
+    "walkthrough_audio": "none; captioned",
+    "video_review": "Eight caption plates visually inspected; browser loaded 72-second video without a media error",
+    "browser_checks": ["All six images loaded", "Three trace selectors changed displayed legend and caption", "Delay at 500 ms gave 180.0 degrees", "No horizontal overflow in the default narrow panel", "Video metadata loaded with readyState 4 and no error"],
+    "limit": "Manual presentation checks on the local in-app browser; not exhaustive cross-browser certification"
+  },
+  "research": {
+    "selected_primary_source_review_date": "2026-10-07",
+    "bibliography_entries": 12,
+    "registered_claims": 18,
+    "starting_paper_correction": "15 rats overall versus the 5-animal motor-decoding subset in El Hadwe et al. 2026",
+    "peer_review": "Research claims and model-to-electronics abstraction boundaries independently audited within the AI-assisted workflow",
+    "limit": "Targeted narrative review, not a systematic or exhaustive literature search"
+  },
+  "release_integrity": {
+    "checker": "scripts/check_release.py",
+    "artifact_hashes": "provenance/manifest.sha256; Git blob byte convention in provenance/environment.json",
+    "original_synced_sources_modified": false,
+    "private_repository": "https://github.com/pratham-cloud-ctrl/Project-ATO"
+  }
+}

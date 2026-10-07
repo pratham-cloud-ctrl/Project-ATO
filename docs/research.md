@@ -30,6 +30,8 @@ The supplied 28-page review is the starting research map. It reports no original
 
 **Correction:** page 7 says the freely moving experiments in El Hadwe et al. involved five rats. The primary study describes **15 implanted freely moving rats overall**; the motor-decoding analysis used **five**. Do not treat the subset as the complete cohort or the reported decoder score as independent evidence across 15 animals.
 
+**Primary-source caution:** the [2026 article's Figure 5 caption](https://www.nature.com/articles/s41467-026-75128-z) describes a 21.29% chance baseline as uniform random classification over eight classes. Uniform eight-class random predictions have expected accuracy 12.5%, so that baseline description is internally inconsistent. ATO does not rely on the comparison. This wording issue alone does not invalidate the recording observations, but illustrates why even primary-source numbers require checking.
+
 ATO further narrows the implementation to two testable digital studies. It separates the proposed intradural recording placement from epidural stimulation; recording performance is not assumed to transfer across these compartments. The physical CAD is a desktop reference enclosure, not the dimensions or materials of an implant. The paper's evidence cutoff was 30 September 2026; ATO's selected-source verification date is 7 October 2026, without claiming a comprehensive updated search.
 
 ## AstroSam attribution and technical boundary

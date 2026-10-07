@@ -1,0 +1,43 @@
+ATO generic-device current-sink and switch test (NOT vendor macromodels)
+* Matches R8/R9/R10/R11/R14/R15/Q1/Q2 and U3 A/B pin routing.
+* OPA2333 buffer/servo represented by ideal behavioral voltage sources.
+* 2N7002 is a generic level-1 NMOS; 74HC4053 is ideal Ron=70 ohm switch.
+VDD vdd 0 5.25
+R8 vdd refraw 49.9k
+R9 refraw 0 1.02k
+C4 refraw 0 100n
+Eref ref 0 refraw 0 1
+* Generic finite-bandwidth servo: Aol=100000, GBW=350kHz.
+Eamp amp_internal 0 ref sense 100000
+Rdominant amp_internal amp_state 100k
+Cdominant amp_state 0 454.73n
+Bservo gate_drv 0 V=max(0,min(5,V(amp_state)))
+R11 gate_drv gate 1k
+M1 sink gate sense sense NMTEST
+R10 sense 0 1k
+M2 vdd inhibit sink sink NMTEST
+.model NMTEST NMOS (LEVEL=1 VTO=1.2 KP=0.03 LAMBDA=0.02)
+* Generic gate parasitics, not a vendor 2N7002 characterization.
+CGS gate sense 50p
+CGD gate sink 5p
+Vphase phase 0 PWL(0 0 1.2249m 0 1.225m 5 6m 5)
+Vinhibit inhibit 0 PWL(0 5 0.9999m 5 1m 0 1.1999m 0 1.2m 5 1.2499m 5 1.25m 0 1.4499m 0 1.45m 5 6m 5)
+Bca0 ca0 0 V=(1-V(phase)/5)*(1-V(inhibit)/5)
+Bca1 ca1 0 V=V(phase)/5*(1-V(inhibit)/5)
+SA0 sw_a vdd ca0 0 SWTEST
+SA1 sw_a sink ca1 0 SWTEST
+SB0 sw_b sink ca0 0 SWTEST
+SB1 sw_b vdd ca1 0 SWTEST
+.model SWTEST SW (RON=70 ROFF=1e12 VT=0.5 VH=0.05)
+R14 sw_a duta 11.88k
+R15 sw_b dutb 11.88k
+Vcurrent duta load_a 0
+Rseries load_a polar 1k
+Rct polar dutb 20k
+Cdl polar dutb 10n
+* External-test-fixture leakage prevents a perfectly floating common mode.
+RleakA duta 0 1G
+RleakB dutb 0 1G
+.options reltol=1e-4 abstol=1e-12 method=gear
+.tran 0.5u 6m 0 0.5u
+.end

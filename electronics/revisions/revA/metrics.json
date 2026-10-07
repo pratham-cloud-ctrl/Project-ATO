@@ -1,0 +1,89 @@
+{
+  "model_type": "deterministic analytical circuit abstraction; not measured hardware",
+  "seed": 260107,
+  "nominal_current_uA": 100.15710919088767,
+  "nominal_phase_charge_nC": 20.031421838177533,
+  "dc_gain": 21.0,
+  "input_highpass_corner_Hz": 0.157579151576134,
+  "output_lowpass_corner_Hz": 3386.2753849339438,
+  "opamp_closedloop_pole_Hz": 16666.666666666668,
+  "gain_at_200Hz": 20.754408463845724,
+  "gain_at_700Hz": 20.34365037249826,
+  "estimated_output_noise_rms_uV_0p01_to_100kHz": 79.03365833666422,
+  "white_noise_model_omits": "chopper ripple, 1/f noise, midpoint noise, switching pickup and artifacts",
+  "corner_current_uA_5pct_supply_0p1pct_resistors_10uV_offset": [
+    94.85808792932671,
+    105.48676618759603
+  ],
+  "load_cases": {
+    "nominal": {
+      "positive_charge_nC": 20.031421838177533,
+      "negative_charge_nC": -20.031421838177533,
+      "net_charge_nC": 0.0,
+      "imbalance_percent": 0.0,
+      "peak_load_voltage_V": 0.28987480584076564,
+      "residual_polarization_at_pulse_end_mV": -22.398931857026085,
+      "compliance_limited_samples": 0,
+      "peak_current_uA": 100.15710919088767
+    },
+    "high_impedance": {
+      "positive_charge_nC": 18.392156616048638,
+      "negative_charge_nC": -19.027599462223485,
+      "net_charge_nC": -0.6354428461748473,
+      "imbalance_percent": 3.4549664807680696,
+      "peak_load_voltage_V": 4.687363014271483,
+      "residual_polarization_at_pulse_end_mV": -26.599414907686693,
+      "compliance_limited_samples": 400,
+      "peak_current_uA": 97.14098887064054
+    },
+    "phase_10us_timing_error": {
+      "positive_charge_nC": 20.031421838177533,
+      "negative_charge_nC": -19.029850746268654,
+      "net_charge_nC": 1.0015710919088785,
+      "imbalance_percent": 5.000000000000009,
+      "peak_load_voltage_V": 0.28987480584076564,
+      "residual_polarization_at_pulse_end_mV": -12.470414989455456,
+      "compliance_limited_samples": 0,
+      "peak_current_uA": 100.15710919088767
+    },
+    "missing_negative_phase": {
+      "positive_charge_nC": 20.031421838177533,
+      "negative_charge_nC": 0.0,
+      "net_charge_nC": 20.031421838177533,
+      "imbalance_percent": 100.0,
+      "peak_load_voltage_V": 0.28987480584076564,
+      "residual_polarization_at_pulse_end_mV": 168.22525039615005,
+      "compliance_limited_samples": 0,
+      "peak_current_uA": 100.15710919088767
+    },
+    "low_supply": {
+      "positive_charge_nC": 19.029850746268657,
+      "negative_charge_nC": -19.029850746268657,
+      "net_charge_nC": 0.0,
+      "imbalance_percent": 0.0,
+      "peak_load_voltage_V": 0.2753810655487271,
+      "residual_polarization_at_pulse_end_mV": -21.278985264174647,
+      "compliance_limited_samples": 0,
+      "peak_current_uA": 95.14925373134328
+    },
+    "small_double_layer": {
+      "positive_charge_nC": 20.031421838177533,
+      "negative_charge_nC": -20.031421838177533,
+      "net_charge_nC": 0.0,
+      "imbalance_percent": 0.0,
+      "peak_load_voltage_V": 1.3626906648960344,
+      "residual_polarization_at_pulse_end_mV": -903.4471450526997,
+      "compliance_limited_samples": 0,
+      "peak_current_uA": 100.15710919088767
+    }
+  },
+  "spice": {
+    "executed": true,
+    "model": "generic level-1 MOSFET; behavioral op-amp; switch abstraction; not vendor verification",
+    "transient_points": 12136,
+    "positive_charge_nC": 20.039515336573448,
+    "negative_charge_nC": -20.040362548823882,
+    "net_charge_nC": -0.0008472122504344318,
+    "peak_current_uA": 1361.3598386822898
+  }
+}

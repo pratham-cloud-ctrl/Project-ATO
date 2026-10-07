@@ -54,7 +54,7 @@ def simulate_pressure(seed, policy="closed_loop", config=PressureConfig()):
     latched_invalid = False
     raw_u = 0.0
     disturbance = disturbance_size*np.clip((t-20)/2, 0, 1)
-    for i in range(n-1):
+    for i in range(n):
         if available[i] and not invalid[i]:
             measured = pressure[max(0, i-delay_steps)] + noise[i]
             last_seen = t[i]
@@ -89,11 +89,10 @@ def simulate_pressure(seed, policy="closed_loop", config=PressureConfig()):
             previous = command[i-1] if i else 0.0
             command[i] = float(np.clip(raw_u, previous-config.slew_per_second*config.dt,
                                       previous+config.slew_per_second*config.dt))
-        actuator[i+1] = actuator[i] + config.dt*(command[i]-actuator[i])/actuator_tau
-        pressure[i+1] = pressure[i] + config.dt*(-(pressure[i]-config.setpoint+disturbance[i])
-                                              + gain*actuator[i])/tau
-    command[-1] = command[-2]
-    stale[-1] = stale[-2]
+        if i+1 < n:
+            actuator[i+1] = actuator[i] + config.dt*(command[i]-actuator[i])/actuator_tau
+            pressure[i+1] = pressure[i] + config.dt*(-(pressure[i]-config.setpoint+disturbance[i])
+                                                  + gain*actuator[i])/tau
     window = (t >= 40) & (t < config.seconds-1)
     err = pressure[window]-config.setpoint
     summary = {"seed": seed, "policy": policy, "gain_mmhg": gain, "tau_s": tau,

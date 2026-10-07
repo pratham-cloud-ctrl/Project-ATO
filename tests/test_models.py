@@ -76,5 +76,17 @@ class PressureEvidenceTests(unittest.TestCase):
         np.testing.assert_array_equal(tr["map_mmhg"],tr2["map_mmhg"])
         self.assertTrue(np.all(np.isfinite(tr["map_mmhg"])))
 
+    def test_every_available_fresh_sample_has_a_finite_measurement(self):
+        for cfg in [PressureConfig(),replace(PressureConfig(),dropout=True,invalid_sensor=True)]:
+            _,tr=simulate_pressure(24000,config=cfg)
+            expected=tr["sensor_available"].astype(bool)&~tr["sensor_stale"].astype(bool)
+            self.assertTrue(np.all(np.isfinite(tr["measurement_mmhg"][expected])))
+            self.assertTrue(np.isfinite(tr["measurement_mmhg"][-1]))
+            missing=~tr["sensor_available"].astype(bool)
+            self.assertTrue(np.all(np.isnan(tr["measurement_mmhg"][missing])))
+            if cfg.invalid_sensor:
+                invalid=(tr["time_s"]>=105)&(tr["time_s"]<108)
+                self.assertTrue(np.all(np.isnan(tr["measurement_mmhg"][invalid])))
+
 
 if __name__=="__main__": unittest.main()
