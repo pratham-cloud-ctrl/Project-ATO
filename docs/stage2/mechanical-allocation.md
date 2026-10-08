@@ -39,6 +39,10 @@ not completed nets or an anatomical lead design. The additional
 where needed. It explicitly excludes72 intentional header/interface reservation
 pairs. Pins and insulators are checked against one another and all other parts.
 The native document is not rewritten by this inspection.
+Binary CAD hashes bind exact file bytes. The inspection binds the geometry
+receipt's JSON values with a documented canonical serialization so Windows and
+Linux text line endings do not change its identity; the repository manifest
+separately verifies the exact committed text bytes.
 
 Inspect [the STEP assembly](../../cad/stage2/ATO_stage2_allocation.step),
 [the native FreeCAD assembly](../../cad/stage2/ATO_stage2_allocation.FCStd),

@@ -8,6 +8,7 @@ import re
 from urllib.parse import unquote
 from pypdf import PdfReader
 from run_architecture_budgets import calculate, equivalent
+from artifact_hashes import canonical_json_digest
 
 ROOT=Path(__file__).resolve().parents[1]
 DOC=ROOT/'docs/stage2'
@@ -125,7 +126,7 @@ def verify():
     inspection=json.loads((ROOT/'cad/stage2/inspection-checks.json').read_text(encoding='utf-8'))
     assert inspection['native_sha256']==sha(ROOT/'cad/stage2/ATO_stage2_allocation.FCStd')
     assert inspection['step_sha256']==sha(ROOT/'cad/stage2/ATO_stage2_allocation.step')
-    assert inspection['allocation_receipt_sha256']==sha(ROOT/'cad/stage2/allocation-checks.json')
+    assert inspection['allocation_receipt_canonical_json_sha256']==canonical_json_digest(ROOT/'cad/stage2/allocation-checks.json')
     assert inspection['nominal_pairs_checked']==3088 and inspection['intentional_header_interface_reservation_pairs']==72
     assert inspection['unexpected_positive_volume_intersections']==0 and inspection['all_valid_and_positive']
     ports=list(csv.DictReader((DOC/'functional-port-map.csv').open(encoding='utf-8')))

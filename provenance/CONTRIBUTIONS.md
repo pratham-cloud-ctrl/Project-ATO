@@ -107,6 +107,8 @@ The audit corrected the 32-stream RAM prose, made cyclic physical-source
 scheduling distinct from per-profile rates, and added finite flash/network
 memory, output-configuration SPI and a complete functional port allocation.
 Six focused failure tests and a read-only full nominal CAD inspection extend
-the verification. The illustrated brief was updated and visually reviewed.
+the verification. A further portability regression covers Windows/Linux JSON
+receipt identity while detecting changed values and array order. The illustrated
+brief was updated and visually reviewed.
 These additions remain AI-assisted digital engineering; they do not establish
 biological efficacy, exact circuit implementation or populated implant readiness.

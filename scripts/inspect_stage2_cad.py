@@ -10,6 +10,7 @@ import hashlib
 import json
 import FreeCAD as App
 import Import
+from artifact_hashes import canonical_json_digest
 
 ROOT=Path(__file__).resolve().parents[1]
 CAD=ROOT/'cad/stage2'
@@ -58,7 +59,8 @@ def inspect():
         return {'date':'2026-10-08','scope':'Read-only native/STEP validity, dimensions and all nominal pair inspections; no populated/anatomical/hermetic claim',
             'native_sha256':digest(CAD/'ATO_stage2_allocation.FCStd'),
             'step_sha256':digest(CAD/'ATO_stage2_allocation.step'),
-            'allocation_receipt_sha256':digest(CAD/'allocation-checks.json'),
+            'allocation_receipt_canonical_json_sha256':canonical_json_digest(CAD/'allocation-checks.json'),
+            'text_receipt_hash_convention':'Parsed JSON; sorted object keys; preserved array order; compact ASCII serialization; finite numbers. Git manifest separately binds exact committed bytes.',
             'FreeCAD_version':list(App.Version()),'native_parts':80,'STEP_parts':80,
             'all_valid_and_positive':True,'recorded_dimensions_and_volumes_match':True,
             'nominal_pairs_checked':checked,'bounding_box_rejections':checked-exact,

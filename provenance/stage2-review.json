@@ -20,7 +20,8 @@
     "Third SPIM1 bus reserves128us wire and122us local admission work; local pulse edges remain separate",
     "All36 functional port roles mapped to nominal CAD labels; exact net/anatomy mapping remains later",
     "Full nominal native CAD pair inspection and twelve scoped exit criteria added; stale next-stage wording and brief typography corrected",
-    "Logical profile identities separately checked; repeating one profile atthree offsets cannot evade its repetition limit"
+    "Logical profile identities separately checked; repeating one profile atthree offsets cannot evade its repetition limit",
+    "Fresh Linux CI caught Windows newline drift in a text-receipt hash; canonical JSON binding and a tamper-sensitive portability regression replace raw checkout-byte hashing"
   ],
   "pdf_visual_review": {
     "artifact": "output/pdf/ATO_stage2_architecture_budgets.pdf",
@@ -47,8 +48,8 @@
   "owner_status": "Owner authorized continuation; engineering choices remain provisional and reviewable",
   "local_test_execution": {
     "suite": "python -m unittest discover -s tests -v",
-    "all_repository_tests_passed": 27,
-    "new_stage2_tests_passed": 13,
+    "all_repository_tests_passed": 28,
+    "new_stage2_tests_passed": 14,
     "scope": "Architecture unit tests plus historical surrogate/sequencer regressions; not full-SCCI integration or efficacy"
   },
   "stage2_exit_audit": {

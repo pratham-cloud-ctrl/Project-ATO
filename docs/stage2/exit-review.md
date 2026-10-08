@@ -64,6 +64,10 @@ as assumptions. Unknown biological effectiveness is not turned into an input fac
    profile-rate/identity evasion and oversized flash images.
 6. Updated the illustrated brief and stale programme wording. All applicable
    automated checks, visual review and GitHub checks are rerun for this revision.
+7. The fresh Linux checkout exposed Windows/LF text-hash drift in the new CAD
+   inspection receipt. That binding now uses explicitly canonicalized JSON,
+   with a regression check that ignores line endings while detecting changed
+   geometry values or array order. The Git manifest still binds exact blob bytes.
 
 ## What Stage 2 passes to the next stages
 
