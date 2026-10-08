@@ -16,19 +16,26 @@ earlier release only.
 
 ## Current phase
 
-Scope reset and baseline audit completed. The [overhaul plan](docs/overhaul-plan.md)
-defines stages, deliverables and completion criteria. No new component choices,
+Stage 1 mechanism and requirements dossier completed for review. The
+[dossier entry point](docs/stage1/README.md) connects the complete system specification,
+application mechanisms, primary-source audit, architecture alternatives, interfaces,
+requirements, assumptions, capability map and verification matrix. An illustrated
+nine-page brief accompanies three editable vector mechanism diagrams.
+
+The [overhaul plan](docs/overhaul-plan.md) defines later stages and completion criteria.
+No new component choices,
 electrode arrangements, circuit implementation or CAD packaging have been finalized.
 
 Working branch: `overhaul/full-scci-system`.
 
 ## Next bounded work package
 
-Stage 1: read the original 28-page paper against primary literature; reconstruct
-the expert-to-learner and physiological-control mechanisms; map capabilities;
-compare task/target and architecture alternatives; draft system requirements and
-the biological-interface assumptions. Recommend representative applications and a
-system partition for owner review before detailed electrical or geometric choices.
+Stage 2: review the proposed lower-limb coordination and pressure-regulation
+reference configurations, then close numerical architecture and interface budgets.
+Compare the separate intradural surface recording/epidural stimulation baseline
+against alternatives. Resolve recording information, sampling/channel scaling,
+output/load envelopes, latency, power/heat and preliminary mechanical interfaces
+before selecting final devices and geometry.
 
 Existing lower-limb quadrature and pressure models are candidates/supporting
 experiments, not automatic decisions about the full device. Reopen channel counts,
@@ -47,9 +54,14 @@ lead geometry and the desktop enclosure choice.
 - Synced files under the ChatGPT project's `sources/` remain read-only.
 - Preserve originals and the historical release; maintain source/decision provenance.
 
-## Record of this reset
+## Completed work in this overhaul
 
 Reviewed current native design scope, models, architecture, evidence register and
 the original paper's mechanism sections. Independent planning audits covered
 research, electronics and model/CAD gaps. Added the overhaul plan and continuation
-record. No new scientific efficacy result or full-system validation is claimed.
+record. Stage 1 adds complete mechanism chains, 36 requirements, 14 assumptions,
+14 capability entries, 4 access alternatives, 13 owned modules, 15 interface
+contracts and 50 planned verification checks. The primary-source audit records
+the actual access scope and limits of the cited studies. Specification consistency
+and PDF visual review are recorded separately from historical engineering tests.
+No new scientific efficacy result or full-system validation is claimed.

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-08",
+  "stage": "Mechanism and requirements specification for review",
+  "source_reference": {
+    "filename": "SCCI_research_hypothesis_paper.pdf",
+    "page_count": 28,
+    "sha256": "a1784965d63060e3b0c11fd3c01c9f0b4fe0b007cc65c605c76164ee1d4bf103",
+    "handling": "Read-only reference; no edits, moves, renames or deletion performed",
+    "original_evidence_cutoff": "2026-09-30"
+  },
+  "manual_specification_review": {
+    "status": "Completed for Stage 1 proposal scope",
+    "reviewers": "Root integration review plus independent AI research, electronics and model workstreams",
+    "reviewed_stage1_criteria": [
+      "S1-V-001",
+      "S1-V-002",
+      "S1-V-003",
+      "S1-V-004",
+      "S1-V-005",
+      "S1-V-006",
+      "S1-V-007",
+      "S1-V-008",
+      "S1-V-009",
+      "S1-V-010"
+    ],
+    "findings_resolved": [
+      "Preserved expert neural content, learner calibration and assistance-off learning distinction",
+      "Defined external feedback and optional spinal information for physiological reference",
+      "Kept limb/access alternatives and broader capabilities conditional",
+      "Separated anatomical coordinates and primary systolic-pressure endpoint from old MAP abstraction",
+      "Tightened planned authentication/replay, application conflicts and independent clock/monitor fault checks",
+      "Tightened configuration/calibration/model activation provenance and source/hybrid attribution checks",
+      "Aligned local Core policy responsibility with budgeted companion services"
+    ],
+    "remaining_choices": [
+      "First motor task and detailed anatomy",
+      "Final physiological endpoint and sensor contract",
+      "Recording/stimulation access and numerical envelopes",
+      "Power, compute, telemetry and mechanical packaging after budgets"
+    ]
+  },
+  "pdf_visual_review": {
+    "artifact": "output/pdf/ATO_stage1_system_specification.pdf",
+    "sha256": "ce4e1532ce9f3b0fa25240274c9c90a5eecbeba489bfac6459ebb8b7c24ec12f",
+    "page_count": 9,
+    "renderer": "Bundled Poppler pdftoppm at 100 and 115 dpi",
+    "review": "All nine pages inspected in contact sheet; mechanism pages and changed pages inspected individually",
+    "status": "Passed readability, no clipping/overlap/missing glyphs, figure boundaries and numbering review"
+  },
+  "future_verification": "S1-V-101 through S1-V-604 remain pending; biological rows are outside digital execution scope",
+  "owner_decision_status": "Reference task preference requested; recommendation remains provisional"
+}

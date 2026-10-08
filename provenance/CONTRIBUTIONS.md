@@ -62,3 +62,21 @@ artifact hashes and claim boundaries.
 The SHA256 manifest hashes staged Git blob bytes (including Git's LF text
 normalization), so it represents the committed release rather than a particular
 Windows working copy's line endings. It excludes itself to avoid a self-hash.
+
+## Full-system overhaul: Stage 1, 8 October 2026
+
+The project owner authorized a staged overhaul preserving the complete proposed
+SCCI platform and both application ambitions. AI-assisted work produced the
+mechanism specification, selected primary-source audit, architecture/interface
+trade study, model/verification plan, requirement/assumption/capability registers,
+vector diagrams and illustrated design brief. Parallel AI workstreams covered
+research, electronics responsibilities and model verification; a separate bounded
+cross-document review led to tighter future configuration-security, versioning
+and independent-supervision checks. The owner has not yet selected the detailed
+reference motor task or endorsed a final access arrangement.
+
+Stage 1 reports specification consistency and document visual review only. No
+new circuit, firmware implementation, CAD package, biological dataset or efficacy
+experiment was produced in this stage. The source hypothesis remains read-only;
+the historical release and its receipts remain distinct. See the Stage 1 dossier,
+`stage1-verification.json` and `stage1-review.json` for this revision's scope.

@@ -1,0 +1,27 @@
+{
+  "audit_date": "2026-10-08",
+  "scope": "Stage 1 specification consistency only; no efficacy, circuit or CAD validation",
+  "counts": {
+    "requirements.csv": 36,
+    "assumptions.csv": 14,
+    "capability-map.csv": 14,
+    "source-audit.csv": 26,
+    "verification-matrix.csv": 50
+  },
+  "automated_checks": [
+    "requirements.csv: schema, nonempty fields and unique IDs",
+    "assumptions.csv: schema, nonempty fields and unique IDs",
+    "capability-map.csv: schema, nonempty fields and unique IDs",
+    "source-audit.csv: schema, nonempty fields and unique IDs",
+    "verification-matrix.csv: schema, nonempty fields and unique IDs",
+    "All 36 requirements map to existing planned verification IDs",
+    "Primary-source rows carry HTTPS URLs, years and Stage 1 audit date",
+    "23 local dossier links resolve; Markdown fences balance",
+    "All primary-source IDs cited in dossier Markdown exist in the source audit",
+    "Four access alternatives, thirteen modules and fifteen interfaces are defined uniquely",
+    "Nine PDF pages carry text and expected numbering; three SVG/PNG pairs exist",
+    "Manual visual-review record matches this PDF; original reference identity records 28 pages"
+  ],
+  "pdf_sha256": "ce4e1532ce9f3b0fa25240274c9c90a5eecbeba489bfac6459ebb8b7c24ec12f",
+  "future_verification": "Pending; the matrix defines later digital work and separate biological evidence requirements"
+}

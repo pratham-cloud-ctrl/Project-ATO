@@ -1,7 +1,8 @@
 # Project ATO: full SCCI system overhaul
 
-Planning baseline: 8 October 2026. Status: scope reset and baseline audit complete;
-mechanism specification and architecture work are next. This document plans a new
+Planning baseline: 8 October 2026. Status: Stage 1 mechanism and requirements
+[dossier](stage1/README.md) completed for review; Stage 2 quantitative architecture
+is next. This document plans a new
 design; it does not claim that the full system has been implemented.
 
 ## The intended deliverable

@@ -1,13 +1,54 @@
-<p align="center"><img src="media/ato-hero.png" width="100%" alt="ATO desktop digital demonstrator and separate spinal lead concepts" /></p>
-
 # Project ATO
 
-> **Full SCCI system overhaul in progress.** The original release below is a
-> digital subsystem reference. The complete proposed implant/controller architecture
-> is being redesigned on `overhaul/full-scci-system`. See the
-> [current status](CURRENT_STATUS.md) and [staged overhaul plan](docs/overhaul-plan.md).
-> Video and website work are parked while the mechanism, electronics, CAD and paper
-> are developed. Existing results and verification receipts describe release 1.0.
+**Invasive spinal recording, computational interpretation, personalized stimulation and feedback.**
+
+ATO is an entirely digital research and engineering project with two ambitions:
+expert-informed motor practice that improves retained unassisted performance,
+and target-specific physiological automation. AstroSam's [Mind-Link](https://github.com/sam-astro/Mind-link)
+inspires the progression from future vision to inspectable electronics and physical design.
+
+> **Stage 1 mechanism and requirements completed for review.** The full proposed
+> implant system is still in development on `overhaul/full-scci-system`. Detailed
+> electronics, embedded implementation and implant/companion CAD follow the
+> numerical architecture stage. Video and website work are parked.
+
+![Full proposed SCCI architecture](docs/stage1/figures/full-system.svg)
+
+| Start here | What to review |
+|---|---|
+| [Illustrated Stage 1 brief](output/pdf/ATO_stage1_system_specification.pdf) | Nine-page overview with the complete system and both causal mechanisms |
+| [Full design dossier](docs/stage1/README.md) | Mechanisms, evidence audit, architecture alternatives and interface responsibilities |
+| [Requirements](docs/stage1/requirements.csv) | 36 owned requirements linked to planned verification |
+| [Assumptions and capability map](docs/stage1/assumptions.csv) | Explicit biological and engineering premises; [future applications](docs/stage1/capability-map.csv) |
+| [Model and verification plan](docs/stage1/model-and-verification-plan.md) | Neural/external and expert/learner comparisons; later electronics and CAD checks |
+| [Current status](CURRENT_STATUS.md) | Completed work, unresolved decisions and next bounded work package |
+| [Overhaul programme](docs/overhaul-plan.md) | Six stages from mechanism to integrated technical manuscript and repository |
+
+The proposed platform includes a recording/ADC chain, local interpretation and
+output admission, programmable stimulation and contact routing, delivered-current/
+charge/compliance monitoring, independent supervision, power, telemetry, companion
+sensing and an offline expert representation/calibration environment. It has
+target-specific configurations rather than one lead arrangement for all functions.
+
+Stage 1 recommends lower-limb coordination and pressure regulation as first
+quantitative reference cases. Cervical/piano, bladder, cough, selected pelvic
+responses and bodily sensory applications remain in the capability map. Each
+requires its own information and causal access. Expert transfer, retained healthy
+learning and long-term consumer use are hypotheses, not results of this dossier.
+
+Specification consistency is checked with `python scripts/verify_stage1_specification.py`.
+The [Stage 1 receipt](provenance/stage1-verification.json) is separate from the
+original release's engineering evidence. All later verification remains pending.
+
+## Historical subsystem reference: v1.0.0
+
+The earlier release remains available for its circuit workflow, desktop assembly,
+portable sequencer and conditional surrogate studies. Its eight-contact display,
+model gains and desktop enclosure do not define the new implant. Its manuscript,
+results and verification receipts apply only to that historical scope.
+
+<details>
+<summary>Open the original v1.0.0 reference documentation</summary>
 
 ### A digital engineering study of invasive spinal interfaces
 
@@ -195,3 +236,5 @@ disclosed in [provenance](provenance/CONTRIBUTIONS.md). This private portfolio i
 not affiliated with any university and does not certify a degree-level assessment.
 Biological validation, chronic implant engineering and physical hardware testing
 remain outside this entirely digital release.
+
+</details>

@@ -1,0 +1,37 @@
+requirement_id,requirement,owner,planned_stage,verification_id,status
+S1-R-001,Preserve both expert-informed motor practice and selected physiological automation as application families,System specification,1,S1-V-002,specified
+S1-R-002,Keep implanted spinal access central and identify any brain-input variant as hybrid,Research and architecture,1,S1-V-001;S1-V-004,specified
+S1-R-003,Distinguish evidence hypotheses access assumptions proposals and digital results in every capability claim,Research and manuscript,1,S1-V-004;S1-V-503,specified
+S1-R-004,Trace each application through observation interpretation intervention feedback and functional outcome,Application specification,1,S1-V-002,specified
+S1-R-005,Use application-specific anatomy and separate spinal-segment coordinates from vertebral coordinates,Target configuration,2,S1-V-009;S1-V-401;S1-V-604,pending
+S1-R-006,Select recording montage reference and accessible neural information with explicit ambiguity limits,Target configuration and acquisition,2,S1-V-103;S1-V-201;S1-V-601,pending
+S1-R-007,Specify contacts sampled differential channels independent drivers and permitted concurrent patterns separately,Architecture,2,S1-V-007;S1-V-302;S1-V-402,pending
+S1-R-008,Design differential recording protection gain filtering offset handling and recovery for stated signal envelopes,Core acquisition,4,S1-V-201;S1-V-301,pending
+S1-R-009,Digitize timestamp synchronize and flag validity of acquired samples with a closed throughput budget,Core acquisition and timing,4,S1-V-202;S1-V-302,pending
+S1-R-010,Generate model contact observations through a declared neural-population and electrode forward model,Research models,3,S1-V-101,pending
+S1-R-011,Prevent controller access to unavailable true phase skill future state or held-out labels,Research models and estimator,3,S1-V-003;S1-V-102,pending
+S1-R-012,Build the expert representation from declared expert recording data and contextual labels,Studio,3,S1-V-104,pending
+S1-R-013,Identify learner responses from bounded calibration with uncertainty and held-out prediction,Studio Hub and Core calibration/estimation service,3,S1-V-105,pending
+S1-R-014,Compare neural-plus-external versus external-only sensing under fair information and exposure budgets,Research evaluation,3,S1-V-106,pending
+S1-R-015,Compare expert-informed versus learner-only policies with equal learner practice and reported calibration costs,Research evaluation,3,S1-V-006;S1-V-106,pending
+S1-R-016,Separate assistance-on performance off-assistance retention and transfer using predeclared outcomes,Research evaluation,3,S1-V-010;S1-V-109;S1-V-603,pending
+S1-R-017,Permit beneficial neutral and harmful adaptation and report censored acquisition thresholds,Research models,3,S1-V-108;S1-V-109,pending
+S1-R-018,Name a physiological endpoint observation pathway control direction and functional stopping condition,Application specification,1,S1-V-002;S1-V-009;S1-V-112,specified
+S1-R-019,Retain external physiological sensing and test any added spinal-recording information rather than assuming it,Hub and research evaluation,3,S1-V-113,pending
+S1-R-020,Connect requested stimulation to delivered current charge electrode load and uncertain recruitment response,Core outputs and research models,4,S1-V-303;S1-V-501;S1-V-602,pending
+S1-R-021,Bound programmable stimulation routing waveform timing and contact configuration by a versioned envelope,Core command gate,4,S1-V-302;S1-V-306,pending
+S1-R-022,Measure delivered current charge compliance and output faults rather than relying only on requested values,Core output monitor,4,S1-V-303;S1-V-305,pending
+S1-R-023,Quantify stimulation artifacts blanking recovery and estimator uncertainty when observations are unavailable,Core acquisition and estimator,4,S1-V-304;S1-V-110,pending
+S1-R-024,Keep final output admission and timing local with independent supervision and watchdog behavior,Core scheduler and supervisor,4,S1-V-202;S1-V-306,pending
+S1-R-025,Define radio loss stale sensors brownout reset and interrupted-phase behavior for each application,Core and Hub supervisors,4,S1-V-306;S1-V-307;S1-V-308;S1-V-114,pending
+S1-R-026,Provide regulated power storage or transfer rail sequencing and measured energy thermal budgets,Core power and mechanical design,2,S1-V-203;S1-V-308;S1-V-405,pending
+S1-R-027,Define telemetry framing timestamps sequence integrity freshness authentication and configuration authority,Core and Hub communication,4,S1-V-202;S1-V-306,pending
+S1-R-028,Version calibration expert representation policy limits target configuration and session records,Studio and Hub,4,S1-V-502,pending
+S1-R-029,Specify enrollment calibration recording assistance assessment physiology charging and fault modes,System supervisor,2,S1-V-009;S1-V-306,pending
+S1-R-030,Arbitrate conflicting applications contact resources and physiological side effects without assuming joint safety,System supervisor,4,S1-V-204;S1-V-306,pending
+S1-R-031,Derive mechanical lead connector feedthrough board and cable envelopes from selected architecture,Mechanical and electrical design,5,S1-V-401;S1-V-402;S1-V-403,pending
+S1-R-032,Provide editable KiCad designs and engineering CAD with consistent pinouts geometry and source exports,Electrical and mechanical design,5,S1-V-309;S1-V-403;S1-V-404,pending
+S1-R-033,Trace one electrode observation through electronic conversion computation delivered output and modeled response,Integrated digital verification,6,S1-V-501,pending
+S1-R-034,Maintain reproducible seeds datasets comparisons source versions and verification receipts,Repository and provenance,6,S1-V-502,pending
+S1-R-035,Keep synced references read-only preserve the historical release and credit AstroSam and primary sources,Repository and manuscript,1,S1-V-001;S1-V-004,specified
+S1-R-036,Report anatomical chronic biological and fabrication questions as unresolved by digital checks,Research and manuscript,6,S1-V-503;S1-V-604,pending
