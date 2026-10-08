@@ -542,7 +542,9 @@
         "Configuration/calibration/version/auth/replay checks pass.",
         "No more than2 concurrent sources and approved independent return routes.",
         "Planned same-frame drivers align;staggered pulses admitted only in explicitly budgeted patterns.",
-        "Source minimum-period constraints apply even for event-anchored frame rephasing.",
+        "Per-profile minimum periods apply even for event-anchored rephasing: 25ms at40Hz motor and8.333ms at120Hz pressure; configured rate ceiling150Hz per profile.",
+        "Physical source availability is checked separately: biphasic duration plus250us zero-current reconfiguration/admission. Pressure source0 time-shares three profiles at360events/s with2ms minimum cyclic spacing; a150Hz per-source ceiling is not assumed.",
+        "Concurrent source routes own disjoint contacts and dedicated returns; recording recovery does not qualify electrode/return polarization or reuse.",
         "Current/charge/compliance/reserve/thermal gates come from electrical budget, not task policy.",
         "Clock/monitor health and observedstate validity hold at admission and execution.",
         "Conflicting motor/pressor applications cannot both reserve sources;no last-writer wins."

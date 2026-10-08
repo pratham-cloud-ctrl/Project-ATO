@@ -42,6 +42,23 @@ def verify():
     assert c['monitor_ADC_utilization']<1 and c['monitor_SPI_utilization_with_overhead']<1
     assert c['neural_scan_occupancy_fraction']<1
     checks.append('Selected compute/transport margins and explicit64MHz/raw-RAM failures preserved')
+    memory=calculated['flash_and_network_memory']
+    assert all(memory[name]['headroom_gate_pass'] for name in ['application_flash','network_flash','network_ram'])
+    assert memory['application_flash']['allocated_bytes']==827392
+    assert config['compute']['application_flash_allocations_bytes']['immutable_session_expert_policy']==config['compute']['expert_policy_flash_reservation_bytes']
+    assert config['compute']['network_flash_bytes']==acquisition['compute']['network_flash_bytes']
+    assert config['compute']['network_ram_bytes']==acquisition['compute']['network_RAM_bytes']
+    assert not memory['resident_second_application_image_included']
+    bus=calculated['output_configuration_bus']
+    assert bus['admission_gate_pass'] and abs(bus['total_admission_allocation_s']-.00025)<1e-12
+    assert abs(bus['pressure_mean_wire_utilization']-.02304)<1e-12
+    assert all(p['physical_source_schedule_gate_pass'] and p['per_profile_rate_gate_pass'] and p['configured_profile_period_gate_pass'] for p in calculated['physical_source_schedules'])
+    pressure=next(p for p in calculated['physical_source_schedules'] if p['id']=='pressure_reference')
+    assert pressure['physical_sources'][0]['events_per_s']==360 and pressure['physical_sources'][1]['events_per_s']==0
+    assert len(pressure['logical_profiles'])==3 and all(row['events_per_s']==120 for row in pressure['logical_profiles'])
+    assert abs(pressure['source_service_interval_s']-.00095)<1e-12
+    assert abs(config['stimulation']['source_service_interval_at_max_phase_s']-(2*config['stimulation']['max_phase_s']+config['stimulation']['interphase_s']+config['stimulation']['source_rearm_and_reconfigure_s']))<1e-12
+    checks.append('Finite application/network flash and RAM; third configuration SPI and per-profile/cyclic physical-source scheduling agree')
     ids=[r['id'] for r in contracts['contracts']]
     assert len(ids)==len(set(ids))==11
     assert all(c['fields'] for c in contracts['contracts'])
@@ -105,6 +122,22 @@ def verify():
     assert all(r['metal_can_overlap_mm3']<1e-6 for r in cad['interface_can_checks'])
     assert abs(native['volume_error_mm3'])<1e-4
     checks.append('Recorded local CAD execution:80 valid solids,36 ports, nominal major/can-port checks and FreeCAD volume round-trip')
+    inspection=json.loads((ROOT/'cad/stage2/inspection-checks.json').read_text(encoding='utf-8'))
+    assert inspection['native_sha256']==sha(ROOT/'cad/stage2/ATO_stage2_allocation.FCStd')
+    assert inspection['step_sha256']==sha(ROOT/'cad/stage2/ATO_stage2_allocation.step')
+    assert inspection['allocation_receipt_sha256']==sha(ROOT/'cad/stage2/allocation-checks.json')
+    assert inspection['nominal_pairs_checked']==3088 and inspection['intentional_header_interface_reservation_pairs']==72
+    assert inspection['unexpected_positive_volume_intersections']==0 and inspection['all_valid_and_positive']
+    ports=list(csv.DictReader((DOC/'functional-port-map.csv').open(encoding='utf-8')))
+    assert len(ports)==len({r['port_id'] for r in ports})==len({r['logical_function'] for r in ports})==36
+    assert {r['cad_label'] for r in ports}=={r['name'] for r in cad['parts'] if r['name'].startswith('Interface_Port_')}
+    expected_functions={f'REC_{i:02d}' for i in range(1,17)}|{'REC_REFERENCE','BODY_BIAS'}|{f'STIM_{i:02d}' for i in range(1,17)}|{'RETURN_00','RETURN_01'}
+    assert {r['logical_function'] for r in ports}==expected_functions
+    assert all(r['port_id']==f'P{i:02d}' and r['cad_label']==f'Interface_Port_{i:02d}' for i,r in enumerate(ports,1))
+    exit_text=(DOC/'exit-review.md').read_text(encoding='utf-8')
+    assert all(f'S2-X-{i:02d}' in exit_text for i in range(1,13))
+    assert 'Stage 3 has not started' in exit_text
+    checks.append('Full native nominal pair-inspection receipt binds CAD; all36 functional ports and twelve bounded Stage2 exit criteria are explicit')
     pdf=ROOT/'output/pdf/ATO_stage2_architecture_budgets.pdf'
     pages=PdfReader(pdf).pages
     assert len(pages)==8

@@ -141,6 +141,9 @@
         ]
       ],
       "selected_continuous_gates": {
+        "per_profile_rate": true,
+        "configured_profile_period": true,
+        "physical_source_availability": true,
         "joint_command_charge": true,
         "delivery_charge_with_uncertainty": true,
         "simple_compliance": true,
@@ -195,6 +198,9 @@
         ]
       ],
       "selected_continuous_gates": {
+        "per_profile_rate": true,
+        "configured_profile_period": true,
+        "physical_source_availability": true,
         "joint_command_charge": true,
         "delivery_charge_with_uncertainty": true,
         "simple_compliance": true,
@@ -249,6 +255,9 @@
         ]
       ],
       "selected_continuous_gates": {
+        "per_profile_rate": true,
+        "configured_profile_period": true,
+        "physical_source_availability": true,
         "joint_command_charge": true,
         "delivery_charge_with_uncertainty": true,
         "simple_compliance": true,
@@ -295,6 +304,9 @@
         ]
       ],
       "selected_continuous_gates": {
+        "per_profile_rate": true,
+        "configured_profile_period": true,
+        "physical_source_availability": true,
         "joint_command_charge": false,
         "delivery_charge_with_uncertainty": false,
         "simple_compliance": true,
@@ -308,6 +320,219 @@
       },
       "qualification": "Conditional arithmetic only; recruitment, chemistry, hardware bounds and thermal resistance unqualified",
       "archive_FIR_invalid_fraction_any_raw_invalid_rule": 1.0
+    }
+  ],
+  "flash_and_network_memory": {
+    "application_flash": {
+      "capacity_bytes": 1048576,
+      "allocated_bytes": 827392,
+      "remaining_bytes": 221184,
+      "headroom_fraction": 0.2109375,
+      "headroom_gate_pass": true
+    },
+    "network_flash": {
+      "capacity_bytes": 262144,
+      "allocated_bytes": 180224,
+      "remaining_bytes": 81920,
+      "headroom_fraction": 0.3125,
+      "headroom_gate_pass": true
+    },
+    "network_ram": {
+      "capacity_bytes": 65536,
+      "allocated_bytes": 49152,
+      "remaining_bytes": 16384,
+      "headroom_fraction": 0.25,
+      "headroom_gate_pass": true
+    },
+    "linked_images_measured": false,
+    "resident_second_application_image_included": false
+  },
+  "output_configuration_bus": {
+    "peripheral": "SPIM1, separate from SPIM0 neural and SPIM4 delivery monitor",
+    "maximum_transaction_wire_s": 0.000128,
+    "total_admission_allocation_s": 0.00025,
+    "admission_gate_pass": true,
+    "pressure_mean_wire_utilization": 0.02304,
+    "actual_component_command_protocol_qualified": false
+  },
+  "physical_source_schedules": [
+    {
+      "id": "motor_reference",
+      "electrical_occupied_s": 0.0005,
+      "source_service_interval_s": 0.00075,
+      "per_profile_rate_gate_pass": true,
+      "configured_profile_period_gate_pass": true,
+      "logical_profiles": [
+        {
+          "profile_id": "motor_left",
+          "events_per_s": 40.0,
+          "minimum_cyclic_start_gap_s": 0.025,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        },
+        {
+          "profile_id": "motor_right",
+          "events_per_s": 40.0,
+          "minimum_cyclic_start_gap_s": 0.025,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        }
+      ],
+      "physical_sources": [
+        {
+          "source_id": 0,
+          "events_per_s": 40.0,
+          "minimum_cyclic_start_gap_s": 0.025,
+          "reserved_service_fraction": 0.03,
+          "no_service_overlap": true
+        },
+        {
+          "source_id": 1,
+          "events_per_s": 40.0,
+          "minimum_cyclic_start_gap_s": 0.025,
+          "reserved_service_fraction": 0.03,
+          "no_service_overlap": true
+        }
+      ],
+      "physical_source_schedule_gate_pass": true,
+      "qualification": "Allocated service timing only; actual rearm/route/return/polarization health still required"
+    },
+    {
+      "id": "pressure_reference",
+      "electrical_occupied_s": 0.0007,
+      "source_service_interval_s": 0.00095,
+      "per_profile_rate_gate_pass": true,
+      "configured_profile_period_gate_pass": true,
+      "logical_profiles": [
+        {
+          "profile_id": "pressure_0",
+          "events_per_s": 120.0,
+          "minimum_cyclic_start_gap_s": 0.008333333333333333,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        },
+        {
+          "profile_id": "pressure_1",
+          "events_per_s": 120.0,
+          "minimum_cyclic_start_gap_s": 0.008333333333333333,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        },
+        {
+          "profile_id": "pressure_2",
+          "events_per_s": 120.0,
+          "minimum_cyclic_start_gap_s": 0.008333333333333333,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        }
+      ],
+      "physical_sources": [
+        {
+          "source_id": 0,
+          "events_per_s": 360.0,
+          "minimum_cyclic_start_gap_s": 0.002,
+          "reserved_service_fraction": 0.342,
+          "no_service_overlap": true
+        },
+        {
+          "source_id": 1,
+          "events_per_s": 0.0,
+          "minimum_cyclic_start_gap_s": null,
+          "reserved_service_fraction": 0.0,
+          "no_service_overlap": true
+        }
+      ],
+      "physical_source_schedule_gate_pass": true,
+      "qualification": "Allocated service timing only; actual rearm/route/return/polarization health still required"
+    },
+    {
+      "id": "pressure_high_current_stress",
+      "electrical_occupied_s": 0.0007,
+      "source_service_interval_s": 0.00095,
+      "per_profile_rate_gate_pass": true,
+      "configured_profile_period_gate_pass": true,
+      "logical_profiles": [
+        {
+          "profile_id": "pressure_0",
+          "events_per_s": 120.0,
+          "minimum_cyclic_start_gap_s": 0.008333333333333333,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        },
+        {
+          "profile_id": "pressure_1",
+          "events_per_s": 120.0,
+          "minimum_cyclic_start_gap_s": 0.008333333333333333,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        },
+        {
+          "profile_id": "pressure_2",
+          "events_per_s": 120.0,
+          "minimum_cyclic_start_gap_s": 0.008333333333333333,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        }
+      ],
+      "physical_sources": [
+        {
+          "source_id": 0,
+          "events_per_s": 360.0,
+          "minimum_cyclic_start_gap_s": 0.002,
+          "reserved_service_fraction": 0.342,
+          "no_service_overlap": true
+        },
+        {
+          "source_id": 1,
+          "events_per_s": 0.0,
+          "minimum_cyclic_start_gap_s": null,
+          "reserved_service_fraction": 0.0,
+          "no_service_overlap": true
+        }
+      ],
+      "physical_source_schedule_gate_pass": true,
+      "qualification": "Allocated service timing only; actual rearm/route/return/polarization health still required"
+    },
+    {
+      "id": "cartesian_max_rejected",
+      "electrical_occupied_s": 0.0011,
+      "source_service_interval_s": 0.00135,
+      "per_profile_rate_gate_pass": true,
+      "configured_profile_period_gate_pass": true,
+      "logical_profiles": [
+        {
+          "profile_id": "corner_left",
+          "events_per_s": 150.0,
+          "minimum_cyclic_start_gap_s": 0.006666666666666667,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        },
+        {
+          "profile_id": "corner_right",
+          "events_per_s": 150.0,
+          "minimum_cyclic_start_gap_s": 0.006666666666666667,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        }
+      ],
+      "physical_sources": [
+        {
+          "source_id": 0,
+          "events_per_s": 150.0,
+          "minimum_cyclic_start_gap_s": 0.006666666666666667,
+          "reserved_service_fraction": 0.20249999999999999,
+          "no_service_overlap": true
+        },
+        {
+          "source_id": 1,
+          "events_per_s": 150.0,
+          "minimum_cyclic_start_gap_s": 0.006666666666666667,
+          "reserved_service_fraction": 0.20249999999999999,
+          "no_service_overlap": true
+        }
+      ],
+      "physical_source_schedule_gate_pass": true,
+      "qualification": "Allocated service timing only; actual rearm/route/return/polarization health still required"
     }
   ],
   "compliance_sweep": [

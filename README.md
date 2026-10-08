@@ -19,6 +19,7 @@ inspires the progression from future vision to inspectable electronics and physi
 |---|---|
 | [Illustrated Stage 2 brief](output/pdf/ATO_stage2_architecture_budgets.pdf) | Eight-page quantitative architecture with scientific figures and physical allocations |
 | [Stage 2 technical dossier](docs/stage2/README.md) | Selected design, source audits, control contracts and reproducible budgets |
+| [Stage 2 completion review](docs/stage2/exit-review.md) | Twelve exit criteria, alignment with the main concept and explicit handoff limits |
 | [Native preliminary CAD](cad/stage2/ATO_stage2_allocation.FCStd) | FreeCAD/STEP allocation assembly; 80 solids and 36 illustrative body ports |
 | [Illustrated Stage 1 brief](output/pdf/ATO_stage1_system_specification.pdf) | Nine-page overview with the complete system and both causal mechanisms |
 | [Full design dossier](docs/stage1/README.md) | Mechanisms, evidence audit, architecture alternatives and interface responsibilities |

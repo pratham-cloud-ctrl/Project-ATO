@@ -23,14 +23,17 @@
     "archive_rate_per_stream_hz": 2000,
     "spi_clock_hz": 8000000,
     "command_words_per_scan": 19,
-    "command_word_interval_s": 0.000003,
+    "command_word_interval_s": 3e-06,
     "word_bits": 16,
-    "aperture_span_s": 0.000045,
+    "aperture_span_s": 4.5e-05,
     "input_lsb_uV": 0.195,
     "linear_ac_peak_uV": 5000,
     "highpass_corner_hz": 0.1,
     "lowpass_corner_hz": 300,
-    "feature_band_hz": [20, 300],
+    "feature_band_hz": [
+      20,
+      300
+    ],
     "candidate": "Intan RHD2216; official typical specifications are feasibility witnesses, not implant qualification",
     "provenance": "See acquisition-and-compute.md and electrical-source-audit.csv"
   },
@@ -48,6 +51,27 @@
     "telemetry_command_validity_bytes": 32768,
     "expert_policy_bytes": 0,
     "expert_policy_flash_reservation_bytes": 65536,
+    "application_flash_allocations_bytes": {
+      "application_firmware_image": 655360,
+      "boot_and_recovery": 65536,
+      "immutable_session_expert_policy": 65536,
+      "configuration_and_calibration": 32768,
+      "bounded_fault_journal": 8192
+    },
+    "flash_headroom_minimum_fraction": 0.2,
+    "update_storage_policy": "Single application image; no resident second image or network-update cache. Maintenance/recovery is a quiescent service mode. Atomic OTA updates are not included or qualified.",
+    "network_flash_bytes": 262144,
+    "network_flash_allocations_bytes": {
+      "radio_firmware": 163840,
+      "boot_and_configuration": 16384
+    },
+    "network_ram_bytes": 65536,
+    "network_ram_allocations_bytes": {
+      "radio_stack_and_state": 32768,
+      "radio_DMA": 8192,
+      "IPC": 4096,
+      "queues": 4096
+    },
     "ram_headroom_minimum_fraction": 0.2,
     "archive_record_bytes_per_scan": 48,
     "archive_buffer_s": 2,
@@ -73,21 +97,37 @@
     "dedicated_return_contacts": 2,
     "min_current_A": 0.0001,
     "max_current_A": 0.02,
-    "min_phase_s": 0.00005,
+    "min_phase_s": 5e-05,
     "max_phase_s": 0.0005,
     "max_rate_per_profile_hz": 150,
+    "source_rearm_and_reconfigure_s": 0.00025,
+    "source_service_interval_at_max_phase_s": 0.00135,
+    "source_service_provenance": "Chosen bound: two 500us phases +100us interphase +250us zero-current admission/reconfiguration. Must be qualified by actual circuit/firmware; not a 150Hz per-source ceiling.",
     "interphase_s": 0.0001,
-    "command_charge_ceiling_C": 0.000009,
-    "delivery_charge_ceiling_C": 0.00001,
+    "command_charge_ceiling_C": 9e-06,
+    "delivery_charge_ceiling_C": 1e-05,
     "max_usable_terminal_V": 40,
-    "boost_rail_choices_V": [16, 24, 36, 48],
+    "boost_rail_choices_V": [
+      16,
+      24,
+      36,
+      48
+    ],
     "reserved_voltage_headroom_V": 8,
     "pair_polarization_allowance_V": 4,
     "initial_polarization_stress_V": 1,
-    "pair_load_stress_ohm": [500, 1000, 2000],
-    "effective_pair_capacitance_stress_F": [0.0000005, 0.000002, 0.00001],
+    "pair_load_stress_ohm": [
+      500,
+      1000,
+      2000
+    ],
+    "effective_pair_capacitance_stress_F": [
+      5e-07,
+      2e-06,
+      1e-05
+    ],
     "active_contact_area_mm2": 6,
-    "hv_reservoir_effective_F": 0.000033,
+    "hv_reservoir_effective_F": 3.3e-05,
     "hv_reservoir_allowed_droop_V": 2,
     "provenance": "Chosen hardware envelope with primary-study/device witnesses; material-specific charge-injection validity unestablished"
   },
@@ -103,10 +143,20 @@
     "command_overhead_fraction": 0.1,
     "signed_current_span_A": 0.05,
     "current_gain_fraction_bound": 0.02,
-    "current_offset_bound_A": 0.000005,
-    "phase_edge_uncertainty_s": 0.000005,
+    "current_offset_bound_A": 5e-06,
+    "phase_edge_uncertainty_s": 5e-06,
     "hardware_peak_guard_A": 0.025,
     "provenance": "ADC capacity is manufacturer evidence; analog gain/offset/edge and guard allocations require Stage 4 circuit/transient validation"
+  },
+  "output_configuration_bus": {
+    "peripheral": "SPIM1, separate from SPIM0 neural and SPIM4 delivery monitor",
+    "spi_clock_hz": 8000000,
+    "max_transaction_bytes": 128,
+    "max_bytes_per_source_event": 64,
+    "admission_allowance_s": 0.00025,
+    "nonwire_admission_allowance_s": 0.000122,
+    "instantaneous_edge_owner": "Local timer/DPPI and independent output gate; SPI is for zero-current preload, not live phase-edge timing",
+    "provenance": "Chosen finite command-size/timing allocation; SPIM1 8Mbps capacity is a Nordic witness. Actual DAC, routing words and gate sequencing remain Stage4."
   },
   "power": {
     "battery_candidate": "Resonetics Contego 200, part 99-2354",
@@ -123,7 +173,12 @@
     "boost_overhead_allocation_W": 0.002,
     "boost_efficiency": 0.8,
     "thermal_resistance_selected_K_per_W": 20,
-    "thermal_resistance_stress_K_per_W": [10, 20, 40, 60],
+    "thermal_resistance_stress_K_per_W": [
+      10,
+      20,
+      40,
+      60
+    ],
     "effective_heat_capacity_J_per_K": 15,
     "package_temperature_rise_target_K": 2,
     "provenance": "Cell dimensions/capacity/voltage are manufacturer data at stated conditions; efficiency, allocations, current cap, thermal model and 2 K target are chosen engineering assumptions, not clinical safety bounds"
@@ -141,23 +196,171 @@
     "provenance": "Chosen finite companion source/base allocations; actual devices, charger-link losses, sensor power and portable consumer sensing remain unqualified"
   },
   "profiles": [
-    {"id": "motor_reference", "current_A": 0.003, "phase_s": 0.0002, "frame_hz": 40, "events_per_frame": 1, "sources_per_event": 2, "offsets_s": [0], "boost_V": 24, "load_ohm": 1000, "recovery_s": 0.001, "basis": "Chosen digital practice profile; no biological effect is assumed"},
-    {"id": "pressure_reference", "current_A": 0.003, "phase_s": 0.0003, "frame_hz": 120, "events_per_frame": 3, "sources_per_event": 1, "offsets_s": [0, 0.002, 0.004], "boost_V": 24, "load_ohm": 1000, "recovery_s": 0.001, "basis": "Study-inspired frame/offsets; amplitude and symmetric active recharge are our digital choices"},
-    {"id": "pressure_high_current_stress", "current_A": 0.02, "phase_s": 0.0003, "frame_hz": 120, "events_per_frame": 3, "sources_per_event": 1, "offsets_s": [0, 0.002, 0.004], "boost_V": 48, "load_ohm": 1000, "recovery_s": 0.001, "basis": "Primary amplitude upper range combined with ATO symmetric waveform; sustained thermal and low-cell limits may reject it"},
-    {"id": "cartesian_max_rejected", "current_A": 0.02, "phase_s": 0.0005, "frame_hz": 150, "events_per_frame": 1, "sources_per_event": 2, "offsets_s": [0], "boost_V": 48, "load_ohm": 1000, "recovery_s": 0.001, "basis": "Deliberate simultaneous-all-max failure; independent knob maxima are not permission for this combination"}
+    {
+      "id": "motor_reference",
+      "current_A": 0.003,
+      "phase_s": 0.0002,
+      "frame_hz": 40,
+      "events_per_frame": 1,
+      "sources_per_event": 2,
+      "offsets_s": [
+        0
+      ],
+      "source_ids_per_event": [
+        [
+          0,
+          1
+        ]
+      ],
+      "boost_V": 24,
+      "load_ohm": 1000,
+      "recovery_s": 0.001,
+      "basis": "Chosen digital practice profile; no biological effect is assumed",
+      "profile_ids_per_event": [
+        [
+          "motor_left",
+          "motor_right"
+        ]
+      ]
+    },
+    {
+      "id": "pressure_reference",
+      "current_A": 0.003,
+      "phase_s": 0.0003,
+      "frame_hz": 120,
+      "events_per_frame": 3,
+      "sources_per_event": 1,
+      "offsets_s": [
+        0,
+        0.002,
+        0.004
+      ],
+      "source_ids_per_event": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "boost_V": 24,
+      "load_ohm": 1000,
+      "recovery_s": 0.001,
+      "basis": "Study-inspired frame/offsets; amplitude and symmetric active recharge are our digital choices",
+      "profile_ids_per_event": [
+        [
+          "pressure_0"
+        ],
+        [
+          "pressure_1"
+        ],
+        [
+          "pressure_2"
+        ]
+      ]
+    },
+    {
+      "id": "pressure_high_current_stress",
+      "current_A": 0.02,
+      "phase_s": 0.0003,
+      "frame_hz": 120,
+      "events_per_frame": 3,
+      "sources_per_event": 1,
+      "offsets_s": [
+        0,
+        0.002,
+        0.004
+      ],
+      "source_ids_per_event": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "boost_V": 48,
+      "load_ohm": 1000,
+      "recovery_s": 0.001,
+      "basis": "Primary amplitude upper range combined with ATO symmetric waveform; sustained thermal and low-cell limits may reject it",
+      "profile_ids_per_event": [
+        [
+          "pressure_0"
+        ],
+        [
+          "pressure_1"
+        ],
+        [
+          "pressure_2"
+        ]
+      ]
+    },
+    {
+      "id": "cartesian_max_rejected",
+      "current_A": 0.02,
+      "phase_s": 0.0005,
+      "frame_hz": 150,
+      "events_per_frame": 1,
+      "sources_per_event": 2,
+      "offsets_s": [
+        0
+      ],
+      "source_ids_per_event": [
+        [
+          0,
+          1
+        ]
+      ],
+      "boost_V": 48,
+      "load_ohm": 1000,
+      "recovery_s": 0.001,
+      "basis": "Deliberate simultaneous-all-max failure; independent knob maxima are not permission for this combination",
+      "profile_ids_per_event": [
+        [
+          "corner_left",
+          "corner_right"
+        ]
+      ]
+    }
   ],
   "mechanical": {
-    "can_outer_mm": [60, 48, 14],
+    "can_outer_mm": [
+      60,
+      48,
+      14
+    ],
     "wall_mm": 1.2,
-    "header_mm": [60, 10, 14],
-    "pcb_mm": [50, 40, 1],
+    "header_mm": [
+      60,
+      10,
+      14
+    ],
+    "pcb_mm": [
+      50,
+      40,
+      1
+    ],
     "pcb_bottom_z_mm": 1.8,
     "component_height_allocation_mm": 3,
-    "battery_box_mm": [35.1, 17, 5.5],
+    "battery_box_mm": [
+      35.1,
+      17,
+      5.5
+    ],
     "battery_bottom_z_mm": 6.3,
     "battery_case": "Case-negative: electrically isolate from package/body reference",
     "body_feedthrough_ports": 36,
-    "hub_outer_mm": [100, 60, 24],
+    "hub_outer_mm": [
+      100,
+      60,
+      24
+    ],
     "provenance": "Battery box from manufacturer; can/board/header/hub are geometric allocations, not anatomical fit, hermetic or RF-qualified designs"
   }
 }

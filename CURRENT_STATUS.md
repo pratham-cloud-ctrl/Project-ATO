@@ -29,6 +29,13 @@ figure pairs. Native FreeCAD/STEP models contain 80 allocation solids, a core
 can/header, companion and 36 illustrative body ports. These are preliminary
 allocation models, not populated implant CAD.
 
+The owner requested a Stage 2 completion/alignment audit before Stage 3.
+That [exit review](docs/stage2/exit-review.md) corrects the 32-stream RAM prose,
+separates profile rates from physical-source service, adds finite flash/network
+memory and output-configuration bus allocations, and reconciles all36 logical
+ports with the CAD. Native inspection now covers all3,088 nominal part pairs
+apart from72 explicit header/interface reservation pairs. Stage 3 has not started.
+
 The [overhaul plan](docs/overhaul-plan.md) defines later stages and completion criteria.
 Catalog component witnesses and provisional envelopes are selected for budget
 work; actual complete circuit/layout, anatomy and packaging remain in development.
@@ -51,8 +58,9 @@ or pressor gain to force a desired outcome. Stage 2's low-current profiles are
 electrical reference cases, not established biologically effective settings.
 
 Existing lower-limb quadrature and pressure models are candidates/supporting
-experiments, not automatic decisions about the full device. Reopen channel counts,
-lead geometry and the desktop enclosure choice.
+experiments. The selected new reference tasks above come from the mechanism
+review; historical results are not promoted to full-system evidence. Reopen
+channel counts, lead geometry and package budgets when the new models require it.
 
 ## Continuing constraints
 

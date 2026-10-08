@@ -522,8 +522,8 @@
       }
     ],
     "event_anchored_schedule": {
-      "requirement": "Only launch at target timestamp if20ms pre-admission, valid prediction/freshness, route/monitor health, and source minimum-period constraints all hold.",
-      "minimum_source_period_s": {
+      "requirement": "Only launch at target timestamp if20ms pre-admission, valid prediction/freshness, route/monitor health, per-profile minimum periods and physical-source service bounds all hold.",
+      "minimum_profile_period_s": {
         "motor20Hz": 0.05,
         "motor40Hz": 0.025,
         "motor60Hz": 0.016666666666666666

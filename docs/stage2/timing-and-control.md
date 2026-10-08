@@ -49,9 +49,36 @@ features cannot inherit the 2 ms fast-band allocation.
 Free-running frames fail the selected 25 ms reactive target at 20, 40 and 60 Hz
 (61.85, 36.85 and 28.52 ms including worst next-frame wait). The proposed motor
 task has known paced goals. Advance admission may schedule an output at a known
-goal time only when response predictions, fresh observations, source minimum
-period, route and monitor health pass. It cannot guarantee response timing for
-an unseen perturbation or evade minimum periods by changing the frame origin.
+goal time only when response predictions, fresh observations, per-profile
+minimum period, physical-source availability, route and monitor health pass.
+It cannot guarantee response timing for an unseen perturbation or evade a
+profile's rate limits by changing the frame origin.
+
+### Physical sources and profile rates
+
+The 150 Hz ceiling is **per profile**, not per physical source. One source may
+time-share several profiles. For the pressure reference, source 0 serves the
+three 120 Hz profiles at offsets 0/2/4 ms: 360 pulses/s, with a minimum cyclic
+start gap of 2 ms (last-to-first gap 4.333 ms). Source 1 is unused. This is a
+chosen deterministic assignment, not a third source or an arbitrary rephasing.
+The three logical profile identities are retained separately in the input and
+cyclic checks. Reusing one identity for all three events fails both its repetition
+ceiling and configured minimum period, even when the physical source is available.
+
+Reserve 250 microseconds after each biphasic waveform for zero-current break,
+route reconfiguration and rearm. A 300-microsecond pressure phase therefore
+uses 0.95 ms service time including its 100-microsecond gap; 2 ms spacing passes
+the allocation. The two aligned motor sources each use 0.75 ms of their 25 ms
+period. At the 500-microsecond phase corner service is 1.35 ms. The reproduction
+checks include the cyclic last-to-first interval and reject overlapping use of
+a source. These are chosen timing bounds, not circuit/firmware benchmarks.
+
+The recording recovery mask is distinct from source rearm. Neither grants
+automatic electrode/return reset: measured voltage, route health and qualified
+polarization bounds can still veto reuse. Concurrent sources require disjoint
+owned contact/return routes. A pressure profile retains its 8.333 ms minimum
+period, and the 40 Hz motor profile retains its 25 ms minimum, even if launches
+are anchored to a task event.
 
 ## Artifact accounting
 

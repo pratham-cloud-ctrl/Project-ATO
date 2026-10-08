@@ -1,6 +1,8 @@
 """Independent corner cases for Stage2 timing and resource admission."""
 import importlib.util
 import math
+import copy
+import json
 from pathlib import Path
 import unittest
 
@@ -11,6 +13,54 @@ spec.loader.exec_module(budgets)
 
 
 class ArchitectureBudgets(unittest.TestCase):
+    def test_pressure_profile_rate_is_distinct_from_physical_source_rate(self):
+        result=budgets.calculate()
+        schedule=next(r for r in result['physical_source_schedules'] if r['id']=='pressure_reference')
+        self.assertTrue(schedule['per_profile_rate_gate_pass'])
+        self.assertTrue(schedule['physical_source_schedule_gate_pass'])
+        self.assertAlmostEqual(schedule['physical_sources'][0]['events_per_s'],360)
+        self.assertAlmostEqual(schedule['physical_sources'][0]['minimum_cyclic_start_gap_s'],.002)
+        self.assertAlmostEqual(schedule['source_service_interval_s'],.00095)
+        self.assertEqual(schedule['physical_sources'][1]['events_per_s'],0)
+
+    def test_source_collision_and_cycle_boundary_are_rejected(self):
+        design=json.loads((ROOT/'docs/stage2/system-design.json').read_text())
+        profile=copy.deepcopy(design['profiles'][1])
+        for offsets in ([0,.0004,.004],[0,.002,.008]):
+            profile['offsets_s']=offsets
+            self.assertFalse(budgets.source_schedule(profile,design['stimulation'])['physical_source_schedule_gate_pass'])
+
+    def test_duplicate_source_and_out_of_inventory_source_are_rejected(self):
+        design=json.loads((ROOT/'docs/stage2/system-design.json').read_text())
+        profile=copy.deepcopy(design['profiles'][0])
+        for routes in ([[0,0]],[[0,2]]):
+            profile['source_ids_per_event']=routes
+            with self.assertRaises(ValueError):budgets.source_schedule(profile,design['stimulation'])
+
+    def test_profile_rate_ceiling_cannot_be_evaded_by_free_source(self):
+        design=json.loads((ROOT/'docs/stage2/system-design.json').read_text())
+        profile=copy.deepcopy(design['profiles'][0]);profile['frame_hz']=160
+        schedule=budgets.source_schedule(profile,design['stimulation'])
+        self.assertTrue(schedule['physical_source_schedule_gate_pass'])
+        self.assertFalse(schedule['per_profile_rate_gate_pass'])
+
+    def test_flash_resident_second_image_is_not_free(self):
+        result=budgets.calculate()['flash_and_network_memory']
+        self.assertEqual(result['application_flash']['allocated_bytes'],827392)
+        self.assertTrue(result['application_flash']['headroom_gate_pass'])
+        self.assertFalse(budgets.memory_allocation(1048576,{'first':655360,'second':655360},.2)['headroom_gate_pass'])
+        self.assertTrue(result['network_flash']['headroom_gate_pass'])
+        self.assertTrue(result['network_ram']['headroom_gate_pass'])
+
+    def test_relabelling_frame_cannot_hide_repeated_profile(self):
+        design=json.loads((ROOT/'docs/stage2/system-design.json').read_text())
+        profile=copy.deepcopy(design['profiles'][1])
+        profile['profile_ids_per_event']=[['same_profile'],['same_profile'],['same_profile']]
+        schedule=budgets.source_schedule(profile,design['stimulation'])
+        self.assertTrue(schedule['physical_source_schedule_gate_pass'])
+        self.assertFalse(schedule['per_profile_rate_gate_pass'])
+        self.assertFalse(schedule['configured_profile_period_gate_pass'])
+
     def test_periodic_mask_wrap_and_overlap(self):
         # On a10ms circle [-1,2] and [1,4] cover5ms, not6ms.
         intervals,fraction=budgets.periodic_union(.010,[0,.002],.002,.001)

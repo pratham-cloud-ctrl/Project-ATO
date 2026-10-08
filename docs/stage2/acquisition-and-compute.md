@@ -256,8 +256,10 @@ silently part of these raw storage sizes.
 The model/OS allowance is an allocation, not a linked-image measurement. The
 separate network-core RAM is not counted as free application memory. A 256 KiB
 MCU cannot hold this exact layout; reduce the archive window or change the memory
-architecture. Thirty-two streams require 548,992 bytes with the same two-second
-ring and other allocations, exceeding the physical application RAM; reduce the ring to one second,
+architecture. Thirty-two streams require **589,952 bytes** when the larger
+84-byte frame, doubled feature/fast-buffer allocations and unchanged monitor/
+OS/queue allocations are all counted, exceeding the physical application RAM;
+reduce the ring to one second,
 use separately budgeted memory or revise the MCU.
 
 Normal telemetry carries state/features and faults: a proposed 128-byte payload
@@ -269,6 +271,33 @@ leased diagnostic transfers and later upload; do not claim unlimited recording
 from a two-second volatile buffer. Tissue attenuation, antenna/case interaction,
 packet loss, security overhead and receiver placement need their own link budget.
 No external flash is included for free.
+
+### Flash and network memory
+
+The [selected inputs](system-design.json) now allocate all application flash:
+640 KiB firmware, 64 KiB boot/recovery, 64 KiB immutable session expert policy,
+32 KiB configuration/calibration and 8 KiB bounded fault journal. The total is
+**827,392 bytes**, leaving 221,184 bytes (21.09%) of 1 MiB. This is a **single
+application image**. A second resident image, network-update cache or atomic OTA
+update is not included. Flash service/recovery occurs with stimulation disabled;
+actual recovery, interrupted writes and linked images require Stage 4 checks.
+
+The network domain separately reserves 160 KiB firmware and 16 KiB boot/config:
+180,224 of 262,144 bytes (31.25% spare). Its RAM reserves 32 KiB radio state,
+8 KiB DMA, 4 KiB IPC and 4 KiB queues: 49,152 of 65,536 bytes (25% spare).
+These are finite **allocations**, not measured Bluetooth stack usage. The two
+domains do not borrow each other's unused memory. Nordic's separate capacities
+are [manufacturer witnesses](https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/keyfeatures_html5.html).
+
+Output configuration has a third reserved bus, **SPIM1 at 8 MHz**. Up to
+128 bytes for an admission transaction takes 128 microseconds on the wire,
+leaving 122 microseconds of the existing 250-microsecond admission allowance
+for local checks/setup. Pressure scheduling reserves 64 bytes per source event:
+360 events/s uses 2.304% average wire capacity. Pulse edges use local timer/
+gate control, rather than depending on an SPI transfer at each edge. The actual
+DAC/routing protocol and transfer gaps must meet these allowances in Stage 4.
+SPIM0, SPIM1 and SPIM4 are separately reserved; pin mapping and peripheral
+conflicts with other serial modes remain native implementation checks.
 
 ## Computation budget and embedded partition
 

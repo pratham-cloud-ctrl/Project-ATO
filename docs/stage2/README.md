@@ -17,6 +17,8 @@ biological validation. Those are later stages of the [overhaul programme](../ove
 | [Timing and control](timing-and-control.md) | Information age, artifact gaps, scheduling and stale-sensing behavior |
 | [Machine-readable contracts](control-contracts.json) | Eleven versioned signal/estimate/command/monitor/assessment contracts |
 | [Mechanical allocation](mechanical-allocation.md) | Parametric STEP envelopes and nominal fit; no anatomical or hermetic qualification |
+| [Stage 2 exit review](exit-review.md) | Goal alignment, corrected findings, twelve completion criteria and bounded handoff |
+| [Functional port allocation](functional-port-map.csv) | 36 logical functions matched to preliminary CAD port labels; not a pin/net/anatomy map |
 | [Calculated budgets](../../results/stage2/budget-summary.json) | Reproducible numerical results, including failures |
 | [Aggregated design inputs](system-design.json) | Selected system configuration in SI units, tied to audited input dossiers |
 

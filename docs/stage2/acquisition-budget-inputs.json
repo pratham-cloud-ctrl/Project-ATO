@@ -352,7 +352,8 @@
     "source_ids": [
       "S2-E-020",
       "S2-E-021",
-      "S2-E-022"
+      "S2-E-022",
+      "S2-E-037"
     ],
     "proposed_feature_bands_Hz": [
       [
@@ -372,7 +373,8 @@
         300
       ]
     ],
-    "feature_band_status": "One simple causal biquad per feature is an arithmetic witness; exact response/coefficients and information age must be calibrated and tested."
+    "feature_band_status": "One simple causal biquad per feature is an arithmetic witness; exact response/coefficients and information age must be calibrated and tested.",
+    "network_flash_bytes": 262144
   },
   "monitor_peripheral_reservation": {
     "bus": "SPIM4 independent of neural SPI",

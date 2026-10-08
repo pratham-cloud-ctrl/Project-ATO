@@ -31,6 +31,15 @@ Port pitch and coordinate positions are illustrative engineering allocations,
 not an anatomical or manufactured connector design. Leads/contact areas and
 target-specific anatomical routing will be developed with the selected circuit.
 
+The [functional port allocation](functional-port-map.csv) assigns all36 labels to
+recording, reference/bias and stimulation/return roles. This is a planning map,
+not completed nets or an anatomical lead design. The additional
+[read-only native inspection](../../cad/stage2/inspection-checks.json) checks all
+3,088 nominal part pairs, using bounding boxes followed by exact BRep intersections
+where needed. It explicitly excludes72 intentional header/interface reservation
+pairs. Pins and insulators are checked against one another and all other parts.
+The native document is not rewritten by this inspection.
+
 Inspect [the STEP assembly](../../cad/stage2/ATO_stage2_allocation.step),
 [the native FreeCAD assembly](../../cad/stage2/ATO_stage2_allocation.FCStd),
 [the fit/dimension receipt](../../cad/stage2/allocation-checks.json) and
@@ -42,7 +51,12 @@ run the generator using a Python environment with build123d0.13:
 ```powershell
 & 'E:\project workspace assests\CAD\build123d\.venv\Scripts\python.exe' cad/stage2/build_envelope.py
 & 'E:\project workspace assests\CAD\FreeCAD\bin\python.exe' cad/stage2/assemble_freecad.py
+& 'E:\project workspace assests\CAD\FreeCAD\bin\python.exe' scripts/inspect_stage2_cad.py --write-receipt
 ```
+
+The inspection command can also be run alone against the saved CAD and does not
+rewrite either model. Regenerating native/export files requires refreshing their
+hash-bound execution and visual review receipts before claiming a checked revision.
 
 The nominal package does not establish anatomical fit, sealing, long-term
 materials behavior, strain relief, a populated electronics assembly or inductive/

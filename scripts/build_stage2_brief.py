@@ -21,7 +21,7 @@ D=json.loads((ROOT/'docs/stage2/system-design.json').read_text(encoding='utf-8')
 B=json.loads((ROOT/'results/stage2/budget-summary.json').read_text(encoding='utf-8'))
 INK='#15293D'; BLUE='#225B86'; TEAL='#12756D'; AMBER='#AD671C'; RED='#A54242'; GRAY='#627485'
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.spines.top':False,
-    'axes.spines.right':False,'axes.labelcolor':INK,'text.color':INK,'svg.fonttype':'none'})
+    'axes.spines.right':False,'axes.labelcolor':INK,'text.color':INK,'svg.fonttype':'none','svg.hashsalt':'ATO-STAGE2'})
 
 
 def typography(text):
@@ -29,9 +29,22 @@ def typography(text):
     fragments=re.split(r'(<[^>]+>)',text)
     for i in range(0,len(fragments),2):
         s=fragments[i]
-        s=re.sub(r'(?<=\d)(?=(?:MHz|KiB|Mbit|kbit|bit|ksample|µs|µF|µC|µA|mA|mW|mm|ms|Hz|K/W|J/K|K|V|dB|kΩ|°C)\b)',' ',s)
-        s=re.sub(r'\b(chosen|assumed|at|including|needs|gives|two|Base|Only|Three|with|and|per|of|fails|through|only|to|grows|uses|masks|invalid|mask|gaps|plus|ring|ceiling|C)(?=\d)',r'\1 ',s)
+        protected={}
+        def part_number(match):
+            token='ATOPART'+'Z'*(len(protected)+1)+'_END'
+            protected[token]=match.group(0)
+            return token
+        s=re.sub(r'\b(?:RHD\d+|nRF\d+|ADS\d+|LT\d+|SPIM\d+)\b',part_number,s)
+        s=re.sub(r'(?<=[A-Za-z])(?=\d)',' ',s)
+        s=re.sub(r'(?<=\d)(?=[A-Za-zµ°])',' ',s)
+        s=re.sub(r'(?<=\d)(?=(?:MHz|KiB|Mbit|kbit|bit|ksample|µs|µF|µC|µA|mA|mW|mm|ms|s|Hz|K/W|J/K|K|V|A|dB|kΩ|°C)\b)',' ',s)
+        s=re.sub(r'\b(chosen|assumed|at|including|needs|gives|two|Base|Only|Three|with|and|per|of|fails|through|only|to|grows|uses|masks|invalid|mask|gaps|plus|ring|ceiling|C|A|leave|reserves|after|before|in|source)(?=\d)',r'\1 ',s,flags=re.IGNORECASE)
+        s=re.sub(r';(?=\S)','; ',s)
+        s=re.sub(r',(?=[A-Za-z])',', ',s)
+        s=re.sub(r':(?=\S)',': ',s)
+        s=s.replace('raw4k','raw 4k').replace('raw2k','raw 2k')
         s=s.replace('Contego200','Contego 200').replace('etal.','et al.')
+        for token,number in protected.items():s=s.replace(token,number)
         fragments[i]=s
     return ''.join(fragments)
 
@@ -79,7 +92,7 @@ def figures():
     loads=np.linspace(500,2500,120)
     for cap in [.5e-6,2e-6,10e-6]:
         ceiling=np.minimum(np.minimum(.020,36/loads),39/(loads+.0005/cap))
-        axes[0].plot(loads/1000,1000*ceiling,label=f'PairC={cap*1e6:g}µF')
+        axes[0].plot(loads/1000,1000*ceiling,label=f'Pair C = {cap*1e6:g}µF')
     axes[0].set(xlabel='Bulk path resistance (kΩ)',ylabel='500µs current ceiling (mA)',ylim=(8,22))
     axes[0].legend(fontsize=8); axes[0].set_title('40V terminal joint compliance')
     currents=[.0001,.003,.020]; durations=[.00005,.0002,.0003]
@@ -195,13 +208,15 @@ def brief():
         ['Neural SPI / apertures','8MHz;19 slots ×3µs=57µs per250µs scan;45µs aperture span'],
         ['nRF5340 application core','128MHz;43.1986M cycles/s estimated,33.75% including contingency'],
         ['Application RAM','404,992 /524,288 bytes;22.75% spare;2s archive ring192,000 bytes'],
+        ['Application flash','827,392 /1,048,576 bytes;21.09% spare;single firmware image'],
         ['Normal aggregate telemetry','86,528bit/s including30% headroom;160kbit/s chosen service target']], [155,320])
     p('The quiet shared-reference case passes a chosen10dB screening gate. The high-impedance '
       'mismatch case fails it. Typical chip noise/CMRR are not guaranteed bounds. Neural validity '
       'can require local bipolar/reference redesign; an assumed decoder cannot repair missing information.')
     p('The same workload fails a60% CPU budget at64MHz. A2s raw-rate ring needs596,992 bytes '
       'and does not fit. Continuous raw4k recording is1.536Mbit/s and exceeds the1Mbit/s target. '
-      'Peripheral operation, firmware memory, worst-case execution and through-tissue RF remain unverified.',small)
+      'Network flash/RAM leave31.25%/25% spare under separate allocations. SPIM1 reserves128µs '
+      'wire +122µs local work for output admission. Actual images, execution and RF remain unverified.',small)
     page()
 
     h('02 / Causal timing and artifacts')
@@ -211,9 +226,10 @@ def brief():
         ['20ms uniform history midpoint at delivery','21.85ms; actual masks/feature weighting change age'],
         ['Archive FIR added to midpoint age','25.60ms total; archive excluded from fast motor loop'],
         ['Free-running40Hz frame','36.85ms worst reactive bound; fails25ms chosen target']], [240,235])
-    p('Known paced goals can be pre-admitted. Event anchoring must still respect the source minimum '
-      'period, qualified learner response, observation age and output health. It cannot guarantee '
-      'the response to an unseen perturbation.')
+    p('Known paced goals can be pre-admitted. Event anchoring must respect per-profile rate limits '
+      'and physical-source availability. Pressure source0 serves three120Hz profiles at360events/s: '
+      '0.95ms service fits2ms minimum spacing. This allocation does not qualify electrode reset '
+      'or guarantee a response to an unseen perturbation.')
     p('Pressure stimulation leaves only35.2% average usable raw recording in this mask model. '
       'At3ms recovery the mask grows to93.6%; at5ms it covers the frame. Use external pressure '
       'feedback in this mode. A1ms amplifier recovery allocation is not electrode reset or proven '

@@ -86,6 +86,14 @@ and fails the separate 1 Mbit/s target. Raw 2 ksample/s is 768 kbit/s before
 radio overhead and must use a special mode/energy budget. Through-tissue RF
 performance, encryption/retries and antenna geometry are not verified.
 
+Application flash now has a complete single-image allocation: 827,392 of
+1,048,576 bytes, leaving21.09%. Network flash and RAM have separate allocations,
+leaving31.25% and25% respectively; they do not expand application capacity.
+A third8 MHz SPIM1 bus reserves128 bytes/128 µs per maximum admission
+transaction plus122 µs local work inside the existing250 µs allowance.
+The [acquisition note](acquisition-and-compute.md) states the partition and
+service-update limits. Actual images, bus protocols and execution remain Stage4.
+
 ## Timing and recording during stimulation
 
 A revised 0.75 ms policy allowance gives an **11.85 ms** unframed fast processing
@@ -100,6 +108,13 @@ failing the chosen 25 ms reactive target. The design therefore uses known paced
 goals with advance admission, or qualified event-anchored scheduling with source
 minimum-period constraints. It cannot evade output-rate limits by resetting phase
 or infer future body state from a known future task cue.
+
+The150 Hz limit applies per profile. The [source schedule](timing-and-control.md)
+assigns all three pressure profiles to source0 at360 events/s, with2 ms minimum
+cyclic spacing. Its0.7 ms waveform plus0.25 ms zero-current reconfiguration
+fits the declared service interval. Motor sources each reserve0.75 ms per25 ms
+period. Rate limits, physical-source conflicts and electrode/return qualification
+remain separate predicates; amplifier recovery is not permission to reuse a route.
 
 Motor reference blanking is 6.4% with a 100 µs preguard and 1 ms assumed amplifier
 recovery; minimum usable coverage in any 20 ms window is 92%. Pressure-mode

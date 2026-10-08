@@ -198,6 +198,14 @@ feedback and does not guarantee uninterrupted neural decoding. The timing
 companion must test the interval union and longer-recovery cases; blanking is
 not independent noise that can be averaged away.
 
+The integrated [timing contract](timing-and-control.md) includes the100 µs
+preguard, giving64.8% global masking rather than the61.2% unguarded illustration
+above. It also separates the150 Hz **per-profile** ceiling from physical-source
+service. Source0 can serve the three120 Hz profiles sequentially (360 events/s)
+only if the0.95 ms waveform-plus-reconfiguration allocation and independently
+qualified contact/return health fit the2 ms minimum start gap. The250 µs
+reconfiguration allowance includes finite SPI and local admission work.
+
 For symmetric pulses, active electrical duty per profile is d=2tφf. The
 conservative fixed-rail energy allocation is
 

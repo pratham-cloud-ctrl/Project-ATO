@@ -78,6 +78,71 @@ def group_delay(f, fl=0.1, fh=300):
             / (2 * math.pi * fh))
 
 
+def memory_allocation(capacity, allocations, minimum_spare):
+    """Finite byte allocations; unused memory is not an implicit second image."""
+    if (type(capacity) is not int or capacity <= 0
+            or not 0 <= minimum_spare < 1
+            or any(type(v) is not int or v < 0 for v in allocations.values())):
+        raise ValueError('Positive capacity, nonnegative integer bytes and valid spare fraction required')
+    used = sum(allocations.values())
+    return {'capacity_bytes': capacity, 'allocated_bytes': used,
+            'remaining_bytes': capacity-used, 'headroom_fraction': 1-used/capacity,
+            'headroom_gate_pass': used <= capacity*(1-minimum_spare)}
+
+
+def source_schedule(profile, stimulation):
+    """Periodic physical-source availability, distinct from per-profile rate.
+
+    Also inspect the last-to-first interval. Recording recovery is a different
+    mask and does not silently dictate driver rearm or electrode qualification.
+    """
+    if not math.isfinite(profile['frame_hz']) or profile['frame_hz'] <= 0:
+        raise ValueError('Positive finite frame rate required')
+    if not math.isfinite(profile['phase_s']) or profile['phase_s'] < 0:
+        raise ValueError('Nonnegative finite phase duration required')
+    period = 1/profile['frame_hz']
+    offsets, routes = profile['offsets_s'], profile['source_ids_per_event']
+    identities=profile['profile_ids_per_event']
+    if (len(offsets) != profile['events_per_frame'] or len(routes) != len(offsets)
+            or len(identities)!=len(offsets)
+            or any(len(names)!=len(ids) or any(not isinstance(name,str) or not name for name in names)
+                   for names,ids in zip(identities,routes))
+            or any(not 0 <= offset < period for offset in offsets)
+            or any(len(ids) != profile['sources_per_event'] or len(set(ids)) != len(ids)
+                   or any(type(i) is not int or not 0 <= i < stimulation['independent_sources'] for i in ids)
+                   for ids in routes)):
+        raise ValueError('Invalid periodic source/event assignment')
+    occupied = 2*profile['phase_s'] + stimulation['interphase_s']
+    service = occupied + stimulation['source_rearm_and_reconfigure_s']
+    rows = []
+    for source in range(stimulation['independent_sources']):
+        starts = sorted(offset for offset, ids in zip(offsets, routes) if source in ids)
+        gaps = [((starts[(i+1)%len(starts)]-start) % period) if len(starts)>1 else period
+                for i,start in enumerate(starts)]
+        minimum = min(gaps) if gaps else None
+        rows.append({'source_id': source, 'events_per_s': len(starts)/period,
+            'minimum_cyclic_start_gap_s': minimum,
+            'reserved_service_fraction': len(starts)*service/period,
+            'no_service_overlap': minimum is None or minimum+1e-14 >= service})
+    profile_rows=[]
+    for name in sorted({name for names in identities for name in names}):
+        starts=sorted(offset for offset,names in zip(offsets,identities) for item in names if item==name)
+        gaps=[((starts[(i+1)%len(starts)]-start)%period) if len(starts)>1 else period
+              for i,start in enumerate(starts)]
+        profile_rows.append({'profile_id':name,'events_per_s':len(starts)/period,
+            'minimum_cyclic_start_gap_s':min(gaps),
+            'maximum_rate_gate_pass':min(gaps)+1e-14>=1/stimulation['max_rate_per_profile_hz'],
+            'configured_period_gate_pass':min(gaps)+1e-14>=period})
+    return {'id':profile['id'], 'electrical_occupied_s':occupied,
+        'source_service_interval_s':service,
+        'per_profile_rate_gate_pass': all(row['maximum_rate_gate_pass'] for row in profile_rows),
+        'configured_profile_period_gate_pass':all(row['configured_period_gate_pass'] for row in profile_rows),
+        'logical_profiles':profile_rows,
+        'physical_sources':rows,
+        'physical_source_schedule_gate_pass': all(row['no_service_overlap'] for row in rows),
+        'qualification':'Allocated service timing only; actual rearm/route/return/polarization health still required'}
+
+
 def evaluate_profile(profile, design, preguard):
     st, mon, pw = (design[k] for k in ('stimulation', 'monitoring', 'power'))
     current, duration, freq = (profile[k] for k in ('current_A', 'phase_s', 'frame_hz'))
@@ -100,6 +165,9 @@ def evaluate_profile(profile, design, preguard):
     intervals, blanked = periodic_union(1/freq, profile['offsets_s'],
         2*duration + st['interphase_s'] + profile['recovery_s'], preguard)
     gates = {
+        'per_profile_rate':source_schedule(profile,st)['per_profile_rate_gate_pass'],
+        'configured_profile_period':source_schedule(profile,st)['configured_profile_period_gate_pass'],
+        'physical_source_availability':source_schedule(profile,st)['physical_source_schedule_gate_pass'],
         'joint_command_charge': charge <= st['command_charge_ceiling_C'],
         'delivery_charge_with_uncertainty': charge + uncertainty <= st['delivery_charge_ceiling_C'],
         'simple_compliance': terminal_need <= terminal,
@@ -176,6 +244,21 @@ def calculate():
         'monitor_ADC_utilization': monitor_rate/m['adc_max_aggregate_hz'],
         'monitor_SPI_utilization_with_overhead': monitor_rate*m['spi_word_bits']/m['spi_clock_hz']*(1+m['command_overhead_fraction']),
     }
+    flash = {
+        'application_flash':memory_allocation(c['application_flash_bytes'],c['application_flash_allocations_bytes'],c['flash_headroom_minimum_fraction']),
+        'network_flash':memory_allocation(c['network_flash_bytes'],c['network_flash_allocations_bytes'],c['flash_headroom_minimum_fraction']),
+        'network_ram':memory_allocation(c['network_ram_bytes'],c['network_ram_allocations_bytes'],c['ram_headroom_minimum_fraction']),
+        'linked_images_measured':False,
+        'resident_second_application_image_included':False,
+    }
+    bus=d['output_configuration_bus']
+    wire=bus['max_transaction_bytes']*8/bus['spi_clock_hz']
+    pressure_profile=next(p for p in d['profiles'] if p['id']=='pressure_reference')
+    command_bus={'peripheral':bus['peripheral'], 'maximum_transaction_wire_s':wire,
+        'total_admission_allocation_s':wire+bus['nonwire_admission_allowance_s'],
+        'admission_gate_pass':wire+bus['nonwire_admission_allowance_s']<=bus['admission_allowance_s']+1e-14,
+        'pressure_mean_wire_utilization':bus['max_bytes_per_source_event']*8*pressure_profile['events_per_frame']*pressure_profile['sources_per_event']*pressure_profile['frame_hz']/bus['spi_clock_hz'],
+        'actual_component_command_protocol_qualified':False}
     noise = []
     for case in a['signal_model_inputs']['noise_cases']:
         rr, rf = case['recording_effective_resistance_ohm'], case['reference_effective_resistance_ohm']
@@ -281,7 +364,10 @@ def calculate():
             'raw4k_framed_bps':fs*48*8,'raw4k_1M_target_pass':fs*48*8<=telemetry['raw_recording_payload_capacity_bps'],
             'raw2k_framed_bps':2000*48*8,
             'targets_verified_through_tissue':False},
-        'profiles':profiles,'compliance_sweep':compliance,'pressure_blanking_sweep':blanking,
+        'profiles':profiles,'flash_and_network_memory':flash,
+        'output_configuration_bus':command_bus,
+        'physical_source_schedules':[source_schedule(p,d['stimulation']) for p in d['profiles']],
+        'compliance_sweep':compliance,'pressure_blanking_sweep':blanking,
         'reactive_frame_wait':frame_cases, 'fast_chain_ms':chain*1000,
         'uniform20ms_history_representative_age_ms':(chain+.010)*1000,
         'with_archive_representative_age_ms':(chain+.010+.00375)*1000,
