@@ -2,6 +2,13 @@
 
 # Project ATO
 
+> **Full SCCI system overhaul in progress.** The original release below is a
+> digital subsystem reference. The complete proposed implant/controller architecture
+> is being redesigned on `overhaul/full-scci-system`. See the
+> [current status](CURRENT_STATUS.md) and [staged overhaul plan](docs/overhaul-plan.md).
+> Video and website work are parked while the mechanism, electronics, CAD and paper
+> are developed. Existing results and verification receipts describe release 1.0.
+
 ### A digital engineering study of invasive spinal interfaces
 
 **Research · synthetic experiments · control logic · electronics · parametric CAD**
