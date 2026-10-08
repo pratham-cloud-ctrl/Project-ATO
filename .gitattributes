@@ -15,5 +15,6 @@
 *.FCStd binary
 *.mp4 binary
 *.zip binary
+*.gz binary
 # Generated geometry is reviewed through its parametric source, drawings and CAD.
 cad/stage2/*.step binary

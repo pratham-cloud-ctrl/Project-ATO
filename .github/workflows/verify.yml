@@ -9,11 +9,15 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
-      - run: python -m pip install -r requirements.txt
+      - run: python -m pip install -r requirements-lock.txt
       - run: python scripts/verify_manifest.py
       - run: python scripts/verify_stage1_specification.py
       - run: python scripts/run_architecture_budgets.py --check
       - run: python scripts/verify_stage2_architecture.py
+      - run: python scripts/run_stage3_studies.py --check --jobs 2
+      - run: python scripts/stage3_electrical_sweep.py --check results/stage3/electrical-sweep.json
+      - run: python scripts/stage3_pressure_convergence_probe.py --check results/stage3/pressure-convergence-probe.json
+      - run: python scripts/verify_stage3_foundation.py
       - run: python scripts/run_studies.py
       - run: python scripts/build_firmware.py
       - run: python scripts/run_adapter.py

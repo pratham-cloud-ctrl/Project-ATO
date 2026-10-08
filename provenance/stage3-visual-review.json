@@ -1,0 +1,40 @@
+{
+  "schema": "ato.stage3.figure-review.v1",
+  "date": "2026-10-08",
+  "method": "Rendered PNGs inspected in Codex; companion SVGs use the same Matplotlib figures.",
+  "scope": "Visual legibility and displayed scientific scope, not experimental efficacy or numerical validation.",
+  "findings": [
+    "All three figures have readable axes, titles and keys, with no material overlap or clipped content.",
+    "Electrical figure separates measured charge, assumed lumped polarization and residual recovery; the voltage gate is labeled chosen.",
+    "Pressure figure preserves failed authority, recovery overshoot and paired four-seed ranges.",
+    "Motor figure is prominently CONDITIONAL with UNQUALIFIED assumed delivery, and separates practice from all-pulses-OFF assessment.",
+    "Report explains separate motor panel color scales and idealized post-washout state reset.",
+    "Insignificant SVG end-of-line spaces normalized; all PNG bytes remain identical to the inspected renders."
+  ],
+  "files": {
+    "docs/stage3/figures/electrical-delivery.png": {
+      "sha256": "a2f3477c15d9d2bc640cab89106850229435c4969263f448b97f14d6cf496190",
+      "hash_scope": "exact PNG bytes"
+    },
+    "docs/stage3/figures/electrical-delivery.svg": {
+      "sha256": "93978c8dc24ec95fd97759e2fa892ebc1901354230b92884e5f2cad4d8e725f4",
+      "hash_scope": "UTF-8 normalized LF text"
+    },
+    "docs/stage3/figures/pressure-comparisons.png": {
+      "sha256": "b3564b8353979ad549542fcd5ceefcbc92c0fc123bf166ff2b6613de970c317a",
+      "hash_scope": "exact PNG bytes"
+    },
+    "docs/stage3/figures/pressure-comparisons.svg": {
+      "sha256": "fb8ea2cf0c86af9120795bb6e15c2a27b86ff1feea0548e95174a76cdd198273",
+      "hash_scope": "UTF-8 normalized LF text"
+    },
+    "docs/stage3/figures/conditional-motor-comparisons.png": {
+      "sha256": "20de7f47dd69d63fcdb6a5e95f10536fc2dad0f8af390cb7a99687fea9397f49",
+      "hash_scope": "exact PNG bytes"
+    },
+    "docs/stage3/figures/conditional-motor-comparisons.svg": {
+      "sha256": "d4db23b629dfff1ba4716714f8f976fdea12b9547f0ad43a824f0575deb4ef11",
+      "hash_scope": "UTF-8 normalized LF text"
+    }
+  }
+}

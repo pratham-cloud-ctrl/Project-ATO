@@ -34,7 +34,35 @@ That [exit review](docs/stage2/exit-review.md) corrects the 32-stream RAM prose,
 separates profile rates from physical-source service, adds finite flash/network
 memory and output-configuration bus allocations, and reconciles all36 logical
 ports with the CAD. Native inspection now covers all3,088 nominal part pairs
-apart from72 explicit header/interface reservation pairs. Stage 3 has not started.
+apart from72 explicit header/interface reservation pairs. Stage3 is now in progress.
+
+The [Stage3 foundation](docs/stage3/README.md) implements synthetic16-stream spinal
+contact acquisition, causal decoding, separate expert data, observed learner
+response identification and stimulation-off retention/transfer. The reduced
+electrical model resolves phase edges and compliance analytically, observes
+delivered charge with an independent noisy ADC and latches post-fault admission.
+Independent ngspice and numericalODE comparisons check its linear equations.
+The external-SBP model includes identified pressor authority,13 response/sensor
+families and finite stop/hold/ramp fallbacks.
+
+The saved foundation batch contains 12 motor configuration/seed studies (336
+plasticity-family/comparison rows and 18 separate negative-control witnesses),
+156 pressure runs and eight additional fallback runs. Three scientific SVG/PNG
+figure pairs and the results interpretation are generated from these saved
+outputs. The current 67-test suite passes; independent electrical checks retain
+150 ODE cases, 493 eligible ADC cases and seven explicit exclusions.
+Six separately scoped pressure refinement probes preserve the same actual
+sensor-noise draws and fixed observation schedules. Their small differences
+support a limited diagnostic; the full convergence matrix remains open in the
+[numerical plan](docs/stage3/numerical-convergence-plan.md).
+
+Independent audits corrected source backdating, training leakage, hidden threshold
+access, recursive filter validity, uncertainty propagation and fault-dose erasure.
+The selected nominal reactive motor path exceeds its100ms prediction horizon;
+the conservative delivery bound also fails the current local authority gate.
+Actual integrated abstention is preserved. A separately labeled fast-response
+assumed-delivery branch explores the learning mechanism conditionally; it is not
+an implemented precision-monitor or biological efficacy result.
 
 The [overhaul plan](docs/overhaul-plan.md) defines later stages and completion criteria.
 Catalog component witnesses and provisional envelopes are selected for budget
@@ -44,18 +72,26 @@ Working branch: `overhaul/full-scci-system`.
 
 ## Next bounded work package
 
-Stage 3: implement the computational mechanism for paced multidirectional foot
-placement and external systolic-pressure feedback. Generate contact observations
-through a declared spinal-population/electrode model; the controller must not read
-hidden states or true response coefficients. Identify learner responses from
-allowed observations, connect output plans to delivered-current/body models,
-and assess neural/external and expert/learner comparisons fairly. Include null,
-harmful, stale-sensor, artifact, weak-authority and unreachable-target cases.
+Continue Stage3 from the implemented models and
+[results interpretation](docs/stage3/results-and-interpretation.md). Resolve an
+observed-data motor policy/calibration domain that earns bounded authority:
+consider per-profile identification, known-cue prediction and independently
+qualified delivery precision. Complete capacity-matched external-history,
+assisted-context decoder validation, motor numerical convergence and broader
+expert/source/structural sensitivity studies. Do not alter biological parameters
+or uncertainty bounds silently to manufacture a positive result.
 
-S1-V-204 remains partially specified: functional reachability needs identified
-uncertain response bounds in Stage 3. Do not invent positive learning coupling
-or pressor gain to force a desired outcome. Stage 2's low-current profiles are
-electrical reference cases, not established biologically effective settings.
+S1-V-204 now has conditional observed pressure identification and modeled
+authority failures; real biological reachability remains unestablished. Stage2's
+low-current profiles remain electrical references, not proven effective doses.
+Stage3 is not complete and Stage4 has not begun. The new
+[progress record](docs/stage3/verification-progress.csv) identifies remaining
+criteria individually; the [tool audit](docs/stage3/toolchain-selection.md)
+records fresh installed-tool checks and official free/student alternatives.
+The [motor precision analysis](docs/stage3/motor-precision-requirements.md)
+quantifies the current uncertainty and exposes shared ADC/bus ceilings. Its
+prospective sampling/guard alternatives are requirements for a later revision,
+not changes to the frozen design or results.
 
 Existing lower-limb quadrature and pressure models are candidates/supporting
 experiments. The selected new reference tasks above come from the mechanism

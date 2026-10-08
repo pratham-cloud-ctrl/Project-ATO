@@ -1,0 +1,86 @@
+# Stage 3: computational mechanism studies
+
+**In progress, 8 October 2026.** This first implementation connects synthetic
+spinal contact observations, causal interpretation, learner calibration, expert
+representations, pulse delivery and modeled task response. Both motor learning
+and selected physiological feedback remain central to Project ATO.
+
+This package is separate from the historical release1.0 models. It does not report
+human recordings, human learning, a populated implant circuit or physical CAD fit.
+The [Stage2 architecture](../stage2/README.md) remains the design baseline. Native
+complete electronics and populated engineering CAD follow the mechanism work.
+
+| Read or reproduce | Purpose |
+|---|---|
+| [Mathematical specification](mathematical-specification.md) | Causal information partitions, units, electrical equations and observation bounds |
+| [Motor mechanism](motor-model.md) | Contact acquisition, expert/learner comparisons, active practice, OFF retention and transfer |
+| [Pressure mechanism](pressure-model.md) | External SBP, identified pressor authority, support timing, faults and overshoot |
+| [Results and interpretation](results-and-interpretation.md) | Paired seed results; integrated failures and separately labeled conditional mechanism |
+| [Electrical review](electrical-review.md) / [motor review](motor-review.md) | Independent findings, corrections and evidence boundaries |
+| [Progress and remaining work](verification-progress.csv) | Partial coverage rather than a claim of complete Stage3 verification |
+| [Numerical convergence plan](numerical-convergence-plan.md) | Separate body, acquisition and decision clocks; limited pressure diagnostic and remaining refinement |
+| [Motor precision requirements](motor-precision-requirements.md) | Monitor error budget, ADC/bus limits and conditional requirements for the next policy and circuit revision |
+| [Tool selection](toolchain-selection.md) | Fresh laptop inventory and official free/student tool choices |
+| [Parameter provenance](parameter-provenance.csv) | Newly chosen electrical assumptions; application parameters are recorded in every study configuration |
+| [Raw results](../../results/stage3/) | Full compressed JSON traces, readable summaries and separate electrical witnesses |
+| [Verification receipt](../../provenance/stage3-verification.json) / [local test run](../../provenance/stage3-test-run.json) | Artifact identities, scope counts and the observed 67-test result |
+
+## Reproduction
+
+Use Python3.12 and the pinned direct dependencies in `requirements-lock.txt`.
+The tested local runtime is3.12.14; numerical results are checked with stated
+tolerances, while Git provenance checks exact committed bytes.
+
+```text
+python -m pip install -r requirements-lock.txt
+python scripts/run_stage3_studies.py
+python scripts/run_stage3_studies.py --check
+python scripts/stage3_electrical_sweep.py --check results/stage3/electrical-sweep.json
+python scripts/stage3_pressure_convergence_probe.py --check results/stage3/pressure-convergence-probe.json
+python scripts/build_stage3_figures.py
+python scripts/verify_stage3_foundation.py
+python -m unittest discover -s tests -v
+```
+
+The runner supports `--module electrical`, `pressure`, `fallbacks` or `motor`.
+`--jobs 2` runs independent motor configuration/seed studies in two worker
+processes; the allowed range is1–4 and the default is1. Each worker creates a
+fresh electrical adapter, and saved branch/seed ordering stays fixed. Other
+modules remain serial. The CI reproduction uses two workers.
+It keeps all seed-level summaries and raw application traces in JSON gzip files.
+These can be read with Python's standard `gzip` and `json` modules; no proprietary
+data format is required. It resolves electrical edges analytically, rather than
+pretending the 5ms body step resolves microsecond phases.
+
+For direct unit-test execution, set `PYTHONPATH=src` (PowerShell:
+`$env:PYTHONPATH='src'`). The reproduction scripts configure their own source path.
+
+The independent circuit check uses the already installed ngspice shared library:
+
+```text
+python scripts/stage3_ngspice_check.py --require-library
+```
+
+Supply `--library` or `NGSPICE_LIBRARY` on another host. Absence of that library
+is an explicit skip, never a passing circuit simulation. The committed local
+receipt records actual engine46 runs, their assumptions and refinement checks.
+
+## Interpret the branches correctly
+
+The nominal motor branch uses the characterized electrical adapter and the chosen
+nominal biological response. A separately declared fast-response sensitivity
+keeps the same electrical evidence. Neither branch is tuned to produce assistance.
+The `conditional_fast_response_assumed_delivery` branch instead uses an explicitly
+unqualified nominal delivery assumption and fast biological response to examine
+the learning mechanism **if** a future system can earn those capabilities. Its
+results must not be relabeled as integrated electrical validation.
+
+The pressure branch uses external measurements because dense stimulation does not
+qualify continuous neural recording. It uses a characterized, averaged pulse-dose
+reduction; live continuous routing, actual analog guard behavior and chemistry are
+later evidence. Improved modeled disturbance response can coexist with recovery
+overshoot or loss of support when feedback stops.
+
+Stage3 is complete only when its outstanding mechanism/verification criteria are
+resolved with concrete evidence. These first studies make the requirements and
+failure mechanisms inspectable; they do not finish the full implant project.

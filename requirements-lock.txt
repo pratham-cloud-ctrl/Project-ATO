@@ -1,0 +1,8 @@
+# Direct reproduction dependencies verified on 8 October 2026, Python3.12.14.
+# CAD application environments remain independent.
+numpy==2.3.5
+scipy==1.18.1
+matplotlib==3.11.2
+reportlab==4.4.9
+Pillow==12.3.0
+pypdf==6.10.0

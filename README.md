@@ -7,7 +7,7 @@ expert-informed motor practice that improves retained unassisted performance,
 and target-specific physiological automation. AstroSam's [Mind-Link](https://github.com/sam-astro/Mind-link)
 inspires the progression from future vision to inspectable electronics and physical design.
 
-> **Stages 1 and 2 are ready for review.** The mechanism now has numerical
+> **Stages1 and2 are ready for review; Stage3 is in progress.** The mechanism has numerical
 > acquisition, compute, stimulation, timing, energy and package allocations,
 > including rejected cases. The full proposed implant remains in development on
 > `overhaul/full-scci-system`. Complete circuits, embedded implementation and
@@ -17,6 +17,9 @@ inspires the progression from future vision to inspectable electronics and physi
 
 | Start here | What to review |
 |---|---|
+| [Stage3 computational foundation](docs/stage3/README.md) | Causal contact observations, expert/learner mechanism, measured delivery and external-pressure feedback |
+| [Stage3 results and remaining work](docs/stage3/results-and-interpretation.md) | Honest integrated abstention, conditional learning studies, pressure benefits and failures |
+| [Free/student tool selection and inventory](docs/stage3/toolchain-selection.md) | Fresh CAD/EDA/numerical checks and justified optional tools |
 | [Illustrated Stage 2 brief](output/pdf/ATO_stage2_architecture_budgets.pdf) | Eight-page quantitative architecture with scientific figures and physical allocations |
 | [Stage 2 technical dossier](docs/stage2/README.md) | Selected design, source audits, control contracts and reproducible budgets |
 | [Stage 2 completion review](docs/stage2/exit-review.md) | Twelve exit criteria, alignment with the main concept and explicit handoff limits |

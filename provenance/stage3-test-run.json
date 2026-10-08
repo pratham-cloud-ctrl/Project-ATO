@@ -1,0 +1,31 @@
+{
+  "schema": "ato.stage3.unit-test-run.v1",
+  "date": "2026-10-08",
+  "scope": "Full project unit suite, including earlier subsystem and architecture tests; no human or physical-device qualification.",
+  "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+  "observed_result": {
+    "tests_run": 67,
+    "failures": 0,
+    "errors": 0,
+    "status": "OK",
+    "elapsed_s": 21.091
+  },
+  "stage3_test_counts": {
+    "electrical": 12,
+    "motor_acquisition": 14,
+    "pressure": 13
+  },
+  "input_normalized_hashes": {
+    "src/ato/stage3/__init__.py": "52e87fb1296e8c7d664bf054b023446baebcdfaad4152776ce26e2a83962c4ec",
+    "src/ato/stage3/acquisition.py": "836fadf50cf28d6efd4479828154805491993accad008cca213aba381c6f2d42",
+    "src/ato/stage3/electrical.py": "8a7a20702be3f3f5893e1f859f675347fa35db01dadb20ab7e64635ca8913ff0",
+    "src/ato/stage3/motor.py": "78e383028745e29273c4ff8a556ebf3e9a6749fd4763d97a3fee21fcc0a73d37",
+    "src/ato/stage3/pressure.py": "611b0bf77eb6286b9ed678410f50db0033805acf5aa518f6dddcfbc2eb79490c"
+  },
+  "stage3_test_normalized_hashes": {
+    "tests/test_stage3_electrical.py": "0e0a65a095722ae129822b902ae01e1b90235a655d4447b993d168ed9a3f3b7f",
+    "tests/test_stage3_motor.py": "50cf3bc14b897d61baef62d8610e9f4ceeb9cd4ca8cf09f7f13c908ae4a2ed34",
+    "tests/test_stage3_pressure.py": "5a12e378c6997c0cc6f293d4abc8f8c7f7c28aa8765b12304ac8bf53cf462485"
+  },
+  "evidence": "Observed completed local unittest output in this continuation; CI reruns the suite independently."
+}

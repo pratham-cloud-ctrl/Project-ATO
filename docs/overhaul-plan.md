@@ -2,7 +2,8 @@
 
 Planning baseline: 8 October 2026. Status: Stage 1 mechanism and requirements
 [dossier](stage1/README.md) and Stage 2 quantitative architecture completed for
-review. Stage 3 has not started. This document plans a new
+review. Stage3's [computational foundation](stage3/README.md) is implemented and
+in review; its remaining mechanism criteria are open. This document plans a new
 design; it does not claim that the full system has been implemented.
 
 ## The intended deliverable
@@ -60,8 +61,10 @@ reopen, rather than constraints on the new architecture.
 [Stage 2](stage2/README.md) supplies quantitative architecture, contracts and
 preliminary native geometry. Its [progress table](stage2/verification-progress.csv)
 keeps identified functional authority open for Stage 3 rather than declaring
-biological reachability from electrical arithmetic. Stage 3 is the next bounded
-package; complete circuits, populated CAD and integrated manuscript remain later.
+biological reachability from electrical arithmetic. Stage3 now has implemented
+reduced full-loop studies and independently reviewed failures; its
+[progress record](stage3/verification-progress.csv) remains partial. Complete
+circuits, populated CAD and integrated manuscript remain later.
 
 ## Stage 1: mechanism, scope and requirements
 

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "inspection_date": "2026-10-08",
+  "asset_root": "E:\\project workspace assests",
+  "scope": "Fresh executable/package inventory and bounded read-only or temporary-output smoke tests; no application replacements or large optional installs.",
+  "hardware": {
+    "manufacturer": "LENOVO",
+    "model": "82XV",
+    "cpu": "13th Gen Intel(R) Core(TM) i7-13620H",
+    "physical_cpu_cores": 10,
+    "logical_processors": 16,
+    "physical_memory_bytes": 16890519552,
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "gpu_memory_mib_nvidia_smi": 6141,
+    "gpu_driver": "616.92",
+    "gpu_memory_note": "nvidia-smi used; Win32_VideoController AdapterRAM is a truncated field.",
+    "free_space_bytes": {"C": 307566448640, "D": 90132205568, "E": 595357962240}
+  },
+  "project_python": {
+    "path": "C:\\Users\\Pratham\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "version": "3.12.14",
+    "packages": {"numpy": "2.3.5", "scipy": "1.18.1", "sympy": null, "matplotlib": "3.11.2", "reportlab": "4.4.9", "pypdf": "6.10.0", "Pillow": "12.3.0", "pytest": null, "brian2": null, "neuron": null},
+    "change_during_stage3": "SciPy absent initially, installed by the Stage 3 implementation and version rechecked on the inspection date.",
+    "null_meaning": "Not installed in this specific Python environment at inspection; this is not a machine-wide package search."
+  },
+  "cad_python": {
+    "path": "E:\\project workspace assests\\CAD\\build123d\\.venv\\Scripts\\python.exe",
+    "version": "3.13.15",
+    "packages": {"build123d": "0.13.0", "numpy": "2.5.3", "scipy": "1.18.1", "sympy": "1.14.0", "ocp-vscode": "4.1.0", "cadquery-ocp-novtk": "8.0.1.0.0"},
+    "smoke_tests": [
+      {"input": "build123d.Box(10,10,10)", "valid": true, "volume_mm3": 999.9999999999998, "passed": true},
+      {"input": "scipy.integrate.solve_ivp: dy/dt=-y, y(0)=1, t=[0,1], rtol=1e-10, atol=1e-12", "endpoint": 0.36787944117920773, "expected": 0.36787944117144233, "solver_success": true, "passed": true},
+      {"input": "SymPy differentiation of x*x", "output": "2*x", "passed": true}
+    ]
+  },
+  "tools": [
+    {"name": "FreeCAD", "version": "1.1.4", "path": "E:\\project workspace assests\\CAD\\FreeCAD\\bin\\FreeCAD.exe", "status": "geometry_smoke_passed", "test": {"input": "Part.makeBox(10,10,10) through embedded Python", "valid": true, "volume_mm3": 999.9999999999998}, "license_source": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/main/LICENSE"},
+    {"name": "KiCad", "version": "10.0.6", "path": "E:\\project workspace assests\\EDA\\KiCAD\\bin\\kicad-cli.exe", "status": "version_and_exports_passed", "tests": [{"input": "supplied demos/pic_programmer/pic_programmer.kicad_pcb; pcb export step --board-only", "output_size_bytes": 402366, "passed": true}, {"input": "supplied demos/video/video.kicad_sch; sch export pdf", "output_size_bytes": 1445315, "passed": true}], "license_source": "https://www.kicad.org/about/licenses/"},
+    {"name": "ngspice", "version": "46", "path": "E:\\project workspace assests\\EDA\\KiCAD\\bin\\ngspice.dll", "status": "headless_passive_transient_passed", "test": {"input_netlist": ["ATO inventory RC smoke", "V1 in 0 PWL(0 0 1n 1)", "R1 in out 1k", "C1 out 0 1u", ".tran 1u 1m", ".end"], "samples": 1022, "final_time_s": 0.001, "final_voltage_v": 0.6321204055522058, "analytic_voltage_v": 0.6321205588285577, "absolute_error_v": 1.5327635183304267e-7, "acceptance_absolute_error_v": 0.0001, "passed": true}, "remaining": "spinit warning; optional vendor/XSPICE model-loading configuration untested; no standalone executable found under asset root", "license_source": "https://raw.githubusercontent.com/ngspice/ngspice/master/COPYING", "api_source": "https://ngspice.sourceforge.io/shared.html"},
+    {"name": "Gmsh", "version": "4.15.0", "path": "E:\\project workspace assests\\CAD\\FreeCAD\\bin\\gmsh.exe", "status": "volume_mesh_smoke_passed", "test": {"input": "OpenCASCADE unit cube; characteristic length min/max 0.4; -3 -format msh2", "nodes": 81, "tetrahedra": 184, "minimum_tetrahedron_volume": 0.002540206944868424, "summed_volume": 1.0000000000000004, "expected_volume": 1.0, "passed": true}, "remaining": "Mesh test is not a field, thermal or physiological solution.", "license_source": "https://gmsh.info/"},
+    {"name": "Blender", "version": "5.2.2 LTS", "path": "E:\\project workspace assests\\blender\\blender.exe", "status": "background_launch_passed", "test": {"input": "--background --factory-startup; access Cube mesh", "cube_present": true, "cube_vertices": 8, "passed": true}, "license_source": "https://www.blender.org/about/license/"},
+    {"name": "OpenSCAD", "version": "2021.01", "path": "E:\\project workspace assests\\CAD\\OpenSCAD\\openscad-2021.01\\openscad.exe", "status": "STL_export_smoke_passed", "test": {"input": "cube([2,2,2]);", "mesh_size_bytes": 1535, "passed": true}, "license_source": "https://raw.githubusercontent.com/openscad/openscad/master/COPYING"},
+    {"name": "ImplicitCAD", "source_package_version": "0.4.1.0", "path": "E:\\project workspace assests\\CAD\\Implicit CAD\\bin\\extopenscad.exe", "version_method": "Source implicit.cabal; executable has no --version option", "status": "STL_export_smoke_passed", "test": {"input": "cube([2,2,2]); -r 0.5 -f asciistl", "mesh_size_bytes": 48724, "passed": true}, "remaining": "No fresh topology qualification", "license_source": "https://raw.githubusercontent.com/Haskell-Things/ImplicitCAD/master/implicit.cabal"},
+    {"name": "Ansys Student", "product_version": "26.1", "path": "E:\\project workspace assests\\CAD\\Ansys\\Ansys student\\ANSYS Inc\\ANSYS Student\\v261\\Framework\\bin\\Win64\\RunWB2.exe", "status": "executable_presence_and_metadata_only_fresh", "historical_check": "Prior Workbench startup/static structural template test is described in CAD/START HERE.txt; not repeated here.", "still_missing_original_media": ["python_site_syscplg/WINX64.7z", "tp/cudss/WINX64.7z"], "local_solver_license_verified_today": false, "official_student_terms": {"use": "educational self-learning, instruction, student projects and demonstrations", "2026_R1_website_license_date": "2027-03-31", "structural_limit_as_published": "128K nodes/elements", "fluid_limit_as_published": "1 Million cells/nodes", "hpc_cpu_cores": 4, "geometry_export": false}, "license_source": "https://ansys.synopsys.com/academic/students/ansys-student"},
+    {"name": "GitHub CLI", "version": "2.102.0", "path": "E:\\project workspace assests\\GitHub CLI\\bin\\gh.exe", "status": "version_and_auth_identity_passed", "active_account": "pratham-cloud-ctrl", "token_recorded": false, "license_source": "https://raw.githubusercontent.com/cli/cli/trunk/LICENSE"},
+    {"name": "Git", "version": "2.53.0.windows.3", "path": "C:\\Users\\Pratham\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\git\\cmd\\git.exe", "status": "version_passed"},
+    {"name": "VS Code", "product_version": "1.139.1", "path": "E:\\project workspace assests\\CAD\\VS code\\Code.exe", "status": "executable_metadata_only", "license_source": "https://code.visualstudio.com/license"},
+    {"name": "GitHub Desktop", "product_version": "3.6.6", "path": "C:\\Users\\Pratham\\AppData\\Local\\GitHubDesktop\\GitHubDesktop.exe", "status": "executable_metadata_only"},
+    {"name": "Zotero", "product_version": "10.0.5", "path": "E:\\project workspace assests\\research paper assistance\\Zotero\\zotero.exe", "status": "executable_metadata_only", "remaining": "Library sync and GUI import not retested", "license_source": "https://www.zotero.org/support/licensing"}
+  ],
+  "toolkit_shortcuts": {"directory": "E:\\project workspace assests\\CAD\\00 - Toolkit", "count": 15, "all_targets_exist": true, "interactive_launches_tested": false},
+  "optional_tools": [
+    {"name": "Brian 2", "status": "not present in checked Python environments; no asset executable found", "license": "CeCILL 2.1", "source": "https://github.com/brian-team/brian2/blob/master/LICENSE", "condition": "Defined spiking spinal-network hypothesis"},
+    {"name": "NEURON", "status": "not present in checked Python environments; no asset executable found", "license": "BSD-compatible three-clause", "source": "https://raw.githubusercontent.com/neuronsimulator/nrn/master/Copyright", "installation_source": "https://www.neuronsimulator.org/en/latest/install/install_instructions.html", "condition": "Defined cable/axon recruitment model; check selected Windows installer Python compatibility or isolated WSL route"},
+    {"name": "Elmer", "status": "FreeCAD adapter present; no solver executable found under asset root", "license": "Component-specific GPL/LGPL", "source": "https://raw.githubusercontent.com/ElmerCSC/elmerfem/devel/license_texts/ElmerLicensePolicy.md", "condition": "Specified field or thermal solve with mesh/convergence checks"},
+    {"name": "OpenSim", "status": "no asset executable found", "license": "Apache 2.0 core; contributed models need separate license review", "source": "https://raw.githubusercontent.com/opensim-org/opensim-core/main/LICENSE.txt", "condition": "Specified musculoskeletal movement experiment"},
+    {"name": "Zephyr / Nordic nRF Connect SDK", "status": "no west/Arm compiler/SDK executable found under asset root", "license": "Zephyr Apache 2.0; SDK component terms vary and Nordic five-clause terms require Nordic IC use", "source": "https://raw.githubusercontent.com/nrfconnect/sdk-nrf/main/LICENSE", "zephyr_license_source": "https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/main/LICENSE", "condition": "Actual nRF5340 target builds and binary resource checks in later electronics/firmware work", "host_simulation_boundary": "Zephyr native_sim makes a Linux executable and does not emulate the nRF5340 MCU", "host_simulation_source": "https://docs.zephyrproject.org/latest/boards/native/native_sim/doc/index.html"}
+  ],
+  "numerical_addition_completed": "SciPy 1.18.1 installed in the separate project environment by the Stage 3 implementation; no new CAD/EDA suite or student-access purchase required to start.",
+  "claims_boundary": "Tool availability and numerical smoke tests do not establish implant feasibility, biological efficacy, chronic safety or finished electronics/CAD."
+}
