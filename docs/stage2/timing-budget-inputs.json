@@ -1,0 +1,3151 @@
+{
+  "schema_version": "ato.stage2.timing-budget.v1",
+  "document_id": "S2-TIME-001",
+  "generated_on": "2026-10-08",
+  "evidence_type": "analytical design proposal and periodic interval-union calculation",
+  "no_new_trials_or_benchmarks": true,
+  "scope": "Digital reference only; biological performance, physical timing and clinical sensing are unvalidated.",
+  "references": {
+    "stage1_interfaces": "../stage1/architecture-and-interfaces.md#5-interface-contracts",
+    "primary_bp": {
+      "source_id": "S1-REF-012",
+      "url": "https://www.nature.com/articles/s41591-025-03614-w",
+      "verified_parameters": [
+        "120 Hz frame",
+        "300 us pulse-width setting",
+        "three traveling-wave configurations at 0/2/4 ms",
+        "external brachial pressure waveform200Hz",
+        "SBP/DBP/MAP extraction1Hz",
+        "new-IPG command updates as low as25ms, not a complete closed-loop latency"
+      ],
+      "interpretation_caveat": "Biphasic 300 us per-phase interpretation and 100 us interphase gap are ATO modeling assumptions unless separately established from the published waveform; same numerical pulse width does not prove waveform equivalence. Biological equivalence of an aligned alternative is unestablished.",
+      "fulltext_xml": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12443590/fullTextXML",
+      "method_sections": [
+        "Electrical spinal cord stimulation",
+        "Hemodynamic monitoring",
+        "Real-time closed-loop control system"
+      ]
+    }
+  },
+  "parameters": {
+    "motor_event_spacing": {
+      "value": 0.5,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Paced multi-step foot-placement task chosen by Stage 2; multiple axes/contact coordination, not sinusoidal phase alone."
+    },
+    "motor_event_error_target": {
+      "value": 0.025,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Illustrative task-event scheduling tolerance; not published biological timing tolerance."
+    },
+    "sampled_streams": {
+      "value": 16,
+      "unit": "streams",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Architecture reference; sampled streams are not physical contact count."
+    },
+    "independent_stim_sources": {
+      "value": 2,
+      "unit": "sources",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Selected two-driver architecture; four-driver expansion requires fresh electrical, timing, monitoring and power budgets."
+    },
+    "maximum_concurrent_sources": {
+      "value": 2,
+      "unit": "sources",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Aligned same-frame starts only with independent monitored return paths and qualified cross-coupling."
+    },
+    "raw_sample_rate_per_stream": {
+      "value": 4000,
+      "unit": "sample/s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Electronics acquisition reference; fast causal path uses undecimated samples."
+    },
+    "raw_aggregate_sample_rate": {
+      "value": 64000,
+      "unit": "sample/s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "16 * 4000; excludes separate delivery-monitor conversions."
+    },
+    "sample_frame_interval": {
+      "value": 0.00025,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "1/4000."
+    },
+    "acquisition_command_slot": {
+      "value": 3e-06,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Proposed RHD-style command-slot allocation."
+    },
+    "acquisition_commands_per_frame": {
+      "value": 19,
+      "unit": "commands",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "16 conversions plus pipeline/housekeeping positions; proposed electronics sequence."
+    },
+    "acquisition_burst_time": {
+      "value": 5.7e-05,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "19 * 3 us; inside a 250 us frame, not added again to every aperture wait."
+    },
+    "maximum_channel_aperture_span": {
+      "value": 4.5e-05,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "15 * 3 us. Channels carry individual aperture timestamps."
+    },
+    "archived_sample_rate_per_stream": {
+      "value": 2000,
+      "unit": "sample/s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Decimated archive/visualization stream; not interchangeable with fast path."
+    },
+    "archive_decimator_taps": {
+      "value": 31,
+      "unit": "taps",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Causal odd-length FIR at 4000 sample/s; filter coefficients and alias attenuation still require design."
+    },
+    "archive_decimator_group_delay": {
+      "value": 0.00375,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "(31-1)/(2*4000); not hidden by relabeling the output timestamps."
+    },
+    "core_clock_tick": {
+      "value": 1e-06,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen sequencer resolution; not oscillator accuracy."
+    },
+    "core_clock_frequency_error": {
+      "value": 20,
+      "unit": "ppm",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Unverified reference bound."
+    },
+    "hub_clock_frequency_error": {
+      "value": 20,
+      "unit": "ppm",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Unverified reference bound."
+    },
+    "clock_sync_max_interval": {
+      "value": 5,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "40 ppm worst relative drift over5s=.2ms; plus.3ms mapping residual=.5ms."
+    },
+    "clock_map_base_uncertainty": {
+      "value": 0.0003,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen synchronization-fit error allocation; radio implementation not benchmarked."
+    },
+    "clock_conversion_max_uncertainty": {
+      "value": 0.0005,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Absolute uncertainty used in deadline/freshness admission; reject once unbounded or over allocation."
+    },
+    "independent_health_clock_error": {
+      "value": 50,
+      "unit": "ppm",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Unverified independent timebase assumption; shared failure modes still require analysis."
+    },
+    "main_clock_health_detection_deadline": {
+      "value": 0.002,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Health-service allocation only; does not bound stuck current duration or substitute for independent electrical protection."
+    },
+    "fast_analysis_band_low": {
+      "value": 20,
+      "unit": "Hz",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Short-history feature candidate range, not proven motor-command information."
+    },
+    "fast_analysis_band_high": {
+      "value": 300,
+      "unit": "Hz",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Population-band acquisition reference."
+    },
+    "afe_highpass_corner": {
+      "value": 0.1,
+      "unit": "Hz",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Electronics nominal first-order HP reference; slow content retained with large low-frequency group delay."
+    },
+    "afe_lowpass_corner": {
+      "value": 300,
+      "unit": "Hz",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Electronics nominal third-order Butterworth LP reference."
+    },
+    "fast_afe_group_delay_allocation": {
+      "value": 0.002,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "20\u2013300Hz allocation. Circuit-specific transfer, nonlinear recovery and actual feature filtering still require checks."
+    },
+    "motor_feature_history": {
+      "value": 0.02,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Trailing finite history, no future data. Recursive state may also use older history with explicit age."
+    },
+    "motor_feature_tick": {
+      "value": 0.005,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "200Hz estimator/policy dispatch; release phase wait included once."
+    },
+    "uniform_history_representative_age": {
+      "value": 0.01,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "20ms uniform weights midpoint only. Invalid masks or different filters change the actual age."
+    },
+    "motor_latest_valid_sample_max_age": {
+      "value": 0.005,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Admission freshness gate; clock uncertainty included. Passing does not prove observability."
+    },
+    "motor_max_contiguous_observation_gap": {
+      "value": 0.005,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen qualification threshold; not a physiological constant."
+    },
+    "motor_minimum_global_usable_fraction": {
+      "value": 0.65,
+      "unit": "fraction",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen screening gate; sufficient information must still be demonstrated by later held-out decoder tests."
+    },
+    "motor_minimum_usable_fraction_per_history": {
+      "value": 0.65,
+      "unit": "fraction",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen gate applies per20ms trailing window, not just average duty."
+    },
+    "motor_goal_pre_admission_lead": {
+      "value": 0.02,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Known paced task goal can be scheduled in advance; this is not future observed body state."
+    },
+    "motor_predictive_horizon_max": {
+      "value": 0.1,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen maximum for qualified learner response predictions; no fallback to hidden truth."
+    },
+    "external_foot_contact_sample_rate": {
+      "value": 1000,
+      "unit": "sample/s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen external reference for contact events; modality/accuracy still unresolved."
+    },
+    "external_kinematics_sample_rate": {
+      "value": 200,
+      "unit": "sample/s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen external multi-axis position/orientation reference."
+    },
+    "external_motion_filter_delay_allocation": {
+      "value": 0.002,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen sensor-processing allowance; must later be qualified."
+    },
+    "external_motion_transport_deadline": {
+      "value": 0.005,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen physical-sample-to-Core transport component after local sensor/filtering; implementation unresolved."
+    },
+    "external_motion_latest_sample_max_age": {
+      "value": 0.012,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "5ms sample wait+2ms sensor filtering+5ms transport; clock uncertainty is added to upper-age check."
+    },
+    "stimulus_preguard": {
+      "value": 0.0001,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen global recording-mask lead before planned first phase; unexpected delivery also needs clipping/monitor validity detection."
+    },
+    "stimulus_interphase_gap": {
+      "value": 0.0001,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "ATO waveform choice, not automatically the primary paper waveform."
+    },
+    "pulse_phase_edge_error_allocation": {
+      "value": 2e-06,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen scheduled phase-duration error allocation; hardware/independent watchdog qualification pending."
+    },
+    "pulse_start_jitter_allocation": {
+      "value": 0.0001,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Launch jitter allocation distinct from phase-duration error."
+    },
+    "sbp_nominal_beat_interval": {
+      "value": 1,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen artificial physiology nominal60beats/min; not a publisher sensor or link latency."
+    },
+    "sbp_beat_interval_range": {
+      "minimum": 0.5,
+      "maximum": 1.5,
+      "unit": "s",
+      "status": "chosen artificial range; not measured",
+      "basis": "40\u2013120beats/min timing stress; arrhythmia is invalid separately."
+    },
+    "sbp_control_tick": {
+      "value": 0.25,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen4Hz local policy service. New physiological observation remains beat-derived; no invented four fresh beats/s."
+    },
+    "sbp_waveform_reference_sample_rate": {
+      "value": 200,
+      "unit": "sample/s",
+      "status": "primary-methods precedent; not certified ATO sensor performance",
+      "basis": "Phillips2025 Hemodynamic monitoring: calibrated finger plethysmography, brachial pressure sampled200Hz; ATO external sensor remains unselected."
+    },
+    "sbp_beat_closure_max_delay": {
+      "value": 0.25,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen artificial model allowance only; physical peak-to-extracted-value latency in the selected clinical sensor is unresolved. Add any1Hz resampling/extraction wait explicitly."
+    },
+    "sbp_transport_max_delay": {
+      "value": 0.25,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen extraction-to-Core arrival allowance; no source claim."
+    },
+    "sbp_max_peak_timestamp_age": {
+      "value": 2,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Age measured from physical systolic peak plus clock uncertainty, never packet arrival."
+    },
+    "sbp_gap_detection_period": {
+      "value": 0.25,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Chosen service check; latest valid beat age crossing2s gates new adaptation."
+    },
+    "radio_motor_plan_lease": {
+      "value": 0.25,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Finite authenticated session-plan horizon; local observation-health gates still apply."
+    },
+    "radio_bp_support_lease": {
+      "value": 3,
+      "unit": "s",
+      "status": "chosen engineering allocation; not measured",
+      "basis": "Maximum committed support authorization. No indefinite last-command replay; not a clinical fallback recommendation."
+    },
+    "local_bp_stale_fallback_duration": {
+      "value": null,
+      "unit": "s",
+      "status": "unresolved application-risk decision",
+      "basis": "Digital studies compare bounded hold/ramp/down/stop consequences; no autonomous human fallback is authorized."
+    },
+    "bp_clinical_sensor_accuracy": {
+      "value": null,
+      "unit": "Pa",
+      "status": "unresolved; sensor selection and clinical validation required",
+      "basis": "Synthetic noise/bias cases are not clinical measurement specifications."
+    },
+    "independent_electrical_trip_latency": {
+      "value": null,
+      "unit": "s",
+      "status": "owned by electrical/monitor budget; pending later qualification",
+      "basis": "Must derive from current, charge, compliance and stuck-output envelopes, not main-clock-health deadline."
+    },
+    "reference_compute_clock": {
+      "value": 128,
+      "unit": "MHz",
+      "status": "selected engineering reference; not benchmarked",
+      "basis": "nRF5340 application-core performance allocation while the independent delivery-monitor stream is active. Oscillator accuracy is a different parameter."
+    },
+    "sbp_extracted_update_rate": {
+      "value": 1,
+      "unit": "sample/s",
+      "status": "primary-methods precedent selected for digital reference",
+      "basis": "Phillips2025 reports SBP/DBP/MAP extraction1Hz. This does not establish exact age, extraction method or four fresh observations/s when controller ticks4Hz."
+    },
+    "sbp_peak_to_extraction_resampling_wait": {
+      "minimum": 0,
+      "maximum": 1,
+      "unit": "s",
+      "status": "chosen possible asynchronous1Hz extraction phase wait",
+      "basis": "If1Hz extractor publishes the latest completed beat, this adds to physical peak age; do not hide it in arrival timestamp."
+    }
+  },
+  "filter_delay_examples": {
+    "method": "Analytic small-signal group delay, not step response or learned feature latency. HP tau_g=fc/[2*pi*(f^2+fc^2)]; LP delay is sum of stable Butterworth-pole contributions.",
+    "highpass_corner_hz": 0.1,
+    "lowpass_corner_hz": 300,
+    "lowpass_order": 3,
+    "rows": [
+      {
+        "frequency_hz": 1,
+        "hp_group_delay_s": 0.015757915,
+        "lp_group_delay_s": 0.001061039,
+        "total_s": 0.016818954
+      },
+      {
+        "frequency_hz": 5,
+        "hp_group_delay_s": 0.000636365,
+        "lp_group_delay_s": 0.00106118,
+        "total_s": 0.001697546
+      },
+      {
+        "frequency_hz": 20,
+        "hp_group_delay_s": 3.9788e-05,
+        "lp_group_delay_s": 0.001063412,
+        "total_s": 0.0011032
+      },
+      {
+        "frequency_hz": 300,
+        "hp_group_delay_s": 1.77e-07,
+        "lp_group_delay_s": 0.001326291,
+        "total_s": 0.001326468
+      }
+    ],
+    "slow_context_history_s": [
+      0.25,
+      0.5,
+      1
+    ],
+    "consequence": "At1Hz a20ms window is .02cycles; no general phase/intent identifiability follows. Separate slow-context estimation and qualification; future samples never repair freshness."
+  },
+  "latency_analysis": {
+    "status": "Analytical allocations; compute times are not measured MCU or host benchmarks.",
+    "target_s": 0.025,
+    "fast_unframed_chain": [
+      {
+        "stage": "AFE fast-band group delay allocation",
+        "maximum_s": 0.002,
+        "type": "information/filter delay"
+      },
+      {
+        "stage": "next raw acquisition frame",
+        "maximum_s": 0.00025,
+        "type": "aperture phase wait;57us conversion burst inside frame"
+      },
+      {
+        "stage": "post-aperture data and buffer release",
+        "maximum_s": 0.001,
+        "type": "Includes conversion/pipeline return, DMA and bounded buffer-release wait; not added a second time to frame phase"
+      },
+      {
+        "stage": "causal feature/policy dispatch",
+        "maximum_s": 0.005,
+        "type": "periodic release wait; shared for feature and policy"
+      },
+      {
+        "stage": "estimator compute",
+        "maximum_s": 0.002,
+        "type": "unmeasured execution allowance"
+      },
+      {
+        "stage": "application policy compute",
+        "maximum_s": 0.00075,
+        "type": "unmeasured execution allowance"
+      },
+      {
+        "stage": "local admission compute",
+        "maximum_s": 0.00025,
+        "type": "unmeasured execution allowance"
+      },
+      {
+        "stage": "pulse launch jitter",
+        "maximum_s": 0.0001,
+        "type": "timing allocation"
+      },
+      {
+        "stage": "clock conversion uncertainty",
+        "maximum_s": 0.0005,
+        "type": "error allowance; not queue time"
+      }
+    ],
+    "total_fast_unframed_bound_s": 0.01185,
+    "uniform_history_representative_age_at_delivery_s": 0.02185,
+    "total_with_archive_decimator_s": 0.0156,
+    "representative_age_with_archive_decimator_s": 0.025599999999999998,
+    "frame_wait_cases": [
+      {
+        "rate_hz": 20,
+        "worst_next_frame_wait_s": 0.05,
+        "worst_unframed_plus_next_frame_s": 0.06185,
+        "meets_25ms_reactive_deadline": false
+      },
+      {
+        "rate_hz": 40,
+        "worst_next_frame_wait_s": 0.025,
+        "worst_unframed_plus_next_frame_s": 0.03685,
+        "meets_25ms_reactive_deadline": false
+      },
+      {
+        "rate_hz": 60,
+        "worst_next_frame_wait_s": 0.016666666666666666,
+        "worst_unframed_plus_next_frame_s": 0.028516666666666666,
+        "meets_25ms_reactive_deadline": false
+      },
+      {
+        "rate_hz": 120,
+        "worst_next_frame_wait_s": 0.008333333333333333,
+        "worst_unframed_plus_next_frame_s": 0.02018333333333333,
+        "meets_25ms_reactive_deadline": true
+      }
+    ],
+    "event_anchored_schedule": {
+      "requirement": "Only launch at target timestamp if20ms pre-admission, valid prediction/freshness, route/monitor health, and source minimum-period constraints all hold.",
+      "minimum_source_period_s": {
+        "motor20Hz": 0.05,
+        "motor40Hz": 0.025,
+        "motor60Hz": 0.016666666666666666
+      },
+      "prohibition": "Cannot evade refractory/output-frequency budget by resetting frame phase. If a source just pulsed, defer or reject.",
+      "limitation": "Known future goal time is available; future body state is not. Event scheduling does not establish correct biological response timing."
+    },
+    "pipeline_notes": [
+      "AFE acquisition and accumulation stream continuously.20ms rolling history is not re-collected on every tick.",
+      "19-command57us burst is within the250us frame; do not add both frame and a full second conversion burst.",
+      "The5ms periodic release allowance is shared by the estimator/policy dispatch; no second5ms wait unless implementation introduces one.",
+      "Shorter blocks, concurrency or overlapped DMA change a later measured schedule only; do not subtract unverified parallelism.",
+      "Representative history age and group delay describe information age. Queue/compute delay describes execution. Report both without calling all history warm-up a repeated hardware latency.",
+      "Reaction to an event first obscured by a blank may incur another observation-gap wait. Freshness/coverage can reject before deadline; it must not interpolate hidden state."
+    ],
+    "external_motion_example": {
+      "sample_wait_s": 0.005,
+      "sensor_filter_s": 0.002,
+      "transport_s": 0.005,
+      "dispatch_s": 0.005,
+      "estimator_s": 0.002,
+      "policy_s": 0.00075,
+      "admission_s": 0.00025,
+      "start_jitter_s": 0.0001,
+      "clock_uncertainty_s": 0.0005,
+      "total_s": 0.0206,
+      "status": "chosen allowances only; field sensor and wireless timing unmeasured",
+      "comparison_rule": "Report native-latency and latency-matched sensing comparisons. An extra sensor advantage caused only by preferential timing is not evidence that its neural content is uniquely useful."
+    },
+    "pressure_observation_examples": {
+      "nominal_peak_closure_s": 0.25,
+      "maximum_resampling_wait_s": 1,
+      "maximum_transport_s": 0.25,
+      "maximum_clock_uncertainty_s": 0.0005,
+      "possible_peak_age_at_arrival_s": 1.5005,
+      "maximum_beat_interval_s": 1.5,
+      "possible_age_before_next_beat_record_s": 3.0005,
+      "freshness_threshold_s": 2,
+      "consequence": "The assumed envelope can violate2s freshness. It does not close simply because extraction is1Hz. Sensor must timestamp/bound true measurement support, reduce delays, or trigger declared stale fallback; actual clinical delay remains unresolved."
+    }
+  },
+  "artifact_analysis": {
+    "evidence_type": "Analytic periodic interval union; no new simulation trial or measured recovery.",
+    "equation": "For every electricalevent tj, invalid interval=[tj-preguard, tj+2*phase_width+interphase+recovery]. Computeunion over periodic train, includingwrap-around; fraction=unionlength/period.",
+    "global_mask": "All16 streams conservatively invalid during affected intervals. Spatial isolation/per-channel recovery can reduce this only after evidence.",
+    "same_time_drivers": "Two truly synchronized independent drivers share one global mask interval, not two. Independent delivered edge times must later confirm alignment.",
+    "different_time_drivers": "Staggered events create distinct intervals whose union may overlap. Never double-count overlapping intervals or ignore additional events.",
+    "polarity": "Biphasic symmetric commanded widths do not prove delivered charge balance; monitor evidence is separate.",
+    "discretization": "Continuous-time occupancy is optimistic for valid sample counts. At4kHz mark every actual aperture inside union; include clock/edge/recovery uncertainty and channel skew. No rounded table passes that discrete validity check by itself.",
+    "qualification": "Recovery values are sensitivity inputs, not claims that AFE recovers in that duration. Saturation/headroom and recovery-validity evidence control mask end.",
+    "comparison_cases": [
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.001
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.022,
+        "usable_fraction": 0.978,
+        "minimum_usable_fraction_in_20ms_window": 0.945,
+        "maximum_contiguous_gap_s": 0.0011,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.025
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.001
+          ],
+          [
+            0.0249,
+            0.026
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.044,
+        "usable_fraction": 0.956,
+        "minimum_usable_fraction_in_20ms_window": 0.945,
+        "maximum_contiguous_gap_s": 0.0011,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0015
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.032,
+        "usable_fraction": 0.968,
+        "minimum_usable_fraction_in_20ms_window": 0.92,
+        "maximum_contiguous_gap_s": 0.0016,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.025
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0015
+          ],
+          [
+            0.0249,
+            0.0265
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.064,
+        "usable_fraction": 0.936,
+        "minimum_usable_fraction_in_20ms_window": 0.92,
+        "maximum_contiguous_gap_s": 0.0016,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0035
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.072,
+        "usable_fraction": 0.928,
+        "minimum_usable_fraction_in_20ms_window": 0.82,
+        "maximum_contiguous_gap_s": 0.0036,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.025
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0035
+          ],
+          [
+            0.0249,
+            0.0285
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.144,
+        "usable_fraction": 0.856,
+        "minimum_usable_fraction_in_20ms_window": 0.82,
+        "maximum_contiguous_gap_s": 0.0036,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0055
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.112,
+        "usable_fraction": 0.888,
+        "minimum_usable_fraction_in_20ms_window": 0.72,
+        "maximum_contiguous_gap_s": 0.0056,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.025
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0055
+          ],
+          [
+            0.0249,
+            0.0305
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.224,
+        "usable_fraction": 0.776,
+        "minimum_usable_fraction_in_20ms_window": 0.72,
+        "maximum_contiguous_gap_s": 0.0056,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0016
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.034,
+        "usable_fraction": 0.966,
+        "minimum_usable_fraction_in_20ms_window": 0.915,
+        "maximum_contiguous_gap_s": 0.0017,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.025
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0016
+          ],
+          [
+            0.0249,
+            0.0266
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.068,
+        "usable_fraction": 0.932,
+        "minimum_usable_fraction_in_20ms_window": 0.915,
+        "maximum_contiguous_gap_s": 0.0017,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0021
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.044,
+        "usable_fraction": 0.956,
+        "minimum_usable_fraction_in_20ms_window": 0.89,
+        "maximum_contiguous_gap_s": 0.0022,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.025
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0021
+          ],
+          [
+            0.0249,
+            0.0271
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.088,
+        "usable_fraction": 0.912,
+        "minimum_usable_fraction_in_20ms_window": 0.89,
+        "maximum_contiguous_gap_s": 0.0022,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0041
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.084,
+        "usable_fraction": 0.916,
+        "minimum_usable_fraction_in_20ms_window": 0.79,
+        "maximum_contiguous_gap_s": 0.0042,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.025
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0041
+          ],
+          [
+            0.0249,
+            0.0291
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.168,
+        "usable_fraction": 0.832,
+        "minimum_usable_fraction_in_20ms_window": 0.79,
+        "maximum_contiguous_gap_s": 0.0042,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0061
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.124,
+        "usable_fraction": 0.876,
+        "minimum_usable_fraction_in_20ms_window": 0.69,
+        "maximum_contiguous_gap_s": 0.0062,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 20,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.025
+        ],
+        "period_s": 0.05,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0061
+          ],
+          [
+            0.0249,
+            0.0311
+          ],
+          [
+            0.0499,
+            0.05
+          ]
+        ],
+        "invalid_fraction": 0.248,
+        "usable_fraction": 0.752,
+        "minimum_usable_fraction_in_20ms_window": 0.69,
+        "maximum_contiguous_gap_s": 0.0062,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.001
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.044,
+        "usable_fraction": 0.956,
+        "minimum_usable_fraction_in_20ms_window": 0.945,
+        "maximum_contiguous_gap_s": 0.0011,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.0125
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.001
+          ],
+          [
+            0.0124,
+            0.0135
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.088,
+        "usable_fraction": 0.912,
+        "minimum_usable_fraction_in_20ms_window": 0.89,
+        "maximum_contiguous_gap_s": 0.0011,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0015
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.064,
+        "usable_fraction": 0.936,
+        "minimum_usable_fraction_in_20ms_window": 0.92,
+        "maximum_contiguous_gap_s": 0.0016,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.0125
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0015
+          ],
+          [
+            0.0124,
+            0.014
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.128,
+        "usable_fraction": 0.872,
+        "minimum_usable_fraction_in_20ms_window": 0.84,
+        "maximum_contiguous_gap_s": 0.0016,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0035
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.144,
+        "usable_fraction": 0.856,
+        "minimum_usable_fraction_in_20ms_window": 0.82,
+        "maximum_contiguous_gap_s": 0.0036,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.0125
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0035
+          ],
+          [
+            0.0124,
+            0.016
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.288,
+        "usable_fraction": 0.712,
+        "minimum_usable_fraction_in_20ms_window": 0.64,
+        "maximum_contiguous_gap_s": 0.0036,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0055
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.224,
+        "usable_fraction": 0.776,
+        "minimum_usable_fraction_in_20ms_window": 0.72,
+        "maximum_contiguous_gap_s": 0.0056,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.0125
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0055
+          ],
+          [
+            0.0124,
+            0.018
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.448,
+        "usable_fraction": 0.552,
+        "minimum_usable_fraction_in_20ms_window": 0.44,
+        "maximum_contiguous_gap_s": 0.0056,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0016
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.068,
+        "usable_fraction": 0.932,
+        "minimum_usable_fraction_in_20ms_window": 0.915,
+        "maximum_contiguous_gap_s": 0.0017,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.0125
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0016
+          ],
+          [
+            0.0124,
+            0.0141
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.136,
+        "usable_fraction": 0.864,
+        "minimum_usable_fraction_in_20ms_window": 0.83,
+        "maximum_contiguous_gap_s": 0.0017,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0021
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.088,
+        "usable_fraction": 0.912,
+        "minimum_usable_fraction_in_20ms_window": 0.89,
+        "maximum_contiguous_gap_s": 0.0022,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.0125
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0021
+          ],
+          [
+            0.0124,
+            0.0146
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.176,
+        "usable_fraction": 0.824,
+        "minimum_usable_fraction_in_20ms_window": 0.78,
+        "maximum_contiguous_gap_s": 0.0022,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0041
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.168,
+        "usable_fraction": 0.832,
+        "minimum_usable_fraction_in_20ms_window": 0.79,
+        "maximum_contiguous_gap_s": 0.0042,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.0125
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0041
+          ],
+          [
+            0.0124,
+            0.0166
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.336,
+        "usable_fraction": 0.664,
+        "minimum_usable_fraction_in_20ms_window": 0.58,
+        "maximum_contiguous_gap_s": 0.0042,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0061
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.248,
+        "usable_fraction": 0.752,
+        "minimum_usable_fraction_in_20ms_window": 0.69,
+        "maximum_contiguous_gap_s": 0.0062,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 40,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.0125
+        ],
+        "period_s": 0.025,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0061
+          ],
+          [
+            0.0124,
+            0.0186
+          ],
+          [
+            0.0249,
+            0.025
+          ]
+        ],
+        "invalid_fraction": 0.496,
+        "usable_fraction": 0.504,
+        "minimum_usable_fraction_in_20ms_window": 0.38,
+        "maximum_contiguous_gap_s": 0.0062,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.001
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.066,
+        "usable_fraction": 0.934,
+        "minimum_usable_fraction_in_20ms_window": 0.89,
+        "maximum_contiguous_gap_s": 0.0011,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.008333333
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.001
+          ],
+          [
+            0.008233333,
+            0.009333333
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.132,
+        "usable_fraction": 0.868,
+        "minimum_usable_fraction_in_20ms_window": 0.835,
+        "maximum_contiguous_gap_s": 0.0011,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0015
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.096,
+        "usable_fraction": 0.904,
+        "minimum_usable_fraction_in_20ms_window": 0.84,
+        "maximum_contiguous_gap_s": 0.0016,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.008333333
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0015
+          ],
+          [
+            0.008233333,
+            0.009833333
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.192,
+        "usable_fraction": 0.808,
+        "minimum_usable_fraction_in_20ms_window": 0.76,
+        "maximum_contiguous_gap_s": 0.0016,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0035
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.216,
+        "usable_fraction": 0.784,
+        "minimum_usable_fraction_in_20ms_window": 0.653333333,
+        "maximum_contiguous_gap_s": 0.0036,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.008333333
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0035
+          ],
+          [
+            0.008233333,
+            0.011833333
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.432,
+        "usable_fraction": 0.568,
+        "minimum_usable_fraction_in_20ms_window": 0.473333333,
+        "maximum_contiguous_gap_s": 0.0036,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0055
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.336,
+        "usable_fraction": 0.664,
+        "minimum_usable_fraction_in_20ms_window": 0.553333333,
+        "maximum_contiguous_gap_s": 0.0056,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0002,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.008333333
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0055
+          ],
+          [
+            0.008233333,
+            0.013833333
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.672,
+        "usable_fraction": 0.328,
+        "minimum_usable_fraction_in_20ms_window": 0.273333333,
+        "maximum_contiguous_gap_s": 0.0056,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0016
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.102,
+        "usable_fraction": 0.898,
+        "minimum_usable_fraction_in_20ms_window": 0.83,
+        "maximum_contiguous_gap_s": 0.0017,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.008333333
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0016
+          ],
+          [
+            0.008233333,
+            0.009933333
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.204,
+        "usable_fraction": 0.796,
+        "minimum_usable_fraction_in_20ms_window": 0.745,
+        "maximum_contiguous_gap_s": 0.0017,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0021
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.132,
+        "usable_fraction": 0.868,
+        "minimum_usable_fraction_in_20ms_window": 0.78,
+        "maximum_contiguous_gap_s": 0.0022,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.008333333
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0021
+          ],
+          [
+            0.008233333,
+            0.010433333
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.264,
+        "usable_fraction": 0.736,
+        "minimum_usable_fraction_in_20ms_window": 0.67,
+        "maximum_contiguous_gap_s": 0.0022,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0041
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.252,
+        "usable_fraction": 0.748,
+        "minimum_usable_fraction_in_20ms_window": 0.623333333,
+        "maximum_contiguous_gap_s": 0.0042,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.008333333
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0041
+          ],
+          [
+            0.008233333,
+            0.012433333
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.504,
+        "usable_fraction": 0.496,
+        "minimum_usable_fraction_in_20ms_window": 0.413333333,
+        "maximum_contiguous_gap_s": 0.0042,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0061
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.372,
+        "usable_fraction": 0.628,
+        "minimum_usable_fraction_in_20ms_window": 0.523333333,
+        "maximum_contiguous_gap_s": 0.0062,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 60,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.008333333
+        ],
+        "period_s": 0.016666667,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0061
+          ],
+          [
+            0.008233333,
+            0.014433333
+          ],
+          [
+            0.016566667,
+            0.016666667
+          ]
+        ],
+        "invalid_fraction": 0.744,
+        "usable_fraction": 0.256,
+        "minimum_usable_fraction_in_20ms_window": 0.213333333,
+        "maximum_contiguous_gap_s": 0.0062,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "traveling_wave_0_2_4ms",
+        "event_offsets_s": [
+          0,
+          0.002,
+          0.004
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0012
+          ],
+          [
+            0.0019,
+            0.0032
+          ],
+          [
+            0.0039,
+            0.0052
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.468,
+        "usable_fraction": 0.532,
+        "minimum_usable_fraction_in_20ms_window": 0.48,
+        "maximum_contiguous_gap_s": 0.0013,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0012
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.156,
+        "usable_fraction": 0.844,
+        "minimum_usable_fraction_in_20ms_window": 0.805,
+        "maximum_contiguous_gap_s": 0.0013,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.004166667
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0012
+          ],
+          [
+            0.004066667,
+            0.005366667
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.312,
+        "usable_fraction": 0.688,
+        "minimum_usable_fraction_in_20ms_window": 0.675,
+        "maximum_contiguous_gap_s": 0.0013,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "traveling_wave_0_2_4ms",
+        "event_offsets_s": [
+          0,
+          0.002,
+          0.004
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0017
+          ],
+          [
+            0.0019,
+            0.0037
+          ],
+          [
+            0.0039,
+            0.0057
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.648,
+        "usable_fraction": 0.352,
+        "minimum_usable_fraction_in_20ms_window": 0.303333333,
+        "maximum_contiguous_gap_s": 0.0018,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0017
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.216,
+        "usable_fraction": 0.784,
+        "minimum_usable_fraction_in_20ms_window": 0.73,
+        "maximum_contiguous_gap_s": 0.0018,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.004166667
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0017
+          ],
+          [
+            0.004066667,
+            0.005866667
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.432,
+        "usable_fraction": 0.568,
+        "minimum_usable_fraction_in_20ms_window": 0.55,
+        "maximum_contiguous_gap_s": 0.0018,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "traveling_wave_0_2_4ms",
+        "event_offsets_s": [
+          0,
+          0.002,
+          0.004
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0077
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.936,
+        "usable_fraction": 0.064,
+        "minimum_usable_fraction_in_20ms_window": 0.053333333,
+        "maximum_contiguous_gap_s": 0.0078,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0037
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.456,
+        "usable_fraction": 0.544,
+        "minimum_usable_fraction_in_20ms_window": 0.453333333,
+        "maximum_contiguous_gap_s": 0.0038,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.004166667
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0037
+          ],
+          [
+            0.004066667,
+            0.007866667
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.912,
+        "usable_fraction": 0.088,
+        "minimum_usable_fraction_in_20ms_window": 0.073333333,
+        "maximum_contiguous_gap_s": 0.0038,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "traveling_wave_0_2_4ms",
+        "event_offsets_s": [
+          0,
+          0.002,
+          0.004
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 1,
+        "usable_fraction": 0,
+        "minimum_usable_fraction_in_20ms_window": 0,
+        "maximum_contiguous_gap_s": null,
+        "continuous_mask": true,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0057
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.696,
+        "usable_fraction": 0.304,
+        "minimum_usable_fraction_in_20ms_window": 0.253333333,
+        "maximum_contiguous_gap_s": 0.0058,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.004166667
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 1,
+        "usable_fraction": 0,
+        "minimum_usable_fraction_in_20ms_window": 0,
+        "maximum_contiguous_gap_s": null,
+        "continuous_mask": true,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "traveling_wave_0_2_4ms",
+        "event_offsets_s": [
+          0,
+          0.002,
+          0.004
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0016
+          ],
+          [
+            0.0019,
+            0.0036
+          ],
+          [
+            0.0039,
+            0.0056
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.612,
+        "usable_fraction": 0.388,
+        "minimum_usable_fraction_in_20ms_window": 0.338333333,
+        "maximum_contiguous_gap_s": 0.0017,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0016
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.204,
+        "usable_fraction": 0.796,
+        "minimum_usable_fraction_in_20ms_window": 0.745,
+        "maximum_contiguous_gap_s": 0.0017,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.004166667
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0016
+          ],
+          [
+            0.004066667,
+            0.005766667
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.408,
+        "usable_fraction": 0.592,
+        "minimum_usable_fraction_in_20ms_window": 0.575,
+        "maximum_contiguous_gap_s": 0.0017,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "traveling_wave_0_2_4ms",
+        "event_offsets_s": [
+          0,
+          0.002,
+          0.004
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0061
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.744,
+        "usable_fraction": 0.256,
+        "minimum_usable_fraction_in_20ms_window": 0.213333333,
+        "maximum_contiguous_gap_s": 0.0062,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0021
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.264,
+        "usable_fraction": 0.736,
+        "minimum_usable_fraction_in_20ms_window": 0.67,
+        "maximum_contiguous_gap_s": 0.0022,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": true,
+        "provisional_window_coverage_pass": true,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": true
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.004166667
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0021
+          ],
+          [
+            0.004066667,
+            0.006266667
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.528,
+        "usable_fraction": 0.472,
+        "minimum_usable_fraction_in_20ms_window": 0.45,
+        "maximum_contiguous_gap_s": 0.0022,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "traveling_wave_0_2_4ms",
+        "event_offsets_s": [
+          0,
+          0.002,
+          0.004
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0081
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.984,
+        "usable_fraction": 0.016,
+        "minimum_usable_fraction_in_20ms_window": 0.013333333,
+        "maximum_contiguous_gap_s": 0.0082,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0041
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.504,
+        "usable_fraction": 0.496,
+        "minimum_usable_fraction_in_20ms_window": 0.413333333,
+        "maximum_contiguous_gap_s": 0.0042,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.004166667
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 1,
+        "usable_fraction": 0,
+        "minimum_usable_fraction_in_20ms_window": 0,
+        "maximum_contiguous_gap_s": null,
+        "continuous_mask": true,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "traveling_wave_0_2_4ms",
+        "event_offsets_s": [
+          0,
+          0.002,
+          0.004
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 1,
+        "usable_fraction": 0,
+        "minimum_usable_fraction_in_20ms_window": 0,
+        "maximum_contiguous_gap_s": null,
+        "continuous_mask": true,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "aligned_pair",
+        "event_offsets_s": [
+          0
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0061
+          ],
+          [
+            0.008233333,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 0.744,
+        "usable_fraction": 0.256,
+        "minimum_usable_fraction_in_20ms_window": 0.213333333,
+        "maximum_contiguous_gap_s": 0.0062,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0005,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0.0001,
+        "schedule": "staggered_pair",
+        "event_offsets_s": [
+          0,
+          0.004166667
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 1,
+        "usable_fraction": 0,
+        "minimum_usable_fraction_in_20ms_window": 0,
+        "maximum_contiguous_gap_s": null,
+        "continuous_mask": true,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      }
+    ],
+    "source_nominal_without_preguard": [
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.0005,
+        "preguard_s": 0,
+        "schedule": "traveling_wave_0_2_4ms",
+        "event_offsets_s": [
+          0,
+          0.002,
+          0.004
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0012
+          ],
+          [
+            0.002,
+            0.0032
+          ],
+          [
+            0.004,
+            0.0052
+          ]
+        ],
+        "invalid_fraction": 0.432,
+        "usable_fraction": 0.568,
+        "minimum_usable_fraction_in_20ms_window": 0.52,
+        "maximum_contiguous_gap_s": 0.0012,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.001,
+        "preguard_s": 0,
+        "schedule": "traveling_wave_0_2_4ms",
+        "event_offsets_s": [
+          0,
+          0.002,
+          0.004
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0017
+          ],
+          [
+            0.002,
+            0.0037
+          ],
+          [
+            0.004,
+            0.0057
+          ]
+        ],
+        "invalid_fraction": 0.612,
+        "usable_fraction": 0.388,
+        "minimum_usable_fraction_in_20ms_window": 0.338333333,
+        "maximum_contiguous_gap_s": 0.0017,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": true,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.003,
+        "preguard_s": 0,
+        "schedule": "traveling_wave_0_2_4ms",
+        "event_offsets_s": [
+          0,
+          0.002,
+          0.004
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.0077
+          ]
+        ],
+        "invalid_fraction": 0.924,
+        "usable_fraction": 0.076,
+        "minimum_usable_fraction_in_20ms_window": 0.063333333,
+        "maximum_contiguous_gap_s": 0.0077,
+        "continuous_mask": false,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      },
+      {
+        "pulse_frame_rate_hz": 120,
+        "phase_width_s": 0.0003,
+        "interphase_s": 0.0001,
+        "recovery_s": 0.005,
+        "preguard_s": 0,
+        "schedule": "traveling_wave_0_2_4ms",
+        "event_offsets_s": [
+          0,
+          0.002,
+          0.004
+        ],
+        "period_s": 0.008333333,
+        "mask_intervals_in_period_s": [
+          [
+            0,
+            0.008333333
+          ]
+        ],
+        "invalid_fraction": 1,
+        "usable_fraction": 0,
+        "minimum_usable_fraction_in_20ms_window": 0,
+        "maximum_contiguous_gap_s": null,
+        "continuous_mask": true,
+        "provisional_global_coverage_pass": false,
+        "provisional_window_coverage_pass": false,
+        "provisional_gap_pass": false,
+        "provisional_fast_estimator_gate_pass": false
+      }
+    ],
+    "conclusions": [
+      "Traveling wave120Hz300us per-phase reference has no continuous fast-estimator gate pass for any tested0.5/1/3/5ms recovery with100us preguard.",
+      "120Hz aligned alternative is not proven biologically equivalent to0/2/4ms traveling wave.",
+      "Motor60Hz500us phases3ms recovery passes average65% coverage but fails worst20ms window coverage.",
+      "Motor5ms recovery fails5ms contiguous-gap gate even when average coverage exceeds65%.",
+      "External SBP feedback may remain available while all spinal channels are blanked; added neural biomarker availability must be explicit."
+    ]
+  },
+  "benchmark_plan": {
+    "stage": "Stage4 embedded integration; Stage3 host reference may provide separate preliminary numbers",
+    "workload": "16 raw streams at4kHz,2 output sources(max2 simultaneous), separate450kword/s delivery-monitor service, mode-specific estimator/policy, artifact masks, logging/security load and IRQ/DMA contention;128MHz MCU reference.",
+    "measurements": [
+      "per-stage latency distributions",
+      "worst observed execution and deadline misses",
+      "stack/heap/buffer high-water",
+      "CPU and memory utilization",
+      "clock-domain conversion error",
+      "per-channel aperture and launch jitter",
+      "missed or delayed monitor/fault service"
+    ],
+    "acceptance": "Every scheduled output either meets declared deadline and state-quality gates or is rejected with loggedreason. Measured allowances must not exceed their budgets under declared stressed workload; observed maxima are not formal WCET.",
+    "no_benchmark_claim": "No benchmark has been executed for this Stage2document."
+  },
+  "stage1_verification_links": [
+    "S1-V-201",
+    "S1-V-202",
+    "S1-V-204",
+    "S1-V-304",
+    "S1-V-306"
+  ],
+  "open_decisions": [
+    "actual fast feature/decoder architecture and demonstrable information age",
+    "qualified biological response/learning model",
+    "external sensor accuracy and real extraction/link delay",
+    "independent electrical-trip timing and monitored-charge contract",
+    "physiological support fallback after sensing/link loss",
+    "actual per-channel artifact recovery"
+  ]
+}

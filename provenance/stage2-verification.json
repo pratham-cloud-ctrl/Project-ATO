@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-08",
+  "stage": "Stage2 quantitative architecture package",
+  "scope": "Reproducibility and consistency; CAD geometry executed locally and tied to hashes; no hardware/biological qualification",
+  "checks": [
+    "Committed analytical results reproduce at1e-10 relative/1e-12 absolute tolerance; gates exact",
+    "Integrated and audited acquisition/timing inputs agree on streams/rate/clock/sources/cycles/RAM",
+    "Selected compute/transport margins and explicit64MHz/raw-RAM failures preserved",
+    "Eleven control contracts and scoped progress map to Stage1 checks; identified authority remains open",
+    "Nominal conditional gates and noise/blanking/charge/power/timing/telemetry failures preserved",
+    "Timing update, periodic mask union, thermal sensitivity and reservoir units agree",
+    "Numerical FIR/ideal delay, archive mask propagation and32-stream resource rejection agree",
+    "72 parameter/provenance audit rows have unique IDs and valid CSV structure",
+    "32 local Stage2 Markdown links resolve; fences balance",
+    "Recorded local CAD execution:80 valid solids,36 ports, nominal major/can-port checks and FreeCAD volume round-trip",
+    "Eight-page PDF numbering/text, six SVG/PNG figure pairs and review/native hashes match"
+  ],
+  "parameter_audit_rows": 72,
+  "control_contract_count": 11,
+  "cad_solid_count": 80,
+  "pdf_pages": 8,
+  "pending": "S1-V-204 identified response/functional reachability remains Stage3; complete circuits/firmware Stage4 and populated CAD Stage5 remain pending"
+}

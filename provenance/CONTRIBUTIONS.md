@@ -80,3 +80,24 @@ new circuit, firmware implementation, CAD package, biological dataset or efficac
 experiment was produced in this stage. The source hypothesis remains read-only;
 the historical release and its receipts remain distinct. See the Stage 1 dossier,
 `stage1-verification.json` and `stage1-review.json` for this revision's scope.
+
+## Full-system overhaul: Stage 2, 8 October 2026
+
+The owner requested continuation. AI research, electronics and control workstreams
+audited primary/manufacturer sources and specified numerical inputs; root
+integration aligned rates, memory, cycle reservations and timing, reproduced
+budgets, authored figures/brief and generated the preliminary build123d/FreeCAD
+allocation models. These calculations and solids are newly generated Project ATO
+work. Manufacturer geometry/capacity examples and published electrical settings
+remain attributed; no proprietary CAD or biological recording is redistributed.
+
+Root integration review found and documented shared-reference noise failure,
+free-running-frame latency failure, dense-stimulation recording loss, archive
+mask propagation, maximum-knob/monitor-uncertainty rejection, thermal/cell limits
+and target-specific anatomical inventory requirements. Catalog devices are
+feasibility witnesses with unqualified implant suitability. No human has yet
+endorsed the final components, anatomy or operating profiles. Review receipts
+describe AI-assisted technical/visual checks, not an independent licensed design
+audit or biological trial. Native electronics implementation and populated
+engineering CAD remain later stages. See `stage2-verification.json`,
+`stage2-review.json` and the Stage 2 progress table for the exact scope.

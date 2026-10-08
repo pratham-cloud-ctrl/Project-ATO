@@ -1,0 +1,10 @@
+bulk_load_ohm,pair_C_uF,max_current_at500us_mA,minimum_of_joint_voltage_bounds
+500,0.5,20.0,True
+500,2.0,20.0,True
+500,10.0,20.0,True
+1000,0.5,19.5,True
+1000,2.0,20.0,True
+1000,10.0,20.0,True
+2000,0.5,13.0,True
+2000,2.0,17.333333333333332,True
+2000,10.0,18.0,True

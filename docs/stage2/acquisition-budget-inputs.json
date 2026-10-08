@@ -1,0 +1,555 @@
+{
+  "schema_version": "ato.stage2.acquisition.inputs.v1",
+  "checked_on": "2026-10-08",
+  "status": "provisional_architecture_inputs_not_certified_results",
+  "scope": "Digital full-system reference; no built PCB, deployed firmware, human data or implant qualification",
+  "reference_architecture": "S1-ARCH-02 intradural surface recording plus separately placed epidural stimulation",
+  "interfaces": [
+    "S1-IF-03",
+    "S1-IF-04",
+    "S1-IF-05",
+    "S1-IF-06",
+    "S1-IF-07",
+    "S1-IF-08",
+    "S1-IF-10",
+    "S1-IF-11",
+    "S1-IF-13"
+  ],
+  "channels": {
+    "recording_contacts": 16,
+    "shared_reference_contacts": 1,
+    "body_reference_bias_contacts": 1,
+    "physical_recording_side_contacts": 18,
+    "independent_bipolar_contact_pairs": 0,
+    "sampled_differential_streams": 16,
+    "active_amplifiers": 16,
+    "physical_neural_adc_count": 1,
+    "independent_stim_drivers": 2,
+    "maximum_simultaneous_stim_configurations": 2,
+    "record_reference_is_stim_return": false,
+    "status": "Chosen reference; contact placement/selectivity remain biological assumptions"
+  },
+  "acquisition_witness": {
+    "manufacturer": "Intan Technologies",
+    "part": "RHD2216",
+    "chip_count": 1,
+    "input_topology": "Independent differential input pins;16 positive contacts with shared negative reference",
+    "adc_topology": "Multiplexed 16-bit SAR, not simultaneous sampling",
+    "adc_bits": 16,
+    "input_dc_block_before_gain": true,
+    "input_gain_V_per_V": 192,
+    "input_referred_LSB_V": 1.95e-07,
+    "input_linear_AC_peak_limit_V": 0.005,
+    "input_DC_voltage_operating_envelope_V": [
+      -0.4,
+      0.4
+    ],
+    "normal_input_DC_envelope_V": [
+      -0.2,
+      0.2
+    ],
+    "qualification_input_DC_envelope_V": [
+      -0.3,
+      0.3
+    ],
+    "normal_DC_and_qualification_envelopes_status": "ATO choices inside manufacturer-stated pin range; not guarantees of chronic interface stability",
+    "input_capacitance_F": 1.2e-11,
+    "input_capacitance_bound_type": "manufacturer value, no min/max supplied",
+    "input_noise_typical_V_rms": 2.4e-06,
+    "input_noise_guaranteed_max_V_rms": null,
+    "noise_bandwidth_variation_fraction_stated": 0.15,
+    "input_noise_design_allowance_V_rms": 3e-06,
+    "noise_design_allowance_status": "engineering assumption, not datasheet maximum",
+    "CMRR_typical_dB_50_60_Hz": 82,
+    "CMRR_guaranteed_min_dB": null,
+    "supply_nominal_V": 3.3,
+    "supply_stated_range_V": [
+      3.2,
+      3.6
+    ],
+    "package_envelope_mm": [
+      8.0,
+      8.0,
+      0.85
+    ],
+    "package_type": "56-pin plastic QFN",
+    "implant_suitability_established": false,
+    "source_ids": [
+      "S2-E-001",
+      "S2-E-002",
+      "S2-E-003",
+      "S2-E-004",
+      "S2-E-005",
+      "S2-E-006",
+      "S2-E-007",
+      "S2-E-008"
+    ]
+  },
+  "signal_model_inputs": {
+    "selected_population_feature_band_Hz": [
+      1,
+      300
+    ],
+    "fast_band_for_AFE_delay_allocation_Hz": [
+      20,
+      300
+    ],
+    "quiet_neural_amplitude_assumptions_V_rms": [
+      1e-05,
+      5e-05,
+      0.0005
+    ],
+    "quiet_signal_crest_factor_assumption": 5,
+    "range_warning_peak_V": 0.004,
+    "linear_range_invalid_at_peak_V": 0.005,
+    "temperature_for_passive_noise_K": 310,
+    "input_protection_series_resistance_per_leg_ohm": 4990,
+    "series_resistance_status": "Noise allocation only; final fault protection circuit unselected",
+    "quiet_channel_SNR_gate_dB_at_10uV_signal": 10,
+    "human_spinal_signal_amplitudes_established": false,
+    "primary_spinal_recording": {
+      "source_id": "S2-E-040",
+      "channel_count": 32,
+      "sample_rate_Hz": 30000,
+      "feature_bands_Hz": [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          12,
+          30
+        ],
+        [
+          30,
+          90
+        ],
+        [
+          90,
+          200
+        ],
+        [
+          200,
+          3000
+        ]
+      ],
+      "motor_window_s": 0.5,
+      "filtering": "bidirectional first-order Butterworth; offline common-median reference",
+      "representative_high_frequency_trace_band_Hz": [
+        300,
+        2000
+      ],
+      "rest_trace_RMS_V": [
+        2.09e-05,
+        2.21e-05
+      ],
+      "walking_trace_RMS_V": [
+        4.42e-05,
+        5.21e-05
+      ],
+      "directly_supports_selected_human_amplitude_or_fast_causal_decoder": false
+    },
+    "noise_cases": [
+      {
+        "id": "quiet_nominal",
+        "recording_effective_resistance_ohm": 20000,
+        "reference_effective_resistance_ohm": 2000,
+        "common_mode_frequency_Hz": 50,
+        "common_mode_RMS_V": 0.001,
+        "AFE_noise_RMS_V": 2.4e-06,
+        "alias_RMS_allowance_V": 6e-07,
+        "expectation": "conditionally passes selected10dB quiet-channel SNR gate"
+      },
+      {
+        "id": "reference_mismatch_stress",
+        "recording_effective_resistance_ohm": 1000000,
+        "reference_effective_resistance_ohm": 20000,
+        "common_mode_frequency_Hz": 50,
+        "common_mode_RMS_V": 0.01,
+        "AFE_noise_RMS_V": 3e-06,
+        "alias_RMS_allowance_V": 6e-07,
+        "expectation": "fails; shared-reference loading converts common mode; do not erase with assumed decoder accuracy"
+      }
+    ],
+    "noise_model": "RSS plus input-capacitance source-impedance mismatch; resistance is ReZ approximation, not complete electrode impedance",
+    "reference_capacitance_formula": "N_streams * C_in; selected192pF"
+  },
+  "analog_filter": {
+    "high_pass_corner_Hz": 0.1,
+    "high_pass_order": 1,
+    "low_pass_corner_Hz": 300,
+    "low_pass_order": 3,
+    "low_pass_family": "Butterworth",
+    "one_sided_white_noise_ENBW_formula_Hz": "pi/3 * low_pass_corner_Hz",
+    "low_pass_group_delay_formula": "(1/(1+w*w)+(1+w*w)/((1-w*w)**2+w*w))/(2*pi*fH), w=f/fH",
+    "high_pass_group_delay_formula": "fL/(2*pi*(f*f+fL*fL))",
+    "fast_band_group_delay_allocation_s": 0.002,
+    "source_id": "S2-E-009",
+    "high_frequency_alias_contract": {
+      "aggregate_out_of_band_RMS_reference_V": 0.001,
+      "first_folded_frequency_Hz": 3700,
+      "alias_allowance_V_rms": 6e-07,
+      "status": "Single-edge-tone arithmetic only; bounded broadband spectrum and interferer sweep still required"
+    }
+  },
+  "sampling": {
+    "fast_ADC_samples_per_stream_per_s": 4000,
+    "archive_samples_per_stream_per_s": 2000,
+    "neural_SPI_Hz": 8000000,
+    "neural_SPI_mode": 0,
+    "bits_per_SPI_transaction": 16,
+    "per_command_slot_s": 3e-06,
+    "housekeeping_pipeline_words_per_chip_per_frame": 3,
+    "commands_per_selected_frame": 19,
+    "frame_period_s": 0.00025,
+    "selected_burst_duration_s": 5.7e-05,
+    "selected_max_aperture_span_s": 4.5e-05,
+    "aperture_offsets_s": [
+      0.0,
+      3e-06,
+      6e-06,
+      9e-06,
+      1.2e-05,
+      1.5e-05,
+      1.8e-05,
+      2.1000000000000002e-05,
+      2.4e-05,
+      2.7e-05,
+      3e-05,
+      3.3e-05,
+      3.6e-05,
+      3.9e-05,
+      4.2000000000000004e-05,
+      4.5e-05
+    ],
+    "aperture_stamp_owner": "S1-MOD-03 local timer; sample aperture rather than packet/interrupt completion",
+    "device_min_conversion_cycle_s": 9.5e-07,
+    "device_min_CS_high_s": 1.54e-07,
+    "device_max_SPI_Hz": 25000000,
+    "pipeline_response_delay_commands": 2,
+    "interface_engine": "nRF5340 SPIM0+timer/DPPI/GPIOTE CS; two-byte EasyDMA ArrayList",
+    "engine_status": "Proposed; pin/register scheduling, pipeline mapping and DMA contention unverified",
+    "source_ids": [
+      "S2-E-010",
+      "S2-E-011",
+      "S2-E-012",
+      "S2-E-023",
+      "S2-E-024"
+    ],
+    "stim_artifact_handling": "S1-IF-11 masks plus protection/recovery; consult timing-blanking contract; simultaneous recording not asserted"
+  },
+  "archive_filter": {
+    "family": "31-tap Blackman-windowed sinc normalized to unit DC gain",
+    "tap_count": 31,
+    "design_cutoff_Hz": 500,
+    "input_rate_Hz": 4000,
+    "decimation": 2,
+    "coefficients": [
+      2.0818972693222115e-19,
+      -9.114732154814357e-05,
+      -0.0002900693762226705,
+      3.917970461495975e-19,
+      0.0015766548130272144,
+      0.004137029920983479,
+      0.005019805975900671,
+      -2.820464744182417e-18,
+      -0.012666078856368687,
+      -0.027038521047932924,
+      -0.028353120061421697,
+      7.270314130471002e-18,
+      0.06369924890958047,
+      0.1480266184692402,
+      0.22100974388781155,
+      0.24993966937390102,
+      0.22100974388781155,
+      0.1480266184692402,
+      0.06369924890958047,
+      7.270314130471002e-18,
+      -0.028353120061421697,
+      -0.027038521047932924,
+      -0.012666078856368687,
+      -2.820464744182417e-18,
+      0.005019805975900671,
+      0.004137029920983479,
+      0.0015766548130272144,
+      3.917970461495975e-19,
+      -0.0002900693762226705,
+      -9.114732154814357e-05,
+      2.0818972693222115e-19
+    ],
+    "coefficient_status": "Numerical design, not implemented firmware",
+    "fixed_group_delay_s": 0.00375,
+    "design_acceptance_0_to_300Hz_loss_limit_dB": 0.5,
+    "design_acceptance_1700_to_2000Hz_stop_attenuation_min_dB": 60,
+    "fast_motor_path_uses_this_filter": false,
+    "invalidity_rule": "Any invalid sample in coefficient support invalidates archived output; no masked-gap oracle interpolation"
+  },
+  "storage": {
+    "raw_sample_bytes": 2,
+    "frame_header_bytes": 16,
+    "frame_header_fields": {
+      "aperture_tick_uint64_bytes": 8,
+      "sequence_uint32_bytes": 4,
+      "validity_mask_uint16_bytes": 2,
+      "range_mask_uint16_bytes": 2
+    },
+    "frame_header_mask_capacity_streams": 16,
+    "for_32_streams_header_bytes": 20,
+    "reason_and_epoch_metadata": "Versioned bounded sidecar ledger; configuration, clock epoch, validity reason and artifact intervals retained.",
+    "frame_bytes_selected": 48,
+    "fast_payload_bytes_per_s": 128000,
+    "fast_framed_bytes_per_s": 192000,
+    "archive_framed_bytes_per_s": 96000,
+    "archive_window_s": 2,
+    "RAM_allocations_bytes": {
+      "archive_ring": 192000,
+      "ADC_DMA_and_fast_working_buffers": 8192,
+      "filter_features_parameters": 32768,
+      "firmware_OS_stack_heap": 131072,
+      "telemetry_command_validity_queues": 32768,
+      "monitor_DMA_integration": 8192
+    },
+    "application_RAM_capacity_bytes": 524288,
+    "application_RAM_reserved_headroom_min_fraction": 0.2,
+    "linked_image_or_heap_usage_measured": false,
+    "network_RAM_included_in_application_capacity": false,
+    "unbudgeted_external_flash": false
+  },
+  "compute": {
+    "witness_part": "nRF5340",
+    "application_clock_Hz": 128000000,
+    "optional_lower_clock_Hz": 64000000,
+    "application_flash_bytes": 1048576,
+    "application_RAM_bytes": 524288,
+    "network_clock_Hz": 64000000,
+    "network_RAM_bytes": 65536,
+    "FPU_and_DSP_available": true,
+    "simple_biquads_per_stream": 4,
+    "MACs_per_biquad_per_sample": 5,
+    "power_envelopes_per_stream": 4,
+    "MACs_per_envelope_per_sample": 2,
+    "linear_witness_inputs": 64,
+    "linear_witness_outputs": 8,
+    "linear_witness_update_Hz": 200,
+    "linear_output_count_status": "Arithmetic witness, not final task-state definition or biological decoder",
+    "assumed_cycles_per_MAC": 10,
+    "acquisition_burst_ISR_cycles": 300,
+    "channel_admin_cycle_allocation_per_s_at16streams": 3000000,
+    "admin_allocation_scales_linearly_with_stream_count": true,
+    "monitor_integration_assumed_cycles_per_sample": 10,
+    "cycle_contingency_fraction": 0.15,
+    "maximum_admitted_fraction_of_application_cycles": 0.6,
+    "worst_case_execution_measured": false,
+    "clock_selection_reason": "Concurrent neural DSP and 450 ksample/s monitor exceed 60% of 64 MHz under the declared arithmetic; 128 MHz provisionally admitted.",
+    "source_ids": [
+      "S2-E-020",
+      "S2-E-021",
+      "S2-E-022"
+    ],
+    "proposed_feature_bands_Hz": [
+      [
+        1,
+        4
+      ],
+      [
+        4,
+        30
+      ],
+      [
+        30,
+        100
+      ],
+      [
+        100,
+        300
+      ]
+    ],
+    "feature_band_status": "One simple causal biquad per feature is an arithmetic witness; exact response/coefficients and information age must be calibrated and tested."
+  },
+  "monitor_peripheral_reservation": {
+    "bus": "SPIM4 independent of neural SPI",
+    "SPI_Hz": 16000000,
+    "word_bits": 16,
+    "active_driver_count": 2,
+    "current_samples_per_active_source_per_s": 200000,
+    "voltage_samples_per_active_source_per_s": 20000,
+    "health_samples_per_s": 10000,
+    "aggregate_conversion_words_per_s": 450000,
+    "bus_wire_occupancy_before_CS_gaps": 0.45,
+    "raw_ring_duration_s": 0,
+    "recording_policy": "Short bounded DMA blocks; integrate and store measured charge summaries with uncertainty. No two-second high-rate ring.",
+    "independent_trip_latency_s": null,
+    "independent_trip_status": "Actual analog comparator and gate propagation remain unresolved; main-CPU integration is not independent shutdown.",
+    "ADC_candidate_and_error_model_owner": "Stage 2 stimulation and monitoring contract, owned by root.",
+    "source_id": "S2-E-025"
+  },
+  "power_inputs": {
+    "AFE_baseline_amplifier_current_A": 0.0002,
+    "AFE_amplifier_current_A_per_Hz": 7.6e-09,
+    "AFE_baseline_ADC_current_A": 0.00051,
+    "AFE_dynamic_current_A_per_sample_per_s": 2.14e-09,
+    "AFE_supply_observation_current_A": 1e-05,
+    "AFE_impedance_test_current_A_when_enabled": 0.00012,
+    "AFE_temperature_current_A_when_enabled": 7e-05,
+    "AFE_LVDS_extra_current_A_at3p3V": 0.0057,
+    "normal_uses_LVDS": false,
+    "normal_uses_impedance_test": false,
+    "normal_uses_temperature_sensor": false,
+    "normal_supply_observation_enabled": true,
+    "AFE_model_contingency_fraction": 0.25,
+    "external_protection_bias_allowance_W": 0.0005,
+    "AFE_total_allocated_W": 0.0045,
+    "MCU_typical_CoreMark_current_64MHz_A_at3V": 0.0036,
+    "MCU_typical_CoreMark_current_128MHz_A_at3V": 0.008,
+    "MCU_current_test_temperature_K": 298.15,
+    "MCU_current_test_is_actual_ATO_firmware": false,
+    "compute_peripherals_feature_radio_allocated_W": 0.035,
+    "compute_allocation_is_guaranteed_maximum": false,
+    "continuous_raw_radio_included": false,
+    "monitor_analog_power_budget_owned_by_other_contract": true,
+    "source_ids": [
+      "S2-E-013",
+      "S2-E-014",
+      "S2-E-015",
+      "S2-E-016",
+      "S2-E-026",
+      "S2-E-027",
+      "S2-E-028"
+    ]
+  },
+  "telemetry_inputs": {
+    "normal_mode": "Local decoding; leased feature/fault telemetry. Companion external SBP remains a separate source with freshness gates.",
+    "payload_bytes_per_packet": 128,
+    "packets_per_s": 50,
+    "normal_payload_bits_per_s": 51200,
+    "protocol_security_retransmission_overhead_included": false,
+    "continuous_raw_4k_framed_bits_per_s": 1536000,
+    "continuous_raw_2k_framed_bits_per_s": 768000,
+    "implant_RF_throughput_or_antenna_performance_verified": false,
+    "buffer_is_long_term_recording_storage": false
+  },
+  "scaling_alternatives": [
+    {
+      "streams": 8,
+      "record_contacts": 8,
+      "references": 1,
+      "bias": 1,
+      "AFE_chips": 1,
+      "active_amplifiers_per_chip": 8,
+      "command_words_per_chip_per_frame": 11,
+      "archive_window_s": 2,
+      "header_bytes": 16,
+      "scope": "Reduced information; sufficiency for the task is unproved."
+    },
+    {
+      "streams": 16,
+      "record_contacts": 16,
+      "references": 1,
+      "bias": 1,
+      "AFE_chips": 1,
+      "active_amplifiers_per_chip": 16,
+      "command_words_per_chip_per_frame": 19,
+      "archive_window_s": 2,
+      "header_bytes": 16,
+      "scope": "Selected conditional reference."
+    },
+    {
+      "streams": 32,
+      "record_contacts": 32,
+      "references": 2,
+      "bias": 1,
+      "AFE_chips": 2,
+      "active_amplifiers_per_chip": 16,
+      "command_words_per_chip_per_frame": 19,
+      "archive_window_s": 2,
+      "header_bytes": 20,
+      "scope": "RAM/compute gates fail with unchanged allocations. Revise window/model/processor and map the second SPI engine."
+    },
+    {
+      "streams": 8,
+      "record_contacts": 16,
+      "references": 0,
+      "bias": 1,
+      "AFE_chips": 1,
+      "active_amplifiers_per_chip": 8,
+      "command_words_per_chip_per_frame": 11,
+      "archive_window_s": 2,
+      "header_bytes": 16,
+      "scope": "Eight local bipolar pairs remove shared-reference fanout at half the selected stream count."
+    }
+  ],
+  "diagnostic_wideband_candidate": {
+    "samples_per_stream_per_s": 20000,
+    "analog_upper_corner_Hz": 7500,
+    "raw_bits_per_s_at16streams": 5120000,
+    "selected_8MHz_burst_compatible": false,
+    "continuous_radio_or_two_second_ring_admitted": false,
+    "separate_timing_memory_anti_alias_compute_power_contract_required": true
+  },
+  "source_provenance": [
+    {
+      "id": "INTAN_RHD2000_2023",
+      "url": "https://intantech.com/files/Intan_RHD2000_series_datasheet.pdf",
+      "document_revision": "Updated 8 December 2023",
+      "checked": "2026-10-08",
+      "type": "manufacturer_datasheet",
+      "implant_qualification_inferred": false
+    },
+    {
+      "id": "TI_ADS1299_REVC",
+      "url": "https://www.ti.com/lit/ds/symlink/ads1299.pdf",
+      "document_revision": "SBAS499C, January 2017",
+      "checked": "2026-10-08",
+      "type": "manufacturer_datasheet",
+      "implant_qualification_inferred": false
+    },
+    {
+      "id": "NORDIC_NRF5340_FEATURES",
+      "url": "https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/keyfeatures_html5.html",
+      "checked": "2026-10-08",
+      "type": "manufacturer_online_product_specification"
+    },
+    {
+      "id": "NORDIC_NRF5340_SPIM",
+      "url": "https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/spim.html",
+      "checked": "2026-10-08",
+      "type": "manufacturer_online_product_specification"
+    },
+    {
+      "id": "NORDIC_NRF5340_EASYDMA",
+      "url": "https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/easydma.html",
+      "checked": "2026-10-08",
+      "type": "manufacturer_online_product_specification"
+    },
+    {
+      "id": "NORDIC_NRF5340_CURRENT",
+      "url": "https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/chapters/current_consumption/doc/current_consumption.html",
+      "checked": "2026-10-08",
+      "type": "manufacturer_current_scenarios_typical_not_maximum"
+    },
+    {
+      "id": "ELHADWE_2026",
+      "url": "https://www.nature.com/articles/s41467-026-75128-z",
+      "primary_full_text_mirror": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13487197/fullTextXML",
+      "checked": "2026-10-08",
+      "type": "primary_research",
+      "scope": "Short-term rats and acute pigs; human consumer-implant efficacy is not established."
+    }
+  ],
+  "completion_gates": [
+    "Recompute arithmetic with the independent Stage 2 receipt; this JSON is inputs and not its own validation.",
+    "Quiet spinal amplitude and out-of-band spectrum remain biological assumptions; exercise declared nominal/stress cases.",
+    "Design and verify input protection/bias, ADC pipeline mapping, DMA burst shutdown and aperture jitter before Stage 4 completion.",
+    "Replace assumed cycles and memory allocations with actual firmware WCET and linked RAM usage.",
+    "An operational BP mode requires fresh authorized external SBP and a defined fallback; the neural decoder is optional and not free.",
+    "No clinical efficacy, chronic implant suitability or continuous implanted RF throughput is established."
+  ]
+}

@@ -1,0 +1,17 @@
+profile,Rtheta_K_per_W,steady_rise_K,chosen2K_gate_pass
+motor_reference,10,0.77092,True
+motor_reference,20,1.54184,True
+motor_reference,40,3.08368,False
+motor_reference,60,4.625520000000001,False
+pressure_reference,10,0.9199600000000001,True
+pressure_reference,20,1.8399200000000002,True
+pressure_reference,40,3.6798400000000004,False
+pressure_reference,60,5.519760000000001,False
+pressure_high_current_stress,10,2.4729999999999994,False
+pressure_high_current_stress,20,4.945999999999999,False
+pressure_high_current_stress,40,9.891999999999998,False
+pressure_high_current_stress,60,14.837999999999996,False
+cartesian_max_rejected,10,3.1450000000000005,False
+cartesian_max_rejected,20,6.290000000000001,False
+cartesian_max_rejected,40,12.580000000000002,False
+cartesian_max_rejected,60,18.870000000000005,False

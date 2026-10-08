@@ -54,6 +54,15 @@ current dummy-load board is not relabelled as a complete implant. The previous
 eight-contact geometry and 100 x 70 mm desktop shell are provisional choices to
 reopen, rather than constraints on the new architecture.
 
+## Reviewable progress as of 8 October 2026
+
+[Stage 1](stage1/README.md) specifies mechanisms and requirements.
+[Stage 2](stage2/README.md) supplies quantitative architecture, contracts and
+preliminary native geometry. Its [progress table](stage2/verification-progress.csv)
+keeps identified functional authority open for Stage 3 rather than declaring
+biological reachability from electrical arithmetic. Stage 3 is the next bounded
+package; complete circuits, populated CAD and integrated manuscript remain later.
+
 ## Stage 1: mechanism, scope and requirements
 
 Build a full-device specification before choosing final components or dimensions.

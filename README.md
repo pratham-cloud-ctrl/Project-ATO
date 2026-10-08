@@ -7,15 +7,19 @@ expert-informed motor practice that improves retained unassisted performance,
 and target-specific physiological automation. AstroSam's [Mind-Link](https://github.com/sam-astro/Mind-link)
 inspires the progression from future vision to inspectable electronics and physical design.
 
-> **Stage 1 mechanism and requirements completed for review.** The full proposed
-> implant system is still in development on `overhaul/full-scci-system`. Detailed
-> electronics, embedded implementation and implant/companion CAD follow the
-> numerical architecture stage. Video and website work are parked.
+> **Stages 1 and 2 are ready for review.** The mechanism now has numerical
+> acquisition, compute, stimulation, timing, energy and package allocations,
+> including rejected cases. The full proposed implant remains in development on
+> `overhaul/full-scci-system`. Complete circuits, embedded implementation and
+> populated engineering CAD follow. Video and website work are parked.
 
 ![Full proposed SCCI architecture](docs/stage1/figures/full-system.svg)
 
 | Start here | What to review |
 |---|---|
+| [Illustrated Stage 2 brief](output/pdf/ATO_stage2_architecture_budgets.pdf) | Eight-page quantitative architecture with scientific figures and physical allocations |
+| [Stage 2 technical dossier](docs/stage2/README.md) | Selected design, source audits, control contracts and reproducible budgets |
+| [Native preliminary CAD](cad/stage2/ATO_stage2_allocation.FCStd) | FreeCAD/STEP allocation assembly; 80 solids and 36 illustrative body ports |
 | [Illustrated Stage 1 brief](output/pdf/ATO_stage1_system_specification.pdf) | Nine-page overview with the complete system and both causal mechanisms |
 | [Full design dossier](docs/stage1/README.md) | Mechanisms, evidence audit, architecture alternatives and interface responsibilities |
 | [Requirements](docs/stage1/requirements.csv) | 36 owned requirements linked to planned verification |
@@ -38,7 +42,12 @@ learning and long-term consumer use are hypotheses, not results of this dossier.
 
 Specification consistency is checked with `python scripts/verify_stage1_specification.py`.
 The [Stage 1 receipt](provenance/stage1-verification.json) is separate from the
-original release's engineering evidence. All later verification remains pending.
+original release's engineering evidence. Stage 2 budgets are reproduced with
+`python scripts/run_architecture_budgets.py --check` and audited with
+`python scripts/verify_stage2_architecture.py`; see the
+[Stage 2 receipt](provenance/stage2-verification.json) and
+[scoped progress](docs/stage2/verification-progress.csv). Identified biological
+authority, full circuits/firmware and populated implant CAD remain pending.
 
 ## Historical subsystem reference: v1.0.0
 
