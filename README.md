@@ -17,6 +17,7 @@ inspires the progression from future vision to inspectable electronics and physi
 
 | Start here | What to review |
 |---|---|
+| [Latest Stage3 continuation](docs/stage3/continuation-review.md) | Numerical verification, fair input comparisons, teacher correction, response limits and next design work |
 | [Stage3 computational foundation](docs/stage3/README.md) | Causal contact observations, expert/learner mechanism, measured delivery and external-pressure feedback |
 | [Stage3 results and remaining work](docs/stage3/results-and-interpretation.md) | Honest integrated abstention, conditional learning studies, pressure benefits and failures |
 | [Free/student tool selection and inventory](docs/stage3/toolchain-selection.md) | Fresh CAD/EDA/numerical checks and justified optional tools |

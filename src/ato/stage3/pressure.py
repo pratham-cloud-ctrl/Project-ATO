@@ -331,9 +331,83 @@ def _default_delivery(requested_fraction: float, time_s: float) -> DeliveryEvide
                             0.03 * requested_fraction)
 
 
+class TimestampedPressureBody:
+    """Evaluator-only delayed-dose events on their exact physical timestamps.
+
+    This optional numerical path preserves the declared cascade equations and
+    release-hold rule. It never rounds a dose onset, release expiry or gain
+    change to the body integration grid. The legacy aligned-grid baseline is
+    retained separately by ``run_study(exact_events=False)``.
+    """
+
+    def __init__(self, scenario: PressureScenario):
+        self.scenario = scenario
+        self.time_s = 0.0
+        self.activation = 0.0
+        self.added_pressure = 0.0
+        self.delayed_fraction = 0.0
+        self.last_scheduled_fraction = 0.0
+        self.falling = False
+        self.release_until_s = -1.0
+        self.pending: deque[tuple[float, float]] = deque()
+        self.applied_events: list[tuple[float, float]] = []
+
+    def schedule_dose(self, command_time_s: float, fraction: float) -> None:
+        if not (math.isfinite(command_time_s) and math.isfinite(fraction)
+                and command_time_s >= self.time_s - 1e-10 and 0 <= fraction <= 1):
+            raise ValueError("dose event must be a finite present/future command")
+        if fraction == self.last_scheduled_fraction:
+            return
+        timestamp = command_time_s + self.scenario.onset_delay_s
+        if self.pending and timestamp < self.pending[-1][0]:
+            raise ValueError("delayed dose events must be chronological")
+        self.pending.append((timestamp, fraction))
+        self.last_scheduled_fraction = fraction
+
+    def _apply_ready_events(self) -> None:
+        while self.pending and self.pending[0][0] <= self.time_s + 1e-12:
+            timestamp, fraction = self.pending.popleft()
+            if fraction < self.delayed_fraction - 1e-12 and not self.falling:
+                self.falling = True
+                self.release_until_s = timestamp + self.scenario.release_delay_s
+            elif fraction > self.delayed_fraction + 1e-12:
+                self.falling = False
+            self.delayed_fraction = fraction
+            self.applied_events.append((timestamp, fraction))
+
+    def advance(self, end_s: float) -> None:
+        """Advance at most one numerical step, splitting all interior events."""
+        if not math.isfinite(end_s) or end_s < self.time_s - 1e-12:
+            raise ValueError("body time cannot reverse")
+        scenario = self.scenario
+        while self.time_s < end_s - 1e-13:
+            self._apply_ready_events()
+            boundary = end_s
+            if self.pending:
+                boundary = min(boundary, self.pending[0][0])
+            if self.falling and self.release_until_s > self.time_s + 1e-12:
+                boundary = min(boundary, self.release_until_s)
+            if scenario.changed_gain_pa is not None and scenario.change_time_s > self.time_s + 1e-12:
+                boundary = min(boundary, scenario.change_time_s)
+            duration = boundary - self.time_s
+            recruited = max(0.0, self.delayed_fraction - scenario.recruitment_threshold) / (
+                1 - scenario.recruitment_threshold)
+            if self.falling and self.time_s < self.release_until_s - 1e-12:
+                recruited = max(recruited, self.activation)
+            gain = scenario.gain_pa
+            if scenario.changed_gain_pa is not None and self.time_s >= scenario.change_time_s - 1e-12:
+                gain = scenario.changed_gain_pa
+            self.activation += (recruited - self.activation) * (
+                -math.expm1(-duration / scenario.activation_tau_s))
+            self.added_pressure += (gain * self.activation - self.added_pressure) * (
+                -math.expm1(-duration / scenario.response_tau_s))
+            self.time_s = boundary
+        self._apply_ready_events()
+
+
 def run_study(seed: int = 0, scenario: str | PressureScenario = "nominal", mode: str = "feedback",
               delivery: Callable[[float, float], DeliveryEvidence | Mapping] | None = None,
-              config: PressureConfig | None = None) -> dict:
+              config: PressureConfig | None = None, *, exact_events: bool = False) -> dict:
     """Run one paired reproducible model; returned arrays contain evaluator truth.
 
 Modes feedback/off share the identical calibration exposure and all random
@@ -365,6 +439,7 @@ request branch, and is explicitly excluded from operational benefit claims.
     release_until = -1.0
     falling = False
     last_delayed = 0.0
+    timestamped_body = TimestampedPressureBody(scenario) if exact_events else None
     fraction = 0.0
     evidence = DeliveryEvidence(0, 0)
     latest_observation = None
@@ -485,6 +560,13 @@ request branch, and is explicitly excluded from operational benefit claims.
             }
             for key, value in row.items():
                 trace[key].append(value)
+        if timestamped_body is not None:
+            timestamped_body.schedule_dose(time_s, evidence.effective_fraction)
+            if step < n - 1:
+                timestamped_body.advance(time_s + dt)
+            activation = timestamped_body.activation
+            added_pressure = timestamped_body.added_pressure
+            continue
         delayed = dose_queue[0]
         dose_queue.append(evidence.effective_fraction)
         if delayed < last_delayed - 1e-12 and not falling:
@@ -509,7 +591,7 @@ request branch, and is explicitly excluded from operational benefit claims.
     freshness = np.asarray(trace["observation_fresh"], dtype=bool)
     reasons = trace["controller_reason"]
     fallback_mask = np.array(["sensor_fault" in reason for reason in reasons]) & evaluation
-    return {
+    result = {
         "schema": "ato.stage3.pressure-study.v1",
         "metadata": {"seed": seed, "scenario": asdict(scenario), "mode": mode,
                      "config": asdict(config), "pressure_unit": "Pa", "display_pa_per_mmhg": PA_PER_MMHG,
@@ -545,6 +627,17 @@ request branch, and is explicitly excluded from operational benefit claims.
         "trace": trace,
         "external_observation_records": all_records,
     }
+    if timestamped_body is not None:
+        result["metadata"]["body_event_timing"] = "exact_timestamped_onset_release_gain_events"
+        result["body_event_witness"] = {
+            "declared_onset_delay_s": scenario.onset_delay_s,
+            "declared_release_delay_s": scenario.release_delay_s,
+            "onset_rounding_error_s": 0.0,
+            "applied_delayed_dose_events": timestamped_body.applied_events,
+            "gain_change_s": scenario.change_time_s if scenario.changed_gain_pa is not None else None,
+            "pending_after_final_endpoint": list(timestamped_body.pending),
+        }
+    return result
 
 
 def run_batch(seeds: tuple[int, ...] = (0, 1, 2), scenarios: tuple[str, ...] | None = None,

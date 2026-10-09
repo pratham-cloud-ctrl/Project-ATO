@@ -9,16 +9,23 @@ from dataclasses import asdict, dataclass, replace
 from typing import Callable
 import numpy as np
 from .acquisition import AcquisitionConfig, ContactAcquisition, NeuralFeatures, artifact_coverage
+from .external_history import fit_external_history, CausalExternalHistoryDecoder
 
 FAMILIES = ("favorable", "zero", "harmful", "dependent")
 CONDITIONS = ("observe_only", "external__learner_only", "external__expert_external",
               "external__expert_neural", "neural_external__learner_only",
               "neural_external__expert_external", "neural_external__expert_neural")
+EXTERNAL_HISTORY_CONDITIONS = tuple("external_history__"+representation
+                                    for representation in ("learner_only", "expert_external", "expert_neural"))
 
 
 @dataclass(frozen=True)
 class MotorConfig:
     dt_s: float = .005
+    # Decision/acquisition time stays fixed. This is solely the private body's
+    # maximum integration interval, not an extra measurement or policy tick.
+    body_integration_step_s: float = .005
+    body_integration_method: str = "legacy_endpoint"
     event_spacing_s: float = .5
     foot_amplitude_m: float = .10
     practice_blocks: int = 4
@@ -52,6 +59,8 @@ class MotorConfig:
     heldout_gain_fraction: float = .65
     heldout_cross_coupling: float = .40
     save_trace_condition: str = "neural_external__expert_neural"
+    acquisition_qualification_mode: str = "fixed_history"
+    acquisition_clock_uncertainty_s: float = 0.
 
     def __post_init__(self):
         if self.dt_s != .005 or self.pulse_hz != 40 or self.event_spacing_s != .5:
@@ -66,6 +75,22 @@ class MotorConfig:
             raise ValueError("insufficient declared observation/practice exposure")
         if min(self.motor_activation_tau_s, self.movement_tau_s, self.probe_s) <= 0:
             raise ValueError("time constants and probe duration must be positive")
+        step = self.body_integration_step_s
+        if (not np.isfinite(step) or step <= 0 or step > self.dt_s
+                or not np.isclose(self.dt_s/step, round(self.dt_s/step), rtol=0, atol=1e-10)):
+            raise ValueError("body integration step must divide the fixed 5 ms decision interval")
+        if self.body_integration_method not in {"legacy_endpoint", "midpoint_exact_cascade"}:
+            raise ValueError("unknown private body integration method")
+        if not np.isfinite(self.motor_onset_delay_s) or self.motor_onset_delay_s < 0:
+            raise ValueError("motor onset delay must be finite and nonnegative")
+        if (not np.isfinite(self.external_delay_s) or self.external_delay_s < 0
+                or not np.isclose(self.external_delay_s/self.dt_s,
+                                  round(self.external_delay_s/self.dt_s), rtol=0, atol=1e-10)):
+            raise ValueError("external delay must remain on the fixed 5 ms measurement clock")
+        if self.acquisition_qualification_mode not in {"fixed_history", "bounded_residual"}:
+            raise ValueError("unknown acquisition qualification mode")
+        if not np.isfinite(self.acquisition_clock_uncertainty_s) or self.acquisition_clock_uncertainty_s < 0:
+            raise ValueError("finite nonnegative acquisition clock allowance required")
 
 
 @dataclass(frozen=True)
@@ -137,30 +162,75 @@ class _World:
         self.negative_route_sign = -1. if c.biological_variant == "nominal" else 1.
         if c.biological_variant == "no_authority":
             self.negative_route_sign = -1.
-        self._delay_steps = int(round(c.motor_onset_delay_s / c.dt_s))
-        self._drive_history = deque([np.zeros(2) for _ in range(self._delay_steps+1)],
-                                    maxlen=self._delay_steps+1)
+        # Timestamped changes, rather than a body-step deque. A command held
+        # from block start s becomes biological input at s + onset_delay_s.
+        # Non-grid-aligned transitions split a private body step exactly.
+        self._drive_events = deque()
+        self._delayed_drive = np.zeros(2)
+        self._last_interval_end_s = None
+        self.integration_substeps = 0
+        self.delay_transitions = []
         self.last_voluntary = np.zeros(2)
         self.last_stim_effect = np.zeros(2)
 
     def advance(self, t, signed_true_dose, family, *, learning, rest=False, heldout=False):
+        """Advance one fixed decision interval, preserving its source velocity.
+
+        ``t`` is the interval's right endpoint, matching the foundation API.
+        The source used in the next acquisition block is the displacement over
+        this entire 5 ms interval, not the velocity of its final fine substep.
+        """
         c = self.c
-        phi = task_basis(t, heldout=heldout)
-        desired = task_goal(t, c, heldout=heldout)
-        voluntary = np.zeros(2) if rest else self.theta @ phi
+        start = t-c.dt_s
+        if not np.isfinite(t) or (self._last_interval_end_s is not None
+                and abs(start-self._last_interval_end_s) > 1e-10):
+            raise ValueError("body intervals must be finite and contiguous on the decision clock")
         drive = np.array(signed_true_dose, dtype=float)
+        if drive.shape != (2,) or not np.all(np.isfinite(drive)):
+            raise ValueError("body dose must have two finite components")
         # Fixed pulse charge can fail a recruitment threshold entirely. This
         # artificial threshold does not infer biological effect from command.
         active = np.abs(drive) > c.recruitment_threshold_fraction
         drive = np.sign(drive)*np.maximum(0, np.abs(drive)-c.recruitment_threshold_fraction) * active
         drive = np.where(drive < 0, -self.negative_route_sign*drive, drive)
-        self._drive_history.append(drive)
-        delayed = self._drive_history[0]
-        self.activation += (1-np.exp(-c.dt_s/c.motor_activation_tau_s))*(delayed-self.activation)
-        stim_effect = self.recruitment @ self.activation
+        self._drive_events.append((start+c.motor_onset_delay_s, drive))
         old_x = self.x.copy()
-        self.x += (1-np.exp(-c.dt_s/c.movement_tau_s))*(voluntary+stim_effect-self.x)
+        pieces = int(round(c.dt_s/c.body_integration_step_s))
+        cursor = start
+        for index in range(pieces):
+            endpoint = t if index == pieces-1 else start+(index+1)*c.body_integration_step_s
+            while cursor < endpoint-1e-13:
+                while self._drive_events and self._drive_events[0][0] <= cursor+1e-12:
+                    when, self._delayed_drive = self._drive_events.popleft()
+                    self.delay_transitions.append(float(when))
+                stop = endpoint
+                if self._drive_events and cursor+1e-12 < self._drive_events[0][0] < stop-1e-12:
+                    stop = self._drive_events[0][0]
+                # Known direction changes are forcing discontinuities. At an
+                # exact endpoint the right-end convention remains the historic
+                # one; the closed-form/ODE reference discloses that endpoint
+                # quadrature error rather than erasing it from the baseline.
+                direction_change = (np.floor(cursor/2)+1)*2
+                if cursor+1e-12 < direction_change < stop-1e-12:
+                    stop = direction_change
+                h = c.dt_s if pieces == 1 and stop == t and cursor == start else stop-cursor
+                self._advance_piece(stop, h, family, learning=learning, rest=rest, heldout=heldout)
+                cursor = stop
+        self._last_interval_end_s = t
         self.v = (self.x-old_x)/c.dt_s
+
+    def _advance_piece(self, t, h, family, *, learning, rest, heldout):
+        c = self.c
+        if c.body_integration_method == "midpoint_exact_cascade":
+            self._advance_midpoint(t-h, h, family, learning=learning, rest=rest, heldout=heldout)
+            return
+        phi = task_basis(t, heldout=heldout)
+        desired = task_goal(t, c, heldout=heldout)
+        voluntary = np.zeros(2) if rest else self.theta @ phi
+        self.activation += (1-np.exp(-h/c.motor_activation_tau_s))*(self._delayed_drive-self.activation)
+        stim_effect = self.recruitment @ self.activation
+        self.x += (1-np.exp(-h/c.movement_tau_s))*(voluntary+stim_effect-self.x)
+        self.integration_substeps += 1
         self.last_voluntary = voluntary
         self.last_stim_effect = stim_effect
         if learning and not rest:
@@ -178,7 +248,63 @@ class _World:
                 error = sensory_error
             else:
                 raise ValueError("unknown learning family")
-            self.theta += c.learning_step*c.dt_s * np.outer(error, phi)
+            self.theta += c.learning_step*h * np.outer(error, phi)
+
+    def _advance_midpoint(self, start, h, family, *, learning, rest, heldout):
+        """Second-order forcing/plasticity, exact held-input activation cascade.
+
+        Delay and direction events have already split this interval. Midpoint
+        forcing never applies a new direction over time preceding its event.
+        The coarse legacy scheme remains a separate reproducible option.
+        """
+        c = self.c
+        drive = self._delayed_drive
+        initial_activation = self.activation.copy()
+        initial_position = self.x.copy()
+        initial_theta = self.theta.copy()
+
+        def cascade(duration, voluntary):
+            ea = np.exp(-duration/c.motor_activation_tau_s)
+            ex = np.exp(-duration/c.movement_tau_s)
+            if abs(c.motor_activation_tau_s-c.movement_tau_s) < 1e-14:
+                coupled = duration/c.movement_tau_s*ex
+            else:
+                coupled = c.motor_activation_tau_s/(c.motor_activation_tau_s-c.movement_tau_s)*(ea-ex)
+            activation = drive+(initial_activation-drive)*ea
+            position = (initial_position*ex+(voluntary+self.recruitment@drive)*(1-ex)
+                        +(self.recruitment@(initial_activation-drive))*coupled)
+            return activation, position
+
+        def rate(time, theta, position, activation):
+            phi = task_basis(time, heldout=heldout)
+            voluntary = np.zeros(2) if rest else theta@phi
+            if not learning or rest:
+                return np.zeros((2, 4))
+            desired = task_goal(time, c, heldout=heldout)
+            stimulation = self.recruitment@activation
+            if family == "zero": error = desired-voluntary
+            elif family == "favorable": error = desired-voluntary+c.stimulation_teaching_fraction*stimulation
+            elif family == "harmful": error = desired-position-c.sensory_interference_fraction*stimulation
+            elif family == "dependent": error = desired-position
+            else: raise ValueError("unknown learning family")
+            return c.learning_step*np.outer(error, phi)
+
+        voluntary_start = np.zeros(2) if rest else initial_theta@task_basis(start, heldout=heldout)
+        midpoint_activation, midpoint_position = cascade(h/2, voluntary_start)
+        midpoint_theta = initial_theta+h/2*rate(start, initial_theta, initial_position, initial_activation)
+        midpoint = start+h/2
+        voluntary_midpoint = np.zeros(2) if rest else midpoint_theta@task_basis(midpoint, heldout=heldout)
+        self.activation, self.x = cascade(h, voluntary_midpoint)
+        self.theta = initial_theta+h*rate(midpoint, midpoint_theta, midpoint_position, midpoint_activation)
+        self.integration_substeps += 1
+        self.last_voluntary = voluntary_midpoint
+        self.last_stim_effect = self.recruitment@self.activation
+
+
+def _pulse_frame(t, c):
+    """Frame membership belongs to physical decision time, never body substeps."""
+    cycles = t*c.pulse_hz
+    return abs(cycles-round(cycles)) < 1e-10
 
 
 def task_basis(t, heldout=False):
@@ -235,10 +361,15 @@ class CausalDecoder:
     """Local encoder fit uses learner calibration's external observations only."""
     def __init__(self, config, neural_model=None):
         self.config = config
-        self.neural_model = neural_model
+        bundled = neural_model is not None and "external_history" in neural_model
+        self.neural_model = neural_model["neural"] if bundled else neural_model
+        self.external_history = CausalExternalHistoryDecoder(config, neural_model["external_history"] if bundled else None)
         self._external = deque(maxlen=9)
 
     def estimate(self, observation: Observation, sensing: str) -> StateEstimate:
+        if sensing == "external_history":
+            estimate = self.external_history.estimate(observation)
+            return StateEstimate(**asdict(estimate))
         c = self.config
         now = observation.available_time_s
         support = observation.external_measurement_time_s
@@ -266,10 +397,12 @@ class CausalDecoder:
         source = "EXTERNAL"
         reason = "EXTERNAL_ONLY"
         neural = observation.neural
-        neural_causal = (neural.available_time_s <= now and neural.support_end_s <= neural.available_time_s
+        clock = neural.clock_uncertainty_s
+        neural_causal = (np.isfinite(clock) and clock >= 0 and neural.available_time_s <= now
+                         and neural.support_end_s+2*clock <= neural.available_time_s
                          and neural.support_start_s <= neural.support_end_s
                          and np.isfinite(neural.available_time_s)
-                         and now-neural.support_end_s <= .005)
+                         and now-neural.support_end_s+clock <= .005)
         if sensing == "neural_external" and neural.valid and neural_causal and self.neural_model is not None:
             m = self.neural_model
             features = np.array(neural.values_uv)
@@ -341,7 +474,9 @@ def _capture(seed, c, duration, *, rest=False, probe=None, delivery=None, expert
     if expert:
         world.theta = np.array([[c.foot_amplitude_m, 0., .0, .0],
                                 [-c.foot_amplitude_m, 0., .0, .0]])
-    acquisition = ContactAcquisition(subject_seed+8300, AcquisitionConfig(source_mode=c.source_mode),
+    acquisition = ContactAcquisition(subject_seed+8300, AcquisitionConfig(source_mode=c.source_mode,
+                                      qualification_mode=c.acquisition_qualification_mode,
+                                      clock_uncertainty_s=c.acquisition_clock_uncertainty_s),
                                      noise_seed=seed+17001)
     rng = np.random.default_rng(seed+9200)
     n = int(round(duration/c.dt_s))
@@ -355,7 +490,7 @@ def _capture(seed, c, duration, *, rest=False, probe=None, delivery=None, expert
         delivery.begin_session()
     for k in range(n):
         t = k*c.dt_s
-        if k % 5 == 0:
+        if _pulse_frame(t, c):
             held_true.fill(0); held_measured.fill(0)
             signed = np.zeros(2) if probe is None else probe(t)
             for j in range(2):
@@ -385,11 +520,13 @@ def _capture(seed, c, duration, *, rest=False, probe=None, delivery=None, expert
     return observations, data, witnesses, monitor_doses
 
 
-def calibrate(seed, config=MotorConfig(), delivery=None):
+def calibrate(seed, config=MotorConfig(), delivery=None, *, include_external_history=False):
     """Fit local decoder and route responses from finite, equal-budget observations."""
     c = config
     obs, _, _, _ = _capture(seed, c, c.calibration_s, delivery=delivery)
     model = _fit_neural(obs)
+    external_model = (fit_external_history(obs, external_freshness_s=c.external_freshness_s)
+                      if include_external_history else None)
     # Four observed rest/step/release probes; the true map is never queried.
     period = c.probe_s + .75
     def probes(t):
@@ -466,7 +603,7 @@ def calibrate(seed, config=MotorConfig(), delivery=None):
                              tuple(tuple(float(v) for v in row) for row in unc),
                              identified_delay, onset_unc, bool(qualified), tuple(rejected), len(pulses),
                              float(nominal_fraction), float(np.sqrt(np.mean(agreement**2))), heldout_rmse)
-    return response_map, model, {"movement_calibration_s": c.calibration_s,
+    metadata = {"movement_calibration_s": c.calibration_s,
                                 "route_probe_calibration_s": 4*period,
                                 "heldout_mixed_route_calibration_s": 2*period,
                                 "same_budget_all_conditions": True,
@@ -478,6 +615,11 @@ def calibrate(seed, config=MotorConfig(), delivery=None):
                                 "monitor_pulses": pulses,
                                 "decoder_fit": None if model is None else {
                                     k:v for k,v in model.items() if k not in {"mean","scale","weights"}}}
+    if include_external_history:
+        metadata["external_history_fit"] = None if external_model is None else {
+            k: v for k, v in external_model.items() if k not in {"mean", "scale", "weights"}}
+        model = {"neural": model, "external_history": external_model}
+    return response_map, model, metadata
 
 
 def _expert_library(seed, c):
@@ -597,10 +739,12 @@ def _run_trial(seed, c, family, condition, response, neural_model, library, thet
     world.theta = theta.copy()
     if hasattr(delivery, "begin_session"):
         delivery.begin_session()
-    acq = ContactAcquisition(subject_seed+8300, AcquisitionConfig(source_mode=c.source_mode),
+    acq = ContactAcquisition(subject_seed+8300, AcquisitionConfig(source_mode=c.source_mode,
+                             qualification_mode=c.acquisition_qualification_mode,
+                             clock_uncertainty_s=c.acquisition_clock_uncertainty_s),
                              noise_seed=seed+17001)
     decoder = CausalDecoder(c, neural_model)
-    sensing = "neural_external" if condition.startswith("neural_external") else "external"
+    sensing = condition.split("__")[0] if condition != "observe_only" else "external"
     representation = library[condition.split("__")[-1]] if condition != "observe_only" else library["learner_only"]
     if fault == "shuffled_expert":
         coefficients = -np.array(representation.coefficients_m)[:,::-1]
@@ -610,6 +754,10 @@ def _run_trial(seed, c, family, condition, response, neural_model, library, thet
     rng = np.random.default_rng(seed+9200)
     ext_steps = int(round(c.external_delay_s/c.dt_s))
     history = deque([np.zeros(2) for _ in range(ext_steps+1)], maxlen=ext_steps+1)
+    comparison = neural_model is not None and "external_history" in neural_model
+    support_truth = {index: (np.zeros(2), np.zeros(2)) for index in range(-ext_steps, 0)}
+    position_errors, velocity_errors = [], []
+    external_history_used = 0
     plans = deque()
     # Pulse-density modulation selects whole qualified fixed-profile pulses.
     # The profile never changes polarity to represent a signed movement goal.
@@ -623,7 +771,7 @@ def _run_trial(seed, c, family, condition, response, neural_model, library, thet
     for k in range(int(round(duration/c.dt_s))):
         t = k*c.dt_s
         # At launch, no more than one event/source/profile per 25 ms frame.
-        if k % 5 == 0:
+        if _pulse_frame(t, c):
             while plans and plans[0][0] <= t+1e-12:
                 _, decision_t, candidate, valid = plans.popleft()
                 commanded = candidate if valid else np.zeros(2)
@@ -646,6 +794,8 @@ def _run_trial(seed, c, family, condition, response, neural_model, library, thet
                             acq.add_artifact(t, c.phase_s,
                                              recovery_s=.010 if fault=="artifact_recovery" else None)
         history.append(world.x.copy())
+        if comparison:
+            support_truth[k] = (world.x.copy(), world.v.copy())
         ext = history[0]+rng.normal(0, c.external_noise_m, 2)
         physical_support = t-c.external_delay_s
         ext_valid = True
@@ -661,6 +811,15 @@ def _run_trial(seed, c, family, condition, response, neural_model, library, thet
                              extra_saturation=fault=="saturation" and t > duration/2)
         o = Observation(t+c.dt_s, tuple(ext), physical_support, ext_valid, neural)
         estimate = decoder.estimate(o, sensing)
+        if comparison and estimate.valid:
+            # Evaluator-only truth on exactly the estimate's physical support;
+            # it never enters the decoder, identification or control request.
+            index = int(round(estimate.support_time_s/c.dt_s))
+            if index in support_truth and abs(index*c.dt_s-estimate.support_time_s) <= 1e-9:
+                true_position, true_velocity = support_truth[index]
+                position_errors.append(np.asarray(estimate.position_m)-true_position)
+                velocity_errors.append(np.asarray(estimate.velocity_m_per_s)-true_velocity)
+        external_history_used += int(estimate.source == "LEARNED_EXTERNAL_HISTORY")
         neural_valid += int(neural.valid)
         neural_used += int(estimate.source == "NEURAL_PLUS_SAME_EXTERNAL")
         invalid += int(not estimate.valid)
@@ -697,6 +856,13 @@ def _run_trial(seed, c, family, condition, response, neural_model, library, thet
                     "reactive_25ms_target_guaranteed": False,
                     "raw_sample_mask_fraction": acq.total_masked_samples/acq.total_raw_samples,
                     "assistance": "ON" if learning and condition!="observe_only" else "OFF"})
+    if comparison:
+        metrics["same_support_estimation"] = {
+            "position_rmse_m": float(np.sqrt(np.mean(np.square(position_errors)))) if position_errors else None,
+            "velocity_rmse_m_per_s": float(np.sqrt(np.mean(np.square(velocity_errors)))) if velocity_errors else None,
+            "valid_scored_packets": len(position_errors), "total_packets": len(times),
+            "scope": "evaluator-only private body at the external observation's identical physical support"}
+        metrics["learned_external_history_used_fraction"] = external_history_used/len(times)
     return world.theta.copy(), metrics, {"samples": trace, "pulses": pulses}
 
 
@@ -711,13 +877,24 @@ def run_study(seed=0, config=MotorConfig(), delivery: Callable | None=None, *,
     condition. This run does not establish human decoding or learned skill.
     """
     c = config
-    if any(f not in FAMILIES for f in families) or any(s not in CONDITIONS for s in conditions):
+    if any(f not in FAMILIES for f in families) or any(s not in CONDITIONS+EXTERNAL_HISTORY_CONDITIONS for s in conditions):
         raise ValueError("unknown study condition or plasticity family")
     delivery_callback = delivery or _assumed_delivery
-    response, decoder_model, calibration = calibrate(seed, c, delivery_callback)
+    comparison = any(s in EXTERNAL_HISTORY_CONDITIONS for s in conditions)
+    response, decoder_model, calibration = calibrate(seed, c, delivery_callback,
+                                                    include_external_history=comparison)
     library = _expert_library(seed, c)
     initial_theta = _World(seed,c).theta.copy()
-    output = {"schema": "ATO-S3-MOTOR-1", "seed": int(seed), "config": asdict(c),
+    serialized_config = asdict(c)
+    # The original foundation artifacts are retained as a reproducible coarse
+    # reference. Their config schema predates the independent body clock.
+    if c.body_integration_step_s == c.dt_s and c.body_integration_method == "legacy_endpoint":
+        serialized_config.pop("body_integration_step_s")
+        serialized_config.pop("body_integration_method")
+    if c.acquisition_qualification_mode == "fixed_history" and c.acquisition_clock_uncertainty_s == 0:
+        serialized_config.pop("acquisition_qualification_mode")
+        serialized_config.pop("acquisition_clock_uncertainty_s")
+    output = {"schema": "ATO-S3-MOTOR-1", "seed": int(seed), "config": serialized_config,
               "calibration": {"response_map": asdict(response), **calibration},
               "expert_resource": {k:asdict(v) for k,v in library.items()},
               "artifact_audit": {"nominal": artifact_coverage(),
@@ -736,6 +913,17 @@ def run_study(seed=0, config=MotorConfig(), delivery: Callable | None=None, *,
                               "Raw artifact coverage does not qualify recursive filter history: a chosen 100 ms uninterrupted history gate may remove neural eligibility during 40 Hz assistance.",
                               "Body/source state is zero-order held across each 5 ms acquisition block; microsecond electrode/electrical timing is modeled separately.",
                               "Transfer is a held-out 15% faster cadence with changed response/cross-coupling, not a human skill-generalization result."]}
+    if c.acquisition_qualification_mode == "bounded_residual":
+        output["limitations"][6] = "Missing-input filter contamination uses the declared range-bounded digital residual model; it does not establish physical amplifier recovery."
+        output["artifact_audit_scope"] = "separate historical fixed-history reference; actual coupled qualification mode is recorded in config"
+    if comparison:
+        output["comparison_design"] = {
+            "added_external_history_conditions": [s for s in conditions if s in EXTERNAL_HISTORY_CONDITIONS],
+            "learned_input_dimension_each": 32, "coefficient_count_each": 132,
+            "common_training_labels": "measured external position and partition-local differentiated external position",
+            "offline_common_cohort": "neural-qualified targets with purged chronological split; history exclusions declared",
+            "online_external_comparator": "learned 75ms external history fused with the same nine-row linear external observer",
+            "incremental_information_scope": "matched observable-input alternatives; measured-label fit alone is not body-state evidence"}
     for family in families:
         family_result = {"conditions": {}, "contrasts": {}}
         for condition in conditions:
@@ -790,7 +978,10 @@ def run_study(seed=0, config=MotorConfig(), delivery: Callable | None=None, *,
             ext, neural = "external__"+rep, "neural_external__"+rep
             if ext in conditions and neural in conditions:
                 family_result["contrasts"]["neural_minus_external_retention_m__"+rep] = metric(neural)-metric(ext)
-        for sensing in ("external", "neural_external"):
+            history = "external_history__"+rep
+            if history in conditions and neural in conditions:
+                family_result["contrasts"]["neural_minus_external_history_retention_m__"+rep] = metric(neural)-metric(history)
+        for sensing in ("external", "neural_external", "external_history"):
             learner, ext, neural = sensing+"__learner_only", sensing+"__expert_external", sensing+"__expert_neural"
             if all(k in conditions for k in (learner,ext,neural)):
                 family_result["contrasts"]["expert_external_minus_learner_retention_m__"+sensing] = metric(ext)-metric(learner)

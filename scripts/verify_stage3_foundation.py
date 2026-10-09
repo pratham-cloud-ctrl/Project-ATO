@@ -164,7 +164,7 @@ def verify():
     hashes={str(p.relative_to(ROOT)).replace('\\','/'):(canonical_json_digest(p) if p.suffix=='.json'
                                                     else hashlib.sha256(p.read_bytes()).hexdigest())
             for p in sorted(DATA.iterdir()) if p.is_file()}
-    return {'schema':'ato.stage3.foundation-verification.v1','date':'2026-10-08',
+    return {'schema':'ato.stage3.foundation-verification.v1','date':'2026-10-09',
             'scope':'artifact and model-boundary audit; Stage3 partial; no biological or implant qualification',
             'checks':checks,'counts':{'electrical_cases':7,'motor_studies':12,'motor_condition_families':336,
                                     'pressure_runs':156,'additional_fallback_runs':8,'bounded_pressure_refinement_probes':6},
@@ -184,7 +184,7 @@ def main():
         assert result==receipt,'Stage3 receipt does not match current artifacts'
     print(json.dumps(result,indent=2))
     if args.write_receipt:
-        runtime={'date':'2026-10-08','scope':'Stage3 model reproduction environment',
+        runtime={'date':'2026-10-09','scope':'Stage3 model reproduction environment',
                  'python':platform.python_version(),'platform':platform.system(),
                  'packages':{p:version(p) for p in ('numpy','scipy','matplotlib','reportlab','Pillow','pypdf')}}
         (ROOT/'provenance/stage3-environment.json').write_text(json.dumps(runtime,indent=2)+'\n',encoding='utf-8')

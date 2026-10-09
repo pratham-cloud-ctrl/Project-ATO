@@ -12,3 +12,12 @@ S3-P-010,current_monitor_gain_in_trace,0.012,fraction,chosen realization inside 
 S3-P-011,current_monitor_offset_in_trace,0.000002,A,chosen realization inside bound,../../src/ato/stage3/electrical.py,Bias retained in observed current
 S3-P-012,current_monitor_aperture_offset,0.0000013,s,chosen realization inside bound,../../src/ato/stage3/electrical.py,Not aligned to every pulse edge
 S3-P-013,complete_analog_waveform_peak_assumption,0.025,A,chosen conditional bound not established by sampling,mathematical-specification.md,Stage4 independent analog guard must qualify intersample peak
+S3-P-014,bounded_digital_feature_error_limit,2.4e-06,V,chosen engineering allocation,acquisition-qualification.md,Range-clipped digital counterfactual only; not measured AFE recovery
+S3-P-015,missing_digital_input_range,0.005,V,declared digital clipping domain,acquisition-qualification.md,Stationary unknown-history radius after discontinuity; not unlimited analog artifact
+S3-P-016,clock_uncertainty_comparison_allowance,2e-05,s,chosen comparison allocation,information-comparison.md,Propagated into support and causal order; not measured hardware clock accuracy
+S3-P-017,new_motor_body_integration_step,0.0025,s,numerically supported scoped solver choice,numerical-verification.md,Midpoint exact cascade; decision/observation schedules unchanged; historical default preserved
+S3-P-018,external_history_span,0.075,s,capacity-matched comparator allocation,external-history-baseline.md,16two-position rows;32inputs and132linear coefficients
+S3-P-019,separate_cue_prediction_horizon,0.15,s,new component forecast allocation,cue-policy.md,Original reactive cap100ms unchanged; assisted forecast remains unqualified
+S3-P-020,cue_empirical_forecast_allocation,0.015,m,chosen empirical engineering gate,cue-policy.md,Heldout measured-label extrema plus label allowance; no coverage guarantee
+S3-P-021,response_calibration_position_allowance,0.0095,m,predeclared calibration allocation,response-validation.md,Observed fixed-profile resting map; not biological tolerance
+S3-P-022,response_empirical_joint_coverage_gate,0.95,fraction,predeclared finite-domain gate,response-validation.md,Correlated samples; empirical diagnostics are not guaranteed coverage

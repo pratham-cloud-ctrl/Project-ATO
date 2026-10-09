@@ -1,5 +1,7 @@
 # Stage3 results and interpretation
 
+> **Foundation results at the frozen coarse reference.** Subsequent [numerical verification](numerical-verification.md) found material motor discretization and closed-loop decision differences. These original conditional motor numbers remain reproducible but are preliminary, rather than stable quantitative benefit estimates. New comparisons use an explicitly selected solver and acquisition qualification; see the Stage 3 dossier for the continuation results. The pressure refinement findings retain all reported frame sensitivities.
+
 8 October 2026. These are reproducible artificial model results, not human or implanted-device measurements.
 Stage3 remains **in progress**. Negative integrated outcomes and conditional biological investigations have different evidence scopes.
 

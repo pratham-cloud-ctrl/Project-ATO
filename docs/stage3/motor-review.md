@@ -1,5 +1,7 @@
 # Independent motor mechanism review
 
+**Continuation note:** This document records the foundation review. [Numerical verification](numerical-verification.md), [digital acquisition qualification](acquisition-qualification.md), and the [learned external-history comparator](external-history-baseline.md) now extend it. The original coarse conditional results remain preliminary after the numerical defect found in the continuation; later study receipts identify their solver and qualification modes explicitly.
+
 8 October 2026. This review covers the first Stage 3 motor and contact-acquisition
 package against the Stage 1 [model plan](../stage1/model-and-verification-plan.md)
 and Stage 2 [control contracts](../stage2/control-contracts.json). It is an audit

@@ -1,6 +1,6 @@
 # Stage 3: computational mechanism studies
 
-**In progress, 8 October 2026.** This first implementation connects synthetic
+**In progress, updated 9 October 2026.** This implementation connects synthetic
 spinal contact observations, causal interpretation, learner calibration, expert
 representations, pulse delivery and modeled task response. Both motor learning
 and selected physiological feedback remain central to Project ATO.
@@ -12,18 +12,25 @@ complete electronics and populated engineering CAD follow the mechanism work.
 
 | Read or reproduce | Purpose |
 |---|---|
+| [Continuation review and next work](continuation-review.md) | Verified numerical/input/response/teacher checks, integrated findings and remaining design tasks |
 | [Mathematical specification](mathematical-specification.md) | Causal information partitions, units, electrical equations and observation bounds |
 | [Motor mechanism](motor-model.md) | Contact acquisition, expert/learner comparisons, active practice, OFF retention and transfer |
 | [Pressure mechanism](pressure-model.md) | External SBP, identified pressor authority, support timing, faults and overshoot |
 | [Results and interpretation](results-and-interpretation.md) | Paired seed results; integrated failures and separately labeled conditional mechanism |
 | [Electrical review](electrical-review.md) / [motor review](motor-review.md) | Independent findings, corrections and evidence boundaries |
 | [Progress and remaining work](verification-progress.csv) | Partial coverage rather than a claim of complete Stage3 verification |
-| [Numerical convergence plan](numerical-convergence-plan.md) | Separate body, acquisition and decision clocks; limited pressure diagnostic and remaining refinement |
+| [Numerical verification](numerical-verification.md) / [original plan](numerical-convergence-plan.md) | 96 motor fixed-input refinements, five bounded closed-loop grids and 408 matched pressure runs |
+| [Acquisition qualification](acquisition-qualification.md) | Range-bounded digital residuals, per-contact validity and missing-input sensitivity |
+| [Information comparison](information-comparison.md) / [external-history baseline](external-history-baseline.md) | Seven studies with a capacity-matched learned external comparator and same-support scoring |
+| [Expert competence correction](expert-validation.md) | Original teacher fails timing; separate competent synthetic benchmark and independent decoder transfer |
+| [Observed response domain](response-validation.md) | Fixed-profile resting maps, held-out route/density/context cases and joint uncertainty |
+| [Known-cue policy](cue-policy.md) | Separate forecasting/scheduling component; assisted-context and actual-delivery gates remain unqualified |
+| [Mechanism-to-electronics handoff](mechanism-to-electronics-handoff.md) | Concrete monitor, acquisition, timing, power and integration requirements |
 | [Motor precision requirements](motor-precision-requirements.md) | Monitor error budget, ADC/bus limits and conditional requirements for the next policy and circuit revision |
 | [Tool selection](toolchain-selection.md) | Fresh laptop inventory and official free/student tool choices |
 | [Parameter provenance](parameter-provenance.csv) | Newly chosen electrical assumptions; application parameters are recorded in every study configuration |
 | [Raw results](../../results/stage3/) | Full compressed JSON traces, readable summaries and separate electrical witnesses |
-| [Verification receipt](../../provenance/stage3-verification.json) / [local test run](../../provenance/stage3-test-run.json) | Artifact identities, scope counts and the observed 67-test result |
+| [Foundation receipt](../../provenance/stage3-verification.json) / [continuation receipt](../../provenance/stage3-continuation-verification.json) / [local test run](../../provenance/stage3-test-run.json) | Artifact identities, separate scope counts and completed full-suite result |
 
 ## Reproduction
 
@@ -39,6 +46,7 @@ python scripts/stage3_electrical_sweep.py --check results/stage3/electrical-swee
 python scripts/stage3_pressure_convergence_probe.py --check results/stage3/pressure-convergence-probe.json
 python scripts/build_stage3_figures.py
 python scripts/verify_stage3_foundation.py
+python scripts/verify_stage3_continuation.py
 python -m unittest discover -s tests -v
 ```
 
@@ -51,6 +59,23 @@ It keeps all seed-level summaries and raw application traces in JSON gzip files.
 These can be read with Python's standard `gzip` and `json` modules; no proprietary
 data format is required. It resolves electrical edges analytically, rather than
 pretending the 5ms body step resolves microsecond phases.
+
+The continuation uses separate explicitly configured studies. Reproduce them
+without overwriting the committed evidence:
+
+```text
+python scripts/stage3_motor_convergence.py --check results/stage3/numerical/motor-convergence.json.gz
+python scripts/stage3_pressure_convergence.py --check results/stage3/numerical/pressure-convergence.json.gz --summary-check results/stage3/numerical/pressure-convergence-summary.json --jobs 2
+python scripts/stage3_acquisition_qualification.py --check results/stage3/numerical/acquisition-qualification.json.gz
+python scripts/stage3_information_comparison.py --check --jobs 2
+python scripts/stage3_response_validation.py --check results/stage3/response-validation/response-domain-raw.json.gz --summary-check results/stage3/response-validation/response-domain-summary.json --jobs 2
+python scripts/stage3_cue_policy_study.py --check results/stage3/cue-policy/raw.json.gz
+python scripts/stage3_expert_validation.py --check
+```
+
+These commands can take substantial time; the receipt verifiers check saved
+evidence, while the commands above recompute it. CI performs both. Source hash
+checks prevent silently reusing results from changed model implementations.
 
 For direct unit-test execution, set `PYTHONPATH=src` (PowerShell:
 `$env:PYTHONPATH='src'`). The reproduction scripts configure their own source path.
@@ -74,6 +99,12 @@ The `conditional_fast_response_assumed_delivery` branch instead uses an explicit
 unqualified nominal delivery assumption and fast biological response to examine
 the learning mechanism **if** a future system can earn those capabilities. Its
 results must not be relabeled as integrated electrical validation.
+
+The original and fair-comparison teacher generators are **not task-competence
+qualified**: the independent audit finds failed timing despite their "expert"
+resource labels. The [separate competence benchmark](expert-validation.md) does
+not retroactively replace those learning studies. Historical coarse motor
+statistics also require the numerical caveat in the continuation review.
 
 The pressure branch uses external measurements because dense stimulation does not
 qualify continuous neural recording. It uses a characterized, averaged pulse-dose

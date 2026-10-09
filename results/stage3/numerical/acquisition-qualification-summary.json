@@ -1,0 +1,474 @@
+{
+  "schema": "ato.stage3.acquisition-qualification-summary.v1",
+  "scope": "bounded digital missing-input contamination and independent analytic synthetic aperture-source diagnostic; not physical AFE recovery or full body-source convergence",
+  "reference_definition": "same initialized filter driven by unknown range-clipped artifact-free digital samples at masked apertures; input magnitudes <=5mV",
+  "numerical_scope": "engineering floating-point enclosure tested against independent SOS output, not formal interval proof",
+  "sources": {
+    "src/ato/stage3/acquisition.py": "bd681adefc5e82c58b449490ad14917fff307be9947de647e92aeb6c38b22f03",
+    "src/ato/stage3/filter_residual.py": "0404915b1f891ef8e1da8fbc7549888110b90a0100877f361154ce39154dca47"
+  },
+  "comparisons": [
+    {
+      "case": "clean",
+      "identical_actual_noise": true,
+      "unchanged_raw_and_packet_schedule": true,
+      "validity_difference_count": 0,
+      "first_validity_differences_s": []
+    },
+    {
+      "case": "single_artifact",
+      "identical_actual_noise": true,
+      "unchanged_raw_and_packet_schedule": true,
+      "validity_difference_count": 317,
+      "first_validity_differences_s": [
+        0.405,
+        0.41000000000000003,
+        0.415,
+        0.42,
+        0.425,
+        0.43,
+        0.435,
+        0.44,
+        0.445,
+        0.45
+      ]
+    },
+    {
+      "case": "train_40hz",
+      "identical_actual_noise": true,
+      "unchanged_raw_and_packet_schedule": true,
+      "validity_difference_count": 785,
+      "first_validity_differences_s": [
+        1.0799999999999998,
+        1.085,
+        1.0899999999999999,
+        1.095,
+        1.0999999999999999,
+        1.105,
+        1.1099999999999999,
+        1.115,
+        1.1199999999999999,
+        1.125
+      ]
+    },
+    {
+      "case": "missing_block",
+      "identical_actual_noise": true,
+      "unchanged_raw_and_packet_schedule": true,
+      "validity_difference_count": 920,
+      "first_validity_differences_s": [
+        0.405,
+        0.41000000000000003,
+        0.415,
+        0.42,
+        0.425,
+        0.43,
+        0.435,
+        0.44,
+        0.445,
+        0.45
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "case": "clean",
+      "qualification_mode": "fixed_history",
+      "aperture_resolved": false,
+      "config": {
+        "seconds": 5.0,
+        "sample_hz": 4000.0,
+        "controller_hz": 200.0,
+        "clock_uncertainty_s": 2e-05,
+        "contiguous_gap_s": 0.002,
+        "bounded_digital_input_v": 0.005,
+        "feature_error_budget_uv": 2.4
+      },
+      "noise": {
+        "draw_calls": 2000,
+        "draw_values": 340000,
+        "actual_sample_sha256": "b1075c5f48d713cf03daf46a2536920054beafc089ec3289f1c7b7a1485b609d",
+        "initial_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 29412083137231680398404533086978119688,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 109626131646606361518405340769842204763,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        }
+      },
+      "filter_realization": null,
+      "summary": {
+        "packet_count": 1000,
+        "raw_sample_count": 320000,
+        "qualified_packets": 981,
+        "first_qualified_after_405ms_s": 0.405,
+        "final_feature_error_bound_uv": 0.0
+      }
+    },
+    {
+      "case": "clean",
+      "qualification_mode": "bounded_residual",
+      "aperture_resolved": false,
+      "config": {
+        "seconds": 5.0,
+        "sample_hz": 4000.0,
+        "controller_hz": 200.0,
+        "clock_uncertainty_s": 2e-05,
+        "contiguous_gap_s": 0.002,
+        "bounded_digital_input_v": 0.005,
+        "feature_error_budget_uv": 2.4
+      },
+      "noise": {
+        "draw_calls": 2000,
+        "draw_values": 340000,
+        "actual_sample_sha256": "b1075c5f48d713cf03daf46a2536920054beafc089ec3289f1c7b7a1485b609d",
+        "initial_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 29412083137231680398404533086978119688,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 109626131646606361518405340769842204763,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        }
+      },
+      "filter_realization": {
+        "state_dimension": 5,
+        "maximum_pole_magnitude": 0.9998429327031726,
+        "basis_condition_number": 54.13786802145733,
+        "diagonalization_residual": 4.440892098500626e-16,
+        "reachable_projection_residual": 1.382338470685975e-13,
+        "floating_point_scope": "double-precision engineering bound with outward nextafter; not formal interval arithmetic"
+      },
+      "summary": {
+        "packet_count": 1000,
+        "raw_sample_count": 320000,
+        "qualified_packets": 981,
+        "first_qualified_after_405ms_s": 0.405,
+        "final_feature_error_bound_uv": 0.0
+      }
+    },
+    {
+      "case": "single_artifact",
+      "qualification_mode": "fixed_history",
+      "aperture_resolved": false,
+      "config": {
+        "seconds": 5.0,
+        "sample_hz": 4000.0,
+        "controller_hz": 200.0,
+        "clock_uncertainty_s": 2e-05,
+        "contiguous_gap_s": 0.002,
+        "bounded_digital_input_v": 0.005,
+        "feature_error_budget_uv": 2.4
+      },
+      "noise": {
+        "draw_calls": 2000,
+        "draw_values": 340000,
+        "actual_sample_sha256": "b1075c5f48d713cf03daf46a2536920054beafc089ec3289f1c7b7a1485b609d",
+        "initial_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 29412083137231680398404533086978119688,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 109626131646606361518405340769842204763,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        }
+      },
+      "filter_realization": null,
+      "summary": {
+        "packet_count": 1000,
+        "raw_sample_count": 320000,
+        "qualified_packets": 961,
+        "first_qualified_after_405ms_s": 0.405,
+        "final_feature_error_bound_uv": 0.0
+      }
+    },
+    {
+      "case": "single_artifact",
+      "qualification_mode": "bounded_residual",
+      "aperture_resolved": false,
+      "config": {
+        "seconds": 5.0,
+        "sample_hz": 4000.0,
+        "controller_hz": 200.0,
+        "clock_uncertainty_s": 2e-05,
+        "contiguous_gap_s": 0.002,
+        "bounded_digital_input_v": 0.005,
+        "feature_error_budget_uv": 2.4
+      },
+      "noise": {
+        "draw_calls": 2000,
+        "draw_values": 340000,
+        "actual_sample_sha256": "b1075c5f48d713cf03daf46a2536920054beafc089ec3289f1c7b7a1485b609d",
+        "initial_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 29412083137231680398404533086978119688,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 109626131646606361518405340769842204763,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        }
+      },
+      "filter_realization": {
+        "state_dimension": 5,
+        "maximum_pole_magnitude": 0.9998429327031726,
+        "basis_condition_number": 54.13786802145733,
+        "diagonalization_residual": 4.440892098500626e-16,
+        "reachable_projection_residual": 1.382338470685975e-13,
+        "floating_point_scope": "double-precision engineering bound with outward nextafter; not formal interval arithmetic"
+      },
+      "summary": {
+        "packet_count": 1000,
+        "raw_sample_count": 320000,
+        "qualified_packets": 644,
+        "first_qualified_after_405ms_s": 1.98,
+        "final_feature_error_bound_uv": 0.5798066797418909
+      }
+    },
+    {
+      "case": "train_40hz",
+      "qualification_mode": "fixed_history",
+      "aperture_resolved": false,
+      "config": {
+        "seconds": 5.0,
+        "sample_hz": 4000.0,
+        "controller_hz": 200.0,
+        "clock_uncertainty_s": 2e-05,
+        "contiguous_gap_s": 0.002,
+        "bounded_digital_input_v": 0.005,
+        "feature_error_budget_uv": 2.4
+      },
+      "noise": {
+        "draw_calls": 2000,
+        "draw_values": 340000,
+        "actual_sample_sha256": "b1075c5f48d713cf03daf46a2536920054beafc089ec3289f1c7b7a1485b609d",
+        "initial_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 29412083137231680398404533086978119688,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 109626131646606361518405340769842204763,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        }
+      },
+      "filter_realization": null,
+      "summary": {
+        "packet_count": 1000,
+        "raw_sample_count": 320000,
+        "qualified_packets": 826,
+        "first_qualified_after_405ms_s": 1.0799999999999998,
+        "final_feature_error_bound_uv": 0.0
+      }
+    },
+    {
+      "case": "train_40hz",
+      "qualification_mode": "bounded_residual",
+      "aperture_resolved": false,
+      "config": {
+        "seconds": 5.0,
+        "sample_hz": 4000.0,
+        "controller_hz": 200.0,
+        "clock_uncertainty_s": 2e-05,
+        "contiguous_gap_s": 0.002,
+        "bounded_digital_input_v": 0.005,
+        "feature_error_budget_uv": 2.4
+      },
+      "noise": {
+        "draw_calls": 2000,
+        "draw_values": 340000,
+        "actual_sample_sha256": "b1075c5f48d713cf03daf46a2536920054beafc089ec3289f1c7b7a1485b609d",
+        "initial_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 29412083137231680398404533086978119688,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 109626131646606361518405340769842204763,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        }
+      },
+      "filter_realization": {
+        "state_dimension": 5,
+        "maximum_pole_magnitude": 0.9998429327031726,
+        "basis_condition_number": 54.13786802145733,
+        "diagonalization_residual": 4.440892098500626e-16,
+        "reachable_projection_residual": 1.382338470685975e-13,
+        "floating_point_scope": "double-precision engineering bound with outward nextafter; not formal interval arithmetic"
+      },
+      "summary": {
+        "packet_count": 1000,
+        "raw_sample_count": 320000,
+        "qualified_packets": 41,
+        "first_qualified_after_405ms_s": null,
+        "final_feature_error_bound_uv": 13.348384919825245
+      }
+    },
+    {
+      "case": "missing_block",
+      "qualification_mode": "fixed_history",
+      "aperture_resolved": false,
+      "config": {
+        "seconds": 5.0,
+        "sample_hz": 4000.0,
+        "controller_hz": 200.0,
+        "clock_uncertainty_s": 2e-05,
+        "contiguous_gap_s": 0.002,
+        "bounded_digital_input_v": 0.005,
+        "feature_error_budget_uv": 2.4
+      },
+      "noise": {
+        "draw_calls": 1998,
+        "draw_values": 339660,
+        "actual_sample_sha256": "090f959c2d5faba6bcef0ea87fe142f0bd0724463f9266fe00ead0647eff95bb",
+        "initial_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 29412083137231680398404533086978119688,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 162604499806278617545818602667626636025,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        }
+      },
+      "filter_realization": null,
+      "summary": {
+        "packet_count": 999,
+        "raw_sample_count": 319680,
+        "qualified_packets": 961,
+        "first_qualified_after_405ms_s": 0.405,
+        "final_feature_error_bound_uv": 0.0
+      }
+    },
+    {
+      "case": "missing_block",
+      "qualification_mode": "bounded_residual",
+      "aperture_resolved": false,
+      "config": {
+        "seconds": 5.0,
+        "sample_hz": 4000.0,
+        "controller_hz": 200.0,
+        "clock_uncertainty_s": 2e-05,
+        "contiguous_gap_s": 0.002,
+        "bounded_digital_input_v": 0.005,
+        "feature_error_budget_uv": 2.4
+      },
+      "noise": {
+        "draw_calls": 1998,
+        "draw_values": 339660,
+        "actual_sample_sha256": "090f959c2d5faba6bcef0ea87fe142f0bd0724463f9266fe00ead0647eff95bb",
+        "initial_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 29412083137231680398404533086978119688,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 162604499806278617545818602667626636025,
+            "inc": 296222790168525015924838404357314320745
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        }
+      },
+      "filter_realization": {
+        "state_dimension": 5,
+        "maximum_pole_magnitude": 0.9998429327031726,
+        "basis_condition_number": 54.13786802145733,
+        "diagonalization_residual": 4.440892098500626e-16,
+        "reachable_projection_residual": 1.382338470685975e-13,
+        "floating_point_scope": "double-precision engineering bound with outward nextafter; not formal interval arithmetic"
+      },
+      "summary": {
+        "packet_count": 999,
+        "raw_sample_count": 319680,
+        "qualified_packets": 41,
+        "first_qualified_after_405ms_s": null,
+        "final_feature_error_bound_uv": 345.42572233443985
+      }
+    }
+  ],
+  "source_approximation": {
+    "definition": "1Hz analytic private source evaluated at identical 4kHz per-contact skewed apertures versus block-start hold",
+    "identical_noise": true,
+    "packet_count_each": 200,
+    "maximum_feature_difference_uv": 0.38089662744208397,
+    "feature_difference_rmse_uv": 0.09856626644571037
+  },
+  "raw_witness": {
+    "file": "acquisition-qualification.json.gz",
+    "sha256": "c641f450c904afc4cf1f99753cc092f80b9395a1ebdd6e4dd64aaef25608a316"
+  }
+}

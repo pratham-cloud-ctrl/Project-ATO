@@ -112,3 +112,28 @@ receipt identity while detecting changed values and array order. The illustrated
 brief was updated and visually reviewed.
 These additions remain AI-assisted digital engineering; they do not establish
 biological efficacy, exact circuit implementation or populated implant readiness.
+
+## Full-system overhaul: Stage 3 foundation and continuation, 8–9 October 2026
+
+The owner requested the computational stage and sustained continuation after a
+usage-limit interruption. AI workstreams implemented reduced contact acquisition,
+causal decoding, observed response calibration, independent electrical delivery
+and external-pressure feedback, with separate practice and output-OFF assessment.
+Subsequent work added numerical refinements, digital filter-residual qualification,
+a capacity-matched external-history comparator, independently recorded response
+domains, observed teacher competence and a cancellable known-cue component.
+
+Parallel read-only reviews found source timing/leakage, qualification, numerical
+integration, missing uncertainty cross terms and teacher-competence defects.
+Corrections preserve historical outputs and disclose changes through separate
+datasets, source hashes and limitations. These are multiple AI-assisted reviews,
+not independent clinical evidence or a licensed hardware audit. No human/animal
+data or original experiments on participants were produced.
+
+Root integration generated scientific figures, inspected the rendered images,
+ran model/test/receipt checks and documented the next electronics requirements.
+Unfavorable results remain visible: actual motor authority rejects intervention,
+assisted cue forecasts fail and original synthetic teacher timing is unqualified.
+The new competent synthetic benchmark is an explicitly privileged generator,
+not evidence of real expert spinal skill transfer. Detailed electronics,
+populated CAD and the final full-system paper remain later work.

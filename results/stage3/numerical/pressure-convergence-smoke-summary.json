@@ -1,0 +1,638 @@
+{
+  "schema": "ato.stage3.pressure-convergence-summary.v1",
+  "scope": "smoke",
+  "claim_boundary": "Numerical accuracy of declared artificial pressure plant and averaged electrical adapter; no physiological efficacy, neural pressure decoder or continuous circuit integration is established.",
+  "frozen_gates": {
+    "summary_pressure_difference_mmHg": 0.2,
+    "maximum_policy_pressure_difference_mmHg": 0.2,
+    "fallback_duration_difference_s": 0.25,
+    "delivered_train_equivalent_difference_s": 0.5
+  },
+  "experiment": {
+    "steps_s": [
+      0.005,
+      0.0025,
+      0.00125
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "modes": [
+      "off",
+      "feedback"
+    ],
+    "oracle_excluded": true,
+    "fresh_pressure_delivery_per_run": true,
+    "waveform_hz": 200,
+    "extraction_hz": 1,
+    "policy_hz": 4,
+    "duration_s": 420,
+    "sensor_draws_per_run": 84001,
+    "baseline_event_mode": "frozen_rounded_aligned_grid",
+    "stress_event_mode": "exact_timestamped_onset_release_gain_events",
+    "stress_parameters_frozen_before_results": [
+      {
+        "name": "nonaligned_fast_near_limit",
+        "baseline_pa": 15998.6864898,
+        "gain_pa": 7986.0110061585,
+        "activation_tau_s": 0.503,
+        "response_tau_s": 1.007,
+        "onset_delay_s": 0.1037,
+        "release_delay_s": 0.1091,
+        "recruitment_threshold": 0.0,
+        "disturbance_pa": 3733.0268476200004,
+        "sensor_delay_s": 0.1537,
+        "sensor_bias_pa": 0.0,
+        "dropout_interval_s": null,
+        "invalid_interval_s": null,
+        "stale_replay_interval_s": null,
+        "changed_gain_pa": null,
+        "change_time_s": 260.0
+      },
+      {
+        "name": "nonaligned_slow_near_limit",
+        "baseline_pa": 15998.6864898,
+        "gain_pa": 4799.605946940001,
+        "activation_tau_s": 9.999,
+        "response_tau_s": 29.999,
+        "onset_delay_s": 9.9987,
+        "release_delay_s": 59.9973,
+        "recruitment_threshold": 0.0,
+        "disturbance_pa": 3733.0268476200004,
+        "sensor_delay_s": 0.1537,
+        "sensor_bias_pa": 0.0,
+        "dropout_interval_s": null,
+        "invalid_interval_s": null,
+        "stale_replay_interval_s": null,
+        "changed_gain_pa": null,
+        "change_time_s": 260.0
+      },
+      {
+        "name": "nonaligned_context_reversal",
+        "baseline_pa": 15998.6864898,
+        "gain_pa": 4799.605946940001,
+        "activation_tau_s": 1.497,
+        "response_tau_s": 6.003,
+        "onset_delay_s": 0.8037,
+        "release_delay_s": 2.0091,
+        "recruitment_threshold": 0.0,
+        "disturbance_pa": 3733.0268476200004,
+        "sensor_delay_s": 0.1537,
+        "sensor_bias_pa": 0.0,
+        "dropout_interval_s": null,
+        "invalid_interval_s": null,
+        "stale_replay_interval_s": null,
+        "changed_gain_pa": -1999.835811225,
+        "change_time_s": 260.0037
+      }
+    ]
+  },
+  "source_identity": {
+    "src/ato/stage3/pressure.py": "c4d4e980b7d3e45d778bb44beedfded34f9d53fdf3a81bcadd2eb342e681e0c0",
+    "src/ato/stage3/electrical.py": "8a7a20702be3f3f5893e1f859f675347fa35db01dadb20ab7e64635ca8913ff0",
+    "scripts/stage3_pressure_convergence.py": "9c93fbceec19c7dbb4df942eb89446d9827a3e350357ba1f7cc305a39dbec3bc"
+  },
+  "reproduction": {
+    "rtol": 2e-08,
+    "atol": 1e-11,
+    "noise_hash_policy": "Exact within-host identity; cross-platform compare RNG states/counts and numeric moments, not noise byte hashes."
+  },
+  "summary": {
+    "matched_group_count": 3,
+    "run_count": 9,
+    "comparison_count": 9,
+    "budget_failure_count": 0,
+    "discrete_sensitivity_count": 0,
+    "maximum_policy_pressure_difference_mmHg": 0.005189637822601127,
+    "identical_actual_sensor_noise_per_seed_across_all_runs": true
+  },
+  "fixed_input_independent_reference": {
+    "scope": "fixed .65 dose; nonaligned .1037s onset and1.7037s gain reversal; no learning/controller/sensor",
+    "sample_times_s": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75,
+      2.0,
+      2.25,
+      2.5,
+      2.75,
+      3.0
+    ],
+    "independent_analytic_pressure_pa": [
+      0.0,
+      57.096301576591884,
+      330.46136842488903,
+      700.3688469001594,
+      1084.2450167710845,
+      1441.697519125616,
+      1755.8312655495317,
+      1831.632188733322,
+      1151.6296009068956,
+      617.8138132205963,
+      199.3420908577621,
+      -128.35514176465153,
+      -384.7546745114818
+    ],
+    "scenario": {
+      "name": "analytic_fixed_input",
+      "baseline_pa": 15998.6864898,
+      "gain_pa": 4799.605946940001,
+      "activation_tau_s": 0.503,
+      "response_tau_s": 1.007,
+      "onset_delay_s": 0.1037,
+      "release_delay_s": 2.0,
+      "recruitment_threshold": 0.0,
+      "disturbance_pa": 3733.0268476200004,
+      "sensor_delay_s": 0.15,
+      "sensor_bias_pa": 0.0,
+      "dropout_interval_s": null,
+      "invalid_interval_s": null,
+      "stale_replay_interval_s": null,
+      "changed_gain_pa": -1999.835811225,
+      "change_time_s": 1.7037
+    },
+    "runs": [
+      {
+        "integration_step_s": 0.005,
+        "pressure_pa": [
+          0.0,
+          58.89198225188245,
+          333.84512918575496,
+          704.2149577091129,
+          1087.9793944820765,
+          1445.057323746742,
+          1758.7240050579367,
+          1834.0147699662207,
+          1153.4465084103904,
+          619.2058084145938,
+          200.41256590273778,
+          -127.52943267592268,
+          -384.1162284358513
+        ],
+        "maximum_error_against_independent_analytic_mmHg": 0.02884819934240704,
+        "within_frozen_0p2mmHg_budget": true,
+        "applied_delayed_dose_events": [
+          [
+            0.1037,
+            0.65
+          ]
+        ]
+      },
+      {
+        "integration_step_s": 0.0025,
+        "pressure_pa": [
+          0.0,
+          57.99750181666978,
+          332.15710153432275,
+          702.2956571948766,
+          1086.1155907717896,
+          1443.3803396257554,
+          1757.2800806080845,
+          1832.825525409757,
+          1152.5396248955215,
+          618.5110200246907,
+          199.87826212469685,
+          -127.94156460980817,
+          -384.4348912872223
+        ],
+        "maximum_error_against_independent_analytic_mmHg": 0.014452263660112588,
+        "within_frozen_0p2mmHg_budget": true,
+        "applied_delayed_dose_events": [
+          [
+            0.1037,
+            0.65
+          ]
+        ]
+      },
+      {
+        "integration_step_s": 0.00125,
+        "pressure_pa": [
+          0.0,
+          57.54909515400655,
+          331.31125447034964,
+          701.3340150874708,
+          1085.1817932949118,
+          1442.5401608341158,
+          1756.5566760258641,
+          1832.22971044404,
+          1152.0852721543295,
+          618.1629269821121,
+          199.61057224167888,
+          -128.14804590602748,
+          -384.594544063879
+        ],
+        "maximum_error_against_independent_analytic_mmHg": 0.007239355715308885,
+        "within_frozen_0p2mmHg_budget": true,
+        "applied_delayed_dose_events": [
+          [
+            0.1037,
+            0.65
+          ]
+        ]
+      }
+    ]
+  },
+  "remaining": [
+    "Averaged pressure dose is not a continuously simulated three-route source/routing/power timeline.",
+    "Frozen baseline uses its declared rounded onset queue; exact nonaligned stress is a separately selected path.",
+    "Threshold-sensitive frame/qualification changes are reported even when continuous metrics meet budgets."
+  ],
+  "raw_witness_policy": "Full compressed receipt retains every pressure sample, support/noise witness and changed-decision row. This summary reports every group's gate and comparison findings.",
+  "groups": [
+    {
+      "section": "baseline_integrated",
+      "seed": 0,
+      "scenario": "nominal",
+      "mode": "off",
+      "fallback": "stop",
+      "exact_timestamped_events": false,
+      "calibration_by_grid": [
+        {
+          "integration_step_s": 0.005,
+          "qualified": true,
+          "reason": "conditional_positive_response_model",
+          "gain_pa_per_fraction": 5030.871488784873,
+          "gain_interval_pa": [
+            2272.449448288077,
+            7789.293529281669
+          ],
+          "estimated_effect_lag_s": 3.0
+        },
+        {
+          "integration_step_s": 0.0025,
+          "qualified": true,
+          "reason": "conditional_positive_response_model",
+          "gain_pa_per_fraction": 5031.175598854023,
+          "gain_interval_pa": [
+            2272.586815096273,
+            7789.764382611773
+          ],
+          "estimated_effect_lag_s": 3.0
+        },
+        {
+          "integration_step_s": 0.00125,
+          "qualified": true,
+          "reason": "conditional_positive_response_model",
+          "gain_pa_per_fraction": 5031.3277912847425,
+          "gain_interval_pa": [
+            2272.6555605623403,
+            7790.000022007145
+          ],
+          "estimated_effect_lag_s": 3.0
+        }
+      ],
+      "comparisons": [
+        {
+          "steps_s": [
+            0.005,
+            0.0025
+          ],
+          "status": "within_frozen_budgets",
+          "gates": {
+            "summary_pressure": true,
+            "policy_pressure": true,
+            "fallback_duration": true,
+            "delivered_dose": true
+          },
+          "maximum_policy_pressure_difference_mmHg": 0.001881459566661909,
+          "absolute_summary_differences_mmHg": {
+            "evaluation_rmse_pa": 1.5404580585671908e-10,
+            "disturbance_rmse_pa": 1.8974071891144452e-10,
+            "disturbance_min_sbp_pa": 0.0,
+            "recovery_peak_sbp_pa": 0.0,
+            "overshoot_above_target_pa": 7.377608135771519e-09
+          },
+          "fallback_duration_difference_s": 0.0,
+          "delivered_train_equivalent_difference_s": 0.0,
+          "changed_frame_decision_count": 0,
+          "changed_controller_reason_count": 0,
+          "changed_peak_time_count": 0,
+          "all_equivalence_flags_true": true,
+          "non_equivalent_flags": []
+        },
+        {
+          "steps_s": [
+            0.0025,
+            0.00125
+          ],
+          "status": "within_frozen_budgets",
+          "gates": {
+            "summary_pressure": true,
+            "policy_pressure": true,
+            "fallback_duration": true,
+            "delivered_dose": true
+          },
+          "maximum_policy_pressure_difference_mmHg": 0.0009412199713358688,
+          "absolute_summary_differences_mmHg": {
+            "evaluation_rmse_pa": 7.705871722239439e-11,
+            "disturbance_rmse_pa": 9.492493361806107e-11,
+            "disturbance_min_sbp_pa": 0.0,
+            "recovery_peak_sbp_pa": 0.0,
+            "overshoot_above_target_pa": 3.6907278071082023e-09
+          },
+          "fallback_duration_difference_s": 0.0,
+          "delivered_train_equivalent_difference_s": 0.0,
+          "changed_frame_decision_count": 0,
+          "changed_controller_reason_count": 0,
+          "changed_peak_time_count": 0,
+          "all_equivalence_flags_true": true,
+          "non_equivalent_flags": []
+        },
+        {
+          "steps_s": [
+            0.005,
+            0.00125
+          ],
+          "status": "within_frozen_budgets",
+          "gates": {
+            "summary_pressure": true,
+            "policy_pressure": true,
+            "fallback_duration": true,
+            "delivered_dose": true
+          },
+          "maximum_policy_pressure_difference_mmHg": 0.002822679537997778,
+          "absolute_summary_differences_mmHg": {
+            "evaluation_rmse_pa": 2.3110452307911346e-10,
+            "disturbance_rmse_pa": 2.846656525295056e-10,
+            "disturbance_min_sbp_pa": 0.0,
+            "recovery_peak_sbp_pa": 0.0,
+            "overshoot_above_target_pa": 1.1068335942879721e-08
+          },
+          "fallback_duration_difference_s": 0.0,
+          "delivered_train_equivalent_difference_s": 0.0,
+          "changed_frame_decision_count": 0,
+          "changed_controller_reason_count": 0,
+          "changed_peak_time_count": 0,
+          "all_equivalence_flags_true": true,
+          "non_equivalent_flags": []
+        }
+      ]
+    },
+    {
+      "section": "baseline_integrated",
+      "seed": 0,
+      "scenario": "nominal",
+      "mode": "feedback",
+      "fallback": "stop",
+      "exact_timestamped_events": false,
+      "calibration_by_grid": [
+        {
+          "integration_step_s": 0.005,
+          "qualified": true,
+          "reason": "conditional_positive_response_model",
+          "gain_pa_per_fraction": 5030.871488784873,
+          "gain_interval_pa": [
+            2272.449448288077,
+            7789.293529281669
+          ],
+          "estimated_effect_lag_s": 3.0
+        },
+        {
+          "integration_step_s": 0.0025,
+          "qualified": true,
+          "reason": "conditional_positive_response_model",
+          "gain_pa_per_fraction": 5031.175598854023,
+          "gain_interval_pa": [
+            2272.586815096273,
+            7789.764382611773
+          ],
+          "estimated_effect_lag_s": 3.0
+        },
+        {
+          "integration_step_s": 0.00125,
+          "qualified": true,
+          "reason": "conditional_positive_response_model",
+          "gain_pa_per_fraction": 5031.3277912847425,
+          "gain_interval_pa": [
+            2272.6555605623403,
+            7790.000022007145
+          ],
+          "estimated_effect_lag_s": 3.0
+        }
+      ],
+      "comparisons": [
+        {
+          "steps_s": [
+            0.005,
+            0.0025
+          ],
+          "status": "within_frozen_budgets",
+          "gates": {
+            "summary_pressure": true,
+            "policy_pressure": true,
+            "fallback_duration": true,
+            "delivered_dose": true
+          },
+          "maximum_policy_pressure_difference_mmHg": 0.003459157724866114,
+          "absolute_summary_differences_mmHg": {
+            "evaluation_rmse_pa": 0.000450396927439703,
+            "disturbance_rmse_pa": 0.00032595626555703775,
+            "disturbance_min_sbp_pa": 0.0008428076498696194,
+            "recovery_peak_sbp_pa": 0.0023630211781384683,
+            "overshoot_above_target_pa": 0.0023630211781384683
+          },
+          "fallback_duration_difference_s": 0.0,
+          "delivered_train_equivalent_difference_s": 0.0,
+          "changed_frame_decision_count": 0,
+          "changed_controller_reason_count": 0,
+          "changed_peak_time_count": 0,
+          "all_equivalence_flags_true": true,
+          "non_equivalent_flags": []
+        },
+        {
+          "steps_s": [
+            0.0025,
+            0.00125
+          ],
+          "status": "within_frozen_budgets",
+          "gates": {
+            "summary_pressure": true,
+            "policy_pressure": true,
+            "fallback_duration": true,
+            "delivered_dose": true
+          },
+          "maximum_policy_pressure_difference_mmHg": 0.0017304800977350136,
+          "absolute_summary_differences_mmHg": {
+            "evaluation_rmse_pa": 0.00022532461042941703,
+            "disturbance_rmse_pa": 0.00016306482627332424,
+            "disturbance_min_sbp_pa": 0.000421623406717005,
+            "recovery_peak_sbp_pa": 0.0011821262412178438,
+            "overshoot_above_target_pa": 0.0011821262412178438
+          },
+          "fallback_duration_difference_s": 0.0,
+          "delivered_train_equivalent_difference_s": 0.0,
+          "changed_frame_decision_count": 0,
+          "changed_controller_reason_count": 0,
+          "changed_peak_time_count": 0,
+          "all_equivalence_flags_true": true,
+          "non_equivalent_flags": []
+        },
+        {
+          "steps_s": [
+            0.005,
+            0.00125
+          ],
+          "status": "within_frozen_budgets",
+          "gates": {
+            "summary_pressure": true,
+            "policy_pressure": true,
+            "fallback_duration": true,
+            "delivered_dose": true
+          },
+          "maximum_policy_pressure_difference_mmHg": 0.005189637822601127,
+          "absolute_summary_differences_mmHg": {
+            "evaluation_rmse_pa": 0.00067572153786912,
+            "disturbance_rmse_pa": 0.000489021091830362,
+            "disturbance_min_sbp_pa": 0.0012644310565866244,
+            "recovery_peak_sbp_pa": 0.003545147419356312,
+            "overshoot_above_target_pa": 0.003545147419356312
+          },
+          "fallback_duration_difference_s": 0.0,
+          "delivered_train_equivalent_difference_s": 0.0,
+          "changed_frame_decision_count": 0,
+          "changed_controller_reason_count": 0,
+          "changed_peak_time_count": 0,
+          "all_equivalence_flags_true": true,
+          "non_equivalent_flags": []
+        }
+      ]
+    },
+    {
+      "section": "nonaligned_stress_integrated",
+      "seed": 3,
+      "scenario": "nonaligned_context_reversal",
+      "mode": "feedback",
+      "fallback": "stop",
+      "exact_timestamped_events": true,
+      "calibration_by_grid": [
+        {
+          "integration_step_s": 0.005,
+          "qualified": true,
+          "reason": "conditional_positive_response_model",
+          "gain_pa_per_fraction": 5279.028936450005,
+          "gain_interval_pa": [
+            2384.5424040100315,
+            8173.515468889978
+          ],
+          "estimated_effect_lag_s": 2.0
+        },
+        {
+          "integration_step_s": 0.0025,
+          "qualified": true,
+          "reason": "conditional_positive_response_model",
+          "gain_pa_per_fraction": 5279.418116132085,
+          "gain_interval_pa": [
+            2384.7181968434993,
+            8174.11803542067
+          ],
+          "estimated_effect_lag_s": 2.0
+        },
+        {
+          "integration_step_s": 0.00125,
+          "qualified": true,
+          "reason": "conditional_positive_response_model",
+          "gain_pa_per_fraction": 5279.613134440553,
+          "gain_interval_pa": [
+            2384.8062867993794,
+            8174.419982081727
+          ],
+          "estimated_effect_lag_s": 2.0
+        }
+      ],
+      "comparisons": [
+        {
+          "steps_s": [
+            0.005,
+            0.0025
+          ],
+          "status": "within_frozen_budgets",
+          "gates": {
+            "summary_pressure": true,
+            "policy_pressure": true,
+            "fallback_duration": true,
+            "delivered_dose": true
+          },
+          "maximum_policy_pressure_difference_mmHg": 0.0018788575289959484,
+          "absolute_summary_differences_mmHg": {
+            "evaluation_rmse_pa": 3.876705112591162e-05,
+            "disturbance_rmse_pa": 5.082092937921733e-05,
+            "disturbance_min_sbp_pa": 5.759607014291177e-09,
+            "recovery_peak_sbp_pa": 4.3597455050139294e-07,
+            "overshoot_above_target_pa": 7.4241462527059356e-09
+          },
+          "fallback_duration_difference_s": 0.0,
+          "delivered_train_equivalent_difference_s": 0.0,
+          "changed_frame_decision_count": 0,
+          "changed_controller_reason_count": 0,
+          "changed_peak_time_count": 0,
+          "all_equivalence_flags_true": true,
+          "non_equivalent_flags": []
+        },
+        {
+          "steps_s": [
+            0.0025,
+            0.00125
+          ],
+          "status": "within_frozen_budgets",
+          "gates": {
+            "summary_pressure": true,
+            "policy_pressure": true,
+            "fallback_duration": true,
+            "delivered_dose": true
+          },
+          "maximum_policy_pressure_difference_mmHg": 0.0009411340523942423,
+          "absolute_summary_differences_mmHg": {
+            "evaluation_rmse_pa": 1.940585785422103e-05,
+            "disturbance_rmse_pa": 2.543467616881999e-05,
+            "disturbance_min_sbp_pa": 2.8822388791399577e-09,
+            "recovery_peak_sbp_pa": 2.660370214424252e-07,
+            "overshoot_above_target_pa": 3.717551007897726e-09
+          },
+          "fallback_duration_difference_s": 0.0,
+          "delivered_train_equivalent_difference_s": 0.0,
+          "changed_frame_decision_count": 0,
+          "changed_controller_reason_count": 0,
+          "changed_peak_time_count": 0,
+          "all_equivalence_flags_true": true,
+          "non_equivalent_flags": []
+        },
+        {
+          "steps_s": [
+            0.005,
+            0.00125
+          ],
+          "status": "within_frozen_budgets",
+          "gates": {
+            "summary_pressure": true,
+            "policy_pressure": true,
+            "fallback_duration": true,
+            "delivered_dose": true
+          },
+          "maximum_policy_pressure_difference_mmHg": 0.0028199915813901908,
+          "absolute_summary_differences_mmHg": {
+            "evaluation_rmse_pa": 5.817290898013265e-05,
+            "disturbance_rmse_pa": 7.625560554803731e-05,
+            "disturbance_min_sbp_pa": 8.641845893431135e-09,
+            "recovery_peak_sbp_pa": 7.020115719438182e-07,
+            "overshoot_above_target_pa": 1.1141697260603661e-08
+          },
+          "fallback_duration_difference_s": 0.0,
+          "delivered_train_equivalent_difference_s": 0.0,
+          "changed_frame_decision_count": 0,
+          "changed_controller_reason_count": 0,
+          "changed_peak_time_count": 0,
+          "all_equivalence_flags_true": true,
+          "non_equivalent_flags": []
+        }
+      ]
+    }
+  ]
+}

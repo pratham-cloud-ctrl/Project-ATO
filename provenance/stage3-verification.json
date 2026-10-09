@@ -1,6 +1,6 @@
 {
   "schema": "ato.stage3.foundation-verification.v1",
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "scope": "artifact and model-boundary audit; Stage3 partial; no biological or implant qualification",
   "checks": [
     "Seven event-aligned electrical witnesses; observed charge is distinct, failed pulses retain dose; four actual local ngspice comparisons pass",
@@ -9,7 +9,7 @@
     "156 pressure runs cover thirteen families, paired equal calibration, observable support timing, whole frames and explicitly privileged oracle diagnostics",
     "Eight finite hold/ramp cases supplement stop; nadir, support loss and overshoot remain measured model outcomes",
     "Six separately scoped pressure refinement probes retain identical actual noise, fixed observation schedules and chosen surrogate delivery; no general convergence pass",
-    "59 local dossier links resolve; progress IDs match Stage1; three SVG/PNG figure pairs exist; Stage3 remains explicitly in progress"
+    "111 local dossier links resolve; progress IDs match Stage1; three SVG/PNG figure pairs exist; Stage3 remains explicitly in progress"
   ],
   "counts": {
     "electrical_cases": 7,
@@ -20,22 +20,27 @@
     "bounded_pressure_refinement_probes": 6
   },
   "observed_motor_practice_pulses": {
+    "fast_response_sensitivity": 0,
     "conditional_fast_response_assumed_delivery": 19886,
-    "nominal": 0,
-    "fast_response_sensitivity": 0
+    "nominal": 0
   },
   "input_normalized_hashes": {
     "src/ato/stage3/__init__.py": "52e87fb1296e8c7d664bf054b023446baebcdfaad4152776ce26e2a83962c4ec",
-    "src/ato/stage3/acquisition.py": "836fadf50cf28d6efd4479828154805491993accad008cca213aba381c6f2d42",
+    "src/ato/stage3/acquisition.py": "bd681adefc5e82c58b449490ad14917fff307be9947de647e92aeb6c38b22f03",
+    "src/ato/stage3/cue_policy.py": "86c55451d04ea26a9ba6d14bfdb2689faf61bba9432623e190d159f9bbfe5395",
     "src/ato/stage3/electrical.py": "8a7a20702be3f3f5893e1f859f675347fa35db01dadb20ab7e64635ca8913ff0",
-    "src/ato/stage3/motor.py": "78e383028745e29273c4ff8a556ebf3e9a6749fd4763d97a3fee21fcc0a73d37",
-    "src/ato/stage3/pressure.py": "611b0bf77eb6286b9ed678410f50db0033805acf5aa518f6dddcfbc2eb79490c",
+    "src/ato/stage3/expert_validation.py": "1029d235fa17820210b7830f133bd1b3a912f5268008d7ebb42ff65b5dc0c733",
+    "src/ato/stage3/external_history.py": "2ec8bb81bd96066fe8f80696a0351d4407b68baabd6526e6211922abb8a4f97d",
+    "src/ato/stage3/filter_residual.py": "0404915b1f891ef8e1da8fbc7549888110b90a0100877f361154ce39154dca47",
+    "src/ato/stage3/motor.py": "d86b4d091baf226475ce9f6d6e2390b65bb63752e5f50e73d42c5c3408b2323c",
+    "src/ato/stage3/pressure.py": "c4d4e980b7d3e45d778bb44beedfded34f9d53fdf3a81bcadd2eb342e681e0c0",
+    "src/ato/stage3/response_validation.py": "7a814113b2ebc27e55cf96ae5288eceffae39d4cbfb1fd9defaeb0b82fd780a1",
     "scripts/run_stage3_studies.py": "d883c875991113ea19d597a1dd4dd0194df40b7c4fa3b30fa1eaaeff4e24d23f",
-    "scripts/build_stage3_figures.py": "e0dc565cce6c4208887ae6db4f1af095a542b1ec6dca432ef66d7f892793943f",
+    "scripts/build_stage3_figures.py": "2d0a0a13c44b34f248fbf1c3d1041c4afdb60bb685f449ea6f3a39aa246cb90e",
     "scripts/stage3_ngspice_check.py": "ae6d57b5c506886e59fb472feaaeca6753084e7de9669b497c9be4b7de2970f3",
     "requirements-lock.txt": "adae70fd5194e076ca4caab4b831dfc143b1b37f55ee454b0df041b84148a48d",
     "scripts/stage3_electrical_sweep.py": "c6f0127e7dd99f94378baddb6b8f7f90a1ff50fb0d91d7db0d005bbee720b7ed",
-    "scripts/verify_stage3_foundation.py": "317046e29c8fd551941dd3482d2428738ee668d08d053f82b4208fc67e11cac5",
+    "scripts/verify_stage3_foundation.py": "3b38ea7f6fc5d1b004865d31d7474a3d20c78547880cae2790fa33029bc81e3a",
     "scripts/stage3_pressure_convergence_probe.py": "25dc9ea517bca5301b51a674ec1d058a0fd0b87b0ba26ff913578e82b79da112",
     "docs/stage2/system-design.json": "75e90fc7bc337422429d02944c8a44ea22399f5a1842f1239ae433f44bf5b679",
     "docs/stage2/control-contracts.json": "85a7861458a8d49d469cfe331af802bed6b78ed1557122413db6d5b2383a6a3e"
@@ -47,7 +52,7 @@
     "results/stage3/motor-raw.json.gz": "770763c7aca126d1fccde4f13135d660705b3718b6c3b559fe4b5f257d594497",
     "results/stage3/motor-summary.json": "e1c789d68f358c18ec3be8c44c86973c14f8f6bcae45376db6eb22bfc9d7de59",
     "results/stage3/ngspice-crosscheck.json": "e7f04df040866ee6314d4a02c8b843134ede1942d067b06fc25b22686885fb6e",
-    "results/stage3/pressure-convergence-probe.json": "17cea56298f69e22c925214036b1943d02ad0d071b06ab3aeb8766dea3fb9618",
+    "results/stage3/pressure-convergence-probe.json": "599d40712868b22cd42ae6c6a989f236d0e473304a07b8e98db45bd4f01cd9b3",
     "results/stage3/pressure-fallbacks-raw.json.gz": "a8b25fec3b74cc63eef0205c54b074597848ba00dc9a77b521ac210fb53001a2",
     "results/stage3/pressure-fallbacks-summary.json": "1932878b441b35818a58119f0da2ad566661c56ce8808ee80c45d7e4c9ed4756",
     "results/stage3/pressure-raw.json.gz": "66254ff36d28c0676a02e3ce45a750731e0f75d5598e5e742947bca464fe6f78",

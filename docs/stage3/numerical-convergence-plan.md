@@ -1,6 +1,6 @@
 # Numerical convergence: preserving the SCCI experiment
 
-**Review date: 8 October 2026. Status: proposed motor experiment; limited pressure diagnostic completed. No overall convergence qualification is claimed.**
+**Original planning baseline: 8 October 2026.** The clock separation, independent motor references and full pressure matrix have since been implemented in [numerical verification](numerical-verification.md). The text below preserves the original design rationale and proposed allocations; its descriptions of then-pending work are historical. The new bounded results do not establish overall model or biological qualification.
 
 This review concerns numerical error in the chosen digital models. It does not establish spinal information, selective recruitment, electrical hardware performance or human learning. In particular, the integrated motor branches currently abstain. Agreement between two abstaining runs cannot establish accuracy of an assisted motor mechanism.
 

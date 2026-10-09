@@ -2,8 +2,10 @@
 
 Planning baseline: 8 October 2026. Status: Stage 1 mechanism and requirements
 [dossier](stage1/README.md) and Stage 2 quantitative architecture completed for
-review. Stage3's [computational foundation](stage3/README.md) is implemented and
-in review; its remaining mechanism criteria are open. This document plans a new
+review. Stage3's [computational foundation](stage3/README.md) and
+[continuation package](stage3/continuation-review.md) are implemented and
+in review as of 9 October; teacher/library and assisted prediction integration
+remain open. This document plans a new
 design; it does not claim that the full system has been implemented.
 
 ## The intended deliverable

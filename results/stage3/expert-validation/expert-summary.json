@@ -1,0 +1,2329 @@
+{
+  "schema": "ato.stage3.expert-validation.v1",
+  "source_sha256": {
+    "src/ato/stage3/expert_validation.py": "1029d235fa17820210b7830f133bd1b3a912f5268008d7ebb42ff65b5dc0c733",
+    "src/ato/stage3/motor.py": "d86b4d091baf226475ce9f6d6e2390b65bb63752e5f50e73d42c5c3408b2323c",
+    "src/ato/stage3/acquisition.py": "bd681adefc5e82c58b449490ad14917fff307be9947de647e92aeb6c38b22f03",
+    "src/ato/stage3/filter_residual.py": "0404915b1f891ef8e1da8fbc7549888110b90a0100877f361154ce39154dca47",
+    "scripts/stage3_expert_validation.py": "fcc6a5f7178174e26d9832085f3ceb39f9a6207052895a605ecdc6b344d727dc"
+  },
+  "scope": "observed competence and decoder transfer in separately labeled synthetic teacher generators",
+  "performance_count": 16,
+  "independent_noise_realizations_per_generator_cadence": 4,
+  "subject_geometry_seed": 51000,
+  "config": {
+    "dt_s": 0.005,
+    "body_integration_step_s": 0.0025,
+    "body_integration_method": "midpoint_exact_cascade",
+    "event_spacing_s": 0.5,
+    "foot_amplitude_m": 0.1,
+    "practice_blocks": 4,
+    "practice_block_s": 3.0,
+    "calibration_s": 12.0,
+    "probe_s": 1.25,
+    "assessment_s": 3.0,
+    "pipeline_delay_s": 0.01185,
+    "external_delay_s": 0.02,
+    "external_noise_m": 0.0015,
+    "external_freshness_s": 0.05,
+    "controller_position_uncertainty_limit_m": 0.025,
+    "motor_onset_delay_s": 0.035,
+    "motor_activation_tau_s": 0.04,
+    "movement_tau_s": 0.06,
+    "nominal_gain_m": 0.06,
+    "recruitment_threshold_fraction": 0.12,
+    "sensory_interference_fraction": 0.15,
+    "learning_step": 0.05,
+    "stimulation_teaching_fraction": 0.3,
+    "forgetting_fraction": 0.02,
+    "retention_spatial_threshold_m": 0.018,
+    "retention_timing_threshold_s": 0.025,
+    "nominal_current_A": 0.003,
+    "phase_s": 0.0002,
+    "boost_V": 24.0,
+    "pulse_hz": 40.0,
+    "maximum_prediction_horizon_s": 0.1,
+    "source_mode": "informative",
+    "biological_variant": "nominal",
+    "heldout_gain_fraction": 0.65,
+    "heldout_cross_coupling": 0.4,
+    "save_trace_condition": "neural_external__expert_neural",
+    "acquisition_qualification_mode": "bounded_residual",
+    "acquisition_clock_uncertainty_s": 2e-05
+  },
+  "decoder_training": "performance0 nominal cadence, chronological purged split; frozen for other captures",
+  "decoder_fits": {
+    "legacy_voluntary": {
+      "mean": [
+        -18.84761524140278,
+        -43.13009871492265,
+        -38.89764402930496,
+        34.768987994558465,
+        37.024004467130766,
+        2.826106121355733,
+        -12.678277155928642,
+        8.019906574761531,
+        -21.37980405059512,
+        -30.088545270121205,
+        34.4663063394678,
+        -29.474305691386082,
+        24.53200904492996,
+        36.061826408330624,
+        29.500976480570692,
+        -10.737774622759645,
+        35.71738002404726,
+        24.169591695631233,
+        27.219771031777057,
+        26.422280692728144,
+        -34.525126548870084,
+        38.651074346172315,
+        -39.276596995958684,
+        -48.78027913310283,
+        -48.15700986787731,
+        37.71911465242007,
+        -21.439937590226183,
+        -26.250046457349363,
+        -31.49946410183912,
+        2.8104407330150214,
+        21.095468720800824,
+        -39.75240606488713
+      ],
+      "scale": [
+        2.940569027783607,
+        10.1171943252135,
+        5.490755439698394,
+        9.057616934876169,
+        6.376850327882783,
+        2.051897903023369,
+        2.8884859821127185,
+        4.167090967590575,
+        4.165427213245039,
+        7.158799998246189,
+        7.373518681857043,
+        8.088838202328132,
+        3.7149652762311725,
+        16.552043419319862,
+        14.13238353534214,
+        4.993267860899573,
+        4.495540167298943,
+        5.947421681966593,
+        4.1325673381265124,
+        6.969056086201059,
+        6.014232571026833,
+        9.779284854503697,
+        6.742679434939182,
+        20.556231933086995,
+        8.017778071707859,
+        8.826014395566807,
+        4.85255063599532,
+        7.195006320988983,
+        4.363207425229018,
+        2.310321252291312,
+        10.27529286623447,
+        16.980277563383133
+      ],
+      "weights": [
+        [
+          0.0009449566048427203,
+          -0.0009339175905522529,
+          -0.012707839885452968,
+          0.012679149642609312
+        ],
+        [
+          -8.039835637304608e-05,
+          -0.00011324047058499321,
+          0.0008324340504699525,
+          0.0012937757337262122
+        ],
+        [
+          0.007168472151199389,
+          -0.007925806884764302,
+          0.07096765208196665,
+          -0.06818267152146903
+        ],
+        [
+          -0.0015261028540287786,
+          0.0011831140318011384,
+          -0.028455831574730136,
+          0.02940365280618896
+        ],
+        [
+          -0.0010713371305940242,
+          0.0017272643877328435,
+          0.04225729067778119,
+          -0.01819616373283786
+        ],
+        [
+          -0.0007137791833506669,
+          0.0007201300945562368,
+          0.006540402583674046,
+          -0.026622047282425048
+        ],
+        [
+          0.00021085144560885566,
+          -7.57627322951408e-05,
+          0.006871812352339108,
+          -0.006938831446445736
+        ],
+        [
+          -0.0004363414973274349,
+          0.00045265111363612534,
+          -0.012752282997195084,
+          0.02179451404378766
+        ],
+        [
+          0.0005676056934380479,
+          -0.00043502241931742765,
+          -0.007593485532387234,
+          0.007562301467446448
+        ],
+        [
+          -0.0010515829494095776,
+          0.0007869701285450997,
+          0.013111196890427015,
+          -0.023804413969129534
+        ],
+        [
+          -0.00020290589972510315,
+          0.00023405501526940582,
+          -0.03640465018289557,
+          0.04209745126089836
+        ],
+        [
+          0.0030551482587123594,
+          -0.0034265919126272777,
+          -0.0028360210700519627,
+          0.012707833385655983
+        ],
+        [
+          0.0042445077700592,
+          -0.004141230273554253,
+          0.04300457909842242,
+          -0.047729788826719535
+        ],
+        [
+          3.351488641371517e-06,
+          -0.00015499896538523326,
+          -0.015006983784609912,
+          0.011066790818256076
+        ],
+        [
+          -0.011617199528775745,
+          0.010507990189723664,
+          0.021951610890972806,
+          -0.02076007821246408
+        ],
+        [
+          -0.006338994532464696,
+          0.006174955340723814,
+          0.027016415315263678,
+          -0.011648037487025937
+        ],
+        [
+          -0.00020499540485454182,
+          -0.000231613994416732,
+          0.0008052412377034224,
+          0.0006243773441523813
+        ],
+        [
+          0.00026306561633570496,
+          -0.00031331214212036826,
+          0.018993130873241816,
+          -0.02025159568896185
+        ],
+        [
+          -0.0021170646144104827,
+          0.0022688324648494113,
+          -0.03992571419668704,
+          0.02514155022833559
+        ],
+        [
+          0.00034178543522266275,
+          0.0001944721677770253,
+          -0.0036606111813953265,
+          -0.005195319976103656
+        ],
+        [
+          0.00016944757879559444,
+          0.00031131948266567474,
+          0.017425798100384686,
+          -0.009261642441521464
+        ],
+        [
+          0.002094010985101398,
+          -0.0019091679916909755,
+          -0.021937261969127517,
+          0.004168608746645566
+        ],
+        [
+          -0.004958393173831345,
+          0.004696764811224833,
+          -0.031527357283921184,
+          0.04481642671026489
+        ],
+        [
+          -0.0021939114682182643,
+          0.00238591089128607,
+          -0.027620378932512294,
+          0.038425208861476406
+        ],
+        [
+          -0.009978344605237511,
+          0.00890534430760985,
+          0.05048330423332332,
+          -0.053856887299620404
+        ],
+        [
+          0.0015765644182505,
+          -0.0013824757490677494,
+          0.041086405446443645,
+          -0.034588688387913055
+        ],
+        [
+          -0.0009397550730722822,
+          0.0011893337599021123,
+          0.07051415775422891,
+          -0.05851208879943549
+        ],
+        [
+          -9.823158228372821e-05,
+          0.00042009967533506234,
+          -0.0030472043117896514,
+          -0.006930455647669616
+        ],
+        [
+          0.0022593860601895195,
+          -0.002092341546369529,
+          0.02725972616448726,
+          -0.025961828374614897
+        ],
+        [
+          0.00029713027218444067,
+          -0.0007432415839955689,
+          -0.009030310775766087,
+          0.0029710484264714883
+        ],
+        [
+          0.0003568964550483732,
+          -0.00038465322633247895,
+          -0.0012226114060014033,
+          -0.0078120510441386775
+        ],
+        [
+          -0.0015963847489831853,
+          0.001417782160541184,
+          0.03417629842115917,
+          -0.05237350546738771
+        ],
+        [
+          0.013504347920786123,
+          -0.014157871740450146,
+          0.0487594913430843,
+          -0.03222994970668168
+        ]
+      ],
+      "rmse": 0.002414191052151426,
+      "velocity_rmse": 0.04382416148447342,
+      "training_rows": 1757,
+      "heldout_rows": 568,
+      "purged_split_half_width_s": 0.1,
+      "labels": "same-learner external position + offline differentiated external position"
+    },
+    "idealized_inverse": {
+      "mean": [
+        -18.846868325430172,
+        -43.24117526809776,
+        -38.85188431037427,
+        34.83981363080751,
+        37.05021292466244,
+        2.834458774699455,
+        -12.655088005385966,
+        7.985979037909544,
+        -21.37802935908286,
+        -30.097480475583186,
+        34.3868032965016,
+        -29.567059834942555,
+        24.502660207276477,
+        36.221528259510805,
+        29.625526691416653,
+        -10.788778731031925,
+        35.71442065299773,
+        24.232841732951005,
+        27.188160589709465,
+        26.475199898212992,
+        -34.550288288537956,
+        38.766157914602346,
+        -39.20335216860752,
+        -48.57437568920174,
+        -48.15276839797886,
+        37.73023576041991,
+        -21.39082521977065,
+        -26.333490224302597,
+        -31.460788128905623,
+        2.8218568173459575,
+        21.18313922890574,
+        -39.94788810986347
+      ],
+      "scale": [
+        3.1614677089165015,
+        10.82553501822043,
+        5.933215072526894,
+        9.803794101335813,
+        6.976730858479146,
+        2.0820448900881416,
+        2.9757446888063606,
+        4.375038566437006,
+        4.441997397684938,
+        7.890986360274032,
+        7.829120580565025,
+        8.586310913542492,
+        3.8976946552776672,
+        17.794282026898788,
+        15.280330701464191,
+        5.26614809564147,
+        4.939399955045131,
+        6.31679679020793,
+        4.4385350120376,
+        7.576327833295185,
+        6.537434881761657,
+        10.381034661142516,
+        7.194626772532407,
+        22.049467442633844,
+        8.863811234045789,
+        9.817239299566815,
+        5.126360919515936,
+        7.63768700041938,
+        4.651768355590413,
+        2.388740914155583,
+        11.063484937708518,
+        18.044564918400024
+      ],
+      "weights": [
+        [
+          0.0001787699713161165,
+          -0.00016773095702566517,
+          -0.014083087382128915,
+          0.014054397139285274
+        ],
+        [
+          -8.433726041169605e-05,
+          -0.00012877456016938298,
+          -1.5473792571440338e-05,
+          0.0020238778975819227
+        ],
+        [
+          0.007829083577950093,
+          -0.008588746434430661,
+          0.08458194157790959,
+          -0.0799849526983447
+        ],
+        [
+          -0.001706118790264989,
+          0.0013190533752195947,
+          -0.04135960362557757,
+          0.041748213268465145
+        ],
+        [
+          -0.00107236405346756,
+          0.0017972586785075205,
+          0.04635784059071929,
+          -0.020757338138916375
+        ],
+        [
+          -0.0007445310574291075,
+          0.0007683555202317211,
+          0.00046558009121412485,
+          -0.022313922563426198
+        ],
+        [
+          0.00021442928043322127,
+          -7.785298932208567e-05,
+          -8.427768306666267e-05,
+          0.0001914965362998222
+        ],
+        [
+          -0.00044923774188148854,
+          0.00046155728468762365,
+          -0.008360764403675973,
+          0.017967601604808276
+        ],
+        [
+          0.0006164584389253387,
+          -0.00047293229575376487,
+          -0.01933796714572622,
+          0.019249378184551396
+        ],
+        [
+          -0.0011644043533728626,
+          0.000877819892938797,
+          0.01660331690700446,
+          -0.02889158450878863
+        ],
+        [
+          -0.00026734579089936027,
+          0.00028662257031856277,
+          -0.03493525562837972,
+          0.04062922937620651
+        ],
+        [
+          0.003217347601528739,
+          -0.0036164931956572935,
+          -0.008095784724654349,
+          0.01842145791211331
+        ],
+        [
+          0.004637232809638878,
+          -0.004481086166654392,
+          0.040238985593402596,
+          -0.04504685531196406
+        ],
+        [
+          3.605772043574868e-05,
+          -0.00018354184351644675,
+          -0.014225676603643846,
+          0.010227137252952285
+        ],
+        [
+          -0.012354680480227007,
+          0.011179126802232087,
+          0.0340695988688515,
+          -0.03258443772209549
+        ],
+        [
+          -0.0065782017269035665,
+          0.006456926027308289,
+          0.015506703967518897,
+          0.0017002513083050185
+        ],
+        [
+          -0.0001479122875145773,
+          -0.00029005100823212065,
+          -0.009234540970522806,
+          0.010678961165179255
+        ],
+        [
+          0.0003410839630470545,
+          -0.00038826900183140217,
+          0.004629760653518768,
+          -0.005390494907631233
+        ],
+        [
+          -0.0021525189604850114,
+          0.0023529573843620462,
+          -0.040634963906502765,
+          0.024924487110125713
+        ],
+        [
+          0.0003134708494156044,
+          0.0002396215572350542,
+          0.014451037850293991,
+          -0.023926353657324154
+        ],
+        [
+          0.0002170302030911446,
+          0.00032079127997871996,
+          0.0020200322719448344,
+          0.0063475146223503035
+        ],
+        [
+          0.002374439808195645,
+          -0.002147483190986571,
+          -0.023278699376210247,
+          0.0040295193414910824
+        ],
+        [
+          -0.005124516941001968,
+          0.004878698650164747,
+          -0.05260997191250013,
+          0.06743978599934285
+        ],
+        [
+          -0.002349334693404734,
+          0.002556563015903269,
+          -0.03594437949639594,
+          0.047907987507759514
+        ],
+        [
+          -0.01074973484521032,
+          0.00957086839987435,
+          0.01756367144935566,
+          -0.02045277257585648
+        ],
+        [
+          0.0016294233276827048,
+          -0.001446323201957259,
+          0.056607489931425274,
+          -0.05028183394691604
+        ],
+        [
+          -0.0011710814533849362,
+          0.0013982923403664345,
+          0.06299285286068812,
+          -0.05020876255684348
+        ],
+        [
+          -0.00020439386756544085,
+          0.0005402434589949087,
+          0.01017027601530774,
+          -0.02126423871889667
+        ],
+        [
+          0.0023884508060655184,
+          -0.0022337152956570434,
+          0.03371983472843066,
+          -0.03328714836628615
+        ],
+        [
+          0.00033976300211502287,
+          -0.0008048885821418743,
+          -0.011245464043002312,
+          0.005077484918586328
+        ],
+        [
+          0.0003788993962415316,
+          -0.00040926990152567147,
+          -0.0013868884130648412,
+          -0.008077825775513407
+        ],
+        [
+          -0.0017596470397737648,
+          0.0015357955203675743,
+          0.0621378680142804,
+          -0.08206190181813354
+        ],
+        [
+          0.014392068746897142,
+          -0.015124772633486107,
+          0.006445292896578416,
+          0.011404138167300609
+        ]
+      ],
+      "rmse": 0.002429057126390881,
+      "velocity_rmse": 0.05714862595085895,
+      "training_rows": 1757,
+      "heldout_rows": 568,
+      "purged_split_half_width_s": 0.1,
+      "labels": "same-learner external position + offline differentiated external position"
+    }
+  },
+  "raw_files": [
+    {
+      "path": "legacy_voluntary_nominal_performance0.json.gz",
+      "sha256": "c287bc93105da257f81791f6a03b4d782d9a4ef83980243a1114e9d6567f36af"
+    },
+    {
+      "path": "legacy_voluntary_nominal_performance1.json.gz",
+      "sha256": "5d8f9e8c32252a0529c131fca21a8adde642183bdd50b99563d4477bd4317977"
+    },
+    {
+      "path": "legacy_voluntary_nominal_performance2.json.gz",
+      "sha256": "63ec42e6ee1576881afb8197c54f87081c5c1ffe53404a31eba864913039708b"
+    },
+    {
+      "path": "legacy_voluntary_nominal_performance3.json.gz",
+      "sha256": "682399207bbe4fea1e95baf8d338afdc7a679a7840f9c2e8a0743fad09f801ba"
+    },
+    {
+      "path": "legacy_voluntary_faster_performance0.json.gz",
+      "sha256": "a3b08412305003b7e2a9b2df05d818cb905ac2015dde80609f3968eb4e67772e"
+    },
+    {
+      "path": "legacy_voluntary_faster_performance1.json.gz",
+      "sha256": "e01183cb73e31abeb009ec2e94179350db9ceed6fddadde68eb438e315c809cc"
+    },
+    {
+      "path": "legacy_voluntary_faster_performance2.json.gz",
+      "sha256": "d25e222968e1410864c18e4c69c28ebd76ff9b9786124509f7c507f69529262c"
+    },
+    {
+      "path": "legacy_voluntary_faster_performance3.json.gz",
+      "sha256": "c5bc62f6aa5d08395dd7ea087a05755324dfbfdedacb577054fee7aeeb59a6d5"
+    },
+    {
+      "path": "idealized_inverse_nominal_performance0.json.gz",
+      "sha256": "72f95efaf07d09e862e37a9668f90eecf063e27802c581e4b71b12a93403a3e0"
+    },
+    {
+      "path": "idealized_inverse_nominal_performance1.json.gz",
+      "sha256": "708fcfc7c5109303c86a901fc90635a29af03c712c473edfcfbdef0e7c66e2fb"
+    },
+    {
+      "path": "idealized_inverse_nominal_performance2.json.gz",
+      "sha256": "8fcd9ccc55c4bbccdb461e66a91341dc1500313451de84ce4e5a374cf9094f3a"
+    },
+    {
+      "path": "idealized_inverse_nominal_performance3.json.gz",
+      "sha256": "886ad26fc9ebadd95f21fc9ffba1a0eae818ffb830219c18bda5830728237eaf"
+    },
+    {
+      "path": "idealized_inverse_faster_performance0.json.gz",
+      "sha256": "87aa0a4143381e7479e5d7861da74b40a15f6aacf0291098b091d39ae3d24cf0"
+    },
+    {
+      "path": "idealized_inverse_faster_performance1.json.gz",
+      "sha256": "86842caf74ac8aaf202cd8c95cc9c0f58d4a63db27a5a994a2eb9543f26635cd"
+    },
+    {
+      "path": "idealized_inverse_faster_performance2.json.gz",
+      "sha256": "ab94ac7c1a6e4687bd5f7bd068c5a6ed93726243fad5f7b6a151292cda7ff31a"
+    },
+    {
+      "path": "idealized_inverse_faster_performance3.json.gz",
+      "sha256": "07374f8455b311f4372c732d3ee30c43a19f2fb901e1e6a640efbaa5145ebfc9"
+    }
+  ],
+  "performances": [
+    {
+      "name": "legacy_voluntary_nominal_performance0",
+      "generation": {
+        "generator": "legacy_voluntary",
+        "performance_seed": 51000,
+        "subject_seed": 51000,
+        "cadence_hz": 1.0,
+        "external_noise_seed": 60200,
+        "voltage_noise_seed": 68001,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "declared amplitude voluntary template",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": false,
+        "reason": "TIMING_THRESHOLD_FAILED",
+        "metrics": {
+          "trajectory_rmse_m": 0.023804971616495522,
+          "contact_spatial_rmse_m": 0.004577616937785475,
+          "contact_timing_rmse_s": 0.06111286778327227,
+          "scored_contact_events": 23,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 0.023779793156310205,
+        "contact_spatial_rmse_m": 0.006351322778349407,
+        "contact_timing_rmse_s": 0.054999999999999875,
+        "scored_contact_events": 23,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "a4a24cd07fd1b86e74d7ba6acd26d688b808aca04b9842545d8e56e2b461a926",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": false,
+        "reason": "TRAINING_PERFORMANCE_NOT_INDEPENDENT_VALIDATION"
+      }
+    },
+    {
+      "name": "legacy_voluntary_nominal_performance1",
+      "generation": {
+        "generator": "legacy_voluntary",
+        "performance_seed": 61007,
+        "subject_seed": 51000,
+        "cadence_hz": 1.0,
+        "external_noise_seed": 70207,
+        "voltage_noise_seed": 78008,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "declared amplitude voluntary template",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": false,
+        "reason": "TIMING_THRESHOLD_FAILED",
+        "metrics": {
+          "trajectory_rmse_m": 0.02382659365822855,
+          "contact_spatial_rmse_m": 0.004453326550058127,
+          "contact_timing_rmse_s": 0.054403884132437526,
+          "scored_contact_events": 23,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 0.023779793156310205,
+        "contact_spatial_rmse_m": 0.006351322778349407,
+        "contact_timing_rmse_s": 0.054999999999999875,
+        "scored_contact_events": 23,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "13ca73e937615f81a597c739f70ee8e5e600d8d46bd9a1f626decabe3ab64a3e",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.0024523708871915123,
+        "velocity_rmse_m_per_s": 0.04318145934119569,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 3.211473847300829,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 61007,
+        "cadence_hz": 1.0
+      }
+    },
+    {
+      "name": "legacy_voluntary_nominal_performance2",
+      "generation": {
+        "generator": "legacy_voluntary",
+        "performance_seed": 71014,
+        "subject_seed": 51000,
+        "cadence_hz": 1.0,
+        "external_noise_seed": 80214,
+        "voltage_noise_seed": 88015,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "declared amplitude voluntary template",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": false,
+        "reason": "TIMING_THRESHOLD_FAILED",
+        "metrics": {
+          "trajectory_rmse_m": 0.023796745927226456,
+          "contact_spatial_rmse_m": 0.0044440893726509735,
+          "contact_timing_rmse_s": 0.057218118139959064,
+          "scored_contact_events": 23,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 0.023779793156310205,
+        "contact_spatial_rmse_m": 0.006351322778349407,
+        "contact_timing_rmse_s": 0.054999999999999875,
+        "scored_contact_events": 23,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "6763860362c240a0678fff4c48237be86cb730892e2f9a387c6cacdbf6cf91b5",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.002428883097975389,
+        "velocity_rmse_m_per_s": 0.044891470211417796,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 3.443032197670329,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 71014,
+        "cadence_hz": 1.0
+      }
+    },
+    {
+      "name": "legacy_voluntary_nominal_performance3",
+      "generation": {
+        "generator": "legacy_voluntary",
+        "performance_seed": 81021,
+        "subject_seed": 51000,
+        "cadence_hz": 1.0,
+        "external_noise_seed": 90221,
+        "voltage_noise_seed": 98022,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "declared amplitude voluntary template",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": false,
+        "reason": "TIMING_THRESHOLD_FAILED",
+        "metrics": {
+          "trajectory_rmse_m": 0.02382551322598327,
+          "contact_spatial_rmse_m": 0.004135056996081894,
+          "contact_timing_rmse_s": 0.060253089403023506,
+          "scored_contact_events": 23,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 0.023779793156310205,
+        "contact_spatial_rmse_m": 0.006351322778349407,
+        "contact_timing_rmse_s": 0.054999999999999875,
+        "scored_contact_events": 23,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "5b54dc3541a1070f57ea0e5f6799997cbcadaa1a420f6196b37cd11aeec14ab9",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.002341957679651817,
+        "velocity_rmse_m_per_s": 0.044949535844221414,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 3.192085325856067,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 81021,
+        "cadence_hz": 1.0
+      }
+    },
+    {
+      "name": "legacy_voluntary_faster_performance0",
+      "generation": {
+        "generator": "legacy_voluntary",
+        "performance_seed": 51000,
+        "subject_seed": 51000,
+        "cadence_hz": 1.15,
+        "external_noise_seed": 60200,
+        "voltage_noise_seed": 68001,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "declared amplitude voluntary template",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": false,
+        "reason": "TIMING_THRESHOLD_FAILED",
+        "metrics": {
+          "trajectory_rmse_m": 0.031125219824716426,
+          "contact_spatial_rmse_m": 0.0067442025217116335,
+          "contact_timing_rmse_s": 0.059473166084410174,
+          "scored_contact_events": 22,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 0.031036776090744147,
+        "contact_spatial_rmse_m": 0.008198484249263976,
+        "contact_timing_rmse_s": 0.05657554826927814,
+        "scored_contact_events": 22,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "da39252cf144a4f5bf9b08202def2cfd1db585f28c26dce7a059085dbb5bf86f",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.002328284449372152,
+        "velocity_rmse_m_per_s": 0.08532087479371972,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 6.106214536585186,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 51000,
+        "cadence_hz": 1.15
+      }
+    },
+    {
+      "name": "legacy_voluntary_faster_performance1",
+      "generation": {
+        "generator": "legacy_voluntary",
+        "performance_seed": 61007,
+        "subject_seed": 51000,
+        "cadence_hz": 1.15,
+        "external_noise_seed": 70207,
+        "voltage_noise_seed": 78008,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "declared amplitude voluntary template",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": false,
+        "reason": "TIMING_THRESHOLD_FAILED",
+        "metrics": {
+          "trajectory_rmse_m": 0.031068661717235747,
+          "contact_spatial_rmse_m": 0.006322730743590079,
+          "contact_timing_rmse_s": 0.05496677197774361,
+          "scored_contact_events": 22,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 0.031036776090744147,
+        "contact_spatial_rmse_m": 0.008198484249263976,
+        "contact_timing_rmse_s": 0.05657554826927814,
+        "scored_contact_events": 22,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "09ffd53b88256f59a346416d8242c86c0d1393d073f23e13072d1b99227fb04e",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.0025185821552602874,
+        "velocity_rmse_m_per_s": 0.08685222126715927,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 6.264854496746251,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 61007,
+        "cadence_hz": 1.15
+      }
+    },
+    {
+      "name": "legacy_voluntary_faster_performance2",
+      "generation": {
+        "generator": "legacy_voluntary",
+        "performance_seed": 71014,
+        "subject_seed": 51000,
+        "cadence_hz": 1.15,
+        "external_noise_seed": 80214,
+        "voltage_noise_seed": 88015,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "declared amplitude voluntary template",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": false,
+        "reason": "TIMING_THRESHOLD_FAILED",
+        "metrics": {
+          "trajectory_rmse_m": 0.031123060540597228,
+          "contact_spatial_rmse_m": 0.006597120634865764,
+          "contact_timing_rmse_s": 0.05922800599032531,
+          "scored_contact_events": 22,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 0.031036776090744147,
+        "contact_spatial_rmse_m": 0.008198484249263976,
+        "contact_timing_rmse_s": 0.05657554826927814,
+        "scored_contact_events": 22,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "8534d5af9d724005e2ce615cf65870bc2c791b4e919378723d09551fd31508dc",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.002427180936283228,
+        "velocity_rmse_m_per_s": 0.08716667008424028,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 6.1510878669136435,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 71014,
+        "cadence_hz": 1.15
+      }
+    },
+    {
+      "name": "legacy_voluntary_faster_performance3",
+      "generation": {
+        "generator": "legacy_voluntary",
+        "performance_seed": 81021,
+        "subject_seed": 51000,
+        "cadence_hz": 1.15,
+        "external_noise_seed": 90221,
+        "voltage_noise_seed": 98022,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "declared amplitude voluntary template",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": false,
+        "reason": "TIMING_THRESHOLD_FAILED",
+        "metrics": {
+          "trajectory_rmse_m": 0.031118606899255313,
+          "contact_spatial_rmse_m": 0.006343155303465141,
+          "contact_timing_rmse_s": 0.05757665601696521,
+          "scored_contact_events": 22,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 0.031036776090744147,
+        "contact_spatial_rmse_m": 0.008198484249263976,
+        "contact_timing_rmse_s": 0.05657554826927814,
+        "scored_contact_events": 22,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "de1515b43282af13923b4f092eddc5a680b07728456e76d06cb4512ed2960c0b",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.002379664867844803,
+        "velocity_rmse_m_per_s": 0.08506482557051663,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 5.956807099873308,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 81021,
+        "cadence_hz": 1.15
+      }
+    },
+    {
+      "name": "idealized_inverse_nominal_performance0",
+      "generation": {
+        "generator": "idealized_inverse",
+        "performance_seed": 51000,
+        "subject_seed": 51000,
+        "cadence_hz": 1.0,
+        "external_noise_seed": 60200,
+        "voltage_noise_seed": 68001,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "PRIVATE_EXPERT_MOVEMENT_TAU_IN_GENERATOR_ONLY",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": true,
+        "reason": "OBSERVED_TASK_COMPETENT",
+        "metrics": {
+          "trajectory_rmse_m": 0.001503797894741962,
+          "contact_spatial_rmse_m": 0.0020653826761058897,
+          "contact_timing_rmse_s": 0.014817733206914761,
+          "scored_contact_events": 23,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 3.8189536502887844e-06,
+        "contact_spatial_rmse_m": 1.0668915734133706e-06,
+        "contact_timing_rmse_s": 0.0,
+        "scored_contact_events": 23,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "63eff35308a6551f2ae95423774a99c727ca7baca1d1d63fe8aef7fe942c4276",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": false,
+        "reason": "TRAINING_PERFORMANCE_NOT_INDEPENDENT_VALIDATION"
+      }
+    },
+    {
+      "name": "idealized_inverse_nominal_performance1",
+      "generation": {
+        "generator": "idealized_inverse",
+        "performance_seed": 61007,
+        "subject_seed": 51000,
+        "cadence_hz": 1.0,
+        "external_noise_seed": 70207,
+        "voltage_noise_seed": 78008,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "PRIVATE_EXPERT_MOVEMENT_TAU_IN_GENERATOR_ONLY",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": true,
+        "reason": "OBSERVED_TASK_COMPETENT",
+        "metrics": {
+          "trajectory_rmse_m": 0.001507627805324399,
+          "contact_spatial_rmse_m": 0.0019967596569440216,
+          "contact_timing_rmse_s": 0.013392080722836102,
+          "scored_contact_events": 23,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 3.8189536502887844e-06,
+        "contact_spatial_rmse_m": 1.0668915734133706e-06,
+        "contact_timing_rmse_s": 0.0,
+        "scored_contact_events": 23,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "7bf72998aabef15a4ed66e4e92d2bc16acb57d218770a6b1f747f1061c542c5c",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.002470840452357858,
+        "velocity_rmse_m_per_s": 0.05953919857486553,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 3.098823730594982,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 61007,
+        "cadence_hz": 1.0
+      }
+    },
+    {
+      "name": "idealized_inverse_nominal_performance2",
+      "generation": {
+        "generator": "idealized_inverse",
+        "performance_seed": 71014,
+        "subject_seed": 51000,
+        "cadence_hz": 1.0,
+        "external_noise_seed": 80214,
+        "voltage_noise_seed": 88015,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "PRIVATE_EXPERT_MOVEMENT_TAU_IN_GENERATOR_ONLY",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": true,
+        "reason": "OBSERVED_TASK_COMPETENT",
+        "metrics": {
+          "trajectory_rmse_m": 0.0015261486497128408,
+          "contact_spatial_rmse_m": 0.0020083272202290185,
+          "contact_timing_rmse_s": 0.011841342462083525,
+          "scored_contact_events": 23,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 3.8189536502887844e-06,
+        "contact_spatial_rmse_m": 1.0668915734133706e-06,
+        "contact_timing_rmse_s": 0.0,
+        "scored_contact_events": 23,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "87d21b2520e078933653469fb4ff2489bafbc4ed4c825888ed8ce66b8a1269a5",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.002433660613596143,
+        "velocity_rmse_m_per_s": 0.0607963255630453,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 3.3838304436615214,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 71014,
+        "cadence_hz": 1.0
+      }
+    },
+    {
+      "name": "idealized_inverse_nominal_performance3",
+      "generation": {
+        "generator": "idealized_inverse",
+        "performance_seed": 81021,
+        "subject_seed": 51000,
+        "cadence_hz": 1.0,
+        "external_noise_seed": 90221,
+        "voltage_noise_seed": 98022,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "PRIVATE_EXPERT_MOVEMENT_TAU_IN_GENERATOR_ONLY",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": true,
+        "reason": "OBSERVED_TASK_COMPETENT",
+        "metrics": {
+          "trajectory_rmse_m": 0.0015272585919907894,
+          "contact_spatial_rmse_m": 0.0018768567674561536,
+          "contact_timing_rmse_s": 0.017003835884370523,
+          "scored_contact_events": 23,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 3.8189536502887844e-06,
+        "contact_spatial_rmse_m": 1.0668915734133706e-06,
+        "contact_timing_rmse_s": 0.0,
+        "scored_contact_events": 23,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "e38703af0329d8d4ba666f1320d0cb81b532c5d169a899049c77f27367e05123",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.0023555827973687623,
+        "velocity_rmse_m_per_s": 0.059138925697263894,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 3.1373674263969376,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 81021,
+        "cadence_hz": 1.0
+      }
+    },
+    {
+      "name": "idealized_inverse_faster_performance0",
+      "generation": {
+        "generator": "idealized_inverse",
+        "performance_seed": 51000,
+        "subject_seed": 51000,
+        "cadence_hz": 1.15,
+        "external_noise_seed": 60200,
+        "voltage_noise_seed": 68001,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "PRIVATE_EXPERT_MOVEMENT_TAU_IN_GENERATOR_ONLY",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": true,
+        "reason": "OBSERVED_TASK_COMPETENT",
+        "metrics": {
+          "trajectory_rmse_m": 0.016820958300715696,
+          "contact_spatial_rmse_m": 0.0019234919165498964,
+          "contact_timing_rmse_s": 0.012805637882360787,
+          "scored_contact_events": 22,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 0.016719910929600932,
+        "contact_spatial_rmse_m": 0.00017029144546136675,
+        "contact_timing_rmse_s": 0.0018200068173665586,
+        "scored_contact_events": 22,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "49ea6e8c9005ea6e8c250eee00ef0237ca4dd01dab057e645aaec5b63c11b632",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.0023306671752153273,
+        "velocity_rmse_m_per_s": 0.09060578789740881,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 6.59747195967843,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 51000,
+        "cadence_hz": 1.15
+      }
+    },
+    {
+      "name": "idealized_inverse_faster_performance1",
+      "generation": {
+        "generator": "idealized_inverse",
+        "performance_seed": 61007,
+        "subject_seed": 51000,
+        "cadence_hz": 1.15,
+        "external_noise_seed": 70207,
+        "voltage_noise_seed": 78008,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "PRIVATE_EXPERT_MOVEMENT_TAU_IN_GENERATOR_ONLY",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": true,
+        "reason": "OBSERVED_TASK_COMPETENT",
+        "metrics": {
+          "trajectory_rmse_m": 0.01681480045777091,
+          "contact_spatial_rmse_m": 0.0021604854840129584,
+          "contact_timing_rmse_s": 0.01194942297352627,
+          "scored_contact_events": 22,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 0.016719910929600932,
+        "contact_spatial_rmse_m": 0.00017029144546136675,
+        "contact_timing_rmse_s": 0.0018200068173665586,
+        "scored_contact_events": 22,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "db1b968e5a2827e2bdf8f5ecdfbace9382bff9912dad8b7dc6fca948dc377323",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.0025125947969044144,
+        "velocity_rmse_m_per_s": 0.09327004998227703,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 6.5386240500123245,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 61007,
+        "cadence_hz": 1.15
+      }
+    },
+    {
+      "name": "idealized_inverse_faster_performance2",
+      "generation": {
+        "generator": "idealized_inverse",
+        "performance_seed": 71014,
+        "subject_seed": 51000,
+        "cadence_hz": 1.15,
+        "external_noise_seed": 80214,
+        "voltage_noise_seed": 88015,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "PRIVATE_EXPERT_MOVEMENT_TAU_IN_GENERATOR_ONLY",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": true,
+        "reason": "OBSERVED_TASK_COMPETENT",
+        "metrics": {
+          "trajectory_rmse_m": 0.01683023148448275,
+          "contact_spatial_rmse_m": 0.002028601916796414,
+          "contact_timing_rmse_s": 0.01334966705899473,
+          "scored_contact_events": 22,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 0.016719910929600932,
+        "contact_spatial_rmse_m": 0.00017029144546136675,
+        "contact_timing_rmse_s": 0.0018200068173665586,
+        "scored_contact_events": 22,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "3211e35ea859556cfbfae455be5059969ca34b6ecfcd30b80a6722a2866bb29f",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.0024353956708427138,
+        "velocity_rmse_m_per_s": 0.09175442025226356,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 6.393170207650852,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 71014,
+        "cadence_hz": 1.15
+      }
+    },
+    {
+      "name": "idealized_inverse_faster_performance3",
+      "generation": {
+        "generator": "idealized_inverse",
+        "performance_seed": 81021,
+        "subject_seed": 51000,
+        "cadence_hz": 1.15,
+        "external_noise_seed": 90221,
+        "voltage_noise_seed": 98022,
+        "contact_geometry_seed": 59300,
+        "duration_s": 12.0,
+        "config": {
+          "dt_s": 0.005,
+          "body_integration_step_s": 0.0025,
+          "body_integration_method": "midpoint_exact_cascade",
+          "event_spacing_s": 0.5,
+          "foot_amplitude_m": 0.1,
+          "practice_blocks": 4,
+          "practice_block_s": 3.0,
+          "calibration_s": 12.0,
+          "probe_s": 1.25,
+          "assessment_s": 3.0,
+          "pipeline_delay_s": 0.01185,
+          "external_delay_s": 0.02,
+          "external_noise_m": 0.0015,
+          "external_freshness_s": 0.05,
+          "controller_position_uncertainty_limit_m": 0.025,
+          "motor_onset_delay_s": 0.035,
+          "motor_activation_tau_s": 0.04,
+          "movement_tau_s": 0.06,
+          "nominal_gain_m": 0.06,
+          "recruitment_threshold_fraction": 0.12,
+          "sensory_interference_fraction": 0.15,
+          "learning_step": 0.05,
+          "stimulation_teaching_fraction": 0.3,
+          "forgetting_fraction": 0.02,
+          "retention_spatial_threshold_m": 0.018,
+          "retention_timing_threshold_s": 0.025,
+          "nominal_current_A": 0.003,
+          "phase_s": 0.0002,
+          "boost_V": 24.0,
+          "pulse_hz": 40.0,
+          "maximum_prediction_horizon_s": 0.1,
+          "source_mode": "informative",
+          "biological_variant": "nominal",
+          "heldout_gain_fraction": 0.65,
+          "heldout_cross_coupling": 0.4,
+          "save_trace_condition": "neural_external__expert_neural",
+          "acquisition_qualification_mode": "bounded_residual",
+          "acquisition_clock_uncertainty_s": 2e-05
+        },
+        "privilege": "PRIVATE_EXPERT_MOVEMENT_TAU_IN_GENERATOR_ONLY",
+        "controller_receives": "measured voltage-derived features, external labels and declared task",
+        "controller_excludes": [
+          "expert movement tau",
+          "expert theta",
+          "private body state"
+        ],
+        "direction_change_scope": "finite-response jumps retained; inverse valid between task discontinuities"
+      },
+      "qualification": {
+        "qualified": true,
+        "reason": "OBSERVED_TASK_COMPETENT",
+        "metrics": {
+          "trajectory_rmse_m": 0.016782850709275068,
+          "contact_spatial_rmse_m": 0.002554159480459105,
+          "contact_timing_rmse_s": 0.009985274430263466,
+          "scored_contact_events": 22,
+          "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+        },
+        "thresholds": {
+          "contact_spatial_rmse_m": 0.018,
+          "contact_timing_rmse_s": 0.025
+        },
+        "scope": "measured external task performance; no private body truth supplied"
+      },
+      "private_generation_metrics": {
+        "trajectory_rmse_m": 0.016719910929600932,
+        "contact_spatial_rmse_m": 0.00017029144546136675,
+        "contact_timing_rmse_s": 0.0018200068173665586,
+        "scored_contact_events": 22,
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+      },
+      "voltage_witness": {
+        "filter_input_v_sha256": "8fc3d813776ac6946fe017b43806be507d862d2199d8c8eef3372cce5fab388c",
+        "aperture_samples": 768000,
+        "streams": 16,
+        "sample_hz_per_stream": 4000.0,
+        "aperture_offset_s": 3e-06,
+        "source_hold_s": 0.005,
+        "scope": "every prefilter synthetic voltage hashed; first/last blocks retained; no raw neural measurements"
+      },
+      "independent_decoder_validation": {
+        "available": true,
+        "position_rmse_m": 0.002377837931628451,
+        "velocity_rmse_m_per_s": 0.09028053300464042,
+        "scored_rows": 2373,
+        "maximum_standardized_feature": 6.406233245021241,
+        "label_scope": "independent measured external position and within-capture offline differentiated labels",
+        "physical_support": "same external physical support; no lower-latency neural state claimed",
+        "performance_seed": 81021,
+        "cadence_hz": 1.15
+      }
+    }
+  ],
+  "historical_information_studies_replaced": false,
+  "next_library_requirement": "independently competent observed teacher plus qualified transferable decoder; not integrated yet"
+}

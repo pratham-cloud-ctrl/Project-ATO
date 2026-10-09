@@ -1,5 +1,14 @@
 # Motor mechanism model: observable expert-informed assistance and retained learning
 
+**Foundation/default scope.** This document describes the preserved first batch,
+including its coarse 5 ms body solver. The [continuation review](continuation-review.md)
+adds numerical qualification, a capacity-matched external-history comparator,
+digital filter-residual bounds and separate response/cue studies. Its
+[expert competence audit](expert-validation.md) finds the original teacher
+unqualified for task timing; the newer synthetic benchmark has not replaced
+this historical library. Statements below about remaining convergence/history
+work describe that original scope and are superseded by the linked evidence.
+
 This package implements the proposed spinal recording → interpretation → learner-specific stimulation → feedback chain as a **conditional digital mechanism study**. It uses Stage 2's 16 recording streams at 4 kHz, 200 Hz decisions and two 40 Hz fixed stimulation profiles. It does not demonstrate a functioning implant, human spinal decoding, electrode selectivity, accelerated learning or a finished predictive cadence controller.
 
 The selected task is paced alternating foot placement with nominal 500 ms events and instructed direction changes every two seconds. Foot position is a kinematic proxy; the model has no ground reaction forces, anatomy, muscle mechanics or physical contact detector. All neural encoding, electrode mixing, recruitment and plasticity parameters are declared synthetic assumptions. The model is intended to expose what the proposed mechanism requires and where it fails.

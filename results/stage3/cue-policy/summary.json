@@ -1,0 +1,698 @@
+{
+  "schema": "ato.stage3.cue-policy-study.v1",
+  "status": "component_witness_only",
+  "source_identity": {
+    "src/ato/stage3/cue_policy.py": "86c55451d04ea26a9ba6d14bfdb2689faf61bba9432623e190d159f9bbfe5395",
+    "src/ato/stage3/motor.py": "d86b4d091baf226475ce9f6d6e2390b65bb63752e5f50e73d42c5c3408b2323c",
+    "src/ato/stage3/acquisition.py": "bd681adefc5e82c58b449490ad14917fff307be9947de647e92aeb6c38b22f03",
+    "scripts/stage3_cue_policy_study.py": "12110b06a67c668f79c603b9347624b9c1e129b01ac893e22dbca64e3dbc300f"
+  },
+  "specification": {
+    "maximum_forecast_horizon_s": 0.15,
+    "forecast_grid_s": 0.005,
+    "history_rows": 16,
+    "sample_interval_s": 0.005,
+    "frame_hz": 40.0,
+    "processing_delay_s": 0.01185,
+    "packet_freshness_s": 0.05,
+    "expiry_after_frame_s": 0.001,
+    "forecast_error_limit_m": 0.015,
+    "total_correction_uncertainty_limit_m": 0.025,
+    "measured_label_uncertainty_m": 0.003,
+    "purge_half_width_s": 0.1,
+    "ridge_penalty": 0.5,
+    "future_measured_pulse_fraction": 1.012,
+    "future_pulse_uncertainty_fraction": 0.074,
+    "future_delivery_qualification": "UNQUALIFIED_NOMINAL_ASSUMPTION"
+  },
+  "motor_config": {
+    "dt_s": 0.005,
+    "body_integration_step_s": 0.0025,
+    "body_integration_method": "midpoint_exact_cascade",
+    "event_spacing_s": 0.5,
+    "foot_amplitude_m": 0.1,
+    "practice_blocks": 4,
+    "practice_block_s": 3.0,
+    "calibration_s": 12.0,
+    "probe_s": 1.25,
+    "assessment_s": 3.0,
+    "pipeline_delay_s": 0.01185,
+    "external_delay_s": 0.02,
+    "external_noise_m": 0.0015,
+    "external_freshness_s": 0.05,
+    "controller_position_uncertainty_limit_m": 0.025,
+    "motor_onset_delay_s": 0.035,
+    "motor_activation_tau_s": 0.04,
+    "movement_tau_s": 0.06,
+    "nominal_gain_m": 0.06,
+    "recruitment_threshold_fraction": 0.12,
+    "sensory_interference_fraction": 0.15,
+    "learning_step": 0.05,
+    "stimulation_teaching_fraction": 0.3,
+    "forgetting_fraction": 0.02,
+    "retention_spatial_threshold_m": 0.018,
+    "retention_timing_threshold_s": 0.025,
+    "nominal_current_A": 0.003,
+    "phase_s": 0.0002,
+    "boost_V": 24.0,
+    "pulse_hz": 40.0,
+    "maximum_prediction_horizon_s": 0.1,
+    "source_mode": "informative",
+    "biological_variant": "nominal",
+    "heldout_gain_fraction": 0.65,
+    "heldout_cross_coupling": 0.4,
+    "save_trace_condition": "neural_external__expert_neural",
+    "acquisition_qualification_mode": "fixed_history",
+    "acquisition_clock_uncertainty_s": 0.0
+  },
+  "task_reference": {
+    "kind": "learner_only",
+    "coefficients_m": [
+      [
+        0.1,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.1,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "reference_fit_rmse_m": 0.023708616559780394,
+    "label_source": "declared event goal interpolation; no expert data",
+    "training_subject": "known_task_no_subject",
+    "training_seconds": 0.0,
+    "qualified": true,
+    "qualification_reason": "AVAILABLE_DECLARED_OR_EXTERNAL_REFERENCE"
+  },
+  "reference_competence": "known instructed goal; no expert training used. Existing recorded expert resource is not treated as task-competence qualified.",
+  "original_reactive_prediction_cap_s": 0.1,
+  "new_forecast_family": "empirically tested known-instruction forecast150ms; original reactive100ms policy unchanged",
+  "context_validation": {
+    "withheld_unassisted": {
+      "qualified": true,
+      "error_allocation_m": 0.008763451910368574,
+      "rmse_m": 0.0015097705911880973,
+      "evaluated_horizons_s": [
+        0.05,
+        0.1,
+        0.15
+      ],
+      "target_rows": 2265,
+      "out_of_domain_rows": 0,
+      "scope": "independent measured capture only; no closed-loop/context generalization claimed",
+      "qualified_horizons_s": [
+        0.05,
+        0.1,
+        0.15
+      ]
+    },
+    "withheld_fixed_profile_assisted": {
+      "qualified": false,
+      "error_allocation_m": 0.05452759858998064,
+      "rmse_m": 0.028149637720885332,
+      "evaluated_horizons_s": [
+        0.05,
+        0.1,
+        0.15
+      ],
+      "target_rows": 2265,
+      "out_of_domain_rows": 0,
+      "scope": "independent measured capture only; no closed-loop/context generalization claimed",
+      "qualified_horizons_s": [],
+      "pulse_count": 160,
+      "profile_scope": "independent observed same-subject nominal-cadence open-loop fixed-profile train; not cue closed-loop context"
+    },
+    "withheld_sensor_offset_step": {
+      "qualified": false,
+      "error_allocation_m": 0.0472642413146697,
+      "rmse_m": 0.023085342131698557,
+      "evaluated_horizons_s": [
+        0.05,
+        0.1,
+        0.15
+      ],
+      "target_rows": 2265,
+      "out_of_domain_rows": 0,
+      "scope": "independent measured capture only; no closed-loop/context generalization claimed",
+      "qualified_horizons_s": []
+    }
+  },
+  "limitations": [
+    "Future known taskinstructions are allowed; future achievedbodystate/phase/coefficients/recruitment are forbidden online.",
+    "External measured-history predictor has40inputs and is a different policyfamily; no spinalinformation advantage claimed.",
+    "Maximum holdout error plus3mm chosen label allocation is empirical and is not a statistical confidence/universal errorbound.",
+    "Replay commands do not affect their source recording; performance/learning/biological control cannot be inferred.",
+    "Actual electrical authority remains negative; no refined measurement assumed silently.",
+    "Independent assisted/context probes qualify only tested captures/horizons; cue closed-loop remains unvalidated and abstains.",
+    "Scheduler emits signedfraction requests; continuous routing, pulse-density delivery/guard and power integration remain downstream work."
+  ],
+  "raw_witness": {
+    "path": "raw.json.gz",
+    "sha256": "e6df858060848664019e3482889e52bfd55014f9802b2130422c60cff9f68476"
+  },
+  "forecast": {
+    "schema": "ato.stage3.known-cue-forecast.v1",
+    "context_validation": {
+      "nominal_unassisted": {
+        "qualified": true,
+        "error_allocation_m": 0.008743723200101305,
+        "scope": "chronological withheld same-subject unassisted nominal-cadence measured record"
+      },
+      "withheld_unassisted": {
+        "qualified": true,
+        "error_allocation_m": 0.008763451910368574,
+        "rmse_m": 0.0015097705911880973,
+        "evaluated_horizons_s": [
+          0.05,
+          0.1,
+          0.15
+        ],
+        "target_rows": 2265,
+        "out_of_domain_rows": 0,
+        "scope": "independent measured capture only; no closed-loop/context generalization claimed",
+        "qualified_horizons_s": [
+          0.05,
+          0.1,
+          0.15
+        ]
+      },
+      "withheld_fixed_profile_assisted": {
+        "qualified": false,
+        "error_allocation_m": 0.05452759858998064,
+        "rmse_m": 0.028149637720885332,
+        "evaluated_horizons_s": [
+          0.05,
+          0.1,
+          0.15
+        ],
+        "target_rows": 2265,
+        "out_of_domain_rows": 0,
+        "scope": "independent measured capture only; no closed-loop/context generalization claimed",
+        "qualified_horizons_s": []
+      },
+      "withheld_sensor_offset_step": {
+        "qualified": false,
+        "error_allocation_m": 0.0472642413146697,
+        "rmse_m": 0.023085342131698557,
+        "evaluated_horizons_s": [
+          0.05,
+          0.1,
+          0.15
+        ],
+        "target_rows": 2265,
+        "out_of_domain_rows": 0,
+        "scope": "independent measured capture only; no closed-loop/context generalization claimed",
+        "qualified_horizons_s": []
+      }
+    },
+    "training_rows": 1725,
+    "heldout_rows": 534,
+    "split_support_time_s": 8.98,
+    "training_support_sha256": "12775e76f178ba813d596aa32603ea85d522c3426d460369000d84df8bb597c4",
+    "heldout_support_sha256": "2a657110b63fce44542c9e631a09711db10a1e210f6ab4509f13462996800f97",
+    "purge_half_width_s": 0.1,
+    "training_latest_label_support_s": 8.875,
+    "heldout_earliest_history_support_s": 9.085,
+    "feature_dimension": 40,
+    "coefficient_count_per_horizon": 82,
+    "horizon_grid_s": [
+      0.0,
+      0.005,
+      0.01,
+      0.015,
+      0.02,
+      0.025,
+      0.03,
+      0.035,
+      0.04,
+      0.045,
+      0.05,
+      0.055,
+      0.06,
+      0.065,
+      0.07,
+      0.075,
+      0.08,
+      0.085,
+      0.09,
+      0.095,
+      0.1,
+      0.105,
+      0.11,
+      0.115,
+      0.12,
+      0.125,
+      0.13,
+      0.135,
+      0.14,
+      0.145,
+      0.15
+    ],
+    "permissions": "40 inputs:32 finite past measured coordinates +4current/4future known taskinstruction components; no future achieved motion online",
+    "error_semantics": "maximum measured holdout error plus chosen3mm label allocation; empirical qualification, not universal/statistical bound",
+    "models": [
+      {
+        "horizon_s": 0.0,
+        "heldout_rmse_m": 0.00024787634807953314,
+        "heldout_maximum_component_error_m": 0.0010915257334241577,
+        "empirical_error_allocation_m": 0.004091525733424158,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.005,
+        "heldout_rmse_m": 0.001550286018124325,
+        "heldout_maximum_component_error_m": 0.005743723200101306,
+        "empirical_error_allocation_m": 0.008743723200101305,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.01,
+        "heldout_rmse_m": 0.001547584229082397,
+        "heldout_maximum_component_error_m": 0.005276820724043278,
+        "empirical_error_allocation_m": 0.008276820724043277,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.015,
+        "heldout_rmse_m": 0.001529204504275481,
+        "heldout_maximum_component_error_m": 0.00502925960438326,
+        "empirical_error_allocation_m": 0.008029259604383259,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.02,
+        "heldout_rmse_m": 0.0015274561673441355,
+        "heldout_maximum_component_error_m": 0.005193021968359031,
+        "empirical_error_allocation_m": 0.00819302196835903,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.025,
+        "heldout_rmse_m": 0.0015112431292905618,
+        "heldout_maximum_component_error_m": 0.005039413684784749,
+        "empirical_error_allocation_m": 0.008039413684784748,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.03,
+        "heldout_rmse_m": 0.0015206101085226634,
+        "heldout_maximum_component_error_m": 0.005528894106628615,
+        "empirical_error_allocation_m": 0.008528894106628614,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.035,
+        "heldout_rmse_m": 0.001509630817304721,
+        "heldout_maximum_component_error_m": 0.0046497664086044554,
+        "empirical_error_allocation_m": 0.0076497664086044555,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.04,
+        "heldout_rmse_m": 0.001500362739382349,
+        "heldout_maximum_component_error_m": 0.004563460852303421,
+        "empirical_error_allocation_m": 0.007563460852303421,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.045,
+        "heldout_rmse_m": 0.0014969035647882662,
+        "heldout_maximum_component_error_m": 0.004500640974809199,
+        "empirical_error_allocation_m": 0.007500640974809199,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.05,
+        "heldout_rmse_m": 0.0014908071859089855,
+        "heldout_maximum_component_error_m": 0.004543790612082585,
+        "empirical_error_allocation_m": 0.007543790612082585,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.055,
+        "heldout_rmse_m": 0.0014988088698507825,
+        "heldout_maximum_component_error_m": 0.004489851120244859,
+        "empirical_error_allocation_m": 0.007489851120244859,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.06,
+        "heldout_rmse_m": 0.00150711314561013,
+        "heldout_maximum_component_error_m": 0.004686008576360166,
+        "empirical_error_allocation_m": 0.0076860085763601664,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.065,
+        "heldout_rmse_m": 0.001512779148917966,
+        "heldout_maximum_component_error_m": 0.004624379915679495,
+        "empirical_error_allocation_m": 0.0076243799156794955,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.07,
+        "heldout_rmse_m": 0.0015137719738691619,
+        "heldout_maximum_component_error_m": 0.004874159542082222,
+        "empirical_error_allocation_m": 0.007874159542082221,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.075,
+        "heldout_rmse_m": 0.0015136987302394934,
+        "heldout_maximum_component_error_m": 0.00489434579926451,
+        "empirical_error_allocation_m": 0.00789434579926451,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.08,
+        "heldout_rmse_m": 0.0015165665561992158,
+        "heldout_maximum_component_error_m": 0.004901572278849672,
+        "empirical_error_allocation_m": 0.007901572278849672,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.085,
+        "heldout_rmse_m": 0.0015147727387816578,
+        "heldout_maximum_component_error_m": 0.004796983465347543,
+        "empirical_error_allocation_m": 0.007796983465347543,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.09,
+        "heldout_rmse_m": 0.0015081214983555487,
+        "heldout_maximum_component_error_m": 0.00477151373675954,
+        "empirical_error_allocation_m": 0.00777151373675954,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.095,
+        "heldout_rmse_m": 0.0015045649984866951,
+        "heldout_maximum_component_error_m": 0.004724326217575327,
+        "empirical_error_allocation_m": 0.007724326217575327,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.1,
+        "heldout_rmse_m": 0.0014956847456071849,
+        "heldout_maximum_component_error_m": 0.004829683558608605,
+        "empirical_error_allocation_m": 0.007829683558608604,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.105,
+        "heldout_rmse_m": 0.001491597632158125,
+        "heldout_maximum_component_error_m": 0.004627216479928718,
+        "empirical_error_allocation_m": 0.007627216479928718,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.11,
+        "heldout_rmse_m": 0.0014927676392193022,
+        "heldout_maximum_component_error_m": 0.0047598834026824285,
+        "empirical_error_allocation_m": 0.007759883402682429,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.115,
+        "heldout_rmse_m": 0.001492875088079517,
+        "heldout_maximum_component_error_m": 0.004859340438908323,
+        "empirical_error_allocation_m": 0.007859340438908322,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.12,
+        "heldout_rmse_m": 0.0014957142585328123,
+        "heldout_maximum_component_error_m": 0.005006550141744011,
+        "empirical_error_allocation_m": 0.00800655014174401,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.125,
+        "heldout_rmse_m": 0.0014916201168033844,
+        "heldout_maximum_component_error_m": 0.0051878107456681324,
+        "empirical_error_allocation_m": 0.008187810745668132,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.13,
+        "heldout_rmse_m": 0.0014969350610081534,
+        "heldout_maximum_component_error_m": 0.005279602019575863,
+        "empirical_error_allocation_m": 0.008279602019575862,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.135,
+        "heldout_rmse_m": 0.0015011423109319508,
+        "heldout_maximum_component_error_m": 0.00539123785845589,
+        "empirical_error_allocation_m": 0.008391237858455889,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.14,
+        "heldout_rmse_m": 0.0015023086577086557,
+        "heldout_maximum_component_error_m": 0.005445444731968431,
+        "empirical_error_allocation_m": 0.00844544473196843,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.145,
+        "heldout_rmse_m": 0.0015035024983026766,
+        "heldout_maximum_component_error_m": 0.00556455047708642,
+        "empirical_error_allocation_m": 0.00856455047708642,
+        "qualified": true
+      },
+      {
+        "horizon_s": 0.15,
+        "heldout_rmse_m": 0.0015062489203595754,
+        "heldout_maximum_component_error_m": 0.005497286471979675,
+        "empirical_error_allocation_m": 0.008497286471979674,
+        "qualified": true
+      }
+    ]
+  },
+  "runs": [
+    {
+      "branch": "actual_nominal35ms_negative_precision",
+      "delivery": "independent actual electrical calibration; no replay pulses",
+      "response": {
+        "gain_m": [
+          [
+            0.05422905989163083,
+            0.005774707357514668
+          ],
+          [
+            0.006017806886916695,
+            0.05720872356570897
+          ]
+        ],
+        "gain_uncertainty_m": [
+          [
+            0.058422856481006334,
+            0.021059467588490866
+          ],
+          [
+            0.021246922827939996,
+            0.06072048975440725
+          ]
+        ],
+        "onset_delay_s": 0.07000000000000015,
+        "onset_uncertainty_s": 0.005,
+        "qualified": false,
+        "rejected_routes": [],
+        "calibration_pulses": 200,
+        "measured_dose_mean_fraction": 1.01318359375,
+        "route_consistency_rmse_m": 0.0002987713926184188,
+        "heldout_response_rmse_m": 0.0005653331862145075
+      },
+      "authority_margin_m": -0.03111865669413303,
+      "summary": {
+        "observation_packets": 800,
+        "launched_commands": 0,
+        "policy_reason_counts": {
+          "INVALID_STATE": 2,
+          "UNQUALIFIED_OBSERVED_AUTHORITY": 798
+        },
+        "cancellations": 0,
+        "maximum_observed_delayed_forecast_residual_m": 0.0,
+        "first_residual_failure_arrival_s": null,
+        "physical_pulses": 0,
+        "retained_learning_measured": false
+      }
+    },
+    {
+      "branch": "conditional_nominal35ms_cue_scheduling_component",
+      "delivery": "UNQUALIFIED_NOMINAL_ASSUMPTION; no body coupling",
+      "response": {
+        "gain_m": [
+          [
+            0.054292483978939224,
+            0.005781461218716675
+          ],
+          [
+            0.0060248450673713,
+            0.05727563254560802
+          ]
+        ],
+        "gain_uncertainty_m": [
+          [
+            0.014411134130534648,
+            0.01058403851832093
+          ],
+          [
+            0.010603239376317138,
+            0.014646478473747324
+          ]
+        ],
+        "onset_delay_s": 0.07000000000000015,
+        "onset_uncertainty_s": 0.005,
+        "qualified": true,
+        "rejected_routes": [],
+        "calibration_pulses": 200,
+        "measured_dose_mean_fraction": 1.0120000000000002,
+        "route_consistency_rmse_m": 0.0002987713926184188,
+        "heldout_response_rmse_m": 0.0005653331862145075
+      },
+      "authority_margin_m": 0.024572410144659718,
+      "summary": {
+        "observation_packets": 800,
+        "launched_commands": 34,
+        "policy_reason_counts": {
+          "INVALID_STATE": 2,
+          "FORECAST_HISTORY_WARMUP": 13,
+          "OBSERVED_MAP_PLUS_FORECAST_ERROR_EXCEEDS_ALLOCATION": 563,
+          "PLANNED_KNOWN_CUE_COMMAND": 222
+        },
+        "cancellations": 11,
+        "maximum_observed_delayed_forecast_residual_m": 0.0042927655188654285,
+        "first_residual_failure_arrival_s": null,
+        "physical_pulses": 0,
+        "retained_learning_measured": false
+      }
+    },
+    {
+      "branch": "conditional_unvalidated_closed_loop_context_barrier",
+      "delivery": "UNQUALIFIED_NOMINAL_ASSUMPTION; barrier witness",
+      "summary": {
+        "observation_packets": 800,
+        "launched_commands": 1,
+        "policy_reason_counts": {
+          "INVALID_STATE": 2,
+          "FORECAST_HISTORY_WARMUP": 13,
+          "OBSERVED_MAP_PLUS_FORECAST_ERROR_EXCEEDS_ALLOCATION": 32,
+          "PLANNED_KNOWN_CUE_COMMAND": 8,
+          "UNVALIDATED_FORECAST_CONTEXT": 745
+        },
+        "cancellations": 1,
+        "maximum_observed_delayed_forecast_residual_m": 0.0024913833800289595,
+        "first_residual_failure_arrival_s": null,
+        "physical_pulses": 0,
+        "retained_learning_measured": false
+      }
+    },
+    {
+      "branch": "conditional_negative_control_invalid",
+      "delivery": "UNQUALIFIED_NOMINAL_ASSUMPTION; no body coupling",
+      "summary": {
+        "observation_packets": 800,
+        "launched_commands": 17,
+        "policy_reason_counts": {
+          "INVALID_STATE": 2,
+          "FORECAST_HISTORY_WARMUP": 13,
+          "OBSERVED_MAP_PLUS_FORECAST_ERROR_EXCEEDS_ALLOCATION": 275,
+          "PLANNED_KNOWN_CUE_COMMAND": 110,
+          "INVALID_OR_STALE_OR_FUTURE_OBSERVATION": 400
+        },
+        "cancellations": 5,
+        "maximum_observed_delayed_forecast_residual_m": 0.0033267700696296212,
+        "first_residual_failure_arrival_s": null,
+        "physical_pulses": 0,
+        "retained_learning_measured": false
+      }
+    },
+    {
+      "branch": "conditional_negative_control_replay",
+      "delivery": "UNQUALIFIED_NOMINAL_ASSUMPTION; no body coupling",
+      "summary": {
+        "observation_packets": 800,
+        "launched_commands": 17,
+        "policy_reason_counts": {
+          "INVALID_STATE": 2,
+          "FORECAST_HISTORY_WARMUP": 13,
+          "OBSERVED_MAP_PLUS_FORECAST_ERROR_EXCEEDS_ALLOCATION": 275,
+          "PLANNED_KNOWN_CUE_COMMAND": 110,
+          "REPLAYED_OR_NONMONOTONIC_OBSERVATION": 5,
+          "INVALID_OR_STALE_OR_FUTURE_OBSERVATION": 395
+        },
+        "cancellations": 5,
+        "maximum_observed_delayed_forecast_residual_m": 0.0033267700696296212,
+        "first_residual_failure_arrival_s": null,
+        "physical_pulses": 0,
+        "retained_learning_measured": false
+      }
+    },
+    {
+      "branch": "conditional_negative_control_stale",
+      "delivery": "UNQUALIFIED_NOMINAL_ASSUMPTION; no body coupling",
+      "summary": {
+        "observation_packets": 800,
+        "launched_commands": 17,
+        "policy_reason_counts": {
+          "INVALID_STATE": 2,
+          "FORECAST_HISTORY_WARMUP": 13,
+          "OBSERVED_MAP_PLUS_FORECAST_ERROR_EXCEEDS_ALLOCATION": 275,
+          "PLANNED_KNOWN_CUE_COMMAND": 110,
+          "INVALID_OR_STALE_OR_FUTURE_OBSERVATION": 400
+        },
+        "cancellations": 5,
+        "maximum_observed_delayed_forecast_residual_m": 0.0033267700696296212,
+        "first_residual_failure_arrival_s": null,
+        "physical_pulses": 0,
+        "retained_learning_measured": false
+      }
+    },
+    {
+      "branch": "conditional_negative_control_context",
+      "delivery": "UNQUALIFIED_NOMINAL_ASSUMPTION; no body coupling",
+      "summary": {
+        "observation_packets": 800,
+        "launched_commands": 17,
+        "policy_reason_counts": {
+          "INVALID_STATE": 2,
+          "FORECAST_HISTORY_WARMUP": 13,
+          "OBSERVED_MAP_PLUS_FORECAST_ERROR_EXCEEDS_ALLOCATION": 275,
+          "PLANNED_KNOWN_CUE_COMMAND": 110,
+          "UNVALIDATED_FORECAST_CONTEXT": 400
+        },
+        "cancellations": 5,
+        "maximum_observed_delayed_forecast_residual_m": 0.0042927655188654285,
+        "first_residual_failure_arrival_s": null,
+        "physical_pulses": 0,
+        "retained_learning_measured": false
+      }
+    },
+    {
+      "branch": "conditional_negative_control_unannounced_sensor_offset",
+      "delivery": "UNQUALIFIED_NOMINAL_ASSUMPTION; no body coupling",
+      "summary": {
+        "observation_packets": 800,
+        "launched_commands": 17,
+        "policy_reason_counts": {
+          "INVALID_STATE": 2,
+          "FORECAST_HISTORY_WARMUP": 13,
+          "OBSERVED_MAP_PLUS_FORECAST_ERROR_EXCEEDS_ALLOCATION": 285,
+          "PLANNED_KNOWN_CUE_COMMAND": 110,
+          "RECENT_MEASURED_FORECAST_RESIDUAL_EXCEEDS_ALLOCATION": 390
+        },
+        "cancellations": 5,
+        "maximum_observed_delayed_forecast_residual_m": 0.044292765518865435,
+        "first_residual_failure_arrival_s": 2.0549999999999997,
+        "physical_pulses": 0,
+        "retained_learning_measured": false
+      }
+    }
+  ]
+}
