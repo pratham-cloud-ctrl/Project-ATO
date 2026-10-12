@@ -173,3 +173,28 @@ assisted cue forecasts fail and original synthetic teacher timing is unqualified
 The new competent synthetic benchmark is an explicitly privileged generator,
 not evidence of real expert spinal skill transfer. Detailed electronics,
 populated CAD and the final full-system paper remain later work.
+
+## Continued mechanism/electronics investigation, 12 October 2026
+
+AI workstreams corrected the monitoring schematic's production amplifier
+package/pin mapping and generated the 33-run, three-grid behavioral monitoring
+study. Separate equation/KCL and source-portability reviews preserve negative
+precision, power, clipping and bias-bypass results. The original paper and all
+synced reference files remain read-only. No hardware was fabricated or measured.
+
+One persistent observed-state observer was frozen using measured synthetic
+calibration and an explicit movement prior. Root reviewed its equations, timing,
+causal inputs and resources before target scoring, then independently reviewed
+the fresh sensor-noise confirmation protocol before generation. The confirmation
+retains all 32 paired-grid captures. Separate AI saved-data audits recomputed
+915,200 residuals; root reproduced every frozen pair in a disposable portable
+workspace. Scientific plots use the saved summaries. These are AI-assisted
+computational checks, not human/animal measurements or an independent licensed
+review. The result supplies no neural increment or retained-learning evidence.
+
+Root installed the official Nordic SDK, diagnosed its Windows physical-path
+restriction, preserved the asset installation and compiled/linked an unmodified
+processor example from a separate short physical copy. This verifies the tools,
+not ATO target firmware. A reviewed driver design note defines a restricted next
+native circuit boundary. The connected learning-enabled response interaction,
+complete electronics, populated CAD and final manuscript remain unfinished.

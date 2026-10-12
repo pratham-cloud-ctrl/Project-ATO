@@ -1,8 +1,8 @@
 # Target firmware tools
 
-12 October 2026. **Compiler installation checked; complete SDK installation and
-application-core example build are still in progress.** This is a tool-readiness
-record. The full ATO processor backend remains unimplemented.
+12 October 2026. **SDK installed and unmodified application-core example
+successfully cross-compiled and linked.** This is a tool-readiness record.
+The full ATO processor backend remains unimplemented.
 
 The Stage 2 processor witness is nRF5340. Its native firmware work needs a
 supported Arm compiler, Nordic/Zephyr headers, build tools and a linked target
@@ -26,35 +26,54 @@ Observed checks:
 - Installed SDK-manager command: **1.16.1**.
 - Matching toolchain installed; its compiler responds as
   **arm-zephyr-eabi-gcc 14.3.0 (Zephyr SDK 1.0.1)**.
-- The SDK source bundle is still downloading. No complete example-build result
-  or ATO target firmware result is claimed at this checkpoint.
+- SDK source installation completed. The unmodified `hello_world` example
+  compiled and linked for **nrf5340dk/nrf5340/cpuapp**. All 172 build steps passed.
+- Observed tools: **west 1.5.0**, **CMake 4.2.1**, **Ninja 1.13.2**.
+- The [build receipt](../../provenance/stage4-nordic-toolchain-smoke.json) binds
+  the actual command, source and ELF hashes, tool versions and section sizes.
+  The example's linker reports 24,856 B flash and 6,048 B RAM. These are example
+  sizes, not ATO firmware resource evidence.
 
-Tools physically reside in
+The original installer, manager metadata and installation physically reside in
 `E:\project workspace assests\Firmware\Nordic`. Nordic/Zephyr
 [application paths cannot contain spaces](https://nrfconnectdocs.nordicsemi.com/ncs/latest/nrf/app_dev/create_application.html),
-so two local junctions provide short build paths:
+so local junctions initially provided short paths:
 
 | Alias | Physical destination |
 |---|---|
 | `E:\ATO-Tools` | `E:\project workspace assests\Firmware\Nordic` |
 | `E:\ATO` | `E:\Project ATO` |
 
-The project and asset folders remain authoritative. The aliases reuse those
-directories; they are not duplicate checkouts. Installer command data and logs
-use the process-local `NRFUTIL_HOME=E:\ATO-Tools\nrfutil-home` setting. No global
-PATH change or physical-device operation is needed for this workflow.
+The SDK resolves module paths to their physical directory. Generated unquoted
+Kconfig module paths then split the asset directory's spaces into arguments;
+the first configure failed before compilation. An alias alone did not solve
+that documented path restriction, and no usable Windows short filename existed.
 
-The active installation command is:
+A complete, separate copy of SDK `v3.4.1` and toolchain `4f5b6ad6dd` now resides
+at **`E:\ATO-Nordic\ncs`**, a physical path without spaces. The original asset
+installation remains intact. The copy included 157,478 SDK files and 47,229
+toolchain files, with zero copy failures. It adds approximately 7.3 GiB of local
+storage; it is not a project checkout or tracked repository artifact.
+
+The check obtains the official manager environment and rebases only the copied
+installation prefix in its child process. Explicit copied Python and compiler
+paths, forward-slash CMake Python settings and a pristine build avoid old cache
+and registry selections. No vendor source, global PATH, registry setting or
+physical device was modified. The project junction still serves the ignored
+build directory. Installer logs use the process-local
+`NRFUTIL_HOME=E:\ATO-Tools\nrfutil-home` setting.
+
+The completed original installation used:
 
 ```powershell
 $env:NRFUTIL_HOME='E:\ATO-Tools\nrfutil-home'
 & E:\ATO-Tools\nrfutil.exe sdk-manager install v3.4.1 --install-dir E:\ATO-Tools\ncs
 ```
 
-## Next verification
+## Repeat the build check
 
-After the installer completes, run the
-[example cross-compilation check](../../scripts/check_nordic_toolchain.py):
+Run the [example cross-compilation check](../../scripts/check_nordic_toolchain.py)
+after the documented original installation and short physical copy are present:
 
 ```powershell
 .\.venv\Scripts\python.exe scripts\check_nordic_toolchain.py
@@ -66,7 +85,7 @@ versions, source/ELF identities and section sizes only after successful linking.
 Its build log stays under `tmp/nordic-toolchain-check`. The command performs no
 flashing or physical execution.
 
-That result will establish the installation's basic build path. It will not
+The passing result establishes the installation's basic build path. It does not
 close ATO firmware integration, application/network memory budgets, ADC/DMA/bus
 arbitration, timer/DPPI timing, delivered-charge observation or fault shutdown.
 Those require the actual ATO backend and their own verification artifacts.

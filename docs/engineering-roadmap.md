@@ -49,11 +49,14 @@ delivery uncertainty was too large, and independent changing-learner recordings
 exceeded the forecast allocation. New monitors and revised references address
 specific causes; they do not silently rescue earlier failed experiments.
 
-The latest diagnostic finds severe noise amplification in unconstrained local
-harmonic inversion. This motivates a structured observer with a measured
-calibration prior. It does not prove that every 75 ms predictor must fail.
-Persistent observer memory and prior calibration are additional resources and
-must be declared. The diagnostic is development work, not independent validation.
+The diagnostic found severe noise amplification in unconstrained local harmonic
+inversion; it did not prove that every 75 ms predictor must fail. A structured
+observer with a measured calibration prior has now completed a
+[standalone confirmation](../experiments/stage3/observed-state-observer/README.md):
+all 16 fresh sensor-noise pairs on both body grids remain within 15 mm, with a
+maximum allocation of 11.354 mm. Persistent memory, a known synthetic movement
+prior and calibration are additional resources. This verifies a finite no-dose
+desktop domain only; the original negative pilot remains unchanged.
 
 Verification also exposed a platform-dependent near-zero argmax witness. Its
 reproduction fix independently binds both witnesses to physical apertures while
@@ -62,6 +65,10 @@ preserving the numerical tolerances, all outcomes and all admission decisions.
 ## Finite Stage 3 closeout
 
 Complete one bounded predictor revision and its connected interpretation:
+
+**Checkpoint, 12 October:** steps 1–2 are complete within the separately
+published no-dose study. Steps 3–4 remain. Passing that component does not admit
+stimulation or establish the combined-correction/retained-learning claim.
 
 1. **Freeze one observed-state method.** Use measured calibration only, known
    instructions and an explicit structural movement prior. Declare state,
@@ -74,11 +81,14 @@ Complete one bounded predictor revision and its connected interpretation:
    physical supports, cue reversals, all 26 execution horizons and rejection
    cases. Keep the 15 mm forecast, 3 mm label and 25 mm complete-correction
    allocations unchanged. Typical covariance is not an empirical maximum bound.
-3. **Resolve the connected pilot.** If the observer earns the required finite
-   domain, consume it in the same reset-trial protocol, with matched resources,
+3. **Resolve the connected pilot.** Consume the observer in the
+   [reviewed bounded reset-trial integration](stage3/observer-integration-plan.md), with matched resources,
    live delivery uncertainty, timed cancellation and OFF assessment. Compare
    actual characterized delivery separately from prospective monitor precision.
    Preserve unavailable references and zero/harmful/dependent plasticity cases.
+   The first replay has one practice trial; repeated intervention-modified
+   sessions need further state-domain evidence. Learning-enabled response
+   interaction is not supplied by the inherited learning-OFF calibration.
    If the observer fails, retain that outcome and explicitly withdraw the
    unsupported active demonstration; do not tune thresholds to force pulses.
 4. **Issue the Stage 3 verdict and report.** Consolidate both application
@@ -98,8 +108,10 @@ separately justified extensions rather than an unbounded Stage 3 checklist.
 
 Stage 4 has already begun with the [native dual-source monitor](../electronics/stage4/monitoring-cell/README.md)
 and [33-run behavioral circuit study](../electronics/stage4/monitoring-study/README.md).
-Their 4% phase-charge target remains unearned. Next come the actual current
-drivers/routing and independent shutdown supervision, acquisition/protection,
+Their 4% phase-charge target remains unearned. A
+[reviewed first driver boundary](stage4/current-driver-design.md) now specifies
+a restricted 24 V/3 mA/200 µs investigation; native implementation remains pending.
+Next come actual current drivers/routing and independent shutdown supervision, acquisition/protection,
 power/reference/telemetry and the target firmware backend. Reconcile actual
 component power, timing, buses and memory before a complete PCB.
 

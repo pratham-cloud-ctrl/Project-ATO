@@ -44,6 +44,10 @@ verify its stated equations. Its 3 mA/200 µs nominal fixture and selected stres
 cases do not complete the broader waveform/load/rail/fault coverage below, and
 the proposed 4% precision remains unearned.
 
+The [proposed current-driver design boundary](current-driver-design.md) specifies
+a restricted 24 V, 3 mA/200 µs dual-source driver and independent shutdown slice.
+It is a design handoff; its native circuit and transient verification remain pending.
+
 ## Architecture retained from Stage 2
 
 | Responsibility | Detailed-design allocation and implementation boundary |

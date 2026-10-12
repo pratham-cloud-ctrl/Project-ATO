@@ -22,6 +22,8 @@ complete electronics and populated engineering CAD follow the mechanism work.
 | [Zero-future-command baseline](sparse-baseline.md) | Observed past-response strip/re-add; full uncertainty and explicit unsupported-tail rejection |
 | [Coupled-pilot specification](dynamic-coupling-specification.md) | Candidate response added once, complete correction gate and timed residual cancellation |
 | [Completed isolated pilot](isolated-pilot.md) | Independent learner drift rejects admission; 128 zero-launch practice trials and 64 pulse-free OFF assessments |
+| [Observed-state observer confirmation](../../experiments/stage3/observed-state-observer/README.md) | Frozen measured-data method; 32 fresh-noise grid captures within the finite no-dose forecast budget; connected pilot remains pending |
+| [Observer integration plan](observer-integration-plan.md) / [independent saved-data review](observed-state-independent-review.md) | One pre-dose forecast freeze, actual-dose/learning-interaction limits, finite experiment and explicit expiry; no new connected outcome yet |
 | [First Stage 4 monitoring slice](../stage4/entry-plan.md) | Native two-source phase-charge investigation and explicit power/leakage constraints; full electronics remain pending |
 | [Illustrated mechanism revision report](../../output/pdf/ATO_stage3_mechanism_revision.pdf) | Eight-page technical report covering the selected teacher/source/prediction/precision and dynamic-response revisions |
 | [Mathematical specification](mathematical-specification.md) | Causal information partitions, units, electrical equations and observation bounds |
@@ -96,6 +98,7 @@ python scripts/stage3_delivery_requirements.py --check
 python scripts/stage3_dynamic_response_study.py --check
 python scripts/stage3_sparse_baseline_study.py --check results/stage3/sparse-baseline/raw.json.gz
 python scripts/stage3_isolated_pilot_study.py --check results/stage3/isolated-pilot/raw.json.gz
+python experiments/stage3/observed-state-observer/verify_study.py --reproduce
 python scripts/verify_stage3_revision.py
 ```
 

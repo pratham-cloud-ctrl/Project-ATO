@@ -1,0 +1,133 @@
+{
+  "schema": "ato.tmp.observer-confirmation-saved-audit.v1",
+  "date": "2026-10-12",
+  "audit_passed": true,
+  "scientific_budget_arithmetic_pass": true,
+  "audit_source_sha256": "805183489435c3bed33608956de77c6816acdacd5eb169a3fa80dc1a1dc95ef8",
+  "freeze_receipt_sha256": "57c00950e44aee7c674f34a1335fd79f816f8ca09ce64ae66ce9916cf9bd3916",
+  "summary_sha256": "35b8ce93e700afc2670a6a4fc11f65aadd2c01f49e7bf3ae9414469d5bfb0330",
+  "producer_sha256": "e177eb4837bbb437b8150a1a8a4daf9ee172719b6e3a2d407642771ac18d7c3d",
+  "full_ato_source_files_verified": 21,
+  "noise_pairs_verified": 16,
+  "capture_coverage_verified": 17600,
+  "coordinate_residuals_recomputed": 915200,
+  "maximum_noise_injection_roundoff_m": 6.938893903907228e-18,
+  "maximum_segment_file_bytes": 2255198,
+  "pair_audits": [
+    {
+      "pair_index": 0,
+      "noise_id": 261012000,
+      "raw_sha256": "ba997c836578f1e472335bc448a0af22004e86e188dd781098d39c7dd4f45b44",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.008596394909938795
+    },
+    {
+      "pair_index": 1,
+      "noise_id": 261012001,
+      "raw_sha256": "dd69ae3d2914de5a34c32658e1a8574b1d741682f1a63b7f2827fa9649346378",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.008324480560870071
+    },
+    {
+      "pair_index": 2,
+      "noise_id": 261012002,
+      "raw_sha256": "1c280e9a7d1e5e655fc4051852ea32ae6375a59dde0dcc5d149a593beaef026c",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.010202443229545628
+    },
+    {
+      "pair_index": 3,
+      "noise_id": 261012003,
+      "raw_sha256": "0e111881dd801371b99cdf7227ea1ffa58bac47fc7e0305f935e26b5a2cca1cb",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.00875603003763457
+    },
+    {
+      "pair_index": 4,
+      "noise_id": 261012004,
+      "raw_sha256": "fb6bec581ba5c994bb4b0cd9e780ec9c9548df5dbf2b6782a7794c8e68391c6b",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.009698662911724654
+    },
+    {
+      "pair_index": 5,
+      "noise_id": 261012005,
+      "raw_sha256": "8669f004622039782f7a2f0ca8c81b0ac7da984c83992c9e06fc9b7fe41f9657",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.009093952233556041
+    },
+    {
+      "pair_index": 6,
+      "noise_id": 261012006,
+      "raw_sha256": "c7250ed80edfea07cbdf45f00c7daf002fad7266e466f783af9aa7aadad101ba",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.010628468434023371
+    },
+    {
+      "pair_index": 7,
+      "noise_id": 261012007,
+      "raw_sha256": "c2d4196a83967f38440ba49f164678d2c53811625ece882097b62efd50a1b9fd",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.009139745881505703
+    },
+    {
+      "pair_index": 8,
+      "noise_id": 261012008,
+      "raw_sha256": "768db3868e8dabd5e6330f71bf85341cc25f30717f409a8a600326b978042fc4",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.008788194551289891
+    },
+    {
+      "pair_index": 9,
+      "noise_id": 261012009,
+      "raw_sha256": "e0dfc975cb58abdd849ba46a5300fe3c945c04fd8a27775c73593cf15a6c7743",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.011353736115715152
+    },
+    {
+      "pair_index": 10,
+      "noise_id": 261012010,
+      "raw_sha256": "59c9170e0a4669baf64498c668cd59ffd8a638d0391ae0a4f751c988903989b0",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.010714152567850025
+    },
+    {
+      "pair_index": 11,
+      "noise_id": 261012011,
+      "raw_sha256": "41a3337e132768f3378e957aafcf024ac5e16f17b2c6dfae9f5a283aa09b11bb",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.008633130805060816
+    },
+    {
+      "pair_index": 12,
+      "noise_id": 261012012,
+      "raw_sha256": "f267358d67983aedecc9b652a576fc229bb166e46bf88c96f42ea3788aa424e5",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.010965218808406414
+    },
+    {
+      "pair_index": 13,
+      "noise_id": 261012013,
+      "raw_sha256": "d2e9a583ab1a0bbc49eea859fccd763b7a54bf15c904b4e11db09713f138312e",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.010233860778262691
+    },
+    {
+      "pair_index": 14,
+      "noise_id": 261012014,
+      "raw_sha256": "bb4fde806b4847f62b347b8861092408bf5dfb677fc0ae287a7821831014763a",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.009155411598144762
+    },
+    {
+      "pair_index": 15,
+      "noise_id": 261012015,
+      "raw_sha256": "f7be463402be1067afada8a8ccd17a8fe347eeea283884a4c730b5a74aa902a3",
+      "two_grid_capture_passes": 2,
+      "maximum_allocation_m": 0.009163911852684042
+    }
+  ],
+  "elapsed_wall_seconds": 5.840804899984505,
+  "no_capture_regeneration_or_noise_draws_performed": true,
+  "limits": "Sensor-noise-only finite no-dose confirmation; no new subject/biology/pilot/stimulation/retained learning."
+}

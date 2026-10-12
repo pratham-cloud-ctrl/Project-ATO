@@ -81,13 +81,15 @@ jobs:
               python scripts/stage3_sparse_baseline_study.py --check results/stage3/sparse-baseline/raw.json.gz
           - study: isolated-pilot
             commands: python scripts/stage3_isolated_pilot_study.py --check results/stage3/isolated-pilot/raw.json.gz
+          - study: observed-state-observer
+            commands: python experiments/stage3/observed-state-observer/verify_study.py --reproduce
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: ${{ matrix.study == 'observed-state-observer' && '3.12.14' || '3.12' }}
           cache: pip
       - run: python -m pip install -r requirements-lock.txt
       - run: ${{ matrix.commands }}
