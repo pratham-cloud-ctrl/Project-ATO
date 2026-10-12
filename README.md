@@ -22,6 +22,7 @@ inspires the progression from future vision to inspectable electronics and physi
 | [Illustrated Stage 3 revision report](output/pdf/ATO_stage3_mechanism_revision.pdf) | Selected teacher, source, causal forecast, pulse-response and delivery-precision findings |
 | [Connected reset-trial pilot](docs/stage3/isolated-pilot.md) | Qualified teacher references consumed; independent learner-drift forecasts reject all practice interventions; OFF results show no advantage |
 | [Stage 4 native monitoring work](docs/stage4/entry-plan.md) / [editable KiCad slice](electronics/stage4/monitoring-cell/README.md) | Three reviewed sheets, 245 checked pin assignments and zero ERC violations; analog precision and full electronics/firmware remain in development |
+| [Independent phase-charge study](electronics/stage4/monitoring-study/README.md) | 33 transient runs, both sources and 462 measured intervals in the behavioral model; bias, reset, settling and cancellation failures retained; 4% accuracy remains unearned |
 | [Stage3 computational foundation](docs/stage3/README.md) | Causal contact observations, expert/learner mechanism, measured delivery and external-pressure feedback |
 | [Stage3 results and remaining work](docs/stage3/results-and-interpretation.md) | Honest integrated abstention, conditional learning studies, pressure benefits and failures |
 | [Free/student tool selection and inventory](docs/stage3/toolchain-selection.md) | Fresh CAD/EDA/numerical checks and justified optional tools |

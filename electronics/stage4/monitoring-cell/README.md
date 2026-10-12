@@ -125,12 +125,21 @@ biocompatibility, hermetic packaging or a demonstrated biological outcome.
 
 [connectivity.json](connectivity.json) is the explicit component/pin/net manifest
 and records primary manufacturer links and pending external functions.
-[bom.csv](bom.csv) lists **70 components**. The critical pin checks distinguish
-OPA391 **DBV** from its different DCK pinout, INA241A2's 15 µV offset condition
+[bom.csv](bom.csv) lists **70 components**. Revision 0.2 uses production
+**OPA391DCKR** for all five amplifiers. TI's Rev E datasheet identifies DBV as
+preview information; DCK has a different pinout: 1=IN+, 2=V−, 3=IN−, 4=OUT, 5=V+.
+The critical pin checks independently verify all five DCK roles, INA241A2's 15 µV offset condition
 from other family grades, and SN74LVC1G74 **DCUR** from the differently sized
 DCTR package. ADS8866 AVDD is 3.3 V, not the 5 V analog supply. KiCad calls the
 selected TI DGS 10-pin geometry `MSOP-10_3x3mm_P0.5mm`; package equivalence still
 needs the assembly drawing review before PCB release.
+
+The DCK snapshot is KiCad's `SOT-353_SC-70-5`, with 0.65 mm lead pitch and five
+numbered pads. It is a nominal library land pattern, not a reproduction of TI's
+DCK0005A recommended board layout. Its pad centers/dimensions differ from TI's
+example; compare the package tolerances, copper, mask and stencil against the
+selected assembly process before any PCB release. The pin remap preserves all
+functional nets, 70 components and 245 pins. See the [package design review](design-review.md).
 
 Generate sources with normal Python and the local KiCad share tree:
 

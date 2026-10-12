@@ -75,3 +75,18 @@ python scripts/stage3_source_sensitivity.py --jobs 2 --check results/stage3/sour
 Numerical reproduction uses relative tolerance 2e-8 and absolute 1e-11. Raw noise
 byte hashes and adaptive solver evaluation counts are platform diagnostics;
 within each execution paired noise/support equality is enforced exactly.
+
+The 12 October portability correction also validates each maximum-position-error
+witness against its own contact aperture and error. Each saved and fresh physical
+position is independently recomputed at that aperture using its frozen subject,
+scenario and integration grid; a self-consistent but unrelated pair cannot pass.
+This is receipt validation by the evaluator, not information given to the
+observer. When both maxima are below
+the unchanged absolute reproduction tolerance, their argmax locations may differ
+across platforms: approximately 1e-15 m roundoff can select different samples.
+Meaningful maxima retain the location comparison. Numerical maxima, allocation
+limits and all qualification decisions remain compared under the original rules.
+The regenerated receipt binds the corrected comparison source; no source physics
+or study parameters changed. Seven regression checks reject malformed apertures,
+unrelated physical values, component relabels, meaningful location differences
+and altered numerical or decision results, in both raw and summary records.

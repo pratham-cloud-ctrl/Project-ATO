@@ -12,6 +12,8 @@
 *.kicad_pro text eol=lf
 *.net text eol=lf
 *.xml text eol=lf
+*.cir text eol=lf
+*.npz binary
 **/sym-lib-table text eol=lf
 **/fp-lib-table text eol=lf
 *.step -text
@@ -27,3 +29,5 @@
 cad/stage2/*.step binary
 # Preserve KiCad's exported SVG spacing; these files are reviewed generated output.
 electronics/stage4/monitoring-cell/svg/*.svg whitespace=-blank-at-eol
+# Preserve Matplotlib's generated SVG path spacing; reviewed figures bind exact bytes.
+electronics/stage4/monitoring-study/*.svg whitespace=-blank-at-eol

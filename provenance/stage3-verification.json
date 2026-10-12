@@ -20,8 +20,8 @@
     "bounded_pressure_refinement_probes": 6
   },
   "observed_motor_practice_pulses": {
-    "fast_response_sensitivity": 0,
     "nominal": 0,
+    "fast_response_sensitivity": 0,
     "conditional_fast_response_assumed_delivery": 19886
   },
   "input_normalized_hashes": {

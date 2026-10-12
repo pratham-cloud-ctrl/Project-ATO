@@ -29,6 +29,7 @@ jobs:
       - run: python scripts/verify_stage3_continuation.py
       - run: python scripts/verify_stage3_revision.py
       - run: python electronics/stage4/monitoring-cell/verify_monitoring_cell.py
+      - run: python electronics/stage4/monitoring-study/verify_study.py
       - run: python scripts/run_studies.py
       - run: python scripts/build_firmware.py
       - run: python scripts/run_adapter.py

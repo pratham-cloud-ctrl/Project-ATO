@@ -48,6 +48,12 @@ complete electronics and populated engineering CAD follow the mechanism work.
 Use Python3.12 and the pinned direct dependencies in `requirements-lock.txt`.
 The tested local runtime is3.12.14; numerical results are checked with stated
 tolerances, while Git provenance checks exact committed bytes.
+Use a project virtual environment so updates to an application-bundled Python
+runtime do not silently replace the scientific dependencies. From the repository
+root on Windows, create it once with `python -m venv .venv`, then install with
+`.\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt`.
+Invoke that same executable in place of `python` below. The local 12 October
+continuation uses this isolated environment; `.venv` is excluded from Git.
 
 ```text
 python -m pip install -r requirements-lock.txt

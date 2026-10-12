@@ -23,7 +23,7 @@ assumed. Video and website work are parked. No deadline is imposed.
 | 1: mechanism/specification | Complete within specification scope | Both causal chains, requirements/assumptions/capability map, primary-source audit, interfaces, three editable diagrams and illustrated nine-page brief |
 | 2: quantitative architecture | Complete within architecture scope | 16-stream/two-source design, timing/noise/compute/memory/power budgets, rejected cases, control contracts, eight-page brief and preliminary native allocation CAD; [exit review](docs/stage2/exit-review.md) |
 | 3: computational mechanisms | **In progress** | Preserved foundation studies, numerical/source checks, qualified nominal teacher references, dynamic response, causal forecasts and a completed negative reset-trial pilot |
-| 4: detailed electronics/firmware | **First native schematic verified; wider stage in progress** | Editable two-source monitor, 70 components, 245 checked pin assignments, three reviewed sheets and zero ERC violations; complete acquisition, drivers/routing, supervision, power/telemetry, PCB and target firmware remain pending |
+| 4: detailed electronics/firmware | **Native monitor and initial behavioral study verified; wider stage in progress** | Editable two-source monitor, 70 components, 245 checked pin assignments, three reviewed sheets and zero ERC violations; 33 independent transient runs; complete acquisition, drivers/routing, supervision, power/telemetry, PCB and target firmware remain pending |
 | 5: populated engineering CAD | Pending | Actual boards/components/package/lead interfaces, native parametric assemblies, dimensions, STEP/STL and nominal fit checks |
 | 6: integrated paper/repository release | Pending | Complete digital path verification, final illustrated manuscript, native sources, reproducible release, evidence and learning/defence material |
 
@@ -105,8 +105,21 @@ previous work to this revision and the next package. Its main evidence includes:
   or ignored checks. Its proposed phase-charge precision is unqualified. Sensor
   power exceeds the prior allocation, and input-bias bypass, ADC protection and
   analog settling/window errors remain concrete design tasks.
+- **Package correction:** all five amplifiers now use the production OPA391DCKR,
+  with its different pin mapping checked in native exports. The previous DBV
+  choice was preview information. Functional topology remains unchanged; the
+  generic SC-70 land pattern still needs PCB assembly review.
+- **Independent circuit study:** [33 behavioral transient runs](electronics/stage4/monitoring-study/README.md)
+  cover both sources on three grids and retain 462 phase/gap/tail/net intervals.
+  Separate KCL and matrix-exponential checks confirm the stated model. A 45 µA
+  load-side bias bypasses 9 nC over 200 µs; near-zero final charge conceals
+  oversized opposed phases. Reset, settling, component and clipping witnesses
+  remain explicit. This first model does not earn 4% accuracy, implement shutdown
+  or complete the broader waveform/load/rail coverage required by Stage 4.
 
-The full local suite passed **217 tests** on 12 October. The preserved foundation
+The full local suite passed **224 tests** on 12 October. Seven added regression
+checks cover portable reproduction of a negligible reference-grid argmax without
+relaxing numerical allocations or qualification decisions. The preserved foundation
 batch was reproduced under its unchanged defaults.
 The [test receipt](provenance/stage3-test-run.json),
 [foundation receipt](provenance/stage3-verification.json),
@@ -135,8 +148,11 @@ universal autonomic control or healthy-consumer efficacy.
 
 ## Next move
 
-Continue Stage 3 with a **drift-tolerant observed forecaster** and re-test the
-same reset-trial protocol. Broader independent calibration must earn the existing
+Continue Stage 3 by checking whether the permitted 75 ms measured history can
+identify the changing movement response, especially across known cue reversals.
+That diagnosis should justify a **drift-tolerant observed forecaster**, with any
+added state, history or model capacity explicitly counted, before re-testing the
+same reset-trial protocol. Independent confirmation must earn the existing
 15/25 mm allocations; private learner coefficients or plasticity labels cannot
 select a favorable model. Preserve unavailable references, negative controls,
 nonbeneficial plasticity and actual electrical rejection. Only a qualified
@@ -150,6 +166,9 @@ precision. Then extend acquisition, output/routing, supervision, power and
 target firmware; populate CAD from the actual circuit. The existing
 [tool audit](docs/stage3/toolchain-selection.md) verifies the installed free
 KiCad/ngspice/FreeCAD/build123d/Blender stack; no new paid software is needed.
+The [Nordic target-tool setup](docs/stage4/firmware-toolchain.md) has a verified
+signed installer and responsive matching compiler. The SDK source download and
+example cross-compilation are in progress; full ATO target firmware is pending.
 
 Stage 3 ends when its digital mechanism, numerical/information boundaries,
 comparisons and failure tests are sufficiently resolved to support a concrete

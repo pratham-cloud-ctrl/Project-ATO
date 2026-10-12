@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import argparse
 from concurrent.futures import ProcessPoolExecutor
+from functools import lru_cache
 import gzip
 import hashlib
 import io
@@ -19,7 +20,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from ato.stage3.source_sensitivity import BUDGETS, REFERENCE_GRIDS, SCENARIOS, SOURCE_VARIANTS, run_study  # noqa: E402
+from ato.stage3.source_sensitivity import BUDGETS, REFERENCE_GRIDS, SCENARIOS, SOURCE_VARIANTS, MovingBodyReference, run_study  # noqa: E402
 
 SOURCE_PATHS = ("src/ato/stage3/source_sensitivity.py", "src/ato/stage3/motor.py",
                 "src/ato/stage3/acquisition.py", "src/ato/stage3/filter_residual.py",
@@ -74,6 +75,7 @@ def run_batch(jobs=1, scope="full"):
                 "No retained-learning, consumer efficacy, neural incremental value, safe implant or optimized electrode-placement qualification."]},
         "reproduction": {"rtol": RTOL, "atol": ATOL,
             "platform_local_diagnostics": ["actual_noise_sha256", "external_noise_sha256", "rhs_evaluations"],
+            "reference_witness_policy": "Validate each maximum-position witness independently, including its coarse/fine positions recomputed at its own physical aperture using the frozen study subject/scenario/reference grids. If both maxima are below the fixed absolute reproduction tolerance, its argmax location is a roundoff diagnostic and may differ; all maxima, budgets, decisions and other numeric observations remain compared.",
             "noise_policy": "Within each execution, actual paired draws/hashes, generator states and observational schedules must be exactly equal. Across executions, raw numeric witnesses use declared tolerance; RNG states/counts exact, empirical moments numeric. Byte hashes and solver evaluation counts are platform diagnostics."},
         "studies": studies}
     result = json.loads(json.dumps(result, default=serializable, allow_nan=False))
@@ -221,11 +223,78 @@ def write_receipt(path, data):
     path.write_bytes(contents)
 
 
+def validate_position_witness(refinement, path):
+    """Check a maximum-error witness against its own aperture and error value."""
+    witness = refinement["largest_position_witness"]
+    if set(witness) != {"block", "sample", "contact", "component", "time_s",
+                        "coarse_position_m", "fine_position_m"}:
+        raise AssertionError(f"Malformed position witness at {path}")
+    for name, limit in (("block", refinement["actual_contact_aperture_count"]//320),
+                        ("sample", 20), ("contact", 16), ("component", 2)):
+        index = witness[name]
+        if isinstance(index, bool) or not isinstance(index, int) or not 0 <= index < limit:
+            raise AssertionError(f"Invalid witness {name} at {path}")
+    time = witness["block"]/200 + witness["sample"]/4000 + witness["contact"]*3e-6
+    if not np.isclose(witness["time_s"], time, rtol=0., atol=1e-12):
+        raise AssertionError(f"Witness aperture differs at {path}")
+    positions = [witness["coarse_position_m"], witness["fine_position_m"]]
+    maximum = refinement["maximum_position_difference_m"]
+    if not np.isfinite([*positions, maximum]).all() or maximum < 0:
+        raise AssertionError(f"Nonfinite or negative witness error at {path}")
+    if not np.isclose(abs(positions[0]-positions[1]), maximum, rtol=RTOL, atol=ATOL):
+        raise AssertionError(f"Witness does not attain maximum at {path}")
+
+
+@lru_cache(maxsize=12)
+def reproduction_reference(subject_seed, scenario, internal_step_s):
+    """Frozen study reference; cache repeated raw/summary witness checks only."""
+    if scenario not in SCENARIOS or internal_step_s not in REFERENCE_GRIDS:
+        raise AssertionError("Witness reference is outside the frozen study design")
+    return MovingBodyReference(subject_seed, scenario, internal_step_s)
+
+
+def validate_study_position_witnesses(study, path):
+    """Bind raw and summary witnesses to their own recomputed physical support.
+
+    The near-zero argmax may move, so its positions cannot be compared with
+    positions at another aperture. Re-evaluating each aperture prevents a
+    self-consistent but physically unrelated position pair from being skipped.
+    This is evaluator-only receipt validation, never an observer input.
+    """
+    if "references" in study:
+        refinements = {scenario: reference["refinement"]
+                       for scenario, reference in study["references"].items()}
+    else:
+        refinements = study["reference_refinements"]
+    for scenario, refinement in refinements.items():
+        location = f"{path}.{scenario}.refinement"
+        validate_position_witness(refinement, location)
+        witness = refinement["largest_position_witness"]
+        for grid, position_field in (("coarse", "coarse_position_m"),
+                                     ("fine", "fine_position_m")):
+            reference = reproduction_reference(study["subject_seed"], scenario,
+                                               refinement[f"{grid}_internal_step_s"])
+            position = reference.evaluate(witness["time_s"])[0][witness["component"]]
+            if not np.isclose(witness[position_field], position, rtol=RTOL, atol=ATOL):
+                raise AssertionError(f"Witness {grid} position differs from its physical aperture at {location}")
+
+
 def compare(actual, expected, path="root"):
     if isinstance(actual, dict):
         if not isinstance(expected, dict) or actual.keys() != expected.keys():
             raise AssertionError(f"Keys differ at {path}")
+        if "subject_seed" in actual and ("references" in actual or "reference_refinements" in actual):
+            validate_study_position_witnesses(actual, path)
+            validate_study_position_witnesses(expected, path)
+        negligible_position_argmax = False
+        if "largest_position_witness" in actual:
+            validate_position_witness(actual, path)
+            validate_position_witness(expected, path)
+            negligible_position_argmax = max(actual["maximum_position_difference_m"],
+                                             expected["maximum_position_difference_m"]) <= ATOL
         for key in actual:
+            if key == "largest_position_witness" and negligible_position_argmax:
+                continue
             if key not in ("actual_noise_sha256", "external_noise_sha256", "rhs_evaluations"):
                 compare(actual[key], expected[key], f"{path}.{key}")
     elif isinstance(actual, (list, tuple)):

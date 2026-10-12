@@ -68,7 +68,7 @@ separately exercise actual-charge body coupling and fault cancellation.
 
 Review also closed an API scope gap: validated physical support and exact past
 pulse patterns must match at runtime. The added restrictions preserve every
-pre-existing numerical and decision value. The full local suite passed 217
+pre-existing numerical and decision value. The full local suite passed 224
 tests. The next mechanism revision needs a drift-tolerant forecaster trained and
 validated from permitted observations, followed by the same matched/OFF protocol.
 The [native monitoring investigation](../stage4/entry-plan.md) can proceed in

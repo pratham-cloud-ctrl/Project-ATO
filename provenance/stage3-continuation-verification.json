@@ -32,7 +32,7 @@
     "expert_recorded_performances": 16,
     "original_generator_competent_performances": 0,
     "separately_labeled_inverse_generator_competent_performances": 8,
-    "observed_full_project_unit_tests": 217
+    "observed_full_project_unit_tests": 224
   },
   "input_normalized_hashes": {
     "src/ato/stage3/__init__.py": "52e87fb1296e8c7d664bf054b023446baebcdfaad4152776ce26e2a83962c4ec",
@@ -67,7 +67,7 @@
     "scripts/stage3_pressure_convergence_probe.py": "25dc9ea517bca5301b51a674ec1d058a0fd0b87b0ba26ff913578e82b79da112",
     "scripts/stage3_resolved_teacher_study.py": "f87b4679c4e7bbfa43f3348f794e42b9655cdde2cfc91e4a4ee44bef31e85612",
     "scripts/stage3_response_validation.py": "e65421b99a45e373c650fd5f594672e5d91e817798099f95174c89edbbbb4b45",
-    "scripts/stage3_source_sensitivity.py": "63333e9c26a69d2fdc03dbc329979fe9d49e99b7d2624badc2a8c8aa3e9058fc",
+    "scripts/stage3_source_sensitivity.py": "34ef1014de69dca617fbbabb9dda7bb4bcc7995055a8bb030fb1bd07c2edd9a8",
     "scripts/stage3_sparse_baseline_study.py": "570332e397760b066e8281d8cf48382050f7338e54df819e6893d7d93a482fc0",
     "scripts/stage3_teacher_library_study.py": "3b0ba4c1fa54161ee36637d5de3c4f7eaec0379f1b1d0da2a63b4aebe33eb30a",
     "scripts/verify_stage3_continuation.py": "211230711406fc74033454870dd7a7d2b21644901ead8e5314e96d583f1fa63c",
@@ -137,14 +137,14 @@
     "results/stage3/response-validation/response-domain-smoke-raw.json.gz": "fe4448ed4305a5e253eef4dc7cafa17e4722cefb50fcca76b7befc919a5e3bc5",
     "results/stage3/response-validation/response-domain-smoke-summary.json": "890831527bbf34dfa28303634a7352058fb43bbd1f7c21ddc04dce453de266f1",
     "results/stage3/response-validation/response-domain-summary.json": "01b847d69dd64fb46d5bc4de8950e0bf27b9e18226dbe52121993878c6cc310f",
-    "results/stage3/source-sensitivity/raw.json.gz": "d90761741f88cbef7266a796985839fb6085c1aae10c74050da7b2d90ee325a4",
-    "results/stage3/source-sensitivity/summary.json": "873b5bc6b9e4ea96a7fa343de0b4073b41ca9b255359ddad2d68fe9e47ce1f6b",
+    "results/stage3/source-sensitivity/raw.json.gz": "9912b15993ef9b413ebb8e8fcb3cec43bb5e7d86d9d9c62cd36de50cc7384a00",
+    "results/stage3/source-sensitivity/summary.json": "adc072ef800b58fe8b0924e082765b3844359dbcaa801e76f26da7b9a4590afa",
     "results/stage3/sparse-baseline/raw.json.gz": "265be515b0ca41dd734be6181b3f81de51e17884c7098196c2da4d6450bad0f1",
     "results/stage3/sparse-baseline/summary.json": "914e3821ff00861e04674f7a899659d2a1b8394a391fe503ed5af95b1798d422",
     "results/stage3/teacher-library/idealized_inverse.json": "dbfa412e947a63f0026c2b355dfa3028c1c3cc9cea85f931c9262c22e0d65730",
     "results/stage3/teacher-library/legacy_voluntary.json": "c7b727b7cc390d6f90f28990dbf1032a37d9481541d4e2ff6e6aaa413e143456",
     "results/stage3/teacher-library/teacher-library-summary.json": "8b3b893f28d3cc1f00e67120a73f879338b7f71220726814208172e08e9d4a76"
   },
-  "test_receipt_sha256": "3fe13db78d4248cab96716cbb86fa3a05b6e2746810d10732d5fe567bd4b6671",
+  "test_receipt_sha256": "3f7b41bf2b1fc200d490e003663d8961c8f9eb763c745867c4b22c29c3a3e85d",
   "visual_review_sha256": "d2efef87fda9acd7868ead08c9ee3cac19821fd95c0e0b88134add12b951f797"
 }

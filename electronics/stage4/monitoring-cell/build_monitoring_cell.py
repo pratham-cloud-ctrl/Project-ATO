@@ -31,7 +31,7 @@ SOURCES = {
 FP = {
     "R": "Resistor_SMD:R_0805_2012Metric", "C": "Capacitor_SMD:C_0805_2012Metric",
     "ina": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
-    "opa": "Package_TO_SOT_SMD:SOT-23-5",
+    "opa": "Package_TO_SOT_SMD:SOT-353_SC-70-5",
     "adc": "Package_SO:MSOP-10_3x3mm_P0.5mm",
     "mux": "Package_SO:MSOP-10_3x3mm_P0.5mm",
     "ref": "Package_TO_SOT_SMD:SOT-23-6",
@@ -42,7 +42,8 @@ FP = {
 # number, function, KiCad electrical type, side; position is generated on 2.54mm grid.
 PINS = {
     "ina": [(8,"IN+","input","L"),(1,"IN-","input","L"),(7,"REF1","input","L"),(3,"REF2","input","L"),(6,"VS","power_in","L"),(2,"GND","power_in","L"),(4,"NC=GND","passive","L"),(5,"OUT","output","R")],
-    "opa": [(3,"IN+","input","L"),(4,"IN-","input","L"),(5,"V+","power_in","L"),(2,"V-","power_in","L"),(1,"OUT","output","R")],
+    # TI SBOS925E Table4-1: production DCK pinout differs from preview DBV.
+    "opa": [(1,"IN+","input","L"),(3,"IN-","input","L"),(5,"V+","power_in","L"),(2,"V-","power_in","L"),(4,"OUT","output","R")],
     "adc": [(3,"AINP","input","L"),(4,"AINN","input","L"),(1,"REF","input","L"),(2,"AVDD","power_in","L"),(10,"DVDD","power_in","L"),(5,"GND","power_in","L"),(6,"CONVST","input","R"),(9,"DIN/CS_N","input","R"),(8,"SCLK","input","R"),(7,"DOUT","tri_state","R")],
     "mux": [(1,"SEL1","input","L"),(5,"SEL2","input","L"),(8,"VDD","power_in","L"),(3,"GND","power_in","L"),(10,"D1","passive","R"),(9,"S1B_RESET","passive","R"),(2,"S1A_OPEN","passive","R"),(6,"D2","passive","R"),(7,"S2B_RESET","passive","R"),(4,"S2A_OPEN","passive","R")],
     "ref": [(4,"IN","power_in","L"),(3,"EN","input","L"),(1,"GND_F","power_in","L"),(2,"GND_S","input","L"),(6,"OUT_F","power_out","R"),(5,"OUT_S","input","R")],
@@ -70,7 +71,7 @@ add("J2","MCU ENDPOINT/CONTROL","J",{1:"CH0_CNV",2:"CH0_CS_N",3:"CH0_DOUT",4:"CH
 add("J3","EXTERNAL SUPERVISION","J",{1:"CH0_EXT_SUP_OK",2:"CH1_EXT_SUP_OK",3:"CH0_PERMIT",4:"CH1_PERMIT",5:"GND"},(360.68,137.16),"root","EXT_SUP_OK must AND independent compliance, duration, watchdog, rails and reference health; not populated here")
 add("J4","CURRENT ADC INTERFACE","J",{1:"CH0_I_MON",2:"CH1_I_MON",3:"V_MID",4:"GND"},(360.68,185.42),"root","Separate current/health ADC and compliance front-end remain external")
 add("U1","REF3440DBVR","ref",{1:"GND",2:"GND",3:"+5VA",4:"+5VA",5:"V_REF",6:"V_REF"},(106.68,45.72),"root","4.096V reference; sense tied locally to force in slice")
-add("U2","OPA391DBVR","opa",{1:"V_MID",2:"GND",3:"MID_DIV",4:"V_MID",5:"+5VA"},(200.66,45.72),"root","Buffered midpoint from reference; ADC reference remains separately bypassed")
+add("U2","OPA391DCKR","opa",{1:"MID_DIV",2:"GND",3:"V_MID",4:"V_MID",5:"+5VA"},(200.66,45.72),"root","Buffered midpoint from reference; ADC reference remains separately bypassed")
 add("U3","TMUX1136DGSR","mux",{1:"CH0_INT_RUN",2:None,3:"GND",4:None,5:"CH1_INT_RUN",6:"CH1_SUM",7:"CH1_Q_INT",8:"+5VA",9:"CH0_Q_INT",10:"CH0_SUM"},(294.64,45.72),"root","Low select closes B feedback reset; high select opens into unconnected A")
 r("R1","10k 0.1%","V_REF","MID_DIV",(55.88,119.38),"root","Midpoint divider upper")
 r("R2","10k 0.1%","MID_DIV","GND",(121.92,119.38),"root","Midpoint divider lower")
@@ -89,10 +90,10 @@ for ch in (0,1):
     add(f"J{b}",f"SOURCE {ch} RETURN SHUNT","J",{1:q("RETURN_LOAD"),2:q("RETURN_DRIVER")},(45.72,45.72),sheet,"Series dedicated return of an ARTIFICIAL load; no implicit body-ground isolation")
     r(f"R{b}","2R 0.1% KELVIN",q("RETURN_LOAD"),q("RETURN_DRIVER"),(53.34,76.2),sheet,"Separate monitor shunt, not driver-servo resistor; qualify TCR/power and Kelvin layout")
     add(f"U{b}","INA241A2IDR","ina",{1:q("RETURN_DRIVER"),2:"GND",3:"V_MID",4:"GND",5:q("I_MON"),6:"+5VA",7:"V_MID",8:q("RETURN_LOAD")},(111.76,45.72),sheet,"20V/V; A2 max15uV offset; NC pin4 explicitly ground; bias paths unqualified")
-    add(f"U{b+1}","OPA391DBVR","opa",{1:q("Q_INT"),2:"GND",3:"V_MID",4:q("SUM"),5:"+5VA"},(200.66,45.72),sheet,"Continuous signed integrator around2.048V")
+    add(f"U{b+1}","OPA391DCKR","opa",{1:"V_MID",2:"GND",3:q("SUM"),4:q("Q_INT"),5:"+5VA"},(200.66,45.72),sheet,"Continuous signed integrator around2.048V")
     r(f"R{b+1}","10k 0.1%",q("I_MON"),q("SUM"),(175.26,78.74),sheet,"Integrator input resistor; continuous current integral")
     c(f"C{b}","22n 0.5% C0G",q("SUM"),q("Q_INT"),(243.84,78.74),sheet,"Precision low-absorption feedback capacitor; tolerance/temperature require evidence")
-    add(f"U{b+2}","OPA391DBVR","opa",{1:q("ADC_BUF"),2:"GND",3:q("Q_INT"),4:q("ADC_BUF"),5:"+5VA"},(289.56,45.72),sheet,"Endpoint buffer; capacitive drive/settling must be modeled")
+    add(f"U{b+2}","OPA391DCKR","opa",{1:q("Q_INT"),2:"GND",3:q("ADC_BUF"),4:q("ADC_BUF"),5:"+5VA"},(289.56,45.72),sheet,"Endpoint buffer; capacitive drive/settling must be modeled")
     add(f"U{b+3}","ADS8866IDGSR","adc",{1:"V_REF",2:"+3V3",3:q("ADC_IN"),4:"GND",5:"GND",6:q("CNV"),7:q("DOUT"),8:"MON_SCLK",9:q("CS_N"),10:"+3V3"},(378.46,45.72),sheet,"Separate endpoint SAR; four-wire CS mode; AVDD/DVDD3.3V, reference4.096V")
     r(f"R{b+2}","33R",q("ADC_BUF"),q("ADC_IN"),(312.42,78.74),sheet,"ADC charge-kickback isolation; provisional settling network")
     c(f"C{b+1}","1n C0G",q("ADC_IN"),"GND",(378.46,78.74),sheet,"Provisional ADC local reservoir, not verified settling")
@@ -197,7 +198,7 @@ for sheet in ("root","channel0","channel1"):
     title="Shared reference and interfaces" if sheet=="root" else f"Source {sheet[-1]}: current and phase charge"
     # All symbols are embedded, and only this sheet's symbols are embedded in each file.
     embedded=''.join(lib_symbol(p) for p in parts if p['sheet']==sheet)+(flag_symbol if sheet=="root" else "")
-    data=f'(kicad_sch (version 20250114) (generator "ato_stage4_monitor") (uuid {sid}) (paper "A3") (title_block (title "ATO S4 / {title}") (date "2026-10-12") (rev "0.1 proposed") (company "Project ATO") (comment 1 "ARTIFICIAL LOADS ONLY; native schematic slice, not a completed implant")) (lib_symbols {embedded}) '+''.join(elements)+')\n'
+    data=f'(kicad_sch (version 20250114) (generator "ato_stage4_monitor") (uuid {sid}) (paper "A3") (title_block (title "ATO S4 / {title}") (date "2026-10-12") (rev "0.2 DCK") (company "Project ATO") (comment 1 "ARTIFICIAL LOADS ONLY; native schematic slice, not a completed implant")) (lib_symbols {embedded}) '+''.join(elements)+')\n'
     (OUT/(PROJECT if sheet=="root" else sheet)).with_suffix('.kicad_sch').write_text(data,encoding='utf-8')
 
 (OUT/"ATO_S4.kicad_sym").write_text('(kicad_symbol_lib (version 20241209) (generator "ato_stage4_monitor") '+''.join(liblist).replace('(symbol "ATO_S4:', '(symbol "')+')\n',encoding='utf-8')

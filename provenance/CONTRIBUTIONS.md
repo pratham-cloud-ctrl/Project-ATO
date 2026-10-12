@@ -22,11 +22,17 @@ replaced a training-fit teacher error with independent complete-recording
 allocations and restricted runtime baseline permission to tested support/past
 action domains. Sixteen independent learner-drift checks reject every aggregate
 horizon. The saved 128 practice trials launch no stimulation, and 64 OFF
-assessments show no assisted advantage. The full local suite passed 217 tests.
+assessments show no assisted advantage. The full local suite passed 224 tests,
+including seven checks of the cross-platform reference-witness comparison and
+its binding to recomputed physical sampling apertures.
 Sources, negative results and independent reproduction receipts are retained.
 
 A separate AI-assisted Stage 4 investigation starts an editable two-source
 phase-charge monitoring circuit, component comparison and requirements trace.
+Independent review corrected a preview-package choice to the production DCK
+pinout and a missing buffer-loading term in the separate mathematical oracle.
+Thirty-three ngspice runs retain both source traces and 462 interval results;
+portable verification recomputes the numerical checks and binds the artifacts.
 Its power/bias/precision limitations remain explicit. Full native implant
 electronics, embedded integration and populated engineering CAD remain later work.
 

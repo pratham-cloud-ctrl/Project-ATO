@@ -1,0 +1,64 @@
+{
+  "schema": "ato.stage4.monitoring-study.sources.v1",
+  "retrieved_date": "2026-10-12",
+  "sources": [
+    {
+      "id": "INA241",
+      "url": "https://www.ti.com/lit/ds/symlink/ina241a.pdf",
+      "revision": "D",
+      "used": "A2 nominal gain 20; 1.1 MHz typical bandwidth; offset 15 uV maximum and input bias 25/35/45 uA minimum/typical/maximum under specified conditions; full-temperature maximum IQ 3.2 mA.",
+      "limits": "These values are not a complete joint bound over common-mode voltage, temperature, power state and transient waveform. One-pole response and output clamps in this study are assumptions."
+    },
+    {
+      "id": "OPA391",
+      "url": "https://www.ti.com/lit/ds/symlink/opa391.pdf",
+      "revision": "E",
+      "used": "DCK electrical table: 45 uV maximum input offset at specified conditions; 1 MHz typical gain-bandwidth product. Model buffer response uses a 450 kHz one-pole assumption informed by the unity-gain bandwidth entry, not a guaranteed settling envelope.",
+      "limits": "DC gain 1e6, hard output limits 0.05/4.95 V, passive buffer surrogate, no slew/overload/phase-margin model. DBV was marked preview; native cell is revised separately to production DCK pinout and SOT-353 footprint."
+    },
+    {
+      "id": "OPA391_ORDERING",
+      "url": "https://www.ti.com/product/OPA391",
+      "revision": "product ordering page retrieved 2026-10-12",
+      "used": "Production DCK ordering/package check.",
+      "limits": "Orderable part status is not implant or chronic qualification."
+    },
+    {
+      "id": "ADS8866",
+      "url": "https://www.ti.com/lit/ds/symlink/ads8866.pdf",
+      "revision": "C",
+      "used": "16 bit; input measurement range 0 to VREF; INL +/-2 LSB maximum; aperture delay 4 ns typical; conversion time maximum 8.8 us under stated timing conditions.",
+      "limits": "Electrical min/max conditions include AVDD=DVDD=3 V and VREF=5 V. Native 3.3 V/4.096 V point needs separate characterization. Quantizer includes nearest rounding and a selected gain corner, not complete INL/offset/noise. No SAR kickback or reference-current model. 9.8 us read availability is a scheduling assumption."
+    },
+    {
+      "id": "TMUX1136",
+      "url": "https://www.ti.com/lit/ds/symlink/tmux1136.pdf",
+      "revision": "B",
+      "used": "5 V table typical charge injection -6 pC under its test conditions motivates a magnitude stress.",
+      "limits": "Positive 6 pC injected into summing node 1 us after reset opens is a deliberate model experiment, not a reproduction of the manufacturer's sign, distribution, timing or maximum. Reset Ron=2 ohm, Roff=1e12 ohm and 1 ns transition are assumptions."
+    },
+    {
+      "id": "NGSPICE_SHARED",
+      "url": "https://ngspice.sourceforge.io/shared.html",
+      "revision": "shared-library interface documentation",
+      "used": "Synchronous shared-library API used by the independent adapter.",
+      "limits": "API provenance only; does not validate the circuit model."
+    }
+  ],
+  "assumptions": {
+    "artificial_load": "Ideal commanded current is filtered by an assumed first-order driver response and injected into a two-ohm return shunt held near 48 V. No output-driver servo, anatomical return or electrode chemistry is represented.",
+    "independent_sources": "Two uncoupled electrical channels with opposite first phase and 25 us start staggering; no shared-supply, common-return or tissue coupling qualification.",
+    "nominal_waveform": "3 mA, 200 us command phases, 100 us gap, 1 ns command ramps; 100 ns assumed load-current time constant.",
+    "passive_buffer": "1 ohm / C=1/(2*pi*450kHz) passive low-pass is loaded by the actual 33 ohm/1 nF ADC filter; analytical oracle includes that coupling.",
+    "finite_gain_integrator": "A0=1e6 and one-pole GBW=1 MHz, 10 kohm input, 22 nF feedback, 1e12 ohm parallel leak nominal. 10 Mohm leak is a stress, not a component prediction.",
+    "error_corner": "2.002 ohm shunt, gain 20.002, 9990 ohm input, 21.89 nF feedback, +15 uV sensor input offset, +45 uV integrator input offset, +0.01% ADC gain are a constructed deterministic corner; not a guaranteed joint distribution or full PVT bound.",
+    "clock_strip": "Start shifted by s and end by -s for s in +/-1 us, +/-100 ns and zero: symmetric interval expansion/contraction only; no independent endpoint uncertainty proof.",
+    "fault": "40 mA/500 us phases deliberately exceed admitted current/charge domain; metadata forces bypass. Shutdown hardware is not simulated. Continuing beyond ADC range is a mathematical fault witness, not a device survival prediction."
+  },
+  "qualification_status": {
+    "four_percent_target_earned": false,
+    "manufacturer_macromodel_used": false,
+    "native_cell_connectivity_verified_by_this_model": false,
+    "implant_or_biological_qualification": false
+  }
+}

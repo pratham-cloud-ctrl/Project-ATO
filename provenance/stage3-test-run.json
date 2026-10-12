@@ -4,11 +4,11 @@
   "scope": "Full project unit suite, including earlier subsystem and architecture checks; no human or physical-device qualification.",
   "command": "python scripts/record_stage3_tests.py",
   "observed_result": {
-    "tests_run": 217,
+    "tests_run": 224,
     "failures": 0,
     "errors": 0,
     "status": "OK",
-    "elapsed_s": 354.472
+    "elapsed_s": 467.776
   },
   "runtime": {
     "python": "3.12.14",
@@ -35,6 +35,7 @@
     "test_stage3_pressure_numerics": 7,
     "test_stage3_residual_guard": 8,
     "test_stage3_response_validation": 10,
+    "test_stage3_source_reproduction": 7,
     "test_stage3_source_sensitivity": 9,
     "test_stage3_sparse_baseline": 12,
     "test_stage3_teacher_library": 12
@@ -83,6 +84,7 @@
     "tests/test_stage3_pressure_numerics.py": "0717c56aa71b2fcbef115b44eb2fc6fe9fb1553f6c8db18710bd27d769c53fad",
     "tests/test_stage3_residual_guard.py": "94dc873c574054d26bc658e5b8651a9647d56625b7374321c0783f27e627b860",
     "tests/test_stage3_response_validation.py": "cee857d53e16e52d2714a9eb8b33192d81d9972533b56b34b14202b559f4b6cf",
+    "tests/test_stage3_source_reproduction.py": "0ba69ae9a41b1f8c57910da064ac0d98f734ceacd531e35f78ed0059d12fe7e1",
     "tests/test_stage3_source_sensitivity.py": "2033223c52fd9453e73e995a9fe43a1c4eb2eacc9d7ac40c098d55779b3c77c0",
     "tests/test_stage3_sparse_baseline.py": "0f8b291a2562599e531f59b0a376cffb65faf4425093288fa55ca3a5fbc1cb8d",
     "tests/test_stage3_teacher_library.py": "f33d5f2fb45ef8d94738c1ca39e277b2f0e8fd220d6328ba12099a9338a76a1d"

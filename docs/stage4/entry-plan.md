@@ -34,6 +34,16 @@ coverage, power transients, output drivers, PCB and chronic implanted suitabilit
 remain separate work. Preserve the earlier one-channel 5 V reference and host C
 pulse state machine unchanged; neither implements this Stage 2 envelope.
 
+The native revision now uses production OPA391DCKR parts with corrected pin
+mapping; see the [package review](../../electronics/stage4/monitoring-cell/design-review.md).
+An [initial independent behavioral study](../../electronics/stage4/monitoring-study/README.md)
+adds 33 two-source transient runs and 462 phase/gap/tail/net intervals on three
+grids. It identifies bias bypass, reset-baseline, finite-response, cancellation,
+ADC-allocation and clipping limitations. Separate KCL/matrix-exponential checks
+verify its stated equations. Its 3 mA/200 µs nominal fixture and selected stress
+cases do not complete the broader waveform/load/rail/fault coverage below, and
+the proposed 4% precision remains unearned.
+
 ## Architecture retained from Stage 2
 
 | Responsibility | Detailed-design allocation and implementation boundary |
@@ -64,7 +74,7 @@ their stated conditions; typical specifications are not guaranteed bounds.
 | **INA241A2**, first full-envelope sense candidate | Gain 20; −5…110 V operating common mode; 2.7…20 V supply. The A2 offset maximum is **15 µV**, not the family's 10 µV headline. Its A-grade gain maximum is 0.01% under the specified conditions. The 1.1 MHz bandwidth is typical. Use a separately sensed 2 Ω shunt and 5 V supply in this slice. Its input bias and power are material limitations below. [Datasheet, pin table and electrical tables](https://www.ti.com/lit/ds/symlink/ina241a.pdf). |
 | **INA190A1**, lower-power restricted alternative | Bidirectional gain 25 with tens-of-kHz bandwidth and approximately 50 µA typical current; the page/table maximum depends on grade/conditions and reaches 90 µA. Its −0.2…40 V operating common-mode range **cannot cover the 48 V rail**. A separately named 24/36 V-only revision could test its slower settled-integral path and input leakage advantage. It is not a drop-in full-envelope selection. [Datasheet](https://www.ti.com/lit/ds/symlink/ina190.pdf). |
 | **INA282**, lower-current full-voltage alternative | −14…80 V bidirectional operation, 0.9 mA maximum quiescent current, but 10 kHz bandwidth, up to 70 µV offset and 1.4% gain error on the product specification. It needs much longer tail observation and tighter calibration evidence. Do not select it on IQ alone. [Manufacturer product/datasheet](https://www.ti.com/product/INA282). |
-| **OPA391DBV**, integrator and endpoint buffer | Single amplifier avoids unused channels; 1.7…5.5 V supply, 1 MHz typical GBW, 23.5 µA typical / 32 µA full-temperature maximum quiescent current under the stated conditions. Stability, settling and ADC-drive evidence remain required. This replaces the initially considered 1 mA/channel OPA192 for this low-voltage monitoring function. [Datasheet](https://www.ti.com/lit/ds/symlink/opa391.pdf). |
+| **OPA391DCKR**, integrator and endpoint buffer | Production DCK package; its different pin mapping is checked in the native design. Single amplifier avoids unused channels; 1.7…5.5 V supply, 1 MHz typical GBW, 23.5 µA typical / 32 µA full-temperature maximum quiescent current under the stated conditions. Stability, settling, ADC-drive and PCB land-pattern review remain required. This replaces the initially considered 1 mA/channel OPA192 for this low-voltage monitoring function. [Datasheet](https://www.ti.com/lit/ds/symlink/opa391.pdf). |
 | **TMUX1136**, integrator reset | Two low-voltage SPDT paths; tie each B terminal across its feedback capacitor, leave A unconnected. Low select resets; high select integrates. This is a **5 V-domain reset switch**, never an HV electrode router. Include injection, leakage, reset completion and powered/unpowered behavior. [Datasheet and truth table](https://www.ti.com/lit/ds/symlink/tmux1136.pdf). |
 | **ADS8866**, one endpoint ADC per source | 16-bit, 100 kSPS. **AVDD 2.7…3.6 V**, DVDD 1.65…3.6 V and reference 2.5…5 V: this design uses 3.3 V analog/digital and 4.096 V reference, not 5 V AVDD. Maximum INL is ±2 LSB under specified conditions. Each reference needs ≥10 µF local decoupling. [Datasheet](https://www.ti.com/lit/ds/symlink/ads8866.pdf). |
 | **REF3440**, reference candidate | 4.096 V, four-wire sense/force connections, specified initial accuracy/drift and capacitive-load conditions. Shared reference faults remain correlated; ADC/reference health needs independent checking. [REF34 datasheet](https://www.ti.com/lit/ds/symlink/ref34.pdf). |
@@ -220,6 +230,11 @@ was freshly checked as `pratham-cloud-ctrl`; no account secret is recorded here.
 No new paid software or student entitlement is needed for this slice. The
 existing Ansys caveats remain. Target Nordic/Arm tools need a separately verified
 stable supported installation when target firmware starts.
+
+The [target-tool setup](firmware-toolchain.md) now records the signed Nordic
+installer and matching compiler checks. The complete SDK download and
+application-core example build remain in progress; no ATO backend result is
+implied by compiler availability.
 
 Work in order: **native monitor slice → independent transient/error budget →
 driver/routing and separate supervisory circuits → AFE/power/target firmware →

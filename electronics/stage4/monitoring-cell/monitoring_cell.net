@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\monitoring_cell.kicad_sch")
-		(date "2026-10-12T06:01:51")
+		(date "2026-10-12T12:07:08")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -11,7 +11,7 @@
 			(title_block
 				(title "ATO S4 / Shared reference and interfaces")
 				(company "Project ATO")
-				(rev "0.1 proposed")
+				(rev "0.2 DCK")
 				(date "2026-10-12")
 				(source "monitoring_cell.kicad_sch")
 				(comment
@@ -59,7 +59,7 @@
 			(title_block
 				(title "ATO S4 / Source 0: current and phase charge")
 				(company "Project ATO")
-				(rev "0.1 proposed")
+				(rev "0.2 DCK")
 				(date "2026-10-12")
 				(source "channel0.kicad_sch")
 				(comment
@@ -107,7 +107,7 @@
 			(title_block
 				(title "ATO S4 / Source 1: current and phase charge")
 				(company "Project ATO")
-				(rev "0.1 proposed")
+				(rev "0.2 DCK")
 				(date "2026-10-12")
 				(source "channel1.kicad_sch")
 				(comment
@@ -948,12 +948,12 @@
 		)
 		(comp
 			(ref "U2")
-			(value "OPA391DBVR")
-			(footprint "ato_s4:SOT-23-5")
+			(value "OPA391DCKR")
+			(footprint "ato_s4:SOT-353_SC-70-5")
 			(datasheet "https://www.ti.com/lit/ds/symlink/opa391.pdf")
 			(fields
 				(field
-					(name "Footprint") "ato_s4:SOT-23-5")
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
 				(field
 					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/opa391.pdf")
 				(field
@@ -983,10 +983,10 @@
 					(name "A")
 					(pins
 						(pin
-							(num "3")
+							(num "1")
 						)
 						(pin
-							(num "4")
+							(num "3")
 						)
 						(pin
 							(num "5")
@@ -995,7 +995,7 @@
 							(num "2")
 						)
 						(pin
-							(num "1")
+							(num "4")
 						)
 					)
 				)
@@ -2014,12 +2014,12 @@
 		)
 		(comp
 			(ref "U101")
-			(value "OPA391DBVR")
-			(footprint "ato_s4:SOT-23-5")
+			(value "OPA391DCKR")
+			(footprint "ato_s4:SOT-353_SC-70-5")
 			(datasheet "https://www.ti.com/lit/ds/symlink/opa391.pdf")
 			(fields
 				(field
-					(name "Footprint") "ato_s4:SOT-23-5")
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
 				(field
 					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/opa391.pdf")
 				(field
@@ -2049,10 +2049,10 @@
 					(name "A")
 					(pins
 						(pin
-							(num "3")
+							(num "1")
 						)
 						(pin
-							(num "4")
+							(num "3")
 						)
 						(pin
 							(num "5")
@@ -2061,7 +2061,7 @@
 							(num "2")
 						)
 						(pin
-							(num "1")
+							(num "4")
 						)
 					)
 				)
@@ -2069,12 +2069,12 @@
 		)
 		(comp
 			(ref "U102")
-			(value "OPA391DBVR")
-			(footprint "ato_s4:SOT-23-5")
+			(value "OPA391DCKR")
+			(footprint "ato_s4:SOT-353_SC-70-5")
 			(datasheet "https://www.ti.com/lit/ds/symlink/opa391.pdf")
 			(fields
 				(field
-					(name "Footprint") "ato_s4:SOT-23-5")
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
 				(field
 					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/opa391.pdf")
 				(field
@@ -2104,10 +2104,10 @@
 					(name "A")
 					(pins
 						(pin
-							(num "3")
+							(num "1")
 						)
 						(pin
-							(num "4")
+							(num "3")
 						)
 						(pin
 							(num "5")
@@ -2116,7 +2116,7 @@
 							(num "2")
 						)
 						(pin
-							(num "1")
+							(num "4")
 						)
 					)
 				)
@@ -3321,12 +3321,12 @@
 		)
 		(comp
 			(ref "U201")
-			(value "OPA391DBVR")
-			(footprint "ato_s4:SOT-23-5")
+			(value "OPA391DCKR")
+			(footprint "ato_s4:SOT-353_SC-70-5")
 			(datasheet "https://www.ti.com/lit/ds/symlink/opa391.pdf")
 			(fields
 				(field
-					(name "Footprint") "ato_s4:SOT-23-5")
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
 				(field
 					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/opa391.pdf")
 				(field
@@ -3356,10 +3356,10 @@
 					(name "A")
 					(pins
 						(pin
-							(num "3")
+							(num "1")
 						)
 						(pin
-							(num "4")
+							(num "3")
 						)
 						(pin
 							(num "5")
@@ -3368,7 +3368,7 @@
 							(num "2")
 						)
 						(pin
-							(num "1")
+							(num "4")
 						)
 					)
 				)
@@ -3376,12 +3376,12 @@
 		)
 		(comp
 			(ref "U202")
-			(value "OPA391DBVR")
-			(footprint "ato_s4:SOT-23-5")
+			(value "OPA391DCKR")
+			(footprint "ato_s4:SOT-353_SC-70-5")
 			(datasheet "https://www.ti.com/lit/ds/symlink/opa391.pdf")
 			(fields
 				(field
-					(name "Footprint") "ato_s4:SOT-23-5")
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
 				(field
 					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/opa391.pdf")
 				(field
@@ -3411,10 +3411,10 @@
 					(name "A")
 					(pins
 						(pin
-							(num "3")
+							(num "1")
 						)
 						(pin
-							(num "4")
+							(num "3")
 						)
 						(pin
 							(num "5")
@@ -3423,7 +3423,7 @@
 							(num "2")
 						)
 						(pin
-							(num "1")
+							(num "4")
 						)
 					)
 				)
@@ -5486,9 +5486,9 @@
 				(field
 					(name "Reference") "U")
 				(field
-					(name "Value") "OPA391DBVR")
+					(name "Value") "OPA391DCKR")
 				(field
-					(name "Footprint") "ato_s4:SOT-23-5")
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
 				(field
 					(name "Datasheet")
 				)
@@ -5499,8 +5499,8 @@
 			(pins
 				(pin
 					(num "1")
-					(name "OUT")
-					(type "output")
+					(name "IN+")
+					(type "input")
 				)
 				(pin
 					(num "2")
@@ -5509,13 +5509,13 @@
 				)
 				(pin
 					(num "3")
-					(name "IN+")
+					(name "IN-")
 					(type "input")
 				)
 				(pin
 					(num "4")
-					(name "IN-")
-					(type "input")
+					(name "OUT")
+					(type "output")
 				)
 				(pin
 					(num "5")
@@ -5531,9 +5531,9 @@
 				(field
 					(name "Reference") "U")
 				(field
-					(name "Value") "OPA391DBVR")
+					(name "Value") "OPA391DCKR")
 				(field
-					(name "Footprint") "ato_s4:SOT-23-5")
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
 				(field
 					(name "Datasheet")
 				)
@@ -5544,8 +5544,8 @@
 			(pins
 				(pin
 					(num "1")
-					(name "OUT")
-					(type "output")
+					(name "IN+")
+					(type "input")
 				)
 				(pin
 					(num "2")
@@ -5554,13 +5554,13 @@
 				)
 				(pin
 					(num "3")
-					(name "IN+")
+					(name "IN-")
 					(type "input")
 				)
 				(pin
 					(num "4")
-					(name "IN-")
-					(type "input")
+					(name "OUT")
+					(type "output")
 				)
 				(pin
 					(num "5")
@@ -5816,9 +5816,9 @@
 				(field
 					(name "Reference") "U")
 				(field
-					(name "Value") "OPA391DBVR")
+					(name "Value") "OPA391DCKR")
 				(field
-					(name "Footprint") "ato_s4:SOT-23-5")
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
 				(field
 					(name "Datasheet")
 				)
@@ -5829,8 +5829,8 @@
 			(pins
 				(pin
 					(num "1")
-					(name "OUT")
-					(type "output")
+					(name "IN+")
+					(type "input")
 				)
 				(pin
 					(num "2")
@@ -5839,13 +5839,13 @@
 				)
 				(pin
 					(num "3")
-					(name "IN+")
+					(name "IN-")
 					(type "input")
 				)
 				(pin
 					(num "4")
-					(name "IN-")
-					(type "input")
+					(name "OUT")
+					(type "output")
 				)
 				(pin
 					(num "5")
@@ -5921,9 +5921,9 @@
 				(field
 					(name "Reference") "U")
 				(field
-					(name "Value") "OPA391DBVR")
+					(name "Value") "OPA391DCKR")
 				(field
-					(name "Footprint") "ato_s4:SOT-23-5")
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
 				(field
 					(name "Datasheet")
 				)
@@ -5934,8 +5934,8 @@
 			(pins
 				(pin
 					(num "1")
-					(name "OUT")
-					(type "output")
+					(name "IN+")
+					(type "input")
 				)
 				(pin
 					(num "2")
@@ -5944,13 +5944,13 @@
 				)
 				(pin
 					(num "3")
-					(name "IN+")
+					(name "IN-")
 					(type "input")
 				)
 				(pin
 					(num "4")
-					(name "IN-")
-					(type "input")
+					(name "OUT")
+					(type "output")
 				)
 				(pin
 					(num "5")
@@ -5966,9 +5966,9 @@
 				(field
 					(name "Reference") "U")
 				(field
-					(name "Value") "OPA391DBVR")
+					(name "Value") "OPA391DCKR")
 				(field
-					(name "Footprint") "ato_s4:SOT-23-5")
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
 				(field
 					(name "Datasheet")
 				)
@@ -5979,8 +5979,8 @@
 			(pins
 				(pin
 					(num "1")
-					(name "OUT")
-					(type "output")
+					(name "IN+")
+					(type "input")
 				)
 				(pin
 					(num "2")
@@ -5989,13 +5989,13 @@
 				)
 				(pin
 					(num "3")
-					(name "IN+")
+					(name "IN-")
 					(type "input")
 				)
 				(pin
 					(num "4")
-					(name "IN-")
-					(type "input")
+					(name "OUT")
+					(type "output")
 				)
 				(pin
 					(num "5")
@@ -6614,15 +6614,15 @@
 			)
 			(node
 				(ref "U102")
-				(pin "1")
-				(pinfunction "OUT_1")
-				(pintype "output")
+				(pin "3")
+				(pinfunction "IN-_3")
+				(pintype "input")
 			)
 			(node
 				(ref "U102")
 				(pin "4")
-				(pinfunction "IN-_4")
-				(pintype "input")
+				(pinfunction "OUT_4")
+				(pintype "output")
 			)
 		)
 		(net
@@ -6878,14 +6878,14 @@
 			)
 			(node
 				(ref "U101")
-				(pin "1")
-				(pinfunction "OUT_1")
+				(pin "4")
+				(pinfunction "OUT_4")
 				(pintype "output")
 			)
 			(node
 				(ref "U102")
-				(pin "3")
-				(pinfunction "IN+_3")
+				(pin "1")
+				(pinfunction "IN+_1")
 				(pintype "input")
 			)
 			(node
@@ -6982,8 +6982,8 @@
 			)
 			(node
 				(ref "U101")
-				(pin "4")
-				(pinfunction "IN-_4")
+				(pin "3")
+				(pinfunction "IN-_3")
 				(pintype "input")
 			)
 			(node
@@ -7005,15 +7005,15 @@
 			)
 			(node
 				(ref "U202")
-				(pin "1")
-				(pinfunction "OUT_1")
-				(pintype "output")
+				(pin "3")
+				(pinfunction "IN-_3")
+				(pintype "input")
 			)
 			(node
 				(ref "U202")
 				(pin "4")
-				(pinfunction "IN-_4")
-				(pintype "input")
+				(pinfunction "OUT_4")
+				(pintype "output")
 			)
 		)
 		(net
@@ -7269,14 +7269,14 @@
 			)
 			(node
 				(ref "U201")
-				(pin "1")
-				(pinfunction "OUT_1")
+				(pin "4")
+				(pinfunction "OUT_4")
 				(pintype "output")
 			)
 			(node
 				(ref "U202")
-				(pin "3")
-				(pinfunction "IN+_3")
+				(pin "1")
+				(pinfunction "IN+_1")
 				(pintype "input")
 			)
 			(node
@@ -7373,8 +7373,8 @@
 			)
 			(node
 				(ref "U201")
-				(pin "4")
-				(pinfunction "IN-_4")
+				(pin "3")
+				(pinfunction "IN-_3")
 				(pintype "input")
 			)
 			(node
@@ -7837,8 +7837,8 @@
 			)
 			(node
 				(ref "U2")
-				(pin "3")
-				(pinfunction "IN+_3")
+				(pin "1")
+				(pinfunction "IN+_1")
 				(pintype "input")
 			)
 		)
@@ -7889,21 +7889,21 @@
 			)
 			(node
 				(ref "U101")
-				(pin "3")
-				(pinfunction "IN+_3")
+				(pin "1")
+				(pinfunction "IN+_1")
 				(pintype "input")
 			)
 			(node
 				(ref "U2")
-				(pin "1")
-				(pinfunction "OUT_1")
-				(pintype "output")
+				(pin "3")
+				(pinfunction "IN-_3")
+				(pintype "input")
 			)
 			(node
 				(ref "U2")
 				(pin "4")
-				(pinfunction "IN-_4")
-				(pintype "input")
+				(pinfunction "OUT_4")
+				(pintype "output")
 			)
 			(node
 				(ref "U200")
@@ -7919,8 +7919,8 @@
 			)
 			(node
 				(ref "U201")
-				(pin "3")
-				(pinfunction "IN+_3")
+				(pin "1")
+				(pinfunction "IN+_1")
 				(pintype "input")
 			)
 		)

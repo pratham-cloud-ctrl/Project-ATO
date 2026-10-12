@@ -51,6 +51,21 @@ def connected(ref, pin, net):
     assert actual_nets[(ref, str(pin))] == net, (ref, pin, net)
 
 # Critical functional contracts are checked against the actual KiCad export.
+# Production OPA391DCK pinout, independently written from TI SBOS925E Table4-1.
+# Verify every amplifier role, not just the generated manifest's internal agreement.
+opamp_contracts = {"U2": {1: "MID_DIV", 2: "GND", 3: "V_MID", 4: "V_MID", 5: "+5VA"}}
+for ch in (0, 1):
+    b = 100 * (ch + 1)
+    opamp_contracts[f"U{b+1}"] = {1: "V_MID", 2: "GND", 3: f"CH{ch}_SUM", 4: f"CH{ch}_Q_INT", 5: "+5VA"}
+    opamp_contracts[f"U{b+2}"] = {1: f"CH{ch}_Q_INT", 2: "GND", 3: f"CH{ch}_ADC_BUF", 4: f"CH{ch}_ADC_BUF", 5: "+5VA"}
+assert {ref for ref, p in parts.items() if p["kind"] == "opa"} == set(opamp_contracts)
+for ref, nets in opamp_contracts.items():
+    assert parts[ref]["value"] == "OPA391DCKR", ref
+    assert parts[ref]["footprint"] == "ato_s4:SOT-353_SC-70-5", ref
+    assert {str(p[0]): p[1] for p in parts[ref]["pins"]} == {
+        "1": "IN+", "2": "V-", "3": "IN-", "4": "OUT", "5": "V+"}, ref
+    for pin, net in nets.items():
+        connected(ref, pin, net)
 for ch in (0, 1):
     b = 100 * (ch + 1)
     q = lambda suffix: f"CH{ch}_{suffix}"
@@ -61,9 +76,9 @@ for ch in (0, 1):
     connected(f"U{b}", 4, "GND")  # Manufacturer NC pin must be grounded.
     connected(f"U{b}", 3, "V_MID")
     connected(f"U{b}", 7, "V_MID")
-    connected(f"U{b+1}", 3, "V_MID")
-    connected(f"U{b+1}", 4, q("SUM"))
-    connected(f"U{b+1}", 1, q("Q_INT"))
+    connected(f"U{b+1}", 1, "V_MID")
+    connected(f"U{b+1}", 3, q("SUM"))
+    connected(f"U{b+1}", 4, q("Q_INT"))
     connected(f"C{b}", 1, q("SUM"))
     connected(f"C{b}", 2, q("Q_INT"))
     connected(f"U{b+3}", 2, "+3V3")  # AVDD must NOT use the 5V reference supply.
