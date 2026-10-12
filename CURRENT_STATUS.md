@@ -148,6 +148,11 @@ universal autonomic control or healthy-consumer efficacy.
 
 ## Next move
 
+The [engineering roadmap and finite Stage 3 closeout](docs/engineering-roadmap.md)
+separates completed studies, the remaining predictor/confirmation/pilot/report
+work, and proposed tools for Stages 4–5. Biological efficacy remains a future
+evidence requirement rather than an endlessly expanding software task.
+
 Continue Stage 3 by checking whether the permitted 75 ms measured history can
 identify the changing movement response, especially across known cue reversals.
 That diagnosis should justify a **drift-tolerant observed forecaster**, with any
