@@ -4,8 +4,11 @@ Planning baseline: 8 October 2026. Status: Stage 1 mechanism and requirements
 [dossier](stage1/README.md) and Stage 2 quantitative architecture completed for
 review. Stage3's [computational foundation](stage3/README.md) and
 [continuation package](stage3/continuation-review.md) are implemented and
-in review as of 9 October; teacher/library and assisted prediction integration
-remain open. This document plans a new
+in review as of 12 October. Qualified nominal teacher references and a connected
+reset-trial pilot are now implemented; independent learner-drift forecasting
+rejects every intervention. A first native two-source monitoring circuit starts
+Stage 4 in parallel. Delivered motor assistance, complete electronics/firmware
+and populated CAD remain open. This document plans a new
 design; it does not claim that the full system has been implemented.
 
 ## The intended deliverable

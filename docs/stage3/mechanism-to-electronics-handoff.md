@@ -1,6 +1,6 @@
 # Mechanism requirements for the detailed electronics design
 
-9 October 2026. This is the handoff from reduced Stage 3 mechanisms to the
+12 October 2026. This is the handoff from reduced Stage 3 mechanisms to the
 upcoming native electronics/firmware work. It is not a completed KiCad design,
 selected monitor revision or implant qualification.
 
@@ -40,3 +40,47 @@ this handoff.
 Keep interfaces, units, profile IDs and evidence qualifications machine readable.
 Revise channel, monitoring, power or package budgets openly when mechanism work
 requires it. A polished enclosure or PCB must not hide an unresolved causal link.
+
+## New precision and timing input, 9 October 2026
+
+The [observed-map requirements](delivery-requirements.md) add four fresh
+calibrations and 24 precision thresholds. A prospective 4%-of-nominal charge
+uncertainty is a circuit investigation target for selected single-route
+corrections with an illustrative 8 mm forecast allocation. It is not an already
+qualified monitor or predictor. At a 15 mm forecast input the corresponding
+single-route target tightens below 0.5%; simultaneous full two-source correction
+fails even with a perfect monitor because response uncertainty remains.
+
+The [new predictor](assisted-prediction.md) admits selected finite predetermined
+recordings but rejects changed response/faster/dense contexts. Dynamic
+execution-time response and policy qualification are separate requirements in
+the [coupling specification](dynamic-coupling-specification.md). Native firmware
+must carry live dose intervals, physical support/availability, tested domain IDs
+and cancellation state, rather than accepting a saved context name as authority.
+
+New neural captures use [actual electrode apertures](source-sensitivity.md).
+The digital bound does not establish analog AFE settling. Dense stimulation still
+requires explicitly labeled external fallback in the tested configuration.
+
+## Connected pilot and native monitoring input, 12 October 2026
+
+The [reset-trial pilot](isolated-pilot.md) combines independent expert-reference
+error, a zero-future baseline, finite-frame response intervals and timed delayed
+residual cancellation. Its conservative learner-drift forecast gate fails before
+any pulse is admitted. Improved charge precision alone cannot repair that
+forecast. The fixed 15 mm baseline and 25 mm complete-correction allocations
+remain unchanged.
+
+Runtime firmware must retain tested support ranges and exact past-action
+prefixes in addition to model/context IDs. Intersections must preserve holes in
+validated coverage. Cached permission cannot replace a fresh guard check before
+each launch; total measurement loss must expire pending forecasts.
+
+The [Stage 4 entry plan](../stage4/entry-plan.md) starts a separate native
+two-source Kelvin-shunt, signed-integrator and endpoint-monitoring circuit. Each
+cathodic/anodic phase, net charge and recovery tail requires an observed window;
+the final bipolar integral alone would conceal opposing phase errors. An
+independent fault latch must also inhibit output. Its component power and input
+bias may revise the Stage 2 allocation. Schematic/ERC correctness does not earn
+the proposed 4% dose interval: continuous waveform, settling, window boundaries,
+leakage and interrupted-charge errors still need quantified circuit evidence.

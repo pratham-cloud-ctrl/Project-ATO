@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-09",
-  "scope": "Stage3 model reproduction environment",
+  "date": "2026-10-12",
+  "scope": "Stage3 saved-model audit and local reproduction environment; underlying studies retain their own dates",
   "python": "3.12.14",
   "platform": "Windows",
   "packages": {

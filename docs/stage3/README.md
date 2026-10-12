@@ -1,6 +1,6 @@
 # Stage 3: computational mechanism studies
 
-**In progress, updated 9 October 2026.** This implementation connects synthetic
+**In progress, updated 12 October 2026.** This implementation connects synthetic
 spinal contact observations, causal interpretation, learner calibration, expert
 representations, pulse delivery and modeled task response. Both motor learning
 and selected physiological feedback remain central to Project ATO.
@@ -13,6 +13,17 @@ complete electronics and populated engineering CAD follow the mechanism work.
 | Read or reproduce | Purpose |
 |---|---|
 | [Continuation review and next work](continuation-review.md) | Verified numerical/input/response/teacher checks, integrated findings and remaining design tasks |
+| [Evidence-to-design revision](evidence-to-design-revision.md) | Original paper and primary experiments mapped to specific engineering tests |
+| [Competence-gated teacher library](teacher-library.md) / [aperture-resolved teacher revision](resolved-teacher.md) | Separate measured competence, decoder and reference gates; unsupported cadences remain unavailable |
+| [Intervention-aware prediction](assisted-prediction.md) | 31 causal horizons, complete withheld intervention recordings and finite-context admission limits |
+| [Moving-source sensitivity](source-sensitivity.md) | 75 captures, actual sample apertures, source-hold failures and an ambiguous-contact witness |
+| [Delivery requirements](delivery-requirements.md) | Observed-map precision tradeoff; prospective monitor requirements remain unimplemented |
+| [Finite-frame dynamic response](dynamic-response.md) | Actual pulse delivery, measured kernels, two integration grids and separately admitted isolated response domains |
+| [Zero-future-command baseline](sparse-baseline.md) | Observed past-response strip/re-add; full uncertainty and explicit unsupported-tail rejection |
+| [Coupled-pilot specification](dynamic-coupling-specification.md) | Candidate response added once, complete correction gate and timed residual cancellation |
+| [Completed isolated pilot](isolated-pilot.md) | Independent learner drift rejects admission; 128 zero-launch practice trials and 64 pulse-free OFF assessments |
+| [First Stage 4 monitoring slice](../stage4/entry-plan.md) | Native two-source phase-charge investigation and explicit power/leakage constraints; full electronics remain pending |
+| [Illustrated mechanism revision report](../../output/pdf/ATO_stage3_mechanism_revision.pdf) | Eight-page technical report covering the selected teacher/source/prediction/precision and dynamic-response revisions |
 | [Mathematical specification](mathematical-specification.md) | Causal information partitions, units, electrical equations and observation bounds |
 | [Motor mechanism](motor-model.md) | Contact acquisition, expert/learner comparisons, active practice, OFF retention and transfer |
 | [Pressure mechanism](pressure-model.md) | External SBP, identified pressor authority, support timing, faults and overshoot |
@@ -71,6 +82,15 @@ python scripts/stage3_information_comparison.py --check --jobs 2
 python scripts/stage3_response_validation.py --check results/stage3/response-validation/response-domain-raw.json.gz --summary-check results/stage3/response-validation/response-domain-summary.json --jobs 2
 python scripts/stage3_cue_policy_study.py --check results/stage3/cue-policy/raw.json.gz
 python scripts/stage3_expert_validation.py --check
+python scripts/stage3_teacher_library_study.py --check
+python scripts/stage3_resolved_teacher_study.py --check
+python scripts/stage3_assisted_prediction_study.py --check results/stage3/assisted-prediction/raw.json.gz
+python scripts/stage3_source_sensitivity.py --jobs 2 --check results/stage3/source-sensitivity/raw.json.gz --summary-check results/stage3/source-sensitivity/summary.json
+python scripts/stage3_delivery_requirements.py --check
+python scripts/stage3_dynamic_response_study.py --check
+python scripts/stage3_sparse_baseline_study.py --check results/stage3/sparse-baseline/raw.json.gz
+python scripts/stage3_isolated_pilot_study.py --check results/stage3/isolated-pilot/raw.json.gz
+python scripts/verify_stage3_revision.py
 ```
 
 These commands can take substantial time; the receipt verifiers check saved
@@ -103,7 +123,11 @@ results must not be relabeled as integrated electrical validation.
 The original and fair-comparison teacher generators are **not task-competence
 qualified**: the independent audit finds failed timing despite their "expert"
 resource labels. The [separate competence benchmark](expert-validation.md) does
-not retroactively replace those learning studies. Historical coarse motor
+not retroactively replace those learning studies. The new
+[aperture-resolved library](resolved-teacher.md) admits the nominal inverse-model
+references after independent measured checks; its faster references remain
+unavailable. This does not retroactively change older retained-learning results.
+Historical coarse motor
 statistics also require the numerical caveat in the continuation review.
 
 The pressure branch uses external measurements because dense stimulation does not

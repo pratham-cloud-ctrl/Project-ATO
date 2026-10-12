@@ -5,6 +5,10 @@ on:
   pull_request:
   workflow_dispatch:
 
+env:
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+
 jobs:
   audit:
     runs-on: ubuntu-latest
@@ -23,6 +27,8 @@ jobs:
       - run: python scripts/verify_stage2_architecture.py
       - run: python scripts/verify_stage3_foundation.py
       - run: python scripts/verify_stage3_continuation.py
+      - run: python scripts/verify_stage3_revision.py
+      - run: python electronics/stage4/monitoring-cell/verify_monitoring_cell.py
       - run: python scripts/run_studies.py
       - run: python scripts/build_firmware.py
       - run: python scripts/run_adapter.py
@@ -59,6 +65,21 @@ jobs:
               python scripts/stage3_acquisition_qualification.py --check results/stage3/numerical/acquisition-qualification.json.gz
               python scripts/stage3_cue_policy_study.py --check results/stage3/cue-policy/raw.json.gz
               python scripts/stage3_expert_validation.py --check
+          - study: teacher-revision
+            commands: |
+              python scripts/stage3_teacher_library_study.py --check
+              python scripts/stage3_resolved_teacher_study.py --check
+              python scripts/stage3_delivery_requirements.py --check
+          - study: source-revision
+            commands: python scripts/stage3_source_sensitivity.py --check results/stage3/source-sensitivity/raw.json.gz --summary-check results/stage3/source-sensitivity/summary.json
+          - study: prediction-revision
+            commands: python scripts/stage3_assisted_prediction_study.py --check results/stage3/assisted-prediction/raw.json.gz
+          - study: dynamic-response-revision
+            commands: |
+              python scripts/stage3_dynamic_response_study.py --check
+              python scripts/stage3_sparse_baseline_study.py --check results/stage3/sparse-baseline/raw.json.gz
+          - study: isolated-pilot
+            commands: python scripts/stage3_isolated_pilot_study.py --check results/stage3/isolated-pilot/raw.json.gz
     steps:
       - uses: actions/checkout@v4
         with:

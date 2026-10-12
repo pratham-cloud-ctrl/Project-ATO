@@ -36,7 +36,7 @@ if __name__ == '__main__':
     elapsed = time.perf_counter()-start
     if before_models != hashes((ROOT/'src/ato').rglob('*.py')) or before_tests != hashes((ROOT/'tests').glob('test_*.py')):
         raise RuntimeError('Sources changed during verification; no test receipt written')
-    receipt = {'schema': 'ato.stage3.unit-test-run.v2', 'date': '2026-10-09',
+    receipt = {'schema': 'ato.stage3.unit-test-run.v2', 'date': '2026-10-12',
                'scope': 'Full project unit suite, including earlier subsystem and architecture checks; no human or physical-device qualification.',
                'command': 'python scripts/record_stage3_tests.py',
                'observed_result': {'tests_run': result.testsRun, 'failures': len(result.failures),

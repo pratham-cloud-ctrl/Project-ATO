@@ -1,6 +1,6 @@
 {
   "schema": "ato.stage3.foundation-verification.v1",
-  "date": "2026-10-09",
+  "date": "2026-10-12",
   "scope": "artifact and model-boundary audit; Stage3 partial; no biological or implant qualification",
   "checks": [
     "Seven event-aligned electrical witnesses; observed charge is distinct, failed pulses retain dose; four actual local ngspice comparisons pass",
@@ -9,7 +9,7 @@
     "156 pressure runs cover thirteen families, paired equal calibration, observable support timing, whole frames and explicitly privileged oracle diagnostics",
     "Eight finite hold/ramp cases supplement stop; nadir, support loss and overshoot remain measured model outcomes",
     "Six separately scoped pressure refinement probes retain identical actual noise, fixed observation schedules and chosen surrogate delivery; no general convergence pass",
-    "111 local dossier links resolve; progress IDs match Stage1; three SVG/PNG figure pairs exist; Stage3 remains explicitly in progress"
+    "172 local dossier links resolve; progress IDs match Stage1; three SVG/PNG figure pairs exist; Stage3 remains explicitly in progress"
   ],
   "counts": {
     "electrical_cases": 7,
@@ -21,26 +21,33 @@
   },
   "observed_motor_practice_pulses": {
     "fast_response_sensitivity": 0,
-    "conditional_fast_response_assumed_delivery": 19886,
-    "nominal": 0
+    "nominal": 0,
+    "conditional_fast_response_assumed_delivery": 19886
   },
   "input_normalized_hashes": {
     "src/ato/stage3/__init__.py": "52e87fb1296e8c7d664bf054b023446baebcdfaad4152776ce26e2a83962c4ec",
     "src/ato/stage3/acquisition.py": "bd681adefc5e82c58b449490ad14917fff307be9947de647e92aeb6c38b22f03",
+    "src/ato/stage3/assisted_prediction.py": "21d6292e22eda70707d58903c44e737284d7a7e8fe398c529eaccacaa40da67b",
     "src/ato/stage3/cue_policy.py": "86c55451d04ea26a9ba6d14bfdb2689faf61bba9432623e190d159f9bbfe5395",
+    "src/ato/stage3/dynamic_response.py": "87c8eac8675b3ef538d7504676f6dbdef5fa6c4d478d57b15bf781e5e1bda8e9",
     "src/ato/stage3/electrical.py": "8a7a20702be3f3f5893e1f859f675347fa35db01dadb20ab7e64635ca8913ff0",
     "src/ato/stage3/expert_validation.py": "1029d235fa17820210b7830f133bd1b3a912f5268008d7ebb42ff65b5dc0c733",
     "src/ato/stage3/external_history.py": "2ec8bb81bd96066fe8f80696a0351d4407b68baabd6526e6211922abb8a4f97d",
     "src/ato/stage3/filter_residual.py": "0404915b1f891ef8e1da8fbc7549888110b90a0100877f361154ce39154dca47",
+    "src/ato/stage3/isolated_pilot.py": "9625056c268b77aa5db99f0ff3a7d363e11f7041e2dcdb7a36b303b8721889ad",
     "src/ato/stage3/motor.py": "d86b4d091baf226475ce9f6d6e2390b65bb63752e5f50e73d42c5c3408b2323c",
     "src/ato/stage3/pressure.py": "c4d4e980b7d3e45d778bb44beedfded34f9d53fdf3a81bcadd2eb342e681e0c0",
+    "src/ato/stage3/residual_guard.py": "7ec30fc33dfeb8c58a852777e56f369155f57eec2fd3a2840c0da29d3078ec7c",
     "src/ato/stage3/response_validation.py": "7a814113b2ebc27e55cf96ae5288eceffae39d4cbfb1fd9defaeb0b82fd780a1",
+    "src/ato/stage3/source_sensitivity.py": "fedaeb9d7edadb53b7e23ac88af2eca6abacb7e231800fd6c6e3fbf1a889b477",
+    "src/ato/stage3/sparse_baseline.py": "d940ec6a76d4fd1c6fbff8328dc9ae6fe2bafbeeb090181fdb8b73224d472058",
+    "src/ato/stage3/teacher_library.py": "87364e3321d64be8f672bfa414d05ef0e904de8cdfd08745323d184324bd4503",
     "scripts/run_stage3_studies.py": "d883c875991113ea19d597a1dd4dd0194df40b7c4fa3b30fa1eaaeff4e24d23f",
     "scripts/build_stage3_figures.py": "2d0a0a13c44b34f248fbf1c3d1041c4afdb60bb685f449ea6f3a39aa246cb90e",
     "scripts/stage3_ngspice_check.py": "ae6d57b5c506886e59fb472feaaeca6753084e7de9669b497c9be4b7de2970f3",
     "requirements-lock.txt": "adae70fd5194e076ca4caab4b831dfc143b1b37f55ee454b0df041b84148a48d",
     "scripts/stage3_electrical_sweep.py": "c6f0127e7dd99f94378baddb6b8f7f90a1ff50fb0d91d7db0d005bbee720b7ed",
-    "scripts/verify_stage3_foundation.py": "3b38ea7f6fc5d1b004865d31d7474a3d20c78547880cae2790fa33029bc81e3a",
+    "scripts/verify_stage3_foundation.py": "ee5d8ae062f9bcb3a35eb717faee9f7722a8606b3e6ecb3662a225171a448cb7",
     "scripts/stage3_pressure_convergence_probe.py": "25dc9ea517bca5301b51a674ec1d058a0fd0b87b0ba26ff913578e82b79da112",
     "docs/stage2/system-design.json": "75e90fc7bc337422429d02944c8a44ea22399f5a1842f1239ae433f44bf5b679",
     "docs/stage2/control-contracts.json": "85a7861458a8d49d469cfe331af802bed6b78ed1557122413db6d5b2383a6a3e"

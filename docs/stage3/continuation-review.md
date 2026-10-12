@@ -1,7 +1,7 @@
 # Stage 3 continuation: verified mechanisms and remaining design work
 
-Integration review: **9 October 2026**. The underlying studies were developed on
-8 October and remain individually dated. Stage 3 is **in progress**.
+Integration review: **12 October 2026**. The underlying studies were developed on
+8–12 October and remain individually dated. Stage 3 is **in progress**.
 
 Project ATO gives the proposed invasive spinal interface a complete digital
 engineering embodiment: recording contacts, acquisition, interpretation,
@@ -55,6 +55,37 @@ contexts have zero empirical coverage. Both accepted and rejected samples remain
 in the receipt. No universal response-map transfer is inferred.
 
 ## Next owned work package
+
+**12 October continuation:** the [dynamic response](dynamic-response.md),
+[zero-future baseline](sparse-baseline.md) and [connected pilot](isolated-pilot.md)
+now have separate complete evidence records. The pilot uses independently
+measured teacher-reference allocations and sixteen independent learner-drift
+captures. All aggregate forecast horizons fail the unchanged 15 mm allocation;
+all 128 practice trials abstain and all 64 OFF assessments show no assisted-arm
+advantage. This resolves the first pilot as a negative admission experiment. It
+does not exercise delivered assistance in the saved full study. Focused tests
+separately exercise actual-charge body coupling and fault cancellation.
+
+Review also closed an API scope gap: validated physical support and exact past
+pulse patterns must match at runtime. The added restrictions preserve every
+pre-existing numerical and decision value. The full local suite passed 217
+tests. The next mechanism revision needs a drift-tolerant forecaster trained and
+validated from permitted observations, followed by the same matched/OFF protocol.
+The [native monitoring investigation](../stage4/entry-plan.md) can proceed in
+parallel because the dose-precision requirement is already concrete.
+
+**9 October revision:** the [teacher library](teacher-library.md),
+[fresh aperture-resolved teacher captures](resolved-teacher.md),
+[intervention-aware observer](assisted-prediction.md),
+[75-capture source sensitivity](source-sensitivity.md) and
+[observed-map precision requirements](delivery-requirements.md) now address the
+first three items below. The earlier table/results above describe their preserved
+input studies. Nominal teacher admission and selected predetermined forecast
+passes do not yet qualify a feedback-dependent motor controller. The remaining
+integration at that checkpoint was dynamic response/policy qualification and new
+equal-practice/OFF studies; the 12 October paragraph records their current scope.
+The [paper-to-design review](evidence-to-design-revision.md) explains how
+the original experimental precedents motivate these tests.
 
 1. **Teacher/library revision:** admit references using measured task competence;
    qualify their frozen decoders on independent performances/cadence, preserve

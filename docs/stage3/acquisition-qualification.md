@@ -82,7 +82,9 @@ enter its API.
 
 The saved diagnostic compares a declared analytic 1 Hz source at those apertures
 against its block-start hold. It is an independent source-approximation witness,
-not yet a full moving-body aperture convergence study. A full integration must
+not itself a full moving-body aperture convergence study. The later
+[moving-source revision](source-sensitivity.md) supplies a separate 75-capture
+comparison and rejects the held-source approximation in selected cases. A full integration must
 advance the body chronologically through apertures before deciding on the next
 command.
 

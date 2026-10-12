@@ -1,5 +1,35 @@
 # Contributions and provenance
 
+## Stage 3 mechanism revision, 9 October 2026
+
+AI-assisted work added competence-gated teacher libraries, fresh actual-aperture
+teacher recordings, a 75-capture moving-source/ambiguity study, intervention-aware
+causal forecasts and observed-map precision requirements. Independent code review
+identified and corrected a live dose-uncertainty gate and unfair coupling of the
+external teacher comparator to neural availability. The source paper and selected
+primary experiments were reread to connect their evidence to specific tests.
+New scientific figures derive from the saved results. A delayed-residual latch
+is a tested software component; dynamic feedback and revised retained-learning
+benefit are not thereby established. Older result identities remain preserved.
+
+The measured transient-response experiment and zero-future-command baseline add
+separate two-grid records with actual electrical pulses, complete heldout
+trajectories and explicit unsupported-tail rejection. Review also corrected
+partial observation-noise reuse and a total-sensor-loss expiry gap. Root authored
+an eight-page illustrated revision report and inspected every rendered page.
+The bounded body-coupled pilot completed on 12 October in separate files. Review
+replaced a training-fit teacher error with independent complete-recording
+allocations and restricted runtime baseline permission to tested support/past
+action domains. Sixteen independent learner-drift checks reject every aggregate
+horizon. The saved 128 practice trials launch no stimulation, and 64 OFF
+assessments show no assisted advantage. The full local suite passed 217 tests.
+Sources, negative results and independent reproduction receipts are retained.
+
+A separate AI-assisted Stage 4 investigation starts an editable two-source
+phase-charge monitoring circuit, component comparison and requirements trace.
+Its power/bias/precision limitations remain explicit. Full native implant
+electronics, embedded integration and populated engineering CAD remain later work.
+
 Project owner and research direction: **Pratham Varma**.
 
 Pratham defined the SCCI focus, the motor-learning and sustained physiological

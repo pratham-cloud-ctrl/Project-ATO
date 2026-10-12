@@ -217,7 +217,7 @@ def verify():
     source_files += sorted((ROOT/'scripts').glob('stage3_*.py'))
     source_files += [Path(__file__), ROOT/'scripts/build_stage3_continuation_figures.py', ROOT/'scripts/record_stage3_tests.py']
     result_files = sorted(p for p in DATA.rglob('*') if p.is_file())
-    return {'schema': 'ato.stage3.continuation-verification.v1', 'date': '2026-10-09',
+    return {'schema': 'ato.stage3.continuation-verification.v1', 'date': '2026-10-12',
             'scope': 'Saved model evidence and artifact audit; no biological, implant, complete circuit or populated CAD qualification.',
             'checks': checks, 'counts': counts,
             'input_normalized_hashes': {p.relative_to(ROOT).as_posix(): normalized_sha(p) for p in source_files},
