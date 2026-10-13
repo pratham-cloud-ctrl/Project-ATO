@@ -42,6 +42,11 @@ jobs:
       - run: python electronics/stage4/routing-study/route_contract.py --check
       - run: python electronics/stage4/routing-study/verify_parasitics.py
       - run: python electronics/stage4/routing-study/parasitic_study.py
+      - run: python electronics/stage4/supervision/verify_supervision.py
+      - run: python electronics/stage4/supervision-study/control_study.py --check
+      - run: python electronics/stage4/supervision-study/analog_study.py
+      - run: python electronics/stage4/supervision-study/verify_analog.py
+      - run: python electronics/stage4/supervision-study/verify_integration.py
       - run: python scripts/run_studies.py
       - run: python scripts/build_firmware.py
       - run: python scripts/run_adapter.py

@@ -304,3 +304,28 @@ power-off isolation and independent supervision remain explicit. Historical
 packages and synced sources are preserved. The five remaining Stage 4 packages
 fix the next engineering scope; biological efficacy is not an extra exit gate
 for the digital concept.
+
+## Independent shutdown and supervision - 14 October 2026
+
+AI native implementation produced 478 components across 22 editable sheets,
+18 body-facing guarded terminals, independent source timers, watchdog/first-edge
+interlock, rail/current/differential-voltage windows and 17 RHD-side pin observers.
+Primary-source review corrected the TPS3431 exposed-pad geometry, ISO6742 pin
+map, full-temperature offsets and threshold-buffer supply/common-mode condition.
+The native author inspected every final sheet and checked saved state through
+KiCad MCP/ERC; root inspected selected pages and all scientific figures.
+
+A separate AI control workstream caught and corrected a circular monitor/ARM
+startup dependency, independently checked actual exported gate/pin connections
+and retained plausible reference, welded-switch, timing-coincidence and power
+fault witnesses. Root implemented finite threshold/loading/RC/interruption
+models, separate KCL/energy/trajectory audits and a checked 102-wire integration
+plan. The old 100 microsecond phase gap is unearned; the provisional 200 microsecond
+allocation still requires actual quiet qualification. Artificial-load residual
+energy and the energized welded-guard observation are preserved.
+
+These are AI-assisted computational and native-file checks, without physical,
+human/animal, institutional or clinical validation. Historical circuit/study
+packages and synced project sources remain unchanged. This completes the bounded
+independent shutdown/supervision package; power/budgets, transport, target
+firmware, consolidated PCB, populated CAD and final publication remain.

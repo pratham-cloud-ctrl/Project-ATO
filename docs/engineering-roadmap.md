@@ -138,8 +138,12 @@ retain weak-signal/fault failures and revise SPI timing/power explicitly.
 The [native contact router](../electronics/stage4/contact-router/README.md) now
 adds six sheets with held addresses, two sixteen-way selectors, fixed returns,
 collision inhibit and a fresh acknowledgement/rearm path. The
-[bounded remaining Stage 4 packages](stage4/remaining-work.md) begin with shutdown supervision,
-power/reference/telemetry and the target firmware backend. Reconcile actual
+[native shutdown/supervision package](../electronics/stage4/supervision/README.md)
+adds 18 terminal guards, separate phase timers/watchdog, measured windows and
+explicit rearm across 22 sheets. Its finite fault/analog audits and checked
+inter-package wiring close that bounded digital slice. The four
+[remaining Stage 4 packages](stage4/remaining-work.md) begin with power/budgets,
+then monitoring transport, target firmware and the integrated populated PCB. Reconcile actual
 component power, timing, buses and memory before a complete PCB.
 
 Stage 5 uses the resulting board and component identities to build the native

@@ -263,6 +263,10 @@ and power changes explicitly revise the historical Stage 2 proposal; weak-signal
 and recovery allocations remain unearned. The [native contact router](contact-router-design.md)
 now adds held addresses, two sixteen-way selectors, fixed monitored returns and
 collision/fresh-acknowledgement admission. Its analogue and readback limitations
-remain explicit. Next integrate actual delivery/guard/recording/routing paths and implement
-qualified external supervision and power/target interfaces. Preserve old studies
+remain explicit. The [native supervision package](supervision-design.md) now
+adds 18 downstream terminal guards, separate phase timers/watchdog, rail/current/
+pair-voltage/RHD-pin windows and sticky admission across 22 sheets. Its 102-wire
+integration plan and finite audits close the independent shutdown slice under
+declared assumptions. Next implement power/budgets, monitoring transport and
+target interfaces before consolidating the PCB. Preserve old studies
 and assign new source, calibration, profile and uncertainty IDs to each revision.
