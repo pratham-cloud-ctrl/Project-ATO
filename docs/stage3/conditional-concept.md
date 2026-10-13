@@ -77,6 +77,16 @@ excitation/inhibition. Independent movement sensing and charge monitoring close
 different parts of the feedback loop. An expert voltage waveform is never
 replayed as a skill.
 
+In a theoretical user session, a learner selects a bounded drill and an expert
+reference in the companion application. Individual calibration identifies the
+learner's usable signals and reachable corrections. During active attempts,
+the implant estimates timing and applies limited, learner-specific assistance;
+independent measurements update the session record. Later OFF probes show
+whether the learner acquired anything beyond temporary help. Piano fingering or
+football coordination would need their own task representation, anatomical lead
+configuration and outcome measures; the cyclic surrogate is one explanatory
+component of that broader vision.
+
 The principal assumptions are: useful causally available spinal state features;
 a transferable task representation; useful selective learner-specific actuation;
 and a favorable adaptation response during practice. Animal recording,

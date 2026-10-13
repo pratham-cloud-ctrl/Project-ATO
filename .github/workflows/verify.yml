@@ -28,7 +28,7 @@ jobs:
       - run: python scripts/verify_stage3_foundation.py
       - run: python scripts/verify_stage3_continuation.py
       - run: python scripts/verify_stage3_revision.py
-      - run: python scripts/audit_frozen_observer_pilot.py
+      - run: python scripts/verify_frozen_pilot_portable.py --audit-only
       - run: python experiments/stage3/conditional-concept/study.py --check
       - run: python electronics/stage4/monitoring-cell/verify_monitoring_cell.py
       - run: python electronics/stage4/monitoring-study/verify_study.py
@@ -86,7 +86,7 @@ jobs:
           - study: observed-state-observer
             commands: python experiments/stage3/observed-state-observer/verify_study.py --reproduce
           - study: frozen-observer-pilot
-            commands: python experiments/stage3/frozen-observer-pilot/verify_study.py --reproduce
+            commands: python scripts/verify_frozen_pilot_portable.py --reproduce
     steps:
       - uses: actions/checkout@v4
         with:

@@ -9,7 +9,7 @@
     "156 pressure runs cover thirteen families, paired equal calibration, observable support timing, whole frames and explicitly privileged oracle diagnostics",
     "Eight finite hold/ramp cases supplement stop; nadir, support loss and overshoot remain measured model outcomes",
     "Six separately scoped pressure refinement probes retain identical actual noise, fixed observation schedules and chosen surrogate delivery; no general convergence pass",
-    "231 local dossier links resolve; progress IDs match Stage1; three SVG/PNG figure pairs exist; current stage status and separate closeout ledger are explicit"
+    "232 local dossier links resolve; progress IDs match Stage1; three SVG/PNG figure pairs exist; current stage status and separate closeout ledger are explicit"
   ],
   "counts": {
     "electrical_cases": 7,
@@ -20,9 +20,9 @@
     "bounded_pressure_refinement_probes": 6
   },
   "observed_motor_practice_pulses": {
-    "fast_response_sensitivity": 0,
     "conditional_fast_response_assumed_delivery": 19886,
-    "nominal": 0
+    "nominal": 0,
+    "fast_response_sensitivity": 0
   },
   "input_normalized_hashes": {
     "src/ato/stage3/__init__.py": "52e87fb1296e8c7d664bf054b023446baebcdfaad4152776ce26e2a83962c4ec",

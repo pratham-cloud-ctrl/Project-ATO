@@ -17,6 +17,7 @@ complete electronics and populated engineering CAD follow the mechanism work.
 |---|---|
 | [Conditional concept v1](conditional-concept.md) / [15-entry premise ledger](conditional-concept/assumption-ledger.csv) / [design handoff](conditional-concept/engineering-handoff.md) | Evidence-grounded future architecture, explicit undemonstrated assumptions and finite completion boundary |
 | [New conditional scenario study](../../experiments/stage3/conditional-concept/README.md) | 128 scenarios; causal synthetic spinal features and assistance; favorable/equal/adverse OFF learning; old frozen studies unchanged |
+| [Portable historical pilot verifier](../../scripts/verify_frozen_pilot_portable.py) | Restores only hash-verified original CRLF inherited contexts in scratch; frozen study/auditor and repository originals stay unchanged |
 | [Exit review](exit-review.md) / [integrated verdict](stage3-verdict.md) / [illustrated closeout report](../../output/pdf/ATO_stage3_closeout.pdf) | Finite digital investigation completed; active assistance and retained benefit remain unavailable under present evidence |
 | [Final frozen-observer replay](../../experiments/stage3/frozen-observer-pilot/README.md) | 32 practice/64 OFF sessions; zero launches; sealed predictions and guards verified; no active delivery path implemented |
 | [Continuation review and next work](continuation-review.md) | Verified numerical/input/response/teacher checks, integrated findings and remaining design tasks |
@@ -106,8 +107,8 @@ python scripts/stage3_dynamic_response_study.py --check
 python scripts/stage3_sparse_baseline_study.py --check results/stage3/sparse-baseline/raw.json.gz
 python scripts/stage3_isolated_pilot_study.py --check results/stage3/isolated-pilot/raw.json.gz
 python experiments/stage3/observed-state-observer/verify_study.py --reproduce
-python experiments/stage3/frozen-observer-pilot/verify_study.py --reproduce
-python scripts/audit_frozen_observer_pilot.py
+python scripts/verify_frozen_pilot_portable.py --reproduce
+python scripts/verify_frozen_pilot_portable.py --audit-only
 python scripts/verify_stage3_revision.py
 ```
 
