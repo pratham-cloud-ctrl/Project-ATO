@@ -256,7 +256,11 @@ application-core example. Full ATO target firmware remains pending.
 Work in order: **native monitor slice → independent transient/error budget →
 driver/routing and separate supervisory circuits → AFE/power/target firmware →
 whole-system budget revision → populated PCB/CAD**. The monitor and restricted
-driver now have native sources and finite initial studies. Next integrate their
-actual delivery/guard paths and implement the protected recording front end,
+driver now have native sources and finite initial studies. The
+[protected recording front end](recording-front-end-design.md) now adds seven
+native sheets, isolated SPI/control and finite input/protocol studies. Timing
+and power changes explicitly revise the historical Stage 2 proposal; weak-signal
+and recovery allocations remain unearned. Next integrate actual delivery/guard/
+recording paths and implement
 qualified external supervision and power/target interfaces. Preserve old studies
 and assign new source, calibration, profile and uncertainty IDs to each revision.

@@ -23,7 +23,7 @@ assumed. Video and website work are parked. No deadline is imposed.
 | 1: mechanism/specification | Complete within specification scope | Both causal chains, requirements/assumptions/capability map, primary-source audit, interfaces, three editable diagrams and illustrated nine-page brief |
 | 2: quantitative architecture | Complete within architecture scope | 16-stream/two-source design, timing/noise/compute/memory/power budgets, rejected cases, control contracts, eight-page brief and preliminary native allocation CAD; [exit review](docs/stage2/exit-review.md) |
 | 3: computational mechanisms | **Conservative investigation closed; conditional concept v1 complete** | Historical qualification results preserved. New evidence/premise/mechanism package and 128 illustrative scenarios connect an assumed spinal interface to assistance and conditional OFF learning; biological efficacy remains unestablished |
-| 4: detailed electronics/firmware | **Native monitoring and restricted driver packages complete within their scopes; wider stage in progress** | Monitor: 70 components/245 pins/three sheets. Driver: 156 components/572 pins/five sheets. Both zero ERC violations. Separate monitoring/driver studies and ideal permission histories retained; integrated acquisition, contact routing, complete supervision, power/telemetry, PCB and target firmware remain pending |
+| 4: detailed electronics/firmware | **Three native circuit packages complete within their scopes; wider stage in progress** | Monitor: 70 components/245 pins/three sheets. Driver: 156 components/572 pins/five sheets. Recording: 151 components/594 pins/seven sheets. All zero ERC violations. Finite studies retain failed cases. Integrated routing, supervision, power/telemetry, PCB and target firmware remain pending |
 | 5: populated engineering CAD | Pending | Actual boards/components/package/lead interfaces, native parametric assemblies, dimensions, STEP/STL and nominal fit checks |
 | 6: integrated paper/repository release | Pending | Complete digital path verification, final illustrated manuscript, native sources, reproducible release, evidence and learning/defence material |
 
@@ -184,7 +184,19 @@ reset/gate paths and per-source duration/sticky-admission logic. Its
 18 completed and two partial out-of-compliance transients, plus 15 finite
 digital histories. Load current, signed return current and unsigned servo
 feedback differ under bias/capacitance/faults; the 4% delivery target remains
-unearned. The two native packages are not yet one integrated PCB or implant.
+unearned. The native packages are not yet one integrated PCB or implant.
+
+The [native recording front end](electronics/stage4/recording-front-end/README.md)
+now implements sixteen differential streams, shared reference, separate bias,
+protected switch paths, grounding selection and isolated SPI/control. Its
+[design review](docs/stage4/recording-front-end-design.md) records seven sheets,
+151 components, 594 checked pins and zero ERC violations. The
+[input/protocol package](electronics/stage4/recording-study/README.md) preserves
+eight quiet rows, nine finite transients, 175 independent scalar/KCL checks and
+17 timing/control scenario groups. Two transient envelope failures remain;
+the coherently bounded nominal 10 microvolt SNR misses its allocation. Isolated
+SPI selects 4 MHz and correct next-CS aperture timestamps. Actual voltage/recovery
+qualification, power and firmware remain unclosed.
 
 The [conditional concept v1](docs/stage3/conditional-concept.md) now supplies the
 current future-interface design baseline. It includes 14 primary research
@@ -210,7 +222,7 @@ from the [conditional design handoff](docs/stage3/conditional-concept/engineerin
 and [conservative-study handoff](docs/stage3/mechanism-to-electronics-handoff.md).
 Measure each phase and recovery tail, bound integration/endpoint errors and
 reconcile component power and input-bias leakage before granting improved dose
-precision. Then extend acquisition, output/routing, supervision, power and
+precision. Then integrate output/routing, supervision, isolated power and
 target firmware; populate CAD from the actual circuit. The existing
 [tool audit](docs/stage3/toolchain-selection.md) verifies the installed free
 KiCad/ngspice/FreeCAD/build123d/Blender stack; no new paid software is needed.

@@ -130,8 +130,12 @@ Their 4% phase-charge target remains unearned. A
 [156-component native implementation](../electronics/stage4/current-driver/README.md)
 with five reviewed sheets and a [bounded circuit/permission study](../electronics/stage4/driver-study/README.md).
 This is a restricted 24 V/3 mA/200 µs slice, with external supervision, actual
-delivery-path limits and two retained out-of-compliance partial traces. Next
-come full contact routing and qualified shutdown supervision, acquisition/protection,
+delivery-path limits and two retained out-of-compliance partial traces. Now
+the [native recording slice](../electronics/stage4/recording-front-end/README.md)
+adds sixteen shared-reference differential streams and isolated input switching
+across seven sheets. Its [finite input/protocol studies](../electronics/stage4/recording-study/README.md)
+retain weak-signal/fault failures and revise SPI timing/power explicitly.
+Next come full contact routing and qualified shutdown supervision,
 power/reference/telemetry and the target firmware backend. Reconcile actual
 component power, timing, buses and memory before a complete PCB.
 

@@ -1,0 +1,143 @@
+{
+  "schema": "ato.stage4.recording-front-end.verification.v1",
+  "date": "2026-10-13",
+  "scope": "Saved native connectivity, actual land identity and ideal control defaults only; no analog/physical/biological qualification",
+  "kicad_version": "10.0.6",
+  "components": 151,
+  "pin_contracts_compared": 594,
+  "sheets": 7,
+  "pdf_pages": 7,
+  "erc_violations": 0,
+  "ignored_erc_checks": [],
+  "protected_signal_paths": 17,
+  "functional_recording_ports": 18,
+  "ideal_control_rows": [
+    {
+      "connect": 0,
+      "record": 0,
+      "cs_assert": 0,
+      "acquire": false,
+      "cs_n": true
+    },
+    {
+      "connect": 0,
+      "record": 0,
+      "cs_assert": 1,
+      "acquire": false,
+      "cs_n": false
+    },
+    {
+      "connect": 0,
+      "record": 1,
+      "cs_assert": 0,
+      "acquire": false,
+      "cs_n": true
+    },
+    {
+      "connect": 0,
+      "record": 1,
+      "cs_assert": 1,
+      "acquire": false,
+      "cs_n": false
+    },
+    {
+      "connect": 1,
+      "record": 0,
+      "cs_assert": 0,
+      "acquire": false,
+      "cs_n": true
+    },
+    {
+      "connect": 1,
+      "record": 0,
+      "cs_assert": 1,
+      "acquire": false,
+      "cs_n": false
+    },
+    {
+      "connect": 1,
+      "record": 1,
+      "cs_assert": 0,
+      "acquire": true,
+      "cs_n": true
+    },
+    {
+      "connect": 1,
+      "record": 1,
+      "cs_assert": 1,
+      "acquire": true,
+      "cs_n": false
+    }
+  ],
+  "checks": [
+    "all exported component pin/net/value/footprint assignments",
+    "manufacturer top-view RHD2216 positive/negative/CMOS/power/reference/EP contracts",
+    "all17 series/source-fault/internal-bleed/clamp/RHD paths",
+    "sixteen470pF and one2.2nF RHD-side capacitors",
+    "single shared reference and separate two-resistor bias",
+    "no hardwired host/AFE ground bridge",
+    "ISO6741F directions, domains, enables and default-aware CS inverter",
+    "actual AND gate retains clamp for invalid01 command",
+    "five open-drain fault flags with exactly one1k pullup",
+    "manufacturer custom RHD56/RRP16+EP copper pad dimensions, orientation and reduced paste windows",
+    "BOM, zero ERC, seven PDF/SVG pages and render-image integrity"
+  ],
+  "hash_policy": "SHA256 exactPNG/PDF; other includedtextnormalizesCRLF/CRtoLF; excludesreceipt/localpreferences/Pythoncache",
+  "unqualified": [
+    "actual isolation and voltage qualification",
+    "fault/injection/leakage/parasitic worst-case bounds",
+    "rail generation/sequencing and supply transient behavior",
+    "SPI firmware and timestamp correctness on hardware",
+    "electrode/recorded signal quality or decoding",
+    "blanking/fast-settle/digital filter recovery",
+    "passive exact MPN, voltage/pulse and assembly ratings",
+    "PCB/CAD/implant/medical efficacy"
+  ],
+  "sha256": {
+    "acquisition.kicad_sch": "4c7f1b5f861b18203b4f25326f20446665738239566b589a37c7f7e6cd346b58",
+    "ATO_AFE.kicad_sym": "36a6704622c018b1c317d46bf75fba8252ee89ad28577aa5e5e62088b5409186",
+    "ato_afe.pretty/C_0805_2012Metric.kicad_mod": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+    "ato_afe.pretty/PinHeader_1x04_P2.54mm_Vertical.kicad_mod": "571d2d16b49795f8f9a91f96cc83fd2adf49890cd66c377189c44204ebd03c29",
+    "ato_afe.pretty/PinHeader_1x10_P2.54mm_Vertical.kicad_mod": "d4cb0ccd4489d257fb4c8656c7534f4295ee8a304d6e323a7b8ff77d6155ad23",
+    "ato_afe.pretty/PinHeader_1x18_P2.54mm_Vertical.kicad_mod": "12f1135faabb1f679c1aeb9913583652535237cbcaa96acfe8d6fd634c173847",
+    "ato_afe.pretty/R_0805_2012Metric.kicad_mod": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+    "ato_afe.pretty/RHD2216_QFN56_8x8_P0.5_EP6.1.kicad_mod": "d6260d46d2659e4956a90602b0dce33d666e6de55cb8f5f8dbdc22a20a9e13a3",
+    "ato_afe.pretty/SOIC-16W_7.5x10.3mm_P1.27mm.kicad_mod": "07aa02ced9fcdc61d7c6bb5ea1b86803731041e9e171db91a991c3daa7817383",
+    "ato_afe.pretty/SOT-23-5.kicad_mod": "455a3f7c3e5eb5b8847eaa5df23e18651e78ab9f75afd09a0883758a0d901761",
+    "ato_afe.pretty/Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6.kicad_mod": "1a51771e94077aede2dba01e4f8783f785895d95c805d9bca65839eb439584cd",
+    "ato_afe.pretty/VSSOP-8_2.3x2mm_P0.5mm.kicad_mod": "dca72da69de3263affb64fd1abd218db3cf30ff727c784b3f02c8c588a2875a8",
+    "bank0.kicad_sch": "edc107ada9ca50d708a5fcffbbf998e3daaa5e41d1c29d4b0076c1f1b8a6461b",
+    "bank1.kicad_sch": "88d3b74449e9867f3883c95a6fbf1bcded9139268a759b39e27f38b2f14d0d1a",
+    "bank2.kicad_sch": "40c7e6d5a6b239a0475988d921cff469b6e99462b8f7c1a0a18cd032f583376d",
+    "bank3.kicad_sch": "286a4afbbc965d38f1d4bcfb0b655c665454f3c7d4e2d24d59614ee09d2d8cb7",
+    "bom.csv": "6de2c02a4ab2643c653d43189c0cdac05b9092eda86b029442e7add506308ed5",
+    "build_recording_front_end.py": "ad2d9fcfc41650fe500f5db3c980aaabc47eb35bf5f15da79ebbd177d391cf82",
+    "connectivity.json": "633c3386bf602e2544722abae2742a722775969cc53a3b2f1a26524325ccbf05",
+    "erc.json": "bfc4f0ae78a9da2fc299eec8eedb55a6ab1b4799ef49ce181a26f62c9ec4a9e8",
+    "fp-lib-table": "de2e27a886911359882b4b15fa15b1509293069ef4675f4c21da3da15daf2fd2",
+    "OPEN_IN_KICAD.cmd": "a3511af53fc0e3b7723ddea7a19fdc04506449f8fae869f4662bece5148e2034",
+    "README.md": "d9cc1aff76951c3e9cf803cb619bd86f2ff12842e0ac5a5250f2d7a6030569d2",
+    "recording_front_end.kicad_pro": "fd80f554090d0ede627588b354b28d51b34f720048b31fc1ec62d2f6ad9686fd",
+    "recording_front_end.kicad_sch": "166ce6162c51ef680520bb857d8bc69fb8a4f19b5cffaeb8016fe8988e6718df",
+    "recording_front_end.net": "1d12ebad55ef405287f5d2421830269e7ac32e2bf23a7b9caa5e6e69deef339f",
+    "recording_front_end.pdf": "7202cc4028c7c331c21f928cef30151f4a864394e8c46db501c5191b1659a99e",
+    "recording_front_end.xml": "211ab88f492fc8bb8b1b5fe1f6e027439419915d18c4dd1c8c20f3c322fc386f",
+    "reference.kicad_sch": "e22f372a0367f53b8afb6771b04ef7b45a20b39ee6e266028a0b48c46c43c3f0",
+    "review/page-1.png": "078110a659e9ef14a1c1ce699064bf3fb9eb821508cade6cc47091a833327604",
+    "review/page-2.png": "aee0b97df26cb9d74948bd8a7c0ad5d662fb05577000adc3eb347821474423ad",
+    "review/page-3.png": "1e2a9576bbd47fdb1c93d6e31b25779448fbbe61cf055a7da693427a0c458de6",
+    "review/page-4.png": "25fe4db29d282efc5953dbebe4eb0e56ddd2b41dba091ed7d1107a7463c69b1e",
+    "review/page-5.png": "8c54ab5d3c04f59d9c86e79e035bfd72d2e0dd497d2acb5fdd5b22a346f85557",
+    "review/page-6.png": "174171ed96ad1e8985cec3313a6c48f4c0879c083134336e6e0db8b391488df9",
+    "review/page-7.png": "f948ab2970f293eb82f2b73f3ce29f5bd4c84df308e08af367e5a131065b97df",
+    "svg/recording_front_end-acquisition.svg": "707b71ac55590c07a655b848bc6f10fe876d9cbc22e3c534be317292e8eab6f3",
+    "svg/recording_front_end-bank0.svg": "09d500700f61a0dd1ce4c38e3186fc8ca81c82480e614606c155a9b92b2dac4d",
+    "svg/recording_front_end-bank1.svg": "58dea55c4df8516bf5b21f78684055908b8c91f7362de93f3811ba88959bb157",
+    "svg/recording_front_end-bank2.svg": "d6d4d3e020817fa68024747ef77e432ca758ff0cfd138d3169c538b85f37e8ec",
+    "svg/recording_front_end-bank3.svg": "3251a33aa9c75b9cabedf2f76f4df6caa66af96fc83b0032015ece8dbfa04d7b",
+    "svg/recording_front_end-reference.svg": "add6ac30cbd4eeef842a3d8e52e6b4579d89a7a8085ea4de942958866b2aba08",
+    "svg/recording_front_end.svg": "16606b9de2e3ffc6cfd73b6711eedb177f900d3b7391fee393d51f52f195e860",
+    "sym-lib-table": "7d527c76cc12e1ce42a7d07e8a2141c13ad6149b6bca70e1e529d4452b0d8a3a",
+    "verify_recording_front_end.py": "4748cc72423eb5dad1d209ed0e2da9b97e8626a3e4208585341c73c1c15f0678"
+  }
+}

@@ -257,3 +257,23 @@ participant/animal/hardware experiment occurred, and the expert reference and
 live phase features remain assumed representations. Native electronics/firmware,
 populated CAD and final integrated publication are unfinished. Contributions are
 AI-assisted rather than independent institutional or clinical review.
+
+## Native recording-front-end checkpoint - 13 October 2026
+
+AI implementation work produced a seven-sheet native RHD2216 recording slice,
+production fault-switch land patterns, seventeen protected paths, shared reference,
+separate bias, digital isolation, mode defaults, local footprints/BOM, exported
+connectivity and unexcluded ERC. A separate AI primary-source review corrected the
+preview TSSOP selection, pin maps, supply conditions and the difference between
+large fault thresholds and the RHD's small input envelope. The native author
+inspected all rendered sheets; root also inspected selected pages.
+
+Root implemented a finite passive network and a separate scalar/DC/KCL auditor.
+Another AI reviewer identified coherent common-mode terms that invalidated a
+barely passing RSS interpretation. Saved results preserve that failed weak-signal
+gate and two transient fault failures. A separate AI workstream derived isolated
+SPI timing, next-CS timestamps, commissioning and external sequencing, retaining
+undetectable untagged-data replay. These are computational, AI-assisted checks;
+no human/institutional, hardware, animal or participant validation is implied.
+Historical packages and synced sources remain unchanged. Integrated circuits/
+firmware, populated PCB/CAD and final publication remain unfinished.
