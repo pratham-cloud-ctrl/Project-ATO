@@ -1,0 +1,5292 @@
+{
+  "schema": "ato.stage4.driver-control-contract-study.v1",
+  "scope": "Finite ideal-Boolean/event model; digital artificial-load concept only",
+  "source_sha256": "5f975e28df1bec5d8aee5a545585fb41bf172a9eaa96d5c6feca46766b4ddec9",
+  "contract": "docs/stage4/current-driver-control-contract.md",
+  "assumptions": {
+    "timer_nominal_ns": 225024,
+    "timer_pulse_model": "Instantaneous positive non-retriggerable pulse; no gate or timer propagation model",
+    "coincidence_exclusion_ns": 2,
+    "coincidence_exclusion_status": "Declared diagnostic assumption, not a certified physical aperture",
+    "explicit_rearm_precedes_request": true,
+    "rearm_is_released_before_request": true,
+    "direction_captured_on_safe_rearm": true,
+    "reset_ready_low_through_qualified_startup": true,
+    "quiescence_and_supervision_external": true,
+    "physical_brownout_logic_modelled": false,
+    "biological_effect_modelled": false
+  },
+  "summary": {
+    "scenario_groups": 15,
+    "assertions_passed": 60,
+    "source_histories": 27,
+    "recorded_state_snapshots": 187,
+    "stable_async_combinations": 32,
+    "simultaneous_async_assertions": 0,
+    "safe_rearm_truth_combinations": 1,
+    "timer_failure_protection": "UNPROTECTED_WITHOUT_EXTERNAL_INTERRUPTION",
+    "physical_gate_timing_verified": false,
+    "actual_circuit_or_hardware_verified": false
+  },
+  "stable_async_truth_table": [
+    {
+      "base_good": false,
+      "request": false,
+      "timer_out": false,
+      "quiescent_ok": false,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": false,
+      "timer_out": false,
+      "quiescent_ok": false,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": false,
+      "timer_out": false,
+      "quiescent_ok": true,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": false,
+      "timer_out": false,
+      "quiescent_ok": true,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": false,
+      "timer_out": true,
+      "quiescent_ok": false,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": false,
+      "timer_out": true,
+      "quiescent_ok": false,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": false,
+      "timer_out": true,
+      "quiescent_ok": true,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": false,
+      "timer_out": true,
+      "quiescent_ok": true,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": true,
+      "timer_out": false,
+      "quiescent_ok": false,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": true,
+      "timer_out": false,
+      "quiescent_ok": false,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": true,
+      "timer_out": false,
+      "quiescent_ok": true,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": true,
+      "timer_out": false,
+      "quiescent_ok": true,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": true,
+      "timer_out": true,
+      "quiescent_ok": false,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": true,
+      "timer_out": true,
+      "quiescent_ok": false,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": true,
+      "timer_out": true,
+      "quiescent_ok": true,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": false,
+      "request": true,
+      "timer_out": true,
+      "quiescent_ok": true,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": false,
+      "timer_out": false,
+      "quiescent_ok": false,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": true,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": false,
+      "timer_out": false,
+      "quiescent_ok": false,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": true,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": false,
+      "timer_out": false,
+      "quiescent_ok": true,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": true,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": false,
+      "timer_out": false,
+      "quiescent_ok": true,
+      "rearm": true,
+      "safe_rearm": true,
+      "n_block_pre": true,
+      "n_block_clr": false,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": false,
+      "timer_out": true,
+      "quiescent_ok": false,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": false,
+      "timer_out": true,
+      "quiescent_ok": false,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": false,
+      "timer_out": true,
+      "quiescent_ok": true,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": false,
+      "timer_out": true,
+      "quiescent_ok": true,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": false,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": true,
+      "timer_out": false,
+      "quiescent_ok": false,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": true,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": true,
+      "timer_out": false,
+      "quiescent_ok": false,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": true,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": true,
+      "timer_out": false,
+      "quiescent_ok": true,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": true,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": true,
+      "timer_out": false,
+      "quiescent_ok": true,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": true,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": true,
+      "timer_out": true,
+      "quiescent_ok": false,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": true,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": true,
+      "timer_out": true,
+      "quiescent_ok": false,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": true,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": true,
+      "timer_out": true,
+      "quiescent_ok": true,
+      "rearm": false,
+      "safe_rearm": false,
+      "n_block_pre": true,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    },
+    {
+      "base_good": true,
+      "request": true,
+      "timer_out": true,
+      "quiescent_ok": true,
+      "rearm": true,
+      "safe_rearm": false,
+      "n_block_pre": true,
+      "n_block_clr": true,
+      "simultaneous_assertion": false
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "C01",
+      "title": "Startup is inhibited without assuming DFF power-on state",
+      "checks": [
+        {
+          "assertion": "reset-low sets block and holds RUN low",
+          "pass": true
+        },
+        {
+          "assertion": "timeout is explicitly unknown until safe rearm",
+          "pass": true
+        }
+      ],
+      "notes": [],
+      "sources": [
+        {
+          "name": "source0",
+          "timer_starts": 0,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "source0",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "title": "Held request through readiness return cannot gain admission",
+      "checks": [
+        {
+          "assertion": "readiness did not create another trigger",
+          "pass": true
+        },
+        {
+          "assertion": "held request cannot clear block or RUN",
+          "pass": true
+        },
+        {
+          "assertion": "held invalid request eventually records timeout",
+          "pass": true
+        }
+      ],
+      "notes": [],
+      "sources": [
+        {
+          "name": "source0",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "source0",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "request_while_reset_asserted",
+              "source": "source0",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "readiness_returns_while_request_high",
+              "source": "source0",
+              "time_ns": 20000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "attempt_rearm_while_request_high",
+              "source": "source0",
+              "time_ns": 30000,
+              "request": true,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "timer_expiry",
+              "source": "source0",
+              "time_ns": 226024,
+              "request": true,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": true,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "title": "Qualified positive and negative phases end normally without false timeout",
+      "checks": [
+        {
+          "assertion": "safe rearm resolves latches and captures positive direction",
+          "pass": true
+        },
+        {
+          "assertion": "positive bridge admitted",
+          "pass": true
+        },
+        {
+          "assertion": "normal completion consumes admission immediately",
+          "pass": true
+        },
+        {
+          "assertion": "later timer expiry does not falsely record timeout",
+          "pass": true
+        },
+        {
+          "assertion": "next rearm captures negative direction",
+          "pass": true
+        },
+        {
+          "assertion": "second normal phase also avoids false timeout",
+          "pass": true
+        }
+      ],
+      "notes": [
+        "The example includes a 100us all-off gap and explicit rearm after the first timer expires; physical current quiescence is an input assumption."
+      ],
+      "sources": [
+        {
+          "name": "source0",
+          "timer_starts": 2,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "source0",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "source0",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "source0",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "source0",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "positive_phase_start",
+              "source": "source0",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "normal_200us_request_end",
+              "source": "source0",
+              "time_ns": 201000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "timer_expiry",
+              "source": "source0",
+              "time_ns": 226024,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "source0",
+              "time_ns": 260000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "source0",
+              "time_ns": 260100,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "source0",
+              "time_ns": 260200,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "negative_phase_start_after_rearm_and_gap",
+              "source": "source0",
+              "time_ns": 301000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 526024,
+              "run": true,
+              "bridge_plus": false,
+              "bridge_minus": true,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "negative_normal_end",
+              "source": "source0",
+              "time_ns": 501000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 526024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "timer_expiry",
+              "source": "source0",
+              "time_ns": 526024,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "title": "Early request drop consumes admission without an automatic balancing phase",
+      "checks": [
+        {
+          "assertion": "50us phase stops and remains consumed",
+          "pass": true
+        },
+        {
+          "assertion": "no timeout or automatic new trigger follows",
+          "pass": true
+        }
+      ],
+      "notes": [],
+      "sources": [
+        {
+          "name": "source0",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "source0",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "source0",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "source0",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "source0",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start",
+              "source": "source0",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "early_request_drop",
+              "source": "source0",
+              "time_ns": 51000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "timer_expiry",
+              "source": "source0",
+              "time_ns": 226024,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "title": "Request low-high within one timer interval cannot reopen output",
+      "checks": [
+        {
+          "assertion": "busy trigger is ignored without timer extension",
+          "pass": true
+        },
+        {
+          "assertion": "consumed block prevents reopened RUN",
+          "pass": true
+        },
+        {
+          "assertion": "ended repeated request does not create a false timeout",
+          "pass": true
+        }
+      ],
+      "notes": [],
+      "sources": [
+        {
+          "name": "source0",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 1,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "source0",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "source0",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "source0",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "source0",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start",
+              "source": "source0",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "request_drop",
+              "source": "source0",
+              "time_ns": 51000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "request_rerise_inside_old_window",
+              "source": "source0",
+              "time_ns": 61000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "second_request_end",
+              "source": "source0",
+              "time_ns": 71000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "timer_expiry",
+              "source": "source0",
+              "time_ns": 226024,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "title": "New timer after expiry has no authority without explicit rearm",
+      "checks": [
+        {
+          "assertion": "raw request can start an internal second timer",
+          "pass": true
+        },
+        {
+          "assertion": "second timer does not restore consumed admission",
+          "pass": true
+        }
+      ],
+      "notes": [],
+      "sources": [
+        {
+          "name": "source0",
+          "timer_starts": 2,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "source0",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "source0",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "source0",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "source0",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start",
+              "source": "source0",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "normal_request_end",
+              "source": "source0",
+              "time_ns": 201000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "timer_expiry",
+              "source": "source0",
+              "time_ns": 226024,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "new_raw_request_without_rearm",
+              "source": "source0",
+              "time_ns": 301000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 526024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C07",
+      "title": "Stuck request is cut off by timer and sticky timeout",
+      "checks": [
+        {
+          "assertion": "timer directly removes RUN at nominal expiry",
+          "pass": true
+        },
+        {
+          "assertion": "later request edge cannot clear sticky timeout",
+          "pass": true
+        },
+        {
+          "assertion": "later timer ending with request low preserves timeout",
+          "pass": true
+        },
+        {
+          "assertion": "only explicit safe rearm clears the timeout",
+          "pass": true
+        },
+        {
+          "assertion": "fresh request after rearm can be admitted",
+          "pass": true
+        }
+      ],
+      "notes": [],
+      "sources": [
+        {
+          "name": "source0",
+          "timer_starts": 3,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "source0",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "source0",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "source0",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "source0",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start_with_stuck_request",
+              "source": "source0",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "timer_expiry",
+              "source": "source0",
+              "time_ns": 226024,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": true,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "request_drops_after_timeout",
+              "source": "source0",
+              "time_ns": 240000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": true,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "request_returns_without_rearm",
+              "source": "source0",
+              "time_ns": 250000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": true,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 475024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "late_request_drop",
+              "source": "source0",
+              "time_ns": 260000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": true,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 475024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "timer_expiry",
+              "source": "source0",
+              "time_ns": 475024,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": true,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm_after_timeout",
+              "source": "source0",
+              "time_ns": 510000,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "post_timeout_rearm_released",
+              "source": "source0",
+              "time_ns": 510100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "fresh_request_after_explicit_rearm",
+              "source": "source0",
+              "time_ns": 511000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 736024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C08",
+      "title": "Request/timer coincidence leaves timeout classification unqualified",
+      "checks": [
+        {
+          "assertion": "timer gate still commands RUN low",
+          "pass": true
+        },
+        {
+          "assertion": "classification is unknown rather than favourable",
+          "pass": true
+        }
+      ],
+      "notes": [
+        "This is a rejected classification trace; Boolean event ordering cannot resolve the actual setup/hold/metastability event."
+      ],
+      "sources": [
+        {
+          "name": "source0",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "source0",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "source0",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "source0",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "source0",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start",
+              "source": "source0",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "timer_expiry",
+              "source": "source0",
+              "time_ns": 226024,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": null,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": true
+            },
+            {
+              "event": "request_drop_exactly_at_expiry",
+              "source": "source0",
+              "time_ns": 226024,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": null,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C09",
+      "title": "Each permission drop consumes admission and recovery cannot resume",
+      "checks": [
+        {
+          "assertion": "mon_permit loss sets block and stops RUN",
+          "pass": true
+        },
+        {
+          "assertion": "mon_permit recovery cannot reopen RUN",
+          "pass": true
+        },
+        {
+          "assertion": "ext_sup_ok loss sets block and stops RUN",
+          "pass": true
+        },
+        {
+          "assertion": "ext_sup_ok recovery cannot reopen RUN",
+          "pass": true
+        },
+        {
+          "assertion": "route_locked loss sets block and stops RUN",
+          "pass": true
+        },
+        {
+          "assertion": "route_locked recovery cannot reopen RUN",
+          "pass": true
+        },
+        {
+          "assertion": "reset_ready loss sets block and stops RUN",
+          "pass": true
+        },
+        {
+          "assertion": "reset_ready recovery cannot reopen RUN",
+          "pass": true
+        },
+        {
+          "assertion": "rails_qualified loss sets block and stops RUN",
+          "pass": true
+        },
+        {
+          "assertion": "rails_qualified recovery cannot reopen RUN",
+          "pass": true
+        }
+      ],
+      "notes": [],
+      "sources": [
+        {
+          "name": "mon_permit",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "mon_permit",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "mon_permit",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "mon_permit",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "mon_permit",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start",
+              "source": "mon_permit",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "mon_permit_drops",
+              "source": "mon_permit",
+              "time_ns": 51000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "mon_permit_returns_while_request_high",
+              "source": "mon_permit",
+              "time_ns": 61000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        },
+        {
+          "name": "ext_sup_ok",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "ext_sup_ok",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "ext_sup_ok",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "ext_sup_ok",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "ext_sup_ok",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start",
+              "source": "ext_sup_ok",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "ext_sup_ok_drops",
+              "source": "ext_sup_ok",
+              "time_ns": 51000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "ext_sup_ok_returns_while_request_high",
+              "source": "ext_sup_ok",
+              "time_ns": 61000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        },
+        {
+          "name": "route_locked",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "route_locked",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "route_locked",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "route_locked",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "route_locked",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start",
+              "source": "route_locked",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "route_locked_drops",
+              "source": "route_locked",
+              "time_ns": 51000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "route_locked_returns_while_request_high",
+              "source": "route_locked",
+              "time_ns": 61000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        },
+        {
+          "name": "reset_ready",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "reset_ready",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "reset_ready",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "reset_ready",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "reset_ready",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start",
+              "source": "reset_ready",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "reset_ready_drops",
+              "source": "reset_ready",
+              "time_ns": 51000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "reset_ready_returns_while_request_high",
+              "source": "reset_ready",
+              "time_ns": 61000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        },
+        {
+          "name": "rails_qualified",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "rails_qualified",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "rails_qualified",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "rails_qualified",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "rails_qualified",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start",
+              "source": "rails_qualified",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rails_qualified_drops",
+              "source": "rails_qualified",
+              "time_ns": 51000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rails_qualified_returns_while_request_high",
+              "source": "rails_qualified",
+              "time_ns": 61000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Both-high and both-low phase bits inhibit and consume admission",
+      "checks": [
+        {
+          "assertion": "invalid (True, True) drops BASE_GOOD and RUN",
+          "pass": true
+        },
+        {
+          "assertion": "restored bits after (True, True) do not resume",
+          "pass": true
+        },
+        {
+          "assertion": "invalid (False, False) drops BASE_GOOD and RUN",
+          "pass": true
+        },
+        {
+          "assertion": "restored bits after (False, False) do not resume",
+          "pass": true
+        }
+      ],
+      "notes": [],
+      "sources": [
+        {
+          "name": "invalid_11",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "invalid_11",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "invalid_11",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "invalid_11",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "invalid_11",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start",
+              "source": "invalid_11",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "invalid_live_direction",
+              "source": "invalid_11",
+              "time_ns": 51000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                true
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "valid_bits_restored",
+              "source": "invalid_11",
+              "time_ns": 61000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        },
+        {
+          "name": "invalid_00",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "invalid_00",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "invalid_00",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "invalid_00",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "invalid_00",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start",
+              "source": "invalid_00",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "invalid_live_direction",
+              "source": "invalid_00",
+              "time_ns": 51000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                false,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "valid_bits_restored",
+              "source": "invalid_00",
+              "time_ns": 61000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "title": "Valid live raw direction swap cannot reverse captured diagonal",
+      "checks": [
+        {
+          "assertion": "captured positive direction remains active",
+          "pass": true
+        },
+        {
+          "assertion": "XOR does not diagnose a valid simultaneous swap",
+          "pass": true
+        }
+      ],
+      "notes": [
+        "The raw swap violates the held-input contract; captured-direction stability is demonstrated, complete command-consistency protection is not."
+      ],
+      "sources": [
+        {
+          "name": "source0",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "source0",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "source0",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "source0",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "source0",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start",
+              "source": "source0",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "simultaneous_valid_raw_direction_swap",
+              "source": "source0",
+              "time_ns": 51000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "title": "Unsafe rearm never clears state; explicit qualified rearm does",
+      "checks": [
+        {
+          "assertion": "request prevents latch clearance",
+          "pass": true
+        },
+        {
+          "assertion": "timer prevents latch clearance",
+          "pass": true
+        },
+        {
+          "assertion": "quiescence prevents latch clearance",
+          "pass": true
+        },
+        {
+          "assertion": "monitor prevents latch clearance",
+          "pass": true
+        },
+        {
+          "assertion": "supervision prevents latch clearance",
+          "pass": true
+        },
+        {
+          "assertion": "invalid_direction prevents latch clearance",
+          "pass": true
+        },
+        {
+          "assertion": "qualified explicit rearm clears unknown timeout and block",
+          "pass": true
+        },
+        {
+          "assertion": "driver rearm does not modify the monitor input",
+          "pass": true
+        }
+      ],
+      "notes": [],
+      "sources": [
+        {
+          "name": "request",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "request",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "readiness",
+              "source": "request",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "request_high",
+              "source": "request",
+              "time_ns": 200,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 225224,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "unsafe_rearm_attempt",
+              "source": "request",
+              "time_ns": 400,
+              "request": true,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 225224,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        },
+        {
+          "name": "timer",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "timer",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "readiness",
+              "source": "timer",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "trigger_while_blocked",
+              "source": "timer",
+              "time_ns": 200,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 225224,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "request_low_timer_still_high",
+              "source": "timer",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 225224,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "unsafe_rearm_attempt",
+              "source": "timer",
+              "time_ns": 400,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 225224,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        },
+        {
+          "name": "quiescence",
+          "timer_starts": 0,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "quiescence",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "readiness",
+              "source": "quiescence",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "current_not_quiescent",
+              "source": "quiescence",
+              "time_ns": 200,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "unsafe_rearm_attempt",
+              "source": "quiescence",
+              "time_ns": 400,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        },
+        {
+          "name": "monitor",
+          "timer_starts": 0,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "monitor",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "readiness",
+              "source": "monitor",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "monitor_fault",
+              "source": "monitor",
+              "time_ns": 200,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "unsafe_rearm_attempt",
+              "source": "monitor",
+              "time_ns": 400,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        },
+        {
+          "name": "supervision",
+          "timer_starts": 0,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "supervision",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "readiness",
+              "source": "supervision",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "supervision_not_ready",
+              "source": "supervision",
+              "time_ns": 200,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "unsafe_rearm_attempt",
+              "source": "supervision",
+              "time_ns": 400,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        },
+        {
+          "name": "invalid_direction",
+          "timer_starts": 0,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "invalid_direction",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "readiness",
+              "source": "invalid_direction",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "invalid_direction",
+              "source": "invalid_direction",
+              "time_ns": 200,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                true
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "unsafe_rearm_attempt",
+              "source": "invalid_direction",
+              "time_ns": 400,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                true
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        },
+        {
+          "name": "valid_explicit_rearm",
+          "timer_starts": 0,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "valid_explicit_rearm",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "valid_explicit_rearm",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "valid_explicit_rearm",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "valid_explicit_rearm",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "title": "Two sources retain independent timer and rearm ownership",
+      "checks": [
+        {
+          "assertion": "source0 fault does not interrupt independently permitted source1",
+          "pass": true
+        },
+        {
+          "assertion": "source1 rearm cannot clear source0 consumed block",
+          "pass": true
+        }
+      ],
+      "notes": [],
+      "sources": [
+        {
+          "name": "source0",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "source0",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "source0",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "source0",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "source0",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "source0_start",
+              "source": "source0",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "source0_monitor_fault",
+              "source": "source0",
+              "time_ns": 51000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "timer_expiry",
+              "source": "source0",
+              "time_ns": 226024,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": true,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "source0_monitor_permission_returns",
+              "source": "source0",
+              "time_ns": 301000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": true,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        },
+        {
+          "name": "source1",
+          "timer_starts": 2,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "source1",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "source1",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "source1",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "source1",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "source1_start",
+              "source": "source1",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": false,
+              "bridge_minus": true,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "source1_still_running",
+              "source": "source1",
+              "time_ns": 61000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": false,
+              "bridge_minus": true,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "source1_normal_end",
+              "source": "source1",
+              "time_ns": 201000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "timer_expiry",
+              "source": "source1",
+              "time_ns": 226024,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                false,
+                true
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "source1",
+              "time_ns": 260000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "source1",
+              "time_ns": 260100,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "source1",
+              "time_ns": 260200,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "source1_second_start",
+              "source": "source1",
+              "time_ns": 301000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 526024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "title": "Brownout leaves model unqualified until external reset and rearm",
+      "checks": [
+        {
+          "assertion": "qualified warning first inhibits output",
+          "pass": true
+        },
+        {
+          "assertion": "out-of-range state is unknown, not falsely safe",
+          "pass": true
+        },
+        {
+          "assertion": "recovery begins blocked with unknown timeout",
+          "pass": true
+        },
+        {
+          "assertion": "readiness alone does not rearm",
+          "pass": true
+        },
+        {
+          "assertion": "explicit safe rearm resolves control state",
+          "pass": true
+        }
+      ],
+      "notes": [
+        "Timer/output/DFF behaviour during invalid supply is not simulated as valid hardware logic. External reset and timer-startup qualification are assumed on recovery."
+      ],
+      "sources": [
+        {
+          "name": "source0",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "source0",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "source0",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "source0",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "source0",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start",
+              "source": "source0",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_rail_warning_before_invalid_logic",
+              "source": "source0",
+              "time_ns": 51000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": false,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "logic_supply_outside_operating_range",
+              "source": "source0",
+              "time_ns": 52000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": null,
+              "timeout": null,
+              "latched_plus": null,
+              "timer_out": null,
+              "timer_due_ns": 226024,
+              "run": null,
+              "bridge_plus": null,
+              "bridge_minus": null,
+              "logic_valid": false,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "logic_recovers_with_external_reset_asserted",
+              "source": "source0",
+              "time_ns": 101000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rails_and_startup_requalified",
+              "source": "source0",
+              "time_ns": 102000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_post_brownout_rearm",
+              "source": "source0",
+              "time_ns": 103000,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "post_brownout_rearm_released",
+              "source": "source0",
+              "time_ns": 104000,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "title": "Timer failure witness remains unprotected without external interruption",
+      "checks": [
+        {
+          "assertion": "stuck-high timer has no falling edge and no sticky timeout",
+          "pass": true
+        },
+        {
+          "assertion": "driver alone permits a 500us held request under this injected fault",
+          "pass": true
+        },
+        {
+          "assertion": "external supervisor interruption stops RUN and sets block",
+          "pass": true
+        },
+        {
+          "assertion": "supervision recovery cannot resume",
+          "pass": true
+        }
+      ],
+      "notes": [
+        "UNPROTECTED witness: the native timer plus these latches cannot bound duration if timer OUT itself fails high and request remains high.",
+        "SET-open is an unqualified analogue timer fault, not simulated as a vendor-established stuck-high transfer function. This injected stuck-high witness demonstrates why a reliable timeout is not credited for SET-open.",
+        "An external watchdog is represented only by EXT_SUP_OK dropping; no watchdog circuit is implemented or validated by this study.",
+        "Conditional bookkeeping: 3mA for 500us would be 1500nC; current regulation and actual delivered charge are outside this Boolean model."
+      ],
+      "sources": [
+        {
+          "name": "source0",
+          "timer_starts": 1,
+          "ignored_busy_triggers": 0,
+          "ignored_unready_triggers": 0,
+          "history": [
+            {
+              "event": "initial_reset_asserted",
+              "source": "source0",
+              "time_ns": 0,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "qualified_readiness_direction_preload",
+              "source": "source0",
+              "time_ns": 100,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": null,
+              "latched_plus": false,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "explicit_quiescent_rearm",
+              "source": "source0",
+              "time_ns": 200,
+              "request": false,
+              "rearm": true,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": true,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "rearm_released",
+              "source": "source0",
+              "time_ns": 300,
+              "request": false,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": false,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "phase_start_with_injected_timer_stuck_high",
+              "source": "source0",
+              "time_ns": 1000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": 226024,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "injected_timer_failure_prevents_expiry",
+              "source": "source0",
+              "time_ns": 226024,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": null,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "500us_after_start_without_timer_falling_edge",
+              "source": "source0",
+              "time_ns": 501000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": false,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": null,
+              "run": true,
+              "bridge_plus": true,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "external_watchdog_drops_supervision",
+              "source": "source0",
+              "time_ns": 502000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": false,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            },
+            {
+              "event": "supervision_recovers",
+              "source": "source0",
+              "time_ns": 503000,
+              "request": true,
+              "rearm": false,
+              "raw_phase": [
+                true,
+                false
+              ],
+              "base_good": true,
+              "safe_rearm": false,
+              "block": true,
+              "timeout": false,
+              "latched_plus": true,
+              "timer_out": true,
+              "timer_due_ns": null,
+              "run": false,
+              "bridge_plus": false,
+              "bridge_minus": false,
+              "logic_valid": true,
+              "ambiguous_timeout_classification": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

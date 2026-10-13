@@ -33,6 +33,9 @@ cad/stage2/*.step binary
 electronics/stage4/monitoring-cell/svg/*.svg whitespace=-blank-at-eol
 # Preserve Matplotlib's generated SVG path spacing; reviewed figures bind exact bytes.
 electronics/stage4/monitoring-study/*.svg whitespace=-blank-at-eol
+# Native exports and reviewed scientific figures retain generated path spacing.
+electronics/stage4/current-driver/svg/*.svg whitespace=-blank-at-eol
+electronics/stage4/driver-study/*.svg whitespace=-blank-at-eol
 # Reviewed observer freezes bind original bytes, including Windows JSON newlines.
 experiments/stage3/observed-state-observer/requirements-lock.txt text eol=lf
 experiments/stage3/observed-state-observer/frozen/** -text whitespace=cr-at-eol

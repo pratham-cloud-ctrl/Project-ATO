@@ -1,5 +1,25 @@
 # Contributions and provenance
 
+## Native current-driver checkpoint, 13 October 2026
+
+AI-assisted detailed design added a separate 156-component, 572-pin, five-sheet
+KiCad driver package, local libraries, BOM/netlists/exports and connectivity/gate
+verification. A separate AI manufacturer review corrected DAC reference/gain
+headroom, exact DRX and BSP89 package contracts, logic defaults and timer-health
+limits. A separate control review specified sticky BLOCK/TIMEOUT state and
+direction capture at safe rearm. All five schematic pages were visually reviewed.
+
+The root AI agent implemented a separate closed-servo ngspice surrogate, retained
+18 complete and two partial out-of-compliance transients, and independently
+checked charge conservation, a settled DC equation and selected-grid agreement.
+An additional ideal-event model retains 15 scenario groups, including unprotected
+timer failure without external supervision. These studies use declared component
+surrogates and artificial loads, not vendor macro models or physical measurements.
+The scientific figures and raw evidence preserve adverse outcomes. Pratham owns
+the project direction and clarified the conditional concept scope. Historical
+Stage 2/3 and monitoring packages were preserved. Full electronics/firmware,
+populated CAD and the final integrated manuscript remain unfinished.
+
 ## Stage 3 mechanism revision, 9 October 2026
 
 AI-assisted work added competence-gated teacher libraries, fresh actual-aperture

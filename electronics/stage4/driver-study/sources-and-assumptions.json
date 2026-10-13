@@ -1,0 +1,87 @@
+{
+  "schema": "ato.stage4.driver-study.assumptions.v1",
+  "date": "2026-10-13",
+  "native_design": "../current-driver/current_driver.kicad_sch",
+  "core_topology": "Two regulated low-side sinks, reset/gate muxes, four-switch bridges, independent signed return shunts; not an automatic complete native netlist simulation",
+  "primary_sources": {
+    "opamp": "https://www.ti.com/lit/ds/symlink/opa192.pdf",
+    "MOSFET": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-bsp89-datasheet-en.pdf",
+    "bridge": "https://www.ti.com/lit/ds/symlink/tmux7212.pdf",
+    "reset_mux": "https://www.ti.com/lit/ds/symlink/tmux6219.pdf",
+    "DAC": "https://www.ti.com/lit/ds/symlink/dac80502.pdf",
+    "timer": "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc6993-6993-1-6993-2-6993-3-6993-4.pdf"
+  },
+  "model_choices": {
+    "opamp": {
+      "model": "Chosen dominant-pole/slew/rail surrogate, not vendor macro model",
+      "DC_gain": 100000,
+      "UGB_Hz": 10000000,
+      "slew_V_per_s": 20000000,
+      "UGB_and_slew_status": "Typical manufacturer facts used as nominal choices, not guaranteed bounds",
+      "output_limits_V": [
+        0.05,
+        14.95
+      ],
+      "limits_status": "Chosen model limits",
+      "input_C_F": 5e-12,
+      "input_leak_R_ohm": 1000000000.0,
+      "input_status": "Chosen finite input network; no fitted claim"
+    },
+    "MOSFET": {
+      "model": "Chosen level-1 NMOS, not BSP89 vendor model",
+      "VTO_V": 1.3,
+      "KP_A_per_V2": 0.05,
+      "lambda_per_V": 0.005,
+      "Cgs_F": 7e-11,
+      "Cgd_F": 1e-11,
+      "Cds_F": 1.2e-12,
+      "status": "Illustrative constant parameters; datasheet switching/linear-SOA validation absent"
+    },
+    "switches": {
+      "bridge_Ron_ohm": 10,
+      "reset_Ron_ohm": 2,
+      "Roff_ohm": 1000000000000.0,
+      "fixture_edge_s": 1e-09,
+      "status": "Chosen reduced parameters; no guaranteed switch timing, injection or off isolation"
+    },
+    "load": {
+      "default_series_R_ohm": 1000,
+      "default_C_F": 2e-06,
+      "parallel_R_ohm": 100000,
+      "status": "Artificial load, not electrode chemistry/tissue"
+    },
+    "measurement_paths": {
+      "bias_stress_each_A": 4.5e-05,
+      "return_common_mode_stress_F": 1e-09,
+      "status": "Explicit chosen stress paths, not measured prototype parasitics"
+    },
+    "delivery": {
+      "feedback_R_ohm": 100,
+      "return_shunt_ohm": 2,
+      "DAC_code": 7864,
+      "net_DAC_FSR_V": 2.5,
+      "DAC_GAIN_register": "0x0103",
+      "nominal_phase_s": 0.0002,
+      "status": "Ideal setpoint/resistor values in circuit model; separate datasheet settled-error arithmetic does not certify dynamics"
+    },
+    "fault_interruption": {
+      "fixture_time_s": 0.000425,
+      "source0_reaction_interval_s": 2.5e-05,
+      "status": "Injected fixture inhibition, not simulated guard detection or real shutdown delay"
+    },
+    "digital_control": {
+      "file": "control-contract-results.json",
+      "status": "Ideal Boolean/event study; external reset/rearm/watchdog/quiescence assumptions; timer failure unprotected without external interruption"
+    }
+  },
+  "numerical_results": {
+    "attempted": 20,
+    "complete": 18,
+    "retained_partial": 2,
+    "partial_case": "forced_beyond_compliance",
+    "partial_last_time_approx_s": 0.0006000005,
+    "partial_interpretation": "No complete phase/profile result; 30V required resistive drop already exceeds24V. No general solver convergence claimed."
+  },
+  "full_charge_accuracy_earned": false,
+  "new_biological_evidence": false
+}

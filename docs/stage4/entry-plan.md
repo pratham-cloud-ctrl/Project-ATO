@@ -1,9 +1,11 @@
 # Stage 4 entry: native electronics with measured delivery
 
-**12 October 2026 · ATO-S4-ENTRY-01 · proposed detailed-design work.**
+**13 October 2026 · ATO-S4-ENTRY-01 · detailed design in progress.**
 
-Stage 3 remains in progress. Starting a conditional electrical design does not
-close the biological, information or learning questions. The complete objective
+The conservative Stage 3 investigation and conditional concept v1 now have
+separate completed scopes. Their [declared future-interface premises](../stage3/conditional-concept.md)
+guide this electrical design without requiring prior human demonstration of the
+whole concept. The complete objective
 remains implanted spinal recording → interpretation → personalized stimulation
 → independently observed response → feedback, with assistance-OFF learning and
 a separately calibrated physiological function. This document selects the next
@@ -44,9 +46,21 @@ verify its stated equations. Its 3 mA/200 µs nominal fixture and selected stres
 cases do not complete the broader waveform/load/rail/fault coverage below, and
 the proposed 4% precision remains unearned.
 
-The [proposed current-driver design boundary](current-driver-design.md) specifies
-a restricted 24 V, 3 mA/200 µs dual-source driver and independent shutdown slice.
-It is a design handoff; its native circuit and transient verification remain pending.
+The historical [driver design boundary](current-driver-design.md) now has a
+[native implementation](../../electronics/stage4/current-driver/README.md):
+156 components, 572 checked pins, five sheets, zero ERC violations and local
+package libraries. The [component review](current-driver-component-review.md)
+corrects DAC reference headroom and exact package/pull contracts. The
+[control contract](current-driver-control-contract.md) adds sticky interruption
+state and direction capture while inhibited. Its healthy timer is not a complete
+watchdog or delivered-charge guard.
+
+The [closed-servo behavioral study](../../electronics/stage4/driver-study/README.md)
+retains 20 attempted transients (18 complete; two partial out-of-compliance
+traces), both polarities/sources and 144 complete intervals. Fifteen finite
+digital history groups complement the native gate checks. Native connectivity,
+the chosen analog surrogate and ideal Boolean histories remain distinct scopes;
+neither package earns the proposed 4% precision or a completed implant.
 
 ## Architecture retained from Stage 2
 
@@ -235,13 +249,14 @@ No new paid software or student entitlement is needed for this slice. The
 existing Ansys caveats remain. Target Nordic/Arm tools need a separately verified
 stable supported installation when target firmware starts.
 
-The [target-tool setup](firmware-toolchain.md) now records the signed Nordic
-installer and matching compiler checks. The complete SDK download and
-application-core example build remain in progress; no ATO backend result is
-implied by compiler availability.
+The [target-tool setup](firmware-toolchain.md) records the signed Nordic
+installer, matching SDK/compiler and successfully linked unmodified nRF5340
+application-core example. Full ATO target firmware remains pending.
 
 Work in order: **native monitor slice → independent transient/error budget →
 driver/routing and separate supervisory circuits → AFE/power/target firmware →
-whole-system budget revision → populated PCB/CAD**. Continue the unresolved
-mechanism work alongside these electrical investigations. Preserve old studies
+whole-system budget revision → populated PCB/CAD**. The monitor and restricted
+driver now have native sources and finite initial studies. Next integrate their
+actual delivery/guard paths and implement the protected recording front end,
+qualified external supervision and power/target interfaces. Preserve old studies
 and assign new source, calibration, profile and uncertainty IDs to each revision.

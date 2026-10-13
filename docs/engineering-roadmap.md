@@ -126,9 +126,12 @@ general observer/audit families are not prerequisites to native circuit/CAD work
 Stage 4 has already begun with the [native dual-source monitor](../electronics/stage4/monitoring-cell/README.md)
 and [33-run behavioral circuit study](../electronics/stage4/monitoring-study/README.md).
 Their 4% phase-charge target remains unearned. A
-[reviewed first driver boundary](stage4/current-driver-design.md) now specifies
-a restricted 24 V/3 mA/200 µs investigation; native implementation remains pending.
-Next come actual current drivers/routing and independent shutdown supervision, acquisition/protection,
+[reviewed first driver boundary](stage4/current-driver-design.md) now has a
+[156-component native implementation](../electronics/stage4/current-driver/README.md)
+with five reviewed sheets and a [bounded circuit/permission study](../electronics/stage4/driver-study/README.md).
+This is a restricted 24 V/3 mA/200 µs slice, with external supervision, actual
+delivery-path limits and two retained out-of-compliance partial traces. Next
+come full contact routing and qualified shutdown supervision, acquisition/protection,
 power/reference/telemetry and the target firmware backend. Reconcile actual
 component power, timing, buses and memory before a complete PCB.
 

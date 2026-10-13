@@ -23,7 +23,7 @@ assumed. Video and website work are parked. No deadline is imposed.
 | 1: mechanism/specification | Complete within specification scope | Both causal chains, requirements/assumptions/capability map, primary-source audit, interfaces, three editable diagrams and illustrated nine-page brief |
 | 2: quantitative architecture | Complete within architecture scope | 16-stream/two-source design, timing/noise/compute/memory/power budgets, rejected cases, control contracts, eight-page brief and preliminary native allocation CAD; [exit review](docs/stage2/exit-review.md) |
 | 3: computational mechanisms | **Conservative investigation closed; conditional concept v1 complete** | Historical qualification results preserved. New evidence/premise/mechanism package and 128 illustrative scenarios connect an assumed spinal interface to assistance and conditional OFF learning; biological efficacy remains unestablished |
-| 4: detailed electronics/firmware | **Native monitor and initial behavioral study verified; wider stage in progress** | Editable two-source monitor, 70 components, 245 checked pin assignments, three reviewed sheets and zero ERC violations; 33 independent transient runs; complete acquisition, drivers/routing, supervision, power/telemetry, PCB and target firmware remain pending |
+| 4: detailed electronics/firmware | **Native monitoring and restricted driver packages complete within their scopes; wider stage in progress** | Monitor: 70 components/245 pins/three sheets. Driver: 156 components/572 pins/five sheets. Both zero ERC violations. Separate monitoring/driver studies and ideal permission histories retained; integrated acquisition, contact routing, complete supervision, power/telemetry, PCB and target firmware remain pending |
 | 5: populated engineering CAD | Pending | Actual boards/components/package/lead interfaces, native parametric assemblies, dimensions, STEP/STL and nominal fit checks |
 | 6: integrated paper/repository release | Pending | Complete digital path verification, final illustrated manuscript, native sources, reproducible release, evidence and learning/defence material |
 
@@ -138,9 +138,12 @@ previous work to this revision and the next package. Its main evidence includes:
   oversized opposed phases. Reset, settling, component and clipping witnesses
   remain explicit. This first model does not earn 4% accuracy, implement shutdown
   or complete the broader waveform/load/rail coverage required by Stage 4.
-- **Next driver boundary:** a [reviewed design investigation](docs/stage4/current-driver-design.md)
+- **Restricted driver boundary:** the [reviewed design investigation](docs/stage4/current-driver-design.md)
   specifies two current sinks, polarity bridges, servo resets and independent
-  phase timers, initially at 24 V/3 mA/200 µs. Native implementation is pending.
+  phase timers, initially at 24 V/3 mA/200 µs. Its
+  [native five-sheet implementation](electronics/stage4/current-driver/README.md)
+  and finite circuit/control studies are now complete within their stated scopes;
+  full routing, supervision, power and recording integration remain pending.
   Servo power exceeds the earlier allocation; bias-current paths, terminal
   isolation, actual transient charge and shutdown tails remain open.
 
@@ -174,6 +177,15 @@ universal autonomic control or healthy-consumer efficacy.
 
 ## Next move
 
+The [restricted native current driver](electronics/stage4/current-driver/README.md)
+now implements the two feedback sinks, polarity bridges, shared DAC, anti-windup
+reset/gate paths and per-source duration/sticky-admission logic. Its
+[companion circuit study](electronics/stage4/driver-study/README.md) retains
+18 completed and two partial out-of-compliance transients, plus 15 finite
+digital histories. Load current, signed return current and unsigned servo
+feedback differ under bias/capacitance/faults; the 4% delivery target remains
+unearned. The two native packages are not yet one integrated PCB or implant.
+
 The [conditional concept v1](docs/stage3/conditional-concept.md) now supplies the
 current future-interface design baseline. It includes 14 primary research
 anchors, 15 explicit premises/scenario choices, both causal mechanisms and
@@ -193,7 +205,7 @@ The earlier four-practice pilot and the new one-practice replay retain separate
 identities. Additional active learning/intervention states require new evidence;
 they are not silently covered by the no-dose confirmation.
 
-Next develop the [native circuits](docs/stage4/entry-plan.md)
+Next integrate and extend the [native circuits](docs/stage4/entry-plan.md)
 from the [conditional design handoff](docs/stage3/conditional-concept/engineering-handoff.md)
 and [conservative-study handoff](docs/stage3/mechanism-to-electronics-handoff.md).
 Measure each phase and recovery tail, bound integration/endpoint errors and
