@@ -12,7 +12,7 @@
     "Observed teacher timing exposes the original-generator failure; separate competence-qualified synthetic captures do not retroactively replace old learning results",
     "Completed local full-suite result matches present source/test identities; CI independently repeats model studies and unit tests",
     "Three new scientific figure pairs match the inspected PNGs and companion vector sources",
-    "Dossier links and requirement IDs resolve; Stage 3 stays in progress with named integration tasks"
+    "Dossier links and requirement IDs resolve; current stage status and separate closeout ledger are explicit"
   ],
   "counts": {
     "motor_fixed_runs": 96,
@@ -70,7 +70,7 @@
     "scripts/stage3_source_sensitivity.py": "34ef1014de69dca617fbbabb9dda7bb4bcc7995055a8bb030fb1bd07c2edd9a8",
     "scripts/stage3_sparse_baseline_study.py": "570332e397760b066e8281d8cf48382050f7338e54df819e6893d7d93a482fc0",
     "scripts/stage3_teacher_library_study.py": "3b0ba4c1fa54161ee36637d5de3c4f7eaec0379f1b1d0da2a63b4aebe33eb30a",
-    "scripts/verify_stage3_continuation.py": "211230711406fc74033454870dd7a7d2b21644901ead8e5314e96d583f1fa63c",
+    "scripts/verify_stage3_continuation.py": "71ffa72b6409182f923ea8e9983d2aebfcf70784944097de84cb71a11d7a2357",
     "scripts/build_stage3_continuation_figures.py": "d209d44516b0766325dbb246c5174ba137cc6ff2988085430d82bc2b575c33a2",
     "scripts/record_stage3_tests.py": "d3e6c381746970394d2329412ba56d4f4847f4a11bcda583a7fa92fec6dba603"
   },

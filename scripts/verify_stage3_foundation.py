@@ -143,7 +143,13 @@ def verify():
     matrix={r['verification_id'] for r in csv.DictReader((ROOT/'docs/stage1/verification-matrix.csv').open(encoding='utf-8'))}
     progress=list(csv.DictReader((DOC/'verification-progress.csv').open(encoding='utf-8')))
     assert all(r['verification_id'] in matrix for r in progress)
-    assert 'in progress' in (DOC/'README.md').read_text(encoding='utf-8').lower()
+    # Foundation evidence keeps its original partial-study scope when later
+    # packages close the selected digital investigation. Require an explicit
+    # current status and, for closeout, the separate reviewed exit ledger.
+    status=(DOC/'README.md').read_text(encoding='utf-8').splitlines()[2]
+    assert status.startswith(('**In progress,', '**Complete within selected digital scope,'))
+    if status.startswith('**Complete within selected digital scope,'):
+        assert '**COMPLETE WITHIN SELECTED DIGITAL SCOPE**' in (DOC/'exit-review.md').read_text(encoding='utf-8')
     links=0
     for doc in DOC.glob('*.md'):
         text=doc.read_text(encoding='utf-8');assert text.count('```')%2==0
@@ -160,7 +166,7 @@ def verify():
         path=ROOT/name
         content=path.read_bytes() if path.suffix=='.png' else path.read_text(encoding='utf-8').replace('\r\n','\n').encode()
         assert hashlib.sha256(content).hexdigest()==entry['sha256'],f'Figure differs from visual review: {name}'
-    checks.append(f'{links} local dossier links resolve; progress IDs match Stage1; three SVG/PNG figure pairs exist; Stage3 remains explicitly in progress')
+    checks.append(f'{links} local dossier links resolve; progress IDs match Stage1; three SVG/PNG figure pairs exist; current stage status and separate closeout ledger are explicit')
     hashes={str(p.relative_to(ROOT)).replace('\\','/'):(canonical_json_digest(p) if p.suffix=='.json'
                                                     else hashlib.sha256(p.read_bytes()).hexdigest())
             for p in sorted(DATA.iterdir()) if p.is_file()}

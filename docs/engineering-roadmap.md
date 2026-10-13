@@ -1,7 +1,10 @@
 # Project ATO: engineering roadmap and Stage 3 closeout
 
-12 October 2026. This plan bounds the remaining digital work. It does not change
-the scientific gates, replace negative results, or declare the project complete.
+13 October 2026. The conservative Stage 3 investigation and conditional concept
+v1 are complete within their separate scopes; detailed
+electronics, firmware, populated CAD and final project integration remain. This
+plan preserves scientific gates and negative results and does not declare the
+full project complete.
 
 ## Intended result
 
@@ -33,7 +36,7 @@ adding more software tests. Video and website work remain parked.
 | Information controls | Capacity-matched external/neural comparisons, absent/redundant sources and ambiguity witnesses | A useful neural increment is not established by the connected pilot |
 | Teacher references | Independent competence/decoder checks and a nominal aperture-resolved reference library | Legacy and faster references that fail remain unavailable |
 | Response and prediction | Finite observed response domains, intervention-aware forecasts and past-response removal | Changed learner response and unsupported histories still reject |
-| Connected pilot | Matched arms, 128 practice trials, 64 pulse-free OFF assessments and runtime scope guards | All practice trials abstain; the pilot demonstrates no retained advantage |
+| Connected pilots | Historical 128-practice/64-OFF pilot plus new 32-practice/64-OFF frozen-observer replay; exact causal guards and scoped software probes | Both withhold all interventions; no retained advantage or new active-path qualification |
 | Reproducibility | 224 local tests, saved receipts and independent Linux reproduction on GitHub | Passing tests verify implementations and reported results, not efficacy |
 
 The [current status](../CURRENT_STATUS.md), [Stage 3 dossier](stage3/README.md)
@@ -66,9 +69,15 @@ preserving the numerical tolerances, all outcomes and all admission decisions.
 
 Complete one bounded predictor revision and its connected interpretation:
 
-**Checkpoint, 12 October:** steps 1–2 are complete within the separately
-published no-dose study. Steps 3–4 remain. Passing that component does not admit
-stimulation or establish the combined-correction/retained-learning claim.
+**Closeout, 12 October:** all four finite steps are complete, as reviewed in the
+[exit ledger](stage3/exit-review.md) and [integrated verdict](stage3/stage3-verdict.md).
+The new actual-only replay retains 32 practice and 64 OFF sessions, 32 sealed
+vectors, 32 pre-launch diagnostics and 1,600 passing guard comparisons. Every
+tested nonzero candidate rejects; this is a negative active-assistance verdict.
+Fifteen contract probes, independent raw interval/data recomputation and full
+same-cohort reproduction pass. No active delivery path or post-dose monitoring
+was newly validated by the zero-launch replay. The list below records the
+completed closeout contract rather than assigning more Stage 3 work.
 
 1. **Freeze one observed-state method.** Use measured calibration only, known
    instructions and an explicit structural movement prior. Declare state,
@@ -89,8 +98,8 @@ stimulation or establish the combined-correction/retained-learning claim.
    The first replay has one practice trial; repeated intervention-modified
    sessions need further state-domain evidence. Learning-enabled response
    interaction is not supplied by the inherited learning-OFF calibration.
-   If the observer fails, retain that outcome and explicitly withdraw the
-   unsupported active demonstration; do not tune thresholds to force pulses.
+   Retain any forecast, delivery, interaction or correction failure and withdraw
+   unsupported active-demonstration claims; do not tune thresholds to force pulses.
 4. **Issue the Stage 3 verdict and report.** Consolidate both application
    mechanisms, the verified operating domain, negative controls, numerical
    sensitivity and the electronics handoff. State which digital claims are
@@ -105,6 +114,14 @@ application stays explicitly conditional. Further model revisions become
 separately justified extensions rather than an unbounded Stage 3 checklist.
 
 ## Stages 4 and 5
+
+The [conditional concept revision](stage3/conditional-concept.md) reconnects this
+handoff to the user's intended future-interface approach. Fourteen primary
+research anchors support a fifteen-entry premise ledger. A separate 128-scenario
+illustrative model demonstrates causal assistance and positive/equal/adverse
+assumed learning, with no unique neural-information advantage. Its finite scope
+does not require qualification of the earlier actual-delivery branch. Further
+general observer/audit families are not prerequisites to native circuit/CAD work.
 
 Stage 4 has already begun with the [native dual-source monitor](../electronics/stage4/monitoring-cell/README.md)
 and [33-run behavioral circuit study](../electronics/stage4/monitoring-study/README.md).

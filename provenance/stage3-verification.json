@@ -9,7 +9,7 @@
     "156 pressure runs cover thirteen families, paired equal calibration, observable support timing, whole frames and explicitly privileged oracle diagnostics",
     "Eight finite hold/ramp cases supplement stop; nadir, support loss and overshoot remain measured model outcomes",
     "Six separately scoped pressure refinement probes retain identical actual noise, fixed observation schedules and chosen surrogate delivery; no general convergence pass",
-    "172 local dossier links resolve; progress IDs match Stage1; three SVG/PNG figure pairs exist; Stage3 remains explicitly in progress"
+    "231 local dossier links resolve; progress IDs match Stage1; three SVG/PNG figure pairs exist; current stage status and separate closeout ledger are explicit"
   ],
   "counts": {
     "electrical_cases": 7,
@@ -20,9 +20,9 @@
     "bounded_pressure_refinement_probes": 6
   },
   "observed_motor_practice_pulses": {
-    "nominal": 0,
     "fast_response_sensitivity": 0,
-    "conditional_fast_response_assumed_delivery": 19886
+    "conditional_fast_response_assumed_delivery": 19886,
+    "nominal": 0
   },
   "input_normalized_hashes": {
     "src/ato/stage3/__init__.py": "52e87fb1296e8c7d664bf054b023446baebcdfaad4152776ce26e2a83962c4ec",
@@ -47,7 +47,7 @@
     "scripts/stage3_ngspice_check.py": "ae6d57b5c506886e59fb472feaaeca6753084e7de9669b497c9be4b7de2970f3",
     "requirements-lock.txt": "adae70fd5194e076ca4caab4b831dfc143b1b37f55ee454b0df041b84148a48d",
     "scripts/stage3_electrical_sweep.py": "c6f0127e7dd99f94378baddb6b8f7f90a1ff50fb0d91d7db0d005bbee720b7ed",
-    "scripts/verify_stage3_foundation.py": "ee5d8ae062f9bcb3a35eb717faee9f7722a8606b3e6ecb3662a225171a448cb7",
+    "scripts/verify_stage3_foundation.py": "094f34332b9f3055cc1d382ea96a006ecc6ff906ab347d77efda433610108106",
     "scripts/stage3_pressure_convergence_probe.py": "25dc9ea517bca5301b51a674ec1d058a0fd0b87b0ba26ff913578e82b79da112",
     "docs/stage2/system-design.json": "75e90fc7bc337422429d02944c8a44ea22399f5a1842f1239ae433f44bf5b679",
     "docs/stage2/control-contracts.json": "85a7861458a8d49d469cfe331af802bed6b78ed1557122413db6d5b2383a6a3e"

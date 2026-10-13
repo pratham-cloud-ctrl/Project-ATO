@@ -1,6 +1,6 @@
 # Project ATO: current work status
 
-Updated: **12 October 2026**.
+Updated: **13 October 2026**.
 
 ## Active objective
 
@@ -22,7 +22,7 @@ assumed. Video and website work are parked. No deadline is imposed.
 |---|---|---|
 | 1: mechanism/specification | Complete within specification scope | Both causal chains, requirements/assumptions/capability map, primary-source audit, interfaces, three editable diagrams and illustrated nine-page brief |
 | 2: quantitative architecture | Complete within architecture scope | 16-stream/two-source design, timing/noise/compute/memory/power budgets, rejected cases, control contracts, eight-page brief and preliminary native allocation CAD; [exit review](docs/stage2/exit-review.md) |
-| 3: computational mechanisms | **In progress; observer confirmation completed** | Preserved foundation studies, numerical/source checks, nominal teacher references, dynamic response, a negative reset-trial pilot and a separately frozen no-dose observer confirmation; connected integration and final verdict remain |
+| 3: computational mechanisms | **Conservative investigation closed; conditional concept v1 complete** | Historical qualification results preserved. New evidence/premise/mechanism package and 128 illustrative scenarios connect an assumed spinal interface to assistance and conditional OFF learning; biological efficacy remains unestablished |
 | 4: detailed electronics/firmware | **Native monitor and initial behavioral study verified; wider stage in progress** | Editable two-source monitor, 70 components, 245 checked pin assignments, three reviewed sheets and zero ERC violations; 33 independent transient runs; complete acquisition, drivers/routing, supervision, power/telemetry, PCB and target firmware remain pending |
 | 5: populated engineering CAD | Pending | Actual boards/components/package/lead interfaces, native parametric assemblies, dimensions, STEP/STL and nominal fit checks |
 | 6: integrated paper/repository release | Pending | Complete digital path verification, final illustrated manuscript, native sources, reproducible release, evidence and learning/defence material |
@@ -108,7 +108,18 @@ previous work to this revision and the next package. Its main evidence includes:
   sensor-noise independence within the same subject/model domain, not biological
   validation. It uses no spinal input, delivers no dose and does not replace the
   failed pilot. Persistent history, calibration and desktop memory costs are
-  explicit; post-stimulation contamination and connected guards need resolution.
+  explicit. Pre-dose integration is verified separately below; a stimulated
+  voluntary-state estimate remains unqualified.
+- **Final bounded replay:** the [pre-dose freeze study](experiments/stage3/frozen-observer-pilot/README.md)
+  completed 32 one-practice trials and 64 hard-OFF assessments. All 32 observers
+  seal their 26-target vectors; 32 pre-launch diagnostics and 1,600 delayed guard
+  comparisons pass. All 192 tested nonzero candidates reject actual response
+  qualification, learning-interaction qualification and the 25 mm correction
+  bound. All arms remain identical, with zero launches and no retained advantage.
+  Fifteen software contract probes and full same-cohort reproduction pass.
+  Independent raw recomputation checks all 57,600 measurements and complete
+  interval arithmetic. This replay implements no active delivery path and
+  supplies no new post-dose monitoring/cancellation evidence.
 - **Technical report:** an eight-page [illustrated mechanism revision](output/pdf/ATO_stage3_mechanism_revision.pdf)
   presents the selected new findings and their design consequences.
 - **Native electronics:** the [first monitoring schematic](electronics/stage4/monitoring-cell/README.md)
@@ -147,13 +158,12 @@ evidence for their stated digital models, not proof of biological efficacy.
 
 The monitor's approximately 44.1% nominal-charge uncertainty leaves actual motor
 authority negative. Nominal reactive timing exceeds its 100 ms prediction cap.
-The original known-cue alternative fails assisted validation. The new
-intervention-aware observer improves selected predetermined contexts, while a
-repeating feedback-dependent command sequence remains unqualified. Newly observed
-isolated response components and a fresh unassisted baseline supported testing a
-narrower one-intervention-per-reset-trial pilot. Its independent learner-drift
-check fails, so it admits no intervention. Continuous practice assistance remains
-unqualified.
+The original known-cue alternative and historical pilot drift checks fail.
+The new persistent observer resolves its selected no-dose forecast arithmetic;
+its connected freeze, guards and OFF replay now pass. Actual action domains,
+learning-enabled response interaction and the combined correction interval
+still reject every nonzero candidate. Continuous/repeated assistance, active
+monitoring and retained benefit remain unqualified.
 Those failures set redesign requirements; they are not hidden by a
 desired learning multiplier or favorable biological tuning.
 
@@ -164,35 +174,28 @@ universal autonomic control or healthy-consumer efficacy.
 
 ## Next move
 
-The [engineering roadmap and finite Stage 3 closeout](docs/engineering-roadmap.md)
-separates completed studies, the remaining predictor/confirmation/pilot/report
-work, and proposed tools for Stages 4–5. Biological efficacy remains a future
-evidence requirement rather than an endlessly expanding software task.
+The [conditional concept v1](docs/stage3/conditional-concept.md) now supplies the
+current future-interface design baseline. It includes 14 primary research
+anchors, 15 explicit premises/scenario choices, both causal mechanisms and
+128 finite scenarios. Useful assistance and favorable retained adaptation are
+conditional results; the same assistance can cause no added learning or harm.
+Equal-information references are identical, and no useful live-neural advantage
+is established in the simple cyclic task. This is an engineering concept under
+declared assumptions, not a newly qualified biological or electrical device.
 
-The bounded no-dose predictor revision and fresh sensor-noise confirmation are
-now complete as a standalone desktop investigation. Next, review one integration
-choice for the existing reset-trial protocol: causal whole-prefix removal of
-observed past stimulation with propagated uncertainty, or a genuine pre-dose
-forecast freeze followed by independent pending-response monitoring. A persistent
-observer cannot treat stimulated motion as voluntary motion. Keep matched arm
-resources, finite support/action scope, live delivery uncertainty, cancellation,
-unavailable references, nonbeneficial plasticity and pulse-free OFF assessment.
-The 25 mm complete-correction gate and active pilot are still unearned. Then
-publish the integrated Stage 3 verdict and electronics handoff, regardless of
-whether the selected finite experiment produces favorable learning.
+The [Stage 3 exit review](docs/stage3/exit-review.md),
+[integrated verdict](docs/stage3/stage3-verdict.md) and
+[illustrated report](output/pdf/ATO_stage3_closeout.pdf) close the selected
+digital investigation with an unfavorable active-assistance result. This is
+not completion of the full implant or evidence of biological efficacy.
+The [roadmap](docs/engineering-roadmap.md) now hands detailed design to Stages 4–5.
+The earlier four-practice pilot and the new one-practice replay retain separate
+identities. Additional active learning/intervention states require new evidence;
+they are not silently covered by the no-dose confirmation.
 
-The [reviewed integration plan](docs/stage3/observer-integration-plan.md) fixes
-the final pre-dose observation/decision clocks and all forecast targets. It also
-identifies a separate gap: inherited intervention-response validation used
-learning disabled, so nonzero learning-enabled actions need an independently
-observed interaction allowance. The first bounded replay uses one practice
-trial; extending to four intervention-modified sessions is not silently covered
-by the current no-dose domain. An honest all-withheld result can close this step.
-The [portable reproduction receipt](provenance/stage3-observer-package-verification.json)
-records all three frozen audits and full deterministic confirmation reproduction.
-
-In parallel, develop the [first native monitoring circuit](docs/stage4/entry-plan.md)
-from the [electronics handoff](docs/stage3/mechanism-to-electronics-handoff.md).
+Next develop the [native circuits](docs/stage4/entry-plan.md)
+from the [conditional design handoff](docs/stage3/conditional-concept/engineering-handoff.md)
+and [conservative-study handoff](docs/stage3/mechanism-to-electronics-handoff.md).
 Measure each phase and recovery tail, bound integration/endpoint errors and
 reconcile component power and input-bias leakage before granting improved dose
 precision. Then extend acquisition, output/routing, supervision, power and
@@ -204,10 +207,10 @@ signed installer, matching SDK and a successfully linked unmodified processor
 example. A separate short physical SDK copy resolves the asset folder's spaces;
 the original installation is preserved. Full ATO target firmware is pending.
 
-Stage 3 ends when its digital mechanism, numerical/information boundaries,
-comparisons and failure tests are sufficiently resolved to support a concrete
-detailed design. Human experimentation and a guaranteed positive consumer
-result are not requirements to invent. Remaining items are tracked individually
+The selected Stage 3 packages now support detailed design with separate
+conservative findings and conditional premises. Human experimentation and a
+guaranteed positive consumer result are not requirements to invent. Further
+mechanism studies need a specific design-changing reason. Remaining items are tracked individually
 in the [progress record](docs/stage3/verification-progress.csv).
 
 Working branch: overhaul/full-scci-system.

@@ -198,3 +198,42 @@ processor example from a separate short physical copy. This verifies the tools,
 not ATO target firmware. A reviewed driver design note defines a restricted next
 native circuit boundary. The connected learning-enabled response interaction,
 complete electronics, populated CAD and final manuscript remain unfinished.
+
+## Finite Stage 3 closeout, 12 October 2026
+
+A separate AI implementation workstream froze the actual-only pre-dose observer
+replay before generation. Root and a read-only AI reviewer inspected its protocol,
+causal clocks, candidate gates and evidence preservation; root saved hash-bound
+approval before the cohort ran. It retains 32 one-practice trials and 64 hard-OFF
+assessments with zero launches. Fifteen software contract probes, measured-input
+controller replay and full deterministic same-cohort reproduction passed.
+
+A separately written and published raw auditor recomputed all recorded intervals,
+noise injection, forecast/guard residuals and matched-arm outcomes without
+executing the producer or controller. The integrated verdict and eight-page
+report distinguish no-dose component success from unavailable actual assistance,
+unqualified learning interaction and unexercised active delivery/monitoring.
+Root closes only the selected digital Stage 3 investigation. Complete native
+electronics, ATO target firmware, populated CAD and the final project manuscript
+remain later stages. No human reviewer, physical experiment or biological result
+is implied by these AI-assisted checks.
+# Conditional future-concept revision - 13 October 2026
+
+Pratham clarified that plausible undemonstrated assumptions are permitted and
+that experimental proof of the complete biological conjunction must not prevent
+completion of the digital concept. The root AI agent traced the completion-scope
+drift, preserved the original frozen studies, specified a separate 128-scenario
+illustrative model, implemented it, reproduced its saved outputs and inspected
+the figures. Separate AI research passes supplied the motor and physiological
+primary-source reviews, 15-entry premise ledger and engineering handoff. A separate
+AI read-only implementation review checked causal inputs, calibration/true-state
+separation, learning identity, washout and resource accounting. It found a metric
+label ambiguity; the protocol now explicitly says pooled two-coordinate RMS,
+preserving the original numerical criterion and outcomes.
+
+Favorable, equal and adverse learning outcomes remain consequences of declared
+equations, not fitted human results. All papers receive source credit, no new
+participant/animal/hardware experiment occurred, and the expert reference and
+live phase features remain assumed representations. Native electronics/firmware,
+populated CAD and final integrated publication are unfinished. Contributions are
+AI-assisted rather than independent institutional or clinical review.

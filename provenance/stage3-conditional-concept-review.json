@@ -1,0 +1,40 @@
+{
+  "schema": "ato.conditional-concept.review.v1",
+  "date": "2026-10-13",
+  "scope": "Conditional illustrative model and design handoff; no biological or native-circuit qualification",
+  "run_count": 128,
+  "practice_blocks": 3072,
+  "per_block_rows": 3200,
+  "assumption_rows": 15,
+  "primary_anchor_rows": 14,
+  "mechanism_checks": [
+    "Equal-information reference arms give identical results",
+    "rho=1 gives identical OFF learning despite ON assistance",
+    "Absent neural features fall back exactly to the external policy",
+    "No identified recruitment authority gives zero commands",
+    "All control observations have support <= availability",
+    "Learning identity independently matches the integrated update"
+  ],
+  "full_saved_results_reproduced": true,
+  "code_review": "Separate AI read-only review; metric label clarified to pooled two-coordinate RMS; numerical criterion/outcomes unchanged",
+  "visual_review": [
+    "conditional-learning.png",
+    "conditional-assistance.png"
+  ],
+  "outcome_tuning": false,
+  "raw_human_data": false,
+  "historical_source_pdf_unchanged_sha256": "a1784965d63060e3b0c11fd3c01c9f0b4fe0b007cc65c605c76164ee1d4bf103",
+  "all_new_package_local_links_resolve": 17,
+  "artifacts_sha256": {
+    "experiments/stage3/conditional-concept/conditional-assistance.png": "df903025a24f8e6df5d3e160b80dac58f12ba67cd8207e1e684e3620a1387442",
+    "experiments/stage3/conditional-concept/conditional-assistance.svg": "be26953a56d3c4d0bcfc21650da1e564d2597b5262d15f531dbc810b48969db6",
+    "experiments/stage3/conditional-concept/conditional-learning.png": "7086842ba2a4f3841a96d95dddaeaf04f262a32890812022368fe2813be5907f",
+    "experiments/stage3/conditional-concept/conditional-learning.svg": "ade8d196a6375079f8b9f0489a1cd700f58e33cb2590c431e0e39f756138dd2c",
+    "experiments/stage3/conditional-concept/first-practice-traces.json": "be1fd99bd4fd0ea0580e525bd77db8bc06eaf30057f4309135a54de4bd4aa9ea",
+    "experiments/stage3/conditional-concept/learning-curves.csv": "c853e7699835fa57b99e8dff7b31c9fa31c94750d999a59af420854fa898caa2",
+    "experiments/stage3/conditional-concept/protocol.md": "7d7b9851575b9db8b12ef93569c460655d5ffac972a6894693b414c4fcfa5e0e",
+    "experiments/stage3/conditional-concept/README.md": "622bdc847e6736852876766d0e8e4efe5ea8de7b7c31c50365610925b673d4fb",
+    "experiments/stage3/conditional-concept/study.py": "edbfffe80632aa058f5b6bd0ae4865c397ad078e09e9e06d7a63065d4ede151f",
+    "experiments/stage3/conditional-concept/summary.json": "90b18551e01b71700605d0feab9b8748566355616a806ed1ed01d86e1b3ed83e"
+  }
+}

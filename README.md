@@ -7,7 +7,7 @@ expert-informed motor practice that improves retained unassisted performance,
 and target-specific physiological automation. AstroSam's [Mind-Link](https://github.com/sam-astro/Mind-link)
 inspires the progression from future vision to inspectable electronics and physical design.
 
-> **Stages1 and2 are ready for review; Stage3 is in progress.** The mechanism has numerical
+> **Stages 1–2, the conservative mechanism studies and conditional concept v1 are complete within their scopes.** The mechanism has numerical
 > acquisition, compute, stimulation, timing, energy and package allocations,
 > including rejected cases. The full proposed implant remains in development on
 > `overhaul/full-scci-system`. Complete circuits, embedded implementation and
@@ -17,10 +17,16 @@ inspires the progression from future vision to inspectable electronics and physi
 
 | Start here | What to review |
 |---|---|
+| [Conditional SCCI concept](docs/stage3/conditional-concept.md) / [assumption ledger](docs/stage3/conditional-concept/assumption-ledger.csv) | Current design baseline: defensible future-interface assumptions, both mechanisms and the electronics/CAD handoff |
+| [New conditional scenario study](experiments/stage3/conditional-concept/README.md) | 128 scenarios: assistance can improve execution while retained learning improves, stays equal or worsens; no unique neural advantage claimed |
+| [Stage 3 exit review](docs/stage3/exit-review.md) / [integrated verdict](docs/stage3/stage3-verdict.md) / [illustrated report](output/pdf/ATO_stage3_closeout.pdf) | Audited finite investigation and detailed-design handoff; actual assistance remains unavailable |
+| [Final frozen-observer replay](experiments/stage3/frozen-observer-pilot/README.md) | 32 practice/64 OFF sessions; all interventions withheld; forecast sealing, guards and OFF behavior verified |
 | [Latest Stage3 continuation](docs/stage3/continuation-review.md) | Numerical verification, fair input comparisons, teacher correction, response limits and next design work |
 | [Current mechanism revision](docs/stage3/evidence-to-design-revision.md) | Paper-to-design reasoning, qualified teacher references, intervention-aware prediction and precision requirements |
 | [Illustrated Stage 3 revision report](output/pdf/ATO_stage3_mechanism_revision.pdf) | Selected teacher, source, causal forecast, pulse-response and delivery-precision findings |
 | [Connected reset-trial pilot](docs/stage3/isolated-pilot.md) | Qualified teacher references consumed; independent learner-drift forecasts reject all practice interventions; OFF results show no advantage |
+| [Confirmed no-dose observer](experiments/stage3/observed-state-observer/README.md) | Frozen method, raw data and independent audits: all 32 fresh sensor-noise captures pass the finite 15 mm budget; stimulation and learning benefit remain unqualified |
+| [Bounded integration plan](docs/stage3/observer-integration-plan.md) | Pre-dose forecast freeze, independent guards, one-shot permission and explicit delivery/learning-interaction limits |
 | [Stage 4 native monitoring work](docs/stage4/entry-plan.md) / [editable KiCad slice](electronics/stage4/monitoring-cell/README.md) | Three reviewed sheets, 245 checked pin assignments and zero ERC violations; analog precision and full electronics/firmware remain in development |
 | [Independent phase-charge study](electronics/stage4/monitoring-study/README.md) | 33 transient runs, both sources and 462 measured intervals in the behavioral model; bias, reset, settling and cancellation failures retained; 4% accuracy remains unearned |
 | [Stage3 computational foundation](docs/stage3/README.md) | Causal contact observations, expert/learner mechanism, measured delivery and external-pressure feedback |

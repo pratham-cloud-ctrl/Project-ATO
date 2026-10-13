@@ -210,8 +210,11 @@ def verify():
             resolved = (doc.parent/target.split('#')[0]).resolve()
             # The command creates/checks its own receipt after the audit succeeds.
             assert resolved == ROOT/'provenance/stage3-continuation-verification.json' or resolved.exists(), f'Broken local link in {doc.name}: {target}'
-    assert 'in progress' in (ROOT/'docs/stage3/README.md').read_text(encoding='utf-8').lower()
-    checks.append('Dossier links and requirement IDs resolve; Stage 3 stays in progress with named integration tasks')
+    status=(ROOT/'docs/stage3/README.md').read_text(encoding='utf-8').splitlines()[2]
+    assert status.startswith(('**In progress,', '**Complete within selected digital scope,'))
+    if status.startswith('**Complete within selected digital scope,'):
+        assert '**COMPLETE WITHIN SELECTED DIGITAL SCOPE**' in (ROOT/'docs/stage3/exit-review.md').read_text(encoding='utf-8')
+    checks.append('Dossier links and requirement IDs resolve; current stage status and separate closeout ledger are explicit')
 
     source_files = sorted((ROOT/'src/ato/stage3').glob('*.py'))
     source_files += sorted((ROOT/'scripts').glob('stage3_*.py'))

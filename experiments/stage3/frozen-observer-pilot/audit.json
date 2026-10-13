@@ -1,0 +1,35 @@
+{
+  "schema": "ato.stage3.frozen-observer-pilot.audit.v1",
+  "saved_records": 8,
+  "sessions": 96,
+  "sanitized_measurements_checked": 57600,
+  "controller_replays": 32,
+  "frozen_target_predictions_checked": 1664,
+  "actual_noise_arrays_checked": 12,
+  "all_predeclared_sessions_present": true,
+  "all_outcomes_retained": true,
+  "source_input_freeze_verified": true,
+  "negative_controls": {
+    "classification": "SOFTWARE_CONTRACT_PROBES_NOT_ACTIVE_DELIVERY_EVIDENCE",
+    "passed": 15,
+    "failed": 0,
+    "checks": [
+      "actual_response_and_learning_interaction_are_independent_blockers",
+      "nonempty_past_action_prefix_rejected",
+      "outside_exact_support_and_horizon_domains_rejected",
+      "incorrect_freeze_clock_rejected",
+      "sealed_observer_and_immutable_forecast_reject_reuse",
+      "one_shot_permit_replay_and_wrong_launch_clock_rejected",
+      "zero_choice_remains_zero_with_all_launch_checks_passed",
+      "six_eligible_exact_score_ties_preserve_zero_action",
+      "future_poison_cannot_revise_freeze_and_current_target_veto_precedes_launch",
+      "missing_last_target_expires_without_inventing_measurement",
+      "skipped_committed_support_latches_before_future_continuation",
+      "policy_clock_rollback_rejected",
+      "completed_monitor_unavailable_until_its_real_clock_and_full_product_retained",
+      "response_after600ms_has_no_qualified_zero_tail_release",
+      "invalid_actual_monitor_quality_rejected"
+    ]
+  },
+  "classification": "SAVED_DATA_AND_MEASURED_INPUT_CONTROLLER_REPLAY; NOT_ACTIVE_ELECTRONICS_QUALIFICATION"
+}

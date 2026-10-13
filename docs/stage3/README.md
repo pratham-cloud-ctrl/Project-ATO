@@ -1,6 +1,9 @@
 # Stage 3: computational mechanism studies
 
-**In progress, updated 12 October 2026.** This implementation connects synthetic
+**Complete within selected digital scope, 13 October 2026.** The conservative
+qualification investigation and conditional concept v1 have separate outcomes.
+The [conditional mechanism](conditional-concept.md) is the current design baseline;
+its assumptions need not already be experimentally demonstrated. The historical implementation connects synthetic
 spinal contact observations, causal interpretation, learner calibration, expert
 representations, pulse delivery and modeled task response. Both motor learning
 and selected physiological feedback remain central to Project ATO.
@@ -12,6 +15,10 @@ complete electronics and populated engineering CAD follow the mechanism work.
 
 | Read or reproduce | Purpose |
 |---|---|
+| [Conditional concept v1](conditional-concept.md) / [15-entry premise ledger](conditional-concept/assumption-ledger.csv) / [design handoff](conditional-concept/engineering-handoff.md) | Evidence-grounded future architecture, explicit undemonstrated assumptions and finite completion boundary |
+| [New conditional scenario study](../../experiments/stage3/conditional-concept/README.md) | 128 scenarios; causal synthetic spinal features and assistance; favorable/equal/adverse OFF learning; old frozen studies unchanged |
+| [Exit review](exit-review.md) / [integrated verdict](stage3-verdict.md) / [illustrated closeout report](../../output/pdf/ATO_stage3_closeout.pdf) | Finite digital investigation completed; active assistance and retained benefit remain unavailable under present evidence |
+| [Final frozen-observer replay](../../experiments/stage3/frozen-observer-pilot/README.md) | 32 practice/64 OFF sessions; zero launches; sealed predictions and guards verified; no active delivery path implemented |
 | [Continuation review and next work](continuation-review.md) | Verified numerical/input/response/teacher checks, integrated findings and remaining design tasks |
 | [Evidence-to-design revision](evidence-to-design-revision.md) | Original paper and primary experiments mapped to specific engineering tests |
 | [Competence-gated teacher library](teacher-library.md) / [aperture-resolved teacher revision](resolved-teacher.md) | Separate measured competence, decoder and reference gates; unsupported cadences remain unavailable |
@@ -22,8 +29,8 @@ complete electronics and populated engineering CAD follow the mechanism work.
 | [Zero-future-command baseline](sparse-baseline.md) | Observed past-response strip/re-add; full uncertainty and explicit unsupported-tail rejection |
 | [Coupled-pilot specification](dynamic-coupling-specification.md) | Candidate response added once, complete correction gate and timed residual cancellation |
 | [Completed isolated pilot](isolated-pilot.md) | Independent learner drift rejects admission; 128 zero-launch practice trials and 64 pulse-free OFF assessments |
-| [Observed-state observer confirmation](../../experiments/stage3/observed-state-observer/README.md) | Frozen measured-data method; 32 fresh-noise grid captures within the finite no-dose forecast budget; connected pilot remains pending |
-| [Observer integration plan](observer-integration-plan.md) / [independent saved-data review](observed-state-independent-review.md) | One pre-dose forecast freeze, actual-dose/learning-interaction limits, finite experiment and explicit expiry; no new connected outcome yet |
+| [Observed-state observer confirmation](../../experiments/stage3/observed-state-observer/README.md) | Frozen measured-data method; 32 fresh-noise grid captures within the finite no-dose forecast budget; separate from the connected replay |
+| [Observer integration plan](observer-integration-plan.md) / [independent saved-data review](observed-state-independent-review.md) | Preserved pre-implementation plan and component review; completed actual-only replay retains delivery/learning-interaction limits |
 | [First Stage 4 monitoring slice](../stage4/entry-plan.md) | Native two-source phase-charge investigation and explicit power/leakage constraints; full electronics remain pending |
 | [Illustrated mechanism revision report](../../output/pdf/ATO_stage3_mechanism_revision.pdf) | Eight-page technical report covering the selected teacher/source/prediction/precision and dynamic-response revisions |
 | [Mathematical specification](mathematical-specification.md) | Causal information partitions, units, electrical equations and observation bounds |
@@ -31,7 +38,7 @@ complete electronics and populated engineering CAD follow the mechanism work.
 | [Pressure mechanism](pressure-model.md) | External SBP, identified pressor authority, support timing, faults and overshoot |
 | [Results and interpretation](results-and-interpretation.md) | Paired seed results; integrated failures and separately labeled conditional mechanism |
 | [Electrical review](electrical-review.md) / [motor review](motor-review.md) | Independent findings, corrections and evidence boundaries |
-| [Progress and remaining work](verification-progress.csv) | Partial coverage rather than a claim of complete Stage3 verification |
+| [Progress and remaining work](verification-progress.csv) | Scoped coverage; concept completion does not establish complete biological or hardware verification |
 | [Numerical verification](numerical-verification.md) / [original plan](numerical-convergence-plan.md) | 96 motor fixed-input refinements, five bounded closed-loop grids and 408 matched pressure runs |
 | [Acquisition qualification](acquisition-qualification.md) | Range-bounded digital residuals, per-contact validity and missing-input sensitivity |
 | [Information comparison](information-comparison.md) / [external-history baseline](external-history-baseline.md) | Seven studies with a capacity-matched learned external comparator and same-support scoring |
@@ -99,6 +106,8 @@ python scripts/stage3_dynamic_response_study.py --check
 python scripts/stage3_sparse_baseline_study.py --check results/stage3/sparse-baseline/raw.json.gz
 python scripts/stage3_isolated_pilot_study.py --check results/stage3/isolated-pilot/raw.json.gz
 python experiments/stage3/observed-state-observer/verify_study.py --reproduce
+python experiments/stage3/frozen-observer-pilot/verify_study.py --reproduce
+python scripts/audit_frozen_observer_pilot.py
 python scripts/verify_stage3_revision.py
 ```
 
@@ -145,6 +154,8 @@ reduction; live continuous routing, actual analog guard behavior and chemistry a
 later evidence. Improved modeled disturbance response can coexist with recovery
 overshoot or loss of support when feedback stops.
 
-Stage3 is complete only when its outstanding mechanism/verification criteria are
-resolved with concrete evidence. These first studies make the requirements and
-failure mechanisms inspectable; they do not finish the full implant project.
+The [finite exit review](exit-review.md) closes this selected digital investigation
+with its negative active-assistance verdict and concrete detailed-design handoff.
+Biological efficacy and future active model extensions remain separate evidence
+requirements. Complete native electronics, target firmware, populated CAD and the
+final integrated manuscript follow; this does not finish the full implant project.

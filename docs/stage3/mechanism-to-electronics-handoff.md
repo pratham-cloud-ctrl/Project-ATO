@@ -18,7 +18,7 @@ solids are allocation envelopes, not populated engineering CAD.
 | Delivered dose | Independent current/charge/compliance observations; nominal uncertainty about 44.1% of phase charge | A revised independently evidenced integration/edge/guard scheme if tighter precision is needed; correlated errors and interrupted dose retained |
 | Timing | 11.85 ms processing allocation plus support age, frame wait and observed response onset | Actual embedded schedules, buffering and worst-case latency, observed clock bounds, expiration and cancellation |
 | Response authority | Actual motor authority remains negative; finite conditional resting maps only | Profile/route/context-bound mapping and uncertainty, including the product of gain and dose uncertainty; unsupported cases inhibit |
-| Forecasting | Nominal known-cue component fits; assisted-context validation fails | A validated observed assisted predictor before coupling, or a separately justified policy; future commanded dose cannot be treated as measured |
+| Forecasting | New frozen external observer passes its finite no-dose confirmation; historical assisted-context validation still fails | Whole-prefix state/calibration resources, pre-dose freeze or qualified response correction, explicit support/horizon domain, target implementation; future commanded dose cannot be treated as measured |
 | Pressure feedback | External pressure supports the selected model; dense active blocks do not qualify neural recording | Sensor transport/support/freshness, feedback/fallback state machines and appropriate power/rate allocations; no invented neural pressure value |
 | Fault supervision | Offline pulse admission/rearm and finite fallback witnesses exist | Continuous route switching, guard latency, waveform faults, link loss, reboot and power behavior exercised in native circuit/firmware models |
 | Power/package | Stage 2 budgets include rejected continuous strong-pressure and all-max cases | Recalculate instantaneous/average power, heat, memory and buses for actual components; populate matched CAD envelopes |
@@ -84,3 +84,47 @@ independent fault latch must also inhibit output. Its component power and input
 bias may revise the Stage 2 allocation. Schematic/ERC correctness does not earn
 the proposed 4% dose interval: continuous waveform, settling, window boundaries,
 leakage and interrupted-charge errors still need quantified circuit evidence.
+
+## Confirmed external observer and bounded integration input
+
+The [separate observer confirmation](../../experiments/stage3/observed-state-observer/README.md)
+retains 16 new sensor-noise pairs on two grids, with all 915,200 coordinate
+residuals audited. The largest error plus the unchanged 3 mm label allowance is
+11.354 mm, below the 15 mm forecast gate. This finite result uses one measured
+prior, the whole accepted position prefix and a declared 60 ms synthetic
+movement prior. It is external sensing, not evidence of useful live spinal
+information. It does not replace the historical negative pilot.
+
+The [reviewed pre-dose freeze](observer-integration-plan.md) seals the observer
+at decision 0.975 s after consuming supports through 0.950 s. It records all 26
+targets from 0.975 to 1.100 s, including a separate delayed diagnostic for the
+target equal to creation time. After sealing, positions feed independent guards
+only. A new measurement cannot revise the frozen candidate or grant a second
+shot. Forecast authority ends at 1.100 s; it is not extended by an empty queue.
+These clocks are a finite simulation contract, not measured embedded deadlines.
+
+Two blocks remain independent of baseline prediction. The actual monitored
+dose has approximately 44.1% nominal-charge uncertainty, and every inherited
+isolated motor action domain rejects. In addition, inherited response
+validation disabled learning. A stimulation-induced change to voluntary
+movement in a learning-enabled trial requires a separately observed interaction
+allowance; it cannot be absorbed into the no-dose predictor or assumed zero.
+Neither a tighter proposed monitor nor a passing observer alone authorizes a
+nonzero learning intervention.
+
+Firmware cannot copy the desktop implementation without a resource redesign.
+It has ten state means and 55 unique covariance entries, plus 101 learned prior
+and drift entries. Python stores the full 100-entry covariance; its optional
+transition cache alone can reach 1,638,400 bytes, above the proposed 512 KB RAM.
+The [linked SDK example](../stage4/firmware-toolchain.md) proves compiler setup
+only. Actual observer/controller memory, execution time, ADC/DMA, timer, bus and
+supervision backends remain required Stage 4 evidence.
+
+Keep prospective forecasts immutable after launch. A completed independent
+monitor may supply a new actual-dose interval only when it becomes available;
+it must not rewrite earlier commitments or erase a physically delivered phase.
+The observed response window ends at 600 ms lag with no qualified release rule.
+Unknown residual response remains unavailable rather than becoming zero.
+Hard-OFF assessment, pending queues, inhibition and physical rearm therefore
+need explicit target state machines. A full simulator reset is a declared
+washout premise, not a future implant recovery mechanism.

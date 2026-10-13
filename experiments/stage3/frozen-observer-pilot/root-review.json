@@ -1,0 +1,22 @@
+{
+  "schema": "ato.stage3.frozen-observer-pilot.root-review.v1",
+  "date": "2026-10-12",
+  "authorized": true,
+  "preflight_sha256": "09a3420045af0eb80c77d7a388dd43e3229c9d133647291d874984f7f5623dc8",
+  "reviewer": "Root AI engineering agent, with separate read-only AI audit; not human or institutional review",
+  "reviewed": [
+    "Complete protocol and producer/verifier source before outcome generation",
+    "Four exact code/protocol/dependency hashes, inherited inputs and all 21 bound historical sources",
+    "Actual-only branch, independent delivery/learning-interaction gates and no active delivery implementation",
+    "Matched four arms, four evaluator-only families, two grids, one practice and two hard-OFF assessments",
+    "Causal 0.975-second freeze from support 0.950; 26 targets, separate current diagnostic and 25 future commitments",
+    "Immutable preflight/output preservation and failure evidence before any unexpected nonzero delivery",
+    "Declared numeric comparison tolerances, discrete gates and scoped software contract probes"
+  ],
+  "approved_scope": "Generate once the predeclared finite primary-actual no-launch replay and retain all outcomes. An unexpected nonzero authorization is a persisted regression failure, not an active experiment.",
+  "not_approved_as_evidence": [
+    "Active driver or monitoring validation",
+    "Retained-learning benefit or live learner spinal-information increment",
+    "Human efficacy or completed implant"
+  ]
+}

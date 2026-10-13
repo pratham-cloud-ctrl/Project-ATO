@@ -36,3 +36,11 @@ electronics/stage4/monitoring-study/*.svg whitespace=-blank-at-eol
 # Reviewed observer freezes bind original bytes, including Windows JSON newlines.
 experiments/stage3/observed-state-observer/requirements-lock.txt text eol=lf
 experiments/stage3/observed-state-observer/frozen/** -text whitespace=cr-at-eol
+# This separately approved replay also binds exact protocol/source/receipt bytes.
+experiments/stage3/frozen-observer-pilot/** -text whitespace=cr-at-eol
+# Historical report embeds the exact approved review bytes, including newlines.
+provenance/stage3-closeout-review.json -text whitespace=cr-at-eol
+# Matplotlib SVG spacing is generated and visually inspected.
+# Preserve the reviewed scenario bytes bound by its review receipt.
+experiments/stage3/conditional-concept/** -text whitespace=cr-at-eol
+experiments/stage3/conditional-concept/*.svg whitespace=-blank-at-eol,cr-at-eol
