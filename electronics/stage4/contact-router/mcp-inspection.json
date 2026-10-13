@@ -1,0 +1,760 @@
+{
+  "schema": "ato.stage4.contact-router.mcp-inspection.v1",
+  "date": "2026-10-13",
+  "source": "Saved-file MCP readback and fresh kicad-cli ERC through registered KiCad bridge; no live PCB or unsaved editor evidence",
+  "project": {
+    "kicad_version": null,
+    "last_modified_unix": 1791910287,
+    "name": "contact_router",
+    "path": "E:\\Project ATO\\electronics\\stage4\\contact-router\\contact_router.kicad_pro",
+    "pcb": "E:\\Project ATO\\electronics\\stage4\\contact-router\\contact_router.kicad_pcb",
+    "pcb_exists": false,
+    "pcb_generator_version": null,
+    "project_file_version": 1,
+    "schematic": "E:\\Project ATO\\electronics\\stage4\\contact-router\\contact_router.kicad_sch",
+    "schematic_exists": true,
+    "schematic_generator_version": null
+  },
+  "mux_component": {
+    "footprint": "ato_rte:TSSOP-16_4.4x5mm_P0.65mm",
+    "lib_id": "ATO_RTE:U100",
+    "mirror_x": false,
+    "mirror_y": false,
+    "properties": {
+      "Datasheet": "https://www.ti.com/lit/ds/symlink/tmux6208.pdf",
+      "Footprint": "ato_rte:TSSOP-16_4.4x5mm_P0.65mm",
+      "Reference": "U100",
+      "Value": "TMUX6208PWR"
+    },
+    "reference": "U100",
+    "rotation": 0,
+    "unit_count": 1,
+    "units": [
+      {
+        "mirror_x": false,
+        "mirror_y": false,
+        "rotation": 0,
+        "unit": 1,
+        "uuid": "904b0ad9-4296-5acc-b1b7-8aa692994620",
+        "x": 152.4,
+        "y": 101.6
+      }
+    ],
+    "uuid": "904b0ad9-4296-5acc-b1b7-8aa692994620",
+    "value": "TMUX6208PWR",
+    "x": 152.4,
+    "y": 101.6
+  },
+  "mux_pin_locations": {
+    "component_x": 152.4,
+    "component_y": 101.6,
+    "pins": [
+      {
+        "length_mm": 2.54,
+        "name": "A0",
+        "number": "1",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 139.70000000000002,
+        "y": 93.97999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "A1",
+        "number": "16",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 139.70000000000002,
+        "y": 96.52
+      },
+      {
+        "length_mm": 2.54,
+        "name": "A2",
+        "number": "15",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 139.70000000000002,
+        "y": 99.05999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "EN_HIGH",
+        "number": "2",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 139.70000000000002,
+        "y": 101.6
+      },
+      {
+        "length_mm": 2.54,
+        "name": "VDD",
+        "number": "13",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 139.70000000000002,
+        "y": 104.14
+      },
+      {
+        "length_mm": 2.54,
+        "name": "VSS",
+        "number": "3",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 139.70000000000002,
+        "y": 106.67999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "GND",
+        "number": "14",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 139.70000000000002,
+        "y": 109.22
+      },
+      {
+        "length_mm": 2.54,
+        "name": "D_COMMON",
+        "number": "8",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 165.1,
+        "y": 91.44
+      },
+      {
+        "length_mm": 2.54,
+        "name": "S1",
+        "number": "4",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 165.1,
+        "y": 93.97999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "S2",
+        "number": "5",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 165.1,
+        "y": 96.52
+      },
+      {
+        "length_mm": 2.54,
+        "name": "S3",
+        "number": "6",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 165.1,
+        "y": 99.05999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "S4",
+        "number": "7",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 165.1,
+        "y": 101.6
+      },
+      {
+        "length_mm": 2.54,
+        "name": "S5",
+        "number": "12",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 165.1,
+        "y": 104.14
+      },
+      {
+        "length_mm": 2.54,
+        "name": "S6",
+        "number": "11",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 165.1,
+        "y": 106.67999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "S7",
+        "number": "10",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 165.1,
+        "y": 109.22
+      },
+      {
+        "length_mm": 2.54,
+        "name": "S8",
+        "number": "9",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 165.1,
+        "y": 111.75999999999999
+      }
+    ],
+    "reference": "U100",
+    "rotation": 0,
+    "unit_count": 1,
+    "units": [
+      {
+        "pins": [
+          {
+            "length_mm": 2.54,
+            "name": "A0",
+            "number": "1",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 139.70000000000002,
+            "y": 93.97999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "A1",
+            "number": "16",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 139.70000000000002,
+            "y": 96.52
+          },
+          {
+            "length_mm": 2.54,
+            "name": "A2",
+            "number": "15",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 139.70000000000002,
+            "y": 99.05999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "EN_HIGH",
+            "number": "2",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 139.70000000000002,
+            "y": 101.6
+          },
+          {
+            "length_mm": 2.54,
+            "name": "VDD",
+            "number": "13",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 139.70000000000002,
+            "y": 104.14
+          },
+          {
+            "length_mm": 2.54,
+            "name": "VSS",
+            "number": "3",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 139.70000000000002,
+            "y": 106.67999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "GND",
+            "number": "14",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 139.70000000000002,
+            "y": 109.22
+          },
+          {
+            "length_mm": 2.54,
+            "name": "D_COMMON",
+            "number": "8",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 165.1,
+            "y": 91.44
+          },
+          {
+            "length_mm": 2.54,
+            "name": "S1",
+            "number": "4",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 165.1,
+            "y": 93.97999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "S2",
+            "number": "5",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 165.1,
+            "y": 96.52
+          },
+          {
+            "length_mm": 2.54,
+            "name": "S3",
+            "number": "6",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 165.1,
+            "y": 99.05999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "S4",
+            "number": "7",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 165.1,
+            "y": 101.6
+          },
+          {
+            "length_mm": 2.54,
+            "name": "S5",
+            "number": "12",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 165.1,
+            "y": 104.14
+          },
+          {
+            "length_mm": 2.54,
+            "name": "S6",
+            "number": "11",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 165.1,
+            "y": 106.67999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "S7",
+            "number": "10",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 165.1,
+            "y": 109.22
+          },
+          {
+            "length_mm": 2.54,
+            "name": "S8",
+            "number": "9",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 165.1,
+            "y": 111.75999999999999
+          }
+        ],
+        "rotation": 0,
+        "unit": 1,
+        "x": 152.4,
+        "y": 101.6
+      }
+    ],
+    "x": 152.4,
+    "y": 101.6
+  },
+  "contact_header_pin_locations": {
+    "component_x": 500.38,
+    "component_y": 203.2,
+    "pins": [
+      {
+        "length_mm": 2.54,
+        "name": "1",
+        "number": "1",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 181.60999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "2",
+        "number": "2",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 184.14999999999998
+      },
+      {
+        "length_mm": 2.54,
+        "name": "3",
+        "number": "3",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 186.69
+      },
+      {
+        "length_mm": 2.54,
+        "name": "4",
+        "number": "4",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 189.23
+      },
+      {
+        "length_mm": 2.54,
+        "name": "5",
+        "number": "5",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 191.76999999999998
+      },
+      {
+        "length_mm": 2.54,
+        "name": "6",
+        "number": "6",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 194.31
+      },
+      {
+        "length_mm": 2.54,
+        "name": "7",
+        "number": "7",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 196.85
+      },
+      {
+        "length_mm": 2.54,
+        "name": "8",
+        "number": "8",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 199.39
+      },
+      {
+        "length_mm": 2.54,
+        "name": "9",
+        "number": "9",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 201.92999999999998
+      },
+      {
+        "length_mm": 2.54,
+        "name": "10",
+        "number": "10",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 204.47
+      },
+      {
+        "length_mm": 2.54,
+        "name": "11",
+        "number": "11",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 207.01
+      },
+      {
+        "length_mm": 2.54,
+        "name": "12",
+        "number": "12",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 209.54999999999998
+      },
+      {
+        "length_mm": 2.54,
+        "name": "13",
+        "number": "13",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 212.08999999999997
+      },
+      {
+        "length_mm": 2.54,
+        "name": "14",
+        "number": "14",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 214.63
+      },
+      {
+        "length_mm": 2.54,
+        "name": "15",
+        "number": "15",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 217.17
+      },
+      {
+        "length_mm": 2.54,
+        "name": "16",
+        "number": "16",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 219.70999999999998
+      },
+      {
+        "length_mm": 2.54,
+        "name": "17",
+        "number": "17",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 222.25
+      },
+      {
+        "length_mm": 2.54,
+        "name": "18",
+        "number": "18",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 487.68,
+        "y": 224.79
+      }
+    ],
+    "reference": "J7",
+    "rotation": 0,
+    "unit_count": 1,
+    "units": [
+      {
+        "pins": [
+          {
+            "length_mm": 2.54,
+            "name": "1",
+            "number": "1",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 181.60999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "2",
+            "number": "2",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 184.14999999999998
+          },
+          {
+            "length_mm": 2.54,
+            "name": "3",
+            "number": "3",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 186.69
+          },
+          {
+            "length_mm": 2.54,
+            "name": "4",
+            "number": "4",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 189.23
+          },
+          {
+            "length_mm": 2.54,
+            "name": "5",
+            "number": "5",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 191.76999999999998
+          },
+          {
+            "length_mm": 2.54,
+            "name": "6",
+            "number": "6",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 194.31
+          },
+          {
+            "length_mm": 2.54,
+            "name": "7",
+            "number": "7",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 196.85
+          },
+          {
+            "length_mm": 2.54,
+            "name": "8",
+            "number": "8",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 199.39
+          },
+          {
+            "length_mm": 2.54,
+            "name": "9",
+            "number": "9",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 201.92999999999998
+          },
+          {
+            "length_mm": 2.54,
+            "name": "10",
+            "number": "10",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 204.47
+          },
+          {
+            "length_mm": 2.54,
+            "name": "11",
+            "number": "11",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 207.01
+          },
+          {
+            "length_mm": 2.54,
+            "name": "12",
+            "number": "12",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 209.54999999999998
+          },
+          {
+            "length_mm": 2.54,
+            "name": "13",
+            "number": "13",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 212.08999999999997
+          },
+          {
+            "length_mm": 2.54,
+            "name": "14",
+            "number": "14",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 214.63
+          },
+          {
+            "length_mm": 2.54,
+            "name": "15",
+            "number": "15",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 217.17
+          },
+          {
+            "length_mm": 2.54,
+            "name": "16",
+            "number": "16",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 219.70999999999998
+          },
+          {
+            "length_mm": 2.54,
+            "name": "17",
+            "number": "17",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 222.25
+          },
+          {
+            "length_mm": 2.54,
+            "name": "18",
+            "number": "18",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 487.68,
+            "y": 224.79
+          }
+        ],
+        "rotation": 0,
+        "unit": 1,
+        "x": 500.38,
+        "y": 203.2
+      }
+    ],
+    "x": 500.38,
+    "y": 203.2
+  },
+  "erc": {
+    "coordinates": {
+      "kicad_version": "10.0.6",
+      "reason": "KiCad 10.0.6 writes every ERC JSON coordinate at 1/100 of its true value (kicad#25582, fixed in 10.0.7); Konnect multiplied it back. A length quoted inside KiCad's own violation text is scaled the same way and is left as KiCad wrote it.",
+      "scale_applied": 100,
+      "status": "corrected"
+    },
+    "errors": 0,
+    "total": 0,
+    "violations": [],
+    "warnings": 0
+  },
+  "overlaps": {
+    "contact_router": {
+      "bounds_resolved": 10,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "source0": {
+      "bounds_resolved": 12,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "source1": {
+      "bounds_resolved": 12,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "address": {
+      "bounds_resolved": 27,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "admission": {
+      "bounds_resolved": 59,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "collision": {
+      "bounds_resolved": 38,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    }
+  },
+  "schematic_sha256": {
+    "address.kicad_sch": "6240140d9875226c0b84b28bf17b47b68a05d0fed26e8591cc416b7bab65d1ee",
+    "admission.kicad_sch": "9edbc58513312c1ff2ec797933a833a033a0d5148a9c0fad0fec968bd15d7b29",
+    "collision.kicad_sch": "8cfe99d95e9dbca702e919a0a19072a156f5edacf08022810afd7b7ca720d243",
+    "contact_router.kicad_sch": "4b096078c6ddc3dbd2607e677c0a607f71d7e5079a4fdbb262a91ce59280ca55",
+    "source0.kicad_sch": "50ef00a2eb49268e99f23793e1f94e92149f4b3a62d4c16bed42f2e0a8b24b2a",
+    "source1.kicad_sch": "1f1b3f88447d2bc1551475605c6823ceee7dfdd197900c62d52bd17953e4e2d2"
+  }
+}

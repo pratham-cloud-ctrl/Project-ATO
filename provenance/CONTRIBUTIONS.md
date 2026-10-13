@@ -277,3 +277,30 @@ undetectable untagged-data replay. These are computational, AI-assisted checks;
 no human/institutional, hardware, animal or participant validation is implied.
 Historical packages and synced sources remain unchanged. Integrated circuits/
 firmware, populated PCB/CAD and final publication remain unfinished.
+
+## Contact routing and native MCP continuation - 13 October 2026
+
+The user supplied KiCad and FreeCAD MCP bridges. Root applied the local
+cad-electronics-mcp skill, verified serving versions, rechecked saved KiCad state
+and ERC, and opened the unchanged Stage 2 allocation in live FreeCAD. Eighty
+solids remained valid; this did not create populated CAD. No unsaved user design
+was overwritten or saved. The prior checkpoint's full GitHub CI was confirmed green.
+
+AI native implementation produced the restricted 24 V contact router with two
+sixteen-way selectors, distinct monitored returns, candidate/active address
+separation, raw commit clocks, collision inhibit and a fresh acknowledgement
+latch. A separate primary-source review selected the production TMUX6208PWR,
+verified pin/timing/power conditions and kept heartbeat supervision distinct
+from microsecond pulse limiting. A separate control workstream implemented
+finite ownership, hold, admission and fault histories with independent exported
+gate/pin checks. Root added passive off-contact coupling, an independent scalar/
+charge/RC auditor and scientific figures; the reviewer independently checked
+all saved trajectory points. That superposition check is included in the public
+auditor. Digital contact ownership is not reported as zero unselected current.
+
+All checks are AI-assisted computational work, not physical, participant, animal
+or institutional validation. False fresh acknowledgement, hardware-switch faults,
+power-off isolation and independent supervision remain explicit. Historical
+packages and synced sources are preserved. The five remaining Stage 4 packages
+fix the next engineering scope; biological efficacy is not an extra exit gate
+for the digital concept.

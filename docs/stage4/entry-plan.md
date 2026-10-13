@@ -260,7 +260,9 @@ driver now have native sources and finite initial studies. The
 [protected recording front end](recording-front-end-design.md) now adds seven
 native sheets, isolated SPI/control and finite input/protocol studies. Timing
 and power changes explicitly revise the historical Stage 2 proposal; weak-signal
-and recovery allocations remain unearned. Next integrate actual delivery/guard/
-recording paths and implement
+and recovery allocations remain unearned. The [native contact router](contact-router-design.md)
+now adds held addresses, two sixteen-way selectors, fixed monitored returns and
+collision/fresh-acknowledgement admission. Its analogue and readback limitations
+remain explicit. Next integrate actual delivery/guard/recording/routing paths and implement
 qualified external supervision and power/target interfaces. Preserve old studies
 and assign new source, calibration, profile and uncertainty IDs to each revision.

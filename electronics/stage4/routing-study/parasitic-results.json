@@ -1,0 +1,1817 @@
+{
+  "schema": "ato.stage4.router-parasitics.v1",
+  "source_sha256_lf": "47e7f5e07028f61bdc8085dfa646b697c947188b07822631fdac4f19a0d8fc87",
+  "scope": "Finite passive unselected-contact fixture; assumed coupling; not a nonlinear switch/tissue or complete driver model",
+  "rows": [
+    {
+      "case": "C1e-09_X1e-12_aligned",
+      "contact_capacitance_F_assumed": 1e-09,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1e-12,
+      "bus1_mutual_F_assumed": 1e-12,
+      "total_capacitance_F": 1.0320000000000002e-09,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "aligned",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.04651162790697674,
+          "coupled_charge_C": 4.8e-11,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.038317392072981356,
+          "after_V": 0.038317392072981356,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 8.456451380683235e-12
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 3.1722285928467694e-06,
+          "after_V": 3.1722285928467694e-06,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 3.954027487940895e-11
+        }
+      ],
+      "max_abs_victim_V": 0.04651162790697674,
+      "signed_ground_charge_C": 4.799672626009218e-11,
+      "absolute_ground_charge_C": 4.799672626009218e-11,
+      "absolute_coupled_edge_charge_C": 4.8e-11,
+      "final_victim_V": 3.1722285928467694e-06,
+      "trace_key": "C1e-09_X1e-12_aligned"
+    },
+    {
+      "case": "C1e-09_X1e-12_opposed_matched",
+      "contact_capacitance_F_assumed": 1e-09,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1e-12,
+      "bus1_mutual_F_assumed": 1e-12,
+      "total_capacitance_F": 1.0320000000000002e-09,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_matched",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        }
+      ],
+      "max_abs_victim_V": 0.0,
+      "signed_ground_charge_C": 0.0,
+      "absolute_ground_charge_C": 0.0,
+      "absolute_coupled_edge_charge_C": 0.0,
+      "final_victim_V": 0.0,
+      "trace_key": "C1e-09_X1e-12_opposed_matched"
+    },
+    {
+      "case": "C1e-09_X1e-12_opposed_asymmetric",
+      "contact_capacitance_F_assumed": 1e-09,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1e-12,
+      "bus1_mutual_F_assumed": 3.3333333333333334e-13,
+      "total_capacitance_F": 1.0313333333333335e-09,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_asymmetric",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.015513897866839044,
+          "coupled_charge_C": 1.6000000000000003e-11,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.012779119315459836,
+          "after_V": -0.002734778551379208,
+          "coupled_charge_C": -1.6000000000000003e-11,
+          "ground_charge_since_prior_C": 2.8204682793224236e-12
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -2.2503601146919338e-07,
+          "after_V": -2.2503601146919338e-07,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -2.820236192182595e-12
+        }
+      ],
+      "max_abs_victim_V": 0.015513897866839044,
+      "signed_ground_charge_C": 2.320871398285607e-16,
+      "absolute_ground_charge_C": 5.640704471505019e-12,
+      "absolute_coupled_edge_charge_C": 3.2000000000000006e-11,
+      "final_victim_V": -2.2503601146919338e-07,
+      "trace_key": "C1e-09_X1e-12_opposed_asymmetric"
+    },
+    {
+      "case": "C1e-09_X1e-12_staggered",
+      "contact_capacitance_F_assumed": 1e-09,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1e-12,
+      "bus1_mutual_F_assumed": 1e-12,
+      "total_capacitance_F": 1.0320000000000002e-09,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "staggered",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.02325581395348837,
+          "coupled_charge_C": 2.4e-11,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.00015,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.022155938200679223,
+          "after_V": 0.045411752154167595,
+          "coupled_charge_C": 2.4e-11,
+          "ground_charge_since_prior_C": 1.1350717768990378e-12
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.03926847728702708,
+          "after_V": 0.01601266333353871,
+          "coupled_charge_C": -2.4e-11,
+          "ground_charge_since_prior_C": 6.3398596628890134e-12
+        },
+        {
+          "time_s": 0.00035,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.015255349907585133,
+          "after_V": -0.008000464045903235,
+          "coupled_charge_C": -2.4e-11,
+          "ground_charge_since_prior_C": 7.815474555840916e-13
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -6.952245659865495e-07,
+          "after_V": -6.952245659865495e-07,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -8.255761423620042e-12
+        }
+      ],
+      "max_abs_victim_V": 0.045411752154167595,
+      "signed_ground_charge_C": 7.174717521009495e-16,
+      "absolute_ground_charge_C": 1.6512240318992184e-11,
+      "absolute_coupled_edge_charge_C": 9.6e-11,
+      "final_victim_V": -6.952245659865495e-07,
+      "trace_key": "C1e-09_X1e-12_staggered"
+    },
+    {
+      "case": "C1e-09_X5e-12_aligned",
+      "contact_capacitance_F_assumed": 1e-09,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 5e-12,
+      "bus1_mutual_F_assumed": 5e-12,
+      "total_capacitance_F": 1.0400000000000001e-09,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "aligned",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.23076923076923073,
+          "coupled_charge_C": 2.4e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.1903968385339698,
+          "after_V": 0.1903968385339698,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 4.198728792467137e-11
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 1.694449021532812e-05,
+          "after_V": 1.694449021532812e-05,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 1.9799508980550467e-10
+        }
+      ],
+      "max_abs_victim_V": 0.23076923076923073,
+      "signed_ground_charge_C": 2.3998237773017606e-10,
+      "absolute_ground_charge_C": 2.3998237773017606e-10,
+      "absolute_coupled_edge_charge_C": 2.4e-10,
+      "final_victim_V": 1.694449021532812e-05,
+      "trace_key": "C1e-09_X5e-12_aligned"
+    },
+    {
+      "case": "C1e-09_X5e-12_opposed_matched",
+      "contact_capacitance_F_assumed": 1e-09,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 5e-12,
+      "bus1_mutual_F_assumed": 5e-12,
+      "total_capacitance_F": 1.0400000000000001e-09,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_matched",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        }
+      ],
+      "max_abs_victim_V": 0.0,
+      "signed_ground_charge_C": 0.0,
+      "absolute_ground_charge_C": 0.0,
+      "absolute_coupled_edge_charge_C": 0.0,
+      "final_victim_V": 0.0,
+      "trace_key": "C1e-09_X5e-12_opposed_matched"
+    },
+    {
+      "case": "C1e-09_X5e-12_opposed_asymmetric",
+      "contact_capacitance_F_assumed": 1e-09,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 5e-12,
+      "bus1_mutual_F_assumed": 1.6666666666666666e-12,
+      "total_capacitance_F": 1.0366666666666668e-09,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_asymmetric",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.07717041800643086,
+          "coupled_charge_C": 8.000000000000001e-11,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.06363032418868103,
+          "after_V": -0.01354009381774983,
+          "coupled_charge_C": -8.000000000000001e-11,
+          "ground_charge_since_prior_C": 1.4036563924400658e-11
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -1.1694075956704286e-06,
+          "after_V": -1.1694075956704286e-06,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -1.4035351638526479e-11
+        }
+      ],
+      "max_abs_victim_V": 0.07717041800643086,
+      "signed_ground_charge_C": 1.2122858741787877e-15,
+      "absolute_ground_charge_C": 2.8071915562927135e-11,
+      "absolute_coupled_edge_charge_C": 1.6000000000000002e-10,
+      "final_victim_V": -1.1694075956704286e-06,
+      "trace_key": "C1e-09_X5e-12_opposed_asymmetric"
+    },
+    {
+      "case": "C1e-09_X5e-12_staggered",
+      "contact_capacitance_F_assumed": 1e-09,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 5e-12,
+      "bus1_mutual_F_assumed": 5e-12,
+      "total_capacitance_F": 1.0400000000000001e-09,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "staggered",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.11538461538461536,
+          "coupled_charge_C": 1.2e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.00015,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.10996851599004616,
+          "after_V": 0.2253531313746615,
+          "coupled_charge_C": 1.2e-10,
+          "ground_charge_since_prior_C": 5.632743370351973e-12
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.1950854905205305,
+          "after_V": 0.07970087513591514,
+          "coupled_charge_C": -1.2e-10,
+          "ground_charge_since_prior_C": 3.1478346488296244e-11
+        },
+        {
+          "time_s": 0.00035,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.07595975366897284,
+          "after_V": -0.03942486171564252,
+          "coupled_charge_C": -1.2e-10,
+          "ground_charge_since_prior_C": 3.890766325619997e-12
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -3.681446517848669e-06,
+          "after_V": -3.681446517848669e-06,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -4.0998027479889665e-11
+        }
+      ],
+      "max_abs_victim_V": 0.2253531313746615,
+      "signed_ground_charge_C": 3.8287043785481465e-15,
+      "absolute_ground_charge_C": 8.199988366415788e-11,
+      "absolute_coupled_edge_charge_C": 4.8e-10,
+      "final_victim_V": -3.681446517848669e-06,
+      "trace_key": "C1e-09_X5e-12_staggered"
+    },
+    {
+      "case": "C1e-09_X1.5e-11_aligned",
+      "contact_capacitance_F_assumed": 1e-09,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1.5e-11,
+      "bus1_mutual_F_assumed": 1.5e-11,
+      "total_capacitance_F": 1.06e-09,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "aligned",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.6792452830188679,
+          "coupled_charge_C": 7.2e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.5624504597267224,
+          "after_V": 0.5624504597267224,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 1.2380251268967427e-10
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 5.9687041787857245e-05,
+          "after_V": 5.9687041787857245e-05,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 5.961342190460307e-10
+        }
+      ],
+      "max_abs_victim_V": 0.6792452830188679,
+      "signed_ground_charge_C": 7.199367317357049e-10,
+      "absolute_ground_charge_C": 7.199367317357049e-10,
+      "absolute_coupled_edge_charge_C": 7.2e-10,
+      "final_victim_V": 5.9687041787857245e-05,
+      "trace_key": "C1e-09_X1.5e-11_aligned"
+    },
+    {
+      "case": "C1e-09_X1.5e-11_opposed_matched",
+      "contact_capacitance_F_assumed": 1e-09,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1.5e-11,
+      "bus1_mutual_F_assumed": 1.5e-11,
+      "total_capacitance_F": 1.06e-09,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_matched",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        }
+      ],
+      "max_abs_victim_V": 0.0,
+      "signed_ground_charge_C": 0.0,
+      "absolute_ground_charge_C": 0.0,
+      "absolute_coupled_edge_charge_C": 0.0,
+      "final_victim_V": 0.0,
+      "trace_key": "C1e-09_X1.5e-11_opposed_matched"
+    },
+    {
+      "case": "C1e-09_X1.5e-11_opposed_asymmetric",
+      "contact_capacitance_F_assumed": 1e-09,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1.5e-11,
+      "bus1_mutual_F_assumed": 5e-12,
+      "total_capacitance_F": 1.05e-09,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_asymmetric",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.22857142857142854,
+          "coupled_charge_C": 2.4e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.1889292428855401,
+          "after_V": -0.039642185685888426,
+          "coupled_charge_C": -2.4e-10,
+          "ground_charge_since_prior_C": 4.162429497018285e-11
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -3.855705067663911e-06,
+          "after_V": -3.855705067663911e-06,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -4.162024647986181e-11
+        }
+      ],
+      "max_abs_victim_V": 0.22857142857142854,
+      "signed_ground_charge_C": 4.0484903210442495e-15,
+      "absolute_ground_charge_C": 8.324454145004467e-11,
+      "absolute_coupled_edge_charge_C": 4.8e-10,
+      "final_victim_V": -3.855705067663911e-06,
+      "trace_key": "C1e-09_X1.5e-11_opposed_asymmetric"
+    },
+    {
+      "case": "C1e-09_X1.5e-11_staggered",
+      "contact_capacitance_F_assumed": 1e-09,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1.5e-11,
+      "bus1_mutual_F_assumed": 1.5e-11,
+      "total_capacitance_F": 1.06e-09,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "staggered",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.33962264150943394,
+          "coupled_charge_C": 3.6e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.00015,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.323974662963782,
+          "after_V": 0.663597304473216,
+          "coupled_charge_C": 3.6e-10,
+          "ground_charge_since_prior_C": 1.6586857258391034e-11
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.576033640346899,
+          "after_V": 0.23641099883746503,
+          "coupled_charge_C": -3.6e-10,
+          "ground_charge_since_prior_C": 9.281748397389602e-11
+        },
+        {
+          "time_s": 0.00035,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.22551845580404645,
+          "after_V": -0.1141041857053875,
+          "coupled_charge_C": -3.6e-10,
+          "ground_charge_since_prior_C": 1.1546095615423693e-11
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -1.2693545485781511e-05,
+          "after_V": -1.2693545485781511e-05,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -1.2093698168949584e-10
+        }
+      ],
+      "max_abs_victim_V": 0.663597304473216,
+      "signed_ground_charge_C": 1.345515821490621e-14,
+      "absolute_ground_charge_C": 2.418874185372066e-10,
+      "absolute_coupled_edge_charge_C": 1.44e-09,
+      "final_victim_V": -1.2693545485781511e-05,
+      "trace_key": "C1e-09_X1.5e-11_staggered"
+    },
+    {
+      "case": "C1e-07_X1e-12_aligned",
+      "contact_capacitance_F_assumed": 1e-07,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1e-12,
+      "bus1_mutual_F_assumed": 1e-12,
+      "total_capacitance_F": 1.0003199999999999e-07,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "aligned",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.00047984644913627643,
+          "coupled_charge_C": 4.8e-11,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0004788880216816176,
+          "after_V": 0.0004788880216816176,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 9.587341514443043e-14
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0004346311867695032,
+          "after_V": 0.0004346311867695032,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 4.427099709928631e-12
+        }
+      ],
+      "max_abs_victim_V": 0.00047984644913627643,
+      "signed_ground_charge_C": 4.5229731250730615e-12,
+      "absolute_ground_charge_C": 4.5229731250730615e-12,
+      "absolute_coupled_edge_charge_C": 4.8e-11,
+      "final_victim_V": 0.0004346311867695032,
+      "trace_key": "C1e-07_X1e-12_aligned"
+    },
+    {
+      "case": "C1e-07_X1e-12_opposed_matched",
+      "contact_capacitance_F_assumed": 1e-07,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1e-12,
+      "bus1_mutual_F_assumed": 1e-12,
+      "total_capacitance_F": 1.0003199999999999e-07,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_matched",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        }
+      ],
+      "max_abs_victim_V": 0.0,
+      "signed_ground_charge_C": 0.0,
+      "absolute_ground_charge_C": 0.0,
+      "absolute_coupled_edge_charge_C": 0.0,
+      "final_victim_V": 0.0,
+      "trace_key": "C1e-07_X1e-12_opposed_matched"
+    },
+    {
+      "case": "C1e-07_X1e-12_opposed_asymmetric",
+      "contact_capacitance_F_assumed": 1e-07,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1e-12,
+      "bus1_mutual_F_assumed": 3.3333333333333334e-13,
+      "total_capacitance_F": 1.0003133333333332e-07,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_asymmetric",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.00015994988237019072,
+          "coupled_charge_C": 1.6000000000000003e-11,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.00015963040229574144,
+          "after_V": -3.194800744492777e-07,
+          "coupled_charge_C": -1.6000000000000003e-11,
+          "ground_charge_since_prior_C": 3.1958017820593846e-14
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -2.899548702070844e-07,
+          "after_V": -2.899548702070844e-07,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -2.953445547285584e-15
+        }
+      ],
+      "max_abs_victim_V": 0.00015994988237019072,
+      "signed_ground_charge_C": 2.9004572273308263e-14,
+      "absolute_ground_charge_C": 3.491146336787943e-14,
+      "absolute_coupled_edge_charge_C": 3.2000000000000006e-11,
+      "final_victim_V": -2.899548702070844e-07,
+      "trace_key": "C1e-07_X1e-12_opposed_asymmetric"
+    },
+    {
+      "case": "C1e-07_X1e-12_staggered",
+      "contact_capacitance_F_assumed": 1e-07,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1e-12,
+      "bus1_mutual_F_assumed": 1e-12,
+      "total_capacitance_F": 1.0003199999999999e-07,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "staggered",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.00023992322456813821,
+          "coupled_charge_C": 2.4e-11,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.00015,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.00023980333129751538,
+          "after_V": 0.0004797265558656536,
+          "coupled_charge_C": 2.4e-11,
+          "ground_charge_since_prior_C": 1.1993163646943771e-14
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0004790077353045912,
+          "after_V": 0.00023908451073645297,
+          "coupled_charge_C": -2.4e-11,
+          "ground_charge_since_prior_C": 7.190505836419724e-14
+        },
+        {
+          "time_s": 0.00035,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.00023896503658383996,
+          "after_V": -9.58187984298253e-07,
+          "coupled_charge_C": -2.4e-11,
+          "ground_charge_since_prior_C": 1.1951238434184546e-14
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -8.700710322879319e-07,
+          "after_V": -8.700710322879319e-07,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -8.814514943496442e-15
+        }
+      ],
+      "max_abs_victim_V": 0.0004797265558656536,
+      "signed_ground_charge_C": 8.70349455018291e-14,
+      "absolute_ground_charge_C": 1.04663975388822e-13,
+      "absolute_coupled_edge_charge_C": 9.6e-11,
+      "final_victim_V": -8.700710322879319e-07,
+      "trace_key": "C1e-07_X1e-12_staggered"
+    },
+    {
+      "case": "C1e-07_X5e-12_aligned",
+      "contact_capacitance_F_assumed": 1e-07,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 5e-12,
+      "bus1_mutual_F_assumed": 5e-12,
+      "total_capacitance_F": 1.0004e-07,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "aligned",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.0023990403838464614,
+          "coupled_charge_C": 2.4e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0023942490125950055,
+          "after_V": 0.0023942490125950055,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 4.793287799956459e-13
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0021729993485881836,
+          "after_V": 0.0021729993485881836,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 2.2133816387242466e-11
+        }
+      ],
+      "max_abs_victim_V": 0.0023990403838464614,
+      "signed_ground_charge_C": 2.2613145167238112e-11,
+      "absolute_ground_charge_C": 2.2613145167238112e-11,
+      "absolute_coupled_edge_charge_C": 2.4e-10,
+      "final_victim_V": 0.0021729993485881836,
+      "trace_key": "C1e-07_X5e-12_aligned"
+    },
+    {
+      "case": "C1e-07_X5e-12_opposed_matched",
+      "contact_capacitance_F_assumed": 1e-07,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 5e-12,
+      "bus1_mutual_F_assumed": 5e-12,
+      "total_capacitance_F": 1.0004e-07,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_matched",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        }
+      ],
+      "max_abs_victim_V": 0.0,
+      "signed_ground_charge_C": 0.0,
+      "absolute_ground_charge_C": 0.0,
+      "absolute_coupled_edge_charge_C": 0.0,
+      "final_victim_V": 0.0,
+      "trace_key": "C1e-07_X5e-12_opposed_matched"
+    },
+    {
+      "case": "C1e-07_X5e-12_opposed_asymmetric",
+      "contact_capacitance_F_assumed": 1e-07,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 5e-12,
+      "bus1_mutual_F_assumed": 1.6666666666666666e-12,
+      "total_capacitance_F": 1.0003666666666667e-07,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_asymmetric",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.0007997067741827998,
+          "coupled_charge_C": 8.000000000000001e-11,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0007981095440478334,
+          "after_V": -1.5972301349663053e-06,
+          "coupled_charge_C": -8.000000000000001e-11,
+          "ground_charge_since_prior_C": 1.597815786015793e-13
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -1.4496273407641285e-06,
+          "after_V": -1.4496273407641285e-06,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -1.4765691522671767e-14
+        }
+      ],
+      "max_abs_victim_V": 0.0007997067741827998,
+      "signed_ground_charge_C": 1.4501588707890753e-13,
+      "absolute_ground_charge_C": 1.7454727012425107e-13,
+      "absolute_coupled_edge_charge_C": 1.6000000000000002e-10,
+      "final_victim_V": -1.4496273407641285e-06,
+      "trace_key": "C1e-07_X5e-12_opposed_asymmetric"
+    },
+    {
+      "case": "C1e-07_X5e-12_staggered",
+      "contact_capacitance_F_assumed": 1e-07,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 5e-12,
+      "bus1_mutual_F_assumed": 5e-12,
+      "total_capacitance_F": 1.0004e-07,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "staggered",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.0011995201919232307,
+          "coupled_charge_C": 1.2e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.00015,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0011989208214305712,
+          "after_V": 0.002398441013353802,
+          "coupled_charge_C": 1.2e-10,
+          "ground_charge_since_prior_C": 5.996102408566177e-14
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0023948474850648206,
+          "after_V": 0.00119532729314159,
+          "coupled_charge_C": -1.2e-10,
+          "ground_charge_since_prior_C": 3.5949657002968155e-13
+        },
+        {
+          "time_s": 0.00035,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0011947300177364707,
+          "after_V": -4.790174186760027e-06,
+          "coupled_charge_C": -1.2e-10,
+          "ground_charge_since_prior_C": 5.975143152812979e-14
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -4.3496934005999854e-06,
+          "after_V": -4.3496934005999854e-06,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -4.4065697847450564e-14
+        }
+      ],
+      "max_abs_victim_V": 0.002398441013353802,
+      "signed_ground_charge_C": 4.3514332779602254e-13,
+      "absolute_ground_charge_C": 5.232747234909236e-13,
+      "absolute_coupled_edge_charge_C": 4.8e-10,
+      "final_victim_V": -4.3496934005999854e-06,
+      "trace_key": "C1e-07_X5e-12_staggered"
+    },
+    {
+      "case": "C1e-07_X1.5e-11_aligned",
+      "contact_capacitance_F_assumed": 1e-07,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1.5e-11,
+      "bus1_mutual_F_assumed": 1.5e-11,
+      "total_capacitance_F": 1.0006e-07,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "aligned",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.007195682590445732,
+          "coupled_charge_C": 7.2e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.007181314219445027,
+          "after_V": 0.007181314219445027,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 1.437699202330612e-12
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.006517823950650335,
+          "after_V": 0.006517823950650335,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 6.638883629559682e-11
+        }
+      ],
+      "max_abs_victim_V": 0.007195682590445732,
+      "signed_ground_charge_C": 6.782653549792743e-11,
+      "absolute_ground_charge_C": 6.782653549792743e-11,
+      "absolute_coupled_edge_charge_C": 7.2e-10,
+      "final_victim_V": 0.006517823950650335,
+      "trace_key": "C1e-07_X1.5e-11_aligned"
+    },
+    {
+      "case": "C1e-07_X1.5e-11_opposed_matched",
+      "contact_capacitance_F_assumed": 1e-07,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1.5e-11,
+      "bus1_mutual_F_assumed": 1.5e-11,
+      "total_capacitance_F": 1.0006e-07,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_matched",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        }
+      ],
+      "max_abs_victim_V": 0.0,
+      "signed_ground_charge_C": 0.0,
+      "absolute_ground_charge_C": 0.0,
+      "absolute_coupled_edge_charge_C": 0.0,
+      "final_victim_V": 0.0,
+      "trace_key": "C1e-07_X1.5e-11_opposed_matched"
+    },
+    {
+      "case": "C1e-07_X1.5e-11_opposed_asymmetric",
+      "contact_capacitance_F_assumed": 1e-07,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1.5e-11,
+      "bus1_mutual_F_assumed": 5e-12,
+      "total_capacitance_F": 1.0005e-07,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_asymmetric",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.0023988005997001498,
+          "coupled_charge_C": 2.4e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0023940101857177296,
+          "after_V": -4.790413982420135e-06,
+          "coupled_charge_C": -2.4e-10,
+          "ground_charge_since_prior_C": 4.792809189411345e-13
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -4.347779738438209e-06,
+          "after_V": -4.347779738438209e-06,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -4.428555611039169e-14
+        }
+      ],
+      "max_abs_victim_V": 0.0023988005997001498,
+      "signed_ground_charge_C": 4.3499536283074286e-13,
+      "absolute_ground_charge_C": 5.235664750515263e-13,
+      "absolute_coupled_edge_charge_C": 4.8e-10,
+      "final_victim_V": -4.347779738438209e-06,
+      "trace_key": "C1e-07_X1.5e-11_opposed_asymmetric"
+    },
+    {
+      "case": "C1e-07_X1.5e-11_staggered",
+      "contact_capacitance_F_assumed": 1e-07,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1.5e-11,
+      "bus1_mutual_F_assumed": 1.5e-11,
+      "total_capacitance_F": 1.0006e-07,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "staggered",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.003597841295222866,
+          "coupled_charge_C": 3.6e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.00015,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0035960439023965804,
+          "after_V": 0.0071938851976194465,
+          "coupled_charge_C": 3.6e-10,
+          "ground_charge_since_prior_C": 1.798471261981591e-13
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.00718310891981739,
+          "after_V": 0.003585267624594524,
+          "coupled_charge_C": -3.6e-10,
+          "ground_charge_since_prior_C": 1.0782743568737434e-12
+        },
+        {
+          "time_s": 0.00035,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0035834765132641503,
+          "after_V": -1.4364781958715878e-05,
+          "coupled_charge_C": -3.6e-10,
+          "ground_charge_since_prior_C": 1.7921859971720825e-13
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -1.3044118975146052e-05,
+          "after_V": -1.3044118975146052e-05,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -1.3214553813599672e-13
+        }
+      ],
+      "max_abs_victim_V": 0.0071938851976194465,
+      "signed_ground_charge_C": 1.305194544653114e-12,
+      "absolute_ground_charge_C": 1.5694856209251075e-12,
+      "absolute_coupled_edge_charge_C": 1.44e-09,
+      "final_victim_V": -1.3044118975146052e-05,
+      "trace_key": "C1e-07_X1.5e-11_staggered"
+    },
+    {
+      "case": "C2e-06_X1e-12_aligned",
+      "contact_capacitance_F_assumed": 2e-06,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1e-12,
+      "bus1_mutual_F_assumed": 1e-12,
+      "total_capacitance_F": 2.0000319999999995e-06,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "aligned",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 2.399961600614391e-05,
+          "coupled_charge_C": 4.8e-11,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 2.3997216202932308e-05,
+          "after_V": 2.3997216202932308e-05,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 4.7996832169066785e-15
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 2.3881113339020966e-05,
+          "after_V": 2.3881113339020966e-05,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 2.322094431143286e-13
+        }
+      ],
+      "max_abs_victim_V": 2.399961600614391e-05,
+      "signed_ground_charge_C": 2.370091263312353e-13,
+      "absolute_ground_charge_C": 2.370091263312353e-13,
+      "absolute_coupled_edge_charge_C": 4.8e-11,
+      "final_victim_V": 2.3881113339020966e-05,
+      "trace_key": "C2e-06_X1e-12_aligned"
+    },
+    {
+      "case": "C2e-06_X1e-12_opposed_matched",
+      "contact_capacitance_F_assumed": 2e-06,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1e-12,
+      "bus1_mutual_F_assumed": 1e-12,
+      "total_capacitance_F": 2.0000319999999995e-06,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_matched",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        }
+      ],
+      "max_abs_victim_V": 0.0,
+      "signed_ground_charge_C": 0.0,
+      "absolute_ground_charge_C": 0.0,
+      "absolute_coupled_edge_charge_C": 0.0,
+      "final_victim_V": 0.0,
+      "trace_key": "C2e-06_X1e-12_opposed_matched"
+    },
+    {
+      "case": "C2e-06_X1e-12_opposed_asymmetric",
+      "contact_capacitance_F_assumed": 2e-06,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1e-12,
+      "bus1_mutual_F_assumed": 3.3333333333333334e-13,
+      "total_capacitance_F": 2.000031333333333e-06,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_asymmetric",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 7.999874668630195e-06,
+          "coupled_charge_C": 1.6000000000000003e-11,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 7.99907473369306e-06,
+          "after_V": -7.999349371361095e-10,
+          "coupled_charge_C": -1.6000000000000003e-11,
+          "ground_charge_since_prior_C": 1.5998949389002488e-15
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -7.960647062209235e-10,
+          "after_V": -7.960647062209235e-10,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -7.740583097607363e-18
+        }
+      ],
+      "max_abs_victim_V": 7.999874668630195e-06,
+      "signed_ground_charge_C": 1.5921543558026414e-15,
+      "absolute_ground_charge_C": 1.6076355219978562e-15,
+      "absolute_coupled_edge_charge_C": 3.2000000000000006e-11,
+      "final_victim_V": -7.960647062209235e-10,
+      "trace_key": "C2e-06_X1e-12_opposed_asymmetric"
+    },
+    {
+      "case": "C2e-06_X1e-12_staggered",
+      "contact_capacitance_F_assumed": 2e-06,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1e-12,
+      "bus1_mutual_F_assumed": 1e-12,
+      "total_capacitance_F": 2.0000319999999995e-06,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "staggered",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 1.1999808003071955e-05,
+          "coupled_charge_C": 2.4e-11,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.00015,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 1.1999508016421514e-05,
+          "after_V": 2.399931601949347e-05,
+          "coupled_charge_C": 2.4e-11,
+          "ground_charge_since_prior_C": 5.999829004552752e-16
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 2.3997516167084956e-05,
+          "after_V": 1.1997708164013001e-05,
+          "coupled_charge_C": -2.4e-11,
+          "ground_charge_since_prior_C": 3.599762412305614e-15
+        },
+        {
+          "time_s": 0.00035,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 1.199740822985704e-05,
+          "after_V": -2.3997732149143796e-09,
+          "coupled_charge_C": -2.4e-11,
+          "ground_charge_since_prior_C": 5.998779098141337e-16
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -2.38822238275716e-09,
+          "after_V": -2.38822238275716e-09,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -2.310203394106786e-17
+        }
+      ],
+      "max_abs_victim_V": 2.399931601949347e-05,
+      "signed_ground_charge_C": 4.776521188633955e-15,
+      "absolute_ground_charge_C": 4.8227252565160915e-15,
+      "absolute_coupled_edge_charge_C": 9.6e-11,
+      "final_victim_V": -2.38822238275716e-09,
+      "trace_key": "C2e-06_X1e-12_staggered"
+    },
+    {
+      "case": "C2e-06_X5e-12_aligned",
+      "contact_capacitance_F_assumed": 2e-06,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 5e-12,
+      "bus1_mutual_F_assumed": 5e-12,
+      "total_capacitance_F": 2.0000399999999997e-06,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "aligned",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.00011999760004799905,
+          "coupled_charge_C": 2.4e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.00011998560112792865,
+          "after_V": 0.00011998560112792865,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 2.399832009759568e-14
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.00011940509144652594,
+          "after_V": 0.00011940509144652594,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 1.1610425831926803e-12
+        }
+      ],
+      "max_abs_victim_V": 0.00011999760004799905,
+      "signed_ground_charge_C": 1.185040903290276e-12,
+      "absolute_ground_charge_C": 1.185040903290276e-12,
+      "absolute_coupled_edge_charge_C": 2.4e-10,
+      "final_victim_V": 0.00011940509144652594,
+      "trace_key": "C2e-06_X5e-12_aligned"
+    },
+    {
+      "case": "C2e-06_X5e-12_opposed_matched",
+      "contact_capacitance_F_assumed": 2e-06,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 5e-12,
+      "bus1_mutual_F_assumed": 5e-12,
+      "total_capacitance_F": 2.0000399999999997e-06,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_matched",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        }
+      ],
+      "max_abs_victim_V": 0.0,
+      "signed_ground_charge_C": 0.0,
+      "absolute_ground_charge_C": 0.0,
+      "absolute_coupled_edge_charge_C": 0.0,
+      "final_victim_V": 0.0,
+      "trace_key": "C2e-06_X5e-12_opposed_matched"
+    },
+    {
+      "case": "C2e-06_X5e-12_opposed_asymmetric",
+      "contact_capacitance_F_assumed": 2e-06,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 5e-12,
+      "bus1_mutual_F_assumed": 1.6666666666666666e-12,
+      "total_capacitance_F": 2.0000366666666663e-06,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_asymmetric",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 3.999926668011088e-05,
+          "coupled_charge_C": 8.000000000000001e-11,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 3.999526702675585e-05,
+          "after_V": -3.9996533550277135e-09,
+          "coupled_charge_C": -8.000000000000001e-11,
+          "ground_charge_since_prior_C": 7.999453364011777e-15
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -3.9803023551301935e-09,
+          "after_V": -3.9803023551301935e-09,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -3.870270933170295e-17
+        }
+      ],
+      "max_abs_victim_V": 3.999926668011088e-05,
+      "signed_ground_charge_C": 7.960750654680074e-15,
+      "absolute_ground_charge_C": 8.03815607334348e-15,
+      "absolute_coupled_edge_charge_C": 1.6000000000000002e-10,
+      "final_victim_V": -3.9803023551301935e-09,
+      "trace_key": "C2e-06_X5e-12_opposed_asymmetric"
+    },
+    {
+      "case": "C2e-06_X5e-12_staggered",
+      "contact_capacitance_F_assumed": 2e-06,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 5e-12,
+      "bus1_mutual_F_assumed": 5e-12,
+      "total_capacitance_F": 2.0000399999999997e-06,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "staggered",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 5.9998800023999525e-05,
+          "coupled_charge_C": 1.2e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.00015,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 5.999730010274645e-05,
+          "after_V": 0.00011999610012674597,
+          "coupled_charge_C": 1.2e-10,
+          "ground_charge_since_prior_C": 2.999902503006383e-15
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0001199871009366941,
+          "after_V": 5.998830091269458e-05,
+          "coupled_charge_C": -1.2e-10,
+          "ground_charge_since_prior_C": 1.7998740071340026e-14
+        },
+        {
+          "time_s": 0.00035,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 5.998680125391075e-05,
+          "after_V": -1.1998770088772904e-08,
+          "coupled_charge_C": -1.2e-10,
+          "ground_charge_since_prior_C": 2.999377554002947e-15
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -1.1941016620448726e-08,
+          "after_V": -1.1941016620448726e-08,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -1.1550924678708827e-16
+        }
+      ],
+      "max_abs_victim_V": 0.00011999610012674597,
+      "signed_ground_charge_C": 2.3882510881562267e-14,
+      "absolute_ground_charge_C": 2.4113529375136445e-14,
+      "absolute_coupled_edge_charge_C": 4.8e-10,
+      "final_victim_V": -1.1941016620448726e-08,
+      "trace_key": "C2e-06_X5e-12_staggered"
+    },
+    {
+      "case": "C2e-06_X1.5e-11_aligned",
+      "contact_capacitance_F_assumed": 2e-06,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1.5e-11,
+      "bus1_mutual_F_assumed": 1.5e-11,
+      "total_capacitance_F": 2.0000600000000003e-06,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "aligned",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.0003599892003239902,
+          "coupled_charge_C": 7.2e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.000359953204283671,
+          "after_V": 0.000359953204283671,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 7.19942404007961e-14
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0003582117100248884,
+          "after_V": 0.0003582117100248884,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 3.4830930072208214e-12
+        }
+      ],
+      "max_abs_victim_V": 0.0003599892003239902,
+      "signed_ground_charge_C": 3.5550872476216174e-12,
+      "absolute_ground_charge_C": 3.5550872476216174e-12,
+      "absolute_coupled_edge_charge_C": 7.2e-10,
+      "final_victim_V": 0.0003582117100248884,
+      "trace_key": "C2e-06_X1.5e-11_aligned"
+    },
+    {
+      "case": "C2e-06_X1.5e-11_opposed_matched",
+      "contact_capacitance_F_assumed": 2e-06,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1.5e-11,
+      "bus1_mutual_F_assumed": 1.5e-11,
+      "total_capacitance_F": 2.0000600000000003e-06,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_matched",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.0,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": 0.0
+        }
+      ],
+      "max_abs_victim_V": 0.0,
+      "signed_ground_charge_C": 0.0,
+      "absolute_ground_charge_C": 0.0,
+      "absolute_coupled_edge_charge_C": 0.0,
+      "final_victim_V": 0.0,
+      "trace_key": "C2e-06_X1.5e-11_opposed_matched"
+    },
+    {
+      "case": "C2e-06_X1.5e-11_opposed_asymmetric",
+      "contact_capacitance_F_assumed": 2e-06,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1.5e-11,
+      "bus1_mutual_F_assumed": 5e-12,
+      "total_capacitance_F": 2.00005e-06,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "opposed_asymmetric",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.0,
+          "after_V": 0.00011999700007499812,
+          "coupled_charge_C": 2.4e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.00011998500127491063,
+          "after_V": -1.1998800087488276e-08,
+          "coupled_charge_C": -2.4e-10,
+          "ground_charge_since_prior_C": 2.3998200114980927e-14
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -1.1940748247861853e-08,
+          "after_V": -1.1940748247861853e-08,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -1.1610658184482661e-16
+        }
+      ],
+      "max_abs_victim_V": 0.00011999700007499812,
+      "signed_ground_charge_C": 2.38820935331361e-14,
+      "absolute_ground_charge_C": 2.4114306696825755e-14,
+      "absolute_coupled_edge_charge_C": 4.8e-10,
+      "final_victim_V": -1.1940748247861853e-08,
+      "trace_key": "C2e-06_X1.5e-11_opposed_asymmetric"
+    },
+    {
+      "case": "C2e-06_X1.5e-11_staggered",
+      "contact_capacitance_F_assumed": 2e-06,
+      "off_source_shunt_F_assumed": 3e-11,
+      "bus0_mutual_F_assumed": 1.5e-11,
+      "bus1_mutual_F_assumed": 1.5e-11,
+      "total_capacitance_F": 2.0000600000000003e-06,
+      "discharge_R_ohm_assumed": 1000000.0,
+      "pattern": "staggered",
+      "events": [
+        {
+          "time_s": 0.0001,
+          "bus0_delta_V": 24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.0,
+          "after_V": 0.0001799946001619951,
+          "coupled_charge_C": 3.6e-10,
+          "ground_charge_since_prior_C": 0.0
+        },
+        {
+          "time_s": 0.00015,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 24.0,
+          "before_V": 0.00017999010048822743,
+          "after_V": 0.00035998470065022256,
+          "coupled_charge_C": 3.6e-10,
+          "ground_charge_since_prior_C": 8.999617515777673e-15
+        },
+        {
+          "time_s": 0.0003,
+          "bus0_delta_V": -24.0,
+          "bus1_delta_V": 0.0,
+          "before_V": 0.000359957703619986,
+          "after_V": 0.0001799631034579909,
+          "coupled_charge_C": -3.6e-10,
+          "ground_charge_since_prior_C": 5.399568029493195e-14
+        },
+        {
+          "time_s": 0.00035,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": -24.0,
+          "before_V": 0.00017995860457160735,
+          "after_V": -3.5995590387755214e-08,
+          "coupled_charge_C": -3.6e-10,
+          "ground_charge_since_prior_C": 8.998042700278291e-15
+        },
+        {
+          "time_s": 0.01,
+          "bus0_delta_V": 0.0,
+          "bus1_delta_V": 0.0,
+          "before_V": -3.5822335176102675e-08,
+          "after_V": -3.5822335176102675e-08,
+          "coupled_charge_C": 0.0,
+          "ground_charge_since_prior_C": -3.465208186177776e-16
+        }
+      ],
+      "max_abs_victim_V": 0.00035998470065022256,
+      "signed_ground_charge_C": 7.164681969237013e-14,
+      "absolute_ground_charge_C": 7.233986132960568e-14,
+      "absolute_coupled_edge_charge_C": 1.44e-09,
+      "final_victim_V": -3.5822335176102675e-08,
+      "trace_key": "C2e-06_X1.5e-11_staggered"
+    }
+  ],
+  "source_capacitance_is_not_interterminal_coupling": true,
+  "digital_route_ownership_proves_zero_unselected_charge": false,
+  "illustrative_budget": {
+    "current_A": 0.003,
+    "phase_s": 0.0002,
+    "nominal_phase_C": 6e-07,
+    "router_on_R_ohm_assumed": [
+      4.0,
+      20.0,
+      60.0
+    ],
+    "router_voltage_drops_V": [
+      0.012,
+      0.06,
+      0.18
+    ],
+    "on_capacitance_fixture_F": 2e-10,
+    "on_capacitance_24V_edge_charge_C": 4.8e-09,
+    "bus_voltage_edge_V_assumed": 24.0,
+    "off_paths_with_two_distinct_active_contacts": 30,
+    "per_path_leakage_A_assumed": 2.5e-08,
+    "sum_absolute_off_path_charge_per_200us_C": 1.5e-10,
+    "switch_injection_C_fixture": 3e-12,
+    "power_4chips_24V_55uA_W_illustrative": 0.00528,
+    "power_4chips_24V_105uA_W_illustrative": 0.01008,
+    "24V_guaranteed_corner_bounds": false,
+    "full_guard_latency_and_peak_current_qualified": false
+  }
+}

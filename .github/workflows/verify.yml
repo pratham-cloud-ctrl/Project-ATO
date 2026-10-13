@@ -38,6 +38,10 @@ jobs:
       - run: python electronics/stage4/recording-study/verify_input_network.py
       - run: python electronics/stage4/recording-study/input_network_study.py
       - run: python electronics/stage4/recording-study/timing_contract.py --check
+      - run: python electronics/stage4/contact-router/verify_contact_router.py
+      - run: python electronics/stage4/routing-study/route_contract.py --check
+      - run: python electronics/stage4/routing-study/verify_parasitics.py
+      - run: python electronics/stage4/routing-study/parasitic_study.py
       - run: python scripts/run_studies.py
       - run: python scripts/build_firmware.py
       - run: python scripts/run_adapter.py

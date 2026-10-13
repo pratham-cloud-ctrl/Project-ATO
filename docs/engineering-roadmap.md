@@ -135,7 +135,10 @@ the [native recording slice](../electronics/stage4/recording-front-end/README.md
 adds sixteen shared-reference differential streams and isolated input switching
 across seven sheets. Its [finite input/protocol studies](../electronics/stage4/recording-study/README.md)
 retain weak-signal/fault failures and revise SPI timing/power explicitly.
-Next come full contact routing and qualified shutdown supervision,
+The [native contact router](../electronics/stage4/contact-router/README.md) now
+adds six sheets with held addresses, two sixteen-way selectors, fixed returns,
+collision inhibit and a fresh acknowledgement/rearm path. The
+[bounded remaining Stage 4 packages](stage4/remaining-work.md) begin with shutdown supervision,
 power/reference/telemetry and the target firmware backend. Reconcile actual
 component power, timing, buses and memory before a complete PCB.
 
@@ -159,7 +162,7 @@ These are recommendations checked against primary product documentation on
 | Ansys Electronics Desktop Student | Useful selected low-frequency field, parasitic, thermal or telemetry studies using Maxwell/Q3D/Icepak/HFSS as appropriate. Student restrictions include mesh caps, no geometry export, Circuit's 50-component limit and restricted netlist/command-line workflows. It does not replace KiCad or the ngspice current-loop study. [Official limits](https://ansys.synopsys.com/academic/students/ansys-electronics-desktop-student) |
 | Autodesk Fusion Education | A reasonable optional native CAD authoring/review interface if preferred. Eligible students have renewable educational access. Existing FreeCAD/build123d can already produce editable engineering geometry; changing CAD tools is not a prerequisite. [Education access](https://www.autodesk.com/education/edu-software/fusion) |
 | MecAgent | Postpone a Fusion-dependent decision. The current official page identifies SolidWorks as available and shows Fusion among forthcoming integrations; the education page offers a limited Free plan, not an established unlimited Fusion workflow. [Current integrations](https://mecagent.com/), [education](https://mecagent.com/education) |
-| KiCad MCP | Worth a small disposable-project compatibility trial before using it on authoritative files. This is a category of third-party implementations, not one official KiCad product. A candidate advertises KiCad 10 schematic/board tools; verify actual placement, connection, native reopen/ERC/DRC and export behavior locally. Keep the native files, CLI checks and independent pin audit authoritative. [Candidate implementation](https://github.com/ProductOfAmerica/mcp-server-kicad) |
+| Installed KiCad/FreeCAD MCP bridges | Verified on 13 October: Konnect 0.13.0 with KiCad 10.0.6 saved-schematic component/pin/ERC checks; FreeCAD 1.1.4 live bridge inspected the unchanged 80-solid allocation. Use these for native inspection and upcoming PCB/CAD work. Live PCB operations require the intended board open and source-evidence checks. The [verification record](../provenance/stage4-mcp-readiness.json) records the local skill and tested access. |
 
 An additional interface is useful when it demonstrably improves a concrete
 design or review operation. It does not establish the biological assumptions or
