@@ -1,0 +1,3061 @@
+{
+  "schema": "ato.stage4.power-sequence.v1",
+  "date": "2026-10-14",
+  "source_sha256_lf": "d04101f9e0d4c76bc2f09b08227dbed2847093e60310a98b19781c48833a2a1a",
+  "scope": "Actual native gate/enable pin audit and finite valid-supply ideal event adapter to prior sticky supervision",
+  "native_audit": {
+    "native_XML_sha256_lf": "fd0dd56627e320921b5906c81adfc2b830c6a35a19c4b0a5c7bbbdd7d820fbff",
+    "native_manifest_sha256_lf": "787f5b5d14508b8e90058d14c593b8b4b5b96ccf2252766e721ab9e0e58703a8",
+    "Boolean_input_rows": 256,
+    "gate_output_comparisons": 1536,
+    "gate_truth_sha256": "4e1b951a545dfd4ca90e4b53f7ad3b45be35761615a9c80877c6b623e38f99de",
+    "open_drain_and_four_enable_pin_bindings": 8,
+    "physical_propagation_supply_ramp_or_converter_loop_verified": false
+  },
+  "qualification_windows": {
+    "rows": [
+      {
+        "name": "BATT",
+        "actual_node": "PACK_POS",
+        "bounds": {
+          "UV_rising_V": [
+            6.517865138736265,
+            6.682415411536536
+          ],
+          "UV_falling_V": [
+            6.369643860014987,
+            6.616291287412412
+          ],
+          "OV_rising_V": [
+            8.494708294780223,
+            8.70565865558058
+          ],
+          "OV_falling_V": [
+            8.301576926148854,
+            8.619494491416415
+          ]
+        },
+        "nominal_V": 7.4,
+        "nominal_inside_all_cold_start_windows": true
+      },
+      {
+        "name": "S3",
+        "actual_node": "SUP_3V3",
+        "bounds": {
+          "UV_rising_V": [
+            3.061973528159341,
+            3.138148646959459
+          ],
+          "UV_falling_V": [
+            2.99234490678072,
+            3.107094592905405
+          ],
+          "OV_rising_V": [
+            3.4577067943681326,
+            3.542431930768268
+          ],
+          "OV_falling_V": [
+            3.3790961550074936,
+            3.5073698687062054
+          ]
+        },
+        "nominal_V": 3.3,
+        "nominal_inside_all_cold_start_windows": true
+      },
+      {
+        "name": "S5",
+        "actual_node": "SUP_5",
+        "bounds": {
+          "UV_rising_V": [
+            4.691179573145605,
+            4.809017264545796
+          ],
+          "UV_falling_V": [
+            4.584500127591159,
+            4.761430177458709
+          ],
+          "OV_rising_V": [
+            5.186089662156594,
+            5.314127375556807
+          ],
+          "OV_falling_V": [
+            5.068182694124626,
+            5.261530278459709
+          ]
+        },
+        "nominal_V": 5.0,
+        "nominal_inside_all_cold_start_windows": true
+      },
+      {
+        "name": "MREF",
+        "actual_node": "MON_VREF",
+        "bounds": {
+          "UV_rising_V": [
+            3.9308834188186816,
+            4.029278576338839
+          ],
+          "UV_falling_V": [
+            3.8414943578796215,
+            3.9894069046671663
+          ],
+          "OV_rising_V": [
+            4.168812888543957,
+            4.271358056624124
+          ],
+          "OV_falling_V": [
+            4.074034616815686,
+            4.229081580147647
+          ]
+        },
+        "nominal_V": 4.096,
+        "nominal_inside_all_cold_start_windows": true
+      },
+      {
+        "name": "MID",
+        "actual_node": "MON_VMID",
+        "bounds": {
+          "UV_rising_V": [
+            1.9560882127747257,
+            2.003983282294795
+          ],
+          "UV_falling_V": [
+            1.9116092417457546,
+            1.9841516506631627
+          ],
+          "OV_rising_V": [
+            2.0947534471978027,
+            2.1453235228778778
+          ],
+          "OV_falling_V": [
+            2.0471307698751255,
+            2.124089088443443
+          ]
+        },
+        "nominal_V": 2.048,
+        "nominal_inside_all_cold_start_windows": true
+      }
+    ],
+    "threshold_KCL_corner_checks": 320,
+    "pack6p4V_cold_start_admitted": false,
+    "reference_gross_window_is_precision_calibration": false,
+    "input_bias_threshold_and_resistor_limits": "TPS3700 primary tables and native0.1percent dividers",
+    "supply_UVLO_ramp_and_physical_latency_qualified": false
+  },
+  "histories": [
+    {
+      "case": "ordered_cold_start",
+      "history": [
+        {
+          "event": "cold request high",
+          "inputs": {
+            "power_request": true,
+            "battery": false,
+            "supplies": false,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "battery and SUP windows valid before hold",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "startup hold releases",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "host5 PG valid; reference absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference valid; midpoint absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "midpoint and actual remaining rails valid",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "fresh admitted phase",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": true,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        }
+      ],
+      "assertions": 12
+    },
+    {
+      "case": "power_request_loss_and_restore",
+      "history": [
+        {
+          "event": "cold request high",
+          "inputs": {
+            "power_request": true,
+            "battery": false,
+            "supplies": false,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "battery and SUP windows valid before hold",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "startup hold releases",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "host5 PG valid; reference absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference valid; midpoint absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "midpoint and actual remaining rails valid",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "fresh admitted phase",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": true,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "power_request falls while reservoirs remain charged",
+          "inputs": {
+            "power_request": false,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "power_request restores; phase still requested",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "phase ends; elapsed wait alone cannot arm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "new deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        }
+      ],
+      "assertions": 18
+    },
+    {
+      "case": "battery_loss_and_restore",
+      "history": [
+        {
+          "event": "cold request high",
+          "inputs": {
+            "power_request": true,
+            "battery": false,
+            "supplies": false,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "battery and SUP windows valid before hold",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "startup hold releases",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "host5 PG valid; reference absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference valid; midpoint absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "midpoint and actual remaining rails valid",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "fresh admitted phase",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": true,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "battery falls while reservoirs remain charged",
+          "inputs": {
+            "power_request": true,
+            "battery": false,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "battery restores; phase still requested",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "phase ends; elapsed wait alone cannot arm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "new deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        }
+      ],
+      "assertions": 18
+    },
+    {
+      "case": "supplies_loss_and_restore",
+      "history": [
+        {
+          "event": "cold request high",
+          "inputs": {
+            "power_request": true,
+            "battery": false,
+            "supplies": false,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "battery and SUP windows valid before hold",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "startup hold releases",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "host5 PG valid; reference absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference valid; midpoint absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "midpoint and actual remaining rails valid",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "fresh admitted phase",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": true,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "supplies falls while reservoirs remain charged",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": false,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "supplies restores; phase still requested",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "phase ends; elapsed wait alone cannot arm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "new deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        }
+      ],
+      "assertions": 18
+    },
+    {
+      "case": "host_pg_loss_and_restore",
+      "history": [
+        {
+          "event": "cold request high",
+          "inputs": {
+            "power_request": true,
+            "battery": false,
+            "supplies": false,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "battery and SUP windows valid before hold",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "startup hold releases",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "host5 PG valid; reference absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference valid; midpoint absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "midpoint and actual remaining rails valid",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "fresh admitted phase",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": true,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "host_pg falls while reservoirs remain charged",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": false,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "host_pg restores; phase still requested",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "phase ends; elapsed wait alone cannot arm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "new deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        }
+      ],
+      "assertions": 18
+    },
+    {
+      "case": "reference_loss_and_restore",
+      "history": [
+        {
+          "event": "cold request high",
+          "inputs": {
+            "power_request": true,
+            "battery": false,
+            "supplies": false,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "battery and SUP windows valid before hold",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "startup hold releases",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "host5 PG valid; reference absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference valid; midpoint absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "midpoint and actual remaining rails valid",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "fresh admitted phase",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": true,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference falls while reservoirs remain charged",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": false,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference restores; phase still requested",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "phase ends; elapsed wait alone cannot arm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "new deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        }
+      ],
+      "assertions": 18
+    },
+    {
+      "case": "midpoint_loss_and_restore",
+      "history": [
+        {
+          "event": "cold request high",
+          "inputs": {
+            "power_request": true,
+            "battery": false,
+            "supplies": false,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "battery and SUP windows valid before hold",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "startup hold releases",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "host5 PG valid; reference absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference valid; midpoint absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "midpoint and actual remaining rails valid",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "fresh admitted phase",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": true,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "midpoint falls while reservoirs remain charged",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": false,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "midpoint restores; phase still requested",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "phase ends; elapsed wait alone cannot arm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "new deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        }
+      ],
+      "assertions": 18
+    },
+    {
+      "case": "other_rails_loss_and_restore",
+      "history": [
+        {
+          "event": "cold request high",
+          "inputs": {
+            "power_request": true,
+            "battery": false,
+            "supplies": false,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "battery and SUP windows valid before hold",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "startup hold releases",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "host5 PG valid; reference absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference valid; midpoint absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "midpoint and actual remaining rails valid",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "fresh admitted phase",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": true,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "other_rails falls while reservoirs remain charged",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": false,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "other_rails restores; phase still requested",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "phase ends; elapsed wait alone cannot arm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "new deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        }
+      ],
+      "assertions": 18
+    },
+    {
+      "case": "other_health_loss_and_restore",
+      "history": [
+        {
+          "event": "cold request high",
+          "inputs": {
+            "power_request": true,
+            "battery": false,
+            "supplies": false,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "battery and SUP windows valid before hold",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "startup hold releases",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "host5 PG valid; reference absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference valid; midpoint absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "midpoint and actual remaining rails valid",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "fresh admitted phase",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": true,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "other_health falls while reservoirs remain charged",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": false,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "other_health restores; phase still requested",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "phase ends; elapsed wait alone cannot arm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "new deliberate idle rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": true,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        }
+      ],
+      "assertions": 18
+    },
+    {
+      "case": "stale_PG_when_disabled",
+      "history": [
+        {
+          "event": "PG high but request low",
+          "inputs": {
+            "power_request": false,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        }
+      ],
+      "assertions": 4
+    },
+    {
+      "case": "untrimmed_AFE_never_qualifies",
+      "history": [
+        {
+          "event": "cold request high",
+          "inputs": {
+            "power_request": true,
+            "battery": false,
+            "supplies": false,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "battery and SUP windows valid before hold",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "startup hold releases",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "host5 PG valid; reference absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference valid; midpoint absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference valid but actual AFE rail outside window",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": false,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": true,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        }
+      ],
+      "assertions": 10
+    },
+    {
+      "case": "request_high_is_not_rearm",
+      "history": [
+        {
+          "event": "cold request high",
+          "inputs": {
+            "power_request": true,
+            "battery": false,
+            "supplies": false,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "battery and SUP windows valid before hold",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": false,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": false,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "startup hold releases",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": false,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": false,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "host5 PG valid; reference absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": false,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "reference valid; midpoint absent",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": false,
+            "other_rails": false,
+            "other_health": false,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": false,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "midpoint and actual remaining rails valid",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": false
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        },
+        {
+          "event": "phase request without supervisory rearm",
+          "inputs": {
+            "power_request": true,
+            "battery": true,
+            "supplies": true,
+            "startup": true,
+            "host_pg": true,
+            "reference": true,
+            "midpoint": true,
+            "other_rails": true,
+            "other_health": true,
+            "phase": true
+          },
+          "explicit_rearm": false,
+          "outputs": {
+            "host_enable": true,
+            "boost_enable": true,
+            "PWR_FAULT_N_released": true,
+            "arm": false,
+            "guard_command": false,
+            "rails_may_retain_energy_when_guard_off": true
+          }
+        }
+      ],
+      "assertions": 12
+    }
+  ],
+  "scenario_groups": 12,
+  "assertions_passed": 182,
+  "snapshots": 118,
+  "limits": {
+    "converter_enable_is_output_disconnect": false,
+    "switch_weld_or_invalid_logic_supply_covered": false,
+    "reference_window_earns_precision_calibration": false,
+    "physical_fault_to_guard_delay_earned": false,
+    "automatic_rail_restart_can_rearm_stimulation": false,
+    "AFE_ground_passively_joined_to_host": false
+  }
+}

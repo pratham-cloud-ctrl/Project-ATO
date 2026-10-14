@@ -1,0 +1,1094 @@
+{
+  "project": {
+    "kicad_version": null,
+    "last_modified_unix": 1791947997,
+    "name": "power",
+    "path": "E:\\Project ATO\\electronics\\stage4\\power\\power.kicad_pro",
+    "pcb": "E:\\Project ATO\\electronics\\stage4\\power\\power.kicad_pcb",
+    "pcb_exists": false,
+    "pcb_generator_version": null,
+    "project_file_version": 1,
+    "schematic": "E:\\Project ATO\\electronics\\stage4\\power\\power.kicad_sch",
+    "schematic_exists": true,
+    "schematic_generator_version": null
+  },
+  "erc": {
+    "coordinates": {
+      "kicad_version": "10.0.6",
+      "reason": "KiCad 10.0.6 writes every ERC JSON coordinate at 1/100 of its true value (kicad#25582, fixed in 10.0.7); Konnect multiplied it back. A length quoted inside KiCad's own violation text is scaled the same way and is left as KiCad wrote it.",
+      "scale_applied": 100,
+      "status": "corrected"
+    },
+    "errors": 0,
+    "total": 0,
+    "violations": [],
+    "warnings": 0
+  },
+  "buck_pins": {
+    "component_x": 63.5,
+    "component_y": 68.58,
+    "pins": [
+      {
+        "length_mm": 2.54,
+        "name": "PGND",
+        "number": "1",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 63.5
+      },
+      {
+        "length_mm": 2.54,
+        "name": "VIN",
+        "number": "2",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 66.03999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "EN",
+        "number": "3",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 68.58
+      },
+      {
+        "length_mm": 2.54,
+        "name": "AGND",
+        "number": "4",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 71.12
+      },
+      {
+        "length_mm": 2.54,
+        "name": "FB",
+        "number": "5",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 73.66
+      },
+      {
+        "length_mm": 2.54,
+        "name": "VOS",
+        "number": "6",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 66.03999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "SW",
+        "number": "7",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 68.58
+      },
+      {
+        "length_mm": 2.54,
+        "name": "PG",
+        "number": "8",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 71.12
+      }
+    ],
+    "reference": "U100",
+    "rotation": 0,
+    "unit_count": 1,
+    "units": [
+      {
+        "pins": [
+          {
+            "length_mm": 2.54,
+            "name": "PGND",
+            "number": "1",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 63.5
+          },
+          {
+            "length_mm": 2.54,
+            "name": "VIN",
+            "number": "2",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 66.03999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "EN",
+            "number": "3",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 68.58
+          },
+          {
+            "length_mm": 2.54,
+            "name": "AGND",
+            "number": "4",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 71.12
+          },
+          {
+            "length_mm": 2.54,
+            "name": "FB",
+            "number": "5",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 73.66
+          },
+          {
+            "length_mm": 2.54,
+            "name": "VOS",
+            "number": "6",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 66.03999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "SW",
+            "number": "7",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 68.58
+          },
+          {
+            "length_mm": 2.54,
+            "name": "PG",
+            "number": "8",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 71.12
+          }
+        ],
+        "rotation": 0,
+        "unit": 1,
+        "x": 63.5,
+        "y": 68.58
+      }
+    ],
+    "x": 63.5,
+    "y": 68.58
+  },
+  "host5_pins": {
+    "component_x": 63.5,
+    "component_y": 68.58,
+    "pins": [
+      {
+        "length_mm": 2.54,
+        "name": "FB",
+        "number": "5",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 54.61
+      },
+      {
+        "length_mm": 2.54,
+        "name": "AGND",
+        "number": "6",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 57.15
+      },
+      {
+        "length_mm": 2.54,
+        "name": "FSW",
+        "number": "7",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 59.69
+      },
+      {
+        "length_mm": 2.54,
+        "name": "DEF",
+        "number": "8",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 62.23
+      },
+      {
+        "length_mm": 2.54,
+        "name": "SS_TR",
+        "number": "9",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 64.77
+      },
+      {
+        "length_mm": 2.54,
+        "name": "AVIN",
+        "number": "10",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 67.31
+      },
+      {
+        "length_mm": 2.54,
+        "name": "PVIN1",
+        "number": "11",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 69.85
+      },
+      {
+        "length_mm": 2.54,
+        "name": "PVIN2",
+        "number": "12",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 72.39
+      },
+      {
+        "length_mm": 2.54,
+        "name": "EN",
+        "number": "13",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 74.92999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "PGND1",
+        "number": "15",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 77.47
+      },
+      {
+        "length_mm": 2.54,
+        "name": "PGND2",
+        "number": "16",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 80.00999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "EP_GND",
+        "number": "17",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 82.55
+      },
+      {
+        "length_mm": 2.54,
+        "name": "SW1",
+        "number": "1",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 63.5
+      },
+      {
+        "length_mm": 2.54,
+        "name": "SW2",
+        "number": "2",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 66.03999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "SW3",
+        "number": "3",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 68.58
+      },
+      {
+        "length_mm": 2.54,
+        "name": "PG",
+        "number": "4",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 71.12
+      },
+      {
+        "length_mm": 2.54,
+        "name": "VOS",
+        "number": "14",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 73.66
+      }
+    ],
+    "reference": "U110",
+    "rotation": 0,
+    "unit_count": 1,
+    "units": [
+      {
+        "pins": [
+          {
+            "length_mm": 2.54,
+            "name": "FB",
+            "number": "5",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 54.61
+          },
+          {
+            "length_mm": 2.54,
+            "name": "AGND",
+            "number": "6",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 57.15
+          },
+          {
+            "length_mm": 2.54,
+            "name": "FSW",
+            "number": "7",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 59.69
+          },
+          {
+            "length_mm": 2.54,
+            "name": "DEF",
+            "number": "8",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 62.23
+          },
+          {
+            "length_mm": 2.54,
+            "name": "SS_TR",
+            "number": "9",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 64.77
+          },
+          {
+            "length_mm": 2.54,
+            "name": "AVIN",
+            "number": "10",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 67.31
+          },
+          {
+            "length_mm": 2.54,
+            "name": "PVIN1",
+            "number": "11",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 69.85
+          },
+          {
+            "length_mm": 2.54,
+            "name": "PVIN2",
+            "number": "12",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 72.39
+          },
+          {
+            "length_mm": 2.54,
+            "name": "EN",
+            "number": "13",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 74.92999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "PGND1",
+            "number": "15",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 77.47
+          },
+          {
+            "length_mm": 2.54,
+            "name": "PGND2",
+            "number": "16",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 80.00999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "EP_GND",
+            "number": "17",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 82.55
+          },
+          {
+            "length_mm": 2.54,
+            "name": "SW1",
+            "number": "1",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 63.5
+          },
+          {
+            "length_mm": 2.54,
+            "name": "SW2",
+            "number": "2",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 66.03999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "SW3",
+            "number": "3",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 68.58
+          },
+          {
+            "length_mm": 2.54,
+            "name": "PG",
+            "number": "4",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 71.12
+          },
+          {
+            "length_mm": 2.54,
+            "name": "VOS",
+            "number": "14",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 73.66
+          }
+        ],
+        "rotation": 0,
+        "unit": 1,
+        "x": 63.5,
+        "y": 68.58
+      }
+    ],
+    "x": 63.5,
+    "y": 68.58
+  },
+  "boost_pins": {
+    "component_x": 63.5,
+    "component_y": 68.58,
+    "pins": [
+      {
+        "length_mm": 2.54,
+        "name": "GND",
+        "number": "2",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 64.77
+      },
+      {
+        "length_mm": 2.54,
+        "name": "FBX",
+        "number": "3",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 67.31
+      },
+      {
+        "length_mm": 2.54,
+        "name": "EN_UVLO",
+        "number": "4",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 69.85
+      },
+      {
+        "length_mm": 2.54,
+        "name": "VIN",
+        "number": "6",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 72.39
+      },
+      {
+        "length_mm": 2.54,
+        "name": "SW",
+        "number": "1",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 67.31
+      },
+      {
+        "length_mm": 2.54,
+        "name": "INTVCC",
+        "number": "5",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 69.85
+      }
+    ],
+    "reference": "U301",
+    "rotation": 0,
+    "unit_count": 1,
+    "units": [
+      {
+        "pins": [
+          {
+            "length_mm": 2.54,
+            "name": "GND",
+            "number": "2",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 64.77
+          },
+          {
+            "length_mm": 2.54,
+            "name": "FBX",
+            "number": "3",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 67.31
+          },
+          {
+            "length_mm": 2.54,
+            "name": "EN_UVLO",
+            "number": "4",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 69.85
+          },
+          {
+            "length_mm": 2.54,
+            "name": "VIN",
+            "number": "6",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 72.39
+          },
+          {
+            "length_mm": 2.54,
+            "name": "SW",
+            "number": "1",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 67.31
+          },
+          {
+            "length_mm": 2.54,
+            "name": "INTVCC",
+            "number": "5",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 69.85
+          }
+        ],
+        "rotation": 0,
+        "unit": 1,
+        "x": 63.5,
+        "y": 68.58
+      }
+    ],
+    "x": 63.5,
+    "y": 68.58
+  },
+  "iso_pins": {
+    "component_x": 63.5,
+    "component_y": 68.58,
+    "pins": [
+      {
+        "length_mm": 2.54,
+        "name": "VIN_MINUS",
+        "number": "1",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 66.03999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "VIN_PLUS",
+        "number": "2",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 68.58
+      },
+      {
+        "length_mm": 2.54,
+        "name": "REMOTE_CURRENT",
+        "number": "3",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 71.12
+      },
+      {
+        "length_mm": 2.54,
+        "name": "NC",
+        "number": "5",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 64.77
+      },
+      {
+        "length_mm": 2.54,
+        "name": "VOUT_PLUS",
+        "number": "6",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 67.31
+      },
+      {
+        "length_mm": 2.54,
+        "name": "AFE_RETURN",
+        "number": "7",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 69.85
+      },
+      {
+        "length_mm": 2.54,
+        "name": "VOUT_MINUS",
+        "number": "8",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 72.39
+      }
+    ],
+    "reference": "U400",
+    "rotation": 0,
+    "unit_count": 1,
+    "units": [
+      {
+        "pins": [
+          {
+            "length_mm": 2.54,
+            "name": "VIN_MINUS",
+            "number": "1",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 66.03999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "VIN_PLUS",
+            "number": "2",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 68.58
+          },
+          {
+            "length_mm": 2.54,
+            "name": "REMOTE_CURRENT",
+            "number": "3",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 71.12
+          },
+          {
+            "length_mm": 2.54,
+            "name": "NC",
+            "number": "5",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 64.77
+          },
+          {
+            "length_mm": 2.54,
+            "name": "VOUT_PLUS",
+            "number": "6",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 67.31
+          },
+          {
+            "length_mm": 2.54,
+            "name": "AFE_RETURN",
+            "number": "7",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 69.85
+          },
+          {
+            "length_mm": 2.54,
+            "name": "VOUT_MINUS",
+            "number": "8",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 72.39
+          }
+        ],
+        "rotation": 0,
+        "unit": 1,
+        "x": 63.5,
+        "y": 68.58
+      }
+    ],
+    "x": 63.5,
+    "y": 68.58
+  },
+  "ldo_pins": {
+    "component_x": 63.5,
+    "component_y": 68.58,
+    "pins": [
+      {
+        "length_mm": 2.54,
+        "name": "FB",
+        "number": "2",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 59.69
+      },
+      {
+        "length_mm": 2.54,
+        "name": "NC",
+        "number": "3",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 62.23
+      },
+      {
+        "length_mm": 2.54,
+        "name": "GND",
+        "number": "4",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 64.77
+      },
+      {
+        "length_mm": 2.54,
+        "name": "EN",
+        "number": "5",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 67.31
+      },
+      {
+        "length_mm": 2.54,
+        "name": "NR_SS",
+        "number": "6",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 69.85
+      },
+      {
+        "length_mm": 2.54,
+        "name": "DNC",
+        "number": "7",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 72.39
+      },
+      {
+        "length_mm": 2.54,
+        "name": "IN",
+        "number": "8",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 74.92999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "EP_GND",
+        "number": "9",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 50.8,
+        "y": 77.47
+      },
+      {
+        "length_mm": 2.54,
+        "name": "OUT",
+        "number": "1",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 68.58
+      }
+    ],
+    "reference": "U412",
+    "rotation": 0,
+    "unit_count": 1,
+    "units": [
+      {
+        "pins": [
+          {
+            "length_mm": 2.54,
+            "name": "FB",
+            "number": "2",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 59.69
+          },
+          {
+            "length_mm": 2.54,
+            "name": "NC",
+            "number": "3",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 62.23
+          },
+          {
+            "length_mm": 2.54,
+            "name": "GND",
+            "number": "4",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 64.77
+          },
+          {
+            "length_mm": 2.54,
+            "name": "EN",
+            "number": "5",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 67.31
+          },
+          {
+            "length_mm": 2.54,
+            "name": "NR_SS",
+            "number": "6",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 69.85
+          },
+          {
+            "length_mm": 2.54,
+            "name": "DNC",
+            "number": "7",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 72.39
+          },
+          {
+            "length_mm": 2.54,
+            "name": "IN",
+            "number": "8",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 74.92999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "EP_GND",
+            "number": "9",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 50.8,
+            "y": 77.47
+          },
+          {
+            "length_mm": 2.54,
+            "name": "OUT",
+            "number": "1",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 76.2,
+            "y": 68.58
+          }
+        ],
+        "rotation": 0,
+        "unit": 1,
+        "x": 63.5,
+        "y": 68.58
+      }
+    ],
+    "x": 63.5,
+    "y": 68.58
+  },
+  "interlock_pin": {
+    "net": "PWR_FAULT_N",
+    "pin": "4",
+    "pin_x": 76.2,
+    "pin_y": 236.22,
+    "reference": "U235"
+  },
+  "overlaps": {
+    "power.kicad_sch": {
+      "bounds_resolved": 15,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "input.kicad_sch": {
+      "bounds_resolved": 5,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "sup3.kicad_sch": {
+      "bounds_resolved": 8,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "sup5.kicad_sch": {
+      "bounds_resolved": 8,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "host3.kicad_sch": {
+      "bounds_resolved": 8,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "host5.kicad_sch": {
+      "bounds_resolved": 10,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "enable.kicad_sch": {
+      "bounds_resolved": 20,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "enable_2.kicad_sch": {
+      "bounds_resolved": 20,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "enable_3.kicad_sch": {
+      "bounds_resolved": 18,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "boost15.kicad_sch": {
+      "bounds_resolved": 11,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "boost24.kicad_sch": {
+      "bounds_resolved": 11,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "island.kicad_sch": {
+      "bounds_resolved": 4,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "afe3.kicad_sch": {
+      "bounds_resolved": 9,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "afep.kicad_sch": {
+      "bounds_resolved": 9,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "afen.kicad_sch": {
+      "bounds_resolved": 9,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    }
+  },
+  "schematic_sha256": {
+    "afe3.kicad_sch": "55cfaf801fb095ee4c2edc6130d0f6e56f8a1af66cf161232b071d6965545133",
+    "afen.kicad_sch": "f7f0a028a1d3734228a260338b7edffcb004638603c5964a5cf14570519e85e8",
+    "afep.kicad_sch": "e2540edea0cceaecb5fc22461fccd1e557e5287a7599635cefdb2de07c88159a",
+    "boost15.kicad_sch": "84575b59c5a9829e6b7a2355a8ee970a10393d8596b9488d7d62f779fcc91844",
+    "boost24.kicad_sch": "11482aa5f5a90800dd5d88309ec80fa5491fae758c486cca4a89e500c01518a6",
+    "enable.kicad_sch": "6de85eb5545772006ede8d2d19b695e29dd04eff2c00c471dcc6edfe3d8ccec3",
+    "enable_2.kicad_sch": "033955ee243db215d1c7f4e1455981d58fd5a9e5faf2b2fc91310bd533227a9f",
+    "enable_3.kicad_sch": "1695cb138cb6e27df6855ec9ef55e526d716c8d0409312eb81340baeaa32f79c",
+    "host3.kicad_sch": "e94594af2d0ac56f793853f24a7b614f7e40b01556569c935e552d2e02e0a12c",
+    "host5.kicad_sch": "1911fcb3a4a23310530ad334819bf4920929af994d96b98405724d27420a4bf7",
+    "input.kicad_sch": "2c4587af8bb42aefdbe340d4e668fed2566fcc735ba3d8dba3f515af833dc227",
+    "island.kicad_sch": "fbfa0d43d06fb669a5cac13deea12e7de7065d71ef7beed64ef4c2a687641173",
+    "power.kicad_sch": "425f0d466a4e850bf363d69a6c91de660b339fa5f768d74ba3787e285cff8c5f",
+    "sup3.kicad_sch": "3d1edd91b8ae9992c58b676c30d723fe7233cda0b6ef69d7451de60281e2aeca",
+    "sup5.kicad_sch": "e6954728e100618cb0c810e782ff4926d0d1c6b7e81260a086cbbeb607e280c7"
+  }
+}

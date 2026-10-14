@@ -141,9 +141,13 @@ collision inhibit and a fresh acknowledgement/rearm path. The
 [native shutdown/supervision package](../electronics/stage4/supervision/README.md)
 adds 18 terminal guards, separate phase timers/watchdog, measured windows and
 explicit rearm across 22 sheets. Its finite fault/analog audits and checked
-inter-package wiring close that bounded digital slice. The four
-[remaining Stage 4 packages](stage4/remaining-work.md) begin with power/budgets,
-then monitoring transport, target firmware and the integrated populated PCB. Reconcile actual
+inter-package wiring close that bounded digital slice. The
+[native power package](../electronics/stage4/power/README.md) now generates all
+nine rails and supplies startup/reference-qualified shutdown across 15 sheets.
+Its [budget](stage4/power-budget.md) retains conditional 2.615 W/5.886 h, failed
+compact thermal closure and inherited ADC/link limitations. The three
+[remaining Stage 4 packages](stage4/remaining-work.md) begin with monitoring
+transport, then target firmware and the integrated populated PCB. Reconcile actual
 component power, timing, buses and memory before a complete PCB.
 
 Stage 5 uses the resulting board and component identities to build the native

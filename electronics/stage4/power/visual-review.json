@@ -1,0 +1,47 @@
+{
+  "schema": "ato.stage4.power.visual-review.v1",
+  "date": "2026-10-14",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "pdf_sha256": "5c6bfd18810e5cfe4356a5a282e61b335fc5957d17bae0c3e4917fb20043f43b",
+  "renderer": "Poppler pdftoppm scale-to2339; all15finalpages inspected",
+  "checks": [
+    "allpagebordersandtitlesvisible",
+    "nopin/label/symboloverlaps",
+    "nativeglobalsandrootinterfaceslegibleatzoom",
+    "separateconverter/island/qualificationpages",
+    "correctnegativeENandexplicitRemoteNC"
+  ],
+  "png_sha256": {
+    "page-01.png": "ca291b875270f7942eb0d48a3a7c908ac352df30b528767989137d92abf3818d",
+    "page-02.png": "d0bc119efecf83f5c02b8901e53ba9d43ab93c593aaa172b10d1253e861a2095",
+    "page-03.png": "73026e45bcb8a5588fc341626bf94c0995a833b2779ba184213031b3728cc700",
+    "page-04.png": "c6951c5c8bd242022a8dd638f6839a180a80944b9681671993c649e80333a483",
+    "page-05.png": "49cf5e384b5bfd519accf3184bbf1bea4534e47878d8152615e639185b78417f",
+    "page-06.png": "2bdc34871e1ef8040e3dedc4d946a500afa816a87c89a4642a3ce76a01691656",
+    "page-07.png": "651229b92f40638423127ece672837b1057b26fd09b274656803a18582ce25a9",
+    "page-08.png": "1d9d537357f232797939d8e829a958de3ee21f7e7dd8059418a1e581071ec6e5",
+    "page-09.png": "c6f17e8e615518ac2a026baa4c5f922ad08fc8bff2b2ca0f65b9d426c21535be",
+    "page-10.png": "d079e9a8089e8a3e351933575dac07f2eab6be95123db99e4bbd78dbc18889d7",
+    "page-11.png": "374d48edd60c595441a87172c924308add6ed07964f31d6536ca1708188d235d",
+    "page-12.png": "0227362bec2ac42ffeed701f86ece82d56b0daa28dd4c3328bc4fe8a145f1b81",
+    "page-13.png": "ba980353b95fa532374673776ddf3bf0a0c9427b6b587415bd34a15f0e94e4bd",
+    "page-14.png": "ebe5783f869c008c693ff5e499f7d0f87cf8c58f659a7e8df9d20ad314e566ae",
+    "page-15.png": "252f012492bc5bbc60561c0d89a53b937523ca5a7e3390d7d8dea3102d9115e8"
+  }
+}

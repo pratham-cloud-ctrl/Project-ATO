@@ -23,7 +23,7 @@ assumed. Video and website work are parked. No deadline is imposed.
 | 1: mechanism/specification | Complete within specification scope | Both causal chains, requirements/assumptions/capability map, primary-source audit, interfaces, three editable diagrams and illustrated nine-page brief |
 | 2: quantitative architecture | Complete within architecture scope | 16-stream/two-source design, timing/noise/compute/memory/power budgets, rejected cases, control contracts, eight-page brief and preliminary native allocation CAD; [exit review](docs/stage2/exit-review.md) |
 | 3: computational mechanisms | **Conservative investigation closed; conditional concept v1 complete** | Historical qualification results preserved. New evidence/premise/mechanism package and 128 illustrative scenarios connect an assumed spinal interface to assistance and conditional OFF learning; biological efficacy remains unestablished |
-| 4: detailed electronics/firmware | **Five native circuit packages complete within their scopes; wider stage in progress** | Monitor: 70 components/245 pins/three sheets. Driver: 156 components/572 pins/five sheets. Recording: 151 components/594 pins/seven sheets. Router: 155 components/650 pins/six sheets. Supervision: 478 components/1699 pins/22 sheets. All zero ERC violations. Four bounded packages remain: power/budgets, monitoring transport, target firmware and populated PCB |
+| 4: detailed electronics/firmware | **Six native circuit packages complete within their scopes; wider stage in progress** | Monitor: 70 components/245 pins/three sheets. Driver: 156 components/572 pins/five sheets. Recording: 151 components/594 pins/seven sheets. Router: 155 components/650 pins/six sheets. Supervision: 478 components/1699 pins/22 sheets. Power: 156 components/449 pins/15 sheets. All zero ERC violations. Three bounded packages remain: monitoring transport, target firmware and populated PCB |
 | 5: populated engineering CAD | Pending | Actual boards/components/package/lead interfaces, native parametric assemblies, dimensions, STEP/STL and nominal fit checks |
 | 6: integrated paper/repository release | Pending | Complete digital path verification, final illustrated manuscript, native sources, reproducible release, evidence and learning/defence material |
 
@@ -31,7 +31,37 @@ The historical v1.0.0 release is a subsystem reference. Its one-channel board
 and desktop enclosure are not the completed implant requested here. Stage 2's
 80 allocation solids and illustrative ports are not populated implant CAD.
 
-## Latest completed package: independent shutdown and supervision
+## Latest completed package: power and quantitative budgets
+
+The [native power design](docs/stage4/power-design.md) generates all nine host,
+supervisor and isolated recording rails. It adds a protected 2S reference pack,
+input protection, actual buck/boost/module/LDO circuits, startup qualification,
+reference windows and an open-drain fault connection to the existing terminal
+shutdown. The [32 new wires](docs/stage4/power-wiring.csv) join the previous
+102-wire plan without bridging the floating recording ground.
+
+The [finite budgets](docs/stage4/power-budget.md) audit actual IC supply pins,
+423 capacitors, peak/reservoir/startup/source behavior, losses, runtime, heat,
+buses and memory. Independent checks pass 3,300 assertions. The conditional
+active allocation is **2.615 W / 5.886 h** at 80% of rated 19.24 Wh energy.
+These are declared-load/efficiency calculations, not measurements. Full AFE
+regulator corners can reject startup; selected ±0.5% operation is an explicit
+trim/characterization assumption. Boost disable leaves diode feedthrough and
+stored energy; power fault still consumes arm independently.
+
+The original one-cell/100 mA and compact thermal assumptions are superseded.
+The selected pack is 99 g and 67 × 37 × 21 mm; all selected lumped thermal cases
+fail the 2 K allocation. The future compact consumer implant needs lower-power
+implementation and revised packaging; the reference is not silently shrunk into
+the preliminary CAD. Two ADS8866 devices also cannot supply the 450k aggregate
+conversion contract, and continuous framed raw data exceed the 1 Mbit/s service.
+
+**Next: monitoring transport and companion interfaces**, resolving conversion
+hardware/rates, endpoint arbitration, pressure freshness and diagnostics. The
+[three remaining packages](docs/stage4/remaining-work.md) then cover target
+firmware and consolidated PCB before Stage 5 populated CAD.
+
+## Previous package: independent shutdown and supervision
 
 The [native supervision design](docs/stage4/supervision-design.md) adds 18
 body-facing terminal guards, separate phase-duration timers, heartbeat watchdog,
@@ -50,11 +80,9 @@ AFE nominal supplies revise to +3.45/+5.30/−5.10 V; the old 100 µs phase gap 
 unearned, with an observed-quiet gate and provisional 200 µs allocation replacing
 it. Neither this package nor circuit ERC establishes biological efficacy.
 
-**Next: power and the complete quantitative budget.** Generate the revised AFE
-and independent supervisor rails, select battery/converters/references/startup,
-and recalculate actual peak power, heat, runtime, buses and memory. The
-[four remaining packages](docs/stage4/remaining-work.md) define the finite path
-through transport, nRF5340 firmware and populated PCB, then Stage 5 CAD.
+The [power package](docs/stage4/power-design.md) now supplies the revised rails
+and quantitative budget. Its new reference windows detect selected gross
+reference faults without earning the earlier precision allowance.
 
 ## Earlier continuation checkpoints
 
@@ -234,8 +262,9 @@ actual switch position and physical power-off isolation remain open.
 KiCad's new MCP checks saved native state/ERC; FreeCAD's live bridge inspected
 the unchanged 80-solid allocation model. Populated CAD has not been produced.
 The [independent supervision package](docs/stage4/supervision-design.md) is now
-complete within its digital scope. The [four remaining Stage 4 packages](docs/stage4/remaining-work.md)
-begin with power and revised quantitative budgets.
+complete within its digital scope. The power package is also complete; the
+[three remaining Stage 4 packages](docs/stage4/remaining-work.md) begin with
+monitoring transport and companion interfaces.
 
 The [conditional concept v1](docs/stage3/conditional-concept.md) now supplies the
 current future-interface design baseline. It includes 14 primary research
@@ -261,7 +290,7 @@ from the [conditional design handoff](docs/stage3/conditional-concept/engineerin
 and [conservative-study handoff](docs/stage3/mechanism-to-electronics-handoff.md).
 Measure each phase and recovery tail, bound integration/endpoint errors and
 reconcile component power and input-bias leakage before granting improved dose
-precision. Then implement isolated power, monitoring transport and
+precision. The power reference is complete; implement monitoring transport and
 target firmware; populate CAD from the actual circuit. The existing
 [tool audit](docs/stage3/toolchain-selection.md) verifies the installed free
 KiCad/ngspice/FreeCAD/build123d/Blender stack; no new paid software is needed.

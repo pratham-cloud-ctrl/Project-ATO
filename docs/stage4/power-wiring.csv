@@ -1,0 +1,33 @@
+from_package,from_ref,from_pin,from_net,to_package,to_ref,to_pin,to_net,purpose
+power,J3,1,SUP_3V3,supervision,J1,1,SUP_3V3,Generated host/supervisor rail to existing measured supervisor input
+power,J3,2,SUP_5,supervision,J1,2,SUP_5,Generated host/supervisor rail to existing measured supervisor input
+power,J3,3,HOST_3V3,supervision,J1,3,HOST_3V3,Generated host/supervisor rail to existing measured supervisor input
+power,J3,4,HOST_5,supervision,J1,4,HOST_5,Generated host/supervisor rail to existing measured supervisor input
+power,J3,5,HOST_15,supervision,J1,5,HOST_15,Generated host/supervisor rail to existing measured supervisor input
+power,J3,6,VH_24,supervision,J1,6,VH_24,Generated host/supervisor rail to existing measured supervisor input
+power,J3,7,GND,supervision,J1,7,GND,Generated host/supervisor rail to existing measured supervisor input
+power,J4,1,AFE_3V3,supervision,J2,1,AFE_3V3,Generated isolated AFE rail to local measured supervisor input
+power,J4,2,AFE_P5,supervision,J2,2,AFE_P5,Generated isolated AFE rail to local measured supervisor input
+power,J4,3,AFE_N5,supervision,J2,3,AFE_N5,Generated isolated AFE rail to local measured supervisor input
+power,J4,4,AFEAGND,supervision,J2,4,AFEAGND,Generated isolated AFE rail to local measured supervisor input
+power,J3,6,VH_24,current-driver,J1,1,VH_24,Actual restricted source supply
+power,J3,5,HOST_15,current-driver,J1,2,VA_15,Actual restricted source supply
+power,J3,4,HOST_5,current-driver,J1,3,VDD_5,Actual restricted source supply
+power,J3,3,HOST_3V3,current-driver,J1,4,VDD_3V3,Actual restricted source supply
+power,J3,7,GND,current-driver,J1,5,GND,Actual restricted source supply
+power,J3,4,HOST_5,monitoring-cell,J1,1,+5VA,Actual monitoring supply
+power,J3,3,HOST_3V3,monitoring-cell,J1,2,+3V3,Actual monitoring supply
+power,J3,7,GND,monitoring-cell,J1,3,GND,Actual monitoring supply
+power,J3,6,VH_24,contact-router,J1,1,VH_24,Actual contact router supply
+power,J3,3,HOST_3V3,contact-router,J1,2,VDD_3V3,Actual contact router supply
+power,J3,7,GND,contact-router,J1,3,GND,Actual contact router supply
+power,J4,1,AFE_3V3,recording-front-end,J1,3,AFE_3V3,Actual revised local AFE supply; labels retained
+power,J4,2,AFE_P5,recording-front-end,J1,1,AFE_P5,Actual revised local AFE supply; labels retained
+power,J4,3,AFE_N5,recording-front-end,J1,2,AFE_N5,Actual revised local AFE supply; labels retained
+power,J4,4,AFEAGND,recording-front-end,J1,4,AFEAGND,Actual revised local AFE supply; labels retained
+power,J3,3,HOST_3V3,recording-front-end,J2,1,HOST_3V3,Recording HOST-side supply only
+power,J3,7,GND,recording-front-end,J2,2,HOSTGND,Recording HOST-side supply only
+power,J2,11,PWR_FAULT_N,supervision,U100,10,GUARD_FAULT_N,OPEN-DRAIN wired OR at GUARD_FAULT_N; power-off/ref-fault consumes ARM despite charged rails
+monitoring-cell,U1,5,V_REF,power,J6,1,MON_VREF,Existing REF3440 output physical tap; reference gross window
+monitoring-cell,J4,3,V_MID,power,J6,2,MON_VMID,Existing buffered midpoint physical tap; reference gross window
+power,J6,3,GND,supervision,J1,7,GND,Reference monitor host ground; never AFEAGND

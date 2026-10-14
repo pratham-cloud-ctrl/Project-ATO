@@ -1,0 +1,14 @@
+{
+  "schema": "ato.stage4.power-budget-audit.v1",
+  "status": "passed",
+  "independent_assertions": 3300,
+  "results_sha256_lf": "e104c792165eb3be423040a150ec40be7ada5268c43dff2df00a6bbe383e1f5c",
+  "unearned_claims_preserved": [
+    "untrimmedAFEstartup",
+    "450kADCcapacity",
+    "1Mbitraw4klink",
+    "2Kthermalclosure",
+    "all-conditionefficiency",
+    "physicalconvertertransients"
+  ]
+}

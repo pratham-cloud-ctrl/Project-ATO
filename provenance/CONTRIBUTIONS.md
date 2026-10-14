@@ -329,3 +329,28 @@ human/animal, institutional or clinical validation. Historical circuit/study
 packages and synced project sources remain unchanged. This completes the bounded
 independent shutdown/supervision package; power/budgets, transport, target
 firmware, consolidated PCB, populated CAD and final publication remain.
+
+## Power and quantitative budget - 14 October 2026
+
+AI native implementation produced a 156-component, 449-pin, 15-sheet power
+reference: selected protected pack/input protection, nine generated rails,
+floating AFE converter/regulators, measured battery/supervisor/reference windows
+and open-drain fault integration. A separate AI manufacturer review checked
+actual pins, feedback networks, diode packages, module isolation/remote behavior,
+LDO tolerances and boost diode feedthrough. All final pages were visually
+reviewed; saved native revision, pins, overlaps and ERC were checked through MCP.
+
+A separate AI budget workstream audited actual IC supply pins and 423 populated
+capacitors, implemented rail/loss/energy/peak/source/thermal/resource calculations
+and an independent 3,300-assertion auditor. Root supplied the sequencing model,
+native gate and threshold KCL audits, explicit 32-wire power integration, two
+scientific figures and repository/checkpoint review. The conditional 2.615 W /
+5.886 h allocation retains assumptions and failed compact thermal closure,
+untrimmed startup, ADC-rate and raw-link constraints. The old one-cell/100 mA
+contract is explicitly superseded; no lower-power miniature ASIC was invented.
+
+All work remains digital and AI-assisted, without physical, human/animal,
+institutional or clinical validation. Original sources and prior circuit/study
+artifacts are preserved. Power is complete within the finite reference scope;
+transport/companion interfaces, target firmware, consolidated PCB, populated CAD
+and final paper/release remain subsequent work.
