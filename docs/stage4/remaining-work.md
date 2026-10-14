@@ -1,20 +1,20 @@
 # Stage 4: remaining digital engineering packages
 
-Updated 14 October 2026 after the monitoring/companion checkpoint.
+Updated 14 October 2026 after the actual nRF5340 firmware checkpoint.
 Seven circuit packages now exist: monitor, restricted driver, recording front end,
 contact router, supervision, power and monitoring/companion interfaces. Their component-level checks and finite models do not yet constitute
-one integrated electronic system. Stage 3's conditional future concept remains
+one integrated populated electronic system. Actual bounded target firmware now
+builds alongside them. Stage 3's conditional future concept remains
 the design baseline; its closed conservative studies are preserved.
 
-The remaining work is bounded by the following two packages. A negative result
+The remaining work is bounded by the following package. A negative result
 can revise an operating domain or remain a clearly identified final limitation.
 No package requires invented biological success, hardware fabrication or clinical
 qualification. Optional additional research is not a new completion gate.
 
 | Order | Package | Digital completion evidence |
 |---|---|---|
-| 4 | nRF5340 target firmware | Build/link the ATO application/backend, explicit peripheral/pin/timer ownership, configuration/readback, valid samples, route/phase sequencing, supervision, modes and fault records. Publish memory maps and finite timing/fault evidence; desktop checks alone do not count as target implementation. |
-| 5 | Integrated populated PCB | Consolidated native hierarchy/board(s), real footprint identities, net/parity checks, routing, stackup/clearance and DRC. Reconcile electrical/thermal/mechanical allocations; export populated board geometry for Stage 5. Document any unsupported manufacturing or physical-performance claims. |
+| 5 | Integrated populated PCB | Consolidated native hierarchy/board(s), nRF5340 controller and explicit four-SN74LVC165A input carrier, actual footprints, net/parity checks, routing, stackup/clearance and DRC. Reconcile the implemented lower-rate firmware profile and electrical/thermal/mechanical allocations; export populated board geometry for Stage 5. Document unsupported manufacturing and physical-performance claims. |
 
 Package 1, [independent supervision and terminal shutdown](supervision-design.md),
 is complete within its finite digital scope: 478 native components, 1699 pins,
@@ -46,6 +46,23 @@ to conditional 2.800 W/5.497 h; existing compact thermal failure remains.
 Nonuniform sampling, typical 15 kHz filtering, undetected plausible channel
 commands and unearned 4% dose precision remain explicit. The wired interface
 does not implement a radio, external pressure sensor or target MCU firmware.
+
+Package 4, [actual nRF5340 firmware](nrf5340-firmware-design.md), is complete
+within its bounded digital scope: actual application-core ELF/HEX/BIN and map,
+shared production C runtime, explicit peripherals and 46-GPIO ownership,
+configuration/readback, active route comparison, phase cutoff through timer/DPPI,
+timestamped sample/endpoint records, feature telemetry, companion admission,
+leases, explicit recovery and retained fault records. The compiled core passes
+75 scenarios/713 assertions. Independent image/source/interface checks accompany
+the build receipt. No physical execution or WCET is claimed.
+
+Its nominal lower-rate opportunities can contain known acquisition gaps. The
+earlier 450k raw/4k neural proposal, full biological algorithms and continuous
+observer remain unimplemented. This is a recorded operating-domain revision,
+not synthesized evidence that the earlier schedule runs. The actual image's
+memory map covers its implemented buffers and code, not a port of every Stage 3
+model. New carrier circuitry remains for the populated PCB; it is not silently
+added to the seven frozen native packages.
 
 Stage 4 exits when these packages form an inspectable digital path from artificial
 recording inputs through processing and admitted routing/stimulation to observed

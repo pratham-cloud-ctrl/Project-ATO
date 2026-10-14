@@ -151,9 +151,13 @@ the 450k aggregate conversion mismatch with a dedicated raw ADC, adds shared
 charge endpoints and an isolated UART, and binds freshness/queues/resources to
 actual native connectivity. Its additive budget is conditional 2.800 W/5.497 h;
 precision, continuous raw export and compact thermal limits remain explicit.
-The two [remaining Stage 4 packages](stage4/remaining-work.md) are target firmware
-and integrated populated PCB. Reconcile actual component power, timing, buses
-and memory before a complete PCB.
+The [actual nRF5340 firmware](stage4/nrf5340-firmware-design.md) now links the
+production core and peripheral backend, with compiled fault tests, active-route
+readback, timestamped observations and allocated timer/DPPI cutoff. Its nominal
+lower-rate polling opportunities and known gaps do not implement the earlier
+450k/4k proposal. The next [remaining Stage 4 package](stage4/remaining-work.md)
+is integrated populated PCB, including the controller and explicit four-chip
+sideband carrier. Reconcile component power, timing, buses and memory there.
 
 Stage 5 uses the resulting board and component identities to build the native
 parametric assembly: populated boards, package, ports/feedthroughs, lead

@@ -387,3 +387,43 @@ institutional or clinical validation occurred. Synced sources and six previous
 native/study packages remain unchanged. This completes the bounded monitoring/
 companion package. Target firmware, consolidated PCB, populated CAD and final
 paper/release remain.
+
+## Actual nRF5340 firmware - 14 October 2026
+
+An AI runtime workstream implemented the production C policy core and compiled
+host fault tests: 75 finite scenarios, 713 assertions and 432 bytes of bounded
+state. The same source is linked into the ARM application. Explicit pre-monitor
+recovery, subsequent supervisor rearm, route readback/action ordering, leases,
+SBP support-time validation, OFF trials, phase interruption, sample identity,
+queues and fault records are exercised without inventing biological success.
+
+An AI target workstream implemented the C/Zephyr/nrfx backend and performed the
+actual pristine nRF5340 application-core build: 53,616 bytes flash and 98,000
+bytes RAM in the selected 448 KiB linker RAM region. Retained sample archives,
+SPI/UART drivers, readback, feature telemetry and hardware timer/DPPI cutoff are
+present in the image. The build exports ELF/HEX/BIN/MAP, configuration, device
+tree, selected real compiler commands and source-bound receipts. Nothing was
+flashed or executed on physical hardware.
+
+A separate primary review checked SDK APIs, chip pin/protocol details, 46 GPIO
+allocations and 50 native connector endpoints. It identified ADC sampling delay,
+DAC edge mode and actual NFC pin ownership. Cross-workstream review resolved
+startup ordering, idle guard semantics, UART sequence wrap, archive retention
+and shared DPPI allocation with the Zephyr UART driver. These were concrete
+implementation corrections; the earlier native circuits and studies remain
+preserved. Root independently parsed the ARM ELF, checked source/export hashes,
+actual memory region/headroom, linked production functions, compiler/UICR policy,
+native pin bindings and peripheral ownership, then integrated documentation,
+licenses, CI, repository and checkpoint evidence.
+
+The implemented acquisition opportunities are a narrower profile than the old
+450k raw/4k neural proposal. Blocking bursts can create known gaps; no missed
+measurement is synthesized. Transport-valid features and endpoints do not earn
+analog recovery, phase-charge accuracy, a learned decoder or retained benefit.
+The trusted companion supplies prequalified plans; the wired target builds no
+network-core radio image. Four explicit SN74LVC165A sideband devices are a next-PCB
+dependency, not an undocumented modification of the seven native packages.
+
+This completes the bounded actual target-firmware package. Consolidated PCB,
+populated CAD and final integrated paper/release remain. All work is digital
+and AI-assisted, without physical, human/animal or institutional validation.

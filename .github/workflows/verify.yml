@@ -58,6 +58,8 @@ jobs:
       - run: python electronics/stage4/transport-study/input_study.py
       - run: python electronics/stage4/transport-study/verify_input.py
       - run: python electronics/stage4/transport-study/verify_integration.py
+      - run: python firmware/nrf5340/tests/check_runtime.py
+      - run: python scripts/verify_nrf5340.py
       - run: python scripts/run_studies.py
       - run: python scripts/build_firmware.py
       - run: python scripts/run_adapter.py

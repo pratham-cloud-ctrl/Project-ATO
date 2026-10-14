@@ -1,5 +1,13 @@
 # Target firmware tools
 
+**14 October update:** the [actual ATO application](../../firmware/nrf5340/README.md)
+now compiles and links for the application core. Its
+[build receipt](../../provenance/stage4-nrf5340-build.json),
+[independent audit](../../provenance/stage4-nrf5340-verification.json) and
+[implementation review](nrf5340-firmware-design.md) supersede the readiness-only
+status below. The older smoke receipt is preserved as a separate historical
+tool-installation check; it is not the ATO image.
+
 12 October 2026. **SDK installed and unmodified application-core example
 successfully cross-compiled and linked.** This is a tool-readiness record.
 The full ATO processor backend remains unimplemented.

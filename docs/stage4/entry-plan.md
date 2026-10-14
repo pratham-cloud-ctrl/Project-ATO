@@ -2,6 +2,14 @@
 
 **13 October 2026 · ATO-S4-ENTRY-01 · detailed design in progress.**
 
+**Latest, 14 October firmware checkpoint:** the
+[actual nRF5340 application](nrf5340-firmware-design.md) now builds from ATO
+production sources, with explicit peripherals, sample/endpoint records, route
+readback, companion admission and timer/DPPI cutoff. Its lower-rate implemented
+profile supersedes earlier proposed target-rate shorthand; known gaps and
+unmeasured physical timing remain explicit. The new four-chip sideband carrier
+and nRF5340 controller must enter the consolidated PCB, the last Stage 4 package.
+
 **14 October monitoring/companion checkpoint:** the
 [native power package](power-design.md) supersedes this entry plan's one-cell/
 100 mA allocation with a protected 2S reference and nine generated rails.
@@ -262,7 +270,8 @@ stable supported installation when target firmware starts.
 
 The [target-tool setup](firmware-toolchain.md) records the signed Nordic
 installer, matching SDK/compiler and successfully linked unmodified nRF5340
-application-core example. Full ATO target firmware remains pending.
+application-core example. The later [actual ATO firmware](nrf5340-firmware-design.md)
+is a separately built target implementation with its own evidence and limits.
 
 Work in order: **native monitor slice → independent transient/error budget →
 driver/routing and separate supervisory circuits → AFE/power/target firmware →

@@ -1,0 +1,47 @@
+pin,signal,direction,owner,connection,reset_state,condition
+P0.02,ROUTE_PRELOAD,out,GPIO,contact-router:J2.3,low,Disable NFCT and set UICR devicetree nfct-pins-as-gpios; custom carrier only.
+P0.03,ROUTE_COMMIT,out,GPIO,contact-router:J2.4,low,Disable NFCT and set UICR devicetree nfct-pins-as-gpios; custom carrier only.
+P0.04,ROUTE_REARM,out,GPIO,contact-router:J2.5,low,
+P0.05,ACTIVE_ACK,out,GPIO,contact-router:J4.7,low,
+P0.06,WANT0,out,GPIO,contact-router:J3.1,low,
+P0.07,WANT1,out,GPIO,contact-router:J3.2,low,
+P0.08,RAW_SCLK,out,SPIM4,monitoring-transport:J3.1,low,SPIM4 selected high-speed pins; H0H1 SCK/MOSI; ordinary PSEL/GPIO route at 16 MHz.
+P0.09,RAW_SDI,out,SPIM4,monitoring-transport:J3.2,low,SPIM4 selected high-speed pins; H0H1 SCK/MOSI; ordinary PSEL/GPIO route at 16 MHz.
+P0.10,RAW_SDO,in,SPIM4,monitoring-transport:J3.3,input,SPIM4 selected high-speed pins; H0H1 SCK/MOSI; ordinary PSEL/GPIO route at 16 MHz.
+P0.11,RAW_CS_N,out,GPIO software CS,monitoring-transport:J3.4,high,SPIM4 selected high-speed pins; H0H1 SCK/MOSI; ordinary PSEL/GPIO route at 16 MHz.
+P0.12,RAW_RST_N,out,GPIO,monitoring-transport:J3.5,low,
+P0.13,AFE_SCLK,out,SPIM1,recording-front-end:J2.3,low,
+P0.14,AFE_MOSI,out,SPIM1,recording-front-end:J2.4,low,
+P0.15,AFE_MISO,in,SPIM1,recording-front-end:J2.6,input,
+P0.16,AFE_CS_ASSERT,out,GPIO,recording-front-end:J2.5,low,
+P0.17,AFE_CONNECT,out,GPIO,recording-front-end:J2.7,low,
+P0.18,AFE_RECORD,out,GPIO,recording-front-end:J2.8,low,
+P0.19,AFE_FAULT_N,in,GPIO,recording-front-end:J2.9,input,
+P0.20,MON_SCLK,out,SPIM2,monitoring-transport:J22.1,low,
+P0.21,MON_MISO,in,SPIM2,monitoring-transport:J22.2,input,
+P0.22,BOTH_CNV,out,GPIO,monitoring-transport:J22.3;monitoring-transport:J22.5,low,Explicit common conversion edge captures both endpoint ADCs; independent CS reads.
+P0.23,CS0,out,GPIO,monitoring-transport:J22.4,high,
+P0.24,CS1,out,GPIO,monitoring-transport:J22.6,high,
+P0.25,INT_RUN0,out,GPIO,monitoring-transport:J20.8,high,Hold high at software initialization to preserve an unknown interrupted dose; reset low only after qualified quiet/recovery.
+P0.26,INT_RUN1,out,GPIO,monitoring-transport:J20.9,high,Hold high at software initialization to preserve an unknown interrupted dose; reset low only after qualified quiet/recovery.
+P0.27,MON_REARM0,out,GPIO,monitoring-transport:J20.10,low,
+P0.28,MON_REARM1,out,GPIO,monitoring-transport:J20.11,low,
+P0.29,CTRL_SCLK,out,SPIM3 or GPIO sideband,current-driver:J2.1;contact-router:J2.2;carrier:165-CLK,low,"Exclusive SPIM3/GPIO ownership; clocks alter candidate/serial chain only, never active addresses. Proposed new four-SN74LVC165APWR carrier; not present in seven frozen native circuits."
+P0.30,CTRL_MOSI,out,SPIM3,current-driver:J2.3;contact-router:J2.1,low,
+P0.31,DAC_SYNC_N,out,GPIO,current-driver:J2.2,high,
+P1.00,REQ0,out,GPIOTE DPPI clear,current-driver:J3.1;supervision:J3.4,low,
+P1.01,REQ1,out,GPIOTE DPPI clear,current-driver:J3.5;supervision:J3.5,low,
+P1.02,PLUS0,out,GPIO,current-driver:J3.2,low,
+P1.03,MINUS0,out,GPIO,current-driver:J3.3,low,
+P1.04,PLUS1,out,GPIO,current-driver:J3.6,low,
+P1.05,MINUS1,out,GPIO,current-driver:J3.7,low,
+P1.06,BOTH_DRV_REARM,out,GPIO,current-driver:J3.4;current-driver:J3.8,low,Explicit common rising-edge rearm; both sources must be idle and healthy.
+P1.07,SUP_REARM,out,GPIO,supervision:J3.1,low,
+P1.08,FAULT_RESET,out,GPIO,supervision:J3.2,low,
+P1.09,WDI,out,GPIO watchdog service,supervision:J3.3,low,
+P1.10,PHASE_REARM0,out,GPIO,supervision:J3.10,low,
+P1.11,PHASE_REARM1,out,GPIO,supervision:J3.11,low,
+P1.12,HOST_UART_TX,out,UARTE0,monitoring-transport:J7.1,high,
+P1.13,HOST_UART_RX,in,UARTE0,monitoring-transport:J7.2,input,
+P1.14,SIDEBAND_LOAD_N,out,GPIO,carrier:all165-SH_LD_N,high, Proposed new four-SN74LVC165APWR carrier; not present in seven frozen native circuits.
+P1.15,SIDEBAND_DATA,in,GPIO,carrier:nearest165-QH,input, Proposed new four-SN74LVC165APWR carrier; not present in seven frozen native circuits.

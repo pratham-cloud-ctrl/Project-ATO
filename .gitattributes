@@ -47,3 +47,8 @@ provenance/stage3-closeout-review.json -text whitespace=cr-at-eol
 # Preserve the reviewed scenario bytes bound by its review receipt.
 experiments/stage3/conditional-concept/** -text whitespace=cr-at-eol
 experiments/stage3/conditional-concept/*.svg whitespace=-blank-at-eol,cr-at-eol
+# Target binary bytes, compiler-map spacing and upstream notices are preserved.
+firmware/nrf5340/artifacts/*.elf binary
+firmware/nrf5340/artifacts/*.bin binary
+firmware/nrf5340/artifacts/ato.map text eol=lf whitespace=-blank-at-eol
+firmware/nrf5340/licenses/* text eol=lf -whitespace

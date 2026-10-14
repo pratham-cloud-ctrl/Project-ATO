@@ -23,7 +23,7 @@ assumed. Video and website work are parked. No deadline is imposed.
 | 1: mechanism/specification | Complete within specification scope | Both causal chains, requirements/assumptions/capability map, primary-source audit, interfaces, three editable diagrams and illustrated nine-page brief |
 | 2: quantitative architecture | Complete within architecture scope | 16-stream/two-source design, timing/noise/compute/memory/power budgets, rejected cases, control contracts, eight-page brief and preliminary native allocation CAD; [exit review](docs/stage2/exit-review.md) |
 | 3: computational mechanisms | **Conservative investigation closed; conditional concept v1 complete** | Historical qualification results preserved. New evidence/premise/mechanism package and 128 illustrative scenarios connect an assumed spinal interface to assistance and conditional OFF learning; biological efficacy remains unestablished |
-| 4: detailed electronics/firmware | **Seven native circuit packages complete within their scopes; wider stage in progress** | Monitor: 70 components/245 pins/three sheets. Driver: 156 components/572 pins/five sheets. Recording: 151 components/594 pins/seven sheets. Router: 155 components/650 pins/six sheets. Supervision: 478 components/1699 pins/22 sheets. Power: 156 components/449 pins/15 sheets. Monitoring/companion: 60 components/217 pins/eight sheets. All zero ERC violations. Two bounded packages remain: target firmware and populated PCB |
+| 4: detailed electronics/firmware | **Seven native circuit packages and bounded actual nRF5340 firmware complete; wider stage in progress** | Monitor: 70 components/245 pins/three sheets. Driver: 156 components/572 pins/five sheets. Recording: 151 components/594 pins/seven sheets. Router: 155 components/650 pins/six sheets. Supervision: 478 components/1699 pins/22 sheets. Power: 156 components/449 pins/15 sheets. Monitoring/companion: 60 components/217 pins/eight sheets. All zero ERC violations. Actual ATO application-core image and shared C runtime now build. Consolidated populated PCB remains |
 | 5: populated engineering CAD | Pending | Actual boards/components/package/lead interfaces, native parametric assemblies, dimensions, STEP/STL and nominal fit checks |
 | 6: integrated paper/repository release | Pending | Complete digital path verification, final illustrated manuscript, native sources, reproducible release, evidence and learning/defence material |
 
@@ -31,7 +31,43 @@ The historical v1.0.0 release is a subsystem reference. Its one-channel board
 and desktop enclosure are not the completed implant requested here. Stage 2's
 80 allocation solids and illustrative ports are not populated implant CAD.
 
-## Latest completed package: monitoring and companion interfaces
+## Latest completed package: actual nRF5340 firmware
+
+The [C/Zephyr application](firmware/nrf5340/README.md) implements actual SPIM,
+UART, GPIO, timer/DPPI cutoff and the shared production policy core. It builds
+for nRF5340 application-core silicon; it is separate from the earlier unmodified
+hello-world smoke check. The [implementation review](docs/stage4/nrf5340-firmware-design.md),
+native pin map, source-bound ARM image, memory map and independent ELF/interface
+audit explain exactly what is present. Nothing has been flashed or executed
+on a physical board, and no hardware timing measurement is claimed.
+
+The compiled core passes **75 finite scenarios / 713 assertions**. Explicit
+pre-monitor recovery, observed monitor permits and subsequent supervisor rearm
+avoid startup deadlock. Modes, leases, SBP support freshness, active-address
+readback, phase sequencing, OFF trials, sticky fault records and queue overflow
+remain distinct. Interruptions do not trigger automatic balancing or restart.
+
+The implemented profile uses tagged 40-clock raw conversions at nominal 100 µs
+opportunities and nineteen-word RHD frames at nominal 1 ms opportunities.
+Blocking acquisition and sideband reads can cause known gaps; actual timestamps,
+validity and counters retain them. This does not implement the earlier 450k raw
+or 4k neural schedule. Recording/feature validity describes digital transport,
+not analog recovery or a useful biological decoder. The companion owns the
+declared learner-specific or pressure policy and supplies explicit event plans.
+
+The full native interface exceeds the MCU's GPIO capacity. The
+[46-GPIO map](docs/stage4/nrf5340-pin-map.csv) therefore includes a declared new
+four-SN74LVC165A carrier that serializes actual active-route bits and health.
+It is an explicit next-PCB dependency, with source-supported pin ownership,
+clock sharing and sentinel checks. The seven earlier native circuits and their
+studies remain unchanged.
+
+**Next: consolidated populated PCB**, including controller/carrier circuitry,
+actual footprints, routing, integration checks, DRC and exports for Stage 5 CAD.
+Stage 4 remains open until that [last package](docs/stage4/remaining-work.md) is
+complete. Populated CAD and the final integrated paper remain subsequent work.
+
+## Previous package: monitoring and companion interfaces
 
 The [native interface design](docs/stage4/monitoring-transport-design.md) adds
 an ADS8688 raw-monitor ADC, explicit shared-MISO charge endpoint handoff, health
@@ -55,10 +91,10 @@ the explicit 1 Mbaud UART. A 100 ms diagnostic burst fits the saved queue model.
 The incremental power overlay revises the conditional active allocation to
 **2.800 W / 5.497 h**. Compact thermal qualification remains unearned.
 
-**Next: nRF5340 target firmware**, followed by the consolidated populated PCB.
-These are the [two remaining Stage 4 packages](docs/stage4/remaining-work.md).
-Populated CAD and the final integrated illustrated manuscript follow in Stages
-5 and 6; video and website work remain parked.
+The nRF5340 package now implements a narrower, explicitly described target
+profile. The consolidated PCB remains before Stage 5 populated CAD. The final
+integrated illustrated manuscript follows in Stage 6; video and website remain
+parked.
 
 ## Previous package: power and quantitative budgets
 

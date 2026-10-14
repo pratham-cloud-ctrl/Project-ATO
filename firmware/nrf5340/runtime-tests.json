@@ -1,0 +1,19 @@
+{
+  "schema": "ato-nrf5340-runtime-tests-v1",
+  "date": "2026-10-14",
+  "scope": "Compiled production C policy core; finite host fault scenarios, no physical or biological validation",
+  "source_sha256_lf": {
+    "core/ato_runtime.h": "4717188ee12f39f4cc3d71a276dcfd654d99993b12b507399dbc6514d168e39f",
+    "core/ato_runtime.c": "ff0fe7daeb09e910d6be91840e94f717c425c30f74cc7a8fd87dab9d00be48f0",
+    "tests/runtime_test.c": "269db775ed71607d93afb23b64a1ab2ae19fda596b6023099328fabbfe9fb1b6",
+    "tests/check_runtime.py": "88db7905ebe8346d66e65f7ab2c90855e41caf92b31a2513e4378e588ba4e836"
+  },
+  "packet_fixture_sha256": "18b1a7abc0fa901c8ce926ff9db9c9941ced3de4a61dfa18f2fd9df94c23d326",
+  "compiled_results": {
+    "scenarios": 75,
+    "assertions": 713,
+    "runtime_bytes": 432,
+    "fault_record_bytes": 16,
+    "passed": true
+  }
+}
