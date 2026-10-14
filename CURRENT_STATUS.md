@@ -23,7 +23,7 @@ assumed. Video and website work are parked. No deadline is imposed.
 | 1: mechanism/specification | Complete within specification scope | Both causal chains, requirements/assumptions/capability map, primary-source audit, interfaces, three editable diagrams and illustrated nine-page brief |
 | 2: quantitative architecture | Complete within architecture scope | 16-stream/two-source design, timing/noise/compute/memory/power budgets, rejected cases, control contracts, eight-page brief and preliminary native allocation CAD; [exit review](docs/stage2/exit-review.md) |
 | 3: computational mechanisms | **Conservative investigation closed; conditional concept v1 complete** | Historical qualification results preserved. New evidence/premise/mechanism package and 128 illustrative scenarios connect an assumed spinal interface to assistance and conditional OFF learning; biological efficacy remains unestablished |
-| 4: detailed electronics/firmware | **Six native circuit packages complete within their scopes; wider stage in progress** | Monitor: 70 components/245 pins/three sheets. Driver: 156 components/572 pins/five sheets. Recording: 151 components/594 pins/seven sheets. Router: 155 components/650 pins/six sheets. Supervision: 478 components/1699 pins/22 sheets. Power: 156 components/449 pins/15 sheets. All zero ERC violations. Three bounded packages remain: monitoring transport, target firmware and populated PCB |
+| 4: detailed electronics/firmware | **Seven native circuit packages complete within their scopes; wider stage in progress** | Monitor: 70 components/245 pins/three sheets. Driver: 156 components/572 pins/five sheets. Recording: 151 components/594 pins/seven sheets. Router: 155 components/650 pins/six sheets. Supervision: 478 components/1699 pins/22 sheets. Power: 156 components/449 pins/15 sheets. Monitoring/companion: 60 components/217 pins/eight sheets. All zero ERC violations. Two bounded packages remain: target firmware and populated PCB |
 | 5: populated engineering CAD | Pending | Actual boards/components/package/lead interfaces, native parametric assemblies, dimensions, STEP/STL and nominal fit checks |
 | 6: integrated paper/repository release | Pending | Complete digital path verification, final illustrated manuscript, native sources, reproducible release, evidence and learning/defence material |
 
@@ -31,7 +31,36 @@ The historical v1.0.0 release is a subsystem reference. Its one-channel board
 and desktop enclosure are not the completed implant requested here. Stage 2's
 80 allocation solids and illustrative ports are not populated implant CAD.
 
-## Latest completed package: power and quantitative budgets
+## Latest completed package: monitoring and companion interfaces
+
+The [native interface design](docs/stage4/monitoring-transport-design.md) adds
+an ADS8688 raw-monitor ADC, explicit shared-MISO charge endpoint handoff, health
+observations and an isolated UART with separate companion power/ground. Its
+60 components, 217 pins and eight editable sheets pass full ERC without ignored
+checks. The old six native packages and their study results are preserved.
+
+The [finite studies](electronics/stage4/transport-study/README.md) bind actual
+apertures, endpoint read arbitration, configuration identities, pressure support
+freshness, leases, queues, divider loading and illustrative filter behavior.
+The 450k aggregate conversion mismatch is resolved by added hardware. Current
+samples average 200 ksps each but have 4.25–6.375 µs gaps; the typical internal
+15 kHz bandwidth does not earn precise peaks or the 4% phase-charge target.
+Stale/ambiguous packets reject; trusted peer measurements and bounded clocks
+remain assumptions. No target DMA implementation, cuff or radio is claimed.
+
+The new [34-wire plan](docs/stage4/monitoring-transport-wiring.csv) joins the
+previous 134 wires with separate floating recording and companion grounds.
+Processed traffic fits the normal service; continuous 4k raw export exceeds
+the explicit 1 Mbaud UART. A 100 ms diagnostic burst fits the saved queue model.
+The incremental power overlay revises the conditional active allocation to
+**2.800 W / 5.497 h**. Compact thermal qualification remains unearned.
+
+**Next: nRF5340 target firmware**, followed by the consolidated populated PCB.
+These are the [two remaining Stage 4 packages](docs/stage4/remaining-work.md).
+Populated CAD and the final integrated illustrated manuscript follow in Stages
+5 and 6; video and website work remain parked.
+
+## Previous package: power and quantitative budgets
 
 The [native power design](docs/stage4/power-design.md) generates all nine host,
 supervisor and isolated recording rails. It adds a protected 2S reference pack,
@@ -56,10 +85,10 @@ implementation and revised packaging; the reference is not silently shrunk into
 the preliminary CAD. Two ADS8866 devices also cannot supply the 450k aggregate
 conversion contract, and continuous framed raw data exceed the 1 Mbit/s service.
 
-**Next: monitoring transport and companion interfaces**, resolving conversion
-hardware/rates, endpoint arbitration, pressure freshness and diagnostics. The
-[three remaining packages](docs/stage4/remaining-work.md) then cover target
-firmware and consolidated PCB before Stage 5 populated CAD.
+That checkpoint's ADC-rate mismatch is now resolved by the added transport ADC.
+Its continuous raw-link and compact thermal failures remain explicit. The
+new package updates resources through an additive overlay, preserving the old
+power calculation and its original scope.
 
 ## Previous package: independent shutdown and supervision
 

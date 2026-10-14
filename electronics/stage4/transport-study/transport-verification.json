@@ -1,0 +1,10 @@
+{
+  "schema": "ato.stage4.transport-verification.v1",
+  "status": "pass",
+  "assertions": 1552,
+  "results_sha256_lf": "e857ce86e2bd43dac020e291ca54c778c5e634aaf15ae7b0ad1509c09cdf2035",
+  "raw_ADC_frames": 180,
+  "endpoint_captures": 16,
+  "protocol_cases": 21,
+  "producer_imported": false
+}

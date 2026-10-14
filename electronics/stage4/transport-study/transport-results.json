@@ -1,0 +1,4822 @@
+{
+  "schema": "ato.stage4.transport-contract.v1",
+  "date": "2026-10-14",
+  "scope": "finite digital schedule, protocol and queue contract; target implementation and physical behavior unearned",
+  "producer_sha256_lf": "c954f6a23a3b8aecebaeb456eed6dc605397ff5a2b9a881d92e0f25287477418",
+  "native_binding": {
+    "source_sha256_lf": {
+      "electronics/stage4/monitoring-cell/connectivity.json": "b79aab80ed2c366c1ad22b98d2fb911a195f20b02d08a40babfee1c13a284015",
+      "electronics/stage4/monitoring-transport/connectivity.json": "308e0e6e18e76570ba7703a7488132f0a4078365016163e007fa2b8f216cbea0",
+      "electronics/stage4/monitoring-transport/monitoring_transport.xml": "14342cd07769ddfd15bfbeb9759839704cf5bd87946924b8143503227e0a2d9f"
+    },
+    "endpoint_pins": [
+      {
+        "package": "monitoring-cell",
+        "reference": "U103",
+        "pin": "6",
+        "net": "CH0_CNV"
+      },
+      {
+        "package": "monitoring-cell",
+        "reference": "U103",
+        "pin": "7",
+        "net": "CH0_DOUT"
+      },
+      {
+        "package": "monitoring-cell",
+        "reference": "U103",
+        "pin": "9",
+        "net": "CH0_CS_N"
+      },
+      {
+        "package": "monitoring-cell",
+        "reference": "U103",
+        "pin": "8",
+        "net": "MON_SCLK"
+      },
+      {
+        "package": "monitoring-cell",
+        "reference": "U203",
+        "pin": "6",
+        "net": "CH1_CNV"
+      },
+      {
+        "package": "monitoring-cell",
+        "reference": "U203",
+        "pin": "7",
+        "net": "CH1_DOUT"
+      },
+      {
+        "package": "monitoring-cell",
+        "reference": "U203",
+        "pin": "9",
+        "net": "CH1_CS_N"
+      },
+      {
+        "package": "monitoring-cell",
+        "reference": "U203",
+        "pin": "8",
+        "net": "MON_SCLK"
+      }
+    ],
+    "new_native": {
+      "ADC_reference": "U1",
+      "ADC_value": "ADS8688IDBTR",
+      "pins": {
+        "1": "RAW_SDI_PAD",
+        "2": "RAW_RST_N",
+        "3": "GND",
+        "4": "GND",
+        "5": "RAW_REFIO",
+        "6": "GND",
+        "7": "RAW_REFCAP",
+        "8": "GND",
+        "9": "HOST_5",
+        "10": "GND",
+        "11": "GND",
+        "12": "ADC6",
+        "13": "GND",
+        "14": "ADC7",
+        "15": "GND",
+        "16": "ADC0",
+        "17": "GND",
+        "18": "ADC1",
+        "19": "GND",
+        "20": "GND",
+        "21": "ADC2",
+        "22": "GND",
+        "23": "ADC3",
+        "24": "GND",
+        "25": "ADC4",
+        "26": "GND",
+        "27": "ADC5",
+        "28": "GND",
+        "29": "GND",
+        "30": "HOST_5",
+        "31": "GND",
+        "32": "GND",
+        "33": "GND",
+        "34": "HOST_3V3",
+        "35": null,
+        "36": "RAW_SDO",
+        "37": "RAW_SCLK_PAD",
+        "38": "RAW_CS_N"
+      },
+      "component_count": 60
+    }
+  },
+  "raw_ADC": {
+    "hyperperiod_ticks": 6400,
+    "tick_ns": 62.5,
+    "SPI_Hz": 16000000,
+    "SPI_frame_bits": 32,
+    "frame_allocation_ticks": 34,
+    "CS_setup_ns": 31.25,
+    "CS_hold_ns": 31.25,
+    "CS_high_ns": 62.5,
+    "cycle_minimum_us": 2,
+    "SCLK_maximum_Hz": 17000000,
+    "priming": "MAN_CH0 frame discarded before acquisition; read back range/configuration; new epoch after reset or lost transaction",
+    "hardware_channel_id_enabled": false,
+    "channel_identity_requires_healthy_command_path": true,
+    "missed_or_unknown_transaction_action": "invalidate epoch and all affected samples; stop new dose admission; reset/readback/prime before explicit rearm",
+    "frames": [
+      {
+        "index": 0,
+        "nominal_slot": 0,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 0,
+        "wire_end_tick": 33,
+        "next_permitted_tick": 34,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 0,
+          "aperture_tick": 0
+        }
+      },
+      {
+        "index": 1,
+        "nominal_slot": 1,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 34,
+        "wire_end_tick": 67,
+        "next_permitted_tick": 68,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 1,
+          "aperture_tick": 34
+        }
+      },
+      {
+        "index": 2,
+        "nominal_slot": 2,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 68,
+        "wire_end_tick": 101,
+        "next_permitted_tick": 102,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 2,
+          "aperture_tick": 68
+        }
+      },
+      {
+        "index": 3,
+        "nominal_slot": 3,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 102,
+        "wire_end_tick": 135,
+        "next_permitted_tick": 136,
+        "block_phase": 0,
+        "command_selects_next_channel": 2,
+        "manual_command_hex": "C800",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 3,
+          "aperture_tick": 102
+        }
+      },
+      {
+        "index": 4,
+        "nominal_slot": 4,
+        "channel_name": "PAIR0",
+        "channel": 2,
+        "aperture_tick": 136,
+        "wire_end_tick": 169,
+        "next_permitted_tick": 170,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 2,
+          "capture_id": 4,
+          "aperture_tick": 136
+        }
+      },
+      {
+        "index": 5,
+        "nominal_slot": 5,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 170,
+        "wire_end_tick": 203,
+        "next_permitted_tick": 204,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 5,
+          "aperture_tick": 170
+        }
+      },
+      {
+        "index": 6,
+        "nominal_slot": 6,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 204,
+        "wire_end_tick": 237,
+        "next_permitted_tick": 238,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 6,
+          "aperture_tick": 204
+        }
+      },
+      {
+        "index": 7,
+        "nominal_slot": 7,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 238,
+        "wire_end_tick": 271,
+        "next_permitted_tick": 272,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 7,
+          "aperture_tick": 238
+        }
+      },
+      {
+        "index": 8,
+        "nominal_slot": 8,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 272,
+        "wire_end_tick": 305,
+        "next_permitted_tick": 306,
+        "block_phase": 0,
+        "command_selects_next_channel": 3,
+        "manual_command_hex": "CC00",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 8,
+          "aperture_tick": 272
+        }
+      },
+      {
+        "index": 9,
+        "nominal_slot": 9,
+        "channel_name": "PAIR1",
+        "channel": 3,
+        "aperture_tick": 306,
+        "wire_end_tick": 339,
+        "next_permitted_tick": 340,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 3,
+          "capture_id": 9,
+          "aperture_tick": 306
+        }
+      },
+      {
+        "index": 10,
+        "nominal_slot": 10,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 340,
+        "wire_end_tick": 373,
+        "next_permitted_tick": 374,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 10,
+          "aperture_tick": 340
+        }
+      },
+      {
+        "index": 11,
+        "nominal_slot": 11,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 374,
+        "wire_end_tick": 407,
+        "next_permitted_tick": 408,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 11,
+          "aperture_tick": 374
+        }
+      },
+      {
+        "index": 12,
+        "nominal_slot": 12,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 408,
+        "wire_end_tick": 441,
+        "next_permitted_tick": 442,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 12,
+          "aperture_tick": 408
+        }
+      },
+      {
+        "index": 13,
+        "nominal_slot": 13,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 442,
+        "wire_end_tick": 475,
+        "next_permitted_tick": 476,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 13,
+          "aperture_tick": 442
+        }
+      },
+      {
+        "index": 14,
+        "nominal_slot": 15,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 480,
+        "wire_end_tick": 513,
+        "next_permitted_tick": 514,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 14,
+          "aperture_tick": 480
+        }
+      },
+      {
+        "index": 15,
+        "nominal_slot": 16,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 514,
+        "wire_end_tick": 547,
+        "next_permitted_tick": 548,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 15,
+          "aperture_tick": 514
+        }
+      },
+      {
+        "index": 16,
+        "nominal_slot": 17,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 548,
+        "wire_end_tick": 581,
+        "next_permitted_tick": 582,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 16,
+          "aperture_tick": 548
+        }
+      },
+      {
+        "index": 17,
+        "nominal_slot": 18,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 582,
+        "wire_end_tick": 615,
+        "next_permitted_tick": 616,
+        "block_phase": 0,
+        "command_selects_next_channel": 4,
+        "manual_command_hex": "D000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 17,
+          "aperture_tick": 582
+        }
+      },
+      {
+        "index": 18,
+        "nominal_slot": 19,
+        "channel_name": "HEALTH",
+        "channel": 4,
+        "aperture_tick": 616,
+        "wire_end_tick": 649,
+        "next_permitted_tick": 650,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 4,
+          "capture_id": 18,
+          "aperture_tick": 616
+        }
+      },
+      {
+        "index": 19,
+        "nominal_slot": 20,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 650,
+        "wire_end_tick": 683,
+        "next_permitted_tick": 684,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 19,
+          "aperture_tick": 650
+        }
+      },
+      {
+        "index": 20,
+        "nominal_slot": 21,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 684,
+        "wire_end_tick": 717,
+        "next_permitted_tick": 718,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 20,
+          "aperture_tick": 684
+        }
+      },
+      {
+        "index": 21,
+        "nominal_slot": 22,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 718,
+        "wire_end_tick": 751,
+        "next_permitted_tick": 752,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 21,
+          "aperture_tick": 718
+        }
+      },
+      {
+        "index": 22,
+        "nominal_slot": 23,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 752,
+        "wire_end_tick": 785,
+        "next_permitted_tick": 786,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 22,
+          "aperture_tick": 752
+        }
+      },
+      {
+        "index": 23,
+        "nominal_slot": 25,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 800,
+        "wire_end_tick": 833,
+        "next_permitted_tick": 834,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 23,
+          "aperture_tick": 800
+        }
+      },
+      {
+        "index": 24,
+        "nominal_slot": 26,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 834,
+        "wire_end_tick": 867,
+        "next_permitted_tick": 868,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 24,
+          "aperture_tick": 834
+        }
+      },
+      {
+        "index": 25,
+        "nominal_slot": 27,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 868,
+        "wire_end_tick": 901,
+        "next_permitted_tick": 902,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 25,
+          "aperture_tick": 868
+        }
+      },
+      {
+        "index": 26,
+        "nominal_slot": 28,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 902,
+        "wire_end_tick": 935,
+        "next_permitted_tick": 936,
+        "block_phase": 0,
+        "command_selects_next_channel": 2,
+        "manual_command_hex": "C800",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 26,
+          "aperture_tick": 902
+        }
+      },
+      {
+        "index": 27,
+        "nominal_slot": 29,
+        "channel_name": "PAIR0",
+        "channel": 2,
+        "aperture_tick": 936,
+        "wire_end_tick": 969,
+        "next_permitted_tick": 970,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 2,
+          "capture_id": 27,
+          "aperture_tick": 936
+        }
+      },
+      {
+        "index": 28,
+        "nominal_slot": 30,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 970,
+        "wire_end_tick": 1003,
+        "next_permitted_tick": 1004,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 28,
+          "aperture_tick": 970
+        }
+      },
+      {
+        "index": 29,
+        "nominal_slot": 31,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 1004,
+        "wire_end_tick": 1037,
+        "next_permitted_tick": 1038,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 29,
+          "aperture_tick": 1004
+        }
+      },
+      {
+        "index": 30,
+        "nominal_slot": 32,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 1038,
+        "wire_end_tick": 1071,
+        "next_permitted_tick": 1072,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 30,
+          "aperture_tick": 1038
+        }
+      },
+      {
+        "index": 31,
+        "nominal_slot": 33,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 1072,
+        "wire_end_tick": 1105,
+        "next_permitted_tick": 1106,
+        "block_phase": 0,
+        "command_selects_next_channel": 3,
+        "manual_command_hex": "CC00",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 31,
+          "aperture_tick": 1072
+        }
+      },
+      {
+        "index": 32,
+        "nominal_slot": 34,
+        "channel_name": "PAIR1",
+        "channel": 3,
+        "aperture_tick": 1106,
+        "wire_end_tick": 1139,
+        "next_permitted_tick": 1140,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 3,
+          "capture_id": 32,
+          "aperture_tick": 1106
+        }
+      },
+      {
+        "index": 33,
+        "nominal_slot": 35,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 1140,
+        "wire_end_tick": 1173,
+        "next_permitted_tick": 1174,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 33,
+          "aperture_tick": 1140
+        }
+      },
+      {
+        "index": 34,
+        "nominal_slot": 36,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 1174,
+        "wire_end_tick": 1207,
+        "next_permitted_tick": 1208,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 34,
+          "aperture_tick": 1174
+        }
+      },
+      {
+        "index": 35,
+        "nominal_slot": 37,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 1208,
+        "wire_end_tick": 1241,
+        "next_permitted_tick": 1242,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 35,
+          "aperture_tick": 1208
+        }
+      },
+      {
+        "index": 36,
+        "nominal_slot": 38,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 1242,
+        "wire_end_tick": 1275,
+        "next_permitted_tick": 1276,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 36,
+          "aperture_tick": 1242
+        }
+      },
+      {
+        "index": 37,
+        "nominal_slot": 40,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 1280,
+        "wire_end_tick": 1313,
+        "next_permitted_tick": 1314,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 37,
+          "aperture_tick": 1280
+        }
+      },
+      {
+        "index": 38,
+        "nominal_slot": 41,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 1314,
+        "wire_end_tick": 1347,
+        "next_permitted_tick": 1348,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 38,
+          "aperture_tick": 1314
+        }
+      },
+      {
+        "index": 39,
+        "nominal_slot": 42,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 1348,
+        "wire_end_tick": 1381,
+        "next_permitted_tick": 1382,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 39,
+          "aperture_tick": 1348
+        }
+      },
+      {
+        "index": 40,
+        "nominal_slot": 43,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 1382,
+        "wire_end_tick": 1415,
+        "next_permitted_tick": 1416,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 40,
+          "aperture_tick": 1382
+        }
+      },
+      {
+        "index": 41,
+        "nominal_slot": 45,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 1440,
+        "wire_end_tick": 1473,
+        "next_permitted_tick": 1474,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 41,
+          "aperture_tick": 1440
+        }
+      },
+      {
+        "index": 42,
+        "nominal_slot": 46,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 1474,
+        "wire_end_tick": 1507,
+        "next_permitted_tick": 1508,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 42,
+          "aperture_tick": 1474
+        }
+      },
+      {
+        "index": 43,
+        "nominal_slot": 47,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 1508,
+        "wire_end_tick": 1541,
+        "next_permitted_tick": 1542,
+        "block_phase": 0,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 43,
+          "aperture_tick": 1508
+        }
+      },
+      {
+        "index": 44,
+        "nominal_slot": 48,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 1542,
+        "wire_end_tick": 1575,
+        "next_permitted_tick": 1576,
+        "block_phase": 0,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 44,
+          "aperture_tick": 1542
+        }
+      },
+      {
+        "index": 45,
+        "nominal_slot": 0,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 1600,
+        "wire_end_tick": 1633,
+        "next_permitted_tick": 1634,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 45,
+          "aperture_tick": 1600
+        }
+      },
+      {
+        "index": 46,
+        "nominal_slot": 1,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 1634,
+        "wire_end_tick": 1667,
+        "next_permitted_tick": 1668,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 46,
+          "aperture_tick": 1634
+        }
+      },
+      {
+        "index": 47,
+        "nominal_slot": 2,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 1668,
+        "wire_end_tick": 1701,
+        "next_permitted_tick": 1702,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 47,
+          "aperture_tick": 1668
+        }
+      },
+      {
+        "index": 48,
+        "nominal_slot": 3,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 1702,
+        "wire_end_tick": 1735,
+        "next_permitted_tick": 1736,
+        "block_phase": 1,
+        "command_selects_next_channel": 2,
+        "manual_command_hex": "C800",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 48,
+          "aperture_tick": 1702
+        }
+      },
+      {
+        "index": 49,
+        "nominal_slot": 4,
+        "channel_name": "PAIR0",
+        "channel": 2,
+        "aperture_tick": 1736,
+        "wire_end_tick": 1769,
+        "next_permitted_tick": 1770,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 2,
+          "capture_id": 49,
+          "aperture_tick": 1736
+        }
+      },
+      {
+        "index": 50,
+        "nominal_slot": 5,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 1770,
+        "wire_end_tick": 1803,
+        "next_permitted_tick": 1804,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 50,
+          "aperture_tick": 1770
+        }
+      },
+      {
+        "index": 51,
+        "nominal_slot": 6,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 1804,
+        "wire_end_tick": 1837,
+        "next_permitted_tick": 1838,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 51,
+          "aperture_tick": 1804
+        }
+      },
+      {
+        "index": 52,
+        "nominal_slot": 7,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 1838,
+        "wire_end_tick": 1871,
+        "next_permitted_tick": 1872,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 52,
+          "aperture_tick": 1838
+        }
+      },
+      {
+        "index": 53,
+        "nominal_slot": 8,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 1872,
+        "wire_end_tick": 1905,
+        "next_permitted_tick": 1906,
+        "block_phase": 1,
+        "command_selects_next_channel": 3,
+        "manual_command_hex": "CC00",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 53,
+          "aperture_tick": 1872
+        }
+      },
+      {
+        "index": 54,
+        "nominal_slot": 9,
+        "channel_name": "PAIR1",
+        "channel": 3,
+        "aperture_tick": 1906,
+        "wire_end_tick": 1939,
+        "next_permitted_tick": 1940,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 3,
+          "capture_id": 54,
+          "aperture_tick": 1906
+        }
+      },
+      {
+        "index": 55,
+        "nominal_slot": 10,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 1940,
+        "wire_end_tick": 1973,
+        "next_permitted_tick": 1974,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 55,
+          "aperture_tick": 1940
+        }
+      },
+      {
+        "index": 56,
+        "nominal_slot": 11,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 1974,
+        "wire_end_tick": 2007,
+        "next_permitted_tick": 2008,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 56,
+          "aperture_tick": 1974
+        }
+      },
+      {
+        "index": 57,
+        "nominal_slot": 12,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 2008,
+        "wire_end_tick": 2041,
+        "next_permitted_tick": 2042,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 57,
+          "aperture_tick": 2008
+        }
+      },
+      {
+        "index": 58,
+        "nominal_slot": 13,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 2042,
+        "wire_end_tick": 2075,
+        "next_permitted_tick": 2076,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 58,
+          "aperture_tick": 2042
+        }
+      },
+      {
+        "index": 59,
+        "nominal_slot": 15,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 2080,
+        "wire_end_tick": 2113,
+        "next_permitted_tick": 2114,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 59,
+          "aperture_tick": 2080
+        }
+      },
+      {
+        "index": 60,
+        "nominal_slot": 16,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 2114,
+        "wire_end_tick": 2147,
+        "next_permitted_tick": 2148,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 60,
+          "aperture_tick": 2114
+        }
+      },
+      {
+        "index": 61,
+        "nominal_slot": 17,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 2148,
+        "wire_end_tick": 2181,
+        "next_permitted_tick": 2182,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 61,
+          "aperture_tick": 2148
+        }
+      },
+      {
+        "index": 62,
+        "nominal_slot": 18,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 2182,
+        "wire_end_tick": 2215,
+        "next_permitted_tick": 2216,
+        "block_phase": 1,
+        "command_selects_next_channel": 5,
+        "manual_command_hex": "D400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 62,
+          "aperture_tick": 2182
+        }
+      },
+      {
+        "index": 63,
+        "nominal_slot": 19,
+        "channel_name": "HEALTH",
+        "channel": 5,
+        "aperture_tick": 2216,
+        "wire_end_tick": 2249,
+        "next_permitted_tick": 2250,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 5,
+          "capture_id": 63,
+          "aperture_tick": 2216
+        }
+      },
+      {
+        "index": 64,
+        "nominal_slot": 20,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 2250,
+        "wire_end_tick": 2283,
+        "next_permitted_tick": 2284,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 64,
+          "aperture_tick": 2250
+        }
+      },
+      {
+        "index": 65,
+        "nominal_slot": 21,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 2284,
+        "wire_end_tick": 2317,
+        "next_permitted_tick": 2318,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 65,
+          "aperture_tick": 2284
+        }
+      },
+      {
+        "index": 66,
+        "nominal_slot": 22,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 2318,
+        "wire_end_tick": 2351,
+        "next_permitted_tick": 2352,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 66,
+          "aperture_tick": 2318
+        }
+      },
+      {
+        "index": 67,
+        "nominal_slot": 23,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 2352,
+        "wire_end_tick": 2385,
+        "next_permitted_tick": 2386,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 67,
+          "aperture_tick": 2352
+        }
+      },
+      {
+        "index": 68,
+        "nominal_slot": 25,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 2400,
+        "wire_end_tick": 2433,
+        "next_permitted_tick": 2434,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 68,
+          "aperture_tick": 2400
+        }
+      },
+      {
+        "index": 69,
+        "nominal_slot": 26,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 2434,
+        "wire_end_tick": 2467,
+        "next_permitted_tick": 2468,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 69,
+          "aperture_tick": 2434
+        }
+      },
+      {
+        "index": 70,
+        "nominal_slot": 27,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 2468,
+        "wire_end_tick": 2501,
+        "next_permitted_tick": 2502,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 70,
+          "aperture_tick": 2468
+        }
+      },
+      {
+        "index": 71,
+        "nominal_slot": 28,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 2502,
+        "wire_end_tick": 2535,
+        "next_permitted_tick": 2536,
+        "block_phase": 1,
+        "command_selects_next_channel": 2,
+        "manual_command_hex": "C800",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 71,
+          "aperture_tick": 2502
+        }
+      },
+      {
+        "index": 72,
+        "nominal_slot": 29,
+        "channel_name": "PAIR0",
+        "channel": 2,
+        "aperture_tick": 2536,
+        "wire_end_tick": 2569,
+        "next_permitted_tick": 2570,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 2,
+          "capture_id": 72,
+          "aperture_tick": 2536
+        }
+      },
+      {
+        "index": 73,
+        "nominal_slot": 30,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 2570,
+        "wire_end_tick": 2603,
+        "next_permitted_tick": 2604,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 73,
+          "aperture_tick": 2570
+        }
+      },
+      {
+        "index": 74,
+        "nominal_slot": 31,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 2604,
+        "wire_end_tick": 2637,
+        "next_permitted_tick": 2638,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 74,
+          "aperture_tick": 2604
+        }
+      },
+      {
+        "index": 75,
+        "nominal_slot": 32,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 2638,
+        "wire_end_tick": 2671,
+        "next_permitted_tick": 2672,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 75,
+          "aperture_tick": 2638
+        }
+      },
+      {
+        "index": 76,
+        "nominal_slot": 33,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 2672,
+        "wire_end_tick": 2705,
+        "next_permitted_tick": 2706,
+        "block_phase": 1,
+        "command_selects_next_channel": 3,
+        "manual_command_hex": "CC00",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 76,
+          "aperture_tick": 2672
+        }
+      },
+      {
+        "index": 77,
+        "nominal_slot": 34,
+        "channel_name": "PAIR1",
+        "channel": 3,
+        "aperture_tick": 2706,
+        "wire_end_tick": 2739,
+        "next_permitted_tick": 2740,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 3,
+          "capture_id": 77,
+          "aperture_tick": 2706
+        }
+      },
+      {
+        "index": 78,
+        "nominal_slot": 35,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 2740,
+        "wire_end_tick": 2773,
+        "next_permitted_tick": 2774,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 78,
+          "aperture_tick": 2740
+        }
+      },
+      {
+        "index": 79,
+        "nominal_slot": 36,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 2774,
+        "wire_end_tick": 2807,
+        "next_permitted_tick": 2808,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 79,
+          "aperture_tick": 2774
+        }
+      },
+      {
+        "index": 80,
+        "nominal_slot": 37,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 2808,
+        "wire_end_tick": 2841,
+        "next_permitted_tick": 2842,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 80,
+          "aperture_tick": 2808
+        }
+      },
+      {
+        "index": 81,
+        "nominal_slot": 38,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 2842,
+        "wire_end_tick": 2875,
+        "next_permitted_tick": 2876,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 81,
+          "aperture_tick": 2842
+        }
+      },
+      {
+        "index": 82,
+        "nominal_slot": 40,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 2880,
+        "wire_end_tick": 2913,
+        "next_permitted_tick": 2914,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 82,
+          "aperture_tick": 2880
+        }
+      },
+      {
+        "index": 83,
+        "nominal_slot": 41,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 2914,
+        "wire_end_tick": 2947,
+        "next_permitted_tick": 2948,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 83,
+          "aperture_tick": 2914
+        }
+      },
+      {
+        "index": 84,
+        "nominal_slot": 42,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 2948,
+        "wire_end_tick": 2981,
+        "next_permitted_tick": 2982,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 84,
+          "aperture_tick": 2948
+        }
+      },
+      {
+        "index": 85,
+        "nominal_slot": 43,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 2982,
+        "wire_end_tick": 3015,
+        "next_permitted_tick": 3016,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 85,
+          "aperture_tick": 2982
+        }
+      },
+      {
+        "index": 86,
+        "nominal_slot": 45,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 3040,
+        "wire_end_tick": 3073,
+        "next_permitted_tick": 3074,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 86,
+          "aperture_tick": 3040
+        }
+      },
+      {
+        "index": 87,
+        "nominal_slot": 46,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 3074,
+        "wire_end_tick": 3107,
+        "next_permitted_tick": 3108,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 87,
+          "aperture_tick": 3074
+        }
+      },
+      {
+        "index": 88,
+        "nominal_slot": 47,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 3108,
+        "wire_end_tick": 3141,
+        "next_permitted_tick": 3142,
+        "block_phase": 1,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 88,
+          "aperture_tick": 3108
+        }
+      },
+      {
+        "index": 89,
+        "nominal_slot": 48,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 3142,
+        "wire_end_tick": 3175,
+        "next_permitted_tick": 3176,
+        "block_phase": 1,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 89,
+          "aperture_tick": 3142
+        }
+      },
+      {
+        "index": 90,
+        "nominal_slot": 0,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 3200,
+        "wire_end_tick": 3233,
+        "next_permitted_tick": 3234,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 90,
+          "aperture_tick": 3200
+        }
+      },
+      {
+        "index": 91,
+        "nominal_slot": 1,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 3234,
+        "wire_end_tick": 3267,
+        "next_permitted_tick": 3268,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 91,
+          "aperture_tick": 3234
+        }
+      },
+      {
+        "index": 92,
+        "nominal_slot": 2,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 3268,
+        "wire_end_tick": 3301,
+        "next_permitted_tick": 3302,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 92,
+          "aperture_tick": 3268
+        }
+      },
+      {
+        "index": 93,
+        "nominal_slot": 3,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 3302,
+        "wire_end_tick": 3335,
+        "next_permitted_tick": 3336,
+        "block_phase": 2,
+        "command_selects_next_channel": 2,
+        "manual_command_hex": "C800",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 93,
+          "aperture_tick": 3302
+        }
+      },
+      {
+        "index": 94,
+        "nominal_slot": 4,
+        "channel_name": "PAIR0",
+        "channel": 2,
+        "aperture_tick": 3336,
+        "wire_end_tick": 3369,
+        "next_permitted_tick": 3370,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 2,
+          "capture_id": 94,
+          "aperture_tick": 3336
+        }
+      },
+      {
+        "index": 95,
+        "nominal_slot": 5,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 3370,
+        "wire_end_tick": 3403,
+        "next_permitted_tick": 3404,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 95,
+          "aperture_tick": 3370
+        }
+      },
+      {
+        "index": 96,
+        "nominal_slot": 6,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 3404,
+        "wire_end_tick": 3437,
+        "next_permitted_tick": 3438,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 96,
+          "aperture_tick": 3404
+        }
+      },
+      {
+        "index": 97,
+        "nominal_slot": 7,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 3438,
+        "wire_end_tick": 3471,
+        "next_permitted_tick": 3472,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 97,
+          "aperture_tick": 3438
+        }
+      },
+      {
+        "index": 98,
+        "nominal_slot": 8,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 3472,
+        "wire_end_tick": 3505,
+        "next_permitted_tick": 3506,
+        "block_phase": 2,
+        "command_selects_next_channel": 3,
+        "manual_command_hex": "CC00",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 98,
+          "aperture_tick": 3472
+        }
+      },
+      {
+        "index": 99,
+        "nominal_slot": 9,
+        "channel_name": "PAIR1",
+        "channel": 3,
+        "aperture_tick": 3506,
+        "wire_end_tick": 3539,
+        "next_permitted_tick": 3540,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 3,
+          "capture_id": 99,
+          "aperture_tick": 3506
+        }
+      },
+      {
+        "index": 100,
+        "nominal_slot": 10,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 3540,
+        "wire_end_tick": 3573,
+        "next_permitted_tick": 3574,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 100,
+          "aperture_tick": 3540
+        }
+      },
+      {
+        "index": 101,
+        "nominal_slot": 11,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 3574,
+        "wire_end_tick": 3607,
+        "next_permitted_tick": 3608,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 101,
+          "aperture_tick": 3574
+        }
+      },
+      {
+        "index": 102,
+        "nominal_slot": 12,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 3608,
+        "wire_end_tick": 3641,
+        "next_permitted_tick": 3642,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 102,
+          "aperture_tick": 3608
+        }
+      },
+      {
+        "index": 103,
+        "nominal_slot": 13,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 3642,
+        "wire_end_tick": 3675,
+        "next_permitted_tick": 3676,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 103,
+          "aperture_tick": 3642
+        }
+      },
+      {
+        "index": 104,
+        "nominal_slot": 15,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 3680,
+        "wire_end_tick": 3713,
+        "next_permitted_tick": 3714,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 104,
+          "aperture_tick": 3680
+        }
+      },
+      {
+        "index": 105,
+        "nominal_slot": 16,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 3714,
+        "wire_end_tick": 3747,
+        "next_permitted_tick": 3748,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 105,
+          "aperture_tick": 3714
+        }
+      },
+      {
+        "index": 106,
+        "nominal_slot": 17,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 3748,
+        "wire_end_tick": 3781,
+        "next_permitted_tick": 3782,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 106,
+          "aperture_tick": 3748
+        }
+      },
+      {
+        "index": 107,
+        "nominal_slot": 18,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 3782,
+        "wire_end_tick": 3815,
+        "next_permitted_tick": 3816,
+        "block_phase": 2,
+        "command_selects_next_channel": 6,
+        "manual_command_hex": "D800",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 107,
+          "aperture_tick": 3782
+        }
+      },
+      {
+        "index": 108,
+        "nominal_slot": 19,
+        "channel_name": "HEALTH",
+        "channel": 6,
+        "aperture_tick": 3816,
+        "wire_end_tick": 3849,
+        "next_permitted_tick": 3850,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 6,
+          "capture_id": 108,
+          "aperture_tick": 3816
+        }
+      },
+      {
+        "index": 109,
+        "nominal_slot": 20,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 3850,
+        "wire_end_tick": 3883,
+        "next_permitted_tick": 3884,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 109,
+          "aperture_tick": 3850
+        }
+      },
+      {
+        "index": 110,
+        "nominal_slot": 21,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 3884,
+        "wire_end_tick": 3917,
+        "next_permitted_tick": 3918,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 110,
+          "aperture_tick": 3884
+        }
+      },
+      {
+        "index": 111,
+        "nominal_slot": 22,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 3918,
+        "wire_end_tick": 3951,
+        "next_permitted_tick": 3952,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 111,
+          "aperture_tick": 3918
+        }
+      },
+      {
+        "index": 112,
+        "nominal_slot": 23,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 3952,
+        "wire_end_tick": 3985,
+        "next_permitted_tick": 3986,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 112,
+          "aperture_tick": 3952
+        }
+      },
+      {
+        "index": 113,
+        "nominal_slot": 25,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 4000,
+        "wire_end_tick": 4033,
+        "next_permitted_tick": 4034,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 113,
+          "aperture_tick": 4000
+        }
+      },
+      {
+        "index": 114,
+        "nominal_slot": 26,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 4034,
+        "wire_end_tick": 4067,
+        "next_permitted_tick": 4068,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 114,
+          "aperture_tick": 4034
+        }
+      },
+      {
+        "index": 115,
+        "nominal_slot": 27,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 4068,
+        "wire_end_tick": 4101,
+        "next_permitted_tick": 4102,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 115,
+          "aperture_tick": 4068
+        }
+      },
+      {
+        "index": 116,
+        "nominal_slot": 28,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 4102,
+        "wire_end_tick": 4135,
+        "next_permitted_tick": 4136,
+        "block_phase": 2,
+        "command_selects_next_channel": 2,
+        "manual_command_hex": "C800",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 116,
+          "aperture_tick": 4102
+        }
+      },
+      {
+        "index": 117,
+        "nominal_slot": 29,
+        "channel_name": "PAIR0",
+        "channel": 2,
+        "aperture_tick": 4136,
+        "wire_end_tick": 4169,
+        "next_permitted_tick": 4170,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 2,
+          "capture_id": 117,
+          "aperture_tick": 4136
+        }
+      },
+      {
+        "index": 118,
+        "nominal_slot": 30,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 4170,
+        "wire_end_tick": 4203,
+        "next_permitted_tick": 4204,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 118,
+          "aperture_tick": 4170
+        }
+      },
+      {
+        "index": 119,
+        "nominal_slot": 31,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 4204,
+        "wire_end_tick": 4237,
+        "next_permitted_tick": 4238,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 119,
+          "aperture_tick": 4204
+        }
+      },
+      {
+        "index": 120,
+        "nominal_slot": 32,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 4238,
+        "wire_end_tick": 4271,
+        "next_permitted_tick": 4272,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 120,
+          "aperture_tick": 4238
+        }
+      },
+      {
+        "index": 121,
+        "nominal_slot": 33,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 4272,
+        "wire_end_tick": 4305,
+        "next_permitted_tick": 4306,
+        "block_phase": 2,
+        "command_selects_next_channel": 3,
+        "manual_command_hex": "CC00",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 121,
+          "aperture_tick": 4272
+        }
+      },
+      {
+        "index": 122,
+        "nominal_slot": 34,
+        "channel_name": "PAIR1",
+        "channel": 3,
+        "aperture_tick": 4306,
+        "wire_end_tick": 4339,
+        "next_permitted_tick": 4340,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 3,
+          "capture_id": 122,
+          "aperture_tick": 4306
+        }
+      },
+      {
+        "index": 123,
+        "nominal_slot": 35,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 4340,
+        "wire_end_tick": 4373,
+        "next_permitted_tick": 4374,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 123,
+          "aperture_tick": 4340
+        }
+      },
+      {
+        "index": 124,
+        "nominal_slot": 36,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 4374,
+        "wire_end_tick": 4407,
+        "next_permitted_tick": 4408,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 124,
+          "aperture_tick": 4374
+        }
+      },
+      {
+        "index": 125,
+        "nominal_slot": 37,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 4408,
+        "wire_end_tick": 4441,
+        "next_permitted_tick": 4442,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 125,
+          "aperture_tick": 4408
+        }
+      },
+      {
+        "index": 126,
+        "nominal_slot": 38,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 4442,
+        "wire_end_tick": 4475,
+        "next_permitted_tick": 4476,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 126,
+          "aperture_tick": 4442
+        }
+      },
+      {
+        "index": 127,
+        "nominal_slot": 40,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 4480,
+        "wire_end_tick": 4513,
+        "next_permitted_tick": 4514,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 127,
+          "aperture_tick": 4480
+        }
+      },
+      {
+        "index": 128,
+        "nominal_slot": 41,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 4514,
+        "wire_end_tick": 4547,
+        "next_permitted_tick": 4548,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 128,
+          "aperture_tick": 4514
+        }
+      },
+      {
+        "index": 129,
+        "nominal_slot": 42,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 4548,
+        "wire_end_tick": 4581,
+        "next_permitted_tick": 4582,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 129,
+          "aperture_tick": 4548
+        }
+      },
+      {
+        "index": 130,
+        "nominal_slot": 43,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 4582,
+        "wire_end_tick": 4615,
+        "next_permitted_tick": 4616,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 130,
+          "aperture_tick": 4582
+        }
+      },
+      {
+        "index": 131,
+        "nominal_slot": 45,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 4640,
+        "wire_end_tick": 4673,
+        "next_permitted_tick": 4674,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 131,
+          "aperture_tick": 4640
+        }
+      },
+      {
+        "index": 132,
+        "nominal_slot": 46,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 4674,
+        "wire_end_tick": 4707,
+        "next_permitted_tick": 4708,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 132,
+          "aperture_tick": 4674
+        }
+      },
+      {
+        "index": 133,
+        "nominal_slot": 47,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 4708,
+        "wire_end_tick": 4741,
+        "next_permitted_tick": 4742,
+        "block_phase": 2,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 133,
+          "aperture_tick": 4708
+        }
+      },
+      {
+        "index": 134,
+        "nominal_slot": 48,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 4742,
+        "wire_end_tick": 4775,
+        "next_permitted_tick": 4776,
+        "block_phase": 2,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 134,
+          "aperture_tick": 4742
+        }
+      },
+      {
+        "index": 135,
+        "nominal_slot": 0,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 4800,
+        "wire_end_tick": 4833,
+        "next_permitted_tick": 4834,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 135,
+          "aperture_tick": 4800
+        }
+      },
+      {
+        "index": 136,
+        "nominal_slot": 1,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 4834,
+        "wire_end_tick": 4867,
+        "next_permitted_tick": 4868,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 136,
+          "aperture_tick": 4834
+        }
+      },
+      {
+        "index": 137,
+        "nominal_slot": 2,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 4868,
+        "wire_end_tick": 4901,
+        "next_permitted_tick": 4902,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 137,
+          "aperture_tick": 4868
+        }
+      },
+      {
+        "index": 138,
+        "nominal_slot": 3,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 4902,
+        "wire_end_tick": 4935,
+        "next_permitted_tick": 4936,
+        "block_phase": 3,
+        "command_selects_next_channel": 2,
+        "manual_command_hex": "C800",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 138,
+          "aperture_tick": 4902
+        }
+      },
+      {
+        "index": 139,
+        "nominal_slot": 4,
+        "channel_name": "PAIR0",
+        "channel": 2,
+        "aperture_tick": 4936,
+        "wire_end_tick": 4969,
+        "next_permitted_tick": 4970,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 2,
+          "capture_id": 139,
+          "aperture_tick": 4936
+        }
+      },
+      {
+        "index": 140,
+        "nominal_slot": 5,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 4970,
+        "wire_end_tick": 5003,
+        "next_permitted_tick": 5004,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 140,
+          "aperture_tick": 4970
+        }
+      },
+      {
+        "index": 141,
+        "nominal_slot": 6,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 5004,
+        "wire_end_tick": 5037,
+        "next_permitted_tick": 5038,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 141,
+          "aperture_tick": 5004
+        }
+      },
+      {
+        "index": 142,
+        "nominal_slot": 7,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 5038,
+        "wire_end_tick": 5071,
+        "next_permitted_tick": 5072,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 142,
+          "aperture_tick": 5038
+        }
+      },
+      {
+        "index": 143,
+        "nominal_slot": 8,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 5072,
+        "wire_end_tick": 5105,
+        "next_permitted_tick": 5106,
+        "block_phase": 3,
+        "command_selects_next_channel": 3,
+        "manual_command_hex": "CC00",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 143,
+          "aperture_tick": 5072
+        }
+      },
+      {
+        "index": 144,
+        "nominal_slot": 9,
+        "channel_name": "PAIR1",
+        "channel": 3,
+        "aperture_tick": 5106,
+        "wire_end_tick": 5139,
+        "next_permitted_tick": 5140,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 3,
+          "capture_id": 144,
+          "aperture_tick": 5106
+        }
+      },
+      {
+        "index": 145,
+        "nominal_slot": 10,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 5140,
+        "wire_end_tick": 5173,
+        "next_permitted_tick": 5174,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 145,
+          "aperture_tick": 5140
+        }
+      },
+      {
+        "index": 146,
+        "nominal_slot": 11,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 5174,
+        "wire_end_tick": 5207,
+        "next_permitted_tick": 5208,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 146,
+          "aperture_tick": 5174
+        }
+      },
+      {
+        "index": 147,
+        "nominal_slot": 12,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 5208,
+        "wire_end_tick": 5241,
+        "next_permitted_tick": 5242,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 147,
+          "aperture_tick": 5208
+        }
+      },
+      {
+        "index": 148,
+        "nominal_slot": 13,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 5242,
+        "wire_end_tick": 5275,
+        "next_permitted_tick": 5276,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 148,
+          "aperture_tick": 5242
+        }
+      },
+      {
+        "index": 149,
+        "nominal_slot": 15,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 5280,
+        "wire_end_tick": 5313,
+        "next_permitted_tick": 5314,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 149,
+          "aperture_tick": 5280
+        }
+      },
+      {
+        "index": 150,
+        "nominal_slot": 16,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 5314,
+        "wire_end_tick": 5347,
+        "next_permitted_tick": 5348,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 150,
+          "aperture_tick": 5314
+        }
+      },
+      {
+        "index": 151,
+        "nominal_slot": 17,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 5348,
+        "wire_end_tick": 5381,
+        "next_permitted_tick": 5382,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 151,
+          "aperture_tick": 5348
+        }
+      },
+      {
+        "index": 152,
+        "nominal_slot": 18,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 5382,
+        "wire_end_tick": 5415,
+        "next_permitted_tick": 5416,
+        "block_phase": 3,
+        "command_selects_next_channel": 7,
+        "manual_command_hex": "DC00",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 152,
+          "aperture_tick": 5382
+        }
+      },
+      {
+        "index": 153,
+        "nominal_slot": 19,
+        "channel_name": "HEALTH",
+        "channel": 7,
+        "aperture_tick": 5416,
+        "wire_end_tick": 5449,
+        "next_permitted_tick": 5450,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 7,
+          "capture_id": 153,
+          "aperture_tick": 5416
+        }
+      },
+      {
+        "index": 154,
+        "nominal_slot": 20,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 5450,
+        "wire_end_tick": 5483,
+        "next_permitted_tick": 5484,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 154,
+          "aperture_tick": 5450
+        }
+      },
+      {
+        "index": 155,
+        "nominal_slot": 21,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 5484,
+        "wire_end_tick": 5517,
+        "next_permitted_tick": 5518,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 155,
+          "aperture_tick": 5484
+        }
+      },
+      {
+        "index": 156,
+        "nominal_slot": 22,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 5518,
+        "wire_end_tick": 5551,
+        "next_permitted_tick": 5552,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 156,
+          "aperture_tick": 5518
+        }
+      },
+      {
+        "index": 157,
+        "nominal_slot": 23,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 5552,
+        "wire_end_tick": 5585,
+        "next_permitted_tick": 5586,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 157,
+          "aperture_tick": 5552
+        }
+      },
+      {
+        "index": 158,
+        "nominal_slot": 25,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 5600,
+        "wire_end_tick": 5633,
+        "next_permitted_tick": 5634,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 158,
+          "aperture_tick": 5600
+        }
+      },
+      {
+        "index": 159,
+        "nominal_slot": 26,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 5634,
+        "wire_end_tick": 5667,
+        "next_permitted_tick": 5668,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 159,
+          "aperture_tick": 5634
+        }
+      },
+      {
+        "index": 160,
+        "nominal_slot": 27,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 5668,
+        "wire_end_tick": 5701,
+        "next_permitted_tick": 5702,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 160,
+          "aperture_tick": 5668
+        }
+      },
+      {
+        "index": 161,
+        "nominal_slot": 28,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 5702,
+        "wire_end_tick": 5735,
+        "next_permitted_tick": 5736,
+        "block_phase": 3,
+        "command_selects_next_channel": 2,
+        "manual_command_hex": "C800",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 161,
+          "aperture_tick": 5702
+        }
+      },
+      {
+        "index": 162,
+        "nominal_slot": 29,
+        "channel_name": "PAIR0",
+        "channel": 2,
+        "aperture_tick": 5736,
+        "wire_end_tick": 5769,
+        "next_permitted_tick": 5770,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 2,
+          "capture_id": 162,
+          "aperture_tick": 5736
+        }
+      },
+      {
+        "index": 163,
+        "nominal_slot": 30,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 5770,
+        "wire_end_tick": 5803,
+        "next_permitted_tick": 5804,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 163,
+          "aperture_tick": 5770
+        }
+      },
+      {
+        "index": 164,
+        "nominal_slot": 31,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 5804,
+        "wire_end_tick": 5837,
+        "next_permitted_tick": 5838,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 164,
+          "aperture_tick": 5804
+        }
+      },
+      {
+        "index": 165,
+        "nominal_slot": 32,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 5838,
+        "wire_end_tick": 5871,
+        "next_permitted_tick": 5872,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 165,
+          "aperture_tick": 5838
+        }
+      },
+      {
+        "index": 166,
+        "nominal_slot": 33,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 5872,
+        "wire_end_tick": 5905,
+        "next_permitted_tick": 5906,
+        "block_phase": 3,
+        "command_selects_next_channel": 3,
+        "manual_command_hex": "CC00",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 166,
+          "aperture_tick": 5872
+        }
+      },
+      {
+        "index": 167,
+        "nominal_slot": 34,
+        "channel_name": "PAIR1",
+        "channel": 3,
+        "aperture_tick": 5906,
+        "wire_end_tick": 5939,
+        "next_permitted_tick": 5940,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 3,
+          "capture_id": 167,
+          "aperture_tick": 5906
+        }
+      },
+      {
+        "index": 168,
+        "nominal_slot": 35,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 5940,
+        "wire_end_tick": 5973,
+        "next_permitted_tick": 5974,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 168,
+          "aperture_tick": 5940
+        }
+      },
+      {
+        "index": 169,
+        "nominal_slot": 36,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 5974,
+        "wire_end_tick": 6007,
+        "next_permitted_tick": 6008,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 169,
+          "aperture_tick": 5974
+        }
+      },
+      {
+        "index": 170,
+        "nominal_slot": 37,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 6008,
+        "wire_end_tick": 6041,
+        "next_permitted_tick": 6042,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 170,
+          "aperture_tick": 6008
+        }
+      },
+      {
+        "index": 171,
+        "nominal_slot": 38,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 6042,
+        "wire_end_tick": 6075,
+        "next_permitted_tick": 6076,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 171,
+          "aperture_tick": 6042
+        }
+      },
+      {
+        "index": 172,
+        "nominal_slot": 40,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 6080,
+        "wire_end_tick": 6113,
+        "next_permitted_tick": 6114,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 172,
+          "aperture_tick": 6080
+        }
+      },
+      {
+        "index": 173,
+        "nominal_slot": 41,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 6114,
+        "wire_end_tick": 6147,
+        "next_permitted_tick": 6148,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 173,
+          "aperture_tick": 6114
+        }
+      },
+      {
+        "index": 174,
+        "nominal_slot": 42,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 6148,
+        "wire_end_tick": 6181,
+        "next_permitted_tick": 6182,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 174,
+          "aperture_tick": 6148
+        }
+      },
+      {
+        "index": 175,
+        "nominal_slot": 43,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 6182,
+        "wire_end_tick": 6215,
+        "next_permitted_tick": 6216,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 175,
+          "aperture_tick": 6182
+        }
+      },
+      {
+        "index": 176,
+        "nominal_slot": 45,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 6240,
+        "wire_end_tick": 6273,
+        "next_permitted_tick": 6274,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 176,
+          "aperture_tick": 6240
+        }
+      },
+      {
+        "index": 177,
+        "nominal_slot": 46,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 6274,
+        "wire_end_tick": 6307,
+        "next_permitted_tick": 6308,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 177,
+          "aperture_tick": 6274
+        }
+      },
+      {
+        "index": 178,
+        "nominal_slot": 47,
+        "channel_name": "I0",
+        "channel": 0,
+        "aperture_tick": 6308,
+        "wire_end_tick": 6341,
+        "next_permitted_tick": 6342,
+        "block_phase": 3,
+        "command_selects_next_channel": 1,
+        "manual_command_hex": "C400",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 0,
+          "capture_id": 178,
+          "aperture_tick": 6308
+        }
+      },
+      {
+        "index": 179,
+        "nominal_slot": 48,
+        "channel_name": "I1",
+        "channel": 1,
+        "aperture_tick": 6342,
+        "wire_end_tick": 6375,
+        "next_permitted_tick": 6376,
+        "block_phase": 3,
+        "command_selects_next_channel": 0,
+        "manual_command_hex": "C000",
+        "result_identity": {
+          "configuration_epoch": 1,
+          "channel": 1,
+          "capture_id": 179,
+          "aperture_tick": 6342
+        }
+      }
+    ],
+    "cadence": {
+      "I0": {
+        "samples_per_400us": 80,
+        "rate_per_s": 200000,
+        "minimum_gap_us": 4.25,
+        "maximum_gap_us": 6.375,
+        "grid_jitter_us": [
+          -0.75,
+          1.25
+        ]
+      },
+      "I1": {
+        "samples_per_400us": 80,
+        "rate_per_s": 200000,
+        "minimum_gap_us": 4.25,
+        "maximum_gap_us": 6.375,
+        "grid_jitter_us": [
+          -1.125,
+          0.875
+        ]
+      },
+      "PAIR0": {
+        "samples_per_400us": 8,
+        "rate_per_s": 20000,
+        "minimum_gap_us": 50.0,
+        "maximum_gap_us": 50.0,
+        "grid_jitter_us": [
+          0.0,
+          0.0
+        ]
+      },
+      "PAIR1": {
+        "samples_per_400us": 8,
+        "rate_per_s": 20000,
+        "minimum_gap_us": 50.0,
+        "maximum_gap_us": 50.0,
+        "grid_jitter_us": [
+          0.0,
+          0.0
+        ]
+      },
+      "HEALTH": {
+        "samples_per_400us": 4,
+        "rate_per_s": 10000,
+        "minimum_gap_us": 100.0,
+        "maximum_gap_us": 100.0,
+        "grid_jitter_us": [
+          0.0,
+          0.0
+        ]
+      },
+      "HEALTH_ADC4": {
+        "samples_per_400us": 1,
+        "rate_per_s": 2500,
+        "minimum_gap_us": 400,
+        "maximum_gap_us": 400
+      },
+      "HEALTH_ADC5": {
+        "samples_per_400us": 1,
+        "rate_per_s": 2500,
+        "minimum_gap_us": 400,
+        "maximum_gap_us": 400
+      },
+      "HEALTH_ADC6": {
+        "samples_per_400us": 1,
+        "rate_per_s": 2500,
+        "minimum_gap_us": 400,
+        "maximum_gap_us": 400
+      },
+      "HEALTH_ADC7": {
+        "samples_per_400us": 1,
+        "rate_per_s": 2500,
+        "minimum_gap_us": 400,
+        "maximum_gap_us": 400
+      }
+    },
+    "active_fraction": 0.95625,
+    "uniform_5us_current_apertures_earned": false,
+    "analog_bandwidth_typ_Hz": 15000,
+    "raw_sampling_rate_is_not_analog_bandwidth": true
+  },
+  "endpoints": {
+    "SPI_Hz": 8000000,
+    "read_bits_per_source": 16,
+    "read_allocation_us": 2.125,
+    "conversion_max_us": 8.8,
+    "acquisition_min_us": 1.2,
+    "conversion_spacing_min_us": 10,
+    "chosen_simultaneous_CNV_spacing_min_us": 14,
+    "aperture_delay_typ_ns": 4,
+    "cross_converter_aperture_skew_bound_earned": false,
+    "endpoint_ADC_instances": [
+      "monitoring-cell/U103",
+      "monitoring-cell/U203"
+    ],
+    "shared_MISO": {
+      "native_package": "monitoring-transport",
+      "source_series_resistors": [
+        "R30",
+        "R31"
+      ],
+      "series_resistance_ohm": 330,
+      "join_net": "MON_MISO",
+      "host_header": "J22",
+      "host_MISO_pin": "2",
+      "requires_nonoverlapping_CS": true,
+      "both_CS_active_is_not_a_valid_read": true,
+      "first_rising_sample_after_CS_ns": 62.5,
+      "first_SCLK_falling_after_CS_ns": 125,
+      "last_SCLK_falling_after_CS_ns": 2000,
+      "CS_rising_after_CS_ns": 2031.25,
+      "next_CS_falling_after_CS_ns": 2125,
+      "DOUT_enable_max_ns": 12.3,
+      "DOUT_disable_max_ns": 13.2,
+      "DOUT_propagation_max_ns": 13.4,
+      "illustrative_added_RC_load_pF": 25,
+      "illustrative_RC_tau_ns": 8.25,
+      "illustrative_RC_to70percent_ns": 9.932775635688973,
+      "RC_screen_is_manufacturer_timing_guarantee": false,
+      "physical_bus_timing_qualified": false
+    },
+    "bus_separate_from_raw_ADC": true,
+    "captures": [
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 0,
+        "capture_id": 0,
+        "label": "BASELINE_A",
+        "CNV_us": 0,
+        "result_ready_by_us": 8.8,
+        "CS_low_us": 9.0,
+        "read_complete_us": 11.125,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": true,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 1,
+        "capture_id": 0,
+        "label": "BASELINE_A",
+        "CNV_us": 0,
+        "result_ready_by_us": 8.8,
+        "CS_low_us": 11.125,
+        "read_complete_us": 13.25,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": true,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 0,
+        "capture_id": 1,
+        "label": "BASELINE_B",
+        "CNV_us": 14,
+        "result_ready_by_us": 22.8,
+        "CS_low_us": 23.0,
+        "read_complete_us": 25.125,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": true,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 1,
+        "capture_id": 1,
+        "label": "BASELINE_B",
+        "CNV_us": 14,
+        "result_ready_by_us": 22.8,
+        "CS_low_us": 25.125,
+        "read_complete_us": 27.25,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": true,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 0,
+        "capture_id": 2,
+        "label": "CATH_TAIL_A",
+        "CNV_us": 260,
+        "result_ready_by_us": 268.8,
+        "CS_low_us": 269.0,
+        "read_complete_us": 271.125,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": true,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 1,
+        "capture_id": 2,
+        "label": "CATH_TAIL_A",
+        "CNV_us": 260,
+        "result_ready_by_us": 268.8,
+        "CS_low_us": 271.125,
+        "read_complete_us": 273.25,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": true,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 0,
+        "capture_id": 3,
+        "label": "CATH_TAIL_B",
+        "CNV_us": 274,
+        "result_ready_by_us": 282.8,
+        "CS_low_us": 283.0,
+        "read_complete_us": 285.125,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": true,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 1,
+        "capture_id": 3,
+        "label": "CATH_TAIL_B",
+        "CNV_us": 274,
+        "result_ready_by_us": 282.8,
+        "CS_low_us": 285.125,
+        "read_complete_us": 287.25,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": true,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 0,
+        "capture_id": 4,
+        "label": "ANODE_TAIL_A",
+        "CNV_us": 660,
+        "result_ready_by_us": 668.8,
+        "CS_low_us": 669.0,
+        "read_complete_us": 671.125,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": true,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 1,
+        "capture_id": 4,
+        "label": "ANODE_TAIL_A",
+        "CNV_us": 660,
+        "result_ready_by_us": 668.8,
+        "CS_low_us": 671.125,
+        "read_complete_us": 673.25,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": true,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 0,
+        "capture_id": 5,
+        "label": "ANODE_TAIL_B",
+        "CNV_us": 674,
+        "result_ready_by_us": 682.8,
+        "CS_low_us": 683.0,
+        "read_complete_us": 685.125,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": true,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 1,
+        "capture_id": 5,
+        "label": "ANODE_TAIL_B",
+        "CNV_us": 674,
+        "result_ready_by_us": 682.8,
+        "CS_low_us": 685.125,
+        "read_complete_us": 687.25,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": true,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 0,
+        "capture_id": 6,
+        "label": "NET_A",
+        "CNV_us": 820,
+        "result_ready_by_us": 828.8,
+        "CS_low_us": 829.0,
+        "read_complete_us": 831.125,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": false,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 1,
+        "capture_id": 6,
+        "label": "NET_A",
+        "CNV_us": 820,
+        "result_ready_by_us": 828.8,
+        "CS_low_us": 831.125,
+        "read_complete_us": 833.25,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": false,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 0,
+        "capture_id": 7,
+        "label": "NET_B",
+        "CNV_us": 834,
+        "result_ready_by_us": 842.8,
+        "CS_low_us": 843.0,
+        "read_complete_us": 845.125,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": false,
+        "phase_charge_precision_certified": false
+      },
+      {
+        "event_id": 1,
+        "configuration_epoch": 1,
+        "source": 1,
+        "capture_id": 7,
+        "label": "NET_B",
+        "CNV_us": 834,
+        "result_ready_by_us": 842.8,
+        "CS_low_us": 845.125,
+        "read_complete_us": 847.25,
+        "DIN_high_at_CNV": true,
+        "CNV_high_through_read": true,
+        "known_integrator_history": true,
+        "tail_observed_qualified": false,
+        "phase_charge_precision_certified": false
+      }
+    ],
+    "witnesses": [
+      {
+        "case": "simultaneous_capture_distinct_readouts",
+        "admitted": true,
+        "requested_CNV_us": 14,
+        "previous_CNV_us": 0,
+        "previous_read_complete_us": 13.25,
+        "capture_id": 1,
+        "options": {},
+        "reads": [
+          {
+            "source": 0,
+            "CS_low_us": 23.0,
+            "read_complete_us": 25.125
+          },
+          {
+            "source": 1,
+            "CS_low_us": 25.125,
+            "read_complete_us": 27.25
+          }
+        ]
+      },
+      {
+        "case": "CNV_9us_after_previous",
+        "admitted": false,
+        "requested_CNV_us": 9,
+        "previous_CNV_us": 0,
+        "previous_read_complete_us": 13.25,
+        "capture_id": 1,
+        "options": {},
+        "reads": []
+      },
+      {
+        "case": "CNV_12us_shared_8MHz_reads",
+        "admitted": false,
+        "requested_CNV_us": 12,
+        "previous_CNV_us": 0,
+        "previous_read_complete_us": 13.25,
+        "capture_id": 1,
+        "options": {},
+        "reads": []
+      },
+      {
+        "case": "missing_first_phase_tail",
+        "admitted": false,
+        "requested_CNV_us": 14,
+        "previous_CNV_us": 0,
+        "previous_read_complete_us": 13.25,
+        "capture_id": 1,
+        "options": {
+          "tail": false
+        },
+        "reads": []
+      },
+      {
+        "case": "integrator_clipped",
+        "admitted": false,
+        "requested_CNV_us": 14,
+        "previous_CNV_us": 0,
+        "previous_read_complete_us": 13.25,
+        "capture_id": 1,
+        "options": {
+          "history": false
+        },
+        "reads": []
+      },
+      {
+        "case": "late_result_retagged_as_new_aperture",
+        "admitted": false,
+        "requested_CNV_us": 14,
+        "previous_CNV_us": 0,
+        "previous_read_complete_us": 13.25,
+        "capture_id": 1,
+        "options": {
+          "original_aperture": 0
+        },
+        "reads": []
+      },
+      {
+        "case": "configuration_epoch_changes_mid_event",
+        "admitted": false,
+        "requested_CNV_us": 14,
+        "previous_CNV_us": 0,
+        "previous_read_complete_us": 13.25,
+        "capture_id": 1,
+        "options": {
+          "epoch": 2
+        },
+        "reads": []
+      },
+      {
+        "case": "duplicate_source_capture_id",
+        "admitted": false,
+        "requested_CNV_us": 14,
+        "previous_CNV_us": 0,
+        "previous_read_complete_us": 13.25,
+        "capture_id": 0,
+        "options": {},
+        "reads": []
+      }
+    ],
+    "pressure_events_per_s_per_source": 360,
+    "captures_per_event_per_source": 8,
+    "aggregate_conversions_per_s": 5760,
+    "wire_reserved_fraction": 0.01224,
+    "conditional_tail_windows": true,
+    "native_target_peripheral_code_implemented": false
+  },
+  "companion": {
+    "format": "little-endian <2sBBIIQQQHH + SBP <ffI + CRC32",
+    "header_bytes": 40,
+    "SBP_payload_bytes": 12,
+    "CRC_bytes": 4,
+    "SBP_wire_bytes": 56,
+    "CRC_is_authentication": false,
+    "cryptographic_authentication_implemented": false,
+    "clock_uncertainty_max_us": 500,
+    "max_oldest_support_age_us": 2000000,
+    "service_period_us": 250000,
+    "pressure_lease_us": 3000000,
+    "motor_lease_us": 250000,
+    "range_mmHg": [
+      50,
+      250
+    ],
+    "range_is_clinical_threshold": false,
+    "cases": [
+      {
+        "case": "fresh_SBP_waits_for_rearm",
+        "accepted": true,
+        "reason": "accepted_pending_explicit_rearm",
+        "blocked": true,
+        "packet_hex": "415401020700000001000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0000000000f0420000a0400100000012c19d88",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "corrupt_CRC",
+        "accepted": false,
+        "reason": "CRC",
+        "blocked": true,
+        "packet_hex": "415401020700000001000000a0bb0d0000000000a1bb0d0000000000f07e0e00000000000c0000000000f0420000a0400100000012c19d88",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "truncated_packet",
+        "accepted": false,
+        "reason": "length",
+        "blocked": true,
+        "packet_hex": "415401020700000001000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0000000000f0420000a0400100000012c19d",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "old_epoch",
+        "accepted": false,
+        "reason": "session_epoch",
+        "blocked": true,
+        "packet_hex": "415401020600000001000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0000000000f0420000a04001000000ce2d2cb5",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "untrusted_session",
+        "accepted": false,
+        "reason": "session_epoch",
+        "blocked": true,
+        "packet_hex": "415401020700000001000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0000000000f0420000a0400100000012c19d88",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": false,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "unknown_clock_offset",
+        "accepted": false,
+        "reason": "clock_unbounded",
+        "blocked": true,
+        "packet_hex": "415401020700000001000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0000000000f0420000a0400100000012c19d88",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          null,
+          null
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "excess_clock_uncertainty",
+        "accepted": false,
+        "reason": "clock_unbounded",
+        "blocked": true,
+        "packet_hex": "415401020700000001000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0000000000f0420000a0400100000012c19d88",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -501,
+          501
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "future_shifted_clock",
+        "accepted": false,
+        "reason": "future_support_or_extraction",
+        "blocked": true,
+        "packet_hex": "415401020700000001000000e0065a0000000000e0065a000000000030ca5a00000000000c0000000000f0420000a0400100000013298410",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "arrival_is_not_support_time",
+        "accepted": false,
+        "reason": "oldest_support_age",
+        "blocked": true,
+        "packet_hex": "41540102070000000100000000000000000000000000000000000000b09f2d00000000000c0000000000f0420000a0400100000048b4127f",
+        "arrival_us": 3000000,
+        "now_us": 3000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "support_interval_oldest_edge",
+        "accepted": false,
+        "reason": "oldest_support_age",
+        "blocked": true,
+        "packet_hex": "4154010207000000010000000000000000000000a0bb0d0000000000f07e0e00000000000c0000000000f0420000a04001000000dff8d8c9",
+        "arrival_us": 2100000,
+        "now_us": 2100000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "duplicate_sequence",
+        "accepted": false,
+        "reason": "sequence_replay_or_reorder",
+        "blocked": true,
+        "packet_hex": "415401020700000001000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0000000000f0420000a0400100000012c19d88",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": true,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": 1,
+        "previous_support_us": 900000
+      },
+      {
+        "case": "new_sequence_old_support",
+        "accepted": false,
+        "reason": "support_replay",
+        "blocked": true,
+        "packet_hex": "415401020700000002000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0000000000f0420000a04001000000b489e5f6",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": true,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": 1,
+        "previous_support_us": 900000
+      },
+      {
+        "case": "reordered_sequence",
+        "accepted": false,
+        "reason": "sequence_replay_or_reorder",
+        "blocked": true,
+        "packet_hex": "415401020700000000000000b0e20d0000000000b0e20d000000000000a60e00000000000c0000000000f0420000a0400100000022a0c69c",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": true,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": 1,
+        "previous_support_us": 900000
+      },
+      {
+        "case": "support_after_extraction",
+        "accepted": false,
+        "reason": "causal_order",
+        "blocked": true,
+        "packet_hex": "41540102070000000100000000a60e000000000000a60e0000000000f07e0e00000000000c0000000000f0420000a0400100000062126680",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "invalid_quality",
+        "accepted": false,
+        "reason": "quality_range_or_calibration",
+        "blocked": true,
+        "packet_hex": "415401020700000001000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0001000000f0420000a0400100000064209215",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "out_of_range_SBP",
+        "accepted": false,
+        "reason": "quality_range_or_calibration",
+        "blocked": true,
+        "packet_hex": "415401020700000001000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0000000000c8430000a040010000009d17c2e4",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "NaN_SBP",
+        "accepted": false,
+        "reason": "quality_range_or_calibration",
+        "blocked": true,
+        "packet_hex": "415401020700000001000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0000000000c07f0000a04001000000af64103f",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "unknown_calibration",
+        "accepted": false,
+        "reason": "quality_range_or_calibration",
+        "blocked": true,
+        "packet_hex": "415401020700000001000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0000000000f0420000a04002000000fc6e289a",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "future_arrival",
+        "accepted": false,
+        "reason": "causal_order",
+        "blocked": true,
+        "packet_hex": "415401020700000001000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0000000000f0420000a0400100000012c19d88",
+        "arrival_us": 1000001,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "new_fresh_packet_keeps_explicit_rearm",
+        "accepted": true,
+        "reason": "accepted_pending_explicit_rearm",
+        "blocked": true,
+        "packet_hex": "415401020700000002000000b0e20d0000000000b0e20d000000000000a60e00000000000c0000000000f0420000a04001000000e6d096c8",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": null,
+        "previous_support_us": null
+      },
+      {
+        "case": "uint32_sequence_wrap",
+        "accepted": true,
+        "reason": "accepted",
+        "blocked": false,
+        "packet_hex": "415401020700000000000000a0bb0d0000000000a0bb0d0000000000f07e0e00000000000c0000000000f0420000a0400100000070f9b5a2",
+        "arrival_us": 1000000,
+        "now_us": 1000000,
+        "offset_interval_us": [
+          -500,
+          500
+        ],
+        "preloaded": false,
+        "trusted_session": true,
+        "expected_epoch": 7,
+        "previous_sequence": 4294967295,
+        "previous_support_us": 800000
+      }
+    ],
+    "no_arrival_service_history": [
+      {
+        "now_us": 100000,
+        "oldest_support_age_us": 100500,
+        "fresh": true,
+        "new_adaptation_permit": true
+      },
+      {
+        "now_us": 350000,
+        "oldest_support_age_us": 350500,
+        "fresh": true,
+        "new_adaptation_permit": true
+      },
+      {
+        "now_us": 600000,
+        "oldest_support_age_us": 600500,
+        "fresh": true,
+        "new_adaptation_permit": true
+      },
+      {
+        "now_us": 850000,
+        "oldest_support_age_us": 850500,
+        "fresh": true,
+        "new_adaptation_permit": true
+      },
+      {
+        "now_us": 1100000,
+        "oldest_support_age_us": 1100500,
+        "fresh": true,
+        "new_adaptation_permit": true
+      },
+      {
+        "now_us": 1350000,
+        "oldest_support_age_us": 1350500,
+        "fresh": true,
+        "new_adaptation_permit": true
+      },
+      {
+        "now_us": 1600000,
+        "oldest_support_age_us": 1600500,
+        "fresh": true,
+        "new_adaptation_permit": true
+      },
+      {
+        "now_us": 1850000,
+        "oldest_support_age_us": 1850500,
+        "fresh": true,
+        "new_adaptation_permit": true
+      },
+      {
+        "now_us": 2100000,
+        "oldest_support_age_us": 2100500,
+        "fresh": false,
+        "new_adaptation_permit": false
+      },
+      {
+        "now_us": 2350000,
+        "oldest_support_age_us": 2350500,
+        "fresh": false,
+        "new_adaptation_permit": false
+      },
+      {
+        "now_us": 2600000,
+        "oldest_support_age_us": 2600500,
+        "fresh": false,
+        "new_adaptation_permit": false
+      },
+      {
+        "now_us": 2850000,
+        "oldest_support_age_us": 2850500,
+        "fresh": false,
+        "new_adaptation_permit": false
+      },
+      {
+        "now_us": 3100000,
+        "oldest_support_age_us": 3100500,
+        "fresh": false,
+        "new_adaptation_permit": false
+      }
+    ],
+    "first_stale_detection_us": 2100000,
+    "fallbacks": [
+      {
+        "variant": "stop",
+        "elapsed_after_detection_us": 0,
+        "normalized_output": 0,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "stop",
+        "elapsed_after_detection_us": 125000,
+        "normalized_output": 0,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "stop",
+        "elapsed_after_detection_us": 250000,
+        "normalized_output": 0,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "stop",
+        "elapsed_after_detection_us": 500000,
+        "normalized_output": 0,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "stop",
+        "elapsed_after_detection_us": 750000,
+        "normalized_output": 0,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "hold_500ms",
+        "elapsed_after_detection_us": 0,
+        "normalized_output": 0.6,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "hold_500ms",
+        "elapsed_after_detection_us": 125000,
+        "normalized_output": 0.6,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "hold_500ms",
+        "elapsed_after_detection_us": 250000,
+        "normalized_output": 0.6,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "hold_500ms",
+        "elapsed_after_detection_us": 500000,
+        "normalized_output": 0,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "hold_500ms",
+        "elapsed_after_detection_us": 750000,
+        "normalized_output": 0,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "ramp_500ms",
+        "elapsed_after_detection_us": 0,
+        "normalized_output": 0.6,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "ramp_500ms",
+        "elapsed_after_detection_us": 125000,
+        "normalized_output": 0.44999999999999996,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "ramp_500ms",
+        "elapsed_after_detection_us": 250000,
+        "normalized_output": 0.3,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "ramp_500ms",
+        "elapsed_after_detection_us": 500000,
+        "normalized_output": 0.0,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      },
+      {
+        "variant": "ramp_500ms",
+        "elapsed_after_detection_us": 750000,
+        "normalized_output": 0.0,
+        "hard_trip_output": 0,
+        "new_adaptation_permit": false
+      }
+    ],
+    "lease_histories": [
+      {
+        "case": "motor_local_observations",
+        "elapsed_us": 0,
+        "lease_us": 250000,
+        "observations_fresh": true,
+        "permit": true,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "motor_local_observations",
+        "elapsed_us": 249999,
+        "lease_us": 250000,
+        "observations_fresh": true,
+        "permit": true,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "motor_local_observations",
+        "elapsed_us": 250000,
+        "lease_us": 250000,
+        "observations_fresh": true,
+        "permit": false,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "motor_local_observations",
+        "elapsed_us": 1999500,
+        "lease_us": 250000,
+        "observations_fresh": true,
+        "permit": false,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "motor_local_observations",
+        "elapsed_us": 2000000,
+        "lease_us": 250000,
+        "observations_fresh": true,
+        "permit": false,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "motor_local_observations",
+        "elapsed_us": 2500000,
+        "lease_us": 250000,
+        "observations_fresh": true,
+        "permit": false,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "motor_local_observations",
+        "elapsed_us": 2999999,
+        "lease_us": 250000,
+        "observations_fresh": true,
+        "permit": false,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "motor_local_observations",
+        "elapsed_us": 3000000,
+        "lease_us": 250000,
+        "observations_fresh": true,
+        "permit": false,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_independent_sensor",
+        "elapsed_us": 0,
+        "lease_us": 3000000,
+        "observations_fresh": true,
+        "permit": true,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_independent_sensor",
+        "elapsed_us": 249999,
+        "lease_us": 3000000,
+        "observations_fresh": true,
+        "permit": true,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_independent_sensor",
+        "elapsed_us": 250000,
+        "lease_us": 3000000,
+        "observations_fresh": true,
+        "permit": true,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_independent_sensor",
+        "elapsed_us": 1999500,
+        "lease_us": 3000000,
+        "observations_fresh": true,
+        "permit": true,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_independent_sensor",
+        "elapsed_us": 2000000,
+        "lease_us": 3000000,
+        "observations_fresh": true,
+        "permit": true,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_independent_sensor",
+        "elapsed_us": 2500000,
+        "lease_us": 3000000,
+        "observations_fresh": true,
+        "permit": true,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_independent_sensor",
+        "elapsed_us": 2999999,
+        "lease_us": 3000000,
+        "observations_fresh": true,
+        "permit": true,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_independent_sensor",
+        "elapsed_us": 3000000,
+        "lease_us": 3000000,
+        "observations_fresh": true,
+        "permit": false,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_sensor_path_lost",
+        "elapsed_us": 0,
+        "lease_us": 3000000,
+        "observations_fresh": true,
+        "permit": true,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_sensor_path_lost",
+        "elapsed_us": 249999,
+        "lease_us": 3000000,
+        "observations_fresh": true,
+        "permit": true,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_sensor_path_lost",
+        "elapsed_us": 250000,
+        "lease_us": 3000000,
+        "observations_fresh": true,
+        "permit": true,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_sensor_path_lost",
+        "elapsed_us": 1999500,
+        "lease_us": 3000000,
+        "observations_fresh": true,
+        "permit": true,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_sensor_path_lost",
+        "elapsed_us": 2000000,
+        "lease_us": 3000000,
+        "observations_fresh": false,
+        "permit": false,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_sensor_path_lost",
+        "elapsed_us": 2500000,
+        "lease_us": 3000000,
+        "observations_fresh": false,
+        "permit": false,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_sensor_path_lost",
+        "elapsed_us": 2999999,
+        "lease_us": 3000000,
+        "observations_fresh": false,
+        "permit": false,
+        "hard_trip_permit": false
+      },
+      {
+        "case": "pressure_sensor_path_lost",
+        "elapsed_us": 3000000,
+        "lease_us": 3000000,
+        "observations_fresh": false,
+        "permit": false,
+        "hard_trip_permit": false
+      }
+    ],
+    "recovery_history": [
+      {
+        "step": "initial_valid",
+        "packet_accepted": true,
+        "blocked_before_rearm": true,
+        "explicit_rearm_accepted": true,
+        "blocked_after_rearm": false
+      },
+      {
+        "step": "CRC_fault",
+        "packet_accepted": false,
+        "blocked_before_rearm": true,
+        "explicit_rearm_accepted": false,
+        "blocked_after_rearm": true
+      },
+      {
+        "step": "new_valid_after_fault",
+        "packet_accepted": true,
+        "blocked_before_rearm": true,
+        "explicit_rearm_accepted": true,
+        "blocked_after_rearm": false
+      }
+    ],
+    "fallback_is_clinically_qualified": false,
+    "actual_sensor_accuracy_or_clock_truth_verified": false,
+    "malicious_sender_or_false_clock_bound_detected_by_CRC": false
+  },
+  "resources": {
+    "monitor_rate_words_per_s": 450000,
+    "DMA_half_period_us": 2500,
+    "words_per_half": 1125,
+    "mask_bytes_each_per_half": 141,
+    "header_bytes_per_half": 64,
+    "aligned_bytes_per_half": 2624,
+    "monitor_memory_bytes": {
+      "ping_pong_blocks": 5248,
+      "endpoint_ring_64x32": 2048,
+      "identity_error_state": 512
+    },
+    "monitor_total_bytes": 7808,
+    "monitor_allocation_bytes": 8192,
+    "consumer_budget_us": 2000,
+    "consumer_release_to_reuse_deadline_us": 2500,
+    "consumer_3ms_delay_overruns": true,
+    "DMA_service_cases": [
+      {
+        "consumer_latency_us": 0,
+        "completes_before_reuse": true,
+        "overrun_latches_invalid_epoch": false,
+        "new_dose_admission": true
+      },
+      {
+        "consumer_latency_us": 2000,
+        "completes_before_reuse": true,
+        "overrun_latches_invalid_epoch": false,
+        "new_dose_admission": true
+      },
+      {
+        "consumer_latency_us": 2500,
+        "completes_before_reuse": true,
+        "overrun_latches_invalid_epoch": false,
+        "new_dose_admission": true
+      },
+      {
+        "consumer_latency_us": 2501,
+        "completes_before_reuse": false,
+        "overrun_latches_invalid_epoch": true,
+        "new_dose_admission": false
+      },
+      {
+        "consumer_latency_us": 3000,
+        "completes_before_reuse": false,
+        "overrun_latches_invalid_epoch": true,
+        "new_dose_admission": false
+      }
+    ],
+    "normal_streams": [
+      {
+        "stream": "features",
+        "payload_bytes": 128,
+        "packets_per_s": 50,
+        "wire_bytes": 188,
+        "wire_bits_per_s": 75200
+      },
+      {
+        "stream": "SBP",
+        "payload_bytes": 12,
+        "packets_per_s": 1,
+        "wire_bytes": 72,
+        "wire_bits_per_s": 576
+      },
+      {
+        "stream": "health",
+        "payload_bytes": 24,
+        "packets_per_s": 10,
+        "wire_bytes": 84,
+        "wire_bits_per_s": 6720
+      },
+      {
+        "stream": "commands",
+        "payload_bytes": 40,
+        "packets_per_s": 4,
+        "wire_bytes": 100,
+        "wire_bits_per_s": 3200
+      },
+      {
+        "stream": "lease",
+        "payload_bytes": 0,
+        "packets_per_s": 20,
+        "wire_bytes": 60,
+        "wire_bits_per_s": 9600
+      }
+    ],
+    "normal_wire_bits_per_s": 95296,
+    "reserved_future_envelope_bytes_per_packet": 16,
+    "reserved_envelope_generated_or_authenticated": false,
+    "normal_with20percent_reserve_bits_per_s": 114355.2,
+    "normal_service_reservation_bits_per_s": 160000,
+    "UART_baud": 1000000,
+    "UART_bits_per_byte_8N1": 10,
+    "UART_byte_payload_ceiling_bits_per_s": 800000,
+    "old_raw_service_bits_per_s": 1000000,
+    "old_raw_service_earned_by_UART": false,
+    "raw_cases": [
+      {
+        "frame_rate_Hz": 4000,
+        "framed_base_bits_per_s": 1536000,
+        "transport_bits_per_s": 1728000.0,
+        "service_payload_bits_per_s": 1000000,
+        "growth_bytes_per_s": 91000.0,
+        "continuous_fits": false,
+        "queue_capacity_bytes": 16384,
+        "overflow_after_s": 0.18004395604395604,
+        "100ms_burst_peak_bytes": 9100.0,
+        "100ms_burst_fits": true
+      },
+      {
+        "frame_rate_Hz": 4000,
+        "framed_base_bits_per_s": 1536000,
+        "transport_bits_per_s": 1728000.0,
+        "service_payload_bits_per_s": 800000,
+        "growth_bytes_per_s": 116000.0,
+        "continuous_fits": false,
+        "queue_capacity_bytes": 16384,
+        "overflow_after_s": 0.14124137931034483,
+        "100ms_burst_peak_bytes": 11600.0,
+        "100ms_burst_fits": true
+      },
+      {
+        "frame_rate_Hz": 2000,
+        "framed_base_bits_per_s": 768000,
+        "transport_bits_per_s": 864000.0,
+        "service_payload_bits_per_s": 1000000,
+        "growth_bytes_per_s": -17000.0,
+        "continuous_fits": true,
+        "queue_capacity_bytes": 16384,
+        "overflow_after_s": null,
+        "100ms_burst_peak_bytes": 0.0,
+        "100ms_burst_fits": true
+      },
+      {
+        "frame_rate_Hz": 2000,
+        "framed_base_bits_per_s": 768000,
+        "transport_bits_per_s": 864000.0,
+        "service_payload_bits_per_s": 800000,
+        "growth_bytes_per_s": 8000.0,
+        "continuous_fits": false,
+        "queue_capacity_bytes": 16384,
+        "overflow_after_s": 2.048,
+        "100ms_burst_peak_bytes": 800.0,
+        "100ms_burst_fits": true
+      }
+    ],
+    "queue_allocation_bytes": {
+      "raw": 16384,
+      "normal": 8192,
+      "commands_and_validity": 8192
+    },
+    "shared_queue_budget_bytes": 32768,
+    "raw_mode_exclusive_from_continuous_normal_features": true,
+    "raw_lease_s": 0.1,
+    "queue_full_action": "stop diagnostic capture, retain gap/overrun metadata; never overwrite as valid",
+    "transport_service_is_physical_measurement": false
+  },
+  "main_project": {
+    "motor": "expert-informed learner-specific policy; OFF retained learning is a separate conditional biological hypothesis",
+    "physiology": "target-specific pressure feedback; external measured SBP, finite pressor authority and fallback variants",
+    "universal_body_control_or_voltage_replay": false
+  }
+}

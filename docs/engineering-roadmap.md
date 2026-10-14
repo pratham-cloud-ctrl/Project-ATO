@@ -145,10 +145,15 @@ inter-package wiring close that bounded digital slice. The
 [native power package](../electronics/stage4/power/README.md) now generates all
 nine rails and supplies startup/reference-qualified shutdown across 15 sheets.
 Its [budget](stage4/power-budget.md) retains conditional 2.615 W/5.886 h, failed
-compact thermal closure and inherited ADC/link limitations. The three
-[remaining Stage 4 packages](stage4/remaining-work.md) begin with monitoring
-transport, then target firmware and the integrated populated PCB. Reconcile actual
-component power, timing, buses and memory before a complete PCB.
+compact thermal closure and inherited ADC/link limitations. The
+[monitoring/companion package](stage4/monitoring-transport-design.md) now resolves
+the 450k aggregate conversion mismatch with a dedicated raw ADC, adds shared
+charge endpoints and an isolated UART, and binds freshness/queues/resources to
+actual native connectivity. Its additive budget is conditional 2.800 W/5.497 h;
+precision, continuous raw export and compact thermal limits remain explicit.
+The two [remaining Stage 4 packages](stage4/remaining-work.md) are target firmware
+and integrated populated PCB. Reconcile actual component power, timing, buses
+and memory before a complete PCB.
 
 Stage 5 uses the resulting board and component identities to build the native
 parametric assembly: populated boards, package, ports/feedthroughs, lead

@@ -27,6 +27,12 @@ The original KiCad library license notice is included in
 `KICAD_LIBRARIES_LICENSE.md`. Attribution and license terms travel with the
 copied collection.
 
+The same attribution and library terms cover project-local footprint snapshots
+under `stage4/*/*.pretty/`, including `stage4/monitoring-transport/ato_transport.pretty/`.
+Those footprint copies retain their source pad geometry and numbering. Stage 4
+custom symbols are project-authored pin/function drawings; manufacturer
+datasheets are linked as technical references, rather than redistributed here.
+
 ngspice 46 was used from the installed KiCad distribution. No ngspice binary is
 redistributed here. See [ngspice](https://ngspice.sourceforge.io/) for its source
 and license. The included circuit netlist and generic model parameters are

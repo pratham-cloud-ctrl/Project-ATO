@@ -354,3 +354,36 @@ institutional or clinical validation. Original sources and prior circuit/study
 artifacts are preserved. Power is complete within the finite reference scope;
 transport/companion interfaces, target firmware, consolidated PCB, populated CAD
 and final paper/release remain subsequent work.
+
+## Monitoring and companion interfaces - 14 October 2026
+
+AI native implementation produced 60 components, 217 pins and eight editable
+sheets: dedicated ADS8688 raw ADC, reference/input networks, shared endpoint
+MISO through two series resistors, passive health/control handoffs and ISO6721
+isolated UART. The native author inspected all final pages and actual saved
+design pins, geometry and ERC through KiCad MCP. A separate primary-source
+review checked channel/reference/pin behavior, internal filtering, input loading,
+isolation direction/idle leakage and shared ADS8866 DOUT timing.
+
+A separate AI control workstream produced 1,552 independent checks of real
+apertures, endpoints, configuration identity, packet histories, leases, buffering
+and queues. It also checked 34 new wires against native manifests/XML, retaining
+the previous 134 connections and separate recording/companion domains. Root
+implemented 192 divider corners, 16 nominal-series direct corners, six
+illustrative filter/quantization traces, an independent analytic/KCL auditor,
+three scientific figures and an additive power overlay. Independent review found
+no material equation correction. Root reviewed selected native pages and all
+figures, and integrated status, CI, provenance and private repository evidence.
+
+The added ADC resolves the raw-conversion rate mismatch. Nonuniform apertures,
+filtered short spikes, plausible undetected channel commands, unearned 4% dose
+precision and continuous UART raw-export limits remain explicit. Conditional
+2.800 W/5.497 h depends on the existing loss/battery assumptions and enlarged
+host rail caps; it does not close compact implant thermal design. Security
+envelope space is reserved without claiming implemented authentication.
+
+All results are digital and AI-assisted; no physical, human/animal,
+institutional or clinical validation occurred. Synced sources and six previous
+native/study packages remain unchanged. This completes the bounded monitoring/
+companion package. Target firmware, consolidated PCB, populated CAD and final
+paper/release remain.

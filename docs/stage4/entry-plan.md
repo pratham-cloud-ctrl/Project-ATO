@@ -2,12 +2,16 @@
 
 **13 October 2026 · ATO-S4-ENTRY-01 · detailed design in progress.**
 
-**14 October power checkpoint:** the [native power package](power-design.md)
-supersedes this entry plan's one-cell/100 mA allocation with a protected 2S
-reference and all nine generated rails. Its conditional 2.615 W budget retains
-failed compact thermal closure and the 450k-versus-200k monitor conversion
-mismatch. Monitor, driver, recording, router, supervision and power native slices
-are complete within their scopes; transport, target firmware and PCB remain.
+**14 October monitoring/companion checkpoint:** the
+[native power package](power-design.md) supersedes this entry plan's one-cell/
+100 mA allocation with a protected 2S reference and nine generated rails.
+The [monitoring/companion package](monitoring-transport-design.md) resolves the
+450k aggregate conversion mismatch through a separate raw ADC, adds explicit
+charge endpoint arbitration and isolated UART, and revises the conditional
+budget to 2.800 W/5.497 h. Compact thermal closure remains unearned. Seven native
+slices are complete within their scopes; target firmware and consolidated PCB
+remain. The table below retains the historical entry assumptions where later
+named packages have superseded them.
 
 The conservative Stage 3 investigation and conditional concept v1 now have
 separate completed scopes. Their [declared future-interface premises](../stage3/conditional-concept.md)

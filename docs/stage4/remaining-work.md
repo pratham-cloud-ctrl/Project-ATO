@@ -1,19 +1,18 @@
 # Stage 4: remaining digital engineering packages
 
-Updated 14 October 2026 after the power/budget checkpoint.
-Six circuit packages now exist: monitor, restricted driver, recording front end,
-contact router, supervision and power. Their component-level checks and finite models do not yet constitute
+Updated 14 October 2026 after the monitoring/companion checkpoint.
+Seven circuit packages now exist: monitor, restricted driver, recording front end,
+contact router, supervision, power and monitoring/companion interfaces. Their component-level checks and finite models do not yet constitute
 one integrated electronic system. Stage 3's conditional future concept remains
 the design baseline; its closed conservative studies are preserved.
 
-The remaining work is bounded by the following three packages. A negative result
+The remaining work is bounded by the following two packages. A negative result
 can revise an operating domain or remain a clearly identified final limitation.
 No package requires invented biological success, hardware fabrication or clinical
 qualification. Optional additional research is not a new completion gate.
 
 | Order | Package | Digital completion evidence |
 |---|---|---|
-| 3 | Monitoring transport and companion interfaces | Resolve the existing two ADS8866 devices' 200k aggregate limit against the 450k conversion contract by adding/revising acquisition hardware or rates. Complete endpoint/shared ADC/reference connections, conversion identities, buffering, pressure/sensor freshness, communication and diagnostics. Continuous framed raw 4k data exceed the 1Mbit service; retain that boundary. Keep actual delivery, synthetic models and assumed biological responses separate. |
 | 4 | nRF5340 target firmware | Build/link the ATO application/backend, explicit peripheral/pin/timer ownership, configuration/readback, valid samples, route/phase sequencing, supervision, modes and fault records. Publish memory maps and finite timing/fault evidence; desktop checks alone do not count as target implementation. |
 | 5 | Integrated populated PCB | Consolidated native hierarchy/board(s), real footprint identities, net/parity checks, routing, stackup/clearance and DRC. Reconcile electrical/thermal/mechanical allocations; export populated board geometry for Stage 5. Document any unsupported manufacturing or physical-performance claims. |
 
@@ -36,6 +35,17 @@ Physical efficiency/inrush/stability, full-corner AFE trim, compact implanted
 thermal behavior and miniature package remain unearned. The one-cell/100 mA
 allocation is superseded. Preserve these results in the next PCB/CAD revision;
 new transport hardware must update the power table rather than inherit it blindly.
+
+Package 3, [monitoring and companion interfaces](monitoring-transport-design.md),
+is complete within its digital scope: 60 components, 217 pins and eight sheets,
+dedicated ADS8688 raw acquisition, explicit shared endpoint MISO, health handoff,
+isolated UART, actual aperture/read schedules, configuration identity, packet
+freshness/leases, queues and independent input/integration audits. The 450k
+aggregate mismatch is resolved. An additive overlay revises active power/runtime
+to conditional 2.800 W/5.497 h; existing compact thermal failure remains.
+Nonuniform sampling, typical 15 kHz filtering, undetected plausible channel
+commands and unearned 4% dose precision remain explicit. The wired interface
+does not implement a radio, external pressure sensor or target MCU firmware.
 
 Stage 4 exits when these packages form an inspectable digital path from artificial
 recording inputs through processing and admitted routing/stimulation to observed

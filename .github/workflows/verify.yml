@@ -52,6 +52,12 @@ jobs:
       - run: python electronics/stage4/power-study/verify_budget.py
       - run: python electronics/stage4/power-study/sequence_study.py --check
       - run: python electronics/stage4/power-study/verify_integration.py
+      - run: python electronics/stage4/monitoring-transport/verify_monitoring_transport.py
+      - run: python electronics/stage4/transport-study/transport_contract.py --check
+      - run: python electronics/stage4/transport-study/verify_transport.py
+      - run: python electronics/stage4/transport-study/input_study.py
+      - run: python electronics/stage4/transport-study/verify_input.py
+      - run: python electronics/stage4/transport-study/verify_integration.py
       - run: python scripts/run_studies.py
       - run: python scripts/build_firmware.py
       - run: python scripts/run_adapter.py
