@@ -7,11 +7,12 @@ expert-informed motor practice that improves retained unassisted performance,
 and target-specific physiological automation. AstroSam's [Mind-Link](https://github.com/sam-astro/Mind-link)
 inspires the progression from future vision to inspectable electronics and physical design.
 
-> **Stages 1–2, the conservative mechanism studies and conditional concept v1 are complete within their scopes.** The mechanism has numerical
-> acquisition, compute, stimulation, timing, energy and package allocations,
-> including rejected cases. The full proposed implant remains in development on
-> `overhaul/full-scci-system`. Complete circuits, embedded implementation and
-> populated engineering CAD follow. Video and website work are parked.
+> **Stages 1–4 are complete within their stated digital scopes.** The project
+> now includes the conditional mechanism, preserved conservative studies, actual
+> bounded target firmware and eight integrated routed PCB designs. Mechanical
+> packaging and the final illustrated paper/release follow in Stages 5–6.
+> Biological efficacy and implant miniaturization remain conditional. Work is
+> on `overhaul/full-scci-system`; video and website work are parked.
 
 ![Full proposed SCCI architecture](docs/stage1/figures/full-system.svg)
 
@@ -27,7 +28,7 @@ inspires the progression from future vision to inspectable electronics and physi
 | [Connected reset-trial pilot](docs/stage3/isolated-pilot.md) | Qualified teacher references consumed; independent learner-drift forecasts reject all practice interventions; OFF results show no advantage |
 | [Confirmed no-dose observer](experiments/stage3/observed-state-observer/README.md) | Frozen method, raw data and independent audits: all 32 fresh sensor-noise captures pass the finite 15 mm budget; stimulation and learning benefit remain unqualified |
 | [Bounded integration plan](docs/stage3/observer-integration-plan.md) | Pre-dose forecast freeze, independent guards, one-shot permission and explicit delivery/learning-interaction limits |
-| [Stage 4 native monitoring work](docs/stage4/entry-plan.md) / [editable KiCad slice](electronics/stage4/monitoring-cell/README.md) | Three reviewed sheets, 245 checked pin assignments and zero ERC violations; analog precision and full electronics/firmware remain in development |
+| [Stage 4 native monitoring work](docs/stage4/entry-plan.md) / [editable KiCad slice](electronics/stage4/monitoring-cell/README.md) | Preserved initial slice: three reviewed sheets, 245 checked pins and zero ERC; now part of the integrated board set, with analog precision limits retained |
 | [Native two-source current driver](electronics/stage4/current-driver/README.md) / [circuit and permission study](electronics/stage4/driver-study/README.md) | 156 components, 572 checked pins, five editable sheets and zero ERC violations; restricted 24 V/3 mA design, closed-servo model and sticky interruption/rearm logic |
 | [Native sixteen-stream recording front end](electronics/stage4/recording-front-end/README.md) / [input and protocol studies](electronics/stage4/recording-study/README.md) | 151 components, 594 checked pins and seven editable sheets; protected inputs, shared reference, isolated SPI/control and grounding selection; timing revision and weak-signal/fault limits explicit |
 | [Native contact router](electronics/stage4/contact-router/README.md) / [routing and parasitic studies](electronics/stage4/routing-study/README.md) | 155 components, 650 checked pins and six editable sheets; two sixteen-way selectors, held addresses, collision inhibit and fresh verification/rearm; actual switch position and terminal isolation remain unqualified |
@@ -35,7 +36,7 @@ inspires the progression from future vision to inspectable electronics and physi
 | [Native power and resource budgets](electronics/stage4/power/README.md) / [finite study](electronics/stage4/power-study/README.md) / [design consequences](docs/stage4/power-design.md) | 156 components, 449 checked pins, 15 sheets and zero ERC; nine generated rails, isolated AFE, reference-qualified shutdown; conditional 2.615 W / 5.886 h; compact thermal and inherited ADC/link failures retained |
 | [Monitoring and companion interfaces](docs/stage4/monitoring-transport-design.md) / [native KiCad](electronics/stage4/monitoring-transport/README.md) / [finite studies](electronics/stage4/transport-study/README.md) | 60 components, 217 pins, eight sheets and zero ERC; dedicated 450k aggregate raw acquisition, shared charge endpoints, isolated UART, packet freshness and bounded diagnostics; revised conditional 2.800 W / 5.497 h |
 | [Actual nRF5340 firmware](firmware/nrf5340/README.md) / [implementation review](docs/stage4/nrf5340-firmware-design.md) | Linked C/Zephyr application, shared production core with compiled fault tests, actual SPI/UART and timer/DPPI cutoff, active-route readback and explicit carrier dependency; lower-rate implemented profile and unmeasured timing remain explicit |
-| [Remaining Stage 4 engineering](docs/stage4/remaining-work.md) | One bounded package: integrated populated PCB and its controller/sideband carrier |
+| [Integrated populated board set](electronics/stage4/integrated-pcb/BOARD_INDEX.md) / [Stage 4 exit review](docs/stage4/exit-review.md) | Eight routed native boards, 1,298 positions / 1,296 fitted, 80-sheet master, 258 harness connections, actual controller and populated STEP; zero native ERC/DRC/unconnected/parity/ignored findings; nominal geometry and unmeasured physical limits explicit |
 | [Independent phase-charge study](electronics/stage4/monitoring-study/README.md) | 33 transient runs, both sources and 462 measured intervals in the behavioral model; bias, reset, settling and cancellation failures retained; 4% accuracy remains unearned |
 | [Stage3 computational foundation](docs/stage3/README.md) | Causal contact observations, expert/learner mechanism, measured delivery and external-pressure feedback |
 | [Stage3 results and remaining work](docs/stage3/results-and-interpretation.md) | Honest integrated abstention, conditional learning studies, pressure benefits and failures |
@@ -70,8 +71,11 @@ original release's engineering evidence. Stage 2 budgets are reproduced with
 `python scripts/run_architecture_budgets.py --check` and audited with
 `python scripts/verify_stage2_architecture.py`; see the
 [Stage 2 receipt](provenance/stage2-verification.json) and
-[scoped progress](docs/stage2/verification-progress.csv). Identified biological
-authority, full circuits/firmware and populated implant CAD remain pending.
+[scoped progress](docs/stage2/verification-progress.csv). Detailed circuits,
+bounded target firmware and the integrated populated board set are now complete
+within Stage 4's digital reference scope. Biological authority and implant
+miniaturization remain conditional; mechanical packaging and the integrated
+paper/release follow in Stages 5 and 6.
 
 ## Historical subsystem reference: v1.0.0
 

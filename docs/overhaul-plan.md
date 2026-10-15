@@ -1,15 +1,14 @@
 # Project ATO: full SCCI system overhaul
 
-Planning baseline: 8 October 2026. Status: Stage 1 mechanism and requirements
-[dossier](stage1/README.md) and Stage 2 quantitative architecture completed for
-review. Stage3's [computational foundation](stage3/README.md) and
-[continuation package](stage3/continuation-review.md) are implemented and
-in review as of 12 October. Qualified nominal teacher references and a connected
-reset-trial pilot are now implemented; independent learner-drift forecasting
-rejects every intervention. A first native two-source monitoring circuit starts
-Stage 4 in parallel. Delivered motor assistance, complete electronics/firmware
-and populated CAD remain open. This document plans a new
-design; it does not claim that the full system has been implemented.
+Planning baseline: 8 October 2026; status refreshed 16 October. Stages 1–2 and
+Stage 3's conservative investigation/conditional concept are complete within
+their stated scopes. Stage 4 now supplies complete native circuit integration,
+bounded actual target firmware and eight genuinely routed populated boards.
+The historical connected pilot retains its unfavorable active-assistance result;
+the conditional future mechanism remains explicit. Stage 5 mechanical packaging
+and Stage 6 illustrated paper/release follow. This programme preserves the main
+ambition without treating a digital reference as a qualified human implant.
+See [current status](../CURRENT_STATUS.md) and the [Stage 4 exit review](stage4/exit-review.md).
 
 ## The intended deliverable
 

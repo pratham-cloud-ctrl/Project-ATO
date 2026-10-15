@@ -288,6 +288,9 @@ adds 18 downstream terminal guards, separate phase timers/watchdog, rail/current
 pair-voltage/RHD-pin windows and sticky admission across 22 sheets. Its 102-wire
 integration plan and finite audits close the independent shutdown slice under
 declared assumptions. The [power/budget package](power-design.md) is now complete
-within its digital reference scope. Next implement monitoring transport and
-target interfaces before consolidating the PCB. Preserve old studies
-and assign new source, calibration, profile and uncertainty IDs to each revision.
+within its digital reference scope. Monitoring/companion interfaces and actual
+target firmware are now implemented. The [integrated populated board set](../../electronics/stage4/integrated-pcb/BOARD_INDEX.md)
+completes the bounded electronics package; its [exit review](exit-review.md)
+defines the remaining evidence limits. Preserve old studies and assign new
+source, calibration, profile and uncertainty IDs to each revision. Stage 5
+mechanical assembly follows.

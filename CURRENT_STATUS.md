@@ -1,6 +1,6 @@
 # Project ATO: current work status
 
-Updated: **14 October 2026**.
+Updated: **16 October 2026**.
 
 ## Active objective
 
@@ -23,7 +23,7 @@ assumed. Video and website work are parked. No deadline is imposed.
 | 1: mechanism/specification | Complete within specification scope | Both causal chains, requirements/assumptions/capability map, primary-source audit, interfaces, three editable diagrams and illustrated nine-page brief |
 | 2: quantitative architecture | Complete within architecture scope | 16-stream/two-source design, timing/noise/compute/memory/power budgets, rejected cases, control contracts, eight-page brief and preliminary native allocation CAD; [exit review](docs/stage2/exit-review.md) |
 | 3: computational mechanisms | **Conservative investigation closed; conditional concept v1 complete** | Historical qualification results preserved. New evidence/premise/mechanism package and 128 illustrative scenarios connect an assumed spinal interface to assistance and conditional OFF learning; biological efficacy remains unestablished |
-| 4: detailed electronics/firmware | **Seven native circuit packages and bounded actual nRF5340 firmware complete; wider stage in progress** | Monitor: 70 components/245 pins/three sheets. Driver: 156 components/572 pins/five sheets. Recording: 151 components/594 pins/seven sheets. Router: 155 components/650 pins/six sheets. Supervision: 478 components/1699 pins/22 sheets. Power: 156 components/449 pins/15 sheets. Monitoring/companion: 60 components/217 pins/eight sheets. All zero ERC violations. Actual ATO application-core image and shared C runtime now build. Consolidated populated PCB remains |
+| 4: detailed electronics/firmware | **Complete within the bounded digital reference scope** | Integrated master: 1,298 component positions / 1,296 fitted, 4,781 pin identities, 80 sheets and 258 harness rows. Eight genuinely routed populated native boards, 21,039 trace segments and 2,335 vias; zero ERC/DRC, missing connections, schematic parity issues or ignored checks. Independent electrical integration: 9,540 assertions; populated-board audit: 14,273. Actual carrier-specific ARM firmware, power revision and populated STEP/export evidence |
 | 5: populated engineering CAD | Pending | Actual boards/components/package/lead interfaces, native parametric assemblies, dimensions, STEP/STL and nominal fit checks |
 | 6: integrated paper/repository release | Pending | Complete digital path verification, final illustrated manuscript, native sources, reproducible release, evidence and learning/defence material |
 
@@ -31,7 +31,44 @@ The historical v1.0.0 release is a subsystem reference. Its one-channel board
 and desktop enclosure are not the completed implant requested here. Stage 2's
 80 allocation solids and illustrative ports are not populated implant CAD.
 
-## Latest completed package: actual nRF5340 firmware
+## Latest completed engineering package: integrated populated PCB
+
+The [integrated native hierarchy](docs/stage4/integrated-pcb-design.md) now joins
+all seven circuits, the actual controller carrier, and four physical observation
+tap headers. Source circuits and earlier studies remain frozen. Exactly two old
+common-rearm wires are superseded so the common driver rearm and two independent
+phase-supervisor rearm outputs stay separate. All 50 external firmware endpoints
+and 26 serialized observations are explicitly connected.
+
+The electrical integration, actual copper routing and native PCB checks pass.
+The [board index](electronics/stage4/integrated-pcb/BOARD_INDEX.md) opens all eight
+native layouts and their populated STEP, top/bottom/isometric views, copper
+plots and fabrication-reference bundles. Independent checks compare actual
+schematic pins with PCB pads, population flags, hierarchy paths and source-bound
+DRC reports. Exactly two optional driver capacitors remain DNP.
+
+This is an eight-board modular digital reference with actual component sizes
+and board dimensions. The [layout review](docs/stage4/pcb-layout-review.md)
+identifies the selected four-layer stackup and carrier's filled/capped
+via-in-pad fabrication requirement. A TPS3431 land-pattern error was corrected
+against TI's drawing in the new integrated snapshot. Historical source circuits
+remain preserved. Implant miniaturization remains a future design problem.
+
+The additive controller budget retains the previous load contingency and raises
+HOST_3V3 to a declared 160 mA cap. Conditional active power/runtime become
+**3.154 W / 4.880 h**. These are calculated allocations; converter behavior,
+actual consumption and compact implanted thermal performance remain unmeasured.
+
+The BT40F-specific firmware image selects the manufacturer's 11 pF oscillator
+load. Its independent ELF/HEX/BIN/source audit passes 83 checks; the image uses
+53,648 bytes flash and 98,000 bytes RAM. Original firmware and earlier receipts
+remain unchanged. Nothing has been executed on a physical board.
+
+**Next: Stage 5 mechanical assembly and interfaces**, using the populated board
+exports as real inputs. Stage 6 then produces the integrated illustrated paper
+and final private repository release. Video and website work remain parked.
+
+## Previous completed package: actual nRF5340 firmware
 
 The [C/Zephyr application](firmware/nrf5340/README.md) implements actual SPIM,
 UART, GPIO, timer/DPPI cutoff and the shared production policy core. It builds
@@ -58,14 +95,14 @@ declared learner-specific or pressure policy and supplies explicit event plans.
 The full native interface exceeds the MCU's GPIO capacity. The
 [46-GPIO map](docs/stage4/nrf5340-pin-map.csv) therefore includes a declared new
 four-SN74LVC165A carrier that serializes actual active-route bits and health.
-It is an explicit next-PCB dependency, with source-supported pin ownership,
-clock sharing and sentinel checks. The seven earlier native circuits and their
-studies remain unchanged.
+The new integrated carrier now implements that dependency with source-supported
+pin ownership, clock sharing and sentinel checks. The seven earlier native
+circuits and their studies remain unchanged.
 
-**Next: consolidated populated PCB**, including controller/carrier circuitry,
-actual footprints, routing, integration checks, DRC and exports for Stage 5 CAD.
-Stage 4 remains open until that [last package](docs/stage4/remaining-work.md) is
-complete. Populated CAD and the final integrated paper remain subsequent work.
+The [integrated populated PCB](electronics/stage4/integrated-pcb/README.md) now
+completes that final Stage 4 package. The [exit review](docs/stage4/exit-review.md)
+defines the completed digital scope and retained limits. Mechanical packaging
+and the final integrated paper remain subsequent work.
 
 ## Previous package: monitoring and companion interfaces
 
@@ -92,7 +129,8 @@ The incremental power overlay revises the conditional active allocation to
 **2.800 W / 5.497 h**. Compact thermal qualification remains unearned.
 
 The nRF5340 package now implements a narrower, explicitly described target
-profile. The consolidated PCB remains before Stage 5 populated CAD. The final
+profile. The consolidated PCB package is now complete. Stage 5 develops its
+mechanical assembly and packaging. The final
 integrated illustrated manuscript follows in Stage 6; video and website remain
 parked.
 
@@ -295,81 +333,24 @@ universal autonomic control or healthy-consumer efficacy.
 
 ## Next move
 
-The [restricted native current driver](electronics/stage4/current-driver/README.md)
-now implements the two feedback sinks, polarity bridges, shared DAC, anti-windup
-reset/gate paths and per-source duration/sticky-admission logic. Its
-[companion circuit study](electronics/stage4/driver-study/README.md) retains
-18 completed and two partial out-of-compliance transients, plus 15 finite
-digital histories. Load current, signed return current and unsigned servo
-feedback differ under bias/capacitance/faults; the 4% delivery target remains
-unearned. The native packages are not yet one integrated PCB or implant.
+Stage 4 is closed within the [digital exit scope](docs/stage4/exit-review.md).
+The [board index](electronics/stage4/integrated-pcb/BOARD_INDEX.md) supplies actual
+populated geometry, native circuits, wiring and exports for Stage 5. Next build
+the coherent native mechanical assembly and package/lead interfaces, with
+dimensions, drawings and nominal fit checks. The reference boards retain their
+actual large sizes; a compact future implant remains a separately identified
+design problem. Existing allocation solids are preliminary inputs.
 
-The [native recording front end](electronics/stage4/recording-front-end/README.md)
-now implements sixteen differential streams, shared reference, separate bias,
-protected switch paths, grounding selection and isolated SPI/control. Its
-[design review](docs/stage4/recording-front-end-design.md) records seven sheets,
-151 components, 594 checked pins and zero ERC violations. The
-[input/protocol package](electronics/stage4/recording-study/README.md) preserves
-eight quiet rows, nine finite transients, 175 independent scalar/KCL checks and
-17 timing/control scenario groups. Two transient envelope failures remain;
-the coherently bounded nominal 10 microvolt SNR misses its allocation. Isolated
-SPI selects 4 MHz and correct next-CS aperture timestamps. Actual voltage/recovery
-qualification, power and firmware remain unclosed.
+Both expert-informed retained learning and function-specific physiological
+regulation remain central. Stage 3's conditional concept is the future-interface
+baseline; its conservative negative results are preserved. Mechanical appearance
+must not relabel those results or the unearned analog/thermal/timing limits.
 
-The [native contact router](electronics/stage4/contact-router/README.md) now adds
-two sixteen-way contact selectors, separate dedicated returns, held active
-addresses, collision inhibit and a fresh post-commit acknowledgement/rearm path.
-Its [design review](docs/stage4/contact-router-design.md) records six sheets and
-650 checked pins. The [finite routing study](electronics/stage4/routing-study/README.md)
-retains 36 control histories and 36 passive coupling cases. Unselected contacts
-can still receive capacitive charge; fresh but false readback acknowledgement,
-actual switch position and physical power-off isolation remain open.
-KiCad's new MCP checks saved native state/ERC; FreeCAD's live bridge inspected
-the unchanged 80-solid allocation model. Populated CAD has not been produced.
-The [independent supervision package](docs/stage4/supervision-design.md) is now
-complete within its digital scope. The power package is also complete; the
-[three remaining Stage 4 packages](docs/stage4/remaining-work.md) begin with
-monitoring transport and companion interfaces.
+Stage 6 then integrates the illustrated manuscript, technical explanation,
+learning/defence material and verified private repository release. Video and
+website work remain parked. The available free KiCad/FreeCAD/Blender toolchain
+already supports the next digital work; no new paid tool is required.
 
-The [conditional concept v1](docs/stage3/conditional-concept.md) now supplies the
-current future-interface design baseline. It includes 14 primary research
-anchors, 15 explicit premises/scenario choices, both causal mechanisms and
-128 finite scenarios. Useful assistance and favorable retained adaptation are
-conditional results; the same assistance can cause no added learning or harm.
-Equal-information references are identical, and no useful live-neural advantage
-is established in the simple cyclic task. This is an engineering concept under
-declared assumptions, not a newly qualified biological or electrical device.
-
-The [Stage 3 exit review](docs/stage3/exit-review.md),
-[integrated verdict](docs/stage3/stage3-verdict.md) and
-[illustrated report](output/pdf/ATO_stage3_closeout.pdf) close the selected
-digital investigation with an unfavorable active-assistance result. This is
-not completion of the full implant or evidence of biological efficacy.
-The [roadmap](docs/engineering-roadmap.md) now hands detailed design to Stages 4–5.
-The earlier four-practice pilot and the new one-practice replay retain separate
-identities. Additional active learning/intervention states require new evidence;
-they are not silently covered by the no-dose confirmation.
-
-Next integrate and extend the [native circuits](docs/stage4/entry-plan.md)
-from the [conditional design handoff](docs/stage3/conditional-concept/engineering-handoff.md)
-and [conservative-study handoff](docs/stage3/mechanism-to-electronics-handoff.md).
-Measure each phase and recovery tail, bound integration/endpoint errors and
-reconcile component power and input-bias leakage before granting improved dose
-precision. The power reference is complete; implement monitoring transport and
-target firmware; populate CAD from the actual circuit. The existing
-[tool audit](docs/stage3/toolchain-selection.md) verifies the installed free
-KiCad/ngspice/FreeCAD/build123d/Blender stack; no new paid software is needed.
-The [Nordic target-tool setup](docs/stage4/firmware-toolchain.md) has a verified
-signed installer, matching SDK and a successfully linked unmodified processor
-example. A separate short physical SDK copy resolves the asset folder's spaces;
-the original installation is preserved. Full ATO target firmware is pending.
-
-The selected Stage 3 packages now support detailed design with separate
-conservative findings and conditional premises. Human experimentation and a
-guaranteed positive consumer result are not requirements to invent. Further
-mechanism studies need a specific design-changing reason. Remaining items are tracked individually
-in the [progress record](docs/stage3/verification-progress.csv).
-
-Working branch: overhaul/full-scci-system.
-Private draft review: https://github.com/pratham-cloud-ctrl/Project-ATO/pull/1.
+Working branch: `overhaul/full-scci-system`.
+Private [draft review](https://github.com/pratham-cloud-ctrl/Project-ATO/pull/1).
 Original synced ChatGPT project sources remain read-only.

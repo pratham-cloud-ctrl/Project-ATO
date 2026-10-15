@@ -1,0 +1,990 @@
+(pcb "E:\Project ATO\electronics\stage4\integrated-pcb\boards\current-driver\current_driver.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "10.0.6")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer In1.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (layer In2.Cu
+      (type signal)
+      (property
+        (index 2)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 3)
+      )
+    )
+    (boundary
+      (path pcb 0  175000 -155000  0 -155000  0 0  175000 0  175000 -155000)
+    )
+    (via "Via[0-3]_600:300_um")
+    (rule
+      (width 200)
+      (clearance 200)
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component "ato_drv:VSSOP-8_2.3x2mm_P0.5mm"
+      (place U20103 15475 -124174.999 front 0 (PN TMUX6219DGKR))
+      (place U20202 68195 -107664.999 front 0 (PN TMUX6219DGKR))
+      (place U20203 50225 -124174.999 front 0 (PN TMUX6219DGKR))
+      (place U20315 65015 -61075 front 0 (PN SN74LVC1G74DCUR))
+      (place U20313 95765 -50085 front 0 (PN SN74LVC1G74DCUR))
+      (place U20413 155525 -50085 front 0 (PN SN74LVC1G74DCUR))
+      (place U20102 33445 -107664.999 front 0 (PN TMUX6219DGKR))
+      (place U20416 133555 -61075 front 0 (PN SN74LVC1G74DCUR))
+      (place U20415 124775 -61075 front 0 (PN SN74LVC1G74DCUR))
+      (place U20316 73795 -61075 front 0 (PN SN74LVC1G74DCUR))
+    )
+    (component "ato_drv:SOT-23-5"
+      (place U20304 56465 -39545 front 0 (PN SN74LVC1G08DBVR))
+      (place U20409 116225 -50535 front 0 (PN SN74LVC1G08DBVR))
+      (place U20306 75914.999 -39545 front 0 (PN SN74LVC1G04DBVR))
+      (place U20406 135675 -39545 front 0 (PN SN74LVC1G04DBVR))
+      (place U20319 99675 -61525 front 0 (PN SN74LVC1G08DBVR))
+      (place U20412 146975 -50535 front 0 (PN SN74LVC1G04DBVR))
+      (place U20405 127125 -39545 front 0 (PN SN74LVC1G04DBVR))
+      (place U20408 152775 -39545 front 0 (PN SN74LVC1G04DBVR))
+      (place U20200 65825 -95044.999 front 0 (PN OPA192IDBVR))
+      (place U20419 159435 -61525 front 0 (PN SN74LVC1G08DBVR))
+      (place U20308 93015 -39545 front 0 (PN SN74LVC1G04DBVR))
+      (place U20100 31075 -95044.999 front 0 (PN OPA192IDBVR))
+      (place U20305 67365 -39545 front 0 (PN SN74LVC1G04DBVR))
+      (place U20314 56465 -61525 front 0 (PN SN74LVC1G32DBVR))
+      (place U20420 116225 -71785 front 0 (PN SN74LVC1G08DBVR))
+      (place U20309 56465 -50535 front 0 (PN SN74LVC1G08DBVR))
+      (place U20407 144225 -39545 front 0 (PN SN74LVC1G08DBVR))
+      (place U20307 84465 -39545 front 0 (PN SN74LVC1G08DBVR))
+      (place U20404 116225 -39545 front 0 (PN SN74LVC1G08DBVR))
+      (place U20320 56465 -71785 front 0 (PN SN74LVC1G08DBVR))
+      (place U20312 87215 -50535 front 0 (PN SN74LVC1G04DBVR))
+      (place U20301 71574.999 -25535 front 0 (PN SN74LVC1G86DBVR))
+      (place U20401 131335 -25535 front 0 (PN SN74LVC1G86DBVR))
+      (place U20414 116225 -61525 front 0 (PN SN74LVC1G32DBVR))
+    )
+    (component ato_drv:C_0805_2012Metric
+      (place C20306 75164.999 -36015 front 0 (PN "100n 10V"))
+      (place C20411 137675 -47004.999 front 0 (PN "100n 10V"))
+      (place C20406 134925 -36015 front 0 (PN "100n 10V"))
+      (place C20313 95015 -47004.999 front 0 (PN "100n 10V"))
+      (place C20418 150135 -57995 front 0 (PN "100n 10V"))
+      (place C20301 70824.999 -22005 front 0 (PN "100n 10V"))
+      (place C20305 66614.999 -36015 front 0 (PN "100n 10V"))
+      (place C20310 66614.999 -47004.999 front 0 (PN "100n 10V"))
+      (place C20101 30325 -98574.999 front 0 (PN "100n 25V"))
+      (place C20319 98925 -57995 front 0 (PN "100n 10V"))
+      (place C20403 153165 -22005 front 0 (PN "100n 10V"))
+      (place C20316 73045 -57995 front 0 (PN "100n 10V"))
+      (place C20410 126375 -47004.999 front 0 (PN "100n 10V"))
+      (place C20401 130585 -22005 front 0 (PN "100n 10V"))
+      (place C20400 115475 -22005 front 0 (PN "100n 10V"))
+      (place C20408 152025 -36015 front 0 (PN "100n 10V"))
+      (place C20417 141585 -57995 front 0 (PN "100n 10V"))
+      (place C20314 55715 -57995 front 0 (PN "100n 10V"))
+      (place C20001 18365 -23405 front 0 (PN "100n 10V"))
+      (place C20300 55715 -22005 front 0 (PN "100n 10V"))
+      (place C20103 14725 -121094.999 front 0 (PN "100n 25V"))
+      (place C20312 86465 -47004.999 front 0 (PN "100n 10V"))
+      (place C20409 115475 -47004.999 front 0 (PN "100n 10V"))
+      (place C20308 92265 -36015 front 0 (PN "100n 10V"))
+      (place C20317 81825 -57995 front 0 (PN "100n 10V"))
+      (place C20302 82104.999 -22005 front 0 (PN "100n 10V"))
+      (place C20320 55715 -68255 front 0 (PN "100n 10V"))
+      (place C20416 132805 -57995 front 0 (PN "100n 10V"))
+      (place C20405 126375 -36015 front 0 (PN "100n 10V"))
+      (place C20203 49475 -121094.999 front 0 (PN "100n 25V"))
+      (place C20307 83715 -36015 front 0 (PN "100n 10V"))
+      (place C20419 158685 -57995 front 0 (PN "100n 10V"))
+      (place C20202 67445 -104585 front 0 (PN "100n 25V"))
+      (place C20315 64265 -57995 front 0 (PN "100n 10V"))
+      (place C20100 30325 -91514.999 front 0 (PN "DNP 10p C0G"))
+      (place C20200 65075 -91514.999 front 0 (PN "DNP 10p C0G"))
+      (place C20404 115475 -36015 front 0 (PN "100n 10V"))
+      (place C20407 143475 -36015 front 0 (PN "100n 10V"))
+      (place C20415 124025 -57995 front 0 (PN "100n 10V"))
+      (place C20412 146225 -47004.999 front 0 (PN "100n 10V"))
+      (place C20105 20705 -105984.999 front 0 (PN "1u 50V"))
+      (place C20413 154775 -47004.999 front 0 (PN "100n 10V"))
+      (place C20102 32695 -104585 front 0 (PN "100n 25V"))
+      (place C20303 93405 -22005 front 0 (PN "100n 10V"))
+      (place C20420 115475 -68255 front 0 (PN "100n 10V"))
+      (place C20414 115475 -57995 front 0 (PN "100n 10V"))
+      (place C20201 65075 -98574.999 front 0 (PN "100n 25V"))
+      (place C20309 55715 -47004.999 front 0 (PN "100n 10V"))
+      (place C20318 90375 -57995 front 0 (PN "100n 10V"))
+      (place C20402 141865 -22005 front 0 (PN "100n 10V"))
+      (place C20304 55715 -36015 front 0 (PN "100n 10V"))
+      (place C20311 77914.999 -47004.999 front 0 (PN "100n 10V"))
+      (place C20205 55455 -105984.999 front 0 (PN "1u 50V"))
+    )
+    (component ato_drv:R_0805_2012Metric
+      (place R20410 130975 -49785 front 90 (PN 10k))
+      (place R20409 146465 -24785 front 90 (PN 10k))
+      (place R20306 63514.999 -51285 front 90 (PN 10k))
+      (place R20100 19555 -123424.999 front 90 (PN "100R 0.1% LOW TCR"))
+      (place R20201 64115 -106914.999 front 90 (PN 330R))
+      (place R20204 51705 -105285 front 90 (PN 22k))
+      (place R20202 48725 -92214.999 front 90 (PN 100k))
+      (place R20004 14615 -22705 front 90 (PN 10k))
+      (place R20102 13975 -92214.999 front 90 (PN 100k))
+      (place R20002 23615 -30765 front 90 (PN 10k))
+      (place R20304 67725 -26285 front 90 (PN 10k))
+      (place R20303 63514.999 -40295 front 90 (PN 10k))
+      (place R20307 79005 -26285 front 90 (PN 10k))
+      (place R20404 127485 -26285 front 90 (PN 10k))
+      (place R20406 123275 -51285 front 90 (PN 10k))
+      (place R20407 138765 -26285 front 90 (PN 10k))
+      (place R20309 86705 -24785 front 90 (PN 10k))
+      (place R20200 54305 -123424.999 front 90 (PN "100R 0.1% LOW TCR"))
+      (place R20310 71215 -49785 front 90 (PN 10k))
+      (place R20101 29365 -106914.999 front 90 (PN 330R))
+      (place R20401 120075 -26285 front 90 (PN "976k 0.1%"))
+      (place R20301 60315 -26285 front 90 (PN "976k 0.1%"))
+      (place R20104 16955 -105285 front 90 (PN 22k))
+      (place R20403 123275 -40295 front 90 (PN 10k))
+    )
+    (component ato_drv:C_0805_2012Metric::1
+      (place C20003 22825 -25985 front 90 (PN "220n 10V"))
+      (place C20104 23384.999 -109815 front 90 (PN "100n 50V"))
+      (place C20204 58135 -109815 front 90 (PN "100n 50V"))
+      (place C20002 15405 -27485 front 90 (PN "4.7u 10V"))
+    )
+    (component "ato_drv:SOT-23-6"
+      (place U20311 78664.999 -50535 front 0 (PN SN74LVC1G11DBVR))
+      (place U20302 82854.999 -25535 front 0 (PN SN74LVC1G11DBVR))
+      (place U20418 150885 -61525 front 0 (PN SN74LVC1G11DBVR))
+      (place U20310 67365 -50535 front 0 (PN SN74LVC1G11DBVR))
+      (place U20403 153915 -25535 front 0 (PN SN74LVC1G11DBVR))
+      (place U20303 94155 -25535 front 0 (PN SN74LVC1G11DBVR))
+      (place U20410 127125 -50535 front 0 (PN SN74LVC1G11DBVR))
+      (place U20400 116225 -25535 front 0 (PN "LTC6993HS6-1#TRPBF"))
+      (place U20317 82575 -61525 front 0 (PN SN74LVC1G11DBVR))
+      (place U20300 56465 -25535 front 0 (PN "LTC6993HS6-1#TRPBF"))
+      (place U20417 142335 -61525 front 0 (PN SN74LVC1G11DBVR))
+      (place U20402 142615 -25535 front 0 (PN SN74LVC1G11DBVR))
+      (place U20318 91125 -61525 front 0 (PN SN74LVC1G11DBVR))
+      (place U20411 138425 -50535 front 0 (PN SN74LVC1G11DBVR))
+    )
+    (component MountingHole_3.2mm_M3
+      (place H2 171000 -4000 front 0 (PN MountingHole_3.2mm_M3))
+      (place H3 4000 -151000 front 0 (PN MountingHole_3.2mm_M3))
+      (place H4 171000 -151000 front 0 (PN MountingHole_3.2mm_M3))
+      (place H1 4000 -4000 front 0 (PN MountingHole_3.2mm_M3))
+    )
+    (component ato_drv:PinHeader_1x11_P2.54mm_Vertical
+      (place J20004 14794.999 -53445 front 90 (PN "EXTERNAL HEALTH CONTRACTS"))
+    )
+    (component ato_drv:R_0805_2012Metric::1
+      (place R20105 16975 -127225 front 0 (PN 22k))
+      (place R20300 55715 -29035 front 0 (PN "175.8k 0.1%"))
+      (place R20203 49455 -115115 front 0 (PN 22k))
+      (place R20405 132085 -29035 front 0 (PN 10k))
+      (place R20103 14705 -115115 front 0 (PN 22k))
+      (place R20402 120805 -30035 front 0 (PN "182k 0.1%"))
+      (place R20005 14705 -31235 front 0 (PN 10k))
+      (place R20308 83604.999 -29035 front 0 (PN 10k))
+      (place R20205 51725 -127225 front 0 (PN 22k))
+      (place R20001 19865 -30035 front 0 (PN 10k))
+      (place R20408 143365 -29035 front 0 (PN 10k))
+      (place R20302 61044.999 -30035 front 0 (PN "182k 0.1%"))
+      (place R20400 115475 -29035 front 0 (PN "175.8k 0.1%"))
+      (place R20003 23525 -22235 front 0 (PN 10k))
+      (place R20305 72324.999 -29035 front 0 (PN 10k))
+    )
+    (component "ato_drv:TSSOP-16_4.4x5mm_P0.65mm"
+      (place U20101 17705 -110565 front 0 (PN TMUX7212PWR))
+      (place U20201 52455 -110565 front 0 (PN TMUX7212PWR))
+    )
+    (component ato_drv:PinHeader_1x05_P2.54mm_Vertical
+      (place J20001 14795 -38265 front 90 (PN "QUALIFIED EXTERNAL RAILS"))
+    )
+    (component "ato_drv:BSP89_PG-SOT223-4_DrainTab"
+      (place Q20200 54925 -94464.999 front 0 (PN BSP89H6327XTSA1))
+      (place Q20100 20174.999 -94464.999 front 0 (PN BSP89H6327XTSA1))
+    )
+    (component ato_drv:PinHeader_1x04_P2.54mm_Vertical
+      (place J20200 49545 -133995 front 90 (PN "EXTERNAL ROUTER / MONITOR"))
+      (place J20100 14795 -133995 front 90 (PN "EXTERNAL ROUTER / MONITOR"))
+      (place J20002 32545 -38265 front 90 (PN "MCU SPI / PRELOAD INHIBITED"))
+    )
+    (component ato_drv:PinHeader_1x09_P2.54mm_Vertical
+      (place J20003 14795 -45855 front 90 (PN "MCU PHASE / EXPLICIT REARM"))
+      (place J20005 14795 -61035 front 90 (PN "STATUS ONLY / NOT DELIVERY EVIDENCE"))
+    )
+    (component "ato_drv:Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm"
+      (place U20001 19115 -26735 front 0 (PN DAC80502DRXR))
+    )
+  )
+  (library
+    (image "ato_drv:VSSOP-8_2.3x2mm_P0.5mm"
+      (outline (polygon signal 0  1395 1175  2275 1175  2275 -1175  1395 -1175  1395 -1245
+            -1395 -1245  -1395 -1175  -2275 -1175  -2275 1175  -1395 1175
+            -1395 1245  1395 1245))
+      (outline (path signal 120  -1105.57 1185  1260 1185))
+      (outline (path signal 120  1260 -1185  -1260 -1185))
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 1 -1400 750)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 2 -1400 250)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 3 -1400 -250)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 4 -1400 -750)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 5 1400 -750)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 6 1400 -250)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 7 1400 250)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 8 1400 750)
+    )
+    (image "ato_drv:SOT-23-5"
+      (outline (polygon signal 0  1045 1495  2045 1495  2045 395  1045 395  1045 -395  2045 -395
+            2045 -1495  1045 -1495  1045 -1695  -1045 -1695  -1045 -1495
+            -2045 -1495  -2045 1495  -1045 1495  -1045 1695  1045 1695))
+      (outline (path signal 120  -910 1560  910 1560))
+      (outline (path signal 120  -910 1510  -910 1560))
+      (outline (path signal 120  -910 -1560  -910 -1510))
+      (outline (path signal 120  910 1560  910 1510))
+      (outline (path signal 120  910 390  910 -390))
+      (outline (path signal 120  910 -1510  910 -1560))
+      (outline (path signal 120  910 -1560  -910 -1560))
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 1 -1137.5 950)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 2 -1137.5 0)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 3 -1137.5 -950)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 4 1137.5 -950)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 5 1137.5 950)
+    )
+    (image ato_drv:C_0805_2012Metric
+      (outline (polygon signal 0  1695 -975  -1695 -975  -1695 975  1695 975))
+      (outline (path signal 120  -261.252 735  261.252 735))
+      (outline (path signal 120  -261.252 -735  261.252 -735))
+      (outline (path signal 100  -1000 625  1000 625  1000 -625  -1000 -625  -1000 625))
+      (pin RoundRect[T]Pad_1000.000000x1450.000000_250.951000_um_0.000000_0 1 -950 0)
+      (pin RoundRect[T]Pad_1000.000000x1450.000000_250.951000_um_0.000000_0 2 950 0)
+    )
+    (image ato_drv:R_0805_2012Metric
+      (outline (polygon signal 0  -1675 -945  -1675 945  1675 945  1675 -945))
+      (outline (path signal 120  -227.064 735  227.064 735))
+      (outline (path signal 120  -227.064 -735  227.064 -735))
+      (outline (path signal 100  -1000 625  -1000 -625  1000 -625  1000 625  -1000 625))
+      (pin RoundRect[T]Pad_1025.000000x1400.000000_250.951000_um_0.000000_0 1 -912.5 0)
+      (pin RoundRect[T]Pad_1025.000000x1400.000000_250.951000_um_0.000000_0 2 912.5 0)
+    )
+    (image ato_drv:C_0805_2012Metric::1
+      (outline (polygon signal 0  -1695 -975  -1695 975  1695 975  1695 -975))
+      (outline (path signal 120  -261.252 735  261.252 735))
+      (outline (path signal 120  -261.252 -735  261.252 -735))
+      (outline (path signal 100  -1000 625  -1000 -625  1000 -625  1000 625  -1000 625))
+      (pin RoundRect[T]Pad_1000.000000x1450.000000_250.951000_um_0.000000_0 1 -950 0)
+      (pin RoundRect[T]Pad_1000.000000x1450.000000_250.951000_um_0.000000_0 2 950 0)
+    )
+    (image "ato_drv:SOT-23-6"
+      (outline (polygon signal 0  1045 1495  2045 1495  2045 -1495  1045 -1495  1045 -1695
+            -1045 -1695  -1045 -1495  -2045 -1495  -2045 1495  -1045 1495
+            -1045 1695  1045 1695))
+      (outline (path signal 120  -910 1560  910 1560))
+      (outline (path signal 120  -910 1510  -910 1560))
+      (outline (path signal 120  -910 -1560  -910 -1510))
+      (outline (path signal 120  910 1560  910 1510))
+      (outline (path signal 120  910 -1510  910 -1560))
+      (outline (path signal 120  910 -1560  -910 -1560))
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 1 -1137.5 950)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 2 -1137.5 0)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 3 -1137.5 -950)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 4 1137.5 -950)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 5 1137.5 0)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 6 1137.5 950)
+    )
+    (image MountingHole_3.2mm_M3
+      (outline (polygon signal 0  372.747 3427.32  741.112 3366.93  1100.8 3267.06  1447.58 3128.89
+            1777.39 2954.03  2086.35 2744.55  2370.86 2502.89  2627.57 2231.88
+            2853.48 1934.71  3045.93 1614.85  3202.67 1276.06  3321.86 922.312
+            3402.11 557.752  3442.47 186.613  3445 0  3442.47 -186.612  3402.11 -557.751
+            3321.86 -922.311  3202.67 -1276.06  3045.93 -1614.85  2853.48 -1934.71
+            2627.57 -2231.88  2370.86 -2502.89  2086.35 -2744.55  1777.39 -2954.03
+            1447.58 -3128.89  1100.8 -3267.06  741.112 -3366.93  372.747 -3427.32
+            0 -3447.53  -372.748 -3427.32  -741.113 -3366.93  -1100.8 -3267.06
+            -1447.58 -3128.89  -1777.39 -2954.03  -2086.35 -2744.55  -2370.86 -2502.89
+            -2627.57 -2231.88  -2853.48 -1934.71  -3045.93 -1614.85  -3202.67 -1276.06
+            -3321.86 -922.311  -3402.11 -557.751  -3442.47 -186.641  -3442.47 186.642
+            -3402.11 557.752  -3321.86 922.312  -3202.67 1276.06  -3045.93 1614.85
+            -2853.48 1934.71  -2627.57 2231.88  -2370.86 2502.89  -2086.35 2744.55
+            -1777.39 2954.03  -1447.58 3128.89  -1100.8 3267.06  -741.113 3366.93
+            -372.748 3427.32  0 3447.53))
+      (outline (path signal 150  3200 0  3180.58 -352.026  3122.55 -699.779  3026.61 -1039.04
+            2893.94 -1365.68  2726.14 -1675.75  2525.25 -1965.48  2293.7 -2231.35
+            2034.32 -2470.13  1750.23 -2678.93  1444.91 -2855.21  1122.04 -2996.84
+            785.554 -3102.08  439.531 -3169.67  88.174 -3198.78  -264.254 -3189.07
+            -613.474 -3140.64  -955.247 -3054.1  -1285.42 -2930.47  -1600 -2771.28
+            -1895.15 -2578.45  -2167.3 -2354.32  -2413.14 -2101.61  -2629.69 -1823.39
+            -2814.32 -1523.03  -2964.78 -1204.19  -3079.26 -870.731  -3156.36 -526.703
+            -3195.14 -176.281  -3195.14 176.281  -3156.36 526.703  -3079.26 870.731
+            -2964.78 1204.19  -2814.32 1523.03  -2629.69 1823.39  -2413.14 2101.61
+            -2167.3 2354.32  -1895.15 2578.45  -1600 2771.28  -1285.42 2930.47
+            -955.247 3054.1  -613.474 3140.64  -264.254 3189.07  88.174 3198.78
+            439.531 3169.67  785.554 3102.08  1122.04 2996.84  1444.91 2855.21
+            1750.23 2678.93  2034.32 2470.13  2293.7 2231.35  2525.25 1965.48
+            2726.14 1675.75  2893.94 1365.68  3026.61 1039.04  3122.55 699.779
+            3180.58 352.026  3200 0))
+      (keepout "" (circle F.Cu 3700))
+      (keepout "" (circle In1.Cu 3700))
+      (keepout "" (circle In2.Cu 3700))
+      (keepout "" (circle B.Cu 3700))
+    )
+    (image ato_drv:PinHeader_1x11_P2.54mm_Vertical
+      (outline (polygon signal 0  -1765 -27165  -1765 1765  1765 1765  1765 -27165))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  1380 -1270  1380 -26780))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -1270  -1380 -26780))
+      (outline (path signal 120  -1380 -26780  1380 -26780))
+      (outline (path signal 100  1270 1270  1270 -26670))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 -26670  -1270 -26670))
+      (outline (path signal 100  -1270 -26670  -1270 635))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+      (pin Round[A]Pad_1700.000000_um 3 0 -5080)
+      (pin Round[A]Pad_1700.000000_um 4 0 -7620)
+      (pin Round[A]Pad_1700.000000_um 5 0 -10160)
+      (pin Round[A]Pad_1700.000000_um 6 0 -12700)
+      (pin Round[A]Pad_1700.000000_um 7 0 -15240)
+      (pin Round[A]Pad_1700.000000_um 8 0 -17780)
+      (pin Round[A]Pad_1700.000000_um 9 0 -20320)
+      (pin Round[A]Pad_1700.000000_um 10 0 -22860)
+      (pin Round[A]Pad_1700.000000_um 11 0 -25400)
+    )
+    (image ato_drv:R_0805_2012Metric::1
+      (outline (polygon signal 0  1675 -945  -1675 -945  -1675 945  1675 945))
+      (outline (path signal 120  -227.064 735  227.064 735))
+      (outline (path signal 120  -227.064 -735  227.064 -735))
+      (outline (path signal 100  -1000 625  1000 625  1000 -625  -1000 -625  -1000 625))
+      (pin RoundRect[T]Pad_1025.000000x1400.000000_250.951000_um_0.000000_0 1 -912.5 0)
+      (pin RoundRect[T]Pad_1025.000000x1400.000000_250.951000_um_0.000000_0 2 912.5 0)
+    )
+    (image "ato_drv:TSSOP-16_4.4x5mm_P0.65mm"
+      (outline (polygon signal 0  2445 2725  3845 2725  3845 -2725  2445 -2725  2445 -2745
+            -2445 -2745  -2445 -2725  -3845 -2725  -3845 2725  -2445 2725
+            -2445 2745  2445 2745))
+      (outline (path signal 120  -2310 2735  2310 2735))
+      (outline (path signal 120  2310 -2735  -2310 -2735))
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 1 -2862.5 2275)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 2 -2862.5 1625)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 3 -2862.5 975)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 4 -2862.5 325)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 5 -2862.5 -325)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 6 -2862.5 -975)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 7 -2862.5 -1625)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 8 -2862.5 -2275)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 9 2862.5 -2275)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 10 2862.5 -1625)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 11 2862.5 -975)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 12 2862.5 -325)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 13 2862.5 325)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 14 2862.5 975)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 15 2862.5 1625)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 16 2862.5 2275)
+    )
+    (image ato_drv:PinHeader_1x05_P2.54mm_Vertical
+      (outline (polygon signal 0  -1765 -11925  -1765 1765  1765 1765  1765 -11925))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  1380 -1270  1380 -11540))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -1270  -1380 -11540))
+      (outline (path signal 120  -1380 -11540  1380 -11540))
+      (outline (path signal 100  1270 1270  1270 -11430))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 -11430  -1270 -11430))
+      (outline (path signal 100  -1270 -11430  -1270 635))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+      (pin Round[A]Pad_1700.000000_um 3 0 -5080)
+      (pin Round[A]Pad_1700.000000_um 4 0 -7620)
+      (pin Round[A]Pad_1700.000000_um 5 0 -10160)
+    )
+    (image "ato_drv:BSP89_PG-SOT223-4_DrainTab"
+      (outline (polygon signal 0  4395 -3595  -4395 -3595  -4395 3595  4395 3595))
+      (outline (path signal 120  -1850 3410  1910 3410))
+      (outline (path signal 120  -1850 -3410  1910 -3410))
+      (outline (path signal 120  1910 3410  1910 2150))
+      (outline (path signal 120  1910 -3410  1910 -2150))
+      (outline (path signal 100  -1850 2350  -1850 -3350))
+      (outline (path signal 100  -1850 2350  -850 3350))
+      (outline (path signal 100  -1850 -3350  1850 -3350))
+      (outline (path signal 100  -850 3350  1850 3350))
+      (outline (path signal 100  1850 3350  1850 -3350))
+      (pin RoundRect[T]Pad_2000.000000x1500.000000_376.427000_um_0.000000_0 1 -3150 2300)
+      (pin RoundRect[T]Pad_2000.000000x1500.000000_376.427000_um_0.000000_0 2 -3150 0)
+      (pin RoundRect[T]Pad_2000.000000x1500.000000_376.427000_um_0.000000_0 3 -3150 -2300)
+      (pin RoundRect[T]Pad_2000.000000x3800.000000_501.903000_um_0.000000_0 4 3150 0)
+    )
+    (image ato_drv:PinHeader_1x04_P2.54mm_Vertical
+      (outline (polygon signal 0  -1765 -9385  -1765 1765  1765 1765  1765 -9385))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  1380 -1270  1380 -9000))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -1270  -1380 -9000))
+      (outline (path signal 120  -1380 -9000  1380 -9000))
+      (outline (path signal 100  1270 1270  1270 -8890))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 -8890  -1270 -8890))
+      (outline (path signal 100  -1270 -8890  -1270 635))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+      (pin Round[A]Pad_1700.000000_um 3 0 -5080)
+      (pin Round[A]Pad_1700.000000_um 4 0 -7620)
+    )
+    (image ato_drv:PinHeader_1x09_P2.54mm_Vertical
+      (outline (polygon signal 0  -1765 -22085  -1765 1765  1765 1765  1765 -22085))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  1380 -1270  1380 -21700))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -1270  -1380 -21700))
+      (outline (path signal 120  -1380 -21700  1380 -21700))
+      (outline (path signal 100  1270 1270  1270 -21590))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 -21590  -1270 -21590))
+      (outline (path signal 100  -1270 -21590  -1270 635))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+      (pin Round[A]Pad_1700.000000_um 3 0 -5080)
+      (pin Round[A]Pad_1700.000000_um 4 0 -7620)
+      (pin Round[A]Pad_1700.000000_um 5 0 -10160)
+      (pin Round[A]Pad_1700.000000_um 6 0 -12700)
+      (pin Round[A]Pad_1700.000000_um 7 0 -15240)
+      (pin Round[A]Pad_1700.000000_um 8 0 -17780)
+      (pin Round[A]Pad_1700.000000_um 9 0 -20320)
+    )
+    (image "ato_drv:Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm"
+      (outline (polygon signal 0  1495 1375  1875 1375  1875 -1375  1495 -1375  1495 -1495
+            -1495 -1495  -1495 -1375  -1875 -1375  -1875 1375  -1495 1375
+            -1495 1495  1495 1495))
+      (outline (path signal 120  -1360 1385  1360 1385))
+      (outline (path signal 120  1360 -1385  -1360 -1385))
+      (pin RoundRect[T]Pad_1475.000000x250.000000_62.738000_um_0.000000_0 1 -887.5 1000)
+      (pin RoundRect[T]Pad_1475.000000x250.000000_62.738000_um_0.000000_0 2 -887.5 500)
+      (pin RoundRect[T]Pad_1475.000000x250.000000_62.738000_um_0.000000_0 3 -887.5 0)
+      (pin RoundRect[T]Pad_1475.000000x250.000000_62.738000_um_0.000000_0 4 -887.5 -500)
+      (pin RoundRect[T]Pad_1475.000000x250.000000_62.738000_um_0.000000_0 5 -887.5 -1000)
+      (pin RoundRect[T]Pad_1475.000000x250.000000_62.738000_um_0.000000_0 6 887.5 -1000)
+      (pin RoundRect[T]Pad_1475.000000x250.000000_62.738000_um_0.000000_0 7 887.5 -500)
+      (pin RoundRect[T]Pad_1475.000000x250.000000_62.738000_um_0.000000_0 8 887.5 0)
+      (pin RoundRect[T]Pad_1475.000000x250.000000_62.738000_um_0.000000_0 9 887.5 500)
+      (pin RoundRect[T]Pad_1475.000000x250.000000_62.738000_um_0.000000_0 10 887.5 1000)
+    )
+    (padstack Round[A]Pad_1700.000000_um
+      (shape (circle F.Cu 1700))
+      (shape (circle In1.Cu 1700))
+      (shape (circle In2.Cu 1700))
+      (shape (circle B.Cu 1700))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_2000.000000x1500.000000_376.427000_um_0.000000_0
+      (shape (polygon F.Cu 0  -1001.43 375  -985.778 482.408  -931.355 593.733  -843.733 681.355
+            -732.408 735.778  -624.999 751.426  625 751.427  732.408 735.778
+            843.733 681.355  931.355 593.733  985.778 482.408  1001.43 374.999
+            1001.43 -375  985.778 -482.408  931.355 -593.733  843.733 -681.355
+            732.408 -735.778  624.999 -751.426  -625 -751.427  -732.408 -735.778
+            -843.733 -681.355  -931.355 -593.733  -985.778 -482.408  -1001.43 -374.999
+            -1001.43 375))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_2000.000000x3800.000000_501.903000_um_0.000000_0
+      (shape (polygon F.Cu 0  -1001.9 1400  -990.433 1506.69  -940.51 1640.54  -854.899 1754.9
+            -740.537 1840.51  -606.687 1890.43  -499.999 1901.9  500 1901.9
+            606.687 1890.43  740.537 1840.51  854.899 1754.9  940.51 1640.54
+            990.433 1506.69  1001.9 1400  1001.9 -1400  990.433 -1506.69
+            940.51 -1640.54  854.899 -1754.9  740.537 -1840.51  606.687 -1890.43
+            499.999 -1901.9  -500 -1901.9  -606.687 -1890.43  -740.537 -1840.51
+            -854.899 -1754.9  -940.51 -1640.54  -990.433 -1506.69  -1001.9 -1400
+            -1001.9 1400))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1000.000000x1450.000000_250.951000_um_0.000000_0
+      (shape (polygon F.Cu 0  -500.951 475  -481.848 571.035  -427.449 652.449  -346.035 706.848
+            -249.999 725.95  250 725.951  346.035 706.848  427.449 652.449
+            481.848 571.035  500.95 474.999  500.951 -475  481.848 -571.035
+            427.449 -652.449  346.035 -706.848  249.999 -725.95  -250 -725.951
+            -346.035 -706.848  -427.449 -652.449  -481.848 -571.035  -500.95 -474.999
+            -500.951 475))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1025.000000x1400.000000_250.951000_um_0.000000_0
+      (shape (polygon F.Cu 0  -513.451 450  -494.348 546.035  -439.949 627.449  -358.535 681.848
+            -262.499 700.95  262.5 700.951  358.535 681.848  439.949 627.449
+            494.348 546.035  513.45 449.999  513.451 -450  494.348 -546.035
+            439.949 -627.449  358.535 -681.848  262.499 -700.95  -262.5 -700.951
+            -358.535 -681.848  -439.949 -627.449  -494.348 -546.035  -513.45 -449.999
+            -513.451 450))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0
+      (shape (polygon F.Cu 0  -625.333 87.5  -618.647 121.112  -599.607 149.607  -571.112 168.647
+            -537.499 175.332  537.5 175.333  571.112 168.647  599.607 149.607
+            618.647 121.112  625.332 87.499  625.333 -87.5  618.647 -121.112
+            599.607 -149.607  571.112 -168.647  537.499 -175.332  -537.5 -175.333
+            -571.112 -168.647  -599.607 -149.607  -618.647 -121.112  -625.332 -87.499
+            -625.333 87.5))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0
+      (shape (polygon F.Cu 0  -663.071 150  -651.609 207.621  -618.97 256.47  -570.121 289.109
+            -512.499 300.57  512.5 300.571  570.121 289.109  618.97 256.47
+            651.609 207.621  663.07 149.999  663.071 -150  651.609 -207.621
+            618.97 -256.47  570.121 -289.109  512.499 -300.57  -512.5 -300.571
+            -570.121 -289.109  -618.97 -256.47  -651.609 -207.621  -663.07 -149.999
+            -663.071 150))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1475.000000x250.000000_62.738000_um_0.000000_0
+      (shape (polygon F.Cu 0  -737.738 62.5  -732.962 86.509  -719.362 106.862  -699.009 120.462
+            -675 125.238  675 125.238  699.009 120.462  719.362 106.862
+            732.962 86.509  737.738 62.5  737.738 -62.5  732.962 -86.509
+            719.362 -106.862  699.009 -120.462  675 -125.238  -675 -125.238
+            -699.009 -120.462  -719.362 -106.862  -732.962 -86.509  -737.738 -62.5
+            -737.738 62.5))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0
+      (shape (polygon F.Cu 0  -737.881 100  -730.24 138.414  -708.48 170.98  -675.914 192.74
+            -637.499 200.38  637.5 200.381  675.914 192.74  708.48 170.98
+            730.24 138.414  737.88 99.999  737.881 -100  730.24 -138.414
+            708.48 -170.98  675.914 -192.74  637.499 -200.38  -637.5 -200.381
+            -675.914 -192.74  -708.48 -170.98  -730.24 -138.414  -737.88 -99.999
+            -737.881 100))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1700.000000x1700.000000_um
+      (shape (rect F.Cu -850 -850 850 850))
+      (shape (rect In1.Cu -850 -850 850 850))
+      (shape (rect In2.Cu -850 -850 850 850))
+      (shape (rect B.Cu -850 -850 850 850))
+      (attach off)
+    )
+    (padstack "Via[0-3]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle In1.Cu 600))
+      (shape (circle In2.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net "current-driver__CH0_FB"
+      (pins U20103-1 U20100-4 C20100-2)
+    )
+    (net "current-driver__CH0_SERVO"
+      (pins U20103-2 U20100-1 U20102-8 C20100-1)
+    )
+    (net SYS_56562df4__GND
+      (pins U20103-3 U20103-7 U20304-3 C20306-2 U20409-3 C20411-2 U20306-3 U20406-3
+        R20410-2 U20319-3 R20409-2 C20406-2 C20313-2 R20306-2 C20003-2 R20100-2 C20418-2
+        U20311-2 C20301-2 U20412-3 U20202-2 U20202-3 U20202-7 C20305-2 R20204-2 C20310-2
+        U20203-3 U20203-7 C20101-2 C20104-2 C20319-2 C20403-2 J20004-11 R20105-2 U20101-4
+        U20101-5 C20316-2 J20001-5 U20405-3 R20300-2 U20315-4 C20410-2 R20203-2 C20401-2
+        R20202-2 C20400-2 U20408-3 C20408-2 C20417-2 R20004-2 U20313-1 U20313-2 U20313-4
+        C20314-2 U20302-2 R20405-2 R20102-2 U20200-2 C20001-2 R20002-2 R20103-2 J20200-4
+        R20304-2 U20419-3 C20300-2 R20303-2 C20103-2 U20308-3 C20312-2 C20409-2 U20100-2
+        U20418-2 C20308-2 R20307-2 U20310-2 J20003-9 C20317-2 C20302-2 C20320-2 U20201-4
+        U20201-5 R20404-2 U20403-2 R20402-2 C20416-2 R20005-2 U20303-2 C20405-2 U20413-1
+        U20413-2 U20413-4 R20308-2 U20102-2 U20102-3 U20102-7 U20305-3 U20314-3 U20416-4
+        U20410-2 C20203-2 U20420-3 U20415-4 C20307-2 R20205-2 C20419-2 C20202-2 U20309-3
+        R20406-2 C20315-2 C20404-2 U20407-3 U20307-3 U20404-3 R20407-2 C20407-2 U20400-2
+        C20415-2 R20309-2 R20200-2 U20317-2 R20001-2 U20320-3 C20412-2 U20312-3 C20105-2
+        C20413-2 C20102-2 U20316-4 U20300-2 R20408-2 J20100-4 R20310-2 C20303-2 C20420-2
+        R20302-2 C20414-2 C20201-2 C20204-2 C20309-2 U20301-3 J20005-9 C20318-2 C20002-2
+        R20400-2 U20417-2 J20002-4 U20401-3 C20402-2 R20305-2 U20001-3 U20001-4 U20001-5
+        U20402-2 C20304-2 C20311-2 U20318-2 R20104-2 R20403-2 U20414-3 U20411-2 C20205-2)
+    )
+    (net SYS_fb2237f8__VA_15
+      (pins U20103-4 U20103-5 U20202-4 U20202-5 U20203-4 U20203-5 C20101-1 J20001-2
+        U20200-5 C20103-1 U20100-5 U20102-4 U20102-5 C20203-1 C20202-1 C20102-1 C20201-1)
+    )
+    (net SYS_695f3a7c__CH0_RUN
+      (pins U20103-6 U20319-1 R20105-1 U20102-6 U20320-1 J20005-1 U20318-4)
+    )
+    (net "current-driver__CH0_SENSE_K"
+      (pins U20103-8 R20100-1 J20100-3 Q20100-3)
+    )
+    (net "current-driver__CH0_HEALTH_A"
+      (pins U20304-1 U20302-4)
+    )
+    (net "current-driver__CH0_HEALTH_B"
+      (pins U20304-2 U20303-4)
+    )
+    (net "current-driver__CH0_BASE_GOOD"
+      (pins U20304-4 U20310-3 U20309-1 U20317-1)
+    )
+    (net SYS_08572049__HOST_3V3
+      (pins U20304-5 C20306-1 U20409-5 C20411-1 U20306-5 U20406-5 U20319-5 C20406-1
+        C20313-1 C20418-1 U20311-5 C20301-1 U20412-5 C20305-1 C20310-1 C20319-1 C20403-1
+        C20316-1 J20001-4 U20405-5 U20315-7 U20315-8 C20410-1 C20401-1 C20400-1 U20408-5
+        C20408-1 C20417-1 U20313-8 C20314-1 U20302-5 U20419-5 C20300-1 U20308-5 C20312-1
+        C20409-1 U20418-5 C20308-1 U20310-5 C20317-1 C20302-1 C20320-1 U20403-5 C20416-1
+        U20303-5 C20405-1 U20413-8 U20305-5 U20314-5 U20416-7 U20416-8 U20410-5 U20420-5
+        U20415-7 U20415-8 C20307-1 C20419-1 U20309-5 C20315-1 C20404-1 U20407-5 U20307-5
+        U20404-5 C20407-1 U20400-5 C20415-1 U20317-5 U20320-5 C20412-1 U20312-5 C20413-1
+        U20316-7 U20316-8 U20300-5 C20303-1 C20420-1 C20414-1 C20309-1 U20301-5 C20318-1
+        U20417-5 R20003-2 U20401-5 C20402-1 U20402-5 C20304-1 C20311-1 U20318-5 R20401-1
+        R20301-1 U20414-5 U20411-5)
+    )
+    (net "current-driver__CH1_BASE_GOOD"
+      (pins U20409-1 U20410-3 U20404-4 U20417-1)
+    )
+    (net "current-driver__CH1_STOP_N"
+      (pins U20409-2 U20408-4)
+    )
+    (net "current-driver__CH1_BLOCK_PRE_N"
+      (pins U20409-4 U20413-7)
+    )
+    (net "current-driver__unconnected-(U306-NC-Pad1)"
+      (pins U20306-1)
+    )
+    (net SYS_ca7ea3db__CH0_TIMER
+      (pins U20306-2 U20307-1 U20300-6 J20005-4 U20318-3)
+    )
+    (net "current-driver__CH0_TIMER_N"
+      (pins U20306-4 U20311-6 U20315-1)
+    )
+    (net "current-driver__unconnected-(U406-NC-Pad1)"
+      (pins U20406-1)
+    )
+    (net SYS_c659d53f__CH1_TIMER
+      (pins U20406-2 U20418-3 U20407-1 U20400-6 J20005-8)
+    )
+    (net "current-driver__CH1_TIMER_N"
+      (pins U20406-4 U20415-1 U20411-6)
+    )
+    (net SYS_20eba8c2__CH1_QUIESCENT_OK
+      (pins R20410-1 J20004-10 U20410-6)
+    )
+    (net "current-driver__CH0_PLUS_LATCHED"
+      (pins U20319-2 U20316-5)
+    )
+    (net "current-driver__CH0_DIAG_P"
+      (pins U20319-4 U20101-1 U20101-8 R20103-1)
+    )
+    (net SYS_84f28705__CH1_ROUTE_LOCKED
+      (pins R20409-1 J20004-9 U20402-6)
+    )
+    (net SYS_3abe1caf__BOTH_DRV_REARM
+      (pins R20306-1 U20310-1 J20003-4 J20003-8 U20410-1 R20406-1)
+    )
+    (net "current-driver__DAC_VREF"
+      (pins C20003-1 U20001-10)
+    )
+    (net "current-driver__CH0_REARM_A"
+      (pins U20311-1 U20310-4)
+    )
+    (net "current-driver__CH0_REQ_N"
+      (pins U20311-3 U20305-4 U20307-2)
+    )
+    (net "current-driver__CH0_SAFE_REARM"
+      (pins U20311-4 U20312-2 U20316-1)
+    )
+    (net "current-driver__CH1_GATE_SW"
+      (pins R20201-1 U20202-1)
+    )
+    (net "current-driver__CH1_GATE"
+      (pins R20201-2 R20202-1 Q20200-1)
+    )
+    (net "current-driver__unconnected-(U412-NC-Pad1)"
+      (pins U20412-1)
+    )
+    (net "current-driver__CH1_SAFE_REARM"
+      (pins U20412-2 U20416-1 U20411-4)
+    )
+    (net "current-driver__CH1_LATCH_CLR_N"
+      (pins U20412-4 U20413-6 U20415-6)
+    )
+    (net SYS_6a132103__CH1_RUN
+      (pins U20202-6 U20203-6 U20419-1 U20418-4 U20420-1 R20205-1 J20005-5)
+    )
+    (net "current-driver__CH1_SERVO"
+      (pins U20202-8 U20203-2 U20200-1 C20200-1)
+    )
+    (net "current-driver__CH1_DIAG_M"
+      (pins R20204-1 U20201-9 U20201-16 U20420-4)
+    )
+    (net "current-driver__CH1_FB"
+      (pins U20203-1 U20200-4 C20200-2)
+    )
+    (net "current-driver__CH1_SENSE_K"
+      (pins U20203-8 Q20200-3 J20200-3 R20200-1)
+    )
+    (net SYS_15689dc4__VH_24
+      (pins C20104-1 U20101-3 U20101-13 U20101-14 J20001-1 U20201-3 U20201-13 U20201-14
+        C20105-1 C20204-1 C20205-1)
+    )
+    (net SYS_ff7fdc58__RESET_READY
+      (pins J20004-1 R20004-1 U20403-1 U20303-1 U20416-6 U20316-6)
+    )
+    (net SYS_93547907__RAILS_QUALIFIED
+      (pins J20004-2 U20403-3 R20005-1 U20303-3)
+    )
+    (net SYS_56ebc071__CH0_MON_PERMIT
+      (pins J20004-3 U20302-1 R20307-1)
+    )
+    (net SYS_e26747fb__CH0_EXT_SUP_OK
+      (pins J20004-4 U20302-3 R20308-1)
+    )
+    (net SYS_1954027d__CH0_ROUTE_LOCKED
+      (pins J20004-5 U20302-6 R20309-1)
+    )
+    (net SYS_2d0e5b2e__CH0_QUIESCENT_OK
+      (pins J20004-6 U20310-6 R20310-1)
+    )
+    (net SYS_aa321af6__CH1_MON_PERMIT
+      (pins J20004-7 R20407-1 U20402-1)
+    )
+    (net SYS_8359fceb__CH1_EXT_SUP_OK
+      (pins J20004-8 R20408-1 U20402-3)
+    )
+    (net SYS_917b1360__CH0_A_ROUTER
+      (pins U20101-2 U20101-10 J20100-1)
+    )
+    (net "current-driver__CH0_SINK_D"
+      (pins U20101-6 U20101-11 Q20100-2 Q20100-4)
+    )
+    (net SYS_ee476f53__CH0_B_BR
+      (pins U20101-7 U20101-15 J20100-2)
+    )
+    (net "current-driver__CH0_DIAG_M"
+      (pins U20101-9 U20101-16 U20320-4 R20104-1)
+    )
+    (net "current-driver__unconnected-(U101-NC-Pad12)"
+      (pins U20101-12)
+    )
+    (net SYS_ce166826__HOST_5
+      (pins J20001-3 C20001-1 C20002-1 U20001-1)
+    )
+    (net "current-driver__unconnected-(U405-NC-Pad1)"
+      (pins U20405-1)
+    )
+    (net SYS_dd388269__CH1_REQUEST
+      (pins U20405-2 U20418-1 J20003-5 U20400-1 R20403-1 U20414-2)
+    )
+    (net "current-driver__CH1_REQ_N"
+      (pins U20405-4 U20407-2 U20411-3)
+    )
+    (net "current-driver__CH0_T_SET"
+      (pins R20300-1 U20300-3)
+    )
+    (net "current-driver__CH0_TIMEOUT_D"
+      (pins U20315-2 U20314-4)
+    )
+    (net "current-driver__CH0_TIMEOUT_N"
+      (pins U20315-3 U20317-6)
+    )
+    (net SYS_54dd20d7__CH0_TIMEOUT
+      (pins U20315-5 U20314-1 J20005-3)
+    )
+    (net "current-driver__CH0_LATCH_CLR_N"
+      (pins U20315-6 U20313-6 U20312-4)
+    )
+    (net "current-driver__CH1_DIAG_P"
+      (pins R20203-1 U20419-4 U20201-1 U20201-8)
+    )
+    (net "current-driver__unconnected-(U408-NC-Pad1)"
+      (pins U20408-1)
+    )
+    (net "current-driver__CH1_STOP_CONSUME"
+      (pins U20408-2 U20407-4)
+    )
+    (net "current-driver__CH0_BLOCK_N"
+      (pins U20313-3 U20317-3)
+    )
+    (net "current-driver__CH0_BLOCK"
+      (pins U20313-5 J20005-2)
+    )
+    (net "current-driver__CH0_BLOCK_PRE_N"
+      (pins U20313-7 U20309-4)
+    )
+    (net SYS_edc800df__MINUS1
+      (pins R20405-1 J20003-7 U20401-2)
+    )
+    (net "current-driver__CH0_GATE"
+      (pins R20102-1 Q20100-1 R20101-2)
+    )
+    (net "current-driver__CH1_SINK_D"
+      (pins Q20200-2 Q20200-4 U20201-6 U20201-11)
+    )
+    (net "current-driver__CH1_VSET"
+      (pins U20200-3 U20001-9)
+    )
+    (net SYS_11f4403a__ROUTE_SER
+      (pins R20002-1 J20002-3 U20001-8)
+    )
+    (net SYS_401be33b__CH1_A_ROUTER
+      (pins J20200-1 U20201-2 U20201-10)
+    )
+    (net SYS_c73180be__CH1_B_BR
+      (pins J20200-2 U20201-7 U20201-15)
+    )
+    (net SYS_973f460c__PLUS0
+      (pins R20304-1 J20003-2 U20316-2 U20301-1)
+    )
+    (net "current-driver__CH1_PLUS_LATCHED"
+      (pins U20419-2 U20416-5)
+    )
+    (net SYS_46ea5f03__CH0_REQUEST
+      (pins R20303-1 J20003-1 U20305-2 U20314-2 U20300-1 U20318-1)
+    )
+    (net "current-driver__unconnected-(U308-NC-Pad1)"
+      (pins U20308-1)
+    )
+    (net "current-driver__CH0_STOP_CONSUME"
+      (pins U20308-2 U20307-4)
+    )
+    (net "current-driver__CH0_STOP_N"
+      (pins U20308-4 U20309-2)
+    )
+    (net "current-driver__CH0_VSET"
+      (pins U20100-3 U20001-2)
+    )
+    (net "current-driver__CH1_GOOD"
+      (pins U20418-6 U20417-4)
+    )
+    (net SYS_3b27d056__MINUS0
+      (pins J20003-3 U20301-2 R20305-1)
+    )
+    (net SYS_628d7747__PLUS1
+      (pins J20003-6 R20404-1 U20416-2 U20401-1)
+    )
+    (net "current-driver__unconnected-(U201-NC-Pad12)"
+      (pins U20201-12)
+    )
+    (net "current-driver__CH1_HEALTH_B"
+      (pins U20403-4 U20404-2)
+    )
+    (net "current-driver__CH1_VALID_DIR"
+      (pins U20403-6 U20401-4)
+    )
+    (net "current-driver__CH1_T_DIV"
+      (pins R20402-1 U20400-4 R20401-2)
+    )
+    (net "current-driver__CH0_VALID_DIR"
+      (pins U20303-6 U20301-4)
+    )
+    (net "current-driver__CH1_BLOCK_N"
+      (pins U20413-3 U20417-3)
+    )
+    (net "current-driver__CH1_BLOCK"
+      (pins U20413-5 J20005-6)
+    )
+    (net "current-driver__CH0_GATE_SW"
+      (pins U20102-1 R20101-1)
+    )
+    (net "current-driver__unconnected-(U305-NC-Pad1)"
+      (pins U20305-1)
+    )
+    (net "current-driver__CH1_MINUS_LATCHED"
+      (pins U20416-3 U20420-2)
+    )
+    (net "current-driver__CH1_REARM_A"
+      (pins U20410-4 U20411-1)
+    )
+    (net "current-driver__CH1_TIMEOUT_D"
+      (pins U20415-2 U20414-4)
+    )
+    (net "current-driver__CH1_TIMEOUT_N"
+      (pins U20415-3 U20417-6)
+    )
+    (net SYS_9c8a42b1__CH1_TIMEOUT
+      (pins U20415-5 J20005-7 U20414-1)
+    )
+    (net "current-driver__CH1_HEALTH_A"
+      (pins U20404-1 U20402-4)
+    )
+    (net "current-driver__CH1_T_SET"
+      (pins U20400-3 R20400-1)
+    )
+    (net "current-driver__CH0_GOOD"
+      (pins U20317-4 U20318-6)
+    )
+    (net SYS_d5e1f64a__ROUTE_SRCLK
+      (pins R20001-1 J20002-1 U20001-6)
+    )
+    (net "current-driver__CH0_MINUS_LATCHED"
+      (pins U20320-2 U20316-3)
+    )
+    (net "current-driver__unconnected-(U312-NC-Pad1)"
+      (pins U20312-1)
+    )
+    (net "current-driver__CH0_T_DIV"
+      (pins U20300-4 R20302-1 R20301-2)
+    )
+    (net SYS_e496c0b2__DAC_SYNC_N
+      (pins J20002-2 R20003-1 U20001-7)
+    )
+    (class kicad_default SYS_08572049__HOST_3V3 SYS_11f4403a__ROUTE_SER SYS_15689dc4__VH_24
+      SYS_1954027d__CH0_ROUTE_LOCKED SYS_20eba8c2__CH1_QUIESCENT_OK SYS_2d0e5b2e__CH0_QUIESCENT_OK
+      SYS_3abe1caf__BOTH_DRV_REARM SYS_3b27d056__MINUS0 SYS_401be33b__CH1_A_ROUTER
+      SYS_46ea5f03__CH0_REQUEST SYS_54dd20d7__CH0_TIMEOUT SYS_56562df4__GND
+      SYS_56ebc071__CH0_MON_PERMIT SYS_628d7747__PLUS1 SYS_695f3a7c__CH0_RUN
+      SYS_6a132103__CH1_RUN SYS_8359fceb__CH1_EXT_SUP_OK SYS_84f28705__CH1_ROUTE_LOCKED
+      SYS_917b1360__CH0_A_ROUTER SYS_93547907__RAILS_QUALIFIED SYS_973f460c__PLUS0
+      SYS_9c8a42b1__CH1_TIMEOUT SYS_aa321af6__CH1_MON_PERMIT SYS_c659d53f__CH1_TIMER
+      SYS_c73180be__CH1_B_BR SYS_ca7ea3db__CH0_TIMER SYS_ce166826__HOST_5
+      SYS_d5e1f64a__ROUTE_SRCLK SYS_dd388269__CH1_REQUEST SYS_e26747fb__CH0_EXT_SUP_OK
+      SYS_e496c0b2__DAC_SYNC_N SYS_edc800df__MINUS1 SYS_ee476f53__CH0_B_BR
+      SYS_fb2237f8__VA_15 SYS_ff7fdc58__RESET_READY "current-driver__CH0_BASE_GOOD"
+      "current-driver__CH0_BLOCK" "current-driver__CH0_BLOCK_N" "current-driver__CH0_BLOCK_PRE_N"
+      "current-driver__CH0_DIAG_M" "current-driver__CH0_DIAG_P" "current-driver__CH0_FB"
+      "current-driver__CH0_GATE" "current-driver__CH0_GATE_SW" "current-driver__CH0_GOOD"
+      "current-driver__CH0_HEALTH_A" "current-driver__CH0_HEALTH_B" "current-driver__CH0_LATCH_CLR_N"
+      "current-driver__CH0_MINUS_LATCHED" "current-driver__CH0_PLUS_LATCHED"
+      "current-driver__CH0_REARM_A" "current-driver__CH0_REQ_N" "current-driver__CH0_SAFE_REARM"
+      "current-driver__CH0_SENSE_K" "current-driver__CH0_SERVO" "current-driver__CH0_SINK_D"
+      "current-driver__CH0_STOP_CONSUME" "current-driver__CH0_STOP_N" "current-driver__CH0_TIMEOUT_D"
+      "current-driver__CH0_TIMEOUT_N" "current-driver__CH0_TIMER_N" "current-driver__CH0_T_DIV"
+      "current-driver__CH0_T_SET" "current-driver__CH0_VALID_DIR" "current-driver__CH0_VSET"
+      "current-driver__CH1_BASE_GOOD" "current-driver__CH1_BLOCK" "current-driver__CH1_BLOCK_N"
+      "current-driver__CH1_BLOCK_PRE_N" "current-driver__CH1_DIAG_M" "current-driver__CH1_DIAG_P"
+      "current-driver__CH1_FB" "current-driver__CH1_GATE" "current-driver__CH1_GATE_SW"
+      "current-driver__CH1_GOOD" "current-driver__CH1_HEALTH_A" "current-driver__CH1_HEALTH_B"
+      "current-driver__CH1_LATCH_CLR_N" "current-driver__CH1_MINUS_LATCHED"
+      "current-driver__CH1_PLUS_LATCHED" "current-driver__CH1_REARM_A" "current-driver__CH1_REQ_N"
+      "current-driver__CH1_SAFE_REARM" "current-driver__CH1_SENSE_K" "current-driver__CH1_SERVO"
+      "current-driver__CH1_SINK_D" "current-driver__CH1_STOP_CONSUME" "current-driver__CH1_STOP_N"
+      "current-driver__CH1_TIMEOUT_D" "current-driver__CH1_TIMEOUT_N" "current-driver__CH1_TIMER_N"
+      "current-driver__CH1_T_DIV" "current-driver__CH1_T_SET" "current-driver__CH1_VALID_DIR"
+      "current-driver__CH1_VSET" "current-driver__DAC_VREF" "current-driver__unconnected-(U101-NC-Pad12)"
+      "current-driver__unconnected-(U201-NC-Pad12)" "current-driver__unconnected-(U305-NC-Pad1)"
+      "current-driver__unconnected-(U306-NC-Pad1)" "current-driver__unconnected-(U308-NC-Pad1)"
+      "current-driver__unconnected-(U312-NC-Pad1)" "current-driver__unconnected-(U405-NC-Pad1)"
+      "current-driver__unconnected-(U406-NC-Pad1)" "current-driver__unconnected-(U408-NC-Pad1)"
+      "current-driver__unconnected-(U412-NC-Pad1)"
+      (circuit
+        (use_via "Via[0-3]_600:300_um")
+      )
+      (rule
+        (width 200)
+        (clearance 200)
+      )
+    )
+  )
+  (wiring
+  )
+)

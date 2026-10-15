@@ -1,0 +1,20 @@
+{
+  "schema": "ato.populated-step-geometry.v1",
+  "board": "contact-router",
+  "STEP_sha256": "e7693ec304c93162fffdcfe8ea65f06528c5ac9eb483f30d89f690eccab45982",
+  "FreeCAD_version": [
+    "1",
+    "1",
+    "4"
+  ],
+  "valid": true,
+  "solids": 156,
+  "volume_mm3": 43423.317449043265,
+  "dimensions_mm": [
+    175.0,
+    155.0,
+    11.54000000000489
+  ],
+  "nominal_geometry_only": true,
+  "manufacturing_tolerance_or_physical_performance_qualified": false
+}

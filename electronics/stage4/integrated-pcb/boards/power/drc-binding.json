@@ -1,0 +1,18 @@
+{
+  "schema": "ato.native-board-drc-binding.v1",
+  "board": "power",
+  "pcb_sha256_lf": "a91073998ec0cd46c84c4332f69324e9e428571a9307c212443e697c2a7696a5",
+  "drc_sha256_lf": "afb2d669246bfb1e6435c0dc25a9b7e5d4c5e7cf3fdda916927d29a6fb087cec",
+  "project_sha256_lf": "8887efae4b23a17ec3dbccb90af0933279f2480c860b56d58e0a57020458792b",
+  "schematic_sha256_lf": "6166da904ff84c6542b86921275b57c1e6214dfff94ed1bd4c6c15ca5fdc2ae1",
+  "schematic_parity_checked": true,
+  "suppressed_checks": [],
+  "counts": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0,
+    "ignored_checks": 0
+  },
+  "command": "kicad-cli pcb drc --format json --schematic-parity",
+  "scope": "Saved native board digital geometry and electrical graph; no fabrication, impedance, thermal, EMI, isolation or biological qualification."
+}

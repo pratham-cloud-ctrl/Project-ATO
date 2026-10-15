@@ -1,0 +1,11 @@
+{
+  "schema": "ato.integrated-schematic-visual-review.v1",
+  "pdf_sha256": "51576a6f031ea4a4a6da7bb6bc97c55865deb3551bc3f63747450121ef482fe3",
+  "pages": 80,
+  "render_method": "Poppler pdftoppm at1900px longedge; seven12-pagecontact sheets + fullpage3and72 detail",
+  "reviewed_all_pages": true,
+  "page_numbers": "1..80 contiguous",
+  "correction": "Expanded cloned drawings to A1 and translated content to preserve margins for source-qualified net labels; original circuits unchanged",
+  "findings": "No page-edge clipping or missing component graphics in reviewed final renders. Native vector text supports zoom for detailed inspection.",
+  "limits": "Visual inspection supports presentation only; electrical assertions are in verification.json"
+}

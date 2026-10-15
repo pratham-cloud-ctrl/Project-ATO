@@ -1,10 +1,11 @@
 # Project ATO: engineering roadmap and Stage 3 closeout
 
-13 October 2026. The conservative Stage 3 investigation and conditional concept
-v1 are complete within their separate scopes; detailed
-electronics, firmware, populated CAD and final project integration remain. This
-plan preserves scientific gates and negative results and does not declare the
-full project complete.
+16 October 2026. The conservative Stage 3 investigation and conditional concept
+v1 are complete within their separate scopes. Stage 4 now completes native
+electronics, bounded actual firmware and the integrated populated board set.
+Stage 5 mechanical packaging and Stage 6 final paper/release remain. This plan
+preserves scientific gates and negative results; the full project is still in
+development.
 
 ## Intended result
 
@@ -155,9 +156,15 @@ The [actual nRF5340 firmware](stage4/nrf5340-firmware-design.md) now links the
 production core and peripheral backend, with compiled fault tests, active-route
 readback, timestamped observations and allocated timer/DPPI cutoff. Its nominal
 lower-rate polling opportunities and known gaps do not implement the earlier
-450k/4k proposal. The next [remaining Stage 4 package](stage4/remaining-work.md)
-is integrated populated PCB, including the controller and explicit four-chip
-sideband carrier. Reconcile component power, timing, buses and memory there.
+450k/4k proposal. The [integrated populated PCB package](stage4/exit-review.md)
+now completes Stage 4 within its bounded digital reference scope: eight native
+routed boards, 1,298 positions / 1,296 fitted, an actual controller and four-chip
+sideband carrier, zero ERC/DRC/unconnected/parity/ignored findings, populated
+STEP and fabrication references. The revised conditional allocation is
+3.154 W / 4.880 h. Carrier-specific firmware uses the manufacturer's 11 pF
+oscillator setting. Historical source circuits, studies and firmware remain
+preserved. The [board index](../electronics/stage4/integrated-pcb/BOARD_INDEX.md)
+is the native-file entry point.
 
 Stage 5 uses the resulting board and component identities to build the native
 parametric assembly: populated boards, package, ports/feedthroughs, lead

@@ -1,0 +1,2404 @@
+(pcb "E:\Project ATO\electronics\stage4\integrated-pcb\boards\supervision\supervision.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "10.0.6")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer In1.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (layer In2.Cu
+      (type signal)
+      (property
+        (index 2)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 3)
+      )
+    )
+    (boundary
+      (path pcb 0  300000 -250000  0 -250000  0 0  300000 0  300000 -250000)
+    )
+    (via "Via[0-3]_600:300_um")
+    (rule
+      (width 200)
+      (clearance 200)
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component "ato_sup:VSSOP-8_2.3x2mm_P0.5mm"
+      (place U50520 103005 -222035 front 0 (PN TLV3202DGKR))
+      (place U50614 250935 -25085 front 0 (PN TLV3202DGKR))
+      (place U50616 270465 -25085 front 0 (PN TLV3202DGKR))
+      (place U50502 107045 -206975 front 0 (PN OPA2192IDGKR))
+      (place U50910 179745 -139735 front 0 (PN SN74LVC1G74DCUR))
+      (place U50900 57675 -25085 front 0 (PN SN74LVC1G74DCUR))
+      (place U50607 142695 -37195 front 0 (PN TLV3202DGKR))
+      (place U50600 100105 -25085 front 0 (PN TLV3202DGKR))
+      (place U50612 227875 -25085 front 0 (PN TLV3202DGKR))
+      (place U50610 208345 -25085 front 0 (PN TLV3202DGKR))
+      (place U50613 239405 -25085 front 0 (PN TLV3202DGKR))
+      (place U50410 35855 -193775 front 0 (PN TLV3202DGKR))
+      (place U50605 154225 -25085 front 0 (PN TLV3202DGKR))
+      (place U50606 165755 -25085 front 0 (PN TLV3202DGKR))
+      (place U50601 111635 -25085 front 0 (PN TLV3202DGKR))
+      (place U50810 230925 -85745 front 0 (PN SN74LVC1G74DCUR))
+      (place U50615 227875 -37195 front 0 (PN TLV3202DGKR))
+      (place U50604 142695 -25085 front 0 (PN TLV3202DGKR))
+      (place U50411 15475 -205585 front 0 (PN TLV3202DGKR))
+      (place U50602 123165 -25085 front 0 (PN TLV3202DGKR))
+      (place U50510 123475 -205585 front 0 (PN TLV3202DGKR))
+      (place U50609 196815 -25085 front 0 (PN TLV3202DGKR))
+      (place U50301 142835 -206785 front 0 (PN SN74LVC1G74DCUR))
+      (place U50611 185285 -37195 front 0 (PN TLV3202DGKR))
+      (place U50911 222175 -139735 front 0 (PN SN74LVC1G74DCUR))
+      (place U50608 185285 -25085 front 0 (PN TLV3202DGKR))
+      (place U50811 205405 -99755 front 0 (PN SN74LVC1G74DCUR))
+      (place U50603 100105 -37195 front 0 (PN TLV3202DGKR))
+    )
+    (component ato_sup:R_0805_2012Metric
+      (place R56141 255015 -24335 front 90 (PN "1M 0.1%"))
+      (place R56051 158305 -24335 front 90 (PN "1M 0.1%"))
+      (place R52200 139515 -89225 front 90 (PN "100k 0.1%"))
+      (place R52012 98485 -140934.999 front 90 (PN "121250R 0.1%"))
+      (place R52052 123055 -154945 front 90 (PN "620000R 0.1%"))
+      (place R50958 189955 -92865 front 90 (PN 10k))
+      (place R50400 13975 -194375 front 90 (PN "203.8k 0.1%"))
+      (place R52022 81915 -154945 front 90 (PN "77500R 0.1%"))
+      (place R56151 231955 -36445 front 90 (PN "1M 0.1%"))
+      (place R52081 155255 -91365 front 90 (PN "10k 0.1%"))
+      (place R56061 169834.999 -24335 front 90 (PN "1M 0.1%"))
+      (place R50260 163605 -86384.999 front 90 (PN "100k 1%"))
+      (place R56101 212425 -24335 front 90 (PN "1M 0.1%"))
+      (place R50250 146515 -193415 front 90 (PN "100k 1%"))
+      (place R56161 274545 -24335 front 90 (PN "1M 0.1%"))
+      (place R50700 13975 -86345 front 90 (PN "9.50k 0.1%"))
+      (place R52042 139625 -140934.999 front 90 (PN "402500R 0.1%"))
+      (place R50401 23674.999 -194375 front 90 (PN "2k 0.1%"))
+      (place R52062 107535 -86945 front 90 (PN "78500R 0.1%"))
+      (place R56081 189365 -24335 front 90 (PN "1M 0.1%"))
+      (place R50500 101505 -194375 front 90 (PN "232k 0.1%"))
+      (place R50420 19325 -218355 front 90 (PN 100R))
+      (place R52072 124105 -86945 front 90 (PN "125500R 0.1%"))
+      (place R50302 160155 -194915 front 90 (PN 10k))
+      (place R56131 243485 -24335 front 90 (PN "1M 0.1%"))
+      (place R56041 146775 -24335 front 90 (PN "1M 0.1%"))
+      (place R52082 147265 -86345 front 90 (PN "3750R 0.1%"))
+      (place R50501 111205 -194375 front 90 (PN "536k 0.1%"))
+      (place R52002 81915 -140934.999 front 90 (PN "77500R 0.1%"))
+      (place R50510 102965 -207725 front 90 (PN "1M 0.1%"))
+      (place R56011 115715 -24335 front 90 (PN "1M 0.1%"))
+      (place R56111 189365 -36445 front 90 (PN "1M 0.1%"))
+      (place R50954 186955 -92865 front 90 (PN 10k))
+      (place R56031 104185 -36445 front 90 (PN "1M 0.1%"))
+      (place R50301 138755 -206035 front 90 (PN 10k))
+      (place R56071 146775 -36445 front 90 (PN "1M 0.1%"))
+      (place R58001 209255 -86945 front 90 (PN "976k 0.1%"))
+      (place R50702 24655 -86345 front 90 (PN "10.5k 0.1%"))
+      (place R50956 179455 -92865 front 90 (PN 10k))
+      (place R50953 187435 -88634.999 front 90 (PN 10k))
+      (place R56121 231955 -24335 front 90 (PN "1M 0.1%"))
+      (place R56001 104185 -24335 front 90 (PN "1M 0.1%"))
+      (place R50513 111125 -206225 front 90 (PN "49.9k 0.1%"))
+      (place R52032 123055 -140934.999 front 90 (PN "121250R 0.1%"))
+      (place R50955 179455 -85905 front 90 (PN 10k))
+      (place R50421 30625 -218355 front 90 (PN 100R))
+      (place R50110 34295 -153325 front 90 (PN 1k))
+      (place R56021 127245 -24335 front 90 (PN "1M 0.1%"))
+      (place R58011 222015 -86945 front 90 (PN "976k 0.1%"))
+      (place R56091 200895 -24335 front 90 (PN "1M 0.1%"))
+    )
+    (component ato_sup:C_0805_2012Metric
+      (place C51061 74255 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51052 31825 -32265 front 0 (PN "100n X7R 16V"))
+      (place C50700 16475 -82664.999 front 0 (PN "100n X7R 16V"))
+      (place C51008 165155 -213965 front 0 (PN "100n X7R 16V"))
+      (place C51059 65705 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51023 184535 -46224.999 front 0 (PN "100n X7R 16V"))
+      (place C50206 102935 -82664.999 front 0 (PN "100n X7R 16V"))
+      (place C51046 14725 -22005 front 0 (PN "100n X7R 16V"))
+      (place C50801 217415 -82664.999 front 0 (PN "100n X7R 16V"))
+      (place C51005 139505 -213965 front 0 (PN "100n X7R 16V"))
+      (place C50611 184535 -34114.999 front 0 (PN "100n X7R 16V"))
+      (place C50501 113705 -190695 front 0 (PN "100n X7R 16V"))
+      (place C50251 141915 -197695 front 0 (PN "100n X7R 16V"))
+      (place C50602 122415 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51090 247075 -146914.999 front 0 (PN "100n X7R 16V"))
+      (place C50609 196065 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51001 159415 -203704.999 front 0 (PN "100n X7R 16V"))
+      (place C50410 35105 -190695 front 0 (PN "100n X7R 16V"))
+      (place C51043 221985 -96675 front 0 (PN "100n X7R 16V"))
+      (place C51062 82805 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51041 65475 -113395 front 0 (PN "100n X7R 16V"))
+      (place C51094 247075 -157174.999 front 0 (PN "100n X7R 16V"))
+      (place C51020 150495 -46224.999 front 0 (PN "100n X7R 16V"))
+      (place C50502 106295 -203894.999 front 0 (PN "100n X7R 16V"))
+      (place C50701 27155 -82664.999 front 0 (PN "100n X7R 16V"))
+      (place C51083 187545 -167434.999 front 0 (PN "100n X7R 16V"))
+      (place C51050 14725 -32265 front 0 (PN "100n X7R 16V"))
+      (place C51084 230205 -136654.999 front 0 (PN "100n X7R 16V"))
+      (place C50411 14725 -202505 front 0 (PN "100n X7R 16V"))
+      (place C51000 150865 -203704.999 front 0 (PN "100n X7R 16V"))
+      (place C51097 56925 -55595 front 0 (PN "100n X7R 16V"))
+      (place C50710 60405 -82664.999 front 0 (PN "100n X7R 16V"))
+      (place C51051 23275 -32265 front 0 (PN "100n X7R 16V"))
+      (place C51012 119585 -218954.999 front 0 (PN "100n X7R 16V"))
+      (place C50261 159005 -90664.999 front 0 (PN "100n X7R 16V"))
+      (place C50604 141945 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51074 178995 -146914.999 front 0 (PN "100n X7R 16V"))
+      (place C50607 141945 -34114.999 front 0 (PN "100n X7R 16V"))
+      (place C50207 119505 -82664.999 front 0 (PN "100n X7R 16V"))
+      (place C51079 187545 -157174.999 front 0 (PN "100n X7R 16V"))
+      (place C50204 135025 -136654.999 front 0 (PN "100n X7R 16V"))
+      (place C51053 40375 -32265 front 0 (PN "100n X7R 16V"))
+      (place C50202 77315 -150664.999 front 0 (PN "100n X7R 16V"))
+      (place C51036 56925 -103134.999 front 0 (PN "100n X7R 16V"))
+      (place C50203 118455 -136654.999 front 0 (PN "100n X7R 16V"))
+      (place C50900 56925 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51096 229975 -167434.999 front 0 (PN "100n X7R 16V"))
+      (place C51019 141945 -46224.999 front 0 (PN "100n X7R 16V"))
+      (place C50430 36875 -209565 front 0 (PN "100n X7R 16V"))
+      (place C51057 40375 -42525 front 0 (PN "100n X7R 16V"))
+      (place C50810 230175 -82664.999 front 0 (PN "100n X7R 16V"))
+      (place C51088 229975 -146914.999 front 0 (PN "100n X7R 16V"))
+      (place C50910 178995 -136654.999 front 0 (PN "100n X7R 16V"))
+      (place C50605 153475 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51095 221425 -167434.999 front 0 (PN "100n X7R 16V"))
+      (place C51025 238655 -34114.999 front 0 (PN "100n X7R 16V"))
+      (place C51077 204645 -146914.999 front 0 (PN "100n X7R 16V"))
+      (place C51093 238525 -157174.999 front 0 (PN "100n X7R 16V"))
+      (place C51072 196325 -136654.999 front 0 (PN "100n X7R 16V"))
+      (place C50610 207595 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51085 238755 -136654.999 front 0 (PN "100n X7R 16V"))
+      (place C50400 16475 -190695 front 0 (PN "100n X7R 16V"))
+      (place C51060 65705 -29065 front 0 (PN "100n X7R 16V"))
+      (place C51002 167965 -203704.999 front 0 (PN "100n X7R 16V"))
+      (place C51038 74025 -103134.999 front 0 (PN "100n X7R 16V"))
+      (place C51040 56925 -113395 front 0 (PN "100n X7R 16V"))
+      (place C51047 23275 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51078 178995 -157174.999 front 0 (PN "100n X7R 16V"))
+      (place C51011 111035 -218954.999 front 0 (PN "100n X7R 16V"))
+      (place C51045 204655 -106935 front 0 (PN "100n X7R 16V"))
+      (place C51071 187775 -136654.999 front 0 (PN "100n X7R 16V"))
+      (place C51013 110885 -34114.999 front 0 (PN "100n X7R 16V"))
+      (place C51029 281245 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51018 162025 -34114.999 front 0 (PN "100n X7R 16V"))
+      (place C51007 156605 -213965 front 0 (PN "100n X7R 16V"))
+      (place C51027 227125 -46224.999 front 0 (PN "100n X7R 16V"))
+      (place C50614 250185 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51048 31825 -22005 front 0 (PN "100n X7R 16V"))
+      (place C50431 38375 -202505 front 0 (PN "100n X7R 16V"))
+      (place C51058 14725 -52785 front 0 (PN "100n X7R 16V"))
+      (place C50608 184535 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51009 14725 -215575 front 0 (PN "100n X7R 16V"))
+      (place C50500 104005 -190695 front 0 (PN "100n X7R 16V"))
+      (place C50520 102255 -218954.999 front 0 (PN "100n X7R 16V"))
+      (place C51091 221425 -157174.999 front 0 (PN "100n X7R 16V"))
+      (place C51054 14725 -42525 front 0 (PN "100n X7R 16V"))
+      (place C51082 178995 -167434.999 front 0 (PN "100n X7R 16V"))
+      (place C51070 82575 -45334.999 front 0 (PN "100n X7R 16V"))
+      (place C51055 23275 -42525 front 0 (PN "100n X7R 16V"))
+      (place C51087 221425 -146914.999 front 0 (PN "100n X7R 16V"))
+      (place C50208 143265 -82664.999 front 0 (PN "100n X7R 16V"))
+      (place C50301 142085 -203704.999 front 0 (PN "100n X7R 16V"))
+      (place C51066 82575 -35075 front 0 (PN "100n X7R 16V"))
+      (place C51006 148055 -213965 front 0 (PN "100n X7R 16V"))
+      (place C50911 221425 -136654.999 front 0 (PN "100n X7R 16V"))
+      (place C51028 235675 -46224.999 front 0 (PN "100n X7R 16V"))
+      (place C51004 14725 -94475 front 0 (PN "100n X7R 16V"))
+      (place C50800 204655 -82664.999 front 0 (PN "100n X7R 16V"))
+      (place C51003 36085 -82664.999 front 0 (PN "100n X7R 16V"))
+      (place C51016 107905 -46224.999 front 0 (PN "100n X7R 16V"))
+      (place C51080 196095 -157174.999 front 0 (PN "100n X7R 16V"))
+      (place C51049 40375 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51081 204645 -157174.999 front 0 (PN "100n X7R 16V"))
+      (place C50601 110885 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51044 230535 -96675 front 0 (PN "100n X7R 16V"))
+      (place C51056 31825 -42525 front 0 (PN "100n X7R 16V"))
+      (place C51021 196065 -34114.999 front 0 (PN "100n X7R 16V"))
+      (place C50603 99355 -34114.999 front 0 (PN "100n X7R 16V"))
+      (place C51030 23275 -94475 front 0 (PN "100n X7R 16V"))
+      (place C51037 65475 -103134.999 front 0 (PN "100n X7R 16V"))
+      (place C51068 65475 -45334.999 front 0 (PN "100n X7R 16V"))
+      (place C51092 229975 -157174.999 front 0 (PN "100n X7R 16V"))
+      (place C51022 204615 -34114.999 front 0 (PN "100n X7R 16V"))
+      (place C51035 81385 -82664.999 front 0 (PN "100n X7R 16V"))
+      (place C51024 193085 -46224.999 front 0 (PN "100n X7R 16V"))
+      (place C51063 56925 -35075 front 0 (PN "100n X7R 16V"))
+      (place C50200 77315 -136654.999 front 0 (PN "100n X7R 16V"))
+      (place C50600 99355 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51032 40375 -94475 front 0 (PN "100n X7R 16V"))
+      (place C50510 122725 -202505 front 0 (PN "100n X7R 16V"))
+      (place C51042 213435 -96675 front 0 (PN "100n X7R 16V"))
+      (place C50616 269715 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51076 196095 -146914.999 front 0 (PN "100n X7R 16V"))
+      (place C50613 238655 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51026 247205 -34114.999 front 0 (PN "100n X7R 16V"))
+      (place C51033 14725 -104735 front 0 (PN "100n X7R 16V"))
+      (place C51067 56925 -45334.999 front 0 (PN "100n X7R 16V"))
+      (place C51064 65475 -35075 front 0 (PN "100n X7R 16V"))
+      (place C50401 26174.999 -190695 front 0 (PN "100n X7R 16V"))
+      (place C50201 93885 -136654.999 front 0 (PN "100n X7R 16V"))
+      (place C50711 60405 -97125 front 0 (PN "100n X7R 16V"))
+      (place C50811 204655 -96675 front 0 (PN "100n X7R 16V"))
+      (place C50615 227125 -34114.999 front 0 (PN "100n X7R 16V"))
+      (place C51086 247305 -136654.999 front 0 (PN "100n X7R 16V"))
+      (place C51015 99355 -46224.999 front 0 (PN "100n X7R 16V"))
+      (place C51017 153475 -34114.999 front 0 (PN "100n X7R 16V"))
+      (place C51034 72835 -82664.999 front 0 (PN "100n X7R 16V"))
+      (place C50612 227125 -22005 front 0 (PN "100n X7R 16V"))
+      (place C51075 187545 -146914.999 front 0 (PN "100n X7R 16V"))
+      (place C51014 119435 -34114.999 front 0 (PN "100n X7R 16V"))
+      (place C50606 165005 -22005 front 0 (PN "100n X7R 16V"))
+      (place C50205 118455 -150664.999 front 0 (PN "100n X7R 16V"))
+      (place C51065 74025 -35075 front 0 (PN "100n X7R 16V"))
+      (place C51010 26025 -215575 front 0 (PN "100n X7R 16V"))
+      (place C51039 82575 -103134.999 front 0 (PN "100n X7R 16V"))
+      (place C51031 31825 -94475 front 0 (PN "100n X7R 16V"))
+      (place C51089 238525 -146914.999 front 0 (PN "100n X7R 16V"))
+      (place C51069 74025 -45334.999 front 0 (PN "100n X7R 16V"))
+      (place C50220 143265 -88524.999 front 0 (PN "100n X7R 16V"))
+      (place C51073 204875 -136654.999 front 0 (PN "100n X7R 16V"))
+    )
+    (component ato_sup:PinHeader_1x02_P2.54mm_Vertical
+      (place J50603 99425 -64864.999 front 90 (PN "REC03 ACTUAL RHD-SIDE TAP"))
+      (place J50604 142015 -57275 front 90 (PN "REC04 ACTUAL RHD-SIDE TAP"))
+      (place J50615 227195 -64864.999 front 90 (PN "REC15 ACTUAL RHD-SIDE TAP"))
+      (place J50614 247475 -57275 front 90 (PN "REC14 ACTUAL RHD-SIDE TAP"))
+      (place J50607 142015 -64864.999 front 90 (PN "REC07 ACTUAL RHD-SIDE TAP"))
+      (place J50612 227195 -57275 front 90 (PN "REC12 ACTUAL RHD-SIDE TAP"))
+      (place J50606 162295 -57275 front 90 (PN "REC06 ACTUAL RHD-SIDE TAP"))
+      (place J50601 109565 -57275 front 90 (PN "REC01 ACTUAL RHD-SIDE TAP"))
+      (place J50602 119705 -57275 front 90 (PN "REC02 ACTUAL RHD-SIDE TAP"))
+      (place J50608 184605 -57275 front 90 (PN "REC08 ACTUAL RHD-SIDE TAP"))
+      (place J50616 269785 -34905 front 90 (PN "REF ACTUAL RHD-SIDE TAP"))
+      (place J50605 152155 -57275 front 90 (PN "REC05 ACTUAL RHD-SIDE TAP"))
+      (place J50609 194745 -57275 front 90 (PN "REC09 ACTUAL RHD-SIDE TAP"))
+      (place J50600 99425 -57275 front 90 (PN "REC00 ACTUAL RHD-SIDE TAP"))
+      (place J50611 184605 -64864.999 front 90 (PN "REC11 ACTUAL RHD-SIDE TAP"))
+      (place J50610 204885 -57275 front 90 (PN "REC10 ACTUAL RHD-SIDE TAP"))
+      (place J50613 237335 -57275 front 90 (PN "REC13 ACTUAL RHD-SIDE TAP"))
+    )
+    (component ato_sup:R_0805_2012Metric::1
+      (place R52041 131195 -140934.999 front 0 (PN "10k 0.1%"))
+      (place R56160 271965 -28134.999 front 0 (PN "10M 0.1%"))
+      (place R52071 115675 -86945 front 0 (PN "10k 0.1%"))
+      (place R56080 186785 -28134.999 front 0 (PN "10M 0.1%"))
+      (place R56100 209845 -28134.999 front 0 (PN "10M 0.1%"))
+      (place R56050 155725 -28134.999 front 0 (PN "10M 0.1%"))
+      (place R52073 124835 -90695 front 0 (PN "10k 0.1%"))
+      (place R50502 115205 -196525 front 0 (PN "232k 0.1%"))
+      (place R52030 118455 -143684.999 front 0 (PN "108750R 0.1%"))
+      (place R56130 240905 -28134.999 front 0 (PN "10M 0.1%"))
+      (place R58012 222745 -90695 front 0 (PN "182k 0.1%"))
+      (place R52044 139525 -136684.999 front 0 (PN 10k))
+      (place R52033 123785 -144684.999 front 0 (PN "10k 0.1%"))
+      (place R52031 114625 -140934.999 front 0 (PN "10k 0.1%"))
+      (place R52010 93885 -143684.999 front 0 (PN "108750R 0.1%"))
+      (place R50952 183205 -92134.999 front 0 (PN 10k))
+      (place R50961 188165 -96134.999 front 0 (PN 10k))
+      (place R52080 99105 -100895 front 0 (PN "1875R 0.1%"))
+      (place R52014 98385 -136684.999 front 0 (PN 10k))
+      (place R50410 16225 -222605 front 0 (PN "3.3k 1%"))
+      (place R56060 167255 -28134.999 front 0 (PN "10M 0.1%"))
+      (place R52060 102935 -89695 front 0 (PN "73500R 0.1%"))
+      (place R56140 252435 -28134.999 front 0 (PN "10M 0.1%"))
+      (place R56000 101605 -28134.999 front 0 (PN "10M 0.1%"))
+      (place R50251 146415 -197665 front 0 (PN 100R))
+      (place R52013 99215 -144684.999 front 0 (PN "10k 0.1%"))
+      (place R52003 82645 -144684.999 front 0 (PN "10k 0.1%"))
+      (place R50402 27674.999 -196525 front 0 (PN "203.8k 0.1%"))
+      (place R56040 144195 -28134.999 front 0 (PN "10M 0.1%"))
+      (place R50960 179745 -96134.999 front 0 (PN 10k))
+      (place R56020 124665 -28134.999 front 0 (PN "10M 0.1%"))
+      (place R50261 163505 -90634.999 front 0 (PN 100R))
+      (place R50300 157405 -190665 front 0 (PN 10k))
+      (place R52000 77315 -143684.999 front 0 (PN "67500R 0.1%"))
+      (place R50959 179745 -82634.999 front 0 (PN 10k))
+      (place R52053 123785 -158695 front 0 (PN "10k 0.1%"))
+      (place R52051 114625 -154945 front 0 (PN "10k 0.1%"))
+      (place R50103 17535 -148325 front 0 (PN 22k))
+      (place R56120 229375 -28134.999 front 0 (PN "10M 0.1%"))
+      (place R50957 188165 -84884.999 front 0 (PN 10k))
+      (place R52050 118455 -157695 front 0 (PN "560000R 0.1%"))
+      (place R50101 29295 -136624.999 front 0 (PN 22k))
+      (place R52043 140355 -144684.999 front 0 (PN "10k 0.1%"))
+      (place R52061 99105 -86945 front 0 (PN "10k 0.1%"))
+      (place R52001 73485 -140934.999 front 0 (PN "10k 0.1%"))
+      (place R50951 183205 -86634.999 front 0 (PN 10k))
+      (place R50511 106295 -210025 front 0 (PN "49.9k 0.1%"))
+      (place R52054 122955 -150695 front 0 (PN 10k))
+      (place R52020 77315 -157695 front 0 (PN "67500R 0.1%"))
+      (place R58010 217415 -89695 front 0 (PN "195.4k 0.1%"))
+      (place R50520 110795 -210025 front 0 (PN "1M 0.1%"))
+      (place R52021 73485 -154945 front 0 (PN "10k 0.1%"))
+      (place R52084 164335 -82634.999 front 0 (PN 10k))
+      (place R50522 111855 -212975 front 0 (PN "1M 0.1%"))
+      (place R52201 147765 -82695 front 0 (PN "10k 0.1%"))
+      (place R50100 17535 -136624.999 front 0 (PN 22k))
+      (place R52004 81815 -136684.999 front 0 (PN 10k))
+      (place R58002 209985 -90695 front 0 (PN "182k 0.1%"))
+      (place R56010 113135 -28134.999 front 0 (PN "10M 0.1%"))
+      (place R52011 90055 -140934.999 front 0 (PN "10k 0.1%"))
+      (place R50411 27525 -222605 front 0 (PN "3.3k 1%"))
+      (place R52064 107435 -82695 front 0 (PN 10k))
+      (place R50950 183955 -89384.999 front 0 (PN 10k))
+      (place R52070 119505 -89695 front 0 (PN "120000R 0.1%"))
+      (place R52023 82645 -158695 front 0 (PN "10k 0.1%"))
+      (place R56090 198315 -28134.999 front 0 (PN "10M 0.1%"))
+      (place R50701 17975 -88495 front 0 (PN "100k 0.1%"))
+      (place R52083 155175 -82634.999 front 0 (PN "10k 0.1%"))
+      (place R52024 81815 -150695 front 0 (PN 10k))
+      (place R50512 102235 -203975 front 0 (PN "1M 0.1%"))
+      (place R50104 29295 -148325 front 0 (PN 22k))
+      (place R56110 186785 -40245 front 0 (PN "10M 0.1%"))
+      (place R50703 28655 -88495 front 0 (PN "100k 0.1%"))
+      (place R52074 124005 -82695 front 0 (PN 10k))
+      (place R50521 111855 -202475 front 0 (PN "49.9k 0.1%"))
+      (place R56030 101605 -40245 front 0 (PN "10M 0.1%"))
+      (place R52063 108265 -90695 front 0 (PN "10k 0.1%"))
+      (place R50102 41055 -136624.999 front 0 (PN 22k))
+      (place R58000 204655 -89695 front 0 (PN "195.4k 0.1%"))
+      (place R52034 122955 -136684.999 front 0 (PN 10k))
+      (place R56150 229375 -40245 front 0 (PN "10M 0.1%"))
+      (place R52040 135025 -143684.999 front 0 (PN "327500R 0.1%"))
+      (place R56070 144195 -40245 front 0 (PN "10M 0.1%"))
+      (place R50523 115295 -210025 front 0 (PN "49.9k 0.1%"))
+    )
+    (component "ato_sup:SOT-23-5"
+      (place U51013 111635 -37644.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51027 227875 -49754.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51011 111785 -222485 front 0 (PN SN74LVC1G08DBVR))
+      (place U51056 32575 -46055 front 0 (PN SN74LVC1G04DBVR))
+      (place U51014 120185 -37644.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51086 248055 -140184.999 front 0 (PN SN74LVC1G04DBVR))
+      (place U51091 222175 -160704.999 front 0 (PN SN74LVC1G04DBVR))
+      (place U51053 41125 -35795 front 0 (PN SN74LVC1G08DBVR))
+      (place U51019 142695 -49754.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51008 165905 -217495 front 0 (PN SN74LVC1G08DBVR))
+      (place U51029 281995 -25535 front 0 (PN SN74LVC1G08DBVR))
+      (place U51058 15475 -56315 front 0 (PN SN74LVC1G04DBVR))
+      (place U51090 247825 -150445 front 0 (PN SN74LVC1G08DBVR))
+      (place U51063 57675 -38605 front 0 (PN SN74LVC1G08DBVR))
+      (place U51085 239505 -140184.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51066 83325 -38605 front 0 (PN SN74LVC1G08DBVR))
+      (place U51078 179745 -160704.999 front 0 (PN SN74LVC1G04DBVR))
+      (place U51069 74775 -48864.999 front 0 (PN SN74LVC1G04DBVR))
+      (place U51060 66455 -25535 front 0 (PN SN74LVC1G04DBVR))
+      (place U51077 205395 -150445 front 0 (PN SN74LVC1G08DBVR))
+      (place U51051 24025 -35795 front 0 (PN SN74LVC1G08DBVR))
+      (place U51006 148805 -217495 front 0 (PN SN74LVC1G08DBVR))
+      (place U51045 205405 -110465 front 0 (PN SN74LVC1G32DBVR))
+      (place U50260 159755 -87134.999 front 0 (PN SN74LVC1G17DBVR))
+      (place U51073 205625 -140184.999 front 0 (PN SN74LVC1G04DBVR))
+      (place U51015 100105 -49754.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51074 179745 -150445 front 0 (PN SN74LVC1G08DBVR))
+      (place U51018 162775 -37644.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51012 120335 -222485 front 0 (PN SN74LVC1G08DBVR))
+      (place U51028 236425 -49754.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51021 196815 -37644.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51079 188295 -160704.999 front 0 (PN SN74LVC1G04DBVR))
+      (place U51025 239405 -37644.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51024 193835 -49754.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51072 197075 -140184.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51042 214185 -100205 front 0 (PN SN74LVC1G04DBVR))
+      (place U51044 231285 -100205 front 0 (PN SN74LVC1G04DBVR))
+      (place U51016 108655 -49754.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51041 66225 -116925 front 0 (PN SN74LVC1G08DBVR))
+      (place U51092 230725 -160704.999 front 0 (PN SN74LVC1G04DBVR))
+      (place U51046 15475 -25535 front 0 (PN SN74LVC1G08DBVR))
+      (place U51004 15475 -98005 front 0 (PN SN74LVC1G08DBVR))
+      (place U51020 151245 -49754.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51043 222735 -100205 front 0 (PN SN74LVC1G32DBVR))
+      (place U50250 142665 -194165 front 0 (PN SN74LVC1G17DBVR))
+      (place U50420 26665 -205975 front 0 (PN SN74LVC1G17DBVR))
+      (place U50421 37625 -206035 front 0 (PN SN74LVC1G17DBVR))
+      (place U51005 140255 -217495 front 0 (PN SN74LVC1G04DBVR))
+      (place U51065 74775 -38605 front 0 (PN SN74LVC1G08DBVR))
+      (place U51087 222175 -150445 front 0 (PN SN74LVC1G08DBVR))
+      (place U51059 23625 -53505 front 0 (PN SN74LVC1G04DBVR))
+      (place U51030 24025 -98005 front 0 (PN SN74LVC1G04DBVR))
+      (place U51067 57675 -48864.999 front 0 (PN SN74LVC1G04DBVR))
+      (place U51023 185285 -49754.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51097 57675 -59125 front 0 (PN SN74LVC1G32DBVR))
+      (place U51031 32575 -98005 front 0 (PN SN74LVC1G04DBVR))
+      (place U51017 154225 -37644.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51055 24025 -46055 front 0 (PN SN74LVC1G04DBVR))
+      (place U51057 41125 -46055 front 0 (PN SN74LVC1G04DBVR))
+      (place U51048 32575 -25535 front 0 (PN SN74LVC1G08DBVR))
+      (place U51082 179745 -170964.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51022 205365 -37644.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51026 247955 -37644.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51068 66225 -48864.999 front 0 (PN SN74LVC1G04DBVR))
+      (place U51095 222175 -170964.999 front 0 (PN SN74LVC1G08DBVR))
+      (place U51052 32575 -35795 front 0 (PN SN74LVC1G08DBVR))
+    )
+    (component ato_sup:PinHeader_1x07_P2.54mm_Vertical
+      (place J50001 56255 -193485 front 90 (PN "EXTERNAL SUPERVISOR AND HOST RAILS"))
+    )
+    (component "ato_sup:SOT-23-6"
+      (place U51070 83325 -48864.999 front 0 (PN SN74LVC1G11DBVR))
+      (place U51038 74775 -106664.999 front 0 (PN SN74LVC1G11DBVR))
+      (place U51081 205395 -160704.999 front 0 (PN SN74LVC1G11DBVR))
+      (place U50208 99855 -97395 front 0 (PN TPS3700DDCR))
+      (place U51047 24025 -25535 front 0 (PN SN74LVC1G11DBVR))
+      (place U51003 36835 -86195 front 0 (PN SN74LVC1G11DBVR))
+      (place U51000 151615 -207235 front 0 (PN SN74LVC1G11DBVR))
+      (place U51040 57675 -116925 front 0 (PN SN74LVC1G11DBVR))
+      (place U51033 15475 -108265 front 0 (PN SN74LVC1G11DBVR))
+      (place U51080 196845 -160704.999 front 0 (PN SN74LVC1G11DBVR))
+      (place U51039 83325 -106664.999 front 0 (PN SN74LVC1G11DBVR))
+      (place U51076 196845 -150445 front 0 (PN SN74LVC1G11DBVR))
+      (place U51037 66225 -106664.999 front 0 (PN SN74LVC1G11DBVR))
+      (place U51035 82135 -86195 front 0 (PN SN74LVC1G11DBVR))
+      (place U51071 188525 -140184.999 front 0 (PN SN74LVC1G11DBVR))
+      (place U50801 218165 -86195 front 0 (PN "LTC6993HS6-1#TRPBF"))
+      (place U51089 239275 -150445 front 0 (PN SN74LVC1G11DBVR))
+      (place U50204 135775 -140184.999 front 0 (PN TPS3700DDCR))
+      (place U51088 230725 -150445 front 0 (PN SN74LVC1G11DBVR))
+      (place U51064 66225 -38605 front 0 (PN SN74LVC1G11DBVR))
+      (place U51096 230725 -170964.999 front 0 (PN SN74LVC1G11DBVR))
+      (place U51054 15475 -46055 front 0 (PN SN74LVC1G11DBVR))
+      (place U51093 239275 -160704.999 front 0 (PN SN74LVC1G11DBVR))
+      (place U50206 103685 -86195 front 0 (PN TPS3700DDCR))
+      (place U51034 73585 -86195 front 0 (PN SN74LVC1G11DBVR))
+      (place U51007 157355 -217495 front 0 (PN SN74LVC1G11DBVR))
+      (place U50202 78065 -154195 front 0 (PN TPS3700DDCR))
+      (place U51083 188295 -170964.999 front 0 (PN SN74LVC1G11DBVR))
+      (place U50207 120255 -86195 front 0 (PN TPS3700DDCR))
+      (place U50205 119205 -154195 front 0 (PN TPS3700DDCR))
+      (place U51049 41125 -25535 front 0 (PN SN74LVC1G11DBVR))
+      (place U51050 15475 -35795 front 0 (PN SN74LVC1G11DBVR))
+      (place U51001 160165 -207235 front 0 (PN SN74LVC1G11DBVR))
+      (place U50201 94635 -140184.999 front 0 (PN TPS3700DDCR))
+      (place U50800 205405 -86195 front 0 (PN "LTC6993HS6-1#TRPBF"))
+      (place U51002 168715 -207235 front 0 (PN SN74LVC1G11DBVR))
+      (place U51094 247825 -160704.999 front 0 (PN SN74LVC1G11DBVR))
+      (place U51062 83555 -25535 front 0 (PN SN74LVC1G11DBVR))
+      (place U51075 188295 -150445 front 0 (PN SN74LVC1G11DBVR))
+      (place U51061 75005 -25535 front 0 (PN SN74LVC1G11DBVR))
+      (place U51009 15475 -219105 front 0 (PN SN74LVC1G11DBVR))
+      (place U50200 78065 -140184.999 front 0 (PN TPS3700DDCR))
+      (place U50203 119205 -140184.999 front 0 (PN TPS3700DDCR))
+      (place U51010 26775 -219105 front 0 (PN SN74LVC1G11DBVR))
+      (place U51036 57675 -106664.999 front 0 (PN SN74LVC1G11DBVR))
+      (place U51032 41125 -98005 front 0 (PN SN74LVC1G11DBVR))
+      (place U51084 230955 -140184.999 front 0 (PN SN74LVC1G11DBVR))
+    )
+    (component MountingHole_3.2mm_M3
+      (place H1 4000 -4000 front 0 (PN MountingHole_3.2mm_M3))
+      (place H4 296000 -246000 front 0 (PN MountingHole_3.2mm_M3))
+      (place H2 296000 -4000 front 0 (PN MountingHole_3.2mm_M3))
+      (place H3 4000 -246000 front 0 (PN MountingHole_3.2mm_M3))
+    )
+    (component ato_sup:PinHeader_1x13_P2.54mm_Vertical
+      (place J50005 56255 -223845 front 90 (PN "EXPORTED NATIVE HEALTH / PERMISSION"))
+    )
+    (component ato_sup:Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6
+      (place U50101 30045 -140874.999 front 0 (PN TMUX7412FRRPR))
+      (place U50104 30045 -152575 front 0 (PN TMUX7412FRRPR))
+      (place U50102 41805 -140874.999 front 0 (PN TMUX7412FRRPR))
+      (place U50103 18285 -152575 front 0 (PN TMUX7412FRRPR))
+      (place U50100 18285 -140874.999 front 0 (PN TMUX7412FRRPR))
+    )
+    (component "ato_sup:SOT-353_SC-70-5"
+      (place U50700 17225 -85595 front 0 (PN OPA391DCKR))
+      (place U50701 27905 -85595 front 0 (PN OPA391DCKR))
+      (place U50220 144015 -85595 front 0 (PN OPA391DCKR))
+      (place U50501 114455 -193625 front 0 (PN OPA391DCKR))
+      (place U50401 26924.999 -193625 front 0 (PN OPA391DCKR))
+      (place U50400 17225 -193625 front 0 (PN OPA391DCKR))
+      (place U50500 104755 -193625 front 0 (PN OPA391DCKR))
+    )
+    (component ato_sup:PinHeader_1x12_P2.54mm_Vertical
+      (place J50003 56245 -208665 front 90 (PN "RAW CONTROL / STATUS"))
+    )
+    (component ato_sup:C_0805_2012Metric::1
+      (place C50421 33745 -205285 front 90 (PN "10n C0G 5%"))
+      (place C50420 22785 -205225 front 90 (PN "10n C0G 5%"))
+      (place C50300 153125 -193415 front 90 (PN "100n X7R 16V"))
+      (place C50101 25765 -140124.999 front 90 (PN "100n X7R 50V"))
+      (place C50104 25765 -151825 front 90 (PN "100n X7R 50V"))
+      (place C50102 37525 -140124.999 front 90 (PN "100n X7R 50V"))
+      (place C50260 155875 -86384.999 front 90 (PN "47n X7R 10%"))
+      (place C50250 138785 -193415 front 90 (PN "47n X7R 10%"))
+      (place C50100 14004.999 -140124.999 front 90 (PN "100n X7R 50V"))
+      (place C50103 14004.999 -151825 front 90 (PN "100n X7R 50V"))
+    )
+    (component ato_sup:PinHeader_1x06_P2.54mm_Vertical
+      (place J50002 56245 -201075 front 90 (PN "FLOATING AFE RAILS AND OBSERVED CONTROLS"))
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
+      (place J59901 155855 -139444.999 front 90 (PN "HOST TAP HARNESS"))
+    )
+    (component "ato_sup:D_SOD-323"
+      (place D50260 159005 -83634.999 front 0 (PN "BAT54WS-7-F"))
+      (place D50250 141915 -190665 front 0 (PN "BAT54WS-7-F"))
+      (place D50410 25915 -202475 front 0 (PN "BAT54WS-7-F"))
+    )
+    (component ato_sup:PinHeader_1x18_P2.54mm_Vertical
+      (place J50100 14805 -160844.999 front 90 (PN "CANONICAL ROUTER J7 / BEFORE GUARDS"))
+      (place J50101 14805 -168434.999 front 90 (PN "BODY-FACING ARTIFICIAL LOAD CONTACTS"))
+    )
+    (component "ato_sup:D_SOD-323::1"
+      (place D50411 41475 -206785 front 90 (PN "BAT54WS-7-F"))
+    )
+    (component "ato_sup:SOIC-16W_7.5x10.3mm_P1.27mm"
+      (place U50710 61155 -89895 front 0 (PN ISO6742FDWR))
+    )
+    (component ato_sup:PinHeader_1x09_P2.54mm_Vertical
+      (place J50004 56245 -216255 front 90 (PN "EXISTING MONITOR OBSERVATIONS"))
+    )
+    (component ato_sup:PinHeader_1x05_P2.54mm_Vertical
+      (place J50006 56245 -231435 front 90 (PN "DRIVER INTERNAL DIFFERENTIAL VOLTAGES"))
+    )
+    (component ato_sup:Texas_DRB0008A_VSON8_3x3_P0.65_EP1.5x1.75
+      (place U50300 156655 -194165 front 0 (PN TPS3431SDRBR))
+    )
+  )
+  (library
+    (image "ato_sup:VSSOP-8_2.3x2mm_P0.5mm"
+      (outline (polygon signal 0  1395 1175  2275 1175  2275 -1175  1395 -1175  1395 -1245
+            -1395 -1245  -1395 -1175  -2275 -1175  -2275 1175  -1395 1175
+            -1395 1245  1395 1245))
+      (outline (path signal 120  -1105.57 1185  1260 1185))
+      (outline (path signal 120  1260 -1185  -1260 -1185))
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 1 -1400 750)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 2 -1400 250)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 3 -1400 -250)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 4 -1400 -750)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 5 1400 -750)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 6 1400 -250)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 7 1400 250)
+      (pin RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0 8 1400 750)
+    )
+    (image ato_sup:R_0805_2012Metric
+      (outline (polygon signal 0  -1675 -945  -1675 945  1675 945  1675 -945))
+      (outline (path signal 120  -227.064 735  227.064 735))
+      (outline (path signal 120  -227.064 -735  227.064 -735))
+      (outline (path signal 100  -1000 625  -1000 -625  1000 -625  1000 625  -1000 625))
+      (pin RoundRect[T]Pad_1025.000000x1400.000000_250.951000_um_0.000000_0 1 -912.5 0)
+      (pin RoundRect[T]Pad_1025.000000x1400.000000_250.951000_um_0.000000_0 2 912.5 0)
+    )
+    (image ato_sup:C_0805_2012Metric
+      (outline (polygon signal 0  1695 -975  -1695 -975  -1695 975  1695 975))
+      (outline (path signal 120  -261.252 735  261.252 735))
+      (outline (path signal 120  -261.252 -735  261.252 -735))
+      (outline (path signal 100  -1000 625  1000 625  1000 -625  -1000 -625  -1000 625))
+      (pin RoundRect[T]Pad_1000.000000x1450.000000_250.951000_um_0.000000_0 1 -950 0)
+      (pin RoundRect[T]Pad_1000.000000x1450.000000_250.951000_um_0.000000_0 2 950 0)
+    )
+    (image ato_sup:PinHeader_1x02_P2.54mm_Vertical
+      (outline (polygon signal 0  -1765 -4315  -1765 1765  1765 1765  1765 -4315))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  1380 -1270  1380 -3920))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -1270  -1380 -3920))
+      (outline (path signal 120  -1380 -3920  1380 -3920))
+      (outline (path signal 100  1270 1270  1270 -3810))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 -3810  -1270 -3810))
+      (outline (path signal 100  -1270 -3810  -1270 635))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+    )
+    (image ato_sup:R_0805_2012Metric::1
+      (outline (polygon signal 0  1675 -945  -1675 -945  -1675 945  1675 945))
+      (outline (path signal 120  -227.064 735  227.064 735))
+      (outline (path signal 120  -227.064 -735  227.064 -735))
+      (outline (path signal 100  -1000 625  1000 625  1000 -625  -1000 -625  -1000 625))
+      (pin RoundRect[T]Pad_1025.000000x1400.000000_250.951000_um_0.000000_0 1 -912.5 0)
+      (pin RoundRect[T]Pad_1025.000000x1400.000000_250.951000_um_0.000000_0 2 912.5 0)
+    )
+    (image "ato_sup:SOT-23-5"
+      (outline (polygon signal 0  1045 1495  2045 1495  2045 395  1045 395  1045 -395  2045 -395
+            2045 -1495  1045 -1495  1045 -1695  -1045 -1695  -1045 -1495
+            -2045 -1495  -2045 1495  -1045 1495  -1045 1695  1045 1695))
+      (outline (path signal 120  -910 1560  910 1560))
+      (outline (path signal 120  -910 1510  -910 1560))
+      (outline (path signal 120  -910 -1560  -910 -1510))
+      (outline (path signal 120  910 1560  910 1510))
+      (outline (path signal 120  910 390  910 -390))
+      (outline (path signal 120  910 -1510  910 -1560))
+      (outline (path signal 120  910 -1560  -910 -1560))
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 1 -1137.5 950)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 2 -1137.5 0)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 3 -1137.5 -950)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 4 1137.5 -950)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 5 1137.5 950)
+    )
+    (image ato_sup:PinHeader_1x07_P2.54mm_Vertical
+      (outline (polygon signal 0  -1765 -17015  -1765 1775  1765 1775  1765 -17015))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  1380 -1270  1380 -16620))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -1270  -1380 -16620))
+      (outline (path signal 120  -1380 -16620  1380 -16620))
+      (outline (path signal 100  1270 1270  1270 -16510))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 -16510  -1270 -16510))
+      (outline (path signal 100  -1270 -16510  -1270 635))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+      (pin Round[A]Pad_1700.000000_um 3 0 -5080)
+      (pin Round[A]Pad_1700.000000_um 4 0 -7620)
+      (pin Round[A]Pad_1700.000000_um 5 0 -10160)
+      (pin Round[A]Pad_1700.000000_um 6 0 -12700)
+      (pin Round[A]Pad_1700.000000_um 7 0 -15240)
+    )
+    (image "ato_sup:SOT-23-6"
+      (outline (polygon signal 0  1045 1495  2045 1495  2045 -1495  1045 -1495  1045 -1695
+            -1045 -1695  -1045 -1495  -2045 -1495  -2045 1495  -1045 1495
+            -1045 1695  1045 1695))
+      (outline (path signal 120  -910 1560  910 1560))
+      (outline (path signal 120  -910 1510  -910 1560))
+      (outline (path signal 120  -910 -1560  -910 -1510))
+      (outline (path signal 120  910 1560  910 1510))
+      (outline (path signal 120  910 -1510  910 -1560))
+      (outline (path signal 120  910 -1560  -910 -1560))
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 1 -1137.5 950)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 2 -1137.5 0)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 3 -1137.5 -950)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 4 1137.5 -950)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 5 1137.5 0)
+      (pin RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0 6 1137.5 950)
+    )
+    (image MountingHole_3.2mm_M3
+      (outline (polygon signal 0  372.747 3427.32  741.112 3366.93  1100.8 3267.06  1447.58 3128.89
+            1777.39 2954.03  2086.35 2744.55  2370.86 2502.89  2627.57 2231.88
+            2853.48 1934.71  3045.93 1614.85  3202.67 1276.06  3321.86 922.312
+            3402.11 557.752  3442.47 186.613  3445 0  3442.47 -186.612  3402.11 -557.751
+            3321.86 -922.311  3202.67 -1276.06  3045.93 -1614.85  2853.48 -1934.71
+            2627.57 -2231.88  2370.86 -2502.89  2086.35 -2744.55  1777.39 -2954.03
+            1447.58 -3128.89  1100.8 -3267.06  741.112 -3366.93  372.747 -3427.32
+            0 -3447.53  -372.748 -3427.32  -741.113 -3366.93  -1100.8 -3267.06
+            -1447.58 -3128.89  -1777.39 -2954.03  -2086.35 -2744.55  -2370.86 -2502.89
+            -2627.57 -2231.88  -2853.48 -1934.71  -3045.93 -1614.85  -3202.67 -1276.06
+            -3321.86 -922.311  -3402.11 -557.751  -3442.47 -186.641  -3442.47 186.642
+            -3402.11 557.752  -3321.86 922.312  -3202.67 1276.06  -3045.93 1614.85
+            -2853.48 1934.71  -2627.57 2231.88  -2370.86 2502.89  -2086.35 2744.55
+            -1777.39 2954.03  -1447.58 3128.89  -1100.8 3267.06  -741.113 3366.93
+            -372.748 3427.32  0 3447.53))
+      (outline (path signal 150  3200 0  3180.58 -352.026  3122.55 -699.779  3026.61 -1039.04
+            2893.94 -1365.68  2726.14 -1675.75  2525.25 -1965.48  2293.7 -2231.35
+            2034.32 -2470.13  1750.23 -2678.93  1444.91 -2855.21  1122.04 -2996.84
+            785.554 -3102.08  439.531 -3169.67  88.174 -3198.78  -264.254 -3189.07
+            -613.474 -3140.64  -955.247 -3054.1  -1285.42 -2930.47  -1600 -2771.28
+            -1895.15 -2578.45  -2167.3 -2354.32  -2413.14 -2101.61  -2629.69 -1823.39
+            -2814.32 -1523.03  -2964.78 -1204.19  -3079.26 -870.731  -3156.36 -526.703
+            -3195.14 -176.281  -3195.14 176.281  -3156.36 526.703  -3079.26 870.731
+            -2964.78 1204.19  -2814.32 1523.03  -2629.69 1823.39  -2413.14 2101.61
+            -2167.3 2354.32  -1895.15 2578.45  -1600 2771.28  -1285.42 2930.47
+            -955.247 3054.1  -613.474 3140.64  -264.254 3189.07  88.174 3198.78
+            439.531 3169.67  785.554 3102.08  1122.04 2996.84  1444.91 2855.21
+            1750.23 2678.93  2034.32 2470.13  2293.7 2231.35  2525.25 1965.48
+            2726.14 1675.75  2893.94 1365.68  3026.61 1039.04  3122.55 699.779
+            3180.58 352.026  3200 0))
+      (keepout "" (circle F.Cu 3700))
+      (keepout "" (circle In1.Cu 3700))
+      (keepout "" (circle In2.Cu 3700))
+      (keepout "" (circle B.Cu 3700))
+    )
+    (image ato_sup:PinHeader_1x13_P2.54mm_Vertical
+      (outline (polygon signal 0  -1765 -32245  -1765 1775  1765 1775  1765 -32245))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  1380 -1270  1380 -31860))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -1270  -1380 -31860))
+      (outline (path signal 120  -1380 -31860  1380 -31860))
+      (outline (path signal 100  1270 1270  1270 -31750))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 -31750  -1270 -31750))
+      (outline (path signal 100  -1270 -31750  -1270 635))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+      (pin Round[A]Pad_1700.000000_um 3 0 -5080)
+      (pin Round[A]Pad_1700.000000_um 4 0 -7620)
+      (pin Round[A]Pad_1700.000000_um 5 0 -10160)
+      (pin Round[A]Pad_1700.000000_um 6 0 -12700)
+      (pin Round[A]Pad_1700.000000_um 7 0 -15240)
+      (pin Round[A]Pad_1700.000000_um 8 0 -17780)
+      (pin Round[A]Pad_1700.000000_um 9 0 -20320)
+      (pin Round[A]Pad_1700.000000_um 10 0 -22860)
+      (pin Round[A]Pad_1700.000000_um 11 0 -25400)
+      (pin Round[A]Pad_1700.000000_um 12 0 -27940)
+      (pin Round[A]Pad_1700.000000_um 13 0 -30480)
+    )
+    (image ato_sup:Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6
+      (outline (polygon signal 0  2445 -2445  -2445 -2445  -2445 2445  2445 2445))
+      (outline (path signal 150  -2300 1500  -2317.29 1418.65  -2366.17 1351.37  -2438.2 1309.79
+            -2520.91 1301.1  -2600 1326.8  -2661.8 1382.44  -2695.63 1458.42
+            -2695.63 1541.58  -2661.8 1617.56  -2600 1673.2  -2520.91 1698.9
+            -2438.2 1690.21  -2366.17 1648.63  -2317.29 1581.35  -2300 1500))
+      (outline (path signal 100  -2000 2000  2000 2000  2000 -2000  -2000 -2000  -2000 2000))
+      (pin Rect[T]Pad_600.000000x300.000000_um 1 -1900 975)
+      (pin Rect[T]Pad_600.000000x300.000000_um 2 -1900 325)
+      (pin Rect[T]Pad_600.000000x300.000000_um 3 -1900 -325)
+      (pin Rect[T]Pad_600.000000x300.000000_um 4 -1900 -975)
+      (pin Rect[T]Pad_300.000000x600.000000_um 5 -975 -1900)
+      (pin Rect[T]Pad_300.000000x600.000000_um 6 -325 -1900)
+      (pin Rect[T]Pad_300.000000x600.000000_um 7 325 -1900)
+      (pin Rect[T]Pad_300.000000x600.000000_um 8 975 -1900)
+      (pin Rect[T]Pad_600.000000x300.000000_um 9 1900 -975)
+      (pin Rect[T]Pad_600.000000x300.000000_um 10 1900 -325)
+      (pin Rect[T]Pad_600.000000x300.000000_um 11 1900 325)
+      (pin Rect[T]Pad_600.000000x300.000000_um 12 1900 975)
+      (pin Rect[T]Pad_300.000000x600.000000_um 13 975 1900)
+      (pin Rect[T]Pad_300.000000x600.000000_um 14 325 1900)
+      (pin Rect[T]Pad_300.000000x600.000000_um 15 -325 1900)
+      (pin Rect[T]Pad_300.000000x600.000000_um 16 -975 1900)
+      (pin Rect[T]Pad_2600.000000x2600.000000_um 17 0 0)
+    )
+    (image "ato_sup:SOT-353_SC-70-5"
+      (outline (polygon signal 0  725 925  1445 925  1445 375  725 375  725 -375  1445 -375
+            1445 -925  725 -925  725 -1095  -725 -1095  -725 -925  -1445 -925
+            -1445 925  -725 925  -725 1095  725 1095))
+      (outline (path signal 120  -735 1110  735 1110))
+      (outline (path signal 120  -735 1085  -735 1110))
+      (outline (path signal 120  -735 -1110  -735 -1085))
+      (outline (path signal 120  735 1110  735 1085))
+      (outline (path signal 120  735 215  735 -215))
+      (outline (path signal 120  735 -1085  735 -1110))
+      (outline (path signal 120  735 -1110  -735 -1110))
+      (pin RoundRect[T]Pad_1025.000000x350.000000_87.833000_um_0.000000_0 1 -837.5 650)
+      (pin RoundRect[T]Pad_1025.000000x350.000000_87.833000_um_0.000000_0 2 -837.5 0)
+      (pin RoundRect[T]Pad_1025.000000x350.000000_87.833000_um_0.000000_0 3 -837.5 -650)
+      (pin RoundRect[T]Pad_1025.000000x350.000000_87.833000_um_0.000000_0 4 837.5 -650)
+      (pin RoundRect[T]Pad_1025.000000x350.000000_87.833000_um_0.000000_0 5 837.5 650)
+    )
+    (image ato_sup:PinHeader_1x12_P2.54mm_Vertical
+      (outline (polygon signal 0  -1765 -29705  -1765 1765  1765 1765  1765 -29705))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  1380 -1270  1380 -29320))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -1270  -1380 -29320))
+      (outline (path signal 120  -1380 -29320  1380 -29320))
+      (outline (path signal 100  1270 1270  1270 -29210))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 -29210  -1270 -29210))
+      (outline (path signal 100  -1270 -29210  -1270 635))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+      (pin Round[A]Pad_1700.000000_um 3 0 -5080)
+      (pin Round[A]Pad_1700.000000_um 4 0 -7620)
+      (pin Round[A]Pad_1700.000000_um 5 0 -10160)
+      (pin Round[A]Pad_1700.000000_um 6 0 -12700)
+      (pin Round[A]Pad_1700.000000_um 7 0 -15240)
+      (pin Round[A]Pad_1700.000000_um 8 0 -17780)
+      (pin Round[A]Pad_1700.000000_um 9 0 -20320)
+      (pin Round[A]Pad_1700.000000_um 10 0 -22860)
+      (pin Round[A]Pad_1700.000000_um 11 0 -25400)
+      (pin Round[A]Pad_1700.000000_um 12 0 -27940)
+    )
+    (image ato_sup:C_0805_2012Metric::1
+      (outline (polygon signal 0  -1695 -975  -1695 975  1695 975  1695 -975))
+      (outline (path signal 120  -261.252 735  261.252 735))
+      (outline (path signal 120  -261.252 -735  261.252 -735))
+      (outline (path signal 100  -1000 625  -1000 -625  1000 -625  1000 625  -1000 625))
+      (pin RoundRect[T]Pad_1000.000000x1450.000000_250.951000_um_0.000000_0 1 -950 0)
+      (pin RoundRect[T]Pad_1000.000000x1450.000000_250.951000_um_0.000000_0 2 950 0)
+    )
+    (image ato_sup:PinHeader_1x06_P2.54mm_Vertical
+      (outline (polygon signal 0  -1765 -14465  -1765 1765  1765 1765  1765 -14465))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  1380 -1270  1380 -14080))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -1270  -1380 -14080))
+      (outline (path signal 120  -1380 -14080  1380 -14080))
+      (outline (path signal 100  1270 1270  1270 -13970))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 -13970  -1270 -13970))
+      (outline (path signal 100  -1270 -13970  -1270 635))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+      (pin Round[A]Pad_1700.000000_um 3 0 -5080)
+      (pin Round[A]Pad_1700.000000_um 4 0 -7620)
+      (pin Round[A]Pad_1700.000000_um 5 0 -10160)
+      (pin Round[A]Pad_1700.000000_um 6 0 -12700)
+    )
+    (image Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
+      (outline (polygon signal 0  -1765 -9385  -1765 1765  1765 1765  1765 -9385))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  1380 -1270  1380 -9000))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -1270  -1380 -9000))
+      (outline (path signal 120  -1380 -9000  1380 -9000))
+      (outline (path signal 100  1270 1270  1270 -8890))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 -8890  -1270 -8890))
+      (outline (path signal 100  -1270 -8890  -1270 635))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+      (pin Round[A]Pad_1700.000000_um 3 0 -5080)
+      (pin Round[A]Pad_1700.000000_um 4 0 -7620)
+    )
+    (image "ato_sup:D_SOD-323"
+      (outline (polygon signal 0  1595 -945  -1595 -945  -1595 945  1595 945))
+      (outline (path signal 120  -1610 850  -1610 -850))
+      (outline (path signal 120  -1610 850  1050 850))
+      (outline (path signal 120  -1610 -850  1050 -850))
+      (outline (path signal 100  -900 700  900 700))
+      (outline (path signal 100  -900 -700  -900 700))
+      (outline (path signal 100  -300 350  -300 -350))
+      (outline (path signal 100  -300 0  -500 0))
+      (outline (path signal 100  -300 0  200 350))
+      (outline (path signal 100  200 350  200 -350))
+      (outline (path signal 100  200 0  450 0))
+      (outline (path signal 100  200 -350  -300 0))
+      (outline (path signal 100  900 700  900 -700))
+      (outline (path signal 100  900 -700  -900 -700))
+      (pin RoundRect[T]Pad_600.000000x450.000000_112.928000_um_0.000000_0 1 -1050 0)
+      (pin RoundRect[T]Pad_600.000000x450.000000_112.928000_um_0.000000_0 2 1050 0)
+    )
+    (image ato_sup:PinHeader_1x18_P2.54mm_Vertical
+      (outline (polygon signal 0  -1765 -44945  -1765 1775  1765 1775  1765 -44945))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  1380 -1270  1380 -44560))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -1270  -1380 -44560))
+      (outline (path signal 120  -1380 -44560  1380 -44560))
+      (outline (path signal 100  1270 1270  1270 -44450))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 -44450  -1270 -44450))
+      (outline (path signal 100  -1270 -44450  -1270 635))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+      (pin Round[A]Pad_1700.000000_um 3 0 -5080)
+      (pin Round[A]Pad_1700.000000_um 4 0 -7620)
+      (pin Round[A]Pad_1700.000000_um 5 0 -10160)
+      (pin Round[A]Pad_1700.000000_um 6 0 -12700)
+      (pin Round[A]Pad_1700.000000_um 7 0 -15240)
+      (pin Round[A]Pad_1700.000000_um 8 0 -17780)
+      (pin Round[A]Pad_1700.000000_um 9 0 -20320)
+      (pin Round[A]Pad_1700.000000_um 10 0 -22860)
+      (pin Round[A]Pad_1700.000000_um 11 0 -25400)
+      (pin Round[A]Pad_1700.000000_um 12 0 -27940)
+      (pin Round[A]Pad_1700.000000_um 13 0 -30480)
+      (pin Round[A]Pad_1700.000000_um 14 0 -33020)
+      (pin Round[A]Pad_1700.000000_um 15 0 -35560)
+      (pin Round[A]Pad_1700.000000_um 16 0 -38100)
+      (pin Round[A]Pad_1700.000000_um 17 0 -40640)
+      (pin Round[A]Pad_1700.000000_um 18 0 -43180)
+    )
+    (image "ato_sup:D_SOD-323::1"
+      (outline (polygon signal 0  -1595 -945  -1595 945  1595 945  1595 -945))
+      (outline (path signal 120  -1610 850  1050 850))
+      (outline (path signal 120  -1610 850  -1610 -850))
+      (outline (path signal 120  -1610 -850  1050 -850))
+      (outline (path signal 100  900 700  900 -700))
+      (outline (path signal 100  -900 700  900 700))
+      (outline (path signal 100  200 350  200 -350))
+      (outline (path signal 100  -300 350  -300 -350))
+      (outline (path signal 100  200 0  450 0))
+      (outline (path signal 100  -300 0  200 350))
+      (outline (path signal 100  -300 0  -500 0))
+      (outline (path signal 100  200 -350  -300 0))
+      (outline (path signal 100  900 -700  -900 -700))
+      (outline (path signal 100  -900 -700  -900 700))
+      (pin RoundRect[T]Pad_600.000000x450.000000_112.928000_um_0.000000_0 1 -1050 0)
+      (pin RoundRect[T]Pad_600.000000x450.000000_112.928000_um_0.000000_0 2 1050 0)
+    )
+    (image "ato_sup:SOIC-16W_7.5x10.3mm_P1.27mm"
+      (outline (polygon signal 0  3995 4995  5925 4995  5925 -4995  3995 -4995  3995 -5395
+            -3995 -5395  -3995 -4995  -5925 -4995  -5925 4995  -3995 4995
+            -3995 5395  3995 5395))
+      (outline (path signal 120  -3860 5260  3860 5260))
+      (outline (path signal 120  -3860 5005  -3860 5260))
+      (outline (path signal 120  -3860 -5260  -3860 -5005))
+      (outline (path signal 120  3860 5260  3860 5005))
+      (outline (path signal 120  3860 -5005  3860 -5260))
+      (outline (path signal 120  3860 -5260  -3860 -5260))
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 1 -4650 4445)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 2 -4650 3175)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 3 -4650 1905)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 4 -4650 635)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 5 -4650 -635)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 6 -4650 -1905)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 7 -4650 -3175)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 8 -4650 -4445)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 9 4650 -4445)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 10 4650 -3175)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 11 4650 -1905)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 12 4650 -635)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 13 4650 635)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 14 4650 1905)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 15 4650 3175)
+      (pin RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0 16 4650 4445)
+    )
+    (image ato_sup:PinHeader_1x09_P2.54mm_Vertical
+      (outline (polygon signal 0  -1765 -22085  -1765 1765  1765 1765  1765 -22085))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  1380 -1270  1380 -21700))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -1270  -1380 -21700))
+      (outline (path signal 120  -1380 -21700  1380 -21700))
+      (outline (path signal 100  1270 1270  1270 -21590))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 -21590  -1270 -21590))
+      (outline (path signal 100  -1270 -21590  -1270 635))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+      (pin Round[A]Pad_1700.000000_um 3 0 -5080)
+      (pin Round[A]Pad_1700.000000_um 4 0 -7620)
+      (pin Round[A]Pad_1700.000000_um 5 0 -10160)
+      (pin Round[A]Pad_1700.000000_um 6 0 -12700)
+      (pin Round[A]Pad_1700.000000_um 7 0 -15240)
+      (pin Round[A]Pad_1700.000000_um 8 0 -17780)
+      (pin Round[A]Pad_1700.000000_um 9 0 -20320)
+    )
+    (image ato_sup:PinHeader_1x05_P2.54mm_Vertical
+      (outline (polygon signal 0  -1765 -11925  -1765 1765  1765 1765  1765 -11925))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  1380 -1270  1380 -11540))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -1270  -1380 -11540))
+      (outline (path signal 120  -1380 -11540  1380 -11540))
+      (outline (path signal 100  1270 1270  1270 -11430))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 -11430  -1270 -11430))
+      (outline (path signal 100  -1270 -11430  -1270 635))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+      (pin Round[A]Pad_1700.000000_um 3 0 -5080)
+      (pin Round[A]Pad_1700.000000_um 4 0 -7620)
+      (pin Round[A]Pad_1700.000000_um 5 0 -10160)
+    )
+    (image ato_sup:Texas_DRB0008A_VSON8_3x3_P0.65_EP1.5x1.75
+      (outline (polygon signal 0  1695 -1695  -1695 -1695  -1695 1695  1695 1695))
+      (outline (path signal 100  -1500 1500  1500 1500  1500 -1500  -1500 -1500  -1500 1500))
+      (pin RoundRect[T]Pad_600.000000x310.000000_62.236000_um_0.000000_0 1 -1100 975)
+      (pin RoundRect[T]Pad_600.000000x310.000000_62.236000_um_0.000000_0 2 -1100 325)
+      (pin RoundRect[T]Pad_600.000000x310.000000_62.236000_um_0.000000_0 3 -1100 -325)
+      (pin RoundRect[T]Pad_600.000000x310.000000_62.236000_um_0.000000_0 4 -1100 -975)
+      (pin RoundRect[T]Pad_600.000000x310.000000_62.236000_um_0.000000_0 5 1100 -975)
+      (pin RoundRect[T]Pad_600.000000x310.000000_62.236000_um_0.000000_0 6 1100 -325)
+      (pin RoundRect[T]Pad_600.000000x310.000000_62.236000_um_0.000000_0 7 1100 325)
+      (pin RoundRect[T]Pad_600.000000x310.000000_62.236000_um_0.000000_0 8 1100 975)
+      (pin Rect[T]Pad_1500.000000x1750.000000_um 9 0 0)
+    )
+    (padstack Round[A]Pad_1700.000000_um
+      (shape (circle F.Cu 1700))
+      (shape (circle In1.Cu 1700))
+      (shape (circle In2.Cu 1700))
+      (shape (circle B.Cu 1700))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_2050.000000x600.000000_150.571000_um_0.000000_0
+      (shape (polygon F.Cu 0  -1025.57 150  -1014.11 207.621  -981.47 256.47  -932.621 289.109
+            -874.999 300.57  875 300.571  932.621 289.109  981.47 256.47
+            1014.11 207.621  1025.57 149.999  1025.57 -150  1014.11 -207.621
+            981.47 -256.47  932.621 -289.109  874.999 -300.57  -875 -300.571
+            -932.621 -289.109  -981.47 -256.47  -1014.11 -207.621  -1025.57 -149.999
+            -1025.57 150))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_600.000000x310.000000_62.236000_um_0.000000_0
+      (shape (polygon F.Cu 0  -300.236 93  -295.499 116.817  -282.007 137.007  -261.817 150.499
+            -238 155.236  238 155.236  261.817 150.499  282.007 137.007
+            295.499 116.817  300.236 93  300.236 -93  295.499 -116.817  282.007 -137.007
+            261.817 -150.499  238 -155.236  -238 -155.236  -261.817 -150.499
+            -282.007 -137.007  -295.499 -116.817  -300.236 -93  -300.236 93))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_600.000000x450.000000_112.928000_um_0.000000_0
+      (shape (polygon F.Cu 0  -300.428 112.5  -291.832 155.716  -267.352 192.352  -230.716 216.832
+            -187.5 225.428  187.5 225.428  230.716 216.832  267.352 192.352
+            291.832 155.716  300.428 112.5  300.428 -112.5  291.832 -155.716
+            267.352 -192.352  230.716 -216.832  187.5 -225.428  -187.5 -225.428
+            -230.716 -216.832  -267.352 -192.352  -291.832 -155.716  -300.428 -112.5
+            -300.428 112.5))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1000.000000x1450.000000_250.951000_um_0.000000_0
+      (shape (polygon F.Cu 0  -500.951 475  -481.848 571.035  -427.449 652.449  -346.035 706.848
+            -249.999 725.95  250 725.951  346.035 706.848  427.449 652.449
+            481.848 571.035  500.95 474.999  500.951 -475  481.848 -571.035
+            427.449 -652.449  346.035 -706.848  249.999 -725.95  -250 -725.951
+            -346.035 -706.848  -427.449 -652.449  -481.848 -571.035  -500.95 -474.999
+            -500.951 475))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1025.000000x350.000000_87.833000_um_0.000000_0
+      (shape (polygon F.Cu 0  -512.833 87.5  -506.147 121.112  -487.107 149.607  -458.612 168.647
+            -424.999 175.332  425 175.333  458.612 168.647  487.107 149.607
+            506.147 121.112  512.832 87.499  512.833 -87.5  506.147 -121.112
+            487.107 -149.607  458.612 -168.647  424.999 -175.332  -425 -175.333
+            -458.612 -168.647  -487.107 -149.607  -506.147 -121.112  -512.832 -87.499
+            -512.833 87.5))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1025.000000x1400.000000_250.951000_um_0.000000_0
+      (shape (polygon F.Cu 0  -513.451 450  -494.348 546.035  -439.949 627.449  -358.535 681.848
+            -262.499 700.95  262.5 700.951  358.535 681.848  439.949 627.449
+            494.348 546.035  513.45 449.999  513.451 -450  494.348 -546.035
+            439.949 -627.449  358.535 -681.848  262.499 -700.95  -262.5 -700.951
+            -358.535 -681.848  -439.949 -627.449  -494.348 -546.035  -513.45 -449.999
+            -513.451 450))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1250.000000x350.000000_87.833000_um_0.000000_0
+      (shape (polygon F.Cu 0  -625.333 87.5  -618.647 121.112  -599.607 149.607  -571.112 168.647
+            -537.499 175.332  537.5 175.333  571.112 168.647  599.607 149.607
+            618.647 121.112  625.332 87.499  625.333 -87.5  618.647 -121.112
+            599.607 -149.607  571.112 -168.647  537.499 -175.332  -537.5 -175.333
+            -571.112 -168.647  -599.607 -149.607  -618.647 -121.112  -625.332 -87.499
+            -625.333 87.5))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1325.000000x600.000000_150.571000_um_0.000000_0
+      (shape (polygon F.Cu 0  -663.071 150  -651.609 207.621  -618.97 256.47  -570.121 289.109
+            -512.499 300.57  512.5 300.571  570.121 289.109  618.97 256.47
+            651.609 207.621  663.07 149.999  663.071 -150  651.609 -207.621
+            618.97 -256.47  570.121 -289.109  512.499 -300.57  -512.5 -300.571
+            -570.121 -289.109  -618.97 -256.47  -651.609 -207.621  -663.07 -149.999
+            -663.071 150))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_2600.000000x2600.000000_um
+      (shape (rect F.Cu -1300 -1300 1300 1300))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_300.000000x600.000000_um
+      (shape (rect F.Cu -150 -300 150 300))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_600.000000x300.000000_um
+      (shape (rect F.Cu -300 -150 300 150))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1500.000000x1750.000000_um
+      (shape (rect F.Cu -750 -875 750 875))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1700.000000x1700.000000_um
+      (shape (rect F.Cu -850 -850 850 850))
+      (shape (rect In1.Cu -850 -850 850 850))
+      (shape (rect In2.Cu -850 -850 850 850))
+      (shape (rect B.Cu -850 -850 850 850))
+      (attach off)
+    )
+    (padstack "Via[0-3]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle In1.Cu 600))
+      (shape (circle In2.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net supervision__CH1_PAIR_HI_OK
+      (pins U50520-1 U51012-1)
+    )
+    (net SYS_40eeaa0c__CH1_VPAIR
+      (pins U50520-2 U50520-5 U50502-7 J59901-2 R50523-1)
+    )
+    (net supervision__PAIR_HI
+      (pins U50520-3 U50510-3 U50500-3 U50500-4)
+    )
+    (net SYS_56562df4__GND
+      (pins U50520-4 C51061-2 R52041-2 C51052-2 J50001-7 C51008-2 U51011-3 C51059-2
+        C51046-2 U50502-4 C50801-2 U51056-3 U51070-2 C51005-2 R50502-2 U50910-1 U50910-2
+        U50910-4 R50958-2 C50501-2 C50251-2 C51090-2 C51001-2 C50410-2 C51043-2 U51086-3
+        U51081-2 C51062-2 R58012-2 C51094-2 U51047-2 J50005-13 R52033-2 U50101-2 U50101-3
+        U50101-17 R52031-2 C50502-2 C51083-2 C51050-2 C51084-2 U51000-2 C50411-2 J50003-12
+        C50421-2 C50420-2 R50952-2 C51000-2 C51097-2 R50961-2 C50710-2 U51091-3 U51053-3
+        U50104-2 U50104-3 U50104-4 U50104-5 U50104-6 U50104-7 U50104-8 U50104-9 U50104-17
+        C51051-2 C51012-2 U51080-2 U51008-3 C51074-2 C51079-2 C50204-2 C51053-2 C50202-2
+        U51076-2 R52013-2 C50203-2 C50900-2 U51058-3 R52003-2 U51090-3 J59901-4 C51096-2
+        C50430-2 C51057-2 C50810-2 U51071-2 U51063-3 U50900-4 C51088-2 C50910-2 U50801-2
+        C51095-2 U51085-3 U51066-3 C51077-2 U51078-3 U51089-2 U51069-3 C51093-2 R50402-2
+        C51072-2 C51085-2 C50400-2 U51060-3 C51060-2 R50960-2 U50204-2 U50102-2 U50102-3
+        U50102-17 C51002-2 R50959-2 U51088-2 R52053-2 R52051-2 U51077-3 U51051-3 U51006-3
+        C51047-2 C51078-2 C51011-2 U51045-3 R50103-2 C50300-2 C51045-2 C51071-2 U51064-2
+        U51073-3 R50957-2 C51007-2 U51096-2 U51054-2 C51048-2 C50431-2 C51058-2 U51093-2
+        R50302-2 R50101-2 U51074-3 C51009-2 C50500-2 C50520-2 C51091-2 R52043-2 U51012-3
+        C51054-2 U51007-2 C51082-2 C51070-2 R52001-2 R50951-2 C51055-2 U50410-4 C51087-2
+        U50202-2 U51083-2 C50301-2 C51066-2 C50101-2 C51006-2 C50104-2 R58010-2 U50205-2
+        U50710-2 U50710-3 U50710-4 U50710-8 U51049-2 U50501-2 U51079-3 C50911-2 U50401-2
+        C50800-2 C50102-2 R52021-2 J50004-9 U51072-3 C51080-2 C51049-2 C51081-2 U51042-3
+        C51044-2 U50810-4 U51044-3 C51056-2 R50100-2 U51050-2 C50250-2 U51001-2 U51092-3
+        R50954-2 U51046-3 R58002-2 C51068-2 C51092-2 R52011-2 U50411-4 C51063-2 U50201-2
+        C50100-2 C50200-2 J50006-5 R50950-2 U51043-3 U50250-3 R52023-2 C50510-2 U50420-3
+        C51042-2 U50400-2 C51076-2 U50103-2 U50103-3 U50103-17 U50800-2 U50421-3 R50104-2
+        U51002-2 U50100-2 U50100-3 U50100-17 U51005-3 U51094-2 U51065-3 U50300-4 U50300-9
+        U51087-3 U51059-3 U51062-2 C51067-2 C51064-2 R50956-2 R50953-2 U51075-2 U50510-4
+        U51067-3 U51061-2 U50301-4 C50401-2 U51009-2 C50201-2 U51097-3 R50102-2 C50811-2
+        U50200-2 U50911-1 U50911-2 U50911-4 R58000-2 C51086-2 U50203-2 U50500-2 U51055-3
+        R50955-2 U50811-4 U51010-2 U51057-3 U51048-3 C51075-2 U51084-2 U51082-3 C50205-2
+        C51065-2 C51010-2 U51068-3 C51089-2 C51069-2 U51095-3 C51073-2 U51052-3 C50103-2)
+    )
+    (net supervision__PAIR_LO
+      (pins U50520-6 U50501-3 U50501-4 U50510-6)
+    )
+    (net supervision__CH1_PAIR_LO_OK
+      (pins U50520-7 U51012-2)
+    )
+    (net SYS_66aba95b__SUP_5
+      (pins U50520-8 J50001-2 U50502-8 R52012-1 C50501-1 C50410-1 C50502-1 C50411-1
+        R52010-1 C50400-1 C50500-1 C50520-1 U50410-8 U50501-5 U50401-5 U50411-8 C50510-1
+        U50400-5 U50510-8 C50401-1 U50500-5)
+    )
+    (net SYS_65aafbb6__AFE_3V3
+      (pins R56141-1 R56051-1 U51013-5 U51027-5 C51023-1 C50206-1 U51038-5 U51014-5
+        R56151-1 C51041-1 U50208-5 C51020-1 U51003-5 R56061-1 U51040-5 R50260-1 U51019-5
+        U51033-5 J50002-1 C50261-1 R52060-1 C50207-1 U51029-5 U51039-5 C51036-1 U51037-5
+        R56101-1 C51019-1 U51035-5 R56161-1 R50700-1 C51025-1 R50261-2 C51038-1 C51040-1
+        R52062-1 C51013-1 U50260-5 C51029-1 C51018-1 U51015-5 C51027-1 R56081-1 U50206-5
+        U51034-5 U51018-5 R56131-1 R56041-1 U50220-5 C50208-1 U51028-5 U50207-5 U51021-5
+        U50710-10 U50710-16 C51028-1 C51004-1 C51003-1 U51025-5 U51024-5 C51016-1
+        R52084-1 U51016-5 U51041-5 C51021-1 R56011-1 R56111-1 C51030-1 C51037-1 U51004-5
+        R56031-1 C51022-1 C51035-1 C51024-1 R52064-1 U51020-5 C51032-1 R56071-1 R50702-1
+        C51026-1 C51033-1 U51030-5 R52074-1 U51023-5 R56121-1 R56001-1 C50711-1 U51031-5
+        U51017-5 C51015-1 C51017-1 C51034-1 U51036-5 U51032-5 C51014-1 R56021-1 U51022-5
+        U51026-5 C51039-1 C51031-1 R56091-1 C50220-1)
+    )
+    (net supervision__REC14_SENSE
+      (pins R56141-2 U50614-2 U50614-5 R56140-2)
+    )
+    (net supervision__REC14_HI_OK
+      (pins U50614-1 U51027-1)
+    )
+    (net supervision__AFE_WIN_HI
+      (pins U50614-3 U50616-3 U50700-3 U50700-4 U50607-3 U50600-3 U50612-3 U50610-3
+        U50613-3 U50605-3 U50606-3 U50601-3 U50615-3 U50604-3 U50602-3 U50609-3 U50611-3
+        U50608-3 U50603-3)
+    )
+    (net SYS_fca1c340__AFEAGND
+      (pins U50614-4 J50603-2 U50616-4 U51013-3 U51027-3 C50700-2 J50604-2 R52071-2
+        J50615-2 C51023-2 C50206-2 C50611-2 R52073-2 U51038-2 U51014-3 C50602-2 C50609-2
+        J50614-2 C51041-2 U50208-2 C51020-2 J50607-2 J50612-2 C50701-2 U51003-2 R52081-2
+        U50700-2 U51040-2 U51019-3 U51033-2 J50002-4 J50606-2 C50261-2 C50604-2 U50701-2
+        C50607-2 C50207-2 U51029-3 U51039-2 C51036-2 U51037-2 C51019-2 U51035-2 C50605-2
+        U50607-4 J50601-2 J50602-2 C51025-2 U50600-4 J50608-2 C50610-2 U50612-4 U50610-4
+        C51038-2 C51040-2 U50613-4 C51013-2 U50260-3 C51029-2 C51018-2 U51015-3 C51027-2
+        C50614-2 U50206-2 C50608-2 J50616-2 J50605-2 U51034-2 U51018-3 R52061-2 U50220-1
+        U50220-2 C50208-2 U50605-4 U51028-3 U50207-2 U51021-3 U50710-9 U50710-15 C51028-2
+        C51004-2 C51003-2 U51025-3 U50606-4 C50260-2 U50601-4 U51024-3 C51016-2 J50609-2
+        J50600-2 C50601-2 U51016-3 U50615-4 U51041-3 C51021-2 C50603-2 C51030-2 C51037-2
+        U51004-3 U50604-4 C51022-2 C51035-2 C51024-2 U50602-4 C50600-2 U51020-3 J50611-2
+        C51032-2 R50701-2 R52083-2 C50616-2 C50613-2 J50610-2 J50613-2 C51026-2 C51033-2
+        R50703-2 U51030-3 U50609-4 U51023-3 U50611-4 R52063-2 C50711-2 U50608-4 U51031-3
+        C50615-2 U51017-3 C51015-2 C51017-2 U50603-4 C51034-2 U51036-2 C50612-2 U51032-2
+        C51014-2 C50606-2 U51022-3 U51026-3 C51039-2 C51031-2 C50220-2)
+    )
+    (net supervision__AFE_WIN_LO
+      (pins U50614-6 U50616-6 U50701-3 U50701-4 U50607-6 U50600-6 U50612-6 U50610-6
+        U50613-6 U50605-6 U50606-6 U50601-6 U50615-6 U50604-6 U50602-6 U50609-6 U50611-6
+        U50608-6 U50603-6)
+    )
+    (net supervision__REC14_LO_OK
+      (pins U50614-7 U51027-2)
+    )
+    (net SYS_3fdd5066__AFE_P5
+      (pins U50614-8 U50616-8 C50700-1 C50611-1 C50602-1 C50609-1 C50701-1 U50700-5
+        J50002-2 C50604-1 U50701-5 C50607-1 C50605-1 U50607-8 U50600-8 C50610-1 U50612-8
+        U50610-8 U50613-8 C50614-1 R52072-1 C50608-1 U50605-8 U50606-8 U50601-8 C50601-1
+        U50615-8 C50603-1 U50604-8 U50602-8 C50600-1 R52070-1 C50616-1 C50613-1 U50609-8
+        U50611-8 U50608-8 C50615-1 U50603-8 C50612-1 C50606-1)
+    )
+    (net SYS_ab932142__SUP_3V3
+      (pins C51061-1 C51052-1 J50001-1 C51008-1 U51011-5 C51059-1 C51046-1 C50801-1
+        U51056-5 U51070-5 C51005-1 U50910-8 C50251-1 C51090-1 C51001-1 C51043-1 U51086-5
+        U51081-5 C51062-1 C51094-1 U51047-5 R52044-1 C51083-1 C51050-1 C51084-1 U51000-5
+        C51000-1 C51097-1 R52014-1 C50710-1 U51091-5 U51053-2 U51053-5 C51051-1 C51012-1
+        U51080-5 U51008-2 U51008-5 C51074-1 C51079-1 C50204-1 C51053-1 C50202-1 R50251-2
+        U51076-5 C50203-1 R50250-1 C50900-1 U51058-5 U51090-5 C51096-1 C50430-1 C51057-1
+        C50810-1 U51071-5 U51063-5 U50900-7 U50900-8 C51088-1 C50910-1 U50801-5 C51095-1
+        U51085-5 U51066-5 C51077-1 U51078-5 U51089-5 U51069-5 C51093-1 C51072-1 C51085-1
+        U51060-5 C51060-1 U50204-5 R50300-1 C51002-1 R52000-1 U51088-5 U51077-5 U51051-5
+        U51006-5 C51047-1 C51078-1 C51011-1 U51045-5 C50300-1 C51045-1 C51071-1 U51064-5
+        U51073-5 C51007-1 U51096-5 U51054-5 C51048-1 C50431-1 C51058-1 U51093-5 U51074-5
+        C51009-1 C51091-1 U51012-5 C51054-1 U51007-5 C51082-1 C51070-1 C51055-1 R52054-1
+        C51087-1 U50202-5 U51083-5 C50301-1 C51066-1 C51006-1 U50205-5 U50710-1 U50710-7
+        U51049-5 U51079-5 C50911-1 C50800-1 U51072-5 C51080-1 C51049-1 C51081-1 U51042-5
+        R52002-1 C51044-1 U50810-7 U50810-8 U51044-5 C51056-1 U51050-5 R52004-1 U51001-5
+        U51092-5 U51046-5 C51068-1 C51092-1 C51063-1 U50201-5 C50200-1 U51043-5 U50250-5
+        R50301-1 U50420-5 C51042-1 R52024-1 C51076-1 R58001-1 U50800-5 U50421-5 U51002-5
+        U51005-5 U51094-5 U51065-5 U50300-1 U50300-5 U51087-5 U51059-5 U51062-5 C51067-1
+        C51064-1 U51075-5 U51067-5 U51061-5 U50301-7 U50301-8 U51009-5 C50201-1 U51097-5
+        C50811-1 U50200-5 U50911-8 C51086-1 U50203-5 R52034-1 U51055-5 U50811-7 U50811-8
+        U51010-5 U51057-5 R50110-1 U51048-2 U51048-5 C51075-1 U51084-5 U51082-5 C50205-1
+        C51065-1 C51010-1 R58011-1 U51068-5 C51089-1 C51069-1 U51095-5 C51073-1 U51052-2
+        U51052-5)
+    )
+    (net supervision__REC05_SENSE
+      (pins R56051-2 R56050-2 U50605-2 U50605-5)
+    )
+    (net SYS_f208be39__AFE_IN03_P
+      (pins J50603-1 R56030-1)
+    )
+    (net supervision__H15_UV
+      (pins R52041-1 U50204-3 R52040-2)
+    )
+    (net supervision__REF_HI_OK
+      (pins U50616-1 U51029-1)
+    )
+    (net supervision__REF_SENSE
+      (pins U50616-2 U50616-5 R56160-2 R56161-2)
+    )
+    (net supervision__REF_LO_OK
+      (pins U50616-7 U51029-2)
+    )
+    (net supervision__REC00_HI_OK
+      (pins U51013-1 U50600-1)
+    )
+    (net supervision__REC00_LO_OK
+      (pins U51013-2 U50600-7)
+    )
+    (net supervision__REC00_DC_OK
+      (pins U51013-4 U51032-1)
+    )
+    (net supervision__REC14_DC_OK
+      (pins U51027-4 U51038-6)
+    )
+    (net SYS_7e367734__AFE_IN04_P
+      (pins J50604-1 R56040-1)
+    )
+    (net SYS_86b728f8__AFE_REF
+      (pins R56160-1 J50616-1)
+    )
+    (net SYS_08572049__HOST_3V3
+      (pins J50001-3 R52022-1 R52020-1)
+    )
+    (net SYS_ce166826__HOST_5
+      (pins J50001-4 R52030-1 R52032-1)
+    )
+    (net SYS_fb2237f8__VA_15
+      (pins J50001-5 R52042-1 R52040-1)
+    )
+    (net SYS_15689dc4__VH_24
+      (pins J50001-6 R52052-1 U50101-11 U50104-11 U50102-11 R52050-1 C50101-1 C50104-1
+        C50102-1 C50100-1 U50103-11 U50100-11 C50103-1)
+    )
+    (net supervision__AP_UV
+      (pins R52071-1 U50207-3 R52070-2)
+    )
+    (net SYS_53213f89__AFE_IN15_P
+      (pins J50615-1 R56150-1)
+    )
+    (net supervision__CH0_PAIR_HI_OK
+      (pins U51011-1 U50510-1)
+    )
+    (net supervision__CH0_PAIR_LO_OK
+      (pins U51011-2 U50510-7)
+    )
+    (net supervision__CH0_PAIR_OK
+      (pins U51011-4 U51050-6)
+    )
+    (net SYS_1dc2a435__AFE_IN08_P
+      (pins R56080-1 J50608-1)
+    )
+    (net supervision__REC08_SENSE
+      (pins R56080-2 R56081-2 U50608-2 U50608-5)
+    )
+    (net SYS_baff84b5__CH0_VPAIR
+      (pins U50502-1 J59901-1 U50510-2 U50510-5 R50513-1)
+    )
+    (net supervision__CH0_DIFF_N
+      (pins U50502-2 R50512-2 R50513-2)
+    )
+    (net supervision__CH0_DIFF_P
+      (pins U50502-3 R50511-2 R50510-2)
+    )
+    (net supervision__CH1_DIFF_P
+      (pins U50502-5 R50520-2 R50521-2)
+    )
+    (net supervision__CH1_DIFF_N
+      (pins U50502-6 R50522-2 R50523-2)
+    )
+    (net SYS_96d7c46a__AFE_IN10_P
+      (pins R56100-1 J50610-1)
+    )
+    (net supervision__REC10_SENSE
+      (pins R56100-2 R56101-2 U50610-2 U50610-5)
+    )
+    (net "supervision__unconnected-(U1056-NC-Pad1)"
+      (pins U51056-1)
+    )
+    (net SYS_695f3a7c__CH0_RUN
+      (pins U51056-2 J50003-6 R50956-1 U51082-2)
+    )
+    (net supervision__CH0_RUN_N
+      (pins U51056-4 U51076-6 U51061-3)
+    )
+    (net SYS_d73cd2ee__AFE_N5
+      (pins R52200-1 J50002-3)
+    )
+    (net supervision__AFE_NINV
+      (pins R52200-2 U50220-3 R52201-2)
+    )
+    (net supervision__SUP5_OV
+      (pins R52012-2 R52013-1 U50201-4)
+    )
+    (net supervision__RAW_HEALTH
+      (pins U51070-1 U51071-1 U51064-1 U51096-1 U51054-4 U51083-1 U51084-1)
+    )
+    (net supervision__CH0_NO_TIMEOUT
+      (pins U51070-3 U51080-6 U51083-6 U51068-4)
+    )
+    (net supervision__ARM_CLR_N
+      (pins U51070-4 U50900-6)
+    )
+    (net supervision__CH1_NO_TIMEOUT
+      (pins U51070-6 U51069-4 U51096-6 U51093-6)
+    )
+    (net SYS_59100ef9__AFE_IN05_P
+      (pins R56050-1 J50605-1)
+    )
+    (net supervision__AP_OV
+      (pins R52073-1 R52072-2 U50207-4)
+    )
+    (net supervision__AFE_ALL_DC_OK_G7
+      (pins U51038-1 U51037-4)
+    )
+    (net supervision__REC13_DC_OK
+      (pins U51038-3 U51026-4)
+    )
+    (net supervision__AFE_ALL_DC_OK_G5
+      (pins U51038-4 U51039-1)
+    )
+    (net supervision__PAIR_LO_DIV
+      (pins R50502-1 R50501-2 U50501-1)
+    )
+    (net supervision__H24_OV
+      (pins R52052-2 R52053-1 U50205-4)
+    )
+    (net "supervision__unconnected-(U910-Q_N-Pad3)"
+      (pins U50910-3)
+    )
+    (net supervision__CH0_BLOCK
+      (pins U50910-5 U51079-2)
+    )
+    (net supervision__CH0_BLOCK_CLR_N
+      (pins U50910-6 U51078-4)
+    )
+    (net supervision__CH0_BLOCK_PRE_N
+      (pins U50910-7 U51074-4)
+    )
+    (net SYS_1954027d__CH0_ROUTE_LOCKED
+      (pins R50958-1 J50003-8 U51071-6)
+    )
+    (net supervision__REC01_HI_OK
+      (pins U51014-1 U50601-1)
+    )
+    (net supervision__REC01_LO_OK
+      (pins U51014-2 U50601-7)
+    )
+    (net supervision__REC01_DC_OK
+      (pins U51014-4 U51032-3)
+    )
+    (net supervision__H5_UV
+      (pins R52030-2 R52031-1 U50203-3)
+    )
+    (net SYS_4f66f129__MON_VREF
+      (pins R50400-1 R50500-1 J50004-4)
+    )
+    (net supervision__QUIET_HI_DIV
+      (pins R50400-2 R50401-1 U50400-1)
+    )
+    (net supervision__H3_OV
+      (pins R52022-2 U50202-4 R52023-1)
+    )
+    (net SYS_32c4c1cc__AFE_IN13_P
+      (pins R56130-1 J50613-1)
+    )
+    (net supervision__REC13_SENSE
+      (pins R56130-2 U50613-2 U50613-5 R56131-2)
+    )
+    (net "supervision__unconnected-(U1086-NC-Pad1)"
+      (pins U51086-1)
+    )
+    (net supervision__CH1_ENDED
+      (pins U51086-2 U51085-4)
+    )
+    (net supervision__CH1_STOP_N
+      (pins U51086-4 U51087-2)
+    )
+    (net supervision__REC15_SENSE
+      (pins R56151-2 U50615-2 U50615-5 R56150-2)
+    )
+    (net SYS_4f7d5988__AFE_IN14_P
+      (pins J50614-1 R56140-1)
+    )
+    (net supervision__CH0_ALLOW_G6
+      (pins U51081-1 U51080-4)
+    )
+    (net SYS_46ea5f03__CH0_REQUEST
+      (pins U51081-3 J50003-4 R50954-1 U51043-2 U50800-1 U51055-2)
+    )
+    (net supervision__CH0_ALLOW_G4
+      (pins U51081-4 U51082-1)
+    )
+    (net supervision__CH0_SEC_TIMER
+      (pins U51081-6 U51072-1 U51042-2 U50800-6 U51057-2)
+    )
+    (net supervision__CH1_SEC_DIV
+      (pins R58012-1 U50801-4 R58011-2)
+    )
+    (net supervision__AN_RAIL_OK
+      (pins U50208-1 U50208-6 U51003-6 R52084-2)
+    )
+    (net supervision__AN_UV
+      (pins U50208-3 R52081-1 R52080-2)
+    )
+    (net supervision__AN_OV
+      (pins U50208-4 R52082-2 R52083-1)
+    )
+    (net supervision__HOST_RAILS_OK
+      (pins U51047-1 U51006-2 U51007-6 U51049-1 U51046-1 U51002-4 U50300-3)
+    )
+    (net supervision__AFE_RAIL_OBS_OK
+      (pins U51047-3 U50710-5 U51046-2)
+    )
+    (net SYS_ff7fdc58__RESET_READY
+      (pins U51047-4 J50005-1)
+    )
+    (net supervision__WD_GOOD
+      (pins U51047-6 U51008-1 U51007-4 U51049-6)
+    )
+    (net SYS_325713b8__AFE_IN07_P
+      (pins J50607-1 R56070-1)
+    )
+    (net SYS_93547907__RAILS_QUALIFIED
+      (pins J50005-2 U51046-4)
+    )
+    (net SYS_a83d484c__WATCHDOG_OK
+      (pins J50005-3 U51008-4)
+    )
+    (net SYS_98321c7b__AFE_ISOLATED_READY
+      (pins J50005-4 U51048-4)
+    )
+    (net SYS_2d0e5b2e__CH0_QUIESCENT_OK
+      (pins J50005-5 U51064-3 U50420-4 U51075-6)
+    )
+    (net SYS_20eba8c2__CH1_QUIESCENT_OK
+      (pins J50005-6 U51088-6 U51064-6 U50421-4)
+    )
+    (net SYS_e26747fb__CH0_EXT_SUP_OK
+      (pins J50005-7 U51083-4)
+    )
+    (net SYS_8359fceb__CH1_EXT_SUP_OK
+      (pins J50005-8 U51096-4)
+    )
+    (net SYS_88c50083__SUP_ARMED
+      (pins J50005-9 U51071-3 U50900-5 U51096-3 U51083-3 U51084-3)
+    )
+    (net supervision__CH0_ALLOW
+      (pins J50005-10 U51097-1 U51082-4)
+    )
+    (net supervision__CH1_ALLOW
+      (pins J50005-11 U51097-2 U51095-4)
+    )
+    (net SYS_77c24b0d__GLOBAL_GUARD_EN
+      (pins J50005-12 U50101-6 U50101-7 U50101-14 U50101-15 U50104-14 U50104-15 U50102-6
+        U50102-7 U50102-14 U50102-15 R50103-1 R50101-1 R50100-1 U50103-6 U50103-7
+        U50103-14 U50103-15 R50104-1 U50100-6 U50100-7 U50100-14 U50100-15 U51097-4
+        R50102-1)
+    )
+    (net supervision__H15_RAIL_OK
+      (pins R52044-2 U50204-1 U50204-6 U51001-6)
+    )
+    (net supervision__H5_OV
+      (pins R52033-1 U50203-4 R52032-2)
+    )
+    (net SYS_4fabccc5__AFE_IN12_P
+      (pins J50612-1 R56120-1)
+    )
+    (net supervision__BODY_STIM04
+      (pins U50101-1 J50101-5)
+    )
+    (net supervision__BODY_STIM07
+      (pins U50101-4 J50101-8)
+    )
+    (net SYS_cf17d7c4__STIM07_CONTACT
+      (pins U50101-5 J50100-8)
+    )
+    (net SYS_b675ff0d__STIM06_CONTACT
+      (pins U50101-8 J50100-7)
+    )
+    (net supervision__BODY_STIM06
+      (pins U50101-9 J50101-7)
+    )
+    (net SYS_ee59c76b__PWR_FAULT_N
+      (pins U50101-10 U50104-10 J59901-3 U50102-10 U51050-3 U50103-10 U50100-10 R50110-2)
+    )
+    (net supervision__BODY_STIM05
+      (pins U50101-12 J50101-6)
+    )
+    (net SYS_fa6c9e06__STIM05_CONTACT
+      (pins U50101-13 J50100-6)
+    )
+    (net SYS_dcbe1273__STIM04_CONTACT
+      (pins U50101-16 J50100-5)
+    )
+    (net supervision__A3_RAIL_OK
+      (pins U51003-1 U50206-1 U50206-6 R52064-2)
+    )
+    (net supervision__AP_RAIL_OK
+      (pins U51003-3 U50207-1 U50207-6 R52074-2)
+    )
+    (net supervision__AFE_RAIL_LOCAL_OK_G4
+      (pins U51003-4 U51004-1)
+    )
+    (net supervision__AFE_WIN_HI_DIV
+      (pins U50700-1 R50700-2 R50701-1)
+    )
+    (net supervision__REC06_SENSE
+      (pins R56061-2 R56060-2 U50606-2 U50606-5)
+    )
+    (net supervision__SUP3_RAIL_OK
+      (pins U51000-1 R52004-2 U50200-1 U50200-6)
+    )
+    (net supervision__SUP5_RAIL_OK
+      (pins U51000-3 R52014-2 U50201-1 U50201-6)
+    )
+    (net supervision__HOST_RAILS_OK_G7
+      (pins U51000-4 U51001-1)
+    )
+    (net supervision__H3_RAIL_OK
+      (pins U51000-6 U50202-1 U50202-6 R52024-2)
+    )
+    (net supervision__SUP5_UV
+      (pins R52010-2 R52011-1 U50201-3)
+    )
+    (net SYS_bb444a6e__SUP_REARM
+      (pins J50003-1 U50900-1 R50950-1)
+    )
+    (net SYS_82531809__FAULT_RESET
+      (pins J50003-2 U51066-1 R50951-1)
+    )
+    (net SYS_e3faaec0__WDI
+      (pins J50003-3 R50302-1 U51005-2 U50300-6)
+    )
+    (net SYS_dd388269__CH1_REQUEST
+      (pins J50003-5 U51058-2 U50801-1 U51045-2 U51094-3 R50955-1)
+    )
+    (net SYS_6a132103__CH1_RUN
+      (pins J50003-7 R50957-1 U51059-2 U51095-2)
+    )
+    (net SYS_84f28705__CH1_ROUTE_LOCKED
+      (pins J50003-9 R50959-1 U51084-6)
+    )
+    (net SYS_7db86ec0__PHASE_REARM0
+      (pins J50003-10 R50952-1 U51075-1)
+    )
+    (net SYS_46e29157__PHASE_REARM1
+      (pins J50003-11 U51088-1 R50953-1)
+    )
+    (net supervision__CH1_QUIET_RC
+      (pins C50421-1 D50411-2 R50411-2 U50421-2)
+    )
+    (net supervision__CH0_QUIET_RC
+      (pins C50420-1 R50410-2 U50420-2 D50410-2)
+    )
+    (net SYS_aa321af6__CH1_MON_PERMIT
+      (pins R50961-1 U51054-6 J50004-6 U51010-6)
+    )
+    (net supervision__AFE_NMAG
+      (pins R52080-1 R52082-1 U50220-4 R52201-1)
+    )
+    (net "supervision__unconnected-(U1091-NC-Pad1)"
+      (pins U51091-1)
+    )
+    (net supervision__CH1_PHASE_REARM_SAFE
+      (pins U51091-2 U51090-4)
+    )
+    (net supervision__CH1_BLOCK_CLR_N
+      (pins U51091-4 U50911-6)
+    )
+    (net supervision__SENSE_HEALTH
+      (pins U51053-1 U51051-4 U51054-1 U51052-1)
+    )
+    (net SYS_de0a854a__CH1_EXT_SUP_OK
+      (pins U51053-4 J50004-8)
+    )
+    (net supervision__AFE_ALL_DC_OK
+      (pins U51040-1 U51039-4)
+    )
+    (net supervision__AFE_CONNECT_LOW
+      (pins U51040-3 U51030-4)
+    )
+    (net supervision__AFE_BLANK_LOCAL_OK_G4
+      (pins U51040-4 U51041-1)
+    )
+    (net supervision__AFE_ACQUIRE_LOW
+      (pins U51040-6 U51031-4)
+    )
+    (net supervision__BODY_RETURN0
+      (pins U50104-1 J50101-17)
+    )
+    (net supervision__BODY_RETURN1
+      (pins U50104-12 J50101-18)
+    )
+    (net SYS_3ced048f__CH1_RETURN_LOAD
+      (pins U50104-13 J50100-18)
+    )
+    (net SYS_0d1e7c21__CH0_RETURN_LOAD
+      (pins U50104-16 J50100-17)
+    )
+    (net supervision__CH0_QUIET_RAW
+      (pins R50410-1 R50420-2 U51009-4)
+    )
+    (net supervision__AFE_RC
+      (pins R50260-2 D50260-2 U50260-2 C50260-1)
+    )
+    (net supervision__REC06_HI_OK
+      (pins U51019-1 U50606-1)
+    )
+    (net supervision__REC06_LO_OK
+      (pins U51019-2 U50606-7)
+    )
+    (net supervision__REC06_DC_OK
+      (pins U51019-4 U51034-6)
+    )
+    (net supervision__AFE_ALL_DC_OK_G17
+      (pins U51033-1 U51032-4)
+    )
+    (net supervision__REC03_DC_OK
+      (pins U51033-3 U51016-4)
+    )
+    (net supervision__AFE_ALL_DC_OK_G15
+      (pins U51033-4 U51034-1)
+    )
+    (net supervision__REC04_DC_OK
+      (pins U51033-6 U51017-4)
+    )
+    (net SYS_0bc4e447__AFE_CONNECT
+      (pins J50002-5 U51030-2)
+    )
+    (net SYS_4eb6b999__AFE_ACQUIRE
+      (pins J50002-6 U51031-2)
+    )
+    (net SYS_380216f6__AFE_IN06_P
+      (pins R56060-1 J50606-1)
+    )
+    (net supervision__CH0_PHASE_HEALTH
+      (pins U51080-1 U51071-4 U51074-1 U51075-3)
+    )
+    (net supervision__CH0_NO_BLOCK
+      (pins U51080-3 U51079-4)
+    )
+    (net supervision__A3_UV
+      (pins R52060-2 U50206-3 R52061-1)
+    )
+    (net supervision__AFE_WIN_LO_DIV
+      (pins U50701-1 R50702-2 R50703-1)
+    )
+    (net supervision__REF_DC_OK
+      (pins U51029-4 U51039-6)
+    )
+    (net supervision__REC15_DC_OK
+      (pins U51039-3 U51028-4)
+    )
+    (net SYS_05097029__AFE_IN00_P
+      (pins R56000-1 J50600-1)
+    )
+    (net supervision__REC00_SENSE
+      (pins R56000-2 U50600-2 U50600-5 R56001-2)
+    )
+    (net supervision__SUP_DIS
+      (pins R50251-1 D50250-1)
+    )
+    (net supervision__CH0_PHASE_REARM_SAFE_G6
+      (pins U51076-1 U51075-4)
+    )
+    (net supervision__CH0_REQUEST_N
+      (pins U51076-3 U51072-2 U51061-1 U51055-4)
+    )
+    (net supervision__CH0_PHASE_REARM_SAFE_G4
+      (pins U51076-4 U51077-1)
+    )
+    (net supervision__AFE_ALL_DC_OK_G9
+      (pins U51037-1 U51036-4)
+    )
+    (net supervision__REC11_DC_OK
+      (pins U51037-3 U51024-4)
+    )
+    (net supervision__REC12_DC_OK
+      (pins U51037-6 U51025-4)
+    )
+    (net supervision__SUP_RC
+      (pins R50250-2 C50250-1 D50250-2 U50250-2)
+    )
+    (net "supervision__unconnected-(U1058-NC-Pad1)"
+      (pins U51058-1)
+    )
+    (net supervision__CH1_REQUEST_N
+      (pins U51058-4 U51085-2 U51089-3 U51062-3)
+    )
+    (net supervision__SUP3_OV
+      (pins R52003-1 R52002-2 U50200-4)
+    )
+    (net supervision__CH1_PHASE_REARM_SAFE_G4
+      (pins U51090-1 U51089-4)
+    )
+    (net supervision__CH1_SEC_TIMER_N
+      (pins U51090-2 U51063-2 U51060-4)
+    )
+    (net supervision__AFE_ALL_DC_OK_G13
+      (pins U51035-1 U51034-4)
+    )
+    (net supervision__REC07_DC_OK
+      (pins U51035-3 U51020-4)
+    )
+    (net supervision__AFE_ALL_DC_OK_G11
+      (pins U51035-4 U51036-1)
+    )
+    (net supervision__REC08_DC_OK
+      (pins U51035-6 U51021-4)
+    )
+    (net supervision__NO_ACTIVITY_G4
+      (pins U51063-1 U51062-4)
+    )
+    (net supervision__NO_ACTIVITY
+      (pins U51063-4 U51065-2)
+    )
+    (net supervision__SAFE_IDLE
+      (pins U50900-2 U51066-2 U51065-4)
+    )
+    (net "supervision__unconnected-(U900-Q_N-Pad3)"
+      (pins U50900-3)
+    )
+    (net supervision__AFE_DIS
+      (pins D50260-1 R50261-1)
+    )
+    (net supervision__CH1_SEC_SET
+      (pins U50801-3 R58010-1)
+    )
+    (net supervision__CH1_SEC_TIMER
+      (pins U50801-6 U51085-1 U51060-2 U51044-2 U51094-6)
+    )
+    (net supervision__REC07_HI_OK
+      (pins U50607-1 U51020-1)
+    )
+    (net supervision__REC07_SENSE
+      (pins U50607-2 U50607-5 R56071-2 R56070-2)
+    )
+    (net supervision__REC07_LO_OK
+      (pins U50607-7 U51020-2)
+    )
+    (net SYS_3232ae4c__AFE_IN01_P
+      (pins J50601-1 R56010-1)
+    )
+    (net SYS_8c3f25bb__AFE_IN02_P
+      (pins J50602-1 R56020-1)
+    )
+    (net supervision__TIMEOUT_RESET
+      (pins U51066-4 U51067-2)
+    )
+    (net "supervision__unconnected-(U1078-NC-Pad1)"
+      (pins U51078-1)
+    )
+    (net supervision__CH0_PHASE_REARM_SAFE
+      (pins U51078-2 U51077-4)
+    )
+    (net supervision__CH1_PHASE_REARM_SAFE_G6
+      (pins U51089-1 U51088-4)
+    )
+    (net supervision__CH1_RUN_N
+      (pins U51089-6 U51059-4 U51062-6)
+    )
+    (net "supervision__unconnected-(U1069-NC-Pad1)"
+      (pins U51069-1)
+    )
+    (net supervision__CH1_TIMEOUT
+      (pins U51069-2 U51045-1 U50811-5)
+    )
+    (net supervision__QUIET_LO_DIV
+      (pins R50402-1 R50401-2 U50401-1)
+    )
+    (net supervision__REC04_SENSE
+      (pins R56040-2 R56041-2 U50604-2 U50604-5)
+    )
+    (net "supervision__unconnected-(U1060-NC-Pad1)"
+      (pins U51060-1)
+    )
+    (net supervision__REC12_HI_OK
+      (pins U50612-1 U51025-1)
+    )
+    (net supervision__REC12_SENSE
+      (pins U50612-2 U50612-5 R56120-2 R56121-2)
+    )
+    (net supervision__REC12_LO_OK
+      (pins U50612-7 U51025-2)
+    )
+    (net supervision__REC10_HI_OK
+      (pins U50610-1 U51023-1)
+    )
+    (net supervision__REC10_LO_OK
+      (pins U50610-7 U51023-2)
+    )
+    (net SYS_56ebc071__CH0_MON_PERMIT
+      (pins R50960-1 U51054-3 J50004-5 U51009-6)
+    )
+    (net supervision__H15_OV
+      (pins U50204-4 R52042-2 R52043-1)
+    )
+    (net supervision__REC02_SENSE
+      (pins R56020-2 U50602-2 U50602-5 R56021-2)
+    )
+    (net supervision__BODY_STIM08
+      (pins U50102-1 J50101-9)
+    )
+    (net supervision__BODY_STIM11
+      (pins U50102-4 J50101-12)
+    )
+    (net SYS_6d4bb3d1__STIM11_CONTACT
+      (pins U50102-5 J50100-12)
+    )
+    (net SYS_74b9e55a__STIM10_CONTACT
+      (pins U50102-8 J50100-11)
+    )
+    (net supervision__BODY_STIM10
+      (pins U50102-9 J50101-11)
+    )
+    (net supervision__BODY_STIM09
+      (pins U50102-12 J50101-10)
+    )
+    (net SYS_eb2c0acf__STIM09_CONTACT
+      (pins U50102-13 J50100-10)
+    )
+    (net SYS_80673a9e__STIM08_CONTACT
+      (pins U50102-16 J50100-9)
+    )
+    (net supervision__WD_CWD
+      (pins R50300-2 U50300-2)
+    )
+    (net supervision__SUP3_UV
+      (pins R52000-2 R52001-1 U50200-3)
+    )
+    (net SYS_82867ca5__STIM00_CONTACT
+      (pins J50100-1 U50100-16)
+    )
+    (net SYS_8b50701c__STIM01_CONTACT
+      (pins J50100-2 U50100-13)
+    )
+    (net SYS_36b8c84f__STIM02_CONTACT
+      (pins J50100-3 U50100-8)
+    )
+    (net SYS_223a43dd__STIM03_CONTACT
+      (pins J50100-4 U50100-5)
+    )
+    (net SYS_32f1b236__STIM12_CONTACT
+      (pins J50100-13 U50103-16)
+    )
+    (net SYS_344482b2__STIM13_CONTACT
+      (pins J50100-14 U50103-13)
+    )
+    (net SYS_126bf237__STIM14_CONTACT
+      (pins J50100-15 U50103-8)
+    )
+    (net SYS_f00e6304__STIM15_CONTACT
+      (pins J50100-16 U50103-5)
+    )
+    (net supervision__CH1_PHASE_HEALTH
+      (pins U51088-3 U51093-1 U51087-1 U51084-4)
+    )
+    (net supervision__H24_UV
+      (pins R52051-1 R52050-2 U50205-3)
+    )
+    (net supervision__CH0_SEC_TIMER_N
+      (pins U51077-2 U51061-6 U51057-4)
+    )
+    (net supervision__A3_OV
+      (pins R52062-2 U50206-4 R52063-1)
+    )
+    (net supervision__SENSE_HEALTH_G4
+      (pins U51051-1 U51050-4)
+    )
+    (net supervision__CH1_PAIR_OK
+      (pins U51051-2 U51012-4)
+    )
+    (net supervision__WD_ENOUT_OK
+      (pins U51006-1 U51007-1 R50301-2 U50300-7 U50300-8 U50301-2)
+    )
+    (net supervision__WD_SEEN_CLR_N
+      (pins U51006-4 U50301-6)
+    )
+    (net supervision__CH1_QUIET_DIS
+      (pins D50411-1 R50421-1)
+    )
+    (net supervision__REC13_HI_OK
+      (pins U50613-1 U51026-1)
+    )
+    (net supervision__REC13_LO_OK
+      (pins U50613-7 U51026-2)
+    )
+    (net supervision__CH1_TIMEOUT_D
+      (pins U51045-4 U50811-2)
+    )
+    (net supervision__SAFE_IDLE_G4
+      (pins U51064-4 U51065-1)
+    )
+    (net "supervision__unconnected-(U260-NC-Pad1)"
+      (pins U50260-1)
+    )
+    (net supervision__AFE_STARTUP_OK
+      (pins U50260-4 U51004-2)
+    )
+    (net "supervision__unconnected-(U1073-NC-Pad1)"
+      (pins U51073-1)
+    )
+    (net supervision__CH0_ENDED
+      (pins U51073-2 U51072-4)
+    )
+    (net supervision__CH0_STOP_N
+      (pins U51073-4 U51074-2)
+    )
+    (net supervision__REC02_HI_OK
+      (pins U51015-1 U50602-1)
+    )
+    (net supervision__REC02_LO_OK
+      (pins U51015-2 U50602-7)
+    )
+    (net supervision__REC02_DC_OK
+      (pins U51015-4 U51032-6)
+    )
+    (net supervision__PAIR_HI_DIV
+      (pins R50500-2 R50501-1 U50500-1)
+    )
+    (net supervision__CH0_QUIET_DIS
+      (pins R50420-1 D50410-1)
+    )
+    (net supervision__CH1_NO_BLOCK
+      (pins U51093-3 U51092-4)
+    )
+    (net supervision__CH1_ALLOW_G6
+      (pins U51093-4 U51094-1)
+    )
+    (net supervision__REC05_DC_OK
+      (pins U51034-3 U51018-4)
+    )
+    (net supervision__REC05_HI_OK
+      (pins U51018-1 U50605-1)
+    )
+    (net supervision__REC05_LO_OK
+      (pins U51018-2 U50605-7)
+    )
+    (net supervision__WD_SEEN
+      (pins U51007-3 U50301-5)
+    )
+    (net supervision__CH0_QUIET_HI_OK
+      (pins U50410-1 U51009-1)
+    )
+    (net SYS_f8e43b73__CH0_I_MON
+      (pins U50410-2 U50410-5 J50004-1)
+    )
+    (net supervision__QUIET_HI
+      (pins U50410-3 U50411-3 U50400-3 U50400-4)
+    )
+    (net supervision__QUIET_LO
+      (pins U50410-6 U50401-3 U50401-4 U50411-6)
+    )
+    (net supervision__CH0_QUIET_LO_OK
+      (pins U50410-7 U51009-3)
+    )
+    (net SYS_37cfe02a__MON_VMID
+      (pins R50511-1 J50004-3 R50521-1)
+    )
+    (net supervision__H24_RAIL_OK
+      (pins R52054-2 U50205-1 U50205-6 U51002-3)
+    )
+    (net supervision__H3_UV
+      (pins U50202-3 R52020-2 R52021-1)
+    )
+    (net supervision__REC15_HI_OK
+      (pins U51028-1 U50615-1)
+    )
+    (net supervision__REC15_LO_OK
+      (pins U51028-2 U50615-7)
+    )
+    (net supervision__REC08_HI_OK
+      (pins U51021-1 U50608-1)
+    )
+    (net supervision__REC08_LO_OK
+      (pins U51021-2 U50608-7)
+    )
+    (net supervision__AFE_BLANK_OBS_OK
+      (pins U50710-6 U51049-3 U51048-1)
+    )
+    (net supervision__AFE_BLANK_LOCAL_OK
+      (pins U50710-11 U51041-4)
+    )
+    (net supervision__AFE_RAIL_LOCAL_OK
+      (pins U50710-12 U51041-2 U51004-4)
+    )
+    (net "supervision__unconnected-(U710-OUTB-Pad13)"
+      (pins U50710-13)
+    )
+    (net "supervision__unconnected-(U710-OUTA-Pad14)"
+      (pins U50710-14)
+    )
+    (net supervision__SENSE_HEALTH_G6
+      (pins U51049-4 U51050-1)
+    )
+    (net "supervision__unconnected-(U1079-NC-Pad1)"
+      (pins U51079-1)
+    )
+    (net SYS_401be33b__CH1_A_ROUTER
+      (pins R50520-1 J50006-3)
+    )
+    (net supervision__REC01_SENSE
+      (pins U50601-2 U50601-5 R56011-2 R56010-2)
+    )
+    (net SYS_502efdd4__CH1_I_MON
+      (pins J50004-2 U50411-2 U50411-5)
+    )
+    (net SYS_d3eac10b__CH0_EXT_SUP_OK
+      (pins J50004-7 U51052-4)
+    )
+    (net supervision__REC11_HI_OK
+      (pins U51024-1 U50611-1)
+    )
+    (net supervision__REC11_LO_OK
+      (pins U51024-2 U50611-7)
+    )
+    (net SYS_ee730a89__AFE_IN09_P
+      (pins J50609-1 R56090-1)
+    )
+    (net supervision__BODY_STIM00
+      (pins J50101-1 U50100-1)
+    )
+    (net supervision__BODY_STIM01
+      (pins J50101-2 U50100-12)
+    )
+    (net supervision__BODY_STIM02
+      (pins J50101-3 U50100-9)
+    )
+    (net supervision__BODY_STIM03
+      (pins J50101-4 U50100-4)
+    )
+    (net supervision__BODY_STIM12
+      (pins J50101-13 U50103-1)
+    )
+    (net supervision__BODY_STIM13
+      (pins J50101-14 U50103-12)
+    )
+    (net supervision__BODY_STIM14
+      (pins J50101-15 U50103-9)
+    )
+    (net supervision__BODY_STIM15
+      (pins J50101-16 U50103-4)
+    )
+    (net "supervision__unconnected-(U1042-NC-Pad1)"
+      (pins U51042-1)
+    )
+    (net supervision__CH0_SEC_N
+      (pins U51042-4 U50810-1)
+    )
+    (net SYS_c73180be__CH1_B_BR
+      (pins R50522-1 J50006-4)
+    )
+    (net SYS_917b1360__CH0_A_ROUTER
+      (pins R50510-1 J50006-1)
+    )
+    (net supervision__CH0_TIMEOUT_D
+      (pins U50810-2 U51043-4)
+    )
+    (net "supervision__unconnected-(U810-Q_N-Pad3)"
+      (pins U50810-3)
+    )
+    (net supervision__CH0_TIMEOUT
+      (pins U50810-5 U51043-1 U51068-2)
+    )
+    (net supervision__TIMEOUT_CLR_N
+      (pins U50810-6 U51067-4 U50811-6)
+    )
+    (net "supervision__unconnected-(U1044-NC-Pad1)"
+      (pins U51044-1)
+    )
+    (net supervision__CH1_SEC_N
+      (pins U51044-4 U50811-1)
+    )
+    (net supervision__REC03_HI_OK
+      (pins U51016-1 U50603-1)
+    )
+    (net supervision__REC03_LO_OK
+      (pins U51016-2 U50603-7)
+    )
+    (net supervision__H5_RAIL_OK
+      (pins U51001-3 U50203-1 U50203-6 R52034-2)
+    )
+    (net supervision__HOST_RAILS_OK_G5
+      (pins U51001-4 U51002-1)
+    )
+    (net supervision__REC11_SENSE
+      (pins R56111-2 R56110-2 U50611-2 U50611-5)
+    )
+    (net "supervision__unconnected-(U1092-NC-Pad1)"
+      (pins U51092-1)
+    )
+    (net supervision__CH1_BLOCK
+      (pins U51092-2 U50911-5)
+    )
+    (net supervision__CH0_SEC_DIV
+      (pins R58002-1 R58001-2 U50800-4)
+    )
+    (net supervision__REC03_SENSE
+      (pins R56031-2 R56030-2 U50603-2 U50603-5)
+    )
+    (net supervision__REC04_HI_OK
+      (pins U50604-1 U51017-1)
+    )
+    (net supervision__REC04_LO_OK
+      (pins U50604-7 U51017-2)
+    )
+    (net supervision__CH1_QUIET_RAW
+      (pins R50411-1 U51010-4 R50421-2)
+    )
+    (net supervision__CH1_QUIET_HI_OK
+      (pins U50411-1 U51010-1)
+    )
+    (net supervision__CH1_QUIET_LO_OK
+      (pins U50411-7 U51010-3)
+    )
+    (net SYS_ee476f53__CH0_B_BR
+      (pins J50006-2 R50512-1)
+    )
+    (net SYS_b6a4cd67__AFE_IN11_P
+      (pins J50611-1 R56110-1)
+    )
+    (net "supervision__unconnected-(U250-NC-Pad1)"
+      (pins U50250-1)
+    )
+    (net supervision__SUP_STARTUP_OK
+      (pins U50250-4 U51002-6)
+    )
+    (net supervision__REC09_SENSE
+      (pins R56090-2 U50609-2 U50609-5 R56091-2)
+    )
+    (net "supervision__unconnected-(U420-NC-Pad1)"
+      (pins U50420-1)
+    )
+    (net supervision__CH0_SEC_SET
+      (pins U50800-3 R58000-1)
+    )
+    (net "supervision__unconnected-(U421-NC-Pad1)"
+      (pins U50421-1)
+    )
+    (net "supervision__unconnected-(U1005-NC-Pad1)"
+      (pins U51005-1)
+    )
+    (net supervision__WDI_N
+      (pins U51005-4 U50301-1)
+    )
+    (net supervision__CH1_ALLOW_G4
+      (pins U51094-4 U51095-1)
+    )
+    (net supervision__CH1_BLOCK_PRE_N
+      (pins U51087-4 U50911-7)
+    )
+    (net "supervision__unconnected-(U1059-NC-Pad1)"
+      (pins U51059-1)
+    )
+    (net supervision__NO_ACTIVITY_G6
+      (pins U51062-1 U51061-4)
+    )
+    (net "supervision__unconnected-(U1030-NC-Pad1)"
+      (pins U51030-1)
+    )
+    (net "supervision__unconnected-(U1067-NC-Pad1)"
+      (pins U51067-1)
+    )
+    (net supervision__REC09_HI_OK
+      (pins U50609-1 U51022-1)
+    )
+    (net supervision__REC09_LO_OK
+      (pins U50609-7 U51022-2)
+    )
+    (net supervision__REC10_DC_OK
+      (pins U51023-4 U51036-6)
+    )
+    (net "supervision__unconnected-(U301-Q_N-Pad3)"
+      (pins U50301-3)
+    )
+    (net "supervision__unconnected-(U911-Q_N-Pad3)"
+      (pins U50911-3)
+    )
+    (net "supervision__unconnected-(U1031-NC-Pad1)"
+      (pins U51031-1)
+    )
+    (net "supervision__unconnected-(U1055-NC-Pad1)"
+      (pins U51055-1)
+    )
+    (net "supervision__unconnected-(U811-Q_N-Pad3)"
+      (pins U50811-3)
+    )
+    (net supervision__REC09_DC_OK
+      (pins U51036-3 U51022-4)
+    )
+    (net "supervision__unconnected-(U1057-NC-Pad1)"
+      (pins U51057-1)
+    )
+    (net "supervision__unconnected-(U1068-NC-Pad1)"
+      (pins U51068-1)
+    )
+    (class kicad_default SYS_05097029__AFE_IN00_P SYS_08572049__HOST_3V3 SYS_0bc4e447__AFE_CONNECT
+      SYS_0d1e7c21__CH0_RETURN_LOAD SYS_126bf237__STIM14_CONTACT SYS_15689dc4__VH_24
+      SYS_1954027d__CH0_ROUTE_LOCKED SYS_1dc2a435__AFE_IN08_P SYS_20eba8c2__CH1_QUIESCENT_OK
+      SYS_223a43dd__STIM03_CONTACT SYS_2d0e5b2e__CH0_QUIESCENT_OK SYS_3232ae4c__AFE_IN01_P
+      SYS_325713b8__AFE_IN07_P SYS_32c4c1cc__AFE_IN13_P SYS_32f1b236__STIM12_CONTACT
+      SYS_344482b2__STIM13_CONTACT SYS_36b8c84f__STIM02_CONTACT SYS_37cfe02a__MON_VMID
+      SYS_380216f6__AFE_IN06_P SYS_3ced048f__CH1_RETURN_LOAD SYS_3fdd5066__AFE_P5
+      SYS_401be33b__CH1_A_ROUTER SYS_40eeaa0c__CH1_VPAIR SYS_46e29157__PHASE_REARM1
+      SYS_46ea5f03__CH0_REQUEST SYS_4eb6b999__AFE_ACQUIRE SYS_4f66f129__MON_VREF
+      SYS_4f7d5988__AFE_IN14_P SYS_4fabccc5__AFE_IN12_P SYS_502efdd4__CH1_I_MON
+      SYS_53213f89__AFE_IN15_P SYS_56562df4__GND SYS_56ebc071__CH0_MON_PERMIT
+      SYS_59100ef9__AFE_IN05_P SYS_65aafbb6__AFE_3V3 SYS_66aba95b__SUP_5 SYS_695f3a7c__CH0_RUN
+      SYS_6a132103__CH1_RUN SYS_6d4bb3d1__STIM11_CONTACT SYS_74b9e55a__STIM10_CONTACT
+      SYS_77c24b0d__GLOBAL_GUARD_EN SYS_7db86ec0__PHASE_REARM0 SYS_7e367734__AFE_IN04_P
+      SYS_80673a9e__STIM08_CONTACT SYS_82531809__FAULT_RESET SYS_82867ca5__STIM00_CONTACT
+      SYS_8359fceb__CH1_EXT_SUP_OK SYS_84f28705__CH1_ROUTE_LOCKED SYS_86b728f8__AFE_REF
+      SYS_88c50083__SUP_ARMED SYS_8b50701c__STIM01_CONTACT SYS_8c3f25bb__AFE_IN02_P
+      SYS_917b1360__CH0_A_ROUTER SYS_93547907__RAILS_QUALIFIED SYS_96d7c46a__AFE_IN10_P
+      SYS_98321c7b__AFE_ISOLATED_READY SYS_a83d484c__WATCHDOG_OK SYS_aa321af6__CH1_MON_PERMIT
+      SYS_ab932142__SUP_3V3 SYS_b675ff0d__STIM06_CONTACT SYS_b6a4cd67__AFE_IN11_P
+      SYS_baff84b5__CH0_VPAIR SYS_bb444a6e__SUP_REARM SYS_c73180be__CH1_B_BR
+      SYS_ce166826__HOST_5 SYS_cf17d7c4__STIM07_CONTACT SYS_d3eac10b__CH0_EXT_SUP_OK
+      SYS_d73cd2ee__AFE_N5 SYS_dcbe1273__STIM04_CONTACT SYS_dd388269__CH1_REQUEST
+      SYS_de0a854a__CH1_EXT_SUP_OK SYS_e26747fb__CH0_EXT_SUP_OK SYS_e3faaec0__WDI
+      SYS_eb2c0acf__STIM09_CONTACT SYS_ee476f53__CH0_B_BR SYS_ee59c76b__PWR_FAULT_N
+      SYS_ee730a89__AFE_IN09_P SYS_f00e6304__STIM15_CONTACT SYS_f208be39__AFE_IN03_P
+      SYS_f8e43b73__CH0_I_MON SYS_fa6c9e06__STIM05_CONTACT SYS_fb2237f8__VA_15
+      SYS_fca1c340__AFEAGND SYS_ff7fdc58__RESET_READY supervision__A3_OV supervision__A3_RAIL_OK
+      supervision__A3_UV supervision__AFE_ACQUIRE_LOW supervision__AFE_ALL_DC_OK
+      supervision__AFE_ALL_DC_OK_G11 supervision__AFE_ALL_DC_OK_G13 supervision__AFE_ALL_DC_OK_G15
+      supervision__AFE_ALL_DC_OK_G17 supervision__AFE_ALL_DC_OK_G5 supervision__AFE_ALL_DC_OK_G7
+      supervision__AFE_ALL_DC_OK_G9 supervision__AFE_BLANK_LOCAL_OK supervision__AFE_BLANK_LOCAL_OK_G4
+      supervision__AFE_BLANK_OBS_OK supervision__AFE_CONNECT_LOW supervision__AFE_DIS
+      supervision__AFE_NINV supervision__AFE_NMAG supervision__AFE_RAIL_LOCAL_OK
+      supervision__AFE_RAIL_LOCAL_OK_G4 supervision__AFE_RAIL_OBS_OK supervision__AFE_RC
+      supervision__AFE_STARTUP_OK supervision__AFE_WIN_HI supervision__AFE_WIN_HI_DIV
+      supervision__AFE_WIN_LO supervision__AFE_WIN_LO_DIV supervision__AN_OV
+      supervision__AN_RAIL_OK supervision__AN_UV supervision__AP_OV supervision__AP_RAIL_OK
+      supervision__AP_UV supervision__ARM_CLR_N supervision__BODY_RETURN0
+      supervision__BODY_RETURN1 supervision__BODY_STIM00 supervision__BODY_STIM01
+      supervision__BODY_STIM02 supervision__BODY_STIM03 supervision__BODY_STIM04
+      supervision__BODY_STIM05 supervision__BODY_STIM06 supervision__BODY_STIM07
+      supervision__BODY_STIM08 supervision__BODY_STIM09 supervision__BODY_STIM10
+      supervision__BODY_STIM11 supervision__BODY_STIM12 supervision__BODY_STIM13
+      supervision__BODY_STIM14 supervision__BODY_STIM15 supervision__CH0_ALLOW
+      supervision__CH0_ALLOW_G4 supervision__CH0_ALLOW_G6 supervision__CH0_BLOCK
+      supervision__CH0_BLOCK_CLR_N supervision__CH0_BLOCK_PRE_N supervision__CH0_DIFF_N
+      supervision__CH0_DIFF_P supervision__CH0_ENDED supervision__CH0_NO_BLOCK
+      supervision__CH0_NO_TIMEOUT supervision__CH0_PAIR_HI_OK supervision__CH0_PAIR_LO_OK
+      supervision__CH0_PAIR_OK supervision__CH0_PHASE_HEALTH supervision__CH0_PHASE_REARM_SAFE
+      supervision__CH0_PHASE_REARM_SAFE_G4 supervision__CH0_PHASE_REARM_SAFE_G6
+      supervision__CH0_QUIET_DIS supervision__CH0_QUIET_HI_OK supervision__CH0_QUIET_LO_OK
+      supervision__CH0_QUIET_RAW supervision__CH0_QUIET_RC supervision__CH0_REQUEST_N
+      supervision__CH0_RUN_N supervision__CH0_SEC_DIV supervision__CH0_SEC_N
+      supervision__CH0_SEC_SET supervision__CH0_SEC_TIMER supervision__CH0_SEC_TIMER_N
+      supervision__CH0_STOP_N supervision__CH0_TIMEOUT supervision__CH0_TIMEOUT_D
+      supervision__CH1_ALLOW supervision__CH1_ALLOW_G4 supervision__CH1_ALLOW_G6
+      supervision__CH1_BLOCK supervision__CH1_BLOCK_CLR_N supervision__CH1_BLOCK_PRE_N
+      supervision__CH1_DIFF_N supervision__CH1_DIFF_P supervision__CH1_ENDED
+      supervision__CH1_NO_BLOCK supervision__CH1_NO_TIMEOUT supervision__CH1_PAIR_HI_OK
+      supervision__CH1_PAIR_LO_OK supervision__CH1_PAIR_OK supervision__CH1_PHASE_HEALTH
+      supervision__CH1_PHASE_REARM_SAFE supervision__CH1_PHASE_REARM_SAFE_G4
+      supervision__CH1_PHASE_REARM_SAFE_G6 supervision__CH1_QUIET_DIS supervision__CH1_QUIET_HI_OK
+      supervision__CH1_QUIET_LO_OK supervision__CH1_QUIET_RAW supervision__CH1_QUIET_RC
+      supervision__CH1_REQUEST_N supervision__CH1_RUN_N supervision__CH1_SEC_DIV
+      supervision__CH1_SEC_N supervision__CH1_SEC_SET supervision__CH1_SEC_TIMER
+      supervision__CH1_SEC_TIMER_N supervision__CH1_STOP_N supervision__CH1_TIMEOUT
+      supervision__CH1_TIMEOUT_D supervision__H15_OV supervision__H15_RAIL_OK
+      supervision__H15_UV supervision__H24_OV supervision__H24_RAIL_OK supervision__H24_UV
+      supervision__H3_OV supervision__H3_RAIL_OK supervision__H3_UV supervision__H5_OV
+      supervision__H5_RAIL_OK supervision__H5_UV supervision__HOST_RAILS_OK
+      supervision__HOST_RAILS_OK_G5 supervision__HOST_RAILS_OK_G7 supervision__NO_ACTIVITY
+      supervision__NO_ACTIVITY_G4 supervision__NO_ACTIVITY_G6 supervision__PAIR_HI
+      supervision__PAIR_HI_DIV supervision__PAIR_LO supervision__PAIR_LO_DIV
+      supervision__QUIET_HI supervision__QUIET_HI_DIV supervision__QUIET_LO
+      supervision__QUIET_LO_DIV supervision__RAW_HEALTH supervision__REC00_DC_OK
+      supervision__REC00_HI_OK supervision__REC00_LO_OK supervision__REC00_SENSE
+      supervision__REC01_DC_OK supervision__REC01_HI_OK supervision__REC01_LO_OK
+      supervision__REC01_SENSE supervision__REC02_DC_OK supervision__REC02_HI_OK
+      supervision__REC02_LO_OK supervision__REC02_SENSE supervision__REC03_DC_OK
+      supervision__REC03_HI_OK supervision__REC03_LO_OK supervision__REC03_SENSE
+      supervision__REC04_DC_OK supervision__REC04_HI_OK supervision__REC04_LO_OK
+      supervision__REC04_SENSE supervision__REC05_DC_OK supervision__REC05_HI_OK
+      supervision__REC05_LO_OK supervision__REC05_SENSE supervision__REC06_DC_OK
+      supervision__REC06_HI_OK supervision__REC06_LO_OK supervision__REC06_SENSE
+      supervision__REC07_DC_OK supervision__REC07_HI_OK supervision__REC07_LO_OK
+      supervision__REC07_SENSE supervision__REC08_DC_OK supervision__REC08_HI_OK
+      supervision__REC08_LO_OK supervision__REC08_SENSE supervision__REC09_DC_OK
+      supervision__REC09_HI_OK supervision__REC09_LO_OK supervision__REC09_SENSE
+      supervision__REC10_DC_OK supervision__REC10_HI_OK supervision__REC10_LO_OK
+      supervision__REC10_SENSE supervision__REC11_DC_OK supervision__REC11_HI_OK
+      supervision__REC11_LO_OK supervision__REC11_SENSE supervision__REC12_DC_OK
+      supervision__REC12_HI_OK supervision__REC12_LO_OK supervision__REC12_SENSE
+      supervision__REC13_DC_OK supervision__REC13_HI_OK supervision__REC13_LO_OK
+      supervision__REC13_SENSE supervision__REC14_DC_OK supervision__REC14_HI_OK
+      supervision__REC14_LO_OK supervision__REC14_SENSE supervision__REC15_DC_OK
+      supervision__REC15_HI_OK supervision__REC15_LO_OK supervision__REC15_SENSE
+      supervision__REF_DC_OK supervision__REF_HI_OK supervision__REF_LO_OK
+      supervision__REF_SENSE supervision__SAFE_IDLE supervision__SAFE_IDLE_G4
+      supervision__SENSE_HEALTH supervision__SENSE_HEALTH_G4 supervision__SENSE_HEALTH_G6
+      supervision__SUP3_OV supervision__SUP3_RAIL_OK supervision__SUP3_UV
+      supervision__SUP5_OV supervision__SUP5_RAIL_OK supervision__SUP5_UV
+      supervision__SUP_DIS supervision__SUP_RC supervision__SUP_STARTUP_OK
+      supervision__TIMEOUT_CLR_N supervision__TIMEOUT_RESET supervision__WDI_N
+      supervision__WD_CWD supervision__WD_ENOUT_OK supervision__WD_GOOD supervision__WD_SEEN
+      supervision__WD_SEEN_CLR_N "supervision__unconnected-(U1005-NC-Pad1)"
+      "supervision__unconnected-(U1030-NC-Pad1)" "supervision__unconnected-(U1031-NC-Pad1)"
+      "supervision__unconnected-(U1042-NC-Pad1)" "supervision__unconnected-(U1044-NC-Pad1)"
+      "supervision__unconnected-(U1055-NC-Pad1)" "supervision__unconnected-(U1056-NC-Pad1)"
+      "supervision__unconnected-(U1057-NC-Pad1)" "supervision__unconnected-(U1058-NC-Pad1)"
+      "supervision__unconnected-(U1059-NC-Pad1)" "supervision__unconnected-(U1060-NC-Pad1)"
+      "supervision__unconnected-(U1067-NC-Pad1)" "supervision__unconnected-(U1068-NC-Pad1)"
+      "supervision__unconnected-(U1069-NC-Pad1)" "supervision__unconnected-(U1073-NC-Pad1)"
+      "supervision__unconnected-(U1078-NC-Pad1)" "supervision__unconnected-(U1079-NC-Pad1)"
+      "supervision__unconnected-(U1086-NC-Pad1)" "supervision__unconnected-(U1091-NC-Pad1)"
+      "supervision__unconnected-(U1092-NC-Pad1)" "supervision__unconnected-(U250-NC-Pad1)"
+      "supervision__unconnected-(U260-NC-Pad1)" "supervision__unconnected-(U301-Q_N-Pad3)"
+      "supervision__unconnected-(U420-NC-Pad1)" "supervision__unconnected-(U421-NC-Pad1)"
+      "supervision__unconnected-(U710-OUTA-Pad14)" "supervision__unconnected-(U710-OUTB-Pad13)"
+      "supervision__unconnected-(U810-Q_N-Pad3)" "supervision__unconnected-(U811-Q_N-Pad3)"
+      "supervision__unconnected-(U900-Q_N-Pad3)" "supervision__unconnected-(U910-Q_N-Pad3)"
+      "supervision__unconnected-(U911-Q_N-Pad3)"
+      (circuit
+        (use_via "Via[0-3]_600:300_um")
+      )
+      (rule
+        (width 200)
+        (clearance 200)
+      )
+    )
+  )
+  (wiring
+  )
+)

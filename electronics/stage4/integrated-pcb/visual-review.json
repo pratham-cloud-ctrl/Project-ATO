@@ -1,0 +1,34 @@
+{
+  "schema": "ato.populated-board-visual-review.v1",
+  "date": "2026-10-16",
+  "method": "Direct inspection of actual native KiCad PNG exports; one or more views per board",
+  "reviewed": {
+    "monitoring-cell": {
+      "top.png": "cca5b173e264b00dff21f0f6acb322f7c54279676aa3d9b9d0553ec30cc9b2a0"
+    },
+    "current-driver": {
+      "isometric.png": "53db4c11b9151c200758f854908e0674fc5773f73ed91d62b39200c9cb321663"
+    },
+    "recording-front-end": {
+      "isometric.png": "d44be0e86e848e436673005bfa550c224e060668ebd8798d4b72bbfa86d5e45f"
+    },
+    "contact-router": {
+      "top.png": "ad1a03d004ba2c8fb7a4ee605ba06cbd8a9598172082196b25051a7a5e5c556c"
+    },
+    "supervision": {
+      "top.png": "57cd9d01465393d4a23e16f8f0d91591d3acbeb7e661c95cff33bd8a6dc96d60"
+    },
+    "power": {
+      "top.png": "4669ccf672318f3ba96a206a01aa48edaac1639cc553d388c6285f015f98264f"
+    },
+    "monitoring-transport": {
+      "top.png": "9c63ebe90b7bcb4cea254b8af2b555ed1f38a3dfe521b4fd778b975d6aea3dc4",
+      "isometric.png": "abc2ba2797c3b9968cb71815fa7e7436475961e61f02ac287c50ee7fb9519f2b"
+    },
+    "controller-carrier": {
+      "isometric.png": "dbc8d910c7e2aa9838250f898e67bb7067638c2bf3a6935691fe1f8954890953"
+    }
+  },
+  "findings": "All eight board outlines and component groups visible; no gross missing packages or image-edge clipping in reviewed views. Clean functional labels and connector references present.",
+  "limits": "Presentation inspection only; nominal models and full digital geometry/net checks have separate evidence. No tolerance or physical-performance claim."
+}

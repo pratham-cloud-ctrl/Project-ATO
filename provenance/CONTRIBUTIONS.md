@@ -427,3 +427,33 @@ dependency, not an undocumented modification of the seven native packages.
 This completes the bounded actual target-firmware package. Consolidated PCB,
 populated CAD and final integrated paper/release remain. All work is digital
 and AI-assisted, without physical, human/animal or institutional validation.
+
+## Integrated populated PCB package — 16 October 2026
+
+The user authorized completion of the digital board package, preserving both
+the expert-informed retained-learning and function-specific physiological
+concepts. AI workstreams authored the BT40F carrier, consolidated native
+hierarchy and harness, actual board placement/routing, package solids and
+independent audits. The final package has 1,298 component positions, 1,296 fitted
+parts and 32 board-only mounting holes across eight genuine KiCad layouts.
+
+Independent integration reconstructed every source pin group and explicit
+harness join. Native board checks and a separate saved-file parser compare
+actual pads, values, DNP flags, hierarchy paths and current DRC hashes. Review
+caught two conflicting old rearm wires, an incorrect ground/shift-tail alias,
+and a TPS3431 land-row dimension error. New integrated artifacts resolve these
+without overwriting their historical source records. Component-pad routing
+repairs supply real copper; route-journal incompleteness after an interruption
+is disclosed rather than claimed to reproduce every authoring operation.
+
+Root integrated the manufacturer-specific firmware build, additive power
+allocation, nominal package geometry, populated exports, native/independent
+verification, documentation and repository evidence. Review strengthened
+export/DRC hash binding and separated post-export geometry receipts. Exact
+earlier exporter source bytes remain archived with their generated artifacts;
+new verification checks their current sources and every output independently.
+
+All results are digital and AI-assisted. No student mastery, physical device
+execution, fabricated hardware, human/animal experiment, university involvement,
+biological efficacy or implant qualification is implied. Mechanical packaging
+and the integrated research/engineering paper remain subsequent work.

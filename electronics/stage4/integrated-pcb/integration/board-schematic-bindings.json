@@ -1,0 +1,496 @@
+{
+  "schema": "ato.board-schematic-bindings.v1",
+  "files": [
+    {
+      "source": "integration/boards/monitoring-cell/channel0.kicad_sch",
+      "board_sibling": "boards/monitoring-cell/channel0.kicad_sch",
+      "sha256_lf": "c8f281fbd139c15da7dbb3351cdb26ff42b7df9c90ea8828ad8f4d86b464ad07"
+    },
+    {
+      "source": "integration/boards/monitoring-cell/channel1.kicad_sch",
+      "board_sibling": "boards/monitoring-cell/channel1.kicad_sch",
+      "sha256_lf": "9282b6eba26b502581c29588ebf44e6a1d4cfb99d3fa9321d30ad9fc1adad670"
+    },
+    {
+      "source": "integration/boards/monitoring-cell/integration_taps.kicad_sch",
+      "board_sibling": "boards/monitoring-cell/integration_taps.kicad_sch",
+      "sha256_lf": "1aba5b5582fac7fadd7f22c3cfbf3cbf3b69b9a3ccf358edd25f5df429b3ac8c"
+    },
+    {
+      "source": "integration/boards/monitoring-cell/monitoring_cell.kicad_sch",
+      "board_sibling": "boards/monitoring-cell/monitoring_cell.kicad_sch",
+      "sha256_lf": "03d55dbc68834ba43ddd42b1195a30358f18f24dc3c0446de087be97f31d338d"
+    },
+    {
+      "source": "integration/boards/monitoring-cell/ATO_INTEGRATION.kicad_sym",
+      "board_sibling": "boards/monitoring-cell/ATO_INTEGRATION.kicad_sym",
+      "sha256_lf": "527b190c2d9cea5ab1d92f72fd91a19bb3ff55c6245b55d0a07d816c29003d3a"
+    },
+    {
+      "source": "integration/boards/monitoring-cell/ATO_S4.kicad_sym",
+      "board_sibling": "boards/monitoring-cell/ATO_S4.kicad_sym",
+      "sha256_lf": "96558d95abc7cacabe0cc5330708e32f0c58d9d7704b4bf5a7877a1ec7bee9bc"
+    },
+    {
+      "source": "integration/boards/monitoring-cell/sym-lib-table",
+      "board_sibling": "boards/monitoring-cell/sym-lib-table",
+      "sha256_lf": "93dec1070da6dc94e6d1701c6592e76a7734e62ebd44fa502246187e5986109c"
+    },
+    {
+      "source": "integration/boards/current-driver/current_driver.kicad_sch",
+      "board_sibling": "boards/current-driver/current_driver.kicad_sch",
+      "sha256_lf": "5a3c43b6ba98247a0ef53abc42be29f64553fc3ff2203b338e888d64862e0c1c"
+    },
+    {
+      "source": "integration/boards/current-driver/permission0.kicad_sch",
+      "board_sibling": "boards/current-driver/permission0.kicad_sch",
+      "sha256_lf": "9b074c82c166b4c0afd5a9e96accd3796cd68a32f025302cf0f80b4b191b1aa8"
+    },
+    {
+      "source": "integration/boards/current-driver/permission1.kicad_sch",
+      "board_sibling": "boards/current-driver/permission1.kicad_sch",
+      "sha256_lf": "3afb904796541f5226d5b438319aeb0a31ddab8099ebb17a39954c93e307f0e8"
+    },
+    {
+      "source": "integration/boards/current-driver/source0.kicad_sch",
+      "board_sibling": "boards/current-driver/source0.kicad_sch",
+      "sha256_lf": "e794e5a0d80bccbc8e9c42d80536ae4a01b62a09a90ca4210be1d1552bc5ea07"
+    },
+    {
+      "source": "integration/boards/current-driver/source1.kicad_sch",
+      "board_sibling": "boards/current-driver/source1.kicad_sch",
+      "sha256_lf": "c517b3690a97586070c936eccc5e61c8cf8c24de3425a8d565fc31765d3e9e84"
+    },
+    {
+      "source": "integration/boards/current-driver/ATO_DRV.kicad_sym",
+      "board_sibling": "boards/current-driver/ATO_DRV.kicad_sym",
+      "sha256_lf": "4df7f49c101a35df0101cfc1246efb769f9cf12993dbcc16afaebc4c302af5ec"
+    },
+    {
+      "source": "integration/boards/current-driver/sym-lib-table",
+      "board_sibling": "boards/current-driver/sym-lib-table",
+      "sha256_lf": "0c6ea0b9dff4400576be3e120349966ba27bcc515ef37768b5613f0a5763fa53"
+    },
+    {
+      "source": "integration/boards/recording-front-end/acquisition.kicad_sch",
+      "board_sibling": "boards/recording-front-end/acquisition.kicad_sch",
+      "sha256_lf": "3d20273305ee65f198afba4b677caff5ba96a2eab717222916a4f77b7c4a0626"
+    },
+    {
+      "source": "integration/boards/recording-front-end/bank0.kicad_sch",
+      "board_sibling": "boards/recording-front-end/bank0.kicad_sch",
+      "sha256_lf": "be1c22d92b64b7394ca3992ea5320cd6e6a767b6af0c7e83a4ad510be19f3266"
+    },
+    {
+      "source": "integration/boards/recording-front-end/bank1.kicad_sch",
+      "board_sibling": "boards/recording-front-end/bank1.kicad_sch",
+      "sha256_lf": "083cc831360766ffa2bac1dcb19908ac24a962e79b68b9ede4df891713f27ad6"
+    },
+    {
+      "source": "integration/boards/recording-front-end/bank2.kicad_sch",
+      "board_sibling": "boards/recording-front-end/bank2.kicad_sch",
+      "sha256_lf": "38d7064aa7f974b87c32f3f2c1fdf2c8bb8053ce48747f133288d03f8bc10ff8"
+    },
+    {
+      "source": "integration/boards/recording-front-end/bank3.kicad_sch",
+      "board_sibling": "boards/recording-front-end/bank3.kicad_sch",
+      "sha256_lf": "ef66f341a091346ef1bc2231b72911a999e3674a566c514338394d1d11758953"
+    },
+    {
+      "source": "integration/boards/recording-front-end/integration_taps.kicad_sch",
+      "board_sibling": "boards/recording-front-end/integration_taps.kicad_sch",
+      "sha256_lf": "32f2f854361e6c505505aa368f4ddb6bad3d5a439c4894e418dff582988e18d3"
+    },
+    {
+      "source": "integration/boards/recording-front-end/recording_front_end.kicad_sch",
+      "board_sibling": "boards/recording-front-end/recording_front_end.kicad_sch",
+      "sha256_lf": "859a97bf1c802d73a990fc777ffeba472cdb6776c214a115ddfdcb8ceed386c1"
+    },
+    {
+      "source": "integration/boards/recording-front-end/reference.kicad_sch",
+      "board_sibling": "boards/recording-front-end/reference.kicad_sch",
+      "sha256_lf": "f9b52070bc89ec64bcd68b39e59aa41cd5a2f140105ff19750b66d99eb216505"
+    },
+    {
+      "source": "integration/boards/recording-front-end/ATO_AFE.kicad_sym",
+      "board_sibling": "boards/recording-front-end/ATO_AFE.kicad_sym",
+      "sha256_lf": "36a6704622c018b1c317d46bf75fba8252ee89ad28577aa5e5e62088b5409186"
+    },
+    {
+      "source": "integration/boards/recording-front-end/ATO_INTEGRATION.kicad_sym",
+      "board_sibling": "boards/recording-front-end/ATO_INTEGRATION.kicad_sym",
+      "sha256_lf": "c31bc4e958b979c2420d2cf28a0236812f3e68398eafd047233764afced07544"
+    },
+    {
+      "source": "integration/boards/recording-front-end/sym-lib-table",
+      "board_sibling": "boards/recording-front-end/sym-lib-table",
+      "sha256_lf": "89b06b5f61586b5b608d8a18584782e6cf92da77ec822b641a6cd476ef2cc15e"
+    },
+    {
+      "source": "integration/boards/contact-router/address.kicad_sch",
+      "board_sibling": "boards/contact-router/address.kicad_sch",
+      "sha256_lf": "ff0b94350184eec35ff82e6b8c2c2c78ef8a9b9d696dce6678d0de4c0a638c91"
+    },
+    {
+      "source": "integration/boards/contact-router/admission.kicad_sch",
+      "board_sibling": "boards/contact-router/admission.kicad_sch",
+      "sha256_lf": "ba50f609c526b02ff1c27f98844fe40381e5c07c21ae737711376e70122f1ef5"
+    },
+    {
+      "source": "integration/boards/contact-router/collision.kicad_sch",
+      "board_sibling": "boards/contact-router/collision.kicad_sch",
+      "sha256_lf": "5f06ae37de2f36958698a29cf6a1300969e687cf23a3fa84ac53ef0be39221af"
+    },
+    {
+      "source": "integration/boards/contact-router/contact_router.kicad_sch",
+      "board_sibling": "boards/contact-router/contact_router.kicad_sch",
+      "sha256_lf": "f49155d812ce9876ffdb2eb2f06792406b1e5fb090ef813a6cfa46267e3a55e7"
+    },
+    {
+      "source": "integration/boards/contact-router/source0.kicad_sch",
+      "board_sibling": "boards/contact-router/source0.kicad_sch",
+      "sha256_lf": "8a0239d53274c81b11b335d9f2a6ee5ada8ce65a7ba4a00a7b6a1fc38c2c7aca"
+    },
+    {
+      "source": "integration/boards/contact-router/source1.kicad_sch",
+      "board_sibling": "boards/contact-router/source1.kicad_sch",
+      "sha256_lf": "93e6f0a9f4b14a4ca793ff0fe772b9b9330193545305d00e5764236e8d57ced4"
+    },
+    {
+      "source": "integration/boards/contact-router/ATO_RTE.kicad_sym",
+      "board_sibling": "boards/contact-router/ATO_RTE.kicad_sym",
+      "sha256_lf": "e7126a2b5c98d79ed416321634e4279082fbeb5567ec75e81729517a6c8ca306"
+    },
+    {
+      "source": "integration/boards/contact-router/sym-lib-table",
+      "board_sibling": "boards/contact-router/sym-lib-table",
+      "sha256_lf": "ca7ae5941612dee6f6f08877fa1b6abf804bb39d5c1404f9009a240b00711652"
+    },
+    {
+      "source": "integration/boards/supervision/admission.kicad_sch",
+      "board_sibling": "boards/supervision/admission.kicad_sch",
+      "sha256_lf": "bee7b67e7578a94dfe888aaba800138a7a9a00c7986213d98c9ffc91eacc36a9"
+    },
+    {
+      "source": "integration/boards/supervision/admission_2.kicad_sch",
+      "board_sibling": "boards/supervision/admission_2.kicad_sch",
+      "sha256_lf": "5f152f2b6176ef12706688ffd9575727df4461b1671c93a8befabc2780a6baef"
+    },
+    {
+      "source": "integration/boards/supervision/afe_bank0.kicad_sch",
+      "board_sibling": "boards/supervision/afe_bank0.kicad_sch",
+      "sha256_lf": "c1724e4e39f4b056547efac4e0690f5181d683b43f55fd0ca4fd0bd732d0646e"
+    },
+    {
+      "source": "integration/boards/supervision/afe_bank1.kicad_sch",
+      "board_sibling": "boards/supervision/afe_bank1.kicad_sch",
+      "sha256_lf": "17af2ff395a008c3cfb022abf8af5a5179f85ff147a6f5177420959c0b716c3b"
+    },
+    {
+      "source": "integration/boards/supervision/afe_bank2.kicad_sch",
+      "board_sibling": "boards/supervision/afe_bank2.kicad_sch",
+      "sha256_lf": "c904d5d19526e2bc67620db36e65677c5672130fdb20aa92c6151a10b87b4bcf"
+    },
+    {
+      "source": "integration/boards/supervision/afe_bank3.kicad_sch",
+      "board_sibling": "boards/supervision/afe_bank3.kicad_sch",
+      "sha256_lf": "e8949edb04bff9d1c04f85871d4faddd6fd1a932776f580b84688a1c75bf98ea"
+    },
+    {
+      "source": "integration/boards/supervision/afe_bank4.kicad_sch",
+      "board_sibling": "boards/supervision/afe_bank4.kicad_sch",
+      "sha256_lf": "3485575b15a9f784d7bf81d6501b82f963c8f9281da7cf31ffcf29cf66c0a0a7"
+    },
+    {
+      "source": "integration/boards/supervision/afe_logic.kicad_sch",
+      "board_sibling": "boards/supervision/afe_logic.kicad_sch",
+      "sha256_lf": "d972367d2f9f293e4d2f10ac1062599134b2e58cf28569e80a6afb68fef8ff9e"
+    },
+    {
+      "source": "integration/boards/supervision/afe_logic_2.kicad_sch",
+      "board_sibling": "boards/supervision/afe_logic_2.kicad_sch",
+      "sha256_lf": "fe0ba112c89a80efbf757ddbe11c7cd59f50afa726a6569ddd34e215b446bce7"
+    },
+    {
+      "source": "integration/boards/supervision/afe_rails.kicad_sch",
+      "board_sibling": "boards/supervision/afe_rails.kicad_sch",
+      "sha256_lf": "7a8cf10aadbb3dff602b8e04aac0c9fe44c626c8fc5b352f03cb2fbc27ce427f"
+    },
+    {
+      "source": "integration/boards/supervision/afe_rails_2.kicad_sch",
+      "board_sibling": "boards/supervision/afe_rails_2.kicad_sch",
+      "sha256_lf": "efb69f20e103d8d69099659cffd8d5751ce2a86e72834a6c28bf9d4f8822c320"
+    },
+    {
+      "source": "integration/boards/supervision/defaults.kicad_sch",
+      "board_sibling": "boards/supervision/defaults.kicad_sch",
+      "sha256_lf": "e66d3c3512b836d4c05d01223f6c7dd490b5317fdaf77a65569d0cb546281d9a"
+    },
+    {
+      "source": "integration/boards/supervision/duration.kicad_sch",
+      "board_sibling": "boards/supervision/duration.kicad_sch",
+      "sha256_lf": "69db928cbd5bf845d557d4abfaf1e456516fa79ab0a94b6f7a1d1e8e6991f40f"
+    },
+    {
+      "source": "integration/boards/supervision/guards.kicad_sch",
+      "board_sibling": "boards/supervision/guards.kicad_sch",
+      "sha256_lf": "3de2bc72aac56a50d219fb7e1b8fc72b2c1baab78c8c4c45efd915ff31ea5c14"
+    },
+    {
+      "source": "integration/boards/supervision/host_rails.kicad_sch",
+      "board_sibling": "boards/supervision/host_rails.kicad_sch",
+      "sha256_lf": "8997f20ca9504c2c4fc8e75086ccb9f9c519cece5108386b5b143e55de4c1567"
+    },
+    {
+      "source": "integration/boards/supervision/host_rails_2.kicad_sch",
+      "board_sibling": "boards/supervision/host_rails_2.kicad_sch",
+      "sha256_lf": "64569addddb2a34e6b579900fc37d787469192e32200c22baada035385fa1577"
+    },
+    {
+      "source": "integration/boards/supervision/integration_taps.kicad_sch",
+      "board_sibling": "boards/supervision/integration_taps.kicad_sch",
+      "sha256_lf": "e017003dd90548b8dfb7fa74ba671d3c1f281b8a757c9411ed02d4d64ccfefdd"
+    },
+    {
+      "source": "integration/boards/supervision/phase0.kicad_sch",
+      "board_sibling": "boards/supervision/phase0.kicad_sch",
+      "sha256_lf": "bc55be04398f381f3e7161479037f6eee43302e3b13df16703f4cc5ed4235763"
+    },
+    {
+      "source": "integration/boards/supervision/phase1.kicad_sch",
+      "board_sibling": "boards/supervision/phase1.kicad_sch",
+      "sha256_lf": "17d1ebb17070aee08729dce0e2abfcb0230effaee9d75dcef2f6a6ed7f5cb058"
+    },
+    {
+      "source": "integration/boards/supervision/quiescence.kicad_sch",
+      "board_sibling": "boards/supervision/quiescence.kicad_sch",
+      "sha256_lf": "31d722fe2b03fcc094985bcd7848ef538b6f8a50ea8b2be440442c1de3ffd20b"
+    },
+    {
+      "source": "integration/boards/supervision/supervision.kicad_sch",
+      "board_sibling": "boards/supervision/supervision.kicad_sch",
+      "sha256_lf": "49d600e4eb1efb6cb223415d1eaaa139d613a4e0347138fbc4c3792878a43e5d"
+    },
+    {
+      "source": "integration/boards/supervision/voltage.kicad_sch",
+      "board_sibling": "boards/supervision/voltage.kicad_sch",
+      "sha256_lf": "f2c1aef08754008d7d80014228e95edb0f969f9326c1afa557f1163102ba6ecb"
+    },
+    {
+      "source": "integration/boards/supervision/watchdog.kicad_sch",
+      "board_sibling": "boards/supervision/watchdog.kicad_sch",
+      "sha256_lf": "584fc7dd83f468578f6b0d41e60aca441cc7524692889d3ff61add134e1b5a45"
+    },
+    {
+      "source": "integration/boards/supervision/ATO_INTEGRATION.kicad_sym",
+      "board_sibling": "boards/supervision/ATO_INTEGRATION.kicad_sym",
+      "sha256_lf": "3488373abaca8d719cb8e85b497e94aa9b44fe0ffda1795587516991415b5f43"
+    },
+    {
+      "source": "integration/boards/supervision/ATO_SUP.kicad_sym",
+      "board_sibling": "boards/supervision/ATO_SUP.kicad_sym",
+      "sha256_lf": "a799b8ff2a42f37c8a05487362edae2d36a800d750c8304e65c7b68d9884e2b3"
+    },
+    {
+      "source": "integration/boards/supervision/sym-lib-table",
+      "board_sibling": "boards/supervision/sym-lib-table",
+      "sha256_lf": "7323ead2c20941405af6025a6a4e5f7cf1c32e0ac62bbc98717282ffa966428f"
+    },
+    {
+      "source": "integration/boards/power/afe3.kicad_sch",
+      "board_sibling": "boards/power/afe3.kicad_sch",
+      "sha256_lf": "07eae91f03ddd2666d93806a022e706175cf3fd231aee79d1e56d07ff70eb687"
+    },
+    {
+      "source": "integration/boards/power/afen.kicad_sch",
+      "board_sibling": "boards/power/afen.kicad_sch",
+      "sha256_lf": "64934ca942d04a27da9739ac730a011afc1025ace5812d54e3a4c8b806125026"
+    },
+    {
+      "source": "integration/boards/power/afep.kicad_sch",
+      "board_sibling": "boards/power/afep.kicad_sch",
+      "sha256_lf": "d9c3b516463a5f9e40c9c0ff5101789733be36a7904603facab78ce510c7147e"
+    },
+    {
+      "source": "integration/boards/power/boost15.kicad_sch",
+      "board_sibling": "boards/power/boost15.kicad_sch",
+      "sha256_lf": "c2d7f2fbb503af3d2419100d9b1f9e57e85fd96c1d9424c8c49ac7d1a7a9bbda"
+    },
+    {
+      "source": "integration/boards/power/boost24.kicad_sch",
+      "board_sibling": "boards/power/boost24.kicad_sch",
+      "sha256_lf": "d9aa5aaf3ba506cdf6625a90dbf0d3bfa13daffc1ab581c9ce382209886a2bcb"
+    },
+    {
+      "source": "integration/boards/power/enable.kicad_sch",
+      "board_sibling": "boards/power/enable.kicad_sch",
+      "sha256_lf": "c85d816f336fc2b683d4e455fbcddbba73e046b09795405c20418cd8e32fd8a9"
+    },
+    {
+      "source": "integration/boards/power/enable_2.kicad_sch",
+      "board_sibling": "boards/power/enable_2.kicad_sch",
+      "sha256_lf": "63005fd0c027a7f883edca13799c36514d12cd3de04e90968bf04296b614a3c8"
+    },
+    {
+      "source": "integration/boards/power/enable_3.kicad_sch",
+      "board_sibling": "boards/power/enable_3.kicad_sch",
+      "sha256_lf": "d85e18a223027064eea6f1ec70cd353387a9a05210a5a944961df9c11c8f5cc5"
+    },
+    {
+      "source": "integration/boards/power/host3.kicad_sch",
+      "board_sibling": "boards/power/host3.kicad_sch",
+      "sha256_lf": "94f9ec5aee6b58460ae1abf3b3b429944615036760993866d4b904174226b627"
+    },
+    {
+      "source": "integration/boards/power/host5.kicad_sch",
+      "board_sibling": "boards/power/host5.kicad_sch",
+      "sha256_lf": "6a0a2246e4b6c87e5b83ec850653bb23c44cd585a80728c8b0fdbc760f8e6e38"
+    },
+    {
+      "source": "integration/boards/power/input.kicad_sch",
+      "board_sibling": "boards/power/input.kicad_sch",
+      "sha256_lf": "ba0498c7974ce143bad15f0ce5f9001bfe6c5a504c26c9a84a53e9e8de599097"
+    },
+    {
+      "source": "integration/boards/power/island.kicad_sch",
+      "board_sibling": "boards/power/island.kicad_sch",
+      "sha256_lf": "e7df95c92073c094c46b963e15f024ce60895372d9912df3c5df3ca8053702ec"
+    },
+    {
+      "source": "integration/boards/power/power.kicad_sch",
+      "board_sibling": "boards/power/power.kicad_sch",
+      "sha256_lf": "6166da904ff84c6542b86921275b57c1e6214dfff94ed1bd4c6c15ca5fdc2ae1"
+    },
+    {
+      "source": "integration/boards/power/sup3.kicad_sch",
+      "board_sibling": "boards/power/sup3.kicad_sch",
+      "sha256_lf": "aa1140ca554da840532a42c876dcbe78f19d5ba33c9cd7452ecfff6d89dd3c17"
+    },
+    {
+      "source": "integration/boards/power/sup5.kicad_sch",
+      "board_sibling": "boards/power/sup5.kicad_sch",
+      "sha256_lf": "473c368263fd976314ff71e13e9afc058e86a459d203bd45d94076a4b509e2ac"
+    },
+    {
+      "source": "integration/boards/power/ATO_POWER.kicad_sym",
+      "board_sibling": "boards/power/ATO_POWER.kicad_sym",
+      "sha256_lf": "020277465b21819d59320cef6235015b464261b9b18b4c2ab51fcf7f3d95dbdd"
+    },
+    {
+      "source": "integration/boards/power/sym-lib-table",
+      "board_sibling": "boards/power/sym-lib-table",
+      "sha256_lf": "5629cc27c59d09bdb493be36451570da0a02bf0861e116a121378a7a63d11b31"
+    },
+    {
+      "source": "integration/boards/monitoring-transport/adc.kicad_sch",
+      "board_sibling": "boards/monitoring-transport/adc.kicad_sch",
+      "sha256_lf": "7d243baf649238f18128802233dd52fb127fa204d952bc7a95ce0c1092070552"
+    },
+    {
+      "source": "integration/boards/monitoring-transport/companion.kicad_sch",
+      "board_sibling": "boards/monitoring-transport/companion.kicad_sch",
+      "sha256_lf": "c30b14dd3680b6bf8fcc8919a3adb9e716d5673ed53772b279f6b50c1813ed71"
+    },
+    {
+      "source": "integration/boards/monitoring-transport/handoff.kicad_sch",
+      "board_sibling": "boards/monitoring-transport/handoff.kicad_sch",
+      "sha256_lf": "28188cc3357a4bb80410d0e1f2841e3e87d7d5bd67a6e311dfad6201881b21bf"
+    },
+    {
+      "source": "integration/boards/monitoring-transport/health.kicad_sch",
+      "board_sibling": "boards/monitoring-transport/health.kicad_sch",
+      "sha256_lf": "0a62a2fd20710eb8c51be3938f1ff13cd8cdd22710dd9aa5bbb14577b4e5e5f7"
+    },
+    {
+      "source": "integration/boards/monitoring-transport/inputs.kicad_sch",
+      "board_sibling": "boards/monitoring-transport/inputs.kicad_sch",
+      "sha256_lf": "e77862d493907d9a7b8190fe2d61bed1ca96af507cbe983c44994a52a99c2619"
+    },
+    {
+      "source": "integration/boards/monitoring-transport/monitoring_transport.kicad_sch",
+      "board_sibling": "boards/monitoring-transport/monitoring_transport.kicad_sch",
+      "sha256_lf": "bef824ea7ae3142f8adbd0ffd01977a4713c6687439870547e4ffbfac68e7932"
+    },
+    {
+      "source": "integration/boards/monitoring-transport/reference.kicad_sch",
+      "board_sibling": "boards/monitoring-transport/reference.kicad_sch",
+      "sha256_lf": "e7076ed4d46e95c01ed01aad0c0764ce89f8bb0728ff08b70a94a7678b6f8581"
+    },
+    {
+      "source": "integration/boards/monitoring-transport/root_2.kicad_sch",
+      "board_sibling": "boards/monitoring-transport/root_2.kicad_sch",
+      "sha256_lf": "2585e660917bc8fbe829e1153159b0d119cfc18c93548e12d1359a126cb99d2b"
+    },
+    {
+      "source": "integration/boards/monitoring-transport/ATO_TRANSPORT.kicad_sym",
+      "board_sibling": "boards/monitoring-transport/ATO_TRANSPORT.kicad_sym",
+      "sha256_lf": "cf25ee40b0eaf01cca9b28b72ce78752349c9a8ef3427f09da052a2fbeec794f"
+    },
+    {
+      "source": "integration/boards/monitoring-transport/sym-lib-table",
+      "board_sibling": "boards/monitoring-transport/sym-lib-table",
+      "sha256_lf": "7fcd1d8f6a0deacea31d3cd7d2c3e16fd6e94aa143d4f7a0ea5fe5decafd3bac"
+    },
+    {
+      "source": "integration/boards/controller-carrier/controller_carrier.kicad_sch",
+      "board_sibling": "boards/controller-carrier/controller_carrier.kicad_sch",
+      "sha256_lf": "01477532adf685101c8b93f733ad7f362912243e1e6080604366ee0fa3a07ce1"
+    },
+    {
+      "source": "integration/boards/controller-carrier/defaults.kicad_sch",
+      "board_sibling": "boards/controller-carrier/defaults.kicad_sch",
+      "sha256_lf": "5ac3db4de33acc8f3f4532c367dbf4296e244c356baf1f8ca3cd4d13f391fa1f"
+    },
+    {
+      "source": "integration/boards/controller-carrier/defaults_2.kicad_sch",
+      "board_sibling": "boards/controller-carrier/defaults_2.kicad_sch",
+      "sha256_lf": "7bb496e828156a611cd8ae48ab1589ce39b1f5d1f8ee22994f31690ecd19b0d7"
+    },
+    {
+      "source": "integration/boards/controller-carrier/defaults_3.kicad_sch",
+      "board_sibling": "boards/controller-carrier/defaults_3.kicad_sch",
+      "sha256_lf": "a954598e6627c24a6464f6b0b13054d23c6a8dde45c94b96685430c3d6dca02d"
+    },
+    {
+      "source": "integration/boards/controller-carrier/handoff.kicad_sch",
+      "board_sibling": "boards/controller-carrier/handoff.kicad_sch",
+      "sha256_lf": "98bff6a19865354a11e4f82df7a94c35c83c68d4b44a0b8a011705ee5f7b38cc"
+    },
+    {
+      "source": "integration/boards/controller-carrier/handoff_2.kicad_sch",
+      "board_sibling": "boards/controller-carrier/handoff_2.kicad_sch",
+      "sha256_lf": "f812fb89de74f87027d98dd1ba5a28355b820ce70e841fae7c561b445a13b8ea"
+    },
+    {
+      "source": "integration/boards/controller-carrier/handoff_3.kicad_sch",
+      "board_sibling": "boards/controller-carrier/handoff_3.kicad_sch",
+      "sha256_lf": "77935bf43d6b98e45aca446999a20ecfc96bc06520600b2c07f7d2dfbbacdcca"
+    },
+    {
+      "source": "integration/boards/controller-carrier/power.kicad_sch",
+      "board_sibling": "boards/controller-carrier/power.kicad_sch",
+      "sha256_lf": "82fbb186ea6d33e808973a266ed439f39164960dc6cc21d6bc64f3297109117b"
+    },
+    {
+      "source": "integration/boards/controller-carrier/processor.kicad_sch",
+      "board_sibling": "boards/controller-carrier/processor.kicad_sch",
+      "sha256_lf": "625ecb7942585f2761796dd6e629664f4af61cef4fffbd2ae2a9beceaa1ab893"
+    },
+    {
+      "source": "integration/boards/controller-carrier/sideband.kicad_sch",
+      "board_sibling": "boards/controller-carrier/sideband.kicad_sch",
+      "sha256_lf": "944de0fbf65191794b113cb30ad2dddb0a299160feb3f20109d948d3554af58e"
+    },
+    {
+      "source": "integration/boards/controller-carrier/ATO_CONTROLLER.kicad_sym",
+      "board_sibling": "boards/controller-carrier/ATO_CONTROLLER.kicad_sym",
+      "sha256_lf": "5dc88d9f1a8f146e54464f29f2fcb9c005ed470cadd3dbf8a1387f0d2ae3f811"
+    },
+    {
+      "source": "integration/boards/controller-carrier/sym-lib-table",
+      "board_sibling": "boards/controller-carrier/sym-lib-table",
+      "sha256_lf": "41d4f481e9c90b47a6e0666ecb07fde8ffa125a197573fca8d8a51971bf4efcc"
+    }
+  ],
+  "policy": "Exact schematic/symbol copies; board project/routing/footprint configuration never overwritten"
+}

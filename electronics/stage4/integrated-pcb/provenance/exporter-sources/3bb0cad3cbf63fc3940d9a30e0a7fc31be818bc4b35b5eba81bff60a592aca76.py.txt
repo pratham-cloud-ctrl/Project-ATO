@@ -1,0 +1,100 @@
+"""Export a DRC-clean frozen board into a review/manufacturing reference bundle.
+
+Requires KiCad 10 CLI. The exports are digital reference artifacts, not authority
+to fabricate or connect a device to a person. No source board is changed.
+"""
+from __future__ import annotations
+import argparse
+import csv
+import hashlib
+import json
+import os
+from pathlib import Path
+import shutil
+import subprocess
+import xml.etree.ElementTree as ET
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[2]
+LAYERS = 'F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,Edge.Cuts'
+
+
+def sha(path):
+    data=path.read_bytes()
+    if path.suffix.lower() not in ('.png','.step','.fcstd','.elf','.bin'):
+        data=data.replace(b'\r\n',b'\n')
+    return hashlib.sha256(data).hexdigest()
+
+
+def export(name, cli):
+    board=HERE/'boards'/name/(name.replace('-','_')+'.kicad_pcb')
+    drc_path=board.parent/'drc.json'
+    drc=json.loads(drc_path.read_text())
+    assert not drc['violations'] and not drc['unconnected_items'] and not drc['schematic_parity'], 'DRC/parity must be clean before export'
+    assert not drc['ignored_checks'], 'No ignored DRC rules accepted for final reference export'
+    system=json.loads((HERE/'integration/system.json').read_text())
+    schematic=ROOT/system['native_outputs'][name]['board_root']
+    xml=schematic.with_suffix('.xml')
+    parts=ET.parse(xml).getroot().findall('components/comp')
+    dnp={p.get('ref') for p in parts if any(x.get('name')=='dnp' for x in p.findall('property'))}
+    destination=HERE/'exports'/name
+    destination.mkdir(parents=True,exist_ok=True)
+    logs=destination/'export.log'
+    commands=[]
+    env=os.environ.copy()
+    def run(*args):
+        command=[str(cli),*map(str,args)]
+        completed=subprocess.run(command,env=env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,encoding='utf-8',errors='replace',timeout=600)
+        with logs.open('a',encoding='utf-8') as log:
+            log.write(' '.join(command)+'\n'+completed.stdout+'\n')
+        commands.append(dict(arguments=list(map(str,args)),returncode=completed.returncode))
+        if completed.returncode:raise RuntimeError(completed.stdout[-3000:])
+        if 'Could not load' in completed.stdout or 'Unable to load' in completed.stdout:
+            raise RuntimeError('Missing model: '+completed.stdout[-3000:])
+        return completed.stdout
+    logs.write_text('',encoding='utf-8')
+    run('pcb','export','step','--force','--no-dnp','--output',destination/'populated.step',board)
+    for side in ['top','bottom']:
+        run('pcb','render','--width','1800','--height','1400','--quality','high','--background','opaque',
+            '--side',side,'--output',destination/(side+'.png'),board)
+    run('pcb','render','--width','1800','--height','1400','--quality','high','--background','opaque',
+        '--rotate','-35,0,25','--zoom','.83','--output',destination/'isometric.png',board)
+    run('pcb','export','svg','--layers','F.Cu,F.SilkS,Edge.Cuts','--page-size-mode','2',
+        '--exclude-drawing-sheet','--mode-single','--output',destination/'top-copper.svg',board)
+    run('pcb','export','svg','--layers','B.Cu,B.SilkS,Edge.Cuts','--page-size-mode','2',
+        '--exclude-drawing-sheet','--mirror','--mode-single','--output',destination/'bottom-copper.svg',board)
+    fab=destination/'fabrication-reference';fab.mkdir(exist_ok=True)
+    run('pcb','export','gerbers','--layers',LAYERS,'--subtract-soldermask','--output',str(fab)+os.sep,board)
+    run('pcb','export','drill','--format','excellon','--excellon-units','mm','--excellon-separate-th',
+        '--generate-report','--report-path',fab/'drill-report.txt','--output',str(fab)+os.sep,board)
+    run('pcb','export','pos','--format','csv','--units','mm','--side','both','--exclude-dnp','--output',fab/'positions.csv',board)
+    with (fab/'bom.csv').open('w',encoding='utf-8',newline='') as stream:
+        writer=csv.writer(stream);writer.writerow(['Reference','Value','Footprint','Quantity','DNP'])
+        for p in sorted(parts,key=lambda x:x.get('ref')):
+            writer.writerow([p.get('ref'),p.findtext('value'),p.findtext('footprint'),1,int(p.get('ref') in dnp)])
+    (fab/'README.md').write_text(
+        '# Digital fabrication reference\n\n'
+        'Generated from the frozen native board. Gerbers, plated/nonplated drill,\n'
+        'all-footprint placement positions and an ungrouped source-XML BOM permit\n'
+        'inspection. Mounting holes are geometry rather than BOM components.\n'
+        'Placement coordinates retain KiCad native anchor convention and need\n'
+        'assembler-specific orientation review. No sourcing, stackup-vendor,\n'
+        'physical performance, medical clearance or manufacturing approval is\n'
+        'claimed. Use artificial loads only.\n',encoding='utf-8')
+    receipt=dict(schema='ato.board-export.v1',board=name,source_board=board.relative_to(ROOT).as_posix(),
+                 exporter_sha256_lf=sha(Path(__file__)),
+                 source_sha256_lf=sha(board),source_project_sha256_lf=sha(board.with_suffix('.kicad_pro')),
+                 source_xml_sha256_lf=sha(xml),DRC_sha256_lf=sha(drc_path),
+                 component_count=len(parts),fitted_component_count=len(parts)-len(dnp),DNP_references=sorted(dnp),
+                 KiCad_version=run('version').strip(),commands=commands,
+                 populated_models_nominal_where_documented=True,physical_qualification=False,
+                 outputs={p.relative_to(destination).as_posix():sha(p) for p in destination.rglob('*')
+                          if p.is_file() and p.name not in ('export-receipt.json','export.log')})
+    (destination/'export-receipt.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf-8')
+    print(f'{name}: populated STEP, three renders, copper SVG, fabrication reference; {len(parts)} components',flush=True)
+
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser();parser.add_argument('--board',required=True)
+    parser.add_argument('--kicad-cli',default=shutil.which('kicad-cli') or r'E:\project workspace assests\EDA\KiCAD\bin\kicad-cli.exe')
+    args=parser.parse_args();export(args.board,Path(args.kicad_cli))

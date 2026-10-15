@@ -1,0 +1,107 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-15T23:37:34",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f",
+            "violations": []
+        },
+        {
+            "path": "/input/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/9cf9d8f3-9afc-5ab4-86f9-69f764afcf96",
+            "violations": []
+        },
+        {
+            "path": "/sup3/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/89ca6592-bf0d-59bc-8d56-4fd186ef9538",
+            "violations": []
+        },
+        {
+            "path": "/sup5/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/46556590-4c8b-50c9-b0cc-ce7439bebd85",
+            "violations": []
+        },
+        {
+            "path": "/host3/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/83342de3-57ea-55f1-847c-66d90cc12cba",
+            "violations": []
+        },
+        {
+            "path": "/host5/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/c89b1743-94f1-5f68-9831-4cb8d564524f",
+            "violations": []
+        },
+        {
+            "path": "/enable/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/8cda357d-bff1-5c46-93cf-62ab312f1ed8",
+            "violations": []
+        },
+        {
+            "path": "/enable_2/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/18174f0d-ecfc-5d7f-bdde-65738f018f18",
+            "violations": []
+        },
+        {
+            "path": "/enable_3/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/ea6916ee-24ac-5b90-ae69-08f0976595a8",
+            "violations": []
+        },
+        {
+            "path": "/boost15/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/bd31b7c1-2130-55f3-9970-1979734b4ef2",
+            "violations": []
+        },
+        {
+            "path": "/boost24/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/eb08a0bc-7a5d-513c-b779-35124cc20e33",
+            "violations": []
+        },
+        {
+            "path": "/island/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/4a283887-5855-55f7-9246-dd333eaf7f6c",
+            "violations": []
+        },
+        {
+            "path": "/afe3/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/edbc1995-1b61-556f-a5ee-1edca4b55a3a",
+            "violations": []
+        },
+        {
+            "path": "/afep/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/7c33edc9-b1e1-581c-8efa-f7dabfc59779",
+            "violations": []
+        },
+        {
+            "path": "/afen/",
+            "uuid_path": "/d030f6ec-c45a-5539-8c99-11423314e99f/a8505644-e510-5c7d-b795-5da370fc8522",
+            "violations": []
+        }
+    ],
+    "source": "power.kicad_sch"
+}

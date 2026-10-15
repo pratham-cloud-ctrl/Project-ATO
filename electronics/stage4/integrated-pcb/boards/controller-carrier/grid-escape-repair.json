@@ -1,0 +1,137 @@
+{
+  "schema": "ato.carrier-grid-escape.v1",
+  "scope": "Actual 0.15 mm traces / 0.6 mm diameter / 0.3 mm drill vias; digital native DRC required. Via filling/capping under LGA pads remains fabrication dependent.",
+  "steps": [
+    {
+      "iteration": 0,
+      "net": "SYS_822d2245__MON_REARM0",
+      "start": [
+        [
+          23.7706,
+          123.657
+        ],
+        [
+          0
+        ]
+      ],
+      "end": [
+        [
+          71.2763,
+          23.3552
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "expanded": 27598,
+      "tracks": 50,
+      "vias": 4
+    },
+    {
+      "iteration": 1,
+      "net": "SYS_ce0a4f53__BOTH_CNV",
+      "start": [
+        [
+          23.0472,
+          127.6822
+        ],
+        [
+          2
+        ]
+      ],
+      "end": [
+        [
+          23.7432,
+          121.8925
+        ],
+        [
+          2
+        ]
+      ],
+      "expanded": 27229,
+      "tracks": 30,
+      "vias": 2
+    },
+    {
+      "iteration": 2,
+      "net": "SYS_32a601bf__MON_REARM1",
+      "start": [
+        [
+          23.7706,
+          124.8508
+        ],
+        [
+          0
+        ]
+      ],
+      "end": [
+        [
+          24.3768,
+          113.297
+        ],
+        [
+          1
+        ]
+      ],
+      "expanded": 1667,
+      "tracks": 13,
+      "vias": 1
+    },
+    {
+      "iteration": 3,
+      "net": "SYS_18e49fe8__AFE_CS_ASSERT",
+      "start": [
+        [
+          19.2748,
+          126.0446
+        ],
+        [
+          0
+        ]
+      ],
+      "end": [
+        [
+          33.0048,
+          27.0473
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "expanded": 5632,
+      "tracks": 41,
+      "vias": 1
+    },
+    {
+      "iteration": 4,
+      "net": "controller-carrier__SIDEBAND_DATA",
+      "start": [
+        [
+          18.446,
+          127.7878
+        ],
+        [
+          0
+        ]
+      ],
+      "end": [
+        [
+          21.2966,
+          128.3131
+        ],
+        [
+          2
+        ]
+      ],
+      "expanded": 9137,
+      "tracks": 22,
+      "vias": 1
+    }
+  ]
+}

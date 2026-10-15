@@ -1,0 +1,72 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-15T23:37:22",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/5f4a54cf-c2aa-5b12-bc90-e4bdf5937bd5",
+            "violations": []
+        },
+        {
+            "path": "/acquisition/",
+            "uuid_path": "/5f4a54cf-c2aa-5b12-bc90-e4bdf5937bd5/3e931413-2889-58db-abdd-4cec72f15079",
+            "violations": []
+        },
+        {
+            "path": "/bank0/",
+            "uuid_path": "/5f4a54cf-c2aa-5b12-bc90-e4bdf5937bd5/b88b7e86-d941-5a49-a2bb-d328ca04ee06",
+            "violations": []
+        },
+        {
+            "path": "/bank1/",
+            "uuid_path": "/5f4a54cf-c2aa-5b12-bc90-e4bdf5937bd5/29a83ade-80f2-57bd-8b7f-ac0a7d778363",
+            "violations": []
+        },
+        {
+            "path": "/bank2/",
+            "uuid_path": "/5f4a54cf-c2aa-5b12-bc90-e4bdf5937bd5/46a10f64-bb20-5348-939e-93bd12b175f4",
+            "violations": []
+        },
+        {
+            "path": "/bank3/",
+            "uuid_path": "/5f4a54cf-c2aa-5b12-bc90-e4bdf5937bd5/b5adc5ab-b363-507c-8819-96d7e02279cc",
+            "violations": []
+        },
+        {
+            "path": "/reference/",
+            "uuid_path": "/5f4a54cf-c2aa-5b12-bc90-e4bdf5937bd5/f1bd052f-da12-55fe-a768-f373569c7436",
+            "violations": []
+        },
+        {
+            "path": "/Integrated_component_taps/",
+            "uuid_path": "/5f4a54cf-c2aa-5b12-bc90-e4bdf5937bd5/428f1d12-84ff-5054-8e31-1dc1ee6b4604",
+            "violations": []
+        }
+    ],
+    "source": "recording_front_end.kicad_sch"
+}

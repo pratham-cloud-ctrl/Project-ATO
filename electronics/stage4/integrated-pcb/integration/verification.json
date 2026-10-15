@@ -1,0 +1,87 @@
+{
+  "schema": "ato.integrated-native-verification.v1",
+  "passed": true,
+  "assertions": 9540,
+  "components": 1298,
+  "fitted_components": 1296,
+  "DNP_references": [
+    "C20100",
+    "C20200"
+  ],
+  "connected_and_NC_pins": 4781,
+  "sheets": 80,
+  "harness_rows": 258,
+  "legacy_retained": 166,
+  "legacy_corrected": 2,
+  "carrier_wires": 92,
+  "firmware_GPIO": 46,
+  "firmware_endpoint_connections": 50,
+  "added_physical_tap_headers": 4,
+  "master_erc_violations": 0,
+  "source_xml_sha256_lf": {
+    "monitoring-cell": "7e029267bac87990263cb3105b55dd2351e44b7171361a607448e72f696e35da",
+    "current-driver": "830d5cc1b8b4683200972c2547b6e516168868ca8b9e7a062f528f02466bc4f4",
+    "recording-front-end": "211ab88f492fc8bb8b1b5fe1f6e027439419915d18c4dd1c8c20f3c322fc386f",
+    "contact-router": "2aa8b475472527995cd8090e1e928cbbb4e7e72f5ad8002eed865c5a77cc80df",
+    "supervision": "5e9c2e3b2c71b2ed5badc4c29247f4ef59e418febd523ba4f97585e651a59e2c",
+    "power": "fd0dd56627e320921b5906c81adfc2b830c6a35a19c4b0a5c7bbbdd7d820fbff",
+    "monitoring-transport": "14342cd07769ddfd15bfbeb9759839704cf5bd87946924b8143503227e0a2d9f",
+    "controller-carrier": "95e2ff7708a634e7eb7926f648cca9dd4109ad39d3b24fa2b1ed420665e6ad53"
+  },
+  "master_xml_sha256_lf": "8d62b48345b8dc170592ca70b046c4707e4cc2723476874d318892702e1be964",
+  "boards": {
+    "monitoring-cell": {
+      "components": 71,
+      "pins": 247,
+      "xml_sha256_lf": "a10e4ce0980f093a23222306c94cd98fc676c83a5cc11168e6ef6b43464156b7",
+      "erc_violations": 0
+    },
+    "current-driver": {
+      "components": 156,
+      "pins": 572,
+      "xml_sha256_lf": "75fdcb40eb07fcbea07d8d4ec798c7240d8154a1517b551bc141ab5fa0949d8a",
+      "erc_violations": 0
+    },
+    "recording-front-end": {
+      "components": 153,
+      "pins": 615,
+      "xml_sha256_lf": "da584f9d1b6a5859e5ed3428f52c2579cd476873ca48246974879466aaddf418",
+      "erc_violations": 0
+    },
+    "contact-router": {
+      "components": 155,
+      "pins": 650,
+      "xml_sha256_lf": "bd61df9b6cf19995e592f44e05da289459213c0cf368e06a8b4083eaece1c08b",
+      "erc_violations": 0
+    },
+    "supervision": {
+      "components": 479,
+      "pins": 1703,
+      "xml_sha256_lf": "a93dbc94047527a165d5657aaf74312cc4ce88756115100eb05ceda574a0cd63",
+      "erc_violations": 0
+    },
+    "power": {
+      "components": 156,
+      "pins": 449,
+      "xml_sha256_lf": "a9a6dfbdfb7f8f5e34fa271d7e36960c804bc91be03ed24b34d50e6efd5aefaa",
+      "erc_violations": 0
+    },
+    "monitoring-transport": {
+      "components": 60,
+      "pins": 217,
+      "xml_sha256_lf": "0132563bac63acf257c432198e97edcaf5a84b02044010e6d844335733afdd6a",
+      "erc_violations": 0
+    },
+    "controller-carrier": {
+      "components": 68,
+      "pins": 328,
+      "xml_sha256_lf": "9d5c478285e3f6f7e9de15997913e76a05e9a3144caa5fb407f8178e34d0b3c0",
+      "erc_violations": 0
+    }
+  },
+  "limits": [
+    "Saved native electrical design and pin-group parity; no physical board measurements",
+    "Pin-header/loom fanouts require a fabricated harness and continuity testing",
+    "ERC does not establish analog accuracy, medical isolation, radio approval or stimulation efficacy"
+  ]
+}

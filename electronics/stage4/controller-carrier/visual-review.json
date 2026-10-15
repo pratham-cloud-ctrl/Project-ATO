@@ -1,0 +1,30 @@
+{
+  "schema": "ato.stage4.controller-carrier.visual-review.v1",
+  "date": "2026-10-14",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "pdf_sha256": "047f6a7aaf047d00fe64f39827eddb7b78b4ab495fe5927915495601c4085e10",
+  "png_sha256": {
+    "page-1.png": "89e56b7cfed4d1d89d3899f3000520087c642d2a01690c96d606f44b4a9e96ff",
+    "page-10.png": "d6e35a2c4a563348127a8df72dbade48f04fb695dc0523e34604a2703860e46f",
+    "page-2.png": "0915ee5e724f9941d6106858e379f1eb7bccbc430ef1507ec62e77336e1683d9",
+    "page-3.png": "1cfd54b3b30fef1fa5e5350f9e4ec9a0942dd0e2a5b3d965ec600bb7a8095668",
+    "page-4.png": "6461897b3cd4ed1473a3a2d1c3e3ae08c1c99efcba1f2b706d67096e88f7f3f4",
+    "page-5.png": "e77a38aa2cbd87b1fefc067ff748587489bfdc73407ffa000d7d4cc7449a732d",
+    "page-6.png": "9bdf3195011223c6c4f1338cdbd4bcb3b6756e1726bfbbbff15aa160f5a8a716",
+    "page-7.png": "874be8707ed371655a1b73f26a944edb6d01e8a64f9e9cf94650469ce21b6382",
+    "page-8.png": "abe4dc9b3fcdc2e78bfa741a40bd38962e13efffaa473d4faea913797597ba7b",
+    "page-9.png": "48fa72369328c46dda52bdf4d811cd77504c8a6f043939f9db5320d029b64b0f"
+  },
+  "review": "AlltennativePDFpagesrenderedwithPopplerandvisuallyinspected;modulepinlabels,physicalsidebandchain,handoffconnectors,defaultresistorsandtitleblockslegiblewithnoboundsorlabelcollisions. NativeA2sheetsretainzoomableengineeringlayout."
+}

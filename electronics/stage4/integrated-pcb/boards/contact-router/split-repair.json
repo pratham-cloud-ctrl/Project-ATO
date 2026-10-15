@@ -1,0 +1,7 @@
+{
+  "split_nets": [
+    "SYS_56562df4__GND"
+  ],
+  "removed_copper_items": 659,
+  "why": "Original carrier harness return mapping was corrected before final pin graph freeze; old merged GND/SHIFT_TAIL copper must be removed before exact pad reassignment."
+}

@@ -1,0 +1,2765 @@
+{
+  "schema": "ato.footprint-inventory.v1",
+  "scope": "Preserved source footprint dependency inventory, including missing original model references. Final populated board model assignments are audited separately in each board routing and export receipt.",
+  "components": 1298,
+  "distinct_patterns": 115,
+  "items": {
+    "monitoring-cell/ato_s4:C_0805_2012Metric": {
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\ato_s4.pretty\\C_0805_2012Metric.kicad_mod",
+      "references": [
+        "C10001",
+        "C10002",
+        "C10003",
+        "C10004",
+        "C10100",
+        "C10101",
+        "C10102",
+        "C10103",
+        "C10104",
+        "C10105",
+        "C10106",
+        "C10107",
+        "C10108",
+        "C10109",
+        "C10110",
+        "C10200",
+        "C10201",
+        "C10202",
+        "C10203",
+        "C10204",
+        "C10205",
+        "C10206",
+        "C10207",
+        "C10208",
+        "C10209",
+        "C10210"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-cell/ato_s4:PinHeader_1x03_P2.54mm_Vertical": {
+      "footprint": "ato_s4:PinHeader_1x03_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\ato_s4.pretty\\PinHeader_1x03_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J10001",
+        "J10101",
+        "J10201"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-cell/ato_s4:PinHeader_1x12_P2.54mm_Vertical": {
+      "footprint": "ato_s4:PinHeader_1x12_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\ato_s4.pretty\\PinHeader_1x12_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J10002"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-cell/ato_s4:PinHeader_1x05_P2.54mm_Vertical": {
+      "footprint": "ato_s4:PinHeader_1x05_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\ato_s4.pretty\\PinHeader_1x05_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J10003"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-cell/ato_s4:PinHeader_1x04_P2.54mm_Vertical": {
+      "footprint": "ato_s4:PinHeader_1x04_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\ato_s4.pretty\\PinHeader_1x04_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J10004"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-cell/ato_s4:R_0805_2012Metric": {
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\ato_s4.pretty\\R_0805_2012Metric.kicad_mod",
+      "references": [
+        "R10001",
+        "R10002",
+        "R10003",
+        "R10004",
+        "R10005",
+        "R10006",
+        "R10007",
+        "R10100",
+        "R10101",
+        "R10102",
+        "R10103",
+        "R10104",
+        "R10105",
+        "R10200",
+        "R10201",
+        "R10202",
+        "R10203",
+        "R10204",
+        "R10205"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-cell/ato_s4:SOT-23-6": {
+      "footprint": "ato_s4:SOT-23-6",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\ato_s4.pretty\\SOT-23-6.kicad_mod",
+      "references": [
+        "U10001",
+        "U10105",
+        "U10205"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-cell/ato_s4:SOT-353_SC-70-5": {
+      "footprint": "ato_s4:SOT-353_SC-70-5",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\ato_s4.pretty\\SOT-353_SC-70-5.kicad_mod",
+      "references": [
+        "U10002",
+        "U10101",
+        "U10102",
+        "U10201",
+        "U10202"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-353_SC-70-5.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-353_SC-70-5.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-cell/ato_s4:MSOP-10_3x3mm_P0.5mm": {
+      "footprint": "ato_s4:MSOP-10_3x3mm_P0.5mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\ato_s4.pretty\\MSOP-10_3x3mm_P0.5mm.kicad_mod",
+      "references": [
+        "U10003",
+        "U10103",
+        "U10203"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-10_3x3mm_P0.5mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/MSOP-10_3x3mm_P0.5mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-cell/ato_s4:PinHeader_1x02_P2.54mm_Vertical": {
+      "footprint": "ato_s4:PinHeader_1x02_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\ato_s4.pretty\\PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J10100",
+        "J10200"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-cell/ato_s4:SOIC-8_3.9x4.9mm_P1.27mm": {
+      "footprint": "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\ato_s4.pretty\\SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+      "references": [
+        "U10100",
+        "U10104",
+        "U10200",
+        "U10204"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-cell/ato_s4:VSSOP-8_2.3x2mm_P0.5mm": {
+      "footprint": "ato_s4:VSSOP-8_2.3x2mm_P0.5mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\ato_s4.pretty\\VSSOP-8_2.3x2mm_P0.5mm.kicad_mod",
+      "references": [
+        "U10106",
+        "U10206"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "current-driver/ato_drv:C_0805_2012Metric": {
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\current-driver\\ato_drv.pretty\\C_0805_2012Metric.kicad_mod",
+      "references": [
+        "C20001",
+        "C20002",
+        "C20003",
+        "C20100",
+        "C20101",
+        "C20102",
+        "C20103",
+        "C20104",
+        "C20105",
+        "C20300",
+        "C20301",
+        "C20302",
+        "C20303",
+        "C20304",
+        "C20305",
+        "C20306",
+        "C20307",
+        "C20308",
+        "C20309",
+        "C20310",
+        "C20311",
+        "C20312",
+        "C20313",
+        "C20314",
+        "C20315",
+        "C20316",
+        "C20317",
+        "C20318",
+        "C20319",
+        "C20320",
+        "C20200",
+        "C20201",
+        "C20202",
+        "C20203",
+        "C20204",
+        "C20205",
+        "C20400",
+        "C20401",
+        "C20402",
+        "C20403",
+        "C20404",
+        "C20405",
+        "C20406",
+        "C20407",
+        "C20408",
+        "C20409",
+        "C20410",
+        "C20411",
+        "C20412",
+        "C20413",
+        "C20414",
+        "C20415",
+        "C20416",
+        "C20417",
+        "C20418",
+        "C20419",
+        "C20420"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "current-driver/ato_drv:PinHeader_1x05_P2.54mm_Vertical": {
+      "footprint": "ato_drv:PinHeader_1x05_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\current-driver\\ato_drv.pretty\\PinHeader_1x05_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J20001"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "current-driver/ato_drv:PinHeader_1x04_P2.54mm_Vertical": {
+      "footprint": "ato_drv:PinHeader_1x04_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\current-driver\\ato_drv.pretty\\PinHeader_1x04_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J20002",
+        "J20100",
+        "J20200"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "current-driver/ato_drv:PinHeader_1x09_P2.54mm_Vertical": {
+      "footprint": "ato_drv:PinHeader_1x09_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\current-driver\\ato_drv.pretty\\PinHeader_1x09_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J20003",
+        "J20005"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "current-driver/ato_drv:PinHeader_1x11_P2.54mm_Vertical": {
+      "footprint": "ato_drv:PinHeader_1x11_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\current-driver\\ato_drv.pretty\\PinHeader_1x11_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J20004"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x11_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x11_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "current-driver/ato_drv:R_0805_2012Metric": {
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\current-driver\\ato_drv.pretty\\R_0805_2012Metric.kicad_mod",
+      "references": [
+        "R20001",
+        "R20002",
+        "R20003",
+        "R20004",
+        "R20005",
+        "R20100",
+        "R20101",
+        "R20102",
+        "R20103",
+        "R20104",
+        "R20105",
+        "R20300",
+        "R20301",
+        "R20302",
+        "R20303",
+        "R20304",
+        "R20305",
+        "R20306",
+        "R20307",
+        "R20308",
+        "R20309",
+        "R20310",
+        "R20200",
+        "R20201",
+        "R20202",
+        "R20203",
+        "R20204",
+        "R20205",
+        "R20400",
+        "R20401",
+        "R20402",
+        "R20403",
+        "R20404",
+        "R20405",
+        "R20406",
+        "R20407",
+        "R20408",
+        "R20409",
+        "R20410"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "current-driver/ato_drv:Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm": {
+      "footprint": "ato_drv:Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\current-driver\\ato_drv.pretty\\Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm.kicad_mod",
+      "references": [
+        "U20001"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SON.3dshapes/Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm.step",
+          "exists": false
+        }
+      ]
+    },
+    "current-driver/ato_drv:BSP89_PG-SOT223-4_DrainTab": {
+      "footprint": "ato_drv:BSP89_PG-SOT223-4_DrainTab",
+      "source": "E:\\Project ATO\\electronics\\stage4\\current-driver\\ato_drv.pretty\\BSP89_PG-SOT223-4_DrainTab.kicad_mod",
+      "references": [
+        "Q20100",
+        "Q20200"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-223.step",
+          "exists": true
+        }
+      ]
+    },
+    "current-driver/ato_drv:SOT-23-5": {
+      "footprint": "ato_drv:SOT-23-5",
+      "source": "E:\\Project ATO\\electronics\\stage4\\current-driver\\ato_drv.pretty\\SOT-23-5.kicad_mod",
+      "references": [
+        "U20100",
+        "U20301",
+        "U20304",
+        "U20305",
+        "U20306",
+        "U20307",
+        "U20308",
+        "U20309",
+        "U20312",
+        "U20314",
+        "U20319",
+        "U20320",
+        "U20200",
+        "U20401",
+        "U20404",
+        "U20405",
+        "U20406",
+        "U20407",
+        "U20408",
+        "U20409",
+        "U20412",
+        "U20414",
+        "U20419",
+        "U20420"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "exists": true
+        }
+      ]
+    },
+    "current-driver/ato_drv:TSSOP-16_4.4x5mm_P0.65mm": {
+      "footprint": "ato_drv:TSSOP-16_4.4x5mm_P0.65mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\current-driver\\ato_drv.pretty\\TSSOP-16_4.4x5mm_P0.65mm.kicad_mod",
+      "references": [
+        "U20101",
+        "U20201"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "current-driver/ato_drv:VSSOP-8_2.3x2mm_P0.5mm": {
+      "footprint": "ato_drv:VSSOP-8_2.3x2mm_P0.5mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\current-driver\\ato_drv.pretty\\VSSOP-8_2.3x2mm_P0.5mm.kicad_mod",
+      "references": [
+        "U20102",
+        "U20103",
+        "U20313",
+        "U20315",
+        "U20316",
+        "U20202",
+        "U20203",
+        "U20413",
+        "U20415",
+        "U20416"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "current-driver/ato_drv:TSOT-23-6": {
+      "footprint": "ato_drv:TSOT-23-6",
+      "source": "E:\\Project ATO\\electronics\\stage4\\current-driver\\ato_drv.pretty\\TSOT-23-6.kicad_mod",
+      "references": [
+        "U20300",
+        "U20400"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+          "exists": true
+        }
+      ]
+    },
+    "current-driver/ato_drv:SOT-23-6": {
+      "footprint": "ato_drv:SOT-23-6",
+      "source": "E:\\Project ATO\\electronics\\stage4\\current-driver\\ato_drv.pretty\\SOT-23-6.kicad_mod",
+      "references": [
+        "U20302",
+        "U20303",
+        "U20310",
+        "U20311",
+        "U20317",
+        "U20318",
+        "U20402",
+        "U20403",
+        "U20410",
+        "U20411",
+        "U20417",
+        "U20418"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+          "exists": true
+        }
+      ]
+    },
+    "recording-front-end/ato_afe:C_0805_2012Metric": {
+      "footprint": "ato_afe:C_0805_2012Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\recording-front-end\\ato_afe.pretty\\C_0805_2012Metric.kicad_mod",
+      "references": [
+        "C30001",
+        "C30002",
+        "C30003",
+        "C30004",
+        "C30005",
+        "C30006",
+        "C30010",
+        "C30011",
+        "C30012",
+        "C30013",
+        "C30020",
+        "C30030",
+        "C30100",
+        "C30101",
+        "C30102",
+        "C30103",
+        "C30200",
+        "C30201",
+        "C30202",
+        "C30203",
+        "C30300",
+        "C30301",
+        "C30302",
+        "C30303",
+        "C30021",
+        "C30031",
+        "C30104",
+        "C30105",
+        "C30106",
+        "C30107",
+        "C30204",
+        "C30205",
+        "C30206",
+        "C30207",
+        "C30304",
+        "C30305",
+        "C30306",
+        "C30307",
+        "C30022",
+        "C30032",
+        "C30108",
+        "C30109",
+        "C30110",
+        "C30111",
+        "C30208",
+        "C30209",
+        "C30210",
+        "C30211",
+        "C30308",
+        "C30309",
+        "C30310",
+        "C30311",
+        "C30023",
+        "C30033",
+        "C30112",
+        "C30113",
+        "C30114",
+        "C30115",
+        "C30212",
+        "C30213",
+        "C30214",
+        "C30215",
+        "C30312",
+        "C30313",
+        "C30314",
+        "C30315",
+        "C30500",
+        "C30510",
+        "C30511",
+        "C30512",
+        "C30513"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "recording-front-end/ato_afe:PinHeader_1x04_P2.54mm_Vertical": {
+      "footprint": "ato_afe:PinHeader_1x04_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\recording-front-end\\ato_afe.pretty\\PinHeader_1x04_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J30001"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "recording-front-end/ato_afe:PinHeader_1x10_P2.54mm_Vertical": {
+      "footprint": "ato_afe:PinHeader_1x10_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\recording-front-end\\ato_afe.pretty\\PinHeader_1x10_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J30002"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x10_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x10_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "recording-front-end/ato_afe:PinHeader_1x18_P2.54mm_Vertical": {
+      "footprint": "ato_afe:PinHeader_1x18_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\recording-front-end\\ato_afe.pretty\\PinHeader_1x18_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J30003"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x18_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x18_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "recording-front-end/ato_afe:R_0805_2012Metric": {
+      "footprint": "ato_afe:R_0805_2012Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\recording-front-end\\ato_afe.pretty\\R_0805_2012Metric.kicad_mod",
+      "references": [
+        "R30001",
+        "R30002",
+        "R30003",
+        "R30004",
+        "R30005",
+        "R30006",
+        "R30007",
+        "R30008",
+        "R30009",
+        "R30010",
+        "R30011",
+        "R30012",
+        "R30013",
+        "R30014",
+        "R30100",
+        "R30101",
+        "R30102",
+        "R30103",
+        "R30200",
+        "R30201",
+        "R30202",
+        "R30203",
+        "R30104",
+        "R30105",
+        "R30106",
+        "R30107",
+        "R30204",
+        "R30205",
+        "R30206",
+        "R30207",
+        "R30108",
+        "R30109",
+        "R30110",
+        "R30111",
+        "R30208",
+        "R30209",
+        "R30210",
+        "R30211",
+        "R30112",
+        "R30113",
+        "R30114",
+        "R30115",
+        "R30212",
+        "R30213",
+        "R30214",
+        "R30215",
+        "R30500",
+        "R30501",
+        "R30502",
+        "R30503"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "recording-front-end/ato_afe:SOIC-16W_7.5x10.3mm_P1.27mm": {
+      "footprint": "ato_afe:SOIC-16W_7.5x10.3mm_P1.27mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\recording-front-end\\ato_afe.pretty\\SOIC-16W_7.5x10.3mm_P1.27mm.kicad_mod",
+      "references": [
+        "U30001",
+        "U30002"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-16W_7.5x10.3mm_P1.27mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/SOIC-16W_7.5x10.3mm_P1.27mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "recording-front-end/ato_afe:SOT-23-5": {
+      "footprint": "ato_afe:SOT-23-5",
+      "source": "E:\\Project ATO\\electronics\\stage4\\recording-front-end\\ato_afe.pretty\\SOT-23-5.kicad_mod",
+      "references": [
+        "U30003",
+        "U30004"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "exists": true
+        }
+      ]
+    },
+    "recording-front-end/ato_afe:RHD2216_QFN56_8x8_P0.5_EP6.1": {
+      "footprint": "ato_afe:RHD2216_QFN56_8x8_P0.5_EP6.1",
+      "source": "E:\\Project ATO\\electronics\\stage4\\recording-front-end\\ato_afe.pretty\\RHD2216_QFN56_8x8_P0.5_EP6.1.kicad_mod",
+      "references": [
+        "U30010"
+      ],
+      "models": []
+    },
+    "recording-front-end/ato_afe:Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6": {
+      "footprint": "ato_afe:Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6",
+      "source": "E:\\Project ATO\\electronics\\stage4\\recording-front-end\\ato_afe.pretty\\Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6.kicad_mod",
+      "references": [
+        "U30020",
+        "U30021",
+        "U30022",
+        "U30023",
+        "U30024"
+      ],
+      "models": []
+    },
+    "recording-front-end/ato_afe:VSSOP-8_2.3x2mm_P0.5mm": {
+      "footprint": "ato_afe:VSSOP-8_2.3x2mm_P0.5mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\recording-front-end\\ato_afe.pretty\\VSSOP-8_2.3x2mm_P0.5mm.kicad_mod",
+      "references": [
+        "U30100",
+        "U30101",
+        "U30102",
+        "U30103",
+        "U30104",
+        "U30105",
+        "U30106",
+        "U30107",
+        "U30108",
+        "U30109",
+        "U30110",
+        "U30111",
+        "U30112",
+        "U30113",
+        "U30114",
+        "U30115",
+        "U30500"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "contact-router/ato_rte:PinHeader_1x03_P2.54mm_Vertical": {
+      "footprint": "ato_rte:PinHeader_1x03_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\contact-router\\ato_rte.pretty\\PinHeader_1x03_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J40001",
+        "J40100",
+        "J40200"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "contact-router/ato_rte:PinHeader_1x07_P2.54mm_Vertical": {
+      "footprint": "ato_rte:PinHeader_1x07_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\contact-router\\ato_rte.pretty\\PinHeader_1x07_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J40002",
+        "J40003"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "contact-router/ato_rte:PinHeader_1x10_P2.54mm_Vertical": {
+      "footprint": "ato_rte:PinHeader_1x10_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\contact-router\\ato_rte.pretty\\PinHeader_1x10_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J40004"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x10_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x10_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "contact-router/ato_rte:PinHeader_1x12_P2.54mm_Vertical": {
+      "footprint": "ato_rte:PinHeader_1x12_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\contact-router\\ato_rte.pretty\\PinHeader_1x12_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J40005"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "contact-router/ato_rte:PinHeader_1x09_P2.54mm_Vertical": {
+      "footprint": "ato_rte:PinHeader_1x09_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\contact-router\\ato_rte.pretty\\PinHeader_1x09_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J40006"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "contact-router/ato_rte:PinHeader_1x18_P2.54mm_Vertical": {
+      "footprint": "ato_rte:PinHeader_1x18_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\contact-router\\ato_rte.pretty\\PinHeader_1x18_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J40007"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x18_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x18_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "contact-router/ato_rte:C_0805_2012Metric": {
+      "footprint": "ato_rte:C_0805_2012Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\contact-router\\ato_rte.pretty\\C_0805_2012Metric.kicad_mod",
+      "references": [
+        "C40100",
+        "C40101",
+        "C40102",
+        "C40103",
+        "C40200",
+        "C40201",
+        "C40202",
+        "C40203",
+        "C40010",
+        "C40020",
+        "C40021",
+        "C40030",
+        "C40031",
+        "C40032",
+        "C40033",
+        "C40034",
+        "C40035",
+        "C40036",
+        "C40037",
+        "C40300",
+        "C40301",
+        "C40302",
+        "C40303",
+        "C40304",
+        "C40305",
+        "C40306",
+        "C40307",
+        "C40308",
+        "C40309",
+        "C40310",
+        "C40311",
+        "C40312",
+        "C40313",
+        "C40314",
+        "C40315",
+        "C40316",
+        "C40317",
+        "C40318",
+        "C40319",
+        "C40320",
+        "C40321",
+        "C40400",
+        "C40401",
+        "C40402",
+        "C40403",
+        "C40404",
+        "C40405",
+        "C40406",
+        "C40407",
+        "C40408",
+        "C40409",
+        "C40410",
+        "C40411",
+        "C40412",
+        "C40413",
+        "C40414",
+        "C40415",
+        "C40416",
+        "C40417",
+        "C40418"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "contact-router/ato_rte:R_0805_2012Metric": {
+      "footprint": "ato_rte:R_0805_2012Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\contact-router\\ato_rte.pretty\\R_0805_2012Metric.kicad_mod",
+      "references": [
+        "R40100",
+        "R40101",
+        "R40102",
+        "R40103",
+        "R40104",
+        "R40200",
+        "R40201",
+        "R40202",
+        "R40203",
+        "R40204",
+        "R40010",
+        "R40011",
+        "R40012",
+        "R40013",
+        "R40014",
+        "R40300",
+        "R40301",
+        "R40302",
+        "R40303",
+        "R40304",
+        "R40305",
+        "R40306",
+        "R40307",
+        "R40308",
+        "R40309",
+        "R40310",
+        "R40311",
+        "R40312",
+        "R40313",
+        "R40314"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "contact-router/ato_rte:TSSOP-16_4.4x5mm_P0.65mm": {
+      "footprint": "ato_rte:TSSOP-16_4.4x5mm_P0.65mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\contact-router\\ato_rte.pretty\\TSSOP-16_4.4x5mm_P0.65mm.kicad_mod",
+      "references": [
+        "U40100",
+        "U40101",
+        "U40200",
+        "U40201",
+        "U40010",
+        "U40020",
+        "U40021"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "contact-router/ato_rte:VSSOP-8_2.3x2mm_P0.5mm": {
+      "footprint": "ato_rte:VSSOP-8_2.3x2mm_P0.5mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\contact-router\\ato_rte.pretty\\VSSOP-8_2.3x2mm_P0.5mm.kicad_mod",
+      "references": [
+        "U40030",
+        "U40031",
+        "U40032",
+        "U40033",
+        "U40034",
+        "U40035",
+        "U40036",
+        "U40037",
+        "U40314",
+        "U40316",
+        "U40318"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "contact-router/ato_rte:SOT-23-6": {
+      "footprint": "ato_rte:SOT-23-6",
+      "source": "E:\\Project ATO\\electronics\\stage4\\contact-router\\ato_rte.pretty\\SOT-23-6.kicad_mod",
+      "references": [
+        "U40300",
+        "U40301",
+        "U40309",
+        "U40310",
+        "U40313",
+        "U40317",
+        "U40319",
+        "U40408"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+          "exists": true
+        }
+      ]
+    },
+    "contact-router/ato_rte:SOT-23-5": {
+      "footprint": "ato_rte:SOT-23-5",
+      "source": "E:\\Project ATO\\electronics\\stage4\\contact-router\\ato_rte.pretty\\SOT-23-5.kicad_mod",
+      "references": [
+        "U40302",
+        "U40303",
+        "U40304",
+        "U40305",
+        "U40306",
+        "U40307",
+        "U40308",
+        "U40311",
+        "U40312",
+        "U40315",
+        "U40320",
+        "U40321",
+        "U40400",
+        "U40401",
+        "U40402",
+        "U40403",
+        "U40404",
+        "U40405",
+        "U40406",
+        "U40407",
+        "U40409",
+        "U40410",
+        "U40411",
+        "U40412",
+        "U40413",
+        "U40414",
+        "U40415",
+        "U40416",
+        "U40417",
+        "U40418"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:PinHeader_1x07_P2.54mm_Vertical": {
+      "footprint": "ato_sup:PinHeader_1x07_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\PinHeader_1x07_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J50001"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:PinHeader_1x06_P2.54mm_Vertical": {
+      "footprint": "ato_sup:PinHeader_1x06_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\PinHeader_1x06_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J50002"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:PinHeader_1x12_P2.54mm_Vertical": {
+      "footprint": "ato_sup:PinHeader_1x12_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\PinHeader_1x12_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J50003"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:PinHeader_1x09_P2.54mm_Vertical": {
+      "footprint": "ato_sup:PinHeader_1x09_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\PinHeader_1x09_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J50004"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:PinHeader_1x13_P2.54mm_Vertical": {
+      "footprint": "ato_sup:PinHeader_1x13_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\PinHeader_1x13_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J50005"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x13_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x13_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:PinHeader_1x05_P2.54mm_Vertical": {
+      "footprint": "ato_sup:PinHeader_1x05_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\PinHeader_1x05_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J50006"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:C_0805_2012Metric": {
+      "footprint": "ato_sup:C_0805_2012Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\C_0805_2012Metric.kicad_mod",
+      "references": [
+        "C50100",
+        "C50101",
+        "C50102",
+        "C50103",
+        "C50104",
+        "C50200",
+        "C50201",
+        "C50202",
+        "C50203",
+        "C50204",
+        "C50205",
+        "C50206",
+        "C50207",
+        "C50208",
+        "C50220",
+        "C50260",
+        "C50261",
+        "C50250",
+        "C50251",
+        "C50300",
+        "C50301",
+        "C51000",
+        "C51001",
+        "C51002",
+        "C51005",
+        "C51006",
+        "C51007",
+        "C51008",
+        "C50400",
+        "C50401",
+        "C50410",
+        "C50411",
+        "C50420",
+        "C50421",
+        "C50430",
+        "C50431",
+        "C51009",
+        "C51010",
+        "C50500",
+        "C50501",
+        "C50502",
+        "C50510",
+        "C50520",
+        "C51011",
+        "C51012",
+        "C50800",
+        "C50801",
+        "C50810",
+        "C50811",
+        "C51042",
+        "C51043",
+        "C51044",
+        "C51045",
+        "C51046",
+        "C51047",
+        "C51048",
+        "C51049",
+        "C51050",
+        "C51051",
+        "C51052",
+        "C51053",
+        "C51054",
+        "C51055",
+        "C51056",
+        "C51057",
+        "C51058",
+        "C50900",
+        "C51059",
+        "C51060",
+        "C51061",
+        "C51062",
+        "C51063",
+        "C51064",
+        "C51065",
+        "C51066",
+        "C51067",
+        "C51068",
+        "C51069",
+        "C51070",
+        "C51097",
+        "C50910",
+        "C51071",
+        "C51072",
+        "C51073",
+        "C51074",
+        "C51075",
+        "C51076",
+        "C51077",
+        "C51078",
+        "C51079",
+        "C51080",
+        "C51081",
+        "C51082",
+        "C51083",
+        "C50911",
+        "C51084",
+        "C51085",
+        "C51086",
+        "C51087",
+        "C51088",
+        "C51089",
+        "C51090",
+        "C51091",
+        "C51092",
+        "C51093",
+        "C51094",
+        "C51095",
+        "C51096",
+        "C50600",
+        "C50601",
+        "C50602",
+        "C50603",
+        "C51013",
+        "C51014",
+        "C51015",
+        "C51016",
+        "C50604",
+        "C50605",
+        "C50606",
+        "C50607",
+        "C51017",
+        "C51018",
+        "C51019",
+        "C51020",
+        "C50608",
+        "C50609",
+        "C50610",
+        "C50611",
+        "C51021",
+        "C51022",
+        "C51023",
+        "C51024",
+        "C50612",
+        "C50613",
+        "C50614",
+        "C50615",
+        "C51025",
+        "C51026",
+        "C51027",
+        "C51028",
+        "C50616",
+        "C51029",
+        "C50700",
+        "C50701",
+        "C51003",
+        "C51004",
+        "C51030",
+        "C51031",
+        "C51032",
+        "C51033",
+        "C50710",
+        "C50711",
+        "C51034",
+        "C51035",
+        "C51036",
+        "C51037",
+        "C51038",
+        "C51039",
+        "C51040",
+        "C51041"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:PinHeader_1x18_P2.54mm_Vertical": {
+      "footprint": "ato_sup:PinHeader_1x18_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\PinHeader_1x18_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J50100",
+        "J50101"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x18_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x18_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:R_0805_2012Metric": {
+      "footprint": "ato_sup:R_0805_2012Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\R_0805_2012Metric.kicad_mod",
+      "references": [
+        "R50100",
+        "R50101",
+        "R50102",
+        "R50103",
+        "R50104",
+        "R50110",
+        "R52000",
+        "R52001",
+        "R52002",
+        "R52003",
+        "R52004",
+        "R52010",
+        "R52011",
+        "R52012",
+        "R52013",
+        "R52014",
+        "R52020",
+        "R52021",
+        "R52022",
+        "R52023",
+        "R52024",
+        "R52030",
+        "R52031",
+        "R52032",
+        "R52033",
+        "R52034",
+        "R52040",
+        "R52041",
+        "R52042",
+        "R52043",
+        "R52044",
+        "R52050",
+        "R52051",
+        "R52052",
+        "R52053",
+        "R52054",
+        "R52060",
+        "R52061",
+        "R52062",
+        "R52063",
+        "R52064",
+        "R52070",
+        "R52071",
+        "R52072",
+        "R52073",
+        "R52074",
+        "R52080",
+        "R50260",
+        "R50261",
+        "R52081",
+        "R52082",
+        "R52083",
+        "R52084",
+        "R52200",
+        "R52201",
+        "R50250",
+        "R50251",
+        "R50300",
+        "R50301",
+        "R50302",
+        "R50400",
+        "R50401",
+        "R50402",
+        "R50410",
+        "R50411",
+        "R50420",
+        "R50421",
+        "R50500",
+        "R50501",
+        "R50502",
+        "R50510",
+        "R50511",
+        "R50512",
+        "R50513",
+        "R50520",
+        "R50521",
+        "R50522",
+        "R50523",
+        "R58000",
+        "R58001",
+        "R58002",
+        "R58010",
+        "R58011",
+        "R58012",
+        "R56000",
+        "R56001",
+        "R56010",
+        "R56011",
+        "R56020",
+        "R56021",
+        "R56030",
+        "R56031",
+        "R56040",
+        "R56041",
+        "R56050",
+        "R56051",
+        "R56060",
+        "R56061",
+        "R56070",
+        "R56071",
+        "R56080",
+        "R56081",
+        "R56090",
+        "R56091",
+        "R56100",
+        "R56101",
+        "R56110",
+        "R56111",
+        "R56120",
+        "R56121",
+        "R56130",
+        "R56131",
+        "R56140",
+        "R56141",
+        "R56150",
+        "R56151",
+        "R56160",
+        "R56161",
+        "R50700",
+        "R50701",
+        "R50702",
+        "R50703",
+        "R50950",
+        "R50951",
+        "R50952",
+        "R50953",
+        "R50954",
+        "R50955",
+        "R50956",
+        "R50957",
+        "R50958",
+        "R50959",
+        "R50960",
+        "R50961"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6": {
+      "footprint": "ato_sup:Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6.kicad_mod",
+      "references": [
+        "U50100",
+        "U50101",
+        "U50102",
+        "U50103",
+        "U50104"
+      ],
+      "models": []
+    },
+    "supervision/ato_sup:SOT-23-6": {
+      "footprint": "ato_sup:SOT-23-6",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\SOT-23-6.kicad_mod",
+      "references": [
+        "U50200",
+        "U50201",
+        "U50202",
+        "U50203",
+        "U50204",
+        "U50205",
+        "U50206",
+        "U50207",
+        "U50208",
+        "U51000",
+        "U51001",
+        "U51002",
+        "U51007",
+        "U51009",
+        "U51010",
+        "U51047",
+        "U51049",
+        "U51050",
+        "U51054",
+        "U51061",
+        "U51062",
+        "U51064",
+        "U51070",
+        "U51071",
+        "U51075",
+        "U51076",
+        "U51080",
+        "U51081",
+        "U51083",
+        "U51084",
+        "U51088",
+        "U51089",
+        "U51093",
+        "U51094",
+        "U51096",
+        "U51003",
+        "U51032",
+        "U51033",
+        "U51034",
+        "U51035",
+        "U51036",
+        "U51037",
+        "U51038",
+        "U51039",
+        "U51040"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:D_SOD-323": {
+      "footprint": "ato_sup:D_SOD-323",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\D_SOD-323.kicad_mod",
+      "references": [
+        "D50260",
+        "D50250",
+        "D50410",
+        "D50411"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Diode_SMD.3dshapes/D_SOD-323.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:SOT-353_SC-70-5": {
+      "footprint": "ato_sup:SOT-353_SC-70-5",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\SOT-353_SC-70-5.kicad_mod",
+      "references": [
+        "U50220",
+        "U50400",
+        "U50401",
+        "U50500",
+        "U50501",
+        "U50700",
+        "U50701"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-353_SC-70-5.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-353_SC-70-5.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:SOT-23-5": {
+      "footprint": "ato_sup:SOT-23-5",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\SOT-23-5.kicad_mod",
+      "references": [
+        "U50260",
+        "U50250",
+        "U51005",
+        "U51006",
+        "U51008",
+        "U50420",
+        "U50421",
+        "U51011",
+        "U51012",
+        "U51042",
+        "U51043",
+        "U51044",
+        "U51045",
+        "U51046",
+        "U51048",
+        "U51051",
+        "U51052",
+        "U51053",
+        "U51055",
+        "U51056",
+        "U51057",
+        "U51058",
+        "U51059",
+        "U51060",
+        "U51063",
+        "U51065",
+        "U51066",
+        "U51067",
+        "U51068",
+        "U51069",
+        "U51097",
+        "U51072",
+        "U51073",
+        "U51074",
+        "U51077",
+        "U51078",
+        "U51079",
+        "U51082",
+        "U51085",
+        "U51086",
+        "U51087",
+        "U51090",
+        "U51091",
+        "U51092",
+        "U51095",
+        "U51013",
+        "U51014",
+        "U51015",
+        "U51016",
+        "U51017",
+        "U51018",
+        "U51019",
+        "U51020",
+        "U51021",
+        "U51022",
+        "U51023",
+        "U51024",
+        "U51025",
+        "U51026",
+        "U51027",
+        "U51028",
+        "U51029",
+        "U51004",
+        "U51030",
+        "U51031",
+        "U51041"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:Texas_DRB0008A_VSON8_3x3_P0.65_EP1.5x1.75": {
+      "footprint": "ato_sup:Texas_DRB0008A_VSON8_3x3_P0.65_EP1.5x1.75",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\Texas_DRB0008A_VSON8_3x3_P0.65_EP1.5x1.75.kicad_mod",
+      "references": [
+        "U50300"
+      ],
+      "models": []
+    },
+    "supervision/ato_sup:VSSOP-8_2.3x2mm_P0.5mm": {
+      "footprint": "ato_sup:VSSOP-8_2.3x2mm_P0.5mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\VSSOP-8_2.3x2mm_P0.5mm.kicad_mod",
+      "references": [
+        "U50301",
+        "U50410",
+        "U50411",
+        "U50502",
+        "U50510",
+        "U50520",
+        "U50810",
+        "U50811",
+        "U50900",
+        "U50910",
+        "U50911",
+        "U50600",
+        "U50601",
+        "U50602",
+        "U50603",
+        "U50604",
+        "U50605",
+        "U50606",
+        "U50607",
+        "U50608",
+        "U50609",
+        "U50610",
+        "U50611",
+        "U50612",
+        "U50613",
+        "U50614",
+        "U50615",
+        "U50616"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:TSOT-23-6": {
+      "footprint": "ato_sup:TSOT-23-6",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\TSOT-23-6.kicad_mod",
+      "references": [
+        "U50800",
+        "U50801"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:PinHeader_1x02_P2.54mm_Vertical": {
+      "footprint": "ato_sup:PinHeader_1x02_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J50600",
+        "J50601",
+        "J50602",
+        "J50603",
+        "J50604",
+        "J50605",
+        "J50606",
+        "J50607",
+        "J50608",
+        "J50609",
+        "J50610",
+        "J50611",
+        "J50612",
+        "J50613",
+        "J50614",
+        "J50615",
+        "J50616"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/ato_sup:SOIC-16W_7.5x10.3mm_P1.27mm": {
+      "footprint": "ato_sup:SOIC-16W_7.5x10.3mm_P1.27mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\supervision\\ato_sup.pretty\\SOIC-16W_7.5x10.3mm_P1.27mm.kicad_mod",
+      "references": [
+        "U50710"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-16W_7.5x10.3mm_P1.27mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/SOIC-16W_7.5x10.3mm_P1.27mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:PinHeader_1x02_P2.54mm_Vertical": {
+      "footprint": "ato_power:PinHeader_1x02_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J60001",
+        "SW60001"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:PinHeader_1x12_P2.54mm_Vertical": {
+      "footprint": "ato_power:PinHeader_1x12_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\PinHeader_1x12_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J60002"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:PinHeader_1x07_P2.54mm_Vertical": {
+      "footprint": "ato_power:PinHeader_1x07_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\PinHeader_1x07_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J60003"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:PinHeader_1x04_P2.54mm_Vertical": {
+      "footprint": "ato_power:PinHeader_1x04_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\PinHeader_1x04_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J60004"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:PinHeader_1x05_P2.54mm_Vertical": {
+      "footprint": "ato_power:PinHeader_1x05_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\PinHeader_1x05_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J60005"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:PinHeader_1x03_P2.54mm_Vertical": {
+      "footprint": "ato_power:PinHeader_1x03_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\PinHeader_1x03_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J60006",
+        "J60410",
+        "J60411",
+        "J60412"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:C_1206_3216Metric": {
+      "footprint": "ato_power:C_1206_3216Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\C_1206_3216Metric.kicad_mod",
+      "references": [
+        "C60001",
+        "C60002",
+        "C61000",
+        "C61001",
+        "C61010",
+        "C61011",
+        "C61020",
+        "C61021",
+        "C61100",
+        "C61101",
+        "C61102",
+        "C61103",
+        "C60200",
+        "C60201",
+        "C60202",
+        "C60203",
+        "C60204",
+        "C60230",
+        "C60240",
+        "C60241",
+        "C60242",
+        "C60243",
+        "C60244",
+        "C60245",
+        "C60246",
+        "C60247",
+        "C63000",
+        "C63001",
+        "C63002",
+        "C63003",
+        "C63004",
+        "C63010",
+        "C63011",
+        "C63012",
+        "C63013",
+        "C63014",
+        "C60400",
+        "C60401",
+        "C60402",
+        "C64100",
+        "C64101",
+        "C64102",
+        "C64103",
+        "C64110",
+        "C64111",
+        "C64112",
+        "C64113",
+        "C64120",
+        "C64121",
+        "C64122",
+        "C64123"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:D_SMC": {
+      "footprint": "ato_power:D_SMC",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\D_SMC.kicad_mod",
+      "references": [
+        "D60001"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMC.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Diode_SMD.3dshapes/D_SMC.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:Fuse_1206_3216Metric": {
+      "footprint": "ato_power:Fuse_1206_3216Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\Fuse_1206_3216Metric.kicad_mod",
+      "references": [
+        "F60001"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1206_3216Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Fuse.3dshapes/Fuse_1206_3216Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:L_Bourns_SRP5030T": {
+      "footprint": "ato_power:L_Bourns_SRP5030T",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\L_Bourns_SRP5030T.kicad_mod",
+      "references": [
+        "L60100",
+        "L60101",
+        "L60102",
+        "L60110",
+        "L60300",
+        "L60301"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Bourns_SRP5030T.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Inductor_SMD.3dshapes/L_Bourns_SRP5030T.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:R_0805_2012Metric": {
+      "footprint": "ato_power:R_0805_2012Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\R_0805_2012Metric.kicad_mod",
+      "references": [
+        "R61000",
+        "R61001",
+        "R61002",
+        "R61003",
+        "R61010",
+        "R61011",
+        "R61012",
+        "R61013",
+        "R61020",
+        "R61021",
+        "R61022",
+        "R61023",
+        "R61100",
+        "R61101",
+        "R61102",
+        "R61103",
+        "R62000",
+        "R62001",
+        "R62002",
+        "R62003",
+        "R62004",
+        "R62010",
+        "R62011",
+        "R62012",
+        "R62013",
+        "R62014",
+        "R62020",
+        "R62021",
+        "R62022",
+        "R62023",
+        "R62024",
+        "R60230",
+        "R60231",
+        "R62030",
+        "R62031",
+        "R62032",
+        "R62033",
+        "R62034",
+        "R62040",
+        "R62041",
+        "R62042",
+        "R62043",
+        "R62044",
+        "R60240",
+        "R60241",
+        "R60242",
+        "R63000",
+        "R63001",
+        "R63002",
+        "R63010",
+        "R63011",
+        "R63012",
+        "R64100",
+        "R64101",
+        "R64102",
+        "R64110",
+        "R64111",
+        "R64112",
+        "R64120",
+        "R64121",
+        "R64122"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:VSSOP-8_3x3mm_P0.65mm": {
+      "footprint": "ato_power:VSSOP-8_3x3mm_P0.65mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\VSSOP-8_3x3mm_P0.65mm.kicad_mod",
+      "references": [
+        "U60100",
+        "U60101",
+        "U60102"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_3x3mm_P0.65mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/VSSOP-8_3x3mm_P0.65mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm": {
+      "footprint": "ato_power:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm.kicad_mod",
+      "references": [
+        "U60110"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_DFN_QFN.3dshapes/VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm.step",
+          "exists": false
+        }
+      ]
+    },
+    "power/ato_power:SOT-23-6": {
+      "footprint": "ato_power:SOT-23-6",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\SOT-23-6.kicad_mod",
+      "references": [
+        "U60200",
+        "U60201",
+        "U60202",
+        "U60203",
+        "U60204",
+        "U60231",
+        "U60233"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:D_SOD-323": {
+      "footprint": "ato_power:D_SOD-323",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\D_SOD-323.kicad_mod",
+      "references": [
+        "D60230"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Diode_SMD.3dshapes/D_SOD-323.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:SOT-23-5": {
+      "footprint": "ato_power:SOT-23-5",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\SOT-23-5.kicad_mod",
+      "references": [
+        "U60230",
+        "U60232",
+        "U60234",
+        "U60235",
+        "U60236",
+        "U60237"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:D_SOD-323F": {
+      "footprint": "ato_power:D_SOD-323F",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\D_SOD-323F.kicad_mod",
+      "references": [
+        "D60300",
+        "D60301"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Diode_SMD.3dshapes/D_SOD-323F.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:TSOT-23-6": {
+      "footprint": "ato_power:TSOT-23-6",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\TSOT-23-6.kicad_mod",
+      "references": [
+        "U60300",
+        "U60301"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+          "exists": true
+        }
+      ]
+    },
+    "power/ato_power:TRACO_TMR3_SIP8_21.8x9.1_P2.54": {
+      "footprint": "ato_power:TRACO_TMR3_SIP8_21.8x9.1_P2.54",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\TRACO_TMR3_SIP8_21.8x9.1_P2.54.kicad_mod",
+      "references": [
+        "U60400"
+      ],
+      "models": []
+    },
+    "power/ato_power:Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm": {
+      "footprint": "ato_power:Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\power\\ato_power.pretty\\Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm.kicad_mod",
+      "references": [
+        "U60410",
+        "U60411",
+        "U60412"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm.step",
+          "exists": false
+        }
+      ]
+    },
+    "monitoring-transport/ato_transport:PinHeader_1x03_P2.54mm_Vertical": {
+      "footprint": "ato_transport:PinHeader_1x03_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-transport\\ato_transport.pretty\\PinHeader_1x03_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J70001"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-transport/ato_transport:PinHeader_1x08_P2.54mm_Vertical": {
+      "footprint": "ato_transport:PinHeader_1x08_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-transport\\ato_transport.pretty\\PinHeader_1x08_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J70002",
+        "J70004"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x08_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x08_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-transport/ato_transport:PinHeader_1x06_P2.54mm_Vertical": {
+      "footprint": "ato_transport:PinHeader_1x06_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-transport\\ato_transport.pretty\\PinHeader_1x06_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J70003"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-transport/ato_transport:PinHeader_1x05_P2.54mm_Vertical": {
+      "footprint": "ato_transport:PinHeader_1x05_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-transport\\ato_transport.pretty\\PinHeader_1x05_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J70005"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-transport/ato_transport:PinHeader_1x10_P2.54mm_Vertical": {
+      "footprint": "ato_transport:PinHeader_1x10_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-transport\\ato_transport.pretty\\PinHeader_1x10_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J70006",
+        "J70021"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x10_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x10_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-transport/ato_transport:R_0805_2012Metric": {
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-transport\\ato_transport.pretty\\R_0805_2012Metric.kicad_mod",
+      "references": [
+        "R70001",
+        "R70002",
+        "R70003",
+        "R70004",
+        "R70005",
+        "R70006",
+        "R70100",
+        "R70101",
+        "R70102",
+        "R70103",
+        "R70104",
+        "R70105",
+        "R70106",
+        "R70107",
+        "R70120",
+        "R70121",
+        "R70122",
+        "R70123",
+        "R70020",
+        "R70021",
+        "R70022",
+        "R70023",
+        "R70024",
+        "R70025",
+        "R70030",
+        "R70031"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-transport/ato_transport:TSSOP-38_4.4x9.7mm_P0.5mm": {
+      "footprint": "ato_transport:TSSOP-38_4.4x9.7mm_P0.5mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-transport\\ato_transport.pretty\\TSSOP-38_4.4x9.7mm_P0.5mm.kicad_mod",
+      "references": [
+        "U70001"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-38_4.4x9.7mm_P0.5mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/TSSOP-38_4.4x9.7mm_P0.5mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-transport/ato_transport:C_1206_3216Metric": {
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-transport\\ato_transport.pretty\\C_1206_3216Metric.kicad_mod",
+      "references": [
+        "C70001",
+        "C70002",
+        "C70003",
+        "C70004",
+        "C70005",
+        "C70006",
+        "C70007",
+        "C70008",
+        "C70009",
+        "C70100",
+        "C70101",
+        "C70102",
+        "C70103",
+        "C70104",
+        "C70105",
+        "C70106",
+        "C70107",
+        "C70020",
+        "C70021",
+        "C70022",
+        "C70023"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-transport/ato_transport:PinHeader_1x04_P2.54mm_Vertical": {
+      "footprint": "ato_transport:PinHeader_1x04_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-transport\\ato_transport.pretty\\PinHeader_1x04_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J70007",
+        "J70008"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-transport/ato_transport:SOIC-8_3.9x4.9mm_P1.27mm": {
+      "footprint": "ato_transport:SOIC-8_3.9x4.9mm_P1.27mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-transport\\ato_transport.pretty\\SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+      "references": [
+        "U70020"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-transport/ato_transport:PinHeader_1x12_P2.54mm_Vertical": {
+      "footprint": "ato_transport:PinHeader_1x12_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-transport\\ato_transport.pretty\\PinHeader_1x12_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J70020"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-transport/ato_transport:PinHeader_1x07_P2.54mm_Vertical": {
+      "footprint": "ato_transport:PinHeader_1x07_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\monitoring-transport\\ato_transport.pretty\\PinHeader_1x07_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J70022"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "controller-carrier/ato_controller:PinHeader_1x02_P2.54mm_Vertical": {
+      "footprint": "ato_controller:PinHeader_1x02_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\controller-carrier\\ato_controller.pretty\\PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J80001",
+        "J80003"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "controller-carrier/ato_controller:BT40F_Manufacturer_66Pad": {
+      "footprint": "ato_controller:BT40F_Manufacturer_66Pad",
+      "source": "E:\\Project ATO\\electronics\\stage4\\controller-carrier\\ato_controller.pretty\\BT40F_Manufacturer_66Pad.kicad_mod",
+      "references": [
+        "U80001"
+      ],
+      "models": []
+    },
+    "controller-carrier/ato_controller:C_1206_3216Metric": {
+      "footprint": "ato_controller:C_1206_3216Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\controller-carrier\\ato_controller.pretty\\C_1206_3216Metric.kicad_mod",
+      "references": [
+        "C80001",
+        "C80002",
+        "C80003",
+        "C80010",
+        "C80011",
+        "C80012",
+        "C80013"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "controller-carrier/ato_controller:PinHeader_1x06_P2.54mm_Vertical": {
+      "footprint": "ato_controller:PinHeader_1x06_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\controller-carrier\\ato_controller.pretty\\PinHeader_1x06_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J80002",
+        "J80010"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "controller-carrier/ato_controller:R_0805_2012Metric": {
+      "footprint": "ato_controller:R_0805_2012Metric",
+      "source": "E:\\Project ATO\\electronics\\stage4\\controller-carrier\\ato_controller.pretty\\R_0805_2012Metric.kicad_mod",
+      "references": [
+        "R80001",
+        "R80002",
+        "R80100",
+        "R80101",
+        "R80102",
+        "R80103",
+        "R80104",
+        "R80105",
+        "R80106",
+        "R80107",
+        "R80108",
+        "R80109",
+        "R80110",
+        "R80111",
+        "R80112",
+        "R80113",
+        "R80114",
+        "R80115",
+        "R80116",
+        "R80117",
+        "R80118",
+        "R80119",
+        "R80120",
+        "R80121",
+        "R80122",
+        "R80123",
+        "R80124",
+        "R80125",
+        "R80126",
+        "R80127",
+        "R80128",
+        "R80129",
+        "R80130",
+        "R80131",
+        "R80132",
+        "R80133",
+        "R80134",
+        "R80135",
+        "R80136",
+        "R80137",
+        "R80138",
+        "R80139"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "exists": true
+        }
+      ]
+    },
+    "controller-carrier/ato_controller:TSSOP-16_4.4x5mm_P0.65mm": {
+      "footprint": "ato_controller:TSSOP-16_4.4x5mm_P0.65mm",
+      "source": "E:\\Project ATO\\electronics\\stage4\\controller-carrier\\ato_controller.pretty\\TSSOP-16_4.4x5mm_P0.65mm.kicad_mod",
+      "references": [
+        "U80010",
+        "U80011",
+        "U80012",
+        "U80013"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+          "exists": true
+        }
+      ]
+    },
+    "controller-carrier/ato_controller:PinHeader_1x10_P2.54mm_Vertical": {
+      "footprint": "ato_controller:PinHeader_1x10_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\controller-carrier\\ato_controller.pretty\\PinHeader_1x10_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J80011"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x10_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x10_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "controller-carrier/ato_controller:PinHeader_1x07_P2.54mm_Vertical": {
+      "footprint": "ato_controller:PinHeader_1x07_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\controller-carrier\\ato_controller.pretty\\PinHeader_1x07_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J80012"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "controller-carrier/ato_controller:PinHeader_1x05_P2.54mm_Vertical": {
+      "footprint": "ato_controller:PinHeader_1x05_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\controller-carrier\\ato_controller.pretty\\PinHeader_1x05_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J80013"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "controller-carrier/ato_controller:PinHeader_1x04_P2.54mm_Vertical": {
+      "footprint": "ato_controller:PinHeader_1x04_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\controller-carrier\\ato_controller.pretty\\PinHeader_1x04_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J80014",
+        "J80020"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "controller-carrier/ato_controller:PinHeader_1x09_P2.54mm_Vertical": {
+      "footprint": "ato_controller:PinHeader_1x09_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\controller-carrier\\ato_controller.pretty\\PinHeader_1x09_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J80015",
+        "J80016",
+        "J80017"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "controller-carrier/ato_controller:PinHeader_1x08_P2.54mm_Vertical": {
+      "footprint": "ato_controller:PinHeader_1x08_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\controller-carrier\\ato_controller.pretty\\PinHeader_1x08_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J80018"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x08_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x08_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "controller-carrier/ato_controller:PinHeader_1x19_P2.54mm_Vertical": {
+      "footprint": "ato_controller:PinHeader_1x19_P2.54mm_Vertical",
+      "source": "E:\\Project ATO\\electronics\\stage4\\controller-carrier\\ato_controller.pretty\\PinHeader_1x19_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J80019"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x19_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x19_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "monitoring-cell/Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical": {
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "source": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\footprints\\Connector_PinHeader_2.54mm.pretty\\PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J19901"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "recording-front-end/Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical": {
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "source": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\footprints\\Connector_PinHeader_2.54mm.pretty\\PinHeader_1x12_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J39901"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "recording-front-end/Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical": {
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical",
+      "source": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\footprints\\Connector_PinHeader_2.54mm.pretty\\PinHeader_1x09_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J39902"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    },
+    "supervision/Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical": {
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "source": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\footprints\\Connector_PinHeader_2.54mm.pretty\\PinHeader_1x04_P2.54mm_Vertical.kicad_mod",
+      "references": [
+        "J59901"
+      ],
+      "models": [
+        {
+          "reference": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "resolved": "E:\\project workspace assests\\EDA\\KiCAD\\share\\kicad\\3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "exists": true
+        }
+      ]
+    }
+  }
+}

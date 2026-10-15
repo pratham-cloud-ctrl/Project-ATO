@@ -1,20 +1,24 @@
-# Stage 4: remaining digital engineering packages
+# Stage 4 completion and next work
 
-Updated 14 October 2026 after the actual nRF5340 firmware checkpoint.
+Updated 16 October 2026 after the integrated populated PCB package.
 Seven circuit packages now exist: monitor, restricted driver, recording front end,
-contact router, supervision, power and monitoring/companion interfaces. Their component-level checks and finite models do not yet constitute
-one integrated populated electronic system. Actual bounded target firmware now
+contact router, supervision, power and monitoring/companion interfaces. Their component-level checks and finite models are now joined in
+one integrated populated electronic reference. Actual bounded target firmware
 builds alongside them. Stage 3's conditional future concept remains
-the design baseline; its closed conservative studies are preserved.
+the design baseline; its closed conservative studies are preserved. The new
+1,298-position / 1,296-fitted / 80-sheet integrated hierarchy passes its electrical
+integration audit. All eight populated native boards pass full PCB DRC,
+unconnected, schematic-parity and ignored-check counts of zero. Populated
+geometry exports and the final layout review complete the bounded package.
 
-The remaining work is bounded by the following package. A negative result
+Completion was bounded by the following package. A negative result
 can revise an operating domain or remain a clearly identified final limitation.
 No package requires invented biological success, hardware fabrication or clinical
 qualification. Optional additional research is not a new completion gate.
 
 | Order | Package | Digital completion evidence |
 |---|---|---|
-| 5 | Integrated populated PCB | Consolidated native hierarchy/board(s), nRF5340 controller and explicit four-SN74LVC165A input carrier, actual footprints, net/parity checks, routing, stackup/clearance and DRC. Reconcile the implemented lower-rate firmware profile and electrical/thermal/mechanical allocations; export populated board geometry for Stage 5. Document unsupported manufacturing and physical-performance claims. |
+| 5 | Integrated populated PCB — complete | Eight actual routed native boards, BT40F controller and four-SN74LVC165A carrier, actual footprints, zero native DRC/unconnected/parity/ignored findings, independent pin/graph checks, updated power, carrier firmware and populated STEP/fabrication-reference exports. See the [exit review](exit-review.md). |
 
 Package 1, [independent supervision and terminal shutdown](supervision-design.md),
 is complete within its finite digital scope: 478 native components, 1699 pins,
@@ -61,10 +65,10 @@ earlier 450k raw/4k neural proposal, full biological algorithms and continuous
 observer remain unimplemented. This is a recorded operating-domain revision,
 not synthesized evidence that the earlier schedule runs. The actual image's
 memory map covers its implemented buffers and code, not a port of every Stage 3
-model. New carrier circuitry remains for the populated PCB; it is not silently
-added to the seven frozen native packages.
+model. New carrier circuitry is now implemented in the integrated PCB package;
+it is separately identified from the seven frozen native packages.
 
-Stage 4 exits when these packages form an inspectable digital path from artificial
+Stage 4 exits with these packages forming an inspectable digital path from artificial
 recording inputs through processing and admitted routing/stimulation to observed
 electrical feedback, with reproducible finite checks and explicit assumptions.
 The proposed expert-to-learner and function-specific physiological mechanisms

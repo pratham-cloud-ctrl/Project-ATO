@@ -1,0 +1,429 @@
+E:\project workspace assests\EDA\KiCAD\bin\kicad-cli.exe pcb export step --force --no-dnp --output E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\populated.step E:\Project ATO\electronics\stage4\integrated-pcb\boards\contact-router\contact_router.kicad_pcb
+STEP file 'E:/Project ATO/electronics/stage4/integrated-pcb/exports/contact-router/populated.step' created.
+
+Export time 2.802 s
+
+E:\project workspace assests\EDA\KiCAD\bin\kicad-cli.exe pcb render --width 1800 --height 1400 --quality high --background opaque --side top --output E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\top.png E:\Project ATO\electronics\stage4\integrated-pcb\boards\contact-router\contact_router.kicad_pcb
+Loading…
+Build board outline
+
+Create layers
+Create tracks and vias
+Create zones
+Build Tech layers
+Build Tech layer 11
+Build Tech layer 9
+Build Tech layer 15
+Build Tech layer 13
+Build Tech layer 7
+Build Tech layer 5
+Build Tech layer 3
+Build Tech layer 1
+Build Tech layer 17
+Build Tech layer 19
+Build Tech layer 21
+Build Tech layer 23
+Build Tech layer 39
+Build Tech layer 41
+Build Tech layer 43
+Build Tech layer 45
+Build Tech layer 47
+Build Tech layer 49
+Build Tech layer 51
+Build Tech layer 53
+Build Tech layer 55
+Build Tech layer 57
+Build Tech layer 59
+Build Tech layer 61
+Build Tech layer 63
+Build Tech layer 65
+Build Tech layer 67
+Build Tech layer 69
+Build Tech layer 71
+Build Tech layer 73
+Build Tech layer 75
+Build Tech layer 77
+Build Tech layer 79
+Build Tech layer 81
+Build Tech layer 83
+Build Tech layer 85
+Build Tech layer 87
+Build Tech layer 89
+Build Tech layer 91
+Build Tech layer 93
+Build Tech layer 95
+Build Tech layer 97
+Build Tech layer 99
+Build Tech layer 101
+Build Tech layer 103
+Build Tech layer 105
+Build Tech layer 107
+Build Tech layer 109
+Build Tech layer 111
+Build Tech layer 113
+Build Tech layer 115
+Build Tech layer 117
+Build Tech layer 119
+Build Tech layer 121
+Build Tech layer 123
+Build Tech layer 125
+Build Tech layer 127
+Simplifying copper layer polygons
+Calculating plated copper
+Simplify holes contours
+Build BVH for holes and vias
+Load Raytracing: board
+Load Raytracing: layers
+Loading 3D models...
+Reload time 0.989 s
+Rendering: 4
+Rendering: 6
+Rendering: 7
+Rendering: 8
+Rendering: 9
+Rendering: 10
+Rendering: 13
+Rendering: 15
+Rendering: 18
+Rendering: 19
+Rendering: 20
+Rendering: 21
+Rendering: 22
+Rendering: 23
+Rendering: 25
+Rendering: 27
+Rendering: 28
+Rendering: 30
+Rendering: 31
+Rendering: 33
+Rendering: 34
+Rendering: 36
+Rendering: 38
+Rendering: 42
+Rendering: 46
+Rendering: 48
+Rendering: 53
+Rendering: 55
+Rendering: 56
+Rendering: 58
+Rendering: 60
+Rendering: 61
+Rendering: 64
+Rendering: 68
+Rendering: 73
+Rendering: 75
+Rendering: 77
+Rendering: 78
+Rendering: 80
+Rendering: 82
+Rendering: 84
+Rendering: 87
+Rendering: 89
+Rendering: 92
+Rendering: 95
+Rendering: 100
+Rendering: 100
+Rendering: Post processing shader
+Rendering time 19.465 s
+Successfully created 3D render image
+
+E:\project workspace assests\EDA\KiCAD\bin\kicad-cli.exe pcb render --width 1800 --height 1400 --quality high --background opaque --side bottom --output E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\bottom.png E:\Project ATO\electronics\stage4\integrated-pcb\boards\contact-router\contact_router.kicad_pcb
+Loading…
+Build board outline
+
+Create layers
+Create tracks and vias
+Create zones
+Build Tech layers
+Build Tech layer 11
+Build Tech layer 9
+Build Tech layer 15
+Build Tech layer 13
+Build Tech layer 7
+Build Tech layer 5
+Build Tech layer 3
+Build Tech layer 1
+Build Tech layer 17
+Build Tech layer 19
+Build Tech layer 21
+Build Tech layer 23
+Build Tech layer 39
+Build Tech layer 41
+Build Tech layer 43
+Build Tech layer 45
+Build Tech layer 47
+Build Tech layer 49
+Build Tech layer 51
+Build Tech layer 53
+Build Tech layer 55
+Build Tech layer 57
+Build Tech layer 59
+Build Tech layer 61
+Build Tech layer 63
+Build Tech layer 65
+Build Tech layer 67
+Build Tech layer 69
+Build Tech layer 71
+Build Tech layer 73
+Build Tech layer 75
+Build Tech layer 77
+Build Tech layer 79
+Build Tech layer 81
+Build Tech layer 83
+Build Tech layer 85
+Build Tech layer 87
+Build Tech layer 89
+Build Tech layer 91
+Build Tech layer 93
+Build Tech layer 95
+Build Tech layer 97
+Build Tech layer 99
+Build Tech layer 101
+Build Tech layer 103
+Build Tech layer 105
+Build Tech layer 107
+Build Tech layer 109
+Build Tech layer 111
+Build Tech layer 113
+Build Tech layer 115
+Build Tech layer 117
+Build Tech layer 119
+Build Tech layer 121
+Build Tech layer 123
+Build Tech layer 125
+Build Tech layer 127
+Simplifying copper layer polygons
+Calculating plated copper
+Simplify holes contours
+Build BVH for holes and vias
+Load Raytracing: board
+Load Raytracing: layers
+Loading 3D models...
+Reload time 0.614 s
+Rendering: 5
+Rendering: 7
+Rendering: 9
+Rendering: 12
+Rendering: 13
+Rendering: 15
+Rendering: 17
+Rendering: 18
+Rendering: 19
+Rendering: 20
+Rendering: 21
+Rendering: 22
+Rendering: 23
+Rendering: 24
+Rendering: 25
+Rendering: 26
+Rendering: 27
+Rendering: 29
+Rendering: 30
+Rendering: 31
+Rendering: 32
+Rendering: 33
+Rendering: 34
+Rendering: 35
+Rendering: 37
+Rendering: 38
+Rendering: 42
+Rendering: 45
+Rendering: 46
+Rendering: 48
+Rendering: 50
+Rendering: 53
+Rendering: 54
+Rendering: 55
+Rendering: 57
+Rendering: 58
+Rendering: 59
+Rendering: 60
+Rendering: 61
+Rendering: 62
+Rendering: 65
+Rendering: 68
+Rendering: 71
+Rendering: 74
+Rendering: 75
+Rendering: 76
+Rendering: 77
+Rendering: 78
+Rendering: 79
+Rendering: 80
+Rendering: 81
+Rendering: 81
+Rendering: 82
+Rendering: 83
+Rendering: 84
+Rendering: 85
+Rendering: 86
+Rendering: 87
+Rendering: 87
+Rendering: 88
+Rendering: 88
+Rendering: 89
+Rendering: 90
+Rendering: 90
+Rendering: 92
+Rendering: 94
+Rendering: 95
+Rendering: 98
+Rendering: 100
+Rendering: Post processing shader
+Rendering time 30.238 s
+Successfully created 3D render image
+
+E:\project workspace assests\EDA\KiCAD\bin\kicad-cli.exe pcb render --width 1800 --height 1400 --quality high --background opaque --rotate -35,0,25 --zoom .83 --output E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\isometric.png E:\Project ATO\electronics\stage4\integrated-pcb\boards\contact-router\contact_router.kicad_pcb
+Loading…
+Build board outline
+
+Create layers
+Create tracks and vias
+Create zones
+Build Tech layers
+Build Tech layer 11
+Build Tech layer 9
+Build Tech layer 15
+Build Tech layer 13
+Build Tech layer 7
+Build Tech layer 5
+Build Tech layer 3
+Build Tech layer 1
+Build Tech layer 17
+Build Tech layer 19
+Build Tech layer 21
+Build Tech layer 23
+Build Tech layer 39
+Build Tech layer 41
+Build Tech layer 43
+Build Tech layer 45
+Build Tech layer 47
+Build Tech layer 49
+Build Tech layer 51
+Build Tech layer 53
+Build Tech layer 55
+Build Tech layer 57
+Build Tech layer 59
+Build Tech layer 61
+Build Tech layer 63
+Build Tech layer 65
+Build Tech layer 67
+Build Tech layer 69
+Build Tech layer 71
+Build Tech layer 73
+Build Tech layer 75
+Build Tech layer 77
+Build Tech layer 79
+Build Tech layer 81
+Build Tech layer 83
+Build Tech layer 85
+Build Tech layer 87
+Build Tech layer 89
+Build Tech layer 91
+Build Tech layer 93
+Build Tech layer 95
+Build Tech layer 97
+Build Tech layer 99
+Build Tech layer 101
+Build Tech layer 103
+Build Tech layer 105
+Build Tech layer 107
+Build Tech layer 109
+Build Tech layer 111
+Build Tech layer 113
+Build Tech layer 115
+Build Tech layer 117
+Build Tech layer 119
+Build Tech layer 121
+Build Tech layer 123
+Build Tech layer 125
+Build Tech layer 127
+Simplifying copper layer polygons
+Calculating plated copper
+Simplify holes contours
+Build BVH for holes and vias
+Load Raytracing: board
+Load Raytracing: layers
+Loading 3D models...
+Reload time 0.805 s
+Rendering: 4
+Rendering: 7
+Rendering: 9
+Rendering: 12
+Rendering: 14
+Rendering: 16
+Rendering: 17
+Rendering: 18
+Rendering: 19
+Rendering: 19
+Rendering: 20
+Rendering: 21
+Rendering: 22
+Rendering: 23
+Rendering: 24
+Rendering: 25
+Rendering: 27
+Rendering: 28
+Rendering: 30
+Rendering: 32
+Rendering: 34
+Rendering: 36
+Rendering: 37
+Rendering: 40
+Rendering: 43
+Rendering: 47
+Rendering: 51
+Rendering: 55
+Rendering: 57
+Rendering: 58
+Rendering: 60
+Rendering: 64
+Rendering: 68
+Rendering: 71
+Rendering: 75
+Rendering: 77
+Rendering: 78
+Rendering: 79
+Rendering: 80
+Rendering: 81
+Rendering: 82
+Rendering: 84
+Rendering: 86
+Rendering: 88
+Rendering: 89
+Rendering: 93
+Rendering: 97
+Rendering: 100
+Rendering: Post processing shader
+Rendering time 21.352 s
+Successfully created 3D render image
+
+E:\project workspace assests\EDA\KiCAD\bin\kicad-cli.exe pcb export svg --layers F.Cu,F.SilkS,Edge.Cuts --page-size-mode 2 --exclude-drawing-sheet --mode-single --output E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\top-copper.svg E:\Project ATO\electronics\stage4\integrated-pcb\boards\contact-router\contact_router.kicad_pcb
+Plotted to 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\top-copper.svg'.
+Done.
+
+E:\project workspace assests\EDA\KiCAD\bin\kicad-cli.exe pcb export svg --layers B.Cu,B.SilkS,Edge.Cuts --page-size-mode 2 --exclude-drawing-sheet --mirror --mode-single --output E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\bottom-copper.svg E:\Project ATO\electronics\stage4\integrated-pcb\boards\contact-router\contact_router.kicad_pcb
+Plotted to 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\bottom-copper.svg'.
+Done.
+
+E:\project workspace assests\EDA\KiCAD\bin\kicad-cli.exe pcb export gerbers --layers F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,Edge.Cuts --subtract-soldermask --output E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\ E:\Project ATO\electronics\stage4\integrated-pcb\boards\contact-router\contact_router.kicad_pcb
+Plotted to 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\contact_router-F_Cu.gtl'.
+Plotted to 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\contact_router-In1_Cu.g1'.
+Plotted to 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\contact_router-In2_Cu.g2'.
+Plotted to 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\contact_router-B_Cu.gbl'.
+Plotted to 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\contact_router-F_Silkscreen.gto'.
+Plotted to 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\contact_router-B_Silkscreen.gbo'.
+Plotted to 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\contact_router-F_Mask.gts'.
+Plotted to 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\contact_router-B_Mask.gbs'.
+Plotted to 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\contact_router-Edge_Cuts.gm1'.
+
+E:\project workspace assests\EDA\KiCAD\bin\kicad-cli.exe pcb export drill --format excellon --excellon-units mm --excellon-separate-th --generate-report --report-path E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\drill-report.txt --output E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\ E:\Project ATO\electronics\stage4\integrated-pcb\boards\contact-router\contact_router.kicad_pcb
+Created file 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\contact_router-PTH.drl'
+Created file 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\contact_router-NPTH.drl'
+Done.
+
+E:\project workspace assests\EDA\KiCAD\bin\kicad-cli.exe pcb export pos --format csv --units mm --side both --exclude-dnp --output E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\positions.csv E:\Project ATO\electronics\stage4\integrated-pcb\boards\contact-router\contact_router.kicad_pcb
+Wrote position data to 'E:\Project ATO\electronics\stage4\integrated-pcb\exports\contact-router\fabrication-reference\positions.csv'.
+
+E:\project workspace assests\EDA\KiCAD\bin\kicad-cli.exe version
+10.0.6

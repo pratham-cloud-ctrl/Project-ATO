@@ -1,0 +1,302 @@
+{
+  "schema": "ato.integration-changes.v1",
+  "excluded_legacy_wires": [
+    {
+      "from_package": "current-driver",
+      "from_ref": "J3",
+      "from_pin": "4",
+      "from_net": "CH0_REARM",
+      "to_package": "supervision",
+      "to_ref": "J3",
+      "to_pin": "10",
+      "to_net": "CH0_PHASE_REARM",
+      "purpose": "Same explicit phase rearm command; not monitor/global rearm",
+      "reason": "Superseded in integrated system: common driver rearm and two independent supervisor phase-rearm GPIO must remain separate, avoiding three push-pull outputs on one wire."
+    },
+    {
+      "from_package": "current-driver",
+      "from_ref": "J3",
+      "from_pin": "8",
+      "from_net": "CH1_REARM",
+      "to_package": "supervision",
+      "to_ref": "J3",
+      "to_pin": "11",
+      "to_net": "CH1_PHASE_REARM",
+      "purpose": "Same explicit phase rearm command; not monitor/global rearm",
+      "reason": "Superseded in integrated system: common driver rearm and two independent supervisor phase-rearm GPIO must remain separate, avoiding three push-pull outputs on one wire."
+    }
+  ],
+  "added_tap_headers": [
+    {
+      "board": "monitoring-cell",
+      "source_package": "monitoring-cell",
+      "source_ref": "J9901",
+      "reference": "J19901",
+      "lib_id": "ATO_INTEGRATION:J9901",
+      "value": "HOST TAP HARNESS",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "source_net": "V_REF",
+          "net": "SYS_4f66f129__MON_VREF"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "source_net": "GND",
+          "net": "SYS_56562df4__GND"
+        }
+      ],
+      "source_sheet": "integration_taps.kicad_sch",
+      "source_sheet_uuid": "",
+      "source_symbol_uuid": "",
+      "added": true,
+      "domain": "HOST"
+    },
+    {
+      "board": "recording-front-end",
+      "source_package": "recording-front-end",
+      "source_ref": "J9901",
+      "reference": "J39901",
+      "lib_id": "ATO_INTEGRATION:J9901",
+      "value": "AFE TAP HARNESS",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "source_net": "AFE_ACQUIRE",
+          "net": "SYS_4eb6b999__AFE_ACQUIRE"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "source_net": "AFE_CONNECT",
+          "net": "SYS_0bc4e447__AFE_CONNECT"
+        },
+        {
+          "number": "3",
+          "name": "3",
+          "type": "passive",
+          "source_net": "AFE_IN00_P",
+          "net": "SYS_05097029__AFE_IN00_P"
+        },
+        {
+          "number": "4",
+          "name": "4",
+          "type": "passive",
+          "source_net": "AFE_IN01_P",
+          "net": "SYS_3232ae4c__AFE_IN01_P"
+        },
+        {
+          "number": "5",
+          "name": "5",
+          "type": "passive",
+          "source_net": "AFE_IN02_P",
+          "net": "SYS_8c3f25bb__AFE_IN02_P"
+        },
+        {
+          "number": "6",
+          "name": "6",
+          "type": "passive",
+          "source_net": "AFE_IN03_P",
+          "net": "SYS_f208be39__AFE_IN03_P"
+        },
+        {
+          "number": "7",
+          "name": "7",
+          "type": "passive",
+          "source_net": "AFE_IN04_P",
+          "net": "SYS_7e367734__AFE_IN04_P"
+        },
+        {
+          "number": "8",
+          "name": "8",
+          "type": "passive",
+          "source_net": "AFE_IN05_P",
+          "net": "SYS_59100ef9__AFE_IN05_P"
+        },
+        {
+          "number": "9",
+          "name": "9",
+          "type": "passive",
+          "source_net": "AFE_IN06_P",
+          "net": "SYS_380216f6__AFE_IN06_P"
+        },
+        {
+          "number": "10",
+          "name": "10",
+          "type": "passive",
+          "source_net": "AFE_IN07_P",
+          "net": "SYS_325713b8__AFE_IN07_P"
+        },
+        {
+          "number": "11",
+          "name": "11",
+          "type": "passive",
+          "source_net": "AFE_IN08_P",
+          "net": "SYS_1dc2a435__AFE_IN08_P"
+        },
+        {
+          "number": "12",
+          "name": "12",
+          "type": "passive",
+          "source_net": "AFEAGND",
+          "net": "SYS_fca1c340__AFEAGND"
+        }
+      ],
+      "source_sheet": "integration_taps.kicad_sch",
+      "source_sheet_uuid": "",
+      "source_symbol_uuid": "",
+      "added": true,
+      "domain": "AFE"
+    },
+    {
+      "board": "recording-front-end",
+      "source_package": "recording-front-end",
+      "source_ref": "J9902",
+      "reference": "J39902",
+      "lib_id": "ATO_INTEGRATION:J9902",
+      "value": "AFE TAP HARNESS",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "source_net": "AFE_IN09_P",
+          "net": "SYS_ee730a89__AFE_IN09_P"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "source_net": "AFE_IN10_P",
+          "net": "SYS_96d7c46a__AFE_IN10_P"
+        },
+        {
+          "number": "3",
+          "name": "3",
+          "type": "passive",
+          "source_net": "AFE_IN11_P",
+          "net": "SYS_b6a4cd67__AFE_IN11_P"
+        },
+        {
+          "number": "4",
+          "name": "4",
+          "type": "passive",
+          "source_net": "AFE_IN12_P",
+          "net": "SYS_4fabccc5__AFE_IN12_P"
+        },
+        {
+          "number": "5",
+          "name": "5",
+          "type": "passive",
+          "source_net": "AFE_IN13_P",
+          "net": "SYS_32c4c1cc__AFE_IN13_P"
+        },
+        {
+          "number": "6",
+          "name": "6",
+          "type": "passive",
+          "source_net": "AFE_IN14_P",
+          "net": "SYS_4f7d5988__AFE_IN14_P"
+        },
+        {
+          "number": "7",
+          "name": "7",
+          "type": "passive",
+          "source_net": "AFE_IN15_P",
+          "net": "SYS_53213f89__AFE_IN15_P"
+        },
+        {
+          "number": "8",
+          "name": "8",
+          "type": "passive",
+          "source_net": "AFE_REF",
+          "net": "SYS_86b728f8__AFE_REF"
+        },
+        {
+          "number": "9",
+          "name": "9",
+          "type": "passive",
+          "source_net": "AFEAGND",
+          "net": "SYS_fca1c340__AFEAGND"
+        }
+      ],
+      "source_sheet": "integration_taps.kicad_sch",
+      "source_sheet_uuid": "",
+      "source_symbol_uuid": "",
+      "added": true,
+      "domain": "AFE"
+    },
+    {
+      "board": "supervision",
+      "source_package": "supervision",
+      "source_ref": "J9901",
+      "reference": "J59901",
+      "lib_id": "ATO_INTEGRATION:J9901",
+      "value": "HOST TAP HARNESS",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "source_net": "CH0_VPAIR",
+          "net": "SYS_baff84b5__CH0_VPAIR"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "source_net": "CH1_VPAIR",
+          "net": "SYS_40eeaa0c__CH1_VPAIR"
+        },
+        {
+          "number": "3",
+          "name": "3",
+          "type": "passive",
+          "source_net": "GUARD_FAULT_N",
+          "net": "SYS_ee59c76b__PWR_FAULT_N"
+        },
+        {
+          "number": "4",
+          "name": "4",
+          "type": "passive",
+          "source_net": "GND",
+          "net": "SYS_56562df4__GND"
+        }
+      ],
+      "source_sheet": "integration_taps.kicad_sch",
+      "source_sheet_uuid": "",
+      "source_symbol_uuid": "",
+      "added": true,
+      "domain": "HOST"
+    }
+  ],
+  "source_edit_policy": "Seven source circuit packages and previous CSV files remain unchanged.",
+  "footprint_geometry_correction": {
+    "component": "U50300",
+    "footprint": "Texas_DRB0008A_VSON8_3x3_P0.65_EP1.5x1.75.kicad_mod",
+    "original_row_centres_mm": [
+      -1.1,
+      1.1
+    ],
+    "corrected_row_centres_mm": [
+      -1.4,
+      1.4
+    ],
+    "new_snapshot_sha256_lf": "f35d645d1bc619cf1a6dc5e5e59d61bb416709152be24716bbd59cb9083e3797",
+    "source": "https://www.ti.com/lit/ds/symlink/tps3431.pdf",
+    "drawing": "DRB0008A 4218875/A 01/2018, PDF page29",
+    "reduced_clearance_exception": false,
+    "frozen_source_edited": false
+  }
+}
