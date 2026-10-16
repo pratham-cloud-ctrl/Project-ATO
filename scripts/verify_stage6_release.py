@@ -300,7 +300,7 @@ def audit():
     for path in sorted(bound):
         name = path.relative_to(ROOT).as_posix()
         check(path.stat().st_size < 100 * 1024 * 1024, 'bound source size: ' + name)
-        normalized = path.suffix.lower() in TEXT_SUFFIXES
+        normalized = path.suffix.lower() in TEXT_SUFFIXES or path.name == 'LICENSE'
         artifacts[name] = {'sha256': sha(path, normalized),
                            'text_normalized': normalized}
     return {

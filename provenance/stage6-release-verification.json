@@ -174,7 +174,7 @@
     },
     "LICENSE": {
       "sha256": "bf57184149c97e390ba754e0b5751d4d7ba9115fe6b3b9adac18367c90d6b739",
-      "text_normalized": false
+      "text_normalized": true
     },
     "manuscript/stage6/build-manifest.json": {
       "sha256": "fee1b8e1927335506e1f0e331165e16bbecfb7640df7fefd1366350cce297223",
@@ -313,7 +313,7 @@
       "text_normalized": true
     },
     "scripts/verify_stage6_release.py": {
-      "sha256": "cb9b64514e4cb30940d4572132d4946d38150ece7f2d6ff7900efdc02c560b1f",
+      "sha256": "6e8561e1b3f759521ed196e5b7cf1759240456d3e799fe4d7a496c2d407040f9",
       "text_normalized": true
     },
     "START_HERE.md": {
