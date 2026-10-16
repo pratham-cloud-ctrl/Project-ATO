@@ -1,0 +1,2807 @@
+{
+  "schema": "ato.stage5.reference-contract.v1",
+  "units": "mm",
+  "design_scope": "Serviceable eight-board digital reference chassis; no implant scale claim",
+  "case_dimensions_mm": [
+    600,
+    310,
+    240
+  ],
+  "enclosure_material_allocations": {
+    "base_sides_rear_front": "nominal aluminium, no temper or process qualification",
+    "lid": "nominal clear polycarbonate, no impact qualification",
+    "trays": "nominal insulating polymer, no flammability or creep qualification",
+    "standoffs": "nominal insulating M3 female/female, thread detail omitted",
+    "fasteners": "nominal M3 fasteners, threads omitted with radial clearance"
+  },
+  "tier_pitch_mm": 50,
+  "tray_thickness_mm": 2,
+  "standoff_length_mm": 10,
+  "source_datums": "cad/stage5/reference/board-datums.json",
+  "native": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+  "step": "cad/stage5/reference/ATO_reference_assembly.step.zip",
+  "exploded_step": "cad/stage5/reference/ATO_reference_exploded.step.zip",
+  "mechanical_step": "cad/stage5/reference/ATO_reference_mechanical.step",
+  "boards": [
+    {
+      "board": "contact-router",
+      "label": "PCB_contact_router",
+      "bay": "left",
+      "tier": 3,
+      "source_step": "electronics/stage4/integrated-pcb/exports/contact-router/populated.step",
+      "source_step_sha256": "e7693ec304c93162fffdcfe8ea65f06528c5ac9eb483f30d89f690eccab45982",
+      "source_pcb": "electronics/stage4/integrated-pcb/boards/contact-router/contact_router.kicad_pcb",
+      "source_pcb_sha256_lf": "2bf7bf8b049e4b7e27dca0bed9db88f4efab5a3944f183a16246432411ea137f",
+      "translation_mm": [
+        24,
+        185.0,
+        178
+      ],
+      "rotation_axis_angle": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "board_bottom_z_mm": 178,
+      "board_outline_mm": [
+        175.0,
+        155.0
+      ],
+      "fitted_components": 155,
+      "tray_label": "Tray_contact_router"
+    },
+    {
+      "board": "controller-carrier",
+      "label": "PCB_controller_carrier",
+      "bay": "right",
+      "tier": 3,
+      "source_step": "electronics/stage4/integrated-pcb/exports/controller-carrier/populated.step",
+      "source_step_sha256": "45626fe2948522979ba715095dc42c84b8ec5419f2a43474908ec954be5d05f2",
+      "source_pcb": "electronics/stage4/integrated-pcb/boards/controller-carrier/controller_carrier.kicad_pcb",
+      "source_pcb_sha256_lf": "ae600148f4efeadceaf92f42cf3e15e102d68e1beb5b34094e02d2593858e1f8",
+      "translation_mm": [
+        390,
+        180.0,
+        178
+      ],
+      "rotation_axis_angle": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "board_bottom_z_mm": 178,
+      "board_outline_mm": [
+        155.0,
+        150.0
+      ],
+      "fitted_components": 68,
+      "tray_label": "Tray_controller_carrier"
+    },
+    {
+      "board": "current-driver",
+      "label": "PCB_current_driver",
+      "bay": "left",
+      "tier": 2,
+      "source_step": "electronics/stage4/integrated-pcb/exports/current-driver/populated.step",
+      "source_step_sha256": "5f6d3b11f88a4778a733e75142d26aae26efaebebddc4dd22f601a94b9d29225",
+      "source_pcb": "electronics/stage4/integrated-pcb/boards/current-driver/current_driver.kicad_pcb",
+      "source_pcb_sha256_lf": "03f6d4c71fbb8e683788def698db68f5642ea1a43801e5ed6a282f132385b63b",
+      "translation_mm": [
+        24,
+        185.0,
+        128
+      ],
+      "rotation_axis_angle": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "board_bottom_z_mm": 128,
+      "board_outline_mm": [
+        175.0,
+        155.0
+      ],
+      "fitted_components": 154,
+      "tray_label": "Tray_current_driver"
+    },
+    {
+      "board": "monitoring-cell",
+      "label": "PCB_monitoring_cell",
+      "bay": "right",
+      "tier": 1,
+      "source_step": "electronics/stage4/integrated-pcb/exports/monitoring-cell/populated.step",
+      "source_step_sha256": "6b619d12130f320e515c1fea625d8bef4ea0f332f04700ac538a6309705c9c49",
+      "source_pcb": "electronics/stage4/integrated-pcb/boards/monitoring-cell/monitoring_cell.kicad_pcb",
+      "source_pcb_sha256_lf": "9cc889e8f67ac0ce60b20f97a3bb0d1fa00452d4ea1f4629b78585c73eb8f242",
+      "translation_mm": [
+        390,
+        175.0,
+        78
+      ],
+      "rotation_axis_angle": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "board_bottom_z_mm": 78,
+      "board_outline_mm": [
+        120.0,
+        145.0
+      ],
+      "fitted_components": 71,
+      "tray_label": "Tray_monitoring_cell"
+    },
+    {
+      "board": "monitoring-transport",
+      "label": "PCB_monitoring_transport",
+      "bay": "right",
+      "tier": 2,
+      "source_step": "electronics/stage4/integrated-pcb/exports/monitoring-transport/populated.step",
+      "source_step_sha256": "576a653f0ec784a6ad53c70117b10b0ae27c062a1bb314520b1fe2ec049b28ab",
+      "source_pcb": "electronics/stage4/integrated-pcb/boards/monitoring-transport/monitoring_transport.kicad_pcb",
+      "source_pcb_sha256_lf": "16268c67fa59ad4475e8ada615db5697f6856f6b12ff3882aee91782becfa768",
+      "translation_mm": [
+        390,
+        170.0,
+        128
+      ],
+      "rotation_axis_angle": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "board_bottom_z_mm": 128,
+      "board_outline_mm": [
+        125.0,
+        140.0
+      ],
+      "fitted_components": 60,
+      "tray_label": "Tray_monitoring_transport"
+    },
+    {
+      "board": "power",
+      "label": "PCB_power",
+      "bay": "left",
+      "tier": 1,
+      "source_step": "electronics/stage4/integrated-pcb/exports/power/populated.step",
+      "source_step_sha256": "599cf8072a973fb3b5d8fe22dd7e22243dcb98f762ddb69658814c0e0aa44dc7",
+      "source_pcb": "electronics/stage4/integrated-pcb/boards/power/power.kicad_pcb",
+      "source_pcb_sha256_lf": "a91073998ec0cd46c84c4332f69324e9e428571a9307c212443e697c2a7696a5",
+      "translation_mm": [
+        24,
+        215.0,
+        78
+      ],
+      "rotation_axis_angle": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "board_bottom_z_mm": 78,
+      "board_outline_mm": [
+        175.0,
+        185.0
+      ],
+      "fitted_components": 156,
+      "tray_label": "Tray_power"
+    },
+    {
+      "board": "recording-front-end",
+      "label": "PCB_recording_front_end",
+      "bay": "right",
+      "tier": 0,
+      "source_step": "electronics/stage4/integrated-pcb/exports/recording-front-end/populated.step",
+      "source_step_sha256": "fbc5878132fde732e141ec2146dca31b9b2bf8581af18ab782bb5430c3975685",
+      "source_pcb": "electronics/stage4/integrated-pcb/boards/recording-front-end/recording_front_end.kicad_pcb",
+      "source_pcb_sha256_lf": "584360f1b286a1b02f8adfa971225be66456e0109c77c9f2d8ab2f57f17c21a9",
+      "translation_mm": [
+        390,
+        220.0,
+        28
+      ],
+      "rotation_axis_angle": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "board_bottom_z_mm": 28,
+      "board_outline_mm": [
+        155.0,
+        190.0
+      ],
+      "fitted_components": 153,
+      "tray_label": "Tray_recording_front_end"
+    },
+    {
+      "board": "supervision",
+      "label": "PCB_supervision",
+      "bay": "left",
+      "tier": 0,
+      "source_step": "electronics/stage4/integrated-pcb/exports/supervision/populated.step",
+      "source_step_sha256": "d29140bdda3f57c6dd43d621d389aae04ed2edef23fda52a071b5965062a39ad",
+      "source_pcb": "electronics/stage4/integrated-pcb/boards/supervision/supervision.kicad_pcb",
+      "source_pcb_sha256_lf": "877e2d5643182aa68e16e77dbdd7821ee55f36b763745bb6aba7ea7a8afc3440",
+      "translation_mm": [
+        24,
+        280.0,
+        28
+      ],
+      "rotation_axis_angle": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "board_bottom_z_mm": 28,
+      "board_outline_mm": [
+        300.0,
+        250.0
+      ],
+      "fitted_components": 479,
+      "tray_label": "Tray_supervision"
+    }
+  ],
+  "mounts": [
+    {
+      "board": "contact-router",
+      "reference": "H1",
+      "axis_xy_mm": [
+        28.0,
+        181.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_contact_router_H1",
+      "upper_screw_label": "UpperScrew_contact_router_H1",
+      "lower_screw_label": "LowerScrew_contact_router_H1",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 166,
+      "tray_top_z_mm": 168,
+      "standoff_bottom_z_mm": 168,
+      "standoff_top_z_mm": 178,
+      "board_top_z_mm": 179.53
+    },
+    {
+      "board": "contact-router",
+      "reference": "H2",
+      "axis_xy_mm": [
+        195.0,
+        181.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_contact_router_H2",
+      "upper_screw_label": "UpperScrew_contact_router_H2",
+      "lower_screw_label": "LowerScrew_contact_router_H2",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 166,
+      "tray_top_z_mm": 168,
+      "standoff_bottom_z_mm": 168,
+      "standoff_top_z_mm": 178,
+      "board_top_z_mm": 179.53
+    },
+    {
+      "board": "contact-router",
+      "reference": "H3",
+      "axis_xy_mm": [
+        28.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_contact_router_H3",
+      "upper_screw_label": "UpperScrew_contact_router_H3",
+      "lower_screw_label": "LowerScrew_contact_router_H3",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 166,
+      "tray_top_z_mm": 168,
+      "standoff_bottom_z_mm": 168,
+      "standoff_top_z_mm": 178,
+      "board_top_z_mm": 179.53
+    },
+    {
+      "board": "contact-router",
+      "reference": "H4",
+      "axis_xy_mm": [
+        195.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_contact_router_H4",
+      "upper_screw_label": "UpperScrew_contact_router_H4",
+      "lower_screw_label": "LowerScrew_contact_router_H4",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 166,
+      "tray_top_z_mm": 168,
+      "standoff_bottom_z_mm": 168,
+      "standoff_top_z_mm": 178,
+      "board_top_z_mm": 179.53
+    },
+    {
+      "board": "controller-carrier",
+      "reference": "H1",
+      "axis_xy_mm": [
+        394.0,
+        176.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_controller_carrier_H1",
+      "upper_screw_label": "UpperScrew_controller_carrier_H1",
+      "lower_screw_label": "LowerScrew_controller_carrier_H1",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 166,
+      "tray_top_z_mm": 168,
+      "standoff_bottom_z_mm": 168,
+      "standoff_top_z_mm": 178,
+      "board_top_z_mm": 179.53
+    },
+    {
+      "board": "controller-carrier",
+      "reference": "H2",
+      "axis_xy_mm": [
+        541.0,
+        176.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_controller_carrier_H2",
+      "upper_screw_label": "UpperScrew_controller_carrier_H2",
+      "lower_screw_label": "LowerScrew_controller_carrier_H2",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 166,
+      "tray_top_z_mm": 168,
+      "standoff_bottom_z_mm": 168,
+      "standoff_top_z_mm": 178,
+      "board_top_z_mm": 179.53
+    },
+    {
+      "board": "controller-carrier",
+      "reference": "H3",
+      "axis_xy_mm": [
+        394.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_controller_carrier_H3",
+      "upper_screw_label": "UpperScrew_controller_carrier_H3",
+      "lower_screw_label": "LowerScrew_controller_carrier_H3",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 166,
+      "tray_top_z_mm": 168,
+      "standoff_bottom_z_mm": 168,
+      "standoff_top_z_mm": 178,
+      "board_top_z_mm": 179.53
+    },
+    {
+      "board": "controller-carrier",
+      "reference": "H4",
+      "axis_xy_mm": [
+        541.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_controller_carrier_H4",
+      "upper_screw_label": "UpperScrew_controller_carrier_H4",
+      "lower_screw_label": "LowerScrew_controller_carrier_H4",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 166,
+      "tray_top_z_mm": 168,
+      "standoff_bottom_z_mm": 168,
+      "standoff_top_z_mm": 178,
+      "board_top_z_mm": 179.53
+    },
+    {
+      "board": "current-driver",
+      "reference": "H1",
+      "axis_xy_mm": [
+        28.0,
+        181.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_current_driver_H1",
+      "upper_screw_label": "UpperScrew_current_driver_H1",
+      "lower_screw_label": "LowerScrew_current_driver_H1",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 116,
+      "tray_top_z_mm": 118,
+      "standoff_bottom_z_mm": 118,
+      "standoff_top_z_mm": 128,
+      "board_top_z_mm": 129.53
+    },
+    {
+      "board": "current-driver",
+      "reference": "H2",
+      "axis_xy_mm": [
+        195.0,
+        181.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_current_driver_H2",
+      "upper_screw_label": "UpperScrew_current_driver_H2",
+      "lower_screw_label": "LowerScrew_current_driver_H2",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 116,
+      "tray_top_z_mm": 118,
+      "standoff_bottom_z_mm": 118,
+      "standoff_top_z_mm": 128,
+      "board_top_z_mm": 129.53
+    },
+    {
+      "board": "current-driver",
+      "reference": "H3",
+      "axis_xy_mm": [
+        28.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_current_driver_H3",
+      "upper_screw_label": "UpperScrew_current_driver_H3",
+      "lower_screw_label": "LowerScrew_current_driver_H3",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 116,
+      "tray_top_z_mm": 118,
+      "standoff_bottom_z_mm": 118,
+      "standoff_top_z_mm": 128,
+      "board_top_z_mm": 129.53
+    },
+    {
+      "board": "current-driver",
+      "reference": "H4",
+      "axis_xy_mm": [
+        195.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_current_driver_H4",
+      "upper_screw_label": "UpperScrew_current_driver_H4",
+      "lower_screw_label": "LowerScrew_current_driver_H4",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 116,
+      "tray_top_z_mm": 118,
+      "standoff_bottom_z_mm": 118,
+      "standoff_top_z_mm": 128,
+      "board_top_z_mm": 129.53
+    },
+    {
+      "board": "monitoring-cell",
+      "reference": "H1",
+      "axis_xy_mm": [
+        394.0,
+        171.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_monitoring_cell_H1",
+      "upper_screw_label": "UpperScrew_monitoring_cell_H1",
+      "lower_screw_label": "LowerScrew_monitoring_cell_H1",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 66,
+      "tray_top_z_mm": 68,
+      "standoff_bottom_z_mm": 68,
+      "standoff_top_z_mm": 78,
+      "board_top_z_mm": 79.53
+    },
+    {
+      "board": "monitoring-cell",
+      "reference": "H2",
+      "axis_xy_mm": [
+        506.0,
+        171.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_monitoring_cell_H2",
+      "upper_screw_label": "UpperScrew_monitoring_cell_H2",
+      "lower_screw_label": "LowerScrew_monitoring_cell_H2",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 66,
+      "tray_top_z_mm": 68,
+      "standoff_bottom_z_mm": 68,
+      "standoff_top_z_mm": 78,
+      "board_top_z_mm": 79.53
+    },
+    {
+      "board": "monitoring-cell",
+      "reference": "H3",
+      "axis_xy_mm": [
+        394.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_monitoring_cell_H3",
+      "upper_screw_label": "UpperScrew_monitoring_cell_H3",
+      "lower_screw_label": "LowerScrew_monitoring_cell_H3",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 66,
+      "tray_top_z_mm": 68,
+      "standoff_bottom_z_mm": 68,
+      "standoff_top_z_mm": 78,
+      "board_top_z_mm": 79.53
+    },
+    {
+      "board": "monitoring-cell",
+      "reference": "H4",
+      "axis_xy_mm": [
+        506.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_monitoring_cell_H4",
+      "upper_screw_label": "UpperScrew_monitoring_cell_H4",
+      "lower_screw_label": "LowerScrew_monitoring_cell_H4",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 66,
+      "tray_top_z_mm": 68,
+      "standoff_bottom_z_mm": 68,
+      "standoff_top_z_mm": 78,
+      "board_top_z_mm": 79.53
+    },
+    {
+      "board": "monitoring-transport",
+      "reference": "H1",
+      "axis_xy_mm": [
+        394.0,
+        166.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_monitoring_transport_H1",
+      "upper_screw_label": "UpperScrew_monitoring_transport_H1",
+      "lower_screw_label": "LowerScrew_monitoring_transport_H1",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 116,
+      "tray_top_z_mm": 118,
+      "standoff_bottom_z_mm": 118,
+      "standoff_top_z_mm": 128,
+      "board_top_z_mm": 129.53
+    },
+    {
+      "board": "monitoring-transport",
+      "reference": "H2",
+      "axis_xy_mm": [
+        511.0,
+        166.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_monitoring_transport_H2",
+      "upper_screw_label": "UpperScrew_monitoring_transport_H2",
+      "lower_screw_label": "LowerScrew_monitoring_transport_H2",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 116,
+      "tray_top_z_mm": 118,
+      "standoff_bottom_z_mm": 118,
+      "standoff_top_z_mm": 128,
+      "board_top_z_mm": 129.53
+    },
+    {
+      "board": "monitoring-transport",
+      "reference": "H3",
+      "axis_xy_mm": [
+        394.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_monitoring_transport_H3",
+      "upper_screw_label": "UpperScrew_monitoring_transport_H3",
+      "lower_screw_label": "LowerScrew_monitoring_transport_H3",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 116,
+      "tray_top_z_mm": 118,
+      "standoff_bottom_z_mm": 118,
+      "standoff_top_z_mm": 128,
+      "board_top_z_mm": 129.53
+    },
+    {
+      "board": "monitoring-transport",
+      "reference": "H4",
+      "axis_xy_mm": [
+        511.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_monitoring_transport_H4",
+      "upper_screw_label": "UpperScrew_monitoring_transport_H4",
+      "lower_screw_label": "LowerScrew_monitoring_transport_H4",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 116,
+      "tray_top_z_mm": 118,
+      "standoff_bottom_z_mm": 118,
+      "standoff_top_z_mm": 128,
+      "board_top_z_mm": 129.53
+    },
+    {
+      "board": "power",
+      "reference": "H1",
+      "axis_xy_mm": [
+        28.0,
+        211.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_power_H1",
+      "upper_screw_label": "UpperScrew_power_H1",
+      "lower_screw_label": "LowerScrew_power_H1",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 66,
+      "tray_top_z_mm": 68,
+      "standoff_bottom_z_mm": 68,
+      "standoff_top_z_mm": 78,
+      "board_top_z_mm": 79.53
+    },
+    {
+      "board": "power",
+      "reference": "H2",
+      "axis_xy_mm": [
+        195.0,
+        211.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_power_H2",
+      "upper_screw_label": "UpperScrew_power_H2",
+      "lower_screw_label": "LowerScrew_power_H2",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 66,
+      "tray_top_z_mm": 68,
+      "standoff_bottom_z_mm": 68,
+      "standoff_top_z_mm": 78,
+      "board_top_z_mm": 79.53
+    },
+    {
+      "board": "power",
+      "reference": "H3",
+      "axis_xy_mm": [
+        28.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_power_H3",
+      "upper_screw_label": "UpperScrew_power_H3",
+      "lower_screw_label": "LowerScrew_power_H3",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 66,
+      "tray_top_z_mm": 68,
+      "standoff_bottom_z_mm": 68,
+      "standoff_top_z_mm": 78,
+      "board_top_z_mm": 79.53
+    },
+    {
+      "board": "power",
+      "reference": "H4",
+      "axis_xy_mm": [
+        195.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_power_H4",
+      "upper_screw_label": "UpperScrew_power_H4",
+      "lower_screw_label": "LowerScrew_power_H4",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 66,
+      "tray_top_z_mm": 68,
+      "standoff_bottom_z_mm": 68,
+      "standoff_top_z_mm": 78,
+      "board_top_z_mm": 79.53
+    },
+    {
+      "board": "recording-front-end",
+      "reference": "H1",
+      "axis_xy_mm": [
+        394.0,
+        216.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_recording_front_end_H1",
+      "upper_screw_label": "UpperScrew_recording_front_end_H1",
+      "lower_screw_label": "LowerScrew_recording_front_end_H1",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 16,
+      "tray_top_z_mm": 18,
+      "standoff_bottom_z_mm": 18,
+      "standoff_top_z_mm": 28,
+      "board_top_z_mm": 29.53
+    },
+    {
+      "board": "recording-front-end",
+      "reference": "H2",
+      "axis_xy_mm": [
+        541.0,
+        216.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_recording_front_end_H2",
+      "upper_screw_label": "UpperScrew_recording_front_end_H2",
+      "lower_screw_label": "LowerScrew_recording_front_end_H2",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 16,
+      "tray_top_z_mm": 18,
+      "standoff_bottom_z_mm": 18,
+      "standoff_top_z_mm": 28,
+      "board_top_z_mm": 29.53
+    },
+    {
+      "board": "recording-front-end",
+      "reference": "H3",
+      "axis_xy_mm": [
+        394.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_recording_front_end_H3",
+      "upper_screw_label": "UpperScrew_recording_front_end_H3",
+      "lower_screw_label": "LowerScrew_recording_front_end_H3",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 16,
+      "tray_top_z_mm": 18,
+      "standoff_bottom_z_mm": 18,
+      "standoff_top_z_mm": 28,
+      "board_top_z_mm": 29.53
+    },
+    {
+      "board": "recording-front-end",
+      "reference": "H4",
+      "axis_xy_mm": [
+        541.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_recording_front_end_H4",
+      "upper_screw_label": "UpperScrew_recording_front_end_H4",
+      "lower_screw_label": "LowerScrew_recording_front_end_H4",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 16,
+      "tray_top_z_mm": 18,
+      "standoff_bottom_z_mm": 18,
+      "standoff_top_z_mm": 28,
+      "board_top_z_mm": 29.53
+    },
+    {
+      "board": "supervision",
+      "reference": "H1",
+      "axis_xy_mm": [
+        28.0,
+        276.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_supervision_H1",
+      "upper_screw_label": "UpperScrew_supervision_H1",
+      "lower_screw_label": "LowerScrew_supervision_H1",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 16,
+      "tray_top_z_mm": 18,
+      "standoff_bottom_z_mm": 18,
+      "standoff_top_z_mm": 28,
+      "board_top_z_mm": 29.53
+    },
+    {
+      "board": "supervision",
+      "reference": "H2",
+      "axis_xy_mm": [
+        320.0,
+        276.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_supervision_H2",
+      "upper_screw_label": "UpperScrew_supervision_H2",
+      "lower_screw_label": "LowerScrew_supervision_H2",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 16,
+      "tray_top_z_mm": 18,
+      "standoff_bottom_z_mm": 18,
+      "standoff_top_z_mm": 28,
+      "board_top_z_mm": 29.53
+    },
+    {
+      "board": "supervision",
+      "reference": "H3",
+      "axis_xy_mm": [
+        28.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_supervision_H3",
+      "upper_screw_label": "UpperScrew_supervision_H3",
+      "lower_screw_label": "LowerScrew_supervision_H3",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 16,
+      "tray_top_z_mm": 18,
+      "standoff_bottom_z_mm": 18,
+      "standoff_top_z_mm": 28,
+      "board_top_z_mm": 29.53
+    },
+    {
+      "board": "supervision",
+      "reference": "H4",
+      "axis_xy_mm": [
+        320.0,
+        34.0
+      ],
+      "board_hole_radius_mm": 1.6,
+      "standoff_label": "Standoff_supervision_H4",
+      "upper_screw_label": "UpperScrew_supervision_H4",
+      "lower_screw_label": "LowerScrew_supervision_H4",
+      "standoff_outer_radius_mm": 3.0,
+      "standoff_bore_radius_mm": 1.5,
+      "screw_shaft_radius_mm": 1.45,
+      "screw_head_radius_mm": 2.75,
+      "tray_bottom_z_mm": 16,
+      "tray_top_z_mm": 18,
+      "standoff_bottom_z_mm": 18,
+      "standoff_top_z_mm": 28,
+      "board_top_z_mm": 29.53
+    }
+  ],
+  "parts": [
+    {
+      "label": "Base",
+      "native_name": "BaseBlank",
+      "category": "enclosure_panel"
+    },
+    {
+      "label": "SideLeft",
+      "native_name": "LeftWallBlank",
+      "category": "enclosure_panel"
+    },
+    {
+      "label": "SideRight",
+      "native_name": "RightWallBlank",
+      "category": "enclosure_panel"
+    },
+    {
+      "label": "FrontBracket_0_0",
+      "native_name": "FrontBracketCut_0_0",
+      "category": "panel_bracket"
+    },
+    {
+      "label": "FrontScrew_0_0",
+      "native_name": "FrontScrew_0_0",
+      "category": "panel_screw"
+    },
+    {
+      "label": "FrontBracket_0_1",
+      "native_name": "FrontBracketCut_0_1",
+      "category": "panel_bracket"
+    },
+    {
+      "label": "FrontScrew_0_1",
+      "native_name": "FrontScrew_0_1",
+      "category": "panel_screw"
+    },
+    {
+      "label": "FrontBracket_1_0",
+      "native_name": "FrontBracketCut_1_0",
+      "category": "panel_bracket"
+    },
+    {
+      "label": "FrontScrew_1_0",
+      "native_name": "FrontScrew_1_0",
+      "category": "panel_screw"
+    },
+    {
+      "label": "FrontBracket_1_1",
+      "native_name": "FrontBracketCut_1_1",
+      "category": "panel_bracket"
+    },
+    {
+      "label": "FrontScrew_1_1",
+      "native_name": "FrontScrew_1_1",
+      "category": "panel_screw"
+    },
+    {
+      "label": "FrontPanel",
+      "native_name": "FrontPanelCut",
+      "category": "enclosure_panel"
+    },
+    {
+      "label": "RearPanel",
+      "native_name": "RearPanelCut",
+      "category": "enclosure_panel"
+    },
+    {
+      "label": "Post_0_0",
+      "native_name": "FramePostCut_0_0",
+      "category": "frame_post"
+    },
+    {
+      "label": "LidScrew_0_0",
+      "native_name": "LidFastener_0_0",
+      "category": "lid_screw"
+    },
+    {
+      "label": "Post_0_1",
+      "native_name": "FramePostCut_0_1",
+      "category": "frame_post"
+    },
+    {
+      "label": "LidScrew_0_1",
+      "native_name": "LidFastener_0_1",
+      "category": "lid_screw"
+    },
+    {
+      "label": "Post_1_0",
+      "native_name": "FramePostCut_1_0",
+      "category": "frame_post"
+    },
+    {
+      "label": "LidScrew_1_0",
+      "native_name": "LidFastener_1_0",
+      "category": "lid_screw"
+    },
+    {
+      "label": "Post_1_1",
+      "native_name": "FramePostCut_1_1",
+      "category": "frame_post"
+    },
+    {
+      "label": "LidScrew_1_1",
+      "native_name": "LidFastener_1_1",
+      "category": "lid_screw"
+    },
+    {
+      "label": "Post_2_0",
+      "native_name": "FramePostCut_2_0",
+      "category": "frame_post"
+    },
+    {
+      "label": "LidScrew_2_0",
+      "native_name": "LidFastener_2_0",
+      "category": "lid_screw"
+    },
+    {
+      "label": "Post_2_1",
+      "native_name": "FramePostCut_2_1",
+      "category": "frame_post"
+    },
+    {
+      "label": "LidScrew_2_1",
+      "native_name": "LidFastener_2_1",
+      "category": "lid_screw"
+    },
+    {
+      "label": "Post_3_0",
+      "native_name": "FramePostCut_3_0",
+      "category": "frame_post"
+    },
+    {
+      "label": "LidScrew_3_0",
+      "native_name": "LidFastener_3_0",
+      "category": "lid_screw"
+    },
+    {
+      "label": "Post_3_1",
+      "native_name": "FramePostCut_3_1",
+      "category": "frame_post"
+    },
+    {
+      "label": "LidScrew_3_1",
+      "native_name": "LidFastener_3_1",
+      "category": "lid_screw"
+    },
+    {
+      "label": "Lid",
+      "native_name": "LidCut",
+      "category": "enclosure_panel"
+    },
+    {
+      "label": "Foot_0",
+      "native_name": "RubberFoot_0",
+      "category": "foot"
+    },
+    {
+      "label": "Foot_1",
+      "native_name": "RubberFoot_1",
+      "category": "foot"
+    },
+    {
+      "label": "Foot_2",
+      "native_name": "RubberFoot_2",
+      "category": "foot"
+    },
+    {
+      "label": "Foot_3",
+      "native_name": "RubberFoot_3",
+      "category": "foot"
+    },
+    {
+      "label": "Rail_left_0_left",
+      "native_name": "RailFuse_left_0_left",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_left_0_right",
+      "native_name": "RailFuse_left_0_right",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_left_1_left",
+      "native_name": "RailFuse_left_1_left",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_left_1_right",
+      "native_name": "RailFuse_left_1_right",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_left_2_left",
+      "native_name": "RailFuse_left_2_left",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_left_2_right",
+      "native_name": "RailFuse_left_2_right",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_left_3_left",
+      "native_name": "RailFuse_left_3_left",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_left_3_right",
+      "native_name": "RailFuse_left_3_right",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_right_0_left",
+      "native_name": "RailFuse_right_0_left",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_right_0_right",
+      "native_name": "RailFuse_right_0_right",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_right_1_left",
+      "native_name": "RailFuse_right_1_left",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_right_1_right",
+      "native_name": "RailFuse_right_1_right",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_right_2_left",
+      "native_name": "RailFuse_right_2_left",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_right_2_right",
+      "native_name": "RailFuse_right_2_right",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_right_3_left",
+      "native_name": "RailFuse_right_3_left",
+      "category": "rail"
+    },
+    {
+      "label": "Rail_right_3_right",
+      "native_name": "RailFuse_right_3_right",
+      "category": "rail"
+    },
+    {
+      "label": "Standoff_contact_router_H1",
+      "native_name": "StandoffCut_contact_router_H1",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_contact_router_H1",
+      "native_name": "UpperFastener_contact_router_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_contact_router_H1",
+      "native_name": "LowerFastener_contact_router_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_contact_router_H2",
+      "native_name": "StandoffCut_contact_router_H2",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_contact_router_H2",
+      "native_name": "UpperFastener_contact_router_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_contact_router_H2",
+      "native_name": "LowerFastener_contact_router_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_contact_router_H3",
+      "native_name": "StandoffCut_contact_router_H3",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_contact_router_H3",
+      "native_name": "UpperFastener_contact_router_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_contact_router_H3",
+      "native_name": "LowerFastener_contact_router_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_contact_router_H4",
+      "native_name": "StandoffCut_contact_router_H4",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_contact_router_H4",
+      "native_name": "UpperFastener_contact_router_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_contact_router_H4",
+      "native_name": "LowerFastener_contact_router_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "Tray_contact_router",
+      "native_name": "TrayPocket_contact_router",
+      "category": "tray"
+    },
+    {
+      "label": "Pull_contact_router",
+      "native_name": "PullCut_contact_router",
+      "category": "tray_pull"
+    },
+    {
+      "label": "Standoff_controller_carrier_H1",
+      "native_name": "StandoffCut_controller_carrier_H1",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_controller_carrier_H1",
+      "native_name": "UpperFastener_controller_carrier_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_controller_carrier_H1",
+      "native_name": "LowerFastener_controller_carrier_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_controller_carrier_H2",
+      "native_name": "StandoffCut_controller_carrier_H2",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_controller_carrier_H2",
+      "native_name": "UpperFastener_controller_carrier_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_controller_carrier_H2",
+      "native_name": "LowerFastener_controller_carrier_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_controller_carrier_H3",
+      "native_name": "StandoffCut_controller_carrier_H3",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_controller_carrier_H3",
+      "native_name": "UpperFastener_controller_carrier_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_controller_carrier_H3",
+      "native_name": "LowerFastener_controller_carrier_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_controller_carrier_H4",
+      "native_name": "StandoffCut_controller_carrier_H4",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_controller_carrier_H4",
+      "native_name": "UpperFastener_controller_carrier_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_controller_carrier_H4",
+      "native_name": "LowerFastener_controller_carrier_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "Tray_controller_carrier",
+      "native_name": "TrayPocket_controller_carrier",
+      "category": "tray"
+    },
+    {
+      "label": "Pull_controller_carrier",
+      "native_name": "PullCut_controller_carrier",
+      "category": "tray_pull"
+    },
+    {
+      "label": "Standoff_current_driver_H1",
+      "native_name": "StandoffCut_current_driver_H1",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_current_driver_H1",
+      "native_name": "UpperFastener_current_driver_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_current_driver_H1",
+      "native_name": "LowerFastener_current_driver_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_current_driver_H2",
+      "native_name": "StandoffCut_current_driver_H2",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_current_driver_H2",
+      "native_name": "UpperFastener_current_driver_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_current_driver_H2",
+      "native_name": "LowerFastener_current_driver_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_current_driver_H3",
+      "native_name": "StandoffCut_current_driver_H3",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_current_driver_H3",
+      "native_name": "UpperFastener_current_driver_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_current_driver_H3",
+      "native_name": "LowerFastener_current_driver_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_current_driver_H4",
+      "native_name": "StandoffCut_current_driver_H4",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_current_driver_H4",
+      "native_name": "UpperFastener_current_driver_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_current_driver_H4",
+      "native_name": "LowerFastener_current_driver_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "Tray_current_driver",
+      "native_name": "TrayPocket_current_driver",
+      "category": "tray"
+    },
+    {
+      "label": "Pull_current_driver",
+      "native_name": "PullCut_current_driver",
+      "category": "tray_pull"
+    },
+    {
+      "label": "Standoff_monitoring_cell_H1",
+      "native_name": "StandoffCut_monitoring_cell_H1",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_monitoring_cell_H1",
+      "native_name": "UpperFastener_monitoring_cell_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_monitoring_cell_H1",
+      "native_name": "LowerFastener_monitoring_cell_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_monitoring_cell_H2",
+      "native_name": "StandoffCut_monitoring_cell_H2",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_monitoring_cell_H2",
+      "native_name": "UpperFastener_monitoring_cell_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_monitoring_cell_H2",
+      "native_name": "LowerFastener_monitoring_cell_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_monitoring_cell_H3",
+      "native_name": "StandoffCut_monitoring_cell_H3",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_monitoring_cell_H3",
+      "native_name": "UpperFastener_monitoring_cell_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_monitoring_cell_H3",
+      "native_name": "LowerFastener_monitoring_cell_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_monitoring_cell_H4",
+      "native_name": "StandoffCut_monitoring_cell_H4",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_monitoring_cell_H4",
+      "native_name": "UpperFastener_monitoring_cell_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_monitoring_cell_H4",
+      "native_name": "LowerFastener_monitoring_cell_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "Tray_monitoring_cell",
+      "native_name": "TrayPocket_monitoring_cell",
+      "category": "tray"
+    },
+    {
+      "label": "Pull_monitoring_cell",
+      "native_name": "PullCut_monitoring_cell",
+      "category": "tray_pull"
+    },
+    {
+      "label": "Standoff_monitoring_transport_H1",
+      "native_name": "StandoffCut_monitoring_transport_H1",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_monitoring_transport_H1",
+      "native_name": "UpperFastener_monitoring_transport_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_monitoring_transport_H1",
+      "native_name": "LowerFastener_monitoring_transport_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_monitoring_transport_H2",
+      "native_name": "StandoffCut_monitoring_transport_H2",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_monitoring_transport_H2",
+      "native_name": "UpperFastener_monitoring_transport_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_monitoring_transport_H2",
+      "native_name": "LowerFastener_monitoring_transport_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_monitoring_transport_H3",
+      "native_name": "StandoffCut_monitoring_transport_H3",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_monitoring_transport_H3",
+      "native_name": "UpperFastener_monitoring_transport_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_monitoring_transport_H3",
+      "native_name": "LowerFastener_monitoring_transport_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_monitoring_transport_H4",
+      "native_name": "StandoffCut_monitoring_transport_H4",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_monitoring_transport_H4",
+      "native_name": "UpperFastener_monitoring_transport_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_monitoring_transport_H4",
+      "native_name": "LowerFastener_monitoring_transport_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "Tray_monitoring_transport",
+      "native_name": "TrayPocket_monitoring_transport",
+      "category": "tray"
+    },
+    {
+      "label": "Pull_monitoring_transport",
+      "native_name": "PullCut_monitoring_transport",
+      "category": "tray_pull"
+    },
+    {
+      "label": "Standoff_power_H1",
+      "native_name": "StandoffCut_power_H1",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_power_H1",
+      "native_name": "UpperFastener_power_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_power_H1",
+      "native_name": "LowerFastener_power_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_power_H2",
+      "native_name": "StandoffCut_power_H2",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_power_H2",
+      "native_name": "UpperFastener_power_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_power_H2",
+      "native_name": "LowerFastener_power_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_power_H3",
+      "native_name": "StandoffCut_power_H3",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_power_H3",
+      "native_name": "UpperFastener_power_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_power_H3",
+      "native_name": "LowerFastener_power_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_power_H4",
+      "native_name": "StandoffCut_power_H4",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_power_H4",
+      "native_name": "UpperFastener_power_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_power_H4",
+      "native_name": "LowerFastener_power_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "Tray_power",
+      "native_name": "TrayPocket_power",
+      "category": "tray"
+    },
+    {
+      "label": "Pull_power",
+      "native_name": "PullCut_power",
+      "category": "tray_pull"
+    },
+    {
+      "label": "Standoff_recording_front_end_H1",
+      "native_name": "StandoffCut_recording_front_end_H1",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_recording_front_end_H1",
+      "native_name": "UpperFastener_recording_front_end_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_recording_front_end_H1",
+      "native_name": "LowerFastener_recording_front_end_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_recording_front_end_H2",
+      "native_name": "StandoffCut_recording_front_end_H2",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_recording_front_end_H2",
+      "native_name": "UpperFastener_recording_front_end_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_recording_front_end_H2",
+      "native_name": "LowerFastener_recording_front_end_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_recording_front_end_H3",
+      "native_name": "StandoffCut_recording_front_end_H3",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_recording_front_end_H3",
+      "native_name": "UpperFastener_recording_front_end_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_recording_front_end_H3",
+      "native_name": "LowerFastener_recording_front_end_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_recording_front_end_H4",
+      "native_name": "StandoffCut_recording_front_end_H4",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_recording_front_end_H4",
+      "native_name": "UpperFastener_recording_front_end_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_recording_front_end_H4",
+      "native_name": "LowerFastener_recording_front_end_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "Tray_recording_front_end",
+      "native_name": "TrayPocket_recording_front_end",
+      "category": "tray"
+    },
+    {
+      "label": "Pull_recording_front_end",
+      "native_name": "PullCut_recording_front_end",
+      "category": "tray_pull"
+    },
+    {
+      "label": "Standoff_supervision_H1",
+      "native_name": "StandoffCut_supervision_H1",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_supervision_H1",
+      "native_name": "UpperFastener_supervision_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_supervision_H1",
+      "native_name": "LowerFastener_supervision_H1",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_supervision_H2",
+      "native_name": "StandoffCut_supervision_H2",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_supervision_H2",
+      "native_name": "UpperFastener_supervision_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_supervision_H2",
+      "native_name": "LowerFastener_supervision_H2",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_supervision_H3",
+      "native_name": "StandoffCut_supervision_H3",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_supervision_H3",
+      "native_name": "UpperFastener_supervision_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_supervision_H3",
+      "native_name": "LowerFastener_supervision_H3",
+      "category": "board_screw"
+    },
+    {
+      "label": "Standoff_supervision_H4",
+      "native_name": "StandoffCut_supervision_H4",
+      "category": "board_standoff"
+    },
+    {
+      "label": "UpperScrew_supervision_H4",
+      "native_name": "UpperFastener_supervision_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "LowerScrew_supervision_H4",
+      "native_name": "LowerFastener_supervision_H4",
+      "category": "board_screw"
+    },
+    {
+      "label": "Tray_supervision",
+      "native_name": "TrayPocket_supervision",
+      "category": "tray"
+    },
+    {
+      "label": "Pull_supervision",
+      "native_name": "PullCut_supervision",
+      "category": "tray_pull"
+    },
+    {
+      "label": "PCB_contact_router",
+      "native_name": "PCB_contact_router",
+      "category": "populated_board"
+    },
+    {
+      "label": "PCB_controller_carrier",
+      "native_name": "PCB_controller_carrier",
+      "category": "populated_board"
+    },
+    {
+      "label": "PCB_current_driver",
+      "native_name": "PCB_current_driver",
+      "category": "populated_board"
+    },
+    {
+      "label": "PCB_monitoring_cell",
+      "native_name": "PCB_monitoring_cell",
+      "category": "populated_board"
+    },
+    {
+      "label": "PCB_monitoring_transport",
+      "native_name": "PCB_monitoring_transport",
+      "category": "populated_board"
+    },
+    {
+      "label": "PCB_power",
+      "native_name": "PCB_power",
+      "category": "populated_board"
+    },
+    {
+      "label": "PCB_recording_front_end",
+      "native_name": "PCB_recording_front_end",
+      "category": "populated_board"
+    },
+    {
+      "label": "PCB_supervision",
+      "native_name": "PCB_supervision",
+      "category": "populated_board"
+    }
+  ],
+  "allowed_intersections": [],
+  "clearance_checks": [
+    {
+      "a": "PCB_contact_router",
+      "b": "Tray_contact_router",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately"
+    },
+    {
+      "a": "PCB_controller_carrier",
+      "b": "Tray_controller_carrier",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately"
+    },
+    {
+      "a": "PCB_current_driver",
+      "b": "Tray_current_driver",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately"
+    },
+    {
+      "a": "PCB_current_driver",
+      "b": "Tray_contact_router",
+      "minimum_mm": 20,
+      "reason": "Minimum physical clearance between actual populated source and next tray"
+    },
+    {
+      "a": "PCB_monitoring_cell",
+      "b": "Tray_monitoring_cell",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately"
+    },
+    {
+      "a": "PCB_monitoring_cell",
+      "b": "Tray_monitoring_transport",
+      "minimum_mm": 20,
+      "reason": "Minimum physical clearance between actual populated source and next tray"
+    },
+    {
+      "a": "PCB_monitoring_transport",
+      "b": "Tray_monitoring_transport",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately"
+    },
+    {
+      "a": "PCB_monitoring_transport",
+      "b": "Tray_controller_carrier",
+      "minimum_mm": 20,
+      "reason": "Minimum physical clearance between actual populated source and next tray"
+    },
+    {
+      "a": "PCB_power",
+      "b": "Tray_power",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately"
+    },
+    {
+      "a": "PCB_power",
+      "b": "Tray_current_driver",
+      "minimum_mm": 20,
+      "reason": "Minimum physical clearance between actual populated source and next tray"
+    },
+    {
+      "a": "PCB_recording_front_end",
+      "b": "Tray_recording_front_end",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately"
+    },
+    {
+      "a": "PCB_recording_front_end",
+      "b": "Tray_monitoring_cell",
+      "minimum_mm": 20,
+      "reason": "Minimum physical clearance between actual populated source and next tray"
+    },
+    {
+      "a": "PCB_supervision",
+      "b": "Tray_supervision",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately"
+    },
+    {
+      "a": "PCB_supervision",
+      "b": "Tray_power",
+      "minimum_mm": 20,
+      "reason": "Minimum physical clearance between actual populated source and next tray"
+    }
+  ],
+  "service_volumes": [
+    {
+      "name": "central_cable_spine",
+      "min_mm": [
+        336,
+        20,
+        18
+      ],
+      "max_mm": [
+        374,
+        290,
+        230
+      ]
+    },
+    {
+      "name": "rear_cable_corridor",
+      "min_mm": [
+        18,
+        296,
+        18
+      ],
+      "max_mm": [
+        565,
+        307,
+        229
+      ]
+    },
+    {
+      "name": "right_cable_corridor",
+      "min_mm": [
+        571,
+        20,
+        18
+      ],
+      "max_mm": [
+        597,
+        290,
+        229
+      ]
+    }
+  ],
+  "external_ports": [
+    {
+      "name": "rear_artificial_load",
+      "cutout_min_mm": [
+        32,
+        307,
+        194
+      ],
+      "cutout_max_mm": [
+        122,
+        310,
+        222
+      ],
+      "purpose": "Root-owned artificial-load harness pass-through; strain relief proposal"
+    },
+    {
+      "name": "rear_companion",
+      "cutout_min_mm": [
+        390,
+        307,
+        194
+      ],
+      "cutout_max_mm": [
+        490,
+        310,
+        222
+      ],
+      "purpose": "Root-owned companion/power/debug harness pass-through; connector choice unqualified"
+    }
+  ],
+  "service_instructions": [
+    "Remove lid and front cover, isolate external power, disconnect and label harness plugs before withdrawing any tray",
+    "Withdraw each tray toward negativeY; reserve at least310mm free front access",
+    "Boards do not carry mechanical loads from case panels; all32 original axes have independent10mm nominal standoffs",
+    "The cable service volumes are reservations; root-owned harness CAD and interference audit determine actual routes"
+  ],
+  "assembly_assumptions": [
+    "Native source package geometry is nominal and retains all original populated solids",
+    "Board holes are directly extracted from frozen nativePCB footprints; no5mm inset assumption",
+    "Connector mating allowances and bends are not electrical or fatigue qualification",
+    "No load, thermal, EMI, ingress, implant biocompatibility or sterilization qualification is claimed"
+  ],
+  "exploded_transforms": {
+    "Base": [
+      0,
+      0,
+      0
+    ],
+    "SideLeft": [
+      0,
+      0,
+      0
+    ],
+    "SideRight": [
+      0,
+      0,
+      0
+    ],
+    "FrontBracket_0_0": [
+      0,
+      0,
+      0
+    ],
+    "FrontScrew_0_0": [
+      0,
+      0,
+      0
+    ],
+    "FrontBracket_0_1": [
+      0,
+      0,
+      0
+    ],
+    "FrontScrew_0_1": [
+      0,
+      0,
+      0
+    ],
+    "FrontBracket_1_0": [
+      0,
+      0,
+      0
+    ],
+    "FrontScrew_1_0": [
+      0,
+      0,
+      0
+    ],
+    "FrontBracket_1_1": [
+      0,
+      0,
+      0
+    ],
+    "FrontScrew_1_1": [
+      0,
+      0,
+      0
+    ],
+    "FrontPanel": [
+      0,
+      -50,
+      0
+    ],
+    "RearPanel": [
+      0,
+      0,
+      0
+    ],
+    "Post_0_0": [
+      0,
+      0,
+      0
+    ],
+    "LidScrew_0_0": [
+      0,
+      0,
+      165
+    ],
+    "Post_0_1": [
+      0,
+      0,
+      0
+    ],
+    "LidScrew_0_1": [
+      0,
+      0,
+      165
+    ],
+    "Post_1_0": [
+      0,
+      0,
+      0
+    ],
+    "LidScrew_1_0": [
+      0,
+      0,
+      165
+    ],
+    "Post_1_1": [
+      0,
+      0,
+      0
+    ],
+    "LidScrew_1_1": [
+      0,
+      0,
+      165
+    ],
+    "Post_2_0": [
+      0,
+      0,
+      0
+    ],
+    "LidScrew_2_0": [
+      0,
+      0,
+      165
+    ],
+    "Post_2_1": [
+      0,
+      0,
+      0
+    ],
+    "LidScrew_2_1": [
+      0,
+      0,
+      165
+    ],
+    "Post_3_0": [
+      0,
+      0,
+      0
+    ],
+    "LidScrew_3_0": [
+      0,
+      0,
+      165
+    ],
+    "Post_3_1": [
+      0,
+      0,
+      0
+    ],
+    "LidScrew_3_1": [
+      0,
+      0,
+      165
+    ],
+    "Lid": [
+      0,
+      0,
+      165
+    ],
+    "Foot_0": [
+      0,
+      0,
+      0
+    ],
+    "Foot_1": [
+      0,
+      0,
+      0
+    ],
+    "Foot_2": [
+      0,
+      0,
+      0
+    ],
+    "Foot_3": [
+      0,
+      0,
+      0
+    ],
+    "Rail_left_0_left": [
+      0,
+      0,
+      0
+    ],
+    "Rail_left_0_right": [
+      0,
+      0,
+      0
+    ],
+    "Rail_left_1_left": [
+      0,
+      0,
+      0
+    ],
+    "Rail_left_1_right": [
+      0,
+      0,
+      0
+    ],
+    "Rail_left_2_left": [
+      0,
+      0,
+      0
+    ],
+    "Rail_left_2_right": [
+      0,
+      0,
+      0
+    ],
+    "Rail_left_3_left": [
+      0,
+      0,
+      0
+    ],
+    "Rail_left_3_right": [
+      0,
+      0,
+      0
+    ],
+    "Rail_right_0_left": [
+      0,
+      0,
+      0
+    ],
+    "Rail_right_0_right": [
+      0,
+      0,
+      0
+    ],
+    "Rail_right_1_left": [
+      0,
+      0,
+      0
+    ],
+    "Rail_right_1_right": [
+      0,
+      0,
+      0
+    ],
+    "Rail_right_2_left": [
+      0,
+      0,
+      0
+    ],
+    "Rail_right_2_right": [
+      0,
+      0,
+      0
+    ],
+    "Rail_right_3_left": [
+      0,
+      0,
+      0
+    ],
+    "Rail_right_3_right": [
+      0,
+      0,
+      0
+    ],
+    "Standoff_contact_router_H1": [
+      0,
+      0,
+      105
+    ],
+    "UpperScrew_contact_router_H1": [
+      0,
+      0,
+      105
+    ],
+    "LowerScrew_contact_router_H1": [
+      0,
+      0,
+      105
+    ],
+    "Standoff_contact_router_H2": [
+      0,
+      0,
+      105
+    ],
+    "UpperScrew_contact_router_H2": [
+      0,
+      0,
+      105
+    ],
+    "LowerScrew_contact_router_H2": [
+      0,
+      0,
+      105
+    ],
+    "Standoff_contact_router_H3": [
+      0,
+      0,
+      105
+    ],
+    "UpperScrew_contact_router_H3": [
+      0,
+      0,
+      105
+    ],
+    "LowerScrew_contact_router_H3": [
+      0,
+      0,
+      105
+    ],
+    "Standoff_contact_router_H4": [
+      0,
+      0,
+      105
+    ],
+    "UpperScrew_contact_router_H4": [
+      0,
+      0,
+      105
+    ],
+    "LowerScrew_contact_router_H4": [
+      0,
+      0,
+      105
+    ],
+    "Tray_contact_router": [
+      0,
+      0,
+      105
+    ],
+    "Pull_contact_router": [
+      0,
+      0,
+      105
+    ],
+    "Standoff_controller_carrier_H1": [
+      0,
+      0,
+      105
+    ],
+    "UpperScrew_controller_carrier_H1": [
+      0,
+      0,
+      105
+    ],
+    "LowerScrew_controller_carrier_H1": [
+      0,
+      0,
+      105
+    ],
+    "Standoff_controller_carrier_H2": [
+      0,
+      0,
+      105
+    ],
+    "UpperScrew_controller_carrier_H2": [
+      0,
+      0,
+      105
+    ],
+    "LowerScrew_controller_carrier_H2": [
+      0,
+      0,
+      105
+    ],
+    "Standoff_controller_carrier_H3": [
+      0,
+      0,
+      105
+    ],
+    "UpperScrew_controller_carrier_H3": [
+      0,
+      0,
+      105
+    ],
+    "LowerScrew_controller_carrier_H3": [
+      0,
+      0,
+      105
+    ],
+    "Standoff_controller_carrier_H4": [
+      0,
+      0,
+      105
+    ],
+    "UpperScrew_controller_carrier_H4": [
+      0,
+      0,
+      105
+    ],
+    "LowerScrew_controller_carrier_H4": [
+      0,
+      0,
+      105
+    ],
+    "Tray_controller_carrier": [
+      0,
+      0,
+      105
+    ],
+    "Pull_controller_carrier": [
+      0,
+      0,
+      105
+    ],
+    "Standoff_current_driver_H1": [
+      0,
+      0,
+      70
+    ],
+    "UpperScrew_current_driver_H1": [
+      0,
+      0,
+      70
+    ],
+    "LowerScrew_current_driver_H1": [
+      0,
+      0,
+      70
+    ],
+    "Standoff_current_driver_H2": [
+      0,
+      0,
+      70
+    ],
+    "UpperScrew_current_driver_H2": [
+      0,
+      0,
+      70
+    ],
+    "LowerScrew_current_driver_H2": [
+      0,
+      0,
+      70
+    ],
+    "Standoff_current_driver_H3": [
+      0,
+      0,
+      70
+    ],
+    "UpperScrew_current_driver_H3": [
+      0,
+      0,
+      70
+    ],
+    "LowerScrew_current_driver_H3": [
+      0,
+      0,
+      70
+    ],
+    "Standoff_current_driver_H4": [
+      0,
+      0,
+      70
+    ],
+    "UpperScrew_current_driver_H4": [
+      0,
+      0,
+      70
+    ],
+    "LowerScrew_current_driver_H4": [
+      0,
+      0,
+      70
+    ],
+    "Tray_current_driver": [
+      0,
+      0,
+      70
+    ],
+    "Pull_current_driver": [
+      0,
+      0,
+      70
+    ],
+    "Standoff_monitoring_cell_H1": [
+      0,
+      0,
+      35
+    ],
+    "UpperScrew_monitoring_cell_H1": [
+      0,
+      0,
+      35
+    ],
+    "LowerScrew_monitoring_cell_H1": [
+      0,
+      0,
+      35
+    ],
+    "Standoff_monitoring_cell_H2": [
+      0,
+      0,
+      35
+    ],
+    "UpperScrew_monitoring_cell_H2": [
+      0,
+      0,
+      35
+    ],
+    "LowerScrew_monitoring_cell_H2": [
+      0,
+      0,
+      35
+    ],
+    "Standoff_monitoring_cell_H3": [
+      0,
+      0,
+      35
+    ],
+    "UpperScrew_monitoring_cell_H3": [
+      0,
+      0,
+      35
+    ],
+    "LowerScrew_monitoring_cell_H3": [
+      0,
+      0,
+      35
+    ],
+    "Standoff_monitoring_cell_H4": [
+      0,
+      0,
+      35
+    ],
+    "UpperScrew_monitoring_cell_H4": [
+      0,
+      0,
+      35
+    ],
+    "LowerScrew_monitoring_cell_H4": [
+      0,
+      0,
+      35
+    ],
+    "Tray_monitoring_cell": [
+      0,
+      0,
+      35
+    ],
+    "Pull_monitoring_cell": [
+      0,
+      0,
+      35
+    ],
+    "Standoff_monitoring_transport_H1": [
+      0,
+      0,
+      70
+    ],
+    "UpperScrew_monitoring_transport_H1": [
+      0,
+      0,
+      70
+    ],
+    "LowerScrew_monitoring_transport_H1": [
+      0,
+      0,
+      70
+    ],
+    "Standoff_monitoring_transport_H2": [
+      0,
+      0,
+      70
+    ],
+    "UpperScrew_monitoring_transport_H2": [
+      0,
+      0,
+      70
+    ],
+    "LowerScrew_monitoring_transport_H2": [
+      0,
+      0,
+      70
+    ],
+    "Standoff_monitoring_transport_H3": [
+      0,
+      0,
+      70
+    ],
+    "UpperScrew_monitoring_transport_H3": [
+      0,
+      0,
+      70
+    ],
+    "LowerScrew_monitoring_transport_H3": [
+      0,
+      0,
+      70
+    ],
+    "Standoff_monitoring_transport_H4": [
+      0,
+      0,
+      70
+    ],
+    "UpperScrew_monitoring_transport_H4": [
+      0,
+      0,
+      70
+    ],
+    "LowerScrew_monitoring_transport_H4": [
+      0,
+      0,
+      70
+    ],
+    "Tray_monitoring_transport": [
+      0,
+      0,
+      70
+    ],
+    "Pull_monitoring_transport": [
+      0,
+      0,
+      70
+    ],
+    "Standoff_power_H1": [
+      0,
+      0,
+      35
+    ],
+    "UpperScrew_power_H1": [
+      0,
+      0,
+      35
+    ],
+    "LowerScrew_power_H1": [
+      0,
+      0,
+      35
+    ],
+    "Standoff_power_H2": [
+      0,
+      0,
+      35
+    ],
+    "UpperScrew_power_H2": [
+      0,
+      0,
+      35
+    ],
+    "LowerScrew_power_H2": [
+      0,
+      0,
+      35
+    ],
+    "Standoff_power_H3": [
+      0,
+      0,
+      35
+    ],
+    "UpperScrew_power_H3": [
+      0,
+      0,
+      35
+    ],
+    "LowerScrew_power_H3": [
+      0,
+      0,
+      35
+    ],
+    "Standoff_power_H4": [
+      0,
+      0,
+      35
+    ],
+    "UpperScrew_power_H4": [
+      0,
+      0,
+      35
+    ],
+    "LowerScrew_power_H4": [
+      0,
+      0,
+      35
+    ],
+    "Tray_power": [
+      0,
+      0,
+      35
+    ],
+    "Pull_power": [
+      0,
+      0,
+      35
+    ],
+    "Standoff_recording_front_end_H1": [
+      0,
+      0,
+      0
+    ],
+    "UpperScrew_recording_front_end_H1": [
+      0,
+      0,
+      0
+    ],
+    "LowerScrew_recording_front_end_H1": [
+      0,
+      0,
+      0
+    ],
+    "Standoff_recording_front_end_H2": [
+      0,
+      0,
+      0
+    ],
+    "UpperScrew_recording_front_end_H2": [
+      0,
+      0,
+      0
+    ],
+    "LowerScrew_recording_front_end_H2": [
+      0,
+      0,
+      0
+    ],
+    "Standoff_recording_front_end_H3": [
+      0,
+      0,
+      0
+    ],
+    "UpperScrew_recording_front_end_H3": [
+      0,
+      0,
+      0
+    ],
+    "LowerScrew_recording_front_end_H3": [
+      0,
+      0,
+      0
+    ],
+    "Standoff_recording_front_end_H4": [
+      0,
+      0,
+      0
+    ],
+    "UpperScrew_recording_front_end_H4": [
+      0,
+      0,
+      0
+    ],
+    "LowerScrew_recording_front_end_H4": [
+      0,
+      0,
+      0
+    ],
+    "Tray_recording_front_end": [
+      0,
+      0,
+      0
+    ],
+    "Pull_recording_front_end": [
+      0,
+      0,
+      0
+    ],
+    "Standoff_supervision_H1": [
+      0,
+      0,
+      0
+    ],
+    "UpperScrew_supervision_H1": [
+      0,
+      0,
+      0
+    ],
+    "LowerScrew_supervision_H1": [
+      0,
+      0,
+      0
+    ],
+    "Standoff_supervision_H2": [
+      0,
+      0,
+      0
+    ],
+    "UpperScrew_supervision_H2": [
+      0,
+      0,
+      0
+    ],
+    "LowerScrew_supervision_H2": [
+      0,
+      0,
+      0
+    ],
+    "Standoff_supervision_H3": [
+      0,
+      0,
+      0
+    ],
+    "UpperScrew_supervision_H3": [
+      0,
+      0,
+      0
+    ],
+    "LowerScrew_supervision_H3": [
+      0,
+      0,
+      0
+    ],
+    "Standoff_supervision_H4": [
+      0,
+      0,
+      0
+    ],
+    "UpperScrew_supervision_H4": [
+      0,
+      0,
+      0
+    ],
+    "LowerScrew_supervision_H4": [
+      0,
+      0,
+      0
+    ],
+    "Tray_supervision": [
+      0,
+      0,
+      0
+    ],
+    "Pull_supervision": [
+      0,
+      0,
+      0
+    ],
+    "PCB_contact_router": [
+      0,
+      0,
+      120
+    ],
+    "PCB_controller_carrier": [
+      0,
+      0,
+      120
+    ],
+    "PCB_current_driver": [
+      0,
+      0,
+      85
+    ],
+    "PCB_monitoring_cell": [
+      0,
+      0,
+      50
+    ],
+    "PCB_monitoring_transport": [
+      0,
+      0,
+      85
+    ],
+    "PCB_power": [
+      0,
+      0,
+      50
+    ],
+    "PCB_recording_front_end": [
+      0,
+      0,
+      15
+    ],
+    "PCB_supervision": [
+      0,
+      0,
+      15
+    ]
+  },
+  "compressed_step": "cad/stage5/reference/ATO_reference_assembly.step.zip",
+  "compressed_exploded_step": "cad/stage5/reference/ATO_reference_exploded.step.zip",
+  "step_archive": "cad/stage5/reference/ATO_reference_assembly.step.zip",
+  "step_member": "ATO_reference_assembly.step",
+  "exploded_step_archive": "cad/stage5/reference/ATO_reference_exploded.step.zip",
+  "exploded_step_member": "ATO_reference_exploded.step",
+  "step_sha256_uncompressed": "57b7729a8f73e807369791934ee8e94463ab574ed1e52c6e51e5649adfa5c54d",
+  "exploded_step_sha256_uncompressed": "5c685747a4524cf102aa36647e72396a404b974e1029fdf9557b992e57ede5e1"
+}

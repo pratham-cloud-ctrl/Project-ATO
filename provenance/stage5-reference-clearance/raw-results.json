@@ -1,0 +1,261 @@
+{
+  "scope": "Read-only exact BRep solid-pair minimum; no receipt reconstruction or source mutation",
+  "native_sha256": "764a4e7a9ec8212fefb1c9c0deb7cab2ee76a5c9e72b2895f9199c98d0e5ae9a",
+  "contract_canonical_sha256": "6e02bb9182e470fa4b10212b1698e890d7a93990480bccb4ce6f098eeed32409",
+  "rows": [
+    {
+      "a": "PCB_contact_router",
+      "b": "Tray_contact_router",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately",
+      "measured_mm": 8.615000000000009,
+      "minimum_solid_pair": [
+        33,
+        0
+      ],
+      "solid_pair_count": 156,
+      "exact_BRep_queries": 156,
+      "AABB_pruned_pairs": 0,
+      "seconds": 41.1625733999972,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 2.614999999997565,
+      "conservative_AABB_lower_mm_minus_2e_6": 2.614997999997565
+    },
+    {
+      "a": "PCB_controller_carrier",
+      "b": "Tray_controller_carrier",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately",
+      "measured_mm": 8.615000000000009,
+      "minimum_solid_pair": [
+        1,
+        0
+      ],
+      "solid_pair_count": 136,
+      "exact_BRep_queries": 136,
+      "AABB_pruned_pairs": 0,
+      "seconds": 20.328418199991575,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 2.614999999997565,
+      "conservative_AABB_lower_mm_minus_2e_6": 2.614997999997565
+    },
+    {
+      "a": "PCB_current_driver",
+      "b": "Tray_current_driver",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately",
+      "measured_mm": 8.615000000000009,
+      "minimum_solid_pair": [
+        29,
+        0
+      ],
+      "solid_pair_count": 165,
+      "exact_BRep_queries": 165,
+      "AABB_pruned_pairs": 0,
+      "seconds": 33.54928259999724,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 2.614999999997565,
+      "conservative_AABB_lower_mm_minus_2e_6": 2.614997999997565
+    },
+    {
+      "a": "PCB_current_driver",
+      "b": "Tray_contact_router",
+      "minimum_mm": 20,
+      "reason": "Minimum physical clearance between actual populated source and next tray",
+      "measured_mm": 27.845,
+      "minimum_solid_pair": [
+        29,
+        0
+      ],
+      "solid_pair_count": 165,
+      "exact_BRep_queries": 7,
+      "AABB_pruned_pairs": 158,
+      "seconds": 4.126666600001045,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 27.844999999997555,
+      "conservative_AABB_lower_mm_minus_2e_6": 27.844997999997556
+    },
+    {
+      "a": "PCB_monitoring_cell",
+      "b": "Tray_monitoring_cell",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately",
+      "measured_mm": 8.614999999999995,
+      "minimum_solid_pair": [
+        13,
+        0
+      ],
+      "solid_pair_count": 72,
+      "exact_BRep_queries": 72,
+      "AABB_pruned_pairs": 0,
+      "seconds": 14.603086500006611,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 2.6149999999975506,
+      "conservative_AABB_lower_mm_minus_2e_6": 2.614997999997551
+    },
+    {
+      "a": "PCB_monitoring_cell",
+      "b": "Tray_monitoring_transport",
+      "minimum_mm": 20,
+      "reason": "Minimum physical clearance between actual populated source and next tray",
+      "measured_mm": 27.845,
+      "minimum_solid_pair": [
+        13,
+        0
+      ],
+      "solid_pair_count": 72,
+      "exact_BRep_queries": 9,
+      "AABB_pruned_pairs": 63,
+      "seconds": 2.6854585999972187,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 27.844999999997555,
+      "conservative_AABB_lower_mm_minus_2e_6": 27.844997999997556
+    },
+    {
+      "a": "PCB_monitoring_transport",
+      "b": "Tray_monitoring_transport",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately",
+      "measured_mm": 8.615000000000009,
+      "minimum_solid_pair": [
+        8,
+        0
+      ],
+      "solid_pair_count": 61,
+      "exact_BRep_queries": 61,
+      "AABB_pruned_pairs": 0,
+      "seconds": 16.364983599996776,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 2.614999999997565,
+      "conservative_AABB_lower_mm_minus_2e_6": 2.614997999997565
+    },
+    {
+      "a": "PCB_monitoring_transport",
+      "b": "Tray_controller_carrier",
+      "minimum_mm": 20,
+      "reason": "Minimum physical clearance between actual populated source and next tray",
+      "measured_mm": 27.845,
+      "minimum_solid_pair": [
+        8,
+        0
+      ],
+      "solid_pair_count": 61,
+      "exact_BRep_queries": 11,
+      "AABB_pruned_pairs": 50,
+      "seconds": 6.710338599994429,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 27.844999999997555,
+      "conservative_AABB_lower_mm_minus_2e_6": 27.844997999997556
+    },
+    {
+      "a": "PCB_power",
+      "b": "Tray_power",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately",
+      "measured_mm": 8.614999999999995,
+      "minimum_solid_pair": [
+        44,
+        0
+      ],
+      "solid_pair_count": 208,
+      "exact_BRep_queries": 208,
+      "AABB_pruned_pairs": 0,
+      "seconds": 22.574026400005096,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 2.6149999999975506,
+      "conservative_AABB_lower_mm_minus_2e_6": 2.614997999997551
+    },
+    {
+      "a": "PCB_power",
+      "b": "Tray_current_driver",
+      "minimum_mm": 20,
+      "reason": "Minimum physical clearance between actual populated source and next tray",
+      "measured_mm": 24.78500000000001,
+      "minimum_solid_pair": [
+        119,
+        0
+      ],
+      "solid_pair_count": 208,
+      "exact_BRep_queries": 1,
+      "AABB_pruned_pairs": 207,
+      "seconds": 0.37794019999273587,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 24.784999999999997,
+      "conservative_AABB_lower_mm_minus_2e_6": 24.784997999999998
+    },
+    {
+      "a": "PCB_recording_front_end",
+      "b": "Tray_recording_front_end",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately",
+      "measured_mm": 8.614999999999998,
+      "minimum_solid_pair": [
+        11,
+        0
+      ],
+      "solid_pair_count": 296,
+      "exact_BRep_queries": 296,
+      "AABB_pruned_pairs": 0,
+      "seconds": 31.02926719999232,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 2.614999999997554,
+      "conservative_AABB_lower_mm_minus_2e_6": 2.6149979999975543
+    },
+    {
+      "a": "PCB_recording_front_end",
+      "b": "Tray_monitoring_cell",
+      "minimum_mm": 20,
+      "reason": "Minimum physical clearance between actual populated source and next tray",
+      "measured_mm": 27.845,
+      "minimum_solid_pair": [
+        11,
+        0
+      ],
+      "solid_pair_count": 296,
+      "exact_BRep_queries": 5,
+      "AABB_pruned_pairs": 291,
+      "seconds": 6.264971299999161,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 27.84499999999756,
+      "conservative_AABB_lower_mm_minus_2e_6": 27.844997999997563
+    },
+    {
+      "a": "PCB_supervision",
+      "b": "Tray_supervision",
+      "minimum_mm": 8.0,
+      "reason": "Underside pin tips clear tray; mounting hardware checked separately",
+      "measured_mm": 8.614999999999998,
+      "minimum_solid_pair": [
+        14,
+        0
+      ],
+      "solid_pair_count": 574,
+      "exact_BRep_queries": 574,
+      "AABB_pruned_pairs": 0,
+      "seconds": 96.74419179999677,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 2.614999999997554,
+      "conservative_AABB_lower_mm_minus_2e_6": 2.6149979999975543
+    },
+    {
+      "a": "PCB_supervision",
+      "b": "Tray_power",
+      "minimum_mm": 20,
+      "reason": "Minimum physical clearance between actual populated source and next tray",
+      "measured_mm": 27.845,
+      "minimum_solid_pair": [
+        14,
+        0
+      ],
+      "solid_pair_count": 574,
+      "exact_BRep_queries": 26,
+      "AABB_pruned_pairs": 548,
+      "seconds": 12.537908300000709,
+      "passed": true,
+      "whole_shape_tight_AABB_lower_mm": 27.84499999999756,
+      "conservative_AABB_lower_mm_minus_2e_6": 27.844997999997563
+    }
+  ],
+  "elapsed_seconds": 310.4682615999918,
+  "all_passed": true
+}

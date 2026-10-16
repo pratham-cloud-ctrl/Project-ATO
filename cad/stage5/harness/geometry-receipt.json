@@ -1,0 +1,1464 @@
+{
+  "schema": "ato.stage5.mating-geometry.v1",
+  "FreeCAD_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "contract_sha256_lf": "c8dc7e3de1dff2462cc8972d2081dc99c28a95fdec9441250e3735f80b4deba1",
+  "parts": [
+    {
+      "label": "Mate_contact_router_J40001",
+      "volume_mm3": 235.7950000000001,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        37.425000000000004,
+        86.405,
+        182.2
+      ],
+      "bbox_max_mm": [
+        45.245000000000005,
+        88.905,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_contact_router_J40002",
+      "volume_mm3": 540.8550000000006,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        50.105000000000004,
+        86.405,
+        182.2
+      ],
+      "bbox_max_mm": [
+        68.08500000000001,
+        88.905,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_contact_router_J40003",
+      "volume_mm3": 540.8549999999998,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        37.435,
+        78.815,
+        182.2
+      ],
+      "bbox_max_mm": [
+        55.415000000000006,
+        81.315,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_contact_router_J40004",
+      "volume_mm3": 769.6499999999997,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        37.425000000000004,
+        71.225,
+        182.2
+      ],
+      "bbox_max_mm": [
+        63.025000000000006,
+        73.725,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_contact_router_J40005",
+      "volume_mm3": 922.1800000000009,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        37.425000000000004,
+        63.635000000000005,
+        182.2
+      ],
+      "bbox_max_mm": [
+        68.105,
+        66.135,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_contact_router_J40006",
+      "volume_mm3": 693.3849999999998,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        37.425000000000004,
+        56.045,
+        182.2
+      ],
+      "bbox_max_mm": [
+        60.48500000000001,
+        58.545,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_contact_router_J40007",
+      "volume_mm3": 1379.7699999999977,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        37.435,
+        48.45500000000001,
+        182.2
+      ],
+      "bbox_max_mm": [
+        83.355,
+        50.95500000000001,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_contact_router_J40100",
+      "volume_mm3": 235.79500000000027,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        96.205,
+        70.345,
+        182.2
+      ],
+      "bbox_max_mm": [
+        104.025,
+        72.845,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_contact_router_J40200",
+      "volume_mm3": 235.79500000000002,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        137.415,
+        70.345,
+        182.2
+      ],
+      "bbox_max_mm": [
+        145.23499999999999,
+        72.845,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_controller_carrier_J80001",
+      "volume_mm3": 159.5299999999996,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        403.425,
+        153.95499999999998,
+        182.2
+      ],
+      "bbox_max_mm": [
+        408.705,
+        156.45499999999998,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_controller_carrier_J80002",
+      "volume_mm3": 464.59000000000094,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        500.655,
+        98.815,
+        182.2
+      ],
+      "bbox_max_mm": [
+        516.095,
+        101.315,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_controller_carrier_J80010",
+      "volume_mm3": 464.5900000000007,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        501.355,
+        153.95499999999998,
+        182.2
+      ],
+      "bbox_max_mm": [
+        516.7950000000001,
+        156.45499999999998,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_controller_carrier_J80011",
+      "volume_mm3": 769.6500000000004,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        501.355,
+        146.365,
+        182.2
+      ],
+      "bbox_max_mm": [
+        526.955,
+        148.865,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_controller_carrier_J80012",
+      "volume_mm3": 540.8549999999998,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        501.365,
+        138.775,
+        182.2
+      ],
+      "bbox_max_mm": [
+        519.345,
+        141.275,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_controller_carrier_J80013",
+      "volume_mm3": 388.32499999999976,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        501.355,
+        131.185,
+        182.2
+      ],
+      "bbox_max_mm": [
+        514.255,
+        133.685,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_controller_carrier_J80014",
+      "volume_mm3": 312.06000000000006,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        403.425,
+        110.595,
+        182.2
+      ],
+      "bbox_max_mm": [
+        413.785,
+        113.095,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_controller_carrier_J80015",
+      "volume_mm3": 693.3850000000004,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        403.425,
+        103.005,
+        182.2
+      ],
+      "bbox_max_mm": [
+        426.485,
+        105.505,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_controller_carrier_J80016",
+      "volume_mm3": 693.3850000000004,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        403.425,
+        95.415,
+        182.2
+      ],
+      "bbox_max_mm": [
+        426.485,
+        97.915,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_controller_carrier_J80017",
+      "volume_mm3": 693.3850000000004,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        403.425,
+        87.825,
+        182.2
+      ],
+      "bbox_max_mm": [
+        426.485,
+        90.325,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_controller_carrier_J80018",
+      "volume_mm3": 617.1200000000002,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        439.335,
+        110.595,
+        182.2
+      ],
+      "bbox_max_mm": [
+        459.85499999999996,
+        113.095,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_controller_carrier_J80019",
+      "volume_mm3": 1456.035000000001,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        439.345,
+        103.005,
+        182.2
+      ],
+      "bbox_max_mm": [
+        487.805,
+        105.505,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_controller_carrier_J80020",
+      "volume_mm3": 312.0600000000002,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        439.335,
+        95.415,
+        182.2
+      ],
+      "bbox_max_mm": [
+        449.695,
+        97.915,
+        196.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_current_driver_J20001",
+      "volume_mm3": 388.3250000000004,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        37.425000000000004,
+        145.485,
+        132.2
+      ],
+      "bbox_max_mm": [
+        50.325,
+        147.985,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_current_driver_J20002",
+      "volume_mm3": 312.06,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        55.175000000000004,
+        145.485,
+        132.2
+      ],
+      "bbox_max_mm": [
+        65.535,
+        147.985,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_current_driver_J20003",
+      "volume_mm3": 693.3850000000006,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        37.425000000000004,
+        137.895,
+        132.2
+      ],
+      "bbox_max_mm": [
+        60.48500000000001,
+        140.395,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_current_driver_J20004",
+      "volume_mm3": 845.9150000000009,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        37.425000000000004,
+        130.305,
+        132.2
+      ],
+      "bbox_max_mm": [
+        65.565,
+        132.805,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_current_driver_J20005",
+      "volume_mm3": 693.3850000000006,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        37.425000000000004,
+        122.715,
+        132.2
+      ],
+      "bbox_max_mm": [
+        60.48500000000001,
+        125.215,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_current_driver_J20100",
+      "volume_mm3": 312.05999999999983,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        37.425000000000004,
+        49.754999999999995,
+        132.2
+      ],
+      "bbox_max_mm": [
+        47.785000000000004,
+        52.254999999999995,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_current_driver_J20200",
+      "volume_mm3": 312.0599999999999,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        72.175,
+        49.754999999999995,
+        132.2
+      ],
+      "bbox_max_mm": [
+        82.535,
+        52.254999999999995,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_cell_J10001",
+      "volume_mm3": 235.79499999999993,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        403.425,
+        64.985,
+        82.2
+      ],
+      "bbox_max_mm": [
+        411.245,
+        67.485,
+        96.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_cell_J10002",
+      "volume_mm3": 922.1799999999994,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        403.425,
+        57.394999999999996,
+        82.2
+      ],
+      "bbox_max_mm": [
+        434.105,
+        59.894999999999996,
+        96.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_cell_J10003",
+      "volume_mm3": 388.3249999999996,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        403.425,
+        49.80500000000001,
+        82.2
+      ],
+      "bbox_max_mm": [
+        416.325,
+        52.30500000000001,
+        96.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_cell_J10004",
+      "volume_mm3": 312.0599999999998,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        421.175,
+        49.80500000000001,
+        82.2
+      ],
+      "bbox_max_mm": [
+        431.535,
+        52.30500000000001,
+        96.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_cell_J10100",
+      "volume_mm3": 159.52999999999963,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        403.425,
+        111.515,
+        82.2
+      ],
+      "bbox_max_mm": [
+        408.705,
+        114.015,
+        96.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_cell_J10200",
+      "volume_mm3": 159.52999999999966,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        447.235,
+        111.515,
+        82.2
+      ],
+      "bbox_max_mm": [
+        452.515,
+        114.015,
+        96.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_cell_J19901",
+      "volume_mm3": 159.52999999999966,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        491.045,
+        148.95499999999998,
+        82.2
+      ],
+      "bbox_max_mm": [
+        496.325,
+        151.45499999999998,
+        96.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_transport_J70001",
+      "volume_mm3": 235.79499999999993,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        453.53499999999997,
+        102.755,
+        132.2
+      ],
+      "bbox_max_mm": [
+        461.35499999999996,
+        105.255,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_transport_J70002",
+      "volume_mm3": 617.1200000000003,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        453.53499999999997,
+        95.165,
+        132.2
+      ],
+      "bbox_max_mm": [
+        474.05499999999995,
+        97.665,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_transport_J70003",
+      "volume_mm3": 464.59,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        453.53499999999997,
+        87.575,
+        132.2
+      ],
+      "bbox_max_mm": [
+        468.97499999999997,
+        90.075,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_transport_J70004",
+      "volume_mm3": 617.1200000000006,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        403.425,
+        65.805,
+        132.2
+      ],
+      "bbox_max_mm": [
+        423.945,
+        68.305,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_transport_J70005",
+      "volume_mm3": 388.32499999999936,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        403.425,
+        58.215,
+        132.2
+      ],
+      "bbox_max_mm": [
+        416.325,
+        60.715,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_transport_J70006",
+      "volume_mm3": 769.6499999999997,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        403.425,
+        50.625,
+        132.2
+      ],
+      "bbox_max_mm": [
+        429.02500000000003,
+        53.125,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_transport_J70007",
+      "volume_mm3": 312.0600000000001,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        430.875,
+        127.60499999999999,
+        132.2
+      ],
+      "bbox_max_mm": [
+        441.235,
+        130.105,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_transport_J70008",
+      "volume_mm3": 312.0600000000002,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        446.085,
+        127.60499999999999,
+        132.2
+      ],
+      "bbox_max_mm": [
+        456.445,
+        130.105,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_transport_J70020",
+      "volume_mm3": 922.180000000001,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        469.295,
+        138.525,
+        132.2
+      ],
+      "bbox_max_mm": [
+        499.975,
+        141.025,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_monitoring_transport_J70022",
+      "volume_mm3": 540.8549999999999,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        469.305,
+        123.345,
+        132.2
+      ],
+      "bbox_max_mm": [
+        487.285,
+        125.845,
+        146.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_power_J60001",
+      "volume_mm3": 159.53000000000023,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        145.86,
+        111.665,
+        82.2
+      ],
+      "bbox_max_mm": [
+        151.14000000000001,
+        114.165,
+        96.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_power_J60002",
+      "volume_mm3": 922.180000000001,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        145.86,
+        104.075,
+        82.2
+      ],
+      "bbox_max_mm": [
+        176.54000000000002,
+        106.575,
+        96.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_power_J60003",
+      "volume_mm3": 540.8549999999997,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        145.87,
+        96.485,
+        82.2
+      ],
+      "bbox_max_mm": [
+        163.85,
+        98.985,
+        96.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_power_J60004",
+      "volume_mm3": 312.0600000000007,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        145.86,
+        88.895,
+        82.2
+      ],
+      "bbox_max_mm": [
+        156.22000000000003,
+        91.395,
+        96.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_power_J60005",
+      "volume_mm3": 388.32500000000033,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        161.07,
+        88.895,
+        82.2
+      ],
+      "bbox_max_mm": [
+        173.97,
+        91.395,
+        96.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_power_J60006",
+      "volume_mm3": 235.79500000000007,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        145.86,
+        81.305,
+        82.2
+      ],
+      "bbox_max_mm": [
+        153.68,
+        83.805,
+        96.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_recording_front_end_J30001",
+      "volume_mm3": 312.0600000000002,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        483.145,
+        92.165,
+        32.2
+      ],
+      "bbox_max_mm": [
+        493.505,
+        94.665,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_recording_front_end_J30002",
+      "volume_mm3": 769.650000000001,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        483.145,
+        84.57499999999999,
+        32.2
+      ],
+      "bbox_max_mm": [
+        508.745,
+        87.07499999999999,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_recording_front_end_J30003",
+      "volume_mm3": 1379.770000000001,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        483.155,
+        76.98500000000001,
+        32.2
+      ],
+      "bbox_max_mm": [
+        529.0749999999999,
+        79.48500000000001,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_recording_front_end_J39901",
+      "volume_mm3": 922.180000000001,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        439.615,
+        141.845,
+        32.2
+      ],
+      "bbox_max_mm": [
+        470.295,
+        144.345,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_recording_front_end_J39902",
+      "volume_mm3": 693.3850000000009,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        439.615,
+        134.255,
+        32.2
+      ],
+      "bbox_max_mm": [
+        462.675,
+        136.755,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50001",
+      "volume_mm3": 540.8550000000006,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        78.88499999999999,
+        85.26499999999999,
+        32.2
+      ],
+      "bbox_max_mm": [
+        96.865,
+        87.76499999999999,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50002",
+      "volume_mm3": 464.59000000000043,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        78.875,
+        77.67500000000001,
+        32.2
+      ],
+      "bbox_max_mm": [
+        94.315,
+        80.17500000000001,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50003",
+      "volume_mm3": 922.1800000000011,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        78.875,
+        70.08500000000001,
+        32.2
+      ],
+      "bbox_max_mm": [
+        109.555,
+        72.58500000000001,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50004",
+      "volume_mm3": 693.3849999999998,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        78.875,
+        62.495000000000005,
+        32.2
+      ],
+      "bbox_max_mm": [
+        101.935,
+        64.995,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50005",
+      "volume_mm3": 998.4449999999979,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        78.88499999999999,
+        54.905,
+        32.2
+      ],
+      "bbox_max_mm": [
+        112.10499999999999,
+        57.405,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50006",
+      "volume_mm3": 388.325,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        78.875,
+        47.315,
+        32.2
+      ],
+      "bbox_max_mm": [
+        91.775,
+        49.815,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50100",
+      "volume_mm3": 1379.770000000001,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        37.435,
+        117.905,
+        32.2
+      ],
+      "bbox_max_mm": [
+        83.355,
+        120.405,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50101",
+      "volume_mm3": 1379.7700000000011,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        37.435,
+        110.315,
+        32.2
+      ],
+      "bbox_max_mm": [
+        83.355,
+        112.815,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50600",
+      "volume_mm3": 159.53000000000014,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        122.05499999999999,
+        221.475,
+        32.2
+      ],
+      "bbox_max_mm": [
+        127.335,
+        223.975,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50601",
+      "volume_mm3": 159.53000000000023,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        132.195,
+        221.475,
+        32.2
+      ],
+      "bbox_max_mm": [
+        137.475,
+        223.975,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50602",
+      "volume_mm3": 159.53000000000023,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        142.33499999999998,
+        221.475,
+        32.2
+      ],
+      "bbox_max_mm": [
+        147.61499999999998,
+        223.975,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50603",
+      "volume_mm3": 159.53000000000011,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        122.05499999999999,
+        213.885,
+        32.2
+      ],
+      "bbox_max_mm": [
+        127.335,
+        216.385,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50604",
+      "volume_mm3": 159.53000000000023,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        164.64499999999998,
+        221.475,
+        32.2
+      ],
+      "bbox_max_mm": [
+        169.92499999999998,
+        223.975,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50605",
+      "volume_mm3": 159.53000000000023,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        174.785,
+        221.475,
+        32.2
+      ],
+      "bbox_max_mm": [
+        180.065,
+        223.975,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50606",
+      "volume_mm3": 159.53000000000023,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        184.92499999999998,
+        221.475,
+        32.2
+      ],
+      "bbox_max_mm": [
+        190.20499999999998,
+        223.975,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50607",
+      "volume_mm3": 159.5300000000002,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        164.64499999999998,
+        213.885,
+        32.2
+      ],
+      "bbox_max_mm": [
+        169.92499999999998,
+        216.385,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50608",
+      "volume_mm3": 159.53000000000023,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        207.23499999999999,
+        221.475,
+        32.2
+      ],
+      "bbox_max_mm": [
+        212.515,
+        223.975,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50609",
+      "volume_mm3": 159.53000000000023,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        217.375,
+        221.475,
+        32.2
+      ],
+      "bbox_max_mm": [
+        222.655,
+        223.975,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50610",
+      "volume_mm3": 159.53000000000023,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        227.515,
+        221.475,
+        32.2
+      ],
+      "bbox_max_mm": [
+        232.795,
+        223.975,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50611",
+      "volume_mm3": 159.5300000000002,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        207.23499999999999,
+        213.885,
+        32.2
+      ],
+      "bbox_max_mm": [
+        212.515,
+        216.385,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50612",
+      "volume_mm3": 159.53000000000023,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        249.825,
+        221.475,
+        32.2
+      ],
+      "bbox_max_mm": [
+        255.105,
+        223.975,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50613",
+      "volume_mm3": 159.52999999999963,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        259.96500000000003,
+        221.475,
+        32.2
+      ],
+      "bbox_max_mm": [
+        265.245,
+        223.975,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50614",
+      "volume_mm3": 159.52999999999966,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        270.105,
+        221.475,
+        32.2
+      ],
+      "bbox_max_mm": [
+        275.385,
+        223.975,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50615",
+      "volume_mm3": 159.5300000000002,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        249.825,
+        213.885,
+        32.2
+      ],
+      "bbox_max_mm": [
+        255.105,
+        216.385,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J50616",
+      "volume_mm3": 159.52999999999966,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        292.415,
+        243.845,
+        32.2
+      ],
+      "bbox_max_mm": [
+        297.695,
+        246.345,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Mate_supervision_J59901",
+      "volume_mm3": 312.05999999999983,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        178.48499999999999,
+        139.305,
+        32.2
+      ],
+      "bbox_max_mm": [
+        188.84499999999997,
+        141.805,
+        46.2
+      ],
+      "valid": true
+    },
+    {
+      "label": "Grommet_ArtificialLoad_58",
+      "volume_mm3": 345.5751918948773,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        51.5,
+        306.0,
+        201.5
+      ],
+      "bbox_max_mm": [
+        64.5,
+        311.0,
+        214.5
+      ],
+      "valid": true
+    },
+    {
+      "label": "Grommet_ArtificialLoad_96",
+      "volume_mm3": 345.5751918948773,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        89.5,
+        306.0,
+        201.5
+      ],
+      "bbox_max_mm": [
+        102.5,
+        311.0,
+        214.5
+      ],
+      "valid": true
+    },
+    {
+      "label": "RearInsert_ArtificialLoad",
+      "volume_mm3": 6763.606262314988,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        32.0,
+        307.0,
+        194.0
+      ],
+      "bbox_max_mm": [
+        122.0,
+        310.0,
+        222.0
+      ],
+      "valid": true
+    },
+    {
+      "label": "Grommet_CompanionPowerDebug_410",
+      "volume_mm3": 282.74333882308144,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        404.5,
+        306.0,
+        202.5
+      ],
+      "bbox_max_mm": [
+        415.5,
+        311.0,
+        213.5
+      ],
+      "valid": true
+    },
+    {
+      "label": "Grommet_CompanionPowerDebug_440",
+      "volume_mm3": 282.74333882308144,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        434.5,
+        306.0,
+        202.5
+      ],
+      "bbox_max_mm": [
+        445.5,
+        311.0,
+        213.5
+      ],
+      "valid": true
+    },
+    {
+      "label": "Grommet_CompanionPowerDebug_470",
+      "volume_mm3": 282.74333882308144,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        464.5,
+        306.0,
+        202.5
+      ],
+      "bbox_max_mm": [
+        475.5,
+        311.0,
+        213.5
+      ],
+      "valid": true
+    },
+    {
+      "label": "RearInsert_CompanionPowerDebug",
+      "volume_mm3": 7544.7014000601785,
+      "solid_count": 1,
+      "bbox_min_mm": [
+        390.0,
+        307.0,
+        194.0
+      ],
+      "bbox_max_mm": [
+        490.0,
+        310.0,
+        222.0
+      ],
+      "valid": true
+    }
+  ],
+  "physical_part_count": 90,
+  "mating_housings": 83,
+  "route_annotation_count": 258,
+  "sources": {
+    "cad/stage5/harness/ATO_mating_interfaces.FCStd": "6079242db047b70f21114a3eac33c0a8cce77260a189033362feb2b3bacbacf9",
+    "cad/stage5/harness/ATO_mating_interfaces.step": "8c37241e686e1efe3e807e29c9da885384a7aee5128b75821ea81ae897890c2f",
+    "cad/stage5/harness/ATO_harness_routes.FCStd": "23e3e6b6744c901e051962248e7b4ae7ec8cb48e778db850d7182a1995b6dd8b"
+  }
+}

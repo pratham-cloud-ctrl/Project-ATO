@@ -1,0 +1,8 @@
+.gitattributes text eol=lf
+README.md text eol=lf
+manifest.json text eol=lf
+executed-probe.py.txt -text whitespace=cr-at-eol
+raw-results.json -text whitespace=cr-at-eol
+raw-summary.json -text whitespace=cr-at-eol
+raw-topology.json -text whitespace=cr-at-eol
+raw-execution.log -text whitespace=cr-at-eol

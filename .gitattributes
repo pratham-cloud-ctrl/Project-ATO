@@ -60,3 +60,9 @@ electronics/stage4/integrated-pcb/firmware-profile/artifacts/*.bin binary
 electronics/stage4/integrated-pcb/firmware-profile/artifacts/ato.map text eol=lf whitespace=-blank-at-eol
 electronics/stage4/integrated-pcb/**/*.step binary
 electronics/stage4/integrated-pcb/**/*.ses whitespace=-blank-at-eol
+# Native Stage5 exchange derivatives are reviewed through CAD and drawings.
+cad/stage5/**/*.step binary
+cad/stage5/**/*.svg whitespace=-blank-at-eol
+# Keep reviewed source-hash bindings byte-stable, including final blank lines.
+cad/stage5/reference/extract_board_datums.py whitespace=-blank-at-eof
+docs/stage5/future-package-design.md whitespace=-blank-at-eof

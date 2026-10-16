@@ -1,0 +1,20 @@
+import os
+import sys
+import FreeCAD as App
+import FreeCADGui as Gui
+
+folder = os.path.dirname(__file__)
+sys.path.insert(0, folder)
+import ato_future_features
+doc = App.openDocument(os.path.join(folder, 'ATO_future_interface.FCStd'))
+for obj in doc.Objects:
+    if obj.TypeId == 'App::DocumentObjectGroup':
+        obj.Visibility = True
+    elif 'Category' in obj.PropertiesList and 'Shape' in obj.PropertiesList:
+        obj.Visibility = obj.Category == 'physical'
+        if 'DisplayColor' in obj.PropertiesList:
+            obj.ViewObject.ShapeColor = tuple(obj.DisplayColor)[:3]
+    elif 'Shape' in obj.PropertiesList:
+        obj.Visibility = False
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()

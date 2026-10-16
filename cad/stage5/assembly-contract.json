@@ -1,0 +1,28 @@
+{
+  "schema": "ato.stage5.assembly-contract.v1",
+  "baseline_commit": "7a4371b7ff891248a5ab4f12e3149268485d828f",
+  "units": "mm",
+  "reference": {
+    "contract": "cad/stage5/reference/contract.json",
+    "role": "True-scale mechanical implementation of the eight populated reference boards"
+  },
+  "future": {
+    "contract": "cad/stage5/future-interface/contract.json",
+    "role": "Conditional miniaturized implanted SCCI package and 36 functional lead interfaces"
+  },
+  "harness": {
+    "contract": "cad/stage5/harness/contract.json",
+    "role": "Actual mating interfaces, cross-stage port bridge and labeled cable planning"
+  },
+  "combined": {
+    "native": "cad/stage5/ATO_stage5_reference_full.FCStd",
+    "inspection": "provenance/stage5-combined-native.json"
+  },
+  "boundaries": [
+    "The reference and future package are distinct embodiments; no scale transform converts the electronics into an implant.",
+    "Original Stage 1 through Stage 4 inputs remain immutable.",
+    "Nominal BRep fit checks do not establish physical performance, implant qualification or biological efficacy.",
+    "Retained expert-informed motor learning and function-specific physiological feedback remain the two conditional application goals.",
+    "A dedicated illustrated technical drawing package and native CAD entry point complete this digital mechanical stage."
+  ]
+}

@@ -24,14 +24,35 @@ assumed. Video and website work are parked. No deadline is imposed.
 | 2: quantitative architecture | Complete within architecture scope | 16-stream/two-source design, timing/noise/compute/memory/power budgets, rejected cases, control contracts, eight-page brief and preliminary native allocation CAD; [exit review](docs/stage2/exit-review.md) |
 | 3: computational mechanisms | **Conservative investigation closed; conditional concept v1 complete** | Historical qualification results preserved. New evidence/premise/mechanism package and 128 illustrative scenarios connect an assumed spinal interface to assistance and conditional OFF learning; biological efficacy remains unestablished |
 | 4: detailed electronics/firmware | **Complete within the bounded digital reference scope** | Integrated master: 1,298 component positions / 1,296 fitted, 4,781 pin identities, 80 sheets and 258 harness rows. Eight genuinely routed populated native boards, 21,039 trace segments and 2,335 vias; zero ERC/DRC, missing connections, schematic parity issues or ignored checks. Independent electrical integration: 9,540 assertions; populated-board audit: 14,273. Actual carrier-specific ARM firmware, power revision and populated STEP/export evidence |
-| 5: populated engineering CAD | Pending | Actual boards/components/package/lead interfaces, native parametric assemblies, dimensions, STEP/STL and nominal fit checks |
+| 5: populated engineering CAD | **Complete within the bounded digital mechanical scope** | True-scale eight-board chassis, 260-part combined native assembly, 83 mating housings and separate 36-port future implanted-interface concept; independent source/export, nominal interference and clearance checks, STEP/STL and six-sheet review |
 | 6: integrated paper/repository release | Pending | Complete digital path verification, final illustrated manuscript, native sources, reproducible release, evidence and learning/defence material |
 
 The historical v1.0.0 release is a subsystem reference. Its one-channel board
 and desktop enclosure are not the completed implant requested here. Stage 2's
 80 allocation solids and illustrative ports are not populated implant CAD.
 
-## Latest completed engineering package: integrated populated PCB
+## Latest work: Stage 5 mechanical assembly and packaging
+
+The [mechanical CAD index](cad/stage5/README.md) opens the actual native
+FreeCAD models, full-size board enclosure, conditional future implanted
+interface, nominal mating geometry, wiring identities, drawings and renders.
+The reference assembly is 600 x 310 x 240 mm overall including feet, before
+local cable-grommet protrusions. The future can/header is 60 x 58 x 14 mm before
+leads and explicitly requires redesigned miniaturized electronics.
+
+The combined native assembly preserves 260 source objects with zero geometric
+residual in the separate saved-file comparison. Reference source/STEP,
+future-package and mating-interface inspections pass. The fresh reference
+material check covers 14,365 object pairs and 248 exact candidates, with zero
+unexplained intersections. All 14 declared reference clearance gates pass:
+8.615 mm beneath each board and at least 24.785 mm beneath the next tray.
+A rounded-corner feedthrough bore defect was corrected without changing any of
+the 36 port positions. The [exit review](docs/stage5/exit-review.md) records the
+completed digital scope and explicit evidence provenance.
+The next stage is the integrated manuscript, digital verification account and
+final private repository release. Video and website remain parked.
+
+## Previous completed engineering package: integrated populated PCB
 
 The [integrated native hierarchy](docs/stage4/integrated-pcb-design.md) now joins
 all seven circuits, the actual controller carrier, and four physical observation
@@ -64,9 +85,9 @@ load. Its independent ELF/HEX/BIN/source audit passes 83 checks; the image uses
 53,648 bytes flash and 98,000 bytes RAM. Original firmware and earlier receipts
 remain unchanged. Nothing has been executed on a physical board.
 
-**Next: Stage 5 mechanical assembly and interfaces**, using the populated board
-exports as real inputs. Stage 6 then produces the integrated illustrated paper
-and final private repository release. Video and website work remain parked.
+Stage 5 has used these populated exports as real mechanical inputs. Stage 6
+then produces the integrated illustrated paper and final private repository
+release. Video and website work remain parked.
 
 ## Previous completed package: actual nRF5340 firmware
 
@@ -129,8 +150,8 @@ The incremental power overlay revises the conditional active allocation to
 **2.800 W / 5.497 h**. Compact thermal qualification remains unearned.
 
 The nRF5340 package now implements a narrower, explicitly described target
-profile. The consolidated PCB package is now complete. Stage 5 develops its
-mechanical assembly and packaging. The final
+profile. The consolidated PCB package and Stage 5 mechanical assembly and
+packaging are now complete within their stated digital scopes. The final
 integrated illustrated manuscript follows in Stage 6; video and website remain
 parked.
 
@@ -333,20 +354,19 @@ universal autonomic control or healthy-consumer efficacy.
 
 ## Next move
 
-Stage 4 is closed within the [digital exit scope](docs/stage4/exit-review.md).
-The [board index](electronics/stage4/integrated-pcb/BOARD_INDEX.md) supplies actual
-populated geometry, native circuits, wiring and exports for Stage 5. Next build
-the coherent native mechanical assembly and package/lead interfaces, with
-dimensions, drawings and nominal fit checks. The reference boards retain their
-actual large sizes; a compact future implant remains a separately identified
-design problem. Existing allocation solids are preliminary inputs.
+Stage 4 is closed within its [digital exit scope](docs/stage4/exit-review.md),
+and Stage 5 is closed within its [mechanical exit scope](docs/stage5/exit-review.md).
+The [native CAD package](cad/stage5/README.md) now links the actual populated
+boards, reference chassis, mating interfaces and separate future package/lead
+concept. Its reference boards retain their original sizes; compact implanted
+electronics remain a separately identified redesign and qualification problem.
 
 Both expert-informed retained learning and function-specific physiological
 regulation remain central. Stage 3's conditional concept is the future-interface
 baseline; its conservative negative results are preserved. Mechanical appearance
 must not relabel those results or the unearned analog/thermal/timing limits.
 
-Stage 6 then integrates the illustrated manuscript, technical explanation,
+Next, Stage 6 integrates the illustrated manuscript, technical explanation,
 learning/defence material and verified private repository release. Video and
 website work remain parked. The available free KiCad/FreeCAD/Blender toolchain
 already supports the next digital work; no new paid tool is required.

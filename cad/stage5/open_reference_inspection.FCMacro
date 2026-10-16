@@ -1,0 +1,16 @@
+# Open a session-only cutaway view of the complete saved assembly.
+from pathlib import Path
+import FreeCAD as App
+import FreeCADGui as Gui
+path=Path(__file__).resolve().parent/'ATO_stage5_reference_full.FCStd'
+doc=next((d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==path.resolve()),None)
+if doc is None:doc=App.openDocument(str(path))
+App.setActiveDocument(doc.Name)
+for obj in doc.Objects:
+    if obj.TypeId=='App::DocumentObjectGroup':obj.ViewObject.Visibility=True
+    elif obj.ViewObject and hasattr(obj,'Shape'):
+        obj.ViewObject.Visibility=('AssemblySourceDocument' in obj.PropertiesList and obj.Label not in ('FrontPanel','Lid','SideRight'))
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()
+Gui.Selection.clearSelection()
+# Deliberately do not save: hide/show covers in the tree to inspect the design.

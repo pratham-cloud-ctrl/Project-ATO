@@ -1,0 +1,8021 @@
+{
+  "schema": "ato.stage5.board-datums.v1",
+  "boards": [
+    {
+      "board": "contact-router",
+      "pcb": "electronics/stage4/integrated-pcb/boards/contact-router/contact_router.kicad_pcb",
+      "pcb_sha256_lf": "2bf7bf8b049e4b7e27dca0bed9db88f4efab5a3944f183a16246432411ea137f",
+      "step": "electronics/stage4/integrated-pcb/exports/contact-router/populated.step",
+      "step_sha256": "e7693ec304c93162fffdcfe8ea65f06528c5ac9eb483f30d89f690eccab45982",
+      "outline_mm": [
+        175.0,
+        155.0
+      ],
+      "fitted_components": 155,
+      "mounts": [
+        {
+          "reference": "H1",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H2",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            171.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                171.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H3",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            151.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                151.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H4",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            171.0,
+            151.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                171.0,
+                151.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        {
+          "reference": "J40001",
+          "value": "QUALIFIED EXTERNAL RAILS",
+          "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            97.345
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                97.345
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                97.345
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                97.345
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J40002",
+          "value": "CANDIDATE PRELOAD AND COMMIT",
+          "footprint": "PinHeader_1x07_P2.54mm_Vertical",
+          "position_mm": [
+            27.475,
+            97.345
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                27.475,
+                97.345
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                30.015,
+                97.345
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                32.555,
+                97.345
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                35.095,
+                97.345
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                37.635,
+                97.345
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                40.175,
+                97.345
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                42.715,
+                97.345
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J40003",
+          "value": "SOURCE ROUTE INTENT / PHASE STATUS",
+          "footprint": "PinHeader_1x07_P2.54mm_Vertical",
+          "position_mm": [
+            14.805,
+            104.935
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.805,
+                104.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.345,
+                104.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.885,
+                104.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.425,
+                104.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.965,
+                104.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.505,
+                104.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.045,
+                104.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J40004",
+          "value": "EXTERNAL OBSERVED HEALTH CONTRACTS",
+          "footprint": "PinHeader_1x10_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            112.525
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                112.525
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                112.525
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                112.525
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                112.525
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                112.525
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.495,
+                112.525
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.035,
+                112.525
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.575,
+                112.525
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.115,
+                112.525
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                37.655,
+                112.525
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J40005",
+          "value": "COMMAND STATUS / NOT MUX READBACK",
+          "footprint": "PinHeader_1x12_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            120.115
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                120.115
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                120.115
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                120.115
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                120.115
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                120.115
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.495,
+                120.115
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.035,
+                120.115
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.575,
+                120.115
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.115,
+                120.115
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                37.655,
+                120.115
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "11",
+              "position_mm": [
+                40.195,
+                120.115
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "12",
+              "position_mm": [
+                42.735,
+                120.115
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J40006",
+          "value": "ACTIVE ADDRESS BIT READBACK",
+          "footprint": "PinHeader_1x09_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            127.705
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                127.705
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                127.705
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                127.705
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                127.705
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                127.705
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.495,
+                127.705
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.035,
+                127.705
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.575,
+                127.705
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.115,
+                127.705
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J40007",
+          "value": "SIXTEEN CONTACTS / TWO MONITORED RETURNS",
+          "footprint": "PinHeader_1x18_P2.54mm_Vertical",
+          "position_mm": [
+            14.805,
+            135.295
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.805,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.345,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.885,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.425,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.965,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.505,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.045,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.585,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.125,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                37.665,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "11",
+              "position_mm": [
+                40.205,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "12",
+              "position_mm": [
+                42.745,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "13",
+              "position_mm": [
+                45.285,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "14",
+              "position_mm": [
+                47.825,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "15",
+              "position_mm": [
+                50.365,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "16",
+              "position_mm": [
+                52.905,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "17",
+              "position_mm": [
+                55.445,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "18",
+              "position_mm": [
+                57.985,
+                135.295
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J40100",
+          "value": "DRIVER A / MONITORED RETURN",
+          "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+          "position_mm": [
+            73.575,
+            113.405
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                73.575,
+                113.405
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                76.115,
+                113.405
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                78.655,
+                113.405
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J40200",
+          "value": "DRIVER A / MONITORED RETURN",
+          "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+          "position_mm": [
+            114.785,
+            113.405
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                114.785,
+                113.405
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                117.325,
+                113.405
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                119.865,
+                113.405
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "controller-carrier",
+      "pcb": "electronics/stage4/integrated-pcb/boards/controller-carrier/controller_carrier.kicad_pcb",
+      "pcb_sha256_lf": "ae600148f4efeadceaf92f42cf3e15e102d68e1beb5b34094e02d2593858e1f8",
+      "step": "electronics/stage4/integrated-pcb/exports/controller-carrier/populated.step",
+      "step_sha256": "45626fe2948522979ba715095dc42c84b8ec5419f2a43474908ec954be5d05f2",
+      "outline_mm": [
+        155.0,
+        150.0
+      ],
+      "fitted_components": 68,
+      "mounts": [
+        {
+          "reference": "H1",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H2",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            151.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                151.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H3",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            146.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                146.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H4",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            151.0,
+            146.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                151.0,
+                146.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        {
+          "reference": "J80001",
+          "value": "HOST POWER",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            24.795
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                24.795
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                24.795
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J80002",
+          "value": "SWD / TARGET VREF",
+          "footprint": "PinHeader_1x06_P2.54mm_Vertical",
+          "position_mm": [
+            112.025,
+            79.935
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                112.025,
+                79.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                114.565,
+                79.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                117.105,
+                79.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                119.645,
+                79.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                122.185,
+                79.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                124.725,
+                79.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J80003",
+          "value": "RESET SHORTING HEADER",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            132.315,
+            79.935
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                132.315,
+                79.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                134.855,
+                79.935
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J80010",
+          "value": "RAW MONITOR",
+          "footprint": "PinHeader_1x06_P2.54mm_Vertical",
+          "position_mm": [
+            112.725,
+            24.795
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                112.725,
+                24.795
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                115.265,
+                24.795
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                117.805,
+                24.795
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                120.345,
+                24.795
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                122.885,
+                24.795
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                125.425,
+                24.795
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J80011",
+          "value": "ISOLATED RECORDING HOST",
+          "footprint": "PinHeader_1x10_P2.54mm_Vertical",
+          "position_mm": [
+            112.725,
+            32.385
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                112.725,
+                32.385
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                115.265,
+                32.385
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                117.805,
+                32.385
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                120.345,
+                32.385
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                122.885,
+                32.385
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                125.425,
+                32.385
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                127.965,
+                32.385
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                130.505,
+                32.385
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                133.045,
+                32.385
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                135.585,
+                32.385
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J80012",
+          "value": "SHARED CHARGE ENDPOINT SPI",
+          "footprint": "PinHeader_1x07_P2.54mm_Vertical",
+          "position_mm": [
+            112.735,
+            39.975
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                112.735,
+                39.975
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                115.275,
+                39.975
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                117.815,
+                39.975
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                120.355,
+                39.975
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                122.895,
+                39.975
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                125.435,
+                39.975
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                127.975,
+                39.975
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J80013",
+          "value": "DOSE / MONITOR REARM",
+          "footprint": "PinHeader_1x05_P2.54mm_Vertical",
+          "position_mm": [
+            112.725,
+            47.565
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                112.725,
+                47.565
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                115.265,
+                47.565
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                117.805,
+                47.565
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                120.345,
+                47.565
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                122.885,
+                47.565
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J80014",
+          "value": "DAC SERIAL",
+          "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            68.155
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                68.155
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                68.155
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                68.155
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                68.155
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J80015",
+          "value": "DRIVER REQUEST / POLARITY",
+          "footprint": "PinHeader_1x09_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            75.745
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.495,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.035,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.575,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.115,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J80016",
+          "value": "ROUTE CANDIDATE / COMMIT",
+          "footprint": "PinHeader_1x09_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            83.335
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                83.335
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                83.335
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                83.335
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                83.335
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                83.335
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.495,
+                83.335
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.035,
+                83.335
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.575,
+                83.335
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.115,
+                83.335
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J80017",
+          "value": "ACTIVE ROUTE READBACK",
+          "footprint": "PinHeader_1x09_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            90.925
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                90.925
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                90.925
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                90.925
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                90.925
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                90.925
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.495,
+                90.925
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.035,
+                90.925
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.575,
+                90.925
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.115,
+                90.925
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J80018",
+          "value": "SUPERVISION CONTROL",
+          "footprint": "PinHeader_1x08_P2.54mm_Vertical",
+          "position_mm": [
+            50.705,
+            68.155
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                50.705,
+                68.155
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                53.245,
+                68.155
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                55.785,
+                68.155
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                58.325,
+                68.155
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                60.865,
+                68.155
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                63.405,
+                68.155
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                65.945,
+                68.155
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                68.485,
+                68.155
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J80019",
+          "value": "NATIVE HEALTH OBSERVATIONS",
+          "footprint": "PinHeader_1x19_P2.54mm_Vertical",
+          "position_mm": [
+            50.715,
+            75.745
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                50.715,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                53.255,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                55.795,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                58.335,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                60.875,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                63.415,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                65.955,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                68.495,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                71.035,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                73.575,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "11",
+              "position_mm": [
+                76.115,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "12",
+              "position_mm": [
+                78.655,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "13",
+              "position_mm": [
+                81.195,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "14",
+              "position_mm": [
+                83.735,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "15",
+              "position_mm": [
+                86.275,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "16",
+              "position_mm": [
+                88.815,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "17",
+              "position_mm": [
+                91.355,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "18",
+              "position_mm": [
+                93.895,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "19",
+              "position_mm": [
+                96.435,
+                75.745
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J80020",
+          "value": "ISOLATED COMPANION HOST UART",
+          "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+          "position_mm": [
+            50.705,
+            83.335
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                50.705,
+                83.335
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                53.245,
+                83.335
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                55.785,
+                83.335
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                58.325,
+                83.335
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "current-driver",
+      "pcb": "electronics/stage4/integrated-pcb/boards/current-driver/current_driver.kicad_pcb",
+      "pcb_sha256_lf": "03f6d4c71fbb8e683788def698db68f5642ea1a43801e5ed6a282f132385b63b",
+      "step": "electronics/stage4/integrated-pcb/exports/current-driver/populated.step",
+      "step_sha256": "5f6d3b11f88a4778a733e75142d26aae26efaebebddc4dd22f601a94b9d29225",
+      "outline_mm": [
+        175.0,
+        155.0
+      ],
+      "fitted_components": 154,
+      "mounts": [
+        {
+          "reference": "H1",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H2",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            171.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                171.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H3",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            151.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                151.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H4",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            171.0,
+            151.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                171.0,
+                151.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        {
+          "reference": "J20001",
+          "value": "QUALIFIED EXTERNAL RAILS",
+          "footprint": "PinHeader_1x05_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            38.265
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                38.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                38.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                38.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                38.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                38.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J20002",
+          "value": "MCU SPI / PRELOAD INHIBITED",
+          "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+          "position_mm": [
+            32.545,
+            38.265
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                32.545,
+                38.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                35.085,
+                38.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                37.625,
+                38.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                40.165,
+                38.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J20003",
+          "value": "MCU PHASE / EXPLICIT REARM",
+          "footprint": "PinHeader_1x09_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            45.855
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                45.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                45.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                45.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                45.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                45.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.495,
+                45.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.035,
+                45.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.575,
+                45.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.115,
+                45.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J20004",
+          "value": "EXTERNAL HEALTH CONTRACTS",
+          "footprint": "PinHeader_1x11_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            53.445
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                53.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                53.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                53.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                53.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                53.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.495,
+                53.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.035,
+                53.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.575,
+                53.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.115,
+                53.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                37.655,
+                53.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "11",
+              "position_mm": [
+                40.195,
+                53.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J20005",
+          "value": "STATUS ONLY / NOT DELIVERY EVIDENCE",
+          "footprint": "PinHeader_1x09_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            61.035
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                61.035
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                61.035
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                61.035
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                61.035
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                61.035
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.495,
+                61.035
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.035,
+                61.035
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.575,
+                61.035
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.115,
+                61.035
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J20100",
+          "value": "EXTERNAL ROUTER / MONITOR",
+          "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            133.995
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                133.995
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                133.995
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                133.995
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                133.995
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J20200",
+          "value": "EXTERNAL ROUTER / MONITOR",
+          "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+          "position_mm": [
+            49.545,
+            133.995
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                49.545,
+                133.995
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                52.085,
+                133.995
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                54.625,
+                133.995
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                57.165,
+                133.995
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "monitoring-cell",
+      "pcb": "electronics/stage4/integrated-pcb/boards/monitoring-cell/monitoring_cell.kicad_pcb",
+      "pcb_sha256_lf": "9cc889e8f67ac0ce60b20f97a3bb0d1fa00452d4ea1f4629b78585c73eb8f242",
+      "step": "electronics/stage4/integrated-pcb/exports/monitoring-cell/populated.step",
+      "step_sha256": "6b619d12130f320e515c1fea625d8bef4ea0f332f04700ac538a6309705c9c49",
+      "outline_mm": [
+        120.0,
+        145.0
+      ],
+      "fitted_components": 71,
+      "mounts": [
+        {
+          "reference": "H1",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H2",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            116.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                116.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H3",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            141.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                141.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H4",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            116.0,
+            141.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                116.0,
+                141.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        {
+          "reference": "J10001",
+          "value": "LAB RAILS ONLY",
+          "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            108.765
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                108.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                108.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                108.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J10002",
+          "value": "MCU ENDPOINT/CONTROL",
+          "footprint": "PinHeader_1x12_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            116.355
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                116.355
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                116.355
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                116.355
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                116.355
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                116.355
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.495,
+                116.355
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.035,
+                116.355
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.575,
+                116.355
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.115,
+                116.355
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                37.655,
+                116.355
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "11",
+              "position_mm": [
+                40.195,
+                116.355
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "12",
+              "position_mm": [
+                42.735,
+                116.355
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J10003",
+          "value": "EXTERNAL SUPERVISION",
+          "footprint": "PinHeader_1x05_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            123.945
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                123.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                123.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                123.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                123.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                123.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J10004",
+          "value": "CURRENT ADC INTERFACE",
+          "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+          "position_mm": [
+            32.545,
+            123.945
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                32.545,
+                123.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                35.085,
+                123.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                37.625,
+                123.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                40.165,
+                123.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J10100",
+          "value": "SOURCE 0 RETURN SHUNT",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            62.235
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                62.235
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                62.235
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J10101",
+          "value": "SOURCE 0 DRIVER PERMISSION",
+          "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+          "position_mm": [
+            24.935,
+            62.235
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                24.935,
+                62.235
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                27.475,
+                62.235
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                30.015,
+                62.235
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J10200",
+          "value": "SOURCE 1 RETURN SHUNT",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            58.605,
+            62.235
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                58.605,
+                62.235
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                61.145,
+                62.235
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J10201",
+          "value": "SOURCE 1 DRIVER PERMISSION",
+          "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+          "position_mm": [
+            68.745,
+            62.235
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                68.745,
+                62.235
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                71.285,
+                62.235
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                73.825,
+                62.235
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J19901",
+          "value": "HOST TAP HARNESS",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            102.415,
+            24.795
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                102.415,
+                24.795
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                104.955,
+                24.795
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "monitoring-transport",
+      "pcb": "electronics/stage4/integrated-pcb/boards/monitoring-transport/monitoring_transport.kicad_pcb",
+      "pcb_sha256_lf": "16268c67fa59ad4475e8ada615db5697f6856f6b12ff3882aee91782becfa768",
+      "step": "electronics/stage4/integrated-pcb/exports/monitoring-transport/populated.step",
+      "step_sha256": "576a653f0ec784a6ad53c70117b10b0ae27c062a1bb314520b1fe2ec049b28ab",
+      "outline_mm": [
+        125.0,
+        140.0
+      ],
+      "fitted_components": 60,
+      "mounts": [
+        {
+          "reference": "H1",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H2",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            121.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                121.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H3",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            136.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                136.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H4",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            121.0,
+            136.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                121.0,
+                136.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        {
+          "reference": "J70001",
+          "value": "HOST RAILS / RAW ADC",
+          "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+          "position_mm": [
+            64.905,
+            65.995
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                64.905,
+                65.995
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                67.445,
+                65.995
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                69.985,
+                65.995
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J70002",
+          "value": "EXISTING ANALOG TAPS",
+          "footprint": "PinHeader_1x08_P2.54mm_Vertical",
+          "position_mm": [
+            64.905,
+            73.585
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                64.905,
+                73.585
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                67.445,
+                73.585
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                69.985,
+                73.585
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                72.525,
+                73.585
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                75.065,
+                73.585
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                77.605,
+                73.585
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                80.145,
+                73.585
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                82.685,
+                73.585
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J70003",
+          "value": "DEDICATED RAW ADC BUS",
+          "footprint": "PinHeader_1x06_P2.54mm_Vertical",
+          "position_mm": [
+            64.905,
+            81.175
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                64.905,
+                81.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                67.445,
+                81.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                69.985,
+                81.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                72.525,
+                81.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                75.065,
+                81.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                77.605,
+                81.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J70004",
+          "value": "TWO EXISTING CHARGE ADCs",
+          "footprint": "PinHeader_1x08_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            102.945
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                102.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                102.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                102.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                102.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                102.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.495,
+                102.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.035,
+                102.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.575,
+                102.945
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J70005",
+          "value": "CHARGE CONTROL HANDOFF",
+          "footprint": "PinHeader_1x05_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            110.535
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                110.535
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                110.535
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                110.535
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                110.535
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                110.535
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J70006",
+          "value": "READ-ONLY NATIVE HEALTH",
+          "footprint": "PinHeader_1x10_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            118.125
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                118.125
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                118.125
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                118.125
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.415,
+                118.125
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.955,
+                118.125
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.495,
+                118.125
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.035,
+                118.125
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.575,
+                118.125
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.115,
+                118.125
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                37.655,
+                118.125
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J70007",
+          "value": "HOST PROCESSED UART",
+          "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+          "position_mm": [
+            42.245,
+            41.145
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                42.245,
+                41.145
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                44.785,
+                41.145
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                47.325,
+                41.145
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                49.865,
+                41.145
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J70008",
+          "value": "EXTERNAL COMPANION UART",
+          "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+          "position_mm": [
+            57.455,
+            41.145
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                57.455,
+                41.145
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                59.995,
+                41.145
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                62.535,
+                41.145
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                65.075,
+                41.145
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J70020",
+          "value": "HOST CHARGE ADC BUS",
+          "footprint": "PinHeader_1x12_P2.54mm_Vertical",
+          "position_mm": [
+            80.665,
+            30.225
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                80.665,
+                30.225
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                83.205,
+                30.225
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                85.745,
+                30.225
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                88.285,
+                30.225
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                90.825,
+                30.225
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                93.365,
+                30.225
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                95.905,
+                30.225
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                98.445,
+                30.225
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                100.985,
+                30.225
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                103.525,
+                30.225
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "11",
+              "position_mm": [
+                106.065,
+                30.225
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "12",
+              "position_mm": [
+                108.605,
+                30.225
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J70021",
+          "value": "HOST HEALTH INPUTS",
+          "footprint": "PinHeader_1x10_P2.54mm_Vertical",
+          "position_mm": [
+            80.665,
+            37.815
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                80.665,
+                37.815
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                83.205,
+                37.815
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                85.745,
+                37.815
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                88.285,
+                37.815
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                90.825,
+                37.815
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                93.365,
+                37.815
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                95.905,
+                37.815
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                98.445,
+                37.815
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                100.985,
+                37.815
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                103.525,
+                37.815
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J70022",
+          "value": "HOST SHARED ENDPOINT SPI",
+          "footprint": "PinHeader_1x07_P2.54mm_Vertical",
+          "position_mm": [
+            80.675,
+            45.405
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                80.675,
+                45.405
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                83.215,
+                45.405
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                85.755,
+                45.405
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                88.295,
+                45.405
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                90.835,
+                45.405
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                93.375,
+                45.405
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                95.915,
+                45.405
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "power",
+      "pcb": "electronics/stage4/integrated-pcb/boards/power/power.kicad_pcb",
+      "pcb_sha256_lf": "a91073998ec0cd46c84c4332f69324e9e428571a9307c212443e697c2a7696a5",
+      "step": "electronics/stage4/integrated-pcb/exports/power/populated.step",
+      "step_sha256": "599cf8072a973fb3b5d8fe22dd7e22243dcb98f762ddb69658814c0e0aa44dc7",
+      "outline_mm": [
+        175.0,
+        185.0
+      ],
+      "fitted_components": 156,
+      "mounts": [
+        {
+          "reference": "H1",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H2",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            171.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                171.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H3",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            181.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                181.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H4",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            171.0,
+            181.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                171.0,
+                181.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        {
+          "reference": "J60001",
+          "value": "AT31004 PROTECTED 2S PACK / 6.4 TO 8.4V",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            123.23,
+            102.085
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                123.23,
+                102.085
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                125.77,
+                102.085
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J60002",
+          "value": "POWER REQUEST / STATUS",
+          "footprint": "PinHeader_1x12_P2.54mm_Vertical",
+          "position_mm": [
+            123.23,
+            109.675
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                123.23,
+                109.675
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                125.77,
+                109.675
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                128.31,
+                109.675
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                130.85,
+                109.675
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                133.39,
+                109.675
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                135.93,
+                109.675
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                138.47,
+                109.675
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                141.01,
+                109.675
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                143.55,
+                109.675
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                146.09,
+                109.675
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "11",
+              "position_mm": [
+                148.63,
+                109.675
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "12",
+              "position_mm": [
+                151.17,
+                109.675
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J60003",
+          "value": "HOST AND SUPERVISOR RAILS",
+          "footprint": "PinHeader_1x07_P2.54mm_Vertical",
+          "position_mm": [
+            123.24,
+            117.265
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                123.24,
+                117.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                125.78,
+                117.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                128.32,
+                117.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                130.86,
+                117.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                133.4,
+                117.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                135.94,
+                117.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                138.48,
+                117.265
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J60004",
+          "value": "FLOATING RECORDING RAILS",
+          "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+          "position_mm": [
+            123.23,
+            124.855
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                123.23,
+                124.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                125.77,
+                124.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                128.31,
+                124.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                130.85,
+                124.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J60005",
+          "value": "CONVERTER TEST POINTS",
+          "footprint": "PinHeader_1x05_P2.54mm_Vertical",
+          "position_mm": [
+            138.44,
+            124.855
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                138.44,
+                124.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                140.98,
+                124.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                143.52,
+                124.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                146.06,
+                124.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                148.6,
+                124.855
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J60006",
+          "value": "EXISTING MONITOR REFERENCES",
+          "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+          "position_mm": [
+            123.23,
+            132.445
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                123.23,
+                132.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                125.77,
+                132.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                128.31,
+                132.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J60410",
+          "value": "QUIESCENT TRIM / TEST ONLY",
+          "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+          "position_mm": [
+            14.795,
+            39.735
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.795,
+                39.735
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.335,
+                39.735
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.875,
+                39.735
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J60411",
+          "value": "QUIESCENT TRIM / TEST ONLY",
+          "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+          "position_mm": [
+            66.955,
+            39.735
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                66.955,
+                39.735
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                69.495,
+                39.735
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                72.035,
+                39.735
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J60412",
+          "value": "QUIESCENT TRIM / TEST ONLY",
+          "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+          "position_mm": [
+            40.875,
+            39.735
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                40.875,
+                39.735
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                43.415,
+                39.735
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                45.955,
+                39.735
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "recording-front-end",
+      "pcb": "electronics/stage4/integrated-pcb/boards/recording-front-end/recording_front_end.kicad_pcb",
+      "pcb_sha256_lf": "584360f1b286a1b02f8adfa971225be66456e0109c77c9f2d8ab2f57f17c21a9",
+      "step": "electronics/stage4/integrated-pcb/exports/recording-front-end/populated.step",
+      "step_sha256": "fbc5878132fde732e141ec2146dca31b9b2bf8581af18ab782bb5430c3975685",
+      "outline_mm": [
+        155.0,
+        190.0
+      ],
+      "fitted_components": 153,
+      "mounts": [
+        {
+          "reference": "H1",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H2",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            151.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                151.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H3",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            186.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                186.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H4",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            151.0,
+            186.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                151.0,
+                186.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        {
+          "reference": "J30001",
+          "value": "EXTERNAL ISOLATED AFE RAILS",
+          "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+          "position_mm": [
+            94.515,
+            126.585
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                94.515,
+                126.585
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                97.055,
+                126.585
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                99.595,
+                126.585
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                102.135,
+                126.585
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J30002",
+          "value": "HOST SPI / SUPERVISOR",
+          "footprint": "PinHeader_1x10_P2.54mm_Vertical",
+          "position_mm": [
+            94.515,
+            134.175
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                94.515,
+                134.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                97.055,
+                134.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                99.595,
+                134.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                102.135,
+                134.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                104.675,
+                134.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                107.215,
+                134.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                109.755,
+                134.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                112.295,
+                134.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                114.835,
+                134.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                117.375,
+                134.175
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J30003",
+          "value": "18 RECORDING FUNCTIONAL PORTS",
+          "footprint": "PinHeader_1x18_P2.54mm_Vertical",
+          "position_mm": [
+            94.525,
+            141.765
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                94.525,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                97.065,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                99.605,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                102.145,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                104.685,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                107.225,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                109.765,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                112.305,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                114.845,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                117.385,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "11",
+              "position_mm": [
+                119.925,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "12",
+              "position_mm": [
+                122.465,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "13",
+              "position_mm": [
+                125.005,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "14",
+              "position_mm": [
+                127.545,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "15",
+              "position_mm": [
+                130.085,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "16",
+              "position_mm": [
+                132.625,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "17",
+              "position_mm": [
+                135.165,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "18",
+              "position_mm": [
+                137.705,
+                141.765
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J39901",
+          "value": "AFE TAP HARNESS",
+          "footprint": "PinHeader_1x12_P2.54mm_Vertical",
+          "position_mm": [
+            50.985,
+            76.905
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                50.985,
+                76.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                53.525,
+                76.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                56.065,
+                76.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                58.605,
+                76.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                61.145,
+                76.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                63.685,
+                76.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                66.225,
+                76.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                68.765,
+                76.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                71.305,
+                76.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                73.845,
+                76.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "11",
+              "position_mm": [
+                76.385,
+                76.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "12",
+              "position_mm": [
+                78.925,
+                76.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J39902",
+          "value": "AFE TAP HARNESS",
+          "footprint": "PinHeader_1x09_P2.54mm_Vertical",
+          "position_mm": [
+            50.985,
+            84.495
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                50.985,
+                84.495
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                53.525,
+                84.495
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                56.065,
+                84.495
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                58.605,
+                84.495
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                61.145,
+                84.495
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                63.685,
+                84.495
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                66.225,
+                84.495
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                68.765,
+                84.495
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                71.305,
+                84.495
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "supervision",
+      "pcb": "electronics/stage4/integrated-pcb/boards/supervision/supervision.kicad_pcb",
+      "pcb_sha256_lf": "877e2d5643182aa68e16e77dbdd7821ee55f36b763745bb6aba7ea7a8afc3440",
+      "step": "electronics/stage4/integrated-pcb/exports/supervision/populated.step",
+      "step_sha256": "d29140bdda3f57c6dd43d621d389aae04ed2edef23fda52a071b5965062a39ad",
+      "outline_mm": [
+        300.0,
+        250.0
+      ],
+      "fitted_components": 479,
+      "mounts": [
+        {
+          "reference": "H1",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H2",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            296.0,
+            4.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                296.0,
+                4.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H3",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            4.0,
+            246.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                4.0,
+                246.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "H4",
+          "value": "MountingHole_3.2mm_M3",
+          "footprint": "MountingHole_3.2mm_M3",
+          "position_mm": [
+            296.0,
+            246.0
+          ],
+          "rotation_deg": 0.0,
+          "pads": [
+            {
+              "number": "",
+              "position_mm": [
+                296.0,
+                246.0
+              ],
+              "drill_mm": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        }
+      ],
+      "connectors": [
+        {
+          "reference": "J50001",
+          "value": "EXTERNAL SUPERVISOR AND HOST RAILS",
+          "footprint": "PinHeader_1x07_P2.54mm_Vertical",
+          "position_mm": [
+            56.255,
+            193.485
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                56.255,
+                193.485
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                58.795,
+                193.485
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                61.335,
+                193.485
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                63.875,
+                193.485
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                66.415,
+                193.485
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                68.955,
+                193.485
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                71.495,
+                193.485
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50002",
+          "value": "FLOATING AFE RAILS AND OBSERVED CONTROLS",
+          "footprint": "PinHeader_1x06_P2.54mm_Vertical",
+          "position_mm": [
+            56.245,
+            201.075
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                56.245,
+                201.075
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                58.785,
+                201.075
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                61.325,
+                201.075
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                63.865,
+                201.075
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                66.405,
+                201.075
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                68.945,
+                201.075
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50003",
+          "value": "RAW CONTROL / STATUS",
+          "footprint": "PinHeader_1x12_P2.54mm_Vertical",
+          "position_mm": [
+            56.245,
+            208.665
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                56.245,
+                208.665
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                58.785,
+                208.665
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                61.325,
+                208.665
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                63.865,
+                208.665
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                66.405,
+                208.665
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                68.945,
+                208.665
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                71.485,
+                208.665
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                74.025,
+                208.665
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                76.565,
+                208.665
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                79.105,
+                208.665
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "11",
+              "position_mm": [
+                81.645,
+                208.665
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "12",
+              "position_mm": [
+                84.185,
+                208.665
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50004",
+          "value": "EXISTING MONITOR OBSERVATIONS",
+          "footprint": "PinHeader_1x09_P2.54mm_Vertical",
+          "position_mm": [
+            56.245,
+            216.255
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                56.245,
+                216.255
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                58.785,
+                216.255
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                61.325,
+                216.255
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                63.865,
+                216.255
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                66.405,
+                216.255
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                68.945,
+                216.255
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                71.485,
+                216.255
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                74.025,
+                216.255
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                76.565,
+                216.255
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50005",
+          "value": "EXPORTED NATIVE HEALTH / PERMISSION",
+          "footprint": "PinHeader_1x13_P2.54mm_Vertical",
+          "position_mm": [
+            56.255,
+            223.845
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                56.255,
+                223.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                58.795,
+                223.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                61.335,
+                223.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                63.875,
+                223.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                66.415,
+                223.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                68.955,
+                223.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                71.495,
+                223.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                74.035,
+                223.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                76.575,
+                223.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                79.115,
+                223.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "11",
+              "position_mm": [
+                81.655,
+                223.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "12",
+              "position_mm": [
+                84.195,
+                223.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "13",
+              "position_mm": [
+                86.735,
+                223.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50006",
+          "value": "DRIVER INTERNAL DIFFERENTIAL VOLTAGES",
+          "footprint": "PinHeader_1x05_P2.54mm_Vertical",
+          "position_mm": [
+            56.245,
+            231.435
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                56.245,
+                231.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                58.785,
+                231.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                61.325,
+                231.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                63.865,
+                231.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                66.405,
+                231.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50100",
+          "value": "CANONICAL ROUTER J7 / BEFORE GUARDS",
+          "footprint": "PinHeader_1x18_P2.54mm_Vertical",
+          "position_mm": [
+            14.805,
+            160.845
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.805,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.345,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.885,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.425,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.965,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.505,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.045,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.585,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.125,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                37.665,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "11",
+              "position_mm": [
+                40.205,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "12",
+              "position_mm": [
+                42.745,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "13",
+              "position_mm": [
+                45.285,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "14",
+              "position_mm": [
+                47.825,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "15",
+              "position_mm": [
+                50.365,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "16",
+              "position_mm": [
+                52.905,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "17",
+              "position_mm": [
+                55.445,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "18",
+              "position_mm": [
+                57.985,
+                160.845
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50101",
+          "value": "BODY-FACING ARTIFICIAL LOAD CONTACTS",
+          "footprint": "PinHeader_1x18_P2.54mm_Vertical",
+          "position_mm": [
+            14.805,
+            168.435
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                14.805,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                17.345,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                19.885,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                22.425,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "5",
+              "position_mm": [
+                24.965,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "6",
+              "position_mm": [
+                27.505,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "7",
+              "position_mm": [
+                30.045,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "8",
+              "position_mm": [
+                32.585,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "9",
+              "position_mm": [
+                35.125,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "10",
+              "position_mm": [
+                37.665,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "11",
+              "position_mm": [
+                40.205,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "12",
+              "position_mm": [
+                42.745,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "13",
+              "position_mm": [
+                45.285,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "14",
+              "position_mm": [
+                47.825,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "15",
+              "position_mm": [
+                50.365,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "16",
+              "position_mm": [
+                52.905,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "17",
+              "position_mm": [
+                55.445,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "18",
+              "position_mm": [
+                57.985,
+                168.435
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50600",
+          "value": "REC00 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            99.425,
+            57.275
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                99.425,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                101.965,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50601",
+          "value": "REC01 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            109.565,
+            57.275
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                109.565,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                112.105,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50602",
+          "value": "REC02 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            119.705,
+            57.275
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                119.705,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                122.245,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50603",
+          "value": "REC03 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            99.425,
+            64.865
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                99.425,
+                64.865
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                101.965,
+                64.865
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50604",
+          "value": "REC04 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            142.015,
+            57.275
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                142.015,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                144.555,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50605",
+          "value": "REC05 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            152.155,
+            57.275
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                152.155,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                154.695,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50606",
+          "value": "REC06 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            162.295,
+            57.275
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                162.295,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                164.835,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50607",
+          "value": "REC07 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            142.015,
+            64.865
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                142.015,
+                64.865
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                144.555,
+                64.865
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50608",
+          "value": "REC08 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            184.605,
+            57.275
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                184.605,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                187.145,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50609",
+          "value": "REC09 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            194.745,
+            57.275
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                194.745,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                197.285,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50610",
+          "value": "REC10 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            204.885,
+            57.275
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                204.885,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                207.425,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50611",
+          "value": "REC11 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            184.605,
+            64.865
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                184.605,
+                64.865
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                187.145,
+                64.865
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50612",
+          "value": "REC12 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            227.195,
+            57.275
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                227.195,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                229.735,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50613",
+          "value": "REC13 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            237.335,
+            57.275
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                237.335,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                239.875,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50614",
+          "value": "REC14 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            247.475,
+            57.275
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                247.475,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                250.015,
+                57.275
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50615",
+          "value": "REC15 ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            227.195,
+            64.865
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                227.195,
+                64.865
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                229.735,
+                64.865
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J50616",
+          "value": "REF ACTUAL RHD-SIDE TAP",
+          "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+          "position_mm": [
+            269.785,
+            34.905
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                269.785,
+                34.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                272.325,
+                34.905
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "J59901",
+          "value": "HOST TAP HARNESS",
+          "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+          "position_mm": [
+            155.855,
+            139.445
+          ],
+          "rotation_deg": 90.0,
+          "pads": [
+            {
+              "number": "1",
+              "position_mm": [
+                155.855,
+                139.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "2",
+              "position_mm": [
+                158.395,
+                139.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "3",
+              "position_mm": [
+                160.935,
+                139.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "number": "4",
+              "position_mm": [
+                163.475,
+                139.445
+              ],
+              "drill_mm": [
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

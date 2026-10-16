@@ -1,0 +1,58 @@
+"""Read-only exact solid-pair clearance performance probe; tmp artifacts only."""
+from pathlib import Path
+import FreeCAD as App
+import Part
+import hashlib,json,math,time
+R=Path(r'E:\Project ATO')
+CP=R/'cad/stage5/reference/contract.json'
+P=json.loads(CP.read_text(encoding='utf-8'))
+NP=R/P['native']
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def canon(p):return hashlib.sha256(json.dumps(json.loads(p.read_text(encoding='utf-8-sig')),sort_keys=True,separators=(',',':'),ensure_ascii=True,allow_nan=False).encode()).hexdigest()
+REPORT={'scope':'Read-only exact BRep solid-pair minimum; no receipt reconstruction or source mutation','native_sha256':sha(NP),'contract_canonical_sha256':canon(CP),'rows':[]}
+T=time.perf_counter();print('OPEN_BEGIN',flush=True)
+d=App.openDocument(str(NP));print('OPEN_DONE',time.perf_counter()-T,flush=True)
+F={o.Label:o for o in d.Objects if 'Shape' in o.PropertiesList}
+CACHE={}
+def solids(label):
+ if label not in CACHE:
+  out=[]
+  for i,s in enumerate(F[label].Shape.Solids):
+   q=s.optimalBoundingBox(False,False)
+   out.append((i,s,(q.XMin,q.YMin,q.ZMin,q.XMax,q.YMax,q.ZMax)))
+  CACHE[label]=out
+ return CACHE[label]
+def lower(a,b):
+ gaps=[max(0,a[k]-b[k+3],b[k]-a[k+3]) for k in range(3)]
+ return math.sqrt(sum(x*x for x in gaps))
+for ri,row in enumerate(P['clearance_checks']):
+ t=time.perf_counter();print('BEGIN',ri,row['a'],row['b'],flush=True)
+ aa,bb=solids(row['a']),solids(row['b'])
+ candidates=sorted((lower(ab,bc),i,j,a,b) for i,a,ab in aa for j,b,bc in bb)
+ whole_a=F[row['a']].Shape.optimalBoundingBox(False,False);whole_b=F[row['b']].Shape.optimalBoundingBox(False,False)
+ av=(whole_a.XMin,whole_a.YMin,whole_a.ZMin,whole_a.XMax,whole_a.YMax,whole_a.ZMax);bv=(whole_b.XMin,whole_b.YMin,whole_b.ZMin,whole_b.XMax,whole_b.YMax,whole_b.ZMax)
+ global_lower=lower(av,bv)
+ print('GLOBAL_AABB_LOWER',ri,global_lower,'minimum',row['minimum_mm'],flush=True)
+ best=math.inf;best_pair=None;checks=0;pruned=0
+ for k,(lb,i,j,a,b) in enumerate(candidates):
+  # OCCT's conservative stored bounding boxes can overestimate object size,
+  # which only lowers this lower bound and forces extra exact tests.
+  if lb>best+1e-9:
+   pruned=len(candidates)-k;break
+  start=time.perf_counter()
+  measured=a.distToShape(b)[0]
+  checks+=1
+  if measured<best:best=measured;best_pair=[i,j]
+  if checks<=3 or checks%50==0:
+   print('EXACT',ri,checks,'solid',i,j,'lower',lb,'distance',measured,'seconds',time.perf_counter()-start,'best',best,flush=True)
+  if best==0:pruned=len(candidates)-k-1;break
+ passed=best>=row['minimum_mm']-2e-5
+ rec={**row,'measured_mm':best,'minimum_solid_pair':best_pair,'solid_pair_count':len(candidates),'exact_BRep_queries':checks,'AABB_pruned_pairs':pruned,'seconds':time.perf_counter()-t,'passed':passed,'whole_shape_tight_AABB_lower_mm':global_lower,'conservative_AABB_lower_mm_minus_2e_6':max(0,global_lower-2e-6)}
+ REPORT['rows'].append(rec)
+ (R/'tmp/stage5-clearance-probe-optimal.json').write_text(json.dumps(REPORT,indent=2)+'\n',encoding='utf-8')
+ print('END',json.dumps(rec),flush=True)
+ if not passed:raise AssertionError(rec)
+REPORT['elapsed_seconds']=time.perf_counter()-T;REPORT['all_passed']=all(x['passed'] for x in REPORT['rows'])
+(R/'tmp/stage5-clearance-probe-optimal.json').write_text(json.dumps(REPORT,indent=2)+'\n',encoding='utf-8')
+print('DONE',REPORT['elapsed_seconds'],flush=True)
+App.closeDocument(d.Name)

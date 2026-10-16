@@ -1,9 +1,10 @@
 # Project ATO: engineering roadmap and Stage 3 closeout
 
 16 October 2026. The conservative Stage 3 investigation and conditional concept
-v1 are complete within their separate scopes. Stage 4 now completes native
+v1 are complete within their separate scopes. Stage 4 completes native
 electronics, bounded actual firmware and the integrated populated board set.
-Stage 5 mechanical packaging and Stage 6 final paper/release remain. This plan
+Stage 5 mechanical packaging is also complete within its bounded digital scope;
+Stage 6 final paper/release remains. This plan
 preserves scientific gates and negative results; the full project is still in
 development.
 
@@ -166,10 +167,12 @@ oscillator setting. Historical source circuits, studies and firmware remain
 preserved. The [board index](../electronics/stage4/integrated-pcb/BOARD_INDEX.md)
 is the native-file entry point.
 
-Stage 5 uses the resulting board and component identities to build the native
-parametric assembly: populated boards, package, ports/feedthroughs, lead
-interfaces, clearances, drawings and STEP exports. Existing allocation solids
-are starting constraints, not a finished populated implant.
+Stage 5 now packages those board and component identities in the native
+mechanical assembly: full-scale populated boards, nominal mating interfaces,
+ports/feedthroughs, conditional future leads, clearances, drawings and STEP
+exports. The [mechanical exit review](stage5/exit-review.md) records completed
+source-bound native checks. Its compact future package explicitly requires
+redesigned miniaturized electronics; the eight reference boards retain 1:1 scale.
 
 The final stage joins the mechanisms, circuit/firmware evidence and CAD into the
 illustrated manuscript and a reproducible private repository release. Each

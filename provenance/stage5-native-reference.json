@@ -1,0 +1,4117 @@
+{
+  "schema": "ato.stage5.independent-native-inspection.v1",
+  "scope": "Nominal digital geometry; no fabrication, anatomy, hermetic or thermal qualification",
+  "inspector": "scripts/inspect_stage5_reference.py",
+  "inspector_sha256_lf": "fda660ace613cf4d87f3accd3410815f2e1e44942d3aa9147f0407b2d18ae3dd",
+  "FreeCAD_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "packages": {
+    "reference": {
+      "contract": "cad/stage5/reference/contract.json",
+      "contract_canonical_sha256": "6e02bb9182e470fa4b10212b1698e890d7a93990480bccb4ce6f098eeed32409",
+      "native": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "native_sha256": "764a4e7a9ec8212fefb1c9c0deb7cab2ee76a5c9e72b2895f9199c98d0e5ae9a",
+      "step": "cad/stage5/reference/ATO_reference_assembly.step.zip",
+      "step_sha256": "74b924bd9544f1361c5aab83804da2bd12cfff4b6a9ec1a919b1d46a8fae02a1",
+      "parts": [
+        {
+          "label": "Base",
+          "category": "enclosure_panel",
+          "solids": 1,
+          "volume_mm3": 558000.0,
+          "bounds_mm": [
+            0.0,
+            0.0,
+            8.0,
+            600.0,
+            310.0,
+            11.0
+          ],
+          "centre_mm": [
+            300.0,
+            155.0,
+            9.5
+          ]
+        },
+        {
+          "label": "SideLeft",
+          "category": "enclosure_panel",
+          "solids": 1,
+          "volume_mm3": 206112.0,
+          "bounds_mm": [
+            0.0,
+            3.0,
+            11.0,
+            3.0,
+            307.0,
+            237.0
+          ],
+          "centre_mm": [
+            1.5,
+            155.0,
+            124.0
+          ]
+        },
+        {
+          "label": "SideRight",
+          "category": "enclosure_panel",
+          "solids": 1,
+          "volume_mm3": 206112.0,
+          "bounds_mm": [
+            597.0,
+            3.0,
+            11.0,
+            600.0,
+            307.0,
+            237.0
+          ],
+          "centre_mm": [
+            598.5,
+            155.0,
+            124.0
+          ]
+        },
+        {
+          "label": "FrontBracket_0_0",
+          "category": "panel_bracket",
+          "solids": 1,
+          "volume_mm3": 564.6570826471149,
+          "bounds_mm": [
+            3.0,
+            3.0,
+            35.0,
+            15.0,
+            8.0,
+            45.0
+          ],
+          "centre_mm": [
+            8.937408174909987,
+            5.499999999999998,
+            39.99999999999999
+          ]
+        },
+        {
+          "label": "FrontScrew_0_0",
+          "category": "panel_screw",
+          "solids": 1,
+          "volume_mm3": 87.14778021058088,
+          "bounds_mm": [
+            7.25,
+            0.0,
+            37.25,
+            12.75,
+            8.0,
+            42.75
+          ],
+          "centre_mm": [
+            9.999999999999998,
+            2.819033886085075,
+            39.99999999999999
+          ]
+        },
+        {
+          "label": "FrontBracket_0_1",
+          "category": "panel_bracket",
+          "solids": 1,
+          "volume_mm3": 564.6570826471149,
+          "bounds_mm": [
+            3.0,
+            3.0,
+            195.0,
+            15.0,
+            8.0,
+            205.0
+          ],
+          "centre_mm": [
+            8.937408174909985,
+            5.499999999999998,
+            199.99999999999997
+          ]
+        },
+        {
+          "label": "FrontScrew_0_1",
+          "category": "panel_screw",
+          "solids": 1,
+          "volume_mm3": 87.14778021058083,
+          "bounds_mm": [
+            7.25,
+            0.0,
+            197.25,
+            12.75,
+            8.0,
+            202.75
+          ],
+          "centre_mm": [
+            10.000000000000002,
+            2.8190338860850743,
+            200.00000000000003
+          ]
+        },
+        {
+          "label": "FrontBracket_1_0",
+          "category": "panel_bracket",
+          "solids": 1,
+          "volume_mm3": 564.6570826471147,
+          "bounds_mm": [
+            585.0,
+            3.0,
+            35.0,
+            597.0,
+            8.0,
+            45.0
+          ],
+          "centre_mm": [
+            591.06259182509,
+            5.499999999999999,
+            40.0
+          ]
+        },
+        {
+          "label": "FrontScrew_1_0",
+          "category": "panel_screw",
+          "solids": 1,
+          "volume_mm3": 87.1477802105807,
+          "bounds_mm": [
+            587.25,
+            0.0,
+            37.25,
+            592.75,
+            8.0,
+            42.75
+          ],
+          "centre_mm": [
+            590.0,
+            2.81903388608508,
+            39.99999999999999
+          ]
+        },
+        {
+          "label": "FrontBracket_1_1",
+          "category": "panel_bracket",
+          "solids": 1,
+          "volume_mm3": 564.6570826471147,
+          "bounds_mm": [
+            585.0,
+            3.0,
+            195.0,
+            597.0,
+            8.0,
+            205.0
+          ],
+          "centre_mm": [
+            591.06259182509,
+            5.499999999999999,
+            199.99999999999997
+          ]
+        },
+        {
+          "label": "FrontScrew_1_1",
+          "category": "panel_screw",
+          "solids": 1,
+          "volume_mm3": 87.14778021058066,
+          "bounds_mm": [
+            587.25,
+            0.0,
+            197.25,
+            592.75,
+            8.0,
+            202.75
+          ],
+          "centre_mm": [
+            589.9999999999998,
+            2.8190338860850783,
+            199.99999999999994
+          ]
+        },
+        {
+          "label": "FrontPanel",
+          "category": "enclosure_panel",
+          "solids": 1,
+          "volume_mm3": 406526.304448019,
+          "bounds_mm": [
+            0.0,
+            0.0,
+            11.0,
+            600.0,
+            3.0,
+            237.0
+          ],
+          "centre_mm": [
+            300.00000000000034,
+            1.5002179266430287,
+            124.00269301689944
+          ]
+        },
+        {
+          "label": "RearPanel",
+          "category": "enclosure_panel",
+          "solids": 1,
+          "volume_mm3": 388392.0,
+          "bounds_mm": [
+            0.0,
+            307.0,
+            11.0,
+            600.0,
+            310.0,
+            237.0
+          ],
+          "centre_mm": [
+            301.7445467465859,
+            308.5,
+            119.98411913736628
+          ]
+        },
+        {
+          "label": "Post_0_0",
+          "category": "frame_post",
+          "solids": 1,
+          "volume_mm3": 8079.451332235383,
+          "bounds_mm": [
+            12.0,
+            14.0,
+            11.0,
+            18.0,
+            20.0,
+            237.0
+          ],
+          "centre_mm": [
+            15.0,
+            17.0,
+            123.23710106876304
+          ]
+        },
+        {
+          "label": "LidScrew_0_0",
+          "category": "lid_screw",
+          "solids": 1,
+          "volume_mm3": 87.14778021058086,
+          "bounds_mm": [
+            12.25,
+            14.25,
+            232.0,
+            17.75,
+            19.75,
+            240.0
+          ],
+          "centre_mm": [
+            14.999999999999998,
+            17.0,
+            237.18096611391493
+          ]
+        },
+        {
+          "label": "Post_0_1",
+          "category": "frame_post",
+          "solids": 1,
+          "volume_mm3": 8079.451332235383,
+          "bounds_mm": [
+            12.0,
+            290.0,
+            11.0,
+            18.0,
+            296.0,
+            237.0
+          ],
+          "centre_mm": [
+            15.0,
+            293.0,
+            123.23710106876304
+          ]
+        },
+        {
+          "label": "LidScrew_0_1",
+          "category": "lid_screw",
+          "solids": 1,
+          "volume_mm3": 87.14778021058098,
+          "bounds_mm": [
+            12.25,
+            290.25,
+            232.0,
+            17.75,
+            295.75,
+            240.0
+          ],
+          "centre_mm": [
+            15.000000000000002,
+            293.00000000000006,
+            237.180966113915
+          ]
+        },
+        {
+          "label": "Post_1_0",
+          "category": "frame_post",
+          "solids": 1,
+          "volume_mm3": 8079.451332235384,
+          "bounds_mm": [
+            330.0,
+            14.0,
+            11.0,
+            336.0,
+            20.0,
+            237.0
+          ],
+          "centre_mm": [
+            332.9999999999999,
+            17.0,
+            123.23710106876307
+          ]
+        },
+        {
+          "label": "LidScrew_1_0",
+          "category": "lid_screw",
+          "solids": 1,
+          "volume_mm3": 87.14778021058092,
+          "bounds_mm": [
+            330.25,
+            14.25,
+            232.0,
+            335.75,
+            19.75,
+            240.0
+          ],
+          "centre_mm": [
+            332.99999999999994,
+            17.0,
+            237.1809661139149
+          ]
+        },
+        {
+          "label": "Post_1_1",
+          "category": "frame_post",
+          "solids": 1,
+          "volume_mm3": 8079.451332235384,
+          "bounds_mm": [
+            330.0,
+            290.0,
+            11.0,
+            336.0,
+            296.0,
+            237.0
+          ],
+          "centre_mm": [
+            332.9999999999999,
+            292.99999999999994,
+            123.23710106876307
+          ]
+        },
+        {
+          "label": "LidScrew_1_1",
+          "category": "lid_screw",
+          "solids": 1,
+          "volume_mm3": 87.14778021058103,
+          "bounds_mm": [
+            330.25,
+            290.25,
+            232.0,
+            335.75,
+            295.75,
+            240.0
+          ],
+          "centre_mm": [
+            333.0,
+            293.0,
+            237.18096611391493
+          ]
+        },
+        {
+          "label": "Post_2_0",
+          "category": "frame_post",
+          "solids": 1,
+          "volume_mm3": 8079.451332235384,
+          "bounds_mm": [
+            374.0,
+            14.0,
+            11.0,
+            380.0,
+            20.0,
+            237.0
+          ],
+          "centre_mm": [
+            376.99999999999994,
+            17.0,
+            123.23710106876307
+          ]
+        },
+        {
+          "label": "LidScrew_2_0",
+          "category": "lid_screw",
+          "solids": 1,
+          "volume_mm3": 87.14778021058092,
+          "bounds_mm": [
+            374.25,
+            14.25,
+            232.0,
+            379.75,
+            19.75,
+            240.0
+          ],
+          "centre_mm": [
+            376.99999999999994,
+            17.0,
+            237.1809661139149
+          ]
+        },
+        {
+          "label": "Post_2_1",
+          "category": "frame_post",
+          "solids": 1,
+          "volume_mm3": 8079.451332235384,
+          "bounds_mm": [
+            374.0,
+            290.0,
+            11.0,
+            380.0,
+            296.0,
+            237.0
+          ],
+          "centre_mm": [
+            376.99999999999994,
+            292.99999999999994,
+            123.23710106876307
+          ]
+        },
+        {
+          "label": "LidScrew_2_1",
+          "category": "lid_screw",
+          "solids": 1,
+          "volume_mm3": 87.14778021058103,
+          "bounds_mm": [
+            374.25,
+            290.25,
+            232.0,
+            379.75,
+            295.75,
+            240.0
+          ],
+          "centre_mm": [
+            377.00000000000006,
+            293.0,
+            237.18096611391493
+          ]
+        },
+        {
+          "label": "Post_3_0",
+          "category": "frame_post",
+          "solids": 1,
+          "volume_mm3": 8079.451332235383,
+          "bounds_mm": [
+            565.0,
+            14.0,
+            11.0,
+            571.0,
+            20.0,
+            237.0
+          ],
+          "centre_mm": [
+            568.0000000000001,
+            17.0,
+            123.23710106876307
+          ]
+        },
+        {
+          "label": "LidScrew_3_0",
+          "category": "lid_screw",
+          "solids": 1,
+          "volume_mm3": 87.14778021058069,
+          "bounds_mm": [
+            565.25,
+            14.25,
+            232.0,
+            570.75,
+            19.75,
+            240.0
+          ],
+          "centre_mm": [
+            568.0,
+            17.0,
+            237.18096611391493
+          ]
+        },
+        {
+          "label": "Post_3_1",
+          "category": "frame_post",
+          "solids": 1,
+          "volume_mm3": 8079.451332235383,
+          "bounds_mm": [
+            565.0,
+            290.0,
+            11.0,
+            571.0,
+            296.0,
+            237.0
+          ],
+          "centre_mm": [
+            568.0000000000001,
+            293.0,
+            123.23710106876307
+          ]
+        },
+        {
+          "label": "LidScrew_3_1",
+          "category": "lid_screw",
+          "solids": 1,
+          "volume_mm3": 87.14778021058082,
+          "bounds_mm": [
+            565.25,
+            290.25,
+            232.0,
+            570.75,
+            295.75,
+            240.0
+          ],
+          "centre_mm": [
+            568.0,
+            293.0,
+            237.18096611391496
+          ]
+        },
+        {
+          "label": "Lid",
+          "category": "enclosure_panel",
+          "solids": 1,
+          "volume_mm3": 557452.6088960383,
+          "bounds_mm": [
+            0.0,
+            0.0,
+            237.0,
+            600.0,
+            310.0,
+            240.0
+          ],
+          "centre_mm": [
+            299.9771696410351,
+            155.00000000000026,
+            238.49968215087188
+          ]
+        },
+        {
+          "label": "Foot_0",
+          "category": "foot",
+          "solids": 1,
+          "volume_mm3": 2513.274122871834,
+          "bounds_mm": [
+            15.0,
+            15.0,
+            0.0,
+            35.0,
+            35.0,
+            8.0
+          ],
+          "centre_mm": [
+            25.0,
+            25.0,
+            4.0
+          ]
+        },
+        {
+          "label": "Foot_1",
+          "category": "foot",
+          "solids": 1,
+          "volume_mm3": 2513.274122871835,
+          "bounds_mm": [
+            565.0,
+            15.0,
+            0.0,
+            585.0,
+            35.0,
+            8.0
+          ],
+          "centre_mm": [
+            575.0,
+            25.0,
+            3.999999999999999
+          ]
+        },
+        {
+          "label": "Foot_2",
+          "category": "foot",
+          "solids": 1,
+          "volume_mm3": 2513.274122871834,
+          "bounds_mm": [
+            15.0,
+            275.0,
+            0.0,
+            35.0,
+            295.0,
+            8.0
+          ],
+          "centre_mm": [
+            25.0,
+            285.0,
+            4.0
+          ]
+        },
+        {
+          "label": "Foot_3",
+          "category": "foot",
+          "solids": 1,
+          "volume_mm3": 2513.274122871835,
+          "bounds_mm": [
+            565.0,
+            275.0,
+            0.0,
+            585.0,
+            295.0,
+            8.0
+          ],
+          "centre_mm": [
+            575.0,
+            285.0,
+            3.999999999999999
+          ]
+        },
+        {
+          "label": "Rail_left_0_left",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            15.0,
+            20.0,
+            12.0,
+            21.0,
+            290.0,
+            16.0
+          ],
+          "centre_mm": [
+            17.5,
+            155.0,
+            14.333333333333334
+          ]
+        },
+        {
+          "label": "Rail_left_0_right",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            327.0,
+            20.0,
+            12.0,
+            333.0,
+            290.0,
+            16.0
+          ],
+          "centre_mm": [
+            330.5,
+            155.0,
+            14.333333333333334
+          ]
+        },
+        {
+          "label": "Rail_left_1_left",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            15.0,
+            20.0,
+            62.0,
+            21.0,
+            290.0,
+            66.0
+          ],
+          "centre_mm": [
+            17.5,
+            155.0,
+            64.33333333333333
+          ]
+        },
+        {
+          "label": "Rail_left_1_right",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            327.0,
+            20.0,
+            62.0,
+            333.0,
+            290.0,
+            66.0
+          ],
+          "centre_mm": [
+            330.5,
+            155.0,
+            64.33333333333333
+          ]
+        },
+        {
+          "label": "Rail_left_2_left",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            15.0,
+            20.0,
+            112.0,
+            21.0,
+            290.0,
+            116.0
+          ],
+          "centre_mm": [
+            17.5,
+            155.0,
+            114.33333333333333
+          ]
+        },
+        {
+          "label": "Rail_left_2_right",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            327.0,
+            20.0,
+            112.0,
+            333.0,
+            290.0,
+            116.0
+          ],
+          "centre_mm": [
+            330.5,
+            155.0,
+            114.33333333333333
+          ]
+        },
+        {
+          "label": "Rail_left_3_left",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            15.0,
+            20.0,
+            162.0,
+            21.0,
+            290.0,
+            166.0
+          ],
+          "centre_mm": [
+            17.5,
+            155.0,
+            164.33333333333334
+          ]
+        },
+        {
+          "label": "Rail_left_3_right",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            327.0,
+            20.0,
+            162.0,
+            333.0,
+            290.0,
+            166.0
+          ],
+          "centre_mm": [
+            330.5,
+            155.0,
+            164.33333333333334
+          ]
+        },
+        {
+          "label": "Rail_right_0_left",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            377.0,
+            20.0,
+            12.0,
+            383.0,
+            290.0,
+            16.0
+          ],
+          "centre_mm": [
+            379.5,
+            155.0,
+            14.333333333333334
+          ]
+        },
+        {
+          "label": "Rail_right_0_right",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            562.0,
+            20.0,
+            12.0,
+            568.0,
+            290.0,
+            16.0
+          ],
+          "centre_mm": [
+            565.5,
+            155.0,
+            14.333333333333334
+          ]
+        },
+        {
+          "label": "Rail_right_1_left",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            377.0,
+            20.0,
+            62.0,
+            383.0,
+            290.0,
+            66.0
+          ],
+          "centre_mm": [
+            379.5,
+            155.0,
+            64.33333333333333
+          ]
+        },
+        {
+          "label": "Rail_right_1_right",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            562.0,
+            20.0,
+            62.0,
+            568.0,
+            290.0,
+            66.0
+          ],
+          "centre_mm": [
+            565.5,
+            155.0,
+            64.33333333333333
+          ]
+        },
+        {
+          "label": "Rail_right_2_left",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            377.0,
+            20.0,
+            112.0,
+            383.0,
+            290.0,
+            116.0
+          ],
+          "centre_mm": [
+            379.5,
+            155.0,
+            114.33333333333333
+          ]
+        },
+        {
+          "label": "Rail_right_2_right",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            562.0,
+            20.0,
+            112.0,
+            568.0,
+            290.0,
+            116.0
+          ],
+          "centre_mm": [
+            565.5,
+            155.0,
+            114.33333333333333
+          ]
+        },
+        {
+          "label": "Rail_right_3_left",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            377.0,
+            20.0,
+            162.0,
+            383.0,
+            290.0,
+            166.0
+          ],
+          "centre_mm": [
+            379.5,
+            155.0,
+            164.33333333333334
+          ]
+        },
+        {
+          "label": "Rail_right_3_right",
+          "category": "rail",
+          "solids": 1,
+          "volume_mm3": 4860.0,
+          "bounds_mm": [
+            562.0,
+            20.0,
+            162.0,
+            568.0,
+            290.0,
+            166.0
+          ],
+          "centre_mm": [
+            565.5,
+            155.0,
+            164.33333333333334
+          ]
+        },
+        {
+          "label": "Standoff_contact_router_H1",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731105,
+          "bounds_mm": [
+            25.0,
+            178.0,
+            168.0,
+            31.0,
+            184.0,
+            178.0
+          ],
+          "centre_mm": [
+            28.000000000000004,
+            181.00000000000003,
+            173.0
+          ]
+        },
+        {
+          "label": "UpperScrew_contact_router_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913531,
+          "bounds_mm": [
+            25.25,
+            178.25,
+            173.53,
+            30.75,
+            183.75,
+            181.73
+          ],
+          "centre_mm": [
+            27.999999999999996,
+            180.99999999999997,
+            178.86189470985383
+          ]
+        },
+        {
+          "label": "LowerScrew_contact_router_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913531,
+          "bounds_mm": [
+            25.25,
+            178.25,
+            163.8,
+            30.75,
+            183.75,
+            172.0
+          ],
+          "centre_mm": [
+            27.999999999999996,
+            181.0,
+            166.66810529014614
+          ]
+        },
+        {
+          "label": "Standoff_contact_router_H2",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.0575041173111,
+          "bounds_mm": [
+            192.0,
+            178.0,
+            168.0,
+            198.0,
+            184.0,
+            178.0
+          ],
+          "centre_mm": [
+            194.99999999999997,
+            181.00000000000003,
+            172.99999999999997
+          ]
+        },
+        {
+          "label": "UpperScrew_contact_router_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913534,
+          "bounds_mm": [
+            192.25,
+            178.25,
+            173.53,
+            197.75,
+            183.75,
+            181.73
+          ],
+          "centre_mm": [
+            195.00000000000003,
+            181.0,
+            178.86189470985386
+          ]
+        },
+        {
+          "label": "LowerScrew_contact_router_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913534,
+          "bounds_mm": [
+            192.25,
+            178.25,
+            163.8,
+            197.75,
+            183.75,
+            172.0
+          ],
+          "centre_mm": [
+            195.0,
+            181.0,
+            166.66810529014617
+          ]
+        },
+        {
+          "label": "Standoff_contact_router_H3",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.057504117311,
+          "bounds_mm": [
+            25.0,
+            31.0,
+            168.0,
+            31.0,
+            37.0,
+            178.0
+          ],
+          "centre_mm": [
+            28.0,
+            34.00000000000001,
+            173.00000000000003
+          ]
+        },
+        {
+          "label": "UpperScrew_contact_router_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913535,
+          "bounds_mm": [
+            25.25,
+            31.25,
+            173.53,
+            30.75,
+            36.75,
+            181.73
+          ],
+          "centre_mm": [
+            27.999999999999993,
+            33.99999999999999,
+            178.86189470985386
+          ]
+        },
+        {
+          "label": "LowerScrew_contact_router_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913534,
+          "bounds_mm": [
+            25.25,
+            31.25,
+            163.8,
+            30.75,
+            36.75,
+            172.0
+          ],
+          "centre_mm": [
+            27.999999999999996,
+            34.0,
+            166.66810529014617
+          ]
+        },
+        {
+          "label": "Standoff_contact_router_H4",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731105,
+          "bounds_mm": [
+            192.0,
+            31.0,
+            168.0,
+            198.0,
+            37.0,
+            178.0
+          ],
+          "centre_mm": [
+            194.99999999999997,
+            33.99999999999999,
+            173.0
+          ]
+        },
+        {
+          "label": "UpperScrew_contact_router_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913538,
+          "bounds_mm": [
+            192.25,
+            31.25,
+            173.53,
+            197.75,
+            36.75,
+            181.73
+          ],
+          "centre_mm": [
+            195.0,
+            34.00000000000001,
+            178.86189470985386
+          ]
+        },
+        {
+          "label": "LowerScrew_contact_router_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913536,
+          "bounds_mm": [
+            192.25,
+            31.25,
+            163.8,
+            197.75,
+            36.75,
+            172.0
+          ],
+          "centre_mm": [
+            195.00000000000003,
+            34.0,
+            166.66810529014614
+          ]
+        },
+        {
+          "label": "Tray_contact_router",
+          "category": "tray",
+          "solids": 1,
+          "volume_mm3": 172155.57611200487,
+          "bounds_mm": [
+            18.0,
+            20.0,
+            166.0,
+            330.0,
+            290.0,
+            174.0
+          ],
+          "centre_mm": [
+            174.02484086252844,
+            157.9330803339838,
+            167.08699108293908
+          ]
+        },
+        {
+          "label": "Pull_contact_router",
+          "category": "tray_pull",
+          "solids": 1,
+          "volume_mm3": 4176.0,
+          "bounds_mm": [
+            149.0,
+            11.0,
+            166.0,
+            199.0,
+            20.0,
+            178.0
+          ],
+          "centre_mm": [
+            174.0,
+            15.939655172413794,
+            172.0
+          ]
+        },
+        {
+          "label": "Standoff_controller_carrier_H1",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731063,
+          "bounds_mm": [
+            391.0,
+            173.0,
+            168.0,
+            397.0,
+            179.0,
+            178.0
+          ],
+          "centre_mm": [
+            394.0,
+            175.99999999999997,
+            173.0
+          ]
+        },
+        {
+          "label": "UpperScrew_controller_carrier_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913536,
+          "bounds_mm": [
+            391.25,
+            173.25,
+            173.53,
+            396.75,
+            178.75,
+            181.73
+          ],
+          "centre_mm": [
+            394.00000000000006,
+            176.0,
+            178.86189470985389
+          ]
+        },
+        {
+          "label": "LowerScrew_controller_carrier_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913536,
+          "bounds_mm": [
+            391.25,
+            173.25,
+            163.8,
+            396.75,
+            178.75,
+            172.0
+          ],
+          "centre_mm": [
+            394.00000000000006,
+            176.0,
+            166.66810529014614
+          ]
+        },
+        {
+          "label": "Standoff_controller_carrier_H2",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731174,
+          "bounds_mm": [
+            538.0,
+            173.0,
+            168.0,
+            544.0,
+            179.0,
+            178.0
+          ],
+          "centre_mm": [
+            541.0000000000001,
+            176.00000000000003,
+            173.00000000000003
+          ]
+        },
+        {
+          "label": "UpperScrew_controller_carrier_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.8994390991351,
+          "bounds_mm": [
+            538.25,
+            173.25,
+            173.53,
+            543.75,
+            178.75,
+            181.73
+          ],
+          "centre_mm": [
+            541.0000000000001,
+            176.0,
+            178.86189470985389
+          ]
+        },
+        {
+          "label": "LowerScrew_controller_carrier_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913511,
+          "bounds_mm": [
+            538.25,
+            173.25,
+            163.8,
+            543.75,
+            178.75,
+            172.0
+          ],
+          "centre_mm": [
+            540.9999999999999,
+            176.0,
+            166.66810529014614
+          ]
+        },
+        {
+          "label": "Standoff_controller_carrier_H3",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731054,
+          "bounds_mm": [
+            391.0,
+            31.0,
+            168.0,
+            397.0,
+            37.0,
+            178.0
+          ],
+          "centre_mm": [
+            394.0,
+            34.00000000000001,
+            173.0
+          ]
+        },
+        {
+          "label": "UpperScrew_controller_carrier_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.8994390991354,
+          "bounds_mm": [
+            391.25,
+            31.25,
+            173.53,
+            396.75,
+            36.75,
+            181.73
+          ],
+          "centre_mm": [
+            394.0,
+            34.00000000000001,
+            178.86189470985389
+          ]
+        },
+        {
+          "label": "LowerScrew_controller_carrier_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.8994390991354,
+          "bounds_mm": [
+            391.25,
+            31.25,
+            163.8,
+            396.75,
+            36.75,
+            172.0
+          ],
+          "centre_mm": [
+            394.0,
+            34.0,
+            166.66810529014614
+          ]
+        },
+        {
+          "label": "Standoff_controller_carrier_H4",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731168,
+          "bounds_mm": [
+            538.0,
+            31.0,
+            168.0,
+            544.0,
+            37.0,
+            178.0
+          ],
+          "centre_mm": [
+            540.9999999999999,
+            33.99999999999999,
+            173.0
+          ]
+        },
+        {
+          "label": "UpperScrew_controller_carrier_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913515,
+          "bounds_mm": [
+            538.25,
+            31.25,
+            173.53,
+            543.75,
+            36.75,
+            181.73
+          ],
+          "centre_mm": [
+            541.0000000000001,
+            34.0,
+            178.86189470985386
+          ]
+        },
+        {
+          "label": "LowerScrew_controller_carrier_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913514,
+          "bounds_mm": [
+            538.25,
+            31.25,
+            163.8,
+            543.75,
+            36.75,
+            172.0
+          ],
+          "centre_mm": [
+            540.9999999999999,
+            34.00000000000001,
+            166.66810529014617
+          ]
+        },
+        {
+          "label": "Tray_controller_carrier",
+          "category": "tray",
+          "solids": 1,
+          "volume_mm3": 102051.57611200484,
+          "bounds_mm": [
+            380.0,
+            20.0,
+            166.0,
+            565.0,
+            290.0,
+            174.0
+          ],
+          "centre_mm": [
+            472.5033524170132,
+            157.94852079569569,
+            167.08701482464366
+          ]
+        },
+        {
+          "label": "Pull_controller_carrier",
+          "category": "tray_pull",
+          "solids": 1,
+          "volume_mm3": 4176.0,
+          "bounds_mm": [
+            447.5,
+            11.0,
+            166.0,
+            497.5,
+            20.0,
+            178.0
+          ],
+          "centre_mm": [
+            472.5,
+            15.939655172413794,
+            172.0
+          ]
+        },
+        {
+          "label": "Standoff_current_driver_H1",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731105,
+          "bounds_mm": [
+            25.0,
+            178.0,
+            118.0,
+            31.0,
+            184.0,
+            128.0
+          ],
+          "centre_mm": [
+            28.000000000000004,
+            181.00000000000003,
+            123.0
+          ]
+        },
+        {
+          "label": "UpperScrew_current_driver_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913531,
+          "bounds_mm": [
+            25.25,
+            178.25,
+            123.53,
+            30.75,
+            183.75,
+            131.73
+          ],
+          "centre_mm": [
+            27.999999999999996,
+            180.99999999999997,
+            128.86189470985386
+          ]
+        },
+        {
+          "label": "LowerScrew_current_driver_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913544,
+          "bounds_mm": [
+            25.25,
+            178.25,
+            113.8,
+            30.75,
+            183.75,
+            122.0
+          ],
+          "centre_mm": [
+            27.999999999999996,
+            181.0,
+            116.66810529014612
+          ]
+        },
+        {
+          "label": "Standoff_current_driver_H2",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.0575041173111,
+          "bounds_mm": [
+            192.0,
+            178.0,
+            118.0,
+            198.0,
+            184.0,
+            128.0
+          ],
+          "centre_mm": [
+            194.99999999999997,
+            181.00000000000003,
+            122.99999999999997
+          ]
+        },
+        {
+          "label": "UpperScrew_current_driver_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913534,
+          "bounds_mm": [
+            192.25,
+            178.25,
+            123.53,
+            197.75,
+            183.75,
+            131.73
+          ],
+          "centre_mm": [
+            195.0,
+            181.0,
+            128.86189470985389
+          ]
+        },
+        {
+          "label": "LowerScrew_current_driver_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913546,
+          "bounds_mm": [
+            192.25,
+            178.25,
+            113.8,
+            197.75,
+            183.75,
+            122.0
+          ],
+          "centre_mm": [
+            194.99999999999997,
+            180.99999999999997,
+            116.66810529014612
+          ]
+        },
+        {
+          "label": "Standoff_current_driver_H3",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.057504117311,
+          "bounds_mm": [
+            25.0,
+            31.0,
+            118.0,
+            31.0,
+            37.0,
+            128.0
+          ],
+          "centre_mm": [
+            28.0,
+            34.00000000000001,
+            122.99999999999999
+          ]
+        },
+        {
+          "label": "UpperScrew_current_driver_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913532,
+          "bounds_mm": [
+            25.25,
+            31.25,
+            123.53,
+            30.75,
+            36.75,
+            131.73
+          ],
+          "centre_mm": [
+            28.0,
+            34.00000000000001,
+            128.86189470985386
+          ]
+        },
+        {
+          "label": "LowerScrew_current_driver_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913546,
+          "bounds_mm": [
+            25.25,
+            31.25,
+            113.8,
+            30.75,
+            36.75,
+            122.0
+          ],
+          "centre_mm": [
+            27.99999999999999,
+            33.99999999999999,
+            116.66810529014612
+          ]
+        },
+        {
+          "label": "Standoff_current_driver_H4",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731105,
+          "bounds_mm": [
+            192.0,
+            31.0,
+            118.0,
+            198.0,
+            37.0,
+            128.0
+          ],
+          "centre_mm": [
+            194.99999999999997,
+            33.99999999999999,
+            122.99999999999997
+          ]
+        },
+        {
+          "label": "UpperScrew_current_driver_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913535,
+          "bounds_mm": [
+            192.25,
+            31.25,
+            123.53,
+            197.75,
+            36.75,
+            131.73
+          ],
+          "centre_mm": [
+            195.0,
+            34.00000000000001,
+            128.86189470985389
+          ]
+        },
+        {
+          "label": "LowerScrew_current_driver_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913549,
+          "bounds_mm": [
+            192.25,
+            31.25,
+            113.8,
+            197.75,
+            36.75,
+            122.0
+          ],
+          "centre_mm": [
+            194.99999999999997,
+            33.99999999999999,
+            116.66810529014612
+          ]
+        },
+        {
+          "label": "Tray_current_driver",
+          "category": "tray",
+          "solids": 1,
+          "volume_mm3": 172155.57611200487,
+          "bounds_mm": [
+            18.0,
+            20.0,
+            116.0,
+            330.0,
+            290.0,
+            124.0
+          ],
+          "centre_mm": [
+            174.02484086252844,
+            157.9330803339838,
+            117.08699108293918
+          ]
+        },
+        {
+          "label": "Pull_current_driver",
+          "category": "tray_pull",
+          "solids": 1,
+          "volume_mm3": 4176.0,
+          "bounds_mm": [
+            149.0,
+            11.0,
+            116.0,
+            199.0,
+            20.0,
+            128.0
+          ],
+          "centre_mm": [
+            174.0,
+            15.939655172413794,
+            122.0
+          ]
+        },
+        {
+          "label": "Standoff_monitoring_cell_H1",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731063,
+          "bounds_mm": [
+            391.0,
+            168.0,
+            68.0,
+            397.0,
+            174.0,
+            78.0
+          ],
+          "centre_mm": [
+            394.0,
+            171.0,
+            73.00000000000001
+          ]
+        },
+        {
+          "label": "UpperScrew_monitoring_cell_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913548,
+          "bounds_mm": [
+            391.25,
+            168.25,
+            73.53,
+            396.75,
+            173.75,
+            81.73
+          ],
+          "centre_mm": [
+            393.99999999999994,
+            171.0,
+            78.86189470985386
+          ]
+        },
+        {
+          "label": "LowerScrew_monitoring_cell_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913549,
+          "bounds_mm": [
+            391.25,
+            168.25,
+            63.8,
+            396.75,
+            173.75,
+            72.0
+          ],
+          "centre_mm": [
+            394.0,
+            170.99999999999997,
+            66.66810529014613
+          ]
+        },
+        {
+          "label": "Standoff_monitoring_cell_H2",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731063,
+          "bounds_mm": [
+            503.0,
+            168.0,
+            68.0,
+            509.0,
+            174.0,
+            78.0
+          ],
+          "centre_mm": [
+            505.99999999999994,
+            171.0,
+            73.00000000000001
+          ]
+        },
+        {
+          "label": "UpperScrew_monitoring_cell_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913548,
+          "bounds_mm": [
+            503.25,
+            168.25,
+            73.53,
+            508.75,
+            173.75,
+            81.73
+          ],
+          "centre_mm": [
+            506.00000000000006,
+            171.0,
+            78.86189470985386
+          ]
+        },
+        {
+          "label": "LowerScrew_monitoring_cell_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913549,
+          "bounds_mm": [
+            503.25,
+            168.25,
+            63.8,
+            508.75,
+            173.75,
+            72.0
+          ],
+          "centre_mm": [
+            505.9999999999999,
+            170.99999999999997,
+            66.66810529014613
+          ]
+        },
+        {
+          "label": "Standoff_monitoring_cell_H3",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731054,
+          "bounds_mm": [
+            391.0,
+            31.0,
+            68.0,
+            397.0,
+            37.0,
+            78.0
+          ],
+          "centre_mm": [
+            394.0,
+            34.00000000000001,
+            73.00000000000001
+          ]
+        },
+        {
+          "label": "UpperScrew_monitoring_cell_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913552,
+          "bounds_mm": [
+            391.25,
+            31.25,
+            73.53,
+            396.75,
+            36.75,
+            81.73
+          ],
+          "centre_mm": [
+            394.0,
+            33.99999999999999,
+            78.86189470985387
+          ]
+        },
+        {
+          "label": "LowerScrew_monitoring_cell_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913552,
+          "bounds_mm": [
+            391.25,
+            31.25,
+            63.8,
+            396.75,
+            36.75,
+            72.0
+          ],
+          "centre_mm": [
+            393.99999999999994,
+            33.99999999999999,
+            66.66810529014614
+          ]
+        },
+        {
+          "label": "Standoff_monitoring_cell_H4",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731054,
+          "bounds_mm": [
+            503.0,
+            31.0,
+            68.0,
+            509.0,
+            37.0,
+            78.0
+          ],
+          "centre_mm": [
+            506.00000000000006,
+            34.00000000000001,
+            73.00000000000001
+          ]
+        },
+        {
+          "label": "UpperScrew_monitoring_cell_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913552,
+          "bounds_mm": [
+            503.25,
+            31.25,
+            73.53,
+            508.75,
+            36.75,
+            81.73
+          ],
+          "centre_mm": [
+            506.00000000000006,
+            33.99999999999999,
+            78.86189470985387
+          ]
+        },
+        {
+          "label": "LowerScrew_monitoring_cell_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913552,
+          "bounds_mm": [
+            503.25,
+            31.25,
+            63.8,
+            508.75,
+            36.75,
+            72.0
+          ],
+          "centre_mm": [
+            506.0,
+            33.99999999999999,
+            66.66810529014614
+          ]
+        },
+        {
+          "label": "Tray_monitoring_cell",
+          "category": "tray",
+          "solids": 1,
+          "volume_mm3": 102051.57611200484,
+          "bounds_mm": [
+            380.0,
+            20.0,
+            66.0,
+            565.0,
+            290.0,
+            74.0
+          ],
+          "centre_mm": [
+            472.51508587655917,
+            157.95019700420215,
+            67.08701482464369
+          ]
+        },
+        {
+          "label": "Pull_monitoring_cell",
+          "category": "tray_pull",
+          "solids": 1,
+          "volume_mm3": 4176.0,
+          "bounds_mm": [
+            447.5,
+            11.0,
+            66.0,
+            497.5,
+            20.0,
+            78.0
+          ],
+          "centre_mm": [
+            472.5,
+            15.939655172413794,
+            72.0
+          ]
+        },
+        {
+          "label": "Standoff_monitoring_transport_H1",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731063,
+          "bounds_mm": [
+            391.0,
+            163.0,
+            118.0,
+            397.0,
+            169.0,
+            128.0
+          ],
+          "centre_mm": [
+            394.0,
+            166.00000000000006,
+            122.99999999999999
+          ]
+        },
+        {
+          "label": "UpperScrew_monitoring_transport_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913536,
+          "bounds_mm": [
+            391.25,
+            163.25,
+            123.53,
+            396.75,
+            168.75,
+            131.73
+          ],
+          "centre_mm": [
+            394.00000000000006,
+            165.99999999999997,
+            128.86189470985389
+          ]
+        },
+        {
+          "label": "LowerScrew_monitoring_transport_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913549,
+          "bounds_mm": [
+            391.25,
+            163.25,
+            113.8,
+            396.75,
+            168.75,
+            122.0
+          ],
+          "centre_mm": [
+            394.0,
+            165.99999999999997,
+            116.66810529014612
+          ]
+        },
+        {
+          "label": "Standoff_monitoring_transport_H2",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.0575041173114,
+          "bounds_mm": [
+            508.0,
+            163.0,
+            118.0,
+            514.0,
+            169.0,
+            128.0
+          ],
+          "centre_mm": [
+            511.00000000000006,
+            166.00000000000003,
+            123.0
+          ]
+        },
+        {
+          "label": "UpperScrew_monitoring_transport_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913518,
+          "bounds_mm": [
+            508.25,
+            163.25,
+            123.53,
+            513.75,
+            168.75,
+            131.73
+          ],
+          "centre_mm": [
+            511.0,
+            166.0,
+            128.86189470985389
+          ]
+        },
+        {
+          "label": "LowerScrew_monitoring_transport_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.8994390991353,
+          "bounds_mm": [
+            508.25,
+            163.25,
+            113.8,
+            513.75,
+            168.75,
+            122.0
+          ],
+          "centre_mm": [
+            511.0,
+            166.0,
+            116.66810529014613
+          ]
+        },
+        {
+          "label": "Standoff_monitoring_transport_H3",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731054,
+          "bounds_mm": [
+            391.0,
+            31.0,
+            118.0,
+            397.0,
+            37.0,
+            128.0
+          ],
+          "centre_mm": [
+            394.0,
+            34.00000000000001,
+            123.00000000000001
+          ]
+        },
+        {
+          "label": "UpperScrew_monitoring_transport_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.8994390991354,
+          "bounds_mm": [
+            391.25,
+            31.25,
+            123.53,
+            396.75,
+            36.75,
+            131.73
+          ],
+          "centre_mm": [
+            394.0,
+            34.0,
+            128.86189470985386
+          ]
+        },
+        {
+          "label": "LowerScrew_monitoring_transport_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913552,
+          "bounds_mm": [
+            391.25,
+            31.25,
+            113.8,
+            396.75,
+            36.75,
+            122.0
+          ],
+          "centre_mm": [
+            393.99999999999994,
+            33.99999999999999,
+            116.66810529014612
+          ]
+        },
+        {
+          "label": "Standoff_monitoring_transport_H4",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731134,
+          "bounds_mm": [
+            508.0,
+            31.0,
+            118.0,
+            514.0,
+            37.0,
+            128.0
+          ],
+          "centre_mm": [
+            511.0,
+            34.0,
+            122.99999999999999
+          ]
+        },
+        {
+          "label": "UpperScrew_monitoring_transport_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913521,
+          "bounds_mm": [
+            508.25,
+            31.25,
+            123.53,
+            513.75,
+            36.75,
+            131.73
+          ],
+          "centre_mm": [
+            511.0,
+            34.0,
+            128.86189470985389
+          ]
+        },
+        {
+          "label": "LowerScrew_monitoring_transport_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913532,
+          "bounds_mm": [
+            508.25,
+            31.25,
+            113.8,
+            513.75,
+            36.75,
+            122.0
+          ],
+          "centre_mm": [
+            511.0,
+            34.0,
+            116.66810529014613
+          ]
+        },
+        {
+          "label": "Tray_monitoring_transport",
+          "category": "tray",
+          "solids": 1,
+          "volume_mm3": 102051.57611200484,
+          "bounds_mm": [
+            380.0,
+            20.0,
+            116.0,
+            565.0,
+            290.0,
+            124.0
+          ],
+          "centre_mm": [
+            472.5134096680527,
+            157.95187321270876,
+            117.08701482464375
+          ]
+        },
+        {
+          "label": "Pull_monitoring_transport",
+          "category": "tray_pull",
+          "solids": 1,
+          "volume_mm3": 4176.0,
+          "bounds_mm": [
+            447.5,
+            11.0,
+            116.0,
+            497.5,
+            20.0,
+            128.0
+          ],
+          "centre_mm": [
+            472.5,
+            15.939655172413794,
+            122.0
+          ]
+        },
+        {
+          "label": "Standoff_power_H1",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731105,
+          "bounds_mm": [
+            25.0,
+            208.0,
+            68.0,
+            31.0,
+            214.0,
+            78.0
+          ],
+          "centre_mm": [
+            28.000000000000004,
+            211.0,
+            73.00000000000001
+          ]
+        },
+        {
+          "label": "UpperScrew_power_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913542,
+          "bounds_mm": [
+            25.25,
+            208.25,
+            73.53,
+            30.75,
+            213.75,
+            81.73
+          ],
+          "centre_mm": [
+            28.0,
+            211.00000000000003,
+            78.86189470985386
+          ]
+        },
+        {
+          "label": "LowerScrew_power_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913544,
+          "bounds_mm": [
+            25.25,
+            208.25,
+            63.8,
+            30.75,
+            213.75,
+            72.0
+          ],
+          "centre_mm": [
+            27.999999999999996,
+            210.99999999999997,
+            66.66810529014612
+          ]
+        },
+        {
+          "label": "Standoff_power_H2",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.0575041173111,
+          "bounds_mm": [
+            192.0,
+            208.0,
+            68.0,
+            198.0,
+            214.0,
+            78.0
+          ],
+          "centre_mm": [
+            194.99999999999997,
+            210.99999999999994,
+            72.99999999999997
+          ]
+        },
+        {
+          "label": "UpperScrew_power_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913545,
+          "bounds_mm": [
+            192.25,
+            208.25,
+            73.53,
+            197.75,
+            213.75,
+            81.73
+          ],
+          "centre_mm": [
+            195.00000000000003,
+            211.0,
+            78.86189470985387
+          ]
+        },
+        {
+          "label": "LowerScrew_power_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913546,
+          "bounds_mm": [
+            192.25,
+            208.25,
+            63.8,
+            197.75,
+            213.75,
+            72.0
+          ],
+          "centre_mm": [
+            194.99999999999997,
+            211.0,
+            66.66810529014613
+          ]
+        },
+        {
+          "label": "Standoff_power_H3",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.057504117311,
+          "bounds_mm": [
+            25.0,
+            31.0,
+            68.0,
+            31.0,
+            37.0,
+            78.0
+          ],
+          "centre_mm": [
+            28.0,
+            34.00000000000001,
+            73.00000000000001
+          ]
+        },
+        {
+          "label": "UpperScrew_power_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913545,
+          "bounds_mm": [
+            25.25,
+            31.25,
+            73.53,
+            30.75,
+            36.75,
+            81.73
+          ],
+          "centre_mm": [
+            27.999999999999996,
+            34.0,
+            78.86189470985387
+          ]
+        },
+        {
+          "label": "LowerScrew_power_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913546,
+          "bounds_mm": [
+            25.25,
+            31.25,
+            63.8,
+            30.75,
+            36.75,
+            72.0
+          ],
+          "centre_mm": [
+            27.99999999999999,
+            33.99999999999999,
+            66.66810529014613
+          ]
+        },
+        {
+          "label": "Standoff_power_H4",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731105,
+          "bounds_mm": [
+            192.0,
+            31.0,
+            68.0,
+            198.0,
+            37.0,
+            78.0
+          ],
+          "centre_mm": [
+            194.99999999999997,
+            33.99999999999999,
+            73.0
+          ]
+        },
+        {
+          "label": "UpperScrew_power_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913548,
+          "bounds_mm": [
+            192.25,
+            31.25,
+            73.53,
+            197.75,
+            36.75,
+            81.73
+          ],
+          "centre_mm": [
+            194.99999999999994,
+            34.0,
+            78.86189470985386
+          ]
+        },
+        {
+          "label": "LowerScrew_power_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913549,
+          "bounds_mm": [
+            192.25,
+            31.25,
+            63.8,
+            197.75,
+            36.75,
+            72.0
+          ],
+          "centre_mm": [
+            194.99999999999997,
+            33.99999999999999,
+            66.66810529014613
+          ]
+        },
+        {
+          "label": "Tray_power",
+          "category": "tray",
+          "solids": 1,
+          "volume_mm3": 172155.57611200484,
+          "bounds_mm": [
+            18.0,
+            20.0,
+            66.0,
+            330.0,
+            290.0,
+            74.0
+          ],
+          "centre_mm": [
+            174.02484086252844,
+            157.92711852697695,
+            67.08699108293915
+          ]
+        },
+        {
+          "label": "Pull_power",
+          "category": "tray_pull",
+          "solids": 1,
+          "volume_mm3": 4176.0,
+          "bounds_mm": [
+            149.0,
+            11.0,
+            66.0,
+            199.0,
+            20.0,
+            78.0
+          ],
+          "centre_mm": [
+            174.0,
+            15.939655172413794,
+            72.0
+          ]
+        },
+        {
+          "label": "Standoff_recording_front_end_H1",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731063,
+          "bounds_mm": [
+            391.0,
+            213.0,
+            18.0,
+            397.0,
+            219.0,
+            28.0
+          ],
+          "centre_mm": [
+            394.0,
+            216.00000000000003,
+            23.0
+          ]
+        },
+        {
+          "label": "UpperScrew_recording_front_end_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913546,
+          "bounds_mm": [
+            391.25,
+            213.25,
+            23.53,
+            396.75,
+            218.75,
+            31.73
+          ],
+          "centre_mm": [
+            393.99999999999994,
+            216.0,
+            28.861894709853864
+          ]
+        },
+        {
+          "label": "LowerScrew_recording_front_end_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913545,
+          "bounds_mm": [
+            391.25,
+            213.25,
+            13.8,
+            396.75,
+            218.75,
+            22.0
+          ],
+          "centre_mm": [
+            394.0,
+            216.00000000000003,
+            16.668105290146137
+          ]
+        },
+        {
+          "label": "Standoff_recording_front_end_H2",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731174,
+          "bounds_mm": [
+            538.0,
+            213.0,
+            18.0,
+            544.0,
+            219.0,
+            28.0
+          ],
+          "centre_mm": [
+            541.0000000000001,
+            216.00000000000006,
+            23.000000000000007
+          ]
+        },
+        {
+          "label": "UpperScrew_recording_front_end_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913521,
+          "bounds_mm": [
+            538.25,
+            213.25,
+            23.53,
+            543.75,
+            218.75,
+            31.73
+          ],
+          "centre_mm": [
+            540.9999999999999,
+            215.99999999999997,
+            28.861894709853853
+          ]
+        },
+        {
+          "label": "LowerScrew_recording_front_end_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913518,
+          "bounds_mm": [
+            538.25,
+            213.25,
+            13.8,
+            543.75,
+            218.75,
+            22.0
+          ],
+          "centre_mm": [
+            541.0000000000001,
+            216.00000000000003,
+            16.668105290146144
+          ]
+        },
+        {
+          "label": "Standoff_recording_front_end_H3",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731054,
+          "bounds_mm": [
+            391.0,
+            31.0,
+            18.0,
+            397.0,
+            37.0,
+            28.0
+          ],
+          "centre_mm": [
+            394.0,
+            34.00000000000001,
+            23.000000000000007
+          ]
+        },
+        {
+          "label": "UpperScrew_recording_front_end_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.8994390991355,
+          "bounds_mm": [
+            391.25,
+            31.25,
+            23.53,
+            396.75,
+            36.75,
+            31.73
+          ],
+          "centre_mm": [
+            394.0,
+            34.0,
+            28.861894709853864
+          ]
+        },
+        {
+          "label": "LowerScrew_recording_front_end_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913549,
+          "bounds_mm": [
+            391.25,
+            31.25,
+            13.8,
+            396.75,
+            36.75,
+            22.0
+          ],
+          "centre_mm": [
+            394.0,
+            34.0,
+            16.668105290146137
+          ]
+        },
+        {
+          "label": "Standoff_recording_front_end_H4",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731168,
+          "bounds_mm": [
+            538.0,
+            31.0,
+            18.0,
+            544.0,
+            37.0,
+            28.0
+          ],
+          "centre_mm": [
+            540.9999999999999,
+            33.99999999999999,
+            23.0
+          ]
+        },
+        {
+          "label": "UpperScrew_recording_front_end_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913524,
+          "bounds_mm": [
+            538.25,
+            31.25,
+            23.53,
+            543.75,
+            36.75,
+            31.73
+          ],
+          "centre_mm": [
+            541.0,
+            34.0,
+            28.861894709853853
+          ]
+        },
+        {
+          "label": "LowerScrew_recording_front_end_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913524,
+          "bounds_mm": [
+            538.25,
+            31.25,
+            13.8,
+            543.75,
+            36.75,
+            22.0
+          ],
+          "centre_mm": [
+            541.0,
+            34.0,
+            16.668105290146144
+          ]
+        },
+        {
+          "label": "Tray_recording_front_end",
+          "category": "tray",
+          "solids": 1,
+          "volume_mm3": 102051.57611200484,
+          "bounds_mm": [
+            380.0,
+            20.0,
+            16.0,
+            565.0,
+            290.0,
+            24.0
+          ],
+          "centre_mm": [
+            472.503352417013,
+            157.93511112764295,
+            17.087014824643703
+          ]
+        },
+        {
+          "label": "Pull_recording_front_end",
+          "category": "tray_pull",
+          "solids": 1,
+          "volume_mm3": 4176.0,
+          "bounds_mm": [
+            447.5,
+            11.0,
+            16.0,
+            497.5,
+            20.0,
+            28.0
+          ],
+          "centre_mm": [
+            472.5,
+            15.939655172413794,
+            22.0
+          ]
+        },
+        {
+          "label": "Standoff_supervision_H1",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731134,
+          "bounds_mm": [
+            25.0,
+            273.0,
+            18.0,
+            31.0,
+            279.0,
+            28.0
+          ],
+          "centre_mm": [
+            28.000000000000007,
+            276.00000000000006,
+            23.000000000000007
+          ]
+        },
+        {
+          "label": "UpperScrew_supervision_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913555,
+          "bounds_mm": [
+            25.25,
+            273.25,
+            23.53,
+            30.75,
+            278.75,
+            31.73
+          ],
+          "centre_mm": [
+            27.999999999999996,
+            276.0,
+            28.86189470985386
+          ]
+        },
+        {
+          "label": "LowerScrew_supervision_H1",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913553,
+          "bounds_mm": [
+            25.25,
+            273.25,
+            13.8,
+            30.75,
+            278.75,
+            22.0
+          ],
+          "centre_mm": [
+            27.999999999999996,
+            276.0,
+            16.668105290146144
+          ]
+        },
+        {
+          "label": "Standoff_supervision_H2",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731088,
+          "bounds_mm": [
+            317.0,
+            273.0,
+            18.0,
+            323.0,
+            279.0,
+            28.0
+          ],
+          "centre_mm": [
+            320.0,
+            275.9999999999999,
+            23.0
+          ]
+        },
+        {
+          "label": "UpperScrew_supervision_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.8994390991356,
+          "bounds_mm": [
+            317.25,
+            273.25,
+            23.53,
+            322.75,
+            278.75,
+            31.73
+          ],
+          "centre_mm": [
+            320.0,
+            276.0,
+            28.861894709853857
+          ]
+        },
+        {
+          "label": "LowerScrew_supervision_H2",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913559,
+          "bounds_mm": [
+            317.25,
+            273.25,
+            13.8,
+            322.75,
+            278.75,
+            22.0
+          ],
+          "centre_mm": [
+            320.0,
+            276.0,
+            16.66810529014614
+          ]
+        },
+        {
+          "label": "Standoff_supervision_H3",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.057504117311,
+          "bounds_mm": [
+            25.0,
+            31.0,
+            18.0,
+            31.0,
+            37.0,
+            28.0
+          ],
+          "centre_mm": [
+            28.0,
+            34.00000000000001,
+            23.0
+          ]
+        },
+        {
+          "label": "UpperScrew_supervision_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913544,
+          "bounds_mm": [
+            25.25,
+            31.25,
+            23.53,
+            30.75,
+            36.75,
+            31.73
+          ],
+          "centre_mm": [
+            28.0,
+            34.0,
+            28.861894709853857
+          ]
+        },
+        {
+          "label": "LowerScrew_supervision_H3",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913542,
+          "bounds_mm": [
+            25.25,
+            31.25,
+            13.8,
+            30.75,
+            36.75,
+            22.0
+          ],
+          "centre_mm": [
+            27.999999999999996,
+            34.0,
+            16.66810529014614
+          ]
+        },
+        {
+          "label": "Standoff_supervision_H4",
+          "category": "board_standoff",
+          "solids": 1,
+          "volume_mm3": 212.05750411731054,
+          "bounds_mm": [
+            317.0,
+            31.0,
+            18.0,
+            323.0,
+            37.0,
+            28.0
+          ],
+          "centre_mm": [
+            320.0,
+            34.00000000000001,
+            23.000000000000007
+          ]
+        },
+        {
+          "label": "UpperScrew_supervision_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913549,
+          "bounds_mm": [
+            317.25,
+            31.25,
+            23.53,
+            322.75,
+            36.75,
+            31.73
+          ],
+          "centre_mm": [
+            320.0,
+            34.0,
+            28.861894709853857
+          ]
+        },
+        {
+          "label": "LowerScrew_supervision_H4",
+          "category": "board_screw",
+          "solids": 1,
+          "volume_mm3": 91.89943909913548,
+          "bounds_mm": [
+            317.25,
+            31.25,
+            13.8,
+            322.75,
+            36.75,
+            22.0
+          ],
+          "centre_mm": [
+            320.0,
+            34.00000000000001,
+            16.66810529014614
+          ]
+        },
+        {
+          "label": "Tray_supervision",
+          "category": "tray",
+          "solids": 1,
+          "volume_mm3": 172155.57611200487,
+          "bounds_mm": [
+            18.0,
+            20.0,
+            16.0,
+            330.0,
+            290.0,
+            24.0
+          ],
+          "centre_mm": [
+            173.9999999999999,
+            157.91420127846212,
+            17.086991082939175
+          ]
+        },
+        {
+          "label": "Pull_supervision",
+          "category": "tray_pull",
+          "solids": 1,
+          "volume_mm3": 4176.0,
+          "bounds_mm": [
+            149.0,
+            11.0,
+            16.0,
+            199.0,
+            20.0,
+            28.0
+          ],
+          "centre_mm": [
+            174.0,
+            15.939655172413794,
+            22.0
+          ]
+        },
+        {
+          "label": "PCB_contact_router",
+          "category": "populated_board",
+          "solids": 156,
+          "volume_mm3": 43423.31744904313,
+          "bounds_mm": [
+            24.0,
+            30.0,
+            176.61499999999756,
+            199.0,
+            185.0,
+            188.15500000000245
+          ],
+          "centre_mm": [
+            109.96239805106859,
+            106.61921908043333,
+            178.8679571225151
+          ]
+        },
+        {
+          "label": "PCB_controller_carrier",
+          "category": "populated_board",
+          "solids": 136,
+          "volume_mm3": 37952.214901308944,
+          "bounds_mm": [
+            390.0,
+            30.0,
+            176.61499999999756,
+            545.0,
+            180.0,
+            188.15500000000245
+          ],
+          "centre_mm": [
+            466.5989835257947,
+            104.92228551163286,
+            178.918346259125
+          ]
+        },
+        {
+          "label": "PCB_current_driver",
+          "category": "populated_board",
+          "solids": 165,
+          "volume_mm3": 42900.581233509474,
+          "bounds_mm": [
+            24.0,
+            30.0,
+            126.61499999999756,
+            199.0,
+            185.0,
+            138.15500000000245
+          ],
+          "centre_mm": [
+            110.23890836368076,
+            107.96581142235581,
+            128.83858947810796
+          ]
+        },
+        {
+          "label": "PCB_monitoring_cell",
+          "category": "populated_board",
+          "solids": 72,
+          "volume_mm3": 27516.54291421082,
+          "bounds_mm": [
+            390.0,
+            30.0,
+            76.61499999999755,
+            510.0,
+            175.0,
+            88.15500000000245
+          ],
+          "centre_mm": [
+            449.2513753521204,
+            102.2024326524898,
+            78.84464831678154
+          ]
+        },
+        {
+          "label": "PCB_monitoring_transport",
+          "category": "populated_board",
+          "solids": 61,
+          "volume_mm3": 28403.66417910699,
+          "bounds_mm": [
+            390.0,
+            30.0,
+            126.61499999999756,
+            515.0,
+            170.0,
+            138.15500000000245
+          ],
+          "centre_mm": [
+            452.4885372296377,
+            100.27044135134607,
+            128.9111625840611
+          ]
+        },
+        {
+          "label": "PCB_power",
+          "category": "populated_board",
+          "solids": 208,
+          "volume_mm3": 53733.98721342257,
+          "bounds_mm": [
+            24.0,
+            30.0,
+            76.61499999999755,
+            199.0,
+            215.0,
+            91.215
+          ],
+          "centre_mm": [
+            111.83511406689317,
+            122.16643201430688,
+            79.13063843368079
+          ]
+        },
+        {
+          "label": "PCB_recording_front_end",
+          "category": "populated_board",
+          "solids": 296,
+          "volume_mm3": 46845.62038233079,
+          "bounds_mm": [
+            390.0,
+            30.0,
+            26.614999999997554,
+            545.0,
+            220.0,
+            38.15500000000244
+          ],
+          "centre_mm": [
+            467.83254877306473,
+            124.98398712170547,
+            28.852892561470735
+          ]
+        },
+        {
+          "label": "PCB_supervision",
+          "category": "populated_board",
+          "solids": 574,
+          "volume_mm3": 118758.71754233929,
+          "bounds_mm": [
+            24.0,
+            30.0,
+            26.614999999997554,
+            324.0,
+            280.0,
+            38.15500000000244
+          ],
+          "centre_mm": [
+            172.3634184965686,
+            154.69791437546192,
+            28.839837577307534
+          ]
+        }
+      ],
+      "final_objects": 170,
+      "physical_objects": 170,
+      "step_comparison": {
+        "compared_solids": 1830,
+        "max_volume_error_mm3": 1.6868284546944778e-10,
+        "max_coordinate_error_mm": 9.549694368615746e-12,
+        "coordinate_tolerance_mm": 0.001,
+        "solid_volume_absolute_tolerance_mm3": 0.0001,
+        "solid_volume_relative_tolerance": 1e-06,
+        "face_area_absolute_tolerance_mm2": 0.001,
+        "face_area_relative_tolerance": 1e-05,
+        "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+      },
+      "step_evidence": {
+        "sha256": "74b924bd9544f1361c5aab83804da2bd12cfff4b6a9ec1a919b1d46a8fae02a1",
+        "member": "ATO_reference_assembly.step",
+        "uncompressed_sha256": "57b7729a8f73e807369791934ee8e94463ab574ed1e52c6e51e5649adfa5c54d"
+      },
+      "extra_exports": {
+        "mechanical_step": {
+          "sha256": "adfab80b3b1e7e1b84c08fa17353a9cfe5a83f42942923498357927cf39c909c",
+          "compared_solids": 162,
+          "max_volume_error_mm3": 8.952838470577262e-13,
+          "max_coordinate_error_mm": 2.842170943040401e-14,
+          "coordinate_tolerance_mm": 0.001,
+          "solid_volume_absolute_tolerance_mm3": 0.0001,
+          "solid_volume_relative_tolerance": 1e-06,
+          "face_area_absolute_tolerance_mm2": 0.001,
+          "face_area_relative_tolerance": 1e-05,
+          "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+        },
+        "exploded_step": {
+          "sha256": "3375c3cdafde31a9d93d10ab872d0ba778f9725dc68cdf11fd361e5b33e6dea4",
+          "member": "ATO_reference_exploded.step",
+          "uncompressed_sha256": "5c685747a4524cf102aa36647e72396a404b974e1029fdf9557b992e57ede5e1",
+          "compared_solids": 1830,
+          "max_volume_error_mm3": 4.94765117764473e-10,
+          "max_coordinate_error_mm": 9.606537787476555e-12,
+          "coordinate_tolerance_mm": 0.001,
+          "solid_volume_absolute_tolerance_mm3": 0.0001,
+          "solid_volume_relative_tolerance": 1e-06,
+          "face_area_absolute_tolerance_mm2": 0.001,
+          "face_area_relative_tolerance": 1e-05,
+          "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+        }
+      },
+      "interference": {
+        "physical_pairs_checked": 14365,
+        "exact_BRep_pairs": 248,
+        "explained_engagements": [],
+        "unexplained_positive_volume_intersections": 0
+      },
+      "clearances": [
+        {
+          "a": "PCB_contact_router",
+          "b": "Tray_contact_router",
+          "minimum_mm": 8.0,
+          "measured_mm": 8.615000000000009,
+          "freshly_measured_minimum_pair_mm": 8.615000000000009,
+          "exact_BRep_queries": 156,
+          "AABB_pruned_pairs": 0,
+          "solid_pair_count": 156
+        },
+        {
+          "a": "PCB_controller_carrier",
+          "b": "Tray_controller_carrier",
+          "minimum_mm": 8.0,
+          "measured_mm": 8.615000000000009,
+          "freshly_measured_minimum_pair_mm": 8.615000000000009,
+          "exact_BRep_queries": 136,
+          "AABB_pruned_pairs": 0,
+          "solid_pair_count": 136
+        },
+        {
+          "a": "PCB_current_driver",
+          "b": "Tray_current_driver",
+          "minimum_mm": 8.0,
+          "measured_mm": 8.615000000000009,
+          "freshly_measured_minimum_pair_mm": 8.615000000000009,
+          "exact_BRep_queries": 165,
+          "AABB_pruned_pairs": 0,
+          "solid_pair_count": 165
+        },
+        {
+          "a": "PCB_current_driver",
+          "b": "Tray_contact_router",
+          "minimum_mm": 20,
+          "measured_mm": 27.845,
+          "freshly_measured_minimum_pair_mm": 27.845,
+          "exact_BRep_queries": 7,
+          "AABB_pruned_pairs": 158,
+          "solid_pair_count": 165
+        },
+        {
+          "a": "PCB_monitoring_cell",
+          "b": "Tray_monitoring_cell",
+          "minimum_mm": 8.0,
+          "measured_mm": 8.614999999999995,
+          "freshly_measured_minimum_pair_mm": 8.614999999999995,
+          "exact_BRep_queries": 72,
+          "AABB_pruned_pairs": 0,
+          "solid_pair_count": 72
+        },
+        {
+          "a": "PCB_monitoring_cell",
+          "b": "Tray_monitoring_transport",
+          "minimum_mm": 20,
+          "measured_mm": 27.845,
+          "freshly_measured_minimum_pair_mm": 27.845,
+          "exact_BRep_queries": 9,
+          "AABB_pruned_pairs": 63,
+          "solid_pair_count": 72
+        },
+        {
+          "a": "PCB_monitoring_transport",
+          "b": "Tray_monitoring_transport",
+          "minimum_mm": 8.0,
+          "measured_mm": 8.615000000000009,
+          "freshly_measured_minimum_pair_mm": 8.615000000000009,
+          "exact_BRep_queries": 61,
+          "AABB_pruned_pairs": 0,
+          "solid_pair_count": 61
+        },
+        {
+          "a": "PCB_monitoring_transport",
+          "b": "Tray_controller_carrier",
+          "minimum_mm": 20,
+          "measured_mm": 27.845,
+          "freshly_measured_minimum_pair_mm": 27.845,
+          "exact_BRep_queries": 11,
+          "AABB_pruned_pairs": 50,
+          "solid_pair_count": 61
+        },
+        {
+          "a": "PCB_power",
+          "b": "Tray_power",
+          "minimum_mm": 8.0,
+          "measured_mm": 8.614999999999995,
+          "freshly_measured_minimum_pair_mm": 8.614999999999995,
+          "exact_BRep_queries": 208,
+          "AABB_pruned_pairs": 0,
+          "solid_pair_count": 208
+        },
+        {
+          "a": "PCB_power",
+          "b": "Tray_current_driver",
+          "minimum_mm": 20,
+          "measured_mm": 24.78500000000001,
+          "freshly_measured_minimum_pair_mm": 24.78500000000001,
+          "exact_BRep_queries": 1,
+          "AABB_pruned_pairs": 207,
+          "solid_pair_count": 208
+        },
+        {
+          "a": "PCB_recording_front_end",
+          "b": "Tray_recording_front_end",
+          "minimum_mm": 8.0,
+          "measured_mm": 8.614999999999998,
+          "freshly_measured_minimum_pair_mm": 8.614999999999998,
+          "exact_BRep_queries": 296,
+          "AABB_pruned_pairs": 0,
+          "solid_pair_count": 296
+        },
+        {
+          "a": "PCB_recording_front_end",
+          "b": "Tray_monitoring_cell",
+          "minimum_mm": 20,
+          "measured_mm": 27.845,
+          "freshly_measured_minimum_pair_mm": 27.845,
+          "exact_BRep_queries": 5,
+          "AABB_pruned_pairs": 291,
+          "solid_pair_count": 296
+        },
+        {
+          "a": "PCB_supervision",
+          "b": "Tray_supervision",
+          "minimum_mm": 8.0,
+          "measured_mm": 8.614999999999998,
+          "freshly_measured_minimum_pair_mm": 8.614999999999998,
+          "exact_BRep_queries": 574,
+          "AABB_pruned_pairs": 0,
+          "solid_pair_count": 574
+        },
+        {
+          "a": "PCB_supervision",
+          "b": "Tray_power",
+          "minimum_mm": 20,
+          "measured_mm": 27.845,
+          "freshly_measured_minimum_pair_mm": 27.845,
+          "exact_BRep_queries": 26,
+          "AABB_pruned_pairs": 548,
+          "solid_pair_count": 574
+        }
+      ],
+      "fresh_solid_coverage": [
+        {
+          "label": "PCB_contact_router",
+          "covered_solids": 156,
+          "native_solids": 156,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "PCB_controller_carrier",
+          "covered_solids": 136,
+          "native_solids": 136,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "PCB_current_driver",
+          "covered_solids": 165,
+          "native_solids": 165,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "PCB_monitoring_cell",
+          "covered_solids": 72,
+          "native_solids": 72,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "PCB_monitoring_transport",
+          "covered_solids": 61,
+          "native_solids": 61,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "PCB_power",
+          "covered_solids": 208,
+          "native_solids": 208,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "PCB_recording_front_end",
+          "covered_solids": 296,
+          "native_solids": 296,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "PCB_supervision",
+          "covered_solids": 574,
+          "native_solids": 574,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "Tray_contact_router",
+          "covered_solids": 1,
+          "native_solids": 1,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "Tray_controller_carrier",
+          "covered_solids": 1,
+          "native_solids": 1,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "Tray_current_driver",
+          "covered_solids": 1,
+          "native_solids": 1,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "Tray_monitoring_cell",
+          "covered_solids": 1,
+          "native_solids": 1,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "Tray_monitoring_transport",
+          "covered_solids": 1,
+          "native_solids": 1,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "Tray_power",
+          "covered_solids": 1,
+          "native_solids": 1,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "Tray_recording_front_end",
+          "covered_solids": 1,
+          "native_solids": 1,
+          "non_solid_leaves": []
+        },
+        {
+          "label": "Tray_supervision",
+          "covered_solids": 1,
+          "native_solids": 1,
+          "non_solid_leaves": []
+        }
+      ],
+      "physical_qualification": false,
+      "boards": [
+        {
+          "board": "contact-router",
+          "source_step": "electronics/stage4/integrated-pcb/exports/contact-router/populated.step",
+          "source_sha256": "e7693ec304c93162fffdcfe8ea65f06528c5ac9eb483f30d89f690eccab45982",
+          "source_pcb": "electronics/stage4/integrated-pcb/boards/contact-router/contact_router.kicad_pcb",
+          "source_pcb_sha256_lf": "2bf7bf8b049e4b7e27dca0bed9db88f4efab5a3944f183a16246432411ea137f",
+          "translation_mm": [
+            24,
+            185.0,
+            178
+          ],
+          "compared_solids": 156,
+          "max_volume_error_mm3": 3.410605131648481e-13,
+          "max_coordinate_error_mm": 2.842170943040401e-14,
+          "coordinate_tolerance_mm": 0.001,
+          "solid_volume_absolute_tolerance_mm3": 0.0001,
+          "solid_volume_relative_tolerance": 1e-06,
+          "face_area_absolute_tolerance_mm2": 0.001,
+          "face_area_relative_tolerance": 1e-05,
+          "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+        },
+        {
+          "board": "controller-carrier",
+          "source_step": "electronics/stage4/integrated-pcb/exports/controller-carrier/populated.step",
+          "source_sha256": "45626fe2948522979ba715095dc42c84b8ec5419f2a43474908ec954be5d05f2",
+          "source_pcb": "electronics/stage4/integrated-pcb/boards/controller-carrier/controller_carrier.kicad_pcb",
+          "source_pcb_sha256_lf": "ae600148f4efeadceaf92f42cf3e15e102d68e1beb5b34094e02d2593858e1f8",
+          "translation_mm": [
+            390,
+            180.0,
+            178
+          ],
+          "compared_solids": 136,
+          "max_volume_error_mm3": 1.8189894035458565e-12,
+          "max_coordinate_error_mm": 1.1368683772161603e-13,
+          "coordinate_tolerance_mm": 0.001,
+          "solid_volume_absolute_tolerance_mm3": 0.0001,
+          "solid_volume_relative_tolerance": 1e-06,
+          "face_area_absolute_tolerance_mm2": 0.001,
+          "face_area_relative_tolerance": 1e-05,
+          "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+        },
+        {
+          "board": "current-driver",
+          "source_step": "electronics/stage4/integrated-pcb/exports/current-driver/populated.step",
+          "source_sha256": "5f6d3b11f88a4778a733e75142d26aae26efaebebddc4dd22f601a94b9d29225",
+          "source_pcb": "electronics/stage4/integrated-pcb/boards/current-driver/current_driver.kicad_pcb",
+          "source_pcb_sha256_lf": "03f6d4c71fbb8e683788def698db68f5642ea1a43801e5ed6a282f132385b63b",
+          "translation_mm": [
+            24,
+            185.0,
+            128
+          ],
+          "compared_solids": 165,
+          "max_volume_error_mm3": 3.979039320256561e-13,
+          "max_coordinate_error_mm": 2.842170943040401e-14,
+          "coordinate_tolerance_mm": 0.001,
+          "solid_volume_absolute_tolerance_mm3": 0.0001,
+          "solid_volume_relative_tolerance": 1e-06,
+          "face_area_absolute_tolerance_mm2": 0.001,
+          "face_area_relative_tolerance": 1e-05,
+          "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+        },
+        {
+          "board": "monitoring-cell",
+          "source_step": "electronics/stage4/integrated-pcb/exports/monitoring-cell/populated.step",
+          "source_sha256": "6b619d12130f320e515c1fea625d8bef4ea0f332f04700ac538a6309705c9c49",
+          "source_pcb": "electronics/stage4/integrated-pcb/boards/monitoring-cell/monitoring_cell.kicad_pcb",
+          "source_pcb_sha256_lf": "9cc889e8f67ac0ce60b20f97a3bb0d1fa00452d4ea1f4629b78585c73eb8f242",
+          "translation_mm": [
+            390,
+            175.0,
+            78
+          ],
+          "compared_solids": 72,
+          "max_volume_error_mm3": 2.2737367544323206e-13,
+          "max_coordinate_error_mm": 5.684341886080802e-14,
+          "coordinate_tolerance_mm": 0.001,
+          "solid_volume_absolute_tolerance_mm3": 0.0001,
+          "solid_volume_relative_tolerance": 1e-06,
+          "face_area_absolute_tolerance_mm2": 0.001,
+          "face_area_relative_tolerance": 1e-05,
+          "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+        },
+        {
+          "board": "monitoring-transport",
+          "source_step": "electronics/stage4/integrated-pcb/exports/monitoring-transport/populated.step",
+          "source_sha256": "576a653f0ec784a6ad53c70117b10b0ae27c062a1bb314520b1fe2ec049b28ab",
+          "source_pcb": "electronics/stage4/integrated-pcb/boards/monitoring-transport/monitoring_transport.kicad_pcb",
+          "source_pcb_sha256_lf": "16268c67fa59ad4475e8ada615db5697f6856f6b12ff3882aee91782becfa768",
+          "translation_mm": [
+            390,
+            170.0,
+            128
+          ],
+          "compared_solids": 61,
+          "max_volume_error_mm3": 2.5579538487363607e-13,
+          "max_coordinate_error_mm": 5.684341886080802e-14,
+          "coordinate_tolerance_mm": 0.001,
+          "solid_volume_absolute_tolerance_mm3": 0.0001,
+          "solid_volume_relative_tolerance": 1e-06,
+          "face_area_absolute_tolerance_mm2": 0.001,
+          "face_area_relative_tolerance": 1e-05,
+          "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+        },
+        {
+          "board": "power",
+          "source_step": "electronics/stage4/integrated-pcb/exports/power/populated.step",
+          "source_sha256": "599cf8072a973fb3b5d8fe22dd7e22243dcb98f762ddb69658814c0e0aa44dc7",
+          "source_pcb": "electronics/stage4/integrated-pcb/boards/power/power.kicad_pcb",
+          "source_pcb_sha256_lf": "a91073998ec0cd46c84c4332f69324e9e428571a9307c212443e697c2a7696a5",
+          "translation_mm": [
+            24,
+            215.0,
+            78
+          ],
+          "compared_solids": 208,
+          "max_volume_error_mm3": 3.126388037344441e-13,
+          "max_coordinate_error_mm": 2.842170943040401e-14,
+          "coordinate_tolerance_mm": 0.001,
+          "solid_volume_absolute_tolerance_mm3": 0.0001,
+          "solid_volume_relative_tolerance": 1e-06,
+          "face_area_absolute_tolerance_mm2": 0.001,
+          "face_area_relative_tolerance": 1e-05,
+          "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+        },
+        {
+          "board": "recording-front-end",
+          "source_step": "electronics/stage4/integrated-pcb/exports/recording-front-end/populated.step",
+          "source_sha256": "fbc5878132fde732e141ec2146dca31b9b2bf8581af18ab782bb5430c3975685",
+          "source_pcb": "electronics/stage4/integrated-pcb/boards/recording-front-end/recording_front_end.kicad_pcb",
+          "source_pcb_sha256_lf": "584360f1b286a1b02f8adfa971225be66456e0109c77c9f2d8ab2f57f17c21a9",
+          "translation_mm": [
+            390,
+            220.0,
+            28
+          ],
+          "compared_solids": 296,
+          "max_volume_error_mm3": 3.410605131648481e-13,
+          "max_coordinate_error_mm": 1.1368683772161603e-13,
+          "coordinate_tolerance_mm": 0.001,
+          "solid_volume_absolute_tolerance_mm3": 0.0001,
+          "solid_volume_relative_tolerance": 1e-06,
+          "face_area_absolute_tolerance_mm2": 0.001,
+          "face_area_relative_tolerance": 1e-05,
+          "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+        },
+        {
+          "board": "supervision",
+          "source_step": "electronics/stage4/integrated-pcb/exports/supervision/populated.step",
+          "source_sha256": "d29140bdda3f57c6dd43d621d389aae04ed2edef23fda52a071b5965062a39ad",
+          "source_pcb": "electronics/stage4/integrated-pcb/boards/supervision/supervision.kicad_pcb",
+          "source_pcb_sha256_lf": "877e2d5643182aa68e16e77dbdd7821ee55f36b763745bb6aba7ea7a8afc3440",
+          "translation_mm": [
+            24,
+            280.0,
+            28
+          ],
+          "compared_solids": 574,
+          "max_volume_error_mm3": 9.094947017729282e-13,
+          "max_coordinate_error_mm": 5.684341886080802e-14,
+          "coordinate_tolerance_mm": 0.001,
+          "solid_volume_absolute_tolerance_mm3": 0.0001,
+          "solid_volume_relative_tolerance": 1e-06,
+          "face_area_absolute_tolerance_mm2": 0.001,
+          "face_area_relative_tolerance": 1e-05,
+          "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+        }
+      ],
+      "mounts": [
+        {
+          "board": "contact-router",
+          "reference": "H1",
+          "axis_xy_mm": [
+            28.0,
+            181.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "contact-router",
+          "reference": "H2",
+          "axis_xy_mm": [
+            195.0,
+            181.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "contact-router",
+          "reference": "H3",
+          "axis_xy_mm": [
+            28.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "contact-router",
+          "reference": "H4",
+          "axis_xy_mm": [
+            195.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "controller-carrier",
+          "reference": "H1",
+          "axis_xy_mm": [
+            394.0,
+            176.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "controller-carrier",
+          "reference": "H2",
+          "axis_xy_mm": [
+            541.0,
+            176.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "controller-carrier",
+          "reference": "H3",
+          "axis_xy_mm": [
+            394.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "controller-carrier",
+          "reference": "H4",
+          "axis_xy_mm": [
+            541.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "current-driver",
+          "reference": "H1",
+          "axis_xy_mm": [
+            28.0,
+            181.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "current-driver",
+          "reference": "H2",
+          "axis_xy_mm": [
+            195.0,
+            181.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "current-driver",
+          "reference": "H3",
+          "axis_xy_mm": [
+            28.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "current-driver",
+          "reference": "H4",
+          "axis_xy_mm": [
+            195.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "monitoring-cell",
+          "reference": "H1",
+          "axis_xy_mm": [
+            394.0,
+            171.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "monitoring-cell",
+          "reference": "H2",
+          "axis_xy_mm": [
+            506.0,
+            171.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "monitoring-cell",
+          "reference": "H3",
+          "axis_xy_mm": [
+            394.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "monitoring-cell",
+          "reference": "H4",
+          "axis_xy_mm": [
+            506.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "monitoring-transport",
+          "reference": "H1",
+          "axis_xy_mm": [
+            394.0,
+            166.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "monitoring-transport",
+          "reference": "H2",
+          "axis_xy_mm": [
+            511.0,
+            166.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "monitoring-transport",
+          "reference": "H3",
+          "axis_xy_mm": [
+            394.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "monitoring-transport",
+          "reference": "H4",
+          "axis_xy_mm": [
+            511.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "power",
+          "reference": "H1",
+          "axis_xy_mm": [
+            28.0,
+            211.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "power",
+          "reference": "H2",
+          "axis_xy_mm": [
+            195.0,
+            211.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "power",
+          "reference": "H3",
+          "axis_xy_mm": [
+            28.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "power",
+          "reference": "H4",
+          "axis_xy_mm": [
+            195.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "recording-front-end",
+          "reference": "H1",
+          "axis_xy_mm": [
+            394.0,
+            216.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "recording-front-end",
+          "reference": "H2",
+          "axis_xy_mm": [
+            541.0,
+            216.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "recording-front-end",
+          "reference": "H3",
+          "axis_xy_mm": [
+            394.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "recording-front-end",
+          "reference": "H4",
+          "axis_xy_mm": [
+            541.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "supervision",
+          "reference": "H1",
+          "axis_xy_mm": [
+            28.0,
+            276.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "supervision",
+          "reference": "H2",
+          "axis_xy_mm": [
+            320.0,
+            276.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "supervision",
+          "reference": "H3",
+          "axis_xy_mm": [
+            28.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        },
+        {
+          "board": "supervision",
+          "reference": "H4",
+          "axis_xy_mm": [
+            320.0,
+            34.0
+          ],
+          "drilled_diameter_mm": 3.2,
+          "standoff_seated": true,
+          "shaft_to_board_radial_allowance_mm": 0.15000000000000013
+        }
+      ],
+      "case_envelope_including_feet_mm": [
+        600.0,
+        310.0,
+        240.0
+      ]
+    }
+  },
+  "passed": true,
+  "evidence_reuse": {
+    "method": "Four actual successful independent source/export phases plus separately completed exact solid-pair clearance inspection; fresh native validity, full solid coverage, each nearest-pair witness and all material pairs",
+    "backend": {
+      "path": "scripts/inspect_stage5_native.py",
+      "sha256_lf": "2bf92060c1df3039f024cf7c70a0ca62a7ffcd455739eccbf28504ab763f8a49",
+      "archived_source": "provenance/stage5-inspector-sources/2bf92060c1df3039f024cf7c70a0ca62a7ffcd455739eccbf28504ab763f8a49.py.txt"
+    },
+    "completed_phases": [
+      {
+        "phase": "native-specific",
+        "receipt": "provenance/stage5-reference-phases/reference-native-specific.json",
+        "sha256": "1576dd9ec56b98b14110fd2204aa94b0cc5c9474844d8ad5b0eee10aa9d85066"
+      },
+      {
+        "phase": "nominal-step",
+        "receipt": "provenance/stage5-reference-phases/reference-nominal-step.json",
+        "sha256": "c73395f5d84581ea0bc38e66f6f67d5ae590928330e86dcd9b8483b5307b6866"
+      },
+      {
+        "phase": "mechanical-step",
+        "receipt": "provenance/stage5-reference-phases/reference-mechanical-step.json",
+        "sha256": "d1d016181fce873108d597ba4eda2f6df0a88350d8548e16ed05e20ae2ad26e4"
+      },
+      {
+        "phase": "exploded-step",
+        "receipt": "provenance/stage5-reference-phases/reference-exploded-step.json",
+        "sha256": "f799f88eb01c07f54d7ba2a09d75d9289ab05ef84c990f3a85d79ca09c9bc99d"
+      }
+    ],
+    "clearance": {
+      "manifest": "provenance/stage5-reference-clearance/manifest.json",
+      "manifest_sha256": "026a72f04c9ec5a530ca20190409c20b085b3070d50852d3afab1a065a8bc2cb",
+      "result_path": "provenance/stage5-reference-clearance/raw-results.json",
+      "result_sha256": "e2eed1c565eb3420c04c8a28ed02d814996668c32b6f31b19ba53ed181674005"
+    }
+  }
+}

@@ -1,0 +1,4769 @@
+{
+  "schema": "ato.stage5.independent-native-inspection.v1",
+  "scope": "Nominal digital geometry; no fabrication, anatomy, hermetic or thermal qualification",
+  "FreeCAD_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "inspector_sha256_lf": "09027f6659e8b585d2433e97415ddd64e32a4c770cccfb3c2f6853e32685307e",
+  "packages": {
+    "future": {
+      "contract": "cad/stage5/future-interface/contract.json",
+      "contract_canonical_sha256": "5fe97fbbecb15dbe415f950b0362bd098c2e776f5f3419ae7492fe5baa5c5fcf",
+      "native": "cad/stage5/future-interface/ATO_future_interface.FCStd",
+      "native_sha256": "b148467eac2c00497052cd0e4f5290d8ea1290199ef06559fb583aaac3b5499c",
+      "step": "cad/stage5/future-interface/ATO_future_interface.step",
+      "step_sha256": "5ab3f5dc211af366afbfa668ae5d59eb0be75a1bd99327b2e90f09323a4ae7f1",
+      "parts": [
+        {
+          "label": "P01 | Ti ferrule | REC_01",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 2.0106192982974687,
+          "bounds_mm": [
+            3.6,
+            46.0,
+            4.1,
+            5.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            4.499999999999999,
+            47.0,
+            4.999999999999999
+          ]
+        },
+        {
+          "label": "P01 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 2.9373891311064555,
+          "bounds_mm": [
+            3.8,
+            46.0,
+            4.3,
+            5.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            4.500000000000001,
+            47.00000000000001,
+            5.0
+          ]
+        },
+        {
+          "label": "P01 | REC_01 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161683,
+          "bounds_mm": [
+            4.35,
+            46.3,
+            4.85,
+            4.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            4.500000000000001,
+            52.90000000000001,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P01 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810283,
+          "bounds_mm": [
+            4.22,
+            58.2,
+            4.72,
+            4.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            4.499999999999999,
+            59.636330890572594,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P01 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.3913357654469314,
+          "bounds_mm": [
+            4.465,
+            61.0,
+            4.965,
+            9.035000000000007,
+            162.035,
+            5.3
+          ],
+          "centre_mm": [
+            8.10637415012986,
+            111.53305531316406,
+            5.000438011909684
+          ]
+        },
+        {
+          "label": "P01 | distal REC_01",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            8.0,
+            161.0,
+            5.3,
+            10.0,
+            163.0,
+            5.5
+          ],
+          "centre_mm": [
+            8.999999999999998,
+            162.0,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P02 | Ti ferrule | REC_02",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784828,
+          "bounds_mm": [
+            6.6,
+            46.8,
+            4.1,
+            8.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            7.5,
+            47.40000000000001,
+            5.0
+          ]
+        },
+        {
+          "label": "P02 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638785,
+          "bounds_mm": [
+            6.8,
+            46.8,
+            4.3,
+            8.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            7.500000000000002,
+            47.39999999999999,
+            5.0
+          ]
+        },
+        {
+          "label": "P02 | REC_02 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161683,
+          "bounds_mm": [
+            7.35,
+            46.3,
+            4.85,
+            7.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            7.499999999999999,
+            52.90000000000001,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P02 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810283,
+          "bounds_mm": [
+            7.22,
+            58.2,
+            4.72,
+            7.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            7.5,
+            59.636330890572594,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P02 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.40360343051211034,
+          "bounds_mm": [
+            7.465,
+            61.0,
+            4.965,
+            9.38794117647063,
+            165.535,
+            5.3
+          ],
+          "centre_mm": [
+            8.98535042155614,
+            113.38303404872754,
+            5.000424699028059
+          ]
+        },
+        {
+          "label": "P02 | distal REC_02",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            8.0,
+            164.5,
+            5.3,
+            10.0,
+            166.5,
+            5.5
+          ],
+          "centre_mm": [
+            8.999999999999998,
+            165.5,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P03 | Ti ferrule | REC_03",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784828,
+          "bounds_mm": [
+            9.6,
+            46.8,
+            4.1,
+            11.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            10.500000000000002,
+            47.40000000000001,
+            5.000000000000002
+          ]
+        },
+        {
+          "label": "P03 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638785,
+          "bounds_mm": [
+            9.8,
+            46.8,
+            4.3,
+            11.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            10.5,
+            47.39999999999999,
+            5.0
+          ]
+        },
+        {
+          "label": "P03 | REC_03 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.933053018116168,
+          "bounds_mm": [
+            10.35,
+            46.3,
+            4.85,
+            10.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            10.500000000000002,
+            52.900000000000006,
+            5.0
+          ]
+        },
+        {
+          "label": "P03 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810285,
+          "bounds_mm": [
+            10.22,
+            58.2,
+            4.72,
+            10.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            10.5,
+            59.6363308905726,
+            5.0
+          ]
+        },
+        {
+          "label": "P03 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.41692101634440704,
+          "bounds_mm": [
+            8.965,
+            61.0,
+            4.965,
+            10.535,
+            169.035,
+            5.3
+          ],
+          "centre_mm": [
+            9.814665969687242,
+            115.15586887591294,
+            5.000411132858481
+          ]
+        },
+        {
+          "label": "P03 | distal REC_03",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            8.0,
+            168.0,
+            5.3,
+            10.0,
+            170.0,
+            5.5
+          ],
+          "centre_mm": [
+            8.999999999999998,
+            168.99999999999997,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P04 | Ti ferrule | REC_04",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784828,
+          "bounds_mm": [
+            12.6,
+            46.8,
+            4.1,
+            14.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            13.500000000000002,
+            47.40000000000001,
+            5.000000000000002
+          ]
+        },
+        {
+          "label": "P04 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638785,
+          "bounds_mm": [
+            12.8,
+            46.8,
+            4.3,
+            14.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            13.500000000000002,
+            47.39999999999999,
+            5.0
+          ]
+        },
+        {
+          "label": "P04 | REC_04 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.933053018116168,
+          "bounds_mm": [
+            13.35,
+            46.3,
+            4.85,
+            13.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            13.499999999999998,
+            52.900000000000006,
+            5.0
+          ]
+        },
+        {
+          "label": "P04 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810285,
+          "bounds_mm": [
+            13.22,
+            58.2,
+            4.72,
+            13.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            13.5,
+            59.6363308905726,
+            5.0
+          ]
+        },
+        {
+          "label": "P04 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.4312780517600892,
+          "bounds_mm": [
+            8.964999999999996,
+            61.0,
+            4.965,
+            13.535,
+            172.535,
+            5.3
+          ],
+          "centre_mm": [
+            10.604925104887327,
+            116.84363167081119,
+            5.000397446291575
+          ]
+        },
+        {
+          "label": "P04 | distal REC_04",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            8.0,
+            171.5,
+            5.3,
+            10.0,
+            173.5,
+            5.5
+          ],
+          "centre_mm": [
+            8.999999999999998,
+            172.49999999999997,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P05 | Ti ferrule | REC_05",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784832,
+          "bounds_mm": [
+            15.6,
+            46.8,
+            4.1,
+            17.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            16.499999999999993,
+            47.400000000000006,
+            5.0
+          ]
+        },
+        {
+          "label": "P05 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638787,
+          "bounds_mm": [
+            15.8,
+            46.8,
+            4.3,
+            17.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            16.5,
+            47.4,
+            5.0
+          ]
+        },
+        {
+          "label": "P05 | REC_05 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            16.35,
+            46.3,
+            4.85,
+            16.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            16.5,
+            52.900000000000006,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P05 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            16.22,
+            58.2,
+            4.72,
+            16.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            16.5,
+            59.636330890572616,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P05 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.4466458413499473,
+          "bounds_mm": [
+            8.964999999999984,
+            61.0,
+            4.965,
+            16.535,
+            176.035,
+            5.3
+          ],
+          "centre_mm": [
+            11.365913716689784,
+            118.4444946411212,
+            5.000383771012669
+          ]
+        },
+        {
+          "label": "P05 | distal REC_05",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            8.0,
+            175.0,
+            5.3,
+            10.0,
+            177.0,
+            5.5
+          ],
+          "centre_mm": [
+            8.999999999999998,
+            176.0,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P06 | Ti ferrule | REC_06",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784846,
+          "bounds_mm": [
+            18.6,
+            46.8,
+            4.1,
+            20.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            19.50000000000001,
+            47.40000000000002,
+            5.000000000000003
+          ]
+        },
+        {
+          "label": "P06 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            18.8,
+            46.8,
+            4.3,
+            20.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            19.5,
+            47.4,
+            5.0
+          ]
+        },
+        {
+          "label": "P06 | REC_06 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            19.35,
+            46.3,
+            4.85,
+            19.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            19.5,
+            52.900000000000006,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P06 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            19.22,
+            58.2,
+            4.72,
+            19.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            19.5,
+            59.636330890572616,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P06 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.46297059583890254,
+          "bounds_mm": [
+            8.964999999999991,
+            61.0,
+            4.965,
+            19.535,
+            179.535,
+            5.3
+          ],
+          "centre_mm": [
+            12.106178817358035,
+            119.96094478984912,
+            5.000370238647922
+          ]
+        },
+        {
+          "label": "P06 | distal REC_06",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            8.0,
+            178.5,
+            5.3,
+            10.0,
+            180.5,
+            5.5
+          ],
+          "centre_mm": [
+            8.999999999999998,
+            179.5,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P07 | Ti ferrule | REC_07",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784846,
+          "bounds_mm": [
+            21.6,
+            46.8,
+            4.1,
+            23.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            22.50000000000001,
+            47.40000000000002,
+            5.000000000000003
+          ]
+        },
+        {
+          "label": "P07 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            21.8,
+            46.8,
+            4.3,
+            23.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            22.499999999999996,
+            47.4,
+            5.0
+          ]
+        },
+        {
+          "label": "P07 | REC_07 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            22.35,
+            46.3,
+            4.85,
+            22.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            22.500000000000004,
+            52.900000000000006,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P07 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            22.22,
+            58.2,
+            4.72,
+            22.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            22.5,
+            59.636330890572616,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P07 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.48017854289286993,
+          "bounds_mm": [
+            8.965,
+            61.0,
+            4.965,
+            22.535,
+            183.035,
+            5.3
+          ],
+          "centre_mm": [
+            12.832814835287945,
+            121.39863758871888,
+            5.000356970325505
+          ]
+        },
+        {
+          "label": "P07 | distal REC_07",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            8.0,
+            182.0,
+            5.3,
+            10.0,
+            184.0,
+            5.5
+          ],
+          "centre_mm": [
+            8.999999999999998,
+            182.99999999999997,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P08 | Ti ferrule | REC_08",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784846,
+          "bounds_mm": [
+            24.6,
+            46.8,
+            4.1,
+            26.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            25.500000000000007,
+            47.40000000000002,
+            5.000000000000003
+          ]
+        },
+        {
+          "label": "P08 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            24.8,
+            46.8,
+            4.3,
+            26.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            25.5,
+            47.4,
+            5.0
+          ]
+        },
+        {
+          "label": "P08 | REC_08 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            25.35,
+            46.3,
+            4.85,
+            25.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            25.499999999999996,
+            52.900000000000006,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P08 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            25.22,
+            58.2,
+            4.72,
+            25.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            25.5,
+            59.636330890572616,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P08 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.4981839336720154,
+          "bounds_mm": [
+            8.964999999999982,
+            61.0,
+            4.965,
+            25.535,
+            186.535,
+            5.3
+          ],
+          "centre_mm": [
+            13.551433139467491,
+            122.765231704667,
+            5.0003440684707625
+          ]
+        },
+        {
+          "label": "P08 | distal REC_08",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            8.0,
+            185.5,
+            5.3,
+            10.0,
+            187.5,
+            5.5
+          ],
+          "centre_mm": [
+            8.999999999999998,
+            186.49999999999997,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P09 | Ti ferrule | REC_09",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784846,
+          "bounds_mm": [
+            27.6,
+            46.8,
+            4.1,
+            29.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            28.500000000000007,
+            47.40000000000002,
+            5.000000000000003
+          ]
+        },
+        {
+          "label": "P09 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            27.8,
+            46.8,
+            4.3,
+            29.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            28.5,
+            47.4,
+            5.0
+          ]
+        },
+        {
+          "label": "P09 | REC_09 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            28.35,
+            46.3,
+            4.85,
+            28.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            28.5,
+            52.900000000000006,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P09 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            28.22,
+            58.2,
+            4.72,
+            28.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            28.5,
+            59.636330890572616,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P09 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5168967395920651,
+          "bounds_mm": [
+            8.96499999999996,
+            61.0,
+            4.965,
+            28.535,
+            190.035,
+            5.3
+          ],
+          "centre_mm": [
+            14.266276271631497,
+            124.06930437423325,
+            5.000331612198402
+          ]
+        },
+        {
+          "label": "P09 | distal REC_09",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            8.0,
+            189.0,
+            5.3,
+            10.0,
+            191.0,
+            5.5
+          ],
+          "centre_mm": [
+            8.999999999999998,
+            189.99999999999997,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P10 | Ti ferrule | REC_10",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784846,
+          "bounds_mm": [
+            30.6,
+            46.8,
+            4.1,
+            32.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            31.500000000000004,
+            47.399999999999984,
+            5.000000000000003
+          ]
+        },
+        {
+          "label": "P10 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            30.8,
+            46.8,
+            4.3,
+            32.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            31.5,
+            47.4,
+            5.0
+          ]
+        },
+        {
+          "label": "P10 | REC_10 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            31.35,
+            46.3,
+            4.85,
+            31.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            31.5,
+            52.900000000000006,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P10 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            31.22,
+            58.2,
+            4.72,
+            31.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            31.500000000000004,
+            59.636330890572616,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P10 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5226918964503119,
+          "bounds_mm": [
+            12.141470588235293,
+            61.0,
+            4.965,
+            31.535,
+            190.035,
+            5.3
+          ],
+          "centre_mm": [
+            15.816991882276344,
+            123.5917891285895,
+            5.000327935815166
+          ]
+        },
+        {
+          "label": "P10 | distal REC_10",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            14.0,
+            189.0,
+            5.3,
+            16.0,
+            191.0,
+            5.5
+          ],
+          "centre_mm": [
+            14.999999999999998,
+            189.99999999999997,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P11 | Ti ferrule | REC_11",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.206371578978484,
+          "bounds_mm": [
+            33.6,
+            46.8,
+            4.1,
+            35.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            34.50000000000002,
+            47.4,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P11 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            33.8,
+            46.8,
+            4.3,
+            35.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            34.5,
+            47.4,
+            5.0
+          ]
+        },
+        {
+          "label": "P11 | REC_11 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161705,
+          "bounds_mm": [
+            34.35,
+            46.3,
+            4.85,
+            34.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            34.50000000000001,
+            52.900000000000006,
+            4.999999999999999
+          ]
+        },
+        {
+          "label": "P11 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810292,
+          "bounds_mm": [
+            34.22,
+            58.2,
+            4.72,
+            34.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            34.5,
+            59.6363308905726,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P11 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5154872678949538,
+          "bounds_mm": [
+            12.494411764705882,
+            61.0,
+            4.965,
+            34.535,
+            186.535,
+            5.3
+          ],
+          "centre_mm": [
+            16.738625855319135,
+            121.36329958609468,
+            5.000332519450256
+          ]
+        },
+        {
+          "label": "P11 | distal REC_11",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            14.0,
+            185.5,
+            5.3,
+            16.0,
+            187.5,
+            5.5
+          ],
+          "centre_mm": [
+            14.999999999999998,
+            186.49999999999997,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P12 | Ti ferrule | REC_12",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.206371578978484,
+          "bounds_mm": [
+            36.6,
+            46.8,
+            4.1,
+            38.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            37.49999999999998,
+            47.4,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P12 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            36.8,
+            46.8,
+            4.3,
+            38.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            37.5,
+            47.4,
+            5.0
+          ]
+        },
+        {
+          "label": "P12 | REC_12 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161705,
+          "bounds_mm": [
+            37.35,
+            46.3,
+            4.85,
+            37.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            37.5,
+            52.900000000000006,
+            4.999999999999999
+          ]
+        },
+        {
+          "label": "P12 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810292,
+          "bounds_mm": [
+            37.22,
+            58.2,
+            4.72,
+            37.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            37.5,
+            59.6363308905726,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P12 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5087458938325534,
+          "bounds_mm": [
+            12.84735294117647,
+            61.0,
+            4.965,
+            37.535,
+            183.035,
+            5.3
+          ],
+          "centre_mm": [
+            17.725554639448223,
+            119.13015397821738,
+            5.000336925947897
+          ]
+        },
+        {
+          "label": "P12 | distal REC_12",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            14.0,
+            182.0,
+            5.3,
+            16.0,
+            184.0,
+            5.5
+          ],
+          "centre_mm": [
+            15.0,
+            182.99999999999997,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P13 | Ti ferrule | REC_13",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.206371578978484,
+          "bounds_mm": [
+            39.6,
+            46.8,
+            4.1,
+            41.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            40.49999999999999,
+            47.4,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P13 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            39.8,
+            46.8,
+            4.3,
+            41.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            40.5,
+            47.4,
+            5.0
+          ]
+        },
+        {
+          "label": "P13 | REC_13 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161705,
+          "bounds_mm": [
+            40.35,
+            46.3,
+            4.85,
+            40.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            40.5,
+            52.900000000000006,
+            4.999999999999999
+          ]
+        },
+        {
+          "label": "P13 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810292,
+          "bounds_mm": [
+            40.22,
+            58.2,
+            4.72,
+            40.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            40.49999999999999,
+            59.6363308905726,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P13 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5024028659080818,
+          "bounds_mm": [
+            13.200294117647058,
+            61.0,
+            4.965,
+            40.535,
+            179.535,
+            5.3
+          ],
+          "centre_mm": [
+            18.781261813682615,
+            116.90300436317541,
+            5.000341180063174
+          ]
+        },
+        {
+          "label": "P13 | distal REC_13",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            14.0,
+            178.5,
+            5.3,
+            16.0,
+            180.5,
+            5.5
+          ],
+          "centre_mm": [
+            15.0,
+            179.5,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P14 | Ti ferrule | REC_14",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.206371578978484,
+          "bounds_mm": [
+            42.6,
+            46.8,
+            4.1,
+            44.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            43.49999999999999,
+            47.4,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P14 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            42.8,
+            46.8,
+            4.3,
+            44.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            43.49999999999999,
+            47.4,
+            5.0
+          ]
+        },
+        {
+          "label": "P14 | REC_14 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161705,
+          "bounds_mm": [
+            43.35,
+            46.3,
+            4.85,
+            43.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            43.5,
+            52.900000000000006,
+            4.999999999999999
+          ]
+        },
+        {
+          "label": "P14 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810292,
+          "bounds_mm": [
+            43.22,
+            58.2,
+            4.72,
+            43.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            43.49999999999999,
+            59.6363308905726,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P14 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.49640219703285093,
+          "bounds_mm": [
+            13.553235294117647,
+            61.0,
+            4.965,
+            43.535,
+            176.035,
+            5.3
+          ],
+          "centre_mm": [
+            19.908891270727793,
+            114.69128597950213,
+            5.000345304655297
+          ]
+        },
+        {
+          "label": "P14 | distal REC_14",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            14.0,
+            175.0,
+            5.3,
+            16.0,
+            177.0,
+            5.5
+          ],
+          "centre_mm": [
+            15.0,
+            176.0,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P15 | Ti ferrule | REC_15",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.206371578978484,
+          "bounds_mm": [
+            45.6,
+            46.8,
+            4.1,
+            47.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            46.5,
+            47.4,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P15 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            45.8,
+            46.8,
+            4.3,
+            47.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            46.5,
+            47.4,
+            5.0
+          ]
+        },
+        {
+          "label": "P15 | REC_15 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161705,
+          "bounds_mm": [
+            46.35,
+            46.3,
+            4.85,
+            46.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            46.49999999999999,
+            52.900000000000006,
+            4.999999999999999
+          ]
+        },
+        {
+          "label": "P15 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810292,
+          "bounds_mm": [
+            46.22,
+            58.2,
+            4.72,
+            46.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            46.5,
+            59.6363308905726,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P15 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.4906963152166321,
+          "bounds_mm": [
+            13.906176470588232,
+            61.0,
+            4.965,
+            46.535,
+            172.535,
+            5.3
+          ],
+          "centre_mm": [
+            21.111321495583837,
+            112.50333707723799,
+            5.000349320201785
+          ]
+        },
+        {
+          "label": "P15 | distal REC_15",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            14.0,
+            171.5,
+            5.3,
+            16.0,
+            173.5,
+            5.5
+          ],
+          "centre_mm": [
+            14.999999999999998,
+            172.49999999999997,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P16 | Ti ferrule | REC_16",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.206371578978484,
+          "bounds_mm": [
+            48.6,
+            46.8,
+            4.1,
+            50.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            49.5,
+            47.4,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P16 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            48.8,
+            46.8,
+            4.3,
+            50.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            49.5,
+            47.4,
+            5.0
+          ]
+        },
+        {
+          "label": "P16 | REC_16 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161705,
+          "bounds_mm": [
+            49.35,
+            46.3,
+            4.85,
+            49.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            49.5,
+            52.900000000000006,
+            4.999999999999999
+          ]
+        },
+        {
+          "label": "P16 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810292,
+          "bounds_mm": [
+            49.22,
+            58.2,
+            4.72,
+            49.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            49.5,
+            59.6363308905726,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P16 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.4852456099110618,
+          "bounds_mm": [
+            14.259117647058824,
+            61.0,
+            4.965,
+            49.535,
+            169.035,
+            5.3
+          ],
+          "centre_mm": [
+            22.39122029082549,
+            110.34658441563039,
+            5.000353244368561
+          ]
+        },
+        {
+          "label": "P16 | distal REC_16",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            14.0,
+            168.0,
+            5.3,
+            16.0,
+            170.0,
+            5.5
+          ],
+          "centre_mm": [
+            15.0,
+            168.99999999999997,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P17 | Ti ferrule | REC_REFERENCE",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.206371578978484,
+          "bounds_mm": [
+            51.6,
+            46.8,
+            4.1,
+            53.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            52.50000000000001,
+            47.4,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P17 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            51.8,
+            46.8,
+            4.3,
+            53.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            52.5,
+            47.4,
+            5.0
+          ]
+        },
+        {
+          "label": "P17 | REC_REFERENCE feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161705,
+          "bounds_mm": [
+            52.35,
+            46.3,
+            4.85,
+            52.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            52.5,
+            52.900000000000006,
+            4.999999999999999
+          ]
+        },
+        {
+          "label": "P17 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810292,
+          "bounds_mm": [
+            52.22,
+            58.2,
+            4.72,
+            52.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            52.5,
+            59.6363308905726,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P17 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.48001917117953713,
+          "bounds_mm": [
+            14.612058823529413,
+            61.0,
+            4.965,
+            52.535,
+            165.535,
+            5.3
+          ],
+          "centre_mm": [
+            23.751056118531057,
+            108.22788066986013,
+            5.000357090770091
+          ]
+        },
+        {
+          "label": "P17 | distal REC_REFERENCE",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            14.0,
+            164.5,
+            5.3,
+            16.0,
+            166.5,
+            5.5
+          ],
+          "centre_mm": [
+            15.0,
+            165.5,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P18 | Ti ferrule | BODY_BIAS",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 2.0106192982974673,
+          "bounds_mm": [
+            54.6,
+            46.0,
+            4.1,
+            56.4,
+            48.0,
+            5.9
+          ],
+          "centre_mm": [
+            55.5,
+            47.0,
+            5.0
+          ]
+        },
+        {
+          "label": "P18 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 2.937389131106456,
+          "bounds_mm": [
+            54.8,
+            46.0,
+            4.3,
+            56.2,
+            48.0,
+            5.7
+          ],
+          "centre_mm": [
+            55.50000000000001,
+            47.0,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P18 | BODY_BIAS feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161705,
+          "bounds_mm": [
+            55.35,
+            46.3,
+            4.85,
+            55.65,
+            59.5,
+            5.15
+          ],
+          "centre_mm": [
+            55.5,
+            52.900000000000006,
+            4.999999999999999
+          ]
+        },
+        {
+          "label": "P18 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810292,
+          "bounds_mm": [
+            55.22,
+            58.2,
+            4.72,
+            55.78,
+            61.0,
+            5.28
+          ],
+          "centre_mm": [
+            55.49999999999999,
+            59.6363308905726,
+            5.000000000000001
+          ]
+        },
+        {
+          "label": "P18 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.4750045383033018,
+          "bounds_mm": [
+            14.965,
+            61.0,
+            4.965,
+            55.535,
+            162.035,
+            5.3
+          ],
+          "centre_mm": [
+            25.19287499558152,
+            106.15486930912678,
+            5.00036085987676
+          ]
+        },
+        {
+          "label": "P18 | distal BODY_BIAS",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.7789690200129552,
+          "bounds_mm": [
+            14.0,
+            161.0,
+            5.3,
+            16.0,
+            163.0,
+            5.5
+          ],
+          "centre_mm": [
+            15.0,
+            162.0,
+            5.3999999999999995
+          ]
+        },
+        {
+          "label": "P19 | Ti ferrule | STIM_01",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 2.0106192982974678,
+          "bounds_mm": [
+            3.6,
+            46.0,
+            8.1,
+            5.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            4.500000000000001,
+            47.00000000000001,
+            9.000000000000002
+          ]
+        },
+        {
+          "label": "P19 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 2.9373891311064555,
+          "bounds_mm": [
+            3.8,
+            46.0,
+            8.3,
+            5.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            4.5,
+            47.00000000000001,
+            9.0
+          ]
+        },
+        {
+          "label": "P19 | STIM_01 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161676,
+          "bounds_mm": [
+            4.35,
+            46.3,
+            8.85,
+            4.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            4.5,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P19 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810283,
+          "bounds_mm": [
+            4.22,
+            58.2,
+            8.72,
+            4.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            4.499999999999999,
+            59.6363308905726,
+            8.999999999999998
+          ]
+        },
+        {
+          "label": "P19 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.47713347634178543,
+          "bounds_mm": [
+            4.465,
+            61.0,
+            8.965,
+            44.21000000000001,
+            163.035,
+            9.5
+          ],
+          "centre_mm": [
+            34.32860314690985,
+            106.86377217113193,
+            9.00100451288563
+          ]
+        },
+        {
+          "label": "P19 | distal STIM_01",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129584,
+          "bounds_mm": [
+            42.0,
+            161.5,
+            9.5,
+            45.0,
+            164.5,
+            9.7
+          ],
+          "centre_mm": [
+            43.5,
+            163.0,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P20 | Ti ferrule | STIM_02",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784835,
+          "bounds_mm": [
+            6.6,
+            46.8,
+            8.1,
+            8.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            7.5,
+            47.40000000000001,
+            9.000000000000004
+          ]
+        },
+        {
+          "label": "P20 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.762433478663878,
+          "bounds_mm": [
+            6.8,
+            46.8,
+            8.3,
+            8.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            7.499999999999999,
+            47.399999999999984,
+            8.999999999999998
+          ]
+        },
+        {
+          "label": "P20 | STIM_02 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161676,
+          "bounds_mm": [
+            7.35,
+            46.3,
+            8.85,
+            7.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            7.5,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P20 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810283,
+          "bounds_mm": [
+            7.22,
+            58.2,
+            8.72,
+            7.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            7.499999999999998,
+            59.6363308905726,
+            8.999999999999998
+          ]
+        },
+        {
+          "label": "P20 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.486789493620238,
+          "bounds_mm": [
+            7.465,
+            61.0,
+            8.965,
+            44.66,
+            167.635,
+            9.5
+          ],
+          "centre_mm": [
+            35.871708450748386,
+            109.44859960703954,
+            9.000984586827673
+          ]
+        },
+        {
+          "label": "P20 | distal STIM_02",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129582,
+          "bounds_mm": [
+            42.0,
+            166.1,
+            9.5,
+            45.0,
+            169.1,
+            9.7
+          ],
+          "centre_mm": [
+            43.500000000000014,
+            167.60000000000002,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P21 | Ti ferrule | STIM_03",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784828,
+          "bounds_mm": [
+            9.6,
+            46.8,
+            8.1,
+            11.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            10.500000000000002,
+            47.40000000000001,
+            9.000000000000004
+          ]
+        },
+        {
+          "label": "P21 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638785,
+          "bounds_mm": [
+            9.8,
+            46.8,
+            8.3,
+            11.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            10.5,
+            47.4,
+            9.0
+          ]
+        },
+        {
+          "label": "P21 | STIM_03 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161676,
+          "bounds_mm": [
+            10.35,
+            46.3,
+            8.85,
+            10.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            10.500000000000002,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P21 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810283,
+          "bounds_mm": [
+            10.22,
+            58.2,
+            8.72,
+            10.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            10.499999999999998,
+            59.6363308905726,
+            9.0
+          ]
+        },
+        {
+          "label": "P21 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.4966315699160439,
+          "bounds_mm": [
+            10.465,
+            61.0,
+            8.965,
+            45.110000000000014,
+            172.23499999999999,
+            9.5
+          ],
+          "centre_mm": [
+            37.31100352721981,
+            112.08666560463196,
+            9.000965074208244
+          ]
+        },
+        {
+          "label": "P21 | distal STIM_03",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129584,
+          "bounds_mm": [
+            42.0,
+            170.7,
+            9.5,
+            45.0,
+            173.7,
+            9.7
+          ],
+          "centre_mm": [
+            43.50000000000001,
+            172.20000000000002,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P22 | Ti ferrule | STIM_04",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784828,
+          "bounds_mm": [
+            12.6,
+            46.8,
+            8.1,
+            14.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            13.500000000000002,
+            47.40000000000001,
+            9.000000000000004
+          ]
+        },
+        {
+          "label": "P22 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638785,
+          "bounds_mm": [
+            12.8,
+            46.8,
+            8.3,
+            14.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            13.499999999999998,
+            47.4,
+            9.0
+          ]
+        },
+        {
+          "label": "P22 | STIM_04 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161676,
+          "bounds_mm": [
+            13.35,
+            46.3,
+            8.85,
+            13.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            13.5,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P22 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810283,
+          "bounds_mm": [
+            13.22,
+            58.2,
+            8.72,
+            13.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            13.5,
+            59.6363308905726,
+            9.0
+          ]
+        },
+        {
+          "label": "P22 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5066840887932308,
+          "bounds_mm": [
+            13.465,
+            61.0,
+            8.965,
+            45.56,
+            176.835,
+            9.5
+          ],
+          "centre_mm": [
+            38.65229010199295,
+            114.76988942737522,
+            9.000945926974412
+          ]
+        },
+        {
+          "label": "P22 | distal STIM_04",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129582,
+          "bounds_mm": [
+            42.0,
+            175.3,
+            9.5,
+            45.0,
+            178.3,
+            9.7
+          ],
+          "centre_mm": [
+            43.5,
+            176.8,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P23 | Ti ferrule | STIM_05",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784837,
+          "bounds_mm": [
+            15.6,
+            46.8,
+            8.1,
+            17.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            16.499999999999993,
+            47.400000000000006,
+            9.000000000000004
+          ]
+        },
+        {
+          "label": "P23 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            15.8,
+            46.8,
+            8.3,
+            17.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            16.5,
+            47.4,
+            9.0
+          ]
+        },
+        {
+          "label": "P23 | STIM_05 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161694,
+          "bounds_mm": [
+            16.35,
+            46.3,
+            8.85,
+            16.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            16.5,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P23 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810285,
+          "bounds_mm": [
+            16.22,
+            58.2,
+            8.72,
+            16.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            16.499999999999996,
+            59.636330890572594,
+            8.999999999999998
+          ]
+        },
+        {
+          "label": "P23 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5169785056778252,
+          "bounds_mm": [
+            16.465,
+            61.0,
+            8.965,
+            46.01,
+            181.435,
+            9.5
+          ],
+          "centre_mm": [
+            39.901200430144776,
+            117.49004034901083,
+            9.000927090665622
+          ]
+        },
+        {
+          "label": "P23 | distal STIM_05",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129584,
+          "bounds_mm": [
+            42.0,
+            179.9,
+            9.5,
+            45.0,
+            182.9,
+            9.7
+          ],
+          "centre_mm": [
+            43.50000000000001,
+            181.4,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P24 | Ti ferrule | STIM_06",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784846,
+          "bounds_mm": [
+            18.6,
+            46.8,
+            8.1,
+            20.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            19.499999999999993,
+            47.399999999999984,
+            9.0
+          ]
+        },
+        {
+          "label": "P24 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            18.8,
+            46.8,
+            8.3,
+            20.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            19.5,
+            47.4,
+            9.0
+          ]
+        },
+        {
+          "label": "P24 | STIM_06 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161694,
+          "bounds_mm": [
+            19.35,
+            46.3,
+            8.85,
+            19.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            19.500000000000004,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P24 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810285,
+          "bounds_mm": [
+            19.22,
+            58.2,
+            8.72,
+            19.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            19.499999999999996,
+            59.636330890572594,
+            8.999999999999998
+          ]
+        },
+        {
+          "label": "P24 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5275523071806812,
+          "bounds_mm": [
+            19.465,
+            61.0,
+            8.965,
+            46.459999999999994,
+            186.035,
+            9.5
+          ],
+          "centre_mm": [
+            41.063213857922655,
+            120.23839785261835,
+            9.000908508520213
+          ]
+        },
+        {
+          "label": "P24 | distal STIM_06",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129584,
+          "bounds_mm": [
+            42.0,
+            184.5,
+            9.5,
+            45.0,
+            187.5,
+            9.7
+          ],
+          "centre_mm": [
+            43.5,
+            186.0,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P25 | Ti ferrule | STIM_07",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784846,
+          "bounds_mm": [
+            21.6,
+            46.8,
+            8.1,
+            23.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            22.499999999999996,
+            47.399999999999984,
+            9.0
+          ]
+        },
+        {
+          "label": "P25 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            21.8,
+            46.8,
+            8.3,
+            23.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            22.499999999999996,
+            47.4,
+            9.0
+          ]
+        },
+        {
+          "label": "P25 | STIM_07 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161694,
+          "bounds_mm": [
+            22.35,
+            46.3,
+            8.85,
+            22.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            22.500000000000004,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P25 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810285,
+          "bounds_mm": [
+            22.22,
+            58.2,
+            8.72,
+            22.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            22.499999999999996,
+            59.636330890572594,
+            8.999999999999998
+          ]
+        },
+        {
+          "label": "P25 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5384494412369716,
+          "bounds_mm": [
+            22.465,
+            61.0,
+            8.965,
+            46.91000000000001,
+            190.635,
+            9.5
+          ],
+          "centre_mm": [
+            42.1437139800039,
+            123.00557809532857,
+            9.000890121804256
+          ]
+        },
+        {
+          "label": "P25 | distal STIM_07",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129582,
+          "bounds_mm": [
+            42.0,
+            189.1,
+            9.5,
+            45.0,
+            192.1,
+            9.7
+          ],
+          "centre_mm": [
+            43.5,
+            190.60000000000002,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P26 | Ti ferrule | STIM_08",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784846,
+          "bounds_mm": [
+            24.6,
+            46.8,
+            8.1,
+            26.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            25.500000000000004,
+            47.399999999999984,
+            9.0
+          ]
+        },
+        {
+          "label": "P26 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            24.8,
+            46.8,
+            8.3,
+            26.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            25.5,
+            47.4,
+            9.0
+          ]
+        },
+        {
+          "label": "P26 | STIM_08 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161694,
+          "bounds_mm": [
+            25.35,
+            46.3,
+            8.85,
+            25.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            25.499999999999996,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P26 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810285,
+          "bounds_mm": [
+            25.22,
+            58.2,
+            8.72,
+            25.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            25.499999999999996,
+            59.636330890572594,
+            8.999999999999998
+          ]
+        },
+        {
+          "label": "P26 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5497210068905534,
+          "bounds_mm": [
+            25.465,
+            61.0,
+            8.965,
+            47.36,
+            195.23499999999999,
+            9.5
+          ],
+          "centre_mm": [
+            43.14805810837678,
+            125.78140863403279,
+            9.000871870289814
+          ]
+        },
+        {
+          "label": "P26 | distal STIM_08",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129584,
+          "bounds_mm": [
+            42.0,
+            193.7,
+            9.5,
+            45.0,
+            196.7,
+            9.7
+          ],
+          "centre_mm": [
+            43.5,
+            195.20000000000002,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P27 | Ti ferrule | STIM_09",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784846,
+          "bounds_mm": [
+            27.6,
+            46.8,
+            8.1,
+            29.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            28.499999999999993,
+            47.399999999999984,
+            9.0
+          ]
+        },
+        {
+          "label": "P27 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            27.8,
+            46.8,
+            8.3,
+            29.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            28.5,
+            47.4,
+            9.0
+          ]
+        },
+        {
+          "label": "P27 | STIM_09 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161694,
+          "bounds_mm": [
+            28.35,
+            46.3,
+            8.85,
+            28.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            28.5,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P27 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810285,
+          "bounds_mm": [
+            28.22,
+            58.2,
+            8.72,
+            28.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            28.499999999999993,
+            59.636330890572594,
+            8.999999999999998
+          ]
+        },
+        {
+          "label": "P27 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5614257377204321,
+          "bounds_mm": [
+            28.465,
+            61.0,
+            8.965,
+            47.809999999999995,
+            199.835,
+            9.5
+          ],
+          "centre_mm": [
+            44.08165271082736,
+            128.55483481194173,
+            9.000853693035758
+          ]
+        },
+        {
+          "label": "P27 | distal STIM_09",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129582,
+          "bounds_mm": [
+            42.0,
+            198.3,
+            9.5,
+            45.0,
+            201.3,
+            9.7
+          ],
+          "centre_mm": [
+            43.500000000000014,
+            199.80000000000004,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P28 | Ti ferrule | STIM_10",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784846,
+          "bounds_mm": [
+            30.6,
+            46.8,
+            8.1,
+            32.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            31.500000000000004,
+            47.399999999999984,
+            9.0
+          ]
+        },
+        {
+          "label": "P28 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638782,
+          "bounds_mm": [
+            30.8,
+            46.8,
+            8.3,
+            32.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            31.499999999999996,
+            47.4,
+            9.0
+          ]
+        },
+        {
+          "label": "P28 | STIM_10 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161694,
+          "bounds_mm": [
+            31.35,
+            46.3,
+            8.85,
+            31.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            31.5,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P28 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810285,
+          "bounds_mm": [
+            31.22,
+            58.2,
+            8.72,
+            31.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            31.499999999999996,
+            59.636330890572594,
+            8.999999999999998
+          ]
+        },
+        {
+          "label": "P28 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5558428337874997,
+          "bounds_mm": [
+            31.465,
+            61.0,
+            8.965,
+            52.53500000000005,
+            199.835,
+            9.5
+          ],
+          "centre_mm": [
+            46.261118960313155,
+            129.03247683068628,
+            9.000862267498652
+          ]
+        },
+        {
+          "label": "P28 | distal STIM_10",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129582,
+          "bounds_mm": [
+            51.0,
+            198.3,
+            9.5,
+            54.0,
+            201.3,
+            9.7
+          ],
+          "centre_mm": [
+            52.500000000000014,
+            199.80000000000004,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P29 | Ti ferrule | STIM_11",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784835,
+          "bounds_mm": [
+            33.6,
+            46.8,
+            8.1,
+            35.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            34.500000000000036,
+            47.40000000000001,
+            9.000000000000004
+          ]
+        },
+        {
+          "label": "P29 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638778,
+          "bounds_mm": [
+            33.8,
+            46.8,
+            8.3,
+            35.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            34.5,
+            47.39999999999999,
+            9.0
+          ]
+        },
+        {
+          "label": "P29 | STIM_11 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            34.35,
+            46.3,
+            8.85,
+            34.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            34.5,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P29 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            34.22,
+            58.2,
+            8.72,
+            34.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            34.50000000000001,
+            59.636330890572616,
+            9.0
+          ]
+        },
+        {
+          "label": "P29 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5330457368429604,
+          "bounds_mm": [
+            34.465,
+            61.0,
+            8.965,
+            52.53500000000007,
+            195.23499999999999,
+            9.5
+          ],
+          "centre_mm": [
+            46.97349114287918,
+            127.18230496686402,
+            9.000899144918014
+          ]
+        },
+        {
+          "label": "P29 | distal STIM_11",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129584,
+          "bounds_mm": [
+            51.0,
+            193.7,
+            9.5,
+            54.0,
+            196.7,
+            9.7
+          ],
+          "centre_mm": [
+            52.50000000000001,
+            195.20000000000002,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P30 | Ti ferrule | STIM_12",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784835,
+          "bounds_mm": [
+            36.6,
+            46.8,
+            8.1,
+            38.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            37.50000000000002,
+            47.40000000000001,
+            9.000000000000004
+          ]
+        },
+        {
+          "label": "P30 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638778,
+          "bounds_mm": [
+            36.8,
+            46.8,
+            8.3,
+            38.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            37.49999999999999,
+            47.39999999999999,
+            9.0
+          ]
+        },
+        {
+          "label": "P30 | STIM_12 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            37.35,
+            46.3,
+            8.85,
+            37.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            37.5,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P30 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            37.22,
+            58.2,
+            8.72,
+            37.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            37.50000000000001,
+            59.636330890572616,
+            9.0
+          ]
+        },
+        {
+          "label": "P30 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5109002917317124,
+          "bounds_mm": [
+            37.465,
+            61.0,
+            8.965,
+            52.53500000000005,
+            190.635,
+            9.5
+          ],
+          "centre_mm": [
+            47.69436230468195,
+            125.27063378486348,
+            9.00093811949173
+          ]
+        },
+        {
+          "label": "P30 | distal STIM_12",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129582,
+          "bounds_mm": [
+            51.0,
+            189.1,
+            9.5,
+            54.0,
+            192.1,
+            9.7
+          ],
+          "centre_mm": [
+            52.500000000000014,
+            190.60000000000002,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P31 | Ti ferrule | STIM_13",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784835,
+          "bounds_mm": [
+            39.6,
+            46.8,
+            8.1,
+            41.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            40.50000000000001,
+            47.40000000000001,
+            9.000000000000004
+          ]
+        },
+        {
+          "label": "P31 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638778,
+          "bounds_mm": [
+            39.8,
+            46.8,
+            8.3,
+            41.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            40.5,
+            47.39999999999999,
+            9.0
+          ]
+        },
+        {
+          "label": "P31 | STIM_13 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            40.35,
+            46.3,
+            8.85,
+            40.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            40.5,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P31 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            40.22,
+            58.2,
+            8.72,
+            40.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            40.5,
+            59.636330890572616,
+            9.0
+          ]
+        },
+        {
+          "label": "P31 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.4894869545479575,
+          "bounds_mm": [
+            40.465,
+            61.0,
+            8.965,
+            52.535,
+            186.035,
+            9.5
+          ],
+          "centre_mm": [
+            48.42833973485493,
+            123.28980510451345,
+            9.000979159294713
+          ]
+        },
+        {
+          "label": "P31 | distal STIM_13",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129584,
+          "bounds_mm": [
+            51.0,
+            184.5,
+            9.5,
+            54.0,
+            187.5,
+            9.7
+          ],
+          "centre_mm": [
+            52.5,
+            186.0,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P32 | Ti ferrule | STIM_14",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784835,
+          "bounds_mm": [
+            42.6,
+            46.8,
+            8.1,
+            44.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            43.500000000000014,
+            47.40000000000001,
+            9.000000000000004
+          ]
+        },
+        {
+          "label": "P32 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638778,
+          "bounds_mm": [
+            42.8,
+            46.8,
+            8.3,
+            44.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            43.499999999999986,
+            47.39999999999999,
+            9.0
+          ]
+        },
+        {
+          "label": "P32 | STIM_14 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            43.35,
+            46.3,
+            8.85,
+            43.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            43.49999999999999,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P32 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            43.22,
+            58.2,
+            8.72,
+            43.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            43.49999999999999,
+            59.636330890572616,
+            9.0
+          ]
+        },
+        {
+          "label": "P32 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.4688829707533647,
+          "bounds_mm": [
+            43.465,
+            61.0,
+            8.965,
+            52.535,
+            181.435,
+            9.5
+          ],
+          "centre_mm": [
+            49.181462962438076,
+            121.2329955581461,
+            9.001022186510363
+          ]
+        },
+        {
+          "label": "P32 | distal STIM_14",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129584,
+          "bounds_mm": [
+            51.0,
+            179.9,
+            9.5,
+            54.0,
+            182.9,
+            9.7
+          ],
+          "centre_mm": [
+            52.5,
+            181.4,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P33 | Ti ferrule | STIM_15",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784835,
+          "bounds_mm": [
+            45.6,
+            46.8,
+            8.1,
+            47.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            46.50000000000002,
+            47.40000000000001,
+            9.000000000000004
+          ]
+        },
+        {
+          "label": "P33 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638778,
+          "bounds_mm": [
+            45.8,
+            46.8,
+            8.3,
+            47.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            46.49999999999999,
+            47.39999999999999,
+            9.0
+          ]
+        },
+        {
+          "label": "P33 | STIM_15 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            46.35,
+            46.3,
+            8.85,
+            46.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            46.50000000000001,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P33 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            46.22,
+            58.2,
+            8.72,
+            46.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            46.50000000000001,
+            59.636330890572616,
+            9.0
+          ]
+        },
+        {
+          "label": "P33 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.4491560391594955,
+          "bounds_mm": [
+            46.465,
+            61.0,
+            8.965,
+            52.535,
+            176.835,
+            9.5
+          ],
+          "centre_mm": [
+            49.9613992390954,
+            119.09514518222797,
+            9.00106708127413
+          ]
+        },
+        {
+          "label": "P33 | distal STIM_15",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129582,
+          "bounds_mm": [
+            51.0,
+            175.3,
+            9.5,
+            54.0,
+            178.3,
+            9.7
+          ],
+          "centre_mm": [
+            52.5,
+            176.8,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P34 | Ti ferrule | STIM_16",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784835,
+          "bounds_mm": [
+            48.6,
+            46.8,
+            8.1,
+            50.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            49.500000000000014,
+            47.40000000000001,
+            9.000000000000004
+          ]
+        },
+        {
+          "label": "P34 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638778,
+          "bounds_mm": [
+            48.8,
+            46.8,
+            8.3,
+            50.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            49.49999999999999,
+            47.39999999999999,
+            9.0
+          ]
+        },
+        {
+          "label": "P34 | STIM_16 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            49.35,
+            46.3,
+            8.85,
+            49.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            49.5,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P34 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            49.22,
+            58.2,
+            8.72,
+            49.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            49.50000000000001,
+            59.636330890572616,
+            9.0
+          ]
+        },
+        {
+          "label": "P34 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.4303573179453272,
+          "bounds_mm": [
+            49.465,
+            61.0,
+            8.965,
+            52.53500000000001,
+            172.23499999999999,
+            9.5
+          ],
+          "centre_mm": [
+            50.777546128643635,
+            116.87395505419775,
+            9.001113693447746
+          ]
+        },
+        {
+          "label": "P34 | distal STIM_16",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129584,
+          "bounds_mm": [
+            51.0,
+            170.7,
+            9.5,
+            54.0,
+            173.7,
+            9.7
+          ],
+          "centre_mm": [
+            52.5,
+            172.20000000000002,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P35 | Ti ferrule | RETURN_00",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.2063715789784835,
+          "bounds_mm": [
+            51.6,
+            46.8,
+            8.1,
+            53.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            52.50000000000002,
+            47.40000000000001,
+            9.000000000000004
+          ]
+        },
+        {
+          "label": "P35 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7624334786638778,
+          "bounds_mm": [
+            51.8,
+            46.8,
+            8.3,
+            53.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            52.49999999999999,
+            47.39999999999999,
+            9.0
+          ]
+        },
+        {
+          "label": "P35 | RETURN_00 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            52.35,
+            46.3,
+            8.85,
+            52.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            52.5,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P35 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            52.22,
+            58.2,
+            8.72,
+            52.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            52.50000000000001,
+            59.636330890572616,
+            9.0
+          ]
+        },
+        {
+          "label": "P35 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.412515601426498,
+          "bounds_mm": [
+            51.34,
+            61.0,
+            8.965,
+            52.535000000000004,
+            167.635,
+            9.5
+          ],
+          "centre_mm": [
+            51.641005777557616,
+            114.57079961696311,
+            9.001161862597996
+          ]
+        },
+        {
+          "label": "P35 | distal RETURN_00",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129582,
+          "bounds_mm": [
+            51.0,
+            166.1,
+            9.5,
+            54.0,
+            169.1,
+            9.7
+          ],
+          "centre_mm": [
+            52.50000000000001,
+            167.60000000000002,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "P36 | Ti ferrule | RETURN_01",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 2.0106192982974678,
+          "bounds_mm": [
+            54.6,
+            46.0,
+            8.1,
+            56.4,
+            48.0,
+            9.9
+          ],
+          "centre_mm": [
+            55.49999999999999,
+            47.00000000000001,
+            9.000000000000002
+          ]
+        },
+        {
+          "label": "P36 | isolated ceramic sleeve",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 2.937389131106455,
+          "bounds_mm": [
+            54.8,
+            46.0,
+            8.3,
+            56.2,
+            48.0,
+            9.7
+          ],
+          "centre_mm": [
+            55.50000000000003,
+            47.00000000000001,
+            9.000000000000002
+          ]
+        },
+        {
+          "label": "P36 | RETURN_01 feedthrough pin",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.9330530181161699,
+          "bounds_mm": [
+            55.35,
+            46.3,
+            8.85,
+            55.65,
+            59.5,
+            9.15
+          ],
+          "centre_mm": [
+            55.5,
+            52.900000000000006,
+            9.0
+          ]
+        },
+        {
+          "label": "P36 | nominal mating socket",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.5058592490810288,
+          "bounds_mm": [
+            55.22,
+            58.2,
+            8.72,
+            55.78,
+            61.0,
+            9.28
+          ],
+          "centre_mm": [
+            55.5,
+            59.636330890572616,
+            9.0
+          ]
+        },
+        {
+          "label": "P36 | continuous illustrative lead conductor",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 0.39563541990937984,
+          "bounds_mm": [
+            51.790000000000006,
+            61.0,
+            8.965,
+            55.535,
+            163.035,
+            9.5
+          ],
+          "centre_mm": [
+            52.56442027015915,
+            112.19152159319037,
+            9.001211434895035
+          ]
+        },
+        {
+          "label": "P36 | distal RETURN_01",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1.7789690200129584,
+          "bounds_mm": [
+            51.0,
+            161.5,
+            9.5,
+            54.0,
+            164.5,
+            9.7
+          ],
+          "centre_mm": [
+            52.5,
+            163.0,
+            9.600000000000001
+          ]
+        },
+        {
+          "label": "Titanium can | 60 x 48 x 14 envelope",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 6106.047062689972,
+          "bounds_mm": [
+            -1e-07,
+            0.0,
+            -1e-07,
+            60.0000001,
+            48.0000001,
+            12.600000100000003
+          ],
+          "centre_mm": [
+            30.000006099874103,
+            23.57825790961086,
+            3.3589909446227426
+          ]
+        },
+        {
+          "label": "Conditional weld seam | no qualified process",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 48.87504368439579,
+          "bounds_mm": [
+            0.0,
+            0.0,
+            12.6,
+            60.0,
+            48.0,
+            12.799999999999999
+          ],
+          "centre_mm": [
+            29.99999999999995,
+            23.999999999999996,
+            12.700000000000038
+          ]
+        },
+        {
+          "label": "Titanium lid | conditional RF window",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 3184.101365158229,
+          "bounds_mm": [
+            0.0,
+            0.0,
+            12.799999999999999,
+            60.0,
+            48.0,
+            14.0
+          ],
+          "centre_mm": [
+            28.840427551351386,
+            25.004962788828813,
+            13.399999999999999
+          ]
+        },
+        {
+          "label": "RF window seal ring | nominal unqualified",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 10.266769712231401,
+          "bounds_mm": [
+            34.85,
+            5.85,
+            12.799999999999997,
+            55.150000000000006,
+            16.15,
+            14.0
+          ],
+          "centre_mm": [
+            45.0000000000001,
+            11.000000000000004,
+            13.400000000000036
+          ]
+        },
+        {
+          "label": "Conditional RF glass window | 20 x 10 mm",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 235.8796447372311,
+          "bounds_mm": [
+            35.0,
+            6.0,
+            12.8,
+            55.0,
+            16.0,
+            14.0
+          ],
+          "centre_mm": [
+            44.99999999999999,
+            11.0,
+            13.4
+          ]
+        },
+        {
+          "label": "Dielectric header | separately keyed R/S ports",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 5988.171313232373,
+          "bounds_mm": [
+            0.0,
+            48.0,
+            0.0,
+            60.0,
+            58.0,
+            14.0
+          ],
+          "centre_mm": [
+            30.000000000000053,
+            52.4136580180245,
+            6.999025278387225
+          ]
+        },
+        {
+          "label": "Record | dielectric 18-way insert",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1083.4503371137837,
+          "bounds_mm": [
+            2.1,
+            51.0,
+            3.6,
+            57.9,
+            58.0,
+            6.4
+          ],
+          "centre_mm": [
+            29.999999999999968,
+            54.5,
+            4.999999999999988
+          ]
+        },
+        {
+          "label": "Record | removable keyed lead plug",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1519.9781570547884,
+          "bounds_mm": [
+            2.1,
+            57.2,
+            3.6,
+            57.9,
+            68.0,
+            7.1000000000000005
+          ],
+          "centre_mm": [
+            29.94287845358359,
+            63.1224475613309,
+            5.003675052795759
+          ]
+        },
+        {
+          "label": "Record | tapered strain-relief boot",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1635.4920826919447,
+          "bounds_mm": [
+            2.0999999000000016,
+            67.9999999,
+            3.5999999000000003,
+            57.9000001,
+            94.0000001,
+            6.400000100000001
+          ],
+          "centre_mm": [
+            24.608663686671406,
+            75.78375952476746,
+            5.000000000000003
+          ]
+        },
+        {
+          "label": "Record | insulated cable and surface paddle",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 553.7059107951231,
+          "bounds_mm": [
+            6.0,
+            93.99999999999945,
+            4.7,
+            18.0,
+            194.0,
+            5.3
+          ],
+          "centre_mm": [
+            11.999999759360536,
+            148.83023748101607,
+            4.999994427738018
+          ]
+        },
+        {
+          "label": "Stim | dielectric 18-way insert",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1083.450337113783,
+          "bounds_mm": [
+            2.1,
+            51.0,
+            7.6,
+            57.9,
+            58.0,
+            10.399999999999999
+          ],
+          "centre_mm": [
+            29.99999999999997,
+            54.499999999999986,
+            8.999999999999986
+          ]
+        },
+        {
+          "label": "Stim | removable keyed lead plug",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1519.978160045823,
+          "bounds_mm": [
+            2.1,
+            57.2,
+            7.6,
+            57.9,
+            68.0,
+            11.1
+          ],
+          "centre_mm": [
+            30.057121527043808,
+            63.12244757033379,
+            9.00367505281575
+          ]
+        },
+        {
+          "label": "Stim | tapered strain-relief boot",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1801.5559366204236,
+          "bounds_mm": [
+            2.0999999000000016,
+            67.9999999,
+            7.599999899999999,
+            57.9000001,
+            94.0000001,
+            10.4000001
+          ],
+          "centre_mm": [
+            35.836542010418896,
+            76.42718241674466,
+            9.000000000000002
+          ]
+        },
+        {
+          "label": "Stim | insulated cable and surface paddle",
+          "category": "physical",
+          "solids": 1,
+          "volume_mm3": 1266.2536149492123,
+          "bounds_mm": [
+            41.0,
+            93.99999999999926,
+            8.5,
+            55.0,
+            204.0,
+            9.5
+          ],
+          "centre_mm": [
+            48.000000129099384,
+            153.55012374768617,
+            8.999993186864248
+          ]
+        },
+        {
+          "label": "Future substrate | unpopulated 50 x 40 mm",
+          "category": "allocation",
+          "solids": 1,
+          "volume_mm3": 1999.999999999999,
+          "bounds_mm": [
+            5.0,
+            4.0,
+            1.8,
+            55.0,
+            44.0,
+            2.8
+          ],
+          "centre_mm": [
+            30.000000000000004,
+            24.000000000000004,
+            2.3000000000000003
+          ]
+        },
+        {
+          "label": "Miniaturized components | conditional volume",
+          "category": "allocation",
+          "solids": 1,
+          "volume_mm3": 6000.0,
+          "bounds_mm": [
+            5.0,
+            4.0,
+            2.8,
+            55.0,
+            44.0,
+            5.8
+          ],
+          "centre_mm": [
+            30.0,
+            24.0,
+            4.3
+          ]
+        },
+        {
+          "label": "HV bank | effective capacitance unresolved",
+          "category": "allocation",
+          "solids": 1,
+          "volume_mm3": 1008.0,
+          "bounds_mm": [
+            7.0,
+            29.0,
+            2.8,
+            31.0,
+            43.0,
+            5.8
+          ],
+          "centre_mm": [
+            19.0,
+            36.0,
+            4.3
+          ]
+        },
+        {
+          "label": "Contego 200 bounding box | isolated case-negative",
+          "category": "allocation",
+          "solids": 1,
+          "volume_mm3": 3281.8500000000004,
+          "bounds_mm": [
+            12.0,
+            10.0,
+            6.3,
+            47.1,
+            27.0,
+            11.8
+          ],
+          "centre_mm": [
+            29.55,
+            18.500000000000004,
+            9.05
+          ]
+        },
+        {
+          "label": "0.15 mm insulation | nominal bounding shell",
+          "category": "allocation",
+          "solids": 1,
+          "volume_mm3": 270.18599999999833,
+          "bounds_mm": [
+            11.85,
+            9.85,
+            6.15,
+            47.25,
+            27.15,
+            11.95
+          ],
+          "centre_mm": [
+            29.549999999999937,
+            18.499999999999982,
+            9.049999999999988
+          ]
+        },
+        {
+          "label": "Future antenna | RF unimplemented",
+          "category": "allocation",
+          "solids": 1,
+          "volume_mm3": 98.28318530717935,
+          "bounds_mm": [
+            35.0,
+            6.0,
+            12.1,
+            55.0,
+            16.0,
+            12.6
+          ],
+          "centre_mm": [
+            45.0,
+            10.999999999999998,
+            12.349999999999996
+          ]
+        }
+      ],
+      "final_objects": 236,
+      "physical_objects": 230,
+      "step_comparison": {
+        "compared_solids": 230,
+        "max_volume_error_mm3": 0.0022825841579106054,
+        "max_coordinate_error_mm": 1.914784732548469e-06,
+        "coordinate_tolerance_mm": 0.001,
+        "solid_volume_absolute_tolerance_mm3": 0.0001,
+        "solid_volume_relative_tolerance": 1e-06,
+        "face_area_absolute_tolerance_mm2": 0.001,
+        "face_area_relative_tolerance": 1e-05,
+        "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+      },
+      "step_evidence": {
+        "sha256": "5ab3f5dc211af366afbfa668ae5d59eb0be75a1bd99327b2e90f09323a4ae7f1"
+      },
+      "extra_exports": {
+        "exploded_step": {
+          "sha256": "99e97143019bd55eae8c23ac588fa5f54ec9eedece6b05d8d2882d557db74f0a",
+          "compared_solids": 236,
+          "max_volume_error_mm3": 0.0022825841579106054,
+          "max_coordinate_error_mm": 1.914784732548469e-06,
+          "coordinate_tolerance_mm": 0.001,
+          "solid_volume_absolute_tolerance_mm3": 0.0001,
+          "solid_volume_relative_tolerance": 1e-06,
+          "face_area_absolute_tolerance_mm2": 0.001,
+          "face_area_relative_tolerance": 1e-05,
+          "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+        }
+      },
+      "interference": {
+        "physical_pairs_checked": 26335,
+        "exact_BRep_pairs": 758,
+        "explained_engagements": [],
+        "unexplained_positive_volume_intersections": 0
+      },
+      "clearances": [],
+      "physical_qualification": false,
+      "ports": [
+        {
+          "port_id": "P01",
+          "logical_function": "REC_01",
+          "minimum_pin_to_can_mm": 0.7499999799699414,
+          "minimum_pin_to_ferrule_mm": 0.549999999999999
+        },
+        {
+          "port_id": "P02",
+          "logical_function": "REC_02",
+          "minimum_pin_to_can_mm": 0.7499999999999986,
+          "minimum_pin_to_ferrule_mm": 0.549999999999999
+        },
+        {
+          "port_id": "P03",
+          "logical_function": "REC_03",
+          "minimum_pin_to_can_mm": 0.7499999999999986,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999987
+        },
+        {
+          "port_id": "P04",
+          "logical_function": "REC_04",
+          "minimum_pin_to_can_mm": 0.7499999999999986,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999987
+        },
+        {
+          "port_id": "P05",
+          "logical_function": "REC_05",
+          "minimum_pin_to_can_mm": 0.7499999999999992,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999988
+        },
+        {
+          "port_id": "P06",
+          "logical_function": "REC_06",
+          "minimum_pin_to_can_mm": 0.7499999999999992,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999988
+        },
+        {
+          "port_id": "P07",
+          "logical_function": "REC_07",
+          "minimum_pin_to_can_mm": 0.7499999999999992,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999988
+        },
+        {
+          "port_id": "P08",
+          "logical_function": "REC_08",
+          "minimum_pin_to_can_mm": 0.7499999999999992,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999988
+        },
+        {
+          "port_id": "P09",
+          "logical_function": "REC_09",
+          "minimum_pin_to_can_mm": 0.7499999999999992,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999988
+        },
+        {
+          "port_id": "P10",
+          "logical_function": "REC_10",
+          "minimum_pin_to_can_mm": 0.7499999999999981,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999972
+        },
+        {
+          "port_id": "P11",
+          "logical_function": "REC_11",
+          "minimum_pin_to_can_mm": 0.7499999999999937,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999959
+        },
+        {
+          "port_id": "P12",
+          "logical_function": "REC_12",
+          "minimum_pin_to_can_mm": 0.7499999999999937,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999959
+        },
+        {
+          "port_id": "P13",
+          "logical_function": "REC_13",
+          "minimum_pin_to_can_mm": 0.7499999999999937,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999959
+        },
+        {
+          "port_id": "P14",
+          "logical_function": "REC_14",
+          "minimum_pin_to_can_mm": 0.7499999999999937,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999959
+        },
+        {
+          "port_id": "P15",
+          "logical_function": "REC_15",
+          "minimum_pin_to_can_mm": 0.7499999999999937,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999959
+        },
+        {
+          "port_id": "P16",
+          "logical_function": "REC_16",
+          "minimum_pin_to_can_mm": 0.7499999999999937,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999959
+        },
+        {
+          "port_id": "P17",
+          "logical_function": "REC_REFERENCE",
+          "minimum_pin_to_can_mm": 0.7499999999999937,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999959
+        },
+        {
+          "port_id": "P18",
+          "logical_function": "BODY_BIAS",
+          "minimum_pin_to_can_mm": 0.7499999642707101,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999959
+        },
+        {
+          "port_id": "P19",
+          "logical_function": "STIM_01",
+          "minimum_pin_to_can_mm": 0.7499999799699386,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999985
+        },
+        {
+          "port_id": "P20",
+          "logical_function": "STIM_02",
+          "minimum_pin_to_can_mm": 0.7499999999999986,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999989
+        },
+        {
+          "port_id": "P21",
+          "logical_function": "STIM_03",
+          "minimum_pin_to_can_mm": 0.7499999999999986,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999989
+        },
+        {
+          "port_id": "P22",
+          "logical_function": "STIM_04",
+          "minimum_pin_to_can_mm": 0.7499999999999986,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999989
+        },
+        {
+          "port_id": "P23",
+          "logical_function": "STIM_05",
+          "minimum_pin_to_can_mm": 0.7499999999999983,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999989
+        },
+        {
+          "port_id": "P24",
+          "logical_function": "STIM_06",
+          "minimum_pin_to_can_mm": 0.7499999999999983,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999989
+        },
+        {
+          "port_id": "P25",
+          "logical_function": "STIM_07",
+          "minimum_pin_to_can_mm": 0.7499999999999983,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999989
+        },
+        {
+          "port_id": "P26",
+          "logical_function": "STIM_08",
+          "minimum_pin_to_can_mm": 0.7499999999999983,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999989
+        },
+        {
+          "port_id": "P27",
+          "logical_function": "STIM_09",
+          "minimum_pin_to_can_mm": 0.7499999999999983,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999989
+        },
+        {
+          "port_id": "P28",
+          "logical_function": "STIM_10",
+          "minimum_pin_to_can_mm": 0.7499999999999983,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999962
+        },
+        {
+          "port_id": "P29",
+          "logical_function": "STIM_11",
+          "minimum_pin_to_can_mm": 0.7499999999999939,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999948
+        },
+        {
+          "port_id": "P30",
+          "logical_function": "STIM_12",
+          "minimum_pin_to_can_mm": 0.7499999999999939,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999948
+        },
+        {
+          "port_id": "P31",
+          "logical_function": "STIM_13",
+          "minimum_pin_to_can_mm": 0.7499999999999939,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999948
+        },
+        {
+          "port_id": "P32",
+          "logical_function": "STIM_14",
+          "minimum_pin_to_can_mm": 0.7499999999999939,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999948
+        },
+        {
+          "port_id": "P33",
+          "logical_function": "STIM_15",
+          "minimum_pin_to_can_mm": 0.7499999999999939,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999948
+        },
+        {
+          "port_id": "P34",
+          "logical_function": "STIM_16",
+          "minimum_pin_to_can_mm": 0.7499999999999939,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999948
+        },
+        {
+          "port_id": "P35",
+          "logical_function": "RETURN_00",
+          "minimum_pin_to_can_mm": 0.7499999999999939,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999948
+        },
+        {
+          "port_id": "P36",
+          "logical_function": "RETURN_01",
+          "minimum_pin_to_can_mm": 0.7499999642707044,
+          "minimum_pin_to_ferrule_mm": 0.5499999999999948
+        }
+      ],
+      "minimum_distal_contact_gap_mm": 1.5
+    }
+  },
+  "passed": true
+}

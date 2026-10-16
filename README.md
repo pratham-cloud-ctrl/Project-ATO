@@ -7,10 +7,11 @@ expert-informed motor practice that improves retained unassisted performance,
 and target-specific physiological automation. AstroSam's [Mind-Link](https://github.com/sam-astro/Mind-link)
 inspires the progression from future vision to inspectable electronics and physical design.
 
-> **Stages 1–4 are complete within their stated digital scopes.** The project
+> **Stages 1–5 are complete within their stated digital scopes.** The project
 > now includes the conditional mechanism, preserved conservative studies, actual
-> bounded target firmware and eight integrated routed PCB designs. Mechanical
-> packaging and the final illustrated paper/release follow in Stages 5–6.
+> bounded target firmware, eight integrated routed PCB designs and independently
+> inspected native mechanical assemblies. The integrated illustrated paper and
+> reproducible final release follow in Stage 6.
 > Biological efficacy and implant miniaturization remain conditional. Work is
 > on `overhaul/full-scci-system`; video and website work are parked.
 
@@ -18,6 +19,7 @@ inspires the progression from future vision to inspectable electronics and physi
 
 | Start here | What to review |
 |---|---|
+| [Stage 5 mechanical CAD package](cad/stage5/README.md) / [mechanical review sheets](cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf) | True-scale eight-board reference chassis, combined 260-part native assembly and separate 36-port conditional future implanted interface; editable CAD, mounting/mating interfaces, STEP/STL and nominal fit evidence |
 | [Conditional SCCI concept](docs/stage3/conditional-concept.md) / [assumption ledger](docs/stage3/conditional-concept/assumption-ledger.csv) | Current design baseline: defensible future-interface assumptions, both mechanisms and the electronics/CAD handoff |
 | [New conditional scenario study](experiments/stage3/conditional-concept/README.md) | 128 scenarios: assistance can improve execution while retained learning improves, stays equal or worsens; no unique neural advantage claimed |
 | [Stage 3 exit review](docs/stage3/exit-review.md) / [integrated verdict](docs/stage3/stage3-verdict.md) / [illustrated report](output/pdf/ATO_stage3_closeout.pdf) | Audited finite investigation and detailed-design handoff; actual assistance remains unavailable |
