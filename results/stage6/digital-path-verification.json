@@ -1,0 +1,3370 @@
+{
+  "schema": "ato-stage6-digital-path-v1",
+  "date": "2026-10-16",
+  "passed": true,
+  "assertions": 114426,
+  "baseline_commit": "736015848cf581df66488bf53aa6360152eb767b",
+  "scope": "Conditional companion/response replay through unchanged compiled production C core; separate ideal supervision model; no physical/target/biological execution",
+  "current_profile_limit": "Target records RHD only in OBSERVE; live synthetic spinal feature adapter is conditional and not implemented by target",
+  "numerical_compare": "Round floating results to 10 decimal places; integer and hash identities exact",
+  "source_sha256_lf": {
+    "firmware/nrf5340/core/ato_runtime.c": "ff0fe7daeb09e910d6be91840e94f717c425c30f74cc7a8fd87dab9d00be48f0",
+    "firmware/nrf5340/core/ato_runtime.h": "4717188ee12f39f4cc3d71a276dcfd654d99993b12b507399dbc6514d168e39f",
+    "firmware/nrf5340/tests/check_runtime.py": "88db7905ebe8346d66e65f7ab2c90855e41caf92b31a2513e4378e588ba4e836",
+    "experiments/stage3/conditional-concept/study.py": "edbfffe80632aa058f5b6bd0ae4865c397ad078e09e9e06d7a63065d4ede151f",
+    "electronics/stage4/transport-study/transport_contract.py": "c954f6a23a3b8aecebaeb456eed6dc605397ff5a2b9a881d92e0f25287477418",
+    "electronics/stage4/supervision-study/control_study.py": "51807786af83c2bd3f3d0bf2b18a49621229e0b8400be34464d8446dc39248a3",
+    "cad/stage5/harness/body-port-bridge.csv": "c4af04c73e13ec586e6e4af6000dc52bb734e97db2d8107e8e2deecf7b53a359",
+    "firmware/nrf5340/app/src/ato_backend.c": "74d32a85412ba735350d1fd0b1d470d0f4e8e2fb334dc448ec9c626e1cab3a90",
+    "scripts/stage6/runtime_bridge.c": "3bf4d7b6f6a479070bf07980eba977583d7957788faf6b7700c6a2e180f56a0c",
+    "scripts/stage6/verify_digital_path.py": "ea401016bdd765e11bfe55d0df4dca7725efb0bf4fc60bc811ecc25189eb4f73"
+  },
+  "motor": {
+    "config": {
+      "dt_s": 0.025,
+      "frames_per_block": 80,
+      "blocks": 24,
+      "current_ceiling_ua": 3000,
+      "event_rate_hz": 40,
+      "event_phase_us": 200,
+      "gap_us": 200,
+      "onset_delay_s": 0.05,
+      "activation_tau_s": 0.04,
+      "washout_s": 2.0,
+      "recruitment_map": "Assumed gain columns per normalized 40 Hz train; 3000 uA maps to one, not a measured recruitment law",
+      "neural_source": "Causal synthetic abstract features; not target RHD EMA telemetry",
+      "runtime_sample_identity": "Synthetic known raw-monitor conversion at setup; not a neural-validity certificate",
+      "off_metrics": "Assumed 0.95 retention of acquired theta after modeled washout"
+    },
+    "arms": [
+      {
+        "arm": "off",
+        "rho": 1.0,
+        "first_on_rmse_m": 0.0314144382,
+        "initial_off_rmse_m": 0.0314144382,
+        "final_off_rmse_m": 0.0056049529,
+        "admitted_events": 0,
+        "maximum_current_ua": 0,
+        "maximum_post_washout_activation": 0.0,
+        "practice_blocks": 24,
+        "practice_seconds": 48,
+        "common_probe_seconds": 24,
+        "common_washout_seconds": 48
+      },
+      {
+        "arm": "neutral",
+        "rho": 1.0,
+        "first_on_rmse_m": 0.0166680958,
+        "initial_off_rmse_m": 0.0314144382,
+        "final_off_rmse_m": 0.0056049529,
+        "admitted_events": 1728,
+        "maximum_current_ua": 1566,
+        "maximum_post_washout_activation": 0.0,
+        "practice_blocks": 24,
+        "practice_seconds": 48,
+        "common_probe_seconds": 24,
+        "common_washout_seconds": 48
+      },
+      {
+        "arm": "favorable",
+        "rho": 2.0,
+        "first_on_rmse_m": 0.0166680958,
+        "initial_off_rmse_m": 0.0314144382,
+        "final_off_rmse_m": 0.0028969599,
+        "admitted_events": 1728,
+        "maximum_current_ua": 1566,
+        "maximum_post_washout_activation": 0.0,
+        "practice_blocks": 24,
+        "practice_seconds": 48,
+        "common_probe_seconds": 24,
+        "common_washout_seconds": 48
+      },
+      {
+        "arm": "adverse",
+        "rho": -1.0,
+        "first_on_rmse_m": 0.0166680958,
+        "initial_off_rmse_m": 0.0314144382,
+        "final_off_rmse_m": 0.0348451323,
+        "admitted_events": 1728,
+        "maximum_current_ua": 1925,
+        "maximum_post_washout_activation": 0.0,
+        "practice_blocks": 24,
+        "practice_seconds": 48,
+        "common_probe_seconds": 24,
+        "common_washout_seconds": 48
+      }
+    ],
+    "first_block_trace": [
+      {
+        "arm": "neutral",
+        "time_us": 2200000,
+        "support_us": 2175000,
+        "contact": [
+          2,
+          10
+        ],
+        "requested_current_ua": [
+          1150,
+          755
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          0.3833333333,
+          -0.2516666667
+        ],
+        "measured_position_model_m": [
+          0.0527493358,
+          0.0232367047
+        ]
+      },
+      {
+        "arm": "neutral",
+        "time_us": 2400000,
+        "support_us": 2375000,
+        "contact": [
+          3,
+          10
+        ],
+        "requested_current_ua": [
+          315,
+          1538
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.105,
+          -0.5126666667
+        ],
+        "measured_position_model_m": [
+          0.0578997403,
+          -0.0644617764
+        ]
+      },
+      {
+        "arm": "neutral",
+        "time_us": 2600000,
+        "support_us": 2575000,
+        "contact": [
+          3,
+          10
+        ],
+        "requested_current_ua": [
+          1344,
+          196
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.448,
+          -0.0653333333
+        ],
+        "measured_position_model_m": [
+          -0.0435836394,
+          -0.0702314513
+        ]
+      },
+      {
+        "arm": "neutral",
+        "time_us": 2800000,
+        "support_us": 2775000,
+        "contact": [
+          3,
+          9
+        ],
+        "requested_current_ua": [
+          517,
+          1418
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.1723333333,
+          0.4726666667
+        ],
+        "measured_position_model_m": [
+          -0.0854302188,
+          0.0210795068
+        ]
+      },
+      {
+        "arm": "neutral",
+        "time_us": 3000000,
+        "support_us": 2975000,
+        "contact": [
+          2,
+          9
+        ],
+        "requested_current_ua": [
+          1025,
+          1071
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          0.3416666667,
+          0.357
+        ],
+        "measured_position_model_m": [
+          -0.009201632,
+          0.0832700461
+        ]
+      },
+      {
+        "arm": "neutral",
+        "time_us": 3200000,
+        "support_us": 3175000,
+        "contact": [
+          2,
+          10
+        ],
+        "requested_current_ua": [
+          1150,
+          755
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          0.3833333333,
+          -0.2516666667
+        ],
+        "measured_position_model_m": [
+          0.0797274146,
+          0.0303856734
+        ]
+      },
+      {
+        "arm": "neutral",
+        "time_us": 3400000,
+        "support_us": 3375000,
+        "contact": [
+          3,
+          10
+        ],
+        "requested_current_ua": [
+          315,
+          1538
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.105,
+          -0.5126666667
+        ],
+        "measured_position_model_m": [
+          0.0584885237,
+          -0.0645041777
+        ]
+      },
+      {
+        "arm": "neutral",
+        "time_us": 3600000,
+        "support_us": 3575000,
+        "contact": [
+          3,
+          10
+        ],
+        "requested_current_ua": [
+          1344,
+          196
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.448,
+          -0.0653333333
+        ],
+        "measured_position_model_m": [
+          -0.0435796722,
+          -0.070231737
+        ]
+      },
+      {
+        "arm": "neutral",
+        "time_us": 3800000,
+        "support_us": 3775000,
+        "contact": [
+          3,
+          9
+        ],
+        "requested_current_ua": [
+          517,
+          1418
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.1723333333,
+          0.4726666667
+        ],
+        "measured_position_model_m": [
+          -0.085430192,
+          0.0210795049
+        ]
+      },
+      {
+        "arm": "favorable",
+        "time_us": 2200000,
+        "support_us": 2175000,
+        "contact": [
+          2,
+          10
+        ],
+        "requested_current_ua": [
+          1150,
+          755
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          0.3833333333,
+          -0.2516666667
+        ],
+        "measured_position_model_m": [
+          0.0527493358,
+          0.0232367047
+        ]
+      },
+      {
+        "arm": "favorable",
+        "time_us": 2400000,
+        "support_us": 2375000,
+        "contact": [
+          3,
+          10
+        ],
+        "requested_current_ua": [
+          315,
+          1538
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.105,
+          -0.5126666667
+        ],
+        "measured_position_model_m": [
+          0.0578997403,
+          -0.0644617764
+        ]
+      },
+      {
+        "arm": "favorable",
+        "time_us": 2600000,
+        "support_us": 2575000,
+        "contact": [
+          3,
+          10
+        ],
+        "requested_current_ua": [
+          1344,
+          196
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.448,
+          -0.0653333333
+        ],
+        "measured_position_model_m": [
+          -0.0435836394,
+          -0.0702314513
+        ]
+      },
+      {
+        "arm": "favorable",
+        "time_us": 2800000,
+        "support_us": 2775000,
+        "contact": [
+          3,
+          9
+        ],
+        "requested_current_ua": [
+          517,
+          1418
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.1723333333,
+          0.4726666667
+        ],
+        "measured_position_model_m": [
+          -0.0854302188,
+          0.0210795068
+        ]
+      },
+      {
+        "arm": "favorable",
+        "time_us": 3000000,
+        "support_us": 2975000,
+        "contact": [
+          2,
+          9
+        ],
+        "requested_current_ua": [
+          1025,
+          1071
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          0.3416666667,
+          0.357
+        ],
+        "measured_position_model_m": [
+          -0.009201632,
+          0.0832700461
+        ]
+      },
+      {
+        "arm": "favorable",
+        "time_us": 3200000,
+        "support_us": 3175000,
+        "contact": [
+          2,
+          10
+        ],
+        "requested_current_ua": [
+          1150,
+          755
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          0.3833333333,
+          -0.2516666667
+        ],
+        "measured_position_model_m": [
+          0.0797274146,
+          0.0303856734
+        ]
+      },
+      {
+        "arm": "favorable",
+        "time_us": 3400000,
+        "support_us": 3375000,
+        "contact": [
+          3,
+          10
+        ],
+        "requested_current_ua": [
+          315,
+          1538
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.105,
+          -0.5126666667
+        ],
+        "measured_position_model_m": [
+          0.0584885237,
+          -0.0645041777
+        ]
+      },
+      {
+        "arm": "favorable",
+        "time_us": 3600000,
+        "support_us": 3575000,
+        "contact": [
+          3,
+          10
+        ],
+        "requested_current_ua": [
+          1344,
+          196
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.448,
+          -0.0653333333
+        ],
+        "measured_position_model_m": [
+          -0.0435796722,
+          -0.070231737
+        ]
+      },
+      {
+        "arm": "favorable",
+        "time_us": 3800000,
+        "support_us": 3775000,
+        "contact": [
+          3,
+          9
+        ],
+        "requested_current_ua": [
+          517,
+          1418
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.1723333333,
+          0.4726666667
+        ],
+        "measured_position_model_m": [
+          -0.085430192,
+          0.0210795049
+        ]
+      },
+      {
+        "arm": "adverse",
+        "time_us": 2200000,
+        "support_us": 2175000,
+        "contact": [
+          2,
+          10
+        ],
+        "requested_current_ua": [
+          1150,
+          755
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          0.3833333333,
+          -0.2516666667
+        ],
+        "measured_position_model_m": [
+          0.0527493358,
+          0.0232367047
+        ]
+      },
+      {
+        "arm": "adverse",
+        "time_us": 2400000,
+        "support_us": 2375000,
+        "contact": [
+          3,
+          10
+        ],
+        "requested_current_ua": [
+          315,
+          1538
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.105,
+          -0.5126666667
+        ],
+        "measured_position_model_m": [
+          0.0578997403,
+          -0.0644617764
+        ]
+      },
+      {
+        "arm": "adverse",
+        "time_us": 2600000,
+        "support_us": 2575000,
+        "contact": [
+          3,
+          10
+        ],
+        "requested_current_ua": [
+          1344,
+          196
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.448,
+          -0.0653333333
+        ],
+        "measured_position_model_m": [
+          -0.0435836394,
+          -0.0702314513
+        ]
+      },
+      {
+        "arm": "adverse",
+        "time_us": 2800000,
+        "support_us": 2775000,
+        "contact": [
+          3,
+          9
+        ],
+        "requested_current_ua": [
+          517,
+          1418
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.1723333333,
+          0.4726666667
+        ],
+        "measured_position_model_m": [
+          -0.0854302188,
+          0.0210795068
+        ]
+      },
+      {
+        "arm": "adverse",
+        "time_us": 3000000,
+        "support_us": 2975000,
+        "contact": [
+          2,
+          9
+        ],
+        "requested_current_ua": [
+          1025,
+          1071
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          0.3416666667,
+          0.357
+        ],
+        "measured_position_model_m": [
+          -0.009201632,
+          0.0832700461
+        ]
+      },
+      {
+        "arm": "adverse",
+        "time_us": 3200000,
+        "support_us": 3175000,
+        "contact": [
+          2,
+          10
+        ],
+        "requested_current_ua": [
+          1150,
+          755
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          0.3833333333,
+          -0.2516666667
+        ],
+        "measured_position_model_m": [
+          0.0797274146,
+          0.0303856734
+        ]
+      },
+      {
+        "arm": "adverse",
+        "time_us": 3400000,
+        "support_us": 3375000,
+        "contact": [
+          3,
+          10
+        ],
+        "requested_current_ua": [
+          315,
+          1538
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.105,
+          -0.5126666667
+        ],
+        "measured_position_model_m": [
+          0.0584885237,
+          -0.0645041777
+        ]
+      },
+      {
+        "arm": "adverse",
+        "time_us": 3600000,
+        "support_us": 3575000,
+        "contact": [
+          3,
+          10
+        ],
+        "requested_current_ua": [
+          1344,
+          196
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.448,
+          -0.0653333333
+        ],
+        "measured_position_model_m": [
+          -0.0435796722,
+          -0.070231737
+        ]
+      },
+      {
+        "arm": "adverse",
+        "time_us": 3800000,
+        "support_us": 3775000,
+        "contact": [
+          3,
+          9
+        ],
+        "requested_current_ua": [
+          517,
+          1418
+        ],
+        "phase_us": 200,
+        "gap_us": 200,
+        "completed_phase_count": 2,
+        "delivered_fraction_assumed": [
+          -0.1723333333,
+          0.4726666667
+        ],
+        "measured_position_model_m": [
+          -0.085430192,
+          0.0210795049
+        ]
+      }
+    ]
+  },
+  "physiology": {
+    "config": {
+      "duration_s": 60,
+      "policy_period_s": 0.25,
+      "packet_period_s": 1,
+      "event_rate_hz": 40,
+      "assumed_gain_mmHg": 30,
+      "activation_tau_s": 1.5,
+      "response_tau_s": 6,
+      "deficit_mmHg": 20,
+      "deficit_interval_s": [
+        10,
+        40
+      ],
+      "feedback": "External causal SBP packets, not decoded spinal BP",
+      "policy": "Illustrative companion P control, not a clinical prescription"
+    },
+    "disturbed_rmse_mmHg": 11.8710708094,
+    "unassisted_disturbed_rmse_mmHg": 20.0,
+    "maximum_recovery_sbp_mmHg": 129.9989812897,
+    "completed_events": 1200,
+    "trace": [
+      {
+        "time_s": 0.0,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 0.25,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 0.5,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 0.75,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 1.0,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 1.25,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 1.5,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 1.75,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 2.0,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 2.25,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 2.5,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 2.75,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 3.0,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 3.25,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 3.5,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 3.75,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 4.0,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 4.25,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 4.5,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 4.75,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 5.0,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 5.25,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 5.5,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 5.75,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 6.0,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 6.25,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 6.5,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 6.75,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 7.0,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 7.25,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 7.5,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 7.75,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 8.0,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 8.25,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 8.5,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 8.75,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 9.0,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 9.25,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 9.5,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 9.75,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 120.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 10.0,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 100.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 10.25,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 100.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 10.5,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 100.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 10.75,
+        "measured_sbp_mmHg": 120.0,
+        "pressure_model_mmHg": 100.0,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.0,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 11.0,
+        "measured_sbp_mmHg": 100.0,
+        "pressure_model_mmHg": 100.0,
+        "requested_fraction": 0.6666666667,
+        "completed_current_ua": 2000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 0.125303283,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 11.25,
+        "measured_sbp_mmHg": 100.0,
+        "pressure_model_mmHg": 100.125303283,
+        "requested_fraction": 0.6666666667,
+        "completed_current_ua": 2000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 0.3515598102,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 11.5,
+        "measured_sbp_mmHg": 100.0,
+        "pressure_model_mmHg": 100.3515598102,
+        "requested_fraction": 0.6666666667,
+        "completed_current_ua": 2000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 0.6583664112,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 11.75,
+        "measured_sbp_mmHg": 100.0,
+        "pressure_model_mmHg": 100.6583664112,
+        "requested_fraction": 0.6666666667,
+        "completed_current_ua": 2000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 1.0286523512,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 12.0,
+        "measured_sbp_mmHg": 100.6583664112,
+        "pressure_model_mmHg": 101.0286523512,
+        "requested_fraction": 0.6447211196,
+        "completed_current_ua": 1934,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 1.4440245632,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 12.25,
+        "measured_sbp_mmHg": 100.6583664112,
+        "pressure_model_mmHg": 101.4440245632,
+        "requested_fraction": 0.6447211196,
+        "completed_current_ua": 1934,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 1.8934015831,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 12.5,
+        "measured_sbp_mmHg": 100.6583664112,
+        "pressure_model_mmHg": 101.8934015831,
+        "requested_fraction": 0.6447211196,
+        "completed_current_ua": 1934,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 2.3675729216,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 12.75,
+        "measured_sbp_mmHg": 100.6583664112,
+        "pressure_model_mmHg": 102.3675729216,
+        "requested_fraction": 0.6447211196,
+        "completed_current_ua": 1934,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 2.8589049073,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 13.0,
+        "measured_sbp_mmHg": 102.3675729216,
+        "pressure_model_mmHg": 102.8589049073,
+        "requested_fraction": 0.5877475693,
+        "completed_current_ua": 1763,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 3.35037854,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 13.25,
+        "measured_sbp_mmHg": 102.3675729216,
+        "pressure_model_mmHg": 103.35037854,
+        "requested_fraction": 0.5877475693,
+        "completed_current_ua": 1763,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 3.838888018,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 13.5,
+        "measured_sbp_mmHg": 102.3675729216,
+        "pressure_model_mmHg": 103.838888018,
+        "requested_fraction": 0.5877475693,
+        "completed_current_ua": 1763,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 4.321930199,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 13.75,
+        "measured_sbp_mmHg": 102.3675729216,
+        "pressure_model_mmHg": 104.321930199,
+        "requested_fraction": 0.5877475693,
+        "completed_current_ua": 1763,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 4.7975069444,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 14.0,
+        "measured_sbp_mmHg": 104.321930199,
+        "pressure_model_mmHg": 104.7975069444,
+        "requested_fraction": 0.5226023267,
+        "completed_current_ua": 1568,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 5.2518255946,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 14.25,
+        "measured_sbp_mmHg": 104.321930199,
+        "pressure_model_mmHg": 105.2518255946,
+        "requested_fraction": 0.5226023267,
+        "completed_current_ua": 1568,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 5.686037644,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 14.5,
+        "measured_sbp_mmHg": 104.321930199,
+        "pressure_model_mmHg": 105.686037644,
+        "requested_fraction": 0.5226023267,
+        "completed_current_ua": 1568,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 6.1012040035,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 14.75,
+        "measured_sbp_mmHg": 104.321930199,
+        "pressure_model_mmHg": 106.1012040035,
+        "requested_fraction": 0.5226023267,
+        "completed_current_ua": 1568,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 6.4983053897,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 15.0,
+        "measured_sbp_mmHg": 106.1012040035,
+        "pressure_model_mmHg": 106.4983053897,
+        "requested_fraction": 0.4632931999,
+        "completed_current_ua": 1390,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 6.86709927,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 15.25,
+        "measured_sbp_mmHg": 106.1012040035,
+        "pressure_model_mmHg": 106.86709927,
+        "requested_fraction": 0.4632931999,
+        "completed_current_ua": 1390,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 7.2105987032,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 15.5,
+        "measured_sbp_mmHg": 106.1012040035,
+        "pressure_model_mmHg": 107.2105987032,
+        "requested_fraction": 0.4632931999,
+        "completed_current_ua": 1390,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 7.5314085751,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 15.75,
+        "measured_sbp_mmHg": 106.1012040035,
+        "pressure_model_mmHg": 107.5314085751,
+        "requested_fraction": 0.4632931999,
+        "completed_current_ua": 1390,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 7.831786041,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 16.0,
+        "measured_sbp_mmHg": 107.5314085751,
+        "pressure_model_mmHg": 107.831786041,
+        "requested_fraction": 0.4156197142,
+        "completed_current_ua": 1247,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 8.1047325949,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 16.25,
+        "measured_sbp_mmHg": 107.5314085751,
+        "pressure_model_mmHg": 108.1047325949,
+        "requested_fraction": 0.4156197142,
+        "completed_current_ua": 1247,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 8.3536969395,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 16.5,
+        "measured_sbp_mmHg": 107.5314085751,
+        "pressure_model_mmHg": 108.3536969395,
+        "requested_fraction": 0.4156197142,
+        "completed_current_ua": 1247,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 8.5816294541,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 16.75,
+        "measured_sbp_mmHg": 107.5314085751,
+        "pressure_model_mmHg": 108.5816294541,
+        "requested_fraction": 0.4156197142,
+        "completed_current_ua": 1247,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 8.7910574269,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 17.0,
+        "measured_sbp_mmHg": 108.5816294541,
+        "pressure_model_mmHg": 108.7910574269,
+        "requested_fraction": 0.3806123515,
+        "completed_current_ua": 1142,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 8.9775703667,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 17.25,
+        "measured_sbp_mmHg": 108.5816294541,
+        "pressure_model_mmHg": 108.9775703667,
+        "requested_fraction": 0.3806123515,
+        "completed_current_ua": 1142,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.1443092242,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 17.5,
+        "measured_sbp_mmHg": 108.5816294541,
+        "pressure_model_mmHg": 109.1443092242,
+        "requested_fraction": 0.3806123515,
+        "completed_current_ua": 1142,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.2939481391,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 17.75,
+        "measured_sbp_mmHg": 108.5816294541,
+        "pressure_model_mmHg": 109.2939481391,
+        "requested_fraction": 0.3806123515,
+        "completed_current_ua": 1142,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.4287654768,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 18.0,
+        "measured_sbp_mmHg": 109.2939481391,
+        "pressure_model_mmHg": 109.4287654768,
+        "requested_fraction": 0.3568683954,
+        "completed_current_ua": 1071,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.546255718,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 18.25,
+        "measured_sbp_mmHg": 109.2939481391,
+        "pressure_model_mmHg": 109.546255718,
+        "requested_fraction": 0.3568683954,
+        "completed_current_ua": 1071,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.6489413641,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 18.5,
+        "measured_sbp_mmHg": 109.2939481391,
+        "pressure_model_mmHg": 109.6489413641,
+        "requested_fraction": 0.3568683954,
+        "completed_current_ua": 1071,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.738963279,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 18.75,
+        "measured_sbp_mmHg": 109.2939481391,
+        "pressure_model_mmHg": 109.738963279,
+        "requested_fraction": 0.3568683954,
+        "completed_current_ua": 1071,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.818139048,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 19.0,
+        "measured_sbp_mmHg": 109.738963279,
+        "pressure_model_mmHg": 109.818139048,
+        "requested_fraction": 0.3420345574,
+        "completed_current_ua": 1026,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.885193064,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 19.25,
+        "measured_sbp_mmHg": 109.738963279,
+        "pressure_model_mmHg": 109.885193064,
+        "requested_fraction": 0.3420345574,
+        "completed_current_ua": 1026,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9419848838,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 19.5,
+        "measured_sbp_mmHg": 109.738963279,
+        "pressure_model_mmHg": 109.9419848838,
+        "requested_fraction": 0.3420345574,
+        "completed_current_ua": 1026,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9900886433,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 19.75,
+        "measured_sbp_mmHg": 109.738963279,
+        "pressure_model_mmHg": 109.9900886433,
+        "requested_fraction": 0.3420345574,
+        "completed_current_ua": 1026,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.030836873,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 20.0,
+        "measured_sbp_mmHg": 109.9900886433,
+        "pressure_model_mmHg": 110.030836873,
+        "requested_fraction": 0.3336637119,
+        "completed_current_ua": 1001,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0637912953,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 20.25,
+        "measured_sbp_mmHg": 109.9900886433,
+        "pressure_model_mmHg": 110.0637912953,
+        "requested_fraction": 0.3336637119,
+        "completed_current_ua": 1001,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0902111772,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 20.5,
+        "measured_sbp_mmHg": 109.9900886433,
+        "pressure_model_mmHg": 110.0902111772,
+        "requested_fraction": 0.3336637119,
+        "completed_current_ua": 1001,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1111599035,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 20.75,
+        "measured_sbp_mmHg": 109.9900886433,
+        "pressure_model_mmHg": 110.1111599035,
+        "requested_fraction": 0.3336637119,
+        "completed_current_ua": 1001,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1275351523,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 21.0,
+        "measured_sbp_mmHg": 110.1111599035,
+        "pressure_model_mmHg": 110.1275351523,
+        "requested_fraction": 0.3296280032,
+        "completed_current_ua": 989,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1393426153,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 21.25,
+        "measured_sbp_mmHg": 110.1111599035,
+        "pressure_model_mmHg": 110.1393426153,
+        "requested_fraction": 0.3296280032,
+        "completed_current_ua": 989,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1473673512,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 21.5,
+        "measured_sbp_mmHg": 110.1111599035,
+        "pressure_model_mmHg": 110.1473673512,
+        "requested_fraction": 0.3296280032,
+        "completed_current_ua": 989,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1522704772,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 21.75,
+        "measured_sbp_mmHg": 110.1111599035,
+        "pressure_model_mmHg": 110.1522704772,
+        "requested_fraction": 0.3296280032,
+        "completed_current_ua": 989,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1546083359,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 22.0,
+        "measured_sbp_mmHg": 110.1522704772,
+        "pressure_model_mmHg": 110.1546083359,
+        "requested_fraction": 0.3282576508,
+        "completed_current_ua": 985,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1545981071,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 22.25,
+        "measured_sbp_mmHg": 110.1522704772,
+        "pressure_model_mmHg": 110.1545981071,
+        "requested_fraction": 0.3282576508,
+        "completed_current_ua": 985,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1526814448,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 22.5,
+        "measured_sbp_mmHg": 110.1522704772,
+        "pressure_model_mmHg": 110.1526814448,
+        "requested_fraction": 0.3282576508,
+        "completed_current_ua": 985,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1492288881,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 22.75,
+        "measured_sbp_mmHg": 110.1522704772,
+        "pressure_model_mmHg": 110.1492288881,
+        "requested_fraction": 0.3282576508,
+        "completed_current_ua": 985,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1445509138,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 23.0,
+        "measured_sbp_mmHg": 110.1492288881,
+        "pressure_model_mmHg": 110.1445509138,
+        "requested_fraction": 0.3283590371,
+        "completed_current_ua": 985,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1389072865,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 23.25,
+        "measured_sbp_mmHg": 110.1492288881,
+        "pressure_model_mmHg": 110.1389072865,
+        "requested_fraction": 0.3283590371,
+        "completed_current_ua": 985,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1325149689,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 23.5,
+        "measured_sbp_mmHg": 110.1492288881,
+        "pressure_model_mmHg": 110.1325149689,
+        "requested_fraction": 0.3283590371,
+        "completed_current_ua": 985,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1255548112,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 23.75,
+        "measured_sbp_mmHg": 110.1492288881,
+        "pressure_model_mmHg": 110.1255548112,
+        "requested_fraction": 0.3283590371,
+        "completed_current_ua": 985,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.11817721,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 24.0,
+        "measured_sbp_mmHg": 110.1255548112,
+        "pressure_model_mmHg": 110.11817721,
+        "requested_fraction": 0.329148173,
+        "completed_current_ua": 987,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1106321966,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 24.25,
+        "measured_sbp_mmHg": 110.1255548112,
+        "pressure_model_mmHg": 110.1106321966,
+        "requested_fraction": 0.329148173,
+        "completed_current_ua": 987,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.1029985257,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 24.5,
+        "measured_sbp_mmHg": 110.1255548112,
+        "pressure_model_mmHg": 110.1029985257,
+        "requested_fraction": 0.329148173,
+        "completed_current_ua": 987,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0953406968,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 24.75,
+        "measured_sbp_mmHg": 110.1255548112,
+        "pressure_model_mmHg": 110.0953406968,
+        "requested_fraction": 0.329148173,
+        "completed_current_ua": 987,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0877112308,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 25.0,
+        "measured_sbp_mmHg": 110.0953406968,
+        "pressure_model_mmHg": 110.0877112308,
+        "requested_fraction": 0.3301553101,
+        "completed_current_ua": 990,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0803405483,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 25.25,
+        "measured_sbp_mmHg": 110.0953406968,
+        "pressure_model_mmHg": 110.0803405483,
+        "requested_fraction": 0.3301553101,
+        "completed_current_ua": 990,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0732261602,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 25.5,
+        "measured_sbp_mmHg": 110.0953406968,
+        "pressure_model_mmHg": 110.0732261602,
+        "requested_fraction": 0.3301553101,
+        "completed_current_ua": 990,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0663644396,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 25.75,
+        "measured_sbp_mmHg": 110.0953406968,
+        "pressure_model_mmHg": 110.0663644396,
+        "requested_fraction": 0.3301553101,
+        "completed_current_ua": 990,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0597508587,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 26.0,
+        "measured_sbp_mmHg": 110.0663644396,
+        "pressure_model_mmHg": 110.0597508587,
+        "requested_fraction": 0.3311211853,
+        "completed_current_ua": 993,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0535681416,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 26.25,
+        "measured_sbp_mmHg": 110.0663644396,
+        "pressure_model_mmHg": 110.0535681416,
+        "requested_fraction": 0.3311211853,
+        "completed_current_ua": 993,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0477739941,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 26.5,
+        "measured_sbp_mmHg": 110.0663644396,
+        "pressure_model_mmHg": 110.0477739941,
+        "requested_fraction": 0.3311211853,
+        "completed_current_ua": 993,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0423316418,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 26.75,
+        "measured_sbp_mmHg": 110.0663644396,
+        "pressure_model_mmHg": 110.0423316418,
+        "requested_fraction": 0.3311211853,
+        "completed_current_ua": 993,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.037209022,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 27.0,
+        "measured_sbp_mmHg": 110.0423316418,
+        "pressure_model_mmHg": 110.037209022,
+        "requested_fraction": 0.3319222786,
+        "completed_current_ua": 996,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0325660536,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 27.25,
+        "measured_sbp_mmHg": 110.0423316418,
+        "pressure_model_mmHg": 110.0325660536,
+        "requested_fraction": 0.3319222786,
+        "completed_current_ua": 996,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0283416205,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 27.5,
+        "measured_sbp_mmHg": 110.0423316418,
+        "pressure_model_mmHg": 110.0283416205,
+        "requested_fraction": 0.3319222786,
+        "completed_current_ua": 996,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0244834783,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 27.75,
+        "measured_sbp_mmHg": 110.0423316418,
+        "pressure_model_mmHg": 110.0244834783,
+        "requested_fraction": 0.3319222786,
+        "completed_current_ua": 996,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0209469128,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 28.0,
+        "measured_sbp_mmHg": 110.0244834783,
+        "pressure_model_mmHg": 110.0209469128,
+        "requested_fraction": 0.3325172174,
+        "completed_current_ua": 998,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0178189077,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 28.25,
+        "measured_sbp_mmHg": 110.0244834783,
+        "pressure_model_mmHg": 110.0178189077,
+        "requested_fraction": 0.3325172174,
+        "completed_current_ua": 998,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0150422249,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 28.5,
+        "measured_sbp_mmHg": 110.0244834783,
+        "pressure_model_mmHg": 110.0150422249,
+        "requested_fraction": 0.3325172174,
+        "completed_current_ua": 998,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.01256819,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 28.75,
+        "measured_sbp_mmHg": 110.0244834783,
+        "pressure_model_mmHg": 110.01256819,
+        "requested_fraction": 0.3325172174,
+        "completed_current_ua": 998,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.010355386,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 29.0,
+        "measured_sbp_mmHg": 110.01256819,
+        "pressure_model_mmHg": 110.010355386,
+        "requested_fraction": 0.3329143937,
+        "completed_current_ua": 999,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0084312002,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 29.25,
+        "measured_sbp_mmHg": 110.01256819,
+        "pressure_model_mmHg": 110.0084312002,
+        "requested_fraction": 0.3329143937,
+        "completed_current_ua": 999,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0067534094,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 29.5,
+        "measured_sbp_mmHg": 110.01256819,
+        "pressure_model_mmHg": 110.0067534094,
+        "requested_fraction": 0.3329143937,
+        "completed_current_ua": 999,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0052861871,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 29.75,
+        "measured_sbp_mmHg": 110.01256819,
+        "pressure_model_mmHg": 110.0052861871,
+        "requested_fraction": 0.3329143937,
+        "completed_current_ua": 999,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0039991256,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 30.0,
+        "measured_sbp_mmHg": 110.0052861871,
+        "pressure_model_mmHg": 110.0039991256,
+        "requested_fraction": 0.3331571271,
+        "completed_current_ua": 999,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0028664067,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 30.25,
+        "measured_sbp_mmHg": 110.0052861871,
+        "pressure_model_mmHg": 110.0028664067,
+        "requested_fraction": 0.3331571271,
+        "completed_current_ua": 999,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0018661009,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 30.5,
+        "measured_sbp_mmHg": 110.0052861871,
+        "pressure_model_mmHg": 110.0018661009,
+        "requested_fraction": 0.3331571271,
+        "completed_current_ua": 999,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0009795733,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 30.75,
+        "measured_sbp_mmHg": 110.0052861871,
+        "pressure_model_mmHg": 110.0009795733,
+        "requested_fraction": 0.3331571271,
+        "completed_current_ua": 999,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 10.0001909804,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 31.0,
+        "measured_sbp_mmHg": 110.0009795733,
+        "pressure_model_mmHg": 110.0001909804,
+        "requested_fraction": 0.3333006809,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9995494966,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 31.25,
+        "measured_sbp_mmHg": 110.0009795733,
+        "pressure_model_mmHg": 109.9995494966,
+        "requested_fraction": 0.3333006809,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9990314752,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 31.5,
+        "measured_sbp_mmHg": 110.0009795733,
+        "pressure_model_mmHg": 109.9990314752,
+        "requested_fraction": 0.3333006809,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9986169427,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 31.75,
+        "measured_sbp_mmHg": 110.0009795733,
+        "pressure_model_mmHg": 109.9986169427,
+        "requested_fraction": 0.3333006809,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9982890337,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 32.0,
+        "measured_sbp_mmHg": 109.9986169427,
+        "pressure_model_mmHg": 109.9982890337,
+        "requested_fraction": 0.3333794352,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.998033512,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 32.25,
+        "measured_sbp_mmHg": 109.9986169427,
+        "pressure_model_mmHg": 109.998033512,
+        "requested_fraction": 0.3333794352,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9978383651,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 32.5,
+        "measured_sbp_mmHg": 109.9986169427,
+        "pressure_model_mmHg": 109.9978383651,
+        "requested_fraction": 0.3333794352,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9976934611,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 32.75,
+        "measured_sbp_mmHg": 109.9986169427,
+        "pressure_model_mmHg": 109.9976934611,
+        "requested_fraction": 0.3333794352,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9975902592,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 33.0,
+        "measured_sbp_mmHg": 109.9976934611,
+        "pressure_model_mmHg": 109.9975902592,
+        "requested_fraction": 0.333410218,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9975215632,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 33.25,
+        "measured_sbp_mmHg": 109.9976934611,
+        "pressure_model_mmHg": 109.9975215632,
+        "requested_fraction": 0.333410218,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9974813143,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 33.5,
+        "measured_sbp_mmHg": 109.9976934611,
+        "pressure_model_mmHg": 109.9974813143,
+        "requested_fraction": 0.333410218,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9974644147,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 33.75,
+        "measured_sbp_mmHg": 109.9976934611,
+        "pressure_model_mmHg": 109.9974644147,
+        "requested_fraction": 0.333410218,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9974665792,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 34.0,
+        "measured_sbp_mmHg": 109.9974644147,
+        "pressure_model_mmHg": 109.9974665792,
+        "requested_fraction": 0.3334178528,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9974842089,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 34.25,
+        "measured_sbp_mmHg": 109.9974644147,
+        "pressure_model_mmHg": 109.9974842089,
+        "requested_fraction": 0.3334178528,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9975142849,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 34.5,
+        "measured_sbp_mmHg": 109.9974644147,
+        "pressure_model_mmHg": 109.9975142849,
+        "requested_fraction": 0.3334178528,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9975542781,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 34.75,
+        "measured_sbp_mmHg": 109.9974644147,
+        "pressure_model_mmHg": 109.9975542781,
+        "requested_fraction": 0.3334178528,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.997602073,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 35.0,
+        "measured_sbp_mmHg": 109.9975542781,
+        "pressure_model_mmHg": 109.997602073,
+        "requested_fraction": 0.3334148574,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9976559027,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 35.25,
+        "measured_sbp_mmHg": 109.9975542781,
+        "pressure_model_mmHg": 109.9976559027,
+        "requested_fraction": 0.3334148574,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9977142952,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 35.5,
+        "measured_sbp_mmHg": 109.9975542781,
+        "pressure_model_mmHg": 109.9977142952,
+        "requested_fraction": 0.3334148574,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9977760265,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 35.75,
+        "measured_sbp_mmHg": 109.9975542781,
+        "pressure_model_mmHg": 109.9977760265,
+        "requested_fraction": 0.3334148574,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9978400819,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 36.0,
+        "measured_sbp_mmHg": 109.9977760265,
+        "pressure_model_mmHg": 109.9978400819,
+        "requested_fraction": 0.3334074658,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9979056231,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 36.25,
+        "measured_sbp_mmHg": 109.9977760265,
+        "pressure_model_mmHg": 109.9979056231,
+        "requested_fraction": 0.3334074658,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.99797196,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 36.5,
+        "measured_sbp_mmHg": 109.9977760265,
+        "pressure_model_mmHg": 109.99797196,
+        "requested_fraction": 0.3334074658,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9980385274,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 36.75,
+        "measured_sbp_mmHg": 109.9977760265,
+        "pressure_model_mmHg": 109.9980385274,
+        "requested_fraction": 0.3334074658,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9981048647,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 37.0,
+        "measured_sbp_mmHg": 109.9980385274,
+        "pressure_model_mmHg": 109.9981048647,
+        "requested_fraction": 0.3333987158,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9981705998,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 37.25,
+        "measured_sbp_mmHg": 109.9980385274,
+        "pressure_model_mmHg": 109.9981705998,
+        "requested_fraction": 0.3333987158,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.998235434,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 37.5,
+        "measured_sbp_mmHg": 109.9980385274,
+        "pressure_model_mmHg": 109.998235434,
+        "requested_fraction": 0.3333987158,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9982991305,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 37.75,
+        "measured_sbp_mmHg": 109.9980385274,
+        "pressure_model_mmHg": 109.9982991305,
+        "requested_fraction": 0.3333987158,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9983615043,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 38.0,
+        "measured_sbp_mmHg": 109.9982991305,
+        "pressure_model_mmHg": 109.9983615043,
+        "requested_fraction": 0.333390029,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9984224132,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 38.25,
+        "measured_sbp_mmHg": 109.9982991305,
+        "pressure_model_mmHg": 109.9984224132,
+        "requested_fraction": 0.333390029,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9984817513,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 38.5,
+        "measured_sbp_mmHg": 109.9982991305,
+        "pressure_model_mmHg": 109.9984817513,
+        "requested_fraction": 0.333390029,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.998539442,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 38.75,
+        "measured_sbp_mmHg": 109.9982991305,
+        "pressure_model_mmHg": 109.998539442,
+        "requested_fraction": 0.333390029,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9985954339,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 39.0,
+        "measured_sbp_mmHg": 109.998539442,
+        "pressure_model_mmHg": 109.9985954339,
+        "requested_fraction": 0.3333820186,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9986496956,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 39.25,
+        "measured_sbp_mmHg": 109.998539442,
+        "pressure_model_mmHg": 109.9986496956,
+        "requested_fraction": 0.3333820186,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9987022125,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 39.5,
+        "measured_sbp_mmHg": 109.998539442,
+        "pressure_model_mmHg": 109.9987022125,
+        "requested_fraction": 0.3333820186,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9987529838,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 39.75,
+        "measured_sbp_mmHg": 109.998539442,
+        "pressure_model_mmHg": 109.9987529838,
+        "requested_fraction": 0.3333820186,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9988020195,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 40.0,
+        "measured_sbp_mmHg": 109.9987529838,
+        "pressure_model_mmHg": 129.9988020195,
+        "requested_fraction": 0.3333749005,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.998849339,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 40.25,
+        "measured_sbp_mmHg": 109.9987529838,
+        "pressure_model_mmHg": 129.998849339,
+        "requested_fraction": 0.3333749005,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9988949685,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 40.5,
+        "measured_sbp_mmHg": 109.9987529838,
+        "pressure_model_mmHg": 129.9988949685,
+        "requested_fraction": 0.3333749005,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9989389399,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 40.75,
+        "measured_sbp_mmHg": 109.9987529838,
+        "pressure_model_mmHg": 129.9989389399,
+        "requested_fraction": 0.3333749005,
+        "completed_current_ua": 1000,
+        "completed_events": 10,
+        "modeled_pressor_response_mmHg": 9.9989812897,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 41.0,
+        "measured_sbp_mmHg": 129.9989389399,
+        "pressure_model_mmHg": 129.9989812897,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 9.9363704158,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 41.25,
+        "measured_sbp_mmHg": 129.9989389399,
+        "pressure_model_mmHg": 129.9363704158,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 9.82328138,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 41.5,
+        "measured_sbp_mmHg": 129.9989389399,
+        "pressure_model_mmHg": 129.82328138,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 9.669915811,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 41.75,
+        "measured_sbp_mmHg": 129.9989389399,
+        "pressure_model_mmHg": 129.669915811,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 9.4848091215,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 42.0,
+        "measured_sbp_mmHg": 129.669915811,
+        "pressure_model_mmHg": 129.4848091215,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 9.2750903863,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 42.25,
+        "measured_sbp_mmHg": 129.669915811,
+        "pressure_model_mmHg": 129.2750903863,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 9.0467021589,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 42.5,
+        "measured_sbp_mmHg": 129.669915811,
+        "pressure_model_mmHg": 129.0467021589,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 8.804586382,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 42.75,
+        "measured_sbp_mmHg": 129.669915811,
+        "pressure_model_mmHg": 128.804586382,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 8.5528416038,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 43.0,
+        "measured_sbp_mmHg": 128.804586382,
+        "pressure_model_mmHg": 128.5528416038,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 8.2948559118,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 43.25,
+        "measured_sbp_mmHg": 128.804586382,
+        "pressure_model_mmHg": 128.2948559118,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 8.0334193178,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 43.5,
+        "measured_sbp_mmHg": 128.804586382,
+        "pressure_model_mmHg": 128.0334193178,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 7.7708187542,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 43.75,
+        "measured_sbp_mmHg": 128.804586382,
+        "pressure_model_mmHg": 127.7708187542,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 7.508918357,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 44.0,
+        "measured_sbp_mmHg": 127.7708187542,
+        "pressure_model_mmHg": 127.508918357,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 7.2492272994,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 44.25,
+        "measured_sbp_mmHg": 127.7708187542,
+        "pressure_model_mmHg": 127.2492272994,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 6.9929570919,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 44.5,
+        "measured_sbp_mmHg": 127.7708187542,
+        "pressure_model_mmHg": 126.9929570919,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 6.7410699719,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 44.75,
+        "measured_sbp_mmHg": 127.7708187542,
+        "pressure_model_mmHg": 126.7410699719,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 6.4943197542,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 45.0,
+        "measured_sbp_mmHg": 126.7410699719,
+        "pressure_model_mmHg": 126.4943197542,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 6.2532863047,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 45.25,
+        "measured_sbp_mmHg": 126.7410699719,
+        "pressure_model_mmHg": 126.2532863047,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 6.0184046212,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 45.5,
+        "measured_sbp_mmHg": 126.7410699719,
+        "pressure_model_mmHg": 126.0184046212,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 5.7899893524,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 45.75,
+        "measured_sbp_mmHg": 126.7410699719,
+        "pressure_model_mmHg": 125.7899893524,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 5.56825546,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 46.0,
+        "measured_sbp_mmHg": 125.7899893524,
+        "pressure_model_mmHg": 125.56825546,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 5.3533356191,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 46.25,
+        "measured_sbp_mmHg": 125.7899893524,
+        "pressure_model_mmHg": 125.3533356191,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 5.1452948623,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 46.5,
+        "measured_sbp_mmHg": 125.7899893524,
+        "pressure_model_mmHg": 125.1452948623,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 4.9441428935,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 46.75,
+        "measured_sbp_mmHg": 125.7899893524,
+        "pressure_model_mmHg": 124.9441428935,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 4.7498444321,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 47.0,
+        "measured_sbp_mmHg": 124.9441428935,
+        "pressure_model_mmHg": 124.7498444321,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 4.5623278942,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 47.25,
+        "measured_sbp_mmHg": 124.9441428935,
+        "pressure_model_mmHg": 124.5623278942,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 4.3814926684,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 47.5,
+        "measured_sbp_mmHg": 124.9441428935,
+        "pressure_model_mmHg": 124.3814926684,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 4.2072152052,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 47.75,
+        "measured_sbp_mmHg": 124.9441428935,
+        "pressure_model_mmHg": 124.2072152052,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 4.0393541046,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 48.0,
+        "measured_sbp_mmHg": 124.2072152052,
+        "pressure_model_mmHg": 124.0393541046,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 3.8777543593,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 48.25,
+        "measured_sbp_mmHg": 124.2072152052,
+        "pressure_model_mmHg": 123.8777543593,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 3.7222508851,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 48.5,
+        "measured_sbp_mmHg": 124.2072152052,
+        "pressure_model_mmHg": 123.7222508851,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 3.5726714496,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 48.75,
+        "measured_sbp_mmHg": 124.2072152052,
+        "pressure_model_mmHg": 123.5726714496,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 3.4288390961,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 49.0,
+        "measured_sbp_mmHg": 123.5726714496,
+        "pressure_model_mmHg": 123.4288390961,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 3.2905741408,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 49.25,
+        "measured_sbp_mmHg": 123.5726714496,
+        "pressure_model_mmHg": 123.2905741408,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 3.1576958111,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 49.5,
+        "measured_sbp_mmHg": 123.5726714496,
+        "pressure_model_mmHg": 123.1576958111,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 3.030023583,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 49.75,
+        "measured_sbp_mmHg": 123.5726714496,
+        "pressure_model_mmHg": 123.030023583,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 2.9073782655,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 50.0,
+        "measured_sbp_mmHg": 123.030023583,
+        "pressure_model_mmHg": 122.9073782655,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 2.7895828724,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 50.25,
+        "measured_sbp_mmHg": 123.030023583,
+        "pressure_model_mmHg": 122.7895828724,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 2.6764633167,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 50.5,
+        "measured_sbp_mmHg": 123.030023583,
+        "pressure_model_mmHg": 122.6764633167,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 2.567848956,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 50.75,
+        "measured_sbp_mmHg": 123.030023583,
+        "pressure_model_mmHg": 122.567848956,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 2.4635730136,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 51.0,
+        "measured_sbp_mmHg": 122.567848956,
+        "pressure_model_mmHg": 122.4635730136,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 2.3634728966,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 51.25,
+        "measured_sbp_mmHg": 122.567848956,
+        "pressure_model_mmHg": 122.3634728966,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 2.2673904277,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 51.5,
+        "measured_sbp_mmHg": 122.567848956,
+        "pressure_model_mmHg": 122.2673904277,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 2.1751720057,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 51.75,
+        "measured_sbp_mmHg": 122.567848956,
+        "pressure_model_mmHg": 122.1751720057,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 2.0866687075,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 52.0,
+        "measured_sbp_mmHg": 122.1751720057,
+        "pressure_model_mmHg": 122.0866687075,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 2.0017363409,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 52.25,
+        "measured_sbp_mmHg": 122.1751720057,
+        "pressure_model_mmHg": 122.0017363409,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.9202354588,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 52.5,
+        "measured_sbp_mmHg": 122.1751720057,
+        "pressure_model_mmHg": 121.9202354588,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.8420313399,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 52.75,
+        "measured_sbp_mmHg": 122.1751720057,
+        "pressure_model_mmHg": 121.8420313399,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.7669939447,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 53.0,
+        "measured_sbp_mmHg": 121.8420313399,
+        "pressure_model_mmHg": 121.7669939447,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.6949978491,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 53.25,
+        "measured_sbp_mmHg": 121.8420313399,
+        "pressure_model_mmHg": 121.6949978491,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.6259221626,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 53.5,
+        "measured_sbp_mmHg": 121.8420313399,
+        "pressure_model_mmHg": 121.6259221626,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.5596504328,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 53.75,
+        "measured_sbp_mmHg": 121.8420313399,
+        "pressure_model_mmHg": 121.5596504328,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.4960705406,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 54.0,
+        "measured_sbp_mmHg": 121.5596504328,
+        "pressure_model_mmHg": 121.4960705406,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.4350745878,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 54.25,
+        "measured_sbp_mmHg": 121.5596504328,
+        "pressure_model_mmHg": 121.4350745878,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.3765587789,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 54.5,
+        "measured_sbp_mmHg": 121.5596504328,
+        "pressure_model_mmHg": 121.3765587789,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.3204233001,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 54.75,
+        "measured_sbp_mmHg": 121.5596504328,
+        "pressure_model_mmHg": 121.3204233001,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.2665721958,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 55.0,
+        "measured_sbp_mmHg": 121.3204233001,
+        "pressure_model_mmHg": 121.2665721958,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.2149132443,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 55.25,
+        "measured_sbp_mmHg": 121.3204233001,
+        "pressure_model_mmHg": 121.2149132443,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.165357833,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 55.5,
+        "measured_sbp_mmHg": 121.3204233001,
+        "pressure_model_mmHg": 121.165357833,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.1178208353,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 55.75,
+        "measured_sbp_mmHg": 121.3204233001,
+        "pressure_model_mmHg": 121.1178208353,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.0722204881,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 56.0,
+        "measured_sbp_mmHg": 121.1178208353,
+        "pressure_model_mmHg": 121.0722204881,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 1.0284782714,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 56.25,
+        "measured_sbp_mmHg": 121.1178208353,
+        "pressure_model_mmHg": 121.0284782714,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.9865187906,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 56.5,
+        "measured_sbp_mmHg": 121.1178208353,
+        "pressure_model_mmHg": 120.9865187906,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.946269661,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 56.75,
+        "measured_sbp_mmHg": 121.1178208353,
+        "pressure_model_mmHg": 120.946269661,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.9076613949,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 57.0,
+        "measured_sbp_mmHg": 120.946269661,
+        "pressure_model_mmHg": 120.9076613949,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.8706272928,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 57.25,
+        "measured_sbp_mmHg": 120.946269661,
+        "pressure_model_mmHg": 120.8706272928,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.8351033364,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 57.5,
+        "measured_sbp_mmHg": 120.946269661,
+        "pressure_model_mmHg": 120.8351033364,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.8010280855,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 57.75,
+        "measured_sbp_mmHg": 120.946269661,
+        "pressure_model_mmHg": 120.8010280855,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.7683425784,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 58.0,
+        "measured_sbp_mmHg": 120.8010280855,
+        "pressure_model_mmHg": 120.7683425784,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.7369902348,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 58.25,
+        "measured_sbp_mmHg": 120.8010280855,
+        "pressure_model_mmHg": 120.7369902348,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.7069167627,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 58.5,
+        "measured_sbp_mmHg": 120.8010280855,
+        "pressure_model_mmHg": 120.7069167627,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.678070068,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 58.75,
+        "measured_sbp_mmHg": 120.8010280855,
+        "pressure_model_mmHg": 120.678070068,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.6504001679,
+        "pressure_support_age_ms": 1000.0
+      },
+      {
+        "time_s": 59.0,
+        "measured_sbp_mmHg": 120.678070068,
+        "pressure_model_mmHg": 120.6504001679,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.6238591065,
+        "pressure_support_age_ms": 250.0
+      },
+      {
+        "time_s": 59.25,
+        "measured_sbp_mmHg": 120.678070068,
+        "pressure_model_mmHg": 120.6238591065,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.5984008744,
+        "pressure_support_age_ms": 500.0
+      },
+      {
+        "time_s": 59.5,
+        "measured_sbp_mmHg": 120.678070068,
+        "pressure_model_mmHg": 120.5984008744,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.5739813307,
+        "pressure_support_age_ms": 750.0
+      },
+      {
+        "time_s": 59.75,
+        "measured_sbp_mmHg": 120.678070068,
+        "pressure_model_mmHg": 120.5739813307,
+        "requested_fraction": 0.0,
+        "completed_current_ua": 0,
+        "completed_events": 0,
+        "modeled_pressor_response_mmHg": 0.5505581284,
+        "pressure_support_age_ms": 1000.0
+      }
+    ]
+  },
+  "fault_cases": [
+    {
+      "case": "invalid_raw_identity",
+      "passed": true,
+      "fault_code": 9,
+      "output_request_mask": 0,
+      "armed": false,
+      "scope": "Compiled production core with synthetic health/input observations"
+    },
+    {
+      "case": "stale_sbp",
+      "passed": true,
+      "fault_code": 4,
+      "output_request_mask": 0,
+      "armed": false,
+      "scope": "Compiled production core with synthetic health/input observations"
+    },
+    {
+      "case": "crc_corruption",
+      "passed": true,
+      "fault_code": 4,
+      "output_request_mask": 0,
+      "armed": false,
+      "scope": "Compiled production core with synthetic health/input observations"
+    },
+    {
+      "case": "packet_replay",
+      "passed": true,
+      "fault_code": 4,
+      "output_request_mask": 0,
+      "armed": false,
+      "scope": "Compiled production core with synthetic health/input observations"
+    },
+    {
+      "case": "pressure_packet_loss",
+      "passed": true,
+      "fault_code": 5,
+      "output_request_mask": 0,
+      "armed": false,
+      "scope": "Compiled production core with synthetic health/input observations"
+    },
+    {
+      "case": "companion_lease_loss",
+      "passed": true,
+      "fault_code": 6,
+      "output_request_mask": 0,
+      "armed": false,
+      "scope": "Compiled production core with synthetic health/input observations"
+    },
+    {
+      "case": "active_route_mismatch",
+      "passed": true,
+      "fault_code": 7,
+      "output_request_mask": 0,
+      "armed": false,
+      "scope": "Compiled production core with synthetic health/input observations"
+    },
+    {
+      "case": "current_above_envelope",
+      "passed": true,
+      "fault_code": 8,
+      "output_request_mask": 0,
+      "armed": false,
+      "scope": "Compiled production core with synthetic health/input observations"
+    },
+    {
+      "case": "shared_contact_conflict",
+      "passed": true,
+      "fault_code": 8,
+      "output_request_mask": 0,
+      "armed": false,
+      "scope": "Compiled production core with synthetic health/input observations"
+    },
+    {
+      "case": "off_trial",
+      "passed": true,
+      "fault_code": 0,
+      "output_request_mask": 0,
+      "armed": true,
+      "scope": "Compiled production core with synthetic health/input observations"
+    },
+    {
+      "case": "independent_inhibit_midphase",
+      "passed": true,
+      "fault_code": 3,
+      "output_request_mask": 0,
+      "armed": false,
+      "scope": "Compiled production core with synthetic health/input observations"
+    },
+    {
+      "case": "phase_timeout",
+      "passed": true,
+      "fault_code": 8,
+      "output_request_mask": 0,
+      "armed": false,
+      "scope": "Compiled production core with synthetic health/input observations"
+    },
+    {
+      "case": "restored_health_no_autorearm",
+      "passed": true,
+      "fault_code": 3,
+      "output_request_mask": 0,
+      "armed": false,
+      "scope": "Compiled production core with synthetic health/input observations"
+    }
+  ],
+  "companion_fault_cases": [
+    {
+      "case": "fresh_feature",
+      "accepted": true,
+      "expected": true,
+      "owner": "New conditional companion adapter, not production C neural validity"
+    },
+    {
+      "case": "stale_feature",
+      "accepted": false,
+      "expected": false,
+      "owner": "New conditional companion adapter, not production C neural validity"
+    },
+    {
+      "case": "future_feature_support",
+      "accepted": false,
+      "expected": false,
+      "owner": "New conditional companion adapter, not production C neural validity"
+    },
+    {
+      "case": "future_arrival",
+      "accepted": false,
+      "expected": false,
+      "owner": "New conditional companion adapter, not production C neural validity"
+    },
+    {
+      "case": "invalid_or_artifact_flag",
+      "accepted": false,
+      "expected": false,
+      "owner": "New conditional companion adapter, not production C neural validity"
+    },
+    {
+      "case": "nonfinite_feature",
+      "accepted": false,
+      "expected": false,
+      "owner": "New conditional companion adapter, not production C neural validity"
+    }
+  ],
+  "independent_supervision_cases": [
+    {
+      "case": "normal_200us",
+      "request_still_high": false,
+      "terminal_allow": false,
+      "armed": true,
+      "time_ns": 5302000,
+      "source": "Unchanged Stage4 ideal independent Supervisor state equations",
+      "physical_delay_qualified": false
+    },
+    {
+      "case": "host_stuck_request",
+      "request_still_high": true,
+      "terminal_allow": false,
+      "armed": false,
+      "time_ns": 5352112,
+      "source": "Unchanged Stage4 ideal independent Supervisor state equations",
+      "physical_delay_qualified": false
+    },
+    {
+      "case": "guard_fault",
+      "request_still_high": true,
+      "terminal_allow": false,
+      "armed": false,
+      "time_ns": 5202000,
+      "source": "Unchanged Stage4 ideal independent Supervisor state equations",
+      "physical_delay_qualified": false
+    },
+    {
+      "case": "monitor_permit_loss",
+      "request_still_high": true,
+      "terminal_allow": false,
+      "armed": false,
+      "time_ns": 5202000,
+      "source": "Unchanged Stage4 ideal independent Supervisor state equations",
+      "physical_delay_qualified": false
+    }
+  ],
+  "port_trace": {
+    "ports": 36,
+    "recording_header": "J30003",
+    "protected_output_header": "J50101",
+    "example": {
+      "contact_index": 2,
+      "logical": "STIM_03",
+      "port": "P21",
+      "pin": "3",
+      "return_port": "P35",
+      "return_pin": "17",
+      "recording_port": "P01",
+      "recording_pin": "1"
+    },
+    "no_physical_continuity_measurement": true
+  }
+}

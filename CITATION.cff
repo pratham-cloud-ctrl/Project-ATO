@@ -1,15 +1,27 @@
 cff-version: 1.2.0
-message: "Please cite this digital engineering project and its primary references separately."
-title: "Project ATO: a digital engineering study of invasive spinal interfaces"
+message: "Please cite this AI-assisted digital engineering project and its primary scientific references separately."
+title: "Project ATO: integrated SCCI research and digital engineering"
 type: software
 authors:
   - family-names: Varma
     given-names: Pratham
-version: 1.0.0
-date-released: 2026-10-07
+version: 2.0.0
+date-released: 2026-10-16
+repository-code: "https://github.com/pratham-cloud-ctrl/Project-ATO"
+url: "https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.0"
 abstract: >-
-  An AI-assisted, entirely digital engineering proof of concept linking spinal
-  interface literature, synthetic motor-learning and physiological-control
-  studies, reference electronics, parametric CAD, and reproducible results.
-  Simulations do not establish biological or clinical effectiveness.
+  An AI-assisted, entirely digital project connecting conditional spinal-interface
+  mechanisms for expert-informed retained motor learning and selected physiological
+  feedback to computational studies, executed production control code, native
+  electronics, target-linked firmware and mechanical CAD. No original biological
+  experiment, physical execution or clinical effectiveness is claimed.
 license: LicenseRef-Proprietary
+preferred-citation:
+  type: report
+  title: "Project ATO: a conditional spinal cord-computer interface for expert-informed practice and physiological feedback"
+  authors:
+    - family-names: Varma
+      given-names: Pratham
+  version: 2.0.0
+  date-released: 2026-10-16
+  url: "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/output/pdf/Project_ATO_Integrated_Manuscript.pdf"

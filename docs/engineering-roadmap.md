@@ -1,12 +1,13 @@
-# Project ATO: engineering roadmap and Stage 3 closeout
+# Project ATO: engineering roadmap and digital completion
 
-16 October 2026. The conservative Stage 3 investigation and conditional concept
-v1 are complete within their separate scopes. Stage 4 completes native
-electronics, bounded actual firmware and the integrated populated board set.
-Stage 5 mechanical packaging is also complete within its bounded digital scope;
-Stage 6 final paper/release remains. This plan
-preserves scientific gates and negative results; the full project is still in
-development.
+16 October 2026. Stages 1-6 are complete within their stated digital scopes:
+mechanisms, quantitative architecture, preserved computational investigations,
+native electronics, bounded actual firmware, mechanical CAD and the integrated
+manuscript/release. The [current entry](../START_HERE.md) and
+[Stage 6 exit review](stage6/exit-review.md) organize the completed package.
+Biological efficacy, target physical execution, compact implant electronics and
+chronic thermal/interface qualification remain subsequent work. The roadmap
+below preserves the scientific questions and explicit negative findings.
 
 ## Intended result
 
@@ -174,9 +175,10 @@ exports. The [mechanical exit review](stage5/exit-review.md) records completed
 source-bound native checks. Its compact future package explicitly requires
 redesigned miniaturized electronics; the eight reference boards retain 1:1 scale.
 
-The final stage joins the mechanisms, circuit/firmware evidence and CAD into the
-illustrated manuscript and a reproducible private repository release. Each
-digital result retains its limits and contribution record.
+Stage 6 now joins the mechanisms, circuit/firmware evidence and CAD in the
+[integrated illustrated manuscript](../output/pdf/Project_ATO_Integrated_Manuscript.pdf)
+and reproducible private v2.0.0 release. Each digital result retains its limits
+and contribution record.
 
 ## Proposed additional tools
 

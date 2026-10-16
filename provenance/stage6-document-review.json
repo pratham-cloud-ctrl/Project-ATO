@@ -1,0 +1,316 @@
+{
+  "schema": "ato.stage6.document-review.v1",
+  "passed": true,
+  "date": "2026-10-16",
+  "pdf_path": "output/pdf/Project_ATO_Integrated_Manuscript.pdf",
+  "pdf_sha256": "b2e700f44ee4342c15806e72abe20aa70280d459fe4d8f9a1331babe57a69418",
+  "pages_reviewed": 27,
+  "visual_review_performed": true,
+  "reviewers": [
+    {
+      "reviewer": "Codex primary agent",
+      "pages_actually_opened": [
+        4,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "method": "Rendered contact sheets and individual pages; corrected page 16 opened again at readable resolution"
+    },
+    {
+      "reviewer": "Codex evidence/review agent",
+      "pages_actually_opened": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "method": "Actual rendered page images; carried forward only where identical PNG bytes establish unchanged presentation"
+    }
+  ],
+  "corrections_verified": [
+    "System and runtime diagram labels fit their boxes; feedback arrows terminate at the intended blocks",
+    "Bladder reference identifies implanted epidural access and user-switched home programmes",
+    "Residual activation stated below 1e-18 before rounding, not mathematically exact zero",
+    "Pressure peak 129.999 mmHg compared with target 120 mmHg exposes approximately 10 mmHg overshoot",
+    "Source-reported circumferential decoding chance baseline explicitly flagged for clarification",
+    "Complete author/reference entries and population/access appendix are readable"
+  ],
+  "layout_checks": [
+    "All 27 page images reviewed",
+    "No clipped text or overlapping labels after corrections",
+    "Tables, captions, headers, footers and page numbering readable",
+    "Linked contents and bibliography retained; embedded DejaVu fonts"
+  ],
+  "final_metadata_fix": "ReportLab document-level invariant option prevents default override of invariant Canvas; no visual content changed",
+  "identical_input_pdf_rebuild": true,
+  "final_raster_verification": {
+    "schema": "ato.stage6.pdf-deterministic-raster-check.v1",
+    "passed": true,
+    "two_fresh_builds_identical": true,
+    "pages": 27,
+    "pdf_path": "E:\\Project ATO\\output\\pdf\\Project_ATO_Integrated_Manuscript.pdf",
+    "pdf_sha256": "b2e700f44ee4342c15806e72abe20aa70280d459fe4d8f9a1331babe57a69418",
+    "first_build_pdf_sha256": "b2e700f44ee4342c15806e72abe20aa70280d459fe4d8f9a1331babe57a69418",
+    "previous_pdf_sha256": "959e018d03ec1dea5f2aa3075fd3179d7cd4a3246d218c13dd4de50dca873111",
+    "pdf_bytes": 7833953,
+    "renderer": "Poppler pdftoppm",
+    "raster_dpi": 60,
+    "changed_pages": [],
+    "changed_page_content_streams": [],
+    "page_rasters": [
+      {
+        "page": 1,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-01.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-01.png",
+        "previous_sha256": "a3c8d924e67b5c2b585b6ae104b8062c29463c85f091aaaafcc00d17495f2e00",
+        "latest_sha256": "a3c8d924e67b5c2b585b6ae104b8062c29463c85f091aaaafcc00d17495f2e00",
+        "identical": true
+      },
+      {
+        "page": 2,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-02.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-02.png",
+        "previous_sha256": "d0ee9e24224b53cc3a7e3ab46282805eed1566324bf9ebf64e043360761bbfbd",
+        "latest_sha256": "d0ee9e24224b53cc3a7e3ab46282805eed1566324bf9ebf64e043360761bbfbd",
+        "identical": true
+      },
+      {
+        "page": 3,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-03.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-03.png",
+        "previous_sha256": "0ac7e26be648a1b8b5c42ebd1e6e5b54a8f03c86b1872853ddca1c650100c991",
+        "latest_sha256": "0ac7e26be648a1b8b5c42ebd1e6e5b54a8f03c86b1872853ddca1c650100c991",
+        "identical": true
+      },
+      {
+        "page": 4,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-04.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-04.png",
+        "previous_sha256": "8a0e0c7724bf7802be8b760b4d1d7922fb127937837822223805d20a08cc6041",
+        "latest_sha256": "8a0e0c7724bf7802be8b760b4d1d7922fb127937837822223805d20a08cc6041",
+        "identical": true
+      },
+      {
+        "page": 5,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-05.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-05.png",
+        "previous_sha256": "860a1c3f4e6b255e6a11451afea3958aa043db776141e0cc97490923ce32743f",
+        "latest_sha256": "860a1c3f4e6b255e6a11451afea3958aa043db776141e0cc97490923ce32743f",
+        "identical": true
+      },
+      {
+        "page": 6,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-06.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-06.png",
+        "previous_sha256": "9b91fbd7b817f807f61906440b9679c048fb43aad7ad4b0cc3ce95ed5b929a9a",
+        "latest_sha256": "9b91fbd7b817f807f61906440b9679c048fb43aad7ad4b0cc3ce95ed5b929a9a",
+        "identical": true
+      },
+      {
+        "page": 7,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-07.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-07.png",
+        "previous_sha256": "1d2c64f3f1f9306697c4563176d02f6e8203725de83708fd66debffa5187b17b",
+        "latest_sha256": "1d2c64f3f1f9306697c4563176d02f6e8203725de83708fd66debffa5187b17b",
+        "identical": true
+      },
+      {
+        "page": 8,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-08.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-08.png",
+        "previous_sha256": "8fc32dd71758b064885194b4e3a7a13d6378f704fc2a45658ff4fb179bdcbd83",
+        "latest_sha256": "8fc32dd71758b064885194b4e3a7a13d6378f704fc2a45658ff4fb179bdcbd83",
+        "identical": true
+      },
+      {
+        "page": 9,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-09.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-09.png",
+        "previous_sha256": "9d53e90a495f8e4fa9c056b640bc9c44eec7515c11ae205b31564d063741a7ea",
+        "latest_sha256": "9d53e90a495f8e4fa9c056b640bc9c44eec7515c11ae205b31564d063741a7ea",
+        "identical": true
+      },
+      {
+        "page": 10,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-10.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-10.png",
+        "previous_sha256": "6e6c0efcf1b67dd16dd1e08b8f5e86f2650a70f9d48cccce5d37f0a963af1d77",
+        "latest_sha256": "6e6c0efcf1b67dd16dd1e08b8f5e86f2650a70f9d48cccce5d37f0a963af1d77",
+        "identical": true
+      },
+      {
+        "page": 11,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-11.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-11.png",
+        "previous_sha256": "8cf414be9c66d448efa5c9d6837f803cdd8307b7964b7e491c51a0d35eb9741a",
+        "latest_sha256": "8cf414be9c66d448efa5c9d6837f803cdd8307b7964b7e491c51a0d35eb9741a",
+        "identical": true
+      },
+      {
+        "page": 12,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-12.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-12.png",
+        "previous_sha256": "5f64aca383830f41831600392ac6bfd085a28436217c0fc9e838622de3d77936",
+        "latest_sha256": "5f64aca383830f41831600392ac6bfd085a28436217c0fc9e838622de3d77936",
+        "identical": true
+      },
+      {
+        "page": 13,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-13.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-13.png",
+        "previous_sha256": "3e0eeaa0f71b1d7cd13200bce31b2ae9385d9bf52c164d0ba744042f600b4454",
+        "latest_sha256": "3e0eeaa0f71b1d7cd13200bce31b2ae9385d9bf52c164d0ba744042f600b4454",
+        "identical": true
+      },
+      {
+        "page": 14,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-14.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-14.png",
+        "previous_sha256": "01bb95d9e757c5a5bf9c479b8a68ed86a8b153aac12ce0c8d1abf04bbf6f62b0",
+        "latest_sha256": "01bb95d9e757c5a5bf9c479b8a68ed86a8b153aac12ce0c8d1abf04bbf6f62b0",
+        "identical": true
+      },
+      {
+        "page": 15,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-15.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-15.png",
+        "previous_sha256": "56b4b4d96d8e8d5b74230a80a7391999fd458f29bf12377798de6e2fb58d55a4",
+        "latest_sha256": "56b4b4d96d8e8d5b74230a80a7391999fd458f29bf12377798de6e2fb58d55a4",
+        "identical": true
+      },
+      {
+        "page": 16,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-16.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-16.png",
+        "previous_sha256": "a21b580bff821d56afdb5a2b67a440c7714ffe3f2a5b8ed403a9a05f6abadea7",
+        "latest_sha256": "a21b580bff821d56afdb5a2b67a440c7714ffe3f2a5b8ed403a9a05f6abadea7",
+        "identical": true
+      },
+      {
+        "page": 17,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-17.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-17.png",
+        "previous_sha256": "ca6b748a5514fd7d66eb03f2cf328659c1fb3aa947da58434aab3faba66f7408",
+        "latest_sha256": "ca6b748a5514fd7d66eb03f2cf328659c1fb3aa947da58434aab3faba66f7408",
+        "identical": true
+      },
+      {
+        "page": 18,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-18.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-18.png",
+        "previous_sha256": "c3167ff4eb984502cef193042da54b8153464c0fc4a10aba4babee0b87e99c3a",
+        "latest_sha256": "c3167ff4eb984502cef193042da54b8153464c0fc4a10aba4babee0b87e99c3a",
+        "identical": true
+      },
+      {
+        "page": 19,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-19.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-19.png",
+        "previous_sha256": "e96db3564568b05df70de19e9ca568cd3849122448a4576fa010560573f24594",
+        "latest_sha256": "e96db3564568b05df70de19e9ca568cd3849122448a4576fa010560573f24594",
+        "identical": true
+      },
+      {
+        "page": 20,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-20.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-20.png",
+        "previous_sha256": "3609281237308f0f722be7c9bfd11c9fc010dbea0ce8b7f18c5481a567bf054d",
+        "latest_sha256": "3609281237308f0f722be7c9bfd11c9fc010dbea0ce8b7f18c5481a567bf054d",
+        "identical": true
+      },
+      {
+        "page": 21,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-21.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-21.png",
+        "previous_sha256": "f3cda4e24d602f7712f09ff122c2f89300c29f411697c9d7df68c1fd8125cce1",
+        "latest_sha256": "f3cda4e24d602f7712f09ff122c2f89300c29f411697c9d7df68c1fd8125cce1",
+        "identical": true
+      },
+      {
+        "page": 22,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-22.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-22.png",
+        "previous_sha256": "d23f04e2addb156b6bae9b60da706be519b9dd0e1612aa606e737bdbea517aae",
+        "latest_sha256": "d23f04e2addb156b6bae9b60da706be519b9dd0e1612aa606e737bdbea517aae",
+        "identical": true
+      },
+      {
+        "page": 23,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-23.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-23.png",
+        "previous_sha256": "aa32e6046c5f11480331e92cd132eb31729bba5d5b821b8481f93f633335fe0e",
+        "latest_sha256": "aa32e6046c5f11480331e92cd132eb31729bba5d5b821b8481f93f633335fe0e",
+        "identical": true
+      },
+      {
+        "page": 24,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-24.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-24.png",
+        "previous_sha256": "591e088d8b03de810b9c83f1fc7815c5407be45381647409a38c223a23eb380b",
+        "latest_sha256": "591e088d8b03de810b9c83f1fc7815c5407be45381647409a38c223a23eb380b",
+        "identical": true
+      },
+      {
+        "page": 25,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-25.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-25.png",
+        "previous_sha256": "7dc5e16fff122ac28b1b997a01cbf004944a4a9f0d2e06b7211560d0a790227f",
+        "latest_sha256": "7dc5e16fff122ac28b1b997a01cbf004944a4a9f0d2e06b7211560d0a790227f",
+        "identical": true
+      },
+      {
+        "page": 26,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-26.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-26.png",
+        "previous_sha256": "cce3243776b3552f8b3fee58ac8ec9c919d49cd95a83b286a33b52e0328a8751",
+        "latest_sha256": "cce3243776b3552f8b3fee58ac8ec9c919d49cd95a83b286a33b52e0328a8751",
+        "identical": true
+      },
+      {
+        "page": 27,
+        "previous_path": "E:\\Project ATO\\tmp\\stage6-determinism\\before-27.png",
+        "latest_path": "E:\\Project ATO\\tmp\\stage6-determinism\\fixed-27.png",
+        "previous_sha256": "d2cfe45304346d88afc01f036f12f17036bbb48a9fdb5349ba8aa5e9c821b59b",
+        "latest_sha256": "d2cfe45304346d88afc01f036f12f17036bbb48a9fdb5349ba8aa5e9c821b59b",
+        "identical": true
+      }
+    ],
+    "rendered_appearance_unchanged": true,
+    "review_claim": "Exact pixel comparison preserves prior actual visual review; this check is not a new human visual review",
+    "cause": "BaseDocTemplate invariant=None overrode partial(Canvas,invariant=1); setting Document invariant=1 fixes dates and PDF ID",
+    "final_metadata": {
+      "/Author": "Pratham Varma",
+      "/CreationDate": "D:20000101000000+00'00'",
+      "/Creator": "(unspecified)",
+      "/Keywords": "",
+      "/ModDate": "D:20000101000000+00'00'",
+      "/Producer": "ReportLab PDF Library - (opensource)",
+      "/Subject": "Conditional spinal interface; digital design and finite evidence",
+      "/Title": "Project ATO: integrated SCCI research and engineering",
+      "/Trapped": "/False"
+    }
+  },
+  "review_scope": "AI-assisted digital document review; not human expert, institutional or scientific peer approval",
+  "physical_or_biological_validation": false
+}

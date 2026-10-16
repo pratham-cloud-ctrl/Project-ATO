@@ -66,3 +66,5 @@ cad/stage5/**/*.svg whitespace=-blank-at-eol
 # Keep reviewed source-hash bindings byte-stable, including final blank lines.
 cad/stage5/reference/extract_board_datums.py whitespace=-blank-at-eof
 docs/stage5/future-package-design.md whitespace=-blank-at-eof
+# Source-derived manuscript SVG path spacing is generated and visually reviewed.
+manuscript/stage6/figures/*.svg whitespace=-blank-at-eol

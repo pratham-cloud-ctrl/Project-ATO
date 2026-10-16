@@ -1,0 +1,29 @@
+name: Verify integrated digital release
+on:
+  pull_request:
+  push:
+    tags: ['v2.*']
+  workflow_dispatch:
+
+jobs:
+  integrated-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install document inspection dependency
+        run: python -m pip install pypdf==6.10.0 numpy==2.3.5
+      - name: Verify exact committed Git blobs
+        run: python scripts/verify_manifest.py
+      - name: Verify manuscript, release entries and preserved sources
+        run: python scripts/verify_stage6_release.py
+      - name: Reproduce both conditional paths through the production C core
+        run: python scripts/stage6/verify_digital_path.py
+      - name: Preserve integrated electronics checkpoint
+        run: python scripts/verify_integrated_pcb.py
+      - name: Preserve mechanical source and native inspection evidence
+        run: python scripts/verify_stage5_mechanics.py
