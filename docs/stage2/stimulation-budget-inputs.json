@@ -1,0 +1,401 @@
+{
+  "schema_version": "ato.stage2.stimulation-budget.v1",
+  "document_id": "S2-STIM-001",
+  "generated_on": "2026-10-08",
+  "scope": "Entirely digital proposal. Electrical parameter envelope, not a clinical prescription or electrochemical safety approval.",
+  "references": {
+    "S2-BIO-001": {
+      "url": "https://doi.org/10.1038/s41591-025-03614-w",
+      "provenance": "human SCI primary experiment",
+      "verified_pulse_width_s": 0.0003,
+      "verified_profile_frequency_Hz": 120,
+      "reported_current_up_to_A": 0.02,
+      "profile_offsets_s": [
+        0,
+        0.002,
+        0.004
+      ],
+      "symmetric_two_active_phase_equivalence_verified": false
+    },
+    "S2-BIO-002": {
+      "url": "https://doi.org/10.1038/s41591-021-01663-5",
+      "verified_example_frequencies_Hz": [
+        20,
+        100
+      ],
+      "current_width_load_not_verified_in_this_audit": true
+    },
+    "S2-BIO-005": {
+      "url": "https://www.bostonscientific.com/content/dam/elabeling/nm/92395591-04_Rev_A_BionicNav_Program_Manual_multi-OUS_s.pdf",
+      "provenance": "official manufacturer programming manual; not ATO approval",
+      "printed_pages": [
+        25,
+        26,
+        27,
+        29
+      ],
+      "reported_product_amplitude_times_width_ceiling_C": {
+        "most_leads": 1.27e-05,
+        "4x8_surgical_lead": 9.1e-06
+      },
+      "multiple_area_frequency_derating_documented": true
+    }
+  },
+  "parameters": {
+    "independent_current_sources": {
+      "value": 2,
+      "unit": "sources",
+      "status": "selected ATO architecture"
+    },
+    "maximum_concurrent_sources": {
+      "value": 2,
+      "unit": "sources",
+      "status": "requires independent monitored current paths"
+    },
+    "routable_stimulation_contacts": {
+      "value": 16,
+      "unit": "contacts",
+      "status": "ATO choice"
+    },
+    "dedicated_return_contacts": {
+      "value": 2,
+      "unit": "contacts",
+      "status": "ATO choice; distinct from recording references"
+    },
+    "active_current_magnitude": {
+      "min": 0.0001,
+      "max": 0.02,
+      "unit": "A",
+      "status": "ATO design range; zero disables output"
+    },
+    "phase_duration": {
+      "min": 5e-05,
+      "max": 0.0005,
+      "nominal": 0.0003,
+      "unit": "s",
+      "status": "ATO design range; published pulse width is not proof of active symmetric phases"
+    },
+    "profile_repetition": {
+      "min": 1,
+      "max": 150,
+      "unit": "Hz",
+      "status": "ATO range subject to admission"
+    },
+    "charge_ceiling_per_phase": {
+      "value": 1e-05,
+      "unit": "C",
+      "status": "engineering maximum, not tissue safety"
+    },
+    "nominal_interphase_gap": {
+      "value": 0.0001,
+      "unit": "s",
+      "status": "ATO choice"
+    },
+    "nominal_recording_recovery_allocation": {
+      "value": 0.001,
+      "unit": "s",
+      "status": "unverified AFE artifact allocation; not electrode-reset guarantee"
+    },
+    "boost_rail": {
+      "value": 48,
+      "unit": "V",
+      "status": "Maximum/fixed-rail stress allocation; integrated system also proposes16/24/36V rails with8V headroom"
+    },
+    "usable_terminal_compliance": {
+      "value": 40,
+      "unit": "V differential",
+      "status": "after total 8 V driver/routing headroom allocation"
+    },
+    "combined_polarization_reserve": {
+      "value": 4,
+      "unit": "V",
+      "status": "electrical stress assumption, not electrochemical permission"
+    },
+    "converter_efficiency": {
+      "value": 0.8,
+      "unit": "fraction",
+      "status": "unverified ATO assumption; no regeneration"
+    },
+    "bulk_path_resistance_sweep": {
+      "values": [
+        500,
+        1000,
+        2000
+      ],
+      "unit": "ohm",
+      "status": "unfitted stress sweep; not reported chronic study load"
+    },
+    "effective_interface_capacitance_per_contact": {
+      "values": [
+        1e-06,
+        5e-06,
+        1e-05,
+        5e-05
+      ],
+      "nominal": 5e-06,
+      "unit": "F",
+      "status": "unfitted interface hypotheses; no capacity inflation allowed"
+    },
+    "charge_transfer_resistance_per_contact": {
+      "values": [
+        10000,
+        100000,
+        1000000
+      ],
+      "nominal": 100000,
+      "unit": "ohm",
+      "status": "unfitted interface hypotheses"
+    },
+    "illustrative_contact_area": {
+      "value": 6e-06,
+      "unit": "m^2",
+      "status": "manufacturer geometry-sized example, not anatomical fit"
+    },
+    "contact_area_sensitivity": {
+      "value": 1.2e-05,
+      "unit": "m^2",
+      "status": "ATO alternative; selectivity changes"
+    },
+    "dedicated_return_area": {
+      "value": 2.4e-05,
+      "unit": "m^2",
+      "status": "ATO hypothesis; no equal-sharing assumption"
+    },
+    "adverse_initial_pair_polarization": {
+      "value": 4,
+      "unit": "V",
+      "status": "electrical fault stress state"
+    },
+    "illustrative_residual_ready_threshold": {
+      "value": 0.02,
+      "unit": "V differential",
+      "status": "electrical example only, not chemical/tissue limit"
+    },
+    "candidate_contact_material": {
+      "value": "Pt-Ir nominal90/10",
+      "unit": "composition candidate",
+      "status": "ATO material hypothesis; surface finish/coating and chronic chemistry unqualified"
+    },
+    "command_charge_ceiling_per_phase": {
+      "value": 9e-06,
+      "unit": "C",
+      "status": "Selected command margin; delivery10uC ceiling includes uncertainty, not tissue safety"
+    }
+  },
+  "calculated_schedule_cases": [
+    {
+      "case_id": "low_end",
+      "profile_count": 1,
+      "current_magnitude_A": 0.0001,
+      "phase_duration_s": 5e-05,
+      "frequency_per_profile_Hz": 1,
+      "active_duty_per_profile": 0.0001,
+      "aggregate_source_active_duty": 0.0001,
+      "charge_per_phase_C": 5e-09,
+      "absolute_charge_per_biphasic_pulse_C": 1e-08,
+      "ideal_net_charge_per_pulse_C": 0,
+      "charge_density_6mm2_uC_per_cm2": 0.08333333333333334,
+      "charge_density_12mm2_uC_per_cm2": 0.04166666666666667,
+      "rail_power_W": 4.800000000000001e-07,
+      "battery_stimulation_power_W": 6.000000000000001e-07,
+      "bulk_dissipation_total_at_1kohm_W": 1e-09,
+      "status": "calculated schedule allocation; conditional power/thermal admission, not biologically validated"
+    },
+    {
+      "case_id": "motor_two_profiles",
+      "profile_count": 2,
+      "current_magnitude_A": 0.01,
+      "phase_duration_s": 0.0003,
+      "frequency_per_profile_Hz": 100,
+      "active_duty_per_profile": 0.06,
+      "aggregate_source_active_duty": 0.12,
+      "charge_per_phase_C": 2.9999999999999997e-06,
+      "absolute_charge_per_biphasic_pulse_C": 5.999999999999999e-06,
+      "ideal_net_charge_per_pulse_C": 0,
+      "charge_density_6mm2_uC_per_cm2": 49.99999999999999,
+      "charge_density_12mm2_uC_per_cm2": 24.999999999999996,
+      "rail_power_W": 0.0576,
+      "battery_stimulation_power_W": 0.072,
+      "bulk_dissipation_total_at_1kohm_W": 0.012,
+      "status": "calculated schedule allocation; conditional power/thermal admission, not biologically validated"
+    },
+    {
+      "case_id": "pressure_three_profiles",
+      "profile_count": 3,
+      "current_magnitude_A": 0.02,
+      "phase_duration_s": 0.0003,
+      "frequency_per_profile_Hz": 120,
+      "active_duty_per_profile": 0.072,
+      "aggregate_source_active_duty": 0.21599999999999997,
+      "charge_per_phase_C": 5.999999999999999e-06,
+      "absolute_charge_per_biphasic_pulse_C": 1.1999999999999999e-05,
+      "ideal_net_charge_per_pulse_C": 0,
+      "charge_density_6mm2_uC_per_cm2": 99.99999999999999,
+      "charge_density_12mm2_uC_per_cm2": 49.99999999999999,
+      "rail_power_W": 0.20735999999999996,
+      "battery_stimulation_power_W": 0.25919999999999993,
+      "bulk_dissipation_total_at_1kohm_W": 0.0864,
+      "status": "calculated schedule allocation; conditional power/thermal admission, not biologically validated"
+    },
+    {
+      "case_id": "two_upper_bound_profiles",
+      "profile_count": 2,
+      "current_magnitude_A": 0.02,
+      "phase_duration_s": 0.0005,
+      "frequency_per_profile_Hz": 150,
+      "active_duty_per_profile": 0.15,
+      "aggregate_source_active_duty": 0.3,
+      "charge_per_phase_C": 1e-05,
+      "absolute_charge_per_biphasic_pulse_C": 2e-05,
+      "ideal_net_charge_per_pulse_C": 0,
+      "charge_density_6mm2_uC_per_cm2": 166.66666666666669,
+      "charge_density_12mm2_uC_per_cm2": 83.33333333333334,
+      "rail_power_W": 0.288,
+      "battery_stimulation_power_W": 0.35999999999999993,
+      "bulk_dissipation_total_at_1kohm_W": 0.12,
+      "status": "calculated schedule allocation; conditional power/thermal admission, not biologically validated"
+    }
+  ],
+  "voltage_compliance_stress": [
+    {
+      "bulk_resistance_ohm": 500,
+      "current_request_A": 0.02,
+      "combined_polarization_V": 4,
+      "additional_blocking_drop_V": 0,
+      "required_terminal_V": 14.0,
+      "available_terminal_V": 40,
+      "passes_declared_voltage_inequality": true,
+      "conditional_max_current_A": 0.02,
+      "status": "electrical assumed-reserve test only; unknown interface chemistry"
+    },
+    {
+      "bulk_resistance_ohm": 1000,
+      "current_request_A": 0.02,
+      "combined_polarization_V": 4,
+      "additional_blocking_drop_V": 0,
+      "required_terminal_V": 24.0,
+      "available_terminal_V": 40,
+      "passes_declared_voltage_inequality": true,
+      "conditional_max_current_A": 0.02,
+      "status": "electrical assumed-reserve test only; unknown interface chemistry"
+    },
+    {
+      "bulk_resistance_ohm": 2000,
+      "current_request_A": 0.02,
+      "combined_polarization_V": 4,
+      "additional_blocking_drop_V": 0,
+      "required_terminal_V": 44.0,
+      "available_terminal_V": 40,
+      "passes_declared_voltage_inequality": false,
+      "conditional_max_current_A": 0.018,
+      "status": "electrical assumed-reserve test only; unknown interface chemistry"
+    }
+  ],
+  "polarization_stress": [
+    {
+      "Ceff_per_contact_F": 1e-06,
+      "excursion_per_contact_for_6uC_V": 6.0,
+      "excursion_per_contact_for_10uC_V": 10.000000000000002,
+      "status": "short-phase Q/C estimate; linear model may fail"
+    },
+    {
+      "Ceff_per_contact_F": 5e-06,
+      "excursion_per_contact_for_6uC_V": 1.2,
+      "excursion_per_contact_for_10uC_V": 2.0,
+      "status": "short-phase Q/C estimate; linear model may fail"
+    },
+    {
+      "Ceff_per_contact_F": 1e-05,
+      "excursion_per_contact_for_6uC_V": 0.6,
+      "excursion_per_contact_for_10uC_V": 1.0,
+      "status": "short-phase Q/C estimate; linear model may fail"
+    },
+    {
+      "Ceff_per_contact_F": 5e-05,
+      "excursion_per_contact_for_6uC_V": 0.12,
+      "excursion_per_contact_for_10uC_V": 0.2,
+      "status": "short-phase Q/C estimate; linear model may fail"
+    }
+  ],
+  "pressure_timing": {
+    "profiles": 3,
+    "frame_frequency_Hz": 120,
+    "offsets_s": [
+      0,
+      0.002,
+      0.004
+    ],
+    "ATO_phase_duration_s": 0.0003,
+    "ATO_interphase_gap_s": 0.0001,
+    "ATO_postpulse_recording_recovery_s": 0.001,
+    "electrical_duration_s": 0.0007,
+    "blanked_duration_per_profile_s": 0.0017,
+    "reference_nonoverlap_union_blank_fraction": 0.612,
+    "continuous_spinal_decode_guaranteed": false,
+    "feedback": "external systolic pressure"
+  },
+  "peak_allocation": {
+    "simultaneous_sources": 2,
+    "current_per_source_A": 0.02,
+    "total_current_during_active_phases_A": 0.04,
+    "instantaneous_fixed_48V_rail_power_W": 1.92,
+    "status": "source/converter/routing component peak allocation; not observed prototype"
+  },
+  "blocking_capacitor_sensitivity": {
+    "capacitor_count": 2,
+    "capacitance_each_F": 1e-05,
+    "phase_charge_C": 1e-05,
+    "combined_peak_excursion_V": 2,
+    "conditional_current_ceiling_at_2kohm_and_4V_polarization_A": 0.017,
+    "status": "illustrative topology only; not selected component"
+  },
+  "passive_recovery_fault_example": {
+    "interface_capacitance_each_F": 5e-06,
+    "pair_series_equivalent_F": 2.5e-06,
+    "bulk_path_ohm": 1000,
+    "ideal_short_switch_ohm": 0,
+    "time_constant_s": 0.0025,
+    "initial_pair_polarization_V": 4,
+    "ready_threshold_V": 0.02,
+    "time_to_threshold_s": 0.013245793416370092,
+    "passes_1ms_ready_allocation": false,
+    "required_response": "extend recovery and inhibit until monitoring/readiness gates pass; nonlinear load remains unknown"
+  },
+  "admission_requirements": [
+    "mode-exclusive motor versus physiology",
+    "no shared concurrent contact/return paths initially",
+    "phase charge and current ceilings",
+    "terminal compliance including interface and blocking drops",
+    "per-profile source/routing occupancy and total concurrency",
+    "cumulative stimulation and whole-device power/energy/thermal budget",
+    "measured modeled-delivery current integration and recovery state",
+    "fault freshness and delivery monitoring"
+  ],
+  "unresolved_biological_validation": [
+    "human intradural signal availability and chronic stability",
+    "task-specific retained learning benefit",
+    "recruitment/selectivity with selected electrode areas and positions",
+    "chronic electrode impedance and nonlinear polarization",
+    "reversible charge injection and tissue exposure",
+    "cross-target effects and sensory interference",
+    "individual pressor authority and onset/offset dynamics"
+  ],
+  "not_claimed": [
+    "generic negative or inhibitory physiological authority",
+    "safe charge-density ceiling",
+    "simultaneous all-maximum settings",
+    "published study waveform equivalence",
+    "continuous neural decoding during pressor pattern",
+    "physical implanted operation"
+  ],
+  "signed_waveform_template": {
+    "current_sign_convention": "positive means current leaving the selected contact; negative first phase is cathodic",
+    "phase1_current_multiplier": -1,
+    "gap_current_multiplier": 0,
+    "phase2_current_multiplier": 1,
+    "equal_phase_durations": true,
+    "nominal_interphase_gap_s": 0.0001,
+    "order_status": "ATO template; reverse-order response is not presumed biological inversion",
+    "original_pressure_study_exact_recharge_waveform_verified": false
+  }
+}

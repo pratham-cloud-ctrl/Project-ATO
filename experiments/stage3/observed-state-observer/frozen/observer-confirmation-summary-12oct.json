@@ -1,0 +1,3769 @@
+{
+  "schema": "ato.tmp.observer-confirmation-summary.v1",
+  "date": "2026-10-12",
+  "classification": "FRESH_SENSOR_NOISE_ONLY_NO_DOSE_FINITE_CONFIRMATION",
+  "freeze_receipt_sha256": "57c00950e44aee7c674f34a1335fd79f816f8ca09ce64ae66ce9916cf9bd3916",
+  "frozen_bindings": {
+    "protocol_sha256": "53658e9566216ab0358918cd2dc131dcb9aa6757987052001fd4d73319c4babf",
+    "producer_evaluator_sha256": "e177eb4837bbb437b8150a1a8a4daf9ee172719b6e3a2d407642771ac18d7c3d",
+    "observer_source_sha256": "cbb2d6aa5a466261e372d1071cccf908983c8dbe8eeb8001b1d20428ed2362af",
+    "method_receipt_sha256": "73a26e74e91f738fbc2f90e30655eaa0987a1e0d1ab905feb3b7aea52622e07a",
+    "calibration_input_sha256": "bf2feff549b8d984412fbf3f11aa5d4ff640dcb92f7dc4ee079cee492b201fcb",
+    "already_inspected_development_input_sha256": "8b86e2980dbe9501a09587a3ea7669f5f0618cb2fceb8db67510810271687d4e",
+    "body_source_bytes_sha256": {
+      "src/ato/stage3/motor.py": "d86b4d091baf226475ce9f6d6e2390b65bb63752e5f50e73d42c5c3408b2323c",
+      "src/ato/stage3/isolated_pilot.py": "9625056c268b77aa5db99f0ff3a7d363e11f7041e2dcdb7a36b303b8721889ad"
+    },
+    "full_ato_source_bytes_sha256": {
+      "src/ato/__init__.py": "1bdc36f0a9e257d8b1e60ca46a2f1e455dc42125a40729ea29c7784ab5a8241f",
+      "src/ato/motor.py": "3e24d325f97eb2cd1c0d9648a2adaf4838a51f1005ba7567bdae901f95337dc8",
+      "src/ato/pressure.py": "ec7dc9efe24ff7558e12b86cf8f5a0cfebecec607b166ccdf522b9ed474058a9",
+      "src/ato/pulse_binding.py": "7d92440bef503980db54a275f3a841a5d7ea7af78d7abb5eb3b9fc6048b0aa3f",
+      "src/ato/stage3/__init__.py": "52e87fb1296e8c7d664bf054b023446baebcdfaad4152776ce26e2a83962c4ec",
+      "src/ato/stage3/acquisition.py": "bd681adefc5e82c58b449490ad14917fff307be9947de647e92aeb6c38b22f03",
+      "src/ato/stage3/assisted_prediction.py": "21d6292e22eda70707d58903c44e737284d7a7e8fe398c529eaccacaa40da67b",
+      "src/ato/stage3/cue_policy.py": "86c55451d04ea26a9ba6d14bfdb2689faf61bba9432623e190d159f9bbfe5395",
+      "src/ato/stage3/dynamic_response.py": "87c8eac8675b3ef538d7504676f6dbdef5fa6c4d478d57b15bf781e5e1bda8e9",
+      "src/ato/stage3/electrical.py": "8a7a20702be3f3f5893e1f859f675347fa35db01dadb20ab7e64635ca8913ff0",
+      "src/ato/stage3/expert_validation.py": "1029d235fa17820210b7830f133bd1b3a912f5268008d7ebb42ff65b5dc0c733",
+      "src/ato/stage3/external_history.py": "2ec8bb81bd96066fe8f80696a0351d4407b68baabd6526e6211922abb8a4f97d",
+      "src/ato/stage3/filter_residual.py": "0404915b1f891ef8e1da8fbc7549888110b90a0100877f361154ce39154dca47",
+      "src/ato/stage3/isolated_pilot.py": "9625056c268b77aa5db99f0ff3a7d363e11f7041e2dcdb7a36b303b8721889ad",
+      "src/ato/stage3/motor.py": "d86b4d091baf226475ce9f6d6e2390b65bb63752e5f50e73d42c5c3408b2323c",
+      "src/ato/stage3/pressure.py": "c4d4e980b7d3e45d778bb44beedfded34f9d53fdf3a81bcadd2eb342e681e0c0",
+      "src/ato/stage3/residual_guard.py": "7ec30fc33dfeb8c58a852777e56f369155f57eec2fd3a2840c0da29d3078ec7c",
+      "src/ato/stage3/response_validation.py": "7a814113b2ebc27e55cf96ae5288eceffae39d4cbfb1fd9defaeb0b82fd780a1",
+      "src/ato/stage3/source_sensitivity.py": "fedaeb9d7edadb53b7e23ac88af2eca6abacb7e231800fd6c6e3fbf1a889b477",
+      "src/ato/stage3/sparse_baseline.py": "d940ec6a76d4fd1c6fbff8328dc9ae6fe2bafbeeb090181fdb8b73224d472058",
+      "src/ato/stage3/teacher_library.py": "87364e3321d64be8f672bfa414d05ef0e904de8cdfd08745323d184324bd4503"
+    }
+  },
+  "review_reference": "root pre-generation independent review12Oct2026; tmp/observer-confirmation-root-review-12oct.md; producer e177eb4837bbb437b8150a1a8a4daf9ee172719b6e3a2d407642771ac18d7c3d; receipt57c00950e44aee7c674f34a1335fd79f816f8ca09ce64ae66ce9916cf9bd3916",
+  "independence": "sensor_noise_only_same_subjectseed2_and_finite_domain",
+  "independent_noise_pairs": 16,
+  "grid_captures": 32,
+  "current_supports_per_capture": 550,
+  "horizons_per_support": 26,
+  "coordinate_residuals": 915200,
+  "all_declared_coverage_available": true,
+  "aggregate_allocation_by_horizon_m": [
+    0.008778432723272101,
+    0.00874238927368005,
+    0.008718798349382287,
+    0.008710832247794998,
+    0.008710675023978345,
+    0.009000911609160986,
+    0.008931038682197284,
+    0.00925434823673688,
+    0.00959018771548269,
+    0.010233860778262691,
+    0.010470995091050778,
+    0.00981249636792909,
+    0.010628468434023371,
+    0.010429726578328326,
+    0.009315746023207703,
+    0.009456808760307283,
+    0.009464557520054633,
+    0.010063528591619238,
+    0.010135518839237991,
+    0.010714152567850025,
+    0.010283280273485695,
+    0.010699343344446836,
+    0.011353736115715152,
+    0.010965218808406414,
+    0.010217322516478496,
+    0.01064069691309014
+  ],
+  "maximum_aggregate_allocation_m": 0.011353736115715152,
+  "all_conditions_both_grids_within_budget": true,
+  "capture_all_horizon_passes": 32,
+  "capture_failures": [],
+  "maximum_observed_position_grid_difference_m": 3.23103114557681e-06,
+  "maximum_forecast_grid_difference_m": 3.94114767074405e-06,
+  "maximum_residual_grid_difference_m": 5.2846524091348934e-06,
+  "changed_grid_horizon_budget_decisions": 0,
+  "capture_summaries": [
+    {
+      "recording_id": "observer_confirmation_00_grid_0.0025",
+      "measurement_noise_id": 261012000,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.008596394383688154,
+      "allocation_by_horizon_m": [
+        0.007863209155822361,
+        0.007812895035816402,
+        0.007793698861461131,
+        0.007844790005730639,
+        0.008210037598540516,
+        0.008241239517778314,
+        0.008213115866754012,
+        0.008037161672836707,
+        0.007828416977901227,
+        0.007685632363883627,
+        0.007668926384951538,
+        0.007628709791097113,
+        0.007555564644472345,
+        0.0076818493792374905,
+        0.007728686210341233,
+        0.00782895934530579,
+        0.008054262849029086,
+        0.007941155021982633,
+        0.00810482216697803,
+        0.0082305091164997,
+        0.00838834013494857,
+        0.008488221959155943,
+        0.008543618588856421,
+        0.008596394383688154,
+        0.008507358148026733,
+        0.008292729571992095
+      ],
+      "observed_rmse_m": 0.001526883943847511,
+      "maximum_error_current_support_s": 1.075,
+      "maximum_error_target_support_s": 1.215,
+      "maximum_error_horizon_s": 0.14,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004755527205212051,
+          "observed_rmse_m": 0.0017968946294308979
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.004750276245886895,
+          "observed_rmse_m": 0.0016100028715230338
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.005596394383688155,
+          "observed_rmse_m": 0.001515435334809244
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_00_grid_0.00125",
+      "measurement_noise_id": 261012000,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.008596394909938795,
+      "allocation_by_horizon_m": [
+        0.007863236258363344,
+        0.007812921090447362,
+        0.007793723738338543,
+        0.007844813577030148,
+        0.00821005974103638,
+        0.008241260115695929,
+        0.008213134814870935,
+        0.008037178879794566,
+        0.007828432369677254,
+        0.007685650724442667,
+        0.0076689459246657736,
+        0.007628700469271288,
+        0.007555586246244164,
+        0.007681855439825328,
+        0.007728690571819211,
+        0.007828962149732274,
+        0.008054264279875652,
+        0.007941155305387502,
+        0.008103313057758663,
+        0.008228919967920214,
+        0.008388338764717309,
+        0.008488220774683208,
+        0.008543618024740681,
+        0.008596394909938795,
+        0.008507360266001244,
+        0.008292733809377988
+      ],
+      "observed_rmse_m": 0.001526836966953799,
+      "maximum_error_current_support_s": 1.075,
+      "maximum_error_target_support_s": 1.215,
+      "maximum_error_horizon_s": 0.14,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004755542196859575,
+          "observed_rmse_m": 0.001796901445820724
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.00475029334969832,
+          "observed_rmse_m": 0.0016100041164058402
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.0055963949099387955,
+          "observed_rmse_m": 0.0015153847514255822
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_01_grid_0.0025",
+      "measurement_noise_id": 261012001,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.00832341590609709,
+      "allocation_by_horizon_m": [
+        0.008026536116026453,
+        0.00815832393769585,
+        0.008071996343379469,
+        0.00797365277528134,
+        0.008067182161553707,
+        0.00819588230504361,
+        0.008079247934358144,
+        0.007965051644046529,
+        0.008047158473116402,
+        0.007960697690234178,
+        0.008056382151289648,
+        0.008127436330700618,
+        0.008118856272626172,
+        0.00813286249331906,
+        0.008242856602323236,
+        0.008050159407708642,
+        0.008221289339916622,
+        0.008253482321668996,
+        0.008097844360088736,
+        0.008050469449092889,
+        0.00832341590609709,
+        0.007932444185089312,
+        0.007944414647643384,
+        0.008032527452960233,
+        0.008036775540117263,
+        0.008097269340990785
+      ],
+      "observed_rmse_m": 0.001438880992472818,
+      "maximum_error_current_support_s": 0.11,
+      "maximum_error_target_support_s": 0.23500000000000001,
+      "maximum_error_horizon_s": 0.125,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004537870252463785,
+          "observed_rmse_m": 0.0016796154503121955
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.003169400739799497,
+          "observed_rmse_m": 0.0011268341713001411
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.005323415906097091,
+          "observed_rmse_m": 0.0014407263620227807
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_01_grid_0.00125",
+      "measurement_noise_id": 261012001,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.008324480560870071,
+      "allocation_by_horizon_m": [
+        0.008026527194557955,
+        0.008158314985136118,
+        0.008071987547036068,
+        0.007973644342152864,
+        0.008067174317283404,
+        0.00819587529252407,
+        0.008079242011940217,
+        0.00796504708329573,
+        0.00804715555605064,
+        0.007960696705970927,
+        0.008056383392031762,
+        0.008127440087000944,
+        0.008118862827896749,
+        0.008132872117593191,
+        0.008242869545340634,
+        0.008050175891474092,
+        0.00822130955097668,
+        0.00825350640345027,
+        0.008097872405731829,
+        0.008050501495281342,
+        0.008324480560870071,
+        0.007932484095321077,
+        0.007944458293586792,
+        0.008032574620735485,
+        0.00803682595917881,
+        0.008097288353436743
+      ],
+      "observed_rmse_m": 0.0014388708999548878,
+      "maximum_error_current_support_s": 0.11,
+      "maximum_error_target_support_s": 0.23500000000000001,
+      "maximum_error_horizon_s": 0.125,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004537904569146357,
+          "observed_rmse_m": 0.0016796223389341583
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.003169425666069793,
+          "observed_rmse_m": 0.0011268293482204856
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.005324480560870072,
+          "observed_rmse_m": 0.0014407155441972898
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_02_grid_0.0025",
+      "measurement_noise_id": 261012002,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.010202443229545628,
+      "allocation_by_horizon_m": [
+        0.008704772324258241,
+        0.008710483658423588,
+        0.008718798349382287,
+        0.008679278082088623,
+        0.008486747651677944,
+        0.00826475720798497,
+        0.008294279324859544,
+        0.008416424050802836,
+        0.008320800210803524,
+        0.008360227137276962,
+        0.008267177368000068,
+        0.00837033880445039,
+        0.008862815088900421,
+        0.008971950535722976,
+        0.009315746023207703,
+        0.009456808760307283,
+        0.00923340715321001,
+        0.009155783726208299,
+        0.00914178056286542,
+        0.009301927982799243,
+        0.009661818808627608,
+        0.010044897469444574,
+        0.010202443229545628,
+        0.009954118117272866,
+        0.009867604432189116,
+        0.009851813972143932
+      ],
+      "observed_rmse_m": 0.0015652887202359709,
+      "maximum_error_current_support_s": 0.155,
+      "maximum_error_target_support_s": 0.29,
+      "maximum_error_horizon_s": 0.135,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.003927659335494944,
+          "observed_rmse_m": 0.001559534964457032
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0033520154727228833,
+          "observed_rmse_m": 0.001466696300798735
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.007202443229545628,
+          "observed_rmse_m": 0.001568680557275003
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_02_grid_0.00125",
+      "measurement_noise_id": 261012002,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.010199509883531983,
+      "allocation_by_horizon_m": [
+        0.008704385103095066,
+        0.008710078069995866,
+        0.008718372935354522,
+        0.008678831427041383,
+        0.008486278399215029,
+        0.008263454349782585,
+        0.00829424777740986,
+        0.00841492272764532,
+        0.008320228707619146,
+        0.008359627644036124,
+        0.008266549163252646,
+        0.008369681302083747,
+        0.008861041866734348,
+        0.00896979581299254,
+        0.009313494512310911,
+        0.009454476417771498,
+        0.009231019532159778,
+        0.009153379936848168,
+        0.009139418636222713,
+        0.009299691888485218,
+        0.009659083492703873,
+        0.01004205415912143,
+        0.010199509883531983,
+        0.009951123279777752,
+        0.00986459158837302,
+        0.009848847437875032
+      ],
+      "observed_rmse_m": 0.0015651811588823516,
+      "maximum_error_current_support_s": 0.155,
+      "maximum_error_target_support_s": 0.29,
+      "maximum_error_horizon_s": 0.135,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.00392768886218621,
+          "observed_rmse_m": 0.0015595357151143717
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0033519976995077805,
+          "observed_rmse_m": 0.001466679498424722
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.0071995098835319835,
+          "observed_rmse_m": 0.0015685669974687558
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_03_grid_0.0025",
+      "measurement_noise_id": 261012003,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.00875603003763457,
+      "allocation_by_horizon_m": [
+        0.008619591634256154,
+        0.008619906272859312,
+        0.008667362408782738,
+        0.008671825824960077,
+        0.008710675023978345,
+        0.00875603003763457,
+        0.0086705285328945,
+        0.008537722377650128,
+        0.008477857521234918,
+        0.008485628697510694,
+        0.008462858629162486,
+        0.008480172585770215,
+        0.008511426286146716,
+        0.008578941372680556,
+        0.008501178532560796,
+        0.008560977337780561,
+        0.008514345489156468,
+        0.008499939428580305,
+        0.008453945899403511,
+        0.0084470935375754,
+        0.008440343899775226,
+        0.008327813092084631,
+        0.008394551218364004,
+        0.008362506743507966,
+        0.008311532421755401,
+        0.008527784659659695
+      ],
+      "observed_rmse_m": 0.0015026752684914495,
+      "maximum_error_current_support_s": 2.815,
+      "maximum_error_target_support_s": 2.865,
+      "maximum_error_horizon_s": 0.05,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.0039001863578618096,
+          "observed_rmse_m": 0.001389186133240818
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.003458650734187229,
+          "observed_rmse_m": 0.0011340920568295024
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.005756030037634571,
+          "observed_rmse_m": 0.0015167105735444364
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_03_grid_0.00125",
+      "measurement_noise_id": 261012003,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.008756000331580038,
+      "allocation_by_horizon_m": [
+        0.008619563551041414,
+        0.0086198778277005,
+        0.008667333622528844,
+        0.008671796716409077,
+        0.00871064560964432,
+        0.008756000331580038,
+        0.008670498546625851,
+        0.008537692120073766,
+        0.008477826998669485,
+        0.008485597913751804,
+        0.008462827585593396,
+        0.008480141281513722,
+        0.008511394718250725,
+        0.008578909536331458,
+        0.008501146421315327,
+        0.008560944943810957,
+        0.008514312803498774,
+        0.00849990644138018,
+        0.008453912600150767,
+        0.008447059915322543,
+        0.008440309943332374,
+        0.008327778790188419,
+        0.008394516559817152,
+        0.008362471717288,
+        0.008311497017094879,
+        0.008530880240710286
+      ],
+      "observed_rmse_m": 0.001502691474557624,
+      "maximum_error_current_support_s": 2.815,
+      "maximum_error_target_support_s": 2.865,
+      "maximum_error_horizon_s": 0.05,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.0039002226204386883,
+          "observed_rmse_m": 0.0013891863929235513
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.003458616168130965,
+          "observed_rmse_m": 0.0011340924671735216
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.005756000331580038,
+          "observed_rmse_m": 0.0015167276207235351
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_04_grid_0.0025",
+      "measurement_noise_id": 261012004,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.009698215061614442,
+      "allocation_by_horizon_m": [
+        0.008022706640394613,
+        0.008041608172722554,
+        0.008023349586266566,
+        0.008106647529791792,
+        0.008259551792096302,
+        0.008096343340785302,
+        0.008062818501138918,
+        0.008058636946143814,
+        0.008085078875767215,
+        0.008106678282568568,
+        0.008060634168927685,
+        0.008021777624113772,
+        0.0081280687250188,
+        0.008217933423986513,
+        0.008216822704675917,
+        0.008215030169494427,
+        0.008272574765076677,
+        0.008164661874598172,
+        0.008132135648428396,
+        0.009698215061614442,
+        0.009358815480131764,
+        0.008914728114139823,
+        0.009058122875266594,
+        0.008676463246326333,
+        0.008412055279746523,
+        0.008357420634997687
+      ],
+      "observed_rmse_m": 0.0015487147321223533,
+      "maximum_error_current_support_s": 0.115,
+      "maximum_error_target_support_s": 0.23500000000000001,
+      "maximum_error_horizon_s": 0.12,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004596996768581125,
+          "observed_rmse_m": 0.0014828273687681481
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.003603539928003106,
+          "observed_rmse_m": 0.001422555915306426
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.006698215061614443,
+          "observed_rmse_m": 0.0015546649317765048
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_04_grid_0.00125",
+      "measurement_noise_id": 261012004,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.009698662911724654,
+      "allocation_by_horizon_m": [
+        0.008022720169540584,
+        0.008041621588215465,
+        0.008023362892655584,
+        0.008106660730184321,
+        0.008260437353492134,
+        0.008097650555878737,
+        0.008062685449654983,
+        0.008058502701544876,
+        0.008084943531697145,
+        0.00810654192836419,
+        0.00806049688906232,
+        0.008021639497774267,
+        0.008128061729909989,
+        0.00821792666365442,
+        0.008216816096677206,
+        0.008215023619820006,
+        0.008272520648599294,
+        0.00816461047630565,
+        0.008132087441243836,
+        0.009698662911724654,
+        0.009360095093784503,
+        0.008917052557118856,
+        0.009058098507747695,
+        0.00867736343665618,
+        0.008412275492287926,
+        0.008357275827955968
+      ],
+      "observed_rmse_m": 0.0015486798361306555,
+      "maximum_error_current_support_s": 0.115,
+      "maximum_error_target_support_s": 0.23500000000000001,
+      "maximum_error_horizon_s": 0.12,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004596979196634536,
+          "observed_rmse_m": 0.0014828254480879835
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0036035150676347657,
+          "observed_rmse_m": 0.0014225549175314208
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.006698662911724655,
+          "observed_rmse_m": 0.0015546280701475195
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_05_grid_0.0025",
+      "measurement_noise_id": 261012005,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.009092494878265824,
+      "allocation_by_horizon_m": [
+        0.008617740934426955,
+        0.008577564051936954,
+        0.008589351640802097,
+        0.008570512268757349,
+        0.008529342892699448,
+        0.008561104886304658,
+        0.008510712747103116,
+        0.00843681489817506,
+        0.008438610855676713,
+        0.008482757452593189,
+        0.00846169696849432,
+        0.00852800806303624,
+        0.008514885737160988,
+        0.008610612973261957,
+        0.008582801083164077,
+        0.008599469635026055,
+        0.008623508734546013,
+        0.008622077297087121,
+        0.009092494878265824,
+        0.008702114443576502,
+        0.008699800242459962,
+        0.008672957680959065,
+        0.00867662749463076,
+        0.008631072771397016,
+        0.008621629421515866,
+        0.008627840358526113
+      ],
+      "observed_rmse_m": 0.0015682248026790628,
+      "maximum_error_current_support_s": 0.11,
+      "maximum_error_target_support_s": 0.225,
+      "maximum_error_horizon_s": 0.115,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.005702114443576503,
+          "observed_rmse_m": 0.001786733029601198
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.005699800242459963,
+          "observed_rmse_m": 0.001489659749630352
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.006092494878265825,
+          "observed_rmse_m": 0.001564034628834771
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_05_grid_0.00125",
+      "measurement_noise_id": 261012005,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.009093952233556041,
+      "allocation_by_horizon_m": [
+        0.008617588518830117,
+        0.008577409352929662,
+        0.008589194784298097,
+        0.008570353386023005,
+        0.008529182118282148,
+        0.008560942356114456,
+        0.008510548596667143,
+        0.008436649261078507,
+        0.00843844386219977,
+        0.008482807074717543,
+        0.00846152763426376,
+        0.008528017164431623,
+        0.008514714518329951,
+        0.008610622298253882,
+        0.008582628380339869,
+        0.008599478391093218,
+        0.008623334888635478,
+        0.008621902988730574,
+        0.009093952233556041,
+        0.00870212394355899,
+        0.008699811729018955,
+        0.008672970986342381,
+        0.008676642420347404,
+        0.00863089677847709,
+        0.008621453271906044,
+        0.008627664073210303
+      ],
+      "observed_rmse_m": 0.0015682036955801397,
+      "maximum_error_current_support_s": 0.11,
+      "maximum_error_target_support_s": 0.225,
+      "maximum_error_horizon_s": 0.115,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.005702123943558991,
+          "observed_rmse_m": 0.001786738043846648
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.005699811729018955,
+          "observed_rmse_m": 0.00148966132308217
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.006093952233556042,
+          "observed_rmse_m": 0.0015640119193432466
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_06_grid_0.0025",
+      "measurement_noise_id": 261012006,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.010628468434023371,
+      "allocation_by_horizon_m": [
+        0.008778288857194168,
+        0.008742243429073374,
+        0.008713424356049573,
+        0.008710682806887336,
+        0.008697607045176487,
+        0.00865221591174965,
+        0.008691241668941637,
+        0.00925434823673688,
+        0.00946943043610195,
+        0.010170201300222361,
+        0.010470995091050778,
+        0.00981249636792909,
+        0.010628468434023371,
+        0.010429337522236331,
+        0.009016032739969222,
+        0.008905098622458012,
+        0.008918358541959662,
+        0.00894263287694164,
+        0.008927915123270857,
+        0.00893471796894239,
+        0.009343723181475586,
+        0.009736925397757768,
+        0.00901634054572253,
+        0.009939558612050214,
+        0.00993889961383609,
+        0.009026739639477203
+      ],
+      "observed_rmse_m": 0.0015924573468618889,
+      "maximum_error_current_support_s": 0.12,
+      "maximum_error_target_support_s": 0.20500000000000002,
+      "maximum_error_horizon_s": 0.085,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.003532847582458868,
+          "observed_rmse_m": 0.0013327094140854119
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0033855502098648974,
+          "observed_rmse_m": 0.0014029986779409485
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.007628468434023372,
+          "observed_rmse_m": 0.0016053457872727743
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_06_grid_0.00125",
+      "measurement_noise_id": 261012006,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.010628170994597553,
+      "allocation_by_horizon_m": [
+        0.008778432723272101,
+        0.00874238927368005,
+        0.008713572059571576,
+        0.008710832247794998,
+        0.00869775810167352,
+        0.008652368463266277,
+        0.00869139559745941,
+        0.009252948070576802,
+        0.009468061496487833,
+        0.010168927689101204,
+        0.010469907822733823,
+        0.009811720880428736,
+        0.010628170994597553,
+        0.010429726578328326,
+        0.009017348650527442,
+        0.008905260489107617,
+        0.008918520916748187,
+        0.00894279571084813,
+        0.00892807837398087,
+        0.008934881600587762,
+        0.009341846415011724,
+        0.009735295207544608,
+        0.009014609972297149,
+        0.009938959342952778,
+        0.009936970798777204,
+        0.009025242603822651
+      ],
+      "observed_rmse_m": 0.0015923990889124536,
+      "maximum_error_current_support_s": 0.12,
+      "maximum_error_target_support_s": 0.20500000000000002,
+      "maximum_error_horizon_s": 0.085,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.0035328273007654114,
+          "observed_rmse_m": 0.0013327087692654564
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.003385549794940289,
+          "observed_rmse_m": 0.0014029948319582207
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.007628170994597554,
+          "observed_rmse_m": 0.0016052844968401803
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_07_grid_0.0025",
+      "measurement_noise_id": 261012007,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.009139214968048402,
+      "allocation_by_horizon_m": [
+        0.008301753120480395,
+        0.00823275942386421,
+        0.00816905182905608,
+        0.008152626877827664,
+        0.008175096383540002,
+        0.008340228532818305,
+        0.008528990078759405,
+        0.007945366588930105,
+        0.007890780060781696,
+        0.007967161595558391,
+        0.008350383703573331,
+        0.009139214968048402,
+        0.00797646234122917,
+        0.007877271273105044,
+        0.007887711133293406,
+        0.007907321274698214,
+        0.007854161725314956,
+        0.007825390864457136,
+        0.007977112758304976,
+        0.008151584104640876,
+        0.008039854028545936,
+        0.008116721387919787,
+        0.008348680859315793,
+        0.008039026330754293,
+        0.008263665241454748,
+        0.008397465629692093
+      ],
+      "observed_rmse_m": 0.0015723659656514109,
+      "maximum_error_current_support_s": 0.115,
+      "maximum_error_target_support_s": 0.195,
+      "maximum_error_horizon_s": 0.08,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.0034173783498148216,
+          "observed_rmse_m": 0.0013538744362998469
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.003214255857825983,
+          "observed_rmse_m": 0.0014361916416417192
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.006139214968048402,
+          "observed_rmse_m": 0.0015826310565055849
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_07_grid_0.00125",
+      "measurement_noise_id": 261012007,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.009139745881505703,
+      "allocation_by_horizon_m": [
+        0.008301725037265683,
+        0.008232730978705357,
+        0.008169023042802186,
+        0.008152597769276636,
+        0.008173769691251356,
+        0.008338888459239451,
+        0.008527682414202032,
+        0.007945336331353688,
+        0.007890749538216207,
+        0.007967130811799377,
+        0.00835019567593447,
+        0.009139745881505703,
+        0.00797643077333315,
+        0.00787717847757995,
+        0.00788766671023165,
+        0.007907276489586456,
+        0.007854116571684302,
+        0.007825319561341536,
+        0.0079770512795906,
+        0.00815153433685635,
+        0.008039817879354622,
+        0.008116700767158702,
+        0.008346065223304885,
+        0.008039042409423935,
+        0.008263702400016483,
+        0.008393919320323889
+      ],
+      "observed_rmse_m": 0.001572315053410657,
+      "maximum_error_current_support_s": 0.115,
+      "maximum_error_target_support_s": 0.195,
+      "maximum_error_horizon_s": 0.08,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.003417340072643882,
+          "observed_rmse_m": 0.0013538770916519352
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0032142739102167424,
+          "observed_rmse_m": 0.0014361915309883681
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.006139745881505704,
+          "observed_rmse_m": 0.001582577235346737
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_08_grid_0.0025",
+      "measurement_noise_id": 261012008,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.008788194551289891,
+      "allocation_by_horizon_m": [
+        0.008457902545491423,
+        0.008343692847796586,
+        0.008244141895453461,
+        0.008160353056808057,
+        0.00819359161420528,
+        0.008445693463200999,
+        0.008343316538735466,
+        0.008320532295388556,
+        0.008301190873592292,
+        0.008308961704871488,
+        0.008580972221652668,
+        0.008507972350230979,
+        0.008574632854679864,
+        0.00866084958287382,
+        0.008207335502912767,
+        0.008031063136176991,
+        0.008256299638133378,
+        0.008234473106801591,
+        0.008301260358610167,
+        0.008351903523376333,
+        0.008451050002564093,
+        0.008421231018541985,
+        0.0083147886248451,
+        0.008283532361554779,
+        0.008398809072024106,
+        0.008788194551289891
+      ],
+      "observed_rmse_m": 0.0015244436963845738,
+      "maximum_error_current_support_s": 0.105,
+      "maximum_error_target_support_s": 0.255,
+      "maximum_error_horizon_s": 0.15,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004448487720307259,
+          "observed_rmse_m": 0.0016422043485240154
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0035412990048327604,
+          "observed_rmse_m": 0.0014112189027505686
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.005788194551289892,
+          "observed_rmse_m": 0.001524585167438381
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_08_grid_0.00125",
+      "measurement_noise_id": 261012008,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.008786104561064805,
+      "allocation_by_horizon_m": [
+        0.008457917928857726,
+        0.00834370897077467,
+        0.008244158776659575,
+        0.00816037070731095,
+        0.008193610036894578,
+        0.008445712652251112,
+        0.008343336479183758,
+        0.008320552962845066,
+        0.008301212234098344,
+        0.008308916245455562,
+        0.008580925520186428,
+        0.008507924433770329,
+        0.008574583759964241,
+        0.008660799356246855,
+        0.008207284200120141,
+        0.008031010822032284,
+        0.008254051011194707,
+        0.008234418998088237,
+        0.00830120548170166,
+        0.008351927916845508,
+        0.008451074124265445,
+        0.008421254775996204,
+        0.008314811930853278,
+        0.00828355513577132,
+        0.008397907446008438,
+        0.008786104561064805
+      ],
+      "observed_rmse_m": 0.0015244059884413233,
+      "maximum_error_current_support_s": 0.105,
+      "maximum_error_target_support_s": 0.255,
+      "maximum_error_horizon_s": 0.15,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004448460718383479,
+          "observed_rmse_m": 0.0016422048222112797
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0035412908627548787,
+          "observed_rmse_m": 0.001411223164427259
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.005786104561064806,
+          "observed_rmse_m": 0.0015245449468592803
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_09_grid_0.0025",
+      "measurement_noise_id": 261012009,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.011353736115715152,
+      "allocation_by_horizon_m": [
+        0.008329374765009254,
+        0.008449676780914472,
+        0.008250722269580204,
+        0.008268584563745646,
+        0.008273176864074982,
+        0.008188188875166699,
+        0.008185320454730142,
+        0.0081930869569132,
+        0.00839986040028846,
+        0.00809559096121824,
+        0.008184933233040526,
+        0.008400126923124817,
+        0.008373095848564372,
+        0.00850840020724827,
+        0.008340782842196668,
+        0.008414926004237346,
+        0.008608860983139965,
+        0.0081452795350636,
+        0.008091466504941181,
+        0.008033832782247913,
+        0.008189375990530278,
+        0.008314434319376753,
+        0.011353736115715152,
+        0.009216083066802303,
+        0.00828058642986718,
+        0.008485687115517646
+      ],
+      "observed_rmse_m": 0.0014954576053732278,
+      "maximum_error_current_support_s": 0.105,
+      "maximum_error_target_support_s": 0.24,
+      "maximum_error_horizon_s": 0.135,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.0038630552581615796,
+          "observed_rmse_m": 0.0014100404526531665
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0035557061448136147,
+          "observed_rmse_m": 0.0013214772837013855
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.008353736115715153,
+          "observed_rmse_m": 0.00150338291466009
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_09_grid_0.00125",
+      "measurement_noise_id": 261012009,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.011351123108422689,
+      "allocation_by_horizon_m": [
+        0.008329832062826479,
+        0.00845019697796939,
+        0.008250698424018179,
+        0.008268559616002213,
+        0.008273150740245348,
+        0.008188161506887639,
+        0.008185291780089355,
+        0.008193056921290045,
+        0.008397922861051559,
+        0.00809555807261379,
+        0.008184898870381815,
+        0.008400091067432402,
+        0.008373058490770236,
+        0.00850979041840005,
+        0.008340742493002509,
+        0.008416287771970298,
+        0.008610119140742032,
+        0.008145234875650272,
+        0.008091420491321156,
+        0.008033785468320422,
+        0.008186789101775564,
+        0.00831406186592579,
+        0.011351123108422689,
+        0.009212085090463226,
+        0.008280533600427634,
+        0.008485633400140285
+      ],
+      "observed_rmse_m": 0.0014954104609109621,
+      "maximum_error_current_support_s": 0.105,
+      "maximum_error_target_support_s": 0.24,
+      "maximum_error_horizon_s": 0.135,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.003863075543647343,
+          "observed_rmse_m": 0.0014100404076297529
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0035556959049863196,
+          "observed_rmse_m": 0.0013214834744272059
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.00835112310842269,
+          "observed_rmse_m": 0.001503332890731071
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_10_grid_0.0025",
+      "measurement_noise_id": 261012010,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.010712884405137745,
+      "allocation_by_horizon_m": [
+        0.00800532133962457,
+        0.008018543173343742,
+        0.00800693005967049,
+        0.008026785600627914,
+        0.0080603957177143,
+        0.008059090119706017,
+        0.008116223870760001,
+        0.008057907110230408,
+        0.008063408008152851,
+        0.008044964092389303,
+        0.008022742918898273,
+        0.008108660086468569,
+        0.008270105371183483,
+        0.008217005879429144,
+        0.009164245630173446,
+        0.009151702598979804,
+        0.009459709292355057,
+        0.009678061438320066,
+        0.010135328962502039,
+        0.010712884405137745,
+        0.010280654294048345,
+        0.009895808419702185,
+        0.008793162551966164,
+        0.008865363932090507,
+        0.00938345947638437,
+        0.010035964377882633
+      ],
+      "observed_rmse_m": 0.0015810916817537535,
+      "maximum_error_current_support_s": 0.11,
+      "maximum_error_target_support_s": 0.23,
+      "maximum_error_horizon_s": 0.12,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004369165074007992,
+          "observed_rmse_m": 0.0016258340027393142
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0043755499754629425,
+          "observed_rmse_m": 0.0015554868973404667
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.007712884405137746,
+          "observed_rmse_m": 0.0015806352384467126
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_10_grid_0.00125",
+      "measurement_noise_id": 261012010,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.010714152567850025,
+      "allocation_by_horizon_m": [
+        0.008005319856066302,
+        0.008018541176970342,
+        0.008006927578582176,
+        0.008026782666469102,
+        0.008060392365306462,
+        0.00805908638667725,
+        0.008116219797164034,
+        0.00805790273815089,
+        0.008063403381292047,
+        0.00804495925564393,
+        0.008022737917926532,
+        0.00810676950555245,
+        0.008268200728510384,
+        0.008218746608699829,
+        0.009162491608727532,
+        0.009150167841001536,
+        0.009458539993011685,
+        0.009677450882556487,
+        0.010135518839237991,
+        0.010714152567850025,
+        0.010283280273485695,
+        0.00990001386714658,
+        0.008794367803398598,
+        0.008864358865825542,
+        0.009383362529641167,
+        0.010037088753676825
+      ],
+      "observed_rmse_m": 0.0015810527045141568,
+      "maximum_error_current_support_s": 0.11,
+      "maximum_error_target_support_s": 0.23,
+      "maximum_error_horizon_s": 0.12,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004369197519541471,
+          "observed_rmse_m": 0.0016258321570287175
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.004375583546682979,
+          "observed_rmse_m": 0.0015554821794720704
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.007714152567850026,
+          "observed_rmse_m": 0.0015805940134033974
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_11_grid_0.0025",
+      "measurement_noise_id": 261012011,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.008633130805060816,
+      "allocation_by_horizon_m": [
+        0.008268377836567819,
+        0.008165891436332475,
+        0.00799748085240663,
+        0.008014295203422294,
+        0.008097834300181097,
+        0.008113066019232961,
+        0.008106881565298776,
+        0.008128965874173857,
+        0.008100600179687424,
+        0.00811470142329784,
+        0.008215101047643596,
+        0.008215782313043481,
+        0.008220782877919452,
+        0.008295518667808852,
+        0.00839239064612221,
+        0.008290497641877885,
+        0.008352277446406202,
+        0.008633130805060816,
+        0.008318716447934426,
+        0.008415662925371863,
+        0.00852283118684979,
+        0.008478342968705279,
+        0.008484959680990691,
+        0.008217220001727626,
+        0.00803842727092947,
+        0.008012698699137285
+      ],
+      "observed_rmse_m": 0.0015720818935948935,
+      "maximum_error_current_support_s": 0.115,
+      "maximum_error_target_support_s": 0.225,
+      "maximum_error_horizon_s": 0.11,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.005392390646122212,
+          "observed_rmse_m": 0.0017121399590535036
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0039146933967465596,
+          "observed_rmse_m": 0.0017368883141092133
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.005633130805060817,
+          "observed_rmse_m": 0.0015619434183047575
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_11_grid_0.00125",
+      "measurement_noise_id": 261012011,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.008632343119476176,
+      "allocation_by_horizon_m": [
+        0.008268451809918944,
+        0.00816596663001774,
+        0.007997557271509508,
+        0.008014372844623554,
+        0.00809791315103597,
+        0.008113146057523262,
+        0.008106868744690791,
+        0.008129048178956249,
+        0.00810058831145128,
+        0.008114785777084476,
+        0.008215186316515948,
+        0.008215868409408824,
+        0.008220869703636082,
+        0.00829550697139398,
+        0.00839237834358298,
+        0.008290484467717511,
+        0.008352263147522604,
+        0.008632343119476176,
+        0.008318635466234497,
+        0.00841558295162943,
+        0.00852275241243158,
+        0.008478265580939472,
+        0.008484883861010772,
+        0.008217145922248145,
+        0.00803835509397113,
+        0.008012628573725932
+      ],
+      "observed_rmse_m": 0.0015720733483662662,
+      "maximum_error_current_support_s": 0.115,
+      "maximum_error_target_support_s": 0.225,
+      "maximum_error_horizon_s": 0.11,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.005392378343582981,
+          "observed_rmse_m": 0.0017121411254011596
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.003914678251955026,
+          "observed_rmse_m": 0.0017368803592660222
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.005632343119476177,
+          "observed_rmse_m": 0.0015619345395442444
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_12_grid_0.0025",
+      "measurement_noise_id": 261012012,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.010965218808406414,
+      "allocation_by_horizon_m": [
+        0.00788174339232298,
+        0.007920711992447867,
+        0.007948477271717724,
+        0.00804986452906625,
+        0.008277442777432722,
+        0.008484577248818164,
+        0.008882077358421291,
+        0.008211868770479112,
+        0.008628718003246452,
+        0.008645318070116662,
+        0.00856286158500285,
+        0.009422329281822527,
+        0.00973878139850733,
+        0.010277464772998166,
+        0.00827858785102396,
+        0.009125157822981723,
+        0.009464557520054633,
+        0.010063528591619238,
+        0.009135352523273587,
+        0.009644653428267983,
+        0.010168689759995787,
+        0.010699343344446836,
+        0.010277381002065631,
+        0.010965218808406414,
+        0.010217322516478496,
+        0.01064069691309014
+      ],
+      "observed_rmse_m": 0.0015867678813637485,
+      "maximum_error_current_support_s": 0.12,
+      "maximum_error_target_support_s": 0.26,
+      "maximum_error_horizon_s": 0.14,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004181797831814327,
+          "observed_rmse_m": 0.0012998273364362848
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.003113611639600073,
+          "observed_rmse_m": 0.001518104942153419
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.007965218808406414,
+          "observed_rmse_m": 0.0015965743870901673
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_12_grid_0.00125",
+      "measurement_noise_id": 261012012,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.010964421088803297,
+      "allocation_by_horizon_m": [
+        0.007881804106981586,
+        0.007920775078222437,
+        0.007948542716514784,
+        0.008049932288433256,
+        0.008277459312619088,
+        0.008484768951446595,
+        0.008882534902639138,
+        0.008210697334046651,
+        0.008627536379707562,
+        0.00864416225782989,
+        0.008561784005642871,
+        0.009421404316837138,
+        0.009738111505720785,
+        0.010277185690985426,
+        0.008278563236523349,
+        0.009124356060239338,
+        0.009464033988072048,
+        0.010063427958704758,
+        0.009133929893851294,
+        0.009643162457894903,
+        0.01016804795178124,
+        0.01069864946064512,
+        0.010276083534545791,
+        0.010964421088803297,
+        0.010215812492340336,
+        0.010639528027986293
+      ],
+      "observed_rmse_m": 0.0015867216561054253,
+      "maximum_error_current_support_s": 0.12,
+      "maximum_error_target_support_s": 0.26,
+      "maximum_error_horizon_s": 0.14,
+      "maximum_error_foot": 1,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004181813505293803,
+          "observed_rmse_m": 0.0012998274579435166
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.00311360871313107,
+          "observed_rmse_m": 0.001518100026321147
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.007964421088803297,
+          "observed_rmse_m": 0.0015965257157202599
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_13_grid_0.0025",
+      "measurement_noise_id": 261012013,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.010233860778262691,
+      "allocation_by_horizon_m": [
+        0.007675722539850935,
+        0.0076780967683159245,
+        0.008338636259996896,
+        0.008380945752479111,
+        0.008157108069143913,
+        0.009000911609160986,
+        0.008931038682197284,
+        0.008729547350567364,
+        0.00959018771548269,
+        0.010233860778262691,
+        0.00871199702493071,
+        0.009548783227814599,
+        0.007800405970459148,
+        0.007991489394612337,
+        0.00893349194186446,
+        0.0084695707212958,
+        0.009387192920689558,
+        0.007956232063281343,
+        0.008513307194535896,
+        0.009615131982891715,
+        0.00899743572264156,
+        0.010156573632085632,
+        0.008417520339781718,
+        0.008199714488008197,
+        0.008313024134350627,
+        0.009538193406864664
+      ],
+      "observed_rmse_m": 0.0016003146985698181,
+      "maximum_error_current_support_s": 0.105,
+      "maximum_error_target_support_s": 0.17500000000000002,
+      "maximum_error_horizon_s": 0.07,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004777001307773837,
+          "observed_rmse_m": 0.001859044612322396
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.004743616133490435,
+          "observed_rmse_m": 0.001618323396021558
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.007233860778262692,
+          "observed_rmse_m": 0.0015915727554941834
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_13_grid_0.00125",
+      "measurement_noise_id": 261012013,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.010231650734647907,
+      "allocation_by_horizon_m": [
+        0.007675278123941737,
+        0.007677964136098285,
+        0.00833879907954033,
+        0.008381044785615344,
+        0.00815708857943135,
+        0.009000697963279927,
+        0.00893053041690382,
+        0.008728618271114607,
+        0.009588692005961037,
+        0.010231650734647907,
+        0.008710819195199906,
+        0.009546726567312161,
+        0.007800339633044742,
+        0.007990321695162294,
+        0.008931335529641583,
+        0.008468063725064503,
+        0.009384698881581086,
+        0.007957324881812038,
+        0.008512188920538306,
+        0.009612859216121972,
+        0.008996349145642606,
+        0.010154273612105535,
+        0.008415211067222924,
+        0.008197398935582394,
+        0.008311680926899757,
+        0.009535566631597308
+      ],
+      "observed_rmse_m": 0.0016002892109862061,
+      "maximum_error_current_support_s": 0.105,
+      "maximum_error_target_support_s": 0.17500000000000002,
+      "maximum_error_horizon_s": 0.07,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004776942049258583,
+          "observed_rmse_m": 0.0018590440310263258
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.004743630389341743,
+          "observed_rmse_m": 0.0016183189933104882
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.007231650734647908,
+          "observed_rmse_m": 0.0015915456895085683
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_14_grid_0.0025",
+      "measurement_noise_id": 261012014,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.009155411598144762,
+      "allocation_by_horizon_m": [
+        0.008428031065237901,
+        0.008467150178688394,
+        0.008570991403428548,
+        0.008597206992349189,
+        0.00844892762287484,
+        0.008342194848821954,
+        0.00811991566707515,
+        0.008114888494724557,
+        0.008244764722900394,
+        0.008344115866827831,
+        0.008338103716054635,
+        0.008417853121243463,
+        0.008554940171797105,
+        0.008689937231492167,
+        0.008951032912422777,
+        0.00901785023721239,
+        0.008827414341119853,
+        0.008736182308743567,
+        0.008937556229852987,
+        0.00880172109525118,
+        0.008925986716653182,
+        0.008904278083431142,
+        0.009070816887768968,
+        0.009143039272063301,
+        0.009126909662603919,
+        0.009155411598144762
+      ],
+      "observed_rmse_m": 0.0015692239875112772,
+      "maximum_error_current_support_s": 0.14,
+      "maximum_error_target_support_s": 0.29,
+      "maximum_error_horizon_s": 0.15,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.0040889440631236215,
+          "observed_rmse_m": 0.0013879537415136698
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0030600323699709678,
+          "observed_rmse_m": 0.0011843652733906388
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.006155411598144762,
+          "observed_rmse_m": 0.001585508836195817
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_14_grid_0.00125",
+      "measurement_noise_id": 261012014,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.009152805867541431,
+      "allocation_by_horizon_m": [
+        0.008427984924169813,
+        0.008467102024344138,
+        0.008570941306230373,
+        0.00859715505417976,
+        0.008448873978161051,
+        0.00834213966521618,
+        0.00811985914569369,
+        0.008114855619428877,
+        0.008244706261415307,
+        0.008344056866544693,
+        0.008338044503921001,
+        0.008417794050563757,
+        0.008554881618695293,
+        0.008689879590466198,
+        0.008950976590894211,
+        0.00901779564898816,
+        0.008827361898716343,
+        0.008736132414579698,
+        0.008937509266401848,
+        0.008801677414348681,
+        0.008925946628290247,
+        0.008904241844492566,
+        0.009070784691308911,
+        0.00914301123780218,
+        0.009126885829372097,
+        0.009152805867541431
+      ],
+      "observed_rmse_m": 0.0015691930876587678,
+      "maximum_error_current_support_s": 0.14,
+      "maximum_error_target_support_s": 0.29,
+      "maximum_error_horizon_s": 0.15,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.004088880939333704,
+          "observed_rmse_m": 0.001387957578965873
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.003059974395798845,
+          "observed_rmse_m": 0.0011843630879615871
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.006152805867541432,
+          "observed_rmse_m": 0.0015854762908987078
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_15_grid_0.0025",
+      "measurement_noise_id": 261012015,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.009163296662986233,
+      "allocation_by_horizon_m": [
+        0.00805533698542003,
+        0.008009497446265938,
+        0.007977023429235525,
+        0.007879834171844884,
+        0.008215158623181836,
+        0.008397771773466501,
+        0.008668123984601827,
+        0.008415433245333555,
+        0.008872233627200406,
+        0.009072408988274851,
+        0.00841267147538845,
+        0.007871558602645438,
+        0.008143780953012308,
+        0.008133196854292531,
+        0.008823959906487388,
+        0.008348132438921341,
+        0.008875622893855312,
+        0.008946847357192433,
+        0.008636032777260081,
+        0.008226735408441346,
+        0.009163296662986233,
+        0.008229043272444208,
+        0.008835387853125733,
+        0.009080624180564486,
+        0.008225250472641301,
+        0.008421795500960848
+      ],
+      "observed_rmse_m": 0.0015944334223285562,
+      "maximum_error_current_support_s": 0.115,
+      "maximum_error_target_support_s": 0.24,
+      "maximum_error_horizon_s": 0.125,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.0036739270666270828,
+          "observed_rmse_m": 0.0016581516794021453
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0037177904365814935,
+          "observed_rmse_m": 0.0016123984508600823
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.006163296662986234,
+          "observed_rmse_m": 0.0015919367220793169
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    },
+    {
+      "recording_id": "observer_confirmation_15_grid_0.00125",
+      "measurement_noise_id": 261012015,
+      "current_support_count": 550,
+      "horizon_count": 26,
+      "available_supports": 550,
+      "maximum_allocation_m": 0.009163911852684042,
+      "allocation_by_horizon_m": [
+        0.008055458185878092,
+        0.008009613528412094,
+        0.007976952119286899,
+        0.007879762013892355,
+        0.008214216795665492,
+        0.008396729821522276,
+        0.008666978184260845,
+        0.008414180877688127,
+        0.008870873502334804,
+        0.009070942190015429,
+        0.00841110241699745,
+        0.007869896518781085,
+        0.008139791494305212,
+        0.008131407041186343,
+        0.008822159151552048,
+        0.00834638005121682,
+        0.008874004745351275,
+        0.008945484704702047,
+        0.00863509192128253,
+        0.008224405814725454,
+        0.009163911852684042,
+        0.00822641700238191,
+        0.008832610917154298,
+        0.009077698599410083,
+        0.008222182545757361,
+        0.008416848578018016
+      ],
+      "observed_rmse_m": 0.0015943447694642073,
+      "maximum_error_current_support_s": 0.115,
+      "maximum_error_target_support_s": 0.24,
+      "maximum_error_horizon_s": 0.125,
+      "maximum_error_foot": 0,
+      "conditional_forecast_sigma_maximum_m": 0.003229258528848072,
+      "causal_sensor_noise_sigma_maximum_m": 0.002671837583323488,
+      "minimum_filter_covariance_eigenvalue_m2": 1.4136897462674672e-10,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "support_horizon_count": 390,
+          "maximum_observed_component_error_m": 0.0036739039385442623,
+          "observed_rmse_m": 0.001658150262482546
+        },
+        "future_spans_reversal": {
+          "support_horizon_count": 455,
+          "maximum_observed_component_error_m": 0.0037177756612647595,
+          "observed_rmse_m": 0.0016123973679266796
+        },
+        "neither_spans_reversal": {
+          "support_horizon_count": 13455,
+          "maximum_observed_component_error_m": 0.0061639118526840425,
+          "observed_rmse_m": 0.0015918424335751875
+        }
+      },
+      "all_horizons_within_budget_confirmation": true
+    }
+  ],
+  "paired_grid_diagnostics": [
+    {
+      "pair_index": 0,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 2.3202648395843906e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 2.3202648395843906e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 2.7589701578484283e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 3.651521444728023e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        -2.710254098231557e-08,
+        -2.6054630959670977e-08,
+        -2.4876877412205456e-08,
+        -2.3571299509472787e-08,
+        -2.2142495864629907e-08,
+        -2.0597917614606498e-08,
+        -1.8948116922712366e-08,
+        -1.7206957858562077e-08,
+        -1.5391776027329218e-08,
+        -1.8360559040156432e-08,
+        -1.9539714235516925e-08,
+        9.321825825137076e-09,
+        -2.160177181922962e-08,
+        -6.0605878371422506e-09,
+        -4.361477977388173e-09,
+        -2.804426482705402e-09,
+        -1.4308465662304926e-09,
+        -2.834048690170121e-10,
+        1.5091092193664224e-06,
+        1.5891485794852778e-06,
+        1.3702312617880352e-09,
+        1.1844727351717488e-09,
+        5.641157402314079e-10,
+        -5.26250640286996e-10,
+        -2.1179745110511128e-09,
+        -4.237385893557377e-09
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 1,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 2.547956416116756e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 2.547956416116756e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 3.0545145360272308e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 4.049616556180136e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        8.921468497985474e-09,
+        8.952559731739695e-09,
+        8.796343400202522e-09,
+        8.4331284767869e-09,
+        7.844270302759249e-09,
+        7.012519540744444e-09,
+        5.922417927600732e-09,
+        4.560750797855118e-09,
+        2.9170657625532392e-09,
+        9.842632507639504e-10,
+        -1.2407421132176744e-09,
+        -3.756300326340778e-09,
+        -6.555270576358296e-09,
+        -9.624274131120325e-09,
+        -1.2943017397432088e-08,
+        -1.6483765449826215e-08,
+        -2.0211060058200614e-08,
+        -2.4081781273971314e-08,
+        -2.804564309261126e-08,
+        -3.2046188452872215e-08,
+        -1.0646547729808997e-06,
+        -3.991023176524999e-08,
+        -4.3645943408054944e-08,
+        -4.716777525157201e-08,
+        -5.041906154731879e-08,
+        -1.9012445957866664e-08
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 2,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 2.88949378083464e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 2.88949378083464e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 3.497831103392579e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 4.646759223604635e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        3.872211631755773e-07,
+        4.055884277216759e-07,
+        4.2541402776527515e-07,
+        4.466550472398412e-07,
+        4.6925246291462663e-07,
+        1.3028582023857926e-06,
+        3.15474496838386e-08,
+        1.5013231575156105e-06,
+        5.715031843774032e-07,
+        5.994932408374953e-07,
+        6.282047474229224e-07,
+        6.575023666424706e-07,
+        1.7732221660737846e-06,
+        2.1547227304352656e-06,
+        2.251510896791875e-06,
+        2.3323425357851812e-06,
+        2.387621050231603e-06,
+        2.403789360130859e-06,
+        2.3619266427063468e-06,
+        2.2360943140245504e-06,
+        2.7353159237353264e-06,
+        2.8433103231445545e-06,
+        2.933346013644922e-06,
+        2.9948374951141443e-06,
+        3.0128438160970106e-06,
+        2.966534268900034e-06
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 3,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 3.23103114557681e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 3.23103114557681e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 3.941147670730172e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 5.243901890786273e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        2.8083214739793583e-08,
+        2.84451588117296e-08,
+        2.8786253894463876e-08,
+        2.910855100013432e-08,
+        2.9414334024036037e-08,
+        2.970605453289643e-08,
+        2.9986268648696246e-08,
+        3.025757636110349e-08,
+        3.0522565433455107e-08,
+        3.0783758889207924e-08,
+        3.1043569090338785e-08,
+        3.130425649255919e-08,
+        3.156789599167986e-08,
+        3.183634909864619e-08,
+        3.2111245468202654e-08,
+        3.239396960397212e-08,
+        3.268565769432019e-08,
+        3.298720012423484e-08,
+        3.329925274409007e-08,
+        3.362225285685749e-08,
+        3.395644285197896e-08,
+        3.430189621234092e-08,
+        3.4658546851917826e-08,
+        3.502621996609445e-08,
+        3.540466052276425e-08,
+        -3.0955810505911563e-06
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 4,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 2.3202648395843906e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 2.3202648395843906e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 2.7589701578206727e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 3.6515214446933286e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        -1.3529145970192502e-08,
+        -1.341549291100641e-08,
+        -1.3306389018419296e-08,
+        -1.3200392529055804e-08,
+        -8.855613958316799e-07,
+        -1.3072150934351212e-06,
+        1.3305148393455424e-07,
+        1.342445989371832e-07,
+        1.3534407006937643e-07,
+        1.3635420437890788e-07,
+        1.372798653642704e-07,
+        1.3812633950505138e-07,
+        6.995108811636008e-09,
+        6.760332092736743e-09,
+        6.607998710717045e-09,
+        6.54967442087484e-09,
+        5.411647738262637e-08,
+        5.139829252140404e-08,
+        4.8207184560195016e-08,
+        -4.478501102120336e-07,
+        -1.2796136527395974e-06,
+        -2.324442979033392e-06,
+        2.436751889850486e-08,
+        -9.00190329847228e-07,
+        -2.2021254140330848e-07,
+        1.4480704171870862e-07
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 5,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 2.547956416116756e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 2.547956416116756e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 3.0545145359855974e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 4.049616556194013e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        1.5241559683798478e-07,
+        1.5469900729175867e-07,
+        1.5685650400082407e-07,
+        1.5888273434405686e-07,
+        1.6077441730016906e-07,
+        1.625301902022369e-07,
+        1.641504359731205e-07,
+        1.6563709655248449e-07,
+        1.6699347694243416e-07,
+        -4.962212435399849e-08,
+        1.6933423056114671e-07,
+        -9.101395383875888e-09,
+        1.7121883103682345e-07,
+        -9.324991924464232e-09,
+        1.7270282420822625e-07,
+        -8.75606716299604e-09,
+        1.738459105352086e-07,
+        1.7430835654724808e-07,
+        -1.4573552902172326e-06,
+        -9.4999824881703e-09,
+        -1.148655899216311e-08,
+        -1.3305383315953545e-08,
+        -1.492571664526987e-08,
+        1.7599291992492772e-07,
+        1.7614960982209604e-07,
+        1.7628531581020956e-07
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 6,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 2.88949378083464e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 2.88949378083464e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 3.497831103337068e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 4.646759223556063e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        -1.4386607793265282e-07,
+        -1.4584460667627086e-07,
+        -1.4770352200349501e-07,
+        -1.494409076624459e-07,
+        -1.5105649703306412e-07,
+        -1.5255151662729727e-07,
+        -1.539285177723504e-07,
+        1.4001661600773763e-06,
+        1.3689396141172705e-06,
+        1.2736111211567036e-06,
+        1.0872683169557695e-06,
+        7.754875003540551e-07,
+        2.974394258184465e-07,
+        -3.8905609199557656e-07,
+        -1.3159105582208341e-06,
+        -1.6186664960476937e-07,
+        -1.6237478852459963e-07,
+        -1.6283390649046714e-07,
+        -1.6325071001271896e-07,
+        -1.6363164537236408e-07,
+        1.8767664638624781e-06,
+        1.6301902131601875e-06,
+        1.730573425381965e-06,
+        5.992690974357395e-07,
+        1.9288150588867015e-06,
+        1.497035654551837e-06
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 7,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 3.23103114557681e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 3.23103114557681e-06,
+        "array_index": [
+          516,
+          0
+        ],
+        "support_s": 2.58,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 3.94114767074405e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 5.243901890758518e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        2.8083214712038007e-08,
+        2.8445158853362962e-08,
+        2.8786253894463876e-08,
+        2.9108551027889895e-08,
+        1.3266922886459587e-06,
+        1.3400735788537954e-06,
+        1.3076645573734114e-06,
+        3.025757641661464e-08,
+        3.052256548896626e-08,
+        3.0783759014108014e-08,
+        1.8802763886160978e-07,
+        -5.309134573014407e-07,
+        3.156789601943544e-08,
+        9.27955250938639e-08,
+        4.4423061756893034e-08,
+        4.478511175798339e-08,
+        4.515363065393796e-08,
+        7.130311559938596e-08,
+        6.147871437628405e-08,
+        4.9767784525422964e-08,
+        3.614919131395e-08,
+        2.0620761084777506e-08,
+        2.6156360109080845e-06,
+        -1.6078669642233256e-08,
+        -3.715856173452936e-08,
+        3.5463093682047697e-06
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 8,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 2.192819448821118e-06,
+        "array_index": [
+          116,
+          0
+        ],
+        "support_s": 0.58,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 2.192819448821118e-06,
+        "array_index": [
+          116,
+          0
+        ],
+        "support_s": 0.58,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 2.7146405270905838e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 3.6796487716816983e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        -1.5383366303023394e-08,
+        -1.6122978084565087e-08,
+        -1.688120611353927e-08,
+        -1.765050289259662e-08,
+        -1.842268929769242e-08,
+        -1.9189050112777828e-08,
+        -1.9940448292565804e-08,
+        -2.0667456510081728e-08,
+        -2.136050605144879e-08,
+        4.54594159260413e-08,
+        4.670146623933502e-08,
+        4.791646064997157e-08,
+        4.909471562272727e-08,
+        5.022662696516078e-08,
+        5.130279262521853e-08,
+        5.231414470716067e-08,
+        2.24862693867095e-06,
+        5.410871335362333e-08,
+        5.48769085069456e-08,
+        -2.4393469175154614e-08,
+        -2.4121701351631497e-08,
+        -2.375745421917541e-08,
+        -2.3306008178902715e-08,
+        -2.2774216540399905e-08,
+        9.01626015667456e-07,
+        2.0899902250862135e-06
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 9,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 2.425655913998806e-06,
+        "array_index": [
+          115,
+          0
+        ],
+        "support_s": 0.5750000000000001,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 2.425655913998806e-06,
+        "array_index": [
+          115,
+          0
+        ],
+        "support_s": 0.5750000000000001,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 3.005269882921935e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 4.080899681083161e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        -4.5729781722458895e-07,
+        -5.201970549179036e-07,
+        2.384556202494892e-08,
+        2.4947743433589853e-08,
+        2.6123829634239204e-08,
+        2.7368279059691858e-08,
+        2.8674640786818806e-08,
+        3.003562315528896e-08,
+        1.937539236902125e-06,
+        3.288860445094244e-08,
+        3.436265871153976e-08,
+        3.5855692415154294e-08,
+        3.7357794135939315e-08,
+        -1.3902111517805071e-06,
+        4.0349194159461366e-08,
+        -1.361767732951935e-06,
+        -1.2581576020673224e-06,
+        4.465941332715273e-08,
+        4.601362002532028e-08,
+        4.7313927491188235e-08,
+        2.5868887547145225e-06,
+        3.7245345096276194e-07,
+        2.613007292463776e-06,
+        3.997976339077669e-06,
+        5.282943954521002e-08,
+        5.3715377361374106e-08
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 10,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 2.7749318627263986e-06,
+        "array_index": [
+          115,
+          0
+        ],
+        "support_s": 0.5750000000000001,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 2.7749318627263986e-06,
+        "array_index": [
+          115,
+          0
+        ],
+        "support_s": 0.5750000000000001,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 3.4412139166203892e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 4.682776045122905e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        1.4835582692884763e-09,
+        1.996373399926199e-09,
+        2.4810883139658735e-09,
+        2.9341588117515194e-09,
+        3.352407837442506e-09,
+        3.7330287680492624e-09,
+        4.073595967490906e-09,
+        4.372079517867e-09,
+        4.626860804213262e-09,
+        4.836745372271967e-09,
+        5.000971740887206e-09,
+        1.8905809161182119e-06,
+        1.904642673099255e-06,
+        -1.7407292706855815e-06,
+        1.7540214459141334e-06,
+        1.5347579782679088e-06,
+        1.169299343371788e-06,
+        6.105557635791015e-07,
+        -1.8987673595233234e-07,
+        -1.2681627122798633e-06,
+        -2.6259794373498235e-06,
+        -4.205447444394217e-06,
+        -1.205251432434551e-06,
+        1.0050662649641051e-06,
+        9.694674320270824e-08,
+        -1.1243757941925558e-06
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 11,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 3.124207811441848e-06,
+        "array_index": [
+          115,
+          0
+        ],
+        "support_s": 0.5750000000000001,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 3.124207811441848e-06,
+        "array_index": [
+          115,
+          0
+        ],
+        "support_s": 0.5750000000000001,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 3.877157950346599e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 5.284652409121016e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        -7.397335112513392e-08,
+        -7.519368526442971e-08,
+        -7.641910287903286e-08,
+        -7.76412012598593e-08,
+        -7.885085487324694e-08,
+        -8.003829030100995e-08,
+        1.282060798496465e-08,
+        -8.23047823922396e-08,
+        1.1868236143852684e-08,
+        -8.435378663629312e-08,
+        -8.526887235182912e-08,
+        -8.609636534262499e-08,
+        -8.682571663032324e-08,
+        1.1696414871364968e-08,
+        1.2302539230402143e-08,
+        1.317416037371899e-08,
+        1.4298883597996248e-08,
+        7.876855846397635e-07,
+        8.098169992920567e-08,
+        7.99737424339586e-08,
+        7.877441821069198e-08,
+        7.738776580668016e-08,
+        7.581997991945588e-08,
+        7.407947948123716e-08,
+        7.217695834060844e-08,
+        7.012541135276162e-08
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 12,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 2.192819448821118e-06,
+        "array_index": [
+          116,
+          0
+        ],
+        "support_s": 0.58,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 2.192819448821118e-06,
+        "array_index": [
+          116,
+          0
+        ],
+        "support_s": 0.58,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 2.7146405270975227e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 3.6796487716816983e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        -6.071465860624237e-08,
+        -6.30857745695379e-08,
+        -6.544479706077633e-08,
+        -6.775936700620377e-08,
+        -1.6535186365962407e-08,
+        -1.9170262843121177e-07,
+        -4.5754421784671706e-07,
+        1.171436432460815e-06,
+        1.1816235388900642e-06,
+        1.155812286771779e-06,
+        1.0775793599787642e-06,
+        9.249649853895758e-07,
+        6.698927865443627e-07,
+        2.790820127392124e-07,
+        2.4614500611364054e-08,
+        8.017627423848039e-07,
+        5.235319825852569e-07,
+        1.0063291448064726e-07,
+        1.422629422292987e-06,
+        1.4909703730803248e-06,
+        6.418082145465132e-07,
+        6.93883801715367e-07,
+        1.2974675198396124e-06,
+        7.977196031169753e-07,
+        1.5100241381599266e-06,
+        1.1688851038471615e-06
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 13,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 2.425655913998806e-06,
+        "array_index": [
+          115,
+          0
+        ],
+        "support_s": 0.5750000000000001,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 2.425655913998806e-06,
+        "array_index": [
+          115,
+          0
+        ],
+        "support_s": 0.5750000000000001,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 3.0052698828941793e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 4.0808996810554055e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        4.444159091981925e-07,
+        1.3263221763926136e-07,
+        -1.628195434345836e-07,
+        -9.903313623327303e-08,
+        1.9489712562575923e-08,
+        2.136458810593489e-07,
+        5.082652934640386e-07,
+        9.290794527570811e-07,
+        1.4957095216538985e-06,
+        2.2100436147844127e-06,
+        1.1778297308029373e-06,
+        2.056660502437746e-06,
+        6.633741440539853e-08,
+        1.1676994500428584e-06,
+        2.1564122228770466e-06,
+        1.5069962312971863e-06,
+        2.4940391084721236e-06,
+        -1.0928185306957605e-06,
+        1.118273997589847e-06,
+        2.272766769742529e-06,
+        1.0865769989529261e-06,
+        2.300019980097656e-06,
+        2.309272558793929e-06,
+        2.315552425802281e-06,
+        1.3432074508698544e-06,
+        2.6267752673558853e-06
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 14,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 2.774931862729868e-06,
+        "array_index": [
+          115,
+          0
+        ],
+        "support_s": 0.5750000000000001,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 2.7749318627263986e-06,
+        "array_index": [
+          115,
+          0
+        ],
+        "support_s": 0.5750000000000001,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 3.4412139166065114e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 4.6827760450951494e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        4.6141068087840464e-08,
+        4.8154344255146864e-08,
+        5.0097198174559043e-08,
+        5.1938169428472625e-08,
+        5.364471378915825e-08,
+        5.5183605775221967e-08,
+        5.652138146058916e-08,
+        3.287529568019032e-08,
+        5.846148508695248e-08,
+        5.900028313826633e-08,
+        5.921213363374589e-08,
+        5.907067970531421e-08,
+        5.8553101811575914e-08,
+        5.764102596964027e-08,
+        5.632152856593908e-08,
+        5.4588224229074056e-08,
+        5.244240351004459e-08,
+        4.989416386991241e-08,
+        4.6963451138387624e-08,
+        4.36809024992324e-08,
+        4.0088362934787014e-08,
+        3.623893857565563e-08,
+        3.219646005706012e-08,
+        2.8034261120857273e-08,
+        2.383323182211794e-08,
+        2.6057306033305805e-06
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "pair_index": 15,
+      "observed_positions": {
+        "maximum_absolute_difference_m": 3.124207811441848e-06,
+        "array_index": [
+          115,
+          0
+        ],
+        "support_s": 0.5750000000000001,
+        "coordinate": 0
+      },
+      "private_positions_evaluator_only": {
+        "maximum_absolute_difference_m": 3.124207811441848e-06,
+        "array_index": [
+          115,
+          0
+        ],
+        "support_s": 0.5750000000000001,
+        "coordinate": 0
+      },
+      "forecasts": {
+        "maximum_absolute_difference_m": 3.877157950318844e-06,
+        "array_index": [
+          9,
+          23,
+          1
+        ],
+        "current_support_s": 0.145,
+        "horizon_s": 0.14,
+        "coordinate": 1
+      },
+      "residuals": {
+        "maximum_absolute_difference_m": 5.2846524091348934e-06,
+        "array_index": [
+          0,
+          25,
+          0
+        ],
+        "current_support_s": 0.1,
+        "horizon_s": 0.15,
+        "coordinate": 0
+      },
+      "allocation_difference_by_horizon_m": [
+        -1.21200458062104e-07,
+        -1.1608214615585477e-07,
+        7.130994862658557e-08,
+        7.21579525297944e-08,
+        9.418275163444734e-07,
+        1.0419519442250724e-06,
+        1.145800340981995e-06,
+        1.2523676454281873e-06,
+        1.3601248656028297e-06,
+        1.4667982594224194e-06,
+        1.5690583910002442e-06,
+        1.6620838643524594e-06,
+        3.989458707095994e-06,
+        1.789813106188587e-06,
+        1.8007549353396546e-06,
+        1.7523877045219627e-06,
+        1.6181485040372978e-06,
+        1.3626524903859183e-06,
+        9.408559775506142e-07,
+        2.329593715891254e-06,
+        -6.151896978084936e-07,
+        2.626270062297542e-06,
+        2.776935971435246e-06,
+        2.925581154403223e-06,
+        3.0679268839400864e-06,
+        4.946922942831999e-06
+      ],
+      "changed_horizon_budget_decisions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "pair_files": [
+    {
+      "path": "tmp/observer-confirmation-pair-00-12oct.json.gz",
+      "sha256": "ba997c836578f1e472335bc448a0af22004e86e188dd781098d39c7dd4f45b44",
+      "bytes": 2253531
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-01-12oct.json.gz",
+      "sha256": "dd69ae3d2914de5a34c32658e1a8574b1d741682f1a63b7f2827fa9649346378",
+      "bytes": 2253868
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-02-12oct.json.gz",
+      "sha256": "1c280e9a7d1e5e655fc4051852ea32ae6375a59dde0dcc5d149a593beaef026c",
+      "bytes": 2250977
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-03-12oct.json.gz",
+      "sha256": "0e111881dd801371b99cdf7227ea1ffa58bac47fc7e0305f935e26b5a2cca1cb",
+      "bytes": 2250571
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-04-12oct.json.gz",
+      "sha256": "fb6bec581ba5c994bb4b0cd9e780ec9c9548df5dbf2b6782a7794c8e68391c6b",
+      "bytes": 2255198
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-05-12oct.json.gz",
+      "sha256": "8669f004622039782f7a2f0ca8c81b0ac7da984c83992c9e06fc9b7fe41f9657",
+      "bytes": 2254022
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-06-12oct.json.gz",
+      "sha256": "c7250ed80edfea07cbdf45f00c7daf002fad7266e466f783af9aa7aadad101ba",
+      "bytes": 2251067
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-07-12oct.json.gz",
+      "sha256": "c2d4196a83967f38440ba49f164678d2c53811625ece882097b62efd50a1b9fd",
+      "bytes": 2249870
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-08-12oct.json.gz",
+      "sha256": "768db3868e8dabd5e6330f71bf85341cc25f30717f409a8a600326b978042fc4",
+      "bytes": 2254911
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-09-12oct.json.gz",
+      "sha256": "e0dfc975cb58abdd849ba46a5300fe3c945c04fd8a27775c73593cf15a6c7743",
+      "bytes": 2254436
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-10-12oct.json.gz",
+      "sha256": "59c9170e0a4669baf64498c668cd59ffd8a638d0391ae0a4f751c988903989b0",
+      "bytes": 2251274
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-11-12oct.json.gz",
+      "sha256": "41a3337e132768f3378e957aafcf024ac5e16f17b2c6dfae9f5a283aa09b11bb",
+      "bytes": 2249571
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-12-12oct.json.gz",
+      "sha256": "f267358d67983aedecc9b652a576fc229bb166e46bf88c96f42ea3788aa424e5",
+      "bytes": 2254862
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-13-12oct.json.gz",
+      "sha256": "d2e9a583ab1a0bbc49eea859fccd763b7a54bf15c904b4e11db09713f138312e",
+      "bytes": 2254814
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-14-12oct.json.gz",
+      "sha256": "bb4fde806b4847f62b347b8861092408bf5dfb677fc0ae287a7821831014763a",
+      "bytes": 2251375
+    },
+    {
+      "path": "tmp/observer-confirmation-pair-15-12oct.json.gz",
+      "sha256": "f7be463402be1067afada8a8ccd17a8fe347eeea283884a4c730b5a74aa902a3",
+      "bytes": 2249673
+    }
+  ],
+  "no_refit_or_settings_changes": true,
+  "observer_private_inputs_used": false,
+  "no_dose": true,
+  "authoritative_predictor_or_pilot_changed": false,
+  "neural_increment_assistance_or_retained_learning_tested": false,
+  "elapsed_wall_seconds": 184.90144069999224,
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "capacity": {
+    "persistent_state_means": 10,
+    "persistent_covariance_unique_entries": 55,
+    "persistent_covariance_stored_entries_python": 100,
+    "monotone_decision_clock_scalars": 1,
+    "common_prior_mean_entries": 10,
+    "common_prior_covariance_unique_entries": 55,
+    "diffusion_covariance_unique_entries": 36,
+    "learned_scalar_entries_total": 101,
+    "common_prior_covariance_stored_entries_python": 100,
+    "diffusion_covariance_stored_entries_python": 64,
+    "raw_history_rows_stored": 0,
+    "diagnostic_sensor_covariance_unique_entries": 55,
+    "deterministic_transition_cache_maximum_entries": 1024,
+    "deterministic_cache_float64_payload_maximum_bytes": 1638400
+  },
+  "limits": [
+    "Noise independence only: same subjectseed2 and finite family/scale domain.",
+    "Two distinct no-dose learning laws, not four independent laws.",
+    "Paired grid agreement does not establish continuum/biological validity.",
+    "Standalone no-dose observer confirmation; no pilot, stimulation or retained-learning result."
+  ]
+}

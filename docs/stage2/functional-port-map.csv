@@ -1,0 +1,37 @@
+port_id,cad_label,logical_function,electrical_role,anatomical_assignment,status
+P01,Interface_Port_01,REC_01,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P02,Interface_Port_02,REC_02,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P03,Interface_Port_03,REC_03,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P04,Interface_Port_04,REC_04,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P05,Interface_Port_05,REC_05,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P06,Interface_Port_06,REC_06,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P07,Interface_Port_07,REC_07,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P08,Interface_Port_08,REC_08,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P09,Interface_Port_09,REC_09,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P10,Interface_Port_10,REC_10,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P11,Interface_Port_11,REC_11,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P12,Interface_Port_12,REC_12,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P13,Interface_Port_13,REC_13,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P14,Interface_Port_14,REC_14,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P15,Interface_Port_15,REC_15,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P16,Interface_Port_16,REC_16,recording signal,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P17,Interface_Port_17,REC_REFERENCE,shared recording reference,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P18,Interface_Port_18,BODY_BIAS,current-bounded body bias; not stimulation return,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P19,Interface_Port_19,STIM_01,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P20,Interface_Port_20,STIM_02,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P21,Interface_Port_21,STIM_03,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P22,Interface_Port_22,STIM_04,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P23,Interface_Port_23,STIM_05,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P24,Interface_Port_24,STIM_06,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P25,Interface_Port_25,STIM_07,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P26,Interface_Port_26,STIM_08,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P27,Interface_Port_27,STIM_09,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P28,Interface_Port_28,STIM_10,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P29,Interface_Port_29,STIM_11,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P30,Interface_Port_30,STIM_12,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P31,Interface_Port_31,STIM_13,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P32,Interface_Port_32,STIM_14,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P33,Interface_Port_33,STIM_15,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P34,Interface_Port_34,STIM_16,selectable stimulation contact,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P35,Interface_Port_35,RETURN_00,dedicated isolated source return,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5
+P36,Interface_Port_36,RETURN_01,dedicated isolated source return,Target-specific; not assigned by allocation CAD,Functional allocation only; exact chip pin/net/lead mapping pending Stages4/5

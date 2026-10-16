@@ -1,0 +1,33 @@
+{
+  "schema": "ato.stage3.closeout-review.v1",
+  "date": "2026-10-12",
+  "decision": "COMPLETE_WITHIN_SELECTED_DIGITAL_SCOPE",
+  "reviewer": "Root AI engineering agent with separate AI source/raw audit; not human, institutional or clinical approval",
+  "reviewed_replay_summary_sha256": "ee4f989847e3eacb35e491431f9f3bac07bb4fb5baf6931781a1bd203e56d941",
+  "reviewed_replay_audit_sha256": "3bbc4454eac2c72b669416157a3000c87fb1d33f274230e92a9b46dc70214b6b",
+  "package_manifest_sha256": "cb2737e394c8ad75e923fc9d296924a50b353483a45b13a0356237df74c509f4",
+  "independent_saved_data_review_sha256": "52f265261bf5ac5cb3b74fba2c59d602a2ad85517016ca64f4e775eb729e57cc",
+  "independent_audit_receipt_sha256": "6ee1045479136fe96d6290c6c3ccbcb8d8a8eb03b2c0b11a08f32da85182a6b8",
+  "independent_auditor_sha256": "718ea49e9b9bd605034e0fd96deebed1cd3cfce7c67b1bc3b3e693fd98c095a6",
+  "preflight_sha256": "09a3420045af0eb80c77d7a388dd43e3229c9d133647291d874984f7f5623dc8",
+  "generation_root_review_sha256": "ef6495bef21aaf94e133d75754c118b9b1d778ee40d75b2f6fca41093d54c47f",
+  "full_same_cohort_reproduction_passed": true,
+  "source_and_original_evidence_unchanged": true,
+  "practice_trials": 32,
+  "off_assessments": 64,
+  "launched_profiles": 0,
+  "guard_checks": 1600,
+  "prelaunch_diagnostics": 32,
+  "software_contract_probes_passed": 15,
+  "active_delivery_implemented": false,
+  "actual_monitoring_newly_validated": false,
+  "retained_advantage_established": false,
+  "scope": "Finite selected digital mechanism investigation and negative actual-assistance verdict. Complete electronics, target firmware, populated CAD and final integrated manuscript remain.",
+  "basis": [
+    "Frozen no-dose observer plus independent sensor-noise confirmation and exact audits",
+    "Approved finite actual-only replay, causal sealing/guards/withholding/OFF evidence and full same-cohort reproduction",
+    "Separate independent raw interval/noise/residual recomputation and published auditor",
+    "Integrated motor/pressure interpretation and concrete detailed-design handoff"
+  ],
+  "ci_note": "The observer full Linux reproduction passed at8b618d6. That checkpoint audit exposed stale documentation-link receipt only; refreshed receipts and new replay require current-commit CI. No pending CI is represented as passed."
+}

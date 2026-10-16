@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "library": "E:\\project workspace assests\\EDA\\KiCAD\\bin\\ngspice.dll",
+  "engine_version_messages": [
+    "stdout ** ngspice-46 shared library",
+    "stdout ** ngspice-46 : Circuit level simulation program"
+  ],
+  "warnings": [
+    "stderr Warning: can't find the initialization file spinit."
+  ],
+  "api_source": "https://ngspice.sourceforge.io/shared.html",
+  "reference_model": "src/ato/stage3/electrical.py",
+  "inputs": {
+    "current_A": 0.003,
+    "phase_s": 0.0002,
+    "gap_s": 0.0001,
+    "recovery_s": 0.001,
+    "series_ohm": 1000.0,
+    "pair_capacitance_F": 2e-06,
+    "leakage_ohm": 100000.0,
+    "passive_switch_ohm": 20.0,
+    "initial_polarization_V": 0.0,
+    "spice_edge_ramp_s": 1e-12
+  },
+  "acceptance_absolute_error_V": 2e-06,
+  "runs": [
+    {
+      "passive_recovery": false,
+      "max_step_s": 5e-07,
+      "samples": 3136,
+      "max_waveform_absolute_error_V": 7.654194170841899e-10,
+      "min_polarization_V": -0.29985004995301334,
+      "analytical_min_polarization_V": -0.29985004998746945,
+      "residual_after_drive_V": 0.0004494372155252667,
+      "analytical_residual_after_drive_V": 0.0004494379123229919,
+      "residual_at_1p5ms_V": 0.0004471963654705475,
+      "analytical_residual_at_1p5ms_V": 0.0004471963313836836,
+      "max_scalar_absolute_error_V": 6.9679772520502e-10,
+      "passed": true
+    },
+    {
+      "passive_recovery": false,
+      "max_step_s": 1e-07,
+      "samples": 15130,
+      "max_waveform_absolute_error_V": 7.504550956355382e-10,
+      "min_polarization_V": -0.29985004996732806,
+      "analytical_min_polarization_V": -0.29985004998746945,
+      "residual_after_drive_V": 0.00044943720077854067,
+      "analytical_residual_after_drive_V": 0.0004494379123229919,
+      "residual_at_1p5ms_V": 0.00044719635079635466,
+      "analytical_residual_at_1p5ms_V": 0.0004471963313836836,
+      "max_scalar_absolute_error_V": 7.115444512349918e-10,
+      "passed": true
+    },
+    {
+      "passive_recovery": true,
+      "max_step_s": 5e-07,
+      "samples": 3140,
+      "max_waveform_absolute_error_V": 1.0788385185200866e-09,
+      "min_polarization_V": -0.29985004963818723,
+      "analytical_min_polarization_V": -0.29985004998746945,
+      "residual_after_drive_V": 0.000449437259932972,
+      "analytical_residual_after_drive_V": 0.0004494379123229919,
+      "residual_at_1p5ms_V": 0.0002739104867516216,
+      "analytical_residual_at_1p5ms_V": 0.0002739105627687714,
+      "max_scalar_absolute_error_V": 6.523900198816997e-10,
+      "passed": true
+    },
+    {
+      "passive_recovery": true,
+      "max_step_s": 1e-07,
+      "samples": 15133,
+      "max_waveform_absolute_error_V": 1.0645097026085182e-09,
+      "min_polarization_V": -0.2998500496525163,
+      "analytical_min_polarization_V": -0.29985004998746945,
+      "residual_after_drive_V": 0.00044943724509805824,
+      "analytical_residual_after_drive_V": 0.0004494379123229919,
+      "residual_at_1p5ms_V": 0.0002739104803680819,
+      "analytical_residual_at_1p5ms_V": 0.0002739105627687714,
+      "max_scalar_absolute_error_V": 6.672249336695489e-10,
+      "passed": true
+    }
+  ],
+  "refinement_checks": [
+    {
+      "passive_recovery": false,
+      "refinement_delta_final_V": 1.4674192850422374e-11,
+      "passed": true
+    },
+    {
+      "passive_recovery": true,
+      "refinement_delta_final_V": 6.383539692938339e-12,
+      "passed": true
+    }
+  ],
+  "netlists": {
+    "open_recovery": [
+      "ATO linear pair load independent transient",
+      "Icommand 0 drive PWL(0 0 1p -3m 200u -3m 200.000001u 0 300u 0 300.000001u 3m 500u 3m 500.000001u 0 1.5m 0)",
+      "Rseries drive pol 1000",
+      "Cpair pol 0 2u IC=0",
+      "Rleak pol 0 100k",
+      ".options reltol=1e-9 abstol=1e-13 vntol=1e-10 method=gear",
+      ".save v(pol)",
+      ".tran 1e-07 1.5m 0 1e-07 UIC",
+      ".end"
+    ],
+    "passive_recovery": [
+      "ATO linear pair load independent transient",
+      "Icommand 0 drive PWL(0 0 1p -3m 200u -3m 200.000001u 0 300u 0 300.000001u 3m 500u 3m 500.000001u 0 1.5m 0)",
+      "Rseries drive pol 1000",
+      "Cpair pol 0 2u IC=0",
+      "Rleak pol 0 100k",
+      "Vgate gate 0 PWL(0 0 500u 0 500.000001u 1 1.5m 1)",
+      "Sreturn drive 0 gate 0 ReturnSwitch",
+      ".model ReturnSwitch SW(Ron=20 Roff=1e12 Vt=0.5 Vh=0)",
+      ".options reltol=1e-9 abstol=1e-13 vntol=1e-10 method=gear",
+      ".save v(pol)",
+      ".tran 1e-07 1.5m 0 1e-07 UIC",
+      ".end"
+    ]
+  },
+  "scope": "Independent numerical verification of an assumed linear Rseries+(C||Rleak) pair load under ideal current, open gap, and optional switched passive recovery. No compliance clipping, current-source servo, nonlinearity, electrode chemistry, anatomy or biological recruitment is validated."
+}

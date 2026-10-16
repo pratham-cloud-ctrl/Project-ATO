@@ -1,0 +1,209 @@
+{
+  "schema": "ato.stage4.supervision-checkpoint.v1",
+  "date": "2026-10-14",
+  "completion": "Independent shutdown and supervision complete within finite digital package scope; four Stage4 packages remain",
+  "native_components": 478,
+  "native_pin_contracts": 1699,
+  "native_sheets": 22,
+  "native_ERC_violations": 0,
+  "ignored_ERC_checks": [],
+  "MCP_root_ERC_violations": 0,
+  "terminal_guard_paths": 18,
+  "physical_RHD_pin_observers": 17,
+  "control_summary": {
+    "scenario_groups": 18,
+    "assertions_passed": 46,
+    "state_snapshots": 297,
+    "primary_stuck_timer_secondary_cutoff": "CONDITIONAL_PASS",
+    "dual_timer_stuck_high": "UNPROTECTED_WITNESS_PRESERVED",
+    "welded_AFE_or_guard_switch": "UNPROTECTED_WITNESS_PRESERVED",
+    "common_supply_fault_outside_valid_logic": "UNKNOWN_PHYSICAL_STATE",
+    "zero_fault_current_or_4_percent_dose_claim_earned": false
+  },
+  "native_control_audit": {
+    "xml_sha256_lf": "5e9c2e3b2c71b2ed5badc4c29247f4ef59e418febd523ba4f97585e651a59e2c",
+    "manifest_sha256_lf": "e8cdd380cb2448dac547cc290cd29ee0f4faf68b3ff4796a48bbf257565fb4db",
+    "components": 478,
+    "compared_actual_XML_pin_nets": 1667,
+    "functional_audit": {
+      "gate_pin_identity_source": "Fixed package pins from primary component tables; actual KiCad XML net names",
+      "phase_gate_combinations": 2048,
+      "reset_gate_combinations": 1024,
+      "health_startup_combinations": 256,
+      "AFE_blank_single_fault_rows": 41,
+      "raw_clocks_and_async_controls_checked_DFFs": 6,
+      "independent_raw_request_timer_inputs": 2,
+      "body_facing_guard_paths": [
+        {
+          "ref": "U100",
+          "source_pad": "1",
+          "drain_pad": "16",
+          "enable_pad": "15",
+          "functional_port": "STIM00"
+        },
+        {
+          "ref": "U100",
+          "source_pad": "12",
+          "drain_pad": "13",
+          "enable_pad": "14",
+          "functional_port": "STIM01"
+        },
+        {
+          "ref": "U100",
+          "source_pad": "9",
+          "drain_pad": "8",
+          "enable_pad": "7",
+          "functional_port": "STIM02"
+        },
+        {
+          "ref": "U100",
+          "source_pad": "4",
+          "drain_pad": "5",
+          "enable_pad": "6",
+          "functional_port": "STIM03"
+        },
+        {
+          "ref": "U101",
+          "source_pad": "1",
+          "drain_pad": "16",
+          "enable_pad": "15",
+          "functional_port": "STIM04"
+        },
+        {
+          "ref": "U101",
+          "source_pad": "12",
+          "drain_pad": "13",
+          "enable_pad": "14",
+          "functional_port": "STIM05"
+        },
+        {
+          "ref": "U101",
+          "source_pad": "9",
+          "drain_pad": "8",
+          "enable_pad": "7",
+          "functional_port": "STIM06"
+        },
+        {
+          "ref": "U101",
+          "source_pad": "4",
+          "drain_pad": "5",
+          "enable_pad": "6",
+          "functional_port": "STIM07"
+        },
+        {
+          "ref": "U102",
+          "source_pad": "1",
+          "drain_pad": "16",
+          "enable_pad": "15",
+          "functional_port": "STIM08"
+        },
+        {
+          "ref": "U102",
+          "source_pad": "12",
+          "drain_pad": "13",
+          "enable_pad": "14",
+          "functional_port": "STIM09"
+        },
+        {
+          "ref": "U102",
+          "source_pad": "9",
+          "drain_pad": "8",
+          "enable_pad": "7",
+          "functional_port": "STIM10"
+        },
+        {
+          "ref": "U102",
+          "source_pad": "4",
+          "drain_pad": "5",
+          "enable_pad": "6",
+          "functional_port": "STIM11"
+        },
+        {
+          "ref": "U103",
+          "source_pad": "1",
+          "drain_pad": "16",
+          "enable_pad": "15",
+          "functional_port": "STIM12"
+        },
+        {
+          "ref": "U103",
+          "source_pad": "12",
+          "drain_pad": "13",
+          "enable_pad": "14",
+          "functional_port": "STIM13"
+        },
+        {
+          "ref": "U103",
+          "source_pad": "9",
+          "drain_pad": "8",
+          "enable_pad": "7",
+          "functional_port": "STIM14"
+        },
+        {
+          "ref": "U103",
+          "source_pad": "4",
+          "drain_pad": "5",
+          "enable_pad": "6",
+          "functional_port": "STIM15"
+        },
+        {
+          "ref": "U104",
+          "source_pad": "1",
+          "drain_pad": "16",
+          "enable_pad": "15",
+          "functional_port": "RETURN0"
+        },
+        {
+          "ref": "U104",
+          "source_pad": "12",
+          "drain_pad": "13",
+          "enable_pad": "14",
+          "functional_port": "RETURN1"
+        }
+      ],
+      "physical_switch_position_or_gate_delay_proven": false
+    }
+  },
+  "analog_independent_checks": 6079,
+  "analog_trajectory_points": 2961,
+  "integration_wires": 102,
+  "integration_pin_net_value_checks": 573,
+  "local_links_resolve": 171,
+  "visual_review": "Native author inspected all22 final page renders; root inspected pages1/2/7/13 and both scientific figures; bounded title-fit correction included",
+  "previous_router_full_GitHub_CI": "38435261775 confirmedsuccess thisturn; newcommitCI reported separately afterpush",
+  "source_paper_exact_sha256": "a1784965d63060e3b0c11fd3c01c9f0b4fe0b007cc65c605c76164ee1d4bf103",
+  "historical_packages_and_synced_sources_modified": false,
+  "physical_fault_delay_zero_leakage_dose_accuracy_or_biological_efficacy_qualified": false,
+  "native_consolidated_PCB_or_populated_CAD_claimed": false,
+  "next_package": "Power and complete quantitative budget; revisedAFE3.45/+5.30/-5.10 and separateSUPrails",
+  "hash_policy": "LF-normalized text; exact PDF/PNG/NPZ",
+  "sha256": {
+    "electronics/stage4/supervision/connectivity.json": "e8cdd380cb2448dac547cc290cd29ee0f4faf68b3ff4796a48bbf257565fb4db",
+    "electronics/stage4/supervision/verification.json": "c118526e07173d8fbf260005f0f23df1c798847e70afe5264f4fb2b16c97b172",
+    "electronics/stage4/supervision/supervision.pdf": "b4259107ad4d6c031351be0e3cfad3c9a7deec09be9162259167fd8b8058ff17",
+    "electronics/stage4/supervision/mcp-inspection.json": "6aa13b10efe04a6b2b39f9d298711032ad2136fc8cdc3f46960b17ea68cb2ab9",
+    "electronics/stage4/supervision-study/control_study.py": "51807786af83c2bd3f3d0bf2b18a49621229e0b8400be34464d8446dc39248a3",
+    "electronics/stage4/supervision-study/control-results.json": "b40b11b69522ff35961c6b5e2afdfce15c8a3266421952cb3728f78635fba303",
+    "electronics/stage4/supervision-study/analog_study.py": "7a9be1c5d3f0449a5cd901ad0781fdd6e8d5b79446922587ea8f7ddad2f61666",
+    "electronics/stage4/supervision-study/analog-results.json": "c916d4181e0b2f30408d12d56738efebbb5516de01c5626fb1608902e5ff6bcc",
+    "electronics/stage4/supervision-study/analog-traces.npz": "389816e9e0d0f4cbe8c56583e0178314f847b16677bb84f1f022a1599e96d510",
+    "electronics/stage4/supervision-study/analog-verification.json": "d6dab79c47be64a46db12e3c0d4a3416155d4faf537841957d774640a175e4b7",
+    "electronics/stage4/supervision-study/integration-verification.json": "a2324fb980ba5dbd0e77133047159252755a6543aa619b009a70ce938f1f23fa",
+    "electronics/stage4/supervision-study/verify_integration.py": "78adee40002f58755374306f28e343205bfd35ec6f3afe0e33fc212633015ff9",
+    "electronics/stage4/supervision-study/verify_analog.py": "c0ca1029c0ed139746009f17621c69862f0ec1825ae8eb857cec7bfc8d3f02a9",
+    "README.md": "c0ff14daccb0bb08d9b4c20431ae7aa5d49e73c45306ca07acbcc8ff2e6e45c4",
+    "CURRENT_STATUS.md": "fab9ae58fcf3d35bfa153aa9cc7bfce12910ae125a3ec16912fcdd7fb7b2caac",
+    "docs/engineering-roadmap.md": "36ec14b92ed82d3b4d4d9871e81fa32a910212ba63b288a986e5424b8f59e866",
+    "docs/stage4/entry-plan.md": "a2eedbde016d58db4e756eb1567bf7d11411e0051de0395c9514d982e6448774",
+    "docs/stage4/remaining-work.md": "89b3bee8cfa9d504d6eca9c6b5fd1fc6ad54afb93b0f16f12e5d9de11314828d",
+    "docs/stage4/supervision-design.md": "c6ea923ab32a4d6515a6ea69e69fca38874db9b7b14c549d198dd75f8e31e843",
+    "docs/stage4/supervision-control-contract.md": "b9b5e6e4d8b587d687aa4854095fdaa4536232ab299dc66cfe97c5801e82a666",
+    "docs/stage4/supervision-component-review.md": "137b0b6a2976388121581edd2c6ef1b9f8755c28a386b6c496b961a92bca38fc",
+    "electronics/stage4/supervision/README.md": "5ef8409e3540664d3a97528469d36c97de1dd839eb42aee2fbca1188128389cc",
+    "electronics/stage4/supervision-study/README.md": "65f8e44a123d55a040aca7b15bcdf2345382d109784fd07fb1ddc94d544a05ae",
+    "docs/stage4/supervision-wiring.csv": "bb5d90141665222d3810291c32e19fde56fb14719e1decdb0117406088ebc550",
+    "docs/stage4/requirements-trace.csv": "15d86befdd5129f7418421363c81c4a62b170f525fb299762c3c781e868ad807",
+    ".github/workflows/verify.yml": "796c3a10b04e5c9b1c7b21a3f14ba904778aaac1e1fc977310215f4dad0714d3",
+    "provenance/CONTRIBUTIONS.md": "bed579cef3797825f3899857d68e9e464d0da5b4a30406d75ed489bbb8f01c07"
+  }
+}

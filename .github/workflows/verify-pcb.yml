@@ -1,0 +1,19 @@
+name: Verify integrated PCB package
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pcb-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify exact committed artifact bytes
+        run: python scripts/verify_manifest.py
+      - name: Replay independent PCB and source-preservation checks
+        run: python scripts/verify_integrated_pcb.py

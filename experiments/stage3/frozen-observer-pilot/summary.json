@@ -1,0 +1,1215 @@
+{
+  "schema": "ato.stage3.frozen-observer-pilot.summary.v1",
+  "date": "2026-10-12",
+  "classification": "FINITE_PRIMARY_ACTUAL_DOMAIN_ALL_WITHHELD_OBSERVER_FREEZE_REPLAY",
+  "preflight_sha256": "09a3420045af0eb80c77d7a388dd43e3229c9d133647291d874984f7f5623dc8",
+  "review_sha256": "ef6495bef21aaf94e133d75754c118b9b1d778ee40d75b2f6fca41093d54c47f",
+  "practice_trials": 32,
+  "off_assessments": 64,
+  "total_launched_profiles": 0,
+  "total_off_launched_profiles": 0,
+  "frozen_vectors": 32,
+  "frozen_targets": 832,
+  "current_diagnostics": 32,
+  "future_guard_targets": 800,
+  "warmup_guard_targets": 800,
+  "guard_checks": 1600,
+  "guard_failures": 0,
+  "current_diagnostic_failures": 0,
+  "candidate_failed_gate_counts": {
+    "independent_actual_response_domain_qualified": 256,
+    "learning_interaction_qualified": 256,
+    "whole_vector_correction_interval_within25mm": 256,
+    "policy_enabled": 64,
+    "signed_route_independently_tested": 64
+  },
+  "tested_candidate_failed_gate_counts": {
+    "independent_actual_response_domain_qualified": 192,
+    "learning_interaction_qualified": 192,
+    "whole_vector_correction_interval_within25mm": 192,
+    "policy_enabled": 48
+  },
+  "baseline_context": {
+    "context_id": "ATO_S3_FROZEN_PREFIX_DEVELOPMENT_AND_CONFIRMATION_12OCT",
+    "qualified": true,
+    "support_start_s": 0.1,
+    "support_end_s": 2.845,
+    "sample_s": 0.005,
+    "horizons_s": [
+      0.025,
+      0.03,
+      0.035,
+      0.04,
+      0.045,
+      0.05,
+      0.055,
+      0.06,
+      0.065,
+      0.07,
+      0.075,
+      0.08,
+      0.085,
+      0.09,
+      0.095,
+      0.1,
+      0.105,
+      0.11,
+      0.115,
+      0.12,
+      0.125,
+      0.13,
+      0.135,
+      0.14,
+      0.145,
+      0.15
+    ],
+    "allocation_m": [
+      0.008778432723272101,
+      0.00874238927368005,
+      0.008758227332654446,
+      0.008996890706951737,
+      0.009022758276332744,
+      0.009000911609160986,
+      0.008931038682197284,
+      0.00925434823673688,
+      0.00959018771548269,
+      0.010233860778262691,
+      0.010470995091050778,
+      0.00981249636792909,
+      0.010628468434023371,
+      0.010429726578328326,
+      0.00963901248440131,
+      0.010182779861559483,
+      0.011406400160750108,
+      0.010063528591619238,
+      0.010135518839237991,
+      0.01135921945134984,
+      0.012418841082632071,
+      0.010699343344446836,
+      0.011353736115715152,
+      0.010965218808406414,
+      0.010278215476546494,
+      0.011296188408943444
+    ],
+    "action_prefix": [],
+    "instruction_hz": 1.0,
+    "task_time_offset_s": 0.0,
+    "source_groups": [
+      "16 development drift captures",
+      "32 fresh confirmation grid captures"
+    ],
+    "temporal_holdout_used_for_admission": false,
+    "private_family_selector": false,
+    "scope": "finite observed exact-prefix no-dose domain; empirical, not population coverage"
+  },
+  "maximum_allocation_m": 0.012418841082632071,
+  "all_observers_sealed": true,
+  "all_updates_causal": true,
+  "matched_arms_identical": true,
+  "new_sensor_noise_ids": [
+    1261012100,
+    1261012101,
+    1261012102,
+    1261012103,
+    1261012104,
+    1261012105,
+    1261012106,
+    1261012107,
+    1261012108,
+    1261012109,
+    1261012110,
+    1261012111
+  ],
+  "distinct_noise_arrays": 12,
+  "grid_differences": {
+    "maximum_position_difference_m": 2.838302176459001e-06,
+    "maximum_frozen_forecast_difference_m": 2.4584609168015747e-06,
+    "maximum_trajectory_rmse_difference_m": 1.5461709872016671e-06,
+    "launch_decisions_changed": 0
+  },
+  "arms": [
+    {
+      "family": "dependent",
+      "body_integration_step_s": 0.00125,
+      "arm": "observe_only",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087558908750606,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042772669998404976
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041137419145384886,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.041925341921562144
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232449595653188,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048360414116059826
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "MATCHED_OBSERVE_ONLY",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "dependent",
+      "body_integration_step_s": 0.00125,
+      "arm": "learner_goal",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087558908750606,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042772669998404976
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041137419145384886,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.041925341921562144
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232449595653188,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048360414116059826
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "dependent",
+      "body_integration_step_s": 0.00125,
+      "arm": "expert_external",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087558908750606,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042772669998404976
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041137419145384886,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.041925341921562144
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232449595653188,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048360414116059826
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "dependent",
+      "body_integration_step_s": 0.00125,
+      "arm": "expert_neural",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087558908750606,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042772669998404976
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041137419145384886,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.041925341921562144
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232449595653188,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048360414116059826
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "dependent",
+      "body_integration_step_s": 0.0025,
+      "arm": "observe_only",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087062693665286,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042773934328671805
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04113692892389487,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04192645436242963
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232386007889113,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048361705934723546
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "MATCHED_OBSERVE_ONLY",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "dependent",
+      "body_integration_step_s": 0.0025,
+      "arm": "learner_goal",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087062693665286,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042773934328671805
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04113692892389487,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04192645436242963
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232386007889113,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048361705934723546
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "dependent",
+      "body_integration_step_s": 0.0025,
+      "arm": "expert_external",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087062693665286,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042773934328671805
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04113692892389487,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04192645436242963
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232386007889113,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048361705934723546
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "dependent",
+      "body_integration_step_s": 0.0025,
+      "arm": "expert_neural",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087062693665286,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042773934328671805
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04113692892389487,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04192645436242963
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232386007889113,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048361705934723546
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "favorable",
+      "body_integration_step_s": 0.00125,
+      "arm": "observe_only",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04139314258118139,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.043240089491128654
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04163083684771895,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042747553314629885
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.0427993528801515,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.049107044613830926
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "MATCHED_OBSERVE_ONLY",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "favorable",
+      "body_integration_step_s": 0.00125,
+      "arm": "learner_goal",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04139314258118139,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.043240089491128654
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04163083684771895,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042747553314629885
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.0427993528801515,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.049107044613830926
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "favorable",
+      "body_integration_step_s": 0.00125,
+      "arm": "expert_external",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04139314258118139,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.043240089491128654
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04163083684771895,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042747553314629885
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.0427993528801515,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.049107044613830926
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "favorable",
+      "body_integration_step_s": 0.00125,
+      "arm": "expert_neural",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04139314258118139,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.043240089491128654
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04163083684771895,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042747553314629885
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.0427993528801515,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.049107044613830926
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "favorable",
+      "body_integration_step_s": 0.0025,
+      "arm": "observe_only",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041392689867403805,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04324149818355832
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041630392138018155,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.0427489306158214
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04279878442770534,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04910859078481813
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "MATCHED_OBSERVE_ONLY",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "favorable",
+      "body_integration_step_s": 0.0025,
+      "arm": "learner_goal",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041392689867403805,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04324149818355832
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041630392138018155,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.0427489306158214
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04279878442770534,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04910859078481813
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "favorable",
+      "body_integration_step_s": 0.0025,
+      "arm": "expert_external",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041392689867403805,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04324149818355832
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041630392138018155,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.0427489306158214
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04279878442770534,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04910859078481813
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "favorable",
+      "body_integration_step_s": 0.0025,
+      "arm": "expert_neural",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041392689867403805,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04324149818355832
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041630392138018155,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.0427489306158214
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04279878442770534,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04910859078481813
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "harmful",
+      "body_integration_step_s": 0.00125,
+      "arm": "observe_only",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087558908750606,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042772669998404976
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041137419145384886,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.041925341921562144
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232449595653188,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048360414116059826
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "MATCHED_OBSERVE_ONLY",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "harmful",
+      "body_integration_step_s": 0.00125,
+      "arm": "learner_goal",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087558908750606,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042772669998404976
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041137419145384886,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.041925341921562144
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232449595653188,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048360414116059826
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "harmful",
+      "body_integration_step_s": 0.00125,
+      "arm": "expert_external",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087558908750606,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042772669998404976
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041137419145384886,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.041925341921562144
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232449595653188,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048360414116059826
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "harmful",
+      "body_integration_step_s": 0.00125,
+      "arm": "expert_neural",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087558908750606,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042772669998404976
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041137419145384886,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.041925341921562144
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232449595653188,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048360414116059826
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "harmful",
+      "body_integration_step_s": 0.0025,
+      "arm": "observe_only",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087062693665286,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042773934328671805
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04113692892389487,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04192645436242963
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232386007889113,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048361705934723546
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "MATCHED_OBSERVE_ONLY",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "harmful",
+      "body_integration_step_s": 0.0025,
+      "arm": "learner_goal",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087062693665286,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042773934328671805
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04113692892389487,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04192645436242963
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232386007889113,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048361705934723546
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "harmful",
+      "body_integration_step_s": 0.0025,
+      "arm": "expert_external",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087062693665286,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042773934328671805
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04113692892389487,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04192645436242963
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232386007889113,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048361705934723546
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "harmful",
+      "body_integration_step_s": 0.0025,
+      "arm": "expert_neural",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041087062693665286,
+        "contact_timing_rmse_s": 0.10024968827881708,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042773934328671805
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04113692892389487,
+        "contact_timing_rmse_s": 0.09628083921528725,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04192645436242963
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04232386007889113,
+        "contact_timing_rmse_s": 0.09154745068972862,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.048361705934723546
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "zero",
+      "body_integration_step_s": 0.00125,
+      "arm": "observe_only",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04139314258118139,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.043240089491128654
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04163083684771895,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042747553314629885
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.0427993528801515,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.049107044613830926
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "MATCHED_OBSERVE_ONLY",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "zero",
+      "body_integration_step_s": 0.00125,
+      "arm": "learner_goal",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04139314258118139,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.043240089491128654
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04163083684771895,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042747553314629885
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.0427993528801515,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.049107044613830926
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "zero",
+      "body_integration_step_s": 0.00125,
+      "arm": "expert_external",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04139314258118139,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.043240089491128654
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04163083684771895,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042747553314629885
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.0427993528801515,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.049107044613830926
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "zero",
+      "body_integration_step_s": 0.00125,
+      "arm": "expert_neural",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04139314258118139,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.043240089491128654
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04163083684771895,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.042747553314629885
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.0427993528801515,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.049107044613830926
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "zero",
+      "body_integration_step_s": 0.0025,
+      "arm": "observe_only",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041392689867403805,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04324149818355832
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041630392138018155,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.0427489306158214
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04279878442770534,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04910859078481813
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "MATCHED_OBSERVE_ONLY",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "zero",
+      "body_integration_step_s": 0.0025,
+      "arm": "learner_goal",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041392689867403805,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04324149818355832
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041630392138018155,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.0427489306158214
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04279878442770534,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04910859078481813
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "zero",
+      "body_integration_step_s": 0.0025,
+      "arm": "expert_external",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041392689867403805,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04324149818355832
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041630392138018155,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.0427489306158214
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04279878442770534,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04910859078481813
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    },
+    {
+      "family": "zero",
+      "body_integration_step_s": 0.0025,
+      "arm": "expert_neural",
+      "practice_metrics": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041392689867403805,
+        "contact_timing_rmse_s": 0.10222524150130438,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04324149818355832
+      },
+      "retention_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.041630392138018155,
+        "contact_timing_rmse_s": 0.10019980039900285,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.0427489306158214
+      },
+      "transfer_off": {
+        "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics",
+        "contact_spatial_rmse_m": 0.04279878442770534,
+        "contact_timing_rmse_s": 0.09356502545640571,
+        "scored_contact_events": 5,
+        "trajectory_rmse_m": 0.04910859078481813
+      },
+      "practice_launched_profiles": 0,
+      "off_launched_profiles": 0,
+      "decision_reason": "ZERO_ACTION_BEST_OR_CANDIDATES_UNAVAILABLE",
+      "guard_latched_reason": null,
+      "separate_latched_reason": null
+    }
+  ],
+  "raw_files": [
+    {
+      "path": "dependent-1250us.json.gz",
+      "bytes": 584501,
+      "sha256": "60191ac2cc3a5d26d5903ea31bd59692a103cd9f907f9f66abab4bf1f65e5630"
+    },
+    {
+      "path": "dependent-2500us.json.gz",
+      "bytes": 584373,
+      "sha256": "585ec9997561074ccc563ae4ad560b79b5fbe4d211412fc4301f4b66dd103aa3"
+    },
+    {
+      "path": "favorable-1250us.json.gz",
+      "bytes": 583879,
+      "sha256": "ab4db83be06944d5096c5a70048a34039a26f72dbdb6484d0b9ce3a511c04cc8"
+    },
+    {
+      "path": "favorable-2500us.json.gz",
+      "bytes": 584016,
+      "sha256": "9477f7ae7579f3428e0a0f7dc8e5cab2f6a91f3a16c0aba9221e8bde7ad8eba4"
+    },
+    {
+      "path": "harmful-1250us.json.gz",
+      "bytes": 584030,
+      "sha256": "93c06a2dae03ee4aa47b182a06b3eb76dae929bb15fa034571ef3e42891b0e72"
+    },
+    {
+      "path": "harmful-2500us.json.gz",
+      "bytes": 583873,
+      "sha256": "c9be76c7036fe3f4930a9081c377db609e14f3a093dce9a5a8f13e836c7eebd4"
+    },
+    {
+      "path": "zero-1250us.json.gz",
+      "bytes": 583791,
+      "sha256": "55fe69392e46eb6beb9e6ec2ea074c5d9af10a68fb7cb5e63a24f65b6a2403ef"
+    },
+    {
+      "path": "zero-2500us.json.gz",
+      "bytes": 583874,
+      "sha256": "7f736ac1dc8e86be30066864451d14dca17e6130743e04603127a9087032d749"
+    }
+  ],
+  "retained_advantage_established": false,
+  "expert_transfer_established": false,
+  "learner_spinal_neural_increment_established": false,
+  "active_delivery_path_implemented": false,
+  "actual_monitoring_exercised": false,
+  "stage3_completion_decided_here": false,
+  "scope": "one3s practice trial per arm/family/grid; primary actual-domain withholds all; no active delivery or human efficacy",
+  "resource_accounting": {
+    "shared_frozen_calibration_fit_s": 64.0,
+    "shared_temporal_holdout_s": 32.0,
+    "new_training_s": 0.0,
+    "new_neural_acquisition_s": 0.0,
+    "new_dynamic_calibration_s": 0.0,
+    "practice_s_each_arm_family_grid": 3.0,
+    "off_s_each_assessment": 3.0,
+    "practice_exposure_equal_across_arms": true,
+    "same_actual_noise_across_arms_and_grids": true,
+    "teacher_available_equally": true,
+    "unused_expert_resource_arms": [
+      "observe_only",
+      "learner_goal"
+    ],
+    "capacity": {
+      "persistent_state_means": 10,
+      "persistent_covariance_unique_entries": 55,
+      "persistent_covariance_stored_entries_python": 100,
+      "monotone_decision_clock_scalars": 1,
+      "common_prior_mean_entries": 10,
+      "common_prior_covariance_unique_entries": 55,
+      "diffusion_covariance_unique_entries": 36,
+      "learned_scalar_entries_total": 101,
+      "common_prior_covariance_stored_entries_python": 100,
+      "diffusion_covariance_stored_entries_python": 64,
+      "raw_history_rows_stored": 0,
+      "diagnostic_sensor_covariance_unique_entries": 55,
+      "deterministic_transition_cache_maximum_entries": 1024,
+      "deterministic_cache_float64_payload_maximum_bytes": 1638400
+    }
+  },
+  "limitations": [
+    "Four named families reduce to two distinct no-dose equations.",
+    "Overlapping targets and paired grids are not independent scientific trials.",
+    "Earlier measured-dose trace reuse is no guarantee of future delivery.",
+    "Learning-enabled intervention-response interaction remains unqualified.",
+    "No launch means no active driver/monitor/pending-response validation.",
+    "Full-prefix memory and synthetic plant prior differ from historical stateless baseline.",
+    "Complete reset/washout between sessions is assumed.",
+    "Onepractice trial is not equivalent to historical fourtrial exposure."
+  ]
+}

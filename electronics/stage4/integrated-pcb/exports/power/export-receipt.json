@@ -1,0 +1,209 @@
+{
+  "schema": "ato.board-export.v1",
+  "board": "power",
+  "source_board": "electronics/stage4/integrated-pcb/boards/power/power.kicad_pcb",
+  "exporter_sha256_lf": "3bb0cad3cbf63fc3940d9a30e0a7fc31be818bc4b35b5eba81bff60a592aca76",
+  "source_sha256_lf": "a91073998ec0cd46c84c4332f69324e9e428571a9307c212443e697c2a7696a5",
+  "source_project_sha256_lf": "8887efae4b23a17ec3dbccb90af0933279f2480c860b56d58e0a57020458792b",
+  "source_xml_sha256_lf": "a9a6dfbdfb7f8f5e34fa271d7e36960c804bc91be03ed24b34d50e6efd5aefaa",
+  "DRC_sha256_lf": "afb2d669246bfb1e6435c0dc25a9b7e5d4c5e7cf3fdda916927d29a6fb087cec",
+  "component_count": 156,
+  "fitted_component_count": 156,
+  "DNP_references": [],
+  "KiCad_version": "10.0.6",
+  "commands": [
+    {
+      "arguments": [
+        "pcb",
+        "export",
+        "step",
+        "--force",
+        "--no-dnp",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\power\\populated.step",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\power\\power.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "render",
+        "--width",
+        "1800",
+        "--height",
+        "1400",
+        "--quality",
+        "high",
+        "--background",
+        "opaque",
+        "--side",
+        "top",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\power\\top.png",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\power\\power.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "render",
+        "--width",
+        "1800",
+        "--height",
+        "1400",
+        "--quality",
+        "high",
+        "--background",
+        "opaque",
+        "--side",
+        "bottom",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\power\\bottom.png",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\power\\power.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "render",
+        "--width",
+        "1800",
+        "--height",
+        "1400",
+        "--quality",
+        "high",
+        "--background",
+        "opaque",
+        "--rotate",
+        "-35,0,25",
+        "--zoom",
+        ".83",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\power\\isometric.png",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\power\\power.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "export",
+        "svg",
+        "--layers",
+        "F.Cu,F.SilkS,Edge.Cuts",
+        "--page-size-mode",
+        "2",
+        "--exclude-drawing-sheet",
+        "--mode-single",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\power\\top-copper.svg",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\power\\power.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "export",
+        "svg",
+        "--layers",
+        "B.Cu,B.SilkS,Edge.Cuts",
+        "--page-size-mode",
+        "2",
+        "--exclude-drawing-sheet",
+        "--mirror",
+        "--mode-single",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\power\\bottom-copper.svg",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\power\\power.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "export",
+        "gerbers",
+        "--layers",
+        "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,Edge.Cuts",
+        "--subtract-soldermask",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\power\\fabrication-reference\\",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\power\\power.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "export",
+        "drill",
+        "--format",
+        "excellon",
+        "--excellon-units",
+        "mm",
+        "--excellon-separate-th",
+        "--generate-report",
+        "--report-path",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\power\\fabrication-reference\\drill-report.txt",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\power\\fabrication-reference\\",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\power\\power.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "export",
+        "pos",
+        "--format",
+        "csv",
+        "--units",
+        "mm",
+        "--side",
+        "both",
+        "--exclude-dnp",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\power\\fabrication-reference\\positions.csv",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\power\\power.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "version"
+      ],
+      "returncode": 0
+    }
+  ],
+  "populated_models_nominal_where_documented": true,
+  "physical_qualification": false,
+  "outputs": {
+    "bottom-copper.svg": "eaf1c6f1ed3cba138a858f54895fcf318f4788777fb10859eab9cdafb5fd91da",
+    "bottom.png": "9ee483be547fa262973317c222fbbe378d33500af3902032021f5b7f72b2a4b0",
+    "isometric.png": "1d6331cff168bf172c965b0a2fabfa7f7912d0247e6b07665792d74e98720897",
+    "populated.step": "599cf8072a973fb3b5d8fe22dd7e22243dcb98f762ddb69658814c0e0aa44dc7",
+    "top-copper.svg": "17b8f5a7e7b94d7eaf02aae9368e7affde913a4f4f862272962adaa9cd48d375",
+    "top.png": "4669ccf672318f3ba96a206a01aa48edaac1639cc553d388c6285f015f98264f",
+    "fabrication-reference/bom.csv": "3da88eb92823c90b95bb0f9d2dcc66c31be94eea2e9d8c9e7da28fe466dee2d5",
+    "fabrication-reference/drill-report.txt": "846e1003f6f72d21aed038c26af7b057131ef4903c0214dbc839411b716dca5f",
+    "fabrication-reference/positions.csv": "ac4296d5ad5139cf72fdee8e60fe7686ac5781dad19b474a16d1bf0bc1dd7a96",
+    "fabrication-reference/power-B_Cu.gbl": "d0f42b2f0ed7dce8b6d00aef7027bb179e6fc4caf6fb4d020374fcd08f0f4f2f",
+    "fabrication-reference/power-B_Mask.gbs": "207a0d09b0dd3339340db8cdc2399b3b94517e859f327e47c12bb3de5d2cfdfe",
+    "fabrication-reference/power-B_Silkscreen.gbo": "a5afdcf6a3bc8ac51cf416d74ba54ef86394af159605c1bbdcf7d5e9b6dbe1da",
+    "fabrication-reference/power-Edge_Cuts.gm1": "ac81c5b0220fc004a715aceafde3c27058a7e399ebd965ac4ba0fdb6045b80e6",
+    "fabrication-reference/power-F_Cu.gtl": "ba2a7ce7e00eefc2d6e61a8bd9a024f12c24068529596d4c9311e9b848e88ec5",
+    "fabrication-reference/power-F_Mask.gts": "a86ced8ae2d82a1e111dbab2dcca7649ebf10f78852dcec84105d29f4e9cd1f7",
+    "fabrication-reference/power-F_Silkscreen.gto": "3577a2d8777759a67544161bf050ccbfe66f65746a2afd17be9b2b460399c0f5",
+    "fabrication-reference/power-In1_Cu.g1": "2b6b36eaf3b891dcab4b8380b2984069e40e7997c0211f6ea242e76d3b3e3258",
+    "fabrication-reference/power-In2_Cu.g2": "c2f1873a8afdb0fdfeb6febd11c1d2571af1bb76b23136ff4eb4ec2b6f72ba63",
+    "fabrication-reference/power-job.gbrjob": "0973b74707dc0ce0f868f0ef3b335ab97d6f66680ad278f756300d3a2fd4350d",
+    "fabrication-reference/power-NPTH.drl": "be0fb2bbfb6f541e345f90476c25b9f06369dc8ac42d3b18cc5c157761f747b5",
+    "fabrication-reference/power-PTH.drl": "deadfaece92aee04218a6247e516237f23be165931cfa06bf7141b07a5707a89",
+    "fabrication-reference/README.md": "118a7498542a8992e20d99363fd12818a8dacb65e4b57cefaea220f696f077b5"
+  }
+}

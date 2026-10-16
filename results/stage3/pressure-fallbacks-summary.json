@@ -1,0 +1,821 @@
+{
+  "schema": "ato.stage3.pressure-fallback-summary.v1",
+  "runs": [
+    {
+      "metadata": {
+        "seed": 0,
+        "scenario": {
+          "name": "sensor_loss",
+          "baseline_pa": 15998.6864898,
+          "gain_pa": 4799.605946940001,
+          "activation_tau_s": 1.5,
+          "response_tau_s": 6.0,
+          "onset_delay_s": 0.8,
+          "release_delay_s": 2.0,
+          "recruitment_threshold": 0.0,
+          "disturbance_pa": 3733.0268476200004,
+          "sensor_delay_s": 0.15,
+          "sensor_bias_pa": 0.0,
+          "dropout_interval_s": [
+            250,
+            285
+          ],
+          "invalid_interval_s": null,
+          "stale_replay_interval_s": null,
+          "changed_gain_pa": null,
+          "change_time_s": 260.0
+        },
+        "mode": "feedback",
+        "config": {
+          "duration_s": 420.0,
+          "integration_step_s": 0.005,
+          "waveform_sample_hz": 200,
+          "extraction_period_s": 1.0,
+          "policy_period_s": 0.25,
+          "freshness_limit_s": 2.0,
+          "target_pa": 15998.6864898,
+          "calibration_end_s": 144.0,
+          "disturbance_start_s": 180.0,
+          "disturbance_end_s": 340.0,
+          "sensor_noise_pa": 46.66283559525,
+          "fallback": "finite_hold",
+          "finite_hold_s": 2.0,
+          "ramp_fraction_per_s": 0.2,
+          "maximum_fraction": 1.0,
+          "rise_slew_fraction_per_s": 0.12,
+          "minimum_gain_pa": 399.96716224500005,
+          "gain_relative_uncertainty": 0.25,
+          "heldout_error_limit_pa": 533.28954966
+        },
+        "pressure_unit": "Pa",
+        "display_pa_per_mmhg": 133.322387415,
+        "delivery_boundary": "caller_electrical_evidence",
+        "oracle_excluded_from_claims": false,
+        "neural_input_to_controller": false,
+        "electrical_reference": {
+          "profile_count": 3,
+          "physical_source": 0,
+          "per_profile_hz": 120,
+          "offsets_s": [
+            0,
+            0.002,
+            0.004
+          ],
+          "current_a": 0.003,
+          "phase_width_s": 0.0003,
+          "interphase_s": 0.0001,
+          "zero_current_rearm_s": 0.00025
+        },
+        "frame_admission": "floor(30*request)/30 per250ms; all3profiles retained in each wholeframe",
+        "dose_reduction": "averaged monitored reference-train cathodic charge; recruitment is an assumption"
+      },
+      "calibration": {
+        "gain_pa_per_fraction": 5030.871488784873,
+        "gain_interval_pa": [
+          2272.449448288077,
+          7789.293529281669
+        ],
+        "estimated_effect_lag_s": 3.0,
+        "one_step_error_pa": 42.08940595920878,
+        "heldout_recursive_error_pa": 122.55800809325352,
+        "qualified": true,
+        "reason": "conditional_positive_response_model",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16060.337476590848,
+        "autoregressive_a": 0.8963049535775452
+      },
+      "summary": {
+        "evaluation_rmse_pa": 1788.5530352791964,
+        "disturbance_rmse_pa": 2137.0267203554067,
+        "disturbance_min_sbp_pa": 12288.709007428806,
+        "recovery_peak_sbp_pa": 18688.6818695325,
+        "overshoot_above_target_pa": 2689.995379732498,
+        "fraction_time_within_5mmhg": 0.284375,
+        "delivered_train_equivalent_s": 63.15833333333333,
+        "sensor_unqualified_time_s": 34.5,
+        "fallback_time_s": 34.5,
+        "fallback_min_sbp_pa": 12294.813106488305,
+        "fallback_peak_sbp_pa": 15206.341519254307,
+        "fallback_delivered_train_equivalent_s": 1.2666666666666666,
+        "response_unqualified": false,
+        "high_pressure_no_lowering_time_s": 13.0,
+        "support_remaining_after_command_zero": true
+      }
+    },
+    {
+      "metadata": {
+        "seed": 0,
+        "scenario": {
+          "name": "sensor_loss",
+          "baseline_pa": 15998.6864898,
+          "gain_pa": 4799.605946940001,
+          "activation_tau_s": 1.5,
+          "response_tau_s": 6.0,
+          "onset_delay_s": 0.8,
+          "release_delay_s": 2.0,
+          "recruitment_threshold": 0.0,
+          "disturbance_pa": 3733.0268476200004,
+          "sensor_delay_s": 0.15,
+          "sensor_bias_pa": 0.0,
+          "dropout_interval_s": [
+            250,
+            285
+          ],
+          "invalid_interval_s": null,
+          "stale_replay_interval_s": null,
+          "changed_gain_pa": null,
+          "change_time_s": 260.0
+        },
+        "mode": "feedback",
+        "config": {
+          "duration_s": 420.0,
+          "integration_step_s": 0.005,
+          "waveform_sample_hz": 200,
+          "extraction_period_s": 1.0,
+          "policy_period_s": 0.25,
+          "freshness_limit_s": 2.0,
+          "target_pa": 15998.6864898,
+          "calibration_end_s": 144.0,
+          "disturbance_start_s": 180.0,
+          "disturbance_end_s": 340.0,
+          "sensor_noise_pa": 46.66283559525,
+          "fallback": "ramp",
+          "finite_hold_s": 2.0,
+          "ramp_fraction_per_s": 0.2,
+          "maximum_fraction": 1.0,
+          "rise_slew_fraction_per_s": 0.12,
+          "minimum_gain_pa": 399.96716224500005,
+          "gain_relative_uncertainty": 0.25,
+          "heldout_error_limit_pa": 533.28954966
+        },
+        "pressure_unit": "Pa",
+        "display_pa_per_mmhg": 133.322387415,
+        "delivery_boundary": "caller_electrical_evidence",
+        "oracle_excluded_from_claims": false,
+        "neural_input_to_controller": false,
+        "electrical_reference": {
+          "profile_count": 3,
+          "physical_source": 0,
+          "per_profile_hz": 120,
+          "offsets_s": [
+            0,
+            0.002,
+            0.004
+          ],
+          "current_a": 0.003,
+          "phase_width_s": 0.0003,
+          "interphase_s": 0.0001,
+          "zero_current_rearm_s": 0.00025
+        },
+        "frame_admission": "floor(30*request)/30 per250ms; all3profiles retained in each wholeframe",
+        "dose_reduction": "averaged monitored reference-train cathodic charge; recruitment is an assumption"
+      },
+      "calibration": {
+        "gain_pa_per_fraction": 5030.871488784873,
+        "gain_interval_pa": [
+          2272.449448288077,
+          7789.293529281669
+        ],
+        "estimated_effect_lag_s": 3.0,
+        "one_step_error_pa": 42.08940595920878,
+        "heldout_recursive_error_pa": 122.55800809325352,
+        "qualified": true,
+        "reason": "conditional_positive_response_model",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16060.337476590848,
+        "autoregressive_a": 0.8963049535775452
+      },
+      "summary": {
+        "evaluation_rmse_pa": 1814.0403315860206,
+        "disturbance_rmse_pa": 2169.0121724958476,
+        "disturbance_min_sbp_pa": 12283.253613240207,
+        "recovery_peak_sbp_pa": 18688.68155151209,
+        "overshoot_above_target_pa": 2689.9950617120903,
+        "fraction_time_within_5mmhg": 0.284375,
+        "delivered_train_equivalent_s": 62.94999999999999,
+        "sensor_unqualified_time_s": 34.5,
+        "fallback_time_s": 34.5,
+        "fallback_min_sbp_pa": 12287.80824271831,
+        "fallback_peak_sbp_pa": 15171.715260388164,
+        "fallback_delivered_train_equivalent_s": 1.0583333333333331,
+        "response_unqualified": false,
+        "high_pressure_no_lowering_time_s": 13.0,
+        "support_remaining_after_command_zero": true
+      }
+    },
+    {
+      "metadata": {
+        "seed": 1,
+        "scenario": {
+          "name": "sensor_loss",
+          "baseline_pa": 15998.6864898,
+          "gain_pa": 4799.605946940001,
+          "activation_tau_s": 1.5,
+          "response_tau_s": 6.0,
+          "onset_delay_s": 0.8,
+          "release_delay_s": 2.0,
+          "recruitment_threshold": 0.0,
+          "disturbance_pa": 3733.0268476200004,
+          "sensor_delay_s": 0.15,
+          "sensor_bias_pa": 0.0,
+          "dropout_interval_s": [
+            250,
+            285
+          ],
+          "invalid_interval_s": null,
+          "stale_replay_interval_s": null,
+          "changed_gain_pa": null,
+          "change_time_s": 260.0
+        },
+        "mode": "feedback",
+        "config": {
+          "duration_s": 420.0,
+          "integration_step_s": 0.005,
+          "waveform_sample_hz": 200,
+          "extraction_period_s": 1.0,
+          "policy_period_s": 0.25,
+          "freshness_limit_s": 2.0,
+          "target_pa": 15998.6864898,
+          "calibration_end_s": 144.0,
+          "disturbance_start_s": 180.0,
+          "disturbance_end_s": 340.0,
+          "sensor_noise_pa": 46.66283559525,
+          "fallback": "finite_hold",
+          "finite_hold_s": 2.0,
+          "ramp_fraction_per_s": 0.2,
+          "maximum_fraction": 1.0,
+          "rise_slew_fraction_per_s": 0.12,
+          "minimum_gain_pa": 399.96716224500005,
+          "gain_relative_uncertainty": 0.25,
+          "heldout_error_limit_pa": 533.28954966
+        },
+        "pressure_unit": "Pa",
+        "display_pa_per_mmhg": 133.322387415,
+        "delivery_boundary": "caller_electrical_evidence",
+        "oracle_excluded_from_claims": false,
+        "neural_input_to_controller": false,
+        "electrical_reference": {
+          "profile_count": 3,
+          "physical_source": 0,
+          "per_profile_hz": 120,
+          "offsets_s": [
+            0,
+            0.002,
+            0.004
+          ],
+          "current_a": 0.003,
+          "phase_width_s": 0.0003,
+          "interphase_s": 0.0001,
+          "zero_current_rearm_s": 0.00025
+        },
+        "frame_admission": "floor(30*request)/30 per250ms; all3profiles retained in each wholeframe",
+        "dose_reduction": "averaged monitored reference-train cathodic charge; recruitment is an assumption"
+      },
+      "calibration": {
+        "gain_pa_per_fraction": 5383.2190486048285,
+        "gain_interval_pa": [
+          2431.605177012903,
+          8334.832920196754
+        ],
+        "estimated_effect_lag_s": 2.0,
+        "one_step_error_pa": 44.69902472462601,
+        "heldout_recursive_error_pa": 248.87750080722773,
+        "qualified": true,
+        "reason": "conditional_positive_response_model",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16057.39779901075,
+        "autoregressive_a": 0.9195034777076243
+      },
+      "summary": {
+        "evaluation_rmse_pa": 1821.7905300511206,
+        "disturbance_rmse_pa": 2183.6017244550567,
+        "disturbance_min_sbp_pa": 12287.910628391559,
+        "recovery_peak_sbp_pa": 18568.734125605446,
+        "overshoot_above_target_pa": 2570.0476358054457,
+        "fraction_time_within_5mmhg": 0.28541666666666665,
+        "delivered_train_equivalent_s": 60.89999999999999,
+        "sensor_unqualified_time_s": 34.5,
+        "fallback_time_s": 34.5,
+        "fallback_min_sbp_pa": 12293.78796758781,
+        "fallback_peak_sbp_pa": 15116.075694491064,
+        "fallback_delivered_train_equivalent_s": 1.2,
+        "response_unqualified": false,
+        "high_pressure_no_lowering_time_s": 12.0,
+        "support_remaining_after_command_zero": true
+      }
+    },
+    {
+      "metadata": {
+        "seed": 1,
+        "scenario": {
+          "name": "sensor_loss",
+          "baseline_pa": 15998.6864898,
+          "gain_pa": 4799.605946940001,
+          "activation_tau_s": 1.5,
+          "response_tau_s": 6.0,
+          "onset_delay_s": 0.8,
+          "release_delay_s": 2.0,
+          "recruitment_threshold": 0.0,
+          "disturbance_pa": 3733.0268476200004,
+          "sensor_delay_s": 0.15,
+          "sensor_bias_pa": 0.0,
+          "dropout_interval_s": [
+            250,
+            285
+          ],
+          "invalid_interval_s": null,
+          "stale_replay_interval_s": null,
+          "changed_gain_pa": null,
+          "change_time_s": 260.0
+        },
+        "mode": "feedback",
+        "config": {
+          "duration_s": 420.0,
+          "integration_step_s": 0.005,
+          "waveform_sample_hz": 200,
+          "extraction_period_s": 1.0,
+          "policy_period_s": 0.25,
+          "freshness_limit_s": 2.0,
+          "target_pa": 15998.6864898,
+          "calibration_end_s": 144.0,
+          "disturbance_start_s": 180.0,
+          "disturbance_end_s": 340.0,
+          "sensor_noise_pa": 46.66283559525,
+          "fallback": "ramp",
+          "finite_hold_s": 2.0,
+          "ramp_fraction_per_s": 0.2,
+          "maximum_fraction": 1.0,
+          "rise_slew_fraction_per_s": 0.12,
+          "minimum_gain_pa": 399.96716224500005,
+          "gain_relative_uncertainty": 0.25,
+          "heldout_error_limit_pa": 533.28954966
+        },
+        "pressure_unit": "Pa",
+        "display_pa_per_mmhg": 133.322387415,
+        "delivery_boundary": "caller_electrical_evidence",
+        "oracle_excluded_from_claims": false,
+        "neural_input_to_controller": false,
+        "electrical_reference": {
+          "profile_count": 3,
+          "physical_source": 0,
+          "per_profile_hz": 120,
+          "offsets_s": [
+            0,
+            0.002,
+            0.004
+          ],
+          "current_a": 0.003,
+          "phase_width_s": 0.0003,
+          "interphase_s": 0.0001,
+          "zero_current_rearm_s": 0.00025
+        },
+        "frame_admission": "floor(30*request)/30 per250ms; all3profiles retained in each wholeframe",
+        "dose_reduction": "averaged monitored reference-train cathodic charge; recruitment is an assumption"
+      },
+      "calibration": {
+        "gain_pa_per_fraction": 5383.2190486048285,
+        "gain_interval_pa": [
+          2431.605177012903,
+          8334.832920196754
+        ],
+        "estimated_effect_lag_s": 2.0,
+        "one_step_error_pa": 44.69902472462601,
+        "heldout_recursive_error_pa": 248.87750080722773,
+        "qualified": true,
+        "reason": "conditional_positive_response_model",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16057.39779901075,
+        "autoregressive_a": 0.9195034777076243
+      },
+      "summary": {
+        "evaluation_rmse_pa": 1846.0192278234776,
+        "disturbance_rmse_pa": 2213.9141624528224,
+        "disturbance_min_sbp_pa": 12282.727608009769,
+        "recovery_peak_sbp_pa": 18568.73382346298,
+        "overshoot_above_target_pa": 2570.0473336629784,
+        "fraction_time_within_5mmhg": 0.28541666666666665,
+        "delivered_train_equivalent_s": 60.699999999999996,
+        "sensor_unqualified_time_s": 34.5,
+        "fallback_time_s": 34.5,
+        "fallback_min_sbp_pa": 12287.132838664422,
+        "fallback_peak_sbp_pa": 15106.131753892307,
+        "fallback_delivered_train_equivalent_s": 1.0,
+        "response_unqualified": false,
+        "high_pressure_no_lowering_time_s": 12.0,
+        "support_remaining_after_command_zero": true
+      }
+    },
+    {
+      "metadata": {
+        "seed": 2,
+        "scenario": {
+          "name": "sensor_loss",
+          "baseline_pa": 15998.6864898,
+          "gain_pa": 4799.605946940001,
+          "activation_tau_s": 1.5,
+          "response_tau_s": 6.0,
+          "onset_delay_s": 0.8,
+          "release_delay_s": 2.0,
+          "recruitment_threshold": 0.0,
+          "disturbance_pa": 3733.0268476200004,
+          "sensor_delay_s": 0.15,
+          "sensor_bias_pa": 0.0,
+          "dropout_interval_s": [
+            250,
+            285
+          ],
+          "invalid_interval_s": null,
+          "stale_replay_interval_s": null,
+          "changed_gain_pa": null,
+          "change_time_s": 260.0
+        },
+        "mode": "feedback",
+        "config": {
+          "duration_s": 420.0,
+          "integration_step_s": 0.005,
+          "waveform_sample_hz": 200,
+          "extraction_period_s": 1.0,
+          "policy_period_s": 0.25,
+          "freshness_limit_s": 2.0,
+          "target_pa": 15998.6864898,
+          "calibration_end_s": 144.0,
+          "disturbance_start_s": 180.0,
+          "disturbance_end_s": 340.0,
+          "sensor_noise_pa": 46.66283559525,
+          "fallback": "finite_hold",
+          "finite_hold_s": 2.0,
+          "ramp_fraction_per_s": 0.2,
+          "maximum_fraction": 1.0,
+          "rise_slew_fraction_per_s": 0.12,
+          "minimum_gain_pa": 399.96716224500005,
+          "gain_relative_uncertainty": 0.25,
+          "heldout_error_limit_pa": 533.28954966
+        },
+        "pressure_unit": "Pa",
+        "display_pa_per_mmhg": 133.322387415,
+        "delivery_boundary": "caller_electrical_evidence",
+        "oracle_excluded_from_claims": false,
+        "neural_input_to_controller": false,
+        "electrical_reference": {
+          "profile_count": 3,
+          "physical_source": 0,
+          "per_profile_hz": 120,
+          "offsets_s": [
+            0,
+            0.002,
+            0.004
+          ],
+          "current_a": 0.003,
+          "phase_width_s": 0.0003,
+          "interphase_s": 0.0001,
+          "zero_current_rearm_s": 0.00025
+        },
+        "frame_admission": "floor(30*request)/30 per250ms; all3profiles retained in each wholeframe",
+        "dose_reduction": "averaged monitored reference-train cathodic charge; recruitment is an assumption"
+      },
+      "calibration": {
+        "gain_pa_per_fraction": 4997.481249033757,
+        "gain_interval_pa": [
+          2257.3670451557805,
+          7737.595452911733
+        ],
+        "estimated_effect_lag_s": 3.0,
+        "one_step_error_pa": 54.02140193588938,
+        "heldout_recursive_error_pa": 130.31645800130684,
+        "qualified": true,
+        "reason": "conditional_positive_response_model",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16073.355896152303,
+        "autoregressive_a": 0.8948693270131847
+      },
+      "summary": {
+        "evaluation_rmse_pa": 1818.2340313678724,
+        "disturbance_rmse_pa": 2175.169976100449,
+        "disturbance_min_sbp_pa": 12281.919641658578,
+        "recovery_peak_sbp_pa": 18666.764286978527,
+        "overshoot_above_target_pa": 2668.0777971785265,
+        "fraction_time_within_5mmhg": 0.284375,
+        "delivered_train_equivalent_s": 63.21666666666667,
+        "sensor_unqualified_time_s": 34.5,
+        "fallback_time_s": 34.5,
+        "fallback_min_sbp_pa": 12286.095389455062,
+        "fallback_peak_sbp_pa": 15159.734045704568,
+        "fallback_delivered_train_equivalent_s": 1.2,
+        "response_unqualified": false,
+        "high_pressure_no_lowering_time_s": 13.0,
+        "support_remaining_after_command_zero": true
+      }
+    },
+    {
+      "metadata": {
+        "seed": 2,
+        "scenario": {
+          "name": "sensor_loss",
+          "baseline_pa": 15998.6864898,
+          "gain_pa": 4799.605946940001,
+          "activation_tau_s": 1.5,
+          "response_tau_s": 6.0,
+          "onset_delay_s": 0.8,
+          "release_delay_s": 2.0,
+          "recruitment_threshold": 0.0,
+          "disturbance_pa": 3733.0268476200004,
+          "sensor_delay_s": 0.15,
+          "sensor_bias_pa": 0.0,
+          "dropout_interval_s": [
+            250,
+            285
+          ],
+          "invalid_interval_s": null,
+          "stale_replay_interval_s": null,
+          "changed_gain_pa": null,
+          "change_time_s": 260.0
+        },
+        "mode": "feedback",
+        "config": {
+          "duration_s": 420.0,
+          "integration_step_s": 0.005,
+          "waveform_sample_hz": 200,
+          "extraction_period_s": 1.0,
+          "policy_period_s": 0.25,
+          "freshness_limit_s": 2.0,
+          "target_pa": 15998.6864898,
+          "calibration_end_s": 144.0,
+          "disturbance_start_s": 180.0,
+          "disturbance_end_s": 340.0,
+          "sensor_noise_pa": 46.66283559525,
+          "fallback": "ramp",
+          "finite_hold_s": 2.0,
+          "ramp_fraction_per_s": 0.2,
+          "maximum_fraction": 1.0,
+          "rise_slew_fraction_per_s": 0.12,
+          "minimum_gain_pa": 399.96716224500005,
+          "gain_relative_uncertainty": 0.25,
+          "heldout_error_limit_pa": 533.28954966
+        },
+        "pressure_unit": "Pa",
+        "display_pa_per_mmhg": 133.322387415,
+        "delivery_boundary": "caller_electrical_evidence",
+        "oracle_excluded_from_claims": false,
+        "neural_input_to_controller": false,
+        "electrical_reference": {
+          "profile_count": 3,
+          "physical_source": 0,
+          "per_profile_hz": 120,
+          "offsets_s": [
+            0,
+            0.002,
+            0.004
+          ],
+          "current_a": 0.003,
+          "phase_width_s": 0.0003,
+          "interphase_s": 0.0001,
+          "zero_current_rearm_s": 0.00025
+        },
+        "frame_admission": "floor(30*request)/30 per250ms; all3profiles retained in each wholeframe",
+        "dose_reduction": "averaged monitored reference-train cathodic charge; recruitment is an assumption"
+      },
+      "calibration": {
+        "gain_pa_per_fraction": 4997.481249033757,
+        "gain_interval_pa": [
+          2257.3670451557805,
+          7737.595452911733
+        ],
+        "estimated_effect_lag_s": 3.0,
+        "one_step_error_pa": 54.02140193588938,
+        "heldout_recursive_error_pa": 130.31645800130684,
+        "qualified": true,
+        "reason": "conditional_positive_response_model",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16073.355896152303,
+        "autoregressive_a": 0.8948693270131847
+      },
+      "summary": {
+        "evaluation_rmse_pa": 1822.5983044180698,
+        "disturbance_rmse_pa": 2180.6418346690466,
+        "disturbance_min_sbp_pa": 12281.24769959568,
+        "recovery_peak_sbp_pa": 18666.764247807896,
+        "overshoot_above_target_pa": 2668.0777580078957,
+        "fraction_time_within_5mmhg": 0.284375,
+        "delivered_train_equivalent_s": 63.016666666666666,
+        "sensor_unqualified_time_s": 34.5,
+        "fallback_time_s": 34.5,
+        "fallback_min_sbp_pa": 12285.232598790488,
+        "fallback_peak_sbp_pa": 15151.482080281703,
+        "fallback_delivered_train_equivalent_s": 1.0,
+        "response_unqualified": false,
+        "high_pressure_no_lowering_time_s": 13.0,
+        "support_remaining_after_command_zero": true
+      }
+    },
+    {
+      "metadata": {
+        "seed": 3,
+        "scenario": {
+          "name": "sensor_loss",
+          "baseline_pa": 15998.6864898,
+          "gain_pa": 4799.605946940001,
+          "activation_tau_s": 1.5,
+          "response_tau_s": 6.0,
+          "onset_delay_s": 0.8,
+          "release_delay_s": 2.0,
+          "recruitment_threshold": 0.0,
+          "disturbance_pa": 3733.0268476200004,
+          "sensor_delay_s": 0.15,
+          "sensor_bias_pa": 0.0,
+          "dropout_interval_s": [
+            250,
+            285
+          ],
+          "invalid_interval_s": null,
+          "stale_replay_interval_s": null,
+          "changed_gain_pa": null,
+          "change_time_s": 260.0
+        },
+        "mode": "feedback",
+        "config": {
+          "duration_s": 420.0,
+          "integration_step_s": 0.005,
+          "waveform_sample_hz": 200,
+          "extraction_period_s": 1.0,
+          "policy_period_s": 0.25,
+          "freshness_limit_s": 2.0,
+          "target_pa": 15998.6864898,
+          "calibration_end_s": 144.0,
+          "disturbance_start_s": 180.0,
+          "disturbance_end_s": 340.0,
+          "sensor_noise_pa": 46.66283559525,
+          "fallback": "finite_hold",
+          "finite_hold_s": 2.0,
+          "ramp_fraction_per_s": 0.2,
+          "maximum_fraction": 1.0,
+          "rise_slew_fraction_per_s": 0.12,
+          "minimum_gain_pa": 399.96716224500005,
+          "gain_relative_uncertainty": 0.25,
+          "heldout_error_limit_pa": 533.28954966
+        },
+        "pressure_unit": "Pa",
+        "display_pa_per_mmhg": 133.322387415,
+        "delivery_boundary": "caller_electrical_evidence",
+        "oracle_excluded_from_claims": false,
+        "neural_input_to_controller": false,
+        "electrical_reference": {
+          "profile_count": 3,
+          "physical_source": 0,
+          "per_profile_hz": 120,
+          "offsets_s": [
+            0,
+            0.002,
+            0.004
+          ],
+          "current_a": 0.003,
+          "phase_width_s": 0.0003,
+          "interphase_s": 0.0001,
+          "zero_current_rearm_s": 0.00025
+        },
+        "frame_admission": "floor(30*request)/30 per250ms; all3profiles retained in each wholeframe",
+        "dose_reduction": "averaged monitored reference-train cathodic charge; recruitment is an assumption"
+      },
+      "calibration": {
+        "gain_pa_per_fraction": 5275.740030990301,
+        "gain_interval_pa": [
+          2383.0568022779985,
+          8168.423259702604
+        ],
+        "estimated_effect_lag_s": 2.0,
+        "one_step_error_pa": 46.07003436454108,
+        "heldout_recursive_error_pa": 182.5153324339092,
+        "qualified": true,
+        "reason": "conditional_positive_response_model",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16064.273469545493,
+        "autoregressive_a": 0.9110076456407958
+      },
+      "summary": {
+        "evaluation_rmse_pa": 1807.7225881386962,
+        "disturbance_rmse_pa": 2165.4573535736213,
+        "disturbance_min_sbp_pa": 12288.884988803487,
+        "recovery_peak_sbp_pa": 18583.600870488193,
+        "overshoot_above_target_pa": 2584.914380688193,
+        "fraction_time_within_5mmhg": 0.28541666666666665,
+        "delivered_train_equivalent_s": 61.69166666666666,
+        "sensor_unqualified_time_s": 34.25,
+        "fallback_time_s": 34.25,
+        "fallback_min_sbp_pa": 12295.039070848989,
+        "fallback_peak_sbp_pa": 15123.177005610301,
+        "fallback_delivered_train_equivalent_s": 1.2,
+        "response_unqualified": false,
+        "high_pressure_no_lowering_time_s": 13.0,
+        "support_remaining_after_command_zero": true
+      }
+    },
+    {
+      "metadata": {
+        "seed": 3,
+        "scenario": {
+          "name": "sensor_loss",
+          "baseline_pa": 15998.6864898,
+          "gain_pa": 4799.605946940001,
+          "activation_tau_s": 1.5,
+          "response_tau_s": 6.0,
+          "onset_delay_s": 0.8,
+          "release_delay_s": 2.0,
+          "recruitment_threshold": 0.0,
+          "disturbance_pa": 3733.0268476200004,
+          "sensor_delay_s": 0.15,
+          "sensor_bias_pa": 0.0,
+          "dropout_interval_s": [
+            250,
+            285
+          ],
+          "invalid_interval_s": null,
+          "stale_replay_interval_s": null,
+          "changed_gain_pa": null,
+          "change_time_s": 260.0
+        },
+        "mode": "feedback",
+        "config": {
+          "duration_s": 420.0,
+          "integration_step_s": 0.005,
+          "waveform_sample_hz": 200,
+          "extraction_period_s": 1.0,
+          "policy_period_s": 0.25,
+          "freshness_limit_s": 2.0,
+          "target_pa": 15998.6864898,
+          "calibration_end_s": 144.0,
+          "disturbance_start_s": 180.0,
+          "disturbance_end_s": 340.0,
+          "sensor_noise_pa": 46.66283559525,
+          "fallback": "ramp",
+          "finite_hold_s": 2.0,
+          "ramp_fraction_per_s": 0.2,
+          "maximum_fraction": 1.0,
+          "rise_slew_fraction_per_s": 0.12,
+          "minimum_gain_pa": 399.96716224500005,
+          "gain_relative_uncertainty": 0.25,
+          "heldout_error_limit_pa": 533.28954966
+        },
+        "pressure_unit": "Pa",
+        "display_pa_per_mmhg": 133.322387415,
+        "delivery_boundary": "caller_electrical_evidence",
+        "oracle_excluded_from_claims": false,
+        "neural_input_to_controller": false,
+        "electrical_reference": {
+          "profile_count": 3,
+          "physical_source": 0,
+          "per_profile_hz": 120,
+          "offsets_s": [
+            0,
+            0.002,
+            0.004
+          ],
+          "current_a": 0.003,
+          "phase_width_s": 0.0003,
+          "interphase_s": 0.0001,
+          "zero_current_rearm_s": 0.00025
+        },
+        "frame_admission": "floor(30*request)/30 per250ms; all3profiles retained in each wholeframe",
+        "dose_reduction": "averaged monitored reference-train cathodic charge; recruitment is an assumption"
+      },
+      "calibration": {
+        "gain_pa_per_fraction": 5275.740030990301,
+        "gain_interval_pa": [
+          2383.0568022779985,
+          8168.423259702604
+        ],
+        "estimated_effect_lag_s": 2.0,
+        "one_step_error_pa": 46.07003436454108,
+        "heldout_recursive_error_pa": 182.5153324339092,
+        "qualified": true,
+        "reason": "conditional_positive_response_model",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16064.273469545493,
+        "autoregressive_a": 0.9110076456407958
+      },
+      "summary": {
+        "evaluation_rmse_pa": 1832.0999630460524,
+        "disturbance_rmse_pa": 2195.9734920916467,
+        "disturbance_min_sbp_pa": 12283.481581330461,
+        "recovery_peak_sbp_pa": 18583.600555498324,
+        "overshoot_above_target_pa": 2584.9140656983236,
+        "fraction_time_within_5mmhg": 0.28541666666666665,
+        "delivered_train_equivalent_s": 61.49166666666667,
+        "sensor_unqualified_time_s": 34.25,
+        "fallback_time_s": 34.25,
+        "fallback_min_sbp_pa": 12288.100959477048,
+        "fallback_peak_sbp_pa": 15115.640910511669,
+        "fallback_delivered_train_equivalent_s": 1.0,
+        "response_unqualified": false,
+        "high_pressure_no_lowering_time_s": 13.0,
+        "support_remaining_after_command_zero": true
+      }
+    }
+  ]
+}

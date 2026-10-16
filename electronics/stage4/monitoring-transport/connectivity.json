@@ -1,0 +1,2663 @@
+{
+  "schema": "ato.stage4.monitoring-transport.connectivity.v1",
+  "date": "2026-10-14",
+  "scope": "DedicatedrawADC,existingcharge-ADC/healthhandoffandisolatedwiredcompanion; artificialsignals,notimplantedbodylinkqualification",
+  "parts": [
+    {
+      "ref": "J1",
+      "value": "HOST RAILS / RAW ADC",
+      "kind": "J",
+      "footprint": "ato_transport:PinHeader_1x03_P2.54mm_Vertical",
+      "nets": {
+        "1": "HOST_5",
+        "2": "HOST_3V3",
+        "3": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        101.6,
+        88.9
+      ],
+      "sheet": "root",
+      "description": "GeneratedpowerpackageHOST5/HOST3V3andhostreturn; noneconnectAFEAGND",
+      "source_url": ""
+    },
+    {
+      "ref": "J2",
+      "value": "EXISTING ANALOG TAPS",
+      "kind": "J",
+      "footprint": "ato_transport:PinHeader_1x08_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH0_I_MON",
+        "2": "CH1_I_MON",
+        "3": "CH0_VPAIR",
+        "4": "CH1_VPAIR",
+        "5": "MON_VREF",
+        "6": "MON_VMID",
+        "7": "PACK_BUS",
+        "8": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ],
+        [
+          6,
+          "6",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "7",
+          "passive",
+          "L"
+        ],
+        [
+          8,
+          "8",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        368.29999999999995,
+        88.9
+      ],
+      "sheet": "root",
+      "description": "Currentfrommonitor,scaledpairfromsupervision,4.096/2.048Vreferenceandpackbus; nomodificationofsourcecircuits",
+      "source_url": ""
+    },
+    {
+      "ref": "J3",
+      "value": "DEDICATED RAW ADC BUS",
+      "kind": "J",
+      "footprint": "ato_transport:PinHeader_1x06_P2.54mm_Vertical",
+      "nets": {
+        "1": "RAW_SCLK",
+        "2": "RAW_SDI",
+        "3": "RAW_SDO",
+        "4": "RAW_CS_N",
+        "5": "RAW_RST_N",
+        "6": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ],
+        [
+          6,
+          "6",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        101.6,
+        200.66000000000003
+      ],
+      "sheet": "root",
+      "description": "DedicatedhostSPIbusallocation,independentfromRHDandADS8866endpointbuses; SoCpinmap/firmwareisnextpackage",
+      "source_url": ""
+    },
+    {
+      "ref": "J4",
+      "value": "TWO EXISTING CHARGE ADCs",
+      "kind": "J",
+      "footprint": "ato_transport:PinHeader_1x08_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH0_CNV",
+        "2": "CH0_CS_N",
+        "3": "CH0_DOUT",
+        "4": "CH1_CNV",
+        "5": "CH1_CS_N",
+        "6": "CH1_DOUT",
+        "7": "MON_SCLK",
+        "8": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ],
+        [
+          6,
+          "6",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "7",
+          "passive",
+          "L"
+        ],
+        [
+          8,
+          "8",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        101.6,
+        88.9
+      ],
+      "sheet": "root_2",
+      "description": "PassivehandofftoexistingADS8866monitorJ2; nocopies/newchargeADC; eachCNVaperture/resultidentityretained",
+      "source_url": ""
+    },
+    {
+      "ref": "J5",
+      "value": "CHARGE CONTROL HANDOFF",
+      "kind": "J",
+      "footprint": "ato_transport:PinHeader_1x05_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH0_INT_RUN",
+        "2": "CH1_INT_RUN",
+        "3": "CH0_MON_REARM",
+        "4": "CH1_MON_REARM",
+        "5": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        368.29999999999995,
+        88.9
+      ],
+      "sheet": "root_2",
+      "description": "Separateintegrator/resetandmonitorrearmhandoff,neverderivedfromtransportvalidity",
+      "source_url": ""
+    },
+    {
+      "ref": "J6",
+      "value": "READ-ONLY NATIVE HEALTH",
+      "kind": "J",
+      "footprint": "ato_transport:PinHeader_1x10_P2.54mm_Vertical",
+      "nets": {
+        "1": "RESET_READY",
+        "2": "RAILS_QUALIFIED",
+        "3": "WATCHDOG_OK",
+        "4": "AFE_ISOLATED_READY",
+        "5": "CH0_QUIESCENT_OK",
+        "6": "CH1_QUIESCENT_OK",
+        "7": "SUP_ARMED",
+        "8": "GLOBAL_GUARD_EN",
+        "9": "PWR_FAULT_N",
+        "10": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ],
+        [
+          6,
+          "6",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "7",
+          "passive",
+          "L"
+        ],
+        [
+          8,
+          "8",
+          "passive",
+          "L"
+        ],
+        [
+          9,
+          "9",
+          "passive",
+          "L"
+        ],
+        [
+          10,
+          "10",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        101.6,
+        200.66000000000003
+      ],
+      "sheet": "root_2",
+      "description": "HostGPIOobservationofexistingnativehealth; ADCandcompaniondonotgrantstimulationauthority",
+      "source_url": ""
+    },
+    {
+      "ref": "U1",
+      "value": "ADS8688IDBTR",
+      "kind": "raw_adc",
+      "footprint": "ato_transport:TSSOP-38_4.4x9.7mm_P0.5mm",
+      "nets": {
+        "1": "RAW_SDI_PAD",
+        "2": "RAW_RST_N",
+        "3": "GND",
+        "4": "GND",
+        "5": "RAW_REFIO",
+        "6": "GND",
+        "7": "RAW_REFCAP",
+        "8": "GND",
+        "9": "HOST_5",
+        "10": "GND",
+        "11": "GND",
+        "12": "ADC6",
+        "13": "GND",
+        "14": "ADC7",
+        "15": "GND",
+        "16": "ADC0",
+        "17": "GND",
+        "18": "ADC1",
+        "19": "GND",
+        "20": "GND",
+        "21": "ADC2",
+        "22": "GND",
+        "23": "ADC3",
+        "24": "GND",
+        "25": "ADC4",
+        "26": "GND",
+        "27": "ADC5",
+        "28": "GND",
+        "29": "GND",
+        "30": "HOST_5",
+        "31": "GND",
+        "32": "GND",
+        "33": "GND",
+        "34": "HOST_3V3",
+        "35": null,
+        "36": "RAW_SDO",
+        "37": "RAW_SCLK_PAD",
+        "38": "RAW_CS_N"
+      },
+      "pins": [
+        [
+          1,
+          "SDI",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "RST_PD_N",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "DAISY",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "REFSEL",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "REFIO",
+          "bidirectional",
+          "R"
+        ],
+        [
+          6,
+          "REFGND",
+          "power_in",
+          "L"
+        ],
+        [
+          7,
+          "REFCAP",
+          "passive",
+          "R"
+        ],
+        [
+          8,
+          "AGND",
+          "power_in",
+          "L"
+        ],
+        [
+          9,
+          "AVDD",
+          "power_in",
+          "L"
+        ],
+        [
+          10,
+          "AUX_IN",
+          "input",
+          "L"
+        ],
+        [
+          11,
+          "AUX_GND",
+          "power_in",
+          "L"
+        ],
+        [
+          12,
+          "AIN_6P",
+          "input",
+          "L"
+        ],
+        [
+          13,
+          "AIN_6GND",
+          "input",
+          "L"
+        ],
+        [
+          14,
+          "AIN_7P",
+          "input",
+          "L"
+        ],
+        [
+          15,
+          "AIN_7GND",
+          "input",
+          "L"
+        ],
+        [
+          16,
+          "AIN_0P",
+          "input",
+          "L"
+        ],
+        [
+          17,
+          "AIN_0GND",
+          "input",
+          "L"
+        ],
+        [
+          18,
+          "AIN_1P",
+          "input",
+          "L"
+        ],
+        [
+          19,
+          "AIN_1GND",
+          "input",
+          "L"
+        ],
+        [
+          20,
+          "AIN_2GND",
+          "input",
+          "L"
+        ],
+        [
+          21,
+          "AIN_2P",
+          "input",
+          "L"
+        ],
+        [
+          22,
+          "AIN_3GND",
+          "input",
+          "L"
+        ],
+        [
+          23,
+          "AIN_3P",
+          "input",
+          "L"
+        ],
+        [
+          24,
+          "AIN_4GND",
+          "input",
+          "L"
+        ],
+        [
+          25,
+          "AIN_4P",
+          "input",
+          "L"
+        ],
+        [
+          26,
+          "AIN_5GND",
+          "input",
+          "L"
+        ],
+        [
+          27,
+          "AIN_5P",
+          "input",
+          "L"
+        ],
+        [
+          28,
+          "AGND",
+          "power_in",
+          "L"
+        ],
+        [
+          29,
+          "AGND",
+          "power_in",
+          "L"
+        ],
+        [
+          30,
+          "AVDD",
+          "power_in",
+          "L"
+        ],
+        [
+          31,
+          "AGND",
+          "power_in",
+          "L"
+        ],
+        [
+          32,
+          "AGND",
+          "power_in",
+          "L"
+        ],
+        [
+          33,
+          "DGND",
+          "power_in",
+          "L"
+        ],
+        [
+          34,
+          "DVDD",
+          "power_in",
+          "L"
+        ],
+        [
+          35,
+          "DNC",
+          "no_connect",
+          "R"
+        ],
+        [
+          36,
+          "SDO",
+          "output",
+          "R"
+        ],
+        [
+          37,
+          "SCLK",
+          "input",
+          "L"
+        ],
+        [
+          38,
+          "CS_N",
+          "input",
+          "L"
+        ]
+      ],
+      "xy": [
+        76.2,
+        96.52
+      ],
+      "sheet": "adc",
+      "description": "8channel16bit500kspsaggregateADC,internal4.096reference,programmableunipolar0..5.12V; internalPGA/filterisnotantialiasedproof",
+      "source_url": "https://www.ti.com/lit/ds/symlink/ads8688.pdf"
+    },
+    {
+      "ref": "R1",
+      "value": "33R",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "RAW_SDI",
+        "2": "RAW_SDI_PAD"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        213.36,
+        96.52
+      ],
+      "sheet": "adc",
+      "description": "SeriesdampingatMCUout; finalplacementinPCB",
+      "source_url": ""
+    },
+    {
+      "ref": "R2",
+      "value": "33R",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "RAW_SCLK",
+        "2": "RAW_SCLK_PAD"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        350.52,
+        96.52
+      ],
+      "sheet": "adc",
+      "description": "Clockseriesdamping; physicalsignalqualityrequiresPCB",
+      "source_url": ""
+    },
+    {
+      "ref": "R3",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_3V3",
+        "2": "RAW_CS_N"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        487.68,
+        96.52
+      ],
+      "sheet": "adc",
+      "description": "InactiveCSdefault; logicvaliditystilldependsrails",
+      "source_url": ""
+    },
+    {
+      "ref": "R4",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "RAW_RST_N",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        76.2,
+        170.18
+      ],
+      "sheet": "adc",
+      "description": "Reset/powerdowndefaultLOWuntilhostexplicitconfiguration",
+      "source_url": ""
+    },
+    {
+      "ref": "R5",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "RAW_SCLK_PAD",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        213.36,
+        170.18
+      ],
+      "sheet": "adc",
+      "description": "Definedidleclockwhilehostunpowered",
+      "source_url": ""
+    },
+    {
+      "ref": "R6",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "RAW_SDI_PAD",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        350.52,
+        170.18
+      ],
+      "sheet": "adc",
+      "description": "Definedserialinputwhilehostunpowered",
+      "source_url": ""
+    },
+    {
+      "ref": "C1",
+      "value": "22u X7R 10V",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "RAW_REFIO",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        76.2,
+        96.52
+      ],
+      "sheet": "reference",
+      "description": "Manufacturerreferenceandlocalrailbypass; placement/effectivecapacitancequalificationremainsPCB",
+      "source_url": ""
+    },
+    {
+      "ref": "C2",
+      "value": "22u X7R 10V",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "RAW_REFCAP",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        213.36,
+        96.52
+      ],
+      "sheet": "reference",
+      "description": "Manufacturerreferenceandlocalrailbypass; placement/effectivecapacitancequalificationremainsPCB",
+      "source_url": ""
+    },
+    {
+      "ref": "C3",
+      "value": "1u X7R 10V",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "RAW_REFCAP",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        350.52,
+        96.52
+      ],
+      "sheet": "reference",
+      "description": "Manufacturerreferenceandlocalrailbypass; placement/effectivecapacitancequalificationremainsPCB",
+      "source_url": ""
+    },
+    {
+      "ref": "C4",
+      "value": "10u X7R 10V",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_5",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        487.68,
+        96.52
+      ],
+      "sheet": "reference",
+      "description": "Manufacturerreferenceandlocalrailbypass; placement/effectivecapacitancequalificationremainsPCB",
+      "source_url": ""
+    },
+    {
+      "ref": "C5",
+      "value": "1u X7R 10V",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_5",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        76.2,
+        170.18
+      ],
+      "sheet": "reference",
+      "description": "Manufacturerreferenceandlocalrailbypass; placement/effectivecapacitancequalificationremainsPCB",
+      "source_url": ""
+    },
+    {
+      "ref": "C6",
+      "value": "10u X7R 10V",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_5",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        213.36,
+        170.18
+      ],
+      "sheet": "reference",
+      "description": "Manufacturerreferenceandlocalrailbypass; placement/effectivecapacitancequalificationremainsPCB",
+      "source_url": ""
+    },
+    {
+      "ref": "C7",
+      "value": "1u X7R 10V",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_5",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        350.52,
+        170.18
+      ],
+      "sheet": "reference",
+      "description": "Manufacturerreferenceandlocalrailbypass; placement/effectivecapacitancequalificationremainsPCB",
+      "source_url": ""
+    },
+    {
+      "ref": "C8",
+      "value": "10u X7R 10V",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        487.68,
+        170.18
+      ],
+      "sheet": "reference",
+      "description": "Manufacturerreferenceandlocalrailbypass; placement/effectivecapacitancequalificationremainsPCB",
+      "source_url": ""
+    },
+    {
+      "ref": "C9",
+      "value": "100n X7R 10V",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        76.2,
+        243.83999999999997
+      ],
+      "sheet": "reference",
+      "description": "Manufacturerreferenceandlocalrailbypass; placement/effectivecapacitancequalificationremainsPCB",
+      "source_url": ""
+    },
+    {
+      "ref": "R100",
+      "value": "100R 0.1%",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_I_MON",
+        "2": "ADC0"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        76.2,
+        96.52
+      ],
+      "sheet": "inputs",
+      "description": "raw current 0; finite1MohmADCinputtointernal2.5Vbiasloads100ohmsourcefilter",
+      "source_url": ""
+    },
+    {
+      "ref": "C100",
+      "value": "1n C0G 5%",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "ADC0",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        213.36,
+        96.52
+      ],
+      "sheet": "inputs",
+      "description": "100ohm/1nFexternalpole1.59MHz; notNyquistantialiasfilterorfullmeasurementsettlingproof",
+      "source_url": ""
+    },
+    {
+      "ref": "R101",
+      "value": "100R 0.1%",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_I_MON",
+        "2": "ADC1"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        350.52,
+        96.52
+      ],
+      "sheet": "inputs",
+      "description": "raw current 1; finite1MohmADCinputtointernal2.5Vbiasloads100ohmsourcefilter",
+      "source_url": ""
+    },
+    {
+      "ref": "C101",
+      "value": "1n C0G 5%",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "ADC1",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        487.68,
+        96.52
+      ],
+      "sheet": "inputs",
+      "description": "100ohm/1nFexternalpole1.59MHz; notNyquistantialiasfilterorfullmeasurementsettlingproof",
+      "source_url": ""
+    },
+    {
+      "ref": "R102",
+      "value": "100R 0.1%",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_VPAIR",
+        "2": "ADC2"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        76.2,
+        170.18
+      ],
+      "sheet": "inputs",
+      "description": "existing scaled differential voltage 0; finite1MohmADCinputtointernal2.5Vbiasloads100ohmsourcefilter",
+      "source_url": ""
+    },
+    {
+      "ref": "C102",
+      "value": "1n C0G 5%",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "ADC2",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        213.36,
+        170.18
+      ],
+      "sheet": "inputs",
+      "description": "100ohm/1nFexternalpole1.59MHz; notNyquistantialiasfilterorfullmeasurementsettlingproof",
+      "source_url": ""
+    },
+    {
+      "ref": "R103",
+      "value": "100R 0.1%",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_VPAIR",
+        "2": "ADC3"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        350.52,
+        170.18
+      ],
+      "sheet": "inputs",
+      "description": "existing scaled differential voltage 1; finite1MohmADCinputtointernal2.5Vbiasloads100ohmsourcefilter",
+      "source_url": ""
+    },
+    {
+      "ref": "C103",
+      "value": "1n C0G 5%",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "ADC3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        487.68,
+        170.18
+      ],
+      "sheet": "inputs",
+      "description": "100ohm/1nFexternalpole1.59MHz; notNyquistantialiasfilterorfullmeasurementsettlingproof",
+      "source_url": ""
+    },
+    {
+      "ref": "R104",
+      "value": "100R 0.1%",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "MON_VREF",
+        "2": "ADC4"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        76.2,
+        243.83999999999997
+      ],
+      "sheet": "inputs",
+      "description": "monitor reference health; finite1MohmADCinputtointernal2.5Vbiasloads100ohmsourcefilter",
+      "source_url": ""
+    },
+    {
+      "ref": "C104",
+      "value": "1n C0G 5%",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "ADC4",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        213.36,
+        243.83999999999997
+      ],
+      "sheet": "inputs",
+      "description": "100ohm/1nFexternalpole1.59MHz; notNyquistantialiasfilterorfullmeasurementsettlingproof",
+      "source_url": ""
+    },
+    {
+      "ref": "R105",
+      "value": "100R 0.1%",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "MON_VMID",
+        "2": "ADC5"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        350.52,
+        243.83999999999997
+      ],
+      "sheet": "inputs",
+      "description": "monitor midpoint health; finite1MohmADCinputtointernal2.5Vbiasloads100ohmsourcefilter",
+      "source_url": ""
+    },
+    {
+      "ref": "C105",
+      "value": "1n C0G 5%",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "ADC5",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        487.68,
+        243.83999999999997
+      ],
+      "sheet": "inputs",
+      "description": "100ohm/1nFexternalpole1.59MHz; notNyquistantialiasfilterorfullmeasurementsettlingproof",
+      "source_url": ""
+    },
+    {
+      "ref": "R106",
+      "value": "100R 0.1%",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "PACK_SCALED",
+        "2": "ADC6"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        76.2,
+        317.5
+      ],
+      "sheet": "inputs",
+      "description": "divided pack-bus voltage; finite1MohmADCinputtointernal2.5Vbiasloads100ohmsourcefilter",
+      "source_url": ""
+    },
+    {
+      "ref": "C106",
+      "value": "1n C0G 5%",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "ADC6",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        213.36,
+        317.5
+      ],
+      "sheet": "inputs",
+      "description": "100ohm/1nFexternalpole1.59MHz; notNyquistantialiasfilterorfullmeasurementsettlingproof",
+      "source_url": ""
+    },
+    {
+      "ref": "R107",
+      "value": "100R 0.1%",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST5_SCALED",
+        "2": "ADC7"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        350.52,
+        317.5
+      ],
+      "sheet": "inputs",
+      "description": "divided host5 voltage; finite1MohmADCinputtointernal2.5Vbiasloads100ohmsourcefilter",
+      "source_url": ""
+    },
+    {
+      "ref": "C107",
+      "value": "1n C0G 5%",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "ADC7",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        487.68,
+        317.5
+      ],
+      "sheet": "inputs",
+      "description": "100ohm/1nFexternalpole1.59MHz; notNyquistantialiasfilterorfullmeasurementsettlingproof",
+      "source_url": ""
+    },
+    {
+      "ref": "R120",
+      "value": "4.99k 0.1%",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "PACK_BUS",
+        "2": "PACK_SCALED"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        76.2,
+        96.52
+      ],
+      "sheet": "health",
+      "description": "Nominalpackdivideby3; ADC1Mohmtointernal2.5Vbiasandfilterareincludedinfinitegaincalculation",
+      "source_url": ""
+    },
+    {
+      "ref": "R121",
+      "value": "2.49k 0.1%",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "PACK_SCALED",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        213.36,
+        96.52
+      ],
+      "sheet": "health",
+      "description": "Packdividertoreturn; noextrapolatedbatterySOCclaim",
+      "source_url": ""
+    },
+    {
+      "ref": "R122",
+      "value": "2.4k 0.1%",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_5",
+        "2": "HOST5_SCALED"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        350.52,
+        96.52
+      ],
+      "sheet": "health",
+      "description": "Nominalhost5divideby2.2; ADC1Mohmtointernal2.5Vbiasandfilterareincluded",
+      "source_url": ""
+    },
+    {
+      "ref": "R123",
+      "value": "2k 0.1%",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST5_SCALED",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        487.68,
+        96.52
+      ],
+      "sheet": "health",
+      "description": "Host5dividertoreturn; independenthardwarewindowsremainseparate",
+      "source_url": ""
+    },
+    {
+      "ref": "U20",
+      "value": "ISO6721BDR",
+      "kind": "uart_iso",
+      "footprint": "ato_transport:SOIC-8_3.9x4.9mm_P1.27mm",
+      "nets": {
+        "1": "HOST_3V3",
+        "2": "UART_HOST_RX_PAD",
+        "3": "UART_HOST_TX_PAD",
+        "4": "GND",
+        "5": "COMP_GND",
+        "6": "UART_COMP_RX_PAD",
+        "7": "UART_COMP_TX_PAD",
+        "8": "COMP_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "VCC1",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "OUTA_HOST_RX",
+          "output",
+          "R"
+        ],
+        [
+          3,
+          "INB_HOST_TX",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "GND1",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "GND2",
+          "power_in",
+          "L"
+        ],
+        [
+          6,
+          "OUTB_COMP_RX",
+          "output",
+          "R"
+        ],
+        [
+          7,
+          "INA_COMP_TX",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "VCC2",
+          "power_in",
+          "L"
+        ]
+      ],
+      "xy": [
+        76.2,
+        96.52
+      ],
+      "sheet": "companion",
+      "description": "50Mbpsstandardmappingbidirectionisolator; nonFdefaultHIGHmatchesUARTidle. Functionalgalvanicisolationisnotbody/RF/medicalqualification",
+      "source_url": "https://www.ti.com/lit/ds/symlink/iso6721.pdf"
+    },
+    {
+      "ref": "J7",
+      "value": "HOST PROCESSED UART",
+      "kind": "J",
+      "footprint": "ato_transport:PinHeader_1x04_P2.54mm_Vertical",
+      "nets": {
+        "1": "HOST_UART_TX",
+        "2": "HOST_UART_RX",
+        "3": "HOST_3V3",
+        "4": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        213.36,
+        96.52
+      ],
+      "sheet": "companion",
+      "description": "1Mbaud8N1hostcompanionbus; packetage/CRC/identityvalidityhandledbyseparatestudy,targetfirmwarenext",
+      "source_url": ""
+    },
+    {
+      "ref": "J8",
+      "value": "EXTERNAL COMPANION UART",
+      "kind": "J",
+      "footprint": "ato_transport:PinHeader_1x04_P2.54mm_Vertical",
+      "nets": {
+        "1": "COMP_UART_TX",
+        "2": "COMP_UART_RX",
+        "3": "COMP_3V3",
+        "4": "COMP_GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        350.52,
+        96.52
+      ],
+      "sheet": "companion",
+      "description": "Externallypowered3.3VUARThost/companionfixture; pressureestimator/featureprocessoroutsidepackage,notspinalorbodyradiosignal",
+      "source_url": ""
+    },
+    {
+      "ref": "R20",
+      "value": "33R",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_UART_TX",
+        "2": "UART_HOST_TX_PAD"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        487.68,
+        96.52
+      ],
+      "sheet": "companion",
+      "description": "FiniteUARTlinedamping; specifiedshortdigitalfixture,novalidatedcableEMI/ESDtest",
+      "source_url": ""
+    },
+    {
+      "ref": "R21",
+      "value": "33R",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "UART_HOST_RX_PAD",
+        "2": "HOST_UART_RX"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        76.2,
+        170.18
+      ],
+      "sheet": "companion",
+      "description": "FiniteUARTlinedamping; specifiedshortdigitalfixture,novalidatedcableEMI/ESDtest",
+      "source_url": ""
+    },
+    {
+      "ref": "R22",
+      "value": "33R",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "COMP_UART_TX",
+        "2": "UART_COMP_TX_PAD"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        213.36,
+        170.18
+      ],
+      "sheet": "companion",
+      "description": "FiniteUARTlinedamping; specifiedshortdigitalfixture,novalidatedcableEMI/ESDtest",
+      "source_url": ""
+    },
+    {
+      "ref": "R23",
+      "value": "33R",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "UART_COMP_RX_PAD",
+        "2": "COMP_UART_RX"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        350.52,
+        170.18
+      ],
+      "sheet": "companion",
+      "description": "FiniteUARTlinedamping; specifiedshortdigitalfixture,novalidatedcableEMI/ESDtest",
+      "source_url": ""
+    },
+    {
+      "ref": "R24",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_3V3",
+        "2": "UART_HOST_TX_PAD"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        487.68,
+        170.18
+      ],
+      "sheet": "companion",
+      "description": "UARTidleHIGHinputdefaultinhostdomain",
+      "source_url": ""
+    },
+    {
+      "ref": "R25",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "COMP_3V3",
+        "2": "UART_COMP_TX_PAD"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        76.2,
+        243.83999999999997
+      ],
+      "sheet": "companion",
+      "description": "UARTidleHIGHinputdefaultincompaniondomain",
+      "source_url": ""
+    },
+    {
+      "ref": "C20",
+      "value": "100n X7R 10V",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        213.36,
+        243.83999999999997
+      ],
+      "sheet": "companion",
+      "description": "Isolatorhostlocalbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C21",
+      "value": "100n X7R 10V",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "COMP_3V3",
+        "2": "COMP_GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        350.52,
+        243.83999999999997
+      ],
+      "sheet": "companion",
+      "description": "Isolatorcompanionlocalbypass; neverbridgesgrounddomains",
+      "source_url": ""
+    },
+    {
+      "ref": "C22",
+      "value": "1u X7R 10V",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        487.68,
+        243.83999999999997
+      ],
+      "sheet": "companion",
+      "description": "HostUARTrailbulk",
+      "source_url": ""
+    },
+    {
+      "ref": "C23",
+      "value": "1u X7R 10V",
+      "kind": "C",
+      "footprint": "ato_transport:C_1206_3216Metric",
+      "nets": {
+        "1": "COMP_3V3",
+        "2": "COMP_GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        76.2,
+        317.5
+      ],
+      "sheet": "companion",
+      "description": "CompanionUARTrailbulk",
+      "source_url": ""
+    },
+    {
+      "ref": "J20",
+      "value": "HOST CHARGE ADC BUS",
+      "kind": "J",
+      "footprint": "ato_transport:PinHeader_1x12_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH0_CNV",
+        "2": "CH0_CS_N",
+        "3": "CH0_DOUT",
+        "4": "CH1_CNV",
+        "5": "CH1_CS_N",
+        "6": "CH1_DOUT",
+        "7": "MON_SCLK",
+        "8": "CH0_INT_RUN",
+        "9": "CH1_INT_RUN",
+        "10": "CH0_MON_REARM",
+        "11": "CH1_MON_REARM",
+        "12": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ],
+        [
+          6,
+          "6",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "7",
+          "passive",
+          "L"
+        ],
+        [
+          8,
+          "8",
+          "passive",
+          "L"
+        ],
+        [
+          9,
+          "9",
+          "passive",
+          "L"
+        ],
+        [
+          10,
+          "10",
+          "passive",
+          "L"
+        ],
+        [
+          11,
+          "11",
+          "passive",
+          "L"
+        ],
+        [
+          12,
+          "12",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        101.6,
+        88.9
+      ],
+      "sheet": "handoff",
+      "description": "ActualpassivehandofftoJ4/J5; SoCportpinallocationwillbeimplementednext",
+      "source_url": ""
+    },
+    {
+      "ref": "J21",
+      "value": "HOST HEALTH INPUTS",
+      "kind": "J",
+      "footprint": "ato_transport:PinHeader_1x10_P2.54mm_Vertical",
+      "nets": {
+        "1": "RESET_READY",
+        "2": "RAILS_QUALIFIED",
+        "3": "WATCHDOG_OK",
+        "4": "AFE_ISOLATED_READY",
+        "5": "CH0_QUIESCENT_OK",
+        "6": "CH1_QUIESCENT_OK",
+        "7": "SUP_ARMED",
+        "8": "GLOBAL_GUARD_EN",
+        "9": "PWR_FAULT_N",
+        "10": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ],
+        [
+          6,
+          "6",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "7",
+          "passive",
+          "L"
+        ],
+        [
+          8,
+          "8",
+          "passive",
+          "L"
+        ],
+        [
+          9,
+          "9",
+          "passive",
+          "L"
+        ],
+        [
+          10,
+          "10",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        368.29999999999995,
+        88.9
+      ],
+      "sheet": "handoff",
+      "description": "SamehealthobservationsasJ6, passivewiresonly; noADC/firmwareauthoritybypass",
+      "source_url": ""
+    },
+    {
+      "ref": "R30",
+      "value": "330R",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_DOUT",
+        "2": "MON_MISO"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        101.6,
+        200.66000000000003
+      ],
+      "sheet": "handoff",
+      "description": "Source0tri-stateDOUTjoin; selectonlyoneADC; 8MHzsharedbusloadingrequiresPCBqualification",
+      "source_url": ""
+    },
+    {
+      "ref": "R31",
+      "value": "330R",
+      "kind": "R",
+      "footprint": "ato_transport:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_DOUT",
+        "2": "MON_MISO"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        368.29999999999995,
+        200.66000000000003
+      ],
+      "sheet": "handoff",
+      "description": "Source1tri-stateDOUTjoin; resistorsdonotmakeconcurrentCSorunpoweredADCvalid",
+      "source_url": ""
+    },
+    {
+      "ref": "J22",
+      "value": "HOST SHARED ENDPOINT SPI",
+      "kind": "J",
+      "footprint": "ato_transport:PinHeader_1x07_P2.54mm_Vertical",
+      "nets": {
+        "1": "MON_SCLK",
+        "2": "MON_MISO",
+        "3": "CH0_CNV",
+        "4": "CH0_CS_N",
+        "5": "CH1_CNV",
+        "6": "CH1_CS_N",
+        "7": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ],
+        [
+          6,
+          "6",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "7",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        101.6,
+        312.42
+      ],
+      "sheet": "handoff",
+      "description": "Explicitshared8MHzendpointMISO; J20retainsseparateDOUTdiagnostictaps; chipselectsneveroverlapinhealthycontract",
+      "source_url": ""
+    }
+  ],
+  "source_documents": {
+    "raw_adc": "https://www.ti.com/lit/ds/symlink/ads8688.pdf",
+    "uart_iso": "https://www.ti.com/lit/ds/symlink/iso6721.pdf"
+  },
+  "channels": [
+    {
+      "channel": 0,
+      "source": "CH0_I_MON",
+      "description": "raw current 0",
+      "range_code": 6,
+      "range_V": [
+        0,
+        5.12
+      ]
+    },
+    {
+      "channel": 1,
+      "source": "CH1_I_MON",
+      "description": "raw current 1",
+      "range_code": 6,
+      "range_V": [
+        0,
+        5.12
+      ]
+    },
+    {
+      "channel": 2,
+      "source": "CH0_VPAIR",
+      "description": "existing scaled differential voltage 0",
+      "range_code": 6,
+      "range_V": [
+        0,
+        5.12
+      ]
+    },
+    {
+      "channel": 3,
+      "source": "CH1_VPAIR",
+      "description": "existing scaled differential voltage 1",
+      "range_code": 6,
+      "range_V": [
+        0,
+        5.12
+      ]
+    },
+    {
+      "channel": 4,
+      "source": "MON_VREF",
+      "description": "monitor reference health",
+      "range_code": 6,
+      "range_V": [
+        0,
+        5.12
+      ]
+    },
+    {
+      "channel": 5,
+      "source": "MON_VMID",
+      "description": "monitor midpoint health",
+      "range_code": 6,
+      "range_V": [
+        0,
+        5.12
+      ]
+    },
+    {
+      "channel": 6,
+      "source": "PACK_SCALED",
+      "description": "divided pack-bus voltage",
+      "range_code": 6,
+      "range_V": [
+        0,
+        5.12
+      ]
+    },
+    {
+      "channel": 7,
+      "source": "HOST5_SCALED",
+      "description": "divided host5 voltage",
+      "range_code": 6,
+      "range_V": [
+        0,
+        5.12
+      ]
+    }
+  ],
+  "nominal": {
+    "raw_ADC_max_aggregate_sps": 500000,
+    "raw_ADC_bits": 16,
+    "raw_ADC_VREF_V": 4.096,
+    "raw_ADC_range_V": 5.12,
+    "input_filter_R_ohm": 100,
+    "input_filter_C_F": 1e-09,
+    "input_ADC_R_ohm_typ": 1000000.0,
+    "input_ADC_R_ohm_25C_bounds": [
+      850000,
+      1150000
+    ],
+    "input_ADC_bias_V": 2.5,
+    "raw_SPI_Hz": 16000000,
+    "raw_frame_allocation_s": 2.125e-06,
+    "UART_baud": 1000000,
+    "UART_frame": "8N1",
+    "isolator_rate_bps": 50000000,
+    "host_3V3_V": 3.3,
+    "host_5_V": 5,
+    "companion_external_3V3_V": 3.3
+  },
+  "external_unimplemented": [
+    "PhysicalADCsettling/aliasing/ESDandSPIeyepatternqualification",
+    "ADCinput0.85..1.15Mohmat25Cplusmax25ppm/Cdrift; fullphysicalsettling/aliasingnotqualified",
+    "Effective22uFREFIO/REFCAPcapacitanceandlayoutrequiresPCBselection",
+    "SoCpinallocation/targetfirmware/DMAandrealinterrupttimingarethenextpackage",
+    "ExternalcompanionpressureestimatornotnativeSBPcufforuniversalbody-stateobserver",
+    "NoRF/through-body/antenna/clinicalisolationorimplantleakagequalification",
+    "ExistingchargeADCfaultinputprotectionandintegratorbiaslimitsremainhistorical,notfixedbyrawADC"
+  ]
+}

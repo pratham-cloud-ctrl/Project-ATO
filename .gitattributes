@@ -1,4 +1,6 @@
 * text=auto
+.gitattributes text eol=lf
+*.yml text eol=lf
 *.py text eol=lf
 *.md text eol=lf
 *.csv text eol=lf
@@ -7,6 +9,15 @@
 *.svg text eol=lf
 *.kicad_sch text eol=lf
 *.kicad_pcb text eol=lf
+*.kicad_sym text eol=lf
+*.kicad_mod text eol=lf
+*.kicad_pro text eol=lf
+*.net text eol=lf
+*.xml text eol=lf
+*.cir text eol=lf
+*.npz binary
+**/sym-lib-table text eol=lf
+**/fp-lib-table text eol=lf
 *.step -text
 *.stl binary
 *.png binary
@@ -15,3 +26,45 @@
 *.FCStd binary
 *.mp4 binary
 *.zip binary
+*.gz binary
+# Generated geometry is reviewed through its parametric source, drawings and CAD.
+cad/stage2/*.step binary
+# Preserve KiCad's exported SVG spacing; these files are reviewed generated output.
+electronics/stage4/monitoring-cell/svg/*.svg whitespace=-blank-at-eol
+# Preserve Matplotlib's generated SVG path spacing; reviewed figures bind exact bytes.
+electronics/stage4/monitoring-study/*.svg whitespace=-blank-at-eol
+# Native exports and reviewed scientific figures retain generated path spacing.
+electronics/stage4/current-driver/svg/*.svg whitespace=-blank-at-eol
+electronics/stage4/driver-study/*.svg whitespace=-blank-at-eol
+# Reviewed observer freezes bind original bytes, including Windows JSON newlines.
+experiments/stage3/observed-state-observer/requirements-lock.txt text eol=lf
+experiments/stage3/observed-state-observer/frozen/** -text whitespace=cr-at-eol
+# This separately approved replay also binds exact protocol/source/receipt bytes.
+experiments/stage3/frozen-observer-pilot/** -text whitespace=cr-at-eol
+# Historical report embeds the exact approved review bytes, including newlines.
+provenance/stage3-closeout-review.json -text whitespace=cr-at-eol
+# Matplotlib SVG spacing is generated and visually inspected.
+# Preserve the reviewed scenario bytes bound by its review receipt.
+experiments/stage3/conditional-concept/** -text whitespace=cr-at-eol
+experiments/stage3/conditional-concept/*.svg whitespace=-blank-at-eol,cr-at-eol
+# Target binary bytes, compiler-map spacing and upstream notices are preserved.
+firmware/nrf5340/artifacts/*.elf binary
+firmware/nrf5340/artifacts/*.bin binary
+firmware/nrf5340/artifacts/ato.map text eol=lf whitespace=-blank-at-eol
+firmware/nrf5340/licenses/* text eol=lf -whitespace
+# New native exports retain their reviewed generated spacing and image bytes.
+electronics/stage4/controller-carrier/svg/*.svg whitespace=-blank-at-eol
+electronics/stage4/integrated-pcb/**/*.svg whitespace=-blank-at-eol
+electronics/stage4/integrated-pcb/firmware-profile/artifacts/*.elf binary
+electronics/stage4/integrated-pcb/firmware-profile/artifacts/*.bin binary
+electronics/stage4/integrated-pcb/firmware-profile/artifacts/ato.map text eol=lf whitespace=-blank-at-eol
+electronics/stage4/integrated-pcb/**/*.step binary
+electronics/stage4/integrated-pcb/**/*.ses whitespace=-blank-at-eol
+# Native Stage5 exchange derivatives are reviewed through CAD and drawings.
+cad/stage5/**/*.step binary
+cad/stage5/**/*.svg whitespace=-blank-at-eol
+# Keep reviewed source-hash bindings byte-stable, including final blank lines.
+cad/stage5/reference/extract_board_datums.py whitespace=-blank-at-eof
+docs/stage5/future-package-design.md whitespace=-blank-at-eof
+# Source-derived manuscript SVG path spacing is generated and visually reviewed.
+manuscript/stage6/figures/*.svg whitespace=-blank-at-eol

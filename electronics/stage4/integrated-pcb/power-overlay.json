@@ -1,0 +1,154 @@
+{
+  "schema": "ato.integrated-controller-power.v1",
+  "date": "2026-10-15",
+  "scope": "Conditional declared-load digital budget; not measured peak, runtime or thermal performance",
+  "source_sha256_lf": {
+    "electronics/stage4/power-study/budget-results.json": "e104c792165eb3be423040a150ec40be7ada5268c43dff2df00a6bbe383e1f5c",
+    "electronics/stage4/transport-study/input-results.json": "01fd0a4c319e2c26f6cba746ddbed62d9af6ae53c6c0bfa2887dec3686212457",
+    "electronics/stage4/controller-carrier/connectivity.json": "95c4c7a6d2bdddc1bdd460c17c46ae8773297052adb34c1c54698af4bd33a824",
+    "electronics/stage4/integrated-pcb/firmware-profile/build-receipt.json": "a399e4cd6976671670739db8269cdee51542f26b2cfed4a2109303423ca576f2",
+    "electronics/stage4/integrated-pcb/power_overlay.py": "27c8099db47e9490abec52c82412e0bacd582558100e864e28e0181deecefb0c"
+  },
+  "preserved_previous_results": true,
+  "HOST_3V3_previous_cap_A": 0.08,
+  "HOST_3V3_new_cap_A": 0.16,
+  "allocations_A": {
+    "previous_active_packages_A": 0.034429999999999975,
+    "previous_passive_dynamic_contingency_A": 0.03557000000000003,
+    "transport_new_parts_A": 0.005129000000000001,
+    "BT40F_module_declared_A": 0.06,
+    "four_serializers_dynamic_declared_A": 0.005,
+    "all_41_biases_opposed_A": 0.013529999999999999
+  },
+  "allocated_A": 0.153659,
+  "unallocated_margin_A": 0.006341000000000013,
+  "bias_resistors": [
+    "R2",
+    "R100",
+    "R101",
+    "R102",
+    "R103",
+    "R104",
+    "R105",
+    "R106",
+    "R107",
+    "R108",
+    "R109",
+    "R110",
+    "R111",
+    "R112",
+    "R113",
+    "R114",
+    "R115",
+    "R116",
+    "R117",
+    "R118",
+    "R119",
+    "R120",
+    "R121",
+    "R122",
+    "R123",
+    "R124",
+    "R125",
+    "R126",
+    "R127",
+    "R128",
+    "R129",
+    "R130",
+    "R131",
+    "R132",
+    "R133",
+    "R134",
+    "R135",
+    "R136",
+    "R137",
+    "R138",
+    "R139"
+  ],
+  "bias_interpretation": "All 41 10k biases simultaneously opposed is a conservative sum, not an operating-state prediction; previous reserves retained",
+  "module_and_serializer_currents_are_design_allocations": true,
+  "previous_transport_active_W": 2.8002371062185896,
+  "incremental_bus_W": 0.33,
+  "incremental_battery_W": 0.35391304347826086,
+  "active_W": 3.1541501496968505,
+  "usable_energy_Wh": 15.392,
+  "runtime_h": 4.879919873655775,
+  "assumed_buck_efficiency": 0.8,
+  "nominal_battery_V": 7.4,
+  "nominal_bus_V": 6.9,
+  "incremental_efficiency_sensitivity": [
+    {
+      "incremental_buck_efficiency_assumed": 0.7,
+      "active_W": 3.2047091559080307,
+      "runtime_h": 4.802931951445307
+    },
+    {
+      "incremental_buck_efficiency_assumed": 0.8,
+      "active_W": 3.1541501496968505,
+      "runtime_h": 4.879919873655775
+    },
+    {
+      "incremental_buck_efficiency_assumed": 0.9,
+      "active_W": 3.114826478199266,
+      "runtime_h": 4.941527275348698
+    }
+  ],
+  "capacitors": [
+    {
+      "reference": "C1",
+      "capacitance_F": 4.7e-05,
+      "voltage_V": 3.3,
+      "energy_J": 0.00025591499999999995
+    },
+    {
+      "reference": "C2",
+      "capacitance_F": 1e-06,
+      "voltage_V": 3.3,
+      "energy_J": 5.4449999999999995e-06
+    },
+    {
+      "reference": "C3",
+      "capacitance_F": 1.0000000000000001e-07,
+      "voltage_V": 3.3,
+      "energy_J": 5.445e-07
+    },
+    {
+      "reference": "C10",
+      "capacitance_F": 1.0000000000000001e-07,
+      "voltage_V": 3.3,
+      "energy_J": 5.445e-07
+    },
+    {
+      "reference": "C11",
+      "capacitance_F": 1.0000000000000001e-07,
+      "voltage_V": 3.3,
+      "energy_J": 5.445e-07
+    },
+    {
+      "reference": "C12",
+      "capacitance_F": 1.0000000000000001e-07,
+      "voltage_V": 3.3,
+      "energy_J": 5.445e-07
+    },
+    {
+      "reference": "C13",
+      "capacitance_F": 1.0000000000000001e-07,
+      "voltage_V": 3.3,
+      "energy_J": 5.445e-07
+    }
+  ],
+  "carrier_capacitance_F": 4.85e-05,
+  "carrier_energy_J": 0.00026408249999999996,
+  "carrier_energy_plus20percent_J": 0.00031689899999999994,
+  "target_image": {
+    "build_receipt": "firmware-profile/build-receipt.json"
+  },
+  "compact_implanted_thermal_2K_earned": false,
+  "converter_stability_inrush_efficiency_and_physical_execution_measured": false,
+  "limits": [
+    "Module 60 mA and serializer 5 mA are declared allocations, not guaranteed all-corner maxima.",
+    "Incremental efficiency sweep changes only the new controller contribution; previous converters retain their frozen assumptions.",
+    "External companion supply remains outside host battery allocation.",
+    "Existing compact implant thermal failure remains; the eight large reference boards do not establish implant miniaturization."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "ato.stage4.supervision-independent-analog.v1",
+  "date": "2026-10-14",
+  "checks": 6079,
+  "trajectory_points": 2961,
+  "max_trajectory_residual_V": 2.220446049250313e-16,
+  "rail_windows": 9,
+  "interrupted_load_cases": 7,
+  "independent_of_producer_import": true,
+  "physical_delay_or_tissue_validation": false,
+  "sha256": {
+    "analog_study.py": "7a9be1c5d3f0449a5cd901ad0781fdd6e8d5b79446922587ea8f7ddad2f61666",
+    "analog-results.json": "c916d4181e0b2f30408d12d56738efebbb5516de01c5626fb1608902e5ff6bcc",
+    "analog-traces.npz": "389816e9e0d0f4cbe8c56583e0178314f847b16677bb84f1f022a1599e96d510",
+    "verify_analog.py": "c0ca1029c0ed139746009f17621c69862f0ec1825ae8eb857cec7bfc8d3f02a9"
+  }
+}

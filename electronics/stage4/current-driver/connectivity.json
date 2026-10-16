@@ -1,0 +1,6879 @@
+{
+  "schema": "ato.stage4.current-driver.connectivity.v1",
+  "date": "2026-10-13",
+  "scope": "Native artificial-load24V3mA200us two-source driver/control slice; not PCB/analog qualification/implant",
+  "parts": [
+    {
+      "ref": "J1",
+      "value": "QUALIFIED EXTERNAL RAILS",
+      "kind": "J",
+      "footprint": "ato_drv:PinHeader_1x05_P2.54mm_Vertical",
+      "nets": {
+        "1": "VH_24",
+        "2": "VA_15",
+        "3": "VDD_5",
+        "4": "VDD_3V3",
+        "5": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        50.8,
+        55.88
+      ],
+      "sheet": "root",
+      "description": "External regulated rails; no converters, battery, power-on supervisor or isolation",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "J2",
+      "value": "MCU SPI / PRELOAD INHIBITED",
+      "kind": "J",
+      "footprint": "ato_drv:PinHeader_1x04_P2.54mm_Vertical",
+      "nets": {
+        "1": "DAC_SCLK",
+        "2": "DAC_SYNC_N",
+        "3": "DAC_SDIN",
+        "4": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        50.8,
+        129.54
+      ],
+      "sheet": "root",
+      "description": "3.3V host SPI; configuration write and independent setpoint verification required before RESET_READY",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "J3",
+      "value": "MCU PHASE / EXPLICIT REARM",
+      "kind": "J",
+      "footprint": "ato_drv:PinHeader_1x09_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH0_REQUEST",
+        "2": "CH0_PLUS_RAW",
+        "3": "CH0_MINUS_RAW",
+        "4": "CH0_REARM",
+        "5": "CH1_REQUEST",
+        "6": "CH1_PLUS_RAW",
+        "7": "CH1_MINUS_RAW",
+        "8": "CH1_REARM",
+        "9": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ],
+        [
+          6,
+          "6",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "7",
+          "passive",
+          "L"
+        ],
+        [
+          8,
+          "8",
+          "passive",
+          "L"
+        ],
+        [
+          9,
+          "9",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        355.6,
+        60.96
+      ],
+      "sheet": "root",
+      "description": "Separate controls; REARM pulse only after external observed quiescence, no automatic retry",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "J4",
+      "value": "EXTERNAL HEALTH CONTRACTS",
+      "kind": "J",
+      "footprint": "ato_drv:PinHeader_1x11_P2.54mm_Vertical",
+      "nets": {
+        "1": "RESET_READY",
+        "2": "RAILS_QUALIFIED",
+        "3": "CH0_MON_PERMIT",
+        "4": "CH0_EXT_SUP_OK",
+        "5": "CH0_ROUTE_LOCKED",
+        "6": "CH0_QUIESCENT_OK",
+        "7": "CH1_MON_PERMIT",
+        "8": "CH1_EXT_SUP_OK",
+        "9": "CH1_ROUTE_LOCKED",
+        "10": "CH1_QUIESCENT_OK",
+        "11": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ],
+        [
+          6,
+          "6",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "7",
+          "passive",
+          "L"
+        ],
+        [
+          8,
+          "8",
+          "passive",
+          "L"
+        ],
+        [
+          9,
+          "9",
+          "passive",
+          "L"
+        ],
+        [
+          10,
+          "10",
+          "passive",
+          "L"
+        ],
+        [
+          11,
+          "11",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        355.6,
+        157.48
+      ],
+      "sheet": "root",
+      "description": "Independent monitor, watchdog/compliance, power-startup, route and zero-current evidence are external; keep low until qualified",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "J5",
+      "value": "STATUS ONLY / NOT DELIVERY EVIDENCE",
+      "kind": "J",
+      "footprint": "ato_drv:PinHeader_1x09_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH0_RUN",
+        "2": "CH0_BLOCK",
+        "3": "CH0_TIMEOUT",
+        "4": "CH0_TIMER",
+        "5": "CH1_RUN",
+        "6": "CH1_BLOCK",
+        "7": "CH1_TIMEOUT",
+        "8": "CH1_TIMER",
+        "9": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ],
+        [
+          6,
+          "6",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "7",
+          "passive",
+          "L"
+        ],
+        [
+          8,
+          "8",
+          "passive",
+          "L"
+        ],
+        [
+          9,
+          "9",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        254,
+        162.56
+      ],
+      "sheet": "root",
+      "description": "Internal command status does not certify actual current, dose or successful stimulation",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "U1",
+      "value": "DAC80502DRXR",
+      "kind": "dac",
+      "footprint": "ato_drv:Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm",
+      "nets": {
+        "1": "VDD_5",
+        "2": "CH0_VSET",
+        "3": "GND",
+        "4": "GND",
+        "5": "GND",
+        "6": "DAC_SCLK",
+        "7": "DAC_SYNC_N",
+        "8": "DAC_SDIN",
+        "9": "CH1_VSET",
+        "10": "DAC_VREF"
+      },
+      "pins": [
+        [
+          1,
+          "VDD",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "RSTSEL",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "AGND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "SPI2C",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "SCLK",
+          "input",
+          "L"
+        ],
+        [
+          7,
+          "SYNC_N",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "SDIN",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "VOUTA",
+          "output",
+          "R"
+        ],
+        [
+          9,
+          "VOUTB",
+          "output",
+          "R"
+        ],
+        [
+          10,
+          "VREFIO",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        160.02,
+        60.96
+      ],
+      "sheet": "root",
+      "description": "DRX10 has ten lands and no invented exposed-pad pin; internal reference; gain register0x0103",
+      "source_url": "https://www.ti.com/lit/ds/symlink/dac80502.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "C1",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_5",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        137.16,
+        111.76
+      ],
+      "sheet": "root",
+      "description": "DAC local supply/reference bypass; effective reference capacitance >=150nF",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C2",
+      "value": "4.7u 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_5",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        198.12,
+        111.76
+      ],
+      "sheet": "root",
+      "description": "DAC local supply/reference bypass; effective reference capacitance >=150nF",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C3",
+      "value": "220n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "DAC_VREF",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        259.08,
+        111.76
+      ],
+      "sheet": "root",
+      "description": "DAC local supply/reference bypass; effective reference capacitance >=150nF",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R1",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "DAC_SCLK",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        111.76,
+        149.86
+      ],
+      "sheet": "root",
+      "description": "SPI clock default low",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R2",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "DAC_SDIN",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        172.72,
+        149.86
+      ],
+      "sheet": "root",
+      "description": "SPI data default low",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R3",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "DAC_SYNC_N",
+        "2": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        111.76,
+        180.34
+      ],
+      "sheet": "root",
+      "description": "SPI inactive pull-up to host3.3V domain; no5V backdrive to MCU",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R4",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "RESET_READY",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        172.72,
+        180.34
+      ],
+      "sheet": "root",
+      "description": "Startup must remain inhibited until externally qualified",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R5",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "RAILS_QUALIFIED",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        50.8,
+        180.34
+      ],
+      "sheet": "root",
+      "description": "Disconnected rail supervisor cannot admit output",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "U100",
+      "value": "OPA192IDBVR",
+      "kind": "opa",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH0_SERVO",
+        "2": "GND",
+        "3": "CH0_VSET",
+        "4": "CH0_FB",
+        "5": "VA_15"
+      },
+      "pins": [
+        [
+          3,
+          "IN+",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "IN-",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "V+",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "V-",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "OUT",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        101.6,
+        60.96
+      ],
+      "sheet": "source0",
+      "description": "Current servo; compensation and startup/overload performance remain conditional",
+      "source_url": "https://www.ti.com/lit/ds/symlink/opa192.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "Q100",
+      "value": "BSP89H6327XTSA1",
+      "kind": "sink",
+      "footprint": "ato_drv:BSP89_PG-SOT223-4_DrainTab",
+      "nets": {
+        "1": "CH0_GATE",
+        "2": "CH0_SINK_D",
+        "3": "CH0_SENSE_K",
+        "4": "CH0_SINK_D"
+      },
+      "pins": [
+        [
+          1,
+          "GATE",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "DRAIN",
+          "passive",
+          "R"
+        ],
+        [
+          4,
+          "DRAIN_TAB",
+          "passive",
+          "R"
+        ],
+        [
+          3,
+          "SOURCE",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        60.96
+      ],
+      "sheet": "source0",
+      "description": "Linear sink; numbered drain tab4 and drain lead2 deliberately share drain net",
+      "source_url": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-bsp89-datasheet-en.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U101",
+      "value": "TMUX7212PWR",
+      "kind": "bridge",
+      "footprint": "ato_drv:TSSOP-16_4.4x5mm_P0.65mm",
+      "nets": {
+        "1": "CH0_DIAG_P",
+        "2": "CH0_A_BR",
+        "3": "VH_24",
+        "4": "GND",
+        "5": "GND",
+        "6": "CH0_SINK_D",
+        "7": "CH0_B_BR",
+        "8": "CH0_DIAG_P",
+        "9": "CH0_DIAG_M",
+        "10": "CH0_A_BR",
+        "11": "CH0_SINK_D",
+        "12": null,
+        "13": "VH_24",
+        "14": "VH_24",
+        "15": "CH0_B_BR",
+        "16": "CH0_DIAG_M"
+      },
+      "pins": [
+        [
+          1,
+          "SEL1",
+          "input",
+          "L"
+        ],
+        [
+          16,
+          "SEL2",
+          "input",
+          "L"
+        ],
+        [
+          9,
+          "SEL3",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "SEL4",
+          "input",
+          "L"
+        ],
+        [
+          13,
+          "VDD",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "VSS",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "D1_A",
+          "passive",
+          "R"
+        ],
+        [
+          3,
+          "S1_HV",
+          "passive",
+          "R"
+        ],
+        [
+          15,
+          "D2_B",
+          "passive",
+          "R"
+        ],
+        [
+          14,
+          "S2_HV",
+          "passive",
+          "R"
+        ],
+        [
+          10,
+          "D3_A",
+          "passive",
+          "R"
+        ],
+        [
+          11,
+          "S3_SINK",
+          "passive",
+          "R"
+        ],
+        [
+          7,
+          "D4_B",
+          "passive",
+          "R"
+        ],
+        [
+          6,
+          "S4_SINK",
+          "passive",
+          "R"
+        ],
+        [
+          12,
+          "NC",
+          "no_connect",
+          "R"
+        ]
+      ],
+      "xy": [
+        312.42,
+        63.5
+      ],
+      "sheet": "source0",
+      "description": "Restricted24Vbridge: diagonal1/4positive,2/3negative; alloff is not fail-open rail isolation",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tmux7212.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U102",
+      "value": "TMUX6219DGKR",
+      "kind": "mux",
+      "footprint": "ato_drv:VSSOP-8_2.3x2mm_P0.5mm",
+      "nets": {
+        "1": "CH0_GATE_SW",
+        "2": "GND",
+        "3": "GND",
+        "4": "VA_15",
+        "5": "VA_15",
+        "6": "CH0_RUN",
+        "7": "GND",
+        "8": "CH0_SERVO"
+      },
+      "pins": [
+        [
+          5,
+          "EN",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "SEL_RUN",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "VDD",
+          "power_in",
+          "L"
+        ],
+        [
+          7,
+          "VSS",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "D",
+          "passive",
+          "R"
+        ],
+        [
+          2,
+          "S1_OFF",
+          "passive",
+          "R"
+        ],
+        [
+          8,
+          "S2_RUN",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        101.6,
+        132.08
+      ],
+      "sheet": "source0",
+      "description": "ENhigh15V; RUNlow selectsS1ground, RUNhigh selectsS2servo; passive gate pulldown remains",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tmux6219.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U103",
+      "value": "TMUX6219DGKR",
+      "kind": "mux",
+      "footprint": "ato_drv:VSSOP-8_2.3x2mm_P0.5mm",
+      "nets": {
+        "1": "CH0_FB",
+        "2": "CH0_SERVO",
+        "3": "GND",
+        "4": "VA_15",
+        "5": "VA_15",
+        "6": "CH0_RUN",
+        "7": "GND",
+        "8": "CH0_SENSE_K"
+      },
+      "pins": [
+        [
+          5,
+          "EN",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "SEL_RUN",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "VDD",
+          "power_in",
+          "L"
+        ],
+        [
+          7,
+          "VSS",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "D",
+          "passive",
+          "R"
+        ],
+        [
+          2,
+          "S1_OFF",
+          "passive",
+          "R"
+        ],
+        [
+          8,
+          "S2_RUN",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        132.08
+      ],
+      "sheet": "source0",
+      "description": "RUNlow selects unity local feedback, RUNhigh Kelvin feedback; skew/stuck-path study required",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tmux6219.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "J100",
+      "value": "EXTERNAL ROUTER / MONITOR",
+      "kind": "J",
+      "footprint": "ato_drv:PinHeader_1x04_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH0_A_BR",
+        "2": "CH0_B_BR",
+        "3": "CH0_SENSE_K",
+        "4": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        355.6,
+        144.78
+      ],
+      "sheet": "source0",
+      "description": "Artificial loadA via future router; B_BR connects existingmonitorRETURN_DRIVER; external2ohmmonitor shunt thenloadB",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R100",
+      "value": "100R 0.1% LOW TCR",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_SENSE_K",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        66.04,
+        195.58
+      ],
+      "sheet": "source0",
+      "description": "Feedback resistor; exact passiveMPN/thermalrating unselected; Kelvin sense/layout required",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R101",
+      "value": "330R",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_GATE_SW",
+        "2": "CH0_GATE"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        157.48,
+        195.58
+      ],
+      "sheet": "source0",
+      "description": "Provisional gate resistor; mux clamp-current and repeated pulse stress unqualified",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R102",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_GATE",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        248.92,
+        195.58
+      ],
+      "sheet": "source0",
+      "description": "Passive gate default on loss of auxrail; not terminal isolation",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C100",
+      "value": "DNP 10p C0G",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "CH0_SERVO",
+        "2": "CH0_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        340.36,
+        195.58
+      ],
+      "sheet": "source0",
+      "description": "Reserved compensation footprint, not populated/stablebandwidth claim",
+      "source_url": "",
+      "dnp": true
+    },
+    {
+      "ref": "C101",
+      "value": "100n 25V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VA_15",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        45.72,
+        233.68
+      ],
+      "sheet": "source0",
+      "description": "Servo bypass",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C102",
+      "value": "100n 25V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VA_15",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        121.92,
+        233.68
+      ],
+      "sheet": "source0",
+      "description": "Gate mux bypass",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C103",
+      "value": "100n 25V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VA_15",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        198.12,
+        233.68
+      ],
+      "sheet": "source0",
+      "description": "Feedback mux bypass",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C104",
+      "value": "100n 50V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VH_24",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        274.32000000000005,
+        233.68
+      ],
+      "sheet": "source0",
+      "description": "Bridge bypass",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C105",
+      "value": "1u 50V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VH_24",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        350.52,
+        233.68
+      ],
+      "sheet": "source0",
+      "description": "Bridge local reservoir; effective capacitance/rail transient requiresreview",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R103",
+      "value": "22k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_DIAG_P",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        264.16
+      ],
+      "sheet": "source0",
+      "description": "BothpositiveSELinputs pulldown on sharedsame-net diagonal",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R104",
+      "value": "22k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_DIAG_M",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        152.4,
+        264.16
+      ],
+      "sheet": "source0",
+      "description": "BothnegativeSELinputs pulldown on sharedsame-net diagonal",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R105",
+      "value": "22k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_RUN",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        248.92,
+        264.16
+      ],
+      "sheet": "source0",
+      "description": "Mux selectors defaultinhibited iflogicunpowered; startupsequence still external",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "U300",
+      "value": "LTC6993HS6-1#TRPBF",
+      "kind": "timer",
+      "footprint": "ato_drv:TSOT-23-6",
+      "nets": {
+        "1": "CH0_REQUEST",
+        "2": "GND",
+        "3": "CH0_T_SET",
+        "4": "CH0_T_DIV",
+        "5": "VDD_3V3",
+        "6": "CH0_TIMER"
+      },
+      "pins": [
+        [
+          1,
+          "TRIG_RAW_REQ",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "SET",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "DIV",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "V+",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          6,
+          "OUT",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        55.88
+      ],
+      "sheet": "permission0",
+      "description": "Raw request edge; non-retriggerable -1; timer clocks never gated by readiness",
+      "source_url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc6993-6993-1-6993-2-6993-4.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U301",
+      "value": "SN74LVC1G86DBVR",
+      "kind": "xor",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH0_PLUS_RAW",
+        "2": "CH0_MINUS_RAW",
+        "3": "GND",
+        "4": "CH0_VALID_DIR",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        147.32,
+        55.88
+      ],
+      "sheet": "permission0",
+      "description": "Exactly one raw direction; invalid state immediately dropsBASE_GOOD",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g86.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U302",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_drv:SOT-23-6",
+      "nets": {
+        "1": "CH0_MON_PERMIT",
+        "2": "GND",
+        "3": "CH0_EXT_SUP_OK",
+        "4": "CH0_HEALTH_A",
+        "5": "VDD_3V3",
+        "6": "CH0_ROUTE_LOCKED"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        238.76,
+        55.88
+      ],
+      "sheet": "permission0",
+      "description": "External current guard, independent supervision and route ownership",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U303",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_drv:SOT-23-6",
+      "nets": {
+        "1": "RESET_READY",
+        "2": "GND",
+        "3": "RAILS_QUALIFIED",
+        "4": "CH0_HEALTH_B",
+        "5": "VDD_3V3",
+        "6": "CH0_VALID_DIR"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        330.2,
+        55.88
+      ],
+      "sheet": "permission0",
+      "description": "Qualified startup/rails and direction; these externalports are not populatedsupervisors",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U304",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH0_HEALTH_A",
+        "2": "CH0_HEALTH_B",
+        "3": "GND",
+        "4": "CH0_BASE_GOOD",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        421.64,
+        55.88
+      ],
+      "sheet": "permission0",
+      "description": "BASE_GOOD excludesstickyBLOCK/TIMEOUT soexplicitrearmcan clear them",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U305",
+      "value": "SN74LVC1G04DBVR",
+      "kind": "inv",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": null,
+        "2": "CH0_REQUEST",
+        "3": "GND",
+        "4": "CH0_REQ_N",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          2,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "NC",
+          "no_connect",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        513.08,
+        55.88
+      ],
+      "sheet": "permission0",
+      "description": "Normal request end contributes to consumed-admission latch",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U306",
+      "value": "SN74LVC1G04DBVR",
+      "kind": "inv",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": null,
+        "2": "CH0_TIMER",
+        "3": "GND",
+        "4": "CH0_TIMER_N",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          2,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "NC",
+          "no_connect",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        111.76
+      ],
+      "sheet": "permission0",
+      "description": "Risinginvertedtimerclocks stickytimeout atwindowend",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U307",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH0_TIMER",
+        "2": "CH0_REQ_N",
+        "3": "GND",
+        "4": "CH0_STOP_CONSUME",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        147.32,
+        111.76
+      ],
+      "sheet": "permission0",
+      "description": "Request ending duringtimer consumesadmission; notclassifiedas timeout",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U308",
+      "value": "SN74LVC1G04DBVR",
+      "kind": "inv",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": null,
+        "2": "CH0_STOP_CONSUME",
+        "3": "GND",
+        "4": "CH0_STOP_N",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          2,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "NC",
+          "no_connect",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        238.76,
+        111.76
+      ],
+      "sheet": "permission0",
+      "description": "Active-low consumedadmissioncondition",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U309",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH0_BASE_GOOD",
+        "2": "CH0_STOP_N",
+        "3": "GND",
+        "4": "CH0_BLOCK_PRE_N",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        330.2,
+        111.76
+      ],
+      "sheet": "permission0",
+      "description": "Asyncblockset onfault ornormalend; recovery cannot clearblock",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U310",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_drv:SOT-23-6",
+      "nets": {
+        "1": "CH0_REARM",
+        "2": "GND",
+        "3": "CH0_BASE_GOOD",
+        "4": "CH0_REARM_A",
+        "5": "VDD_3V3",
+        "6": "CH0_QUIESCENT_OK"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        421.64,
+        111.76
+      ],
+      "sheet": "permission0",
+      "description": "Externallydeliberaterearm mustbe stableandnonoverlap; monitorrearm independent",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U311",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_drv:SOT-23-6",
+      "nets": {
+        "1": "CH0_REARM_A",
+        "2": "GND",
+        "3": "CH0_REQ_N",
+        "4": "CH0_SAFE_REARM",
+        "5": "VDD_3V3",
+        "6": "CH0_TIMER_N"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        513.08,
+        111.76
+      ],
+      "sheet": "permission0",
+      "description": "Rearm onlyrequestLOW,timerLOW,observedquiescent andallhealthgood",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U312",
+      "value": "SN74LVC1G04DBVR",
+      "kind": "inv",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": null,
+        "2": "CH0_SAFE_REARM",
+        "3": "GND",
+        "4": "CH0_LATCH_CLR_N",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          2,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "NC",
+          "no_connect",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        167.64000000000001
+      ],
+      "sheet": "permission0",
+      "description": "Onlyqualifiedexplicitrearm clearsdriverblock/timeout",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U313",
+      "value": "SN74LVC1G74DCUR",
+      "kind": "ff",
+      "footprint": "ato_drv:VSSOP-8_2.3x2mm_P0.5mm",
+      "nets": {
+        "1": "GND",
+        "2": "GND",
+        "3": "CH0_BLOCK_N",
+        "4": "GND",
+        "5": "CH0_BLOCK",
+        "6": "CH0_LATCH_CLR_N",
+        "7": "CH0_BLOCK_PRE_N",
+        "8": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "CLK",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "D",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "CLR_N",
+          "input",
+          "L"
+        ],
+        [
+          7,
+          "PRE_N",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "Q",
+          "output",
+          "R"
+        ],
+        [
+          3,
+          "Q_N",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        147.32,
+        167.64000000000001
+      ],
+      "sheet": "permission0",
+      "description": "AsyncPRE setsstickyadmissionblock; asyncCLRqualifiedrearm; no simultaneousactivecontrolsadmitted",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U314",
+      "value": "SN74LVC1G32DBVR",
+      "kind": "or",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH0_TIMEOUT",
+        "2": "CH0_REQUEST",
+        "3": "GND",
+        "4": "CH0_TIMEOUT_D",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        238.76,
+        167.64000000000001
+      ],
+      "sheet": "permission0",
+      "description": "StickyOR avoids a later normalphase clearingrecordedtimeout",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U315",
+      "value": "SN74LVC1G74DCUR",
+      "kind": "ff",
+      "footprint": "ato_drv:VSSOP-8_2.3x2mm_P0.5mm",
+      "nets": {
+        "1": "CH0_TIMER_N",
+        "2": "CH0_TIMEOUT_D",
+        "3": "CH0_TIMEOUT_N",
+        "4": "GND",
+        "5": "CH0_TIMEOUT",
+        "6": "CH0_LATCH_CLR_N",
+        "7": "VDD_3V3",
+        "8": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "CLK",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "D",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "CLR_N",
+          "input",
+          "L"
+        ],
+        [
+          7,
+          "PRE_N",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "Q",
+          "output",
+          "R"
+        ],
+        [
+          3,
+          "Q_N",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        330.2,
+        167.64000000000001
+      ],
+      "sheet": "permission0",
+      "description": "At timerfall latchfaultifrequestheld; directtimergate inhibitsregardlessofsetup/holdclassification",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U316",
+      "value": "SN74LVC1G74DCUR",
+      "kind": "ff",
+      "footprint": "ato_drv:VSSOP-8_2.3x2mm_P0.5mm",
+      "nets": {
+        "1": "CH0_SAFE_REARM",
+        "2": "CH0_PLUS_RAW",
+        "3": "CH0_MINUS_LATCHED",
+        "4": "GND",
+        "5": "CH0_PLUS_LATCHED",
+        "6": "RESET_READY",
+        "7": "VDD_3V3",
+        "8": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "CLK",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "D",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "CLR_N",
+          "input",
+          "L"
+        ],
+        [
+          7,
+          "PRE_N",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "Q",
+          "output",
+          "R"
+        ],
+        [
+          3,
+          "Q_N",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        421.64,
+        167.64000000000001
+      ],
+      "sheet": "permission0",
+      "description": "Qualifiedrearmcapturesdirectionwhileoff; externalrearmmustreleaseandsettlebeforefreshrequest",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U317",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_drv:SOT-23-6",
+      "nets": {
+        "1": "CH0_BASE_GOOD",
+        "2": "GND",
+        "3": "CH0_BLOCK_N",
+        "4": "CH0_GOOD",
+        "5": "VDD_3V3",
+        "6": "CH0_TIMEOUT_N"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        513.08,
+        167.64000000000001
+      ],
+      "sheet": "permission0",
+      "description": "Permission includesboth stickyblockandstickytimeout",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U318",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_drv:SOT-23-6",
+      "nets": {
+        "1": "CH0_REQUEST",
+        "2": "GND",
+        "3": "CH0_TIMER",
+        "4": "CH0_RUN",
+        "5": "VDD_3V3",
+        "6": "CH0_GOOD"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        223.52
+      ],
+      "sheet": "permission0",
+      "description": "TimerdirectlycutsRUN; nofirmwarecanextendactivewindow",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U319",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH0_RUN",
+        "2": "CH0_PLUS_LATCHED",
+        "3": "GND",
+        "4": "CH0_DIAG_P",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        147.32,
+        223.52
+      ],
+      "sheet": "permission0",
+      "description": "Capturedpositivephase drives bridgeSEL1/SEL4",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U320",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH0_RUN",
+        "2": "CH0_MINUS_LATCHED",
+        "3": "GND",
+        "4": "CH0_DIAG_M",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        238.76,
+        223.52
+      ],
+      "sheet": "permission0",
+      "description": "Capturednegativephase drives bridgeSEL2/SEL3",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "C300",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        43.18,
+        279.4
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U300",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C301",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        124.46000000000001,
+        279.4
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U301",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C302",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        279.4
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U302",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C303",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        287.02,
+        279.4
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U303",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C304",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        368.3,
+        279.4
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U304",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C305",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        449.58,
+        279.4
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U305",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C306",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        530.86,
+        279.4
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U306",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C307",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        43.18,
+        304.79999999999995
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U307",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C308",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        124.46000000000001,
+        304.79999999999995
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U308",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C309",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        304.79999999999995
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U309",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C310",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        287.02,
+        304.79999999999995
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U310",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C311",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        368.3,
+        304.79999999999995
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U311",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C312",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        449.58,
+        304.79999999999995
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U312",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C313",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        530.86,
+        304.79999999999995
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U313",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C314",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        43.18,
+        330.2
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U314",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C315",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        124.46000000000001,
+        330.2
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U315",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C316",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        330.2
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U316",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C317",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        287.02,
+        330.2
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U317",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C318",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        368.3,
+        330.2
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U318",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C319",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        449.58,
+        330.2
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U319",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C320",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        530.86,
+        330.2
+      ],
+      "sheet": "permission0",
+      "description": "Local bypass for U320",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R300",
+      "value": "175.8k 0.1%",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_T_SET",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        43.18,
+        355.59999999999997
+      ],
+      "sheet": "permission0",
+      "description": "FixedtimerRSET; temperaturedriftandstartuptimequalificationexternal",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R301",
+      "value": "976k 0.1%",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "CH0_T_DIV"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        124.46000000000001,
+        355.59999999999997
+      ],
+      "sheet": "permission0",
+      "description": "DIVcode2 topresistor",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R302",
+      "value": "182k 0.1%",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_T_DIV",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        355.59999999999997
+      ],
+      "sheet": "permission0",
+      "description": "DIVcode2 bottomresistor",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R303",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_REQUEST",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        287.02,
+        355.59999999999997
+      ],
+      "sheet": "permission0",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R304",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_PLUS_RAW",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        368.3,
+        355.59999999999997
+      ],
+      "sheet": "permission0",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R305",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_MINUS_RAW",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        449.58,
+        355.59999999999997
+      ],
+      "sheet": "permission0",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R306",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_REARM",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        530.86,
+        355.59999999999997
+      ],
+      "sheet": "permission0",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R307",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_MON_PERMIT",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        43.18,
+        381.0
+      ],
+      "sheet": "permission0",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R308",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_EXT_SUP_OK",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        124.46000000000001,
+        381.0
+      ],
+      "sheet": "permission0",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R309",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_ROUTE_LOCKED",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        381.0
+      ],
+      "sheet": "permission0",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R310",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_QUIESCENT_OK",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        287.02,
+        381.0
+      ],
+      "sheet": "permission0",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "U200",
+      "value": "OPA192IDBVR",
+      "kind": "opa",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH1_SERVO",
+        "2": "GND",
+        "3": "CH1_VSET",
+        "4": "CH1_FB",
+        "5": "VA_15"
+      },
+      "pins": [
+        [
+          3,
+          "IN+",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "IN-",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "V+",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "V-",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "OUT",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        101.6,
+        60.96
+      ],
+      "sheet": "source1",
+      "description": "Current servo; compensation and startup/overload performance remain conditional",
+      "source_url": "https://www.ti.com/lit/ds/symlink/opa192.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "Q200",
+      "value": "BSP89H6327XTSA1",
+      "kind": "sink",
+      "footprint": "ato_drv:BSP89_PG-SOT223-4_DrainTab",
+      "nets": {
+        "1": "CH1_GATE",
+        "2": "CH1_SINK_D",
+        "3": "CH1_SENSE_K",
+        "4": "CH1_SINK_D"
+      },
+      "pins": [
+        [
+          1,
+          "GATE",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "DRAIN",
+          "passive",
+          "R"
+        ],
+        [
+          4,
+          "DRAIN_TAB",
+          "passive",
+          "R"
+        ],
+        [
+          3,
+          "SOURCE",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        60.96
+      ],
+      "sheet": "source1",
+      "description": "Linear sink; numbered drain tab4 and drain lead2 deliberately share drain net",
+      "source_url": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-bsp89-datasheet-en.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U201",
+      "value": "TMUX7212PWR",
+      "kind": "bridge",
+      "footprint": "ato_drv:TSSOP-16_4.4x5mm_P0.65mm",
+      "nets": {
+        "1": "CH1_DIAG_P",
+        "2": "CH1_A_BR",
+        "3": "VH_24",
+        "4": "GND",
+        "5": "GND",
+        "6": "CH1_SINK_D",
+        "7": "CH1_B_BR",
+        "8": "CH1_DIAG_P",
+        "9": "CH1_DIAG_M",
+        "10": "CH1_A_BR",
+        "11": "CH1_SINK_D",
+        "12": null,
+        "13": "VH_24",
+        "14": "VH_24",
+        "15": "CH1_B_BR",
+        "16": "CH1_DIAG_M"
+      },
+      "pins": [
+        [
+          1,
+          "SEL1",
+          "input",
+          "L"
+        ],
+        [
+          16,
+          "SEL2",
+          "input",
+          "L"
+        ],
+        [
+          9,
+          "SEL3",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "SEL4",
+          "input",
+          "L"
+        ],
+        [
+          13,
+          "VDD",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "VSS",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "D1_A",
+          "passive",
+          "R"
+        ],
+        [
+          3,
+          "S1_HV",
+          "passive",
+          "R"
+        ],
+        [
+          15,
+          "D2_B",
+          "passive",
+          "R"
+        ],
+        [
+          14,
+          "S2_HV",
+          "passive",
+          "R"
+        ],
+        [
+          10,
+          "D3_A",
+          "passive",
+          "R"
+        ],
+        [
+          11,
+          "S3_SINK",
+          "passive",
+          "R"
+        ],
+        [
+          7,
+          "D4_B",
+          "passive",
+          "R"
+        ],
+        [
+          6,
+          "S4_SINK",
+          "passive",
+          "R"
+        ],
+        [
+          12,
+          "NC",
+          "no_connect",
+          "R"
+        ]
+      ],
+      "xy": [
+        312.42,
+        63.5
+      ],
+      "sheet": "source1",
+      "description": "Restricted24Vbridge: diagonal1/4positive,2/3negative; alloff is not fail-open rail isolation",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tmux7212.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U202",
+      "value": "TMUX6219DGKR",
+      "kind": "mux",
+      "footprint": "ato_drv:VSSOP-8_2.3x2mm_P0.5mm",
+      "nets": {
+        "1": "CH1_GATE_SW",
+        "2": "GND",
+        "3": "GND",
+        "4": "VA_15",
+        "5": "VA_15",
+        "6": "CH1_RUN",
+        "7": "GND",
+        "8": "CH1_SERVO"
+      },
+      "pins": [
+        [
+          5,
+          "EN",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "SEL_RUN",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "VDD",
+          "power_in",
+          "L"
+        ],
+        [
+          7,
+          "VSS",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "D",
+          "passive",
+          "R"
+        ],
+        [
+          2,
+          "S1_OFF",
+          "passive",
+          "R"
+        ],
+        [
+          8,
+          "S2_RUN",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        101.6,
+        132.08
+      ],
+      "sheet": "source1",
+      "description": "ENhigh15V; RUNlow selectsS1ground, RUNhigh selectsS2servo; passive gate pulldown remains",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tmux6219.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U203",
+      "value": "TMUX6219DGKR",
+      "kind": "mux",
+      "footprint": "ato_drv:VSSOP-8_2.3x2mm_P0.5mm",
+      "nets": {
+        "1": "CH1_FB",
+        "2": "CH1_SERVO",
+        "3": "GND",
+        "4": "VA_15",
+        "5": "VA_15",
+        "6": "CH1_RUN",
+        "7": "GND",
+        "8": "CH1_SENSE_K"
+      },
+      "pins": [
+        [
+          5,
+          "EN",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "SEL_RUN",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "VDD",
+          "power_in",
+          "L"
+        ],
+        [
+          7,
+          "VSS",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "D",
+          "passive",
+          "R"
+        ],
+        [
+          2,
+          "S1_OFF",
+          "passive",
+          "R"
+        ],
+        [
+          8,
+          "S2_RUN",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        132.08
+      ],
+      "sheet": "source1",
+      "description": "RUNlow selects unity local feedback, RUNhigh Kelvin feedback; skew/stuck-path study required",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tmux6219.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "J200",
+      "value": "EXTERNAL ROUTER / MONITOR",
+      "kind": "J",
+      "footprint": "ato_drv:PinHeader_1x04_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH1_A_BR",
+        "2": "CH1_B_BR",
+        "3": "CH1_SENSE_K",
+        "4": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        355.6,
+        144.78
+      ],
+      "sheet": "source1",
+      "description": "Artificial loadA via future router; B_BR connects existingmonitorRETURN_DRIVER; external2ohmmonitor shunt thenloadB",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R200",
+      "value": "100R 0.1% LOW TCR",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_SENSE_K",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        66.04,
+        195.58
+      ],
+      "sheet": "source1",
+      "description": "Feedback resistor; exact passiveMPN/thermalrating unselected; Kelvin sense/layout required",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R201",
+      "value": "330R",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_GATE_SW",
+        "2": "CH1_GATE"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        157.48,
+        195.58
+      ],
+      "sheet": "source1",
+      "description": "Provisional gate resistor; mux clamp-current and repeated pulse stress unqualified",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R202",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_GATE",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        248.92,
+        195.58
+      ],
+      "sheet": "source1",
+      "description": "Passive gate default on loss of auxrail; not terminal isolation",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C200",
+      "value": "DNP 10p C0G",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "CH1_SERVO",
+        "2": "CH1_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        340.36,
+        195.58
+      ],
+      "sheet": "source1",
+      "description": "Reserved compensation footprint, not populated/stablebandwidth claim",
+      "source_url": "",
+      "dnp": true
+    },
+    {
+      "ref": "C201",
+      "value": "100n 25V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VA_15",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        45.72,
+        233.68
+      ],
+      "sheet": "source1",
+      "description": "Servo bypass",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C202",
+      "value": "100n 25V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VA_15",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        121.92,
+        233.68
+      ],
+      "sheet": "source1",
+      "description": "Gate mux bypass",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C203",
+      "value": "100n 25V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VA_15",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        198.12,
+        233.68
+      ],
+      "sheet": "source1",
+      "description": "Feedback mux bypass",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C204",
+      "value": "100n 50V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VH_24",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        274.32000000000005,
+        233.68
+      ],
+      "sheet": "source1",
+      "description": "Bridge bypass",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C205",
+      "value": "1u 50V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VH_24",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        350.52,
+        233.68
+      ],
+      "sheet": "source1",
+      "description": "Bridge local reservoir; effective capacitance/rail transient requiresreview",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R203",
+      "value": "22k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_DIAG_P",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        264.16
+      ],
+      "sheet": "source1",
+      "description": "BothpositiveSELinputs pulldown on sharedsame-net diagonal",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R204",
+      "value": "22k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_DIAG_M",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        152.4,
+        264.16
+      ],
+      "sheet": "source1",
+      "description": "BothnegativeSELinputs pulldown on sharedsame-net diagonal",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R205",
+      "value": "22k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_RUN",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        248.92,
+        264.16
+      ],
+      "sheet": "source1",
+      "description": "Mux selectors defaultinhibited iflogicunpowered; startupsequence still external",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "U400",
+      "value": "LTC6993HS6-1#TRPBF",
+      "kind": "timer",
+      "footprint": "ato_drv:TSOT-23-6",
+      "nets": {
+        "1": "CH1_REQUEST",
+        "2": "GND",
+        "3": "CH1_T_SET",
+        "4": "CH1_T_DIV",
+        "5": "VDD_3V3",
+        "6": "CH1_TIMER"
+      },
+      "pins": [
+        [
+          1,
+          "TRIG_RAW_REQ",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "SET",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "DIV",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "V+",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          6,
+          "OUT",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        55.88
+      ],
+      "sheet": "permission1",
+      "description": "Raw request edge; non-retriggerable -1; timer clocks never gated by readiness",
+      "source_url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc6993-6993-1-6993-2-6993-4.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U401",
+      "value": "SN74LVC1G86DBVR",
+      "kind": "xor",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH1_PLUS_RAW",
+        "2": "CH1_MINUS_RAW",
+        "3": "GND",
+        "4": "CH1_VALID_DIR",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        147.32,
+        55.88
+      ],
+      "sheet": "permission1",
+      "description": "Exactly one raw direction; invalid state immediately dropsBASE_GOOD",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g86.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U402",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_drv:SOT-23-6",
+      "nets": {
+        "1": "CH1_MON_PERMIT",
+        "2": "GND",
+        "3": "CH1_EXT_SUP_OK",
+        "4": "CH1_HEALTH_A",
+        "5": "VDD_3V3",
+        "6": "CH1_ROUTE_LOCKED"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        238.76,
+        55.88
+      ],
+      "sheet": "permission1",
+      "description": "External current guard, independent supervision and route ownership",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U403",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_drv:SOT-23-6",
+      "nets": {
+        "1": "RESET_READY",
+        "2": "GND",
+        "3": "RAILS_QUALIFIED",
+        "4": "CH1_HEALTH_B",
+        "5": "VDD_3V3",
+        "6": "CH1_VALID_DIR"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        330.2,
+        55.88
+      ],
+      "sheet": "permission1",
+      "description": "Qualified startup/rails and direction; these externalports are not populatedsupervisors",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U404",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH1_HEALTH_A",
+        "2": "CH1_HEALTH_B",
+        "3": "GND",
+        "4": "CH1_BASE_GOOD",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        421.64,
+        55.88
+      ],
+      "sheet": "permission1",
+      "description": "BASE_GOOD excludesstickyBLOCK/TIMEOUT soexplicitrearmcan clear them",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U405",
+      "value": "SN74LVC1G04DBVR",
+      "kind": "inv",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": null,
+        "2": "CH1_REQUEST",
+        "3": "GND",
+        "4": "CH1_REQ_N",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          2,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "NC",
+          "no_connect",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        513.08,
+        55.88
+      ],
+      "sheet": "permission1",
+      "description": "Normal request end contributes to consumed-admission latch",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U406",
+      "value": "SN74LVC1G04DBVR",
+      "kind": "inv",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": null,
+        "2": "CH1_TIMER",
+        "3": "GND",
+        "4": "CH1_TIMER_N",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          2,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "NC",
+          "no_connect",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        111.76
+      ],
+      "sheet": "permission1",
+      "description": "Risinginvertedtimerclocks stickytimeout atwindowend",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U407",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH1_TIMER",
+        "2": "CH1_REQ_N",
+        "3": "GND",
+        "4": "CH1_STOP_CONSUME",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        147.32,
+        111.76
+      ],
+      "sheet": "permission1",
+      "description": "Request ending duringtimer consumesadmission; notclassifiedas timeout",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U408",
+      "value": "SN74LVC1G04DBVR",
+      "kind": "inv",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": null,
+        "2": "CH1_STOP_CONSUME",
+        "3": "GND",
+        "4": "CH1_STOP_N",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          2,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "NC",
+          "no_connect",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        238.76,
+        111.76
+      ],
+      "sheet": "permission1",
+      "description": "Active-low consumedadmissioncondition",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U409",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH1_BASE_GOOD",
+        "2": "CH1_STOP_N",
+        "3": "GND",
+        "4": "CH1_BLOCK_PRE_N",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        330.2,
+        111.76
+      ],
+      "sheet": "permission1",
+      "description": "Asyncblockset onfault ornormalend; recovery cannot clearblock",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U410",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_drv:SOT-23-6",
+      "nets": {
+        "1": "CH1_REARM",
+        "2": "GND",
+        "3": "CH1_BASE_GOOD",
+        "4": "CH1_REARM_A",
+        "5": "VDD_3V3",
+        "6": "CH1_QUIESCENT_OK"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        421.64,
+        111.76
+      ],
+      "sheet": "permission1",
+      "description": "Externallydeliberaterearm mustbe stableandnonoverlap; monitorrearm independent",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U411",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_drv:SOT-23-6",
+      "nets": {
+        "1": "CH1_REARM_A",
+        "2": "GND",
+        "3": "CH1_REQ_N",
+        "4": "CH1_SAFE_REARM",
+        "5": "VDD_3V3",
+        "6": "CH1_TIMER_N"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        513.08,
+        111.76
+      ],
+      "sheet": "permission1",
+      "description": "Rearm onlyrequestLOW,timerLOW,observedquiescent andallhealthgood",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U412",
+      "value": "SN74LVC1G04DBVR",
+      "kind": "inv",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": null,
+        "2": "CH1_SAFE_REARM",
+        "3": "GND",
+        "4": "CH1_LATCH_CLR_N",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          2,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "NC",
+          "no_connect",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        167.64000000000001
+      ],
+      "sheet": "permission1",
+      "description": "Onlyqualifiedexplicitrearm clearsdriverblock/timeout",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U413",
+      "value": "SN74LVC1G74DCUR",
+      "kind": "ff",
+      "footprint": "ato_drv:VSSOP-8_2.3x2mm_P0.5mm",
+      "nets": {
+        "1": "GND",
+        "2": "GND",
+        "3": "CH1_BLOCK_N",
+        "4": "GND",
+        "5": "CH1_BLOCK",
+        "6": "CH1_LATCH_CLR_N",
+        "7": "CH1_BLOCK_PRE_N",
+        "8": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "CLK",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "D",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "CLR_N",
+          "input",
+          "L"
+        ],
+        [
+          7,
+          "PRE_N",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "Q",
+          "output",
+          "R"
+        ],
+        [
+          3,
+          "Q_N",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        147.32,
+        167.64000000000001
+      ],
+      "sheet": "permission1",
+      "description": "AsyncPRE setsstickyadmissionblock; asyncCLRqualifiedrearm; no simultaneousactivecontrolsadmitted",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U414",
+      "value": "SN74LVC1G32DBVR",
+      "kind": "or",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH1_TIMEOUT",
+        "2": "CH1_REQUEST",
+        "3": "GND",
+        "4": "CH1_TIMEOUT_D",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        238.76,
+        167.64000000000001
+      ],
+      "sheet": "permission1",
+      "description": "StickyOR avoids a later normalphase clearingrecordedtimeout",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U415",
+      "value": "SN74LVC1G74DCUR",
+      "kind": "ff",
+      "footprint": "ato_drv:VSSOP-8_2.3x2mm_P0.5mm",
+      "nets": {
+        "1": "CH1_TIMER_N",
+        "2": "CH1_TIMEOUT_D",
+        "3": "CH1_TIMEOUT_N",
+        "4": "GND",
+        "5": "CH1_TIMEOUT",
+        "6": "CH1_LATCH_CLR_N",
+        "7": "VDD_3V3",
+        "8": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "CLK",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "D",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "CLR_N",
+          "input",
+          "L"
+        ],
+        [
+          7,
+          "PRE_N",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "Q",
+          "output",
+          "R"
+        ],
+        [
+          3,
+          "Q_N",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        330.2,
+        167.64000000000001
+      ],
+      "sheet": "permission1",
+      "description": "At timerfall latchfaultifrequestheld; directtimergate inhibitsregardlessofsetup/holdclassification",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U416",
+      "value": "SN74LVC1G74DCUR",
+      "kind": "ff",
+      "footprint": "ato_drv:VSSOP-8_2.3x2mm_P0.5mm",
+      "nets": {
+        "1": "CH1_SAFE_REARM",
+        "2": "CH1_PLUS_RAW",
+        "3": "CH1_MINUS_LATCHED",
+        "4": "GND",
+        "5": "CH1_PLUS_LATCHED",
+        "6": "RESET_READY",
+        "7": "VDD_3V3",
+        "8": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "CLK",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "D",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "CLR_N",
+          "input",
+          "L"
+        ],
+        [
+          7,
+          "PRE_N",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "Q",
+          "output",
+          "R"
+        ],
+        [
+          3,
+          "Q_N",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        421.64,
+        167.64000000000001
+      ],
+      "sheet": "permission1",
+      "description": "Qualifiedrearmcapturesdirectionwhileoff; externalrearmmustreleaseandsettlebeforefreshrequest",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U417",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_drv:SOT-23-6",
+      "nets": {
+        "1": "CH1_BASE_GOOD",
+        "2": "GND",
+        "3": "CH1_BLOCK_N",
+        "4": "CH1_GOOD",
+        "5": "VDD_3V3",
+        "6": "CH1_TIMEOUT_N"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        513.08,
+        167.64000000000001
+      ],
+      "sheet": "permission1",
+      "description": "Permission includesboth stickyblockandstickytimeout",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U418",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_drv:SOT-23-6",
+      "nets": {
+        "1": "CH1_REQUEST",
+        "2": "GND",
+        "3": "CH1_TIMER",
+        "4": "CH1_RUN",
+        "5": "VDD_3V3",
+        "6": "CH1_GOOD"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        223.52
+      ],
+      "sheet": "permission1",
+      "description": "TimerdirectlycutsRUN; nofirmwarecanextendactivewindow",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U419",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH1_RUN",
+        "2": "CH1_PLUS_LATCHED",
+        "3": "GND",
+        "4": "CH1_DIAG_P",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        147.32,
+        223.52
+      ],
+      "sheet": "permission1",
+      "description": "Capturedpositivephase drives bridgeSEL1/SEL4",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "U420",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_drv:SOT-23-5",
+      "nets": {
+        "1": "CH1_RUN",
+        "2": "CH1_MINUS_LATCHED",
+        "3": "GND",
+        "4": "CH1_DIAG_M",
+        "5": "VDD_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        238.76,
+        223.52
+      ],
+      "sheet": "permission1",
+      "description": "Capturednegativephase drives bridgeSEL2/SEL3",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "dnp": false
+    },
+    {
+      "ref": "C400",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        43.18,
+        279.4
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U400",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C401",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        124.46000000000001,
+        279.4
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U401",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C402",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        279.4
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U402",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C403",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        287.02,
+        279.4
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U403",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C404",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        368.3,
+        279.4
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U404",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C405",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        449.58,
+        279.4
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U405",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C406",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        530.86,
+        279.4
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U406",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C407",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        43.18,
+        304.79999999999995
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U407",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C408",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        124.46000000000001,
+        304.79999999999995
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U408",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C409",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        304.79999999999995
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U409",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C410",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        287.02,
+        304.79999999999995
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U410",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C411",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        368.3,
+        304.79999999999995
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U411",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C412",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        449.58,
+        304.79999999999995
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U412",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C413",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        530.86,
+        304.79999999999995
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U413",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C414",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        43.18,
+        330.2
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U414",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C415",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        124.46000000000001,
+        330.2
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U415",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C416",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        330.2
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U416",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C417",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        287.02,
+        330.2
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U417",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C418",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        368.3,
+        330.2
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U418",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C419",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        449.58,
+        330.2
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U419",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "C420",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_drv:C_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        530.86,
+        330.2
+      ],
+      "sheet": "permission1",
+      "description": "Local bypass for U420",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R400",
+      "value": "175.8k 0.1%",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_T_SET",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        43.18,
+        355.59999999999997
+      ],
+      "sheet": "permission1",
+      "description": "FixedtimerRSET; temperaturedriftandstartuptimequalificationexternal",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R401",
+      "value": "976k 0.1%",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "VDD_3V3",
+        "2": "CH1_T_DIV"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        124.46000000000001,
+        355.59999999999997
+      ],
+      "sheet": "permission1",
+      "description": "DIVcode2 topresistor",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R402",
+      "value": "182k 0.1%",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_T_DIV",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        355.59999999999997
+      ],
+      "sheet": "permission1",
+      "description": "DIVcode2 bottomresistor",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R403",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_REQUEST",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        287.02,
+        355.59999999999997
+      ],
+      "sheet": "permission1",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R404",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_PLUS_RAW",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        368.3,
+        355.59999999999997
+      ],
+      "sheet": "permission1",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R405",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_MINUS_RAW",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        449.58,
+        355.59999999999997
+      ],
+      "sheet": "permission1",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R406",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_REARM",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        530.86,
+        355.59999999999997
+      ],
+      "sheet": "permission1",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R407",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_MON_PERMIT",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        43.18,
+        381.0
+      ],
+      "sheet": "permission1",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R408",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_EXT_SUP_OK",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        124.46000000000001,
+        381.0
+      ],
+      "sheet": "permission1",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R409",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_ROUTE_LOCKED",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        205.74,
+        381.0
+      ],
+      "sheet": "permission1",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    },
+    {
+      "ref": "R410",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_drv:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_QUIESCENT_OK",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        287.02,
+        381.0
+      ],
+      "sheet": "permission1",
+      "description": "Disconnectedexternalinput defaultsLOW; notpowersequencingproof",
+      "source_url": "",
+      "dnp": false
+    }
+  ],
+  "source_documents": {
+    "dac": "https://www.ti.com/lit/ds/symlink/dac80502.pdf",
+    "opa": "https://www.ti.com/lit/ds/symlink/opa192.pdf",
+    "sink": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-bsp89-datasheet-en.pdf",
+    "bridge": "https://www.ti.com/lit/ds/symlink/tmux7212.pdf",
+    "mux": "https://www.ti.com/lit/ds/symlink/tmux6219.pdf",
+    "timer": "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc6993-6993-1-6993-2-6993-4.pdf",
+    "and3": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+    "and2": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+    "xor": "https://www.ti.com/lit/ds/symlink/sn74lvc1g86.pdf",
+    "or": "https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf",
+    "inv": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+    "ff": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf"
+  },
+  "external_unimplemented": [
+    "qualified24V15V5V3.3V rails and powersequencing",
+    "independent monitored current/charge observation",
+    "16-contact router and dedicatedreturnmonitor2ohmshunts",
+    "terminal disconnect and biasreturn containment",
+    "differential compliance and independent chargeguard",
+    "watchdog, rail/reference health and startup supervision",
+    "observed zero-current quiescence and external routeownership",
+    "MCUfirmware/duty/profilecounter",
+    "spinal recording AFE",
+    "PCB/populatedCAD/chronicimplantqualification"
+  ],
+  "nominal": {
+    "rail_V": 24,
+    "servo_rail_V": 15,
+    "feedback_R_ohm": 100,
+    "DAC_FSR_V": 2.5,
+    "DAC_GAIN_register": 259,
+    "DAC_code": 7864,
+    "DAC_current_A": 0.0029998779296875,
+    "command_phase_s": 0.0002,
+    "command_charge_C": 5.999755859375e-07,
+    "timer_NDIV": 64,
+    "timer_RSET_ohm": 175800,
+    "timer_DIVCODE": 2,
+    "timer_nominal_s": 0.000225024,
+    "timer_min_s": 0.00021490782105599998,
+    "timer_max_s": 0.00023515998105599998
+  },
+  "control_contract": {
+    "timer_trigger": "rawREQUEST risingedge; never gatedbyreadiness",
+    "base_good": "MON_PERMIT&EXT_SUP_OK&ROUTE_LOCKED&RESET_READY&RAILS_QUALIFIED&(PLUS_RAW xor MINUS_RAW)",
+    "safe_rearm": "REARM&BASE_GOOD&QUIESCENT_OK&!REQUEST&!TIMER",
+    "block_async_pre_n": "BASE_GOOD&!(TIMER&!REQUEST)",
+    "block_async_clear_n": "!SAFE_REARM",
+    "timeout_D": "TIMEOUT|REQUEST",
+    "timeout_clock": "!TIMER risingedge",
+    "timeout_async_clear_n": "!SAFE_REARM",
+    "direction_D": "PLUS_RAW",
+    "direction_clock": "SAFE_REARM risingedge whileREQUEST=TIMER=0; releaseandsettlebeforefreshrequest",
+    "run": "REQUEST&TIMER&BASE_GOOD&!BLOCK&!TIMEOUT",
+    "positive": "RUN&PLUS_LATCHED",
+    "negative": "RUN&MINUS_LATCHED",
+    "startup": "RESET_READY heldLOW untilvalidsuppliesandtimerready; thenexplicitquiescentrearm; nohardwareguaranteeoutsidelogicsupplyvalidrange",
+    "rearm_input": "explicitstablepulse returnedLOW beforephaseedge; externalnonoverlapandsetupholdrequired; doesnotrearmmonitor"
+  }
+}

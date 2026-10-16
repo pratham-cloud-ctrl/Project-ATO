@@ -1,0 +1,1664 @@
+{
+  "schema": "ato.nominal-package-input.v1",
+  "scope": "Nominal package geometry; actual land-pattern pin coordinates; no vendor STEP or tolerance claim",
+  "height_policy": "Declared nominal visualization allocations for small ICs; TRACO and BT40F body dimensions from package descriptions. Not height/tolerance qualification.",
+  "local_model_axes": "X=footprintX,Y=-footprintY,Z=aboveboard; origin remains exact footprint datum",
+  "models": [
+    {
+      "name": "Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm",
+      "kind": "qfn",
+      "body_width_mm": 2.5,
+      "body_depth_mm": 2.5,
+      "body_height_mm": 0.8,
+      "body_center_xy_mm": [
+        0,
+        0
+      ],
+      "source_footprint": "electronics/stage4/current-driver/ato_drv.pretty/Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm.kicad_mod",
+      "source_sha256_lf": "66c656075daa62a7cf0c08c3414117abbd65db6a990bcfaec5044797984bd379",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -0.8875,
+          "y_mm": -1.0,
+          "width_mm": 1.475,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "2",
+          "x_mm": -0.8875,
+          "y_mm": -0.5,
+          "width_mm": 1.475,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "3",
+          "x_mm": -0.8875,
+          "y_mm": 0.0,
+          "width_mm": 1.475,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "4",
+          "x_mm": -0.8875,
+          "y_mm": 0.5,
+          "width_mm": 1.475,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "5",
+          "x_mm": -0.8875,
+          "y_mm": 1.0,
+          "width_mm": 1.475,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "6",
+          "x_mm": 0.8875,
+          "y_mm": 1.0,
+          "width_mm": 1.475,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "7",
+          "x_mm": 0.8875,
+          "y_mm": 0.5,
+          "width_mm": 1.475,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "8",
+          "x_mm": 0.8875,
+          "y_mm": 0.0,
+          "width_mm": 1.475,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "9",
+          "x_mm": 0.8875,
+          "y_mm": -0.5,
+          "width_mm": 1.475,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "10",
+          "x_mm": 0.8875,
+          "y_mm": -1.0,
+          "width_mm": 1.475,
+          "height_mm": 0.25,
+          "through_hole": false
+        }
+      ]
+    },
+    {
+      "name": "RHD2216_QFN56_8x8_P0.5_EP6.1",
+      "kind": "qfn",
+      "body_width_mm": 8.0,
+      "body_depth_mm": 8.0,
+      "body_height_mm": 1.0,
+      "body_center_xy_mm": [
+        0,
+        0
+      ],
+      "source_footprint": "electronics/stage4/recording-front-end/ato_afe.pretty/RHD2216_QFN56_8x8_P0.5_EP6.1.kicad_mod",
+      "source_sha256_lf": "d6260d46d2659e4956a90602b0dce33d666e6de55cb8f5f8dbdc22a20a9e13a3",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -4.05,
+          "y_mm": -3.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "2",
+          "x_mm": -4.05,
+          "y_mm": -2.75,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "3",
+          "x_mm": -4.05,
+          "y_mm": -2.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "4",
+          "x_mm": -4.05,
+          "y_mm": -1.75,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "5",
+          "x_mm": -4.05,
+          "y_mm": -1.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "6",
+          "x_mm": -4.05,
+          "y_mm": -0.75,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "7",
+          "x_mm": -4.05,
+          "y_mm": -0.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "8",
+          "x_mm": -4.05,
+          "y_mm": 0.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "9",
+          "x_mm": -4.05,
+          "y_mm": 0.75,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "10",
+          "x_mm": -4.05,
+          "y_mm": 1.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "11",
+          "x_mm": -4.05,
+          "y_mm": 1.75,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "12",
+          "x_mm": -4.05,
+          "y_mm": 2.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "13",
+          "x_mm": -4.05,
+          "y_mm": 2.75,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "14",
+          "x_mm": -4.05,
+          "y_mm": 3.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "15",
+          "x_mm": -3.25,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "16",
+          "x_mm": -2.75,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "17",
+          "x_mm": -2.25,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "18",
+          "x_mm": -1.75,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "19",
+          "x_mm": -1.25,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "20",
+          "x_mm": -0.75,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "21",
+          "x_mm": -0.25,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "22",
+          "x_mm": 0.25,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "23",
+          "x_mm": 0.75,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "24",
+          "x_mm": 1.25,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "25",
+          "x_mm": 1.75,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "26",
+          "x_mm": 2.25,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "27",
+          "x_mm": 2.75,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "28",
+          "x_mm": 3.25,
+          "y_mm": 4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "29",
+          "x_mm": 4.05,
+          "y_mm": 3.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "30",
+          "x_mm": 4.05,
+          "y_mm": 2.75,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "31",
+          "x_mm": 4.05,
+          "y_mm": 2.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "32",
+          "x_mm": 4.05,
+          "y_mm": 1.75,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "33",
+          "x_mm": 4.05,
+          "y_mm": 1.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "34",
+          "x_mm": 4.05,
+          "y_mm": 0.75,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "35",
+          "x_mm": 4.05,
+          "y_mm": 0.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "36",
+          "x_mm": 4.05,
+          "y_mm": -0.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "37",
+          "x_mm": 4.05,
+          "y_mm": -0.75,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "38",
+          "x_mm": 4.05,
+          "y_mm": -1.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "39",
+          "x_mm": 4.05,
+          "y_mm": -1.75,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "40",
+          "x_mm": 4.05,
+          "y_mm": -2.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "41",
+          "x_mm": 4.05,
+          "y_mm": -2.75,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "42",
+          "x_mm": 4.05,
+          "y_mm": -3.25,
+          "width_mm": 0.9,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "43",
+          "x_mm": 3.25,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "44",
+          "x_mm": 2.75,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "45",
+          "x_mm": 2.25,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "46",
+          "x_mm": 1.75,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "47",
+          "x_mm": 1.25,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "48",
+          "x_mm": 0.75,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "49",
+          "x_mm": 0.25,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "50",
+          "x_mm": -0.25,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "51",
+          "x_mm": -0.75,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "52",
+          "x_mm": -1.25,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "53",
+          "x_mm": -1.75,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "54",
+          "x_mm": -2.25,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "55",
+          "x_mm": -2.75,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "56",
+          "x_mm": -3.25,
+          "y_mm": -4.05,
+          "width_mm": 0.25,
+          "height_mm": 0.9,
+          "through_hole": false
+        },
+        {
+          "number": "57",
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "width_mm": 6.1,
+          "height_mm": 6.1,
+          "through_hole": false
+        }
+      ]
+    },
+    {
+      "name": "Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6",
+      "kind": "qfn",
+      "body_width_mm": 4.0,
+      "body_depth_mm": 4.0,
+      "body_height_mm": 1.0,
+      "body_center_xy_mm": [
+        0,
+        0
+      ],
+      "source_footprint": "electronics/stage4/recording-front-end/ato_afe.pretty/Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6.kicad_mod",
+      "source_sha256_lf": "1a51771e94077aede2dba01e4f8783f785895d95c805d9bca65839eb439584cd",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -1.9,
+          "y_mm": -0.975,
+          "width_mm": 0.6,
+          "height_mm": 0.3,
+          "through_hole": false
+        },
+        {
+          "number": "2",
+          "x_mm": -1.9,
+          "y_mm": -0.325,
+          "width_mm": 0.6,
+          "height_mm": 0.3,
+          "through_hole": false
+        },
+        {
+          "number": "3",
+          "x_mm": -1.9,
+          "y_mm": 0.325,
+          "width_mm": 0.6,
+          "height_mm": 0.3,
+          "through_hole": false
+        },
+        {
+          "number": "4",
+          "x_mm": -1.9,
+          "y_mm": 0.975,
+          "width_mm": 0.6,
+          "height_mm": 0.3,
+          "through_hole": false
+        },
+        {
+          "number": "5",
+          "x_mm": -0.975,
+          "y_mm": 1.9,
+          "width_mm": 0.3,
+          "height_mm": 0.6,
+          "through_hole": false
+        },
+        {
+          "number": "6",
+          "x_mm": -0.325,
+          "y_mm": 1.9,
+          "width_mm": 0.3,
+          "height_mm": 0.6,
+          "through_hole": false
+        },
+        {
+          "number": "7",
+          "x_mm": 0.325,
+          "y_mm": 1.9,
+          "width_mm": 0.3,
+          "height_mm": 0.6,
+          "through_hole": false
+        },
+        {
+          "number": "8",
+          "x_mm": 0.975,
+          "y_mm": 1.9,
+          "width_mm": 0.3,
+          "height_mm": 0.6,
+          "through_hole": false
+        },
+        {
+          "number": "9",
+          "x_mm": 1.9,
+          "y_mm": 0.975,
+          "width_mm": 0.6,
+          "height_mm": 0.3,
+          "through_hole": false
+        },
+        {
+          "number": "10",
+          "x_mm": 1.9,
+          "y_mm": 0.325,
+          "width_mm": 0.6,
+          "height_mm": 0.3,
+          "through_hole": false
+        },
+        {
+          "number": "11",
+          "x_mm": 1.9,
+          "y_mm": -0.325,
+          "width_mm": 0.6,
+          "height_mm": 0.3,
+          "through_hole": false
+        },
+        {
+          "number": "12",
+          "x_mm": 1.9,
+          "y_mm": -0.975,
+          "width_mm": 0.6,
+          "height_mm": 0.3,
+          "through_hole": false
+        },
+        {
+          "number": "13",
+          "x_mm": 0.975,
+          "y_mm": -1.9,
+          "width_mm": 0.3,
+          "height_mm": 0.6,
+          "through_hole": false
+        },
+        {
+          "number": "14",
+          "x_mm": 0.325,
+          "y_mm": -1.9,
+          "width_mm": 0.3,
+          "height_mm": 0.6,
+          "through_hole": false
+        },
+        {
+          "number": "15",
+          "x_mm": -0.325,
+          "y_mm": -1.9,
+          "width_mm": 0.3,
+          "height_mm": 0.6,
+          "through_hole": false
+        },
+        {
+          "number": "16",
+          "x_mm": -0.975,
+          "y_mm": -1.9,
+          "width_mm": 0.3,
+          "height_mm": 0.6,
+          "through_hole": false
+        },
+        {
+          "number": "17",
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "width_mm": 2.6,
+          "height_mm": 2.6,
+          "through_hole": false
+        }
+      ]
+    },
+    {
+      "name": "Texas_DRB0008A_VSON8_3x3_P0.65_EP1.5x1.75",
+      "kind": "qfn",
+      "body_width_mm": 3.0,
+      "body_depth_mm": 3.0,
+      "body_height_mm": 1.0,
+      "body_center_xy_mm": [
+        0,
+        0
+      ],
+      "source_footprint": "electronics/stage4/integrated-pcb/integration/boards/supervision/ato_sup.pretty/Texas_DRB0008A_VSON8_3x3_P0.65_EP1.5x1.75.kicad_mod",
+      "source_sha256_lf": "f35d645d1bc619cf1a6dc5e5e59d61bb416709152be24716bbd59cb9083e3797",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -1.4,
+          "y_mm": -0.975,
+          "width_mm": 0.6,
+          "height_mm": 0.31,
+          "through_hole": false
+        },
+        {
+          "number": "2",
+          "x_mm": -1.4,
+          "y_mm": -0.325,
+          "width_mm": 0.6,
+          "height_mm": 0.31,
+          "through_hole": false
+        },
+        {
+          "number": "3",
+          "x_mm": -1.4,
+          "y_mm": 0.325,
+          "width_mm": 0.6,
+          "height_mm": 0.31,
+          "through_hole": false
+        },
+        {
+          "number": "4",
+          "x_mm": -1.4,
+          "y_mm": 0.975,
+          "width_mm": 0.6,
+          "height_mm": 0.31,
+          "through_hole": false
+        },
+        {
+          "number": "5",
+          "x_mm": 1.4,
+          "y_mm": 0.975,
+          "width_mm": 0.6,
+          "height_mm": 0.31,
+          "through_hole": false
+        },
+        {
+          "number": "6",
+          "x_mm": 1.4,
+          "y_mm": 0.325,
+          "width_mm": 0.6,
+          "height_mm": 0.31,
+          "through_hole": false
+        },
+        {
+          "number": "7",
+          "x_mm": 1.4,
+          "y_mm": -0.325,
+          "width_mm": 0.6,
+          "height_mm": 0.31,
+          "through_hole": false
+        },
+        {
+          "number": "8",
+          "x_mm": 1.4,
+          "y_mm": -0.975,
+          "width_mm": 0.6,
+          "height_mm": 0.31,
+          "through_hole": false
+        },
+        {
+          "number": "9",
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "width_mm": 1.5,
+          "height_mm": 1.75,
+          "through_hole": false
+        }
+      ]
+    },
+    {
+      "name": "VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm",
+      "kind": "qfn",
+      "body_width_mm": 3.0,
+      "body_depth_mm": 3.0,
+      "body_height_mm": 1.0,
+      "body_center_xy_mm": [
+        0,
+        0
+      ],
+      "source_footprint": "electronics/stage4/power/ato_power.pretty/VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm.kicad_mod",
+      "source_sha256_lf": "f68d777c2406c4c6178fdba99f3938a0ec0b5a827706f5c64a08157ce5117714",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -1.4625,
+          "y_mm": -0.75,
+          "width_mm": 0.825,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "2",
+          "x_mm": -1.4625,
+          "y_mm": -0.25,
+          "width_mm": 0.825,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "3",
+          "x_mm": -1.4625,
+          "y_mm": 0.25,
+          "width_mm": 0.825,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "4",
+          "x_mm": -1.4625,
+          "y_mm": 0.75,
+          "width_mm": 0.825,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "5",
+          "x_mm": -0.75,
+          "y_mm": 1.4625,
+          "width_mm": 0.25,
+          "height_mm": 0.825,
+          "through_hole": false
+        },
+        {
+          "number": "6",
+          "x_mm": -0.25,
+          "y_mm": 1.4625,
+          "width_mm": 0.25,
+          "height_mm": 0.825,
+          "through_hole": false
+        },
+        {
+          "number": "7",
+          "x_mm": 0.25,
+          "y_mm": 1.4625,
+          "width_mm": 0.25,
+          "height_mm": 0.825,
+          "through_hole": false
+        },
+        {
+          "number": "8",
+          "x_mm": 0.75,
+          "y_mm": 1.4625,
+          "width_mm": 0.25,
+          "height_mm": 0.825,
+          "through_hole": false
+        },
+        {
+          "number": "9",
+          "x_mm": 1.4625,
+          "y_mm": 0.75,
+          "width_mm": 0.825,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "10",
+          "x_mm": 1.4625,
+          "y_mm": 0.25,
+          "width_mm": 0.825,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "11",
+          "x_mm": 1.4625,
+          "y_mm": -0.25,
+          "width_mm": 0.825,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "12",
+          "x_mm": 1.4625,
+          "y_mm": -0.75,
+          "width_mm": 0.825,
+          "height_mm": 0.25,
+          "through_hole": false
+        },
+        {
+          "number": "13",
+          "x_mm": 0.75,
+          "y_mm": -1.4625,
+          "width_mm": 0.25,
+          "height_mm": 0.825,
+          "through_hole": false
+        },
+        {
+          "number": "14",
+          "x_mm": 0.25,
+          "y_mm": -1.4625,
+          "width_mm": 0.25,
+          "height_mm": 0.825,
+          "through_hole": false
+        },
+        {
+          "number": "15",
+          "x_mm": -0.25,
+          "y_mm": -1.4625,
+          "width_mm": 0.25,
+          "height_mm": 0.825,
+          "through_hole": false
+        },
+        {
+          "number": "16",
+          "x_mm": -0.75,
+          "y_mm": -1.4625,
+          "width_mm": 0.25,
+          "height_mm": 0.825,
+          "through_hole": false
+        },
+        {
+          "number": "17",
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "width_mm": 1.68,
+          "height_mm": 1.68,
+          "through_hole": false
+        }
+      ]
+    },
+    {
+      "name": "TRACO_TMR3_SIP8_21.8x9.1_P2.54",
+      "kind": "sip",
+      "body_width_mm": 21.8,
+      "body_depth_mm": 9.1,
+      "body_height_mm": 11.2,
+      "body_center_xy_mm": [
+        8.89,
+        2.25
+      ],
+      "source_footprint": "electronics/stage4/power/ato_power.pretty/TRACO_TMR3_SIP8_21.8x9.1_P2.54.kicad_mod",
+      "source_sha256_lf": "e7cf5411384f9913ee6abc99f1f3fc856c4c52aed3f621c1901dc24e4c31bdff",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "width_mm": 1.7,
+          "height_mm": 1.7,
+          "through_hole": true
+        },
+        {
+          "number": "2",
+          "x_mm": 2.54,
+          "y_mm": 0.0,
+          "width_mm": 1.7,
+          "height_mm": 1.7,
+          "through_hole": true
+        },
+        {
+          "number": "3",
+          "x_mm": 5.08,
+          "y_mm": 0.0,
+          "width_mm": 1.7,
+          "height_mm": 1.7,
+          "through_hole": true
+        },
+        {
+          "number": "5",
+          "x_mm": 10.16,
+          "y_mm": 0.0,
+          "width_mm": 1.7,
+          "height_mm": 1.7,
+          "through_hole": true
+        },
+        {
+          "number": "6",
+          "x_mm": 12.7,
+          "y_mm": 0.0,
+          "width_mm": 1.7,
+          "height_mm": 1.7,
+          "through_hole": true
+        },
+        {
+          "number": "7",
+          "x_mm": 15.24,
+          "y_mm": 0.0,
+          "width_mm": 1.7,
+          "height_mm": 1.7,
+          "through_hole": true
+        },
+        {
+          "number": "8",
+          "x_mm": 17.78,
+          "y_mm": 0.0,
+          "width_mm": 1.7,
+          "height_mm": 1.7,
+          "through_hole": true
+        }
+      ]
+    },
+    {
+      "name": "Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm",
+      "kind": "gullwing",
+      "body_width_mm": 3.0,
+      "body_depth_mm": 3.0,
+      "body_height_mm": 1.1,
+      "body_center_xy_mm": [
+        0,
+        0
+      ],
+      "source_footprint": "electronics/stage4/power/ato_power.pretty/Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm.kicad_mod",
+      "source_sha256_lf": "a0c190509d7af85177ad4708efd3cc1e841b0c9668720f8abe0a74d0be5a8a03",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -2.2,
+          "y_mm": -0.975,
+          "width_mm": 1.45,
+          "height_mm": 0.5,
+          "through_hole": false
+        },
+        {
+          "number": "2",
+          "x_mm": -2.2,
+          "y_mm": -0.325,
+          "width_mm": 1.45,
+          "height_mm": 0.5,
+          "through_hole": false
+        },
+        {
+          "number": "3",
+          "x_mm": -2.2,
+          "y_mm": 0.325,
+          "width_mm": 1.45,
+          "height_mm": 0.5,
+          "through_hole": false
+        },
+        {
+          "number": "4",
+          "x_mm": -2.2,
+          "y_mm": 0.975,
+          "width_mm": 1.45,
+          "height_mm": 0.5,
+          "through_hole": false
+        },
+        {
+          "number": "5",
+          "x_mm": 2.2,
+          "y_mm": 0.975,
+          "width_mm": 1.45,
+          "height_mm": 0.5,
+          "through_hole": false
+        },
+        {
+          "number": "6",
+          "x_mm": 2.2,
+          "y_mm": 0.325,
+          "width_mm": 1.45,
+          "height_mm": 0.5,
+          "through_hole": false
+        },
+        {
+          "number": "7",
+          "x_mm": 2.2,
+          "y_mm": -0.325,
+          "width_mm": 1.45,
+          "height_mm": 0.5,
+          "through_hole": false
+        },
+        {
+          "number": "8",
+          "x_mm": 2.2,
+          "y_mm": -0.975,
+          "width_mm": 1.45,
+          "height_mm": 0.5,
+          "through_hole": false
+        },
+        {
+          "number": "9",
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "width_mm": 2.0,
+          "height_mm": 2.94,
+          "through_hole": false
+        }
+      ]
+    },
+    {
+      "name": "BT40F_Manufacturer_66Pad",
+      "kind": "module",
+      "body_width_mm": 15.0,
+      "body_depth_mm": 21.0,
+      "body_height_mm": 2.0,
+      "body_center_xy_mm": [
+        0,
+        0
+      ],
+      "source_footprint": "electronics/stage4/controller-carrier/ato_controller.pretty/BT40F_Manufacturer_66Pad.kicad_mod",
+      "source_sha256_lf": "302cee76352b86d09e50c967946d1747f699aad3f360104f048a0b6424878547",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -7.0254,
+          "y_mm": 1.7116,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "2",
+          "x_mm": -7.0254,
+          "y_mm": 2.8038,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "3",
+          "x_mm": -7.0254,
+          "y_mm": 3.896,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "4",
+          "x_mm": -7.0254,
+          "y_mm": 4.9882,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "5",
+          "x_mm": -7.0254,
+          "y_mm": 6.1058,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "6",
+          "x_mm": -7.0254,
+          "y_mm": 7.198,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "7",
+          "x_mm": -7.0254,
+          "y_mm": 8.2902,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "8",
+          "x_mm": -7.0254,
+          "y_mm": 9.4078,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "9",
+          "x_mm": 6.9954,
+          "y_mm": 9.4078,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "10",
+          "x_mm": 6.9954,
+          "y_mm": 8.2902,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "11",
+          "x_mm": 6.9954,
+          "y_mm": 7.198,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "12",
+          "x_mm": 6.9954,
+          "y_mm": 6.1058,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "13",
+          "x_mm": 6.9954,
+          "y_mm": 4.9882,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "14",
+          "x_mm": 6.9954,
+          "y_mm": 3.896,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "15",
+          "x_mm": 6.9954,
+          "y_mm": 2.8038,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "16",
+          "x_mm": 6.9954,
+          "y_mm": 1.7116,
+          "width_mm": 1.4986,
+          "height_mm": 0.7112,
+          "through_hole": false
+        },
+        {
+          "number": "A0",
+          "x_mm": -2.2502,
+          "y_mm": 2.499,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "A1",
+          "x_mm": -2.2502,
+          "y_mm": 3.6928,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "A2",
+          "x_mm": -2.2502,
+          "y_mm": 4.912,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "A3",
+          "x_mm": -2.2502,
+          "y_mm": 6.1058,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "A4",
+          "x_mm": -2.2502,
+          "y_mm": 7.2996,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "A5",
+          "x_mm": -2.2502,
+          "y_mm": 8.4934,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "A6",
+          "x_mm": -2.2502,
+          "y_mm": 9.7126,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "B0",
+          "x_mm": -0.7516,
+          "y_mm": 2.499,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "B1",
+          "x_mm": -0.7516,
+          "y_mm": 3.6928,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "B2",
+          "x_mm": -0.7516,
+          "y_mm": 4.912,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "B3",
+          "x_mm": -0.7516,
+          "y_mm": 6.1058,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "B4",
+          "x_mm": -0.7516,
+          "y_mm": 7.2996,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "B5",
+          "x_mm": -0.7516,
+          "y_mm": 8.4934,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "B6",
+          "x_mm": -0.7516,
+          "y_mm": 9.7126,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "C0",
+          "x_mm": 0.747,
+          "y_mm": 2.499,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "C1",
+          "x_mm": 0.747,
+          "y_mm": 3.6928,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "C2",
+          "x_mm": 0.747,
+          "y_mm": 4.912,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "C3",
+          "x_mm": 0.747,
+          "y_mm": 6.1058,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "C4",
+          "x_mm": 0.747,
+          "y_mm": 7.2996,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "C5",
+          "x_mm": 0.747,
+          "y_mm": 8.4934,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "C6",
+          "x_mm": 0.747,
+          "y_mm": 9.7126,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "D0",
+          "x_mm": 2.2456,
+          "y_mm": 2.499,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "D1",
+          "x_mm": 2.2456,
+          "y_mm": 3.6928,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "D2",
+          "x_mm": 2.2456,
+          "y_mm": 4.912,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "D3",
+          "x_mm": 2.2456,
+          "y_mm": 6.1058,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "D4",
+          "x_mm": 2.2456,
+          "y_mm": 7.2996,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "D5",
+          "x_mm": 2.2456,
+          "y_mm": 8.4934,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "D6",
+          "x_mm": 2.2456,
+          "y_mm": 9.7126,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "E0",
+          "x_mm": 3.7442,
+          "y_mm": 2.5498,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "E1",
+          "x_mm": 3.7442,
+          "y_mm": 3.6928,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "E2",
+          "x_mm": 3.7442,
+          "y_mm": 4.912,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "E3",
+          "x_mm": 3.7442,
+          "y_mm": 6.1058,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "E4",
+          "x_mm": 3.7442,
+          "y_mm": 7.2996,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "E5",
+          "x_mm": 3.7442,
+          "y_mm": 8.4934,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "E6",
+          "x_mm": 3.7442,
+          "y_mm": 9.7126,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "F3",
+          "x_mm": 5.2428,
+          "y_mm": 6.1058,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "F4",
+          "x_mm": 5.2428,
+          "y_mm": 7.2996,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "F5",
+          "x_mm": 5.2428,
+          "y_mm": 8.4934,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "F6",
+          "x_mm": 5.2428,
+          "y_mm": 9.7126,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "H0",
+          "x_mm": -3.3678,
+          "y_mm": 0.4924,
+          "width_mm": 1.4986,
+          "height_mm": 1.4986,
+          "through_hole": false
+        },
+        {
+          "number": "H1",
+          "x_mm": -1.1326,
+          "y_mm": 0.4924,
+          "width_mm": 1.4986,
+          "height_mm": 1.4986,
+          "through_hole": false
+        },
+        {
+          "number": "H2",
+          "x_mm": 1.128,
+          "y_mm": 0.4924,
+          "width_mm": 1.4986,
+          "height_mm": 1.4986,
+          "through_hole": false
+        },
+        {
+          "number": "H3",
+          "x_mm": 3.3632,
+          "y_mm": 0.4924,
+          "width_mm": 1.4986,
+          "height_mm": 1.4986,
+          "through_hole": false
+        },
+        {
+          "number": "Z0",
+          "x_mm": -3.7488,
+          "y_mm": 2.499,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "Z1",
+          "x_mm": -3.7488,
+          "y_mm": 3.6928,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "Z2",
+          "x_mm": -3.7488,
+          "y_mm": 4.912,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "Z3",
+          "x_mm": -3.7488,
+          "y_mm": 6.1058,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "Z4",
+          "x_mm": -3.7488,
+          "y_mm": 7.2996,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "Z5",
+          "x_mm": -3.7488,
+          "y_mm": 8.4934,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        },
+        {
+          "number": "Z6",
+          "x_mm": -3.7488,
+          "y_mm": 9.7126,
+          "width_mm": 0.6096,
+          "height_mm": 0.6096,
+          "through_hole": false
+        }
+      ]
+    }
+  ]
+}

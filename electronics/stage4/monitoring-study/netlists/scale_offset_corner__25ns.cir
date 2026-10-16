@@ -1,0 +1,61 @@
+ATO Stage4 behavioral monitor: scale_offset_corner; NOT vendor model
+* Two independent sources; no driver-loop, electrode chemistry or biological model
+* Positive Iload enters load-return; positive Ishunt flows load to driver
+.model Reset SW(Ron=2 Roff=1e12 Vt=0.5 Vh=0)
+Vreset reset 0 PWL(0 1 0.0001 1 0.000100001 0 0.0018 0)
+Vcmd0 cmd0 0 PWL(0 0 0.0002 0 0.000200001 -0.003 0.0004 -0.003 0.000400001 0 0.0005 0 0.000500001 0.003 0.0007 0.003 0.000700001 0 0.0018 0)
+Rdrive0 cmd0 drive0 1
+Cdrive0 drive0 0 1e-07 IC=0
+Bload0 0 load0 I={v(drive0)}
+Vreturn0 ret0 0 48
+Rshunt0 load0 ret0 2.002
+Ibload0 load0 0 0
+Ibdriver0 ret0 0 0
+Btarget0 target0 0 V={20.002*(v(load0)-v(ret0)+1.5e-05)}
+Rsensor0 target0 sensor0 1
+Csensor0 sensor0 0 1.44686311901723e-07 IC=0
+Bmon0 mon0 0 V={max(0.02,min(4.8,2.048+v(sensor0)))}
+Rint0 mon0 sum0 9990
+Cint0 sum0 out0 2.189e-08 IC=0
+Rleak0 sum0 out0 1000000000000
+Sreset0 sum0 out0 reset 0 Reset
+Iinject0 0 sum0 PWL(0 0 0.0018 0)
+Vopref0 opref0 0 2.048045
+Gamp0 0 state0 opref0 sum0 1
+Ramp0 state0 0 1e6
+Camp0 state0 0 1.59154943091895e-07 IC=0
+Bout0 out0 0 V={max(0.05,min(4.95,2.048+v(state0)))}
+Rbuffer0 out0 buffer0 1
+Cbuffer0 buffer0 0 3.53677651315323e-07 IC=2.048
+Rfilter0 buffer0 adc0 33
+Cfilter0 adc0 0 1n IC=2.048
+Vcmd1 cmd1 0 PWL(0 0 0.000225 0 0.000225001 0.003 0.000425 0.003 0.000425001 0 0.000525 0 0.000525001 -0.003 0.000725 -0.003 0.000725001 0 0.0018 0)
+Rdrive1 cmd1 drive1 1
+Cdrive1 drive1 0 1e-07 IC=0
+Bload1 0 load1 I={v(drive1)}
+Vreturn1 ret1 0 48
+Rshunt1 load1 ret1 2.002
+Ibload1 load1 0 0
+Ibdriver1 ret1 0 0
+Btarget1 target1 0 V={20.002*(v(load1)-v(ret1)+1.5e-05)}
+Rsensor1 target1 sensor1 1
+Csensor1 sensor1 0 1.44686311901723e-07 IC=0
+Bmon1 mon1 0 V={max(0.02,min(4.8,2.048+v(sensor1)))}
+Rint1 mon1 sum1 9990
+Cint1 sum1 out1 2.189e-08 IC=0
+Rleak1 sum1 out1 1000000000000
+Sreset1 sum1 out1 reset 0 Reset
+Iinject1 0 sum1 PWL(0 0 0.0018 0)
+Vopref1 opref1 0 2.048045
+Gamp1 0 state1 opref1 sum1 1
+Ramp1 state1 0 1e6
+Camp1 state1 0 1.59154943091895e-07 IC=0
+Bout1 out1 0 V={max(0.05,min(4.95,2.048+v(state1)))}
+Rbuffer1 out1 buffer1 1
+Cbuffer1 buffer1 0 3.53677651315323e-07 IC=2.048
+Rfilter1 buffer1 adc1 33
+Cfilter1 adc1 0 1n IC=2.048
+.options reltol=1e-9 abstol=1e-14 vntol=1e-11 method=gear
+.save v(drive0) v(load0) v(ret0) v(sensor0) v(mon0) v(sum0) v(state0) v(out0) v(buffer0) v(adc0) i(vreturn0) v(drive1) v(load1) v(ret1) v(sensor1) v(mon1) v(sum1) v(state1) v(out1) v(buffer1) v(adc1) i(vreturn1)
+.tran 2.5e-08 0.0018 0 2.5e-08 UIC
+.end

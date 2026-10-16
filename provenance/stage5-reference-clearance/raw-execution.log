@@ -1,0 +1,115 @@
+OPEN_BEGIN
+OPEN_DONE 1.3805063999898266
+BEGIN 0 PCB_contact_router Tray_contact_router
+GLOBAL_AABB_LOWER 0 2.614999999997565 minimum 8.0
+EXACT 0 1 solid 33 0 lower 2.614999999997565 distance 8.615000000000009 seconds 0.2193781000096351 best 8.615000000000009
+EXACT 0 2 solid 44 0 lower 2.614999999997565 distance 8.615000000000009 seconds 1.3378285000071628 best 8.615000000000009
+EXACT 0 3 solid 45 0 lower 2.614999999997565 distance 8.615000000000009 seconds 0.8254605999973137 best 8.615000000000009
+EXACT 0 50 solid 40 0 lower 5.615000000000009 distance 11.615000000000009 seconds 0.07359259999066126 best 8.615000000000009
+EXACT 0 100 solid 93 0 lower 5.615000000000009 distance 11.615000000000009 seconds 0.3800736999983201 best 8.615000000000009
+EXACT 0 150 solid 147 0 lower 5.615000000000009 distance 11.615000000000009 seconds 1.2731113000045298 best 8.615000000000009
+END {"a": "PCB_contact_router", "b": "Tray_contact_router", "minimum_mm": 8.0, "reason": "Underside pin tips clear tray; mounting hardware checked separately", "measured_mm": 8.615000000000009, "minimum_solid_pair": [33, 0], "solid_pair_count": 156, "exact_BRep_queries": 156, "AABB_pruned_pairs": 0, "seconds": 41.1625733999972, "passed": true, "whole_shape_tight_AABB_lower_mm": 2.614999999997565, "conservative_AABB_lower_mm_minus_2e_6": 2.614997999997565}
+BEGIN 1 PCB_controller_carrier Tray_controller_carrier
+GLOBAL_AABB_LOWER 1 2.614999999997565 minimum 8.0
+EXACT 1 1 solid 1 0 lower 2.614999999997565 distance 8.615000000000009 seconds 0.9127826000039931 best 8.615000000000009
+EXACT 1 2 solid 2 0 lower 2.614999999997565 distance 8.615000000000009 seconds 0.5845471999928122 best 8.615000000000009
+EXACT 1 3 solid 8 0 lower 2.614999999997565 distance 8.615000000000009 seconds 0.646450600004755 best 8.615000000000009
+EXACT 1 50 solid 45 0 lower 5.615000000000009 distance 11.615000000000009 seconds 0.07843950000824407 best 8.615000000000009
+EXACT 1 100 solid 99 0 lower 5.615000000000009 distance 11.615000000000009 seconds 0.021757099995738827 best 8.615000000000009
+END {"a": "PCB_controller_carrier", "b": "Tray_controller_carrier", "minimum_mm": 8.0, "reason": "Underside pin tips clear tray; mounting hardware checked separately", "measured_mm": 8.615000000000009, "minimum_solid_pair": [1, 0], "solid_pair_count": 136, "exact_BRep_queries": 136, "AABB_pruned_pairs": 0, "seconds": 20.328418199991575, "passed": true, "whole_shape_tight_AABB_lower_mm": 2.614999999997565, "conservative_AABB_lower_mm_minus_2e_6": 2.614997999997565}
+BEGIN 2 PCB_current_driver Tray_current_driver
+GLOBAL_AABB_LOWER 2 2.614999999997565 minimum 8.0
+EXACT 2 1 solid 29 0 lower 2.614999999997565 distance 8.615000000000009 seconds 1.0561719999968773 best 8.615000000000009
+EXACT 2 2 solid 33 0 lower 2.614999999997565 distance 8.615000000000009 seconds 0.3325585999991745 best 8.615000000000009
+EXACT 2 3 solid 70 0 lower 2.614999999997565 distance 8.615000000000009 seconds 0.8225820000079693 best 8.615000000000009
+EXACT 2 50 solid 43 0 lower 5.615000000000009 distance 11.615000000000009 seconds 0.0788748999912059 best 8.615000000000009
+EXACT 2 100 solid 95 0 lower 5.615000000000009 distance 11.615000000000009 seconds 0.07760970000526868 best 8.615000000000009
+EXACT 2 150 solid 149 0 lower 5.615000000000009 distance 11.615000000000009 seconds 0.022744999994756654 best 8.615000000000009
+END {"a": "PCB_current_driver", "b": "Tray_current_driver", "minimum_mm": 8.0, "reason": "Underside pin tips clear tray; mounting hardware checked separately", "measured_mm": 8.615000000000009, "minimum_solid_pair": [29, 0], "solid_pair_count": 165, "exact_BRep_queries": 165, "AABB_pruned_pairs": 0, "seconds": 33.54928259999724, "passed": true, "whole_shape_tight_AABB_lower_mm": 2.614999999997565, "conservative_AABB_lower_mm_minus_2e_6": 2.614997999997565}
+BEGIN 3 PCB_current_driver Tray_contact_router
+GLOBAL_AABB_LOWER 3 27.844999999997555 minimum 20
+EXACT 3 1 solid 29 0 lower 27.844999999997555 distance 27.845 seconds 1.1508859000023222 best 27.845
+EXACT 3 2 solid 33 0 lower 27.844999999997555 distance 27.845 seconds 0.3450694999919506 best 27.845
+EXACT 3 3 solid 70 0 lower 27.844999999997555 distance 27.845 seconds 0.8383891999983462 best 27.845
+END {"a": "PCB_current_driver", "b": "Tray_contact_router", "minimum_mm": 20, "reason": "Minimum physical clearance between actual populated source and next tray", "measured_mm": 27.845, "minimum_solid_pair": [29, 0], "solid_pair_count": 165, "exact_BRep_queries": 7, "AABB_pruned_pairs": 158, "seconds": 4.126666600001045, "passed": true, "whole_shape_tight_AABB_lower_mm": 27.844999999997555, "conservative_AABB_lower_mm_minus_2e_6": 27.844997999997556}
+BEGIN 4 PCB_monitoring_cell Tray_monitoring_cell
+GLOBAL_AABB_LOWER 4 2.6149999999975506 minimum 8.0
+EXACT 4 1 solid 13 0 lower 2.6149999999975506 distance 8.614999999999995 seconds 1.2356251000019256 best 8.614999999999995
+EXACT 4 2 solid 38 0 lower 2.6149999999975506 distance 8.614999999999995 seconds 0.33100809999450576 best 8.614999999999995
+EXACT 4 3 solid 2 0 lower 2.6149999999997817 distance 8.614999999999995 seconds 0.10652299999492243 best 8.614999999999995
+EXACT 4 50 solid 46 0 lower 5.614999999999995 distance 11.614999999999995 seconds 0.07192020000366028 best 8.614999999999995
+END {"a": "PCB_monitoring_cell", "b": "Tray_monitoring_cell", "minimum_mm": 8.0, "reason": "Underside pin tips clear tray; mounting hardware checked separately", "measured_mm": 8.614999999999995, "minimum_solid_pair": [13, 0], "solid_pair_count": 72, "exact_BRep_queries": 72, "AABB_pruned_pairs": 0, "seconds": 14.603086500006611, "passed": true, "whole_shape_tight_AABB_lower_mm": 2.6149999999975506, "conservative_AABB_lower_mm_minus_2e_6": 2.614997999997551}
+BEGIN 5 PCB_monitoring_cell Tray_monitoring_transport
+GLOBAL_AABB_LOWER 5 27.844999999997555 minimum 20
+EXACT 5 1 solid 13 0 lower 27.844999999997555 distance 27.845 seconds 1.2626070999976946 best 27.845
+EXACT 5 2 solid 38 0 lower 27.844999999997555 distance 27.845 seconds 0.32444280000345316 best 27.845
+EXACT 5 3 solid 2 0 lower 27.844999999999786 distance 27.845 seconds 0.10387349998927675 best 27.845
+END {"a": "PCB_monitoring_cell", "b": "Tray_monitoring_transport", "minimum_mm": 20, "reason": "Minimum physical clearance between actual populated source and next tray", "measured_mm": 27.845, "minimum_solid_pair": [13, 0], "solid_pair_count": 72, "exact_BRep_queries": 9, "AABB_pruned_pairs": 63, "seconds": 2.6854585999972187, "passed": true, "whole_shape_tight_AABB_lower_mm": 27.844999999997555, "conservative_AABB_lower_mm_minus_2e_6": 27.844997999997556}
+BEGIN 6 PCB_monitoring_transport Tray_monitoring_transport
+GLOBAL_AABB_LOWER 6 2.614999999997565 minimum 8.0
+EXACT 6 1 solid 8 0 lower 2.614999999997565 distance 8.615000000000009 seconds 0.32024460000684485 best 8.615000000000009
+EXACT 6 2 solid 11 0 lower 2.614999999997565 distance 8.615000000000009 seconds 1.202389600002789 best 8.615000000000009
+EXACT 6 3 solid 14 0 lower 2.614999999997565 distance 8.615000000000009 seconds 0.41736829999717884 best 8.615000000000009
+EXACT 6 50 solid 44 0 lower 5.615000000000009 distance 11.615000000000009 seconds 0.06576949999725912 best 8.615000000000009
+END {"a": "PCB_monitoring_transport", "b": "Tray_monitoring_transport", "minimum_mm": 8.0, "reason": "Underside pin tips clear tray; mounting hardware checked separately", "measured_mm": 8.615000000000009, "minimum_solid_pair": [8, 0], "solid_pair_count": 61, "exact_BRep_queries": 61, "AABB_pruned_pairs": 0, "seconds": 16.364983599996776, "passed": true, "whole_shape_tight_AABB_lower_mm": 2.614999999997565, "conservative_AABB_lower_mm_minus_2e_6": 2.614997999997565}
+BEGIN 7 PCB_monitoring_transport Tray_controller_carrier
+GLOBAL_AABB_LOWER 7 27.844999999997555 minimum 20
+EXACT 7 1 solid 8 0 lower 27.844999999997555 distance 27.845 seconds 0.32895640000060666 best 27.845
+EXACT 7 2 solid 11 0 lower 27.844999999997555 distance 27.845 seconds 1.27274070000567 best 27.845
+EXACT 7 3 solid 14 0 lower 27.844999999997555 distance 27.845 seconds 0.4319093999947654 best 27.845
+END {"a": "PCB_monitoring_transport", "b": "Tray_controller_carrier", "minimum_mm": 20, "reason": "Minimum physical clearance between actual populated source and next tray", "measured_mm": 27.845, "minimum_solid_pair": [8, 0], "solid_pair_count": 61, "exact_BRep_queries": 11, "AABB_pruned_pairs": 50, "seconds": 6.710338599994429, "passed": true, "whole_shape_tight_AABB_lower_mm": 27.844999999997555, "conservative_AABB_lower_mm_minus_2e_6": 27.844997999997556}
+BEGIN 8 PCB_power Tray_power
+GLOBAL_AABB_LOWER 8 2.6149999999975506 minimum 8.0
+EXACT 8 1 solid 44 0 lower 2.6149999999975506 distance 8.614999999999995 seconds 1.2470345000037923 best 8.614999999999995
+EXACT 8 2 solid 84 0 lower 2.6149999999975506 distance 8.614999999999995 seconds 0.31932830000005197 best 8.614999999999995
+EXACT 8 3 solid 106 0 lower 2.6149999999975506 distance 8.614999999999995 seconds 0.5080019000015454 best 8.614999999999995
+EXACT 8 50 solid 30 0 lower 5.614999999999995 distance 11.614999999999995 seconds 0.03928559999621939 best 8.614999999999995
+EXACT 8 100 solid 88 0 lower 5.614999999999995 distance 11.614999999999995 seconds 0.07542420001118444 best 8.614999999999995
+EXACT 8 150 solid 150 0 lower 5.614999999999995 distance 11.614999999999995 seconds 0.04195379999873694 best 8.614999999999995
+EXACT 8 200 solid 203 0 lower 5.614999999999995 distance 11.614999999999995 seconds 0.06944310000108089 best 8.614999999999995
+END {"a": "PCB_power", "b": "Tray_power", "minimum_mm": 8.0, "reason": "Underside pin tips clear tray; mounting hardware checked separately", "measured_mm": 8.614999999999995, "minimum_solid_pair": [44, 0], "solid_pair_count": 208, "exact_BRep_queries": 208, "AABB_pruned_pairs": 0, "seconds": 22.574026400005096, "passed": true, "whole_shape_tight_AABB_lower_mm": 2.6149999999975506, "conservative_AABB_lower_mm_minus_2e_6": 2.614997999997551}
+BEGIN 9 PCB_power Tray_current_driver
+GLOBAL_AABB_LOWER 9 24.784999999999997 minimum 20
+EXACT 9 1 solid 119 0 lower 24.784999999999997 distance 24.78500000000001 seconds 0.021462100005010143 best 24.78500000000001
+END {"a": "PCB_power", "b": "Tray_current_driver", "minimum_mm": 20, "reason": "Minimum physical clearance between actual populated source and next tray", "measured_mm": 24.78500000000001, "minimum_solid_pair": [119, 0], "solid_pair_count": 208, "exact_BRep_queries": 1, "AABB_pruned_pairs": 207, "seconds": 0.37794019999273587, "passed": true, "whole_shape_tight_AABB_lower_mm": 24.784999999999997, "conservative_AABB_lower_mm_minus_2e_6": 24.784997999999998}
+BEGIN 10 PCB_recording_front_end Tray_recording_front_end
+GLOBAL_AABB_LOWER 10 2.614999999997554 minimum 8.0
+EXACT 10 1 solid 11 0 lower 2.614999999997554 distance 8.614999999999998 seconds 1.2292646999994759 best 8.614999999999998
+EXACT 10 2 solid 13 0 lower 2.614999999997554 distance 8.614999999999998 seconds 0.9488831000053324 best 8.614999999999998
+EXACT 10 3 solid 27 0 lower 2.614999999997554 distance 8.614999999999998 seconds 0.8307575999933761 best 8.614999999999998
+EXACT 10 50 solid 47 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.06836240000848193 best 8.614999999999998
+EXACT 10 100 solid 99 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.07689340000797529 best 8.614999999999998
+EXACT 10 150 solid 151 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.02332100000057835 best 8.614999999999998
+EXACT 10 200 solid 202 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.020590900006936863 best 8.614999999999998
+EXACT 10 250 solid 253 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.020049400001880713 best 8.614999999999998
+END {"a": "PCB_recording_front_end", "b": "Tray_recording_front_end", "minimum_mm": 8.0, "reason": "Underside pin tips clear tray; mounting hardware checked separately", "measured_mm": 8.614999999999998, "minimum_solid_pair": [11, 0], "solid_pair_count": 296, "exact_BRep_queries": 296, "AABB_pruned_pairs": 0, "seconds": 31.02926719999232, "passed": true, "whole_shape_tight_AABB_lower_mm": 2.614999999997554, "conservative_AABB_lower_mm_minus_2e_6": 2.6149979999975543}
+BEGIN 11 PCB_recording_front_end Tray_monitoring_cell
+GLOBAL_AABB_LOWER 11 27.84499999999756 minimum 20
+EXACT 11 1 solid 11 0 lower 27.84499999999756 distance 27.845 seconds 1.328344699999434 best 27.845
+EXACT 11 2 solid 13 0 lower 27.84499999999756 distance 27.845 seconds 1.0064094999979716 best 27.845
+EXACT 11 3 solid 27 0 lower 27.84499999999756 distance 27.845 seconds 0.9738328999956138 best 27.845
+END {"a": "PCB_recording_front_end", "b": "Tray_monitoring_cell", "minimum_mm": 20, "reason": "Minimum physical clearance between actual populated source and next tray", "measured_mm": 27.845, "minimum_solid_pair": [11, 0], "solid_pair_count": 296, "exact_BRep_queries": 5, "AABB_pruned_pairs": 291, "seconds": 6.264971299999161, "passed": true, "whole_shape_tight_AABB_lower_mm": 27.84499999999756, "conservative_AABB_lower_mm_minus_2e_6": 27.844997999997563}
+BEGIN 12 PCB_supervision Tray_supervision
+GLOBAL_AABB_LOWER 12 2.614999999997554 minimum 8.0
+EXACT 12 1 solid 14 0 lower 2.614999999997554 distance 8.614999999999998 seconds 0.5458470000012312 best 8.614999999999998
+EXACT 12 2 solid 65 0 lower 2.614999999997554 distance 8.614999999999998 seconds 1.4009418000059668 best 8.614999999999998
+EXACT 12 3 solid 100 0 lower 2.614999999997554 distance 8.614999999999998 seconds 1.2572992000059457 best 8.614999999999998
+EXACT 12 50 solid 26 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.08870609999576118 best 8.614999999999998
+EXACT 12 100 solid 81 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.0211231000139378 best 8.614999999999998
+EXACT 12 150 solid 133 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.30756649999239016 best 8.614999999999998
+EXACT 12 200 solid 186 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.5386112999985926 best 8.614999999999998
+EXACT 12 250 solid 241 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.07598899998993147 best 8.614999999999998
+EXACT 12 300 solid 293 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.3401767000032123 best 8.614999999999998
+EXACT 12 350 solid 343 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.074337199999718 best 8.614999999999998
+EXACT 12 400 solid 397 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.07739489999949001 best 8.614999999999998
+EXACT 12 450 solid 450 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.39114070001232903 best 8.614999999999998
+EXACT 12 500 solid 504 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.5214708999992581 best 8.614999999999998
+EXACT 12 550 solid 554 0 lower 5.614999999999998 distance 11.614999999999998 seconds 0.14432819999638014 best 8.614999999999998
+END {"a": "PCB_supervision", "b": "Tray_supervision", "minimum_mm": 8.0, "reason": "Underside pin tips clear tray; mounting hardware checked separately", "measured_mm": 8.614999999999998, "minimum_solid_pair": [14, 0], "solid_pair_count": 574, "exact_BRep_queries": 574, "AABB_pruned_pairs": 0, "seconds": 96.74419179999677, "passed": true, "whole_shape_tight_AABB_lower_mm": 2.614999999997554, "conservative_AABB_lower_mm_minus_2e_6": 2.6149979999975543}
+BEGIN 13 PCB_supervision Tray_power
+GLOBAL_AABB_LOWER 13 27.84499999999756 minimum 20
+EXACT 13 1 solid 14 0 lower 27.84499999999756 distance 27.845 seconds 0.5466340999992099 best 27.845
+EXACT 13 2 solid 65 0 lower 27.84499999999756 distance 27.845 seconds 1.495118899998488 best 27.845
+EXACT 13 3 solid 100 0 lower 27.84499999999756 distance 27.845 seconds 1.3158910000056494 best 27.845
+END {"a": "PCB_supervision", "b": "Tray_power", "minimum_mm": 20, "reason": "Minimum physical clearance between actual populated source and next tray", "measured_mm": 27.845, "minimum_solid_pair": [14, 0], "solid_pair_count": 574, "exact_BRep_queries": 26, "AABB_pruned_pairs": 548, "seconds": 12.537908300000709, "passed": true, "whole_shape_tight_AABB_lower_mm": 27.84499999999756, "conservative_AABB_lower_mm_minus_2e_6": 27.844997999997563}
+DONE 310.4682615999918

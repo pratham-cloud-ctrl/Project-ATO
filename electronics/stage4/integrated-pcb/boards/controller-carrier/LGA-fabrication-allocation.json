@@ -1,0 +1,66 @@
+{
+  "schema": "ato.carrier-lga-fabrication.v1",
+  "geometry_check": "Via drill circle intersects axis-aligned actual BT40F copper-pad rectangle; no fabricated-board evidence",
+  "minimum_via_diameter_mm": 0.5,
+  "minimum_drill_mm": 0.2,
+  "minimum_annular_mm": 0.15,
+  "clearance_mm": 0.15,
+  "overlaps": [
+    {
+      "via_uuid": "97e49a86-ad9d-4db2-8c7b-fa37e7eeb560",
+      "pad": "D5",
+      "net": "SYS_ce0a4f53__BOTH_CNV",
+      "diameter_mm": 0.5,
+      "drill_mm": 0.2,
+      "via_position_mm": [
+        23.8,
+        126.9
+      ]
+    },
+    {
+      "via_uuid": "d61695ee-d603-4f85-813c-0671aead4fba",
+      "pad": "C3",
+      "net": "SYS_a863a08a__CS1",
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "via_position_mm": [
+        22.3,
+        124.8
+      ]
+    },
+    {
+      "via_uuid": "1aa1cd2e-269d-4f31-954c-c6e8349ec57e",
+      "pad": "A5",
+      "net": "SYS_46ea5f03__CH0_REQUEST",
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "via_position_mm": [
+        19.3,
+        127.0
+      ]
+    },
+    {
+      "via_uuid": "263a7827-809c-4eb2-81f0-b4b926f1d100",
+      "pad": "D2",
+      "net": "SYS_822d2245__MON_REARM0",
+      "diameter_mm": 0.5,
+      "drill_mm": 0.2,
+      "via_position_mm": [
+        23.9,
+        123.7
+      ]
+    },
+    {
+      "via_uuid": "f05c46cf-4fe3-4be3-9ffa-4802b3d185ef",
+      "pad": "A4",
+      "net": "SYS_18e49fe8__AFE_CS_ASSERT",
+      "diameter_mm": 0.5,
+      "drill_mm": 0.2,
+      "via_position_mm": [
+        18.9,
+        126.3
+      ]
+    }
+  ],
+  "required_process": "Filled and capped via-in-pad for each listed LGA-pad drill overlap; paste/stencil/reflow and manufacturer approval remain open."
+}

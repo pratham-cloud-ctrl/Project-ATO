@@ -1,0 +1,343 @@
+{
+  "schema": "ato.stage6.release-verification.v1",
+  "passed": true,
+  "version": "2.0.0",
+  "date": "2026-10-16",
+  "scope": "Entirely digital integrated SCCI research and engineering concept; native modular reference and separate conditional future implanted interface",
+  "checks": 6309,
+  "baseline": {
+    "commit": "736015848cf581df66488bf53aa6360152eb767b",
+    "preserved_files": 2733,
+    "path_and_blob_sha256": "b7b38512cffb0a5712a77a3b40e4a3af3fa37e451d8160b3a79a165aa818d3ea",
+    "mutable_entries": [
+      ".gitattributes",
+      ".gitignore",
+      "CITATION.cff",
+      "CURRENT_STATUS.md",
+      "README.md",
+      "docs/engineering-roadmap.md",
+      "provenance/manifest.sha256"
+    ]
+  },
+  "manuscript": {
+    "pages": 27,
+    "pdf_sha256": "b2e700f44ee4342c15806e72abe20aa70280d459fe4d8f9a1331babe57a69418",
+    "all_pages_visually_reviewed": true,
+    "primary_and_inspiration_references": 18,
+    "figure_stems": [
+      "01_system",
+      "02_learning",
+      "03_pressure",
+      "04_conditional_learning",
+      "05_exposure",
+      "06_pressure_tradeoff",
+      "07_integration",
+      "08_evidence",
+      "09_runtime"
+    ]
+  },
+  "local_entry_links": 122,
+  "external_links_recorded_not_live_revalidated_here": [
+    "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
+    "https://doi.org/10.1002/advs.202303377",
+    "https://doi.org/10.1016/S1474-4422(19",
+    "https://doi.org/10.1016/j.neuron.2013.08.028",
+    "https://doi.org/10.1038/s41467-026-75128-z",
+    "https://doi.org/10.1038/s41586-020-03180-w",
+    "https://doi.org/10.1038/s41586-022-05385-7",
+    "https://doi.org/10.1038/s41586-023-06094-5",
+    "https://doi.org/10.1038/s41591-021-01663-5",
+    "https://doi.org/10.1038/s41591-025-03614-w",
+    "https://doi.org/10.1038/s41591-026-04435-1",
+    "https://doi.org/10.1038/s41593-018-0262-6",
+    "https://doi.org/10.1073/pnas.1505383112",
+    "https://doi.org/10.1073/pnas.91.16.7534",
+    "https://doi.org/10.1126/sciadv.adl1230",
+    "https://doi.org/10.1523/JNEUROSCI.1688-13.2013",
+    "https://doi.org/10.1523/JNEUROSCI.3968-12.2013",
+    "https://doi.org/10.3390/jcm15166287",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/START_HERE.md",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/docs/stage6/contributions.md",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/docs/stage6/defence-guide.md",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v1.0.0",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.0",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/tree/v1.0.0",
+    "https://github.com/sam-astro/Mind-link",
+    "https://www.youtube.com/watch?v=5YxrpcqkTYA"
+  ],
+  "preserved_scope": {
+    "conditional_scenarios": 128,
+    "fitted_components": 1296,
+    "master_sheets": 80,
+    "mechanical_checks": 12996
+  },
+  "new_conditional_software_integration": {
+    "assertions": 114426,
+    "motor_completed_events": 5184,
+    "physiology_completed_events": 1200,
+    "live_rhd_feedback_while_motor_implemented": false,
+    "physical_or_biological_execution": false
+  },
+  "artifacts": {
+    ".github/workflows/verify-release.yml": {
+      "sha256": "dc2255498ac39f23e9c29c1ca9cd889fc3848fa96f39d7d6ef3210b9afea5a2b",
+      "text_normalized": true
+    },
+    "cad/stage5/ATO_stage5_reference_full.FCStd": {
+      "sha256": "b4323834775d269d458726106929aa30a197aebb93b7eb6c6f7e9e23f49f386b",
+      "text_normalized": false
+    },
+    "cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf": {
+      "sha256": "a4375223084c3debeb29b1dc566e067f169c7b941056b1e057b9ce91595e3d04",
+      "text_normalized": false
+    },
+    "cad/stage5/future-interface/ATO_future_interface.FCStd": {
+      "sha256": "b148467eac2c00497052cd0e4f5290d8ea1290199ef06559fb583aaac3b5499c",
+      "text_normalized": false
+    },
+    "cad/stage5/README.md": {
+      "sha256": "5da5498ba6a62ac457a7af58056db6358baa3edb2532bfb21a2bc6c26f071d36",
+      "text_normalized": true
+    },
+    "CITATION.cff": {
+      "sha256": "55f076937125295870d1f373008e55db8b711426b9e0dc1d90bb0c5b36f6bde5",
+      "text_normalized": true
+    },
+    "CURRENT_STATUS.md": {
+      "sha256": "53570a8984b1597f97d22c2f531c42c81bd97e08aa96d9d3e130fcb5969d2505",
+      "text_normalized": true
+    },
+    "docs/stage6/contributions.md": {
+      "sha256": "52d03124426b3a3dd9fd6ab6714d3052fcb50749a258d5af94d35dcd0015a502",
+      "text_normalized": true
+    },
+    "docs/stage6/defence-guide.md": {
+      "sha256": "f4c7d091bb1553d0363c81cbef3276c2b402ecebbe89d29c8a47b6d5095d6ec8",
+      "text_normalized": true
+    },
+    "docs/stage6/evidence-claims.csv": {
+      "sha256": "17502ea3235ab65c7e200455842dfd4461d0a809f58ac80ddda0371d965ef004",
+      "text_normalized": true
+    },
+    "docs/stage6/evidence-review.md": {
+      "sha256": "b9e05c2031b3b0d10a62043b42d920377fcbff494871af287482603f579e956c",
+      "text_normalized": true
+    },
+    "docs/stage6/exit-review.md": {
+      "sha256": "f8d09c832562c8a1d6dcb40d2b557c5ecb5c2fc3c6654674ed473acb9f6e7762",
+      "text_normalized": true
+    },
+    "docs/stage6/integration-verification.md": {
+      "sha256": "9dd543e3a49a216ee249a76bb1a38ad0470c165242ed615bbc7e570ae75cbbbc",
+      "text_normalized": true
+    },
+    "docs/stage6/original-hypothesis/README.md": {
+      "sha256": "a7ea9f4f0d7571e34889b2febdc7f5e2d8542477d591f0763776b866a0e2e41b",
+      "text_normalized": true
+    },
+    "docs/stage6/original-hypothesis/SCCI_research_hypothesis_paper.pdf": {
+      "sha256": "a1784965d63060e3b0c11fd3c01c9f0b4fe0b007cc65c605c76164ee1d4bf103",
+      "text_normalized": false
+    },
+    "docs/stage6/README.md": {
+      "sha256": "a04cb86d5490dfc8e44f1ec6eaf1c45c35f7a1d7d71f7b52f3d6a910042803e8",
+      "text_normalized": true
+    },
+    "docs/stage6/references.json": {
+      "sha256": "0ea7b9fd3607fddd0c824bb0763b8c229767a42cfb53448d441f4b6f5c4c04e9",
+      "text_normalized": true
+    },
+    "docs/stage6/release-contract.json": {
+      "sha256": "92fa6a99e24aaa0238dab2c1f6ecd24bb955946bf54c66408f46dea85cc95754",
+      "text_normalized": true
+    },
+    "docs/stage6/release-notes.md": {
+      "sha256": "d3323c52a68acffca4869aa5c8598fff500b8a3fdcc988662df914011e6d3ece",
+      "text_normalized": true
+    },
+    "docs/stage6/release-plan.md": {
+      "sha256": "72c8c2ec7e443f9f6654046ce45ebb513656f83eee61b1fd952079542da00d88",
+      "text_normalized": true
+    },
+    "docs/stage6/requirements-claims-trace.csv": {
+      "sha256": "9a1bf23b9c43ab28dfecc278b117f013125e381ea5bf012d9bb942b390b36973",
+      "text_normalized": true
+    },
+    "electronics/stage4/integrated-pcb/BOARD_INDEX.md": {
+      "sha256": "7e01730b65d2e3cab4b667c2f892c2beb770b54154447b60dde82ef024e9c214",
+      "text_normalized": true
+    },
+    "experiments/stage6/README.md": {
+      "sha256": "6e5162e0cff65e95d94ee4939b21c8b284949fc5397c9aeb15f0a4ddc8a1aa62",
+      "text_normalized": true
+    },
+    "LICENSE": {
+      "sha256": "bf57184149c97e390ba754e0b5751d4d7ba9115fe6b3b9adac18367c90d6b739",
+      "text_normalized": true
+    },
+    "manuscript/stage6/build-manifest.json": {
+      "sha256": "fee1b8e1927335506e1f0e331165e16bbecfb7640df7fefd1366350cce297223",
+      "text_normalized": true
+    },
+    "manuscript/stage6/build_figures.py": {
+      "sha256": "2dcb60a50b033258bcd4467530f35843c62a6f540d074cf03a630c7461a7ff15",
+      "text_normalized": true
+    },
+    "manuscript/stage6/build_manuscript.py": {
+      "sha256": "0f875a3e325c09d8246289faba3f8ca18afc2543df6229c22e348b3e463e6cfb",
+      "text_normalized": true
+    },
+    "manuscript/stage6/figures/01_system.png": {
+      "sha256": "43cefc1d4ba9440f745503494dc7247909dc64f737353f081d7e2be951784012",
+      "text_normalized": false
+    },
+    "manuscript/stage6/figures/01_system.svg": {
+      "sha256": "6b108e8e7ef9474acceeece836aff612ce547928b00fce8f082e762a263963ad",
+      "text_normalized": true
+    },
+    "manuscript/stage6/figures/02_learning.png": {
+      "sha256": "cf25c1e3bdab4f1d5325469a1b630a2c944267df52df9f834865a97cd9cf59e6",
+      "text_normalized": false
+    },
+    "manuscript/stage6/figures/02_learning.svg": {
+      "sha256": "3af05c37de0b48e3e79d7e17bf912d02f89b59b9779413c0d954ca79775a01c9",
+      "text_normalized": true
+    },
+    "manuscript/stage6/figures/03_pressure.png": {
+      "sha256": "7c1693203bb17856f040a4814e8ec2e04e9c876ad38bb4b6ab4b6b966d89ac53",
+      "text_normalized": false
+    },
+    "manuscript/stage6/figures/03_pressure.svg": {
+      "sha256": "9067a47c149a536b741e3568938eda7b9920c7ba2478400bd8a28459620c2fb1",
+      "text_normalized": true
+    },
+    "manuscript/stage6/figures/04_conditional_learning.png": {
+      "sha256": "8e3fd612a8a38fec550cf355247b1c2b4225863477e36c848f38d9b862929979",
+      "text_normalized": false
+    },
+    "manuscript/stage6/figures/04_conditional_learning.svg": {
+      "sha256": "c36581090da02f59d09879feca8c337e5dc1a8d7f76aba3bc3c795542ccc19a7",
+      "text_normalized": true
+    },
+    "manuscript/stage6/figures/05_exposure.png": {
+      "sha256": "3133395d7a9c149f214b5d04c321883b0a179f43e4d55c82021b7a16a92d8b53",
+      "text_normalized": false
+    },
+    "manuscript/stage6/figures/05_exposure.svg": {
+      "sha256": "43ac3510e09f7359356e7eed8bbf83c16990e1871100ef629ea9437d32cf5e3a",
+      "text_normalized": true
+    },
+    "manuscript/stage6/figures/06_pressure_tradeoff.png": {
+      "sha256": "b99c06f34aefa7c303a4279c093377686bd9e5004be443153eacaaf31a4a49ed",
+      "text_normalized": false
+    },
+    "manuscript/stage6/figures/06_pressure_tradeoff.svg": {
+      "sha256": "e3aa156432a0ead56336365557b595e9e5bac4b1d9ab0f797827ab46fb14015c",
+      "text_normalized": true
+    },
+    "manuscript/stage6/figures/07_integration.png": {
+      "sha256": "3951413e7fe49c0fe715795fca7db89db574b2c9d6a43643e08026e65077fb39",
+      "text_normalized": false
+    },
+    "manuscript/stage6/figures/07_integration.svg": {
+      "sha256": "59df5835eeab484fc310a93767dfdbacf97ec6bac129097ef759c7c25b8e74b0",
+      "text_normalized": true
+    },
+    "manuscript/stage6/figures/08_evidence.png": {
+      "sha256": "7a1ad0164f7183aebd771814fb8b43efc32f1059a01daec7f52b8737ba586d9d",
+      "text_normalized": false
+    },
+    "manuscript/stage6/figures/08_evidence.svg": {
+      "sha256": "ebc6f21a3413c9fc2508897bf72a54ed32f378abb5031f3c6640f0d22d5e9aa5",
+      "text_normalized": true
+    },
+    "manuscript/stage6/figures/09_runtime.png": {
+      "sha256": "088923b510d1102bc12fc5432072029d9479190ba67ff27f316c111f963c8160",
+      "text_normalized": false
+    },
+    "manuscript/stage6/figures/09_runtime.svg": {
+      "sha256": "15653227944f0d9e3e0682718d9c89ac2a3904ed83840d8177035a31c80b2ec7",
+      "text_normalized": true
+    },
+    "manuscript/stage6/figures/figure-manifest.json": {
+      "sha256": "a413d1aaac925227804a9c9cd97957b28c90f5b897a14ae635682700a328a204",
+      "text_normalized": true
+    },
+    "manuscript/stage6/manuscript.md": {
+      "sha256": "9d1b116349b070336b76c3fa8bd544e01433b1c7c7ecf10fab9be1349ddd98c2",
+      "text_normalized": true
+    },
+    "output/pdf/Project_ATO_Integrated_Manuscript.pdf": {
+      "sha256": "b2e700f44ee4342c15806e72abe20aa70280d459fe4d8f9a1331babe57a69418",
+      "text_normalized": false
+    },
+    "provenance/stage3-conditional-concept-review.json": {
+      "sha256": "93c89dddb9ecf6304f198bbe95b6fe9ce6ab6e3a8a7278a2b7529d88cc984c11",
+      "text_normalized": true
+    },
+    "provenance/stage4-integrated-pcb-verification.json": {
+      "sha256": "9bb78e27f09a2f59094672e96155bdd673299f9577b463cdd108b848b494ca5a",
+      "text_normalized": true
+    },
+    "provenance/stage5-delivery-review.json": {
+      "sha256": "59651cb641b0bf9a462ab772e97e5cf2e80c57dbb29305589a71dd0586af1c13",
+      "text_normalized": true
+    },
+    "provenance/stage5-mechanical-verification.json": {
+      "sha256": "74499c4f9fdd3d17e6a109aee0f8d8af2af3ce56e002b55117381abdd2c6a4e2",
+      "text_normalized": true
+    },
+    "provenance/stage6-document-review.json": {
+      "sha256": "2c6402cbc12140cab1fa8813647cc388a3d6c2683d6d6c9f31316de92bb31c2a",
+      "text_normalized": true
+    },
+    "README.md": {
+      "sha256": "b3be1a363cecf32d6e4979c9b5540102d984e4ec5ea986bc0f2e31844fe5c3c2",
+      "text_normalized": true
+    },
+    "results/stage6/digital-path-verification.json": {
+      "sha256": "6f4effd8f773700925caf5d826f4568d34f3c8728c7c8177b32782a2a7f32fc6",
+      "text_normalized": true
+    },
+    "results/stage6/integration-summary.json": {
+      "sha256": "c5e329cd5b6b1e314096572487f3e37f1d030ad055000dfa3e364ac19805bfdf",
+      "text_normalized": true
+    },
+    "scripts/stage6/runtime_bridge.c": {
+      "sha256": "3bf4d7b6f6a479070bf07980eba977583d7957788faf6b7700c6a2e180f56a0c",
+      "text_normalized": true
+    },
+    "scripts/stage6/verify_digital_path.py": {
+      "sha256": "ea401016bdd765e11bfe55d0df4dca7725efb0bf4fc60bc811ecc25189eb4f73",
+      "text_normalized": true
+    },
+    "scripts/verify_stage6_release.py": {
+      "sha256": "6e8561e1b3f759521ed196e5b7cf1759240456d3e799fe4d7a496c2d407040f9",
+      "text_normalized": true
+    },
+    "START_HERE.md": {
+      "sha256": "f050d917bbb10a6963d5ca4043a157534d0efbc5804d4c3a625f6c3b748c0090",
+      "text_normalized": true
+    }
+  },
+  "limitations": {
+    "human_or_animal_data_collected": false,
+    "hardware_fabricated_or_physically_executed": false,
+    "retained_human_learning_benefit_established": false,
+    "universal_physiological_control_established": false,
+    "unique_spinal_information_advantage_established": false,
+    "compact_implant_electronics_implemented": false,
+    "chronic_implanted_thermal_closure_earned": false,
+    "current_radio_firmware_implemented": false,
+    "live_spinal_decoding_during_active_target_stimulation_implemented": false,
+    "assumptions_permitted_when_explicit_and_defensible": true,
+    "original_negative_results_preserved": true,
+    "video_and_website_revision_in_scope": false
+  },
+  "post_commit_release_checks": [
+    "Git blob manifest, remote branch and tag commit identities",
+    "Clean independent checkout and actual GitHub workflow conclusions",
+    "Full source archive member blobs and remote release asset digests"
+  ]
+}

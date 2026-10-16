@@ -1,0 +1,806 @@
+{
+  "schema": "ato.routed-board.v1",
+  "board": "power",
+  "pcb_sha256_lf": "a91073998ec0cd46c84c4332f69324e9e428571a9307c212443e697c2a7696a5",
+  "system_sha256_lf": "e9196b94b4e409ca3c32d081e6546300d9d78ca87a68072ab40e431a556c36f4",
+  "electrical_components": 156,
+  "mounting_holes": 4,
+  "pads": 463,
+  "track_segments": 1456,
+  "vias": 142,
+  "unconnected": 0,
+  "net_renames": {},
+  "widened_stubs": [],
+  "models": [
+    {
+      "reference": "R62013",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R62042",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R60242",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R62002",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C63014",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "U60410",
+      "kind": "declared nominal package",
+      "path": "${KIPRJMOD}/../../package-models/Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm.step"
+    },
+    {
+      "reference": "R62000",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R62034",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C64102",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C61001",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "L60110",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Inductor_SMD.3dshapes/L_Bourns_SRP5030T.step"
+    },
+    {
+      "reference": "R62010",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R61100",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C61103",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R63011",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "U60412",
+      "kind": "declared nominal package",
+      "path": "${KIPRJMOD}/../../package-models/Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm.step"
+    },
+    {
+      "reference": "R62020",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C63004",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "J60412",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
+    },
+    {
+      "reference": "U60102",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_SO.3dshapes/VSSOP-8_3x3mm_P0.65mm.step"
+    },
+    {
+      "reference": "R64100",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R62011",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R63001",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C60246",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C63001",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "J60411",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
+    },
+    {
+      "reference": "J60002",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.step"
+    },
+    {
+      "reference": "C64123",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R62021",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "D60230",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Diode_SMD.3dshapes/D_SOD-323.step"
+    },
+    {
+      "reference": "R60231",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "F60001",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Fuse.3dshapes/Fuse_1206_3216Metric.step"
+    },
+    {
+      "reference": "U60101",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_SO.3dshapes/VSSOP-8_3x3mm_P0.65mm.step"
+    },
+    {
+      "reference": "R61020",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R61001",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "U60231",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+    },
+    {
+      "reference": "R64111",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C64111",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "L60301",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Inductor_SMD.3dshapes/L_Bourns_SRP5030T.step"
+    },
+    {
+      "reference": "C60242",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R61000",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C63002",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R64112",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "U60235",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+    },
+    {
+      "reference": "U60110",
+      "kind": "declared nominal package",
+      "path": "${KIPRJMOD}/../../package-models/VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm.step"
+    },
+    {
+      "reference": "R62024",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "J60410",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
+    },
+    {
+      "reference": "D60001",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Diode_SMD.3dshapes/D_SMC.step"
+    },
+    {
+      "reference": "C60243",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "J60005",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step"
+    },
+    {
+      "reference": "R61010",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "J60004",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step"
+    },
+    {
+      "reference": "C60244",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C63003",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C64113",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R62003",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C60203",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R64122",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "L60100",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Inductor_SMD.3dshapes/L_Bourns_SRP5030T.step"
+    },
+    {
+      "reference": "U60202",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+    },
+    {
+      "reference": "C61011",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R61021",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C60200",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R61003",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R62031",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C61101",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "J60006",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
+    },
+    {
+      "reference": "R63000",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "L60101",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Inductor_SMD.3dshapes/L_Bourns_SRP5030T.step"
+    },
+    {
+      "reference": "R64110",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "U60232",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+    },
+    {
+      "reference": "J60003",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step"
+    },
+    {
+      "reference": "R63002",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C60401",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "J60001",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step"
+    },
+    {
+      "reference": "U60203",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+    },
+    {
+      "reference": "C64120",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R61101",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R60240",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C61102",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "L60102",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Inductor_SMD.3dshapes/L_Bourns_SRP5030T.step"
+    },
+    {
+      "reference": "L60300",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Inductor_SMD.3dshapes/L_Bourns_SRP5030T.step"
+    },
+    {
+      "reference": "C63013",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R61002",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "U60400",
+      "kind": "declared nominal package",
+      "path": "${KIPRJMOD}/../../package-models/TRACO_TMR3_SIP8_21.8x9.1_P2.54.step"
+    },
+    {
+      "reference": "R62030",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R62004",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R62044",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R61013",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C64110",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "U60234",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+    },
+    {
+      "reference": "R61022",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R61102",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C60247",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C61100",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C60201",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R60230",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "U60201",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+    },
+    {
+      "reference": "C60240",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C64101",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "U60237",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+    },
+    {
+      "reference": "C60402",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R61023",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "U60301",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step"
+    },
+    {
+      "reference": "R62040",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "U60411",
+      "kind": "declared nominal package",
+      "path": "${KIPRJMOD}/../../package-models/Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm.step"
+    },
+    {
+      "reference": "R62033",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C61021",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C60241",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R61011",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C64112",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C61010",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C60002",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C61000",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C63011",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R64120",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "U60204",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+    },
+    {
+      "reference": "R62014",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C60400",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R62043",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C63010",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "U60230",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+    },
+    {
+      "reference": "C60230",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R64121",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C64100",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R62022",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C64103",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R64101",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C63012",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C60001",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "U60200",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+    },
+    {
+      "reference": "R60241",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "U60233",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+    },
+    {
+      "reference": "R61103",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "U60236",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+    },
+    {
+      "reference": "R63010",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C61020",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C60204",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C60202",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "D60301",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Diode_SMD.3dshapes/D_SOD-323F.step"
+    },
+    {
+      "reference": "D60300",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Diode_SMD.3dshapes/D_SOD-323F.step"
+    },
+    {
+      "reference": "C63000",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R62041",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "U60100",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_SO.3dshapes/VSSOP-8_3x3mm_P0.65mm.step"
+    },
+    {
+      "reference": "R62032",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "SW60001",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step"
+    },
+    {
+      "reference": "R64102",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R62023",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R62012",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "U60300",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step"
+    },
+    {
+      "reference": "C60245",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "R61012",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R63012",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "R62001",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    },
+    {
+      "reference": "C64121",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    },
+    {
+      "reference": "C64122",
+      "kind": "KiCad library package model",
+      "path": "${KIPRJMOD}/../models/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    }
+  ],
+  "stackup": "Four copper layers / 1.6 mm nominal FR4 / ENIG; impedance and fabrication tolerances unqualified",
+  "project_sha256_lf": "8887efae4b23a17ec3dbccb90af0933279f2480c860b56d58e0a57020458792b",
+  "drc_sha256_lf": "afb2d669246bfb1e6435c0dc25a9b7e5d4c5e7cf3fdda916927d29a6fb087cec",
+  "schematic_sha256_lf": "6166da904ff84c6542b86921275b57c1e6214dfff94ed1bd4c6c15ca5fdc2ae1",
+  "native_drc_counts": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0,
+    "ignored_checks": 0
+  }
+}

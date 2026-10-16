@@ -1,0 +1,20 @@
+{
+  "schema": "ato.populated-step-geometry.v1",
+  "board": "monitoring-transport",
+  "STEP_sha256": "576a653f0ec784a6ad53c70117b10b0ae27c062a1bb314520b1fe2ec049b28ab",
+  "FreeCAD_version": [
+    "1",
+    "1",
+    "4"
+  ],
+  "valid": true,
+  "solids": 61,
+  "volume_mm3": 28403.664179106985,
+  "dimensions_mm": [
+    125.0,
+    140.0,
+    11.54000000000489
+  ],
+  "nominal_geometry_only": true,
+  "manufacturing_tolerance_or_physical_performance_qualified": false
+}

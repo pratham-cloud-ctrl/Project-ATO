@@ -1,0 +1,913 @@
+{
+  "schema": "ato.stage3.pressure-convergence-probe.v1",
+  "status": "bounded_diagnostic_only",
+  "scope": "Seed17, nominal/no-response feedback, chosen reference delivery surrogate; not integrated electrical verification or general convergence qualification.",
+  "source_identity": {
+    "path": "src/ato/stage3/pressure.py",
+    "normalized_lf_sha256": "c4d4e980b7d3e45d778bb44beedfded34f9d53fdf3a81bcadd2eb342e681e0c0",
+    "source_model": "SBP = chosen baseline - prescribed disturbance + hidden two-state added pressure; synthetic1Hz cardiac waveform; independent200Hz sensor noise",
+    "scenario_identity": "Same declared scenario parameters at all three grids; no-response changes gain to0 only, retaining the nominal baseline/disturbance/sensor parameters."
+  },
+  "experiment": {
+    "seed": 17,
+    "mode": "feedback",
+    "delivery": "chosen_reference_surrogate",
+    "steps_s": [
+      0.005,
+      0.0025,
+      0.00125
+    ],
+    "scenarios": [
+      "nominal",
+      "no_response"
+    ],
+    "run_count": 6,
+    "waveform_hz": 200,
+    "extraction_hz": 1,
+    "policy_hz": 4,
+    "duration_s": 420,
+    "same_actual_noise_hash_across_all_six_runs": true,
+    "noise_audit_permission": "Evaluator captures existing generator draws; no noise samples, body states or future values supplied to the operational controller."
+  },
+  "reproduction": {
+    "rtol": 2e-08,
+    "atol": 1e-11,
+    "platform_local_hash_policy": "Each receipt must have identical actual-noise hashes across all six runs. Cross-platform reproduction compares RNG states, counts and numeric moments; it does not require identical noise floating-point bytes across operating systems."
+  },
+  "runs": [
+    {
+      "scenario": "nominal",
+      "integration_step_s": 0.005,
+      "config": {
+        "duration_s": 420.0,
+        "integration_step_s": 0.005,
+        "waveform_sample_hz": 200,
+        "extraction_period_s": 1.0,
+        "policy_period_s": 0.25,
+        "freshness_limit_s": 2.0,
+        "target_pa": 15998.6864898,
+        "calibration_end_s": 144.0,
+        "disturbance_start_s": 180.0,
+        "disturbance_end_s": 340.0,
+        "sensor_noise_pa": 46.66283559525,
+        "fallback": "stop",
+        "finite_hold_s": 2.0,
+        "ramp_fraction_per_s": 0.2,
+        "maximum_fraction": 1.0,
+        "rise_slew_fraction_per_s": 0.12,
+        "minimum_gain_pa": 399.96716224500005,
+        "gain_relative_uncertainty": 0.25,
+        "heldout_error_limit_pa": 533.28954966
+      },
+      "scenario_parameters": {
+        "name": "nominal",
+        "baseline_pa": 15998.6864898,
+        "gain_pa": 4799.605946940001,
+        "activation_tau_s": 1.5,
+        "response_tau_s": 6.0,
+        "onset_delay_s": 0.8,
+        "release_delay_s": 2.0,
+        "recruitment_threshold": 0.0,
+        "disturbance_pa": 3733.0268476200004,
+        "sensor_delay_s": 0.15,
+        "sensor_bias_pa": 0.0,
+        "dropout_interval_s": null,
+        "invalid_interval_s": null,
+        "stale_replay_interval_s": null,
+        "changed_gain_pa": null,
+        "change_time_s": 260.0
+      },
+      "delivery_boundary": "chosen_reference_surrogate",
+      "calibration": {
+        "gain_pa_per_fraction": 5302.365341020159,
+        "gain_interval_pa": [
+          3807.54957998788,
+          6797.181102052437
+        ],
+        "estimated_effect_lag_s": 2.0,
+        "one_step_error_pa": 40.40168274353365,
+        "heldout_recursive_error_pa": 180.9524881293519,
+        "qualified": true,
+        "reason": "conditional_positive_response_model",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16084.89713546055,
+        "autoregressive_a": 0.9114894410700692
+      },
+      "summary": {
+        "evaluation_rmse_pa": 1184.2692522656068,
+        "disturbance_rmse_pa": 1313.6308294491184,
+        "disturbance_min_sbp_pa": 12351.552281647904,
+        "recovery_peak_sbp_pa": 19354.5327577851,
+        "overshoot_above_target_pa": 3355.846267985098,
+        "fraction_time_within_5mmhg": 0.55,
+        "delivered_train_equivalent_s": 94.42999999999999,
+        "sensor_unqualified_time_s": 0.0,
+        "fallback_time_s": 0.0,
+        "fallback_min_sbp_pa": null,
+        "fallback_peak_sbp_pa": null,
+        "fallback_delivered_train_equivalent_s": 0.0,
+        "response_unqualified": false,
+        "high_pressure_no_lowering_time_s": 15.0,
+        "support_remaining_after_command_zero": true
+      },
+      "policy_samples": 1681,
+      "external_records": 420,
+      "noise_witness": {
+        "instrumentation": "forwarded actual model scalar normal draws unchanged",
+        "generator": "PCG64",
+        "seed": 17,
+        "normal_location_pa": 0.0,
+        "normal_scale_pa": 46.66283559525,
+        "scalar_call_count": 84001,
+        "samples_sha256": "cbbda0fe75a3b8b1da4389ffe0738a4888844ddab9207673746d4fb0d8c48005",
+        "hash_encoding": "chronological little-endian IEEE754 float64 sensor noise in Pa",
+        "initial_generator_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 191425278619858320667688084520535371943,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_generator_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 88880569908577065028628951953585970723,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "sample_moments_pa": {
+          "mean": -0.05025727534135965,
+          "standard_deviation": 46.69995952429237,
+          "minimum": -173.01925787182407,
+          "maximum": 210.95292740453905
+        }
+      }
+    },
+    {
+      "scenario": "nominal",
+      "integration_step_s": 0.0025,
+      "config": {
+        "duration_s": 420.0,
+        "integration_step_s": 0.0025,
+        "waveform_sample_hz": 200,
+        "extraction_period_s": 1.0,
+        "policy_period_s": 0.25,
+        "freshness_limit_s": 2.0,
+        "target_pa": 15998.6864898,
+        "calibration_end_s": 144.0,
+        "disturbance_start_s": 180.0,
+        "disturbance_end_s": 340.0,
+        "sensor_noise_pa": 46.66283559525,
+        "fallback": "stop",
+        "finite_hold_s": 2.0,
+        "ramp_fraction_per_s": 0.2,
+        "maximum_fraction": 1.0,
+        "rise_slew_fraction_per_s": 0.12,
+        "minimum_gain_pa": 399.96716224500005,
+        "gain_relative_uncertainty": 0.25,
+        "heldout_error_limit_pa": 533.28954966
+      },
+      "scenario_parameters": {
+        "name": "nominal",
+        "baseline_pa": 15998.6864898,
+        "gain_pa": 4799.605946940001,
+        "activation_tau_s": 1.5,
+        "response_tau_s": 6.0,
+        "onset_delay_s": 0.8,
+        "release_delay_s": 2.0,
+        "recruitment_threshold": 0.0,
+        "disturbance_pa": 3733.0268476200004,
+        "sensor_delay_s": 0.15,
+        "sensor_bias_pa": 0.0,
+        "dropout_interval_s": null,
+        "invalid_interval_s": null,
+        "stale_replay_interval_s": null,
+        "changed_gain_pa": null,
+        "change_time_s": 260.0
+      },
+      "delivery_boundary": "chosen_reference_surrogate",
+      "calibration": {
+        "gain_pa_per_fraction": 5302.758176544748,
+        "gain_interval_pa": [
+          3807.8316693273455,
+          6797.68468376215
+        ],
+        "estimated_effect_lag_s": 2.0,
+        "one_step_error_pa": 40.40419583748849,
+        "heldout_recursive_error_pa": 181.08099970634962,
+        "qualified": true,
+        "reason": "conditional_positive_response_model",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16084.89713546055,
+        "autoregressive_a": 0.9115153722102985
+      },
+      "summary": {
+        "evaluation_rmse_pa": 1184.3261223562295,
+        "disturbance_rmse_pa": 1313.6717504401302,
+        "disturbance_min_sbp_pa": 12351.456618004006,
+        "recovery_peak_sbp_pa": 19354.845115299726,
+        "overshoot_above_target_pa": 3356.1586254997255,
+        "fraction_time_within_5mmhg": 0.55,
+        "delivered_train_equivalent_s": 94.42999999999999,
+        "sensor_unqualified_time_s": 0.0,
+        "fallback_time_s": 0.0,
+        "fallback_min_sbp_pa": null,
+        "fallback_peak_sbp_pa": null,
+        "fallback_delivered_train_equivalent_s": 0.0,
+        "response_unqualified": false,
+        "high_pressure_no_lowering_time_s": 15.0,
+        "support_remaining_after_command_zero": true
+      },
+      "policy_samples": 1681,
+      "external_records": 420,
+      "noise_witness": {
+        "instrumentation": "forwarded actual model scalar normal draws unchanged",
+        "generator": "PCG64",
+        "seed": 17,
+        "normal_location_pa": 0.0,
+        "normal_scale_pa": 46.66283559525,
+        "scalar_call_count": 84001,
+        "samples_sha256": "cbbda0fe75a3b8b1da4389ffe0738a4888844ddab9207673746d4fb0d8c48005",
+        "hash_encoding": "chronological little-endian IEEE754 float64 sensor noise in Pa",
+        "initial_generator_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 191425278619858320667688084520535371943,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_generator_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 88880569908577065028628951953585970723,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "sample_moments_pa": {
+          "mean": -0.05025727534135965,
+          "standard_deviation": 46.69995952429237,
+          "minimum": -173.01925787182407,
+          "maximum": 210.95292740453905
+        }
+      }
+    },
+    {
+      "scenario": "nominal",
+      "integration_step_s": 0.00125,
+      "config": {
+        "duration_s": 420.0,
+        "integration_step_s": 0.00125,
+        "waveform_sample_hz": 200,
+        "extraction_period_s": 1.0,
+        "policy_period_s": 0.25,
+        "freshness_limit_s": 2.0,
+        "target_pa": 15998.6864898,
+        "calibration_end_s": 144.0,
+        "disturbance_start_s": 180.0,
+        "disturbance_end_s": 340.0,
+        "sensor_noise_pa": 46.66283559525,
+        "fallback": "stop",
+        "finite_hold_s": 2.0,
+        "ramp_fraction_per_s": 0.2,
+        "maximum_fraction": 1.0,
+        "rise_slew_fraction_per_s": 0.12,
+        "minimum_gain_pa": 399.96716224500005,
+        "gain_relative_uncertainty": 0.25,
+        "heldout_error_limit_pa": 533.28954966
+      },
+      "scenario_parameters": {
+        "name": "nominal",
+        "baseline_pa": 15998.6864898,
+        "gain_pa": 4799.605946940001,
+        "activation_tau_s": 1.5,
+        "response_tau_s": 6.0,
+        "onset_delay_s": 0.8,
+        "release_delay_s": 2.0,
+        "recruitment_threshold": 0.0,
+        "disturbance_pa": 3733.0268476200004,
+        "sensor_delay_s": 0.15,
+        "sensor_bias_pa": 0.0,
+        "dropout_interval_s": null,
+        "invalid_interval_s": null,
+        "stale_replay_interval_s": null,
+        "changed_gain_pa": null,
+        "change_time_s": 260.0
+      },
+      "delivery_boundary": "chosen_reference_surrogate",
+      "calibration": {
+        "gain_pa_per_fraction": 5302.95477264899,
+        "gain_interval_pa": [
+          3807.972842061775,
+          6797.936703236205
+        ],
+        "estimated_effect_lag_s": 2.0,
+        "one_step_error_pa": 40.40546066496963,
+        "heldout_recursive_error_pa": 181.1453082288188,
+        "qualified": true,
+        "reason": "conditional_positive_response_model",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16084.89713546055,
+        "autoregressive_a": 0.9115283417116343
+      },
+      "summary": {
+        "evaluation_rmse_pa": 1184.3545733536325,
+        "disturbance_rmse_pa": 1313.6922217771232,
+        "disturbance_min_sbp_pa": 12351.408761258228,
+        "recovery_peak_sbp_pa": 19355.00137543744,
+        "overshoot_above_target_pa": 3356.314885637441,
+        "fraction_time_within_5mmhg": 0.55,
+        "delivered_train_equivalent_s": 94.42999999999999,
+        "sensor_unqualified_time_s": 0.0,
+        "fallback_time_s": 0.0,
+        "fallback_min_sbp_pa": null,
+        "fallback_peak_sbp_pa": null,
+        "fallback_delivered_train_equivalent_s": 0.0,
+        "response_unqualified": false,
+        "high_pressure_no_lowering_time_s": 15.0,
+        "support_remaining_after_command_zero": true
+      },
+      "policy_samples": 1681,
+      "external_records": 420,
+      "noise_witness": {
+        "instrumentation": "forwarded actual model scalar normal draws unchanged",
+        "generator": "PCG64",
+        "seed": 17,
+        "normal_location_pa": 0.0,
+        "normal_scale_pa": 46.66283559525,
+        "scalar_call_count": 84001,
+        "samples_sha256": "cbbda0fe75a3b8b1da4389ffe0738a4888844ddab9207673746d4fb0d8c48005",
+        "hash_encoding": "chronological little-endian IEEE754 float64 sensor noise in Pa",
+        "initial_generator_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 191425278619858320667688084520535371943,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_generator_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 88880569908577065028628951953585970723,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "sample_moments_pa": {
+          "mean": -0.05025727534135965,
+          "standard_deviation": 46.69995952429237,
+          "minimum": -173.01925787182407,
+          "maximum": 210.95292740453905
+        }
+      }
+    },
+    {
+      "scenario": "no_response",
+      "integration_step_s": 0.005,
+      "config": {
+        "duration_s": 420.0,
+        "integration_step_s": 0.005,
+        "waveform_sample_hz": 200,
+        "extraction_period_s": 1.0,
+        "policy_period_s": 0.25,
+        "freshness_limit_s": 2.0,
+        "target_pa": 15998.6864898,
+        "calibration_end_s": 144.0,
+        "disturbance_start_s": 180.0,
+        "disturbance_end_s": 340.0,
+        "sensor_noise_pa": 46.66283559525,
+        "fallback": "stop",
+        "finite_hold_s": 2.0,
+        "ramp_fraction_per_s": 0.2,
+        "maximum_fraction": 1.0,
+        "rise_slew_fraction_per_s": 0.12,
+        "minimum_gain_pa": 399.96716224500005,
+        "gain_relative_uncertainty": 0.25,
+        "heldout_error_limit_pa": 533.28954966
+      },
+      "scenario_parameters": {
+        "name": "no_response",
+        "baseline_pa": 15998.6864898,
+        "gain_pa": 0,
+        "activation_tau_s": 1.5,
+        "response_tau_s": 6.0,
+        "onset_delay_s": 0.8,
+        "release_delay_s": 2.0,
+        "recruitment_threshold": 0.0,
+        "disturbance_pa": 3733.0268476200004,
+        "sensor_delay_s": 0.15,
+        "sensor_bias_pa": 0.0,
+        "dropout_interval_s": null,
+        "invalid_interval_s": null,
+        "stale_replay_interval_s": null,
+        "changed_gain_pa": null,
+        "change_time_s": 260.0
+      },
+      "delivery_boundary": "chosen_reference_surrogate",
+      "calibration": {
+        "gain_pa_per_fraction": -75.48447809465176,
+        "gain_interval_pa": [
+          -345.20736285106466,
+          194.23840666176113
+        ],
+        "estimated_effect_lag_s": 5.0,
+        "one_step_error_pa": 26.97228847564129,
+        "heldout_recursive_error_pa": 31.5450334863433,
+        "qualified": false,
+        "reason": "adverse_or_zero_observed_response",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16084.89713546055,
+        "autoregressive_a": 0.3067605130743079
+      },
+      "summary": {
+        "evaluation_rmse_pa": 3032.1269762370584,
+        "disturbance_rmse_pa": 3692.48711559517,
+        "disturbance_min_sbp_pa": 12265.65964218,
+        "recovery_peak_sbp_pa": 15998.6864898,
+        "overshoot_above_target_pa": 0.0,
+        "fraction_time_within_5mmhg": 0.31979166666666664,
+        "delivered_train_equivalent_s": 0.0,
+        "sensor_unqualified_time_s": 0.0,
+        "fallback_time_s": 0.0,
+        "fallback_min_sbp_pa": null,
+        "fallback_peak_sbp_pa": null,
+        "fallback_delivered_train_equivalent_s": 0.0,
+        "response_unqualified": true,
+        "high_pressure_no_lowering_time_s": 0.0,
+        "support_remaining_after_command_zero": false
+      },
+      "policy_samples": 1681,
+      "external_records": 420,
+      "noise_witness": {
+        "instrumentation": "forwarded actual model scalar normal draws unchanged",
+        "generator": "PCG64",
+        "seed": 17,
+        "normal_location_pa": 0.0,
+        "normal_scale_pa": 46.66283559525,
+        "scalar_call_count": 84001,
+        "samples_sha256": "cbbda0fe75a3b8b1da4389ffe0738a4888844ddab9207673746d4fb0d8c48005",
+        "hash_encoding": "chronological little-endian IEEE754 float64 sensor noise in Pa",
+        "initial_generator_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 191425278619858320667688084520535371943,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_generator_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 88880569908577065028628951953585970723,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "sample_moments_pa": {
+          "mean": -0.05025727534135965,
+          "standard_deviation": 46.69995952429237,
+          "minimum": -173.01925787182407,
+          "maximum": 210.95292740453905
+        }
+      }
+    },
+    {
+      "scenario": "no_response",
+      "integration_step_s": 0.0025,
+      "config": {
+        "duration_s": 420.0,
+        "integration_step_s": 0.0025,
+        "waveform_sample_hz": 200,
+        "extraction_period_s": 1.0,
+        "policy_period_s": 0.25,
+        "freshness_limit_s": 2.0,
+        "target_pa": 15998.6864898,
+        "calibration_end_s": 144.0,
+        "disturbance_start_s": 180.0,
+        "disturbance_end_s": 340.0,
+        "sensor_noise_pa": 46.66283559525,
+        "fallback": "stop",
+        "finite_hold_s": 2.0,
+        "ramp_fraction_per_s": 0.2,
+        "maximum_fraction": 1.0,
+        "rise_slew_fraction_per_s": 0.12,
+        "minimum_gain_pa": 399.96716224500005,
+        "gain_relative_uncertainty": 0.25,
+        "heldout_error_limit_pa": 533.28954966
+      },
+      "scenario_parameters": {
+        "name": "no_response",
+        "baseline_pa": 15998.6864898,
+        "gain_pa": 0,
+        "activation_tau_s": 1.5,
+        "response_tau_s": 6.0,
+        "onset_delay_s": 0.8,
+        "release_delay_s": 2.0,
+        "recruitment_threshold": 0.0,
+        "disturbance_pa": 3733.0268476200004,
+        "sensor_delay_s": 0.15,
+        "sensor_bias_pa": 0.0,
+        "dropout_interval_s": null,
+        "invalid_interval_s": null,
+        "stale_replay_interval_s": null,
+        "changed_gain_pa": null,
+        "change_time_s": 260.0
+      },
+      "delivery_boundary": "chosen_reference_surrogate",
+      "calibration": {
+        "gain_pa_per_fraction": -75.48447809465176,
+        "gain_interval_pa": [
+          -345.20736285106466,
+          194.23840666176113
+        ],
+        "estimated_effect_lag_s": 5.0,
+        "one_step_error_pa": 26.97228847564129,
+        "heldout_recursive_error_pa": 31.5450334863433,
+        "qualified": false,
+        "reason": "adverse_or_zero_observed_response",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16084.89713546055,
+        "autoregressive_a": 0.3067605130743079
+      },
+      "summary": {
+        "evaluation_rmse_pa": 3032.1269762370584,
+        "disturbance_rmse_pa": 3692.48711559517,
+        "disturbance_min_sbp_pa": 12265.65964218,
+        "recovery_peak_sbp_pa": 15998.6864898,
+        "overshoot_above_target_pa": 0.0,
+        "fraction_time_within_5mmhg": 0.31979166666666664,
+        "delivered_train_equivalent_s": 0.0,
+        "sensor_unqualified_time_s": 0.0,
+        "fallback_time_s": 0.0,
+        "fallback_min_sbp_pa": null,
+        "fallback_peak_sbp_pa": null,
+        "fallback_delivered_train_equivalent_s": 0.0,
+        "response_unqualified": true,
+        "high_pressure_no_lowering_time_s": 0.0,
+        "support_remaining_after_command_zero": false
+      },
+      "policy_samples": 1681,
+      "external_records": 420,
+      "noise_witness": {
+        "instrumentation": "forwarded actual model scalar normal draws unchanged",
+        "generator": "PCG64",
+        "seed": 17,
+        "normal_location_pa": 0.0,
+        "normal_scale_pa": 46.66283559525,
+        "scalar_call_count": 84001,
+        "samples_sha256": "cbbda0fe75a3b8b1da4389ffe0738a4888844ddab9207673746d4fb0d8c48005",
+        "hash_encoding": "chronological little-endian IEEE754 float64 sensor noise in Pa",
+        "initial_generator_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 191425278619858320667688084520535371943,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_generator_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 88880569908577065028628951953585970723,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "sample_moments_pa": {
+          "mean": -0.05025727534135965,
+          "standard_deviation": 46.69995952429237,
+          "minimum": -173.01925787182407,
+          "maximum": 210.95292740453905
+        }
+      }
+    },
+    {
+      "scenario": "no_response",
+      "integration_step_s": 0.00125,
+      "config": {
+        "duration_s": 420.0,
+        "integration_step_s": 0.00125,
+        "waveform_sample_hz": 200,
+        "extraction_period_s": 1.0,
+        "policy_period_s": 0.25,
+        "freshness_limit_s": 2.0,
+        "target_pa": 15998.6864898,
+        "calibration_end_s": 144.0,
+        "disturbance_start_s": 180.0,
+        "disturbance_end_s": 340.0,
+        "sensor_noise_pa": 46.66283559525,
+        "fallback": "stop",
+        "finite_hold_s": 2.0,
+        "ramp_fraction_per_s": 0.2,
+        "maximum_fraction": 1.0,
+        "rise_slew_fraction_per_s": 0.12,
+        "minimum_gain_pa": 399.96716224500005,
+        "gain_relative_uncertainty": 0.25,
+        "heldout_error_limit_pa": 533.28954966
+      },
+      "scenario_parameters": {
+        "name": "no_response",
+        "baseline_pa": 15998.6864898,
+        "gain_pa": 0,
+        "activation_tau_s": 1.5,
+        "response_tau_s": 6.0,
+        "onset_delay_s": 0.8,
+        "release_delay_s": 2.0,
+        "recruitment_threshold": 0.0,
+        "disturbance_pa": 3733.0268476200004,
+        "sensor_delay_s": 0.15,
+        "sensor_bias_pa": 0.0,
+        "dropout_interval_s": null,
+        "invalid_interval_s": null,
+        "stale_replay_interval_s": null,
+        "changed_gain_pa": null,
+        "change_time_s": 260.0
+      },
+      "delivery_boundary": "chosen_reference_surrogate",
+      "calibration": {
+        "gain_pa_per_fraction": -75.48447809465176,
+        "gain_interval_pa": [
+          -345.20736285106466,
+          194.23840666176113
+        ],
+        "estimated_effect_lag_s": 5.0,
+        "one_step_error_pa": 26.97228847564129,
+        "heldout_recursive_error_pa": 31.5450334863433,
+        "qualified": false,
+        "reason": "adverse_or_zero_observed_response",
+        "observation_count": 143,
+        "dose_observation_count": 576,
+        "baseline_observed_pa": 16084.89713546055,
+        "autoregressive_a": 0.3067605130743079
+      },
+      "summary": {
+        "evaluation_rmse_pa": 3032.1269762370584,
+        "disturbance_rmse_pa": 3692.48711559517,
+        "disturbance_min_sbp_pa": 12265.65964218,
+        "recovery_peak_sbp_pa": 15998.6864898,
+        "overshoot_above_target_pa": 0.0,
+        "fraction_time_within_5mmhg": 0.31979166666666664,
+        "delivered_train_equivalent_s": 0.0,
+        "sensor_unqualified_time_s": 0.0,
+        "fallback_time_s": 0.0,
+        "fallback_min_sbp_pa": null,
+        "fallback_peak_sbp_pa": null,
+        "fallback_delivered_train_equivalent_s": 0.0,
+        "response_unqualified": true,
+        "high_pressure_no_lowering_time_s": 0.0,
+        "support_remaining_after_command_zero": false
+      },
+      "policy_samples": 1681,
+      "external_records": 420,
+      "noise_witness": {
+        "instrumentation": "forwarded actual model scalar normal draws unchanged",
+        "generator": "PCG64",
+        "seed": 17,
+        "normal_location_pa": 0.0,
+        "normal_scale_pa": 46.66283559525,
+        "scalar_call_count": 84001,
+        "samples_sha256": "cbbda0fe75a3b8b1da4389ffe0738a4888844ddab9207673746d4fb0d8c48005",
+        "hash_encoding": "chronological little-endian IEEE754 float64 sensor noise in Pa",
+        "initial_generator_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 191425278619858320667688084520535371943,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "final_generator_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 88880569908577065028628951953585970723,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "sample_moments_pa": {
+          "mean": -0.05025727534135965,
+          "standard_deviation": 46.69995952429237,
+          "minimum": -173.01925787182407,
+          "maximum": 210.95292740453905
+        }
+      }
+    }
+  ],
+  "comparisons": {
+    "nominal": [
+      {
+        "coarse_step_s": 0.005,
+        "fine_step_s": 0.0025,
+        "maximum_policy_sample_pressure_difference_mmHg": 0.003432557499478032,
+        "absolute_summary_differences_mmHg": {
+          "disturbance_rmse_pa": 0.0003069326300341437,
+          "evaluation_rmse_pa": 0.00042656069790890675,
+          "overshoot_above_target_pa": 0.0023428736964863413,
+          "disturbance_min_sbp_pa": 0.0007175362349376713,
+          "recovery_peak_sbp_pa": 0.0023428736964863413
+        },
+        "delivered_train_equivalent_difference_s": 0.0,
+        "different_frame_decisions": 0,
+        "different_controller_reasons": 0,
+        "different_peak_times": 0,
+        "equivalence_flags": {
+          "policy_timestamps_exactly_equal": true,
+          "frame_admissions_exactly_equal": true,
+          "controller_reasons_exactly_equal": true,
+          "external_record_count_equal": true,
+          "external_record_metadata_exactly_equal": true,
+          "external_records_exactly_equal": false,
+          "extracted_peak_times_exactly_equal": true,
+          "actual_noise_samples_exactly_equal_within_host": true,
+          "noise_draw_count_equal": true,
+          "initial_rng_state_equal": true,
+          "final_rng_state_equal": true,
+          "calibration_qualification_equal": true,
+          "identified_lag_equal": true
+        }
+      },
+      {
+        "coarse_step_s": 0.0025,
+        "fine_step_s": 0.00125,
+        "maximum_policy_sample_pressure_difference_mmHg": 0.001717173054722671,
+        "absolute_summary_differences_mmHg": {
+          "disturbance_rmse_pa": 0.0001535476328468858,
+          "evaluation_rmse_pa": 0.00021339999946527193,
+          "overshoot_above_target_pa": 0.0011720472513669854,
+          "disturbance_min_sbp_pa": 0.00035895506152797623,
+          "recovery_peak_sbp_pa": 0.0011720472513669854
+        },
+        "delivered_train_equivalent_difference_s": 0.0,
+        "different_frame_decisions": 0,
+        "different_controller_reasons": 0,
+        "different_peak_times": 0,
+        "equivalence_flags": {
+          "policy_timestamps_exactly_equal": true,
+          "frame_admissions_exactly_equal": true,
+          "controller_reasons_exactly_equal": true,
+          "external_record_count_equal": true,
+          "external_record_metadata_exactly_equal": true,
+          "external_records_exactly_equal": false,
+          "extracted_peak_times_exactly_equal": true,
+          "actual_noise_samples_exactly_equal_within_host": true,
+          "noise_draw_count_equal": true,
+          "initial_rng_state_equal": true,
+          "final_rng_state_equal": true,
+          "calibration_qualification_equal": true,
+          "identified_lag_equal": true
+        }
+      },
+      {
+        "coarse_step_s": 0.005,
+        "fine_step_s": 0.00125,
+        "maximum_policy_sample_pressure_difference_mmHg": 0.005149730554200703,
+        "absolute_summary_differences_mmHg": {
+          "disturbance_rmse_pa": 0.00046048026288102954,
+          "evaluation_rmse_pa": 0.0006399606973741787,
+          "overshoot_above_target_pa": 0.003514920947853327,
+          "disturbance_min_sbp_pa": 0.0010764912964656473,
+          "recovery_peak_sbp_pa": 0.003514920947853327
+        },
+        "delivered_train_equivalent_difference_s": 0.0,
+        "different_frame_decisions": 0,
+        "different_controller_reasons": 0,
+        "different_peak_times": 0,
+        "equivalence_flags": {
+          "policy_timestamps_exactly_equal": true,
+          "frame_admissions_exactly_equal": true,
+          "controller_reasons_exactly_equal": true,
+          "external_record_count_equal": true,
+          "external_record_metadata_exactly_equal": true,
+          "external_records_exactly_equal": false,
+          "extracted_peak_times_exactly_equal": true,
+          "actual_noise_samples_exactly_equal_within_host": true,
+          "noise_draw_count_equal": true,
+          "initial_rng_state_equal": true,
+          "final_rng_state_equal": true,
+          "calibration_qualification_equal": true,
+          "identified_lag_equal": true
+        }
+      }
+    ],
+    "no_response": [
+      {
+        "coarse_step_s": 0.005,
+        "fine_step_s": 0.0025,
+        "maximum_policy_sample_pressure_difference_mmHg": 0.0,
+        "absolute_summary_differences_mmHg": {
+          "disturbance_rmse_pa": 0.0,
+          "evaluation_rmse_pa": 0.0,
+          "overshoot_above_target_pa": 0.0,
+          "disturbance_min_sbp_pa": 0.0,
+          "recovery_peak_sbp_pa": 0.0
+        },
+        "delivered_train_equivalent_difference_s": 0.0,
+        "different_frame_decisions": 0,
+        "different_controller_reasons": 0,
+        "different_peak_times": 0,
+        "equivalence_flags": {
+          "policy_timestamps_exactly_equal": true,
+          "frame_admissions_exactly_equal": true,
+          "controller_reasons_exactly_equal": true,
+          "external_record_count_equal": true,
+          "external_record_metadata_exactly_equal": true,
+          "external_records_exactly_equal": true,
+          "extracted_peak_times_exactly_equal": true,
+          "actual_noise_samples_exactly_equal_within_host": true,
+          "noise_draw_count_equal": true,
+          "initial_rng_state_equal": true,
+          "final_rng_state_equal": true,
+          "calibration_qualification_equal": true,
+          "identified_lag_equal": true
+        }
+      },
+      {
+        "coarse_step_s": 0.0025,
+        "fine_step_s": 0.00125,
+        "maximum_policy_sample_pressure_difference_mmHg": 0.0,
+        "absolute_summary_differences_mmHg": {
+          "disturbance_rmse_pa": 0.0,
+          "evaluation_rmse_pa": 0.0,
+          "overshoot_above_target_pa": 0.0,
+          "disturbance_min_sbp_pa": 0.0,
+          "recovery_peak_sbp_pa": 0.0
+        },
+        "delivered_train_equivalent_difference_s": 0.0,
+        "different_frame_decisions": 0,
+        "different_controller_reasons": 0,
+        "different_peak_times": 0,
+        "equivalence_flags": {
+          "policy_timestamps_exactly_equal": true,
+          "frame_admissions_exactly_equal": true,
+          "controller_reasons_exactly_equal": true,
+          "external_record_count_equal": true,
+          "external_record_metadata_exactly_equal": true,
+          "external_records_exactly_equal": true,
+          "extracted_peak_times_exactly_equal": true,
+          "actual_noise_samples_exactly_equal_within_host": true,
+          "noise_draw_count_equal": true,
+          "initial_rng_state_equal": true,
+          "final_rng_state_equal": true,
+          "calibration_qualification_equal": true,
+          "identified_lag_equal": true
+        }
+      },
+      {
+        "coarse_step_s": 0.005,
+        "fine_step_s": 0.00125,
+        "maximum_policy_sample_pressure_difference_mmHg": 0.0,
+        "absolute_summary_differences_mmHg": {
+          "disturbance_rmse_pa": 0.0,
+          "evaluation_rmse_pa": 0.0,
+          "overshoot_above_target_pa": 0.0,
+          "disturbance_min_sbp_pa": 0.0,
+          "recovery_peak_sbp_pa": 0.0
+        },
+        "delivered_train_equivalent_difference_s": 0.0,
+        "different_frame_decisions": 0,
+        "different_controller_reasons": 0,
+        "different_peak_times": 0,
+        "equivalence_flags": {
+          "policy_timestamps_exactly_equal": true,
+          "frame_admissions_exactly_equal": true,
+          "controller_reasons_exactly_equal": true,
+          "external_record_count_equal": true,
+          "external_record_metadata_exactly_equal": true,
+          "external_records_exactly_equal": true,
+          "extracted_peak_times_exactly_equal": true,
+          "actual_noise_samples_exactly_equal_within_host": true,
+          "noise_draw_count_equal": true,
+          "initial_rng_state_equal": true,
+          "final_rng_state_equal": true,
+          "calibration_qualification_equal": true,
+          "identified_lag_equal": true
+        }
+      }
+    ]
+  },
+  "remaining": [
+    "Full integrated electrical-adapter pressure matrix, other seeds, joint parameters and all fallback variants remain unqualified.",
+    "Motor body-clock separation and independent body/source convergence experiments remain open."
+  ]
+}

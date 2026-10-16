@@ -1,0 +1,635 @@
+{
+  "schema": "ato.stage3.pressure-baseline-preservation.v1",
+  "scope": "All104 baseline5ms off/feedback metadata, calibration, summary, complete4Hz true-pressure arrays, frame/reason/freshness runs and external support/peak/transport metadata; noise witness is new independent instrumentation. Full raw byte-equivalence is separately tested for seed0 nominal OFF.",
+  "saved_baseline_gzip_sha256": "66254ff36d28c0676a02e3ce45a750731e0f75d5598e5e742947bca464fe6f78",
+  "comparison_count": 104,
+  "all_exactly_preserved": true,
+  "checks": [
+    {
+      "scenario": "nominal",
+      "seed": 0,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "nominal",
+      "seed": 0,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "nominal",
+      "seed": 1,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "nominal",
+      "seed": 1,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "nominal",
+      "seed": 2,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "nominal",
+      "seed": 2,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "nominal",
+      "seed": 3,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "nominal",
+      "seed": 3,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "weak_authority",
+      "seed": 0,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "weak_authority",
+      "seed": 0,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "weak_authority",
+      "seed": 1,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "weak_authority",
+      "seed": 1,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "weak_authority",
+      "seed": 2,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "weak_authority",
+      "seed": 2,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "weak_authority",
+      "seed": 3,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "weak_authority",
+      "seed": 3,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "no_response",
+      "seed": 0,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "no_response",
+      "seed": 0,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "no_response",
+      "seed": 1,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "no_response",
+      "seed": 1,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "no_response",
+      "seed": 2,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "no_response",
+      "seed": 2,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "no_response",
+      "seed": 3,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "no_response",
+      "seed": 3,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "adverse_response",
+      "seed": 0,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "adverse_response",
+      "seed": 0,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "adverse_response",
+      "seed": 1,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "adverse_response",
+      "seed": 1,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "adverse_response",
+      "seed": 2,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "adverse_response",
+      "seed": 2,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "adverse_response",
+      "seed": 3,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "adverse_response",
+      "seed": 3,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "high_threshold",
+      "seed": 0,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "high_threshold",
+      "seed": 0,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "high_threshold",
+      "seed": 1,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "high_threshold",
+      "seed": 1,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "high_threshold",
+      "seed": 2,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "high_threshold",
+      "seed": 2,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "high_threshold",
+      "seed": 3,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "high_threshold",
+      "seed": 3,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "slow_release",
+      "seed": 0,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "slow_release",
+      "seed": 0,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "slow_release",
+      "seed": 1,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "slow_release",
+      "seed": 1,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "slow_release",
+      "seed": 2,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "slow_release",
+      "seed": 2,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "slow_release",
+      "seed": 3,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "slow_release",
+      "seed": 3,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_delayed",
+      "seed": 0,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_delayed",
+      "seed": 0,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_delayed",
+      "seed": 1,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_delayed",
+      "seed": 1,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_delayed",
+      "seed": 2,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_delayed",
+      "seed": 2,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_delayed",
+      "seed": 3,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_delayed",
+      "seed": 3,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_loss",
+      "seed": 0,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_loss",
+      "seed": 0,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_loss",
+      "seed": 1,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_loss",
+      "seed": 1,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_loss",
+      "seed": 2,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_loss",
+      "seed": 2,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_loss",
+      "seed": 3,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_loss",
+      "seed": 3,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_invalid",
+      "seed": 0,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_invalid",
+      "seed": 0,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_invalid",
+      "seed": 1,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_invalid",
+      "seed": 1,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_invalid",
+      "seed": 2,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_invalid",
+      "seed": 2,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_invalid",
+      "seed": 3,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_invalid",
+      "seed": 3,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "stale_replay",
+      "seed": 0,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "stale_replay",
+      "seed": 0,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "stale_replay",
+      "seed": 1,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "stale_replay",
+      "seed": 1,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "stale_replay",
+      "seed": 2,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "stale_replay",
+      "seed": 2,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "stale_replay",
+      "seed": 3,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "stale_replay",
+      "seed": 3,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_bias",
+      "seed": 0,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_bias",
+      "seed": 0,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_bias",
+      "seed": 1,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_bias",
+      "seed": 1,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_bias",
+      "seed": 2,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_bias",
+      "seed": 2,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_bias",
+      "seed": 3,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "sensor_bias",
+      "seed": 3,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "unreachable_high",
+      "seed": 0,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "unreachable_high",
+      "seed": 0,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "unreachable_high",
+      "seed": 1,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "unreachable_high",
+      "seed": 1,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "unreachable_high",
+      "seed": 2,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "unreachable_high",
+      "seed": 2,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "unreachable_high",
+      "seed": 3,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "unreachable_high",
+      "seed": 3,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "context_reversal",
+      "seed": 0,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "context_reversal",
+      "seed": 0,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "context_reversal",
+      "seed": 1,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "context_reversal",
+      "seed": 1,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "context_reversal",
+      "seed": 2,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "context_reversal",
+      "seed": 2,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "context_reversal",
+      "seed": 3,
+      "mode": "off",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    },
+    {
+      "scenario": "context_reversal",
+      "seed": 3,
+      "mode": "feedback",
+      "metadata_calibration_summary_policy_and_support_witness_exactly_preserved": true
+    }
+  ],
+  "original_full_json_numerical_receipt_sha256": "811b3ae371e6bb24b83f3dbd9167b16a23c616894f29c5f566dfe8c100c05833",
+  "full_compressed_numerical_receipt_sha256": "096893cc9a626fc1fed67a017c8aa3caf7daa91667066fef2e87cf51cfea06a8"
+}

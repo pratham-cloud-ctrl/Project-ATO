@@ -1,0 +1,35 @@
+from_package,from_ref,from_pin,from_net,to_package,to_ref,to_pin,to_net,purpose
+power,J3,4,HOST_5,monitoring-transport,J1,1,HOST_5,Generated analog ADC rail with explicit 4.75 to 5.25 V validity condition
+power,J3,3,HOST_3V3,monitoring-transport,J1,2,HOST_3V3,Generated digital and host isolator rail
+power,J3,7,GND,monitoring-transport,J1,3,GND,Host rail return
+monitoring-cell,J4,1,CH0_I_MON,monitoring-transport,J2,1,CH0_I_MON,Existing buffered source 0 current observation
+monitoring-cell,J4,2,CH1_I_MON,monitoring-transport,J2,2,CH1_I_MON,Existing buffered source 1 current observation
+supervision,U502,1,CH0_VPAIR,monitoring-transport,J2,3,CH0_VPAIR,Existing component output tap for scaled pair 0 voltage
+supervision,U502,7,CH1_VPAIR,monitoring-transport,J2,4,CH1_VPAIR,Existing component output tap for scaled pair 1 voltage
+supervision,J4,4,MON_VREF,monitoring-transport,J2,5,MON_VREF,Existing monitor reference observed against independent ADC reference
+supervision,J4,3,MON_VMID,monitoring-transport,J2,6,MON_VMID,Existing monitor midpoint observation
+power,J5,1,PACK_BUS,monitoring-transport,J2,7,PACK_BUS,Pack bus observed through native divider
+power,J5,5,GND,monitoring-transport,J2,8,GND,Host observation return
+monitoring-cell,J2,1,CH0_CNV,monitoring-transport,J4,1,CH0_CNV,Charge endpoint source 0 conversion control
+monitoring-cell,J2,2,CH0_CS_N,monitoring-transport,J4,2,CH0_CS_N,Charge endpoint source 0 select control
+monitoring-cell,J2,3,CH0_DOUT,monitoring-transport,J4,3,CH0_DOUT,Charge endpoint source 0 result to explicit 330 ohm MISO join
+monitoring-cell,J2,4,CH1_CNV,monitoring-transport,J4,4,CH1_CNV,Charge endpoint source 1 conversion control
+monitoring-cell,J2,5,CH1_CS_N,monitoring-transport,J4,5,CH1_CS_N,Charge endpoint source 1 select control
+monitoring-cell,J2,6,CH1_DOUT,monitoring-transport,J4,6,CH1_DOUT,Charge endpoint source 1 result to explicit 330 ohm MISO join
+monitoring-cell,J2,7,MON_SCLK,monitoring-transport,J4,7,MON_SCLK,Shared 8 MHz endpoint clock distinct from raw ADC clock
+monitoring-cell,J2,12,GND,monitoring-transport,J4,8,GND,Endpoint digital return
+monitoring-cell,J2,8,CH0_INT_RUN,monitoring-transport,J5,1,CH0_INT_RUN,Source 0 integration control handoff
+monitoring-cell,J2,9,CH1_INT_RUN,monitoring-transport,J5,2,CH1_INT_RUN,Source 1 integration control handoff
+monitoring-cell,J2,10,CH0_REARM,monitoring-transport,J5,3,CH0_MON_REARM,Explicit source 0 monitor rearm alias
+monitoring-cell,J2,11,CH1_REARM,monitoring-transport,J5,4,CH1_MON_REARM,Explicit source 1 monitor rearm alias
+monitoring-cell,J2,12,GND,monitoring-transport,J5,5,GND,Integration control return
+supervision,J5,1,RESET_READY,monitoring-transport,J6,1,RESET_READY,Independent supervisor reset observation
+supervision,J5,2,RAILS_QUALIFIED,monitoring-transport,J6,2,RAILS_QUALIFIED,Independent supervisor rail qualification observation
+supervision,J5,3,WATCHDOG_OK,monitoring-transport,J6,3,WATCHDOG_OK,Independent watchdog observation
+supervision,J5,4,AFE_ISOLATED_READY,monitoring-transport,J6,4,AFE_ISOLATED_READY,Isolated recording domain ready observation
+supervision,J5,5,CH0_QUIESCENT_OK,monitoring-transport,J6,5,CH0_QUIESCENT_OK,Source 0 terminal quiet observation
+supervision,J5,6,CH1_QUIESCENT_OK,monitoring-transport,J6,6,CH1_QUIESCENT_OK,Source 1 terminal quiet observation
+supervision,J5,9,SUP_ARMED,monitoring-transport,J6,7,SUP_ARMED,Independent armed state observation
+supervision,J5,12,GLOBAL_GUARD_EN,monitoring-transport,J6,8,GLOBAL_GUARD_EN,Independent global guard state observation
+power,J2,11,PWR_FAULT_N,monitoring-transport,J6,9,PWR_FAULT_N,Existing open drain power fault observation
+supervision,J5,13,GND,monitoring-transport,J6,10,GND,Supervisor observation return

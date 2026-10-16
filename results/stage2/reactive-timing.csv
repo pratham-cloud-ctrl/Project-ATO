@@ -1,0 +1,5 @@
+frame_hz,reactive_bound_ms,passes25ms_chosen_deadline
+20,61.85,False
+40,36.85,False
+60,28.516666666666666,False
+120,20.18333333333333,True

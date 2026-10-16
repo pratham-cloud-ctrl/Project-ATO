@@ -1,0 +1,259 @@
+from_package,from_ref,from_pin,from_net,to_package,to_ref,to_pin,to_net,purpose,integrated_net,from_integrated_ref,to_integrated_ref,from_harness_ref,from_harness_pin,to_harness_ref,to_harness_pin
+contact-router,J7,1,STIM00_CONTACT,supervision,J100,1,ROUTED_STIM00,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_82867ca5__STIM00_CONTACT,J40007,J50100,J40007,1,J50100,1
+contact-router,J7,2,STIM01_CONTACT,supervision,J100,2,ROUTED_STIM01,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_8b50701c__STIM01_CONTACT,J40007,J50100,J40007,2,J50100,2
+contact-router,J7,3,STIM02_CONTACT,supervision,J100,3,ROUTED_STIM02,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_36b8c84f__STIM02_CONTACT,J40007,J50100,J40007,3,J50100,3
+contact-router,J7,4,STIM03_CONTACT,supervision,J100,4,ROUTED_STIM03,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_223a43dd__STIM03_CONTACT,J40007,J50100,J40007,4,J50100,4
+contact-router,J7,5,STIM04_CONTACT,supervision,J100,5,ROUTED_STIM04,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_dcbe1273__STIM04_CONTACT,J40007,J50100,J40007,5,J50100,5
+contact-router,J7,6,STIM05_CONTACT,supervision,J100,6,ROUTED_STIM05,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_fa6c9e06__STIM05_CONTACT,J40007,J50100,J40007,6,J50100,6
+contact-router,J7,7,STIM06_CONTACT,supervision,J100,7,ROUTED_STIM06,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_b675ff0d__STIM06_CONTACT,J40007,J50100,J40007,7,J50100,7
+contact-router,J7,8,STIM07_CONTACT,supervision,J100,8,ROUTED_STIM07,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_cf17d7c4__STIM07_CONTACT,J40007,J50100,J40007,8,J50100,8
+contact-router,J7,9,STIM08_CONTACT,supervision,J100,9,ROUTED_STIM08,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_80673a9e__STIM08_CONTACT,J40007,J50100,J40007,9,J50100,9
+contact-router,J7,10,STIM09_CONTACT,supervision,J100,10,ROUTED_STIM09,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_eb2c0acf__STIM09_CONTACT,J40007,J50100,J40007,10,J50100,10
+contact-router,J7,11,STIM10_CONTACT,supervision,J100,11,ROUTED_STIM10,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_74b9e55a__STIM10_CONTACT,J40007,J50100,J40007,11,J50100,11
+contact-router,J7,12,STIM11_CONTACT,supervision,J100,12,ROUTED_STIM11,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_6d4bb3d1__STIM11_CONTACT,J40007,J50100,J40007,12,J50100,12
+contact-router,J7,13,STIM12_CONTACT,supervision,J100,13,ROUTED_STIM12,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_32f1b236__STIM12_CONTACT,J40007,J50100,J40007,13,J50100,13
+contact-router,J7,14,STIM13_CONTACT,supervision,J100,14,ROUTED_STIM13,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_344482b2__STIM13_CONTACT,J40007,J50100,J40007,14,J50100,14
+contact-router,J7,15,STIM14_CONTACT,supervision,J100,15,ROUTED_STIM14,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_126bf237__STIM14_CONTACT,J40007,J50100,J40007,15,J50100,15
+contact-router,J7,16,STIM15_CONTACT,supervision,J100,16,ROUTED_STIM15,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_f00e6304__STIM15_CONTACT,J40007,J50100,J40007,16,J50100,16
+contact-router,J7,17,CH0_RETURN_LOAD,supervision,J100,17,ROUTED_RETURN0,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_0d1e7c21__CH0_RETURN_LOAD,J40007,J50100,J40007,17,J50100,17
+contact-router,J7,18,CH1_RETURN_LOAD,supervision,J100,18,ROUTED_RETURN1,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor,SYS_3ced048f__CH1_RETURN_LOAD,J40007,J50100,J40007,18,J50100,18
+recording-front-end,U10,9,AFE_IN00_P,supervision,J600,1,AFE_IN00_P,Physical RHD positive pin observation; added DC loading included,SYS_05097029__AFE_IN00_P,U30010,J50600,J39901,3,J50600,1
+recording-front-end,U10,7,AFE_IN01_P,supervision,J601,1,AFE_IN01_P,Physical RHD positive pin observation; added DC loading included,SYS_3232ae4c__AFE_IN01_P,U30010,J50601,J39901,4,J50601,1
+recording-front-end,U10,5,AFE_IN02_P,supervision,J602,1,AFE_IN02_P,Physical RHD positive pin observation; added DC loading included,SYS_8c3f25bb__AFE_IN02_P,U30010,J50602,J39901,5,J50602,1
+recording-front-end,U10,3,AFE_IN03_P,supervision,J603,1,AFE_IN03_P,Physical RHD positive pin observation; added DC loading included,SYS_f208be39__AFE_IN03_P,U30010,J50603,J39901,6,J50603,1
+recording-front-end,U10,1,AFE_IN04_P,supervision,J604,1,AFE_IN04_P,Physical RHD positive pin observation; added DC loading included,SYS_7e367734__AFE_IN04_P,U30010,J50604,J39901,7,J50604,1
+recording-front-end,U10,55,AFE_IN05_P,supervision,J605,1,AFE_IN05_P,Physical RHD positive pin observation; added DC loading included,SYS_59100ef9__AFE_IN05_P,U30010,J50605,J39901,8,J50605,1
+recording-front-end,U10,53,AFE_IN06_P,supervision,J606,1,AFE_IN06_P,Physical RHD positive pin observation; added DC loading included,SYS_380216f6__AFE_IN06_P,U30010,J50606,J39901,9,J50606,1
+recording-front-end,U10,51,AFE_IN07_P,supervision,J607,1,AFE_IN07_P,Physical RHD positive pin observation; added DC loading included,SYS_325713b8__AFE_IN07_P,U30010,J50607,J39901,10,J50607,1
+recording-front-end,U10,49,AFE_IN08_P,supervision,J608,1,AFE_IN08_P,Physical RHD positive pin observation; added DC loading included,SYS_1dc2a435__AFE_IN08_P,U30010,J50608,J39901,11,J50608,1
+recording-front-end,U10,47,AFE_IN09_P,supervision,J609,1,AFE_IN09_P,Physical RHD positive pin observation; added DC loading included,SYS_ee730a89__AFE_IN09_P,U30010,J50609,J39902,1,J50609,1
+recording-front-end,U10,45,AFE_IN10_P,supervision,J610,1,AFE_IN10_P,Physical RHD positive pin observation; added DC loading included,SYS_96d7c46a__AFE_IN10_P,U30010,J50610,J39902,2,J50610,1
+recording-front-end,U10,43,AFE_IN11_P,supervision,J611,1,AFE_IN11_P,Physical RHD positive pin observation; added DC loading included,SYS_b6a4cd67__AFE_IN11_P,U30010,J50611,J39902,3,J50611,1
+recording-front-end,U10,41,AFE_IN12_P,supervision,J612,1,AFE_IN12_P,Physical RHD positive pin observation; added DC loading included,SYS_4fabccc5__AFE_IN12_P,U30010,J50612,J39902,4,J50612,1
+recording-front-end,U10,39,AFE_IN13_P,supervision,J613,1,AFE_IN13_P,Physical RHD positive pin observation; added DC loading included,SYS_32c4c1cc__AFE_IN13_P,U30010,J50613,J39902,5,J50613,1
+recording-front-end,U10,37,AFE_IN14_P,supervision,J614,1,AFE_IN14_P,Physical RHD positive pin observation; added DC loading included,SYS_4f7d5988__AFE_IN14_P,U30010,J50614,J39902,6,J50614,1
+recording-front-end,U10,35,AFE_IN15_P,supervision,J615,1,AFE_IN15_P,Physical RHD positive pin observation; added DC loading included,SYS_53213f89__AFE_IN15_P,U30010,J50615,J39902,7,J50615,1
+recording-front-end,U10,2,AFE_REF,supervision,J616,1,AFE_REF,Physical shared RHD reference observation; not body bias,SYS_86b728f8__AFE_REF,U30010,J50616,J39902,8,J50616,1
+current-driver,J1,5,GND,supervision,J1,7,GND,Common host ground,SYS_56562df4__GND,J20001,J50001,J20001,5,J50001,7
+monitoring-cell,J1,3,GND,supervision,J1,7,GND,Common host ground,SYS_56562df4__GND,J10001,J50001,J10001,3,J50001,7
+contact-router,J1,3,GND,supervision,J1,7,GND,Common host ground,SYS_56562df4__GND,J40001,J50001,J40001,3,J50001,7
+recording-front-end,J2,2,HOSTGND,supervision,J1,7,GND,Host side of existing recording barrier,SYS_56562df4__GND,J30002,J50001,J30002,2,J50001,7
+recording-front-end,J1,4,AFEAGND,supervision,J2,4,AFEAGND,Floating recording ground only; no host-ground wire,SYS_fca1c340__AFEAGND,J30001,J50002,J30001,4,J50002,4
+recording-front-end,J1,1,AFE_P5,supervision,J2,2,AFE_P5,Recording rail observation; revised nominal values in design doc,SYS_3fdd5066__AFE_P5,J30001,J50002,J30001,1,J50002,2
+recording-front-end,J1,2,AFE_N5,supervision,J2,3,AFE_N5,Recording rail observation; revised nominal values in design doc,SYS_d73cd2ee__AFE_N5,J30001,J50002,J30001,2,J50002,3
+recording-front-end,J1,3,AFE_3V3,supervision,J2,1,AFE_3V3,Recording rail observation; revised nominal values in design doc,SYS_65aafbb6__AFE_3V3,J30001,J50002,J30001,3,J50002,1
+recording-front-end,U2,14,AFE_CONNECT,supervision,J2,5,AFE_CONNECT,Observe ACTUAL local connect output after existing isolator,SYS_0bc4e447__AFE_CONNECT,U30002,J50002,J39901,2,J50002,5
+recording-front-end,U4,4,AFE_ACQUIRE,supervision,J2,6,AFE_ACQUIRE,Observe ACTUAL local acquire output after local AND,SYS_4eb6b999__AFE_ACQUIRE,U30004,J50002,J39901,1,J50002,6
+current-driver,J1,1,VH_24,supervision,J1,6,VH_24,Host rail observation; SUP rails remain separately generated,SYS_15689dc4__VH_24,J20001,J50001,J20001,1,J50001,6
+current-driver,J1,2,VA_15,supervision,J1,5,HOST_15,Host rail observation; SUP rails remain separately generated,SYS_fb2237f8__VA_15,J20001,J50001,J20001,2,J50001,5
+current-driver,J1,3,VDD_5,supervision,J1,4,HOST_5,Host rail observation; SUP rails remain separately generated,SYS_ce166826__HOST_5,J20001,J50001,J20001,3,J50001,4
+current-driver,J1,4,VDD_3V3,supervision,J1,3,HOST_3V3,Host rail observation; SUP rails remain separately generated,SYS_08572049__HOST_3V3,J20001,J50001,J20001,4,J50001,3
+monitoring-cell,J1,1,+5VA,supervision,J1,4,HOST_5,Monitor 5V belongs to observed HOST_5,SYS_ce166826__HOST_5,J10001,J50001,J10001,1,J50001,4
+monitoring-cell,J1,2,+3V3,supervision,J1,3,HOST_3V3,Monitor logic belongs to observed HOST_3V3,SYS_08572049__HOST_3V3,J10001,J50001,J10001,2,J50001,3
+contact-router,J1,1,VH_24,supervision,J1,6,VH_24,Router high-voltage supply,SYS_15689dc4__VH_24,J40001,J50001,J40001,1,J50001,6
+contact-router,J1,2,VDD_3V3,supervision,J1,3,HOST_3V3,Router logic supply,SYS_08572049__HOST_3V3,J40001,J50001,J40001,2,J50001,3
+recording-front-end,J2,1,HOST_3V3,supervision,J1,3,HOST_3V3,Existing recording HOST_3V3 supply,SYS_08572049__HOST_3V3,J30002,J50001,J30002,1,J50001,3
+current-driver,J100,1,CH0_A_BR,contact-router,J100,1,CH0_A_ROUTER,Source A to router input; terminal guards downstream of canonical router J7,SYS_917b1360__CH0_A_ROUTER,J20100,J40100,J20100,1,J40100,1
+current-driver,J100,2,CH0_B_BR,monitoring-cell,J100,2,CH0_RETURN_DRIVER,Bridge B to driver side of existing 2ohm shunt,SYS_ee476f53__CH0_B_BR,J20100,J10100,J20100,2,J10100,2
+monitoring-cell,J100,1,CH0_RETURN_LOAD,contact-router,J100,2,CH0_RETURN_LOAD,Load side of existing shunt to dedicated router return,SYS_0d1e7c21__CH0_RETURN_LOAD,J10100,J40100,J10100,1,J40100,2
+monitoring-cell,J4,1,CH0_I_MON,supervision,J4,1,CH0_I_MON,Observed signed current; MID+40V/A times I,SYS_f8e43b73__CH0_I_MON,J10004,J50004,J10004,1,J50004,1
+monitoring-cell,J3,3,CH0_PERMIT,supervision,J4,5,MON0_PERMIT,Actual monitor sticky permit observation,SYS_56ebc071__CH0_MON_PERMIT,J10003,J50004,J10003,3,J50004,5
+supervision,J4,7,CH0_MON_SUP_OK,monitoring-cell,J3,1,CH0_EXT_SUP_OK,PRE-MON SENSE_HEALTH; distinct from ARM-qualified driver EXT_SUP_OK,SYS_d3eac10b__CH0_EXT_SUP_OK,J50004,J10003,J50004,7,J10003,1
+supervision,J5,7,CH0_EXT_SUP_OK,current-driver,J4,4,CH0_EXT_SUP_OK,ARM-qualified source driver permission; do not short to monitor EXT_SUP_OK,SYS_e26747fb__CH0_EXT_SUP_OK,J50005,J20004,J50005,7,J20004,4
+monitoring-cell,J3,3,CH0_PERMIT,current-driver,J4,3,CH0_MON_PERMIT,Actual monitor permit to driver,SYS_56ebc071__CH0_MON_PERMIT,J10003,J20004,J10003,3,J20004,3
+monitoring-cell,J3,3,CH0_PERMIT,contact-router,J4,8,CH0_MON_PERMIT,Actual monitor permit to router,SYS_56ebc071__CH0_MON_PERMIT,J10003,J40004,J10003,3,J40004,8
+current-driver,J3,1,CH0_REQUEST,supervision,J3,4,CH0_REQUEST,RAW request clocks both independent timers without readiness gating,SYS_46ea5f03__CH0_REQUEST,J20003,J50003,J20003,1,J50003,4
+current-driver,J3,1,CH0_REQUEST,contact-router,J3,3,CH0_REQUEST,Shared raw request observation,SYS_46ea5f03__CH0_REQUEST,J20003,J40003,J20003,1,J40003,3
+current-driver,J5,1,CH0_RUN,supervision,J3,6,CH0_RUN,Actual main driver RUN observation,SYS_695f3a7c__CH0_RUN,J20005,J50003,J20005,1,J50003,6
+current-driver,J5,1,CH0_RUN,contact-router,J3,5,CH0_RUN,Driver run freezes routing,SYS_695f3a7c__CH0_RUN,J20005,J40003,J20005,1,J40003,5
+contact-router,J5,7,CH0_ROUTE_LOCKED,supervision,J3,8,CH0_ROUTE_LOCKED,Actual locked route observation,SYS_1954027d__CH0_ROUTE_LOCKED,J40005,J50003,J40005,7,J50003,8
+contact-router,J5,7,CH0_ROUTE_LOCKED,current-driver,J4,5,CH0_ROUTE_LOCKED,Actual locked route to driver,SYS_1954027d__CH0_ROUTE_LOCKED,J40005,J20004,J40005,7,J20004,5
+current-driver,J100,1,CH0_A_BR,supervision,J6,1,CH0_A_BR,Differential voltage measured before shunt/router/guards,SYS_917b1360__CH0_A_ROUTER,J20100,J50006,J20100,1,J50006,1
+current-driver,J100,2,CH0_B_BR,supervision,J6,2,CH0_B_BR,Differential voltage measured before shunt/router/guards,SYS_ee476f53__CH0_B_BR,J20100,J50006,J20100,2,J50006,2
+supervision,J5,5,CH0_QUIESCENT_OK,current-driver,J4,6,CH0_QUIESCENT_OK,Measured current window plus RC dwell; not exact zero,SYS_2d0e5b2e__CH0_QUIESCENT_OK,J50005,J20004,J50005,5,J20004,6
+supervision,J5,5,CH0_QUIESCENT_OK,contact-router,J4,5,CH0_QUIESCENT_OK,Measured current window plus RC dwell; not exact zero,SYS_2d0e5b2e__CH0_QUIESCENT_OK,J50005,J40004,J50005,5,J40004,5
+current-driver,J200,1,CH1_A_BR,contact-router,J200,1,CH1_A_ROUTER,Source A to router input; terminal guards downstream of canonical router J7,SYS_401be33b__CH1_A_ROUTER,J20200,J40200,J20200,1,J40200,1
+current-driver,J200,2,CH1_B_BR,monitoring-cell,J200,2,CH1_RETURN_DRIVER,Bridge B to driver side of existing 2ohm shunt,SYS_c73180be__CH1_B_BR,J20200,J10200,J20200,2,J10200,2
+monitoring-cell,J200,1,CH1_RETURN_LOAD,contact-router,J200,2,CH1_RETURN_LOAD,Load side of existing shunt to dedicated router return,SYS_3ced048f__CH1_RETURN_LOAD,J10200,J40200,J10200,1,J40200,2
+monitoring-cell,J4,2,CH1_I_MON,supervision,J4,2,CH1_I_MON,Observed signed current; MID+40V/A times I,SYS_502efdd4__CH1_I_MON,J10004,J50004,J10004,2,J50004,2
+monitoring-cell,J3,4,CH1_PERMIT,supervision,J4,6,MON1_PERMIT,Actual monitor sticky permit observation,SYS_aa321af6__CH1_MON_PERMIT,J10003,J50004,J10003,4,J50004,6
+supervision,J4,8,CH1_MON_SUP_OK,monitoring-cell,J3,2,CH1_EXT_SUP_OK,PRE-MON SENSE_HEALTH; distinct from ARM-qualified driver EXT_SUP_OK,SYS_de0a854a__CH1_EXT_SUP_OK,J50004,J10003,J50004,8,J10003,2
+supervision,J5,8,CH1_EXT_SUP_OK,current-driver,J4,8,CH1_EXT_SUP_OK,ARM-qualified source driver permission; do not short to monitor EXT_SUP_OK,SYS_8359fceb__CH1_EXT_SUP_OK,J50005,J20004,J50005,8,J20004,8
+monitoring-cell,J3,4,CH1_PERMIT,current-driver,J4,7,CH1_MON_PERMIT,Actual monitor permit to driver,SYS_aa321af6__CH1_MON_PERMIT,J10003,J20004,J10003,4,J20004,7
+monitoring-cell,J3,4,CH1_PERMIT,contact-router,J4,9,CH1_MON_PERMIT,Actual monitor permit to router,SYS_aa321af6__CH1_MON_PERMIT,J10003,J40004,J10003,4,J40004,9
+current-driver,J3,5,CH1_REQUEST,supervision,J3,5,CH1_REQUEST,RAW request clocks both independent timers without readiness gating,SYS_dd388269__CH1_REQUEST,J20003,J50003,J20003,5,J50003,5
+current-driver,J3,5,CH1_REQUEST,contact-router,J3,4,CH1_REQUEST,Shared raw request observation,SYS_dd388269__CH1_REQUEST,J20003,J40003,J20003,5,J40003,4
+current-driver,J5,5,CH1_RUN,supervision,J3,7,CH1_RUN,Actual main driver RUN observation,SYS_6a132103__CH1_RUN,J20005,J50003,J20005,5,J50003,7
+current-driver,J5,5,CH1_RUN,contact-router,J3,6,CH1_RUN,Driver run freezes routing,SYS_6a132103__CH1_RUN,J20005,J40003,J20005,5,J40003,6
+contact-router,J5,8,CH1_ROUTE_LOCKED,supervision,J3,9,CH1_ROUTE_LOCKED,Actual locked route observation,SYS_84f28705__CH1_ROUTE_LOCKED,J40005,J50003,J40005,8,J50003,9
+contact-router,J5,8,CH1_ROUTE_LOCKED,current-driver,J4,9,CH1_ROUTE_LOCKED,Actual locked route to driver,SYS_84f28705__CH1_ROUTE_LOCKED,J40005,J20004,J40005,8,J20004,9
+current-driver,J200,1,CH1_A_BR,supervision,J6,3,CH1_A_BR,Differential voltage measured before shunt/router/guards,SYS_401be33b__CH1_A_ROUTER,J20200,J50006,J20200,1,J50006,3
+current-driver,J200,2,CH1_B_BR,supervision,J6,4,CH1_B_BR,Differential voltage measured before shunt/router/guards,SYS_c73180be__CH1_B_BR,J20200,J50006,J20200,2,J50006,4
+supervision,J5,6,CH1_QUIESCENT_OK,current-driver,J4,10,CH1_QUIESCENT_OK,Measured current window plus RC dwell; not exact zero,SYS_20eba8c2__CH1_QUIESCENT_OK,J50005,J20004,J50005,6,J20004,10
+supervision,J5,6,CH1_QUIESCENT_OK,contact-router,J4,6,CH1_QUIESCENT_OK,Measured current window plus RC dwell; not exact zero,SYS_20eba8c2__CH1_QUIESCENT_OK,J50005,J40004,J50005,6,J40004,6
+supervision,J5,1,RESET_READY,current-driver,J4,1,RESET_READY,Native reset/startup or rail qualification,SYS_ff7fdc58__RESET_READY,J50005,J20004,J50005,1,J20004,1
+supervision,J5,1,RESET_READY,contact-router,J4,1,RESET_READY,Native reset/startup or rail qualification,SYS_ff7fdc58__RESET_READY,J50005,J40004,J50005,1,J40004,1
+supervision,J5,2,RAILS_QUALIFIED,current-driver,J4,2,RAILS_QUALIFIED,Native reset/startup or rail qualification,SYS_93547907__RAILS_QUALIFIED,J50005,J20004,J50005,2,J20004,2
+supervision,J5,2,RAILS_QUALIFIED,contact-router,J4,2,RAILS_QUALIFIED,Native reset/startup or rail qualification,SYS_93547907__RAILS_QUALIFIED,J50005,J40004,J50005,2,J40004,2
+supervision,J5,3,WATCHDOG_OK,contact-router,J4,3,WATCHDOG_OK,Native watchdog or observed recording blank status,SYS_a83d484c__WATCHDOG_OK,J50005,J40004,J50005,3,J40004,3
+supervision,J5,4,AFE_ISOLATED_READY,contact-router,J4,4,AFE_ISOLATED_READY,Native watchdog or observed recording blank status,SYS_98321c7b__AFE_ISOLATED_READY,J50005,J40004,J50005,4,J40004,4
+monitoring-cell,J4,3,V_MID,supervision,J4,3,MON_VMID,Actual buffered monitor midpoint reference,SYS_37cfe02a__MON_VMID,J10004,J50004,J10004,3,J50004,3
+monitoring-cell,U1,5,V_REF,supervision,J4,4,MON_VREF,Actual REF3440 output pin tap; no invented second independent reference,SYS_4f66f129__MON_VREF,U10001,J50004,J19901,1,J50004,4
+power,J3,1,SUP_3V3,supervision,J1,1,SUP_3V3,Generated host/supervisor rail to existing measured supervisor input,SYS_ab932142__SUP_3V3,J60003,J50001,J60003,1,J50001,1
+power,J3,2,SUP_5,supervision,J1,2,SUP_5,Generated host/supervisor rail to existing measured supervisor input,SYS_66aba95b__SUP_5,J60003,J50001,J60003,2,J50001,2
+power,J3,3,HOST_3V3,supervision,J1,3,HOST_3V3,Generated host/supervisor rail to existing measured supervisor input,SYS_08572049__HOST_3V3,J60003,J50001,J60003,3,J50001,3
+power,J3,4,HOST_5,supervision,J1,4,HOST_5,Generated host/supervisor rail to existing measured supervisor input,SYS_ce166826__HOST_5,J60003,J50001,J60003,4,J50001,4
+power,J3,5,HOST_15,supervision,J1,5,HOST_15,Generated host/supervisor rail to existing measured supervisor input,SYS_fb2237f8__VA_15,J60003,J50001,J60003,5,J50001,5
+power,J3,6,VH_24,supervision,J1,6,VH_24,Generated host/supervisor rail to existing measured supervisor input,SYS_15689dc4__VH_24,J60003,J50001,J60003,6,J50001,6
+power,J3,7,GND,supervision,J1,7,GND,Generated host/supervisor rail to existing measured supervisor input,SYS_56562df4__GND,J60003,J50001,J60003,7,J50001,7
+power,J4,1,AFE_3V3,supervision,J2,1,AFE_3V3,Generated isolated AFE rail to local measured supervisor input,SYS_65aafbb6__AFE_3V3,J60004,J50002,J60004,1,J50002,1
+power,J4,2,AFE_P5,supervision,J2,2,AFE_P5,Generated isolated AFE rail to local measured supervisor input,SYS_3fdd5066__AFE_P5,J60004,J50002,J60004,2,J50002,2
+power,J4,3,AFE_N5,supervision,J2,3,AFE_N5,Generated isolated AFE rail to local measured supervisor input,SYS_d73cd2ee__AFE_N5,J60004,J50002,J60004,3,J50002,3
+power,J4,4,AFEAGND,supervision,J2,4,AFEAGND,Generated isolated AFE rail to local measured supervisor input,SYS_fca1c340__AFEAGND,J60004,J50002,J60004,4,J50002,4
+power,J3,6,VH_24,current-driver,J1,1,VH_24,Actual restricted source supply,SYS_15689dc4__VH_24,J60003,J20001,J60003,6,J20001,1
+power,J3,5,HOST_15,current-driver,J1,2,VA_15,Actual restricted source supply,SYS_fb2237f8__VA_15,J60003,J20001,J60003,5,J20001,2
+power,J3,4,HOST_5,current-driver,J1,3,VDD_5,Actual restricted source supply,SYS_ce166826__HOST_5,J60003,J20001,J60003,4,J20001,3
+power,J3,3,HOST_3V3,current-driver,J1,4,VDD_3V3,Actual restricted source supply,SYS_08572049__HOST_3V3,J60003,J20001,J60003,3,J20001,4
+power,J3,7,GND,current-driver,J1,5,GND,Actual restricted source supply,SYS_56562df4__GND,J60003,J20001,J60003,7,J20001,5
+power,J3,4,HOST_5,monitoring-cell,J1,1,+5VA,Actual monitoring supply,SYS_ce166826__HOST_5,J60003,J10001,J60003,4,J10001,1
+power,J3,3,HOST_3V3,monitoring-cell,J1,2,+3V3,Actual monitoring supply,SYS_08572049__HOST_3V3,J60003,J10001,J60003,3,J10001,2
+power,J3,7,GND,monitoring-cell,J1,3,GND,Actual monitoring supply,SYS_56562df4__GND,J60003,J10001,J60003,7,J10001,3
+power,J3,6,VH_24,contact-router,J1,1,VH_24,Actual contact router supply,SYS_15689dc4__VH_24,J60003,J40001,J60003,6,J40001,1
+power,J3,3,HOST_3V3,contact-router,J1,2,VDD_3V3,Actual contact router supply,SYS_08572049__HOST_3V3,J60003,J40001,J60003,3,J40001,2
+power,J3,7,GND,contact-router,J1,3,GND,Actual contact router supply,SYS_56562df4__GND,J60003,J40001,J60003,7,J40001,3
+power,J4,1,AFE_3V3,recording-front-end,J1,3,AFE_3V3,Actual revised local AFE supply; labels retained,SYS_65aafbb6__AFE_3V3,J60004,J30001,J60004,1,J30001,3
+power,J4,2,AFE_P5,recording-front-end,J1,1,AFE_P5,Actual revised local AFE supply; labels retained,SYS_3fdd5066__AFE_P5,J60004,J30001,J60004,2,J30001,1
+power,J4,3,AFE_N5,recording-front-end,J1,2,AFE_N5,Actual revised local AFE supply; labels retained,SYS_d73cd2ee__AFE_N5,J60004,J30001,J60004,3,J30001,2
+power,J4,4,AFEAGND,recording-front-end,J1,4,AFEAGND,Actual revised local AFE supply; labels retained,SYS_fca1c340__AFEAGND,J60004,J30001,J60004,4,J30001,4
+power,J3,3,HOST_3V3,recording-front-end,J2,1,HOST_3V3,Recording HOST-side supply only,SYS_08572049__HOST_3V3,J60003,J30002,J60003,3,J30002,1
+power,J3,7,GND,recording-front-end,J2,2,HOSTGND,Recording HOST-side supply only,SYS_56562df4__GND,J60003,J30002,J60003,7,J30002,2
+power,J2,11,PWR_FAULT_N,supervision,U100,10,GUARD_FAULT_N,OPEN-DRAIN wired OR at GUARD_FAULT_N; power-off/ref-fault consumes ARM despite charged rails,SYS_ee59c76b__PWR_FAULT_N,J60002,U50100,J60002,11,J59901,3
+monitoring-cell,U1,5,V_REF,power,J6,1,MON_VREF,Existing REF3440 output physical tap; reference gross window,SYS_4f66f129__MON_VREF,U10001,J60006,J19901,1,J60006,1
+monitoring-cell,J4,3,V_MID,power,J6,2,MON_VMID,Existing buffered midpoint physical tap; reference gross window,SYS_37cfe02a__MON_VMID,J10004,J60006,J10004,3,J60006,2
+power,J6,3,GND,supervision,J1,7,GND,Reference monitor host ground; never AFEAGND,SYS_56562df4__GND,J60006,J50001,J60006,3,J50001,7
+power,J3,4,HOST_5,monitoring-transport,J1,1,HOST_5,Generated analog ADC rail with explicit 4.75 to 5.25 V validity condition,SYS_ce166826__HOST_5,J60003,J70001,J60003,4,J70001,1
+power,J3,3,HOST_3V3,monitoring-transport,J1,2,HOST_3V3,Generated digital and host isolator rail,SYS_08572049__HOST_3V3,J60003,J70001,J60003,3,J70001,2
+power,J3,7,GND,monitoring-transport,J1,3,GND,Host rail return,SYS_56562df4__GND,J60003,J70001,J60003,7,J70001,3
+monitoring-cell,J4,1,CH0_I_MON,monitoring-transport,J2,1,CH0_I_MON,Existing buffered source 0 current observation,SYS_f8e43b73__CH0_I_MON,J10004,J70002,J10004,1,J70002,1
+monitoring-cell,J4,2,CH1_I_MON,monitoring-transport,J2,2,CH1_I_MON,Existing buffered source 1 current observation,SYS_502efdd4__CH1_I_MON,J10004,J70002,J10004,2,J70002,2
+supervision,U502,1,CH0_VPAIR,monitoring-transport,J2,3,CH0_VPAIR,Existing component output tap for scaled pair 0 voltage,SYS_baff84b5__CH0_VPAIR,U50502,J70002,J59901,1,J70002,3
+supervision,U502,7,CH1_VPAIR,monitoring-transport,J2,4,CH1_VPAIR,Existing component output tap for scaled pair 1 voltage,SYS_40eeaa0c__CH1_VPAIR,U50502,J70002,J59901,2,J70002,4
+supervision,J4,4,MON_VREF,monitoring-transport,J2,5,MON_VREF,Existing monitor reference observed against independent ADC reference,SYS_4f66f129__MON_VREF,J50004,J70002,J50004,4,J70002,5
+supervision,J4,3,MON_VMID,monitoring-transport,J2,6,MON_VMID,Existing monitor midpoint observation,SYS_37cfe02a__MON_VMID,J50004,J70002,J50004,3,J70002,6
+power,J5,1,PACK_BUS,monitoring-transport,J2,7,PACK_BUS,Pack bus observed through native divider,SYS_f199d834__PACK_BUS,J60005,J70002,J60005,1,J70002,7
+power,J5,5,GND,monitoring-transport,J2,8,GND,Host observation return,SYS_56562df4__GND,J60005,J70002,J60005,5,J70002,8
+monitoring-cell,J2,1,CH0_CNV,monitoring-transport,J4,1,CH0_CNV,Charge endpoint source 0 conversion control,SYS_ce0a4f53__BOTH_CNV,J10002,J70004,J10002,1,J70004,1
+monitoring-cell,J2,2,CH0_CS_N,monitoring-transport,J4,2,CH0_CS_N,Charge endpoint source 0 select control,SYS_ec2c6e7f__CS0,J10002,J70004,J10002,2,J70004,2
+monitoring-cell,J2,3,CH0_DOUT,monitoring-transport,J4,3,CH0_DOUT,Charge endpoint source 0 result to explicit 330 ohm MISO join,SYS_83a198be__CH0_DOUT,J10002,J70004,J10002,3,J70004,3
+monitoring-cell,J2,4,CH1_CNV,monitoring-transport,J4,4,CH1_CNV,Charge endpoint source 1 conversion control,SYS_ce0a4f53__BOTH_CNV,J10002,J70004,J10002,4,J70004,4
+monitoring-cell,J2,5,CH1_CS_N,monitoring-transport,J4,5,CH1_CS_N,Charge endpoint source 1 select control,SYS_a863a08a__CS1,J10002,J70004,J10002,5,J70004,5
+monitoring-cell,J2,6,CH1_DOUT,monitoring-transport,J4,6,CH1_DOUT,Charge endpoint source 1 result to explicit 330 ohm MISO join,SYS_fd7db492__CH1_DOUT,J10002,J70004,J10002,6,J70004,6
+monitoring-cell,J2,7,MON_SCLK,monitoring-transport,J4,7,MON_SCLK,Shared 8 MHz endpoint clock distinct from raw ADC clock,SYS_7cf9dad5__MON_SCLK,J10002,J70004,J10002,7,J70004,7
+monitoring-cell,J2,12,GND,monitoring-transport,J4,8,GND,Endpoint digital return,SYS_56562df4__GND,J10002,J70004,J10002,12,J70004,8
+monitoring-cell,J2,8,CH0_INT_RUN,monitoring-transport,J5,1,CH0_INT_RUN,Source 0 integration control handoff,SYS_37737e7c__INT_RUN0,J10002,J70005,J10002,8,J70005,1
+monitoring-cell,J2,9,CH1_INT_RUN,monitoring-transport,J5,2,CH1_INT_RUN,Source 1 integration control handoff,SYS_36b0932b__INT_RUN1,J10002,J70005,J10002,9,J70005,2
+monitoring-cell,J2,10,CH0_REARM,monitoring-transport,J5,3,CH0_MON_REARM,Explicit source 0 monitor rearm alias,SYS_822d2245__MON_REARM0,J10002,J70005,J10002,10,J70005,3
+monitoring-cell,J2,11,CH1_REARM,monitoring-transport,J5,4,CH1_MON_REARM,Explicit source 1 monitor rearm alias,SYS_32a601bf__MON_REARM1,J10002,J70005,J10002,11,J70005,4
+monitoring-cell,J2,12,GND,monitoring-transport,J5,5,GND,Integration control return,SYS_56562df4__GND,J10002,J70005,J10002,12,J70005,5
+supervision,J5,1,RESET_READY,monitoring-transport,J6,1,RESET_READY,Independent supervisor reset observation,SYS_ff7fdc58__RESET_READY,J50005,J70006,J50005,1,J70006,1
+supervision,J5,2,RAILS_QUALIFIED,monitoring-transport,J6,2,RAILS_QUALIFIED,Independent supervisor rail qualification observation,SYS_93547907__RAILS_QUALIFIED,J50005,J70006,J50005,2,J70006,2
+supervision,J5,3,WATCHDOG_OK,monitoring-transport,J6,3,WATCHDOG_OK,Independent watchdog observation,SYS_a83d484c__WATCHDOG_OK,J50005,J70006,J50005,3,J70006,3
+supervision,J5,4,AFE_ISOLATED_READY,monitoring-transport,J6,4,AFE_ISOLATED_READY,Isolated recording domain ready observation,SYS_98321c7b__AFE_ISOLATED_READY,J50005,J70006,J50005,4,J70006,4
+supervision,J5,5,CH0_QUIESCENT_OK,monitoring-transport,J6,5,CH0_QUIESCENT_OK,Source 0 terminal quiet observation,SYS_2d0e5b2e__CH0_QUIESCENT_OK,J50005,J70006,J50005,5,J70006,5
+supervision,J5,6,CH1_QUIESCENT_OK,monitoring-transport,J6,6,CH1_QUIESCENT_OK,Source 1 terminal quiet observation,SYS_20eba8c2__CH1_QUIESCENT_OK,J50005,J70006,J50005,6,J70006,6
+supervision,J5,9,SUP_ARMED,monitoring-transport,J6,7,SUP_ARMED,Independent armed state observation,SYS_88c50083__SUP_ARMED,J50005,J70006,J50005,9,J70006,7
+supervision,J5,12,GLOBAL_GUARD_EN,monitoring-transport,J6,8,GLOBAL_GUARD_EN,Independent global guard state observation,SYS_77c24b0d__GLOBAL_GUARD_EN,J50005,J70006,J50005,12,J70006,8
+power,J2,11,PWR_FAULT_N,monitoring-transport,J6,9,PWR_FAULT_N,Existing open drain power fault observation,SYS_ee59c76b__PWR_FAULT_N,J60002,J70006,J60002,11,J70006,9
+supervision,J5,13,GND,monitoring-transport,J6,10,GND,Supervisor observation return,SYS_56562df4__GND,J50005,J70006,J50005,13,J70006,10
+controller-carrier,J16,3,ROUTE_PRELOAD,contact-router,J2,3,ROUTE_PRELOAD_LATCH,Compiled firmware P0.02 ROUTE_PRELOAD physical header binding,SYS_fd131f77__ROUTE_PRELOAD_LATCH,J80016,J40002,J80016,3,J40002,3
+controller-carrier,J16,4,ROUTE_COMMIT,contact-router,J2,4,ROUTE_COMMIT,Compiled firmware P0.03 ROUTE_COMMIT physical header binding,SYS_b6a3943c__ROUTE_COMMIT,J80016,J40002,J80016,4,J40002,4
+controller-carrier,J16,5,ROUTE_REARM,contact-router,J2,5,ROUTE_REARM,Compiled firmware P0.04 ROUTE_REARM physical header binding,SYS_ed4497b7__ROUTE_REARM,J80016,J40002,J80016,5,J40002,5
+controller-carrier,J16,6,ACTIVE_ACK,contact-router,J4,7,ROUTE_ACTIVE_BITS_VERIFIED,Compiled firmware P0.05 ACTIVE_ACK physical header binding,SYS_1fbf7500__ROUTE_ACTIVE_BITS_VERIFIED,J80016,J40004,J80016,6,J40004,7
+controller-carrier,J16,7,WANT0,contact-router,J3,1,CH0_WANT_ROUTE,Compiled firmware P0.06 WANT0 physical header binding,SYS_e338b670__CH0_WANT_ROUTE,J80016,J40003,J80016,7,J40003,1
+controller-carrier,J16,8,WANT1,contact-router,J3,2,CH1_WANT_ROUTE,Compiled firmware P0.07 WANT1 physical header binding,SYS_83ddb634__CH1_WANT_ROUTE,J80016,J40003,J80016,8,J40003,2
+controller-carrier,J10,1,RAW_SCLK,monitoring-transport,J3,1,RAW_SCLK,Compiled firmware P0.08 RAW_SCLK physical header binding,SYS_95016e07__RAW_SCLK,J80010,J70003,J80010,1,J70003,1
+controller-carrier,J10,2,RAW_SDI,monitoring-transport,J3,2,RAW_SDI,Compiled firmware P0.09 RAW_SDI physical header binding,SYS_66316879__RAW_SDI,J80010,J70003,J80010,2,J70003,2
+controller-carrier,J10,3,RAW_SDO,monitoring-transport,J3,3,RAW_SDO,Compiled firmware P0.10 RAW_SDO physical header binding,SYS_5fca782c__RAW_SDO,J80010,J70003,J80010,3,J70003,3
+controller-carrier,J10,4,RAW_CS_N,monitoring-transport,J3,4,RAW_CS_N,Compiled firmware P0.11 RAW_CS_N physical header binding,SYS_054848d0__RAW_CS_N,J80010,J70003,J80010,4,J70003,4
+controller-carrier,J10,5,RAW_RST_N,monitoring-transport,J3,5,RAW_RST_N,Compiled firmware P0.12 RAW_RST_N physical header binding,SYS_75de6c03__RAW_RST_N,J80010,J70003,J80010,5,J70003,5
+controller-carrier,J11,3,AFE_SCLK,recording-front-end,J2,3,HOST_SCLK,Compiled firmware P0.13 AFE_SCLK physical header binding,SYS_f30c60de__AFE_SCLK,J80011,J30002,J80011,3,J30002,3
+controller-carrier,J11,4,AFE_MOSI,recording-front-end,J2,4,HOST_MOSI,Compiled firmware P0.14 AFE_MOSI physical header binding,SYS_4d4028f1__AFE_MOSI,J80011,J30002,J80011,4,J30002,4
+controller-carrier,J11,6,AFE_MISO,recording-front-end,J2,6,HOST_MISO,Compiled firmware P0.15 AFE_MISO physical header binding,SYS_4dbe75ce__AFE_MISO,J80011,J30002,J80011,6,J30002,6
+controller-carrier,J11,5,AFE_CS_ASSERT,recording-front-end,J2,5,HOST_CS_ASSERT,Compiled firmware P0.16 AFE_CS_ASSERT physical header binding,SYS_18e49fe8__AFE_CS_ASSERT,J80011,J30002,J80011,5,J30002,5
+controller-carrier,J11,7,AFE_CONNECT,recording-front-end,J2,7,HOST_CONNECT_CMD,Compiled firmware P0.17 AFE_CONNECT physical header binding,SYS_8b29b23f__AFE_CONNECT,J80011,J30002,J80011,7,J30002,7
+controller-carrier,J11,8,AFE_RECORD,recording-front-end,J2,8,HOST_RECORD_CMD,Compiled firmware P0.18 AFE_RECORD physical header binding,SYS_a9673f8c__AFE_RECORD,J80011,J30002,J80011,8,J30002,8
+controller-carrier,J11,9,AFE_FAULT_N,recording-front-end,J2,9,HOST_FAULT_N,Compiled firmware P0.19 AFE_FAULT_N physical header binding,SYS_ce1178b4__AFE_FAULT_N,J80011,J30002,J80011,9,J30002,9
+controller-carrier,J12,1,MON_SCLK,monitoring-transport,J22,1,MON_SCLK,Compiled firmware P0.20 MON_SCLK physical header binding,SYS_7cf9dad5__MON_SCLK,J80012,J70022,J80012,1,J70022,1
+controller-carrier,J12,2,MON_MISO,monitoring-transport,J22,2,MON_MISO,Compiled firmware P0.21 MON_MISO physical header binding,SYS_0d7c406c__MON_MISO,J80012,J70022,J80012,2,J70022,2
+controller-carrier,J12,3,BOTH_CNV,monitoring-transport,J22,3,CH0_CNV,Compiled firmware P0.22 BOTH_CNV physical header binding,SYS_ce0a4f53__BOTH_CNV,J80012,J70022,J80012,3,J70022,3
+controller-carrier,J12,5,BOTH_CNV,monitoring-transport,J22,5,CH1_CNV,Compiled firmware P0.22 BOTH_CNV physical header binding,SYS_ce0a4f53__BOTH_CNV,J80012,J70022,J80012,5,J70022,5
+controller-carrier,J12,4,CS0,monitoring-transport,J22,4,CH0_CS_N,Compiled firmware P0.23 CS0 physical header binding,SYS_ec2c6e7f__CS0,J80012,J70022,J80012,4,J70022,4
+controller-carrier,J12,6,CS1,monitoring-transport,J22,6,CH1_CS_N,Compiled firmware P0.24 CS1 physical header binding,SYS_a863a08a__CS1,J80012,J70022,J80012,6,J70022,6
+controller-carrier,J13,1,INT_RUN0,monitoring-transport,J20,8,CH0_INT_RUN,Compiled firmware P0.25 INT_RUN0 physical header binding,SYS_37737e7c__INT_RUN0,J80013,J70020,J80013,1,J70020,8
+controller-carrier,J13,2,INT_RUN1,monitoring-transport,J20,9,CH1_INT_RUN,Compiled firmware P0.26 INT_RUN1 physical header binding,SYS_36b0932b__INT_RUN1,J80013,J70020,J80013,2,J70020,9
+controller-carrier,J13,3,MON_REARM0,monitoring-transport,J20,10,CH0_MON_REARM,Compiled firmware P0.27 MON_REARM0 physical header binding,SYS_822d2245__MON_REARM0,J80013,J70020,J80013,3,J70020,10
+controller-carrier,J13,4,MON_REARM1,monitoring-transport,J20,11,CH1_MON_REARM,Compiled firmware P0.28 MON_REARM1 physical header binding,SYS_32a601bf__MON_REARM1,J80013,J70020,J80013,4,J70020,11
+controller-carrier,J14,1,CTRL_SCLK,current-driver,J2,1,DAC_SCLK,Compiled firmware P0.29 CTRL_SCLK physical header binding,SYS_d5e1f64a__ROUTE_SRCLK,J80014,J20002,J80014,1,J20002,1
+controller-carrier,J16,2,CTRL_SCLK,contact-router,J2,2,ROUTE_SRCLK,Compiled firmware P0.29 CTRL_SCLK physical header binding,SYS_d5e1f64a__ROUTE_SRCLK,J80016,J40002,J80016,2,J40002,2
+controller-carrier,J14,3,CTRL_MOSI,current-driver,J2,3,DAC_SDIN,Compiled firmware P0.30 CTRL_MOSI physical header binding,SYS_11f4403a__ROUTE_SER,J80014,J20002,J80014,3,J20002,3
+controller-carrier,J16,1,CTRL_MOSI,contact-router,J2,1,ROUTE_SER,Compiled firmware P0.30 CTRL_MOSI physical header binding,SYS_11f4403a__ROUTE_SER,J80016,J40002,J80016,1,J40002,1
+controller-carrier,J14,2,DAC_SYNC_N,current-driver,J2,2,DAC_SYNC_N,Compiled firmware P0.31 DAC_SYNC_N physical header binding,SYS_e496c0b2__DAC_SYNC_N,J80014,J20002,J80014,2,J20002,2
+controller-carrier,J15,1,REQ0,current-driver,J3,1,CH0_REQUEST,Compiled firmware P1.00 REQ0 physical header binding,SYS_46ea5f03__CH0_REQUEST,J80015,J20003,J80015,1,J20003,1
+controller-carrier,J18,4,REQ0,supervision,J3,4,CH0_REQUEST,Compiled firmware P1.00 REQ0 physical header binding,SYS_46ea5f03__CH0_REQUEST,J80018,J50003,J80018,4,J50003,4
+controller-carrier,J15,5,REQ1,current-driver,J3,5,CH1_REQUEST,Compiled firmware P1.01 REQ1 physical header binding,SYS_dd388269__CH1_REQUEST,J80015,J20003,J80015,5,J20003,5
+controller-carrier,J18,5,REQ1,supervision,J3,5,CH1_REQUEST,Compiled firmware P1.01 REQ1 physical header binding,SYS_dd388269__CH1_REQUEST,J80018,J50003,J80018,5,J50003,5
+controller-carrier,J15,2,PLUS0,current-driver,J3,2,CH0_PLUS_RAW,Compiled firmware P1.02 PLUS0 physical header binding,SYS_973f460c__PLUS0,J80015,J20003,J80015,2,J20003,2
+controller-carrier,J15,3,MINUS0,current-driver,J3,3,CH0_MINUS_RAW,Compiled firmware P1.03 MINUS0 physical header binding,SYS_3b27d056__MINUS0,J80015,J20003,J80015,3,J20003,3
+controller-carrier,J15,6,PLUS1,current-driver,J3,6,CH1_PLUS_RAW,Compiled firmware P1.04 PLUS1 physical header binding,SYS_628d7747__PLUS1,J80015,J20003,J80015,6,J20003,6
+controller-carrier,J15,7,MINUS1,current-driver,J3,7,CH1_MINUS_RAW,Compiled firmware P1.05 MINUS1 physical header binding,SYS_edc800df__MINUS1,J80015,J20003,J80015,7,J20003,7
+controller-carrier,J15,4,BOTH_DRV_REARM,current-driver,J3,4,CH0_REARM,Compiled firmware P1.06 BOTH_DRV_REARM physical header binding,SYS_3abe1caf__BOTH_DRV_REARM,J80015,J20003,J80015,4,J20003,4
+controller-carrier,J15,8,BOTH_DRV_REARM,current-driver,J3,8,CH1_REARM,Compiled firmware P1.06 BOTH_DRV_REARM physical header binding,SYS_3abe1caf__BOTH_DRV_REARM,J80015,J20003,J80015,8,J20003,8
+controller-carrier,J18,1,SUP_REARM,supervision,J3,1,SUP_REARM,Compiled firmware P1.07 SUP_REARM physical header binding,SYS_bb444a6e__SUP_REARM,J80018,J50003,J80018,1,J50003,1
+controller-carrier,J18,2,FAULT_RESET,supervision,J3,2,FAULT_RESET,Compiled firmware P1.08 FAULT_RESET physical header binding,SYS_82531809__FAULT_RESET,J80018,J50003,J80018,2,J50003,2
+controller-carrier,J18,3,WDI,supervision,J3,3,WDI,Compiled firmware P1.09 WDI physical header binding,SYS_e3faaec0__WDI,J80018,J50003,J80018,3,J50003,3
+controller-carrier,J18,6,PHASE_REARM0,supervision,J3,10,CH0_PHASE_REARM,Compiled firmware P1.10 PHASE_REARM0 physical header binding,SYS_7db86ec0__PHASE_REARM0,J80018,J50003,J80018,6,J50003,10
+controller-carrier,J18,7,PHASE_REARM1,supervision,J3,11,CH1_PHASE_REARM,Compiled firmware P1.11 PHASE_REARM1 physical header binding,SYS_46e29157__PHASE_REARM1,J80018,J50003,J80018,7,J50003,11
+controller-carrier,J20,1,HOST_UART_TX,monitoring-transport,J7,1,HOST_UART_TX,Compiled firmware P1.12 HOST_UART_TX physical header binding,SYS_6e45b638__HOST_UART_TX,J80020,J70007,J80020,1,J70007,1
+controller-carrier,J20,2,HOST_UART_RX,monitoring-transport,J7,2,HOST_UART_RX,Compiled firmware P1.13 HOST_UART_RX physical header binding,SYS_919c5ac8__HOST_UART_RX,J80020,J70007,J80020,2,J70007,2
+controller-carrier,J1,1,HOST_3V3,power,J3,3,HOST_3V3,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_08572049__HOST_3V3,J80001,J60003,J80001,1,J60003,3
+controller-carrier,J1,2,GND,power,J3,7,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_56562df4__GND,J80001,J60003,J80001,2,J60003,7
+controller-carrier,J10,6,GND,monitoring-transport,J3,6,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_56562df4__GND,J80010,J70003,J80010,6,J70003,6
+controller-carrier,J11,1,HOST_3V3,recording-front-end,J2,1,HOST_3V3,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_08572049__HOST_3V3,J80011,J30002,J80011,1,J30002,1
+controller-carrier,J11,2,GND,recording-front-end,J2,2,HOSTGND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_56562df4__GND,J80011,J30002,J80011,2,J30002,2
+controller-carrier,J11,10,GND,recording-front-end,J2,10,HOSTGND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_56562df4__GND,J80011,J30002,J80011,10,J30002,10
+controller-carrier,J12,7,GND,monitoring-transport,J22,7,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_56562df4__GND,J80012,J70022,J80012,7,J70022,7
+controller-carrier,J13,5,GND,monitoring-transport,J20,12,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_56562df4__GND,J80013,J70020,J80013,5,J70020,12
+controller-carrier,J14,4,GND,current-driver,J2,4,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_56562df4__GND,J80014,J20002,J80014,4,J20002,4
+controller-carrier,J15,9,GND,current-driver,J3,9,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_56562df4__GND,J80015,J20003,J80015,9,J20003,9
+controller-carrier,J16,9,GND,contact-router,J2,7,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_56562df4__GND,J80016,J40002,J80016,9,J40002,7
+controller-carrier,J17,9,GND,contact-router,J6,9,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_56562df4__GND,J80017,J40006,J80017,9,J40006,9
+controller-carrier,J18,8,GND,supervision,J3,12,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_56562df4__GND,J80018,J50003,J80018,8,J50003,12
+controller-carrier,J19,19,GND,supervision,J5,13,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_56562df4__GND,J80019,J50005,J80019,19,J50005,13
+controller-carrier,J20,3,HOST_3V3,monitoring-transport,J7,3,HOST_3V3,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_08572049__HOST_3V3,J80020,J70007,J80020,3,J70007,3
+controller-carrier,J20,4,GND,monitoring-transport,J7,4,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate,SYS_56562df4__GND,J80020,J70007,J80020,4,J70007,4
+controller-carrier,J17,1,CH0_ADDR0,contact-router,J6,1,CH0_ADDR0,Actual active-latch address readback to 165 sample bit 0,SYS_087068cd__CH0_ADDR0,J80017,J40006,J80017,1,J40006,1
+controller-carrier,J17,2,CH0_ADDR1,contact-router,J6,2,CH0_ADDR1,Actual active-latch address readback to 165 sample bit 1,SYS_08e41150__CH0_ADDR1,J80017,J40006,J80017,2,J40006,2
+controller-carrier,J17,3,CH0_ADDR2,contact-router,J6,3,CH0_ADDR2,Actual active-latch address readback to 165 sample bit 2,SYS_5aed2944__CH0_ADDR2,J80017,J40006,J80017,3,J40006,3
+controller-carrier,J17,4,CH0_ADDR3,contact-router,J6,4,CH0_ADDR3,Actual active-latch address readback to 165 sample bit 3,SYS_f7756399__CH0_ADDR3,J80017,J40006,J80017,4,J40006,4
+controller-carrier,J17,5,CH1_ADDR0,contact-router,J6,5,CH1_ADDR0,Actual active-latch address readback to 165 sample bit 4,SYS_c3abe6bc__CH1_ADDR0,J80017,J40006,J80017,5,J40006,5
+controller-carrier,J17,6,CH1_ADDR1,contact-router,J6,6,CH1_ADDR1,Actual active-latch address readback to 165 sample bit 5,SYS_0cbf1bda__CH1_ADDR1,J80017,J40006,J80017,6,J40006,6
+controller-carrier,J17,7,CH1_ADDR2,contact-router,J6,7,CH1_ADDR2,Actual active-latch address readback to 165 sample bit 6,SYS_f373e353__CH1_ADDR2,J80017,J40006,J80017,7,J40006,7
+controller-carrier,J17,8,CH1_ADDR3,contact-router,J6,8,CH1_ADDR3,Actual active-latch address readback to 165 sample bit 7,SYS_b6ef4aed__CH1_ADDR3,J80017,J40006,J80017,8,J40006,8
+controller-carrier,J19,1,RESET_READY,supervision,J5,1,RESET_READY,Native observed RESET_READY to serialized health bit 8,SYS_ff7fdc58__RESET_READY,J80019,J50005,J80019,1,J50005,1
+controller-carrier,J19,2,RAILS_QUALIFIED,supervision,J5,2,RAILS_QUALIFIED,Native observed RAILS_QUALIFIED to serialized health bit 9,SYS_93547907__RAILS_QUALIFIED,J80019,J50005,J80019,2,J50005,2
+controller-carrier,J19,3,WATCHDOG_OK,supervision,J5,3,WATCHDOG_OK,Native observed WATCHDOG_OK to serialized health bit 10,SYS_a83d484c__WATCHDOG_OK,J80019,J50005,J80019,3,J50005,3
+controller-carrier,J19,4,AFE_ISOLATED_READY,supervision,J5,4,AFE_ISOLATED_READY,Native observed AFE_ISOLATED_READY to serialized health bit 11,SYS_98321c7b__AFE_ISOLATED_READY,J80019,J50005,J80019,4,J50005,4
+controller-carrier,J19,5,CH0_QUIESCENT_OK,supervision,J5,5,CH0_QUIESCENT_OK,Native observed CH0_QUIESCENT_OK to serialized health bit 12,SYS_2d0e5b2e__CH0_QUIESCENT_OK,J80019,J50005,J80019,5,J50005,5
+controller-carrier,J19,6,CH1_QUIESCENT_OK,supervision,J5,6,CH1_QUIESCENT_OK,Native observed CH1_QUIESCENT_OK to serialized health bit 13,SYS_20eba8c2__CH1_QUIESCENT_OK,J80019,J50005,J80019,6,J50005,6
+controller-carrier,J19,7,MON0_PERMIT,supervision,J4,5,MON0_PERMIT,Native observed MON0_PERMIT to serialized health bit 14,SYS_56ebc071__CH0_MON_PERMIT,J80019,J50004,J80019,7,J50004,5
+controller-carrier,J19,8,MON1_PERMIT,supervision,J4,6,MON1_PERMIT,Native observed MON1_PERMIT to serialized health bit 15,SYS_aa321af6__CH1_MON_PERMIT,J80019,J50004,J80019,8,J50004,6
+controller-carrier,J19,9,PWR_FAULT_N,power,J2,11,PWR_FAULT_N,Native observed PWR_FAULT_N to serialized health bit 16,SYS_ee59c76b__PWR_FAULT_N,J80019,J60002,J80019,9,J60002,11
+controller-carrier,J19,10,SUP_ARMED,supervision,J5,9,SUP_ARMED,Native observed SUP_ARMED to serialized health bit 17,SYS_88c50083__SUP_ARMED,J80019,J50005,J80019,10,J50005,9
+controller-carrier,J19,11,GLOBAL_GUARD_EN,supervision,J5,12,GLOBAL_GUARD_EN,Native observed GLOBAL_GUARD_EN to serialized health bit 18,SYS_77c24b0d__GLOBAL_GUARD_EN,J80019,J50005,J80019,11,J50005,12
+controller-carrier,J19,12,CH0_RUN,current-driver,J5,1,CH0_RUN,Native observed CH0_RUN to serialized health bit 19,SYS_695f3a7c__CH0_RUN,J80019,J20005,J80019,12,J20005,1
+controller-carrier,J19,13,CH1_RUN,current-driver,J5,5,CH1_RUN,Native observed CH1_RUN to serialized health bit 20,SYS_6a132103__CH1_RUN,J80019,J20005,J80019,13,J20005,5
+controller-carrier,J19,14,CH0_TIMER,current-driver,J5,4,CH0_TIMER,Native observed CH0_TIMER to serialized health bit 21,SYS_ca7ea3db__CH0_TIMER,J80019,J20005,J80019,14,J20005,4
+controller-carrier,J19,15,CH1_TIMER,current-driver,J5,8,CH1_TIMER,Native observed CH1_TIMER to serialized health bit 22,SYS_c659d53f__CH1_TIMER,J80019,J20005,J80019,15,J20005,8
+controller-carrier,J19,16,ROUTE_COMMAND_READY,contact-router,J5,1,ROUTE_COMMAND_READY,Native observed ROUTE_COMMAND_READY to serialized health bit 23,SYS_6c012064__ROUTE_COMMAND_READY,J80019,J40005,J80019,16,J40005,1
+controller-carrier,J19,17,CH0_TIMEOUT,current-driver,J5,3,CH0_TIMEOUT,Native observed CH0_TIMEOUT to serialized health bit 24,SYS_54dd20d7__CH0_TIMEOUT,J80019,J20005,J80019,17,J20005,3
+controller-carrier,J19,18,CH1_TIMEOUT,current-driver,J5,7,CH1_TIMEOUT,Native observed CH1_TIMEOUT to serialized health bit 25,SYS_9c8a42b1__CH1_TIMEOUT,J80019,J20005,J80019,18,J20005,7

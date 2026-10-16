@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-13T09:05:08",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/e94cf428-acb3-5a19-ba01-a0e33c87d4b7",
+            "violations": []
+        },
+        {
+            "path": "/Source0_analog/",
+            "uuid_path": "/e94cf428-acb3-5a19-ba01-a0e33c87d4b7/b412ce82-1105-5b7b-8c7d-d84cf7742fae",
+            "violations": []
+        },
+        {
+            "path": "/Source0_permission/",
+            "uuid_path": "/e94cf428-acb3-5a19-ba01-a0e33c87d4b7/4d7f74e3-c5c0-5e78-b702-2b48d668f182",
+            "violations": []
+        },
+        {
+            "path": "/Source1_analog/",
+            "uuid_path": "/e94cf428-acb3-5a19-ba01-a0e33c87d4b7/bbd81c72-8085-5a3b-bc8e-484b3bb8ec2c",
+            "violations": []
+        },
+        {
+            "path": "/Source1_permission/",
+            "uuid_path": "/e94cf428-acb3-5a19-ba01-a0e33c87d4b7/a033ede6-4321-5bbd-8ff5-958a04bad3a1",
+            "violations": []
+        }
+    ],
+    "source": "current_driver.kicad_sch"
+}

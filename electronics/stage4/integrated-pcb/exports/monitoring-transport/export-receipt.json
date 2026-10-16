@@ -1,0 +1,209 @@
+{
+  "schema": "ato.board-export.v1",
+  "board": "monitoring-transport",
+  "source_board": "electronics/stage4/integrated-pcb/boards/monitoring-transport/monitoring_transport.kicad_pcb",
+  "exporter_sha256_lf": "3bb0cad3cbf63fc3940d9a30e0a7fc31be818bc4b35b5eba81bff60a592aca76",
+  "source_sha256_lf": "16268c67fa59ad4475e8ada615db5697f6856f6b12ff3882aee91782becfa768",
+  "source_project_sha256_lf": "a9c0d3b2329839d5fff2e062b35e177fcccfb21277d096b5fff148d7fb0e73dd",
+  "source_xml_sha256_lf": "0132563bac63acf257c432198e97edcaf5a84b02044010e6d844335733afdd6a",
+  "DRC_sha256_lf": "80cb90d8e68265fd514b9a01ee4402aa51d6a2e3ced46474b96aaae9aea0a9b1",
+  "component_count": 60,
+  "fitted_component_count": 60,
+  "DNP_references": [],
+  "KiCad_version": "10.0.6",
+  "commands": [
+    {
+      "arguments": [
+        "pcb",
+        "export",
+        "step",
+        "--force",
+        "--no-dnp",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\monitoring-transport\\populated.step",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\monitoring-transport\\monitoring_transport.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "render",
+        "--width",
+        "1800",
+        "--height",
+        "1400",
+        "--quality",
+        "high",
+        "--background",
+        "opaque",
+        "--side",
+        "top",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\monitoring-transport\\top.png",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\monitoring-transport\\monitoring_transport.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "render",
+        "--width",
+        "1800",
+        "--height",
+        "1400",
+        "--quality",
+        "high",
+        "--background",
+        "opaque",
+        "--side",
+        "bottom",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\monitoring-transport\\bottom.png",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\monitoring-transport\\monitoring_transport.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "render",
+        "--width",
+        "1800",
+        "--height",
+        "1400",
+        "--quality",
+        "high",
+        "--background",
+        "opaque",
+        "--rotate",
+        "-35,0,25",
+        "--zoom",
+        ".83",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\monitoring-transport\\isometric.png",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\monitoring-transport\\monitoring_transport.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "export",
+        "svg",
+        "--layers",
+        "F.Cu,F.SilkS,Edge.Cuts",
+        "--page-size-mode",
+        "2",
+        "--exclude-drawing-sheet",
+        "--mode-single",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\monitoring-transport\\top-copper.svg",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\monitoring-transport\\monitoring_transport.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "export",
+        "svg",
+        "--layers",
+        "B.Cu,B.SilkS,Edge.Cuts",
+        "--page-size-mode",
+        "2",
+        "--exclude-drawing-sheet",
+        "--mirror",
+        "--mode-single",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\monitoring-transport\\bottom-copper.svg",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\monitoring-transport\\monitoring_transport.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "export",
+        "gerbers",
+        "--layers",
+        "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,Edge.Cuts",
+        "--subtract-soldermask",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\monitoring-transport\\fabrication-reference\\",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\monitoring-transport\\monitoring_transport.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "export",
+        "drill",
+        "--format",
+        "excellon",
+        "--excellon-units",
+        "mm",
+        "--excellon-separate-th",
+        "--generate-report",
+        "--report-path",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\monitoring-transport\\fabrication-reference\\drill-report.txt",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\monitoring-transport\\fabrication-reference\\",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\monitoring-transport\\monitoring_transport.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "pcb",
+        "export",
+        "pos",
+        "--format",
+        "csv",
+        "--units",
+        "mm",
+        "--side",
+        "both",
+        "--exclude-dnp",
+        "--output",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\exports\\monitoring-transport\\fabrication-reference\\positions.csv",
+        "E:\\Project ATO\\electronics\\stage4\\integrated-pcb\\boards\\monitoring-transport\\monitoring_transport.kicad_pcb"
+      ],
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "version"
+      ],
+      "returncode": 0
+    }
+  ],
+  "populated_models_nominal_where_documented": true,
+  "physical_qualification": false,
+  "outputs": {
+    "bottom-copper.svg": "f2840e7d875687a83fffc2a8974b0e0bbe1f2064ac613cd56199e1f27e63ed91",
+    "bottom.png": "b455200ad5e353c1f6c71a921338b2909af489c53f83e60be6cff9ce0fbca28a",
+    "isometric.png": "abc2ba2797c3b9968cb71815fa7e7436475961e61f02ac287c50ee7fb9519f2b",
+    "populated.step": "576a653f0ec784a6ad53c70117b10b0ae27c062a1bb314520b1fe2ec049b28ab",
+    "top-copper.svg": "56b9f7a6c95a377b3861329e0e0fd336672c2ae3585cfb25b6f6a7bf16f663a5",
+    "top.png": "9c63ebe90b7bcb4cea254b8af2b555ed1f38a3dfe521b4fd778b975d6aea3dc4",
+    "fabrication-reference/bom.csv": "57ac9c9aec0f5d820d4bce6002c90631282eb4474ab9dd3d644cd2f301f3b853",
+    "fabrication-reference/drill-report.txt": "cf8ca0eb99dec68907e749cb681b37908d3060154d04009ed8ff1ca5208963b0",
+    "fabrication-reference/monitoring_transport-B_Cu.gbl": "b81e74e383e89371efce5224a63f2da9cea7852a0d71cf4caac3145e0f1a7338",
+    "fabrication-reference/monitoring_transport-B_Mask.gbs": "69e86f052ecdc1249aac3161f2b67dc9876656ad3ca5b6a62e795943f6794e3b",
+    "fabrication-reference/monitoring_transport-B_Silkscreen.gbo": "4ae86b8f06ec4c868376b289fdf97f40c85d9afcbc4b6d920874e7c655392c14",
+    "fabrication-reference/monitoring_transport-Edge_Cuts.gm1": "6367b52da3094ed8a20c0e4eab2d0ed630293013db6eaee281ed3b58d0df5900",
+    "fabrication-reference/monitoring_transport-F_Cu.gtl": "2c9d66b96ea8dfd7135f5cd9fe2c08735e60f42763f2969820f67cae11616041",
+    "fabrication-reference/monitoring_transport-F_Mask.gts": "44ab06c5fc0beca8cd646c60df33072febc2f5a7d29b57fa2ec98ed6917d46fd",
+    "fabrication-reference/monitoring_transport-F_Silkscreen.gto": "fe9e1597373f0c91f26efbfdc623d54fe0cd345088a1158b00aab08fd5edaed2",
+    "fabrication-reference/monitoring_transport-In1_Cu.g1": "b3a8749f503920d5ea121e0ad5a6edeb60f9b8da0ea53334b8c5b61e07076e7c",
+    "fabrication-reference/monitoring_transport-In2_Cu.g2": "5b2b020e0245a63abbb9c514d5cb8b6f0468f8b4d380267bca5ca9dbb51dbae7",
+    "fabrication-reference/monitoring_transport-job.gbrjob": "f018f153928353c31ad70403f97023ba7fa829bcc20e9131375ad97a5c07b9be",
+    "fabrication-reference/monitoring_transport-NPTH.drl": "fe38200bc39bd07768c21784311accbc35a67a9711072dbbac8fec4f0208cfaa",
+    "fabrication-reference/monitoring_transport-PTH.drl": "8d0d383ba237a86de1c30f96f159a8b7e7f8f7ee1ccc86449e9d5c419ca6e164",
+    "fabrication-reference/positions.csv": "2011e6c025cff3396e98337f2d02635f5834fd99fe7603b34b15e6ed22c7ac37",
+    "fabrication-reference/README.md": "118a7498542a8992e20d99363fd12818a8dacb65e4b57cefaea220f696f077b5"
+  }
+}

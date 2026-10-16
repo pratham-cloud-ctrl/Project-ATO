@@ -1,0 +1,100 @@
+{
+  "schema": "ato-stage6-integration-summary-v1",
+  "date": "2026-10-16",
+  "passed": true,
+  "source_report": "results/stage6/digital-path-verification.json",
+  "source_report_sha256_lf": "6f4effd8f773700925caf5d826f4568d34f3c8728c7c8177b32782a2a7f32fc6",
+  "assertions": 114426,
+  "scenario_groups": 28,
+  "motor_arms": [
+    {
+      "arm": "off",
+      "rho": 1.0,
+      "first_on_rmse_m": 0.0314144382,
+      "initial_off_rmse_m": 0.0314144382,
+      "final_off_rmse_m": 0.0056049529,
+      "admitted_events": 0,
+      "maximum_current_ua": 0,
+      "maximum_post_washout_activation": 0.0,
+      "practice_blocks": 24,
+      "practice_seconds": 48,
+      "common_probe_seconds": 24,
+      "common_washout_seconds": 48
+    },
+    {
+      "arm": "neutral",
+      "rho": 1.0,
+      "first_on_rmse_m": 0.0166680958,
+      "initial_off_rmse_m": 0.0314144382,
+      "final_off_rmse_m": 0.0056049529,
+      "admitted_events": 1728,
+      "maximum_current_ua": 1566,
+      "maximum_post_washout_activation": 0.0,
+      "practice_blocks": 24,
+      "practice_seconds": 48,
+      "common_probe_seconds": 24,
+      "common_washout_seconds": 48
+    },
+    {
+      "arm": "favorable",
+      "rho": 2.0,
+      "first_on_rmse_m": 0.0166680958,
+      "initial_off_rmse_m": 0.0314144382,
+      "final_off_rmse_m": 0.0028969599,
+      "admitted_events": 1728,
+      "maximum_current_ua": 1566,
+      "maximum_post_washout_activation": 0.0,
+      "practice_blocks": 24,
+      "practice_seconds": 48,
+      "common_probe_seconds": 24,
+      "common_washout_seconds": 48
+    },
+    {
+      "arm": "adverse",
+      "rho": -1.0,
+      "first_on_rmse_m": 0.0166680958,
+      "initial_off_rmse_m": 0.0314144382,
+      "final_off_rmse_m": 0.0348451323,
+      "admitted_events": 1728,
+      "maximum_current_ua": 1925,
+      "maximum_post_washout_activation": 0.0,
+      "practice_blocks": 24,
+      "practice_seconds": 48,
+      "common_probe_seconds": 24,
+      "common_washout_seconds": 48
+    }
+  ],
+  "motor_completed_events": 5184,
+  "physiology": {
+    "config": {
+      "duration_s": 60,
+      "policy_period_s": 0.25,
+      "packet_period_s": 1,
+      "event_rate_hz": 40,
+      "assumed_gain_mmHg": 30,
+      "activation_tau_s": 1.5,
+      "response_tau_s": 6,
+      "deficit_mmHg": 20,
+      "deficit_interval_s": [
+        10,
+        40
+      ],
+      "feedback": "External causal SBP packets, not decoded spinal BP",
+      "policy": "Illustrative companion P control, not a clinical prescription"
+    },
+    "disturbed_rmse_mmHg": 11.8710708094,
+    "unassisted_disturbed_rmse_mmHg": 20.0,
+    "maximum_recovery_sbp_mmHg": 129.9989812897,
+    "completed_events": 1200
+  },
+  "compiled_core_fault_cases": 13,
+  "separate_independent_supervision_cases": 4,
+  "conditional_companion_fault_cases": 6,
+  "protected_body_ports": 36,
+  "live_rhd_feedback_while_motor_implemented": false,
+  "target_peripheral_execution": false,
+  "physical_integrated_execution": false,
+  "biological_efficacy_demonstrated": false,
+  "interpretation": "Compiled production C admission/phase state machine plus declared companion/recruitment/body adapters; no measured current or biological benefit",
+  "model_to_current_relation": "An illustrative unmeasured calibration premise, not a validated conversion or waveform prescription"
+}

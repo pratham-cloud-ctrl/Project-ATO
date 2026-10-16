@@ -1,0 +1,2428 @@
+{
+  "schema": "ato.stage3.response-domain-summary.v1",
+  "scope": "smoke",
+  "source_identity": {
+    "src/ato/stage3/response_validation.py": "7a814113b2ebc27e55cf96ae5288eceffae39d4cbfb1fd9defaeb0b82fd780a1",
+    "src/ato/stage3/motor.py": "d86b4d091baf226475ce9f6d6e2390b65bb63752e5f50e73d42c5c3408b2323c",
+    "src/ato/stage3/acquisition.py": "bd681adefc5e82c58b449490ad14917fff307be9947de647e92aeb6c38b22f03",
+    "src/ato/stage3/electrical.py": "8a7a20702be3f3f5893e1f859f675347fa35db01dadb20ab7e64635ca8913ff0",
+    "src/ato/stage3/external_history.py": "2ec8bb81bd96066fe8f80696a0351d4407b68baabd6526e6211922abb8a4f97d",
+    "scripts/stage3_response_validation.py": "e65421b99a45e373c650fd5f594672e5d91e817798099f95174c89edbbbb4b45"
+  },
+  "specification": {
+    "fixed_profile": "3mA,200us/phase,24V,40Hz; whole-frame density selection",
+    "densities": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "seeds": [
+      0
+    ],
+    "branches": [
+      "conditional_fast_assumed_delivery",
+      "actual_nominal_delivery"
+    ],
+    "biological_variants": [
+      "nominal",
+      "no_authority",
+      "cross_route_adverse"
+    ],
+    "correction_budget_m": 0.025,
+    "empirical_joint_coverage_floor": 0.95,
+    "frozen_before_outcomes": true,
+    "interval_scope": "recording-specific empirical residual extrema plus propagated engineering allowances; no guaranteed population coverage",
+    "fit_inputs": [
+      "observed external positions",
+      "physical support/availability",
+      "declared whole-frame commands",
+      "independent qualified/conditionally assumed monitor charge and uncertainty"
+    ],
+    "forbidden_fit_inputs": [
+      "actual charge",
+      "latent recruitment threshold",
+      "hidden response matrix",
+      "future positions",
+      "changed-context hidden parameters"
+    ],
+    "scope_limits": [
+      "Resting fixed-profile kinematic probes, not dynamic assisted practice or anatomical recruitment validation.",
+      "No current or phase-width generalization, learning-rate multiplier, human efficacy or live monitor-transport qualification."
+    ]
+  },
+  "reproduction": {
+    "rtol": 2e-08,
+    "atol": 1e-11,
+    "noise_policy": "Fixed independent capture IDs per training/envelope/heldout; subject draw shared within a seed. Numerical reconstruction compares all raw witnesses."
+  },
+  "batch_summary": {
+    "study_count": 2,
+    "finite_cases_per_study": 18,
+    "heldout_nominal_case_count": 36,
+    "heldout_changed_context_case_count": 36,
+    "nominal_applicable_case_count": 15,
+    "changed_context_applicable_case_count": 7,
+    "actual_delivery_qualified_map_count": 0,
+    "null_or_adverse_qualified_map_count": 0
+  },
+  "studies": [
+    {
+      "seed": 0,
+      "branch": "conditional_fast_assumed_delivery",
+      "biological_variant": "nominal",
+      "existing_calibration_map": {
+        "gain_m": [
+          [
+            0.058600298832161196,
+            0.009903401735299158
+          ],
+          [
+            0.009498851975868059,
+            0.061037975392884976
+          ]
+        ],
+        "gain_uncertainty_m": [
+          [
+            0.014750983063518044,
+            0.010909223591057714
+          ],
+          [
+            0.010877308151614322,
+            0.01494329443398026
+          ]
+        ],
+        "onset_delay_s": 0.04000000000000001,
+        "onset_uncertainty_s": 0.005,
+        "qualified": true,
+        "rejected_routes": [],
+        "calibration_pulses": 200,
+        "measured_dose_mean_fraction": 1.0120000000000002,
+        "route_consistency_rmse_m": 0.00040524003497701734,
+        "heldout_response_rmse_m": 0.00026702724232980697
+      },
+      "observed_four_route_map": {
+        "schema": "ato.stage3.observed-four-route-map.v1",
+        "gain_m_per_reference_dose": [
+          [
+            0.05847940008376249,
+            -0.05863696105009814,
+            0.009999358583194928,
+            -0.010324094526246023
+          ],
+          [
+            0.00932661763706595,
+            -0.00959388287422567,
+            0.06051077449171033,
+            -0.060526044576487706
+          ]
+        ],
+        "gain_uncertainty_m": [
+          [
+            0.014741445209166799,
+            0.01475387539201204,
+            0.010916793747501555,
+            0.010942412574565286
+          ],
+          [
+            0.010863720367956197,
+            0.010884805258734257,
+            0.014901702891670147,
+            0.014902907567867935
+          ]
+        ],
+        "routes": [
+          {
+            "pattern": "left_positive",
+            "recording_id": 1000000,
+            "response_m": [
+              0.059181152884767434,
+              0.009438537048710708
+            ],
+            "measured_reference_dose": 1.0119999999999965,
+            "dose_uncertainty": 0.07399999999999975,
+            "qualified": true,
+            "reason": "OBSERVED_ROUTE_SIGN_AND_DOSE"
+          },
+          {
+            "pattern": "left_negative",
+            "recording_id": 1000001,
+            "response_m": [
+              -0.05934060458269911,
+              -0.009709009468716345
+            ],
+            "measured_reference_dose": 1.0119999999999965,
+            "dose_uncertainty": 0.07399999999999975,
+            "qualified": true,
+            "reason": "OBSERVED_ROUTE_SIGN_AND_DOSE"
+          },
+          {
+            "pattern": "right_positive",
+            "recording_id": 1000002,
+            "response_m": [
+              0.010119350886193233,
+              0.06123690378561064
+            ],
+            "measured_reference_dose": 1.0119999999999965,
+            "dose_uncertainty": 0.07399999999999975,
+            "qualified": true,
+            "reason": "OBSERVED_ROUTE_SIGN_AND_DOSE"
+          },
+          {
+            "pattern": "right_negative",
+            "recording_id": 1000003,
+            "response_m": [
+              -0.010447983660560939,
+              -0.061252357111405344
+            ],
+            "measured_reference_dose": 1.0119999999999965,
+            "dose_uncertainty": 0.07399999999999975,
+            "qualified": true,
+            "reason": "OBSERVED_ROUTE_SIGN_AND_DOSE"
+          }
+        ],
+        "authority_singular_margin_m": 0.023952288936272895,
+        "qualified": true,
+        "scope": "four effective gains at fixed3mA/200us/24V profile; no threshold, latent gain or body coefficient supplied"
+      },
+      "summary": {
+        "finite_pattern_density_cases": 18,
+        "nominal_applicable_cases": 15,
+        "changed_context_applicable_cases": 7,
+        "nominal_minimum_joint_coverage": 1.0,
+        "changed_context_minimum_joint_coverage": 0.0,
+        "maximum_empirical_envelope_radius_m": 0.0381674015310371,
+        "monitor_quality_pulse_counts": {
+          "ASSUMED_NOMINAL": 3208
+        }
+      },
+      "finite_cases": [
+        {
+          "pattern": "left_positive",
+          "density": 0.25,
+          "envelope": {
+            "recording_id": 1000100,
+            "pattern": "left_positive",
+            "density": 0.25,
+            "residual_lower_m": [
+              -0.012647656874114066,
+              -0.007119814264609461
+            ],
+            "residual_upper_m": [
+              0.012717894463045281,
+              0.00839427231533559
+            ],
+            "maximum_radius_m": 0.012717894463045281,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000101,
+            "pattern": "left_positive",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.006898004790026698,
+            "residual_rmse_m": 0.0022962621245499622,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000102,
+            "pattern": "left_positive",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              0.575
+            ],
+            "empirical_joint_coverage": 0.575,
+            "maximum_absolute_residual_m": 0.010632685575184337,
+            "residual_rmse_m": 0.006318143923693739,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "OBSERVED_HELDOUT_COVERAGE_BELOW_PREDECLARED_FLOOR"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "left_positive",
+          "density": 0.5,
+          "envelope": {
+            "recording_id": 1000103,
+            "pattern": "left_positive",
+            "density": 0.5,
+            "residual_lower_m": [
+              -0.013934237234767109,
+              -0.009855489105846837
+            ],
+            "residual_upper_m": [
+              0.014026014476799268,
+              0.009796507714730812
+            ],
+            "maximum_radius_m": 0.014026014476799268,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000104,
+            "pattern": "left_positive",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.004384681862611993,
+            "residual_rmse_m": 0.0016412499924384001,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000105,
+            "pattern": "left_positive",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              0.9875,
+              0.0
+            ],
+            "empirical_joint_coverage": 0.0,
+            "maximum_absolute_residual_m": 0.016943663874921296,
+            "residual_rmse_m": 0.011674614336100377,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "OBSERVED_HELDOUT_COVERAGE_BELOW_PREDECLARED_FLOOR"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "left_positive",
+          "density": 1.0,
+          "envelope": {
+            "recording_id": 1000106,
+            "pattern": "left_positive",
+            "density": 1.0,
+            "residual_lower_m": [
+              -0.022328949912716813,
+              -0.015626042107592587
+            ],
+            "residual_upper_m": [
+              0.02471991616914302,
+              0.01668623875395382
+            ],
+            "maximum_radius_m": 0.02471991616914302,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000107,
+            "pattern": "left_positive",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.00461489326423945,
+            "residual_rmse_m": 0.001531857399584702,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000108,
+            "pattern": "left_positive",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              0.9125,
+              0.0
+            ],
+            "empirical_joint_coverage": 0.0,
+            "maximum_absolute_residual_m": 0.028426344041090144,
+            "residual_rmse_m": 0.022860210317188323,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "OBSERVED_HELDOUT_COVERAGE_BELOW_PREDECLARED_FLOOR",
+              "OBSERVED_HELDOUT_RESIDUAL_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "left_negative",
+          "density": 0.25,
+          "envelope": {
+            "recording_id": 1000130,
+            "pattern": "left_negative",
+            "density": 0.25,
+            "residual_lower_m": [
+              -0.013778232467226148,
+              -0.007738781935354199
+            ],
+            "residual_upper_m": [
+              0.012315471369512138,
+              0.008051328485637464
+            ],
+            "maximum_radius_m": 0.013778232467226148,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000131,
+            "pattern": "left_negative",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.006394884346672583,
+            "residual_rmse_m": 0.00234419783624457,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000132,
+            "pattern": "left_negative",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              0.875
+            ],
+            "empirical_joint_coverage": 0.875,
+            "maximum_absolute_residual_m": 0.010233415575488524,
+            "residual_rmse_m": 0.006154495865176155,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "OBSERVED_HELDOUT_COVERAGE_BELOW_PREDECLARED_FLOOR"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "left_negative",
+          "density": 0.5,
+          "envelope": {
+            "recording_id": 1000133,
+            "pattern": "left_negative",
+            "density": 0.5,
+            "residual_lower_m": [
+              -0.013660118549362558,
+              -0.009428465229284897
+            ],
+            "residual_upper_m": [
+              0.014312228617212097,
+              0.0105594952604583
+            ],
+            "maximum_radius_m": 0.014312228617212097,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000134,
+            "pattern": "left_negative",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.005861093392492717,
+            "residual_rmse_m": 0.0014726261711099312,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000135,
+            "pattern": "left_negative",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              0.9875,
+              0.075
+            ],
+            "empirical_joint_coverage": 0.075,
+            "maximum_absolute_residual_m": 0.016527309893981323,
+            "residual_rmse_m": 0.011783849378391843,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "OBSERVED_HELDOUT_COVERAGE_BELOW_PREDECLARED_FLOOR"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "left_negative",
+          "density": 1.0,
+          "envelope": {
+            "recording_id": 1000136,
+            "pattern": "left_negative",
+            "density": 1.0,
+            "residual_lower_m": [
+              -0.024647722524813225,
+              -0.0162077850484447
+            ],
+            "residual_upper_m": [
+              0.023799517967181515,
+              0.016174115363846085
+            ],
+            "maximum_radius_m": 0.024647722524813225,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000137,
+            "pattern": "left_negative",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.0039025877710375315,
+            "residual_rmse_m": 0.0014402120858790619,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000138,
+            "pattern": "left_negative",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              0.9625,
+              0.0
+            ],
+            "empirical_joint_coverage": 0.0,
+            "maximum_absolute_residual_m": 0.02775812833778076,
+            "residual_rmse_m": 0.023230379460704467,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "OBSERVED_HELDOUT_COVERAGE_BELOW_PREDECLARED_FLOOR",
+              "OBSERVED_HELDOUT_RESIDUAL_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "right_positive",
+          "density": 0.25,
+          "envelope": {
+            "recording_id": 1000160,
+            "pattern": "right_positive",
+            "density": 0.25,
+            "residual_lower_m": [
+              -0.007191192306236603,
+              -0.012607445580895273
+            ],
+            "residual_upper_m": [
+              0.007774480022995186,
+              0.011948447572322602
+            ],
+            "maximum_radius_m": 0.012607445580895273,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000161,
+            "pattern": "right_positive",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.0079419014189544,
+            "residual_rmse_m": 0.002557624079751126,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000162,
+            "pattern": "right_positive",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.01172258225958673,
+            "residual_rmse_m": 0.004331277819101958,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "right_positive",
+          "density": 0.5,
+          "envelope": {
+            "recording_id": 1000163,
+            "pattern": "right_positive",
+            "density": 0.5,
+            "residual_lower_m": [
+              -0.010824750521650595,
+              -0.014171358541370952
+            ],
+            "residual_upper_m": [
+              0.0104285673225704,
+              0.013673309261899044
+            ],
+            "maximum_radius_m": 0.014171358541370952,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000164,
+            "pattern": "right_positive",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.004124048236382825,
+            "residual_rmse_m": 0.0016072729268958458,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000165,
+            "pattern": "right_positive",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              0.975
+            ],
+            "empirical_joint_coverage": 0.975,
+            "maximum_absolute_residual_m": 0.014659982276002969,
+            "residual_rmse_m": 0.00816372726825805,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "right_positive",
+          "density": 1.0,
+          "envelope": {
+            "recording_id": 1000166,
+            "pattern": "right_positive",
+            "density": 1.0,
+            "residual_lower_m": [
+              -0.01517539618439572,
+              -0.023857037857130947
+            ],
+            "residual_upper_m": [
+              0.017112172869117252,
+              0.02372666985459356
+            ],
+            "maximum_radius_m": 0.023857037857130947,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000167,
+            "pattern": "right_positive",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.004829696286276959,
+            "residual_rmse_m": 0.0016956217682836366,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000168,
+            "pattern": "right_positive",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              0.9375
+            ],
+            "empirical_joint_coverage": 0.9375,
+            "maximum_absolute_residual_m": 0.026507777073758926,
+            "residual_rmse_m": 0.015987494700447965,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "OBSERVED_HELDOUT_COVERAGE_BELOW_PREDECLARED_FLOOR",
+              "OBSERVED_HELDOUT_RESIDUAL_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "right_negative",
+          "density": 0.25,
+          "envelope": {
+            "recording_id": 1000190,
+            "pattern": "right_negative",
+            "density": 0.25,
+            "residual_lower_m": [
+              -0.007757736705469306,
+              -0.01174624743878961
+            ],
+            "residual_upper_m": [
+              0.007619827313540476,
+              0.012728895962257961
+            ],
+            "maximum_radius_m": 0.012728895962257961,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000191,
+            "pattern": "right_negative",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.006058335494187151,
+            "residual_rmse_m": 0.002350164787408233,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000192,
+            "pattern": "right_negative",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.01127707263512165,
+            "residual_rmse_m": 0.004781607736412772,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "right_negative",
+          "density": 0.5,
+          "envelope": {
+            "recording_id": 1000193,
+            "pattern": "right_negative",
+            "density": 0.5,
+            "residual_lower_m": [
+              -0.010142613144619977,
+              -0.014967985918521982
+            ],
+            "residual_upper_m": [
+              0.009129729526971737,
+              0.01452391097740822
+            ],
+            "maximum_radius_m": 0.014967985918521982,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000194,
+            "pattern": "right_negative",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.005303121721801623,
+            "residual_rmse_m": 0.0016616625926961254,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000195,
+            "pattern": "right_negative",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              0.9625
+            ],
+            "empirical_joint_coverage": 0.9625,
+            "maximum_absolute_residual_m": 0.015605065223050085,
+            "residual_rmse_m": 0.008424091409549295,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "right_negative",
+          "density": 1.0,
+          "envelope": {
+            "recording_id": 1000196,
+            "pattern": "right_negative",
+            "density": 1.0,
+            "residual_lower_m": [
+              -0.01578398943049291,
+              -0.025359005557922358
+            ],
+            "residual_upper_m": [
+              0.017292266423151705,
+              0.02337029063785641
+            ],
+            "maximum_radius_m": 0.025359005557922358,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000197,
+            "pattern": "right_negative",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.004136498189022418,
+            "residual_rmse_m": 0.0015246197175564718,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000198,
+            "pattern": "right_negative",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              0.9875
+            ],
+            "empirical_joint_coverage": 0.9875,
+            "maximum_absolute_residual_m": 0.023572220335335764,
+            "residual_rmse_m": 0.015136268022617883,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "mixed_same",
+          "density": 0.25,
+          "envelope": {
+            "recording_id": 1000220,
+            "pattern": "mixed_same",
+            "density": 0.25,
+            "residual_lower_m": [
+              -0.018537395872172145,
+              -0.018676211382217693
+            ],
+            "residual_upper_m": [
+              0.015956860564280924,
+              0.016247852178075697
+            ],
+            "maximum_radius_m": 0.018676211382217693,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000221,
+            "pattern": "mixed_same",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.006644460840939035,
+            "residual_rmse_m": 0.0033001259679779475,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000222,
+            "pattern": "mixed_same",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.016863898763357858,
+            "residual_rmse_m": 0.00926204782576,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "mixed_same",
+          "density": 0.5,
+          "envelope": {
+            "recording_id": 1000223,
+            "pattern": "mixed_same",
+            "density": 0.5,
+            "residual_lower_m": [
+              -0.01946204709772952,
+              -0.020134022627756806
+            ],
+            "residual_upper_m": [
+              0.020598700536605365,
+              0.021961922395578946
+            ],
+            "maximum_radius_m": 0.021961922395578946,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000224,
+            "pattern": "mixed_same",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.005829568944919303,
+            "residual_rmse_m": 0.001833801923133351,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000225,
+            "pattern": "mixed_same",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              0.0
+            ],
+            "empirical_joint_coverage": 0.0,
+            "maximum_absolute_residual_m": 0.02651223967181409,
+            "residual_rmse_m": 0.01748421083301651,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "OBSERVED_HELDOUT_COVERAGE_BELOW_PREDECLARED_FLOOR",
+              "OBSERVED_HELDOUT_RESIDUAL_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "mixed_same",
+          "density": 1.0,
+          "envelope": {
+            "recording_id": 1000226,
+            "pattern": "mixed_same",
+            "density": 1.0,
+            "residual_lower_m": [
+              -0.03751708573835834,
+              -0.03503832807560787
+            ],
+            "residual_upper_m": [
+              0.03651112704890569,
+              0.03757226630465637
+            ],
+            "maximum_radius_m": 0.03757226630465637,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000227,
+            "pattern": "mixed_same",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.004575320876226738,
+            "residual_rmse_m": 0.0016056714759875794,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000228,
+            "pattern": "mixed_same",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              0.0
+            ],
+            "empirical_joint_coverage": 0.0,
+            "maximum_absolute_residual_m": 0.048565806397668,
+            "residual_rmse_m": 0.03407146829371055,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM",
+              "OBSERVED_HELDOUT_COVERAGE_BELOW_PREDECLARED_FLOOR",
+              "OBSERVED_HELDOUT_RESIDUAL_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "mixed_opposed",
+          "density": 0.25,
+          "envelope": {
+            "recording_id": 1000250,
+            "pattern": "mixed_opposed",
+            "density": 0.25,
+            "residual_lower_m": [
+              -0.016094907357548403,
+              -0.01629733536686225
+            ],
+            "residual_upper_m": [
+              0.014361174145358613,
+              0.01575397020614908
+            ],
+            "maximum_radius_m": 0.01629733536686225,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000251,
+            "pattern": "mixed_opposed",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.006511258753196568,
+            "residual_rmse_m": 0.002468508522825135,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000252,
+            "pattern": "mixed_opposed",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.012162616828063117,
+            "residual_rmse_m": 0.005400153790356391,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "mixed_opposed",
+          "density": 0.5,
+          "envelope": {
+            "recording_id": 1000253,
+            "pattern": "mixed_opposed",
+            "density": 0.5,
+            "residual_lower_m": [
+              -0.019921736000806607,
+              -0.020350894290681598
+            ],
+            "residual_upper_m": [
+              0.020440156763653204,
+              0.020630720868352433
+            ],
+            "maximum_radius_m": 0.020630720868352433,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": true,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000254,
+            "pattern": "mixed_opposed",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.005471391834584102,
+            "residual_rmse_m": 0.0017404434874416514,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000255,
+            "pattern": "mixed_opposed",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.01715140897476003,
+            "residual_rmse_m": 0.009115062744191854,
+            "applicable_within_tested_domain": true,
+            "reasons": [],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "mixed_opposed",
+          "density": 1.0,
+          "envelope": {
+            "recording_id": 1000256,
+            "pattern": "mixed_opposed",
+            "density": 1.0,
+            "residual_lower_m": [
+              -0.03649507543021784,
+              -0.0381674015310371
+            ],
+            "residual_upper_m": [
+              0.03685758863253289,
+              0.036159589260584164
+            ],
+            "maximum_radius_m": 0.0381674015310371,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 1000257,
+            "pattern": "mixed_opposed",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.003876148189457994,
+            "residual_rmse_m": 0.0016630505002029408,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 1000258,
+            "pattern": "mixed_opposed",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.02932452231124975,
+            "residual_rmse_m": 0.0185644176540407,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM",
+              "OBSERVED_HELDOUT_RESIDUAL_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        }
+      ]
+    },
+    {
+      "seed": 0,
+      "branch": "actual_nominal_delivery",
+      "biological_variant": "nominal",
+      "existing_calibration_map": {
+        "gain_m": [
+          [
+            0.05853377519897679,
+            0.009894099574930891
+          ],
+          [
+            0.009488074262471839,
+            0.06096899187979614
+          ]
+        ],
+        "gain_uncertainty_m": [
+          [
+            0.06174224356778427,
+            0.024235951131672144
+          ],
+          [
+            0.02392286302180768,
+            0.06362005109434096
+          ]
+        ],
+        "onset_delay_s": 0.07250000000000023,
+        "onset_uncertainty_s": 0.005590169943749336,
+        "qualified": false,
+        "rejected_routes": [],
+        "calibration_pulses": 200,
+        "measured_dose_mean_fraction": 1.01318359375,
+        "route_consistency_rmse_m": 0.0004045753058851965,
+        "heldout_response_rmse_m": 0.00026807809511312017
+      },
+      "observed_four_route_map": {
+        "schema": "ato.stage3.observed-four-route-map.v1",
+        "gain_m_per_reference_dose": [
+          [
+            0.05843404311527952,
+            -0.05873673224912161,
+            0.009875158547277675,
+            -0.009346508952371343
+          ],
+          [
+            0.009648493566141746,
+            -0.00969693211252962,
+            0.06107032421013879,
+            -0.06073424948122522
+          ]
+        ],
+        "gain_uncertainty_m": [
+          [
+            0.0616653396688907,
+            0.061898744744591956,
+            0.02422134561234899,
+            0.023813701316855642
+          ],
+          [
+            0.02404656313367417,
+            0.024083914334369794,
+            0.06369818895127169,
+            0.0634390400794649
+          ]
+        ],
+        "routes": [
+          {
+            "pattern": "left_positive",
+            "recording_id": 2000000,
+            "response_m": [
+              0.05920441380088116,
+              0.009775695385617214
+            ],
+            "measured_reference_dose": 1.0131835937499967,
+            "dose_uncertainty": 0.44112058886054284,
+            "qualified": true,
+            "reason": "OBSERVED_ROUTE_SIGN_AND_DOSE"
+          },
+          {
+            "pattern": "left_negative",
+            "recording_id": 2000001,
+            "response_m": [
+              -0.05951109346529636,
+              -0.009824772526122507
+            ],
+            "measured_reference_dose": 1.0131835937499967,
+            "dose_uncertainty": 0.44112058886054284,
+            "qualified": true,
+            "reason": "OBSERVED_ROUTE_SIGN_AND_DOSE"
+          },
+          {
+            "pattern": "right_positive",
+            "recording_id": 2000002,
+            "response_m": [
+              0.010005348625781792,
+              0.06187545055470585
+            ],
+            "measured_reference_dose": 1.0131835937499967,
+            "dose_uncertainty": 0.44112058886054284,
+            "qualified": true,
+            "reason": "OBSERVED_ROUTE_SIGN_AND_DOSE"
+          },
+          {
+            "pattern": "right_negative",
+            "recording_id": 2000003,
+            "response_m": [
+              -0.009469729529380114,
+              -0.06153494515309664
+            ],
+            "measured_reference_dose": 1.0131835937499967,
+            "dose_uncertainty": 0.44112058886054284,
+            "qualified": true,
+            "reason": "OBSERVED_ROUTE_SIGN_AND_DOSE"
+          }
+        ],
+        "authority_singular_margin_m": -0.03670057577941882,
+        "qualified": false,
+        "scope": "four effective gains at fixed3mA/200us/24V profile; no threshold, latent gain or body coefficient supplied"
+      },
+      "summary": {
+        "finite_pattern_density_cases": 18,
+        "nominal_applicable_cases": 0,
+        "changed_context_applicable_cases": 0,
+        "nominal_minimum_joint_coverage": 1.0,
+        "changed_context_minimum_joint_coverage": 1.0,
+        "maximum_empirical_envelope_radius_m": 0.16237108806965922,
+        "monitor_quality_pulse_counts": {
+          "VALID": 3208
+        }
+      },
+      "finite_cases": [
+        {
+          "pattern": "left_positive",
+          "density": 0.25,
+          "envelope": {
+            "recording_id": 2000100,
+            "pattern": "left_positive",
+            "density": 0.25,
+            "residual_lower_m": [
+              -0.042310625602490895,
+              -0.014447826601913114
+            ],
+            "residual_upper_m": [
+              0.043810969627861046,
+              0.016832366871244606
+            ],
+            "maximum_radius_m": 0.043810969627861046,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000101,
+            "pattern": "left_positive",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.010044435196120183,
+            "residual_rmse_m": 0.003395344429773647,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000102,
+            "pattern": "left_positive",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.012196612764356954,
+            "residual_rmse_m": 0.006446956421955925,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "left_positive",
+          "density": 0.5,
+          "envelope": {
+            "recording_id": 2000103,
+            "pattern": "left_positive",
+            "density": 0.5,
+            "residual_lower_m": [
+              -0.06076622677461534,
+              -0.023075494451265728
+            ],
+            "residual_upper_m": [
+              0.061378654278877745,
+              0.023701681882984743
+            ],
+            "maximum_radius_m": 0.061378654278877745,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000104,
+            "pattern": "left_positive",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.004788088614850309,
+            "residual_rmse_m": 0.001507329466453373,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000105,
+            "pattern": "left_positive",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.016009161111947723,
+            "residual_rmse_m": 0.01168366074523968,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "left_positive",
+          "density": 1.0,
+          "envelope": {
+            "recording_id": 2000106,
+            "pattern": "left_positive",
+            "density": 1.0,
+            "residual_lower_m": [
+              -0.11896041496044715,
+              -0.043209366927258984
+            ],
+            "residual_upper_m": [
+              0.11923122350949122,
+              0.04227180947220889
+            ],
+            "maximum_radius_m": 0.11923122350949122,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000107,
+            "pattern": "left_positive",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.0038221134606135007,
+            "residual_rmse_m": 0.0013881377976338067,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000108,
+            "pattern": "left_positive",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.02856259486987956,
+            "residual_rmse_m": 0.023317533738310296,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM",
+              "OBSERVED_HELDOUT_RESIDUAL_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "left_negative",
+          "density": 0.25,
+          "envelope": {
+            "recording_id": 2000130,
+            "pattern": "left_negative",
+            "density": 0.25,
+            "residual_lower_m": [
+              -0.04297376117162391,
+              -0.014997518193135063
+            ],
+            "residual_upper_m": [
+              0.042938653222094614,
+              0.014959919281489709
+            ],
+            "maximum_radius_m": 0.04297376117162391,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000131,
+            "pattern": "left_negative",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.008653415591586597,
+            "residual_rmse_m": 0.0035717164951473775,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000132,
+            "pattern": "left_negative",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.013595312138456873,
+            "residual_rmse_m": 0.0068159010542959905,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "left_negative",
+          "density": 0.5,
+          "envelope": {
+            "recording_id": 2000133,
+            "pattern": "left_negative",
+            "density": 0.5,
+            "residual_lower_m": [
+              -0.06154206433539041,
+              -0.02222983843889283
+            ],
+            "residual_upper_m": [
+              0.06332872658498517,
+              0.023053615968686752
+            ],
+            "maximum_radius_m": 0.06332872658498517,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000134,
+            "pattern": "left_negative",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.004739425362574733,
+            "residual_rmse_m": 0.0015090178692700267,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000135,
+            "pattern": "left_negative",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.0172020652856919,
+            "residual_rmse_m": 0.01169836413662924,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "left_negative",
+          "density": 1.0,
+          "envelope": {
+            "recording_id": 2000136,
+            "pattern": "left_negative",
+            "density": 1.0,
+            "residual_lower_m": [
+              -0.11974134168864067,
+              -0.042139387241668685
+            ],
+            "residual_upper_m": [
+              0.1219534379537299,
+              0.043852473463896854
+            ],
+            "maximum_radius_m": 0.1219534379537299,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000137,
+            "pattern": "left_negative",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.0052504997398514636,
+            "residual_rmse_m": 0.001647140929529338,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000138,
+            "pattern": "left_negative",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.02816527842575671,
+            "residual_rmse_m": 0.023267197910500217,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM",
+              "OBSERVED_HELDOUT_RESIDUAL_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "right_positive",
+          "density": 0.25,
+          "envelope": {
+            "recording_id": 2000160,
+            "pattern": "right_positive",
+            "density": 0.25,
+            "residual_lower_m": [
+              -0.014127338903322094,
+              -0.04595578168302473
+            ],
+            "residual_upper_m": [
+              0.01608939521878023,
+              0.043288255068846856
+            ],
+            "maximum_radius_m": 0.04595578168302473,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000161,
+            "pattern": "right_positive",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.008924693388159826,
+            "residual_rmse_m": 0.0035659883207376764,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000162,
+            "pattern": "right_positive",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.0126909403915633,
+            "residual_rmse_m": 0.0048771013660185315,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "right_positive",
+          "density": 0.5,
+          "envelope": {
+            "recording_id": 2000163,
+            "pattern": "right_positive",
+            "density": 0.5,
+            "residual_lower_m": [
+              -0.023084535056301068,
+              -0.06315799548748272
+            ],
+            "residual_upper_m": [
+              0.02429837487181833,
+              0.06375698035303251
+            ],
+            "maximum_radius_m": 0.06375698035303251,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000164,
+            "pattern": "right_positive",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.004900655557906746,
+            "residual_rmse_m": 0.0015773889471835593,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000165,
+            "pattern": "right_positive",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.013964895269154162,
+            "residual_rmse_m": 0.008044709752036241,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "right_positive",
+          "density": 1.0,
+          "envelope": {
+            "recording_id": 2000166,
+            "pattern": "right_positive",
+            "density": 1.0,
+            "residual_lower_m": [
+              -0.04327806883808467,
+              -0.12386758231237935
+            ],
+            "residual_upper_m": [
+              0.04338042538161343,
+              0.12307434046173946
+            ],
+            "maximum_radius_m": 0.12386758231237935,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000167,
+            "pattern": "right_positive",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.005004116962079384,
+            "residual_rmse_m": 0.001630573680954245,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000168,
+            "pattern": "right_positive",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.0260775351667749,
+            "residual_rmse_m": 0.016178395759316743,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM",
+              "OBSERVED_HELDOUT_RESIDUAL_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "right_negative",
+          "density": 0.25,
+          "envelope": {
+            "recording_id": 2000190,
+            "pattern": "right_negative",
+            "density": 0.25,
+            "residual_lower_m": [
+              -0.015484776451100218,
+              -0.04259869502318225
+            ],
+            "residual_upper_m": [
+              0.014976813669062923,
+              0.04568237532584705
+            ],
+            "maximum_radius_m": 0.04568237532584705,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000191,
+            "pattern": "right_negative",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.009266824004993091,
+            "residual_rmse_m": 0.0035798083258803616,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000192,
+            "pattern": "right_negative",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.01347286450769293,
+            "residual_rmse_m": 0.004906934302372897,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "right_negative",
+          "density": 0.5,
+          "envelope": {
+            "recording_id": 2000193,
+            "pattern": "right_negative",
+            "density": 0.5,
+            "residual_lower_m": [
+              -0.023453555824935978,
+              -0.06356098639102985
+            ],
+            "residual_upper_m": [
+              0.0225108172099493,
+              0.06392303986580061
+            ],
+            "maximum_radius_m": 0.06392303986580061,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000194,
+            "pattern": "right_negative",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.005851862817479645,
+            "residual_rmse_m": 0.0016803181314015213,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000195,
+            "pattern": "right_negative",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.01429208157125832,
+            "residual_rmse_m": 0.008000576661658895,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "right_negative",
+          "density": 1.0,
+          "envelope": {
+            "recording_id": 2000196,
+            "pattern": "right_negative",
+            "density": 1.0,
+            "residual_lower_m": [
+              -0.04248147304103012,
+              -0.12266980956747511
+            ],
+            "residual_upper_m": [
+              0.042431948486060925,
+              0.12181511544637667
+            ],
+            "maximum_radius_m": 0.12266980956747511,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000197,
+            "pattern": "right_negative",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.004640850081760441,
+            "residual_rmse_m": 0.0014233482335111885,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000198,
+            "pattern": "right_negative",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.026340041269506467,
+            "residual_rmse_m": 0.016027677514911253,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM",
+              "OBSERVED_HELDOUT_RESIDUAL_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "mixed_same",
+          "density": 0.25,
+          "envelope": {
+            "recording_id": 2000220,
+            "pattern": "mixed_same",
+            "density": 0.25,
+            "residual_lower_m": [
+              -0.055288635030715245,
+              -0.0566015522442137
+            ],
+            "residual_upper_m": [
+              0.05603599185083928,
+              0.056820420780374144
+            ],
+            "maximum_radius_m": 0.056820420780374144,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000221,
+            "pattern": "mixed_same",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.01003117450253239,
+            "residual_rmse_m": 0.005322263327241396,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000222,
+            "pattern": "mixed_same",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.01955639544351878,
+            "residual_rmse_m": 0.009798143243772251,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "mixed_same",
+          "density": 0.5,
+          "envelope": {
+            "recording_id": 2000223,
+            "pattern": "mixed_same",
+            "density": 0.5,
+            "residual_lower_m": [
+              -0.08113309817140173,
+              -0.08600023836385519
+            ],
+            "residual_upper_m": [
+              0.08231056419826482,
+              0.0838365232330234
+            ],
+            "maximum_radius_m": 0.08600023836385519,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000224,
+            "pattern": "mixed_same",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.005432573260840335,
+            "residual_rmse_m": 0.0017627011852002802,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000225,
+            "pattern": "mixed_same",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.027280860662039583,
+            "residual_rmse_m": 0.01780282783041536,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM",
+              "OBSERVED_HELDOUT_RESIDUAL_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "mixed_same",
+          "density": 1.0,
+          "envelope": {
+            "recording_id": 2000226,
+            "pattern": "mixed_same",
+            "density": 1.0,
+            "residual_lower_m": [
+              -0.1585496212378782,
+              -0.16225477369406074
+            ],
+            "residual_upper_m": [
+              0.16027491295164445,
+              0.1620564791173918
+            ],
+            "maximum_radius_m": 0.16225477369406074,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000227,
+            "pattern": "mixed_same",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.00345624236808173,
+            "residual_rmse_m": 0.0013670712002853244,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000228,
+            "pattern": "mixed_same",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.050410450320267405,
+            "residual_rmse_m": 0.03502922201448486,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM",
+              "OBSERVED_HELDOUT_RESIDUAL_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "mixed_opposed",
+          "density": 0.25,
+          "envelope": {
+            "recording_id": 2000250,
+            "pattern": "mixed_opposed",
+            "density": 0.25,
+            "residual_lower_m": [
+              -0.05351799627520327,
+              -0.054059321902083284
+            ],
+            "residual_upper_m": [
+              0.05481873350751787,
+              0.055741519053368535
+            ],
+            "maximum_radius_m": 0.055741519053368535,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000251,
+            "pattern": "mixed_opposed",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.007965866238449845,
+            "residual_rmse_m": 0.004007172693840674,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000252,
+            "pattern": "mixed_opposed",
+            "density": 0.25,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.013955325188385674,
+            "residual_rmse_m": 0.006161480149062189,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "mixed_opposed",
+          "density": 0.5,
+          "envelope": {
+            "recording_id": 2000253,
+            "pattern": "mixed_opposed",
+            "density": 0.5,
+            "residual_lower_m": [
+              -0.0809571936851704,
+              -0.08308175143027369
+            ],
+            "residual_upper_m": [
+              0.08142652588632601,
+              0.08416867010672117
+            ],
+            "maximum_radius_m": 0.08416867010672117,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000254,
+            "pattern": "mixed_opposed",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.004011316904194442,
+            "residual_rmse_m": 0.0016050432408565498,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000255,
+            "pattern": "mixed_opposed",
+            "density": 0.5,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.01738654350111484,
+            "residual_rmse_m": 0.00990359599481502,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        },
+        {
+          "pattern": "mixed_opposed",
+          "density": 1.0,
+          "envelope": {
+            "recording_id": 2000256,
+            "pattern": "mixed_opposed",
+            "density": 1.0,
+            "residual_lower_m": [
+              -0.15734739459950978,
+              -0.16122071780481287
+            ],
+            "residual_upper_m": [
+              0.15800201599250846,
+              0.16237108806965922
+            ],
+            "maximum_radius_m": 0.16237108806965922,
+            "sample_count": 80,
+            "monitor_qualified": true,
+            "within_declared_correction_budget": false,
+            "interval_status": "empirical extrema plus engineering systematic allowance; no guaranteed statistical coverage"
+          },
+          "heldout_nominal": {
+            "recording_id": 2000257,
+            "pattern": "mixed_opposed",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.004580526163425615,
+            "residual_rmse_m": 0.0015688098224413928,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          },
+          "heldout_changed_context": {
+            "recording_id": 2000258,
+            "pattern": "mixed_opposed",
+            "density": 1.0,
+            "sample_count": 80,
+            "empirical_component_coverage": [
+              1.0,
+              1.0
+            ],
+            "empirical_joint_coverage": 1.0,
+            "maximum_absolute_residual_m": 0.031492185270440655,
+            "residual_rmse_m": 0.019697852292140675,
+            "applicable_within_tested_domain": false,
+            "reasons": [
+              "RESPONSE_MAP_UNQUALIFIED",
+              "PROPAGATED_EMPIRICAL_ENVELOPE_EXCEEDS_25MM",
+              "OBSERVED_HELDOUT_RESIDUAL_EXCEEDS_25MM"
+            ],
+            "scope": "observed correlated plateau samples in this held-out recording; no confidence/guaranteed population coverage"
+          }
+        }
+      ]
+    }
+  ]
+}

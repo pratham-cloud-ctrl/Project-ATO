@@ -1,0 +1,7299 @@
+{
+  "schema": "ato.stage5.combined-native-inspection.v1",
+  "passed": true,
+  "native": "cad/stage5/ATO_stage5_reference_full.FCStd",
+  "native_sha256": "b4323834775d269d458726106929aa30a197aebb93b7eb6c6f7e9e23f49f386b",
+  "reference_native_sha256": "764a4e7a9ec8212fefb1c9c0deb7cab2ee76a5c9e72b2895f9199c98d0e5ae9a",
+  "harness_native_sha256": "6079242db047b70f21114a3eac33c0a8cce77260a189033362feb2b3bacbacf9",
+  "inspector": "scripts/inspect_stage5_combined.py",
+  "inspector_sha256_lf": "80dc4f876b940585a142c023d8bc98a9e29b3411b12cdb0e980ed8f997d4b9cd",
+  "physical_objects": 260,
+  "all_valid": true,
+  "source_parts_compared": 260,
+  "source_geometry_preserved": true,
+  "maximum_metric_residual": 0,
+  "metric_tolerance": 1e-06,
+  "parts": [
+    {
+      "label": "Base",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "BaseBlank",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "volume": 558000.0,
+        "area": 377460.0,
+        "bounds": [
+          0.0,
+          0.0,
+          8.0,
+          600.0,
+          310.0,
+          11.0
+        ],
+        "centre": [
+          300.0,
+          155.0,
+          9.5
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "SideLeft",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LeftWallBlank",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "volume": 206112.0,
+        "area": 140588.0,
+        "bounds": [
+          0.0,
+          3.0,
+          11.0,
+          3.0,
+          307.0,
+          237.0
+        ],
+        "centre": [
+          1.5,
+          155.0,
+          124.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "SideRight",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RightWallBlank",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "volume": 206112.0,
+        "area": 140588.0,
+        "bounds": [
+          597.0,
+          3.0,
+          11.0,
+          600.0,
+          307.0,
+          237.0
+        ],
+        "centre": [
+          598.5,
+          155.0,
+          124.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "FrontBracket_0_0",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FrontBracketCut_0_0",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 10,
+        "edges": 15,
+        "faces": 7,
+        "volume": 564.6570826471149,
+        "area": 492.9867228626928,
+        "bounds": [
+          3.0,
+          3.0,
+          35.0,
+          15.0,
+          8.0,
+          45.0
+        ],
+        "centre": [
+          8.937408174909987,
+          5.499999999999998,
+          39.99999999999999
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "FrontScrew_0_0",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FrontScrew_0_0",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 87.14778021058088,
+        "area": 136.73782024749573,
+        "bounds": [
+          7.25,
+          0.0,
+          37.25,
+          12.75,
+          8.0,
+          42.75
+        ],
+        "centre": [
+          9.999999999999998,
+          2.819033886085075,
+          39.99999999999999
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "FrontBracket_0_1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FrontBracketCut_0_1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 10,
+        "edges": 15,
+        "faces": 7,
+        "volume": 564.6570826471149,
+        "area": 492.9867228626928,
+        "bounds": [
+          3.0,
+          3.0,
+          195.0,
+          15.0,
+          8.0,
+          205.0
+        ],
+        "centre": [
+          8.937408174909985,
+          5.499999999999998,
+          199.99999999999997
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "FrontScrew_0_1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FrontScrew_0_1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 87.14778021058083,
+        "area": 136.73782024749573,
+        "bounds": [
+          7.25,
+          0.0,
+          197.25,
+          12.75,
+          8.0,
+          202.75
+        ],
+        "centre": [
+          10.000000000000002,
+          2.8190338860850743,
+          200.00000000000003
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "FrontBracket_1_0",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FrontBracketCut_1_0",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 10,
+        "edges": 15,
+        "faces": 7,
+        "volume": 564.6570826471147,
+        "area": 492.9867228626928,
+        "bounds": [
+          585.0,
+          3.0,
+          35.0,
+          597.0,
+          8.0,
+          45.0
+        ],
+        "centre": [
+          591.06259182509,
+          5.499999999999999,
+          40.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "FrontScrew_1_0",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FrontScrew_1_0",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 87.1477802105807,
+        "area": 136.73782024749573,
+        "bounds": [
+          587.25,
+          0.0,
+          37.25,
+          592.75,
+          8.0,
+          42.75
+        ],
+        "centre": [
+          590.0,
+          2.81903388608508,
+          39.99999999999999
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "FrontBracket_1_1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FrontBracketCut_1_1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 10,
+        "edges": 15,
+        "faces": 7,
+        "volume": 564.6570826471147,
+        "area": 492.9867228626928,
+        "bounds": [
+          585.0,
+          3.0,
+          195.0,
+          597.0,
+          8.0,
+          205.0
+        ],
+        "centre": [
+          591.06259182509,
+          5.499999999999999,
+          199.99999999999997
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "FrontScrew_1_1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FrontScrew_1_1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 87.14778021058066,
+        "area": 136.73782024749573,
+        "bounds": [
+          587.25,
+          0.0,
+          197.25,
+          592.75,
+          8.0,
+          202.75
+        ],
+        "centre": [
+          589.9999999999998,
+          2.8190338860850783,
+          199.99999999999994
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "FrontPanel",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FrontPanelCut",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 18,
+        "volume": 406526.304448019,
+        "area": 276287.69556403847,
+        "bounds": [
+          0.0,
+          0.0,
+          11.0,
+          600.0,
+          3.0,
+          237.0
+        ],
+        "centre": [
+          300.00000000000034,
+          1.5002179266430287,
+          124.00269301689944
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "RearPanel",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RearPanelCut",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 120,
+        "edges": 180,
+        "faces": 62,
+        "volume": 388392.0,
+        "area": 266872.0,
+        "bounds": [
+          0.0,
+          307.0,
+          11.0,
+          600.0,
+          310.0,
+          237.0
+        ],
+        "centre": [
+          301.7445467465859,
+          308.5,
+          119.98411913736628
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Post_0_0",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FramePostCut_0_0",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 10,
+        "edges": 15,
+        "faces": 8,
+        "volume": 8079.451332235383,
+        "area": 5571.398223686156,
+        "bounds": [
+          12.0,
+          14.0,
+          11.0,
+          18.0,
+          20.0,
+          237.0
+        ],
+        "centre": [
+          15.0,
+          17.0,
+          123.23710106876304
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LidScrew_0_0",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LidFastener_0_0",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 87.14778021058086,
+        "area": 136.73782024749573,
+        "bounds": [
+          12.25,
+          14.25,
+          232.0,
+          17.75,
+          19.75,
+          240.0
+        ],
+        "centre": [
+          14.999999999999998,
+          17.0,
+          237.18096611391493
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Post_0_1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FramePostCut_0_1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 10,
+        "edges": 15,
+        "faces": 8,
+        "volume": 8079.451332235383,
+        "area": 5571.398223686156,
+        "bounds": [
+          12.0,
+          290.0,
+          11.0,
+          18.0,
+          296.0,
+          237.0
+        ],
+        "centre": [
+          15.0,
+          293.0,
+          123.23710106876304
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LidScrew_0_1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LidFastener_0_1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 87.14778021058098,
+        "area": 136.73782024749573,
+        "bounds": [
+          12.25,
+          290.25,
+          232.0,
+          17.75,
+          295.75,
+          240.0
+        ],
+        "centre": [
+          15.000000000000002,
+          293.00000000000006,
+          237.180966113915
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Post_1_0",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FramePostCut_1_0",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 10,
+        "edges": 15,
+        "faces": 8,
+        "volume": 8079.451332235384,
+        "area": 5571.398223686156,
+        "bounds": [
+          330.0,
+          14.0,
+          11.0,
+          336.0,
+          20.0,
+          237.0
+        ],
+        "centre": [
+          332.9999999999999,
+          17.0,
+          123.23710106876307
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LidScrew_1_0",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LidFastener_1_0",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 87.14778021058092,
+        "area": 136.73782024749573,
+        "bounds": [
+          330.25,
+          14.25,
+          232.0,
+          335.75,
+          19.75,
+          240.0
+        ],
+        "centre": [
+          332.99999999999994,
+          17.0,
+          237.1809661139149
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Post_1_1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FramePostCut_1_1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 10,
+        "edges": 15,
+        "faces": 8,
+        "volume": 8079.451332235384,
+        "area": 5571.398223686156,
+        "bounds": [
+          330.0,
+          290.0,
+          11.0,
+          336.0,
+          296.0,
+          237.0
+        ],
+        "centre": [
+          332.9999999999999,
+          292.99999999999994,
+          123.23710106876307
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LidScrew_1_1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LidFastener_1_1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 87.14778021058103,
+        "area": 136.73782024749573,
+        "bounds": [
+          330.25,
+          290.25,
+          232.0,
+          335.75,
+          295.75,
+          240.0
+        ],
+        "centre": [
+          333.0,
+          293.0,
+          237.18096611391493
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Post_2_0",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FramePostCut_2_0",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 10,
+        "edges": 15,
+        "faces": 8,
+        "volume": 8079.451332235384,
+        "area": 5571.398223686156,
+        "bounds": [
+          374.0,
+          14.0,
+          11.0,
+          380.0,
+          20.0,
+          237.0
+        ],
+        "centre": [
+          376.99999999999994,
+          17.0,
+          123.23710106876307
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LidScrew_2_0",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LidFastener_2_0",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 87.14778021058092,
+        "area": 136.73782024749573,
+        "bounds": [
+          374.25,
+          14.25,
+          232.0,
+          379.75,
+          19.75,
+          240.0
+        ],
+        "centre": [
+          376.99999999999994,
+          17.0,
+          237.1809661139149
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Post_2_1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FramePostCut_2_1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 10,
+        "edges": 15,
+        "faces": 8,
+        "volume": 8079.451332235384,
+        "area": 5571.398223686156,
+        "bounds": [
+          374.0,
+          290.0,
+          11.0,
+          380.0,
+          296.0,
+          237.0
+        ],
+        "centre": [
+          376.99999999999994,
+          292.99999999999994,
+          123.23710106876307
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LidScrew_2_1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LidFastener_2_1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 87.14778021058103,
+        "area": 136.73782024749573,
+        "bounds": [
+          374.25,
+          290.25,
+          232.0,
+          379.75,
+          295.75,
+          240.0
+        ],
+        "centre": [
+          377.00000000000006,
+          293.0,
+          237.18096611391493
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Post_3_0",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FramePostCut_3_0",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 10,
+        "edges": 15,
+        "faces": 8,
+        "volume": 8079.451332235383,
+        "area": 5571.398223686156,
+        "bounds": [
+          565.0,
+          14.0,
+          11.0,
+          571.0,
+          20.0,
+          237.0
+        ],
+        "centre": [
+          568.0000000000001,
+          17.0,
+          123.23710106876307
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LidScrew_3_0",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LidFastener_3_0",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 87.14778021058069,
+        "area": 136.73782024749573,
+        "bounds": [
+          565.25,
+          14.25,
+          232.0,
+          570.75,
+          19.75,
+          240.0
+        ],
+        "centre": [
+          568.0,
+          17.0,
+          237.18096611391493
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Post_3_1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "FramePostCut_3_1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 10,
+        "edges": 15,
+        "faces": 8,
+        "volume": 8079.451332235383,
+        "area": 5571.398223686156,
+        "bounds": [
+          565.0,
+          290.0,
+          11.0,
+          571.0,
+          296.0,
+          237.0
+        ],
+        "centre": [
+          568.0000000000001,
+          293.0,
+          123.23710106876307
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LidScrew_3_1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LidFastener_3_1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 87.14778021058082,
+        "area": 136.73782024749573,
+        "bounds": [
+          565.25,
+          290.25,
+          232.0,
+          570.75,
+          295.75,
+          240.0
+        ],
+        "centre": [
+          568.0,
+          293.0,
+          237.18096611391496
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Lid",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LidCut",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 40,
+        "edges": 60,
+        "faces": 30,
+        "volume": 557452.6088960383,
+        "area": 377723.39112807694,
+        "bounds": [
+          0.0,
+          0.0,
+          237.0,
+          600.0,
+          310.0,
+          240.0
+        ],
+        "centre": [
+          299.9771696410351,
+          155.00000000000026,
+          238.49968215087188
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Foot_0",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RubberFoot_0",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 2,
+        "edges": 3,
+        "faces": 3,
+        "volume": 2513.274122871834,
+        "area": 1130.9733552923256,
+        "bounds": [
+          15.0,
+          15.0,
+          0.0,
+          35.0,
+          35.0,
+          8.0
+        ],
+        "centre": [
+          25.0,
+          25.0,
+          4.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Foot_1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RubberFoot_1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 2,
+        "edges": 3,
+        "faces": 3,
+        "volume": 2513.274122871835,
+        "area": 1130.9733552923256,
+        "bounds": [
+          565.0,
+          15.0,
+          0.0,
+          585.0,
+          35.0,
+          8.0
+        ],
+        "centre": [
+          575.0,
+          25.0,
+          3.999999999999999
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Foot_2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RubberFoot_2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 2,
+        "edges": 3,
+        "faces": 3,
+        "volume": 2513.274122871834,
+        "area": 1130.9733552923256,
+        "bounds": [
+          15.0,
+          275.0,
+          0.0,
+          35.0,
+          295.0,
+          8.0
+        ],
+        "centre": [
+          25.0,
+          285.0,
+          4.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Foot_3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RubberFoot_3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 2,
+        "edges": 3,
+        "faces": 3,
+        "volume": 2513.274122871835,
+        "area": 1130.9733552923256,
+        "bounds": [
+          565.0,
+          275.0,
+          0.0,
+          585.0,
+          295.0,
+          8.0
+        ],
+        "centre": [
+          575.0,
+          285.0,
+          3.999999999999999
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_left_0_left",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_left_0_left",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          15.0,
+          20.0,
+          12.0,
+          21.0,
+          290.0,
+          16.0
+        ],
+        "centre": [
+          17.5,
+          155.0,
+          14.333333333333334
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_left_0_right",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_left_0_right",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          327.0,
+          20.0,
+          12.0,
+          333.0,
+          290.0,
+          16.0
+        ],
+        "centre": [
+          330.5,
+          155.0,
+          14.333333333333334
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_left_1_left",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_left_1_left",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          15.0,
+          20.0,
+          62.0,
+          21.0,
+          290.0,
+          66.0
+        ],
+        "centre": [
+          17.5,
+          155.0,
+          64.33333333333333
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_left_1_right",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_left_1_right",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          327.0,
+          20.0,
+          62.0,
+          333.0,
+          290.0,
+          66.0
+        ],
+        "centre": [
+          330.5,
+          155.0,
+          64.33333333333333
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_left_2_left",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_left_2_left",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          15.0,
+          20.0,
+          112.0,
+          21.0,
+          290.0,
+          116.0
+        ],
+        "centre": [
+          17.5,
+          155.0,
+          114.33333333333333
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_left_2_right",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_left_2_right",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          327.0,
+          20.0,
+          112.0,
+          333.0,
+          290.0,
+          116.0
+        ],
+        "centre": [
+          330.5,
+          155.0,
+          114.33333333333333
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_left_3_left",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_left_3_left",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          15.0,
+          20.0,
+          162.0,
+          21.0,
+          290.0,
+          166.0
+        ],
+        "centre": [
+          17.5,
+          155.0,
+          164.33333333333334
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_left_3_right",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_left_3_right",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          327.0,
+          20.0,
+          162.0,
+          333.0,
+          290.0,
+          166.0
+        ],
+        "centre": [
+          330.5,
+          155.0,
+          164.33333333333334
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_right_0_left",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_right_0_left",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          377.0,
+          20.0,
+          12.0,
+          383.0,
+          290.0,
+          16.0
+        ],
+        "centre": [
+          379.5,
+          155.0,
+          14.333333333333334
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_right_0_right",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_right_0_right",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          562.0,
+          20.0,
+          12.0,
+          568.0,
+          290.0,
+          16.0
+        ],
+        "centre": [
+          565.5,
+          155.0,
+          14.333333333333334
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_right_1_left",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_right_1_left",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          377.0,
+          20.0,
+          62.0,
+          383.0,
+          290.0,
+          66.0
+        ],
+        "centre": [
+          379.5,
+          155.0,
+          64.33333333333333
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_right_1_right",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_right_1_right",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          562.0,
+          20.0,
+          62.0,
+          568.0,
+          290.0,
+          66.0
+        ],
+        "centre": [
+          565.5,
+          155.0,
+          64.33333333333333
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_right_2_left",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_right_2_left",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          377.0,
+          20.0,
+          112.0,
+          383.0,
+          290.0,
+          116.0
+        ],
+        "centre": [
+          379.5,
+          155.0,
+          114.33333333333333
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_right_2_right",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_right_2_right",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          562.0,
+          20.0,
+          112.0,
+          568.0,
+          290.0,
+          116.0
+        ],
+        "centre": [
+          565.5,
+          155.0,
+          114.33333333333333
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_right_3_left",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_right_3_left",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          377.0,
+          20.0,
+          162.0,
+          383.0,
+          290.0,
+          166.0
+        ],
+        "centre": [
+          379.5,
+          155.0,
+          164.33333333333334
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Rail_right_3_right",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "RailFuse_right_3_right",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 4860.0,
+        "area": 5436.0,
+        "bounds": [
+          562.0,
+          20.0,
+          162.0,
+          568.0,
+          290.0,
+          166.0
+        ],
+        "centre": [
+          565.5,
+          155.0,
+          164.33333333333334
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_contact_router_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_contact_router_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731105,
+        "area": 325.15483964654356,
+        "bounds": [
+          25.0,
+          178.0,
+          168.0,
+          31.0,
+          184.0,
+          178.0
+        ],
+        "centre": [
+          28.000000000000004,
+          181.00000000000003,
+          173.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_contact_router_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_contact_router_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913531,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          178.25,
+          173.53,
+          30.75,
+          183.75,
+          181.73
+        ],
+        "centre": [
+          27.999999999999996,
+          180.99999999999997,
+          178.86189470985383
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_contact_router_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_contact_router_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913531,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          178.25,
+          163.8,
+          30.75,
+          183.75,
+          172.0
+        ],
+        "centre": [
+          27.999999999999996,
+          181.0,
+          166.66810529014614
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_contact_router_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_contact_router_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.0575041173111,
+        "area": 325.15483964654356,
+        "bounds": [
+          192.0,
+          178.0,
+          168.0,
+          198.0,
+          184.0,
+          178.0
+        ],
+        "centre": [
+          194.99999999999997,
+          181.00000000000003,
+          172.99999999999997
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_contact_router_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_contact_router_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913534,
+        "area": 140.19357216644454,
+        "bounds": [
+          192.25,
+          178.25,
+          173.53,
+          197.75,
+          183.75,
+          181.73
+        ],
+        "centre": [
+          195.00000000000003,
+          181.0,
+          178.86189470985386
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_contact_router_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_contact_router_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913534,
+        "area": 140.19357216644454,
+        "bounds": [
+          192.25,
+          178.25,
+          163.8,
+          197.75,
+          183.75,
+          172.0
+        ],
+        "centre": [
+          195.0,
+          181.0,
+          166.66810529014617
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_contact_router_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_contact_router_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.057504117311,
+        "area": 325.15483964654356,
+        "bounds": [
+          25.0,
+          31.0,
+          168.0,
+          31.0,
+          37.0,
+          178.0
+        ],
+        "centre": [
+          28.0,
+          34.00000000000001,
+          173.00000000000003
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_contact_router_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_contact_router_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913535,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          31.25,
+          173.53,
+          30.75,
+          36.75,
+          181.73
+        ],
+        "centre": [
+          27.999999999999993,
+          33.99999999999999,
+          178.86189470985386
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_contact_router_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_contact_router_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913534,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          31.25,
+          163.8,
+          30.75,
+          36.75,
+          172.0
+        ],
+        "centre": [
+          27.999999999999996,
+          34.0,
+          166.66810529014617
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_contact_router_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_contact_router_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731105,
+        "area": 325.15483964654356,
+        "bounds": [
+          192.0,
+          31.0,
+          168.0,
+          198.0,
+          37.0,
+          178.0
+        ],
+        "centre": [
+          194.99999999999997,
+          33.99999999999999,
+          173.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_contact_router_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_contact_router_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913538,
+        "area": 140.19357216644454,
+        "bounds": [
+          192.25,
+          31.25,
+          173.53,
+          197.75,
+          36.75,
+          181.73
+        ],
+        "centre": [
+          195.0,
+          34.00000000000001,
+          178.86189470985386
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_contact_router_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_contact_router_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913536,
+        "area": 140.19357216644454,
+        "bounds": [
+          192.25,
+          31.25,
+          163.8,
+          197.75,
+          36.75,
+          172.0
+        ],
+        "centre": [
+          195.00000000000003,
+          34.0,
+          166.66810529014614
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Tray_contact_router",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "TrayPocket_contact_router",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 20,
+        "edges": 30,
+        "faces": 12,
+        "volume": 172155.57611200487,
+        "area": 174590.5141580596,
+        "bounds": [
+          18.0,
+          20.0,
+          166.0,
+          330.0,
+          290.0,
+          174.0
+        ],
+        "centre": [
+          174.02484086252844,
+          157.9330803339838,
+          167.08699108293908
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Pull_contact_router",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PullCut_contact_router",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 16,
+        "edges": 24,
+        "faces": 11,
+        "volume": 4176.0,
+        "area": 2796.0,
+        "bounds": [
+          149.0,
+          11.0,
+          166.0,
+          199.0,
+          20.0,
+          178.0
+        ],
+        "centre": [
+          174.0,
+          15.939655172413794,
+          172.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_controller_carrier_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_controller_carrier_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731063,
+        "area": 325.15483964654356,
+        "bounds": [
+          391.0,
+          173.0,
+          168.0,
+          397.0,
+          179.0,
+          178.0
+        ],
+        "centre": [
+          394.0,
+          175.99999999999997,
+          173.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_controller_carrier_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_controller_carrier_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913536,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          173.25,
+          173.53,
+          396.75,
+          178.75,
+          181.73
+        ],
+        "centre": [
+          394.00000000000006,
+          176.0,
+          178.86189470985389
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_controller_carrier_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_controller_carrier_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913536,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          173.25,
+          163.8,
+          396.75,
+          178.75,
+          172.0
+        ],
+        "centre": [
+          394.00000000000006,
+          176.0,
+          166.66810529014614
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_controller_carrier_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_controller_carrier_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731174,
+        "area": 325.15483964654356,
+        "bounds": [
+          538.0,
+          173.0,
+          168.0,
+          544.0,
+          179.0,
+          178.0
+        ],
+        "centre": [
+          541.0000000000001,
+          176.00000000000003,
+          173.00000000000003
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_controller_carrier_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_controller_carrier_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.8994390991351,
+        "area": 140.19357216644454,
+        "bounds": [
+          538.25,
+          173.25,
+          173.53,
+          543.75,
+          178.75,
+          181.73
+        ],
+        "centre": [
+          541.0000000000001,
+          176.0,
+          178.86189470985389
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_controller_carrier_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_controller_carrier_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913511,
+        "area": 140.19357216644454,
+        "bounds": [
+          538.25,
+          173.25,
+          163.8,
+          543.75,
+          178.75,
+          172.0
+        ],
+        "centre": [
+          540.9999999999999,
+          176.0,
+          166.66810529014614
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_controller_carrier_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_controller_carrier_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731054,
+        "area": 325.15483964654356,
+        "bounds": [
+          391.0,
+          31.0,
+          168.0,
+          397.0,
+          37.0,
+          178.0
+        ],
+        "centre": [
+          394.0,
+          34.00000000000001,
+          173.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_controller_carrier_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_controller_carrier_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.8994390991354,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          31.25,
+          173.53,
+          396.75,
+          36.75,
+          181.73
+        ],
+        "centre": [
+          394.0,
+          34.00000000000001,
+          178.86189470985389
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_controller_carrier_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_controller_carrier_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.8994390991354,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          31.25,
+          163.8,
+          396.75,
+          36.75,
+          172.0
+        ],
+        "centre": [
+          394.0,
+          34.0,
+          166.66810529014614
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_controller_carrier_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_controller_carrier_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731168,
+        "area": 325.15483964654356,
+        "bounds": [
+          538.0,
+          31.0,
+          168.0,
+          544.0,
+          37.0,
+          178.0
+        ],
+        "centre": [
+          540.9999999999999,
+          33.99999999999999,
+          173.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_controller_carrier_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_controller_carrier_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913515,
+        "area": 140.19357216644454,
+        "bounds": [
+          538.25,
+          31.25,
+          173.53,
+          543.75,
+          36.75,
+          181.73
+        ],
+        "centre": [
+          541.0000000000001,
+          34.0,
+          178.86189470985386
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_controller_carrier_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_controller_carrier_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913514,
+        "area": 140.19357216644454,
+        "bounds": [
+          538.25,
+          31.25,
+          163.8,
+          543.75,
+          36.75,
+          172.0
+        ],
+        "centre": [
+          540.9999999999999,
+          34.00000000000001,
+          166.66810529014617
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Tray_controller_carrier",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "TrayPocket_controller_carrier",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 20,
+        "edges": 30,
+        "faces": 12,
+        "volume": 102051.57611200484,
+        "area": 103978.51415805961,
+        "bounds": [
+          380.0,
+          20.0,
+          166.0,
+          565.0,
+          290.0,
+          174.0
+        ],
+        "centre": [
+          472.5033524170132,
+          157.94852079569569,
+          167.08701482464366
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Pull_controller_carrier",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PullCut_controller_carrier",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 16,
+        "edges": 24,
+        "faces": 11,
+        "volume": 4176.0,
+        "area": 2796.0,
+        "bounds": [
+          447.5,
+          11.0,
+          166.0,
+          497.5,
+          20.0,
+          178.0
+        ],
+        "centre": [
+          472.5,
+          15.939655172413794,
+          172.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_current_driver_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_current_driver_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731105,
+        "area": 325.15483964654356,
+        "bounds": [
+          25.0,
+          178.0,
+          118.0,
+          31.0,
+          184.0,
+          128.0
+        ],
+        "centre": [
+          28.000000000000004,
+          181.00000000000003,
+          123.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_current_driver_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_current_driver_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913531,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          178.25,
+          123.53,
+          30.75,
+          183.75,
+          131.73
+        ],
+        "centre": [
+          27.999999999999996,
+          180.99999999999997,
+          128.86189470985386
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_current_driver_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_current_driver_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913544,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          178.25,
+          113.8,
+          30.75,
+          183.75,
+          122.0
+        ],
+        "centre": [
+          27.999999999999996,
+          181.0,
+          116.66810529014612
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_current_driver_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_current_driver_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.0575041173111,
+        "area": 325.15483964654356,
+        "bounds": [
+          192.0,
+          178.0,
+          118.0,
+          198.0,
+          184.0,
+          128.0
+        ],
+        "centre": [
+          194.99999999999997,
+          181.00000000000003,
+          122.99999999999997
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_current_driver_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_current_driver_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913534,
+        "area": 140.19357216644454,
+        "bounds": [
+          192.25,
+          178.25,
+          123.53,
+          197.75,
+          183.75,
+          131.73
+        ],
+        "centre": [
+          195.0,
+          181.0,
+          128.86189470985389
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_current_driver_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_current_driver_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913546,
+        "area": 140.19357216644454,
+        "bounds": [
+          192.25,
+          178.25,
+          113.8,
+          197.75,
+          183.75,
+          122.0
+        ],
+        "centre": [
+          194.99999999999997,
+          180.99999999999997,
+          116.66810529014612
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_current_driver_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_current_driver_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.057504117311,
+        "area": 325.15483964654356,
+        "bounds": [
+          25.0,
+          31.0,
+          118.0,
+          31.0,
+          37.0,
+          128.0
+        ],
+        "centre": [
+          28.0,
+          34.00000000000001,
+          122.99999999999999
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_current_driver_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_current_driver_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913532,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          31.25,
+          123.53,
+          30.75,
+          36.75,
+          131.73
+        ],
+        "centre": [
+          28.0,
+          34.00000000000001,
+          128.86189470985386
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_current_driver_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_current_driver_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913546,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          31.25,
+          113.8,
+          30.75,
+          36.75,
+          122.0
+        ],
+        "centre": [
+          27.99999999999999,
+          33.99999999999999,
+          116.66810529014612
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_current_driver_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_current_driver_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731105,
+        "area": 325.15483964654356,
+        "bounds": [
+          192.0,
+          31.0,
+          118.0,
+          198.0,
+          37.0,
+          128.0
+        ],
+        "centre": [
+          194.99999999999997,
+          33.99999999999999,
+          122.99999999999997
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_current_driver_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_current_driver_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913535,
+        "area": 140.19357216644454,
+        "bounds": [
+          192.25,
+          31.25,
+          123.53,
+          197.75,
+          36.75,
+          131.73
+        ],
+        "centre": [
+          195.0,
+          34.00000000000001,
+          128.86189470985389
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_current_driver_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_current_driver_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913549,
+        "area": 140.19357216644454,
+        "bounds": [
+          192.25,
+          31.25,
+          113.8,
+          197.75,
+          36.75,
+          122.0
+        ],
+        "centre": [
+          194.99999999999997,
+          33.99999999999999,
+          116.66810529014612
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Tray_current_driver",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "TrayPocket_current_driver",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 20,
+        "edges": 30,
+        "faces": 12,
+        "volume": 172155.57611200487,
+        "area": 174590.5141580596,
+        "bounds": [
+          18.0,
+          20.0,
+          116.0,
+          330.0,
+          290.0,
+          124.0
+        ],
+        "centre": [
+          174.02484086252844,
+          157.9330803339838,
+          117.08699108293918
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Pull_current_driver",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PullCut_current_driver",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 16,
+        "edges": 24,
+        "faces": 11,
+        "volume": 4176.0,
+        "area": 2796.0,
+        "bounds": [
+          149.0,
+          11.0,
+          116.0,
+          199.0,
+          20.0,
+          128.0
+        ],
+        "centre": [
+          174.0,
+          15.939655172413794,
+          122.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_monitoring_cell_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_monitoring_cell_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731063,
+        "area": 325.15483964654356,
+        "bounds": [
+          391.0,
+          168.0,
+          68.0,
+          397.0,
+          174.0,
+          78.0
+        ],
+        "centre": [
+          394.0,
+          171.0,
+          73.00000000000001
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_monitoring_cell_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_monitoring_cell_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913548,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          168.25,
+          73.53,
+          396.75,
+          173.75,
+          81.73
+        ],
+        "centre": [
+          393.99999999999994,
+          171.0,
+          78.86189470985386
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_monitoring_cell_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_monitoring_cell_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913549,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          168.25,
+          63.8,
+          396.75,
+          173.75,
+          72.0
+        ],
+        "centre": [
+          394.0,
+          170.99999999999997,
+          66.66810529014613
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_monitoring_cell_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_monitoring_cell_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731063,
+        "area": 325.15483964654356,
+        "bounds": [
+          503.0,
+          168.0,
+          68.0,
+          509.0,
+          174.0,
+          78.0
+        ],
+        "centre": [
+          505.99999999999994,
+          171.0,
+          73.00000000000001
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_monitoring_cell_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_monitoring_cell_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913548,
+        "area": 140.19357216644454,
+        "bounds": [
+          503.25,
+          168.25,
+          73.53,
+          508.75,
+          173.75,
+          81.73
+        ],
+        "centre": [
+          506.00000000000006,
+          171.0,
+          78.86189470985386
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_monitoring_cell_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_monitoring_cell_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913549,
+        "area": 140.19357216644454,
+        "bounds": [
+          503.25,
+          168.25,
+          63.8,
+          508.75,
+          173.75,
+          72.0
+        ],
+        "centre": [
+          505.9999999999999,
+          170.99999999999997,
+          66.66810529014613
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_monitoring_cell_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_monitoring_cell_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731054,
+        "area": 325.15483964654356,
+        "bounds": [
+          391.0,
+          31.0,
+          68.0,
+          397.0,
+          37.0,
+          78.0
+        ],
+        "centre": [
+          394.0,
+          34.00000000000001,
+          73.00000000000001
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_monitoring_cell_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_monitoring_cell_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913552,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          31.25,
+          73.53,
+          396.75,
+          36.75,
+          81.73
+        ],
+        "centre": [
+          394.0,
+          33.99999999999999,
+          78.86189470985387
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_monitoring_cell_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_monitoring_cell_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913552,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          31.25,
+          63.8,
+          396.75,
+          36.75,
+          72.0
+        ],
+        "centre": [
+          393.99999999999994,
+          33.99999999999999,
+          66.66810529014614
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_monitoring_cell_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_monitoring_cell_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731054,
+        "area": 325.15483964654356,
+        "bounds": [
+          503.0,
+          31.0,
+          68.0,
+          509.0,
+          37.0,
+          78.0
+        ],
+        "centre": [
+          506.00000000000006,
+          34.00000000000001,
+          73.00000000000001
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_monitoring_cell_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_monitoring_cell_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913552,
+        "area": 140.19357216644454,
+        "bounds": [
+          503.25,
+          31.25,
+          73.53,
+          508.75,
+          36.75,
+          81.73
+        ],
+        "centre": [
+          506.00000000000006,
+          33.99999999999999,
+          78.86189470985387
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_monitoring_cell_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_monitoring_cell_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913552,
+        "area": 140.19357216644454,
+        "bounds": [
+          503.25,
+          31.25,
+          63.8,
+          508.75,
+          36.75,
+          72.0
+        ],
+        "centre": [
+          506.0,
+          33.99999999999999,
+          66.66810529014614
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Tray_monitoring_cell",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "TrayPocket_monitoring_cell",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 20,
+        "edges": 30,
+        "faces": 12,
+        "volume": 102051.57611200484,
+        "area": 103978.51415805961,
+        "bounds": [
+          380.0,
+          20.0,
+          66.0,
+          565.0,
+          290.0,
+          74.0
+        ],
+        "centre": [
+          472.51508587655917,
+          157.95019700420215,
+          67.08701482464369
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Pull_monitoring_cell",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PullCut_monitoring_cell",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 16,
+        "edges": 24,
+        "faces": 11,
+        "volume": 4176.0,
+        "area": 2796.0,
+        "bounds": [
+          447.5,
+          11.0,
+          66.0,
+          497.5,
+          20.0,
+          78.0
+        ],
+        "centre": [
+          472.5,
+          15.939655172413794,
+          72.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_monitoring_transport_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_monitoring_transport_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731063,
+        "area": 325.15483964654356,
+        "bounds": [
+          391.0,
+          163.0,
+          118.0,
+          397.0,
+          169.0,
+          128.0
+        ],
+        "centre": [
+          394.0,
+          166.00000000000006,
+          122.99999999999999
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_monitoring_transport_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_monitoring_transport_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913536,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          163.25,
+          123.53,
+          396.75,
+          168.75,
+          131.73
+        ],
+        "centre": [
+          394.00000000000006,
+          165.99999999999997,
+          128.86189470985389
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_monitoring_transport_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_monitoring_transport_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913549,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          163.25,
+          113.8,
+          396.75,
+          168.75,
+          122.0
+        ],
+        "centre": [
+          394.0,
+          165.99999999999997,
+          116.66810529014612
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_monitoring_transport_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_monitoring_transport_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.0575041173114,
+        "area": 325.15483964654356,
+        "bounds": [
+          508.0,
+          163.0,
+          118.0,
+          514.0,
+          169.0,
+          128.0
+        ],
+        "centre": [
+          511.00000000000006,
+          166.00000000000003,
+          123.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_monitoring_transport_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_monitoring_transport_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913518,
+        "area": 140.19357216644454,
+        "bounds": [
+          508.25,
+          163.25,
+          123.53,
+          513.75,
+          168.75,
+          131.73
+        ],
+        "centre": [
+          511.0,
+          166.0,
+          128.86189470985389
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_monitoring_transport_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_monitoring_transport_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.8994390991353,
+        "area": 140.19357216644454,
+        "bounds": [
+          508.25,
+          163.25,
+          113.8,
+          513.75,
+          168.75,
+          122.0
+        ],
+        "centre": [
+          511.0,
+          166.0,
+          116.66810529014613
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_monitoring_transport_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_monitoring_transport_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731054,
+        "area": 325.15483964654356,
+        "bounds": [
+          391.0,
+          31.0,
+          118.0,
+          397.0,
+          37.0,
+          128.0
+        ],
+        "centre": [
+          394.0,
+          34.00000000000001,
+          123.00000000000001
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_monitoring_transport_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_monitoring_transport_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.8994390991354,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          31.25,
+          123.53,
+          396.75,
+          36.75,
+          131.73
+        ],
+        "centre": [
+          394.0,
+          34.0,
+          128.86189470985386
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_monitoring_transport_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_monitoring_transport_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913552,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          31.25,
+          113.8,
+          396.75,
+          36.75,
+          122.0
+        ],
+        "centre": [
+          393.99999999999994,
+          33.99999999999999,
+          116.66810529014612
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_monitoring_transport_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_monitoring_transport_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731134,
+        "area": 325.15483964654356,
+        "bounds": [
+          508.0,
+          31.0,
+          118.0,
+          514.0,
+          37.0,
+          128.0
+        ],
+        "centre": [
+          511.0,
+          34.0,
+          122.99999999999999
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_monitoring_transport_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_monitoring_transport_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913521,
+        "area": 140.19357216644454,
+        "bounds": [
+          508.25,
+          31.25,
+          123.53,
+          513.75,
+          36.75,
+          131.73
+        ],
+        "centre": [
+          511.0,
+          34.0,
+          128.86189470985389
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_monitoring_transport_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_monitoring_transport_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913532,
+        "area": 140.19357216644454,
+        "bounds": [
+          508.25,
+          31.25,
+          113.8,
+          513.75,
+          36.75,
+          122.0
+        ],
+        "centre": [
+          511.0,
+          34.0,
+          116.66810529014613
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Tray_monitoring_transport",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "TrayPocket_monitoring_transport",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 20,
+        "edges": 30,
+        "faces": 12,
+        "volume": 102051.57611200484,
+        "area": 103978.51415805961,
+        "bounds": [
+          380.0,
+          20.0,
+          116.0,
+          565.0,
+          290.0,
+          124.0
+        ],
+        "centre": [
+          472.5134096680527,
+          157.95187321270876,
+          117.08701482464375
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Pull_monitoring_transport",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PullCut_monitoring_transport",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 16,
+        "edges": 24,
+        "faces": 11,
+        "volume": 4176.0,
+        "area": 2796.0,
+        "bounds": [
+          447.5,
+          11.0,
+          116.0,
+          497.5,
+          20.0,
+          128.0
+        ],
+        "centre": [
+          472.5,
+          15.939655172413794,
+          122.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_power_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_power_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731105,
+        "area": 325.15483964654356,
+        "bounds": [
+          25.0,
+          208.0,
+          68.0,
+          31.0,
+          214.0,
+          78.0
+        ],
+        "centre": [
+          28.000000000000004,
+          211.0,
+          73.00000000000001
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_power_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_power_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913542,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          208.25,
+          73.53,
+          30.75,
+          213.75,
+          81.73
+        ],
+        "centre": [
+          28.0,
+          211.00000000000003,
+          78.86189470985386
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_power_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_power_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913544,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          208.25,
+          63.8,
+          30.75,
+          213.75,
+          72.0
+        ],
+        "centre": [
+          27.999999999999996,
+          210.99999999999997,
+          66.66810529014612
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_power_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_power_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.0575041173111,
+        "area": 325.15483964654356,
+        "bounds": [
+          192.0,
+          208.0,
+          68.0,
+          198.0,
+          214.0,
+          78.0
+        ],
+        "centre": [
+          194.99999999999997,
+          210.99999999999994,
+          72.99999999999997
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_power_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_power_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913545,
+        "area": 140.19357216644454,
+        "bounds": [
+          192.25,
+          208.25,
+          73.53,
+          197.75,
+          213.75,
+          81.73
+        ],
+        "centre": [
+          195.00000000000003,
+          211.0,
+          78.86189470985387
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_power_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_power_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913546,
+        "area": 140.19357216644454,
+        "bounds": [
+          192.25,
+          208.25,
+          63.8,
+          197.75,
+          213.75,
+          72.0
+        ],
+        "centre": [
+          194.99999999999997,
+          211.0,
+          66.66810529014613
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_power_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_power_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.057504117311,
+        "area": 325.15483964654356,
+        "bounds": [
+          25.0,
+          31.0,
+          68.0,
+          31.0,
+          37.0,
+          78.0
+        ],
+        "centre": [
+          28.0,
+          34.00000000000001,
+          73.00000000000001
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_power_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_power_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913545,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          31.25,
+          73.53,
+          30.75,
+          36.75,
+          81.73
+        ],
+        "centre": [
+          27.999999999999996,
+          34.0,
+          78.86189470985387
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_power_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_power_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913546,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          31.25,
+          63.8,
+          30.75,
+          36.75,
+          72.0
+        ],
+        "centre": [
+          27.99999999999999,
+          33.99999999999999,
+          66.66810529014613
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_power_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_power_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731105,
+        "area": 325.15483964654356,
+        "bounds": [
+          192.0,
+          31.0,
+          68.0,
+          198.0,
+          37.0,
+          78.0
+        ],
+        "centre": [
+          194.99999999999997,
+          33.99999999999999,
+          73.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_power_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_power_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913548,
+        "area": 140.19357216644454,
+        "bounds": [
+          192.25,
+          31.25,
+          73.53,
+          197.75,
+          36.75,
+          81.73
+        ],
+        "centre": [
+          194.99999999999994,
+          34.0,
+          78.86189470985386
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_power_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_power_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913549,
+        "area": 140.19357216644454,
+        "bounds": [
+          192.25,
+          31.25,
+          63.8,
+          197.75,
+          36.75,
+          72.0
+        ],
+        "centre": [
+          194.99999999999997,
+          33.99999999999999,
+          66.66810529014613
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Tray_power",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "TrayPocket_power",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 20,
+        "edges": 30,
+        "faces": 12,
+        "volume": 172155.57611200484,
+        "area": 174590.5141580596,
+        "bounds": [
+          18.0,
+          20.0,
+          66.0,
+          330.0,
+          290.0,
+          74.0
+        ],
+        "centre": [
+          174.02484086252844,
+          157.92711852697695,
+          67.08699108293915
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Pull_power",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PullCut_power",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 16,
+        "edges": 24,
+        "faces": 11,
+        "volume": 4176.0,
+        "area": 2796.0,
+        "bounds": [
+          149.0,
+          11.0,
+          66.0,
+          199.0,
+          20.0,
+          78.0
+        ],
+        "centre": [
+          174.0,
+          15.939655172413794,
+          72.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_recording_front_end_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_recording_front_end_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731063,
+        "area": 325.15483964654356,
+        "bounds": [
+          391.0,
+          213.0,
+          18.0,
+          397.0,
+          219.0,
+          28.0
+        ],
+        "centre": [
+          394.0,
+          216.00000000000003,
+          23.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_recording_front_end_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_recording_front_end_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913546,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          213.25,
+          23.53,
+          396.75,
+          218.75,
+          31.73
+        ],
+        "centre": [
+          393.99999999999994,
+          216.0,
+          28.861894709853864
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_recording_front_end_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_recording_front_end_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913545,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          213.25,
+          13.8,
+          396.75,
+          218.75,
+          22.0
+        ],
+        "centre": [
+          394.0,
+          216.00000000000003,
+          16.668105290146137
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_recording_front_end_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_recording_front_end_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731174,
+        "area": 325.15483964654356,
+        "bounds": [
+          538.0,
+          213.0,
+          18.0,
+          544.0,
+          219.0,
+          28.0
+        ],
+        "centre": [
+          541.0000000000001,
+          216.00000000000006,
+          23.000000000000007
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_recording_front_end_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_recording_front_end_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913521,
+        "area": 140.19357216644454,
+        "bounds": [
+          538.25,
+          213.25,
+          23.53,
+          543.75,
+          218.75,
+          31.73
+        ],
+        "centre": [
+          540.9999999999999,
+          215.99999999999997,
+          28.861894709853853
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_recording_front_end_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_recording_front_end_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913518,
+        "area": 140.19357216644454,
+        "bounds": [
+          538.25,
+          213.25,
+          13.8,
+          543.75,
+          218.75,
+          22.0
+        ],
+        "centre": [
+          541.0000000000001,
+          216.00000000000003,
+          16.668105290146144
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_recording_front_end_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_recording_front_end_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731054,
+        "area": 325.15483964654356,
+        "bounds": [
+          391.0,
+          31.0,
+          18.0,
+          397.0,
+          37.0,
+          28.0
+        ],
+        "centre": [
+          394.0,
+          34.00000000000001,
+          23.000000000000007
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_recording_front_end_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_recording_front_end_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.8994390991355,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          31.25,
+          23.53,
+          396.75,
+          36.75,
+          31.73
+        ],
+        "centre": [
+          394.0,
+          34.0,
+          28.861894709853864
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_recording_front_end_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_recording_front_end_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913549,
+        "area": 140.19357216644454,
+        "bounds": [
+          391.25,
+          31.25,
+          13.8,
+          396.75,
+          36.75,
+          22.0
+        ],
+        "centre": [
+          394.0,
+          34.0,
+          16.668105290146137
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_recording_front_end_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_recording_front_end_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731168,
+        "area": 325.15483964654356,
+        "bounds": [
+          538.0,
+          31.0,
+          18.0,
+          544.0,
+          37.0,
+          28.0
+        ],
+        "centre": [
+          540.9999999999999,
+          33.99999999999999,
+          23.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_recording_front_end_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_recording_front_end_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913524,
+        "area": 140.19357216644454,
+        "bounds": [
+          538.25,
+          31.25,
+          23.53,
+          543.75,
+          36.75,
+          31.73
+        ],
+        "centre": [
+          541.0,
+          34.0,
+          28.861894709853853
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_recording_front_end_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_recording_front_end_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913524,
+        "area": 140.19357216644454,
+        "bounds": [
+          538.25,
+          31.25,
+          13.8,
+          543.75,
+          36.75,
+          22.0
+        ],
+        "centre": [
+          541.0,
+          34.0,
+          16.668105290146144
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Tray_recording_front_end",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "TrayPocket_recording_front_end",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 20,
+        "edges": 30,
+        "faces": 12,
+        "volume": 102051.57611200484,
+        "area": 103978.51415805961,
+        "bounds": [
+          380.0,
+          20.0,
+          16.0,
+          565.0,
+          290.0,
+          24.0
+        ],
+        "centre": [
+          472.503352417013,
+          157.93511112764295,
+          17.087014824643703
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Pull_recording_front_end",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PullCut_recording_front_end",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 16,
+        "edges": 24,
+        "faces": 11,
+        "volume": 4176.0,
+        "area": 2796.0,
+        "bounds": [
+          447.5,
+          11.0,
+          16.0,
+          497.5,
+          20.0,
+          28.0
+        ],
+        "centre": [
+          472.5,
+          15.939655172413794,
+          22.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_supervision_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_supervision_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731134,
+        "area": 325.15483964654356,
+        "bounds": [
+          25.0,
+          273.0,
+          18.0,
+          31.0,
+          279.0,
+          28.0
+        ],
+        "centre": [
+          28.000000000000007,
+          276.00000000000006,
+          23.000000000000007
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_supervision_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_supervision_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913555,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          273.25,
+          23.53,
+          30.75,
+          278.75,
+          31.73
+        ],
+        "centre": [
+          27.999999999999996,
+          276.0,
+          28.86189470985386
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_supervision_H1",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_supervision_H1",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913553,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          273.25,
+          13.8,
+          30.75,
+          278.75,
+          22.0
+        ],
+        "centre": [
+          27.999999999999996,
+          276.0,
+          16.668105290146144
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_supervision_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_supervision_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731088,
+        "area": 325.15483964654356,
+        "bounds": [
+          317.0,
+          273.0,
+          18.0,
+          323.0,
+          279.0,
+          28.0
+        ],
+        "centre": [
+          320.0,
+          275.9999999999999,
+          23.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_supervision_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_supervision_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.8994390991356,
+        "area": 140.19357216644454,
+        "bounds": [
+          317.25,
+          273.25,
+          23.53,
+          322.75,
+          278.75,
+          31.73
+        ],
+        "centre": [
+          320.0,
+          276.0,
+          28.861894709853857
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_supervision_H2",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_supervision_H2",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913559,
+        "area": 140.19357216644454,
+        "bounds": [
+          317.25,
+          273.25,
+          13.8,
+          322.75,
+          278.75,
+          22.0
+        ],
+        "centre": [
+          320.0,
+          276.0,
+          16.66810529014614
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_supervision_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_supervision_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.057504117311,
+        "area": 325.15483964654356,
+        "bounds": [
+          25.0,
+          31.0,
+          18.0,
+          31.0,
+          37.0,
+          28.0
+        ],
+        "centre": [
+          28.0,
+          34.00000000000001,
+          23.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_supervision_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_supervision_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913544,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          31.25,
+          23.53,
+          30.75,
+          36.75,
+          31.73
+        ],
+        "centre": [
+          28.0,
+          34.0,
+          28.861894709853857
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_supervision_H3",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_supervision_H3",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913542,
+        "area": 140.19357216644454,
+        "bounds": [
+          25.25,
+          31.25,
+          13.8,
+          30.75,
+          36.75,
+          22.0
+        ],
+        "centre": [
+          27.999999999999996,
+          34.0,
+          16.66810529014614
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Standoff_supervision_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "StandoffCut_supervision_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 212.05750411731054,
+        "area": 325.15483964654356,
+        "bounds": [
+          317.0,
+          31.0,
+          18.0,
+          323.0,
+          37.0,
+          28.0
+        ],
+        "centre": [
+          320.0,
+          34.00000000000001,
+          23.000000000000007
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "UpperScrew_supervision_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "UpperFastener_supervision_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913549,
+        "area": 140.19357216644454,
+        "bounds": [
+          317.25,
+          31.25,
+          23.53,
+          322.75,
+          36.75,
+          31.73
+        ],
+        "centre": [
+          320.0,
+          34.0,
+          28.861894709853857
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "LowerScrew_supervision_H4",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "LowerFastener_supervision_H4",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 5,
+        "volume": 91.89943909913548,
+        "area": 140.19357216644454,
+        "bounds": [
+          317.25,
+          31.25,
+          13.8,
+          322.75,
+          36.75,
+          22.0
+        ],
+        "centre": [
+          320.0,
+          34.00000000000001,
+          16.66810529014614
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Tray_supervision",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "TrayPocket_supervision",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 20,
+        "edges": 30,
+        "faces": 12,
+        "volume": 172155.57611200487,
+        "area": 174590.5141580596,
+        "bounds": [
+          18.0,
+          20.0,
+          16.0,
+          330.0,
+          290.0,
+          24.0
+        ],
+        "centre": [
+          173.9999999999999,
+          157.91420127846212,
+          17.086991082939175
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Pull_supervision",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PullCut_supervision",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 16,
+        "edges": 24,
+        "faces": 11,
+        "volume": 4176.0,
+        "area": 2796.0,
+        "bounds": [
+          149.0,
+          11.0,
+          16.0,
+          199.0,
+          20.0,
+          28.0
+        ],
+        "centre": [
+          174.0,
+          15.939655172413794,
+          22.0
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "PCB_contact_router",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PCB_contact_router",
+      "source_geometry": {
+        "solids": 156,
+        "vertices": 19492,
+        "edges": 30564,
+        "faces": 11704,
+        "volume": 43423.31744904313,
+        "area": 61924.30539058954,
+        "bounds": [
+          24.0,
+          30.0,
+          176.61499999999756,
+          199.0,
+          185.0,
+          188.15500000000245
+        ],
+        "centre": [
+          109.96239805107706,
+          106.61921908044154,
+          178.8679571225289
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "PCB_controller_carrier",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PCB_controller_carrier",
+      "source_geometry": {
+        "solids": 136,
+        "vertices": 8352,
+        "edges": 13146,
+        "faces": 5284,
+        "volume": 37952.214901308944,
+        "area": 54745.73101808433,
+        "bounds": [
+          390.0,
+          30.0,
+          176.61499999999756,
+          545.0,
+          180.0,
+          188.15500000000245
+        ],
+        "centre": [
+          466.59898352578693,
+          104.92228551163112,
+          178.91834625912202
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "PCB_current_driver",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PCB_current_driver",
+      "source_geometry": {
+        "solids": 165,
+        "vertices": 16714,
+        "edges": 26155,
+        "faces": 10026,
+        "volume": 42900.581233509474,
+        "area": 60361.04632628648,
+        "bounds": [
+          24.0,
+          30.0,
+          126.61499999999756,
+          199.0,
+          185.0,
+          138.15500000000245
+        ],
+        "centre": [
+          110.23890836368143,
+          107.96581142235647,
+          128.83858947810876
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "PCB_monitoring_cell",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PCB_monitoring_cell",
+      "source_geometry": {
+        "solids": 72,
+        "vertices": 7347,
+        "edges": 11504,
+        "faces": 4442,
+        "volume": 27516.54291421082,
+        "area": 38681.79768805928,
+        "bounds": [
+          390.0,
+          30.0,
+          76.61499999999755,
+          510.0,
+          175.0,
+          88.15500000000245
+        ],
+        "centre": [
+          449.2513753521296,
+          102.2024326524919,
+          78.84464831678315
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "PCB_monitoring_transport",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PCB_monitoring_transport",
+      "source_geometry": {
+        "solids": 61,
+        "vertices": 6416,
+        "edges": 10083,
+        "faces": 3987,
+        "volume": 28403.66417910699,
+        "area": 40898.63552566691,
+        "bounds": [
+          390.0,
+          30.0,
+          126.61499999999756,
+          515.0,
+          170.0,
+          138.15500000000245
+        ],
+        "centre": [
+          452.4885372296402,
+          100.27044135134662,
+          128.9111625840618
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "PCB_power",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PCB_power",
+      "source_geometry": {
+        "solids": 208,
+        "vertices": 11944,
+        "edges": 18689,
+        "faces": 7353,
+        "volume": 53733.98721342257,
+        "area": 72821.32696710252,
+        "bounds": [
+          24.0,
+          30.0,
+          76.61499999999755,
+          199.0,
+          215.0,
+          91.215
+        ],
+        "centre": [
+          111.83511406689378,
+          122.16643201430755,
+          79.13063843368121
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "PCB_recording_front_end",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PCB_recording_front_end",
+      "source_geometry": {
+        "solids": 296,
+        "vertices": 14343,
+        "edges": 22256,
+        "faces": 8780,
+        "volume": 46845.62038233079,
+        "area": 65610.0825264973,
+        "bounds": [
+          390.0,
+          30.0,
+          26.614999999997554,
+          545.0,
+          220.0,
+          38.15500000000244
+        ],
+        "centre": [
+          467.83254877307473,
+          124.98398712170815,
+          28.852892561471354
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "PCB_supervision",
+      "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+      "source_name": "PCB_supervision",
+      "source_geometry": {
+        "solids": 574,
+        "vertices": 48835,
+        "edges": 76360,
+        "faces": 29404,
+        "volume": 118758.71754233929,
+        "area": 166110.29829042288,
+        "bounds": [
+          24.0,
+          30.0,
+          26.614999999997554,
+          324.0,
+          280.0,
+          38.15500000000244
+        ],
+        "centre": [
+          172.36341849657876,
+          154.69791437547104,
+          28.839837577309233
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_contact_router_J40001",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_contact_router_J40001",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 32,
+        "edges": 48,
+        "faces": 18,
+        "volume": 235.79500000000007,
+        "area": 482.2450000000001,
+        "bounds": [
+          37.425000000000004,
+          86.405,
+          182.2,
+          45.245000000000005,
+          88.905,
+          196.2
+        ],
+        "centre": [
+          41.33500000000001,
+          87.655,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_contact_router_J40002",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_contact_router_J40002",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 64,
+        "edges": 96,
+        "faces": 34,
+        "volume": 540.8550000000005,
+        "area": 1023.1049999999987,
+        "bounds": [
+          50.105000000000004,
+          86.405,
+          182.2,
+          68.08500000000001,
+          88.905,
+          196.2
+        ],
+        "centre": [
+          59.095000000000006,
+          87.655,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_contact_router_J40003",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_contact_router_J40003",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 64,
+        "edges": 96,
+        "faces": 34,
+        "volume": 540.8549999999998,
+        "area": 1023.1049999999987,
+        "bounds": [
+          37.435,
+          78.815,
+          182.2,
+          55.415000000000006,
+          81.315,
+          196.2
+        ],
+        "centre": [
+          46.42500000000001,
+          80.065,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_contact_router_J40004",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_contact_router_J40004",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 88,
+        "edges": 132,
+        "faces": 46,
+        "volume": 769.6499999999997,
+        "area": 1428.7499999999982,
+        "bounds": [
+          37.425000000000004,
+          71.225,
+          182.2,
+          63.025000000000006,
+          73.725,
+          196.2
+        ],
+        "centre": [
+          50.22500000000002,
+          72.475,
+          189.20000000000002
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_contact_router_J40005",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_contact_router_J40005",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 104,
+        "edges": 156,
+        "faces": 54,
+        "volume": 922.1800000000009,
+        "area": 1699.1799999999976,
+        "bounds": [
+          37.425000000000004,
+          63.635000000000005,
+          182.2,
+          68.105,
+          66.135,
+          196.2
+        ],
+        "centre": [
+          52.765,
+          64.885,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_contact_router_J40006",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_contact_router_J40006",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 80,
+        "edges": 120,
+        "faces": 42,
+        "volume": 693.3849999999998,
+        "area": 1293.5349999999985,
+        "bounds": [
+          37.425000000000004,
+          56.045,
+          182.2,
+          60.48500000000001,
+          58.545,
+          196.2
+        ],
+        "centre": [
+          48.95500000000002,
+          57.295,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_contact_router_J40007",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_contact_router_J40007",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 152,
+        "edges": 228,
+        "faces": 78,
+        "volume": 1379.7699999999977,
+        "area": 2510.4700000000043,
+        "bounds": [
+          37.435,
+          48.45500000000001,
+          182.2,
+          83.355,
+          50.95500000000001,
+          196.2
+        ],
+        "centre": [
+          60.39500000000003,
+          49.70500000000001,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_contact_router_J40100",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_contact_router_J40100",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 32,
+        "edges": 48,
+        "faces": 18,
+        "volume": 235.79500000000024,
+        "area": 482.2450000000001,
+        "bounds": [
+          96.205,
+          70.345,
+          182.2,
+          104.025,
+          72.845,
+          196.2
+        ],
+        "centre": [
+          100.115,
+          71.595,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_contact_router_J40200",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_contact_router_J40200",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 32,
+        "edges": 48,
+        "faces": 18,
+        "volume": 235.79500000000002,
+        "area": 482.2450000000001,
+        "bounds": [
+          137.415,
+          70.345,
+          182.2,
+          145.23499999999999,
+          72.845,
+          196.2
+        ],
+        "centre": [
+          141.325,
+          71.595,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_controller_carrier_J80001",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_controller_carrier_J80001",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.52999999999963,
+        "area": 347.03000000000003,
+        "bounds": [
+          403.425,
+          153.95499999999998,
+          182.2,
+          408.705,
+          156.45499999999998,
+          196.2
+        ],
+        "centre": [
+          406.065,
+          155.20499999999998,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_controller_carrier_J80002",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_controller_carrier_J80002",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 56,
+        "edges": 84,
+        "faces": 30,
+        "volume": 464.5900000000009,
+        "area": 887.8899999999988,
+        "bounds": [
+          500.655,
+          98.815,
+          182.2,
+          516.095,
+          101.315,
+          196.2
+        ],
+        "centre": [
+          508.375,
+          100.065,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_controller_carrier_J80010",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_controller_carrier_J80010",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 56,
+        "edges": 84,
+        "faces": 30,
+        "volume": 464.5900000000008,
+        "area": 887.8899999999988,
+        "bounds": [
+          501.355,
+          153.95499999999998,
+          182.2,
+          516.7950000000001,
+          156.45499999999998,
+          196.2
+        ],
+        "centre": [
+          509.075,
+          155.20499999999998,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_controller_carrier_J80011",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_controller_carrier_J80011",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 88,
+        "edges": 132,
+        "faces": 46,
+        "volume": 769.6500000000004,
+        "area": 1428.7499999999982,
+        "bounds": [
+          501.355,
+          146.365,
+          182.2,
+          526.955,
+          148.865,
+          196.2
+        ],
+        "centre": [
+          514.155,
+          147.615,
+          189.20000000000002
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_controller_carrier_J80012",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_controller_carrier_J80012",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 64,
+        "edges": 96,
+        "faces": 34,
+        "volume": 540.8549999999997,
+        "area": 1023.1049999999987,
+        "bounds": [
+          501.365,
+          138.775,
+          182.2,
+          519.345,
+          141.275,
+          196.2
+        ],
+        "centre": [
+          510.35499999999996,
+          140.025,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_controller_carrier_J80013",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_controller_carrier_J80013",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 48,
+        "edges": 72,
+        "faces": 26,
+        "volume": 388.32499999999976,
+        "area": 752.6749999999992,
+        "bounds": [
+          501.355,
+          131.185,
+          182.2,
+          514.255,
+          133.685,
+          196.2
+        ],
+        "centre": [
+          507.805,
+          132.435,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_controller_carrier_J80014",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_controller_carrier_J80014",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 40,
+        "edges": 60,
+        "faces": 22,
+        "volume": 312.05999999999995,
+        "area": 617.4599999999997,
+        "bounds": [
+          403.425,
+          110.595,
+          182.2,
+          413.785,
+          113.095,
+          196.2
+        ],
+        "centre": [
+          408.605,
+          111.845,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_controller_carrier_J80015",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_controller_carrier_J80015",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 80,
+        "edges": 120,
+        "faces": 42,
+        "volume": 693.3850000000003,
+        "area": 1293.5349999999985,
+        "bounds": [
+          403.425,
+          103.005,
+          182.2,
+          426.485,
+          105.505,
+          196.2
+        ],
+        "centre": [
+          414.95500000000004,
+          104.25499999999998,
+          189.20000000000002
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_controller_carrier_J80016",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_controller_carrier_J80016",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 80,
+        "edges": 120,
+        "faces": 42,
+        "volume": 693.3850000000003,
+        "area": 1293.5349999999985,
+        "bounds": [
+          403.425,
+          95.415,
+          182.2,
+          426.485,
+          97.915,
+          196.2
+        ],
+        "centre": [
+          414.95500000000004,
+          96.665,
+          189.20000000000002
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_controller_carrier_J80017",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_controller_carrier_J80017",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 80,
+        "edges": 120,
+        "faces": 42,
+        "volume": 693.3850000000003,
+        "area": 1293.5349999999985,
+        "bounds": [
+          403.425,
+          87.825,
+          182.2,
+          426.485,
+          90.325,
+          196.2
+        ],
+        "centre": [
+          414.95500000000004,
+          89.075,
+          189.20000000000002
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_controller_carrier_J80018",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_controller_carrier_J80018",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 72,
+        "edges": 108,
+        "faces": 38,
+        "volume": 617.1200000000003,
+        "area": 1158.3199999999986,
+        "bounds": [
+          439.335,
+          110.595,
+          182.2,
+          459.85499999999996,
+          113.095,
+          196.2
+        ],
+        "centre": [
+          449.59499999999997,
+          111.845,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_controller_carrier_J80019",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_controller_carrier_J80019",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 160,
+        "edges": 240,
+        "faces": 82,
+        "volume": 1456.0350000000008,
+        "area": 2645.6850000000063,
+        "bounds": [
+          439.345,
+          103.005,
+          182.2,
+          487.805,
+          105.505,
+          196.2
+        ],
+        "centre": [
+          463.57500000000005,
+          104.255,
+          189.19999999999996
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_controller_carrier_J80020",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_controller_carrier_J80020",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 40,
+        "edges": 60,
+        "faces": 22,
+        "volume": 312.0600000000001,
+        "area": 617.4599999999997,
+        "bounds": [
+          439.335,
+          95.415,
+          182.2,
+          449.695,
+          97.915,
+          196.2
+        ],
+        "centre": [
+          444.515,
+          96.665,
+          189.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_current_driver_J20001",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_current_driver_J20001",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 48,
+        "edges": 72,
+        "faces": 26,
+        "volume": 388.3250000000005,
+        "area": 752.6749999999992,
+        "bounds": [
+          37.425000000000004,
+          145.485,
+          132.2,
+          50.325,
+          147.985,
+          146.2
+        ],
+        "centre": [
+          43.875,
+          146.735,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_current_driver_J20002",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_current_driver_J20002",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 40,
+        "edges": 60,
+        "faces": 22,
+        "volume": 312.06000000000006,
+        "area": 617.4599999999997,
+        "bounds": [
+          55.175000000000004,
+          145.485,
+          132.2,
+          65.535,
+          147.985,
+          146.2
+        ],
+        "centre": [
+          60.355000000000004,
+          146.735,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_current_driver_J20003",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_current_driver_J20003",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 80,
+        "edges": 120,
+        "faces": 42,
+        "volume": 693.3850000000008,
+        "area": 1293.5349999999985,
+        "bounds": [
+          37.425000000000004,
+          137.895,
+          132.2,
+          60.48500000000001,
+          140.395,
+          146.2
+        ],
+        "centre": [
+          48.955000000000005,
+          139.145,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_current_driver_J20004",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_current_driver_J20004",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 96,
+        "edges": 144,
+        "faces": 50,
+        "volume": 845.9150000000008,
+        "area": 1563.9649999999979,
+        "bounds": [
+          37.425000000000004,
+          130.305,
+          132.2,
+          65.565,
+          132.805,
+          146.2
+        ],
+        "centre": [
+          51.495,
+          131.555,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_current_driver_J20005",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_current_driver_J20005",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 80,
+        "edges": 120,
+        "faces": 42,
+        "volume": 693.3850000000008,
+        "area": 1293.5349999999985,
+        "bounds": [
+          37.425000000000004,
+          122.715,
+          132.2,
+          60.48500000000001,
+          125.215,
+          146.2
+        ],
+        "centre": [
+          48.955,
+          123.965,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_current_driver_J20100",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_current_driver_J20100",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 40,
+        "edges": 60,
+        "faces": 22,
+        "volume": 312.05999999999983,
+        "area": 617.4599999999997,
+        "bounds": [
+          37.425000000000004,
+          49.754999999999995,
+          132.2,
+          47.785000000000004,
+          52.254999999999995,
+          146.2
+        ],
+        "centre": [
+          42.605000000000004,
+          51.004999999999995,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_current_driver_J20200",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_current_driver_J20200",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 40,
+        "edges": 60,
+        "faces": 22,
+        "volume": 312.0599999999999,
+        "area": 617.4599999999997,
+        "bounds": [
+          72.175,
+          49.754999999999995,
+          132.2,
+          82.535,
+          52.254999999999995,
+          146.2
+        ],
+        "centre": [
+          77.35499999999999,
+          51.004999999999995,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_cell_J10001",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_cell_J10001",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 32,
+        "edges": 48,
+        "faces": 18,
+        "volume": 235.79499999999987,
+        "area": 482.2450000000001,
+        "bounds": [
+          403.425,
+          64.985,
+          82.2,
+          411.245,
+          67.485,
+          96.2
+        ],
+        "centre": [
+          407.33500000000004,
+          66.235,
+          89.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_cell_J10002",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_cell_J10002",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 104,
+        "edges": 156,
+        "faces": 54,
+        "volume": 922.1799999999995,
+        "area": 1699.1799999999976,
+        "bounds": [
+          403.425,
+          57.394999999999996,
+          82.2,
+          434.105,
+          59.894999999999996,
+          96.2
+        ],
+        "centre": [
+          418.765,
+          58.644999999999996,
+          89.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_cell_J10003",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_cell_J10003",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 48,
+        "edges": 72,
+        "faces": 26,
+        "volume": 388.32499999999953,
+        "area": 752.6749999999992,
+        "bounds": [
+          403.425,
+          49.80500000000001,
+          82.2,
+          416.325,
+          52.30500000000001,
+          96.2
+        ],
+        "centre": [
+          409.875,
+          51.055000000000014,
+          89.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_cell_J10004",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_cell_J10004",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 40,
+        "edges": 60,
+        "faces": 22,
+        "volume": 312.0599999999997,
+        "area": 617.4599999999997,
+        "bounds": [
+          421.175,
+          49.80500000000001,
+          82.2,
+          431.535,
+          52.30500000000001,
+          96.2
+        ],
+        "centre": [
+          426.355,
+          51.05500000000001,
+          89.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_cell_J10100",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_cell_J10100",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.52999999999966,
+        "area": 347.03000000000003,
+        "bounds": [
+          403.425,
+          111.515,
+          82.2,
+          408.705,
+          114.015,
+          96.2
+        ],
+        "centre": [
+          406.065,
+          112.765,
+          89.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_cell_J10200",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_cell_J10200",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.52999999999966,
+        "area": 347.03000000000003,
+        "bounds": [
+          447.235,
+          111.515,
+          82.2,
+          452.515,
+          114.015,
+          96.2
+        ],
+        "centre": [
+          449.875,
+          112.765,
+          89.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_cell_J19901",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_cell_J19901",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.52999999999966,
+        "area": 347.03000000000003,
+        "bounds": [
+          491.045,
+          148.95499999999998,
+          82.2,
+          496.325,
+          151.45499999999998,
+          96.2
+        ],
+        "centre": [
+          493.68499999999995,
+          150.20499999999998,
+          89.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_transport_J70001",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_transport_J70001",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 32,
+        "edges": 48,
+        "faces": 18,
+        "volume": 235.79499999999993,
+        "area": 482.2450000000001,
+        "bounds": [
+          453.53499999999997,
+          102.755,
+          132.2,
+          461.35499999999996,
+          105.255,
+          146.2
+        ],
+        "centre": [
+          457.445,
+          104.005,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_transport_J70002",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_transport_J70002",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 72,
+        "edges": 108,
+        "faces": 38,
+        "volume": 617.1200000000002,
+        "area": 1158.3199999999986,
+        "bounds": [
+          453.53499999999997,
+          95.165,
+          132.2,
+          474.05499999999995,
+          97.665,
+          146.2
+        ],
+        "centre": [
+          463.7949999999999,
+          96.415,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_transport_J70003",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_transport_J70003",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 56,
+        "edges": 84,
+        "faces": 30,
+        "volume": 464.5899999999999,
+        "area": 887.8899999999988,
+        "bounds": [
+          453.53499999999997,
+          87.575,
+          132.2,
+          468.97499999999997,
+          90.075,
+          146.2
+        ],
+        "centre": [
+          461.255,
+          88.82500000000002,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_transport_J70004",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_transport_J70004",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 72,
+        "edges": 108,
+        "faces": 38,
+        "volume": 617.1200000000005,
+        "area": 1158.3199999999986,
+        "bounds": [
+          403.425,
+          65.805,
+          132.2,
+          423.945,
+          68.305,
+          146.2
+        ],
+        "centre": [
+          413.685,
+          67.055,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_transport_J70005",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_transport_J70005",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 48,
+        "edges": 72,
+        "faces": 26,
+        "volume": 388.32499999999936,
+        "area": 752.6749999999992,
+        "bounds": [
+          403.425,
+          58.215,
+          132.2,
+          416.325,
+          60.715,
+          146.2
+        ],
+        "centre": [
+          409.875,
+          59.46500000000001,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_transport_J70006",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_transport_J70006",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 88,
+        "edges": 132,
+        "faces": 46,
+        "volume": 769.6499999999996,
+        "area": 1428.7499999999982,
+        "bounds": [
+          403.425,
+          50.625,
+          132.2,
+          429.02500000000003,
+          53.125,
+          146.2
+        ],
+        "centre": [
+          416.225,
+          51.87499999999999,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_transport_J70007",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_transport_J70007",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 40,
+        "edges": 60,
+        "faces": 22,
+        "volume": 312.0600000000001,
+        "area": 617.4599999999997,
+        "bounds": [
+          430.875,
+          127.60499999999999,
+          132.2,
+          441.235,
+          130.105,
+          146.2
+        ],
+        "centre": [
+          436.055,
+          128.855,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_transport_J70008",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_transport_J70008",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 40,
+        "edges": 60,
+        "faces": 22,
+        "volume": 312.0600000000002,
+        "area": 617.4599999999997,
+        "bounds": [
+          446.085,
+          127.60499999999999,
+          132.2,
+          456.445,
+          130.105,
+          146.2
+        ],
+        "centre": [
+          451.265,
+          128.855,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_transport_J70020",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_transport_J70020",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 104,
+        "edges": 156,
+        "faces": 54,
+        "volume": 922.1800000000006,
+        "area": 1699.1799999999976,
+        "bounds": [
+          469.295,
+          138.525,
+          132.2,
+          499.975,
+          141.025,
+          146.2
+        ],
+        "centre": [
+          484.635,
+          139.775,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_monitoring_transport_J70022",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_monitoring_transport_J70022",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 64,
+        "edges": 96,
+        "faces": 34,
+        "volume": 540.8549999999999,
+        "area": 1023.1049999999987,
+        "bounds": [
+          469.305,
+          123.345,
+          132.2,
+          487.285,
+          125.845,
+          146.2
+        ],
+        "centre": [
+          478.295,
+          124.595,
+          139.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_power_J60001",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_power_J60001",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.53000000000023,
+        "area": 347.03000000000003,
+        "bounds": [
+          145.86,
+          111.665,
+          82.2,
+          151.14000000000001,
+          114.165,
+          96.2
+        ],
+        "centre": [
+          148.5,
+          112.91500000000002,
+          89.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_power_J60002",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_power_J60002",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 104,
+        "edges": 156,
+        "faces": 54,
+        "volume": 922.1800000000012,
+        "area": 1699.1799999999976,
+        "bounds": [
+          145.86,
+          104.075,
+          82.2,
+          176.54000000000002,
+          106.575,
+          96.2
+        ],
+        "centre": [
+          161.20000000000002,
+          105.325,
+          89.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_power_J60003",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_power_J60003",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 64,
+        "edges": 96,
+        "faces": 34,
+        "volume": 540.8549999999997,
+        "area": 1023.1049999999987,
+        "bounds": [
+          145.87,
+          96.485,
+          82.2,
+          163.85,
+          98.985,
+          96.2
+        ],
+        "centre": [
+          154.86,
+          97.735,
+          89.20000000000002
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_power_J60004",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_power_J60004",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 40,
+        "edges": 60,
+        "faces": 22,
+        "volume": 312.06000000000057,
+        "area": 617.4599999999997,
+        "bounds": [
+          145.86,
+          88.895,
+          82.2,
+          156.22000000000003,
+          91.395,
+          96.2
+        ],
+        "centre": [
+          151.04000000000002,
+          90.145,
+          89.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_power_J60005",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_power_J60005",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 48,
+        "edges": 72,
+        "faces": 26,
+        "volume": 388.32500000000033,
+        "area": 752.6749999999992,
+        "bounds": [
+          161.07,
+          88.895,
+          82.2,
+          173.97,
+          91.395,
+          96.2
+        ],
+        "centre": [
+          167.52,
+          90.145,
+          89.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_power_J60006",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_power_J60006",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 32,
+        "edges": 48,
+        "faces": 18,
+        "volume": 235.79500000000007,
+        "area": 482.2450000000001,
+        "bounds": [
+          145.86,
+          81.305,
+          82.2,
+          153.68,
+          83.805,
+          96.2
+        ],
+        "centre": [
+          149.77,
+          82.555,
+          89.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_recording_front_end_J30001",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_recording_front_end_J30001",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 40,
+        "edges": 60,
+        "faces": 22,
+        "volume": 312.0600000000002,
+        "area": 617.4599999999997,
+        "bounds": [
+          483.145,
+          92.165,
+          32.2,
+          493.505,
+          94.665,
+          46.2
+        ],
+        "centre": [
+          488.325,
+          93.415,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_recording_front_end_J30002",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_recording_front_end_J30002",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 88,
+        "edges": 132,
+        "faces": 46,
+        "volume": 769.6500000000012,
+        "area": 1428.7499999999982,
+        "bounds": [
+          483.145,
+          84.57499999999999,
+          32.2,
+          508.745,
+          87.07499999999999,
+          46.2
+        ],
+        "centre": [
+          495.945,
+          85.82499999999999,
+          39.199999999999996
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_recording_front_end_J30003",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_recording_front_end_J30003",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 152,
+        "edges": 228,
+        "faces": 78,
+        "volume": 1379.770000000001,
+        "area": 2510.4700000000043,
+        "bounds": [
+          483.155,
+          76.98500000000001,
+          32.2,
+          529.0749999999999,
+          79.48500000000001,
+          46.2
+        ],
+        "centre": [
+          506.11499999999995,
+          78.23500000000001,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_recording_front_end_J39901",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_recording_front_end_J39901",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 104,
+        "edges": 156,
+        "faces": 54,
+        "volume": 922.180000000001,
+        "area": 1699.1799999999976,
+        "bounds": [
+          439.615,
+          141.845,
+          32.2,
+          470.295,
+          144.345,
+          46.2
+        ],
+        "centre": [
+          454.955,
+          143.095,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_recording_front_end_J39902",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_recording_front_end_J39902",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 80,
+        "edges": 120,
+        "faces": 42,
+        "volume": 693.3850000000008,
+        "area": 1293.5349999999985,
+        "bounds": [
+          439.615,
+          134.255,
+          32.2,
+          462.675,
+          136.755,
+          46.2
+        ],
+        "centre": [
+          451.145,
+          135.505,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50001",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50001",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 64,
+        "edges": 96,
+        "faces": 34,
+        "volume": 540.8550000000006,
+        "area": 1023.1049999999987,
+        "bounds": [
+          78.88499999999999,
+          85.26499999999999,
+          32.2,
+          96.865,
+          87.76499999999999,
+          46.2
+        ],
+        "centre": [
+          87.87499999999999,
+          86.51499999999999,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50002",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50002",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 56,
+        "edges": 84,
+        "faces": 30,
+        "volume": 464.5900000000003,
+        "area": 887.8899999999988,
+        "bounds": [
+          78.875,
+          77.67500000000001,
+          32.2,
+          94.315,
+          80.17500000000001,
+          46.2
+        ],
+        "centre": [
+          86.595,
+          78.92500000000001,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50003",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50003",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 104,
+        "edges": 156,
+        "faces": 54,
+        "volume": 922.1800000000013,
+        "area": 1699.1799999999976,
+        "bounds": [
+          78.875,
+          70.08500000000001,
+          32.2,
+          109.555,
+          72.58500000000001,
+          46.2
+        ],
+        "centre": [
+          94.21499999999999,
+          71.33500000000002,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50004",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50004",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 80,
+        "edges": 120,
+        "faces": 42,
+        "volume": 693.3849999999998,
+        "area": 1293.5349999999985,
+        "bounds": [
+          78.875,
+          62.495000000000005,
+          32.2,
+          101.935,
+          64.995,
+          46.2
+        ],
+        "centre": [
+          90.405,
+          63.745000000000005,
+          39.20000000000001
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50005",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50005",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 112,
+        "edges": 168,
+        "faces": 58,
+        "volume": 998.4449999999982,
+        "area": 1834.3949999999975,
+        "bounds": [
+          78.88499999999999,
+          54.905,
+          32.2,
+          112.10499999999999,
+          57.405,
+          46.2
+        ],
+        "centre": [
+          95.49500000000002,
+          56.155,
+          39.20000000000001
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50006",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50006",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 48,
+        "edges": 72,
+        "faces": 26,
+        "volume": 388.32500000000005,
+        "area": 752.6749999999992,
+        "bounds": [
+          78.875,
+          47.315,
+          32.2,
+          91.775,
+          49.815,
+          46.2
+        ],
+        "centre": [
+          85.325,
+          48.565,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50100",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50100",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 152,
+        "edges": 228,
+        "faces": 78,
+        "volume": 1379.7700000000013,
+        "area": 2510.4700000000043,
+        "bounds": [
+          37.435,
+          117.905,
+          32.2,
+          83.355,
+          120.405,
+          46.2
+        ],
+        "centre": [
+          60.39499999999998,
+          119.155,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50101",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50101",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 152,
+        "edges": 228,
+        "faces": 78,
+        "volume": 1379.7700000000013,
+        "area": 2510.4700000000043,
+        "bounds": [
+          37.435,
+          110.315,
+          32.2,
+          83.355,
+          112.815,
+          46.2
+        ],
+        "centre": [
+          60.39499999999998,
+          111.565,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50600",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50600",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.53000000000011,
+        "area": 347.03000000000003,
+        "bounds": [
+          122.05499999999999,
+          221.475,
+          32.2,
+          127.335,
+          223.975,
+          46.2
+        ],
+        "centre": [
+          124.695,
+          222.72499999999997,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50601",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50601",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.5300000000002,
+        "area": 347.03000000000003,
+        "bounds": [
+          132.195,
+          221.475,
+          32.2,
+          137.475,
+          223.975,
+          46.2
+        ],
+        "centre": [
+          134.83499999999998,
+          222.725,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50602",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50602",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.5300000000002,
+        "area": 347.03000000000003,
+        "bounds": [
+          142.33499999999998,
+          221.475,
+          32.2,
+          147.61499999999998,
+          223.975,
+          46.2
+        ],
+        "centre": [
+          144.97499999999997,
+          222.725,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50603",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50603",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.53000000000011,
+        "area": 347.03000000000003,
+        "bounds": [
+          122.05499999999999,
+          213.885,
+          32.2,
+          127.335,
+          216.385,
+          46.2
+        ],
+        "centre": [
+          124.695,
+          215.135,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50604",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50604",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.5300000000002,
+        "area": 347.03000000000003,
+        "bounds": [
+          164.64499999999998,
+          221.475,
+          32.2,
+          169.92499999999998,
+          223.975,
+          46.2
+        ],
+        "centre": [
+          167.285,
+          222.725,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50605",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50605",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.5300000000002,
+        "area": 347.03000000000003,
+        "bounds": [
+          174.785,
+          221.475,
+          32.2,
+          180.065,
+          223.975,
+          46.2
+        ],
+        "centre": [
+          177.42499999999998,
+          222.725,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50606",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50606",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.5300000000002,
+        "area": 347.03000000000003,
+        "bounds": [
+          184.92499999999998,
+          221.475,
+          32.2,
+          190.20499999999998,
+          223.975,
+          46.2
+        ],
+        "centre": [
+          187.56499999999997,
+          222.725,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50607",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50607",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.5300000000002,
+        "area": 347.03000000000003,
+        "bounds": [
+          164.64499999999998,
+          213.885,
+          32.2,
+          169.92499999999998,
+          216.385,
+          46.2
+        ],
+        "centre": [
+          167.28499999999997,
+          215.13500000000002,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50608",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50608",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.5300000000002,
+        "area": 347.03000000000003,
+        "bounds": [
+          207.23499999999999,
+          221.475,
+          32.2,
+          212.515,
+          223.975,
+          46.2
+        ],
+        "centre": [
+          209.87499999999997,
+          222.725,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50609",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50609",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.5300000000002,
+        "area": 347.03000000000003,
+        "bounds": [
+          217.375,
+          221.475,
+          32.2,
+          222.655,
+          223.975,
+          46.2
+        ],
+        "centre": [
+          220.015,
+          222.725,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50610",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50610",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.5300000000002,
+        "area": 347.03000000000003,
+        "bounds": [
+          227.515,
+          221.475,
+          32.2,
+          232.795,
+          223.975,
+          46.2
+        ],
+        "centre": [
+          230.15499999999997,
+          222.725,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50611",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50611",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.5300000000002,
+        "area": 347.03000000000003,
+        "bounds": [
+          207.23499999999999,
+          213.885,
+          32.2,
+          212.515,
+          216.385,
+          46.2
+        ],
+        "centre": [
+          209.87499999999997,
+          215.13500000000002,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50612",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50612",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.5300000000002,
+        "area": 347.03000000000003,
+        "bounds": [
+          249.825,
+          221.475,
+          32.2,
+          255.105,
+          223.975,
+          46.2
+        ],
+        "centre": [
+          252.465,
+          222.725,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50613",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50613",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.5299999999996,
+        "area": 347.03000000000003,
+        "bounds": [
+          259.96500000000003,
+          221.475,
+          32.2,
+          265.245,
+          223.975,
+          46.2
+        ],
+        "centre": [
+          262.605,
+          222.72500000000002,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50614",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50614",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.52999999999963,
+        "area": 347.03000000000003,
+        "bounds": [
+          270.105,
+          221.475,
+          32.2,
+          275.385,
+          223.975,
+          46.2
+        ],
+        "centre": [
+          272.745,
+          222.72500000000002,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50615",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50615",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.5300000000002,
+        "area": 347.03000000000003,
+        "bounds": [
+          249.825,
+          213.885,
+          32.2,
+          255.105,
+          216.385,
+          46.2
+        ],
+        "centre": [
+          252.46499999999997,
+          215.13500000000002,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J50616",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J50616",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 24,
+        "edges": 36,
+        "faces": 14,
+        "volume": 159.52999999999963,
+        "area": 347.03000000000003,
+        "bounds": [
+          292.415,
+          243.845,
+          32.2,
+          297.695,
+          246.345,
+          46.2
+        ],
+        "centre": [
+          295.055,
+          245.09500000000003,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Mate_supervision_J59901",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Mate_supervision_J59901",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 40,
+        "edges": 60,
+        "faces": 22,
+        "volume": 312.05999999999995,
+        "area": 617.4599999999997,
+        "bounds": [
+          178.48499999999999,
+          139.305,
+          32.2,
+          188.84499999999997,
+          141.805,
+          46.2
+        ],
+        "centre": [
+          183.665,
+          140.555,
+          39.2
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Grommet_ArtificialLoad_58",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Grommet_ArtificialLoad_58",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 345.5751918948773,
+        "area": 483.8052686528281,
+        "bounds": [
+          51.5,
+          306.0,
+          201.5,
+          64.5,
+          311.0,
+          214.5
+        ],
+        "centre": [
+          58.000000000000014,
+          308.4999999999999,
+          207.99999999999997
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Grommet_ArtificialLoad_96",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Grommet_ArtificialLoad_96",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 345.5751918948773,
+        "area": 483.8052686528281,
+        "bounds": [
+          89.5,
+          306.0,
+          201.5,
+          102.5,
+          311.0,
+          214.5
+        ],
+        "centre": [
+          95.99999999999999,
+          308.49999999999994,
+          208.00000000000003
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "RearInsert_ArtificialLoad",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "RearInsert_ArtificialLoad",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "volume": 6763.606262314988,
+        "area": 5462.115068523329,
+        "bounds": [
+          32.0,
+          307.0,
+          194.0,
+          122.0,
+          310.0,
+          222.0
+        ],
+        "centre": [
+          77.0,
+          308.5,
+          207.99999999999997
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Grommet_CompanionPowerDebug_410",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Grommet_CompanionPowerDebug_410",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 282.74333882308144,
+        "area": 395.84067435231395,
+        "bounds": [
+          404.5,
+          306.0,
+          202.5,
+          415.5,
+          311.0,
+          213.5
+        ],
+        "centre": [
+          410.0,
+          308.49999999999994,
+          207.99999999999994
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Grommet_CompanionPowerDebug_440",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Grommet_CompanionPowerDebug_440",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 282.74333882308144,
+        "area": 395.84067435231395,
+        "bounds": [
+          434.5,
+          306.0,
+          202.5,
+          445.5,
+          311.0,
+          213.5
+        ],
+        "centre": [
+          440.00000000000006,
+          308.49999999999994,
+          207.99999999999994
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "Grommet_CompanionPowerDebug_470",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "Grommet_CompanionPowerDebug_470",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "volume": 282.74333882308144,
+        "area": 395.84067435231395,
+        "bounds": [
+          464.5,
+          306.0,
+          202.5,
+          475.5,
+          311.0,
+          213.5
+        ],
+        "centre": [
+          470.0,
+          308.49999999999994,
+          207.99999999999994
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    },
+    {
+      "label": "RearInsert_CompanionPowerDebug",
+      "source_document": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "source_name": "RearInsert_CompanionPowerDebug",
+      "source_geometry": {
+        "solids": 1,
+        "vertices": 14,
+        "edges": 21,
+        "faces": 9,
+        "volume": 7544.7014000601785,
+        "area": 6108.81860607884,
+        "bounds": [
+          390.0,
+          307.0,
+          194.0,
+          490.0,
+          310.0,
+          222.0
+        ],
+        "centre": [
+          439.99999999999994,
+          308.49999999999994,
+          207.99999999999994
+        ]
+      },
+      "maximum_metric_error": 0.0,
+      "maximum_vertex_error_mm": 0.0
+    }
+  ],
+  "physical_qualification": false
+}

@@ -1,0 +1,8031 @@
+(export
+	(version "E")
+	(design
+		(source "E:\\Project ATO\\electronics\\stage4\\monitoring-cell\\monitoring_cell.kicad_sch")
+		(date "2026-10-12T12:07:08")
+		(tool "Eeschema 10.0.6")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "ATO S4 / Shared reference and interfaces")
+				(company "Project ATO")
+				(rev "0.2 DCK")
+				(date "2026-10-12")
+				(source "monitoring_cell.kicad_sch")
+				(comment
+					(number "1")
+					(value "ARTIFICIAL LOADS ONLY; native schematic slice, not a completed implant")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "2")
+			(name "/Source0_monitor/")
+			(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			(title_block
+				(title "ATO S4 / Source 0: current and phase charge")
+				(company "Project ATO")
+				(rev "0.2 DCK")
+				(date "2026-10-12")
+				(source "channel0.kicad_sch")
+				(comment
+					(number "1")
+					(value "ARTIFICIAL LOADS ONLY; native schematic slice, not a completed implant")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "3")
+			(name "/Source1_monitor/")
+			(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			(title_block
+				(title "ATO S4 / Source 1: current and phase charge")
+				(company "Project ATO")
+				(rev "0.2 DCK")
+				(date "2026-10-12")
+				(source "channel1.kicad_sch")
+				(comment
+					(number "1")
+					(value "ARTIFICIAL LOADS ONLY; native schematic slice, not a completed implant")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C1")
+			(value "1u 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "55013ea7-53be-5016-81b0-5b65315454ba")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "1u 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C2")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ccb4156a-dcd8-5ab1-b06c-6e80c0bc7f71")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C3")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C3")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "203d0ba4-eac6-583f-9404-3365d6e35e49")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C4")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C4")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "166a62d7-0ee4-5061-8831-6c65420040e2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "LAB RAILS ONLY")
+			(footprint "ato_s4:PinHeader_1x03_P2.54mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x03_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "J1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "59818323-a2e9-56b3-a971-934768d111a9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "MCU ENDPOINT/CONTROL")
+			(footprint "ato_s4:PinHeader_1x12_P2.54mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x12_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "J2")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3c198985-d700-5802-9024-763873a9c73f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "EXTERNAL SUPERVISION")
+			(footprint "ato_s4:PinHeader_1x05_P2.54mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x05_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "J3")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "662f06a8-06b7-5152-a3b8-eb4254082f67")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J4")
+			(value "CURRENT ADC INTERFACE")
+			(footprint "ato_s4:PinHeader_1x04_P2.54mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x04_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "J4")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1726e11e-c956-5f80-8507-8321ec24f678")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R1")
+			(value "10k 0.1%")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f25639dc-e2dc-5584-ad68-8e34687546f7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "10k 0.1%")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R2")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e6dd7ff7-9b84-53f9-8c63-21adeeace6d0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R3")
+			(value "10k 0.1%")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R3")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "51f45073-3ee8-50c6-a2b2-b381fa2bfdb4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R4")
+			(value "19.1k 0.1%")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R4")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c3a9560e-cf8e-5ecf-9690-23f208e2408a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R5")
+			(value "10k 0.1%")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R5")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "2f0074ad-b077-57a4-a5b8-f44b20d6a3f7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R6")
+			(value "100k")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R6")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6b260a6d-a9f0-56af-b4f6-e4de654a04fc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R7")
+			(value "100k")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R7")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "30389244-7eb1-5b54-83c9-3c8cd1df85d4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "REF3440DBVR")
+			(footprint "ato_s4:SOT-23-6")
+			(datasheet "https://www.ti.com/lit/ds/symlink/ref34.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:SOT-23-6")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/ref34.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "57016e2c-fc13-51d1-ad5f-ab0860b927e2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U2")
+			(value "OPA391DCKR")
+			(footprint "ato_s4:SOT-353_SC-70-5")
+			(datasheet "https://www.ti.com/lit/ds/symlink/opa391.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/opa391.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U2")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fd91a0b6-c021-5b5c-a8ea-575e55052049")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U3")
+			(value "TMUX1136DGSR")
+			(footprint "ato_s4:MSOP-10_3x3mm_P0.5mm")
+			(datasheet "https://www.ti.com/lit/ds/symlink/tmux1136.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:MSOP-10_3x3mm_P0.5mm")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/tmux1136.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U3")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "monitoring_cell")
+			)
+			(property
+				(name "Sheetfile")
+				(value "monitoring_cell.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "767c91a7-ceff-5cca-969e-fac3019b0cbb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C100")
+			(value "22n 0.5% C0G")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C100")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "78b73fea-914b-528e-9e3c-6d45bd95e1b3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C101")
+			(value "1n C0G")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C101")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "e4e06a6e-a905-56c9-bca5-c6a7618f7793")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C102")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C102")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "cf353dd3-8026-5d9c-8598-5365daf9b349")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C103")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C103")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "4d576d27-7240-58ca-85bf-6f0bbc17dec2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C104")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C104")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "b38be79a-32e0-5bc2-9576-c59807862b80")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C105")
+			(value "1u 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C105")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "5e93c2c6-4faa-529f-9d75-bb5b6539fdba")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C106")
+			(value "1u 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C106")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "c18e49fd-8987-5373-afda-02d730201cbe")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C107")
+			(value "22u 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C107")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "c07eaa91-3f59-5b27-bad3-f3ba9508b827")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C108")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C108")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "c5d6b211-6611-5528-9930-2b6f46deb34c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C109")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C109")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "cb49e080-9aa7-5529-aff5-5bd5e0202350")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C110")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C110")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "bc27d76f-580f-567a-8d11-bd6801df9833")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J100")
+			(value "SOURCE 0 RETURN SHUNT")
+			(footprint "ato_s4:PinHeader_1x02_P2.54mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x02_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "J100")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "e66f4541-06bf-5d4a-9c3b-b97684109b91")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J101")
+			(value "SOURCE 0 DRIVER PERMISSION")
+			(footprint "ato_s4:PinHeader_1x03_P2.54mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x03_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "J101")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "b84ea8e1-1b8c-55ae-9892-34278f40ecce")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R100")
+			(value "2R 0.1% KELVIN")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R100")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "38f939ec-4b55-5384-948e-ba94278f991b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R101")
+			(value "10k 0.1%")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R101")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "9c09c636-d322-56bb-ab71-428d7b291db0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R102")
+			(value "33R")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R102")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "5adc1476-a772-54f1-b1bf-98248ee5b803")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R103")
+			(value "100k")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R103")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "3c3cf37a-5b57-5cd9-8adb-7cc6cb16c1cc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R104")
+			(value "100k")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R104")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "422ed5b7-4ad0-5a63-bc0a-1a9f8661e085")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R105")
+			(value "100k")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R105")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "6fdc1ea6-224c-5458-93ad-4dbc48d009f2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U100")
+			(value "INA241A2IDR")
+			(footprint "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm")
+			(datasheet "https://www.ti.com/lit/ds/symlink/ina241a.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/ina241a.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U100")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "202a2706-5dc2-5d0b-bdfa-b3a6b8db3060")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U101")
+			(value "OPA391DCKR")
+			(footprint "ato_s4:SOT-353_SC-70-5")
+			(datasheet "https://www.ti.com/lit/ds/symlink/opa391.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/opa391.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U101")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "9bfff903-99c6-5519-afe3-895e2d893f48")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U102")
+			(value "OPA391DCKR")
+			(footprint "ato_s4:SOT-353_SC-70-5")
+			(datasheet "https://www.ti.com/lit/ds/symlink/opa391.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/opa391.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U102")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "66ab1fc3-a23a-503d-9b8a-deec8c51b60a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U103")
+			(value "ADS8866IDGSR")
+			(footprint "ato_s4:MSOP-10_3x3mm_P0.5mm")
+			(datasheet "https://www.ti.com/lit/ds/symlink/ads8866.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:MSOP-10_3x3mm_P0.5mm")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/ads8866.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U103")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "c5bffefb-2c67-51d1-9499-5a75fec475a9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "7")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U104")
+			(value "TLV3202IDR")
+			(footprint "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm")
+			(datasheet "https://www.ti.com/lit/ds/symlink/tlv3202.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/tlv3202.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U104")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "41019e1b-8981-506c-89fd-40bcb6bc15ba")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "7")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U105")
+			(value "SN74LVC1G11DBVR")
+			(footprint "ato_s4:SOT-23-6")
+			(datasheet "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:SOT-23-6")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U105")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "0f768168-e791-5d23-8386-d9b6c239d022")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U106")
+			(value "SN74LVC1G74DCUR")
+			(footprint "ato_s4:VSSOP-8_2.3x2mm_P0.5mm")
+			(datasheet "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:VSSOP-8_2.3x2mm_P0.5mm")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U106")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source0_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel0.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source0_monitor/")
+				(tstamps "/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd/")
+			)
+			(tstamps "c20e7529-3748-5dee-81c1-12aa9eefd147")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C200")
+			(value "22n 0.5% C0G")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C200")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "57549710-5913-5c5f-957b-96420f4babce")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C201")
+			(value "1n C0G")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C201")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "2452e3a8-28e5-55d3-849a-c442bb4646ff")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C202")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C202")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "eed51cd3-80d1-5d28-aaef-8a46c04d4c62")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C203")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C203")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "db4264ee-5d73-5850-81f1-c4d02c5b19ec")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C204")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C204")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "34a124ca-914e-5f04-be91-5d629142f7ae")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C205")
+			(value "1u 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C205")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "e2636081-f213-5934-84a5-22718bda2926")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C206")
+			(value "1u 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C206")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "22fa0916-7be9-5db7-8f28-7e4a0a5365aa")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C207")
+			(value "22u 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C207")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "ee3fec9c-20dc-5da4-be98-5fe7031ee13a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C208")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C208")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "2acefad2-46a1-52f3-b5b5-9a6fcd045028")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C209")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C209")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "e6a85307-df3b-5035-9eee-d211cf324319")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C210")
+			(value "100n 10V")
+			(footprint "ato_s4:C_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "C210")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "c18e7e58-bfe0-5e3c-afde-8d5e91c41e0a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J200")
+			(value "SOURCE 1 RETURN SHUNT")
+			(footprint "ato_s4:PinHeader_1x02_P2.54mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x02_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "J200")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "d9ba9348-a1e5-5cec-89aa-56b9e1c8a962")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J201")
+			(value "SOURCE 1 DRIVER PERMISSION")
+			(footprint "ato_s4:PinHeader_1x03_P2.54mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x03_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "J201")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "1a96bb14-5fd6-5e0c-b71d-8d1eab5efc04")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R200")
+			(value "2R 0.1% KELVIN")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R200")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "2e33a9c4-7040-5800-8e2b-8f28f20128b9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R201")
+			(value "10k 0.1%")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R201")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "02a981d1-9662-5e8a-9d34-be24a477278d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R202")
+			(value "33R")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R202")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "9600367d-ccba-54fd-ace1-a25baa89c839")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R203")
+			(value "100k")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R203")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "5405e75c-9e8f-5e77-a2c1-565abcb39bf9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R204")
+			(value "100k")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R204")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "bbf849ed-d529-5bc5-a003-683bc382ca00")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R205")
+			(value "100k")
+			(footprint "ato_s4:R_0805_2012Metric")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "R205")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "6154045a-b3ed-5a29-b37e-a8570ae938b8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U200")
+			(value "INA241A2IDR")
+			(footprint "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm")
+			(datasheet "https://www.ti.com/lit/ds/symlink/ina241a.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/ina241a.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U200")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "48563e87-a5ed-5e01-b48c-c0437b2b1ac7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U201")
+			(value "OPA391DCKR")
+			(footprint "ato_s4:SOT-353_SC-70-5")
+			(datasheet "https://www.ti.com/lit/ds/symlink/opa391.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/opa391.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U201")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "f0d8150d-c280-58eb-bd0e-16d958887d6d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U202")
+			(value "OPA391DCKR")
+			(footprint "ato_s4:SOT-353_SC-70-5")
+			(datasheet "https://www.ti.com/lit/ds/symlink/opa391.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/opa391.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U202")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "ffd44029-b51a-5e93-8de1-58afaf87f01f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U203")
+			(value "ADS8866IDGSR")
+			(footprint "ato_s4:MSOP-10_3x3mm_P0.5mm")
+			(datasheet "https://www.ti.com/lit/ds/symlink/ads8866.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:MSOP-10_3x3mm_P0.5mm")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/ads8866.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U203")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "f5543d08-2c84-5a91-a059-9812b6f3064d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "7")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U204")
+			(value "TLV3202IDR")
+			(footprint "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm")
+			(datasheet "https://www.ti.com/lit/ds/symlink/tlv3202.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/tlv3202.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U204")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "38d946d7-334c-536c-ad58-d032df7e3057")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "7")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U205")
+			(value "SN74LVC1G11DBVR")
+			(footprint "ato_s4:SOT-23-6")
+			(datasheet "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:SOT-23-6")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U205")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "d876f973-b810-5812-9771-fbe064a891ec")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U206")
+			(value "SN74LVC1G74DCUR")
+			(footprint "ato_s4:VSSOP-8_2.3x2mm_P0.5mm")
+			(datasheet "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf")
+			(fields
+				(field
+					(name "Footprint") "ato_s4:VSSOP-8_2.3x2mm_P0.5mm")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "ATO_S4")
+				(part "U206")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Source1_monitor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "channel1.kicad_sch")
+			)
+			(sheetpath
+				(names "/Source1_monitor/")
+				(tstamps "/5c1578f7-3033-55ae-a5cb-02c82db8c119/")
+			)
+			(tstamps "eb4ec7d3-79f3-5548-8276-bbafc3ec5297")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "ATO_S4")
+			(part "C1")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "1u 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C100")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "22n 0.5% C0G")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C101")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "1n C0G")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C102")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C103")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C104")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C105")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "1u 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C106")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "1u 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C107")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "22u 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C108")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C109")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C110")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C2")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "1u 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C200")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "22n 0.5% C0G")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C201")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "1n C0G")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C202")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C203")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C204")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C205")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "1u 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C206")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "1u 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C207")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "22u 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C208")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C209")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C210")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C3")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "C4")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100n 10V")
+				(field
+					(name "Footprint") "ato_s4:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "J1")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "LAB RAILS ONLY")
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x03_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "3")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "J100")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "SOURCE 0 RETURN SHUNT")
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x02_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "J101")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "SOURCE 0 DRIVER PERMISSION")
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x03_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "3")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "J2")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "MCU ENDPOINT/CONTROL")
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x12_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "4")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "5")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "6")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "7")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "8")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "9")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "10")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "11")
+					(type "passive")
+				)
+				(pin
+					(num "12")
+					(name "12")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "J200")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "SOURCE 1 RETURN SHUNT")
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x02_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "J201")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "SOURCE 1 DRIVER PERMISSION")
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x03_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "3")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "J3")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "EXTERNAL SUPERVISION")
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x05_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "4")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "5")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "J4")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "CURRENT ADC INTERFACE")
+				(field
+					(name "Footprint") "ato_s4:PinHeader_1x04_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "4")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R1")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "10k 0.1%")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R100")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "2R 0.1% KELVIN")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R101")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "10k 0.1%")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R102")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "33R")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R103")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "100k")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R104")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "100k")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R105")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "100k")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R2")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "10k 0.1%")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R200")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "2R 0.1% KELVIN")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R201")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "10k 0.1%")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R202")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "33R")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R203")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "100k")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R204")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "100k")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R205")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "100k")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R3")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "10k 0.1%")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R4")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "19.1k 0.1%")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R5")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "10k 0.1%")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R6")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "100k")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "R7")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "100k")
+				(field
+					(name "Footprint") "ato_s4:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U1")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "REF3440DBVR")
+				(field
+					(name "Footprint") "ato_s4:SOT-23-6")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "GND_F")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "GND_S")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "EN")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "IN")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "OUT_S")
+					(type "input")
+				)
+				(pin
+					(num "6")
+					(name "OUT_F")
+					(type "power_out")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U100")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "INA241A2IDR")
+				(field
+					(name "Footprint") "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "IN-")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "REF2")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "NC=GND")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "OUT")
+					(type "output")
+				)
+				(pin
+					(num "6")
+					(name "VS")
+					(type "power_in")
+				)
+				(pin
+					(num "7")
+					(name "REF1")
+					(type "input")
+				)
+				(pin
+					(num "8")
+					(name "IN+")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U101")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "OPA391DCKR")
+				(field
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "IN+")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "V-")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "IN-")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "OUT")
+					(type "output")
+				)
+				(pin
+					(num "5")
+					(name "V+")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U102")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "OPA391DCKR")
+				(field
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "IN+")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "V-")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "IN-")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "OUT")
+					(type "output")
+				)
+				(pin
+					(num "5")
+					(name "V+")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U103")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "ADS8866IDGSR")
+				(field
+					(name "Footprint") "ato_s4:MSOP-10_3x3mm_P0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "REF")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "AVDD")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "AINP")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "AINN")
+					(type "input")
+				)
+				(pin
+					(num "5")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "6")
+					(name "CONVST")
+					(type "input")
+				)
+				(pin
+					(num "7")
+					(name "DOUT")
+					(type "tri_state")
+				)
+				(pin
+					(num "8")
+					(name "SCLK")
+					(type "input")
+				)
+				(pin
+					(num "9")
+					(name "DIN/CS_N")
+					(type "input")
+				)
+				(pin
+					(num "10")
+					(name "DVDD")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U104")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TLV3202IDR")
+				(field
+					(name "Footprint") "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "HI_OK")
+					(type "output")
+				)
+				(pin
+					(num "2")
+					(name "1IN-")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "1IN+")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "2IN+")
+					(type "input")
+				)
+				(pin
+					(num "6")
+					(name "2IN-")
+					(type "input")
+				)
+				(pin
+					(num "7")
+					(name "LO_OK")
+					(type "output")
+				)
+				(pin
+					(num "8")
+					(name "VCC")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U105")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "SN74LVC1G11DBVR")
+				(field
+					(name "Footprint") "ato_s4:SOT-23-6")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A_HI_OK")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "B_LO_OK")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "Y_CLR_N")
+					(type "output")
+				)
+				(pin
+					(num "5")
+					(name "VCC")
+					(type "power_in")
+				)
+				(pin
+					(num "6")
+					(name "C_EXT_SUP_OK")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U106")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "SN74LVC1G74DCUR")
+				(field
+					(name "Footprint") "ato_s4:VSSOP-8_2.3x2mm_P0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "CLK_REARM")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "D")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "Q_N")
+					(type "output")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "Q_PERMIT")
+					(type "output")
+				)
+				(pin
+					(num "6")
+					(name "CLR_N")
+					(type "input")
+				)
+				(pin
+					(num "7")
+					(name "PRE_N")
+					(type "input")
+				)
+				(pin
+					(num "8")
+					(name "VCC")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U2")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "OPA391DCKR")
+				(field
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "IN+")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "V-")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "IN-")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "OUT")
+					(type "output")
+				)
+				(pin
+					(num "5")
+					(name "V+")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U200")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "INA241A2IDR")
+				(field
+					(name "Footprint") "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "IN-")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "REF2")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "NC=GND")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "OUT")
+					(type "output")
+				)
+				(pin
+					(num "6")
+					(name "VS")
+					(type "power_in")
+				)
+				(pin
+					(num "7")
+					(name "REF1")
+					(type "input")
+				)
+				(pin
+					(num "8")
+					(name "IN+")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U201")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "OPA391DCKR")
+				(field
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "IN+")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "V-")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "IN-")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "OUT")
+					(type "output")
+				)
+				(pin
+					(num "5")
+					(name "V+")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U202")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "OPA391DCKR")
+				(field
+					(name "Footprint") "ato_s4:SOT-353_SC-70-5")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "IN+")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "V-")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "IN-")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "OUT")
+					(type "output")
+				)
+				(pin
+					(num "5")
+					(name "V+")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U203")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "ADS8866IDGSR")
+				(field
+					(name "Footprint") "ato_s4:MSOP-10_3x3mm_P0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "REF")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "AVDD")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "AINP")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "AINN")
+					(type "input")
+				)
+				(pin
+					(num "5")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "6")
+					(name "CONVST")
+					(type "input")
+				)
+				(pin
+					(num "7")
+					(name "DOUT")
+					(type "tri_state")
+				)
+				(pin
+					(num "8")
+					(name "SCLK")
+					(type "input")
+				)
+				(pin
+					(num "9")
+					(name "DIN/CS_N")
+					(type "input")
+				)
+				(pin
+					(num "10")
+					(name "DVDD")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U204")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TLV3202IDR")
+				(field
+					(name "Footprint") "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "HI_OK")
+					(type "output")
+				)
+				(pin
+					(num "2")
+					(name "1IN-")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "1IN+")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "2IN+")
+					(type "input")
+				)
+				(pin
+					(num "6")
+					(name "2IN-")
+					(type "input")
+				)
+				(pin
+					(num "7")
+					(name "LO_OK")
+					(type "output")
+				)
+				(pin
+					(num "8")
+					(name "VCC")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U205")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "SN74LVC1G11DBVR")
+				(field
+					(name "Footprint") "ato_s4:SOT-23-6")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A_HI_OK")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "B_LO_OK")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "Y_CLR_N")
+					(type "output")
+				)
+				(pin
+					(num "5")
+					(name "VCC")
+					(type "power_in")
+				)
+				(pin
+					(num "6")
+					(name "C_EXT_SUP_OK")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U206")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "SN74LVC1G74DCUR")
+				(field
+					(name "Footprint") "ato_s4:VSSOP-8_2.3x2mm_P0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "CLK_REARM")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "D")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "Q_N")
+					(type "output")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "Q_PERMIT")
+					(type "output")
+				)
+				(pin
+					(num "6")
+					(name "CLR_N")
+					(type "input")
+				)
+				(pin
+					(num "7")
+					(name "PRE_N")
+					(type "input")
+				)
+				(pin
+					(num "8")
+					(name "VCC")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "ATO_S4")
+			(part "U3")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TMUX1136DGSR")
+				(field
+					(name "Footprint") "ato_s4:MSOP-10_3x3mm_P0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "SEL1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "S1A_OPEN")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "4")
+					(name "S2A_OPEN")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "SEL2")
+					(type "input")
+				)
+				(pin
+					(num "6")
+					(name "D2")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "S2B_RESET")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "VDD")
+					(type "power_in")
+				)
+				(pin
+					(num "9")
+					(name "S1B_RESET")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "D1")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "ATO_S4")
+			(uri "${KIPRJMOD}/ATO_S4.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "+3V3")
+			(class "Default")
+			(node
+				(ref "C105")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C106")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C109")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C110")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C205")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C206")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C209")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C210")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U103")
+				(pin "10")
+				(pinfunction "DVDD_10")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U103")
+				(pin "2")
+				(pinfunction "AVDD_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U105")
+				(pin "5")
+				(pinfunction "VCC_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U106")
+				(pin "2")
+				(pinfunction "D_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U106")
+				(pin "7")
+				(pinfunction "PRE_N_7")
+				(pintype "input")
+			)
+			(node
+				(ref "U106")
+				(pin "8")
+				(pinfunction "VCC_8")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U203")
+				(pin "10")
+				(pinfunction "DVDD_10")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U203")
+				(pin "2")
+				(pinfunction "AVDD_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U205")
+				(pin "5")
+				(pinfunction "VCC_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U206")
+				(pin "2")
+				(pinfunction "D_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U206")
+				(pin "7")
+				(pinfunction "PRE_N_7")
+				(pintype "input")
+			)
+			(node
+				(ref "U206")
+				(pin "8")
+				(pinfunction "VCC_8")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "2")
+			(name "+5VA")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C102")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C103")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C104")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C108")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C202")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C203")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C204")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C208")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "EN_3")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "IN_4")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U100")
+				(pin "6")
+				(pinfunction "VS_6")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U101")
+				(pin "5")
+				(pinfunction "V+_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U102")
+				(pin "5")
+				(pinfunction "V+_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U104")
+				(pin "8")
+				(pinfunction "VCC_8")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "5")
+				(pinfunction "V+_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U200")
+				(pin "6")
+				(pinfunction "VS_6")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U201")
+				(pin "5")
+				(pinfunction "V+_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U202")
+				(pin "5")
+				(pinfunction "V+_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U204")
+				(pin "8")
+				(pinfunction "VCC_8")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U3")
+				(pin "8")
+				(pinfunction "VDD_8")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "3")
+			(name "CH0_ADC_BUF")
+			(class "Default")
+			(node
+				(ref "R102")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U102")
+				(pin "3")
+				(pinfunction "IN-_3")
+				(pintype "input")
+			)
+			(node
+				(ref "U102")
+				(pin "4")
+				(pinfunction "OUT_4")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "4")
+			(name "CH0_ADC_IN")
+			(class "Default")
+			(node
+				(ref "C101")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R102")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U103")
+				(pin "3")
+				(pinfunction "AINP_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "5")
+			(name "CH0_CLEAR_N")
+			(class "Default")
+			(node
+				(ref "U105")
+				(pin "4")
+				(pinfunction "Y_CLR_N_4")
+				(pintype "output")
+			)
+			(node
+				(ref "U106")
+				(pin "6")
+				(pinfunction "CLR_N_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "6")
+			(name "CH0_CNV")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U103")
+				(pin "6")
+				(pinfunction "CONVST_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "7")
+			(name "CH0_CS_N")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U103")
+				(pin "9")
+				(pinfunction "DIN/CS_N_9")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "8")
+			(name "CH0_DOUT")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U103")
+				(pin "7")
+				(pinfunction "DOUT_7")
+				(pintype "tri_state")
+			)
+		)
+		(net
+			(code "9")
+			(name "CH0_EXT_SUP_OK")
+			(class "Default")
+			(node
+				(ref "J101")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R103")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U105")
+				(pin "6")
+				(pinfunction "C_EXT_SUP_OK_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "10")
+			(name "CH0_HI_OK")
+			(class "Default")
+			(node
+				(ref "U104")
+				(pin "1")
+				(pinfunction "HI_OK_1")
+				(pintype "output")
+			)
+			(node
+				(ref "U105")
+				(pin "1")
+				(pinfunction "A_HI_OK_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "11")
+			(name "CH0_INT_RUN")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "8")
+				(pinfunction "8_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "1")
+				(pinfunction "SEL1_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "12")
+			(name "CH0_I_MON")
+			(class "Default")
+			(node
+				(ref "J4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R101")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U100")
+				(pin "5")
+				(pinfunction "OUT_5")
+				(pintype "output")
+			)
+			(node
+				(ref "U104")
+				(pin "2")
+				(pinfunction "1IN-_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U104")
+				(pin "5")
+				(pinfunction "2IN+_5")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "13")
+			(name "CH0_LO_OK")
+			(class "Default")
+			(node
+				(ref "U104")
+				(pin "7")
+				(pinfunction "LO_OK_7")
+				(pintype "output")
+			)
+			(node
+				(ref "U105")
+				(pin "3")
+				(pinfunction "B_LO_OK_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "14")
+			(name "CH0_PERMIT")
+			(class "Default")
+			(node
+				(ref "J101")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R105")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U106")
+				(pin "5")
+				(pinfunction "Q_PERMIT_5")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "15")
+			(name "CH0_Q_INT")
+			(class "Default")
+			(node
+				(ref "C100")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U101")
+				(pin "4")
+				(pinfunction "OUT_4")
+				(pintype "output")
+			)
+			(node
+				(ref "U102")
+				(pin "1")
+				(pinfunction "IN+_1")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "9")
+				(pinfunction "S1B_RESET_9")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "CH0_REARM")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "10")
+				(pinfunction "10_10")
+				(pintype "passive")
+			)
+			(node
+				(ref "R104")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U106")
+				(pin "1")
+				(pinfunction "CLK_REARM_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "17")
+			(name "CH0_RETURN_DRIVER")
+			(class "Default")
+			(node
+				(ref "J100")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R100")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U100")
+				(pin "1")
+				(pinfunction "IN-_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "18")
+			(name "CH0_RETURN_LOAD")
+			(class "Default")
+			(node
+				(ref "J100")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R100")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U100")
+				(pin "8")
+				(pinfunction "IN+_8")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "19")
+			(name "CH0_SUM")
+			(class "Default")
+			(node
+				(ref "C100")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R101")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U101")
+				(pin "3")
+				(pinfunction "IN-_3")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "10")
+				(pinfunction "D1_10")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "20")
+			(name "CH1_ADC_BUF")
+			(class "Default")
+			(node
+				(ref "R202")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U202")
+				(pin "3")
+				(pinfunction "IN-_3")
+				(pintype "input")
+			)
+			(node
+				(ref "U202")
+				(pin "4")
+				(pinfunction "OUT_4")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "21")
+			(name "CH1_ADC_IN")
+			(class "Default")
+			(node
+				(ref "C201")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R202")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U203")
+				(pin "3")
+				(pinfunction "AINP_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "22")
+			(name "CH1_CLEAR_N")
+			(class "Default")
+			(node
+				(ref "U205")
+				(pin "4")
+				(pinfunction "Y_CLR_N_4")
+				(pintype "output")
+			)
+			(node
+				(ref "U206")
+				(pin "6")
+				(pinfunction "CLR_N_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "23")
+			(name "CH1_CNV")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "4")
+				(pinfunction "4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U203")
+				(pin "6")
+				(pinfunction "CONVST_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "24")
+			(name "CH1_CS_N")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "5")
+				(pinfunction "5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "U203")
+				(pin "9")
+				(pinfunction "DIN/CS_N_9")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "25")
+			(name "CH1_DOUT")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "6")
+				(pinfunction "6_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "U203")
+				(pin "7")
+				(pinfunction "DOUT_7")
+				(pintype "tri_state")
+			)
+		)
+		(net
+			(code "26")
+			(name "CH1_EXT_SUP_OK")
+			(class "Default")
+			(node
+				(ref "J201")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R203")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U205")
+				(pin "6")
+				(pinfunction "C_EXT_SUP_OK_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "27")
+			(name "CH1_HI_OK")
+			(class "Default")
+			(node
+				(ref "U204")
+				(pin "1")
+				(pinfunction "HI_OK_1")
+				(pintype "output")
+			)
+			(node
+				(ref "U205")
+				(pin "1")
+				(pinfunction "A_HI_OK_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "28")
+			(name "CH1_INT_RUN")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "9")
+				(pinfunction "9_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "5")
+				(pinfunction "SEL2_5")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "29")
+			(name "CH1_I_MON")
+			(class "Default")
+			(node
+				(ref "J4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R201")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U200")
+				(pin "5")
+				(pinfunction "OUT_5")
+				(pintype "output")
+			)
+			(node
+				(ref "U204")
+				(pin "2")
+				(pinfunction "1IN-_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U204")
+				(pin "5")
+				(pinfunction "2IN+_5")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "30")
+			(name "CH1_LO_OK")
+			(class "Default")
+			(node
+				(ref "U204")
+				(pin "7")
+				(pinfunction "LO_OK_7")
+				(pintype "output")
+			)
+			(node
+				(ref "U205")
+				(pin "3")
+				(pinfunction "B_LO_OK_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "31")
+			(name "CH1_PERMIT")
+			(class "Default")
+			(node
+				(ref "J201")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "4")
+				(pinfunction "4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "R205")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U206")
+				(pin "5")
+				(pinfunction "Q_PERMIT_5")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "32")
+			(name "CH1_Q_INT")
+			(class "Default")
+			(node
+				(ref "C200")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U201")
+				(pin "4")
+				(pinfunction "OUT_4")
+				(pintype "output")
+			)
+			(node
+				(ref "U202")
+				(pin "1")
+				(pinfunction "IN+_1")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "7")
+				(pinfunction "S2B_RESET_7")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "33")
+			(name "CH1_REARM")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "11")
+				(pinfunction "11_11")
+				(pintype "passive")
+			)
+			(node
+				(ref "R204")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U206")
+				(pin "1")
+				(pinfunction "CLK_REARM_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "34")
+			(name "CH1_RETURN_DRIVER")
+			(class "Default")
+			(node
+				(ref "J200")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R200")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U200")
+				(pin "1")
+				(pinfunction "IN-_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "35")
+			(name "CH1_RETURN_LOAD")
+			(class "Default")
+			(node
+				(ref "J200")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R200")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U200")
+				(pin "8")
+				(pinfunction "IN+_8")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "36")
+			(name "CH1_SUM")
+			(class "Default")
+			(node
+				(ref "C200")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R201")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U201")
+				(pin "3")
+				(pinfunction "IN-_3")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "6")
+				(pinfunction "D2_6")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "37")
+			(name "GND")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C101")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C102")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C103")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C104")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C105")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C106")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C107")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C108")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C109")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C110")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C201")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C202")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C203")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C204")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C205")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C206")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C207")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C208")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C209")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C210")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "J101")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "12")
+				(pinfunction "12_12")
+				(pintype "passive")
+			)
+			(node
+				(ref "J201")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "5")
+				(pinfunction "5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "4")
+				(pinfunction "4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "R103")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R104")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R105")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R203")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R204")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R205")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "GND_F_1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "GND_S_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U100")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U100")
+				(pin "4")
+				(pinfunction "NC=GND_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U101")
+				(pin "2")
+				(pinfunction "V-_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U102")
+				(pin "2")
+				(pinfunction "V-_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U103")
+				(pin "4")
+				(pinfunction "AINN_4")
+				(pintype "input")
+			)
+			(node
+				(ref "U103")
+				(pin "5")
+				(pinfunction "GND_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U104")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U105")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U106")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "V-_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U200")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U200")
+				(pin "4")
+				(pinfunction "NC=GND_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U201")
+				(pin "2")
+				(pinfunction "V-_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U202")
+				(pin "2")
+				(pinfunction "V-_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U203")
+				(pin "4")
+				(pinfunction "AINN_4")
+				(pintype "input")
+			)
+			(node
+				(ref "U203")
+				(pin "5")
+				(pinfunction "GND_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U204")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U205")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U206")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U3")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "38")
+			(name "I_HI")
+			(class "Default")
+			(node
+				(ref "R3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U104")
+				(pin "3")
+				(pinfunction "1IN+_3")
+				(pintype "input")
+			)
+			(node
+				(ref "U204")
+				(pin "3")
+				(pinfunction "1IN+_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "39")
+			(name "I_LO")
+			(class "Default")
+			(node
+				(ref "R4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U104")
+				(pin "6")
+				(pinfunction "2IN-_6")
+				(pintype "input")
+			)
+			(node
+				(ref "U204")
+				(pin "6")
+				(pinfunction "2IN-_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "40")
+			(name "MID_DIV")
+			(class "Default")
+			(node
+				(ref "R1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "1")
+				(pinfunction "IN+_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "41")
+			(name "MON_SCLK")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "7")
+				(pinfunction "7_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "U103")
+				(pin "8")
+				(pinfunction "SCLK_8")
+				(pintype "input")
+			)
+			(node
+				(ref "U203")
+				(pin "8")
+				(pinfunction "SCLK_8")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "42")
+			(name "V_MID")
+			(class "Default")
+			(node
+				(ref "J4")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U100")
+				(pin "3")
+				(pinfunction "REF2_3")
+				(pintype "input")
+			)
+			(node
+				(ref "U100")
+				(pin "7")
+				(pinfunction "REF1_7")
+				(pintype "input")
+			)
+			(node
+				(ref "U101")
+				(pin "1")
+				(pinfunction "IN+_1")
+				(pintype "input")
+			)
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "IN-_3")
+				(pintype "input")
+			)
+			(node
+				(ref "U2")
+				(pin "4")
+				(pinfunction "OUT_4")
+				(pintype "output")
+			)
+			(node
+				(ref "U200")
+				(pin "3")
+				(pinfunction "REF2_3")
+				(pintype "input")
+			)
+			(node
+				(ref "U200")
+				(pin "7")
+				(pinfunction "REF1_7")
+				(pintype "input")
+			)
+			(node
+				(ref "U201")
+				(pin "1")
+				(pinfunction "IN+_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "43")
+			(name "V_REF")
+			(class "Default")
+			(node
+				(ref "C107")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C207")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "OUT_S_5")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "OUT_F_6")
+				(pintype "power_out")
+			)
+			(node
+				(ref "U103")
+				(pin "1")
+				(pinfunction "REF_1")
+				(pintype "input")
+			)
+			(node
+				(ref "U203")
+				(pin "1")
+				(pinfunction "REF_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "44")
+			(name "unconnected-(U3-S1A_OPEN-Pad2)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "2")
+				(pinfunction "S1A_OPEN_2")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "45")
+			(name "unconnected-(U3-S2A_OPEN-Pad4)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "4")
+				(pinfunction "S2A_OPEN_4")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "46")
+			(name "unconnected-(U106-Q_N-Pad3)")
+			(class "Default")
+			(node
+				(ref "U106")
+				(pin "3")
+				(pinfunction "Q_N_3")
+				(pintype "output+no_connect")
+			)
+		)
+		(net
+			(code "47")
+			(name "unconnected-(U206-Q_N-Pad3)")
+			(class "Default")
+			(node
+				(ref "U206")
+				(pin "3")
+				(pinfunction "Q_N_3")
+				(pintype "output+no_connect")
+			)
+		)
+	)
+)

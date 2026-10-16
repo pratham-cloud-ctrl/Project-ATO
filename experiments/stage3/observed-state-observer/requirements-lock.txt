@@ -1,0 +1,4 @@
+# Exact environment used by the frozen study and portable checks.
+# Python == 3.12.14 (checked by verify_study.py).
+numpy==2.3.5
+scipy==1.18.1

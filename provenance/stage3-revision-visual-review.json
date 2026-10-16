@@ -1,0 +1,22 @@
+{
+  "schema": "ato.stage3.revision-figure-review.v1",
+  "date": "2026-10-09",
+  "method": "Rendered PNG inspected in Codex; companion SVG generated from the same Matplotlib figure.",
+  "scope": "Visual legibility and displayed evidence scope; not biological validation.",
+  "findings": [
+    "Teacher gates separate original/inverse generators and nominal/faster domains.",
+    "Forecast failures retain unchanged15mm line; source differences use their frozen allocations.",
+    "Precision ranges visibly distinguish8mm input assumption from implemented predictor/monitor evidence.",
+    "Revised labels and legend spacing inspected; no material clipping or overlap."
+  ],
+  "files": {
+    "docs/stage3/figures/mechanism-revision.png": {
+      "sha256": "25607c094000a7d1e2cada87a6beb77d2020086684d334ffcbc3095e77da6299",
+      "hash_scope": "exact PNG bytes"
+    },
+    "docs/stage3/figures/mechanism-revision.svg": {
+      "sha256": "cade2fc235499e9e296939f5c2af646d79f62ef838d6df81b3138ef3aa4f6011",
+      "hash_scope": "normalized UTF-8 LF text"
+    }
+  }
+}

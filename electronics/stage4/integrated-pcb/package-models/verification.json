@@ -1,0 +1,149 @@
+{
+  "schema": "ato.nominal-package-models.v1",
+  "scope": "Nominal package geometry; actual land-pattern pin coordinates; no vendor STEP or tolerance claim",
+  "height_policy": "Declared nominal visualization allocations for small ICs; TRACO and BT40F body dimensions from package descriptions. Not height/tolerance qualification.",
+  "axes": "X=footprintX,Y=-footprintY,Z=aboveboard; origin remains exact footprint datum",
+  "FreeCAD_version": [
+    "1",
+    "1",
+    "4"
+  ],
+  "models": [
+    {
+      "name": "Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm",
+      "STEP": "Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm.step",
+      "native": "Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm.FCStd",
+      "source_footprint": "electronics/stage4/current-driver/ato_drv.pretty/Texas_DRX_WSON-10_2.5x2.5mm_P0.5mm.kicad_mod",
+      "source_sha256_lf": "66c656075daa62a7cf0c08c3414117abbd65db6a990bcfaec5044797984bd379",
+      "actual_pad_count": 10,
+      "exported_solids": 11,
+      "valid": true,
+      "bound_dimensions_mm": [
+        2.6,
+        2.5,
+        0.85
+      ],
+      "volume_mm3": 5.2742047798900105,
+      "STEP_sha256": "bed3ffbece92b7383e7b4cda4f54d84d957623a8c246a775188d24c12ec5b5f9"
+    },
+    {
+      "name": "RHD2216_QFN56_8x8_P0.5_EP6.1",
+      "STEP": "RHD2216_QFN56_8x8_P0.5_EP6.1.step",
+      "native": "RHD2216_QFN56_8x8_P0.5_EP6.1.FCStd",
+      "source_footprint": "electronics/stage4/recording-front-end/ato_afe.pretty/RHD2216_QFN56_8x8_P0.5_EP6.1.kicad_mod",
+      "source_sha256_lf": "d6260d46d2659e4956a90602b0dce33d666e6de55cb8f5f8dbdc22a20a9e13a3",
+      "actual_pad_count": 57,
+      "exported_solids": 58,
+      "valid": true,
+      "bound_dimensions_mm": [
+        8.1,
+        8.1,
+        1.05
+      ],
+      "volume_mm3": 68.33770477989015,
+      "STEP_sha256": "ef7cf35fc30e46da3d48e3aa7dda64c7adfd603431d53cfd0a56f027e7498f39"
+    },
+    {
+      "name": "Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6",
+      "STEP": "Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6.step",
+      "native": "Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6.FCStd",
+      "source_footprint": "electronics/stage4/recording-front-end/ato_afe.pretty/Texas_RRP0016A_WQFN16_4x4_P0.65_EP2.6.kicad_mod",
+      "source_sha256_lf": "1a51771e94077aede2dba01e4f8783f785895d95c805d9bca65839eb439584cd",
+      "actual_pad_count": 17,
+      "exported_solids": 18,
+      "valid": true,
+      "bound_dimensions_mm": [
+        4.1,
+        4.1,
+        1.05
+      ],
+      "volume_mm3": 16.87870477989001,
+      "STEP_sha256": "55110b740b72bbaf3df2a51ce0e822a4d19795f8ade7ede2f75757620ca7c120"
+    },
+    {
+      "name": "VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm",
+      "STEP": "VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm.step",
+      "native": "VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm.FCStd",
+      "source_footprint": "electronics/stage4/power/ato_power.pretty/VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm.kicad_mod",
+      "source_sha256_lf": "f68d777c2406c4c6178fdba99f3938a0ec0b5a827706f5c64a08157ce5117714",
+      "actual_pad_count": 17,
+      "exported_solids": 18,
+      "valid": true,
+      "bound_dimensions_mm": [
+        3.1,
+        3.1,
+        1.05
+      ],
+      "volume_mm3": 9.468944779889995,
+      "STEP_sha256": "f0c5c44bd1fa0fe5780ff57a11df9922df440e56cf8f7a3eeb5fd528cbf6e6fb"
+    },
+    {
+      "name": "TRACO_TMR3_SIP8_21.8x9.1_P2.54",
+      "STEP": "TRACO_TMR3_SIP8_21.8x9.1_P2.54.step",
+      "native": "TRACO_TMR3_SIP8_21.8x9.1_P2.54.FCStd",
+      "source_footprint": "electronics/stage4/power/ato_power.pretty/TRACO_TMR3_SIP8_21.8x9.1_P2.54.kicad_mod",
+      "source_sha256_lf": "e7cf5411384f9913ee6abc99f1f3fc856c4c52aed3f621c1901dc24e4c31bdff",
+      "actual_pad_count": 7,
+      "exported_solids": 8,
+      "valid": true,
+      "bound_dimensions_mm": [
+        21.799999999999997,
+        9.1,
+        14.6
+      ],
+      "volume_mm3": 2227.805999999999,
+      "STEP_sha256": "621e2847b536ef532db8759689c7f76477a671600ba166aaa74c8868e16588a1"
+    },
+    {
+      "name": "Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm",
+      "STEP": "Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm.step",
+      "native": "Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm.FCStd",
+      "source_footprint": "electronics/stage4/power/ato_power.pretty/Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm.kicad_mod",
+      "source_sha256_lf": "a0c190509d7af85177ad4708efd3cc1e841b0c9668720f8abe0a74d0be5a8a03",
+      "actual_pad_count": 9,
+      "exported_solids": 10,
+      "valid": true,
+      "bound_dimensions_mm": [
+        4.76,
+        3.0,
+        1.15
+      ],
+      "volume_mm3": 11.279504779890011,
+      "STEP_sha256": "36d142757b7a579ca5f38a2055225781a2dbed0ea6ec8f1cdb2ee18b6d185184"
+    },
+    {
+      "name": "BT40F_Manufacturer_66Pad",
+      "STEP": "BT40F_Manufacturer_66Pad.step",
+      "native": "BT40F_Manufacturer_66Pad.FCStd",
+      "source_footprint": "electronics/stage4/controller-carrier/ato_controller.pretty/BT40F_Manufacturer_66Pad.kicad_mod",
+      "source_sha256_lf": "302cee76352b86d09e50c967946d1747f699aad3f360104f048a0b6424878547",
+      "actual_pad_count": 66,
+      "exported_solids": 68,
+      "valid": true,
+      "bound_dimensions_mm": [
+        15.7447,
+        21.0,
+        2.05
+      ],
+      "volume_mm3": 397.42502363199986,
+      "STEP_sha256": "31e10b4c39f63e34f64ead30bf811ee984cfdc46045ba37a04ee04e06c7527e4"
+    },
+    {
+      "name": "Texas_DRB0008A_VSON8_3x3_P0.65_EP1.5x1.75",
+      "STEP": "Texas_DRB0008A_VSON8_3x3_P0.65_EP1.5x1.75.step",
+      "native": "Texas_DRB0008A_VSON8_3x3_P0.65_EP1.5x1.75.FCStd",
+      "source_footprint": "electronics/stage4/integrated-pcb/integration/boards/supervision/ato_sup.pretty/Texas_DRB0008A_VSON8_3x3_P0.65_EP1.5x1.75.kicad_mod",
+      "source_sha256_lf": "f35d645d1bc619cf1a6dc5e5e59d61bb416709152be24716bbd59cb9083e3797",
+      "actual_pad_count": 9,
+      "exported_solids": 10,
+      "valid": true,
+      "bound_dimensions_mm": [
+        3.1,
+        3.0,
+        1.05
+      ],
+      "volume_mm3": 9.360804779890005,
+      "STEP_sha256": "7f60e4f4857eaaaed4bbd6e794f91e2697491fca26b20e3a2d809fa09d5d4c3c"
+    }
+  ]
+}

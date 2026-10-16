@@ -1,0 +1,93 @@
+from_package,from_ref,from_pin,from_net,to_package,to_ref,to_pin,to_net,purpose
+controller-carrier,J16,3,ROUTE_PRELOAD,contact-router,J2,3,ROUTE_PRELOAD_LATCH,Compiled firmware P0.02 ROUTE_PRELOAD physical header binding
+controller-carrier,J16,4,ROUTE_COMMIT,contact-router,J2,4,ROUTE_COMMIT,Compiled firmware P0.03 ROUTE_COMMIT physical header binding
+controller-carrier,J16,5,ROUTE_REARM,contact-router,J2,5,ROUTE_REARM,Compiled firmware P0.04 ROUTE_REARM physical header binding
+controller-carrier,J16,6,ACTIVE_ACK,contact-router,J4,7,ROUTE_ACTIVE_BITS_VERIFIED,Compiled firmware P0.05 ACTIVE_ACK physical header binding
+controller-carrier,J16,7,WANT0,contact-router,J3,1,CH0_WANT_ROUTE,Compiled firmware P0.06 WANT0 physical header binding
+controller-carrier,J16,8,WANT1,contact-router,J3,2,CH1_WANT_ROUTE,Compiled firmware P0.07 WANT1 physical header binding
+controller-carrier,J10,1,RAW_SCLK,monitoring-transport,J3,1,RAW_SCLK,Compiled firmware P0.08 RAW_SCLK physical header binding
+controller-carrier,J10,2,RAW_SDI,monitoring-transport,J3,2,RAW_SDI,Compiled firmware P0.09 RAW_SDI physical header binding
+controller-carrier,J10,3,RAW_SDO,monitoring-transport,J3,3,RAW_SDO,Compiled firmware P0.10 RAW_SDO physical header binding
+controller-carrier,J10,4,RAW_CS_N,monitoring-transport,J3,4,RAW_CS_N,Compiled firmware P0.11 RAW_CS_N physical header binding
+controller-carrier,J10,5,RAW_RST_N,monitoring-transport,J3,5,RAW_RST_N,Compiled firmware P0.12 RAW_RST_N physical header binding
+controller-carrier,J11,3,AFE_SCLK,recording-front-end,J2,3,HOST_SCLK,Compiled firmware P0.13 AFE_SCLK physical header binding
+controller-carrier,J11,4,AFE_MOSI,recording-front-end,J2,4,HOST_MOSI,Compiled firmware P0.14 AFE_MOSI physical header binding
+controller-carrier,J11,6,AFE_MISO,recording-front-end,J2,6,HOST_MISO,Compiled firmware P0.15 AFE_MISO physical header binding
+controller-carrier,J11,5,AFE_CS_ASSERT,recording-front-end,J2,5,HOST_CS_ASSERT,Compiled firmware P0.16 AFE_CS_ASSERT physical header binding
+controller-carrier,J11,7,AFE_CONNECT,recording-front-end,J2,7,HOST_CONNECT_CMD,Compiled firmware P0.17 AFE_CONNECT physical header binding
+controller-carrier,J11,8,AFE_RECORD,recording-front-end,J2,8,HOST_RECORD_CMD,Compiled firmware P0.18 AFE_RECORD physical header binding
+controller-carrier,J11,9,AFE_FAULT_N,recording-front-end,J2,9,HOST_FAULT_N,Compiled firmware P0.19 AFE_FAULT_N physical header binding
+controller-carrier,J12,1,MON_SCLK,monitoring-transport,J22,1,MON_SCLK,Compiled firmware P0.20 MON_SCLK physical header binding
+controller-carrier,J12,2,MON_MISO,monitoring-transport,J22,2,MON_MISO,Compiled firmware P0.21 MON_MISO physical header binding
+controller-carrier,J12,3,BOTH_CNV,monitoring-transport,J22,3,CH0_CNV,Compiled firmware P0.22 BOTH_CNV physical header binding
+controller-carrier,J12,5,BOTH_CNV,monitoring-transport,J22,5,CH1_CNV,Compiled firmware P0.22 BOTH_CNV physical header binding
+controller-carrier,J12,4,CS0,monitoring-transport,J22,4,CH0_CS_N,Compiled firmware P0.23 CS0 physical header binding
+controller-carrier,J12,6,CS1,monitoring-transport,J22,6,CH1_CS_N,Compiled firmware P0.24 CS1 physical header binding
+controller-carrier,J13,1,INT_RUN0,monitoring-transport,J20,8,CH0_INT_RUN,Compiled firmware P0.25 INT_RUN0 physical header binding
+controller-carrier,J13,2,INT_RUN1,monitoring-transport,J20,9,CH1_INT_RUN,Compiled firmware P0.26 INT_RUN1 physical header binding
+controller-carrier,J13,3,MON_REARM0,monitoring-transport,J20,10,CH0_MON_REARM,Compiled firmware P0.27 MON_REARM0 physical header binding
+controller-carrier,J13,4,MON_REARM1,monitoring-transport,J20,11,CH1_MON_REARM,Compiled firmware P0.28 MON_REARM1 physical header binding
+controller-carrier,J14,1,CTRL_SCLK,current-driver,J2,1,DAC_SCLK,Compiled firmware P0.29 CTRL_SCLK physical header binding
+controller-carrier,J16,2,CTRL_SCLK,contact-router,J2,2,ROUTE_SRCLK,Compiled firmware P0.29 CTRL_SCLK physical header binding
+controller-carrier,J14,3,CTRL_MOSI,current-driver,J2,3,DAC_SDIN,Compiled firmware P0.30 CTRL_MOSI physical header binding
+controller-carrier,J16,1,CTRL_MOSI,contact-router,J2,1,ROUTE_SER,Compiled firmware P0.30 CTRL_MOSI physical header binding
+controller-carrier,J14,2,DAC_SYNC_N,current-driver,J2,2,DAC_SYNC_N,Compiled firmware P0.31 DAC_SYNC_N physical header binding
+controller-carrier,J15,1,REQ0,current-driver,J3,1,CH0_REQUEST,Compiled firmware P1.00 REQ0 physical header binding
+controller-carrier,J18,4,REQ0,supervision,J3,4,CH0_REQUEST,Compiled firmware P1.00 REQ0 physical header binding
+controller-carrier,J15,5,REQ1,current-driver,J3,5,CH1_REQUEST,Compiled firmware P1.01 REQ1 physical header binding
+controller-carrier,J18,5,REQ1,supervision,J3,5,CH1_REQUEST,Compiled firmware P1.01 REQ1 physical header binding
+controller-carrier,J15,2,PLUS0,current-driver,J3,2,CH0_PLUS_RAW,Compiled firmware P1.02 PLUS0 physical header binding
+controller-carrier,J15,3,MINUS0,current-driver,J3,3,CH0_MINUS_RAW,Compiled firmware P1.03 MINUS0 physical header binding
+controller-carrier,J15,6,PLUS1,current-driver,J3,6,CH1_PLUS_RAW,Compiled firmware P1.04 PLUS1 physical header binding
+controller-carrier,J15,7,MINUS1,current-driver,J3,7,CH1_MINUS_RAW,Compiled firmware P1.05 MINUS1 physical header binding
+controller-carrier,J15,4,BOTH_DRV_REARM,current-driver,J3,4,CH0_REARM,Compiled firmware P1.06 BOTH_DRV_REARM physical header binding
+controller-carrier,J15,8,BOTH_DRV_REARM,current-driver,J3,8,CH1_REARM,Compiled firmware P1.06 BOTH_DRV_REARM physical header binding
+controller-carrier,J18,1,SUP_REARM,supervision,J3,1,SUP_REARM,Compiled firmware P1.07 SUP_REARM physical header binding
+controller-carrier,J18,2,FAULT_RESET,supervision,J3,2,FAULT_RESET,Compiled firmware P1.08 FAULT_RESET physical header binding
+controller-carrier,J18,3,WDI,supervision,J3,3,WDI,Compiled firmware P1.09 WDI physical header binding
+controller-carrier,J18,6,PHASE_REARM0,supervision,J3,10,CH0_PHASE_REARM,Compiled firmware P1.10 PHASE_REARM0 physical header binding
+controller-carrier,J18,7,PHASE_REARM1,supervision,J3,11,CH1_PHASE_REARM,Compiled firmware P1.11 PHASE_REARM1 physical header binding
+controller-carrier,J20,1,HOST_UART_TX,monitoring-transport,J7,1,HOST_UART_TX,Compiled firmware P1.12 HOST_UART_TX physical header binding
+controller-carrier,J20,2,HOST_UART_RX,monitoring-transport,J7,2,HOST_UART_RX,Compiled firmware P1.13 HOST_UART_RX physical header binding
+controller-carrier,J1,1,HOST_3V3,power,J3,3,HOST_3V3,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J1,2,GND,power,J3,7,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J10,6,GND,monitoring-transport,J3,6,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J11,1,HOST_3V3,recording-front-end,J2,1,HOST_3V3,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J11,2,GND,recording-front-end,J2,2,HOSTGND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J11,10,GND,recording-front-end,J2,10,HOSTGND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J12,7,GND,monitoring-transport,J22,7,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J13,5,GND,monitoring-transport,J20,12,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J14,4,GND,current-driver,J2,4,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J15,9,GND,current-driver,J3,9,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J16,9,GND,contact-router,J2,7,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J17,9,GND,contact-router,J6,9,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J18,8,GND,supervision,J3,12,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J19,19,GND,supervision,J5,13,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J20,3,HOST_3V3,monitoring-transport,J7,3,HOST_3V3,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J20,4,GND,monitoring-transport,J7,4,GND,Actual host-side harness supply/return; AFEAGND and COMP_GND remain separate
+controller-carrier,J17,1,CH0_ADDR0,contact-router,J6,1,CH0_ADDR0,Actual active-latch address readback to 165 sample bit 0
+controller-carrier,J17,2,CH0_ADDR1,contact-router,J6,2,CH0_ADDR1,Actual active-latch address readback to 165 sample bit 1
+controller-carrier,J17,3,CH0_ADDR2,contact-router,J6,3,CH0_ADDR2,Actual active-latch address readback to 165 sample bit 2
+controller-carrier,J17,4,CH0_ADDR3,contact-router,J6,4,CH0_ADDR3,Actual active-latch address readback to 165 sample bit 3
+controller-carrier,J17,5,CH1_ADDR0,contact-router,J6,5,CH1_ADDR0,Actual active-latch address readback to 165 sample bit 4
+controller-carrier,J17,6,CH1_ADDR1,contact-router,J6,6,CH1_ADDR1,Actual active-latch address readback to 165 sample bit 5
+controller-carrier,J17,7,CH1_ADDR2,contact-router,J6,7,CH1_ADDR2,Actual active-latch address readback to 165 sample bit 6
+controller-carrier,J17,8,CH1_ADDR3,contact-router,J6,8,CH1_ADDR3,Actual active-latch address readback to 165 sample bit 7
+controller-carrier,J19,1,RESET_READY,supervision,J5,1,RESET_READY,Native observed RESET_READY to serialized health bit 8
+controller-carrier,J19,2,RAILS_QUALIFIED,supervision,J5,2,RAILS_QUALIFIED,Native observed RAILS_QUALIFIED to serialized health bit 9
+controller-carrier,J19,3,WATCHDOG_OK,supervision,J5,3,WATCHDOG_OK,Native observed WATCHDOG_OK to serialized health bit 10
+controller-carrier,J19,4,AFE_ISOLATED_READY,supervision,J5,4,AFE_ISOLATED_READY,Native observed AFE_ISOLATED_READY to serialized health bit 11
+controller-carrier,J19,5,CH0_QUIESCENT_OK,supervision,J5,5,CH0_QUIESCENT_OK,Native observed CH0_QUIESCENT_OK to serialized health bit 12
+controller-carrier,J19,6,CH1_QUIESCENT_OK,supervision,J5,6,CH1_QUIESCENT_OK,Native observed CH1_QUIESCENT_OK to serialized health bit 13
+controller-carrier,J19,7,MON0_PERMIT,supervision,J4,5,MON0_PERMIT,Native observed MON0_PERMIT to serialized health bit 14
+controller-carrier,J19,8,MON1_PERMIT,supervision,J4,6,MON1_PERMIT,Native observed MON1_PERMIT to serialized health bit 15
+controller-carrier,J19,9,PWR_FAULT_N,power,J2,11,PWR_FAULT_N,Native observed PWR_FAULT_N to serialized health bit 16
+controller-carrier,J19,10,SUP_ARMED,supervision,J5,9,SUP_ARMED,Native observed SUP_ARMED to serialized health bit 17
+controller-carrier,J19,11,GLOBAL_GUARD_EN,supervision,J5,12,GLOBAL_GUARD_EN,Native observed GLOBAL_GUARD_EN to serialized health bit 18
+controller-carrier,J19,12,CH0_RUN,current-driver,J5,1,CH0_RUN,Native observed CH0_RUN to serialized health bit 19
+controller-carrier,J19,13,CH1_RUN,current-driver,J5,5,CH1_RUN,Native observed CH1_RUN to serialized health bit 20
+controller-carrier,J19,14,CH0_TIMER,current-driver,J5,4,CH0_TIMER,Native observed CH0_TIMER to serialized health bit 21
+controller-carrier,J19,15,CH1_TIMER,current-driver,J5,8,CH1_TIMER,Native observed CH1_TIMER to serialized health bit 22
+controller-carrier,J19,16,ROUTE_COMMAND_READY,contact-router,J5,1,ROUTE_COMMAND_READY,Native observed ROUTE_COMMAND_READY to serialized health bit 23
+controller-carrier,J19,17,CH0_TIMEOUT,current-driver,J5,3,CH0_TIMEOUT,Native observed CH0_TIMEOUT to serialized health bit 24
+controller-carrier,J19,18,CH1_TIMEOUT,current-driver,J5,7,CH1_TIMEOUT,Native observed CH1_TIMEOUT to serialized health bit 25

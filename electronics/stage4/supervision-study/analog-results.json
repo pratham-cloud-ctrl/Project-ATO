@@ -1,0 +1,725 @@
+{
+  "schema": "ato.stage4.supervision-analog.v1",
+  "date": "2026-10-14",
+  "scope": "Finite threshold corners, passive loading and artificial interrupted load; not biological or whole-implant validation",
+  "source_sha256_lf": "7a9be1c5d3f0449a5cd901ad0781fdd6e8d5b79446922587ea8f7ddad2f61666",
+  "assumptions": {
+    "resistor_fraction": 0.001,
+    "rail_bottom_R_ohm": 10000.0,
+    "TPS3700_rising_threshold_V": [
+      0.396,
+      0.404
+    ],
+    "TPS3700_falling_threshold_V": [
+      0.387,
+      0.4
+    ],
+    "TPS3700_UV_input_current_A": [
+      -2.5e-08,
+      2.5e-08
+    ],
+    "TPS3700_OV_input_current_A": [
+      -1.5e-08,
+      1.5e-08
+    ],
+    "comparator_offset_V_bound": 0.006,
+    "buffer_offset_V_allowance": 0.0006,
+    "monitor_signal_offset_V_allowance": 0.001,
+    "monitor_gain_fraction_allowance": 0.005,
+    "reference_V_nominal": 4.096,
+    "reference_fraction_allowance": 0.002,
+    "AFE_comp_bias_A_allowance": 2e-09,
+    "guard_on_delay_s_assumed": 5e-06,
+    "guard_off_delay_s_assumed": 5e-06,
+    "detector_delay_s_assumed": 2e-05,
+    "secondary_timer_max_s_model": 0.000264,
+    "watchdog_max_s": 0.23,
+    "guard_edge_injection_C_assumed": 3e-10,
+    "load_R_ohm_assumed": 1000.0,
+    "load_C_F_assumed": 2e-06,
+    "current_A_assumed": 0.003,
+    "independent_SUP_power_generation_implemented": false
+  },
+  "rail_windows": [
+    {
+      "rail": "SUP_3V3",
+      "nominal_magnitude_V": 3.3,
+      "declared_scaling_gain": 1.0,
+      "negative_monitor_gain_and_offset_included": null,
+      "nominal_UV_rising_V": 3.1,
+      "nominal_OV_rising_V": 3.5,
+      "dividers": {
+        "UV": {
+          "top_R_ohm": 67500.0,
+          "bottom_R_ohm": 10000.0
+        },
+        "OV": {
+          "top_R_ohm": 77500.0,
+          "bottom_R_ohm": 10000.0
+        }
+      },
+      "corner_bounds": {
+        "UV_rising_V": [
+          3.061973528159341,
+          3.138148646959459
+        ],
+        "UV_falling_V": [
+          2.99234490678072,
+          3.107094592905405
+        ],
+        "OV_rising_V": [
+          3.457706794368132,
+          3.542431930768268
+        ],
+        "OV_falling_V": [
+          3.3790961550074927,
+          3.507369868706206
+        ]
+      },
+      "startup_nominal_inside_all_rising_limits": true,
+      "nominal_OV_recovery_guaranteed": true
+    },
+    {
+      "rail": "SUP_5",
+      "nominal_magnitude_V": 5.0,
+      "declared_scaling_gain": 1.0,
+      "negative_monitor_gain_and_offset_included": null,
+      "nominal_UV_rising_V": 4.75,
+      "nominal_OV_rising_V": 5.25,
+      "dividers": {
+        "UV": {
+          "top_R_ohm": 108750.0,
+          "bottom_R_ohm": 10000.0
+        },
+        "OV": {
+          "top_R_ohm": 121250.0,
+          "bottom_R_ohm": 10000.0
+        }
+      },
+      "corner_bounds": {
+        "UV_rising_V": [
+          4.691179573145605,
+          4.809017264545796
+        ],
+        "UV_falling_V": [
+          4.584500127591159,
+          4.761430177458709
+        ],
+        "OV_rising_V": [
+          5.186089662156594,
+          5.314127375556807
+        ],
+        "OV_falling_V": [
+          5.068182694124626,
+          5.26153027845971
+        ]
+      },
+      "startup_nominal_inside_all_rising_limits": true,
+      "nominal_OV_recovery_guaranteed": true
+    },
+    {
+      "rail": "HOST_3V3",
+      "nominal_magnitude_V": 3.3,
+      "declared_scaling_gain": 1.0,
+      "negative_monitor_gain_and_offset_included": null,
+      "nominal_UV_rising_V": 3.1,
+      "nominal_OV_rising_V": 3.5,
+      "dividers": {
+        "UV": {
+          "top_R_ohm": 67500.0,
+          "bottom_R_ohm": 10000.0
+        },
+        "OV": {
+          "top_R_ohm": 77500.0,
+          "bottom_R_ohm": 10000.0
+        }
+      },
+      "corner_bounds": {
+        "UV_rising_V": [
+          3.061973528159341,
+          3.138148646959459
+        ],
+        "UV_falling_V": [
+          2.99234490678072,
+          3.107094592905405
+        ],
+        "OV_rising_V": [
+          3.457706794368132,
+          3.542431930768268
+        ],
+        "OV_falling_V": [
+          3.3790961550074927,
+          3.507369868706206
+        ]
+      },
+      "startup_nominal_inside_all_rising_limits": true,
+      "nominal_OV_recovery_guaranteed": true
+    },
+    {
+      "rail": "HOST_5",
+      "nominal_magnitude_V": 5.0,
+      "declared_scaling_gain": 1.0,
+      "negative_monitor_gain_and_offset_included": null,
+      "nominal_UV_rising_V": 4.75,
+      "nominal_OV_rising_V": 5.25,
+      "dividers": {
+        "UV": {
+          "top_R_ohm": 108750.0,
+          "bottom_R_ohm": 10000.0
+        },
+        "OV": {
+          "top_R_ohm": 121250.0,
+          "bottom_R_ohm": 10000.0
+        }
+      },
+      "corner_bounds": {
+        "UV_rising_V": [
+          4.691179573145605,
+          4.809017264545796
+        ],
+        "UV_falling_V": [
+          4.584500127591159,
+          4.761430177458709
+        ],
+        "OV_rising_V": [
+          5.186089662156594,
+          5.314127375556807
+        ],
+        "OV_falling_V": [
+          5.068182694124626,
+          5.26153027845971
+        ]
+      },
+      "startup_nominal_inside_all_rising_limits": true,
+      "nominal_OV_recovery_guaranteed": true
+    },
+    {
+      "rail": "HOST_15",
+      "nominal_magnitude_V": 15.0,
+      "declared_scaling_gain": 1.0,
+      "negative_monitor_gain_and_offset_included": null,
+      "nominal_UV_rising_V": 13.5,
+      "nominal_OV_rising_V": 16.5,
+      "dividers": {
+        "UV": {
+          "top_R_ohm": 327500.0,
+          "bottom_R_ohm": 10000.0
+        },
+        "OV": {
+          "top_R_ohm": 402500.0,
+          "bottom_R_ohm": 10000.0
+        }
+      },
+      "corner_bounds": {
+        "UV_rising_V": [
+          13.330908599587916,
+          13.669684175988486
+        ],
+        "UV_falling_V": [
+          13.027747510676827,
+          13.534421913726224
+        ],
+        "OV_rising_V": [
+          16.29712238365385,
+          16.703598092054552
+        ],
+        "OV_falling_V": [
+          15.926596159877626,
+          16.538275769732227
+        ]
+      },
+      "startup_nominal_inside_all_rising_limits": true,
+      "nominal_OV_recovery_guaranteed": true
+    },
+    {
+      "rail": "HOST_24",
+      "nominal_magnitude_V": 24.0,
+      "declared_scaling_gain": 1.0,
+      "negative_monitor_gain_and_offset_included": null,
+      "nominal_UV_rising_V": 22.8,
+      "nominal_OV_rising_V": 25.2,
+      "dividers": {
+        "UV": {
+          "top_R_ohm": 560000.0,
+          "bottom_R_ohm": 10000.0
+        },
+        "OV": {
+          "top_R_ohm": 619999.9999999999,
+          "bottom_R_ohm": 10000.0
+        }
+      },
+      "corner_bounds": {
+        "UV_rising_V": [
+          22.513706307692313,
+          23.08730729329329
+        ],
+        "UV_falling_V": [
+          22.001713300699308,
+          22.858858844844843
+        ],
+        "OV_rising_V": [
+          24.889654354945055,
+          25.51145544614614
+        ],
+        "OV_falling_V": [
+          24.32376924005994,
+          25.258958949649642
+        ]
+      },
+      "startup_nominal_inside_all_rising_limits": true,
+      "nominal_OV_recovery_guaranteed": true
+    },
+    {
+      "rail": "AFE_3V3",
+      "nominal_magnitude_V": 3.45,
+      "declared_scaling_gain": 1.0,
+      "negative_monitor_gain_and_offset_included": null,
+      "nominal_UV_rising_V": 3.34,
+      "nominal_OV_rising_V": 3.54,
+      "dividers": {
+        "UV": {
+          "top_R_ohm": 73500.0,
+          "bottom_R_ohm": 10000.0
+        },
+        "OV": {
+          "top_R_ohm": 78500.0,
+          "bottom_R_ohm": 10000.0
+        }
+      },
+      "corner_bounds": {
+        "UV_rising_V": [
+          3.2989489528846154,
+          3.381184082244744
+        ],
+        "UV_falling_V": [
+          3.223931120716783,
+          3.3477252233858854
+        ],
+        "OV_rising_V": [
+          3.4972126884890122,
+          3.582927826649149
+        ],
+        "OV_falling_V": [
+          3.417703847330171,
+          3.5474649637862856
+        ]
+      },
+      "startup_nominal_inside_all_rising_limits": true,
+      "nominal_OV_recovery_guaranteed": false
+    },
+    {
+      "rail": "AFE_P5",
+      "nominal_magnitude_V": 5.3,
+      "declared_scaling_gain": 1.0,
+      "negative_monitor_gain_and_offset_included": null,
+      "nominal_UV_rising_V": 5.2,
+      "nominal_OV_rising_V": 5.42,
+      "dividers": {
+        "UV": {
+          "top_R_ohm": 120000.0,
+          "bottom_R_ohm": 10000.0
+        },
+        "OV": {
+          "top_R_ohm": 125499.99999999999,
+          "bottom_R_ohm": 10000.0
+        }
+      },
+      "corner_bounds": {
+        "UV_rising_V": [
+          5.135508494505496,
+          5.264708705705705
+        ],
+        "UV_falling_V": [
+          5.01872427872128,
+          5.212612609609609
+        ],
+        "OV_rising_V": [
+          5.35398971217033,
+          5.48623493305055
+        ],
+        "OV_falling_V": [
+          5.232265386496004,
+          5.431934432550049
+        ]
+      },
+      "startup_nominal_inside_all_rising_limits": true,
+      "nominal_OV_recovery_guaranteed": false
+    },
+    {
+      "rail": "AFE_N5_MAG",
+      "nominal_magnitude_V": 5.1,
+      "declared_scaling_gain": 0.1,
+      "negative_monitor_gain_and_offset_included": true,
+      "nominal_UV_rising_V": 4.75,
+      "nominal_OV_rising_V": 5.5,
+      "dividers": {
+        "UV": {
+          "top_R_ohm": 1875.0,
+          "bottom_R_ohm": 10000.0
+        },
+        "OV": {
+          "top_R_ohm": 3750.0,
+          "bottom_R_ohm": 10000.0
+        }
+      },
+      "corner_bounds": {
+        "UV_rising_V": [
+          4.684568485578639,
+          4.815706327329111
+        ],
+        "UV_falling_V": [
+          4.57794067096069,
+          4.7680961871589105
+        ],
+        "OV_rising_V": [
+          5.42401094755588,
+          5.576336428056622
+        ],
+        "OV_falling_V": [
+          5.3005754981401605,
+          5.521196227796302
+        ]
+      },
+      "startup_nominal_inside_all_rising_limits": true,
+      "nominal_OV_recovery_guaranteed": true
+    }
+  ],
+  "comparator_windows": [
+    {
+      "function": "quiet",
+      "corner_rows": 1024,
+      "unit": "A",
+      "accepted_union": [
+        -0.0004942722878016622,
+        0.0004942722878016622
+      ],
+      "accepted_intersection": [
+        -8.361560961652069e-06,
+        8.361560961652069e-06
+      ],
+      "empty_window_corner_count": 0,
+      "nominal_half_window": 0.00025,
+      "sensor_error_status": "Declared allowance, not measured finished circuit",
+      "full_difference_amplifier_resistor_CMRR_model": null
+    },
+    {
+      "function": "pair",
+      "corner_rows": 1024,
+      "unit": "V",
+      "accepted_union": [
+        -22.335831653814022,
+        22.33583165381401
+      ],
+      "accepted_intersection": [
+        -21.664723760644275,
+        21.664723760644282
+      ],
+      "empty_window_corner_count": 0,
+      "nominal_half_window": 21.998557114228458,
+      "sensor_error_status": "Declared allowance, not measured finished circuit",
+      "full_difference_amplifier_resistor_CMRR_model": false
+    }
+  ],
+  "difference_amplifier": {
+    "corners": 16384,
+    "accepted_union_V": [
+      -22.26270901002138,
+      22.33865438634
+    ],
+    "accepted_intersection_V": [
+      -21.73540785294433,
+      21.659688967062138
+    ],
+    "common_mode_B_envelope_V": [
+      0.0,
+      24.0
+    ],
+    "amplifier_offset_allowance_V": 0.0005,
+    "resistor_mismatch_and_common_mode_included": true,
+    "rail_saturation_dynamic_response_and_guard_drop_proven": false,
+    "full_pair_voltage_measured_at": "Internal A_BR minus B_BR before router/monitor/18guard interposer"
+  },
+  "AFE_blank_observation": {
+    "corner_rows": 1024,
+    "pin_voltage_accepted_union_V": [
+      -0.2636600843192399,
+      0.26365557879817597
+    ],
+    "pin_voltage_accepted_intersection_V": [
+      -0.04917020058587961,
+      0.05130513264662326
+    ],
+    "all_corners_include_zero": true,
+    "guaranteed_below_RHD_0p4_DC_under_declared_bounds": true,
+    "switch_state_or_isolation_proven": false,
+    "AC_linearity_or_recovery_proven": false,
+    "loading_fixture": [
+      {
+        "case": "positive_nominal",
+        "source_resistance_ohm": 25002.1,
+        "added_input_DC_V": 0.007804316723181473,
+        "probe_bias_A": 3.129268802978926e-07,
+        "linear_AC_range_proven": false
+      },
+      {
+        "case": "reference_nominal",
+        "source_resistance_ohm": 7002.1,
+        "added_input_DC_V": 0.002193181414661313,
+        "probe_bias_A": 3.134369835077581e-07,
+        "linear_AC_range_proven": false
+      },
+      {
+        "case": "positive_adverse",
+        "source_resistance_ohm": 1005002.1,
+        "added_input_DC_V": 0.2644640615318629,
+        "probe_bias_A": 2.895941762243761e-07,
+        "linear_AC_range_proven": false
+      }
+    ],
+    "monitored_pins": 17
+  },
+  "RC_holds": [
+    {
+      "function": "startup_cold",
+      "R_ohm": 100000.0,
+      "C_F": 4.7e-08,
+      "initial_V_assumed": 0.0,
+      "R_fraction": 0.01,
+      "C_fraction": 0.1,
+      "threshold_V_assumed": [
+        1.48,
+        2.74
+      ],
+      "driving_high_V_assumed": [
+        3.0,
+        3.6
+      ],
+      "net_charge_leakage_A_assumed": [
+        -5e-06,
+        7e-06
+      ],
+      "min_rise_s_under_assumptions": 0.0017702842594910192,
+      "max_finite_rise_s_under_assumptions": 0.01130720178843052,
+      "nonreleasing_corner_count": 4,
+      "all_corner_upper_bound_earned": false,
+      "thresholds_are_direct_3p3V_datasheet_limits": false,
+      "reset_discharge_time_or_V0_guaranteed": false
+    },
+    {
+      "function": "startup_reset",
+      "R_ohm": 100000.0,
+      "C_F": 4.7e-08,
+      "initial_V_assumed": 0.6,
+      "R_fraction": 0.01,
+      "C_fraction": 0.1,
+      "threshold_V_assumed": [
+        1.48,
+        2.74
+      ],
+      "driving_high_V_assumed": [
+        3.0,
+        3.6
+      ],
+      "net_charge_leakage_A_assumed": [
+        -5e-06,
+        7e-06
+      ],
+      "min_rise_s_under_assumptions": 0.0011398400391651052,
+      "max_finite_rise_s_under_assumptions": 0.010181929736239069,
+      "nonreleasing_corner_count": 4,
+      "all_corner_upper_bound_earned": false,
+      "thresholds_are_direct_3p3V_datasheet_limits": false,
+      "reset_discharge_time_or_V0_guaranteed": false
+    },
+    {
+      "function": "quiet_dwell",
+      "R_ohm": 3300.0,
+      "C_F": 1e-08,
+      "initial_V_assumed": 0.0,
+      "R_fraction": 0.01,
+      "C_fraction": 0.05,
+      "threshold_V_assumed": [
+        1.48,
+        2.74
+      ],
+      "driving_high_V_assumed": [
+        3.0,
+        3.6
+      ],
+      "net_charge_leakage_A_assumed": [
+        -5e-06,
+        7e-06
+      ],
+      "min_rise_s_under_assumptions": 1.6297907612819526e-05,
+      "max_finite_rise_s_under_assumptions": 8.771375727433432e-05,
+      "nonreleasing_corner_count": 0,
+      "all_corner_upper_bound_earned": true,
+      "thresholds_are_direct_3p3V_datasheet_limits": false,
+      "reset_discharge_time_or_V0_guaranteed": false
+    }
+  ],
+  "interruptions": [
+    {
+      "case": "normal_single_phase",
+      "scope": "Normal request ending",
+      "cutoff_authority_in_fixture": true,
+      "guard_open_s": 5e-06,
+      "observed_command_trip_s": 0.0002,
+      "guard_close_s": 0.00020500000000000002,
+      "energized_observation_end_s": 0.00020500000000000002,
+      "current_A": 0.003,
+      "external_port_charge_C": 6.000000000000001e-07,
+      "selected_pair_edge_injection_absolute_C": 6e-10,
+      "sum18_contact_one_edge_injection_absolute_C": 5.4e-09,
+      "load_voltage_at_observation_end_V": 0.2854877458921213,
+      "stored_energy_at_observation_end_J": 8.150325305456441e-08,
+      "internal_load_discharge_charge_C": 5.709754917842426e-07,
+      "external_shunt_after_cutoff_current_A": 0.0,
+      "load_R_ohm": 1000.0,
+      "load_C_F": 2e-06,
+      "finite_trace_end_s": 0.012,
+      "trace_key": "normal_single_phase",
+      "dose_accuracy_or_tissue_safety_earned": false
+    },
+    {
+      "case": "primary_timer_stuck_secondary_healthy",
+      "scope": "Healthy independent secondary limit",
+      "cutoff_authority_in_fixture": true,
+      "guard_open_s": 5e-06,
+      "observed_command_trip_s": 0.000264,
+      "guard_close_s": 0.00026900000000000003,
+      "energized_observation_end_s": 0.00026900000000000003,
+      "current_A": 0.003,
+      "external_port_charge_C": 7.920000000000001e-07,
+      "selected_pair_edge_injection_absolute_C": 6e-10,
+      "sum18_contact_one_edge_injection_absolute_C": 5.4e-09,
+      "load_voltage_at_observation_end_V": 0.3709770147618801,
+      "stored_energy_at_observation_end_J": 1.3762394548163622e-07,
+      "internal_load_discharge_charge_C": 7.419540295237602e-07,
+      "external_shunt_after_cutoff_current_A": 0.0,
+      "load_R_ohm": 1000.0,
+      "load_C_F": 2e-06,
+      "finite_trace_end_s": 0.012,
+      "trace_key": "primary_timer_stuck_secondary_healthy",
+      "dose_accuracy_or_tissue_safety_earned": false
+    },
+    {
+      "case": "secondary_stuck_primary_healthy",
+      "scope": "Healthy original primary limit",
+      "cutoff_authority_in_fixture": true,
+      "guard_open_s": 5e-06,
+      "observed_command_trip_s": 0.00023516,
+      "guard_close_s": 0.00024016,
+      "energized_observation_end_s": 0.00024016,
+      "current_A": 0.003,
+      "external_port_charge_C": 7.0548e-07,
+      "selected_pair_edge_injection_absolute_C": 6e-10,
+      "sum18_contact_one_edge_injection_absolute_C": 5.4e-09,
+      "load_voltage_at_observation_end_V": 0.33279184994795363,
+      "stored_energy_at_observation_end_J": 1.1075041539178129e-07,
+      "internal_load_discharge_charge_C": 6.655836998959073e-07,
+      "external_shunt_after_cutoff_current_A": 0.0,
+      "load_R_ohm": 1000.0,
+      "load_C_F": 2e-06,
+      "finite_trace_end_s": 0.012,
+      "trace_key": "secondary_stuck_primary_healthy",
+      "dose_accuracy_or_tissue_safety_earned": false
+    },
+    {
+      "case": "rail_fault_at_80us",
+      "scope": "Assumed detector latency",
+      "cutoff_authority_in_fixture": true,
+      "guard_open_s": 5e-06,
+      "observed_command_trip_s": 0.0001,
+      "guard_close_s": 0.000105,
+      "energized_observation_end_s": 0.000105,
+      "current_A": 0.003,
+      "external_port_charge_C": 3.0000000000000004e-07,
+      "selected_pair_edge_injection_absolute_C": 6e-10,
+      "sum18_contact_one_edge_injection_absolute_C": 5.4e-09,
+      "load_voltage_at_observation_end_V": 0.146311726497858,
+      "stored_energy_at_observation_end_J": 2.1407121310784e-08,
+      "internal_load_discharge_charge_C": 2.92623452995716e-07,
+      "external_shunt_after_cutoff_current_A": 0.0,
+      "load_R_ohm": 1000.0,
+      "load_C_F": 2e-06,
+      "finite_trace_end_s": 0.012,
+      "trace_key": "rail_fault_at_80us",
+      "dose_accuracy_or_tissue_safety_earned": false
+    },
+    {
+      "case": "monitor_fault_at_80us",
+      "scope": "Assumed observation latency",
+      "cutoff_authority_in_fixture": true,
+      "guard_open_s": 5e-06,
+      "observed_command_trip_s": 0.0001,
+      "guard_close_s": 0.000105,
+      "energized_observation_end_s": 0.000105,
+      "current_A": 0.003,
+      "external_port_charge_C": 3.0000000000000004e-07,
+      "selected_pair_edge_injection_absolute_C": 6e-10,
+      "sum18_contact_one_edge_injection_absolute_C": 5.4e-09,
+      "load_voltage_at_observation_end_V": 0.146311726497858,
+      "stored_energy_at_observation_end_J": 2.1407121310784e-08,
+      "internal_load_discharge_charge_C": 2.92623452995716e-07,
+      "external_shunt_after_cutoff_current_A": 0.0,
+      "load_R_ohm": 1000.0,
+      "load_C_F": 2e-06,
+      "finite_trace_end_s": 0.012,
+      "trace_key": "monitor_fault_at_80us",
+      "dose_accuracy_or_tissue_safety_earned": false
+    },
+    {
+      "case": "both_timers_stuck_watchdog_healthy",
+      "scope": "Multiple fault; heartbeat only",
+      "cutoff_authority_in_fixture": true,
+      "guard_open_s": 5e-06,
+      "observed_command_trip_s": 0.23,
+      "guard_close_s": 0.23000500000000001,
+      "energized_observation_end_s": 0.23000500000000001,
+      "current_A": 0.003,
+      "external_port_charge_C": 0.0006900000000000001,
+      "selected_pair_edge_injection_absolute_C": 6e-10,
+      "sum18_contact_one_edge_injection_absolute_C": 5.4e-09,
+      "load_voltage_at_observation_end_V": 3.0,
+      "stored_energy_at_observation_end_J": 9e-06,
+      "internal_load_discharge_charge_C": 6e-06,
+      "external_shunt_after_cutoff_current_A": 0.0,
+      "load_R_ohm": 1000.0,
+      "load_C_F": 2e-06,
+      "finite_trace_end_s": 0.24000500000000002,
+      "trace_key": "both_timers_stuck_watchdog_healthy",
+      "dose_accuracy_or_tissue_safety_earned": false
+    },
+    {
+      "case": "driver_and_both_pair_guards_welded",
+      "scope": "Exposed finite5ms witness; no cutoff authority",
+      "cutoff_authority_in_fixture": false,
+      "guard_open_s": 5e-06,
+      "observed_command_trip_s": 0.005,
+      "guard_close_s": null,
+      "energized_observation_end_s": 0.005,
+      "current_A": 0.003,
+      "external_port_charge_C": 1.4985000000000001e-05,
+      "selected_pair_edge_injection_absolute_C": 3e-10,
+      "sum18_contact_one_edge_injection_absolute_C": 5.4e-09,
+      "load_voltage_at_observation_end_V": 2.7531285964500722,
+      "stored_energy_at_observation_end_J": 7.579717068591144e-06,
+      "internal_load_discharge_charge_C": null,
+      "external_shunt_after_cutoff_current_A": null,
+      "load_R_ohm": 1000.0,
+      "load_C_F": 2e-06,
+      "finite_trace_end_s": 0.005,
+      "trace_key": "driver_and_both_pair_guards_welded",
+      "dose_accuracy_or_tissue_safety_earned": false
+    }
+  ],
+  "secondary_timer_nominal_s": 0.000250112,
+  "secondary_timer_declared_min_s": 0.00023886796492799997,
+  "secondary_timer_declared_max_s": 0.00026137804492799995,
+  "provisional_interphase_quiet_allocation_s": 0.0002,
+  "old_100us_interphase_gap_earned": false,
+  "open_guard_external_fault_leakage_assumption_A_per_pin": 0.0001,
+  "sum18_external_fault_leakage_assumption_A": 0.0018000000000000002,
+  "zero_current_after_all_faults_claimed": false
+}

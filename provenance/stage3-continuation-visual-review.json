@@ -1,0 +1,38 @@
+{
+  "schema": "ato.stage3.continuation-figure-review.v1",
+  "date": "2026-10-09",
+  "method": "Rendered PNGs inspected in Codex during the continuation; companion SVGs use the same Matplotlib figures.",
+  "scope": "Legibility and displayed model scope, not numerical or biological validation.",
+  "findings": [
+    "Motor figure separates historical failed endpoint grids from the tested midpoint recommendation and bounded closed-loop evidence.",
+    "Pressure figure retains all136 group maxima and visibly marks12 groups with decision sensitivity.",
+    "Acquisition figure labels its digital range-bounded reference and the chosen2.4microvolt allocation; final nonnegative symlog axis reviewed.",
+    "Titles, axes, labels and legends fit without material clipping or overlap."
+  ],
+  "files": {
+    "docs/stage3/figures/motor-numerical-verification.png": {
+      "sha256": "b0c94ad6f17218e9abfcd2d72801a2f04fabc8c7681ac07c495795a57bbd7499",
+      "hash_scope": "exact PNG bytes"
+    },
+    "docs/stage3/figures/motor-numerical-verification.svg": {
+      "sha256": "aba39d5e02e3fa8b676d5245827c3e9d5cd8773accc030d48002c8e3edff5e9d",
+      "hash_scope": "UTF-8 normalized LF text"
+    },
+    "docs/stage3/figures/pressure-numerical-verification.png": {
+      "sha256": "e30379eef3b19e326776a8c57ec2ca08ea71d60864ae581cf6240f581f7fc9bb",
+      "hash_scope": "exact PNG bytes"
+    },
+    "docs/stage3/figures/pressure-numerical-verification.svg": {
+      "sha256": "887d816763cf902f2bf9461e850b393debd1647c33e2ccee59fc1d7cb89c7896",
+      "hash_scope": "UTF-8 normalized LF text"
+    },
+    "docs/stage3/figures/acquisition-qualification.png": {
+      "sha256": "688c4138a1f85d2205c8612ba008a2ade5cbcc456c96559adc6113d0ddf92e1b",
+      "hash_scope": "exact PNG bytes"
+    },
+    "docs/stage3/figures/acquisition-qualification.svg": {
+      "sha256": "d26a5c27e486ae6776b2c72fc7908b8eee6119c6d17826cdb609eac976a34357",
+      "hash_scope": "UTF-8 normalized LF text"
+    }
+  }
+}

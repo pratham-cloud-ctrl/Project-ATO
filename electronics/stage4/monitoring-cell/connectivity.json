@@ -1,0 +1,2944 @@
+{
+  "schema": "ato.stage4.monitoring-cell.connectivity.v1",
+  "date": "2026-10-12",
+  "scope": "Artificial-load monitoring slice only; no analog qualification",
+  "parts": [
+    {
+      "ref": "J1",
+      "value": "LAB RAILS ONLY",
+      "kind": "J",
+      "footprint": "ato_s4:PinHeader_1x03_P2.54mm_Vertical",
+      "nets": {
+        "1": "+5VA",
+        "2": "+3V3",
+        "3": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        38.1,
+        45.72
+      ],
+      "sheet": "root",
+      "description": "Regulated external power, not a populated battery/converter/charger",
+      "source_url": ""
+    },
+    {
+      "ref": "J2",
+      "value": "MCU ENDPOINT/CONTROL",
+      "kind": "J",
+      "footprint": "ato_s4:PinHeader_1x12_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH0_CNV",
+        "2": "CH0_CS_N",
+        "3": "CH0_DOUT",
+        "4": "CH1_CNV",
+        "5": "CH1_CS_N",
+        "6": "CH1_DOUT",
+        "7": "MON_SCLK",
+        "8": "CH0_INT_RUN",
+        "9": "CH1_INT_RUN",
+        "10": "CH0_REARM",
+        "11": "CH1_REARM",
+        "12": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ],
+        [
+          6,
+          "6",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "7",
+          "passive",
+          "L"
+        ],
+        [
+          8,
+          "8",
+          "passive",
+          "L"
+        ],
+        [
+          9,
+          "9",
+          "passive",
+          "L"
+        ],
+        [
+          10,
+          "10",
+          "passive",
+          "L"
+        ],
+        [
+          11,
+          "11",
+          "passive",
+          "L"
+        ],
+        [
+          12,
+          "12",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        360.68,
+        45.72
+      ],
+      "sheet": "root",
+      "description": "3.3V MCU interface; external clocks/CS/rearm are unimplemented",
+      "source_url": ""
+    },
+    {
+      "ref": "J3",
+      "value": "EXTERNAL SUPERVISION",
+      "kind": "J",
+      "footprint": "ato_s4:PinHeader_1x05_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH0_EXT_SUP_OK",
+        "2": "CH1_EXT_SUP_OK",
+        "3": "CH0_PERMIT",
+        "4": "CH1_PERMIT",
+        "5": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        360.68,
+        137.16
+      ],
+      "sheet": "root",
+      "description": "EXT_SUP_OK must AND independent compliance, duration, watchdog, rails and reference health; not populated here",
+      "source_url": ""
+    },
+    {
+      "ref": "J4",
+      "value": "CURRENT ADC INTERFACE",
+      "kind": "J",
+      "footprint": "ato_s4:PinHeader_1x04_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH0_I_MON",
+        "2": "CH1_I_MON",
+        "3": "V_MID",
+        "4": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        360.68,
+        185.42
+      ],
+      "sheet": "root",
+      "description": "Separate current/health ADC and compliance front-end remain external",
+      "source_url": ""
+    },
+    {
+      "ref": "U1",
+      "value": "REF3440DBVR",
+      "kind": "ref",
+      "footprint": "ato_s4:SOT-23-6",
+      "nets": {
+        "1": "GND",
+        "2": "GND",
+        "3": "+5VA",
+        "4": "+5VA",
+        "5": "V_REF",
+        "6": "V_REF"
+      },
+      "pins": [
+        [
+          4,
+          "IN",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "EN",
+          "input",
+          "L"
+        ],
+        [
+          1,
+          "GND_F",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND_S",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "OUT_F",
+          "power_out",
+          "R"
+        ],
+        [
+          5,
+          "OUT_S",
+          "input",
+          "R"
+        ]
+      ],
+      "xy": [
+        106.68,
+        45.72
+      ],
+      "sheet": "root",
+      "description": "4.096V reference; sense tied locally to force in slice",
+      "source_url": "https://www.ti.com/lit/ds/symlink/ref34.pdf"
+    },
+    {
+      "ref": "U2",
+      "value": "OPA391DCKR",
+      "kind": "opa",
+      "footprint": "ato_s4:SOT-353_SC-70-5",
+      "nets": {
+        "1": "MID_DIV",
+        "2": "GND",
+        "3": "V_MID",
+        "4": "V_MID",
+        "5": "+5VA"
+      },
+      "pins": [
+        [
+          1,
+          "IN+",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "IN-",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "V+",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "V-",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "OUT",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        45.72
+      ],
+      "sheet": "root",
+      "description": "Buffered midpoint from reference; ADC reference remains separately bypassed",
+      "source_url": "https://www.ti.com/lit/ds/symlink/opa391.pdf"
+    },
+    {
+      "ref": "U3",
+      "value": "TMUX1136DGSR",
+      "kind": "mux",
+      "footprint": "ato_s4:MSOP-10_3x3mm_P0.5mm",
+      "nets": {
+        "1": "CH0_INT_RUN",
+        "2": null,
+        "3": "GND",
+        "4": null,
+        "5": "CH1_INT_RUN",
+        "6": "CH1_SUM",
+        "7": "CH1_Q_INT",
+        "8": "+5VA",
+        "9": "CH0_Q_INT",
+        "10": "CH0_SUM"
+      },
+      "pins": [
+        [
+          1,
+          "SEL1",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "SEL2",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "VDD",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          10,
+          "D1",
+          "passive",
+          "R"
+        ],
+        [
+          9,
+          "S1B_RESET",
+          "passive",
+          "R"
+        ],
+        [
+          2,
+          "S1A_OPEN",
+          "passive",
+          "R"
+        ],
+        [
+          6,
+          "D2",
+          "passive",
+          "R"
+        ],
+        [
+          7,
+          "S2B_RESET",
+          "passive",
+          "R"
+        ],
+        [
+          4,
+          "S2A_OPEN",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        294.64,
+        45.72
+      ],
+      "sheet": "root",
+      "description": "Low select closes B feedback reset; high select opens into unconnected A",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tmux1136.pdf"
+    },
+    {
+      "ref": "R1",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "V_REF",
+        "2": "MID_DIV"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        119.38
+      ],
+      "sheet": "root",
+      "description": "Midpoint divider upper",
+      "source_url": ""
+    },
+    {
+      "ref": "R2",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "MID_DIV",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        121.92,
+        119.38
+      ],
+      "sheet": "root",
+      "description": "Midpoint divider lower",
+      "source_url": ""
+    },
+    {
+      "ref": "R3",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "V_REF",
+        "2": "I_HI"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        144.78
+      ],
+      "sheet": "root",
+      "description": "Upper guard divider; no hard peak bound implied",
+      "source_url": ""
+    },
+    {
+      "ref": "R4",
+      "value": "19.1k 0.1%",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "I_HI",
+        "2": "I_LO"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        121.92,
+        144.78
+      ],
+      "sheet": "root",
+      "description": "Guard divider center",
+      "source_url": ""
+    },
+    {
+      "ref": "R5",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "I_LO",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        187.96,
+        144.78
+      ],
+      "sheet": "root",
+      "description": "Lower guard divider",
+      "source_url": ""
+    },
+    {
+      "ref": "C1",
+      "value": "1u 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+5VA",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        175.26
+      ],
+      "sheet": "root",
+      "description": "Reference input local bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C2",
+      "value": "1u 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "V_REF",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        121.92,
+        175.26
+      ],
+      "sheet": "root",
+      "description": "Reference output bypass; ADC pins each have22uF",
+      "source_url": ""
+    },
+    {
+      "ref": "C3",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+5VA",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        187.96,
+        175.26
+      ],
+      "sheet": "root",
+      "description": "Midpoint buffer supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C4",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+5VA",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        254,
+        175.26
+      ],
+      "sheet": "root",
+      "description": "Reset mux supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "R6",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_INT_RUN",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        55.88,
+        208.28
+      ],
+      "sheet": "root",
+      "description": "Default reset, not an output safety gate",
+      "source_url": ""
+    },
+    {
+      "ref": "R7",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_INT_RUN",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        121.92,
+        208.28
+      ],
+      "sheet": "root",
+      "description": "Default reset, not an output safety gate",
+      "source_url": ""
+    },
+    {
+      "ref": "J100",
+      "value": "SOURCE 0 RETURN SHUNT",
+      "kind": "J",
+      "footprint": "ato_s4:PinHeader_1x02_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH0_RETURN_LOAD",
+        "2": "CH0_RETURN_DRIVER"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        45.72,
+        45.72
+      ],
+      "sheet": "channel0",
+      "description": "Series dedicated return of an ARTIFICIAL load; no implicit body-ground isolation",
+      "source_url": ""
+    },
+    {
+      "ref": "R100",
+      "value": "2R 0.1% KELVIN",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_RETURN_LOAD",
+        "2": "CH0_RETURN_DRIVER"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        53.34,
+        76.2
+      ],
+      "sheet": "channel0",
+      "description": "Separate monitor shunt, not driver-servo resistor; qualify TCR/power and Kelvin layout",
+      "source_url": ""
+    },
+    {
+      "ref": "U100",
+      "value": "INA241A2IDR",
+      "kind": "ina",
+      "footprint": "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm",
+      "nets": {
+        "1": "CH0_RETURN_DRIVER",
+        "2": "GND",
+        "3": "V_MID",
+        "4": "GND",
+        "5": "CH0_I_MON",
+        "6": "+5VA",
+        "7": "V_MID",
+        "8": "CH0_RETURN_LOAD"
+      },
+      "pins": [
+        [
+          8,
+          "IN+",
+          "input",
+          "L"
+        ],
+        [
+          1,
+          "IN-",
+          "input",
+          "L"
+        ],
+        [
+          7,
+          "REF1",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "REF2",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "VS",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "NC=GND",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "OUT",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        111.76,
+        45.72
+      ],
+      "sheet": "channel0",
+      "description": "20V/V; A2 max15uV offset; NC pin4 explicitly ground; bias paths unqualified",
+      "source_url": "https://www.ti.com/lit/ds/symlink/ina241a.pdf"
+    },
+    {
+      "ref": "U101",
+      "value": "OPA391DCKR",
+      "kind": "opa",
+      "footprint": "ato_s4:SOT-353_SC-70-5",
+      "nets": {
+        "1": "V_MID",
+        "2": "GND",
+        "3": "CH0_SUM",
+        "4": "CH0_Q_INT",
+        "5": "+5VA"
+      },
+      "pins": [
+        [
+          1,
+          "IN+",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "IN-",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "V+",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "V-",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "OUT",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        45.72
+      ],
+      "sheet": "channel0",
+      "description": "Continuous signed integrator around2.048V",
+      "source_url": "https://www.ti.com/lit/ds/symlink/opa391.pdf"
+    },
+    {
+      "ref": "R101",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_I_MON",
+        "2": "CH0_SUM"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        175.26,
+        78.74
+      ],
+      "sheet": "channel0",
+      "description": "Integrator input resistor; continuous current integral",
+      "source_url": ""
+    },
+    {
+      "ref": "C100",
+      "value": "22n 0.5% C0G",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "CH0_SUM",
+        "2": "CH0_Q_INT"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        243.84,
+        78.74
+      ],
+      "sheet": "channel0",
+      "description": "Precision low-absorption feedback capacitor; tolerance/temperature require evidence",
+      "source_url": ""
+    },
+    {
+      "ref": "U102",
+      "value": "OPA391DCKR",
+      "kind": "opa",
+      "footprint": "ato_s4:SOT-353_SC-70-5",
+      "nets": {
+        "1": "CH0_Q_INT",
+        "2": "GND",
+        "3": "CH0_ADC_BUF",
+        "4": "CH0_ADC_BUF",
+        "5": "+5VA"
+      },
+      "pins": [
+        [
+          1,
+          "IN+",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "IN-",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "V+",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "V-",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "OUT",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        289.56,
+        45.72
+      ],
+      "sheet": "channel0",
+      "description": "Endpoint buffer; capacitive drive/settling must be modeled",
+      "source_url": "https://www.ti.com/lit/ds/symlink/opa391.pdf"
+    },
+    {
+      "ref": "U103",
+      "value": "ADS8866IDGSR",
+      "kind": "adc",
+      "footprint": "ato_s4:MSOP-10_3x3mm_P0.5mm",
+      "nets": {
+        "1": "V_REF",
+        "2": "+3V3",
+        "3": "CH0_ADC_IN",
+        "4": "GND",
+        "5": "GND",
+        "6": "CH0_CNV",
+        "7": "CH0_DOUT",
+        "8": "MON_SCLK",
+        "9": "CH0_CS_N",
+        "10": "+3V3"
+      },
+      "pins": [
+        [
+          3,
+          "AINP",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "AINN",
+          "input",
+          "L"
+        ],
+        [
+          1,
+          "REF",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "AVDD",
+          "power_in",
+          "L"
+        ],
+        [
+          10,
+          "DVDD",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          6,
+          "CONVST",
+          "input",
+          "R"
+        ],
+        [
+          9,
+          "DIN/CS_N",
+          "input",
+          "R"
+        ],
+        [
+          8,
+          "SCLK",
+          "input",
+          "R"
+        ],
+        [
+          7,
+          "DOUT",
+          "tri_state",
+          "R"
+        ]
+      ],
+      "xy": [
+        378.46,
+        45.72
+      ],
+      "sheet": "channel0",
+      "description": "Separate endpoint SAR; four-wire CS mode; AVDD/DVDD3.3V, reference4.096V",
+      "source_url": "https://www.ti.com/lit/ds/symlink/ads8866.pdf"
+    },
+    {
+      "ref": "R102",
+      "value": "33R",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_ADC_BUF",
+        "2": "CH0_ADC_IN"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        312.42,
+        78.74
+      ],
+      "sheet": "channel0",
+      "description": "ADC charge-kickback isolation; provisional settling network",
+      "source_url": ""
+    },
+    {
+      "ref": "C101",
+      "value": "1n C0G",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "CH0_ADC_IN",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        378.46,
+        78.74
+      ],
+      "sheet": "channel0",
+      "description": "Provisional ADC local reservoir, not verified settling",
+      "source_url": ""
+    },
+    {
+      "ref": "U104",
+      "value": "TLV3202IDR",
+      "kind": "cmp",
+      "footprint": "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm",
+      "nets": {
+        "1": "CH0_HI_OK",
+        "2": "CH0_I_MON",
+        "3": "I_HI",
+        "4": "GND",
+        "5": "CH0_I_MON",
+        "6": "I_LO",
+        "7": "CH0_LO_OK",
+        "8": "+5VA"
+      },
+      "pins": [
+        [
+          3,
+          "1IN+",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "1IN-",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "2IN+",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "2IN-",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "HI_OK",
+          "output",
+          "R"
+        ],
+        [
+          7,
+          "LO_OK",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        111.76,
+        137.16
+      ],
+      "sheet": "channel0",
+      "description": "Both outputs high only inside nominal current window; shared INA path is a common failure",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tlv3202.pdf"
+    },
+    {
+      "ref": "U105",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and",
+      "footprint": "ato_s4:SOT-23-6",
+      "nets": {
+        "1": "CH0_HI_OK",
+        "2": "GND",
+        "3": "CH0_LO_OK",
+        "4": "CH0_CLEAR_N",
+        "5": "+3V3",
+        "6": "CH0_EXT_SUP_OK"
+      },
+      "pins": [
+        [
+          1,
+          "A_HI_OK",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B_LO_OK",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C_EXT_SUP_OK",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y_CLR_N",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        137.16
+      ],
+      "sheet": "channel0",
+      "description": "5V-tolerant inputs; output3.3V to asynchronous latch clear",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf"
+    },
+    {
+      "ref": "U106",
+      "value": "SN74LVC1G74DCUR",
+      "kind": "ff",
+      "footprint": "ato_s4:VSSOP-8_2.3x2mm_P0.5mm",
+      "nets": {
+        "1": "CH0_REARM",
+        "2": "+3V3",
+        "3": null,
+        "4": "GND",
+        "5": "CH0_PERMIT",
+        "6": "CH0_CLEAR_N",
+        "7": "+3V3",
+        "8": "+3V3"
+      },
+      "pins": [
+        [
+          1,
+          "CLK_REARM",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "D",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "CLR_N",
+          "input",
+          "L"
+        ],
+        [
+          7,
+          "PRE_N",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "Q_PERMIT",
+          "output",
+          "R"
+        ],
+        [
+          3,
+          "Q_N",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        289.56,
+        137.16
+      ],
+      "sheet": "channel0",
+      "description": "Q cleared by fault; manual qualifying rearm rising edge; external power-up supervision required",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf"
+    },
+    {
+      "ref": "J101",
+      "value": "SOURCE 0 DRIVER PERMISSION",
+      "kind": "J",
+      "footprint": "ato_s4:PinHeader_1x03_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH0_PERMIT",
+        "2": "CH0_EXT_SUP_OK",
+        "3": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        378.46,
+        137.16
+      ],
+      "sheet": "channel0",
+      "description": "Driver must inhibit independently and remain off with no permit; driver absent",
+      "source_url": ""
+    },
+    {
+      "ref": "R103",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_EXT_SUP_OK",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        53.34,
+        175.26
+      ],
+      "sheet": "channel0",
+      "description": "Disconnected external supervisor means no permission",
+      "source_url": ""
+    },
+    {
+      "ref": "R104",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_REARM",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        121.92,
+        175.26
+      ],
+      "sheet": "channel0",
+      "description": "Disconnected rearm clock low",
+      "source_url": ""
+    },
+    {
+      "ref": "R105",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_PERMIT",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        190.5,
+        175.26
+      ],
+      "sheet": "channel0",
+      "description": "External driver permit default pulldown; not sufficient to certify all power sequences",
+      "source_url": ""
+    },
+    {
+      "ref": "C102",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+5VA",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        53.34,
+        210.82
+      ],
+      "sheet": "channel0",
+      "description": "INA supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C103",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+5VA",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        121.92,
+        210.82
+      ],
+      "sheet": "channel0",
+      "description": "Integrator supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C104",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+5VA",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        190.5,
+        210.82
+      ],
+      "sheet": "channel0",
+      "description": "Endpoint buffer supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C105",
+      "value": "1u 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        259.08,
+        210.82
+      ],
+      "sheet": "channel0",
+      "description": "ADC analog supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C106",
+      "value": "1u 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        327.66,
+        210.82
+      ],
+      "sheet": "channel0",
+      "description": "ADC digital supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C107",
+      "value": "22u 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "V_REF",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        53.34,
+        238.76
+      ],
+      "sheet": "channel0",
+      "description": "ADC reference local bypass >=10uF effective",
+      "source_url": ""
+    },
+    {
+      "ref": "C108",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+5VA",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        121.92,
+        238.76
+      ],
+      "sheet": "channel0",
+      "description": "Comparator supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C109",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        190.5,
+        238.76
+      ],
+      "sheet": "channel0",
+      "description": "AND logic supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C110",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        259.08,
+        238.76
+      ],
+      "sheet": "channel0",
+      "description": "Latch supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "J200",
+      "value": "SOURCE 1 RETURN SHUNT",
+      "kind": "J",
+      "footprint": "ato_s4:PinHeader_1x02_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH1_RETURN_LOAD",
+        "2": "CH1_RETURN_DRIVER"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        45.72,
+        45.72
+      ],
+      "sheet": "channel1",
+      "description": "Series dedicated return of an ARTIFICIAL load; no implicit body-ground isolation",
+      "source_url": ""
+    },
+    {
+      "ref": "R200",
+      "value": "2R 0.1% KELVIN",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_RETURN_LOAD",
+        "2": "CH1_RETURN_DRIVER"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        53.34,
+        76.2
+      ],
+      "sheet": "channel1",
+      "description": "Separate monitor shunt, not driver-servo resistor; qualify TCR/power and Kelvin layout",
+      "source_url": ""
+    },
+    {
+      "ref": "U200",
+      "value": "INA241A2IDR",
+      "kind": "ina",
+      "footprint": "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm",
+      "nets": {
+        "1": "CH1_RETURN_DRIVER",
+        "2": "GND",
+        "3": "V_MID",
+        "4": "GND",
+        "5": "CH1_I_MON",
+        "6": "+5VA",
+        "7": "V_MID",
+        "8": "CH1_RETURN_LOAD"
+      },
+      "pins": [
+        [
+          8,
+          "IN+",
+          "input",
+          "L"
+        ],
+        [
+          1,
+          "IN-",
+          "input",
+          "L"
+        ],
+        [
+          7,
+          "REF1",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "REF2",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "VS",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "NC=GND",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "OUT",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        111.76,
+        45.72
+      ],
+      "sheet": "channel1",
+      "description": "20V/V; A2 max15uV offset; NC pin4 explicitly ground; bias paths unqualified",
+      "source_url": "https://www.ti.com/lit/ds/symlink/ina241a.pdf"
+    },
+    {
+      "ref": "U201",
+      "value": "OPA391DCKR",
+      "kind": "opa",
+      "footprint": "ato_s4:SOT-353_SC-70-5",
+      "nets": {
+        "1": "V_MID",
+        "2": "GND",
+        "3": "CH1_SUM",
+        "4": "CH1_Q_INT",
+        "5": "+5VA"
+      },
+      "pins": [
+        [
+          1,
+          "IN+",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "IN-",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "V+",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "V-",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "OUT",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        45.72
+      ],
+      "sheet": "channel1",
+      "description": "Continuous signed integrator around2.048V",
+      "source_url": "https://www.ti.com/lit/ds/symlink/opa391.pdf"
+    },
+    {
+      "ref": "R201",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_I_MON",
+        "2": "CH1_SUM"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        175.26,
+        78.74
+      ],
+      "sheet": "channel1",
+      "description": "Integrator input resistor; continuous current integral",
+      "source_url": ""
+    },
+    {
+      "ref": "C200",
+      "value": "22n 0.5% C0G",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "CH1_SUM",
+        "2": "CH1_Q_INT"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        243.84,
+        78.74
+      ],
+      "sheet": "channel1",
+      "description": "Precision low-absorption feedback capacitor; tolerance/temperature require evidence",
+      "source_url": ""
+    },
+    {
+      "ref": "U202",
+      "value": "OPA391DCKR",
+      "kind": "opa",
+      "footprint": "ato_s4:SOT-353_SC-70-5",
+      "nets": {
+        "1": "CH1_Q_INT",
+        "2": "GND",
+        "3": "CH1_ADC_BUF",
+        "4": "CH1_ADC_BUF",
+        "5": "+5VA"
+      },
+      "pins": [
+        [
+          1,
+          "IN+",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "IN-",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "V+",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "V-",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "OUT",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        289.56,
+        45.72
+      ],
+      "sheet": "channel1",
+      "description": "Endpoint buffer; capacitive drive/settling must be modeled",
+      "source_url": "https://www.ti.com/lit/ds/symlink/opa391.pdf"
+    },
+    {
+      "ref": "U203",
+      "value": "ADS8866IDGSR",
+      "kind": "adc",
+      "footprint": "ato_s4:MSOP-10_3x3mm_P0.5mm",
+      "nets": {
+        "1": "V_REF",
+        "2": "+3V3",
+        "3": "CH1_ADC_IN",
+        "4": "GND",
+        "5": "GND",
+        "6": "CH1_CNV",
+        "7": "CH1_DOUT",
+        "8": "MON_SCLK",
+        "9": "CH1_CS_N",
+        "10": "+3V3"
+      },
+      "pins": [
+        [
+          3,
+          "AINP",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "AINN",
+          "input",
+          "L"
+        ],
+        [
+          1,
+          "REF",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "AVDD",
+          "power_in",
+          "L"
+        ],
+        [
+          10,
+          "DVDD",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          6,
+          "CONVST",
+          "input",
+          "R"
+        ],
+        [
+          9,
+          "DIN/CS_N",
+          "input",
+          "R"
+        ],
+        [
+          8,
+          "SCLK",
+          "input",
+          "R"
+        ],
+        [
+          7,
+          "DOUT",
+          "tri_state",
+          "R"
+        ]
+      ],
+      "xy": [
+        378.46,
+        45.72
+      ],
+      "sheet": "channel1",
+      "description": "Separate endpoint SAR; four-wire CS mode; AVDD/DVDD3.3V, reference4.096V",
+      "source_url": "https://www.ti.com/lit/ds/symlink/ads8866.pdf"
+    },
+    {
+      "ref": "R202",
+      "value": "33R",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_ADC_BUF",
+        "2": "CH1_ADC_IN"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        312.42,
+        78.74
+      ],
+      "sheet": "channel1",
+      "description": "ADC charge-kickback isolation; provisional settling network",
+      "source_url": ""
+    },
+    {
+      "ref": "C201",
+      "value": "1n C0G",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "CH1_ADC_IN",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        378.46,
+        78.74
+      ],
+      "sheet": "channel1",
+      "description": "Provisional ADC local reservoir, not verified settling",
+      "source_url": ""
+    },
+    {
+      "ref": "U204",
+      "value": "TLV3202IDR",
+      "kind": "cmp",
+      "footprint": "ato_s4:SOIC-8_3.9x4.9mm_P1.27mm",
+      "nets": {
+        "1": "CH1_HI_OK",
+        "2": "CH1_I_MON",
+        "3": "I_HI",
+        "4": "GND",
+        "5": "CH1_I_MON",
+        "6": "I_LO",
+        "7": "CH1_LO_OK",
+        "8": "+5VA"
+      },
+      "pins": [
+        [
+          3,
+          "1IN+",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "1IN-",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "2IN+",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "2IN-",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          1,
+          "HI_OK",
+          "output",
+          "R"
+        ],
+        [
+          7,
+          "LO_OK",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        111.76,
+        137.16
+      ],
+      "sheet": "channel1",
+      "description": "Both outputs high only inside nominal current window; shared INA path is a common failure",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tlv3202.pdf"
+    },
+    {
+      "ref": "U205",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and",
+      "footprint": "ato_s4:SOT-23-6",
+      "nets": {
+        "1": "CH1_HI_OK",
+        "2": "GND",
+        "3": "CH1_LO_OK",
+        "4": "CH1_CLEAR_N",
+        "5": "+3V3",
+        "6": "CH1_EXT_SUP_OK"
+      },
+      "pins": [
+        [
+          1,
+          "A_HI_OK",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "B_LO_OK",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "C_EXT_SUP_OK",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y_CLR_N",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        137.16
+      ],
+      "sheet": "channel1",
+      "description": "5V-tolerant inputs; output3.3V to asynchronous latch clear",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf"
+    },
+    {
+      "ref": "U206",
+      "value": "SN74LVC1G74DCUR",
+      "kind": "ff",
+      "footprint": "ato_s4:VSSOP-8_2.3x2mm_P0.5mm",
+      "nets": {
+        "1": "CH1_REARM",
+        "2": "+3V3",
+        "3": null,
+        "4": "GND",
+        "5": "CH1_PERMIT",
+        "6": "CH1_CLEAR_N",
+        "7": "+3V3",
+        "8": "+3V3"
+      },
+      "pins": [
+        [
+          1,
+          "CLK_REARM",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "D",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "CLR_N",
+          "input",
+          "L"
+        ],
+        [
+          7,
+          "PRE_N",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "Q_PERMIT",
+          "output",
+          "R"
+        ],
+        [
+          3,
+          "Q_N",
+          "output",
+          "R"
+        ]
+      ],
+      "xy": [
+        289.56,
+        137.16
+      ],
+      "sheet": "channel1",
+      "description": "Q cleared by fault; manual qualifying rearm rising edge; external power-up supervision required",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf"
+    },
+    {
+      "ref": "J201",
+      "value": "SOURCE 1 DRIVER PERMISSION",
+      "kind": "J",
+      "footprint": "ato_s4:PinHeader_1x03_P2.54mm_Vertical",
+      "nets": {
+        "1": "CH1_PERMIT",
+        "2": "CH1_EXT_SUP_OK",
+        "3": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        378.46,
+        137.16
+      ],
+      "sheet": "channel1",
+      "description": "Driver must inhibit independently and remain off with no permit; driver absent",
+      "source_url": ""
+    },
+    {
+      "ref": "R203",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_EXT_SUP_OK",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        53.34,
+        175.26
+      ],
+      "sheet": "channel1",
+      "description": "Disconnected external supervisor means no permission",
+      "source_url": ""
+    },
+    {
+      "ref": "R204",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_REARM",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        121.92,
+        175.26
+      ],
+      "sheet": "channel1",
+      "description": "Disconnected rearm clock low",
+      "source_url": ""
+    },
+    {
+      "ref": "R205",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_s4:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_PERMIT",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        190.5,
+        175.26
+      ],
+      "sheet": "channel1",
+      "description": "External driver permit default pulldown; not sufficient to certify all power sequences",
+      "source_url": ""
+    },
+    {
+      "ref": "C202",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+5VA",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        53.34,
+        210.82
+      ],
+      "sheet": "channel1",
+      "description": "INA supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C203",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+5VA",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        121.92,
+        210.82
+      ],
+      "sheet": "channel1",
+      "description": "Integrator supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C204",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+5VA",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        190.5,
+        210.82
+      ],
+      "sheet": "channel1",
+      "description": "Endpoint buffer supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C205",
+      "value": "1u 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        259.08,
+        210.82
+      ],
+      "sheet": "channel1",
+      "description": "ADC analog supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C206",
+      "value": "1u 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        327.66,
+        210.82
+      ],
+      "sheet": "channel1",
+      "description": "ADC digital supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C207",
+      "value": "22u 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "V_REF",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        53.34,
+        238.76
+      ],
+      "sheet": "channel1",
+      "description": "ADC reference local bypass >=10uF effective",
+      "source_url": ""
+    },
+    {
+      "ref": "C208",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+5VA",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        121.92,
+        238.76
+      ],
+      "sheet": "channel1",
+      "description": "Comparator supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C209",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        190.5,
+        238.76
+      ],
+      "sheet": "channel1",
+      "description": "AND logic supply bypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C210",
+      "value": "100n 10V",
+      "kind": "C",
+      "footprint": "ato_s4:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        259.08,
+        238.76
+      ],
+      "sheet": "channel1",
+      "description": "Latch supply bypass",
+      "source_url": ""
+    }
+  ],
+  "external_unimplemented": [
+    "driver/current servo and polarity bridge",
+    "HV16-contact routing and actual route evidence",
+    "separate current/health ADC",
+    "differential compliance",
+    "independent duration/watchdog/rail/reference supervision",
+    "MCU and target peripheral schedule",
+    "PCB and populated CAD"
+  ],
+  "nominal": {
+    "shunt_ohm": 2,
+    "sense_gain": 20,
+    "integrator_R_ohm": 10000,
+    "integrator_C_F": 2.2e-08,
+    "Vref_V": 4.096,
+    "Vmid_V": 2.048,
+    "current_gain_V_per_A": 40,
+    "charge_scale_C_per_V": 5.5e-06,
+    "nominal_phase_charge_C": 6e-07,
+    "nominal_delta_V": 0.10909090909090909,
+    "ideal_adc_charge_LSB_C": 3.4375e-10
+  },
+  "source_documents": {
+    "ina": "https://www.ti.com/lit/ds/symlink/ina241a.pdf",
+    "opa": "https://www.ti.com/lit/ds/symlink/opa391.pdf",
+    "adc": "https://www.ti.com/lit/ds/symlink/ads8866.pdf",
+    "mux": "https://www.ti.com/lit/ds/symlink/tmux1136.pdf",
+    "ref": "https://www.ti.com/lit/ds/symlink/ref34.pdf",
+    "cmp": "https://www.ti.com/lit/ds/symlink/tlv3202.pdf",
+    "and": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+    "ff": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf"
+  }
+}

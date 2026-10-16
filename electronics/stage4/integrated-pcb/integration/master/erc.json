@@ -1,0 +1,432 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-15T23:37:54",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d",
+            "violations": []
+        },
+        {
+            "path": "/monitoring-cell/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/628a466d-ba7e-5926-9452-724c7457074c",
+            "violations": []
+        },
+        {
+            "path": "/monitoring-cell/Source0_monitor/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/628a466d-ba7e-5926-9452-724c7457074c/6d0b58d6-5a3d-5f49-a77e-f3b81a8a2bdd",
+            "violations": []
+        },
+        {
+            "path": "/monitoring-cell/Source1_monitor/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/628a466d-ba7e-5926-9452-724c7457074c/5c1578f7-3033-55ae-a5cb-02c82db8c119",
+            "violations": []
+        },
+        {
+            "path": "/monitoring-cell/Integrated_component_taps/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/628a466d-ba7e-5926-9452-724c7457074c/de548957-7429-5def-abb8-0e8f41e71745",
+            "violations": []
+        },
+        {
+            "path": "/current-driver/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/2e83e4fd-359e-5f30-89ff-7071d9d0866e",
+            "violations": []
+        },
+        {
+            "path": "/current-driver/Source0_analog/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/2e83e4fd-359e-5f30-89ff-7071d9d0866e/b412ce82-1105-5b7b-8c7d-d84cf7742fae",
+            "violations": []
+        },
+        {
+            "path": "/current-driver/Source0_permission/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/2e83e4fd-359e-5f30-89ff-7071d9d0866e/4d7f74e3-c5c0-5e78-b702-2b48d668f182",
+            "violations": []
+        },
+        {
+            "path": "/current-driver/Source1_analog/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/2e83e4fd-359e-5f30-89ff-7071d9d0866e/bbd81c72-8085-5a3b-bc8e-484b3bb8ec2c",
+            "violations": []
+        },
+        {
+            "path": "/current-driver/Source1_permission/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/2e83e4fd-359e-5f30-89ff-7071d9d0866e/a033ede6-4321-5bbd-8ff5-958a04bad3a1",
+            "violations": []
+        },
+        {
+            "path": "/recording-front-end/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/b486adb1-a68f-5e86-9297-64b044268ccd",
+            "violations": []
+        },
+        {
+            "path": "/recording-front-end/acquisition/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/b486adb1-a68f-5e86-9297-64b044268ccd/3e931413-2889-58db-abdd-4cec72f15079",
+            "violations": []
+        },
+        {
+            "path": "/recording-front-end/bank0/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/b486adb1-a68f-5e86-9297-64b044268ccd/b88b7e86-d941-5a49-a2bb-d328ca04ee06",
+            "violations": []
+        },
+        {
+            "path": "/recording-front-end/bank1/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/b486adb1-a68f-5e86-9297-64b044268ccd/29a83ade-80f2-57bd-8b7f-ac0a7d778363",
+            "violations": []
+        },
+        {
+            "path": "/recording-front-end/bank2/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/b486adb1-a68f-5e86-9297-64b044268ccd/46a10f64-bb20-5348-939e-93bd12b175f4",
+            "violations": []
+        },
+        {
+            "path": "/recording-front-end/bank3/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/b486adb1-a68f-5e86-9297-64b044268ccd/b5adc5ab-b363-507c-8819-96d7e02279cc",
+            "violations": []
+        },
+        {
+            "path": "/recording-front-end/reference/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/b486adb1-a68f-5e86-9297-64b044268ccd/f1bd052f-da12-55fe-a768-f373569c7436",
+            "violations": []
+        },
+        {
+            "path": "/recording-front-end/Integrated_component_taps/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/b486adb1-a68f-5e86-9297-64b044268ccd/428f1d12-84ff-5054-8e31-1dc1ee6b4604",
+            "violations": []
+        },
+        {
+            "path": "/contact-router/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/5da0719b-b9d2-511a-9d11-a9a4bc12cf00",
+            "violations": []
+        },
+        {
+            "path": "/contact-router/source0/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/5da0719b-b9d2-511a-9d11-a9a4bc12cf00/1bb3dded-a140-5c75-9b05-7510f730adac",
+            "violations": []
+        },
+        {
+            "path": "/contact-router/source1/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/5da0719b-b9d2-511a-9d11-a9a4bc12cf00/c0254a63-59a3-5636-b878-60364f4656b3",
+            "violations": []
+        },
+        {
+            "path": "/contact-router/address/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/5da0719b-b9d2-511a-9d11-a9a4bc12cf00/87e476c2-0ce2-5064-aad6-db9bc85dcbff",
+            "violations": []
+        },
+        {
+            "path": "/contact-router/admission/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/5da0719b-b9d2-511a-9d11-a9a4bc12cf00/9c7ceeac-47af-5fc2-a124-78da748ec43d",
+            "violations": []
+        },
+        {
+            "path": "/contact-router/collision/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/5da0719b-b9d2-511a-9d11-a9a4bc12cf00/5452cc35-552c-5fcb-857f-827fff488701",
+            "violations": []
+        },
+        {
+            "path": "/supervision/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23",
+            "violations": []
+        },
+        {
+            "path": "/supervision/guards/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/ff81c479-29e8-5bb6-abc6-218c318d043c",
+            "violations": []
+        },
+        {
+            "path": "/supervision/host_rails/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/7e0d37a3-6e3d-59dc-8bc2-3cb3154e0dfe",
+            "violations": []
+        },
+        {
+            "path": "/supervision/host_rails_2/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/d454dd1a-307a-5a35-a7b7-75adb90a84ad",
+            "violations": []
+        },
+        {
+            "path": "/supervision/afe_rails/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/7f3ffb77-f817-5205-8d22-f70d6e2a3ef3",
+            "violations": []
+        },
+        {
+            "path": "/supervision/afe_rails_2/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/39237f6e-f3ae-572e-a406-c842466889fe",
+            "violations": []
+        },
+        {
+            "path": "/supervision/watchdog/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/2fc34268-2501-5e04-9dca-da0fa61376b2",
+            "violations": []
+        },
+        {
+            "path": "/supervision/quiescence/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/e86809e2-e22f-5abf-a0e2-06f0feeaedfe",
+            "violations": []
+        },
+        {
+            "path": "/supervision/voltage/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/6be1b312-f8e1-5f47-9a0c-9142fd0f7502",
+            "violations": []
+        },
+        {
+            "path": "/supervision/duration/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/0a3e7cad-d0b3-5832-b25b-b33eb9393d36",
+            "violations": []
+        },
+        {
+            "path": "/supervision/admission/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/0348d755-0aa8-56c6-a1a3-3779c88ba176",
+            "violations": []
+        },
+        {
+            "path": "/supervision/admission_2/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/bce973f2-9f61-5162-ac98-0e0ed7a2c143",
+            "violations": []
+        },
+        {
+            "path": "/supervision/phase0/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/cc072a12-cfd8-53d3-9cd7-d883fc665c4e",
+            "violations": []
+        },
+        {
+            "path": "/supervision/phase1/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/3a15b415-1d03-5b7e-9455-4dc2dd0be23b",
+            "violations": []
+        },
+        {
+            "path": "/supervision/afe_bank0/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/4aa4dfc2-26a1-5609-9698-a88574c2117d",
+            "violations": []
+        },
+        {
+            "path": "/supervision/afe_bank1/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/cca46d84-f69f-5262-8d32-47c656ff31da",
+            "violations": []
+        },
+        {
+            "path": "/supervision/afe_bank2/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/b9ef93bc-e155-5ae3-81bd-f4e6b92639fe",
+            "violations": []
+        },
+        {
+            "path": "/supervision/afe_bank3/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/78cb1146-e123-5b12-80d2-a2e1cc005417",
+            "violations": []
+        },
+        {
+            "path": "/supervision/afe_bank4/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/4895efc4-0869-517a-b11f-4a5ef02f8577",
+            "violations": []
+        },
+        {
+            "path": "/supervision/afe_logic/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/e6057815-9ad2-5211-b3e5-707fadde371d",
+            "violations": []
+        },
+        {
+            "path": "/supervision/afe_logic_2/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/f7471316-6c77-5e47-977d-4ea49c2b8fb7",
+            "violations": []
+        },
+        {
+            "path": "/supervision/defaults/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/26ab81e3-32d7-5857-9c1a-235fcc5c35ef",
+            "violations": []
+        },
+        {
+            "path": "/supervision/Integrated_component_taps/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/d93c5788-155d-57ae-a378-28bc5f76ac23/fe33a453-43ee-56c6-b390-c469f038a86f",
+            "violations": []
+        },
+        {
+            "path": "/power/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0",
+            "violations": []
+        },
+        {
+            "path": "/power/input/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/9cf9d8f3-9afc-5ab4-86f9-69f764afcf96",
+            "violations": []
+        },
+        {
+            "path": "/power/sup3/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/89ca6592-bf0d-59bc-8d56-4fd186ef9538",
+            "violations": []
+        },
+        {
+            "path": "/power/sup5/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/46556590-4c8b-50c9-b0cc-ce7439bebd85",
+            "violations": []
+        },
+        {
+            "path": "/power/host3/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/83342de3-57ea-55f1-847c-66d90cc12cba",
+            "violations": []
+        },
+        {
+            "path": "/power/host5/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/c89b1743-94f1-5f68-9831-4cb8d564524f",
+            "violations": []
+        },
+        {
+            "path": "/power/enable/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/8cda357d-bff1-5c46-93cf-62ab312f1ed8",
+            "violations": []
+        },
+        {
+            "path": "/power/enable_2/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/18174f0d-ecfc-5d7f-bdde-65738f018f18",
+            "violations": []
+        },
+        {
+            "path": "/power/enable_3/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/ea6916ee-24ac-5b90-ae69-08f0976595a8",
+            "violations": []
+        },
+        {
+            "path": "/power/boost15/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/bd31b7c1-2130-55f3-9970-1979734b4ef2",
+            "violations": []
+        },
+        {
+            "path": "/power/boost24/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/eb08a0bc-7a5d-513c-b779-35124cc20e33",
+            "violations": []
+        },
+        {
+            "path": "/power/island/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/4a283887-5855-55f7-9246-dd333eaf7f6c",
+            "violations": []
+        },
+        {
+            "path": "/power/afe3/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/edbc1995-1b61-556f-a5ee-1edca4b55a3a",
+            "violations": []
+        },
+        {
+            "path": "/power/afep/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/7c33edc9-b1e1-581c-8efa-f7dabfc59779",
+            "violations": []
+        },
+        {
+            "path": "/power/afen/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/dc7508aa-1d46-567b-adb4-ee73c67dc0e0/a8505644-e510-5c7d-b795-5da370fc8522",
+            "violations": []
+        },
+        {
+            "path": "/monitoring-transport/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/8e2816ba-dc2e-51bd-917b-1e3a56f53dfe",
+            "violations": []
+        },
+        {
+            "path": "/monitoring-transport/root_2/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/8e2816ba-dc2e-51bd-917b-1e3a56f53dfe/7880434a-48bf-506a-ac9d-6b78203ec772",
+            "violations": []
+        },
+        {
+            "path": "/monitoring-transport/adc/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/8e2816ba-dc2e-51bd-917b-1e3a56f53dfe/5d3e8d94-df0e-5999-98b6-9cb57ec7e02a",
+            "violations": []
+        },
+        {
+            "path": "/monitoring-transport/reference/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/8e2816ba-dc2e-51bd-917b-1e3a56f53dfe/c90f0fe5-ccc0-529d-967b-355ee0d26c3a",
+            "violations": []
+        },
+        {
+            "path": "/monitoring-transport/inputs/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/8e2816ba-dc2e-51bd-917b-1e3a56f53dfe/0a9a2965-5f72-5f9c-b91c-5debe4602283",
+            "violations": []
+        },
+        {
+            "path": "/monitoring-transport/health/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/8e2816ba-dc2e-51bd-917b-1e3a56f53dfe/74423b4b-11de-57d0-990e-540ff5f5e5f2",
+            "violations": []
+        },
+        {
+            "path": "/monitoring-transport/companion/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/8e2816ba-dc2e-51bd-917b-1e3a56f53dfe/5098c9ca-7662-55f9-abf2-1cee41be6148",
+            "violations": []
+        },
+        {
+            "path": "/monitoring-transport/handoff/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/8e2816ba-dc2e-51bd-917b-1e3a56f53dfe/380c03ad-d9bb-5a11-a4b3-1c5d618b6562",
+            "violations": []
+        },
+        {
+            "path": "/controller-carrier/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/178ce8de-aaaa-58d5-aa3c-ce67a9a89cb6",
+            "violations": []
+        },
+        {
+            "path": "/controller-carrier/processor/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/178ce8de-aaaa-58d5-aa3c-ce67a9a89cb6/c3f0c12c-73b2-5497-919a-c7d5d31b305f",
+            "violations": []
+        },
+        {
+            "path": "/controller-carrier/power/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/178ce8de-aaaa-58d5-aa3c-ce67a9a89cb6/c0ef80d0-6d9c-5a9b-8dcb-3844017fe984",
+            "violations": []
+        },
+        {
+            "path": "/controller-carrier/sideband/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/178ce8de-aaaa-58d5-aa3c-ce67a9a89cb6/6931257a-22a5-52cb-b29d-d20dcf362c23",
+            "violations": []
+        },
+        {
+            "path": "/controller-carrier/handoff/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/178ce8de-aaaa-58d5-aa3c-ce67a9a89cb6/3ae20c75-89a0-5ae2-875a-910f64c6992a",
+            "violations": []
+        },
+        {
+            "path": "/controller-carrier/handoff_2/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/178ce8de-aaaa-58d5-aa3c-ce67a9a89cb6/5f0b61b3-73e2-50bd-ac48-8ca1c028bfae",
+            "violations": []
+        },
+        {
+            "path": "/controller-carrier/handoff_3/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/178ce8de-aaaa-58d5-aa3c-ce67a9a89cb6/aadb8c04-a359-511d-877d-f66a50b6d14e",
+            "violations": []
+        },
+        {
+            "path": "/controller-carrier/defaults/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/178ce8de-aaaa-58d5-aa3c-ce67a9a89cb6/48aa9fce-09d3-5139-90ec-d0823db081a9",
+            "violations": []
+        },
+        {
+            "path": "/controller-carrier/defaults_2/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/178ce8de-aaaa-58d5-aa3c-ce67a9a89cb6/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae",
+            "violations": []
+        },
+        {
+            "path": "/controller-carrier/defaults_3/",
+            "uuid_path": "/3d9ac4eb-1e34-5980-86b3-6fa6f810252d/178ce8de-aaaa-58d5-aa3c-ce67a9a89cb6/0c803b5d-fb86-5e06-9ae9-dcb014921dfd",
+            "violations": []
+        }
+    ],
+    "source": "ATO_integrated.kicad_sch"
+}

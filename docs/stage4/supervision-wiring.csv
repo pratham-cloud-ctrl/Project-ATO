@@ -1,0 +1,103 @@
+from_package,from_ref,from_pin,from_net,to_package,to_ref,to_pin,to_net,purpose
+contact-router,J7,1,STIM00_CONTACT,supervision,J100,1,ROUTED_STIM00,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,2,STIM01_CONTACT,supervision,J100,2,ROUTED_STIM01,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,3,STIM02_CONTACT,supervision,J100,3,ROUTED_STIM02,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,4,STIM03_CONTACT,supervision,J100,4,ROUTED_STIM03,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,5,STIM04_CONTACT,supervision,J100,5,ROUTED_STIM04,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,6,STIM05_CONTACT,supervision,J100,6,ROUTED_STIM05,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,7,STIM06_CONTACT,supervision,J100,7,ROUTED_STIM06,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,8,STIM07_CONTACT,supervision,J100,8,ROUTED_STIM07,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,9,STIM08_CONTACT,supervision,J100,9,ROUTED_STIM08,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,10,STIM09_CONTACT,supervision,J100,10,ROUTED_STIM09,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,11,STIM10_CONTACT,supervision,J100,11,ROUTED_STIM10,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,12,STIM11_CONTACT,supervision,J100,12,ROUTED_STIM11,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,13,STIM12_CONTACT,supervision,J100,13,ROUTED_STIM12,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,14,STIM13_CONTACT,supervision,J100,14,ROUTED_STIM13,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,15,STIM14_CONTACT,supervision,J100,15,ROUTED_STIM14,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,16,STIM15_CONTACT,supervision,J100,16,ROUTED_STIM15,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,17,CH0_RETURN_LOAD,supervision,J100,17,ROUTED_RETURN0,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+contact-router,J7,18,CH1_RETURN_LOAD,supervision,J100,18,ROUTED_RETURN1,Canonical router output to guarded internal terminal; guards lie AFTER router/monitor
+recording-front-end,U10,9,AFE_IN00_P,supervision,J600,1,AFE_IN00_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,7,AFE_IN01_P,supervision,J601,1,AFE_IN01_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,5,AFE_IN02_P,supervision,J602,1,AFE_IN02_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,3,AFE_IN03_P,supervision,J603,1,AFE_IN03_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,1,AFE_IN04_P,supervision,J604,1,AFE_IN04_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,55,AFE_IN05_P,supervision,J605,1,AFE_IN05_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,53,AFE_IN06_P,supervision,J606,1,AFE_IN06_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,51,AFE_IN07_P,supervision,J607,1,AFE_IN07_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,49,AFE_IN08_P,supervision,J608,1,AFE_IN08_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,47,AFE_IN09_P,supervision,J609,1,AFE_IN09_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,45,AFE_IN10_P,supervision,J610,1,AFE_IN10_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,43,AFE_IN11_P,supervision,J611,1,AFE_IN11_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,41,AFE_IN12_P,supervision,J612,1,AFE_IN12_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,39,AFE_IN13_P,supervision,J613,1,AFE_IN13_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,37,AFE_IN14_P,supervision,J614,1,AFE_IN14_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,35,AFE_IN15_P,supervision,J615,1,AFE_IN15_P,Physical RHD positive pin observation; added DC loading included
+recording-front-end,U10,2,AFE_REF,supervision,J616,1,AFE_REF,Physical shared RHD reference observation; not body bias
+current-driver,J1,5,GND,supervision,J1,7,GND,Common host ground
+monitoring-cell,J1,3,GND,supervision,J1,7,GND,Common host ground
+contact-router,J1,3,GND,supervision,J1,7,GND,Common host ground
+recording-front-end,J2,2,HOSTGND,supervision,J1,7,GND,Host side of existing recording barrier
+recording-front-end,J1,4,AFEAGND,supervision,J2,4,AFEAGND,Floating recording ground only; no host-ground wire
+recording-front-end,J1,1,AFE_P5,supervision,J2,2,AFE_P5,Recording rail observation; revised nominal values in design doc
+recording-front-end,J1,2,AFE_N5,supervision,J2,3,AFE_N5,Recording rail observation; revised nominal values in design doc
+recording-front-end,J1,3,AFE_3V3,supervision,J2,1,AFE_3V3,Recording rail observation; revised nominal values in design doc
+recording-front-end,U2,14,AFE_CONNECT,supervision,J2,5,AFE_CONNECT,Observe ACTUAL local connect output after existing isolator
+recording-front-end,U4,4,AFE_ACQUIRE,supervision,J2,6,AFE_ACQUIRE,Observe ACTUAL local acquire output after local AND
+current-driver,J1,1,VH_24,supervision,J1,6,VH_24,Host rail observation; SUP rails remain separately generated
+current-driver,J1,2,VA_15,supervision,J1,5,HOST_15,Host rail observation; SUP rails remain separately generated
+current-driver,J1,3,VDD_5,supervision,J1,4,HOST_5,Host rail observation; SUP rails remain separately generated
+current-driver,J1,4,VDD_3V3,supervision,J1,3,HOST_3V3,Host rail observation; SUP rails remain separately generated
+monitoring-cell,J1,1,+5VA,supervision,J1,4,HOST_5,Monitor 5V belongs to observed HOST_5
+monitoring-cell,J1,2,+3V3,supervision,J1,3,HOST_3V3,Monitor logic belongs to observed HOST_3V3
+contact-router,J1,1,VH_24,supervision,J1,6,VH_24,Router high-voltage supply
+contact-router,J1,2,VDD_3V3,supervision,J1,3,HOST_3V3,Router logic supply
+recording-front-end,J2,1,HOST_3V3,supervision,J1,3,HOST_3V3,Existing recording HOST_3V3 supply
+current-driver,J100,1,CH0_A_BR,contact-router,J100,1,CH0_A_ROUTER,Source A to router input; terminal guards downstream of canonical router J7
+current-driver,J100,2,CH0_B_BR,monitoring-cell,J100,2,CH0_RETURN_DRIVER,Bridge B to driver side of existing 2ohm shunt
+monitoring-cell,J100,1,CH0_RETURN_LOAD,contact-router,J100,2,CH0_RETURN_LOAD,Load side of existing shunt to dedicated router return
+monitoring-cell,J4,1,CH0_I_MON,supervision,J4,1,CH0_I_MON,Observed signed current; MID+40V/A times I
+monitoring-cell,J3,3,CH0_PERMIT,supervision,J4,5,MON0_PERMIT,Actual monitor sticky permit observation
+supervision,J4,7,CH0_MON_SUP_OK,monitoring-cell,J3,1,CH0_EXT_SUP_OK,PRE-MON SENSE_HEALTH; distinct from ARM-qualified driver EXT_SUP_OK
+supervision,J5,7,CH0_EXT_SUP_OK,current-driver,J4,4,CH0_EXT_SUP_OK,ARM-qualified source driver permission; do not short to monitor EXT_SUP_OK
+monitoring-cell,J3,3,CH0_PERMIT,current-driver,J4,3,CH0_MON_PERMIT,Actual monitor permit to driver
+monitoring-cell,J3,3,CH0_PERMIT,contact-router,J4,8,CH0_MON_PERMIT,Actual monitor permit to router
+current-driver,J3,1,CH0_REQUEST,supervision,J3,4,CH0_REQUEST,RAW request clocks both independent timers without readiness gating
+current-driver,J3,1,CH0_REQUEST,contact-router,J3,3,CH0_REQUEST,Shared raw request observation
+current-driver,J3,4,CH0_REARM,supervision,J3,10,CH0_PHASE_REARM,Same explicit phase rearm command; not monitor/global rearm
+current-driver,J5,1,CH0_RUN,supervision,J3,6,CH0_RUN,Actual main driver RUN observation
+current-driver,J5,1,CH0_RUN,contact-router,J3,5,CH0_RUN,Driver run freezes routing
+contact-router,J5,7,CH0_ROUTE_LOCKED,supervision,J3,8,CH0_ROUTE_LOCKED,Actual locked route observation
+contact-router,J5,7,CH0_ROUTE_LOCKED,current-driver,J4,5,CH0_ROUTE_LOCKED,Actual locked route to driver
+current-driver,J100,1,CH0_A_BR,supervision,J6,1,CH0_A_BR,Differential voltage measured before shunt/router/guards
+current-driver,J100,2,CH0_B_BR,supervision,J6,2,CH0_B_BR,Differential voltage measured before shunt/router/guards
+supervision,J5,5,CH0_QUIESCENT_OK,current-driver,J4,6,CH0_QUIESCENT_OK,Measured current window plus RC dwell; not exact zero
+supervision,J5,5,CH0_QUIESCENT_OK,contact-router,J4,5,CH0_QUIESCENT_OK,Measured current window plus RC dwell; not exact zero
+current-driver,J200,1,CH1_A_BR,contact-router,J200,1,CH1_A_ROUTER,Source A to router input; terminal guards downstream of canonical router J7
+current-driver,J200,2,CH1_B_BR,monitoring-cell,J200,2,CH1_RETURN_DRIVER,Bridge B to driver side of existing 2ohm shunt
+monitoring-cell,J200,1,CH1_RETURN_LOAD,contact-router,J200,2,CH1_RETURN_LOAD,Load side of existing shunt to dedicated router return
+monitoring-cell,J4,2,CH1_I_MON,supervision,J4,2,CH1_I_MON,Observed signed current; MID+40V/A times I
+monitoring-cell,J3,4,CH1_PERMIT,supervision,J4,6,MON1_PERMIT,Actual monitor sticky permit observation
+supervision,J4,8,CH1_MON_SUP_OK,monitoring-cell,J3,2,CH1_EXT_SUP_OK,PRE-MON SENSE_HEALTH; distinct from ARM-qualified driver EXT_SUP_OK
+supervision,J5,8,CH1_EXT_SUP_OK,current-driver,J4,8,CH1_EXT_SUP_OK,ARM-qualified source driver permission; do not short to monitor EXT_SUP_OK
+monitoring-cell,J3,4,CH1_PERMIT,current-driver,J4,7,CH1_MON_PERMIT,Actual monitor permit to driver
+monitoring-cell,J3,4,CH1_PERMIT,contact-router,J4,9,CH1_MON_PERMIT,Actual monitor permit to router
+current-driver,J3,5,CH1_REQUEST,supervision,J3,5,CH1_REQUEST,RAW request clocks both independent timers without readiness gating
+current-driver,J3,5,CH1_REQUEST,contact-router,J3,4,CH1_REQUEST,Shared raw request observation
+current-driver,J3,8,CH1_REARM,supervision,J3,11,CH1_PHASE_REARM,Same explicit phase rearm command; not monitor/global rearm
+current-driver,J5,5,CH1_RUN,supervision,J3,7,CH1_RUN,Actual main driver RUN observation
+current-driver,J5,5,CH1_RUN,contact-router,J3,6,CH1_RUN,Driver run freezes routing
+contact-router,J5,8,CH1_ROUTE_LOCKED,supervision,J3,9,CH1_ROUTE_LOCKED,Actual locked route observation
+contact-router,J5,8,CH1_ROUTE_LOCKED,current-driver,J4,9,CH1_ROUTE_LOCKED,Actual locked route to driver
+current-driver,J200,1,CH1_A_BR,supervision,J6,3,CH1_A_BR,Differential voltage measured before shunt/router/guards
+current-driver,J200,2,CH1_B_BR,supervision,J6,4,CH1_B_BR,Differential voltage measured before shunt/router/guards
+supervision,J5,6,CH1_QUIESCENT_OK,current-driver,J4,10,CH1_QUIESCENT_OK,Measured current window plus RC dwell; not exact zero
+supervision,J5,6,CH1_QUIESCENT_OK,contact-router,J4,6,CH1_QUIESCENT_OK,Measured current window plus RC dwell; not exact zero
+supervision,J5,1,RESET_READY,current-driver,J4,1,RESET_READY,Native reset/startup or rail qualification
+supervision,J5,1,RESET_READY,contact-router,J4,1,RESET_READY,Native reset/startup or rail qualification
+supervision,J5,2,RAILS_QUALIFIED,current-driver,J4,2,RAILS_QUALIFIED,Native reset/startup or rail qualification
+supervision,J5,2,RAILS_QUALIFIED,contact-router,J4,2,RAILS_QUALIFIED,Native reset/startup or rail qualification
+supervision,J5,3,WATCHDOG_OK,contact-router,J4,3,WATCHDOG_OK,Native watchdog or observed recording blank status
+supervision,J5,4,AFE_ISOLATED_READY,contact-router,J4,4,AFE_ISOLATED_READY,Native watchdog or observed recording blank status
+monitoring-cell,J4,3,V_MID,supervision,J4,3,MON_VMID,Actual buffered monitor midpoint reference
+monitoring-cell,U1,5,V_REF,supervision,J4,4,MON_VREF,Actual REF3440 output pin tap; no invented second independent reference

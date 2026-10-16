@@ -1,0 +1,110 @@
+{
+  "all14_exact_gates_passed": true,
+  "elapsed_seconds": 310.4682615999918,
+  "exact_queries": 1727,
+  "pruned_pairs": 1317,
+  "native_sha256": "764a4e7a9ec8212fefb1c9c0deb7cab2ee76a5c9e72b2895f9199c98d0e5ae9a",
+  "contract_canonical_sha256": "6e02bb9182e470fa4b10212b1698e890d7a93990480bccb4ce6f098eeed32409",
+  "probe_script_sha256": "e8548ec4b2bafb87c7f4e53ae9b3e455165bdfe600dd19853570a49a2627e0bc",
+  "native_and_contract_unchanged_at_completion": true,
+  "rows": [
+    {
+      "a": "PCB_contact_router",
+      "b": "Tray_contact_router",
+      "minimum_mm": 8.0,
+      "measured_mm": 8.615000000000009,
+      "seconds": 41.1625733999972
+    },
+    {
+      "a": "PCB_controller_carrier",
+      "b": "Tray_controller_carrier",
+      "minimum_mm": 8.0,
+      "measured_mm": 8.615000000000009,
+      "seconds": 20.328418199991575
+    },
+    {
+      "a": "PCB_current_driver",
+      "b": "Tray_current_driver",
+      "minimum_mm": 8.0,
+      "measured_mm": 8.615000000000009,
+      "seconds": 33.54928259999724
+    },
+    {
+      "a": "PCB_current_driver",
+      "b": "Tray_contact_router",
+      "minimum_mm": 20,
+      "measured_mm": 27.845,
+      "seconds": 4.126666600001045
+    },
+    {
+      "a": "PCB_monitoring_cell",
+      "b": "Tray_monitoring_cell",
+      "minimum_mm": 8.0,
+      "measured_mm": 8.614999999999995,
+      "seconds": 14.603086500006611
+    },
+    {
+      "a": "PCB_monitoring_cell",
+      "b": "Tray_monitoring_transport",
+      "minimum_mm": 20,
+      "measured_mm": 27.845,
+      "seconds": 2.6854585999972187
+    },
+    {
+      "a": "PCB_monitoring_transport",
+      "b": "Tray_monitoring_transport",
+      "minimum_mm": 8.0,
+      "measured_mm": 8.615000000000009,
+      "seconds": 16.364983599996776
+    },
+    {
+      "a": "PCB_monitoring_transport",
+      "b": "Tray_controller_carrier",
+      "minimum_mm": 20,
+      "measured_mm": 27.845,
+      "seconds": 6.710338599994429
+    },
+    {
+      "a": "PCB_power",
+      "b": "Tray_power",
+      "minimum_mm": 8.0,
+      "measured_mm": 8.614999999999995,
+      "seconds": 22.574026400005096
+    },
+    {
+      "a": "PCB_power",
+      "b": "Tray_current_driver",
+      "minimum_mm": 20,
+      "measured_mm": 24.78500000000001,
+      "seconds": 0.37794019999273587
+    },
+    {
+      "a": "PCB_recording_front_end",
+      "b": "Tray_recording_front_end",
+      "minimum_mm": 8.0,
+      "measured_mm": 8.614999999999998,
+      "seconds": 31.02926719999232
+    },
+    {
+      "a": "PCB_recording_front_end",
+      "b": "Tray_monitoring_cell",
+      "minimum_mm": 20,
+      "measured_mm": 27.845,
+      "seconds": 6.264971299999161
+    },
+    {
+      "a": "PCB_supervision",
+      "b": "Tray_supervision",
+      "minimum_mm": 8.0,
+      "measured_mm": 8.614999999999998,
+      "seconds": 96.74419179999677
+    },
+    {
+      "a": "PCB_supervision",
+      "b": "Tray_power",
+      "minimum_mm": 20,
+      "measured_mm": 27.845,
+      "seconds": 12.537908300000709
+    }
+  ]
+}

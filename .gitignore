@@ -10,7 +10,12 @@ __pycache__/
 *.kicad_prl
 *.kicad_sch-bak
 *.kicad_pcb-bak
+~*.lck
 *-backups/
 tmp/
 build/
 CONTRACT.md
+# Losslessly archived populated STEP assemblies exceed GitHub's file limit.
+cad/stage5/reference/ATO_reference_assembly.step
+cad/stage5/reference/ATO_reference_exploded.step
+cad/stage5/reference/extracted/

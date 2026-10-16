@@ -1,0 +1,2796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>E:\Project ATO\electronics\stage4\integrated-pcb\integration\boards\monitoring-transport\monitoring_transport.kicad_sch</source>
+    <date>2026-10-15T23:37:34</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ATO S4 / Existing package and host endpoints</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>monitoring_transport.kicad_sch</source>
+        <comment number="1" value="Native design; target firmware and PCB verification follow"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/root_2/" tstamps="/7880434a-48bf-506a-ac9d-6b78203ec772/">
+      <title_block>
+        <title>ATO S4 / Existing package and host endpoints / 2</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>root_2.kicad_sch</source>
+        <comment number="1" value="Native design; target firmware and PCB verification follow"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/adc/" tstamps="/5d3e8d94-df0e-5999-98b6-9cb57ec7e02a/">
+      <title_block>
+        <title>ATO S4 / Dedicated eight-channel raw conversion</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>adc.kicad_sch</source>
+        <comment number="1" value="Native design; target firmware and PCB verification follow"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/reference/" tstamps="/c90f0fe5-ccc0-529d-967b-355ee0d26c3a/">
+      <title_block>
+        <title>ATO S4 / Independent ADC reference and bypass</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>reference.kicad_sch</source>
+        <comment number="1" value="Native design; target firmware and PCB verification follow"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/">
+      <title_block>
+        <title>ATO S4 / Raw current and scaled voltage filtering</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>inputs.kicad_sch</source>
+        <comment number="1" value="Native design; target firmware and PCB verification follow"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/health/" tstamps="/74423b4b-11de-57d0-990e-540ff5f5e5f2/">
+      <title_block>
+        <title>ATO S4 / Divided power observations</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>health.kicad_sch</source>
+        <comment number="1" value="Native design; target firmware and PCB verification follow"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/">
+      <title_block>
+        <title>ATO S4 / Isolated wired processed-feature companion</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>companion.kicad_sch</source>
+        <comment number="1" value="Native design; target firmware and PCB verification follow"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/handoff/" tstamps="/380c03ad-d9bb-5a11-a4b3-1c5d618b6562/">
+      <title_block>
+        <title>ATO S4 / Charge ADC and health host handoff</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>handoff.kicad_sch</source>
+        <comment number="1" value="Native design; target firmware and PCB verification follow"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J70001">
+      <value>HOST RAILS / RAW ADC</value>
+      <footprint>ato_transport:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="J1" description=""/>
+      <property name="Sheetname" value="monitoring_transport"/>
+      <property name="Sheetfile" value="monitoring_transport.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cc370c20-2dfe-5bba-bf1f-0fa77ea9799a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J70002">
+      <value>EXISTING ANALOG TAPS</value>
+      <footprint>ato_transport:PinHeader_1x08_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:PinHeader_1x08_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="J2" description=""/>
+      <property name="Sheetname" value="monitoring_transport"/>
+      <property name="Sheetfile" value="monitoring_transport.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca3dabfc-a88a-51cc-aaa7-5c61a93512e8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J70003">
+      <value>DEDICATED RAW ADC BUS</value>
+      <footprint>ato_transport:PinHeader_1x06_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:PinHeader_1x06_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="J3" description=""/>
+      <property name="Sheetname" value="monitoring_transport"/>
+      <property name="Sheetfile" value="monitoring_transport.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd870c8c-2643-56e2-968b-50ab1d6a2626</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J70004">
+      <value>TWO EXISTING CHARGE ADCs</value>
+      <footprint>ato_transport:PinHeader_1x08_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:PinHeader_1x08_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="J4" description=""/>
+      <property name="Sheetname" value="root_2"/>
+      <property name="Sheetfile" value="root_2.kicad_sch"/>
+      <sheetpath names="/root_2/" tstamps="/7880434a-48bf-506a-ac9d-6b78203ec772/"/>
+      <tstamps>c002b8cf-6e72-5236-afe2-fa558ce31433</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J70005">
+      <value>CHARGE CONTROL HANDOFF</value>
+      <footprint>ato_transport:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:PinHeader_1x05_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="J5" description=""/>
+      <property name="Sheetname" value="root_2"/>
+      <property name="Sheetfile" value="root_2.kicad_sch"/>
+      <sheetpath names="/root_2/" tstamps="/7880434a-48bf-506a-ac9d-6b78203ec772/"/>
+      <tstamps>f0063a9d-64a5-5d4b-b93c-bc1ae932aeeb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J70006">
+      <value>READ-ONLY NATIVE HEALTH</value>
+      <footprint>ato_transport:PinHeader_1x10_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:PinHeader_1x10_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="J6" description=""/>
+      <property name="Sheetname" value="root_2"/>
+      <property name="Sheetfile" value="root_2.kicad_sch"/>
+      <sheetpath names="/root_2/" tstamps="/7880434a-48bf-506a-ac9d-6b78203ec772/"/>
+      <tstamps>31456def-0d78-57e2-be92-531db83c1ab2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70001">
+      <value>33R</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R1" description=""/>
+      <property name="Sheetname" value="adc"/>
+      <property name="Sheetfile" value="adc.kicad_sch"/>
+      <sheetpath names="/adc/" tstamps="/5d3e8d94-df0e-5999-98b6-9cb57ec7e02a/"/>
+      <tstamps>b6cfeecb-46c0-59be-b0ce-9ede78946a34</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70002">
+      <value>33R</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R2" description=""/>
+      <property name="Sheetname" value="adc"/>
+      <property name="Sheetfile" value="adc.kicad_sch"/>
+      <sheetpath names="/adc/" tstamps="/5d3e8d94-df0e-5999-98b6-9cb57ec7e02a/"/>
+      <tstamps>b4716c49-5eda-5f7a-a75c-16e7cdcdb321</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70003">
+      <value>100k</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R3" description=""/>
+      <property name="Sheetname" value="adc"/>
+      <property name="Sheetfile" value="adc.kicad_sch"/>
+      <sheetpath names="/adc/" tstamps="/5d3e8d94-df0e-5999-98b6-9cb57ec7e02a/"/>
+      <tstamps>6c9a9bf5-6c89-5362-acef-660a3d585c8f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70004">
+      <value>100k</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R4" description=""/>
+      <property name="Sheetname" value="adc"/>
+      <property name="Sheetfile" value="adc.kicad_sch"/>
+      <sheetpath names="/adc/" tstamps="/5d3e8d94-df0e-5999-98b6-9cb57ec7e02a/"/>
+      <tstamps>c62c24e1-5880-597f-b9e4-b2fab59b796d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70005">
+      <value>100k</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R5" description=""/>
+      <property name="Sheetname" value="adc"/>
+      <property name="Sheetfile" value="adc.kicad_sch"/>
+      <sheetpath names="/adc/" tstamps="/5d3e8d94-df0e-5999-98b6-9cb57ec7e02a/"/>
+      <tstamps>c202d841-1f92-5d18-93ee-1df9cdedaeb4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70006">
+      <value>100k</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R6" description=""/>
+      <property name="Sheetname" value="adc"/>
+      <property name="Sheetfile" value="adc.kicad_sch"/>
+      <sheetpath names="/adc/" tstamps="/5d3e8d94-df0e-5999-98b6-9cb57ec7e02a/"/>
+      <tstamps>3487aac6-5d6c-5a14-b670-d2d89b073cbd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U70001">
+      <value>ADS8688IDBTR</value>
+      <footprint>ato_transport:TSSOP-38_4.4x9.7mm_P0.5mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ads8688.pdf</datasheet>
+      <fields>
+        <field name="Footprint">ato_transport:TSSOP-38_4.4x9.7mm_P0.5mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ads8688.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="U1" description=""/>
+      <property name="Sheetname" value="adc"/>
+      <property name="Sheetfile" value="adc.kicad_sch"/>
+      <sheetpath names="/adc/" tstamps="/5d3e8d94-df0e-5999-98b6-9cb57ec7e02a/"/>
+      <tstamps>51c39dc4-3bd1-5116-97ae-b893a52c389b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="35"/>
+            <pin num="36"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70001">
+      <value>22u X7R 10V</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C1" description=""/>
+      <property name="Sheetname" value="reference"/>
+      <property name="Sheetfile" value="reference.kicad_sch"/>
+      <sheetpath names="/reference/" tstamps="/c90f0fe5-ccc0-529d-967b-355ee0d26c3a/"/>
+      <tstamps>37e6d82a-1c08-5ba5-b92f-aa0734eb9c0f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70002">
+      <value>22u X7R 10V</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C2" description=""/>
+      <property name="Sheetname" value="reference"/>
+      <property name="Sheetfile" value="reference.kicad_sch"/>
+      <sheetpath names="/reference/" tstamps="/c90f0fe5-ccc0-529d-967b-355ee0d26c3a/"/>
+      <tstamps>2c3a526b-1f2d-5147-919c-2b6f46029ca2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70003">
+      <value>1u X7R 10V</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C3" description=""/>
+      <property name="Sheetname" value="reference"/>
+      <property name="Sheetfile" value="reference.kicad_sch"/>
+      <sheetpath names="/reference/" tstamps="/c90f0fe5-ccc0-529d-967b-355ee0d26c3a/"/>
+      <tstamps>13adcac3-bbf3-5e0c-8d82-423ed7b90be5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70004">
+      <value>10u X7R 10V</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C4" description=""/>
+      <property name="Sheetname" value="reference"/>
+      <property name="Sheetfile" value="reference.kicad_sch"/>
+      <sheetpath names="/reference/" tstamps="/c90f0fe5-ccc0-529d-967b-355ee0d26c3a/"/>
+      <tstamps>af4a07a8-dc81-5da3-905c-d2f3bdae7cb4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70005">
+      <value>1u X7R 10V</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C5" description=""/>
+      <property name="Sheetname" value="reference"/>
+      <property name="Sheetfile" value="reference.kicad_sch"/>
+      <sheetpath names="/reference/" tstamps="/c90f0fe5-ccc0-529d-967b-355ee0d26c3a/"/>
+      <tstamps>f18b82ef-66cc-51f3-ad8e-9de4e3323aa0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70006">
+      <value>10u X7R 10V</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C6" description=""/>
+      <property name="Sheetname" value="reference"/>
+      <property name="Sheetfile" value="reference.kicad_sch"/>
+      <sheetpath names="/reference/" tstamps="/c90f0fe5-ccc0-529d-967b-355ee0d26c3a/"/>
+      <tstamps>1fac1785-9baa-505e-ae53-54fb112aa3e1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70007">
+      <value>1u X7R 10V</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C7" description=""/>
+      <property name="Sheetname" value="reference"/>
+      <property name="Sheetfile" value="reference.kicad_sch"/>
+      <sheetpath names="/reference/" tstamps="/c90f0fe5-ccc0-529d-967b-355ee0d26c3a/"/>
+      <tstamps>569cbca1-7b42-570e-bf7d-c3db23e7575f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70008">
+      <value>10u X7R 10V</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C8" description=""/>
+      <property name="Sheetname" value="reference"/>
+      <property name="Sheetfile" value="reference.kicad_sch"/>
+      <sheetpath names="/reference/" tstamps="/c90f0fe5-ccc0-529d-967b-355ee0d26c3a/"/>
+      <tstamps>5968c523-b429-588a-a171-c43a20752a72</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70009">
+      <value>100n X7R 10V</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C9" description=""/>
+      <property name="Sheetname" value="reference"/>
+      <property name="Sheetfile" value="reference.kicad_sch"/>
+      <sheetpath names="/reference/" tstamps="/c90f0fe5-ccc0-529d-967b-355ee0d26c3a/"/>
+      <tstamps>404e8ab5-5216-570e-ae14-499de6ead911</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70100">
+      <value>1n C0G 5%</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C100" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>89a283cd-d6d0-5494-ab60-ef8ea2e2fd14</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70101">
+      <value>1n C0G 5%</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C101" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>9605aba5-5e7e-5805-a112-9e33e6f25edb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70102">
+      <value>1n C0G 5%</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C102" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>40b95bf0-9dba-54c2-88c5-1dc068933b05</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70103">
+      <value>1n C0G 5%</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C103" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>8c9974de-8841-553f-b554-13f7b287e793</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70104">
+      <value>1n C0G 5%</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C104" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>1528f0d6-51c4-555a-afbb-489861f19a0d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70105">
+      <value>1n C0G 5%</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C105" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>287a7f7c-3d4c-5a50-981b-4a630e1c8aa2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70106">
+      <value>1n C0G 5%</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C106" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>527d5390-1555-594f-a091-24c663632d06</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70107">
+      <value>1n C0G 5%</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C107" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>7e62d29e-75b6-5009-a945-9642a9ed1bd9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70100">
+      <value>100R 0.1%</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R100" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>502d79af-0125-5a38-a08e-2f413f567732</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70101">
+      <value>100R 0.1%</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R101" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>469334d9-d271-558e-98cb-cd965d7c6c04</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70102">
+      <value>100R 0.1%</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R102" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>a5dcd6bc-54e6-5d7e-a861-5697b31e120c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70103">
+      <value>100R 0.1%</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R103" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>60cff3e6-201d-57a2-a04e-bb8ecb185f86</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70104">
+      <value>100R 0.1%</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R104" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>824b6a32-dfa4-5447-8d0f-aafcb49a0a4a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70105">
+      <value>100R 0.1%</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R105" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>dcc936f2-ff8a-5428-8e6f-6be1a4c7368a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70106">
+      <value>100R 0.1%</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R106" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>3fdfa85d-07bf-584e-9e42-b300ca322986</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70107">
+      <value>100R 0.1%</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R107" description=""/>
+      <property name="Sheetname" value="inputs"/>
+      <property name="Sheetfile" value="inputs.kicad_sch"/>
+      <sheetpath names="/inputs/" tstamps="/0a9a2965-5f72-5f9c-b91c-5debe4602283/"/>
+      <tstamps>c896cbb9-b52f-5721-ad90-069c8854aa2d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70120">
+      <value>4.99k 0.1%</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R120" description=""/>
+      <property name="Sheetname" value="health"/>
+      <property name="Sheetfile" value="health.kicad_sch"/>
+      <sheetpath names="/health/" tstamps="/74423b4b-11de-57d0-990e-540ff5f5e5f2/"/>
+      <tstamps>de17c42b-386d-5dda-a807-040cf0398957</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70121">
+      <value>2.49k 0.1%</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R121" description=""/>
+      <property name="Sheetname" value="health"/>
+      <property name="Sheetfile" value="health.kicad_sch"/>
+      <sheetpath names="/health/" tstamps="/74423b4b-11de-57d0-990e-540ff5f5e5f2/"/>
+      <tstamps>a3adb524-6c7d-5f23-9cde-7835f253b4f9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70122">
+      <value>2.4k 0.1%</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R122" description=""/>
+      <property name="Sheetname" value="health"/>
+      <property name="Sheetfile" value="health.kicad_sch"/>
+      <sheetpath names="/health/" tstamps="/74423b4b-11de-57d0-990e-540ff5f5e5f2/"/>
+      <tstamps>27d237c5-1e43-5a75-97fc-35f444db3438</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70123">
+      <value>2k 0.1%</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R123" description=""/>
+      <property name="Sheetname" value="health"/>
+      <property name="Sheetfile" value="health.kicad_sch"/>
+      <sheetpath names="/health/" tstamps="/74423b4b-11de-57d0-990e-540ff5f5e5f2/"/>
+      <tstamps>ee2627ea-9a95-55c1-ab02-6847c8df5b22</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70020">
+      <value>100n X7R 10V</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C20" description=""/>
+      <property name="Sheetname" value="companion"/>
+      <property name="Sheetfile" value="companion.kicad_sch"/>
+      <sheetpath names="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/"/>
+      <tstamps>83262482-279e-5688-b01b-4b07b549625b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70021">
+      <value>100n X7R 10V</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C21" description=""/>
+      <property name="Sheetname" value="companion"/>
+      <property name="Sheetfile" value="companion.kicad_sch"/>
+      <sheetpath names="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/"/>
+      <tstamps>b4e3019c-cabd-5a9b-8f90-6eb582e48d77</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70022">
+      <value>1u X7R 10V</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C22" description=""/>
+      <property name="Sheetname" value="companion"/>
+      <property name="Sheetfile" value="companion.kicad_sch"/>
+      <sheetpath names="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/"/>
+      <tstamps>f4e1b4e5-e69d-5a16-b810-6672fa70b82e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C70023">
+      <value>1u X7R 10V</value>
+      <footprint>ato_transport:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="C23" description=""/>
+      <property name="Sheetname" value="companion"/>
+      <property name="Sheetfile" value="companion.kicad_sch"/>
+      <sheetpath names="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/"/>
+      <tstamps>6bfa8cec-740b-5bac-97a5-40c2720df8f9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J70007">
+      <value>HOST PROCESSED UART</value>
+      <footprint>ato_transport:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="J7" description=""/>
+      <property name="Sheetname" value="companion"/>
+      <property name="Sheetfile" value="companion.kicad_sch"/>
+      <sheetpath names="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/"/>
+      <tstamps>c129f892-2952-52fe-bd6b-bebc106c4635</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J70008">
+      <value>EXTERNAL COMPANION UART</value>
+      <footprint>ato_transport:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="J8" description=""/>
+      <property name="Sheetname" value="companion"/>
+      <property name="Sheetfile" value="companion.kicad_sch"/>
+      <sheetpath names="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/"/>
+      <tstamps>53886cc2-e30a-51a0-8472-09977026516a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70020">
+      <value>33R</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R20" description=""/>
+      <property name="Sheetname" value="companion"/>
+      <property name="Sheetfile" value="companion.kicad_sch"/>
+      <sheetpath names="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/"/>
+      <tstamps>41df8f7b-3840-5273-b9d7-ed05c3f9e0ea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70021">
+      <value>33R</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R21" description=""/>
+      <property name="Sheetname" value="companion"/>
+      <property name="Sheetfile" value="companion.kicad_sch"/>
+      <sheetpath names="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/"/>
+      <tstamps>b673c222-83f4-5145-9f89-4450a793113d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70022">
+      <value>33R</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R22" description=""/>
+      <property name="Sheetname" value="companion"/>
+      <property name="Sheetfile" value="companion.kicad_sch"/>
+      <sheetpath names="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/"/>
+      <tstamps>b4de2cb9-37be-591e-a185-fba54c6a2c00</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70023">
+      <value>33R</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R23" description=""/>
+      <property name="Sheetname" value="companion"/>
+      <property name="Sheetfile" value="companion.kicad_sch"/>
+      <sheetpath names="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/"/>
+      <tstamps>97c8d1f5-4f4d-51a6-b739-0196b32945bd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70024">
+      <value>10k</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R24" description=""/>
+      <property name="Sheetname" value="companion"/>
+      <property name="Sheetfile" value="companion.kicad_sch"/>
+      <sheetpath names="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/"/>
+      <tstamps>fa8e6d59-8511-5653-9c43-321eb6a91a99</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70025">
+      <value>10k</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R25" description=""/>
+      <property name="Sheetname" value="companion"/>
+      <property name="Sheetfile" value="companion.kicad_sch"/>
+      <sheetpath names="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/"/>
+      <tstamps>d69378e9-c80e-5964-9f43-66996e23bc23</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U70020">
+      <value>ISO6721BDR</value>
+      <footprint>ato_transport:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/iso6721.pdf</datasheet>
+      <fields>
+        <field name="Footprint">ato_transport:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/iso6721.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="U20" description=""/>
+      <property name="Sheetname" value="companion"/>
+      <property name="Sheetfile" value="companion.kicad_sch"/>
+      <sheetpath names="/companion/" tstamps="/5098c9ca-7662-55f9-abf2-1cee41be6148/"/>
+      <tstamps>ac2c0a25-1d29-5570-878a-6dc0d9d3db49</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="2"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J70020">
+      <value>HOST CHARGE ADC BUS</value>
+      <footprint>ato_transport:PinHeader_1x12_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:PinHeader_1x12_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="J20" description=""/>
+      <property name="Sheetname" value="handoff"/>
+      <property name="Sheetfile" value="handoff.kicad_sch"/>
+      <sheetpath names="/handoff/" tstamps="/380c03ad-d9bb-5a11-a4b3-1c5d618b6562/"/>
+      <tstamps>c950fd15-be44-534b-84a4-2bb39d0c9e0e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J70021">
+      <value>HOST HEALTH INPUTS</value>
+      <footprint>ato_transport:PinHeader_1x10_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:PinHeader_1x10_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="J21" description=""/>
+      <property name="Sheetname" value="handoff"/>
+      <property name="Sheetfile" value="handoff.kicad_sch"/>
+      <sheetpath names="/handoff/" tstamps="/380c03ad-d9bb-5a11-a4b3-1c5d618b6562/"/>
+      <tstamps>1b56af96-3fc1-5ebe-864c-5d806a34e0ae</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J70022">
+      <value>HOST SHARED ENDPOINT SPI</value>
+      <footprint>ato_transport:PinHeader_1x07_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:PinHeader_1x07_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="J22" description=""/>
+      <property name="Sheetname" value="handoff"/>
+      <property name="Sheetfile" value="handoff.kicad_sch"/>
+      <sheetpath names="/handoff/" tstamps="/380c03ad-d9bb-5a11-a4b3-1c5d618b6562/"/>
+      <tstamps>170ad08c-9cf0-5691-90ba-889091232b7b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70030">
+      <value>330R</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R30" description=""/>
+      <property name="Sheetname" value="handoff"/>
+      <property name="Sheetfile" value="handoff.kicad_sch"/>
+      <sheetpath names="/handoff/" tstamps="/380c03ad-d9bb-5a11-a4b3-1c5d618b6562/"/>
+      <tstamps>5101d828-bd1e-508c-89a0-66ae412ab227</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70031">
+      <value>330R</value>
+      <footprint>ato_transport:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_TRANSPORT" part="R31" description=""/>
+      <property name="Sheetname" value="handoff"/>
+      <property name="Sheetfile" value="handoff.kicad_sch"/>
+      <sheetpath names="/handoff/" tstamps="/380c03ad-d9bb-5a11-a4b3-1c5d618b6562/"/>
+      <tstamps>babb0e79-ab13-5b7e-9e9f-da1a844c7cb4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="ATO_TRANSPORT" part="C1">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">22u X7R 10V</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C100">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1n C0G 5%</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C101">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1n C0G 5%</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C102">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1n C0G 5%</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C103">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1n C0G 5%</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C104">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1n C0G 5%</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C105">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1n C0G 5%</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C106">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1n C0G 5%</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C107">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1n C0G 5%</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C2">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">22u X7R 10V</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C20">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n X7R 10V</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C21">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n X7R 10V</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C22">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1u X7R 10V</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C23">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1u X7R 10V</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C3">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1u X7R 10V</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C4">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">10u X7R 10V</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C5">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1u X7R 10V</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C6">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">10u X7R 10V</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C7">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1u X7R 10V</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C8">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">10u X7R 10V</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="C9">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n X7R 10V</field>
+        <field name="Footprint">ato_transport:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="J1">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HOST RAILS / RAW ADC</field>
+        <field name="Footprint">ato_transport:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="J2">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">EXISTING ANALOG TAPS</field>
+        <field name="Footprint">ato_transport:PinHeader_1x08_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="J20">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HOST CHARGE ADC BUS</field>
+        <field name="Footprint">ato_transport:PinHeader_1x12_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+        <pin num="11" name="11" type="passive"/>
+        <pin num="12" name="12" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="J21">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HOST HEALTH INPUTS</field>
+        <field name="Footprint">ato_transport:PinHeader_1x10_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="J22">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HOST SHARED ENDPOINT SPI</field>
+        <field name="Footprint">ato_transport:PinHeader_1x07_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="J3">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">DEDICATED RAW ADC BUS</field>
+        <field name="Footprint">ato_transport:PinHeader_1x06_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="J4">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">TWO EXISTING CHARGE ADCs</field>
+        <field name="Footprint">ato_transport:PinHeader_1x08_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="J5">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CHARGE CONTROL HANDOFF</field>
+        <field name="Footprint">ato_transport:PinHeader_1x05_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="J6">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">READ-ONLY NATIVE HEALTH</field>
+        <field name="Footprint">ato_transport:PinHeader_1x10_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="J7">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HOST PROCESSED UART</field>
+        <field name="Footprint">ato_transport:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="J8">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">EXTERNAL COMPANION UART</field>
+        <field name="Footprint">ato_transport:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R1">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">33R</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R100">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100R 0.1%</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R101">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100R 0.1%</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R102">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100R 0.1%</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R103">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100R 0.1%</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R104">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100R 0.1%</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R105">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100R 0.1%</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R106">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100R 0.1%</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R107">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100R 0.1%</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R120">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">4.99k 0.1%</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R121">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">2.49k 0.1%</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R122">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">2.4k 0.1%</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R123">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">2k 0.1%</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R2">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">33R</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R20">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">33R</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R21">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">33R</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R22">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">33R</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R23">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">33R</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R24">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R25">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R3">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R30">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">330R</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R31">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">330R</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R4">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R5">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="R6">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+        <field name="Footprint">ato_transport:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="U1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADS8688IDBTR</field>
+        <field name="Footprint">ato_transport:TSSOP-38_4.4x9.7mm_P0.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SDI" type="input"/>
+        <pin num="2" name="RST_PD_N" type="input"/>
+        <pin num="3" name="DAISY" type="input"/>
+        <pin num="4" name="REFSEL" type="input"/>
+        <pin num="5" name="REFIO" type="bidirectional"/>
+        <pin num="6" name="REFGND" type="power_in"/>
+        <pin num="7" name="REFCAP" type="passive"/>
+        <pin num="8" name="AGND" type="power_in"/>
+        <pin num="9" name="AVDD" type="power_in"/>
+        <pin num="10" name="AUX_IN" type="input"/>
+        <pin num="11" name="AUX_GND" type="power_in"/>
+        <pin num="12" name="AIN_6P" type="input"/>
+        <pin num="13" name="AIN_6GND" type="input"/>
+        <pin num="14" name="AIN_7P" type="input"/>
+        <pin num="15" name="AIN_7GND" type="input"/>
+        <pin num="16" name="AIN_0P" type="input"/>
+        <pin num="17" name="AIN_0GND" type="input"/>
+        <pin num="18" name="AIN_1P" type="input"/>
+        <pin num="19" name="AIN_1GND" type="input"/>
+        <pin num="20" name="AIN_2GND" type="input"/>
+        <pin num="21" name="AIN_2P" type="input"/>
+        <pin num="22" name="AIN_3GND" type="input"/>
+        <pin num="23" name="AIN_3P" type="input"/>
+        <pin num="24" name="AIN_4GND" type="input"/>
+        <pin num="25" name="AIN_4P" type="input"/>
+        <pin num="26" name="AIN_5GND" type="input"/>
+        <pin num="27" name="AIN_5P" type="input"/>
+        <pin num="28" name="AGND" type="power_in"/>
+        <pin num="29" name="AGND" type="power_in"/>
+        <pin num="30" name="AVDD" type="power_in"/>
+        <pin num="31" name="AGND" type="power_in"/>
+        <pin num="32" name="AGND" type="power_in"/>
+        <pin num="33" name="DGND" type="power_in"/>
+        <pin num="34" name="DVDD" type="power_in"/>
+        <pin num="35" name="DNC" type="no_connect"/>
+        <pin num="36" name="SDO" type="output"/>
+        <pin num="37" name="SCLK" type="input"/>
+        <pin num="38" name="CS_N" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_TRANSPORT" part="U20">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ISO6721BDR</field>
+        <field name="Footprint">ato_transport:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC1" type="power_in"/>
+        <pin num="2" name="OUTA_HOST_RX" type="output"/>
+        <pin num="3" name="INB_HOST_TX" type="input"/>
+        <pin num="4" name="GND1" type="power_in"/>
+        <pin num="5" name="GND2" type="power_in"/>
+        <pin num="6" name="OUTB_COMP_RX" type="output"/>
+        <pin num="7" name="INA_COMP_TX" type="input"/>
+        <pin num="8" name="VCC2" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="ATO_TRANSPORT">
+      <uri>${KIPRJMOD}/ATO_TRANSPORT.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="SYS_0d7c406c__MON_MISO" class="Default">
+      <node ref="J70022" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70030" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70031" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="2" name="SYS_2d0e5b2e__CH0_QUIESCENT_OK" class="Default">
+      <node ref="J70006" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="J70021" pin="5" pinfunction="5_5" pintype="passive"/>
+    </net>
+    <net code="3" name="SYS_4f66f129__MON_VREF" class="Default">
+      <node ref="J70002" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="R70104" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="4" name="SYS_5fca782c__RAW_SDO" class="Default">
+      <node ref="J70003" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="U70001" pin="36" pinfunction="SDO_36" pintype="output"/>
+    </net>
+    <net code="5" name="SYS_6e45b638__HOST_UART_TX" class="Default">
+      <node ref="J70007" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70020" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="6" name="SYS_7cf9dad5__MON_SCLK" class="Default">
+      <node ref="J70004" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="J70020" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="J70022" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="7" name="SYS_20eba8c2__CH1_QUIESCENT_OK" class="Default">
+      <node ref="J70006" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="J70021" pin="6" pinfunction="6_6" pintype="passive"/>
+    </net>
+    <net code="8" name="SYS_32a601bf__MON_REARM1" class="Default">
+      <node ref="J70005" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="J70020" pin="11" pinfunction="11_11" pintype="passive"/>
+    </net>
+    <net code="9" name="SYS_36b0932b__INT_RUN1" class="Default">
+      <node ref="J70005" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J70020" pin="9" pinfunction="9_9" pintype="passive"/>
+    </net>
+    <net code="10" name="SYS_37cfe02a__MON_VMID" class="Default">
+      <node ref="J70002" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="R70105" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="11" name="SYS_40eeaa0c__CH1_VPAIR" class="Default">
+      <node ref="J70002" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R70103" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="12" name="SYS_75de6c03__RAW_RST_N" class="Default">
+      <node ref="J70003" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="R70004" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U70001" pin="2" pinfunction="RST_PD_N_2" pintype="input"/>
+    </net>
+    <net code="13" name="SYS_77c24b0d__GLOBAL_GUARD_EN" class="Default">
+      <node ref="J70006" pin="8" pinfunction="8_8" pintype="passive"/>
+      <node ref="J70021" pin="8" pinfunction="8_8" pintype="passive"/>
+    </net>
+    <net code="14" name="SYS_83a198be__CH0_DOUT" class="Default">
+      <node ref="J70004" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="J70020" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="R70030" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="15" name="SYS_88c50083__SUP_ARMED" class="Default">
+      <node ref="J70006" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="J70021" pin="7" pinfunction="7_7" pintype="passive"/>
+    </net>
+    <net code="16" name="SYS_502efdd4__CH1_I_MON" class="Default">
+      <node ref="J70002" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70101" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="17" name="SYS_822d2245__MON_REARM0" class="Default">
+      <node ref="J70005" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="J70020" pin="10" pinfunction="10_10" pintype="passive"/>
+    </net>
+    <net code="18" name="SYS_919c5ac8__HOST_UART_RX" class="Default">
+      <node ref="J70007" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70021" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="19" name="SYS_37737e7c__INT_RUN0" class="Default">
+      <node ref="J70005" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J70020" pin="8" pinfunction="8_8" pintype="passive"/>
+    </net>
+    <net code="20" name="SYS_054848d0__RAW_CS_N" class="Default">
+      <node ref="J70003" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R70003" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U70001" pin="38" pinfunction="CS_N_38" pintype="input"/>
+    </net>
+    <net code="21" name="SYS_56562df4__GND" class="Default">
+      <node ref="C70001" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70002" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70003" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70004" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70005" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70006" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70007" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70008" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70009" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70020" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70022" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70100" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70101" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70102" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70103" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70104" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70105" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70106" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70107" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J70001" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="J70002" pin="8" pinfunction="8_8" pintype="passive"/>
+      <node ref="J70003" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="J70004" pin="8" pinfunction="8_8" pintype="passive"/>
+      <node ref="J70005" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="J70006" pin="10" pinfunction="10_10" pintype="passive"/>
+      <node ref="J70007" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="J70020" pin="12" pinfunction="12_12" pintype="passive"/>
+      <node ref="J70021" pin="10" pinfunction="10_10" pintype="passive"/>
+      <node ref="J70022" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="R70004" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70005" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70006" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70121" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70123" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U70001" pin="10" pinfunction="AUX_IN_10" pintype="input"/>
+      <node ref="U70001" pin="11" pinfunction="AUX_GND_11" pintype="power_in"/>
+      <node ref="U70001" pin="13" pinfunction="AIN_6GND_13" pintype="input"/>
+      <node ref="U70001" pin="15" pinfunction="AIN_7GND_15" pintype="input"/>
+      <node ref="U70001" pin="17" pinfunction="AIN_0GND_17" pintype="input"/>
+      <node ref="U70001" pin="19" pinfunction="AIN_1GND_19" pintype="input"/>
+      <node ref="U70001" pin="20" pinfunction="AIN_2GND_20" pintype="input"/>
+      <node ref="U70001" pin="22" pinfunction="AIN_3GND_22" pintype="input"/>
+      <node ref="U70001" pin="24" pinfunction="AIN_4GND_24" pintype="input"/>
+      <node ref="U70001" pin="26" pinfunction="AIN_5GND_26" pintype="input"/>
+      <node ref="U70001" pin="28" pinfunction="AGND_28" pintype="power_in"/>
+      <node ref="U70001" pin="29" pinfunction="AGND_29" pintype="power_in"/>
+      <node ref="U70001" pin="3" pinfunction="DAISY_3" pintype="input"/>
+      <node ref="U70001" pin="31" pinfunction="AGND_31" pintype="power_in"/>
+      <node ref="U70001" pin="32" pinfunction="AGND_32" pintype="power_in"/>
+      <node ref="U70001" pin="33" pinfunction="DGND_33" pintype="power_in"/>
+      <node ref="U70001" pin="4" pinfunction="REFSEL_4" pintype="input"/>
+      <node ref="U70001" pin="6" pinfunction="REFGND_6" pintype="power_in"/>
+      <node ref="U70001" pin="8" pinfunction="AGND_8" pintype="power_in"/>
+      <node ref="U70020" pin="4" pinfunction="GND1_4" pintype="power_in"/>
+    </net>
+    <net code="22" name="SYS_95016e07__RAW_SCLK" class="Default">
+      <node ref="J70003" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70002" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="23" name="SYS_98321c7b__AFE_ISOLATED_READY" class="Default">
+      <node ref="J70006" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="J70021" pin="4" pinfunction="4_4" pintype="passive"/>
+    </net>
+    <net code="24" name="SYS_08572049__HOST_3V3" class="Default">
+      <node ref="C70008" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C70009" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C70020" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C70022" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J70001" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J70007" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="R70003" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70024" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U70001" pin="34" pinfunction="DVDD_34" pintype="power_in"/>
+      <node ref="U70020" pin="1" pinfunction="VCC1_1" pintype="power_in"/>
+    </net>
+    <net code="25" name="SYS_66316879__RAW_SDI" class="Default">
+      <node ref="J70003" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70001" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="26" name="SYS_93547907__RAILS_QUALIFIED" class="Default">
+      <node ref="J70006" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J70021" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="27" name="SYS_a83d484c__WATCHDOG_OK" class="Default">
+      <node ref="J70006" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="J70021" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="28" name="SYS_a863a08a__CS1" class="Default">
+      <node ref="J70004" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="J70020" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="J70022" pin="6" pinfunction="6_6" pintype="passive"/>
+    </net>
+    <net code="29" name="SYS_baff84b5__CH0_VPAIR" class="Default">
+      <node ref="J70002" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="R70102" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="30" name="SYS_ce0a4f53__BOTH_CNV" class="Default">
+      <node ref="J70004" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J70004" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="J70020" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J70020" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="J70022" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="J70022" pin="5" pinfunction="5_5" pintype="passive"/>
+    </net>
+    <net code="31" name="SYS_ce166826__HOST_5" class="Default">
+      <node ref="C70004" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C70005" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C70006" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C70007" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J70001" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70122" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U70001" pin="30" pinfunction="AVDD_30" pintype="power_in"/>
+      <node ref="U70001" pin="9" pinfunction="AVDD_9" pintype="power_in"/>
+    </net>
+    <net code="32" name="SYS_ec2c6e7f__CS0" class="Default">
+      <node ref="J70004" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J70020" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J70022" pin="4" pinfunction="4_4" pintype="passive"/>
+    </net>
+    <net code="33" name="SYS_ee59c76b__PWR_FAULT_N" class="Default">
+      <node ref="J70006" pin="9" pinfunction="9_9" pintype="passive"/>
+      <node ref="J70021" pin="9" pinfunction="9_9" pintype="passive"/>
+    </net>
+    <net code="34" name="SYS_f8e43b73__CH0_I_MON" class="Default">
+      <node ref="J70002" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70100" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="35" name="SYS_f199d834__PACK_BUS" class="Default">
+      <node ref="J70002" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="R70120" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="36" name="SYS_fd7db492__CH1_DOUT" class="Default">
+      <node ref="J70004" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="J70020" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="R70031" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="37" name="SYS_ff7fdc58__RESET_READY" class="Default">
+      <node ref="J70006" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J70021" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="38" name="monitoring-transport__ADC0" class="Default">
+      <node ref="C70100" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70100" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U70001" pin="16" pinfunction="AIN_0P_16" pintype="input"/>
+    </net>
+    <net code="39" name="monitoring-transport__ADC1" class="Default">
+      <node ref="C70101" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70101" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U70001" pin="18" pinfunction="AIN_1P_18" pintype="input"/>
+    </net>
+    <net code="40" name="monitoring-transport__ADC2" class="Default">
+      <node ref="C70102" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70102" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U70001" pin="21" pinfunction="AIN_2P_21" pintype="input"/>
+    </net>
+    <net code="41" name="monitoring-transport__ADC3" class="Default">
+      <node ref="C70103" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70103" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U70001" pin="23" pinfunction="AIN_3P_23" pintype="input"/>
+    </net>
+    <net code="42" name="monitoring-transport__ADC4" class="Default">
+      <node ref="C70104" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70104" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U70001" pin="25" pinfunction="AIN_4P_25" pintype="input"/>
+    </net>
+    <net code="43" name="monitoring-transport__ADC5" class="Default">
+      <node ref="C70105" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70105" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U70001" pin="27" pinfunction="AIN_5P_27" pintype="input"/>
+    </net>
+    <net code="44" name="monitoring-transport__ADC6" class="Default">
+      <node ref="C70106" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70106" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U70001" pin="12" pinfunction="AIN_6P_12" pintype="input"/>
+    </net>
+    <net code="45" name="monitoring-transport__ADC7" class="Default">
+      <node ref="C70107" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70107" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U70001" pin="14" pinfunction="AIN_7P_14" pintype="input"/>
+    </net>
+    <net code="46" name="monitoring-transport__COMP_3V3" class="Default">
+      <node ref="C70021" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C70023" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J70008" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="R70025" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U70020" pin="8" pinfunction="VCC2_8" pintype="power_in"/>
+    </net>
+    <net code="47" name="monitoring-transport__COMP_GND" class="Default">
+      <node ref="C70021" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C70023" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J70008" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="U70020" pin="5" pinfunction="GND2_5" pintype="power_in"/>
+    </net>
+    <net code="48" name="monitoring-transport__COMP_UART_RX" class="Default">
+      <node ref="J70008" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70023" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="49" name="monitoring-transport__COMP_UART_TX" class="Default">
+      <node ref="J70008" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70022" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="50" name="monitoring-transport__HOST5_SCALED" class="Default">
+      <node ref="R70107" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70122" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70123" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="51" name="monitoring-transport__PACK_SCALED" class="Default">
+      <node ref="R70106" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70120" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70121" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="52" name="monitoring-transport__RAW_REFCAP" class="Default">
+      <node ref="C70002" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C70003" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U70001" pin="7" pinfunction="REFCAP_7" pintype="passive"/>
+    </net>
+    <net code="53" name="monitoring-transport__RAW_REFIO" class="Default">
+      <node ref="C70001" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U70001" pin="5" pinfunction="REFIO_5" pintype="bidirectional"/>
+    </net>
+    <net code="54" name="monitoring-transport__RAW_SCLK_PAD" class="Default">
+      <node ref="R70002" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70005" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U70001" pin="37" pinfunction="SCLK_37" pintype="input"/>
+    </net>
+    <net code="55" name="monitoring-transport__RAW_SDI_PAD" class="Default">
+      <node ref="R70001" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70006" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U70001" pin="1" pinfunction="SDI_1" pintype="input"/>
+    </net>
+    <net code="56" name="monitoring-transport__UART_COMP_RX_PAD" class="Default">
+      <node ref="R70023" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U70020" pin="6" pinfunction="OUTB_COMP_RX_6" pintype="output"/>
+    </net>
+    <net code="57" name="monitoring-transport__UART_COMP_TX_PAD" class="Default">
+      <node ref="R70022" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70025" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U70020" pin="7" pinfunction="INA_COMP_TX_7" pintype="input"/>
+    </net>
+    <net code="58" name="monitoring-transport__UART_HOST_RX_PAD" class="Default">
+      <node ref="R70021" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U70020" pin="2" pinfunction="OUTA_HOST_RX_2" pintype="output"/>
+    </net>
+    <net code="59" name="monitoring-transport__UART_HOST_TX_PAD" class="Default">
+      <node ref="R70020" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70024" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U70020" pin="3" pinfunction="INB_HOST_TX_3" pintype="input"/>
+    </net>
+    <net code="60" name="unconnected-(U70001-DNC-Pad35)" class="Default">
+      <node ref="U70001" pin="35" pinfunction="DNC_35" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

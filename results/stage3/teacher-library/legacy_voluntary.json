@@ -1,0 +1,1631 @@
+{
+  "schema": "ato.stage3.teacher-library.v1",
+  "library_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922",
+  "generator": "legacy_voluntary",
+  "references_by_cadence": {
+    "1": {
+      "learner_only": {
+        "kind": "learner_only",
+        "coefficients_m": [
+          [
+            0.1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.1,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "reference_fit_rmse_m": null,
+        "label_source": "declared task goal; no expert evidence",
+        "training_subject": "known_task_no_subject",
+        "training_seconds": 0.0,
+        "qualified": true,
+        "qualification_reason": "AVAILABLE_DECLARED_TASK_REFERENCE"
+      },
+      "expert_external": {
+        "kind": "expert_external",
+        "coefficients_m": [
+          [
+            0.08885566498539671,
+            -0.029627227719423877,
+            0.0017958457722343293,
+            0.0018296412132685945
+          ],
+          [
+            -0.0887746568925845,
+            0.029563379799161786,
+            -0.0017508005841692063,
+            -0.001820917592424278
+          ]
+        ],
+        "reference_fit_rmse_m": 0.0075846724887227756,
+        "label_source": "observed external teacher trajectory, nominal training partition",
+        "training_subject": "synthetic_expert_51000",
+        "training_seconds": 12.0,
+        "qualified": false,
+        "qualification_reason": "OBSERVED_TEACHER_COMPETENCE_FAILED+INDEPENDENT_REPRESENTATION_ALLOCATION_FAILED"
+      },
+      "expert_neural": {
+        "kind": "expert_neural",
+        "coefficients_m": [
+          [
+            0.08878793227197808,
+            -0.029644977450083973,
+            0.0016977369426538144,
+            0.0018057922597839986
+          ],
+          [
+            -0.08870859343266171,
+            0.029574111782322568,
+            -0.0016885500964470036,
+            -0.001792053444643088
+          ]
+        ],
+        "reference_fit_rmse_m": 0.00762200611755829,
+        "label_source": "observed teacher voltage-derived features decoded through measured external labels; nominal training partition",
+        "training_subject": "synthetic_expert_51000",
+        "training_seconds": 12.0,
+        "qualified": false,
+        "qualification_reason": "OBSERVED_TEACHER_COMPETENCE_FAILED+INDEPENDENT_REPRESENTATION_ALLOCATION_FAILED+INDEPENDENT_NEURAL_DECODER_QUALIFICATION_FAILED"
+      }
+    },
+    "1.15": {
+      "learner_only": {
+        "kind": "learner_only",
+        "coefficients_m": [
+          [
+            0.1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.1,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "reference_fit_rmse_m": null,
+        "label_source": "declared task goal; no expert evidence",
+        "training_subject": "known_task_no_subject",
+        "training_seconds": 0.0,
+        "qualified": true,
+        "qualification_reason": "AVAILABLE_DECLARED_TASK_REFERENCE"
+      },
+      "expert_external": {
+        "kind": "expert_external",
+        "coefficients_m": [
+          [
+            0.08885566498539671,
+            -0.029627227719423877,
+            0.0017958457722343293,
+            0.0018296412132685945
+          ],
+          [
+            -0.0887746568925845,
+            0.029563379799161786,
+            -0.0017508005841692063,
+            -0.001820917592424278
+          ]
+        ],
+        "reference_fit_rmse_m": 0.0075846724887227756,
+        "label_source": "observed external teacher trajectory, nominal training partition",
+        "training_subject": "synthetic_expert_51000",
+        "training_seconds": 12.0,
+        "qualified": false,
+        "qualification_reason": "OBSERVED_TEACHER_COMPETENCE_FAILED+INDEPENDENT_REPRESENTATION_ALLOCATION_FAILED"
+      },
+      "expert_neural": {
+        "kind": "expert_neural",
+        "coefficients_m": [
+          [
+            0.08878793227197808,
+            -0.029644977450083973,
+            0.0016977369426538144,
+            0.0018057922597839986
+          ],
+          [
+            -0.08870859343266171,
+            0.029574111782322568,
+            -0.0016885500964470036,
+            -0.001792053444643088
+          ]
+        ],
+        "reference_fit_rmse_m": 0.00762200611755829,
+        "label_source": "observed teacher voltage-derived features decoded through measured external labels; nominal training partition",
+        "training_subject": "synthetic_expert_51000",
+        "training_seconds": 12.0,
+        "qualified": false,
+        "qualification_reason": "OBSERVED_TEACHER_COMPETENCE_FAILED+INDEPENDENT_REPRESENTATION_ALLOCATION_FAILED+INDEPENDENT_NEURAL_DECODER_QUALIFICATION_FAILED"
+      }
+    }
+  },
+  "qualification": {
+    "identity_errors": [],
+    "training_identity": {
+      "generator": "legacy_voluntary",
+      "performance_seed": 51000,
+      "subject_seed": 51000,
+      "cadence_hz": 1.0,
+      "external_noise_seed": 60200,
+      "voltage_noise_seed": 68001,
+      "contact_geometry_seed": 59300,
+      "duration_s": 12.0,
+      "privilege": "declared amplitude voluntary template",
+      "source_mode": "informative"
+    },
+    "settings": {
+      "contact_spatial_threshold_m": 0.018,
+      "contact_timing_threshold_s": 0.025,
+      "maximum_prediction_horizon_s": 0.1,
+      "error_allocation_limit_m": 0.025,
+      "decoder_allocation": "2*position_RMSE + 2*maximum_horizon*velocity_RMSE",
+      "template_allocation": "2*complete_trajectory_RMSE",
+      "neural_z_limit": 5.0,
+      "initial_warmup_s": 0.1,
+      "purged_split_half_width_s": 0.1,
+      "threshold_scope": "inherited task/observer allocations; empirical gates, not probability coverage"
+    },
+    "purged_decoder_fit_error_allocation_m": 0.013593214401197474,
+    "observed_competence": [
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 51000,
+          "subject_seed": 51000,
+          "cadence_hz": 1.0,
+          "external_noise_seed": 60200,
+          "voltage_noise_seed": 68001,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "qualification": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.023804971616495522,
+            "contact_spatial_rmse_m": 0.004577616937785475,
+            "contact_timing_rmse_s": 0.06111286778327227,
+            "scored_contact_events": 23,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        }
+      },
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 61007,
+          "subject_seed": 51000,
+          "cadence_hz": 1.0,
+          "external_noise_seed": 70207,
+          "voltage_noise_seed": 78008,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "qualification": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.02382659365822855,
+            "contact_spatial_rmse_m": 0.004453326550058127,
+            "contact_timing_rmse_s": 0.054403884132437526,
+            "scored_contact_events": 23,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        }
+      },
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 71014,
+          "subject_seed": 51000,
+          "cadence_hz": 1.0,
+          "external_noise_seed": 80214,
+          "voltage_noise_seed": 88015,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "qualification": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.023796745927226456,
+            "contact_spatial_rmse_m": 0.0044440893726509735,
+            "contact_timing_rmse_s": 0.057218118139959064,
+            "scored_contact_events": 23,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        }
+      },
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 81021,
+          "subject_seed": 51000,
+          "cadence_hz": 1.0,
+          "external_noise_seed": 90221,
+          "voltage_noise_seed": 98022,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "qualification": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.02382551322598327,
+            "contact_spatial_rmse_m": 0.004135056996081894,
+            "contact_timing_rmse_s": 0.060253089403023506,
+            "scored_contact_events": 23,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        }
+      },
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 51000,
+          "subject_seed": 51000,
+          "cadence_hz": 1.15,
+          "external_noise_seed": 60200,
+          "voltage_noise_seed": 68001,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "qualification": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.031125219824716426,
+            "contact_spatial_rmse_m": 0.0067442025217116335,
+            "contact_timing_rmse_s": 0.059473166084410174,
+            "scored_contact_events": 22,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        }
+      },
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 61007,
+          "subject_seed": 51000,
+          "cadence_hz": 1.15,
+          "external_noise_seed": 70207,
+          "voltage_noise_seed": 78008,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "qualification": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.031068661717235747,
+            "contact_spatial_rmse_m": 0.006322730743590079,
+            "contact_timing_rmse_s": 0.05496677197774361,
+            "scored_contact_events": 22,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        }
+      },
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 71014,
+          "subject_seed": 51000,
+          "cadence_hz": 1.15,
+          "external_noise_seed": 80214,
+          "voltage_noise_seed": 88015,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "qualification": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.031123060540597228,
+            "contact_spatial_rmse_m": 0.006597120634865764,
+            "contact_timing_rmse_s": 0.05922800599032531,
+            "scored_contact_events": 22,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        }
+      },
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 81021,
+          "subject_seed": 51000,
+          "cadence_hz": 1.15,
+          "external_noise_seed": 90221,
+          "voltage_noise_seed": 98022,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "qualification": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.031118606899255313,
+            "contact_spatial_rmse_m": 0.006343155303465141,
+            "contact_timing_rmse_s": 0.05757665601696521,
+            "scored_contact_events": 22,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        }
+      }
+    ],
+    "independent_validation": [
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 61007,
+          "subject_seed": 51000,
+          "cadence_hz": 1.0,
+          "external_noise_seed": 70207,
+          "voltage_noise_seed": 78008,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "observed_teacher": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.02382659365822855,
+            "contact_spatial_rmse_m": 0.004453326550058127,
+            "contact_timing_rmse_s": 0.054403884132437526,
+            "scored_contact_events": 23,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        },
+        "decoder": {
+          "qualified": false,
+          "reasons": [
+            "DECODED_TEACHER_CONTACT_CRITERION_FAILED"
+          ],
+          "independent_residuals": {
+            "available": true,
+            "position_rmse_m": 0.002452370887191513,
+            "velocity_rmse_m_per_s": 0.04318145934119557,
+            "scored_rows": 2373,
+            "maximum_standardized_feature": 3.211473847300829,
+            "label_scope": "independent measured external position and within-capture offline differentiated labels",
+            "physical_support": "same external physical support; no lower-latency neural state claimed",
+            "performance_seed": 61007,
+            "cadence_hz": 1.0
+          },
+          "error_allocation_m": 0.01354103364262214,
+          "decoded_task_criterion": {
+            "qualified": false,
+            "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+            "metrics": {
+              "trajectory_rmse_m": 0.02406516435408998,
+              "contact_spatial_rmse_m": 0.005057830176856224,
+              "contact_timing_rmse_s": 0.058300197628123926,
+              "scored_contact_events": 23,
+              "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+            }
+          },
+          "post_warmup_capture_complete": true
+        },
+        "representations": {
+          "expert_external": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.007568684949959136,
+            "position_error_allocation_m": 0.015137369899918271,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.022430972356998074,
+                "contact_spatial_rmse_m": 0.0056212889802017855,
+                "contact_timing_rmse_s": 0.06500000000000057,
+                "scored_contact_events": 23,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          },
+          "expert_neural": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.007568886696879191,
+            "position_error_allocation_m": 0.015137773393758382,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.022451901728888765,
+                "contact_spatial_rmse_m": 0.005675140916973644,
+                "contact_timing_rmse_s": 0.06500000000000057,
+                "scored_contact_events": 23,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          }
+        }
+      },
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 71014,
+          "subject_seed": 51000,
+          "cadence_hz": 1.0,
+          "external_noise_seed": 80214,
+          "voltage_noise_seed": 88015,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "observed_teacher": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.023796745927226456,
+            "contact_spatial_rmse_m": 0.0044440893726509735,
+            "contact_timing_rmse_s": 0.057218118139959064,
+            "scored_contact_events": 23,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        },
+        "decoder": {
+          "qualified": false,
+          "reasons": [
+            "DECODED_TEACHER_CONTACT_CRITERION_FAILED"
+          ],
+          "independent_residuals": {
+            "available": true,
+            "position_rmse_m": 0.002428883097975383,
+            "velocity_rmse_m_per_s": 0.04489147021141767,
+            "scored_rows": 2373,
+            "maximum_standardized_feature": 3.443032197670329,
+            "label_scope": "independent measured external position and within-capture offline differentiated labels",
+            "physical_support": "same external physical support; no lower-latency neural state claimed",
+            "performance_seed": 71014,
+            "cadence_hz": 1.0
+          },
+          "error_allocation_m": 0.013836060238234301,
+          "decoded_task_criterion": {
+            "qualified": false,
+            "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+            "metrics": {
+              "trajectory_rmse_m": 0.023916121339933382,
+              "contact_spatial_rmse_m": 0.005025068125024992,
+              "contact_timing_rmse_s": 0.05842125878702818,
+              "scored_contact_events": 23,
+              "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+            }
+          },
+          "post_warmup_capture_complete": true
+        },
+        "representations": {
+          "expert_external": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.007551487593182309,
+            "position_error_allocation_m": 0.015102975186364618,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.022430972356998074,
+                "contact_spatial_rmse_m": 0.0056212889802017855,
+                "contact_timing_rmse_s": 0.06500000000000057,
+                "scored_contact_events": 23,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          },
+          "expert_neural": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.007551749805753916,
+            "position_error_allocation_m": 0.015103499611507832,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.022451901728888765,
+                "contact_spatial_rmse_m": 0.005675140916973644,
+                "contact_timing_rmse_s": 0.06500000000000057,
+                "scored_contact_events": 23,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          }
+        }
+      },
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 81021,
+          "subject_seed": 51000,
+          "cadence_hz": 1.0,
+          "external_noise_seed": 90221,
+          "voltage_noise_seed": 98022,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "observed_teacher": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.02382551322598327,
+            "contact_spatial_rmse_m": 0.004135056996081894,
+            "contact_timing_rmse_s": 0.060253089403023506,
+            "scored_contact_events": 23,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        },
+        "decoder": {
+          "qualified": false,
+          "reasons": [
+            "DECODED_TEACHER_CONTACT_CRITERION_FAILED"
+          ],
+          "independent_residuals": {
+            "available": true,
+            "position_rmse_m": 0.002341957679651815,
+            "velocity_rmse_m_per_s": 0.04494953584422136,
+            "scored_rows": 2373,
+            "maximum_standardized_feature": 3.192085325856067,
+            "label_scope": "independent measured external position and within-capture offline differentiated labels",
+            "physical_support": "same external physical support; no lower-latency neural state claimed",
+            "performance_seed": 81021,
+            "cadence_hz": 1.0
+          },
+          "error_allocation_m": 0.013673822528147903,
+          "decoded_task_criterion": {
+            "qualified": false,
+            "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+            "metrics": {
+              "trajectory_rmse_m": 0.024084764392469777,
+              "contact_spatial_rmse_m": 0.004918517298868992,
+              "contact_timing_rmse_s": 0.06791938956042627,
+              "scored_contact_events": 23,
+              "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+            }
+          },
+          "post_warmup_capture_complete": true
+        },
+        "representations": {
+          "expert_external": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.007611561808397765,
+            "position_error_allocation_m": 0.01522312361679553,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.022430972356998074,
+                "contact_spatial_rmse_m": 0.0056212889802017855,
+                "contact_timing_rmse_s": 0.06500000000000057,
+                "scored_contact_events": 23,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          },
+          "expert_neural": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.00761157476373456,
+            "position_error_allocation_m": 0.01522314952746912,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.022451901728888765,
+                "contact_spatial_rmse_m": 0.005675140916973644,
+                "contact_timing_rmse_s": 0.06500000000000057,
+                "scored_contact_events": 23,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          }
+        }
+      },
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 51000,
+          "subject_seed": 51000,
+          "cadence_hz": 1.15,
+          "external_noise_seed": 60200,
+          "voltage_noise_seed": 68001,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "observed_teacher": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.031125219824716426,
+            "contact_spatial_rmse_m": 0.0067442025217116335,
+            "contact_timing_rmse_s": 0.059473166084410174,
+            "scored_contact_events": 22,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        },
+        "decoder": {
+          "qualified": false,
+          "reasons": [
+            "NEURAL_FEATURE_RANGE_EXCEEDED",
+            "DECODED_TEACHER_CONTACT_CRITERION_FAILED"
+          ],
+          "independent_residuals": {
+            "available": true,
+            "position_rmse_m": 0.0023282844493721544,
+            "velocity_rmse_m_per_s": 0.08532087479371965,
+            "scored_rows": 2373,
+            "maximum_standardized_feature": 6.106214536585186,
+            "label_scope": "independent measured external position and within-capture offline differentiated labels",
+            "physical_support": "same external physical support; no lower-latency neural state claimed",
+            "performance_seed": 51000,
+            "cadence_hz": 1.15
+          },
+          "error_allocation_m": 0.021720743857488237,
+          "decoded_task_criterion": {
+            "qualified": false,
+            "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+            "metrics": {
+              "trajectory_rmse_m": 0.031372903751257966,
+              "contact_spatial_rmse_m": 0.006844817903830686,
+              "contact_timing_rmse_s": 0.05971525131023533,
+              "scored_contact_events": 22,
+              "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+            }
+          },
+          "post_warmup_capture_complete": true
+        },
+        "representations": {
+          "expert_external": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED",
+              "COMPLETE_TRAJECTORY_REPRESENTATION_ALLOCATION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.016265188790549487,
+            "position_error_allocation_m": 0.032530377581098974,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.02252615536462956,
+                "contact_spatial_rmse_m": 0.005618071181267345,
+                "contact_timing_rmse_s": 0.054755133802957066,
+                "scored_contact_events": 22,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          },
+          "expert_neural": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED",
+              "COMPLETE_TRAJECTORY_REPRESENTATION_ALLOCATION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.016242683137776808,
+            "position_error_allocation_m": 0.032485366275553616,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.02254860615249161,
+                "contact_spatial_rmse_m": 0.0056682409143107605,
+                "contact_timing_rmse_s": 0.05429845583659105,
+                "scored_contact_events": 22,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          }
+        }
+      },
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 61007,
+          "subject_seed": 51000,
+          "cadence_hz": 1.15,
+          "external_noise_seed": 70207,
+          "voltage_noise_seed": 78008,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "observed_teacher": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.031068661717235747,
+            "contact_spatial_rmse_m": 0.006322730743590079,
+            "contact_timing_rmse_s": 0.05496677197774361,
+            "scored_contact_events": 22,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        },
+        "decoder": {
+          "qualified": false,
+          "reasons": [
+            "NEURAL_FEATURE_RANGE_EXCEEDED",
+            "DECODED_TEACHER_CONTACT_CRITERION_FAILED"
+          ],
+          "independent_residuals": {
+            "available": true,
+            "position_rmse_m": 0.002518582155260306,
+            "velocity_rmse_m_per_s": 0.08685222126715929,
+            "scored_rows": 2373,
+            "maximum_standardized_feature": 6.264854496746251,
+            "label_scope": "independent measured external position and within-capture offline differentiated labels",
+            "physical_support": "same external physical support; no lower-latency neural state claimed",
+            "performance_seed": 61007,
+            "cadence_hz": 1.15
+          },
+          "error_allocation_m": 0.02240760856395247,
+          "decoded_task_criterion": {
+            "qualified": false,
+            "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+            "metrics": {
+              "trajectory_rmse_m": 0.0315268546638163,
+              "contact_spatial_rmse_m": 0.00715232206185898,
+              "contact_timing_rmse_s": 0.058255707399173955,
+              "scored_contact_events": 22,
+              "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+            }
+          },
+          "post_warmup_capture_complete": true
+        },
+        "representations": {
+          "expert_external": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED",
+              "COMPLETE_TRAJECTORY_REPRESENTATION_ALLOCATION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.016222039002799938,
+            "position_error_allocation_m": 0.032444078005599876,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.02252615536462956,
+                "contact_spatial_rmse_m": 0.005618071181267345,
+                "contact_timing_rmse_s": 0.054755133802957066,
+                "scored_contact_events": 22,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          },
+          "expert_neural": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED",
+              "COMPLETE_TRAJECTORY_REPRESENTATION_ALLOCATION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.016199522701424645,
+            "position_error_allocation_m": 0.03239904540284929,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.02254860615249161,
+                "contact_spatial_rmse_m": 0.0056682409143107605,
+                "contact_timing_rmse_s": 0.05429845583659105,
+                "scored_contact_events": 22,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          }
+        }
+      },
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 71014,
+          "subject_seed": 51000,
+          "cadence_hz": 1.15,
+          "external_noise_seed": 80214,
+          "voltage_noise_seed": 88015,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "observed_teacher": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.031123060540597228,
+            "contact_spatial_rmse_m": 0.006597120634865764,
+            "contact_timing_rmse_s": 0.05922800599032531,
+            "scored_contact_events": 22,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        },
+        "decoder": {
+          "qualified": false,
+          "reasons": [
+            "NEURAL_FEATURE_RANGE_EXCEEDED",
+            "DECODED_TEACHER_CONTACT_CRITERION_FAILED"
+          ],
+          "independent_residuals": {
+            "available": true,
+            "position_rmse_m": 0.0024271809362832295,
+            "velocity_rmse_m_per_s": 0.08716667008424028,
+            "scored_rows": 2373,
+            "maximum_standardized_feature": 6.1510878669136435,
+            "label_scope": "independent measured external position and within-capture offline differentiated labels",
+            "physical_support": "same external physical support; no lower-latency neural state claimed",
+            "performance_seed": 71014,
+            "cadence_hz": 1.15
+          },
+          "error_allocation_m": 0.022287695889414514,
+          "decoded_task_criterion": {
+            "qualified": false,
+            "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+            "metrics": {
+              "trajectory_rmse_m": 0.031208667090463584,
+              "contact_spatial_rmse_m": 0.006462336713625439,
+              "contact_timing_rmse_s": 0.05867822900533608,
+              "scored_contact_events": 22,
+              "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+            }
+          },
+          "post_warmup_capture_complete": true
+        },
+        "representations": {
+          "expert_external": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED",
+              "COMPLETE_TRAJECTORY_REPRESENTATION_ALLOCATION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.01627135094050364,
+            "position_error_allocation_m": 0.03254270188100728,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.02252615536462956,
+                "contact_spatial_rmse_m": 0.005618071181267345,
+                "contact_timing_rmse_s": 0.054755133802957066,
+                "scored_contact_events": 22,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          },
+          "expert_neural": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED",
+              "COMPLETE_TRAJECTORY_REPRESENTATION_ALLOCATION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.01624894646470791,
+            "position_error_allocation_m": 0.03249789292941582,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.02254860615249161,
+                "contact_spatial_rmse_m": 0.0056682409143107605,
+                "contact_timing_rmse_s": 0.05429845583659105,
+                "scored_contact_events": 22,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          }
+        }
+      },
+      {
+        "identity": {
+          "generator": "legacy_voluntary",
+          "performance_seed": 81021,
+          "subject_seed": 51000,
+          "cadence_hz": 1.15,
+          "external_noise_seed": 90221,
+          "voltage_noise_seed": 98022,
+          "contact_geometry_seed": 59300,
+          "duration_s": 12.0,
+          "privilege": "declared amplitude voluntary template",
+          "source_mode": "informative"
+        },
+        "observed_teacher": {
+          "qualified": false,
+          "reason": "TIMING_THRESHOLD_FAILED",
+          "metrics": {
+            "trajectory_rmse_m": 0.031118606899255313,
+            "contact_spatial_rmse_m": 0.006343155303465141,
+            "contact_timing_rmse_s": 0.05757665601696521,
+            "scored_contact_events": 22,
+            "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+          },
+          "thresholds": {
+            "contact_spatial_rmse_m": 0.018,
+            "contact_timing_rmse_s": 0.025
+          },
+          "scope": "measured external task performance; no private body truth supplied"
+        },
+        "decoder": {
+          "qualified": false,
+          "reasons": [
+            "NEURAL_FEATURE_RANGE_EXCEEDED",
+            "DECODED_TEACHER_CONTACT_CRITERION_FAILED"
+          ],
+          "independent_residuals": {
+            "available": true,
+            "position_rmse_m": 0.0023796648678448083,
+            "velocity_rmse_m_per_s": 0.08506482557051658,
+            "scored_rows": 2373,
+            "maximum_standardized_feature": 5.956807099873308,
+            "label_scope": "independent measured external position and within-capture offline differentiated labels",
+            "physical_support": "same external physical support; no lower-latency neural state claimed",
+            "performance_seed": 81021,
+            "cadence_hz": 1.15
+          },
+          "error_allocation_m": 0.02177229484979293,
+          "decoded_task_criterion": {
+            "qualified": false,
+            "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+            "metrics": {
+              "trajectory_rmse_m": 0.03140489608050585,
+              "contact_spatial_rmse_m": 0.006576114869168126,
+              "contact_timing_rmse_s": 0.055803085591875544,
+              "scored_contact_events": 22,
+              "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+            }
+          },
+          "post_warmup_capture_complete": true
+        },
+        "representations": {
+          "expert_external": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED",
+              "COMPLETE_TRAJECTORY_REPRESENTATION_ALLOCATION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.016231761411205036,
+            "position_error_allocation_m": 0.03246352282241007,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.02252615536462956,
+                "contact_spatial_rmse_m": 0.005618071181267345,
+                "contact_timing_rmse_s": 0.054755133802957066,
+                "scored_contact_events": 22,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          },
+          "expert_neural": {
+            "qualified": false,
+            "reasons": [
+              "TEMPLATE_CONTACT_CRITERION_FAILED",
+              "COMPLETE_TRAJECTORY_REPRESENTATION_ALLOCATION_FAILED"
+            ],
+            "measured_trajectory_rmse_m": 0.016209273625981045,
+            "position_error_allocation_m": 0.03241854725196209,
+            "task_criterion": {
+              "qualified": false,
+              "reason": "DECLARED_CONTACT_CRITERION_FAILED",
+              "metrics": {
+                "trajectory_rmse_m": 0.02254860615249161,
+                "contact_spatial_rmse_m": 0.0056682409143107605,
+                "contact_timing_rmse_s": 0.05429845583659105,
+                "scored_contact_events": 22,
+                "contact_metric_scope": "local kinematic peak proxy; no force/contact mechanics"
+              }
+            },
+            "scope": "all withheld external records, fixed nominal-trained coefficients; empirical allocation, not a confidence guarantee"
+          }
+        }
+      }
+    ],
+    "domains": {
+      "1": {
+        "cadence_hz": 1.0,
+        "observed_recordings": 4,
+        "independent_validation_recordings": 3,
+        "references": {
+          "expert_external": {
+            "qualified": false,
+            "reasons": [
+              "OBSERVED_TEACHER_COMPETENCE_FAILED",
+              "INDEPENDENT_REPRESENTATION_ALLOCATION_FAILED"
+            ],
+            "reference_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922:expert_external:1Hz"
+          },
+          "expert_neural": {
+            "qualified": false,
+            "reasons": [
+              "OBSERVED_TEACHER_COMPETENCE_FAILED",
+              "INDEPENDENT_REPRESENTATION_ALLOCATION_FAILED",
+              "INDEPENDENT_NEURAL_DECODER_QUALIFICATION_FAILED"
+            ],
+            "reference_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922:expert_neural:1Hz"
+          }
+        }
+      },
+      "1.15": {
+        "cadence_hz": 1.15,
+        "observed_recordings": 4,
+        "independent_validation_recordings": 4,
+        "references": {
+          "expert_external": {
+            "qualified": false,
+            "reasons": [
+              "OBSERVED_TEACHER_COMPETENCE_FAILED",
+              "INDEPENDENT_REPRESENTATION_ALLOCATION_FAILED"
+            ],
+            "reference_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922:expert_external:1.15Hz"
+          },
+          "expert_neural": {
+            "qualified": false,
+            "reasons": [
+              "OBSERVED_TEACHER_COMPETENCE_FAILED",
+              "INDEPENDENT_REPRESENTATION_ALLOCATION_FAILED",
+              "INDEPENDENT_NEURAL_DECODER_QUALIFICATION_FAILED"
+            ],
+            "reference_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922:expert_neural:1.15Hz"
+          }
+        }
+      }
+    }
+  },
+  "resource_accounting": {
+    "unique_teacher_recording_seconds": 96.0,
+    "training_capture_seconds": 12.0,
+    "independent_validation_seconds": 84.0,
+    "nominal_recordings": 4,
+    "faster_recordings": 4,
+    "template_training_rows": 1757,
+    "neural_template_training_rows": 1757,
+    "template_partition_scope": "same external-defined post-warmup chronological cutoff and purge; external fit never requires neural validity",
+    "decoder_training_rows": 1757,
+    "decoder_withheld_rows_same_capture": 568,
+    "same_expert_resource_budget_for_external_and_neural_references": true,
+    "training_capture_has_internal_holdout_not_additional_recording_seconds": true,
+    "distinct_observation_noise_realizations": 4,
+    "paired_noise_ids_across_cadences": true,
+    "independence_scope": "84 s withheld recordings: 36 s nominal new noise, 48 s withheld cadence; cadence performance0 reuses training noise identity"
+  },
+  "source_limits": {
+    "teacher_subject_seed": 51000,
+    "contact_geometry_seed": 59300,
+    "source_mode": "informative",
+    "task": "two-foot kinematic peak proxy",
+    "tested_cadences_hz": [
+      1.0,
+      1.15
+    ],
+    "decoder_transfer_scope": "independent observation noise and cadence within one fixed synthetic subject/geometry",
+    "generator_privilege": "declared amplitude voluntary template",
+    "qualification_scope": "frozen measured capture model, not aperture-resolved embodiment",
+    "source_hold_s": 0.005,
+    "source_hold_fidelity_qualified": false,
+    "source_hold_limit": "frozen captures hold the moving source for 5 ms; aperture-resolved fidelity remains unqualified",
+    "reference_coordinates": "external task coordinates; learner-specific response map still required",
+    "does_not_establish": [
+      "between-person decoder transfer",
+      "real spinal signal content",
+      "expert-neural to novice retained benefit",
+      "qualified electrical delivery"
+    ],
+    "private_inputs_excluded": [
+      "expert movement time constant",
+      "expert theta",
+      "private evaluator/body truth"
+    ]
+  },
+  "decoder_model": {
+    "mean": [
+      -18.84761524140278,
+      -43.13009871492265,
+      -38.89764402930496,
+      34.768987994558465,
+      37.024004467130766,
+      2.826106121355733,
+      -12.678277155928642,
+      8.019906574761531,
+      -21.37980405059512,
+      -30.088545270121205,
+      34.4663063394678,
+      -29.474305691386082,
+      24.53200904492996,
+      36.061826408330624,
+      29.500976480570692,
+      -10.737774622759645,
+      35.71738002404726,
+      24.169591695631233,
+      27.219771031777057,
+      26.422280692728144,
+      -34.525126548870084,
+      38.651074346172315,
+      -39.276596995958684,
+      -48.78027913310283,
+      -48.15700986787731,
+      37.71911465242007,
+      -21.439937590226183,
+      -26.250046457349363,
+      -31.49946410183912,
+      2.8104407330150214,
+      21.095468720800824,
+      -39.75240606488713
+    ],
+    "scale": [
+      2.940569027783607,
+      10.1171943252135,
+      5.490755439698394,
+      9.057616934876169,
+      6.376850327882783,
+      2.051897903023369,
+      2.8884859821127185,
+      4.167090967590575,
+      4.165427213245039,
+      7.158799998246189,
+      7.373518681857043,
+      8.088838202328132,
+      3.7149652762311725,
+      16.552043419319862,
+      14.13238353534214,
+      4.993267860899573,
+      4.495540167298943,
+      5.947421681966593,
+      4.1325673381265124,
+      6.969056086201059,
+      6.014232571026833,
+      9.779284854503697,
+      6.742679434939182,
+      20.556231933086995,
+      8.017778071707859,
+      8.826014395566807,
+      4.85255063599532,
+      7.195006320988983,
+      4.363207425229018,
+      2.310321252291312,
+      10.27529286623447,
+      16.980277563383133
+    ],
+    "weights": [
+      [
+        0.0009449566048427204,
+        -0.000933917590552253,
+        -0.012707839885452968,
+        0.01267914964260931
+      ],
+      [
+        -8.039835637300337e-05,
+        -0.0001132404705850502,
+        0.0008324340504699344,
+        0.0012937757337274757
+      ],
+      [
+        0.007168472151199611,
+        -0.007925806884764791,
+        0.07096765208196766,
+        -0.06818267152146797
+      ],
+      [
+        -0.0015261028540288668,
+        0.0011831140318014416,
+        -0.028455831574731437,
+        0.029403652806192008
+      ],
+      [
+        -0.001071337130593885,
+        0.0017272643877322756,
+        0.04225729067778679,
+        -0.01819616373284115
+      ],
+      [
+        -0.0007137791833504353,
+        0.00072013009455635,
+        0.006540402583673245,
+        -0.02662204728242696
+      ],
+      [
+        0.00021085144560901019,
+        -7.576273229519772e-05,
+        0.006871812352338478,
+        -0.006938831446445359
+      ],
+      [
+        -0.0004363414973276985,
+        0.00045265111363619603,
+        -0.012752282997195136,
+        0.021794514043788266
+      ],
+      [
+        0.0005676056934380402,
+        -0.00043502241931717465,
+        -0.007593485532385895,
+        0.0075623014674463225
+      ],
+      [
+        -0.0010515829494095322,
+        0.0007869701285451288,
+        0.013111196890426648,
+        -0.023804413969128056
+      ],
+      [
+        -0.0002029058997251614,
+        0.00023405501526965088,
+        -0.03640465018289832,
+        0.04209745126089479
+      ],
+      [
+        0.0030551482587112626,
+        -0.0034265919126267082,
+        -0.0028360210700509006,
+        0.012707833385654843
+      ],
+      [
+        0.004244507770058811,
+        -0.004141230273553761,
+        0.04300457909841928,
+        -0.047729788826719056
+      ],
+      [
+        3.351488641337873e-06,
+        -0.00015499896538543007,
+        -0.015006983784608914,
+        0.011066790818255175
+      ],
+      [
+        -0.011617199528774809,
+        0.010507990189723874,
+        0.02195161089096975,
+        -0.020760078212457424
+      ],
+      [
+        -0.006338994532466606,
+        0.0061749553407246405,
+        0.027016415315263647,
+        -0.011648037487036703
+      ],
+      [
+        -0.00020499540485461454,
+        -0.0002316139944167868,
+        0.0008052412377036709,
+        0.0006243773441507758
+      ],
+      [
+        0.00026306561633584693,
+        -0.0003133121421205137,
+        0.018993130873239755,
+        -0.020251595688962707
+      ],
+      [
+        -0.0021170646144108053,
+        0.002268832464849563,
+        -0.03992571419668631,
+        0.02514155022833521
+      ],
+      [
+        0.0003417854352225159,
+        0.00019447216777716893,
+        -0.003660611181394514,
+        -0.005195319976104147
+      ],
+      [
+        0.00016944757879498257,
+        0.0003113194826678524,
+        0.017425798100383284,
+        -0.0092616424415243
+      ],
+      [
+        0.002094010985101608,
+        -0.001909167991691106,
+        -0.021937261969128152,
+        0.004168608746648985
+      ],
+      [
+        -0.004958393173833408,
+        0.004696764811225351,
+        -0.03152735728392568,
+        0.044816426710271216
+      ],
+      [
+        -0.0021939114682182617,
+        0.002385910891286127,
+        -0.027620378932513172,
+        0.038425208861471466
+      ],
+      [
+        -0.009978344605238906,
+        0.008905344307611442,
+        0.05048330423333132,
+        -0.053856887299597686
+      ],
+      [
+        0.0015765644182518528,
+        -0.0013824757490679405,
+        0.04108640544642985,
+        -0.03458868838791211
+      ],
+      [
+        -0.0009397550730718856,
+        0.00118933375990197,
+        0.07051415775423416,
+        -0.05851208879943847
+      ],
+      [
+        -9.823158228400434e-05,
+        0.00042009967533512295,
+        -0.003047204311789196,
+        -0.006930455647672111
+      ],
+      [
+        0.002259386060189411,
+        -0.0020923415463703935,
+        0.027259726164485593,
+        -0.025961828374608174
+      ],
+      [
+        0.00029713027218399577,
+        -0.0007432415839955324,
+        -0.009030310775764997,
+        0.0029710484264694782
+      ],
+      [
+        0.00035689645504852874,
+        -0.00038465322633255626,
+        -0.0012226114060021752,
+        -0.007812051044138317
+      ],
+      [
+        -0.0015963847489852089,
+        0.0014177821605398833,
+        0.03417629842116663,
+        -0.05237350546738667
+      ],
+      [
+        0.013504347920780965,
+        -0.014157871740446576,
+        0.048759491343092674,
+        -0.03222994970667364
+      ]
+    ],
+    "rmse": 0.002414191052151389,
+    "velocity_rmse": 0.04382416148447348,
+    "training_rows": 1757,
+    "heldout_rows": 568,
+    "purged_split_half_width_s": 0.1,
+    "labels": "same-learner external position + offline differentiated external position"
+  },
+  "consumer_witness": {
+    "scope": "pure observable policy witness; no electrical pulses, delivery or learning experiment",
+    "rows": [
+      {
+        "cadence_hz": 1.0,
+        "kind": "learner_only",
+        "reference_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922:learner_only:1Hz",
+        "reference_qualified": true,
+        "qualification_reason": "AVAILABLE_DECLARED_TASK_REFERENCE",
+        "request_fraction": [
+          0.4215106051088905,
+          -0.4215106051088905
+        ],
+        "policy_reason": "ADMITTED_LOCAL_POLICY"
+      },
+      {
+        "cadence_hz": 1.0,
+        "kind": "expert_external",
+        "reference_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922:expert_external:1Hz",
+        "reference_qualified": false,
+        "qualification_reason": "OBSERVED_TEACHER_COMPETENCE_FAILED+INDEPENDENT_REPRESENTATION_ALLOCATION_FAILED",
+        "request_fraction": [
+          0.0,
+          0.0
+        ],
+        "policy_reason": "UNAVAILABLE_EXPERT_REPRESENTATION"
+      },
+      {
+        "cadence_hz": 1.0,
+        "kind": "expert_neural",
+        "reference_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922:expert_neural:1Hz",
+        "reference_qualified": false,
+        "qualification_reason": "OBSERVED_TEACHER_COMPETENCE_FAILED+INDEPENDENT_REPRESENTATION_ALLOCATION_FAILED+INDEPENDENT_NEURAL_DECODER_QUALIFICATION_FAILED",
+        "request_fraction": [
+          0.0,
+          0.0
+        ],
+        "policy_reason": "UNAVAILABLE_EXPERT_REPRESENTATION"
+      },
+      {
+        "cadence_hz": 1.15,
+        "kind": "learner_only",
+        "reference_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922:learner_only:1.15Hz",
+        "reference_qualified": true,
+        "qualification_reason": "AVAILABLE_DECLARED_TASK_REFERENCE",
+        "request_fraction": [
+          1.0,
+          -1.0
+        ],
+        "policy_reason": "BOUNDED_REQUEST_UNREACHABLE_REMAINDER"
+      },
+      {
+        "cadence_hz": 1.15,
+        "kind": "expert_external",
+        "reference_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922:expert_external:1.15Hz",
+        "reference_qualified": false,
+        "qualification_reason": "OBSERVED_TEACHER_COMPETENCE_FAILED+INDEPENDENT_REPRESENTATION_ALLOCATION_FAILED",
+        "request_fraction": [
+          0.0,
+          0.0
+        ],
+        "policy_reason": "UNAVAILABLE_EXPERT_REPRESENTATION"
+      },
+      {
+        "cadence_hz": 1.15,
+        "kind": "expert_neural",
+        "reference_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922:expert_neural:1.15Hz",
+        "reference_qualified": false,
+        "qualification_reason": "OBSERVED_TEACHER_COMPETENCE_FAILED+INDEPENDENT_REPRESENTATION_ALLOCATION_FAILED+INDEPENDENT_NEURAL_DECODER_QUALIFICATION_FAILED",
+        "request_fraction": [
+          0.0,
+          0.0
+        ],
+        "policy_reason": "UNAVAILABLE_EXPERT_REPRESENTATION"
+      },
+      {
+        "cadence_hz": 1.3,
+        "kind": "learner_only",
+        "reference_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922:learner_only:1.3Hz",
+        "reference_qualified": false,
+        "qualification_reason": "TEACHER_REFERENCE_OUTSIDE_VALIDATED_CADENCE",
+        "request_fraction": [
+          0.0,
+          0.0
+        ],
+        "policy_reason": "UNAVAILABLE_EXPERT_REPRESENTATION"
+      },
+      {
+        "cadence_hz": 1.3,
+        "kind": "expert_external",
+        "reference_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922:expert_external:1.3Hz",
+        "reference_qualified": false,
+        "qualification_reason": "TEACHER_REFERENCE_OUTSIDE_VALIDATED_CADENCE",
+        "request_fraction": [
+          0.0,
+          0.0
+        ],
+        "policy_reason": "UNAVAILABLE_EXPERT_REPRESENTATION"
+      },
+      {
+        "cadence_hz": 1.3,
+        "kind": "expert_neural",
+        "reference_id": "ATO-S3-TEACHER-LIBRARY-1:legacy_voluntary:372102737eec2289f922:expert_neural:1.3Hz",
+        "reference_qualified": false,
+        "qualification_reason": "TEACHER_REFERENCE_OUTSIDE_VALIDATED_CADENCE",
+        "request_fraction": [
+          0.0,
+          0.0
+        ],
+        "policy_reason": "UNAVAILABLE_EXPERT_REPRESENTATION"
+      }
+    ]
+  }
+}

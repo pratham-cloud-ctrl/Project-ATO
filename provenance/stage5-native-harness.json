@@ -1,0 +1,3378 @@
+{
+  "schema": "ato.stage5.independent-native-inspection.v1",
+  "scope": "Nominal digital geometry; no fabrication, anatomy, hermetic or thermal qualification",
+  "FreeCAD_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "inspector_sha256_lf": "09027f6659e8b585d2433e97415ddd64e32a4c770cccfb3c2f6853e32685307e",
+  "packages": {
+    "harness": {
+      "contract": "cad/stage5/harness/contract.json",
+      "contract_canonical_sha256": "ea46a20d946555dbe03a34806cc74eeed033cc8057ae21be1beb0e6280f341a0",
+      "native": "cad/stage5/harness/ATO_mating_interfaces.FCStd",
+      "native_sha256": "6079242db047b70f21114a3eac33c0a8cce77260a189033362feb2b3bacbacf9",
+      "step": "cad/stage5/harness/ATO_mating_interfaces.step",
+      "step_sha256": "8c37241e686e1efe3e807e29c9da885384a7aee5128b75821ea81ae897890c2f",
+      "routing_native": "cad/stage5/harness/ATO_harness_routes.FCStd",
+      "routing_native_sha256": "23e3e6b6744c901e051962248e7b4ae7ec8cb48e778db850d7182a1995b6dd8b",
+      "reference_native_sha256": "764a4e7a9ec8212fefb1c9c0deb7cab2ee76a5c9e72b2895f9199c98d0e5ae9a",
+      "final_objects": 90,
+      "parts": [
+        {
+          "label": "Mate_controller_carrier_J80019",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 1456.0350000000008,
+          "bounds_mm": [
+            439.345,
+            103.005,
+            182.2,
+            487.805,
+            105.505,
+            196.2
+          ],
+          "centre_mm": [
+            463.57500000000005,
+            104.255,
+            189.19999999999996
+          ]
+        },
+        {
+          "label": "RearInsert_ArtificialLoad",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 6763.606262314988,
+          "bounds_mm": [
+            32.0,
+            307.0,
+            194.0,
+            122.0,
+            310.0,
+            222.0
+          ],
+          "centre_mm": [
+            77.0,
+            308.5,
+            207.99999999999997
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50004",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 693.3849999999998,
+          "bounds_mm": [
+            78.875,
+            62.495000000000005,
+            32.2,
+            101.935,
+            64.995,
+            46.2
+          ],
+          "centre_mm": [
+            90.405,
+            63.745000000000005,
+            39.20000000000001
+          ]
+        },
+        {
+          "label": "Mate_contact_router_J40003",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 540.8549999999998,
+          "bounds_mm": [
+            37.435,
+            78.815,
+            182.2,
+            55.415000000000006,
+            81.315,
+            196.2
+          ],
+          "centre_mm": [
+            46.42500000000001,
+            80.065,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_monitoring_transport_J70006",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 769.6499999999996,
+          "bounds_mm": [
+            403.425,
+            50.625,
+            132.2,
+            429.02500000000003,
+            53.125,
+            146.2
+          ],
+          "centre_mm": [
+            416.225,
+            51.87499999999999,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50003",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 922.1800000000013,
+          "bounds_mm": [
+            78.875,
+            70.08500000000001,
+            32.2,
+            109.555,
+            72.58500000000001,
+            46.2
+          ],
+          "centre_mm": [
+            94.21499999999999,
+            71.33500000000002,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_controller_carrier_J80015",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 693.3850000000003,
+          "bounds_mm": [
+            403.425,
+            103.005,
+            182.2,
+            426.485,
+            105.505,
+            196.2
+          ],
+          "centre_mm": [
+            414.95500000000004,
+            104.25499999999998,
+            189.20000000000002
+          ]
+        },
+        {
+          "label": "Mate_contact_router_J40006",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 693.3849999999998,
+          "bounds_mm": [
+            37.425000000000004,
+            56.045,
+            182.2,
+            60.48500000000001,
+            58.545,
+            196.2
+          ],
+          "centre_mm": [
+            48.95500000000002,
+            57.295,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_monitoring_transport_J70022",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 540.8549999999999,
+          "bounds_mm": [
+            469.305,
+            123.345,
+            132.2,
+            487.285,
+            125.845,
+            146.2
+          ],
+          "centre_mm": [
+            478.295,
+            124.595,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_monitoring_transport_J70005",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 388.32499999999936,
+          "bounds_mm": [
+            403.425,
+            58.215,
+            132.2,
+            416.325,
+            60.715,
+            146.2
+          ],
+          "centre_mm": [
+            409.875,
+            59.46500000000001,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_monitoring_cell_J10200",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.52999999999966,
+          "bounds_mm": [
+            447.235,
+            111.515,
+            82.2,
+            452.515,
+            114.015,
+            96.2
+          ],
+          "centre_mm": [
+            449.875,
+            112.765,
+            89.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50612",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.5300000000002,
+          "bounds_mm": [
+            249.825,
+            221.475,
+            32.2,
+            255.105,
+            223.975,
+            46.2
+          ],
+          "centre_mm": [
+            252.465,
+            222.725,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50614",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.52999999999963,
+          "bounds_mm": [
+            270.105,
+            221.475,
+            32.2,
+            275.385,
+            223.975,
+            46.2
+          ],
+          "centre_mm": [
+            272.745,
+            222.72500000000002,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_current_driver_J20001",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 388.3250000000005,
+          "bounds_mm": [
+            37.425000000000004,
+            145.485,
+            132.2,
+            50.325,
+            147.985,
+            146.2
+          ],
+          "centre_mm": [
+            43.875,
+            146.735,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_monitoring_cell_J10002",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 922.1799999999995,
+          "bounds_mm": [
+            403.425,
+            57.394999999999996,
+            82.2,
+            434.105,
+            59.894999999999996,
+            96.2
+          ],
+          "centre_mm": [
+            418.765,
+            58.644999999999996,
+            89.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50602",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.5300000000002,
+          "bounds_mm": [
+            142.33499999999998,
+            221.475,
+            32.2,
+            147.61499999999998,
+            223.975,
+            46.2
+          ],
+          "centre_mm": [
+            144.97499999999997,
+            222.725,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_current_driver_J20200",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 312.0599999999999,
+          "bounds_mm": [
+            72.175,
+            49.754999999999995,
+            132.2,
+            82.535,
+            52.254999999999995,
+            146.2
+          ],
+          "centre_mm": [
+            77.35499999999999,
+            51.004999999999995,
+            139.2
+          ]
+        },
+        {
+          "label": "RearInsert_CompanionPowerDebug",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 7544.7014000601785,
+          "bounds_mm": [
+            390.0,
+            307.0,
+            194.0,
+            490.0,
+            310.0,
+            222.0
+          ],
+          "centre_mm": [
+            439.99999999999994,
+            308.49999999999994,
+            207.99999999999994
+          ]
+        },
+        {
+          "label": "Grommet_ArtificialLoad_96",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 345.5751918948773,
+          "bounds_mm": [
+            89.5,
+            306.0,
+            201.5,
+            102.5,
+            311.0,
+            214.5
+          ],
+          "centre_mm": [
+            95.99999999999999,
+            308.49999999999994,
+            208.00000000000003
+          ]
+        },
+        {
+          "label": "Mate_monitoring_cell_J10003",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 388.32499999999953,
+          "bounds_mm": [
+            403.425,
+            49.80500000000001,
+            82.2,
+            416.325,
+            52.30500000000001,
+            96.2
+          ],
+          "centre_mm": [
+            409.875,
+            51.055000000000014,
+            89.2
+          ]
+        },
+        {
+          "label": "Mate_current_driver_J20005",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 693.3850000000008,
+          "bounds_mm": [
+            37.425000000000004,
+            122.715,
+            132.2,
+            60.48500000000001,
+            125.215,
+            146.2
+          ],
+          "centre_mm": [
+            48.955,
+            123.965,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_monitoring_transport_J70020",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 922.1800000000006,
+          "bounds_mm": [
+            469.295,
+            138.525,
+            132.2,
+            499.975,
+            141.025,
+            146.2
+          ],
+          "centre_mm": [
+            484.635,
+            139.775,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50603",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.53000000000011,
+          "bounds_mm": [
+            122.05499999999999,
+            213.885,
+            32.2,
+            127.335,
+            216.385,
+            46.2
+          ],
+          "centre_mm": [
+            124.695,
+            215.135,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50610",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.5300000000002,
+          "bounds_mm": [
+            227.515,
+            221.475,
+            32.2,
+            232.795,
+            223.975,
+            46.2
+          ],
+          "centre_mm": [
+            230.15499999999997,
+            222.725,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_controller_carrier_J80017",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 693.3850000000003,
+          "bounds_mm": [
+            403.425,
+            87.825,
+            182.2,
+            426.485,
+            90.325,
+            196.2
+          ],
+          "centre_mm": [
+            414.95500000000004,
+            89.075,
+            189.20000000000002
+          ]
+        },
+        {
+          "label": "Mate_monitoring_transport_J70003",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 464.5899999999999,
+          "bounds_mm": [
+            453.53499999999997,
+            87.575,
+            132.2,
+            468.97499999999997,
+            90.075,
+            146.2
+          ],
+          "centre_mm": [
+            461.255,
+            88.82500000000002,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_monitoring_transport_J70008",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 312.0600000000002,
+          "bounds_mm": [
+            446.085,
+            127.60499999999999,
+            132.2,
+            456.445,
+            130.105,
+            146.2
+          ],
+          "centre_mm": [
+            451.265,
+            128.855,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50611",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.5300000000002,
+          "bounds_mm": [
+            207.23499999999999,
+            213.885,
+            32.2,
+            212.515,
+            216.385,
+            46.2
+          ],
+          "centre_mm": [
+            209.87499999999997,
+            215.13500000000002,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50607",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.5300000000002,
+          "bounds_mm": [
+            164.64499999999998,
+            213.885,
+            32.2,
+            169.92499999999998,
+            216.385,
+            46.2
+          ],
+          "centre_mm": [
+            167.28499999999997,
+            215.13500000000002,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50101",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 1379.7700000000013,
+          "bounds_mm": [
+            37.435,
+            110.315,
+            32.2,
+            83.355,
+            112.815,
+            46.2
+          ],
+          "centre_mm": [
+            60.39499999999998,
+            111.565,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_power_J60006",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 235.79500000000007,
+          "bounds_mm": [
+            145.86,
+            81.305,
+            82.2,
+            153.68,
+            83.805,
+            96.2
+          ],
+          "centre_mm": [
+            149.77,
+            82.555,
+            89.2
+          ]
+        },
+        {
+          "label": "Mate_power_J60003",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 540.8549999999997,
+          "bounds_mm": [
+            145.87,
+            96.485,
+            82.2,
+            163.85,
+            98.985,
+            96.2
+          ],
+          "centre_mm": [
+            154.86,
+            97.735,
+            89.20000000000002
+          ]
+        },
+        {
+          "label": "Mate_contact_router_J40100",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 235.79500000000024,
+          "bounds_mm": [
+            96.205,
+            70.345,
+            182.2,
+            104.025,
+            72.845,
+            196.2
+          ],
+          "centre_mm": [
+            100.115,
+            71.595,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_recording_front_end_J30001",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 312.0600000000002,
+          "bounds_mm": [
+            483.145,
+            92.165,
+            32.2,
+            493.505,
+            94.665,
+            46.2
+          ],
+          "centre_mm": [
+            488.325,
+            93.415,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_monitoring_cell_J10004",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 312.0599999999997,
+          "bounds_mm": [
+            421.175,
+            49.80500000000001,
+            82.2,
+            431.535,
+            52.30500000000001,
+            96.2
+          ],
+          "centre_mm": [
+            426.355,
+            51.05500000000001,
+            89.2
+          ]
+        },
+        {
+          "label": "Mate_controller_carrier_J80020",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 312.0600000000001,
+          "bounds_mm": [
+            439.335,
+            95.415,
+            182.2,
+            449.695,
+            97.915,
+            196.2
+          ],
+          "centre_mm": [
+            444.515,
+            96.665,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_contact_router_J40004",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 769.6499999999997,
+          "bounds_mm": [
+            37.425000000000004,
+            71.225,
+            182.2,
+            63.025000000000006,
+            73.725,
+            196.2
+          ],
+          "centre_mm": [
+            50.22500000000002,
+            72.475,
+            189.20000000000002
+          ]
+        },
+        {
+          "label": "Mate_controller_carrier_J80016",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 693.3850000000003,
+          "bounds_mm": [
+            403.425,
+            95.415,
+            182.2,
+            426.485,
+            97.915,
+            196.2
+          ],
+          "centre_mm": [
+            414.95500000000004,
+            96.665,
+            189.20000000000002
+          ]
+        },
+        {
+          "label": "Mate_contact_router_J40007",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 1379.7699999999977,
+          "bounds_mm": [
+            37.435,
+            48.45500000000001,
+            182.2,
+            83.355,
+            50.95500000000001,
+            196.2
+          ],
+          "centre_mm": [
+            60.39500000000003,
+            49.70500000000001,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_controller_carrier_J80018",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 617.1200000000003,
+          "bounds_mm": [
+            439.335,
+            110.595,
+            182.2,
+            459.85499999999996,
+            113.095,
+            196.2
+          ],
+          "centre_mm": [
+            449.59499999999997,
+            111.845,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_current_driver_J20003",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 693.3850000000008,
+          "bounds_mm": [
+            37.425000000000004,
+            137.895,
+            132.2,
+            60.48500000000001,
+            140.395,
+            146.2
+          ],
+          "centre_mm": [
+            48.955000000000005,
+            139.145,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_controller_carrier_J80013",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 388.32499999999976,
+          "bounds_mm": [
+            501.355,
+            131.185,
+            182.2,
+            514.255,
+            133.685,
+            196.2
+          ],
+          "centre_mm": [
+            507.805,
+            132.435,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_recording_front_end_J30002",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 769.6500000000012,
+          "bounds_mm": [
+            483.145,
+            84.57499999999999,
+            32.2,
+            508.745,
+            87.07499999999999,
+            46.2
+          ],
+          "centre_mm": [
+            495.945,
+            85.82499999999999,
+            39.199999999999996
+          ]
+        },
+        {
+          "label": "Mate_monitoring_transport_J70001",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 235.79499999999993,
+          "bounds_mm": [
+            453.53499999999997,
+            102.755,
+            132.2,
+            461.35499999999996,
+            105.255,
+            146.2
+          ],
+          "centre_mm": [
+            457.445,
+            104.005,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_recording_front_end_J30003",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 1379.770000000001,
+          "bounds_mm": [
+            483.155,
+            76.98500000000001,
+            32.2,
+            529.0749999999999,
+            79.48500000000001,
+            46.2
+          ],
+          "centre_mm": [
+            506.11499999999995,
+            78.23500000000001,
+            39.2
+          ]
+        },
+        {
+          "label": "Grommet_CompanionPowerDebug_470",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 282.74333882308144,
+          "bounds_mm": [
+            464.5,
+            306.0,
+            202.5,
+            475.5,
+            311.0,
+            213.5
+          ],
+          "centre_mm": [
+            470.0,
+            308.49999999999994,
+            207.99999999999994
+          ]
+        },
+        {
+          "label": "Mate_controller_carrier_J80001",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.52999999999963,
+          "bounds_mm": [
+            403.425,
+            153.95499999999998,
+            182.2,
+            408.705,
+            156.45499999999998,
+            196.2
+          ],
+          "centre_mm": [
+            406.065,
+            155.20499999999998,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50616",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.52999999999963,
+          "bounds_mm": [
+            292.415,
+            243.845,
+            32.2,
+            297.695,
+            246.345,
+            46.2
+          ],
+          "centre_mm": [
+            295.055,
+            245.09500000000003,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_current_driver_J20100",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 312.05999999999983,
+          "bounds_mm": [
+            37.425000000000004,
+            49.754999999999995,
+            132.2,
+            47.785000000000004,
+            52.254999999999995,
+            146.2
+          ],
+          "centre_mm": [
+            42.605000000000004,
+            51.004999999999995,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50609",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.5300000000002,
+          "bounds_mm": [
+            217.375,
+            221.475,
+            32.2,
+            222.655,
+            223.975,
+            46.2
+          ],
+          "centre_mm": [
+            220.015,
+            222.725,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50006",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 388.32500000000005,
+          "bounds_mm": [
+            78.875,
+            47.315,
+            32.2,
+            91.775,
+            49.815,
+            46.2
+          ],
+          "centre_mm": [
+            85.325,
+            48.565,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50605",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.5300000000002,
+          "bounds_mm": [
+            174.785,
+            221.475,
+            32.2,
+            180.065,
+            223.975,
+            46.2
+          ],
+          "centre_mm": [
+            177.42499999999998,
+            222.725,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J59901",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 312.05999999999995,
+          "bounds_mm": [
+            178.48499999999999,
+            139.305,
+            32.2,
+            188.84499999999997,
+            141.805,
+            46.2
+          ],
+          "centre_mm": [
+            183.665,
+            140.555,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_current_driver_J20002",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 312.06000000000006,
+          "bounds_mm": [
+            55.175000000000004,
+            145.485,
+            132.2,
+            65.535,
+            147.985,
+            146.2
+          ],
+          "centre_mm": [
+            60.355000000000004,
+            146.735,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50005",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 998.4449999999982,
+          "bounds_mm": [
+            78.88499999999999,
+            54.905,
+            32.2,
+            112.10499999999999,
+            57.405,
+            46.2
+          ],
+          "centre_mm": [
+            95.49500000000002,
+            56.155,
+            39.20000000000001
+          ]
+        },
+        {
+          "label": "Mate_monitoring_transport_J70004",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 617.1200000000005,
+          "bounds_mm": [
+            403.425,
+            65.805,
+            132.2,
+            423.945,
+            68.305,
+            146.2
+          ],
+          "centre_mm": [
+            413.685,
+            67.055,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50613",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.5299999999996,
+          "bounds_mm": [
+            259.96500000000003,
+            221.475,
+            32.2,
+            265.245,
+            223.975,
+            46.2
+          ],
+          "centre_mm": [
+            262.605,
+            222.72500000000002,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_monitoring_transport_J70007",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 312.0600000000001,
+          "bounds_mm": [
+            430.875,
+            127.60499999999999,
+            132.2,
+            441.235,
+            130.105,
+            146.2
+          ],
+          "centre_mm": [
+            436.055,
+            128.855,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_controller_carrier_J80014",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 312.05999999999995,
+          "bounds_mm": [
+            403.425,
+            110.595,
+            182.2,
+            413.785,
+            113.095,
+            196.2
+          ],
+          "centre_mm": [
+            408.605,
+            111.845,
+            189.2
+          ]
+        },
+        {
+          "label": "Grommet_CompanionPowerDebug_440",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 282.74333882308144,
+          "bounds_mm": [
+            434.5,
+            306.0,
+            202.5,
+            445.5,
+            311.0,
+            213.5
+          ],
+          "centre_mm": [
+            440.00000000000006,
+            308.49999999999994,
+            207.99999999999994
+          ]
+        },
+        {
+          "label": "Grommet_CompanionPowerDebug_410",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 282.74333882308144,
+          "bounds_mm": [
+            404.5,
+            306.0,
+            202.5,
+            415.5,
+            311.0,
+            213.5
+          ],
+          "centre_mm": [
+            410.0,
+            308.49999999999994,
+            207.99999999999994
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50002",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 464.5900000000003,
+          "bounds_mm": [
+            78.875,
+            77.67500000000001,
+            32.2,
+            94.315,
+            80.17500000000001,
+            46.2
+          ],
+          "centre_mm": [
+            86.595,
+            78.92500000000001,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50606",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.5300000000002,
+          "bounds_mm": [
+            184.92499999999998,
+            221.475,
+            32.2,
+            190.20499999999998,
+            223.975,
+            46.2
+          ],
+          "centre_mm": [
+            187.56499999999997,
+            222.725,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50001",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 540.8550000000006,
+          "bounds_mm": [
+            78.88499999999999,
+            85.26499999999999,
+            32.2,
+            96.865,
+            87.76499999999999,
+            46.2
+          ],
+          "centre_mm": [
+            87.87499999999999,
+            86.51499999999999,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50100",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 1379.7700000000013,
+          "bounds_mm": [
+            37.435,
+            117.905,
+            32.2,
+            83.355,
+            120.405,
+            46.2
+          ],
+          "centre_mm": [
+            60.39499999999998,
+            119.155,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_contact_router_J40002",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 540.8550000000005,
+          "bounds_mm": [
+            50.105000000000004,
+            86.405,
+            182.2,
+            68.08500000000001,
+            88.905,
+            196.2
+          ],
+          "centre_mm": [
+            59.095000000000006,
+            87.655,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50601",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.5300000000002,
+          "bounds_mm": [
+            132.195,
+            221.475,
+            32.2,
+            137.475,
+            223.975,
+            46.2
+          ],
+          "centre_mm": [
+            134.83499999999998,
+            222.725,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_contact_router_J40001",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 235.79500000000007,
+          "bounds_mm": [
+            37.425000000000004,
+            86.405,
+            182.2,
+            45.245000000000005,
+            88.905,
+            196.2
+          ],
+          "centre_mm": [
+            41.33500000000001,
+            87.655,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_controller_carrier_J80011",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 769.6500000000004,
+          "bounds_mm": [
+            501.355,
+            146.365,
+            182.2,
+            526.955,
+            148.865,
+            196.2
+          ],
+          "centre_mm": [
+            514.155,
+            147.615,
+            189.20000000000002
+          ]
+        },
+        {
+          "label": "Grommet_ArtificialLoad_58",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 345.5751918948773,
+          "bounds_mm": [
+            51.5,
+            306.0,
+            201.5,
+            64.5,
+            311.0,
+            214.5
+          ],
+          "centre_mm": [
+            58.000000000000014,
+            308.4999999999999,
+            207.99999999999997
+          ]
+        },
+        {
+          "label": "Mate_controller_carrier_J80002",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 464.5900000000009,
+          "bounds_mm": [
+            500.655,
+            98.815,
+            182.2,
+            516.095,
+            101.315,
+            196.2
+          ],
+          "centre_mm": [
+            508.375,
+            100.065,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_recording_front_end_J39902",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 693.3850000000008,
+          "bounds_mm": [
+            439.615,
+            134.255,
+            32.2,
+            462.675,
+            136.755,
+            46.2
+          ],
+          "centre_mm": [
+            451.145,
+            135.505,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_power_J60001",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.53000000000023,
+          "bounds_mm": [
+            145.86,
+            111.665,
+            82.2,
+            151.14000000000001,
+            114.165,
+            96.2
+          ],
+          "centre_mm": [
+            148.5,
+            112.91500000000002,
+            89.2
+          ]
+        },
+        {
+          "label": "Mate_current_driver_J20004",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 845.9150000000008,
+          "bounds_mm": [
+            37.425000000000004,
+            130.305,
+            132.2,
+            65.565,
+            132.805,
+            146.2
+          ],
+          "centre_mm": [
+            51.495,
+            131.555,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_power_J60004",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 312.06000000000057,
+          "bounds_mm": [
+            145.86,
+            88.895,
+            82.2,
+            156.22000000000003,
+            91.395,
+            96.2
+          ],
+          "centre_mm": [
+            151.04000000000002,
+            90.145,
+            89.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50600",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.53000000000011,
+          "bounds_mm": [
+            122.05499999999999,
+            221.475,
+            32.2,
+            127.335,
+            223.975,
+            46.2
+          ],
+          "centre_mm": [
+            124.695,
+            222.72499999999997,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_power_J60002",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 922.1800000000012,
+          "bounds_mm": [
+            145.86,
+            104.075,
+            82.2,
+            176.54000000000002,
+            106.575,
+            96.2
+          ],
+          "centre_mm": [
+            161.20000000000002,
+            105.325,
+            89.2
+          ]
+        },
+        {
+          "label": "Mate_power_J60005",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 388.32500000000033,
+          "bounds_mm": [
+            161.07,
+            88.895,
+            82.2,
+            173.97,
+            91.395,
+            96.2
+          ],
+          "centre_mm": [
+            167.52,
+            90.145,
+            89.2
+          ]
+        },
+        {
+          "label": "Mate_controller_carrier_J80010",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 464.5900000000008,
+          "bounds_mm": [
+            501.355,
+            153.95499999999998,
+            182.2,
+            516.7950000000001,
+            156.45499999999998,
+            196.2
+          ],
+          "centre_mm": [
+            509.075,
+            155.20499999999998,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50608",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.5300000000002,
+          "bounds_mm": [
+            207.23499999999999,
+            221.475,
+            32.2,
+            212.515,
+            223.975,
+            46.2
+          ],
+          "centre_mm": [
+            209.87499999999997,
+            222.725,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_monitoring_cell_J10001",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 235.79499999999987,
+          "bounds_mm": [
+            403.425,
+            64.985,
+            82.2,
+            411.245,
+            67.485,
+            96.2
+          ],
+          "centre_mm": [
+            407.33500000000004,
+            66.235,
+            89.2
+          ]
+        },
+        {
+          "label": "Mate_monitoring_transport_J70002",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 617.1200000000002,
+          "bounds_mm": [
+            453.53499999999997,
+            95.165,
+            132.2,
+            474.05499999999995,
+            97.665,
+            146.2
+          ],
+          "centre_mm": [
+            463.7949999999999,
+            96.415,
+            139.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50604",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.5300000000002,
+          "bounds_mm": [
+            164.64499999999998,
+            221.475,
+            32.2,
+            169.92499999999998,
+            223.975,
+            46.2
+          ],
+          "centre_mm": [
+            167.285,
+            222.725,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_contact_router_J40005",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 922.1800000000009,
+          "bounds_mm": [
+            37.425000000000004,
+            63.635000000000005,
+            182.2,
+            68.105,
+            66.135,
+            196.2
+          ],
+          "centre_mm": [
+            52.765,
+            64.885,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_recording_front_end_J39901",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 922.180000000001,
+          "bounds_mm": [
+            439.615,
+            141.845,
+            32.2,
+            470.295,
+            144.345,
+            46.2
+          ],
+          "centre_mm": [
+            454.955,
+            143.095,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_contact_router_J40200",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 235.79500000000002,
+          "bounds_mm": [
+            137.415,
+            70.345,
+            182.2,
+            145.23499999999999,
+            72.845,
+            196.2
+          ],
+          "centre_mm": [
+            141.325,
+            71.595,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_monitoring_cell_J10100",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.52999999999966,
+          "bounds_mm": [
+            403.425,
+            111.515,
+            82.2,
+            408.705,
+            114.015,
+            96.2
+          ],
+          "centre_mm": [
+            406.065,
+            112.765,
+            89.2
+          ]
+        },
+        {
+          "label": "Mate_controller_carrier_J80012",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 540.8549999999997,
+          "bounds_mm": [
+            501.365,
+            138.775,
+            182.2,
+            519.345,
+            141.275,
+            196.2
+          ],
+          "centre_mm": [
+            510.35499999999996,
+            140.025,
+            189.2
+          ]
+        },
+        {
+          "label": "Mate_supervision_J50615",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.5300000000002,
+          "bounds_mm": [
+            249.825,
+            213.885,
+            32.2,
+            255.105,
+            216.385,
+            46.2
+          ],
+          "centre_mm": [
+            252.46499999999997,
+            215.13500000000002,
+            39.2
+          ]
+        },
+        {
+          "label": "Mate_monitoring_cell_J19901",
+          "category": "mating_interface",
+          "solids": 1,
+          "volume_mm3": 159.52999999999966,
+          "bounds_mm": [
+            491.045,
+            148.95499999999998,
+            82.2,
+            496.325,
+            151.45499999999998,
+            96.2
+          ],
+          "centre_mm": [
+            493.68499999999995,
+            150.20499999999998,
+            89.2
+          ]
+        }
+      ],
+      "step_comparison": {
+        "compared_solids": 90,
+        "max_volume_error_mm3": 1.3642420526593924e-12,
+        "max_coordinate_error_mm": 1.1368683772161603e-13,
+        "coordinate_tolerance_mm": 0.001,
+        "solid_volume_absolute_tolerance_mm3": 0.0001,
+        "solid_volume_relative_tolerance": 1e-06,
+        "face_area_absolute_tolerance_mm2": 0.001,
+        "face_area_relative_tolerance": 1e-05,
+        "method": "Per-solid volume, bounds, centre, full vertex geometry, face surface class/area/centre/bounds and all edge quarter samples"
+      },
+      "interference": {
+        "physical_pairs_checked": 19305,
+        "exact_BRep_pairs": 95,
+        "explained_engagements": [],
+        "unexplained_positive_volume_intersections": 0
+      },
+      "clearances": [],
+      "sockets": [
+        {
+          "label": "Mate_contact_router_J40001",
+          "board": "contact-router",
+          "reference": "J40001",
+          "pin_count": 3,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_contact_router_J40002",
+          "board": "contact-router",
+          "reference": "J40002",
+          "pin_count": 7,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_contact_router_J40003",
+          "board": "contact-router",
+          "reference": "J40003",
+          "pin_count": 7,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_contact_router_J40004",
+          "board": "contact-router",
+          "reference": "J40004",
+          "pin_count": 10,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_contact_router_J40005",
+          "board": "contact-router",
+          "reference": "J40005",
+          "pin_count": 12,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_contact_router_J40006",
+          "board": "contact-router",
+          "reference": "J40006",
+          "pin_count": 9,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_contact_router_J40007",
+          "board": "contact-router",
+          "reference": "J40007",
+          "pin_count": 18,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_contact_router_J40100",
+          "board": "contact-router",
+          "reference": "J40100",
+          "pin_count": 3,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_contact_router_J40200",
+          "board": "contact-router",
+          "reference": "J40200",
+          "pin_count": 3,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_controller_carrier_J80001",
+          "board": "controller-carrier",
+          "reference": "J80001",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_controller_carrier_J80002",
+          "board": "controller-carrier",
+          "reference": "J80002",
+          "pin_count": 6,
+          "measured_axis_to_housing_mm": 0.47499999999990905
+        },
+        {
+          "label": "Mate_controller_carrier_J80010",
+          "board": "controller-carrier",
+          "reference": "J80010",
+          "pin_count": 6,
+          "measured_axis_to_housing_mm": 0.47499999999990905
+        },
+        {
+          "label": "Mate_controller_carrier_J80011",
+          "board": "controller-carrier",
+          "reference": "J80011",
+          "pin_count": 10,
+          "measured_axis_to_housing_mm": 0.47499999999990905
+        },
+        {
+          "label": "Mate_controller_carrier_J80012",
+          "board": "controller-carrier",
+          "reference": "J80012",
+          "pin_count": 7,
+          "measured_axis_to_housing_mm": 0.47499999999990905
+        },
+        {
+          "label": "Mate_controller_carrier_J80013",
+          "board": "controller-carrier",
+          "reference": "J80013",
+          "pin_count": 5,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_controller_carrier_J80014",
+          "board": "controller-carrier",
+          "reference": "J80014",
+          "pin_count": 4,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_controller_carrier_J80015",
+          "board": "controller-carrier",
+          "reference": "J80015",
+          "pin_count": 9,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_controller_carrier_J80016",
+          "board": "controller-carrier",
+          "reference": "J80016",
+          "pin_count": 9,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_controller_carrier_J80017",
+          "board": "controller-carrier",
+          "reference": "J80017",
+          "pin_count": 9,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_controller_carrier_J80018",
+          "board": "controller-carrier",
+          "reference": "J80018",
+          "pin_count": 8,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_controller_carrier_J80019",
+          "board": "controller-carrier",
+          "reference": "J80019",
+          "pin_count": 19,
+          "measured_axis_to_housing_mm": 0.47499999999990905
+        },
+        {
+          "label": "Mate_controller_carrier_J80020",
+          "board": "controller-carrier",
+          "reference": "J80020",
+          "pin_count": 4,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_current_driver_J20001",
+          "board": "current-driver",
+          "reference": "J20001",
+          "pin_count": 5,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_current_driver_J20002",
+          "board": "current-driver",
+          "reference": "J20002",
+          "pin_count": 4,
+          "measured_axis_to_housing_mm": 0.4749999999999872
+        },
+        {
+          "label": "Mate_current_driver_J20003",
+          "board": "current-driver",
+          "reference": "J20003",
+          "pin_count": 9,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_current_driver_J20004",
+          "board": "current-driver",
+          "reference": "J20004",
+          "pin_count": 11,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_current_driver_J20005",
+          "board": "current-driver",
+          "reference": "J20005",
+          "pin_count": 9,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_current_driver_J20100",
+          "board": "current-driver",
+          "reference": "J20100",
+          "pin_count": 4,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_current_driver_J20200",
+          "board": "current-driver",
+          "reference": "J20200",
+          "pin_count": 4,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_monitoring_cell_J10001",
+          "board": "monitoring-cell",
+          "reference": "J10001",
+          "pin_count": 3,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_cell_J10002",
+          "board": "monitoring-cell",
+          "reference": "J10002",
+          "pin_count": 12,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_cell_J10003",
+          "board": "monitoring-cell",
+          "reference": "J10003",
+          "pin_count": 5,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_cell_J10004",
+          "board": "monitoring-cell",
+          "reference": "J10004",
+          "pin_count": 4,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_cell_J10100",
+          "board": "monitoring-cell",
+          "reference": "J10100",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_cell_J10200",
+          "board": "monitoring-cell",
+          "reference": "J10200",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_cell_J19901",
+          "board": "monitoring-cell",
+          "reference": "J19901",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_transport_J70001",
+          "board": "monitoring-transport",
+          "reference": "J70001",
+          "pin_count": 3,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_transport_J70002",
+          "board": "monitoring-transport",
+          "reference": "J70002",
+          "pin_count": 8,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_transport_J70003",
+          "board": "monitoring-transport",
+          "reference": "J70003",
+          "pin_count": 6,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_transport_J70004",
+          "board": "monitoring-transport",
+          "reference": "J70004",
+          "pin_count": 8,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_transport_J70005",
+          "board": "monitoring-transport",
+          "reference": "J70005",
+          "pin_count": 5,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_transport_J70006",
+          "board": "monitoring-transport",
+          "reference": "J70006",
+          "pin_count": 10,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_transport_J70007",
+          "board": "monitoring-transport",
+          "reference": "J70007",
+          "pin_count": 4,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_transport_J70008",
+          "board": "monitoring-transport",
+          "reference": "J70008",
+          "pin_count": 4,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_transport_J70020",
+          "board": "monitoring-transport",
+          "reference": "J70020",
+          "pin_count": 12,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_monitoring_transport_J70022",
+          "board": "monitoring-transport",
+          "reference": "J70022",
+          "pin_count": 7,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_power_J60001",
+          "board": "power",
+          "reference": "J60001",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_power_J60002",
+          "board": "power",
+          "reference": "J60002",
+          "pin_count": 12,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_power_J60003",
+          "board": "power",
+          "reference": "J60003",
+          "pin_count": 7,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_power_J60004",
+          "board": "power",
+          "reference": "J60004",
+          "pin_count": 4,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_power_J60005",
+          "board": "power",
+          "reference": "J60005",
+          "pin_count": 5,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_power_J60006",
+          "board": "power",
+          "reference": "J60006",
+          "pin_count": 3,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_recording_front_end_J30001",
+          "board": "recording-front-end",
+          "reference": "J30001",
+          "pin_count": 4,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_recording_front_end_J30002",
+          "board": "recording-front-end",
+          "reference": "J30002",
+          "pin_count": 10,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_recording_front_end_J30003",
+          "board": "recording-front-end",
+          "reference": "J30003",
+          "pin_count": 18,
+          "measured_axis_to_housing_mm": 0.47499999999990905
+        },
+        {
+          "label": "Mate_recording_front_end_J39901",
+          "board": "recording-front-end",
+          "reference": "J39901",
+          "pin_count": 12,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_recording_front_end_J39902",
+          "board": "recording-front-end",
+          "reference": "J39902",
+          "pin_count": 9,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J50001",
+          "board": "supervision",
+          "reference": "J50001",
+          "pin_count": 7,
+          "measured_axis_to_housing_mm": 0.4749999999999801
+        },
+        {
+          "label": "Mate_supervision_J50002",
+          "board": "supervision",
+          "reference": "J50002",
+          "pin_count": 6,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_supervision_J50003",
+          "board": "supervision",
+          "reference": "J50003",
+          "pin_count": 12,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_supervision_J50004",
+          "board": "supervision",
+          "reference": "J50004",
+          "pin_count": 9,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_supervision_J50005",
+          "board": "supervision",
+          "reference": "J50005",
+          "pin_count": 13,
+          "measured_axis_to_housing_mm": 0.4749999999999801
+        },
+        {
+          "label": "Mate_supervision_J50006",
+          "board": "supervision",
+          "reference": "J50006",
+          "pin_count": 5,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_supervision_J50100",
+          "board": "supervision",
+          "reference": "J50100",
+          "pin_count": 18,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_supervision_J50101",
+          "board": "supervision",
+          "reference": "J50101",
+          "pin_count": 18,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_supervision_J50600",
+          "board": "supervision",
+          "reference": "J50600",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_supervision_J50601",
+          "board": "supervision",
+          "reference": "J50601",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J50602",
+          "board": "supervision",
+          "reference": "J50602",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J50603",
+          "board": "supervision",
+          "reference": "J50603",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_supervision_J50604",
+          "board": "supervision",
+          "reference": "J50604",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J50605",
+          "board": "supervision",
+          "reference": "J50605",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_supervision_J50606",
+          "board": "supervision",
+          "reference": "J50606",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J50607",
+          "board": "supervision",
+          "reference": "J50607",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J50608",
+          "board": "supervision",
+          "reference": "J50608",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J50609",
+          "board": "supervision",
+          "reference": "J50609",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999943
+        },
+        {
+          "label": "Mate_supervision_J50610",
+          "board": "supervision",
+          "reference": "J50610",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J50611",
+          "board": "supervision",
+          "reference": "J50611",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J50612",
+          "board": "supervision",
+          "reference": "J50612",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J50613",
+          "board": "supervision",
+          "reference": "J50613",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J50614",
+          "board": "supervision",
+          "reference": "J50614",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J50615",
+          "board": "supervision",
+          "reference": "J50615",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J50616",
+          "board": "supervision",
+          "reference": "J50616",
+          "pin_count": 2,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        },
+        {
+          "label": "Mate_supervision_J59901",
+          "board": "supervision",
+          "reference": "J59901",
+          "pin_count": 4,
+          "measured_axis_to_housing_mm": 0.4749999999999659
+        }
+      ],
+      "routes": [
+        {
+          "id": "W001",
+          "native_length_mm": 849.4399999999998
+        },
+        {
+          "id": "W002",
+          "native_length_mm": 844.3599999999999
+        },
+        {
+          "id": "W003",
+          "native_length_mm": 839.28
+        },
+        {
+          "id": "W004",
+          "native_length_mm": 834.2
+        },
+        {
+          "id": "W005",
+          "native_length_mm": 829.1199999999999
+        },
+        {
+          "id": "W006",
+          "native_length_mm": 824.04
+        },
+        {
+          "id": "W007",
+          "native_length_mm": 818.9599999999998
+        },
+        {
+          "id": "W008",
+          "native_length_mm": 813.8799999999999
+        },
+        {
+          "id": "W009",
+          "native_length_mm": 808.8
+        },
+        {
+          "id": "W010",
+          "native_length_mm": 803.7199999999999
+        },
+        {
+          "id": "W011",
+          "native_length_mm": 798.64
+        },
+        {
+          "id": "W012",
+          "native_length_mm": 793.56
+        },
+        {
+          "id": "W013",
+          "native_length_mm": 788.48
+        },
+        {
+          "id": "W014",
+          "native_length_mm": 783.4
+        },
+        {
+          "id": "W015",
+          "native_length_mm": 778.3199999999999
+        },
+        {
+          "id": "W016",
+          "native_length_mm": 773.24
+        },
+        {
+          "id": "W017",
+          "native_length_mm": 768.16
+        },
+        {
+          "id": "W018",
+          "native_length_mm": 763.0799999999999
+        },
+        {
+          "id": "W019",
+          "native_length_mm": 417.87
+        },
+        {
+          "id": "W020",
+          "native_length_mm": 410.27000000000004
+        },
+        {
+          "id": "W021",
+          "native_length_mm": 402.67
+        },
+        {
+          "id": "W022",
+          "native_length_mm": 417.9
+        },
+        {
+          "id": "W023",
+          "native_length_mm": 385.44000000000005
+        },
+        {
+          "id": "W024",
+          "native_length_mm": 377.84
+        },
+        {
+          "id": "W025",
+          "native_length_mm": 370.24000000000007
+        },
+        {
+          "id": "W026",
+          "native_length_mm": 385.47
+        },
+        {
+          "id": "W027",
+          "native_length_mm": 353.01000000000005
+        },
+        {
+          "id": "W028",
+          "native_length_mm": 325.06
+        },
+        {
+          "id": "W029",
+          "native_length_mm": 317.46
+        },
+        {
+          "id": "W030",
+          "native_length_mm": 332.69
+        },
+        {
+          "id": "W031",
+          "native_length_mm": 300.23
+        },
+        {
+          "id": "W032",
+          "native_length_mm": 292.62999999999994
+        },
+        {
+          "id": "W033",
+          "native_length_mm": 285.03
+        },
+        {
+          "id": "W034",
+          "native_length_mm": 300.26000000000005
+        },
+        {
+          "id": "W035",
+          "native_length_mm": 290.16999999999996
+        },
+        {
+          "id": "W036",
+          "native_length_mm": 723.37
+        },
+        {
+          "id": "W037",
+          "native_length_mm": 400.26
+        },
+        {
+          "id": "W038",
+          "native_length_mm": 719.37
+        },
+        {
+          "id": "W039",
+          "native_length_mm": 407.85
+        },
+        {
+          "id": "W040",
+          "native_length_mm": 434.36
+        },
+        {
+          "id": "W041",
+          "native_length_mm": 431.82000000000005
+        },
+        {
+          "id": "W042",
+          "native_length_mm": 431.82000000000005
+        },
+        {
+          "id": "W043",
+          "native_length_mm": 439.44000000000005
+        },
+        {
+          "id": "W044",
+          "native_length_mm": 432.88999999999993
+        },
+        {
+          "id": "W045",
+          "native_length_mm": 427.81
+        },
+        {
+          "id": "W046",
+          "native_length_mm": 736.0699999999999
+        },
+        {
+          "id": "W047",
+          "native_length_mm": 736.0699999999999
+        },
+        {
+          "id": "W048",
+          "native_length_mm": 736.0699999999999
+        },
+        {
+          "id": "W049",
+          "native_length_mm": 736.0699999999999
+        },
+        {
+          "id": "W050",
+          "native_length_mm": 402.8
+        },
+        {
+          "id": "W051",
+          "native_length_mm": 407.87999999999994
+        },
+        {
+          "id": "W052",
+          "native_length_mm": 726.99
+        },
+        {
+          "id": "W053",
+          "native_length_mm": 732.0699999999999
+        },
+        {
+          "id": "W054",
+          "native_length_mm": 415.46999999999997
+        },
+        {
+          "id": "W055",
+          "native_length_mm": 641.8199999999999
+        },
+        {
+          "id": "W056",
+          "native_length_mm": 493.36
+        },
+        {
+          "id": "W057",
+          "native_length_mm": 461.45
+        },
+        {
+          "id": "W058",
+          "native_length_mm": 420.59000000000003
+        },
+        {
+          "id": "W059",
+          "native_length_mm": 397.76000000000005
+        },
+        {
+          "id": "W060",
+          "native_length_mm": 387.6
+        },
+        {
+          "id": "W061",
+          "native_length_mm": 741.0899999999999
+        },
+        {
+          "id": "W062",
+          "native_length_mm": 512.1
+        },
+        {
+          "id": "W063",
+          "native_length_mm": 490.32
+        },
+        {
+          "id": "W064",
+          "native_length_mm": 748.75
+        },
+        {
+          "id": "W065",
+          "native_length_mm": 734.0
+        },
+        {
+          "id": "W066",
+          "native_length_mm": 728.49
+        },
+        {
+          "id": "W067",
+          "native_length_mm": 713.74
+        },
+        {
+          "id": "W068",
+          "native_length_mm": 711.99
+        },
+        {
+          "id": "W069",
+          "native_length_mm": 721.28
+        },
+        {
+          "id": "W070",
+          "native_length_mm": 691.0
+        },
+        {
+          "id": "W071",
+          "native_length_mm": 685.9200000000001
+        },
+        {
+          "id": "W072",
+          "native_length_mm": 741.0899999999999
+        },
+        {
+          "id": "W073",
+          "native_length_mm": 734.55
+        },
+        {
+          "id": "W074",
+          "native_length_mm": 565.8600000000001
+        },
+        {
+          "id": "W075",
+          "native_length_mm": 502.41999999999996
+        },
+        {
+          "id": "W076",
+          "native_length_mm": 464.05
+        },
+        {
+          "id": "W077",
+          "native_length_mm": 420.59000000000003
+        },
+        {
+          "id": "W078",
+          "native_length_mm": 397.76000000000005
+        },
+        {
+          "id": "W079",
+          "native_length_mm": 387.59999999999997
+        },
+        {
+          "id": "W080",
+          "native_length_mm": 728.3899999999999
+        },
+        {
+          "id": "W081",
+          "native_length_mm": 504.4800000000001
+        },
+        {
+          "id": "W082",
+          "native_length_mm": 490.32
+        },
+        {
+          "id": "W083",
+          "native_length_mm": 736.05
+        },
+        {
+          "id": "W084",
+          "native_length_mm": 721.3
+        },
+        {
+          "id": "W085",
+          "native_length_mm": 715.79
+        },
+        {
+          "id": "W086",
+          "native_length_mm": 701.04
+        },
+        {
+          "id": "W087",
+          "native_length_mm": 706.91
+        },
+        {
+          "id": "W088",
+          "native_length_mm": 708.5799999999999
+        },
+        {
+          "id": "W089",
+          "native_length_mm": 651.17
+        },
+        {
+          "id": "W090",
+          "native_length_mm": 646.0899999999999
+        },
+        {
+          "id": "W091",
+          "native_length_mm": 728.3900000000001
+        },
+        {
+          "id": "W092",
+          "native_length_mm": 729.47
+        },
+        {
+          "id": "W093",
+          "native_length_mm": 763.95
+        },
+        {
+          "id": "W094",
+          "native_length_mm": 754.8699999999999
+        },
+        {
+          "id": "W095",
+          "native_length_mm": 758.8699999999999
+        },
+        {
+          "id": "W096",
+          "native_length_mm": 749.79
+        },
+        {
+          "id": "W097",
+          "native_length_mm": 744.71
+        },
+        {
+          "id": "W098",
+          "native_length_mm": 739.6299999999999
+        },
+        {
+          "id": "W099",
+          "native_length_mm": 420.59000000000003
+        },
+        {
+          "id": "W100",
+          "native_length_mm": 556.6099999999999
+        },
+        {
+          "id": "W101",
+          "native_length_mm": 541.325
+        },
+        {
+          "id": "W102",
+          "native_length_mm": 536.2449999999999
+        },
+        {
+          "id": "W103",
+          "native_length_mm": 531.165
+        },
+        {
+          "id": "W104",
+          "native_length_mm": 526.085
+        },
+        {
+          "id": "W105",
+          "native_length_mm": 521.0049999999999
+        },
+        {
+          "id": "W106",
+          "native_length_mm": 515.9250000000001
+        },
+        {
+          "id": "W107",
+          "native_length_mm": 510.845
+        },
+        {
+          "id": "W108",
+          "native_length_mm": 541.3449999999999
+        },
+        {
+          "id": "W109",
+          "native_length_mm": 536.265
+        },
+        {
+          "id": "W110",
+          "native_length_mm": 531.185
+        },
+        {
+          "id": "W111",
+          "native_length_mm": 526.1049999999999
+        },
+        {
+          "id": "W112",
+          "native_length_mm": 607.865
+        },
+        {
+          "id": "W113",
+          "native_length_mm": 607.865
+        },
+        {
+          "id": "W114",
+          "native_length_mm": 607.865
+        },
+        {
+          "id": "W115",
+          "native_length_mm": 607.865
+        },
+        {
+          "id": "W116",
+          "native_length_mm": 595.165
+        },
+        {
+          "id": "W117",
+          "native_length_mm": 297.035
+        },
+        {
+          "id": "W118",
+          "native_length_mm": 302.115
+        },
+        {
+          "id": "W119",
+          "native_length_mm": 294.495
+        },
+        {
+          "id": "W120",
+          "native_length_mm": 618.9449999999999
+        },
+        {
+          "id": "W121",
+          "native_length_mm": 624.0250000000001
+        },
+        {
+          "id": "W122",
+          "native_length_mm": 611.325
+        },
+        {
+          "id": "W123",
+          "native_length_mm": 411.23500000000007
+        },
+        {
+          "id": "W124",
+          "native_length_mm": 403.61500000000007
+        },
+        {
+          "id": "W125",
+          "native_length_mm": 403.615
+        },
+        {
+          "id": "W126",
+          "native_length_mm": 406.15500000000003
+        },
+        {
+          "id": "W127",
+          "native_length_mm": 409.70500000000004
+        },
+        {
+          "id": "W128",
+          "native_length_mm": 402.08500000000004
+        },
+        {
+          "id": "W129",
+          "native_length_mm": 435.26500000000004
+        },
+        {
+          "id": "W130",
+          "native_length_mm": 428.435
+        },
+        {
+          "id": "W131",
+          "native_length_mm": 324.95500000000004
+        },
+        {
+          "id": "W132",
+          "native_length_mm": 513.755
+        },
+        {
+          "id": "W133",
+          "native_length_mm": 371.91499999999996
+        },
+        {
+          "id": "W134",
+          "native_length_mm": 376.995
+        },
+        {
+          "id": "W135",
+          "native_length_mm": 369.375
+        },
+        {
+          "id": "W136",
+          "native_length_mm": 260.40999999999997
+        },
+        {
+          "id": "W137",
+          "native_length_mm": 265.48999999999995
+        },
+        {
+          "id": "W138",
+          "native_length_mm": 439.87
+        },
+        {
+          "id": "W139",
+          "native_length_mm": 439.86999999999995
+        },
+        {
+          "id": "W140",
+          "native_length_mm": 525.47
+        },
+        {
+          "id": "W141",
+          "native_length_mm": 530.55
+        },
+        {
+          "id": "W142",
+          "native_length_mm": 379.575
+        },
+        {
+          "id": "W143",
+          "native_length_mm": 371.955
+        },
+        {
+          "id": "W144",
+          "native_length_mm": 155.60000000000005
+        },
+        {
+          "id": "W145",
+          "native_length_mm": 160.67999999999998
+        },
+        {
+          "id": "W146",
+          "native_length_mm": 165.76000000000002
+        },
+        {
+          "id": "W147",
+          "native_length_mm": 170.84000000000006
+        },
+        {
+          "id": "W148",
+          "native_length_mm": 175.92
+        },
+        {
+          "id": "W149",
+          "native_length_mm": 181.00000000000003
+        },
+        {
+          "id": "W150",
+          "native_length_mm": 186.08000000000007
+        },
+        {
+          "id": "W151",
+          "native_length_mm": 201.32000000000002
+        },
+        {
+          "id": "W152",
+          "native_length_mm": 165.79000000000002
+        },
+        {
+          "id": "W153",
+          "native_length_mm": 170.87
+        },
+        {
+          "id": "W154",
+          "native_length_mm": 175.95
+        },
+        {
+          "id": "W155",
+          "native_length_mm": 181.03000000000003
+        },
+        {
+          "id": "W156",
+          "native_length_mm": 186.11
+        },
+        {
+          "id": "W157",
+          "native_length_mm": 444.4200000000001
+        },
+        {
+          "id": "W158",
+          "native_length_mm": 444.41999999999996
+        },
+        {
+          "id": "W159",
+          "native_length_mm": 444.42
+        },
+        {
+          "id": "W160",
+          "native_length_mm": 444.4200000000001
+        },
+        {
+          "id": "W161",
+          "native_length_mm": 444.41999999999996
+        },
+        {
+          "id": "W162",
+          "native_length_mm": 444.42
+        },
+        {
+          "id": "W163",
+          "native_length_mm": 439.34000000000003
+        },
+        {
+          "id": "W164",
+          "native_length_mm": 434.26
+        },
+        {
+          "id": "W165",
+          "native_length_mm": 371.535
+        },
+        {
+          "id": "W166",
+          "native_length_mm": 436.8
+        },
+        {
+          "id": "W167",
+          "native_length_mm": 377.93
+        },
+        {
+          "id": "W168",
+          "native_length_mm": 377.93
+        },
+        {
+          "id": "W169",
+          "native_length_mm": 377.93
+        },
+        {
+          "id": "W170",
+          "native_length_mm": 403.25000000000006
+        },
+        {
+          "id": "W171",
+          "native_length_mm": 413.43000000000006
+        },
+        {
+          "id": "W172",
+          "native_length_mm": 413.43
+        },
+        {
+          "id": "W173",
+          "native_length_mm": 361.61
+        },
+        {
+          "id": "W174",
+          "native_length_mm": 366.69
+        },
+        {
+          "id": "W175",
+          "native_length_mm": 371.77000000000004
+        },
+        {
+          "id": "W176",
+          "native_length_mm": 376.85
+        },
+        {
+          "id": "W177",
+          "native_length_mm": 381.93
+        },
+        {
+          "id": "W178",
+          "native_length_mm": 496.7900000000001
+        },
+        {
+          "id": "W179",
+          "native_length_mm": 501.87000000000006
+        },
+        {
+          "id": "W180",
+          "native_length_mm": 512.03
+        },
+        {
+          "id": "W181",
+          "native_length_mm": 506.95000000000005
+        },
+        {
+          "id": "W182",
+          "native_length_mm": 517.11
+        },
+        {
+          "id": "W183",
+          "native_length_mm": 522.19
+        },
+        {
+          "id": "W184",
+          "native_length_mm": 527.27
+        },
+        {
+          "id": "W185",
+          "native_length_mm": 326.44000000000005
+        },
+        {
+          "id": "W186",
+          "native_length_mm": 331.52000000000004
+        },
+        {
+          "id": "W187",
+          "native_length_mm": 336.6
+        },
+        {
+          "id": "W188",
+          "native_length_mm": 346.76
+        },
+        {
+          "id": "W189",
+          "native_length_mm": 341.68000000000006
+        },
+        {
+          "id": "W190",
+          "native_length_mm": 351.84
+        },
+        {
+          "id": "W191",
+          "native_length_mm": 336.11000000000007
+        },
+        {
+          "id": "W192",
+          "native_length_mm": 341.19
+        },
+        {
+          "id": "W193",
+          "native_length_mm": 346.27000000000004
+        },
+        {
+          "id": "W194",
+          "native_length_mm": 351.3500000000001
+        },
+        {
+          "id": "W195",
+          "native_length_mm": 448.74000000000007
+        },
+        {
+          "id": "W196",
+          "native_length_mm": 377.93
+        },
+        {
+          "id": "W197",
+          "native_length_mm": 448.74000000000007
+        },
+        {
+          "id": "W198",
+          "native_length_mm": 377.93
+        },
+        {
+          "id": "W199",
+          "native_length_mm": 448.74000000000007
+        },
+        {
+          "id": "W200",
+          "native_length_mm": 466.49000000000007
+        },
+        {
+          "id": "W201",
+          "native_length_mm": 566.5699999999999
+        },
+        {
+          "id": "W202",
+          "native_length_mm": 466.49000000000007
+        },
+        {
+          "id": "W203",
+          "native_length_mm": 566.5699999999999
+        },
+        {
+          "id": "W204",
+          "native_length_mm": 466.49000000000007
+        },
+        {
+          "id": "W205",
+          "native_length_mm": 466.49000000000007
+        },
+        {
+          "id": "W206",
+          "native_length_mm": 466.49000000000007
+        },
+        {
+          "id": "W207",
+          "native_length_mm": 466.49000000000007
+        },
+        {
+          "id": "W208",
+          "native_length_mm": 466.49000000000007
+        },
+        {
+          "id": "W209",
+          "native_length_mm": 466.49000000000007
+        },
+        {
+          "id": "W210",
+          "native_length_mm": 566.5699999999999
+        },
+        {
+          "id": "W211",
+          "native_length_mm": 566.5699999999999
+        },
+        {
+          "id": "W212",
+          "native_length_mm": 566.5699999999999
+        },
+        {
+          "id": "W213",
+          "native_length_mm": 556.4099999999999
+        },
+        {
+          "id": "W214",
+          "native_length_mm": 556.41
+        },
+        {
+          "id": "W215",
+          "native_length_mm": 242.74
+        },
+        {
+          "id": "W216",
+          "native_length_mm": 247.82
+        },
+        {
+          "id": "W217",
+          "native_length_mm": 425.545
+        },
+        {
+          "id": "W218",
+          "native_length_mm": 417.925
+        },
+        {
+          "id": "W219",
+          "native_length_mm": 387.01
+        },
+        {
+          "id": "W220",
+          "native_length_mm": 486.63000000000005
+        },
+        {
+          "id": "W221",
+          "native_length_mm": 491.71000000000004
+        },
+        {
+          "id": "W222",
+          "native_length_mm": 532.35
+        },
+        {
+          "id": "W223",
+          "native_length_mm": 356.9200000000001
+        },
+        {
+          "id": "W224",
+          "native_length_mm": 356.43
+        },
+        {
+          "id": "W225",
+          "native_length_mm": 448.74000000000007
+        },
+        {
+          "id": "W226",
+          "native_length_mm": 466.49000000000007
+        },
+        {
+          "id": "W227",
+          "native_length_mm": 383.01
+        },
+        {
+          "id": "W228",
+          "native_length_mm": 413.38000000000005
+        },
+        {
+          "id": "W229",
+          "native_length_mm": 556.41
+        },
+        {
+          "id": "W230",
+          "native_length_mm": 589.4
+        },
+        {
+          "id": "W231",
+          "native_length_mm": 252.89999999999998
+        },
+        {
+          "id": "W232",
+          "native_length_mm": 257.98
+        },
+        {
+          "id": "W233",
+          "native_length_mm": 413.38000000000005
+        },
+        {
+          "id": "W234",
+          "native_length_mm": 413.38000000000005
+        },
+        {
+          "id": "W235",
+          "native_length_mm": 413.38000000000005
+        },
+        {
+          "id": "W236",
+          "native_length_mm": 413.38000000000005
+        },
+        {
+          "id": "W237",
+          "native_length_mm": 413.38000000000005
+        },
+        {
+          "id": "W238",
+          "native_length_mm": 413.38000000000005
+        },
+        {
+          "id": "W239",
+          "native_length_mm": 413.38000000000005
+        },
+        {
+          "id": "W240",
+          "native_length_mm": 413.38000000000005
+        },
+        {
+          "id": "W241",
+          "native_length_mm": 574.16
+        },
+        {
+          "id": "W242",
+          "native_length_mm": 574.1599999999999
+        },
+        {
+          "id": "W243",
+          "native_length_mm": 574.16
+        },
+        {
+          "id": "W244",
+          "native_length_mm": 574.16
+        },
+        {
+          "id": "W245",
+          "native_length_mm": 574.1599999999999
+        },
+        {
+          "id": "W246",
+          "native_length_mm": 574.1600000000001
+        },
+        {
+          "id": "W247",
+          "native_length_mm": 571.66
+        },
+        {
+          "id": "W248",
+          "native_length_mm": 571.66
+        },
+        {
+          "id": "W249",
+          "native_length_mm": 405.075
+        },
+        {
+          "id": "W250",
+          "native_length_mm": 576.7
+        },
+        {
+          "id": "W251",
+          "native_length_mm": 571.6199999999999
+        },
+        {
+          "id": "W252",
+          "native_length_mm": 515.1700000000001
+        },
+        {
+          "id": "W253",
+          "native_length_mm": 507.55
+        },
+        {
+          "id": "W254",
+          "native_length_mm": 512.6300000000001
+        },
+        {
+          "id": "W255",
+          "native_length_mm": 505.01000000000005
+        },
+        {
+          "id": "W256",
+          "native_length_mm": 494.99
+        },
+        {
+          "id": "W257",
+          "native_length_mm": 522.79
+        },
+        {
+          "id": "W258",
+          "native_length_mm": 515.1700000000001
+        }
+      ],
+      "physical_qualification": false
+    }
+  },
+  "passed": true
+}

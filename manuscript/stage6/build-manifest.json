@@ -1,0 +1,52 @@
+{
+  "schema": "ato.stage6.manuscript-build.v1",
+  "version": "2.0.0",
+  "date": "2026-10-16",
+  "source_path": "manuscript/stage6/manuscript.md",
+  "source_sha256_lf": "9d1b116349b070336b76c3fa8bd544e01433b1c7c7ecf10fab9be1349ddd98c2",
+  "builder_path": "manuscript/stage6/build_manuscript.py",
+  "builder_sha256_lf": "0f875a3e325c09d8246289faba3f8ca18afc2543df6229c22e348b3e463e6cfb",
+  "pdf_path": "output/pdf/Project_ATO_Integrated_Manuscript.pdf",
+  "pdf_sha256": "b2e700f44ee4342c15806e72abe20aa70280d459fe4d8f9a1331babe57a69418",
+  "pages": 27,
+  "figures": {
+    "cad/stage5/renders/future_assembled.png": "560e4aeb86e7da100118a57085c97d11f4ea89354ab3058bcbee3ca8be3de95f",
+    "cad/stage5/renders/future_exploded.png": "0b900b3027a9c391703304e992a6e66e99856d360922a55c96c7d6a49790bb1d",
+    "cad/stage5/renders/reference_assembled.png": "9005fbef213d4e590561e7c9fe4f134931ff8692c30fc34b329e9ef3e733375f",
+    "manuscript/stage6/figures/01_system.png": "43cefc1d4ba9440f745503494dc7247909dc64f737353f081d7e2be951784012",
+    "manuscript/stage6/figures/02_learning.png": "cf25c1e3bdab4f1d5325469a1b630a2c944267df52df9f834865a97cd9cf59e6",
+    "manuscript/stage6/figures/03_pressure.png": "7c1693203bb17856f040a4814e8ec2e04e9c876ad38bb4b6ab4b6b966d89ac53",
+    "manuscript/stage6/figures/04_conditional_learning.png": "8e3fd612a8a38fec550cf355247b1c2b4225863477e36c848f38d9b862929979",
+    "manuscript/stage6/figures/05_exposure.png": "3133395d7a9c149f214b5d04c321883b0a179f43e4d55c82021b7a16a92d8b53",
+    "manuscript/stage6/figures/06_pressure_tradeoff.png": "b99c06f34aefa7c303a4279c093377686bd9e5004be443153eacaaf31a4a49ed",
+    "manuscript/stage6/figures/07_integration.png": "3951413e7fe49c0fe715795fca7db89db574b2c9d6a43643e08026e65077fb39",
+    "manuscript/stage6/figures/08_evidence.png": "7a1ad0164f7183aebd771814fb8b43efc32f1059a01daec7f52b8737ba586d9d",
+    "manuscript/stage6/figures/09_runtime.png": "088923b510d1102bc12fc5432072029d9479190ba67ff27f316c111f963c8160"
+  },
+  "references_path": "docs/stage6/references.json",
+  "references_sha256_lf": "0ea7b9fd3607fddd0c824bb0763b8c229767a42cfb53448d441f4b6f5c4c04e9",
+  "figure_generator_path": "manuscript/stage6/build_figures.py",
+  "figure_generator_sha256_lf": "2dcb60a50b033258bcd4467530f35843c62a6f540d074cf03a630c7461a7ff15",
+  "source_words": 7911,
+  "layout": "A4 portrait, embedded DejaVu fonts, linked contents/references, deterministic ReportLab PDF",
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "reportlab": "4.4.9",
+      "matplotlib": "3.11.2",
+      "pillow": "12.3.0",
+      "pypdf": "6.10.0",
+      "numpy": "2.3.5"
+    },
+    "font_sha256": {
+      "DejaVuSerif.ttf": "107244956e9962b9e96faccdc551825e0ae0898ae13737133e1b921a2fd35ffa",
+      "DejaVuSerif-Bold.ttf": "c3753f2ed6bc673f15846dc45addbeb3b9c872f32fb18fd53a21f1bef1ed7676",
+      "DejaVuSerif-Italic.ttf": "3e7994fbc54fa10ce3352a42d548fadd7d9cadb69cb1109bc9d960f6dac57f04",
+      "DejaVuSans.ttf": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22",
+      "DejaVuSans-Bold.ttf": "b184b89e3c1075f22f6b71575b6fc20d4972b3cfd3b23322ca6fd596dcaef167",
+      "DejaVuSansMono.ttf": "602ec86b8948cfcd956482fe64f94c36c867770149ef2f791d4613f443bcecb3"
+    }
+  },
+  "visual_review_required": true,
+  "physical_qualification": false
+}

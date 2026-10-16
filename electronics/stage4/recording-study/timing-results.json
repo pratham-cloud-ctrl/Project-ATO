@@ -1,0 +1,1821 @@
+{
+  "schema": "ato.stage4.recording-timing-contract.v1",
+  "source_sha256_normalized_lf": "fbff785ce369fe92871dfe5b1c2b02084dd5d605a0b47cf26724b1a7509349be",
+  "contract": "docs/stage4/recording-front-end-control-contract.md",
+  "scope": "Finite external-controller/protocol model; no deployed firmware, actual circuit timing, analogue recovery or biological claim",
+  "selected_timing": {
+    "spi_hz": 4000000,
+    "mode": 0,
+    "word_bits": 16,
+    "commands_per_burst": 19,
+    "slot_ns": 5000,
+    "burst_ns": 95000,
+    "frame_period_ns": 250000,
+    "per_stream_sample_rate_hz": 4000,
+    "controller_aperture_offsets_ns": [
+      5000,
+      10000,
+      15000,
+      20000,
+      25000,
+      30000,
+      35000,
+      40000,
+      45000,
+      50000,
+      55000,
+      60000,
+      65000,
+      70000,
+      75000,
+      80000
+    ],
+    "aperture_forward_path_status": "Add CS isolator/inverter propagation plus measured timer/edge uncertainty; no interrupt timestamp substitution",
+    "pairwise_aperture_span_ns": 75000,
+    "burst_occupancy_fraction": 0.38,
+    "CS_high_nominal_ns": 875,
+    "CS_high_min_after_ato_edge_allocations_ns": 853,
+    "CS_high_edge_allocation_ns": 22,
+    "CS_inverter_delay_ato_allocation_ns": 10,
+    "CS_lead_min_under_ato_allocations_ns": 82,
+    "CS_hold_min_under_ato_allocations_ns": 92,
+    "CS_high_datasheet_min_ns": 154,
+    "conversion_cycle_datasheet_min_ns": 950,
+    "external_mode_guard_allocation_ns": 5000,
+    "controller_aperture_jitter_allocation_ns": 125
+  },
+  "commissioning": {
+    "reg0_normal": "0xDE",
+    "reg0_fast_settle": "0xFE",
+    "Vref_enable_wait_min_ns": 100000,
+    "initialization_to_calibrate_wait_min_ns": 100000,
+    "calibration_dummy_words_min": 9,
+    "supply_adc_channel": 48,
+    "reg1_supply_enable_mask": "0x40",
+    "supply_ADC_nominal_volts_per_count": 7.48e-05,
+    "ADC_buffer_bias_selected": 8,
+    "MUX_bias_selected": 32,
+    "fast_settle_recommended_duration_ns_at300Hz": 8333333.333333333,
+    "fast_settle_is_guaranteed_recovery_bound": false
+  },
+  "primary_sources": [
+    {
+      "url": "https://intantech.com/files/Intan_RHD2000_series_datasheet.pdf",
+      "pages": "15-16,18-24,30,36",
+      "checked": "2026-10-13"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/iso6741.pdf",
+      "pages": "21 and switching conditions",
+      "checked": "2026-10-13"
+    },
+    {
+      "url": "https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/spim.html",
+      "section": "Electrical specification",
+      "checked": "2026-10-13"
+    }
+  ],
+  "assumptions": [
+    "ISO6741F 3.3 V table: 18 ns maximum propagation each direction and 6 ns same-direction skew; stated datasheet operating/load conditions required.",
+    "5 ns trace/edge uncertainty and 10 ns source-clock pulse-shortening allocations are ATO assumptions, not measurements.",
+    "10 ns local CS inverter-delay allocation is provisional; 875 ns CS-high minus 7 ns isolator pulse-width distortion, 10 ns inverter and 5 ns board allocation leaves 853 ns.",
+    "5 microsecond clamp/isolation/connect guards are provisional external-controller allocations, not manufacturer protection or recovery guarantees.",
+    "Rails, protected-node voltage, current quiescence, quiet input range, analogue settle and causal-filter recovery are external qualified inputs.",
+    "Brownout analogue protection, a frozen powered controller, and switch failures are outside this ideal Boolean model.",
+    "Unknown plausible ADC-word replay is not detectable from untagged conversion codes alone."
+  ],
+  "command_schedule": [
+    {
+      "slot": 0,
+      "controller_cs_assert_ns": 0,
+      "first_controller_sclk_rise_ns": 125,
+      "last_controller_sclk_fall_ns": 4000,
+      "controller_cs_release_ns": 4125,
+      "command": "CONVERT(0)",
+      "sampled_neural_channel_on_local_cs_fall": null,
+      "received_neural_channel": null,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": true
+    },
+    {
+      "slot": 1,
+      "controller_cs_assert_ns": 5000,
+      "first_controller_sclk_rise_ns": 5125,
+      "last_controller_sclk_fall_ns": 9000,
+      "controller_cs_release_ns": 9125,
+      "command": "CONVERT(1)",
+      "sampled_neural_channel_on_local_cs_fall": 0,
+      "received_neural_channel": null,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": true
+    },
+    {
+      "slot": 2,
+      "controller_cs_assert_ns": 10000,
+      "first_controller_sclk_rise_ns": 10125,
+      "last_controller_sclk_fall_ns": 14000,
+      "controller_cs_release_ns": 14125,
+      "command": "CONVERT(2)",
+      "sampled_neural_channel_on_local_cs_fall": 1,
+      "received_neural_channel": 0,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 3,
+      "controller_cs_assert_ns": 15000,
+      "first_controller_sclk_rise_ns": 15125,
+      "last_controller_sclk_fall_ns": 19000,
+      "controller_cs_release_ns": 19125,
+      "command": "CONVERT(3)",
+      "sampled_neural_channel_on_local_cs_fall": 2,
+      "received_neural_channel": 1,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 4,
+      "controller_cs_assert_ns": 20000,
+      "first_controller_sclk_rise_ns": 20125,
+      "last_controller_sclk_fall_ns": 24000,
+      "controller_cs_release_ns": 24125,
+      "command": "CONVERT(4)",
+      "sampled_neural_channel_on_local_cs_fall": 3,
+      "received_neural_channel": 2,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 5,
+      "controller_cs_assert_ns": 25000,
+      "first_controller_sclk_rise_ns": 25125,
+      "last_controller_sclk_fall_ns": 29000,
+      "controller_cs_release_ns": 29125,
+      "command": "CONVERT(5)",
+      "sampled_neural_channel_on_local_cs_fall": 4,
+      "received_neural_channel": 3,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 6,
+      "controller_cs_assert_ns": 30000,
+      "first_controller_sclk_rise_ns": 30125,
+      "last_controller_sclk_fall_ns": 34000,
+      "controller_cs_release_ns": 34125,
+      "command": "CONVERT(6)",
+      "sampled_neural_channel_on_local_cs_fall": 5,
+      "received_neural_channel": 4,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 7,
+      "controller_cs_assert_ns": 35000,
+      "first_controller_sclk_rise_ns": 35125,
+      "last_controller_sclk_fall_ns": 39000,
+      "controller_cs_release_ns": 39125,
+      "command": "CONVERT(7)",
+      "sampled_neural_channel_on_local_cs_fall": 6,
+      "received_neural_channel": 5,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 8,
+      "controller_cs_assert_ns": 40000,
+      "first_controller_sclk_rise_ns": 40125,
+      "last_controller_sclk_fall_ns": 44000,
+      "controller_cs_release_ns": 44125,
+      "command": "CONVERT(8)",
+      "sampled_neural_channel_on_local_cs_fall": 7,
+      "received_neural_channel": 6,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 9,
+      "controller_cs_assert_ns": 45000,
+      "first_controller_sclk_rise_ns": 45125,
+      "last_controller_sclk_fall_ns": 49000,
+      "controller_cs_release_ns": 49125,
+      "command": "CONVERT(9)",
+      "sampled_neural_channel_on_local_cs_fall": 8,
+      "received_neural_channel": 7,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 10,
+      "controller_cs_assert_ns": 50000,
+      "first_controller_sclk_rise_ns": 50125,
+      "last_controller_sclk_fall_ns": 54000,
+      "controller_cs_release_ns": 54125,
+      "command": "CONVERT(10)",
+      "sampled_neural_channel_on_local_cs_fall": 9,
+      "received_neural_channel": 8,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 11,
+      "controller_cs_assert_ns": 55000,
+      "first_controller_sclk_rise_ns": 55125,
+      "last_controller_sclk_fall_ns": 59000,
+      "controller_cs_release_ns": 59125,
+      "command": "CONVERT(11)",
+      "sampled_neural_channel_on_local_cs_fall": 10,
+      "received_neural_channel": 9,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 12,
+      "controller_cs_assert_ns": 60000,
+      "first_controller_sclk_rise_ns": 60125,
+      "last_controller_sclk_fall_ns": 64000,
+      "controller_cs_release_ns": 64125,
+      "command": "CONVERT(12)",
+      "sampled_neural_channel_on_local_cs_fall": 11,
+      "received_neural_channel": 10,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 13,
+      "controller_cs_assert_ns": 65000,
+      "first_controller_sclk_rise_ns": 65125,
+      "last_controller_sclk_fall_ns": 69000,
+      "controller_cs_release_ns": 69125,
+      "command": "CONVERT(13)",
+      "sampled_neural_channel_on_local_cs_fall": 12,
+      "received_neural_channel": 11,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 14,
+      "controller_cs_assert_ns": 70000,
+      "first_controller_sclk_rise_ns": 70125,
+      "last_controller_sclk_fall_ns": 74000,
+      "controller_cs_release_ns": 74125,
+      "command": "CONVERT(14)",
+      "sampled_neural_channel_on_local_cs_fall": 13,
+      "received_neural_channel": 12,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 15,
+      "controller_cs_assert_ns": 75000,
+      "first_controller_sclk_rise_ns": 75125,
+      "last_controller_sclk_fall_ns": 79000,
+      "controller_cs_release_ns": 79125,
+      "command": "CONVERT(15)",
+      "sampled_neural_channel_on_local_cs_fall": 14,
+      "received_neural_channel": 13,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 16,
+      "controller_cs_assert_ns": 80000,
+      "first_controller_sclk_rise_ns": 80125,
+      "last_controller_sclk_fall_ns": 84000,
+      "controller_cs_release_ns": 84125,
+      "command": "CONVERT(48)",
+      "sampled_neural_channel_on_local_cs_fall": 15,
+      "received_neural_channel": 14,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 17,
+      "controller_cs_assert_ns": 85000,
+      "first_controller_sclk_rise_ns": 85125,
+      "last_controller_sclk_fall_ns": 89000,
+      "controller_cs_release_ns": 89125,
+      "command": "READ(63)",
+      "sampled_neural_channel_on_local_cs_fall": null,
+      "received_neural_channel": 15,
+      "received_supply_observation": false,
+      "received_discarded_previous_response": false
+    },
+    {
+      "slot": 18,
+      "controller_cs_assert_ns": 90000,
+      "first_controller_sclk_rise_ns": 90125,
+      "last_controller_sclk_fall_ns": 94000,
+      "controller_cs_release_ns": 94125,
+      "command": "READ(63)",
+      "sampled_neural_channel_on_local_cs_fall": null,
+      "received_neural_channel": null,
+      "received_supply_observation": true,
+      "received_discarded_previous_response": false
+    }
+  ],
+  "summary": {
+    "scenario_groups": 17,
+    "assertions_passed": 56,
+    "recorded_control_snapshots": 53,
+    "eight_MHz_isolated_SPI_admitted": false,
+    "four_MHz_admitted_under_declared_timing_allocations": true,
+    "physical_timing_or_recovery_verified": false,
+    "complete_firmware_implemented": false,
+    "universal_stale_data_detection": false
+  },
+  "scenarios": [
+    {
+      "id": "T01",
+      "title": "Isolation requires an explicit Stage 2 SPI revision",
+      "checks": [
+        {
+          "assertion": "8MHz fails MISO setup even before board allowances",
+          "pass": true
+        },
+        {
+          "assertion": "4MHz passes declared MISO and MOSI allocations",
+          "pass": true
+        },
+        {
+          "assertion": "95us burst fits 250us frame",
+          "pass": true
+        },
+        {
+          "assertion": "provisional_cs_lead_clears20ns_minimum",
+          "pass": true
+        },
+        {
+          "assertion": "provisional_cs_hold_clears20ns_minimum",
+          "pass": true
+        },
+        {
+          "assertion": "provisional_cs_high_clears154ns_minimum",
+          "pass": true
+        }
+      ],
+      "history": [],
+      "contract_errors": [],
+      "budgets": [
+        {
+          "clock_hz": 8000000,
+          "nominal_half_period_ns": 62.5,
+          "miso_forward_propagation_max_ns": 18,
+          "miso_reverse_propagation_max_ns": 18,
+          "rhd_miso_valid_max_ns": 12,
+          "nrf_miso_setup_min_ns": 19,
+          "ato_board_uncertainty_allocation_ns": 5,
+          "ato_source_clock_edge_allocation_ns": 10,
+          "miso_margin_without_ato_allocations_ns": -4.5,
+          "miso_margin_with_ato_allocations_ns": -19.5,
+          "mosi_master_valid_max_ns": 59,
+          "same_direction_isolator_skew_max_ns": 6,
+          "rhd_mosi_setup_min_ns": 10,
+          "mosi_margin_with_ato_allocations_ns": -27.5,
+          "timing_admitted_under_allocations": false
+        },
+        {
+          "clock_hz": 4000000,
+          "nominal_half_period_ns": 125.0,
+          "miso_forward_propagation_max_ns": 18,
+          "miso_reverse_propagation_max_ns": 18,
+          "rhd_miso_valid_max_ns": 12,
+          "nrf_miso_setup_min_ns": 19,
+          "ato_board_uncertainty_allocation_ns": 5,
+          "ato_source_clock_edge_allocation_ns": 10,
+          "miso_margin_without_ato_allocations_ns": 58.0,
+          "miso_margin_with_ato_allocations_ns": 43.0,
+          "mosi_master_valid_max_ns": 59,
+          "same_direction_isolator_skew_max_ns": 6,
+          "rhd_mosi_setup_min_ns": 10,
+          "mosi_margin_with_ato_allocations_ns": 35.0,
+          "timing_admitted_under_allocations": true
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "title": "Next-CS aperture and two-word response pipeline are distinct",
+      "checks": [
+        {
+          "assertion": "sixteen neural responses are in slots2through17",
+          "pass": true
+        },
+        {
+          "assertion": "physical apertures occur on slots1through16",
+          "pass": true
+        },
+        {
+          "assertion": "reference supply result is flushed in slot18",
+          "pass": true
+        },
+        {
+          "assertion": "pairwise aperture span is75us",
+          "pass": true
+        }
+      ],
+      "history": [],
+      "contract_errors": []
+    },
+    {
+      "id": "T03",
+      "title": "Unknown prior pipeline responses are discarded on each startup burst",
+      "checks": [
+        {
+          "assertion": "first two responses never enter neural payload",
+          "pass": true
+        },
+        {
+          "assertion": "qualified burst labels are complete",
+          "pass": true
+        },
+        {
+          "assertion": "startup analogue unqualified still invalidates entire frame",
+          "pass": true
+        }
+      ],
+      "history": [],
+      "contract_errors": []
+    },
+    {
+      "id": "T04",
+      "title": "Incomplete or extra-word DMA bursts invalidate the full frame",
+      "checks": [
+        {
+          "assertion": "all tested incorrect word counts invalidate",
+          "pass": true
+        },
+        {
+          "assertion": "byte-oriented incomplete words invalidate",
+          "pass": true
+        }
+      ],
+      "history": [],
+      "contract_errors": [],
+      "rejected_frames": [
+        {
+          "validity_mask": 0,
+          "reasons": [
+            "word_count"
+          ],
+          "returned_channels": [],
+          "wire_has_channel_or_frame_tag": false
+        },
+        {
+          "validity_mask": 0,
+          "reasons": [
+            "word_count"
+          ],
+          "returned_channels": [],
+          "wire_has_channel_or_frame_tag": false
+        },
+        {
+          "validity_mask": 0,
+          "reasons": [
+            "word_count"
+          ],
+          "returned_channels": [],
+          "wire_has_channel_or_frame_tag": false
+        },
+        {
+          "validity_mask": 0,
+          "reasons": [
+            "word_count"
+          ],
+          "returned_channels": [],
+          "wire_has_channel_or_frame_tag": false
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "title": "Known stale metadata, SPI errors and channel mapping faults are rejected",
+      "checks": [
+        {
+          "assertion": "stale epoch invalid",
+          "pass": true
+        },
+        {
+          "assertion": "stale sequence invalid",
+          "pass": true
+        },
+        {
+          "assertion": "known stale DMA buffer invalid",
+          "pass": true
+        },
+        {
+          "assertion": "SPI error invalid",
+          "pass": true
+        },
+        {
+          "assertion": "independent model detects one-slot mapping error",
+          "pass": true
+        }
+      ],
+      "history": [],
+      "contract_errors": []
+    },
+    {
+      "id": "T06",
+      "title": "Aperture jitter bound is explicit and boundary-tested",
+      "checks": [
+        {
+          "assertion": "125ns allocation endpoint admitted",
+          "pass": true
+        },
+        {
+          "assertion": "above125ns rejected",
+          "pass": true
+        },
+        {
+          "assertion": "negative excursion also rejected",
+          "pass": true
+        }
+      ],
+      "history": [],
+      "contract_errors": []
+    },
+    {
+      "id": "T07",
+      "title": "Default-LOW controls command clamp and isolation with valid logic",
+      "checks": [
+        {
+          "assertion": "default selection is clamped",
+          "pass": true
+        },
+        {
+          "assertion": "unqualified rails cannot earn acquisition",
+          "pass": true
+        },
+        {
+          "assertion": "unqualified startup cannot request stimulation",
+          "pass": true
+        }
+      ],
+      "history": [
+        {
+          "event": "default_power_on",
+          "time_ns": 0,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": false,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": false,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        }
+      ],
+      "contract_errors": []
+    },
+    {
+      "id": "T08",
+      "title": "Native CONNECT-and-RECORD gate clamps invalid01 command",
+      "checks": [
+        {
+          "assertion": "invalid01 remains physically clamped",
+          "pass": true
+        },
+        {
+          "assertion": "invalid01 earns neither recording nor stimulation",
+          "pass": true
+        },
+        {
+          "assertion": "command violation retained",
+          "pass": true
+        }
+      ],
+      "history": [
+        {
+          "event": "invalid_record_without_connect",
+          "time_ns": 10000,
+          "connect_high": false,
+          "record_high": true,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": false,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        }
+      ],
+      "contract_errors": [
+        "invalid_01_command"
+      ]
+    },
+    {
+      "id": "T09",
+      "title": "Ordered blanking earns only external-controller request permission",
+      "checks": [
+        {
+          "assertion": "one_ns_early_guard_rejected",
+          "pass": true
+        },
+        {
+          "assertion": "full_guard_request_admitted",
+          "pass": true
+        },
+        {
+          "assertion": "all_stimulation_intervals_neural_invalid",
+          "pass": true
+        },
+        {
+          "assertion": "guard violation retained",
+          "pass": true
+        }
+      ],
+      "history": [
+        {
+          "event": "rails_and_quiet_qualified",
+          "time_ns": 1000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "connect_while_clamped",
+          "time_ns": 10000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "protected_nodes_qualified",
+          "time_ns": 20000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "release_clamp",
+          "time_ns": 25000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "external_analogue_and_filter_qualification",
+          "time_ns": 50000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": true,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": true,
+          "filters_qualified": true
+        },
+        {
+          "event": "clamp_before_stimulation",
+          "time_ns": 60000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "disconnect_after_clamp_guard",
+          "time_ns": 65000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "reject4999ns_isolation_guard",
+          "time_ns": 69999,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "accept5000ns_isolation_guard",
+          "time_ns": 70000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": true,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "external_driver_request_admitted",
+          "time_ns": 70000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": true,
+          "request": true,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        }
+      ],
+      "contract_errors": [
+        "external_controller_rejected_stimulation"
+      ]
+    },
+    {
+      "id": "T10",
+      "title": "Simultaneous clamp/disconnect is not credited with a clamp guard",
+      "checks": [
+        {
+          "assertion": "ordering_fault_is_retained",
+          "pass": true
+        },
+        {
+          "assertion": "acquisition_is_invalidated",
+          "pass": true
+        }
+      ],
+      "history": [
+        {
+          "event": "rails_and_quiet_qualified",
+          "time_ns": 1000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "connect_while_clamped",
+          "time_ns": 10000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "protected_nodes_qualified",
+          "time_ns": 20000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "release_clamp",
+          "time_ns": 25000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "external_analogue_and_filter_qualification",
+          "time_ns": 50000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": true,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": true,
+          "filters_qualified": true
+        },
+        {
+          "event": "unsafe_simultaneous_disconnect_and_clamp",
+          "time_ns": 60000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        }
+      ],
+      "contract_errors": [
+        "disconnect_without_qualified_clamp_guard"
+      ]
+    },
+    {
+      "id": "T11",
+      "title": "Switch release, analogue settle and causal-filter recovery are separate",
+      "checks": [
+        {
+          "assertion": "switch_release_alone_does_not_earn_samples",
+          "pass": true
+        },
+        {
+          "assertion": "analogue_settle_alone_does_not_earn_filtered_samples",
+          "pass": true
+        },
+        {
+          "assertion": "explicit_separate_qualification_earns_samples",
+          "pass": true
+        },
+        {
+          "assertion": "properly_ordered_history_has_no_contract_error",
+          "pass": true
+        }
+      ],
+      "history": [
+        {
+          "event": "rails_and_quiet_qualified",
+          "time_ns": 1000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "connect_while_clamped",
+          "time_ns": 10000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "protected_nodes_qualified",
+          "time_ns": 20000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "release_clamp",
+          "time_ns": 25000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "external_analogue_and_filter_qualification",
+          "time_ns": 50000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": true,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": true,
+          "filters_qualified": true
+        },
+        {
+          "event": "clamp",
+          "time_ns": 60000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "disconnect",
+          "time_ns": 65000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "stimulus",
+          "time_ns": 70000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": true,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "external_driver_request_admitted",
+          "time_ns": 70000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": true,
+          "request": true,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "pulse_ended_current_not_yet_quiet",
+          "time_ns": 270000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": false,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "independent_current_quiet_confirmed",
+          "time_ns": 300000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": true,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "reconnect_while_clamped",
+          "time_ns": 305000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "protected_nodes_qualified_again",
+          "time_ns": 315000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "release_clamp_again",
+          "time_ns": 320000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "external_analogue_settle_confirmed",
+          "time_ns": 9000000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": true,
+          "filters_qualified": false
+        },
+        {
+          "event": "separate_filter_support_confirmed_example_only",
+          "time_ns": 200000000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": true,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": true,
+          "filters_qualified": true
+        }
+      ],
+      "contract_errors": [],
+      "note": "Example times are chosen external qualification events, not measured9ms or200ms recovery guarantees. Earlier Stage3 failed filter-recovery cases remain unchanged."
+    },
+    {
+      "id": "T12",
+      "title": "Link loss invalidates and link return cannot resume acquisition",
+      "checks": [
+        {
+          "assertion": "controls_remain_low_after_return",
+          "pass": true
+        },
+        {
+          "assertion": "return_does_not_restore_qualification",
+          "pass": true
+        }
+      ],
+      "history": [
+        {
+          "event": "rails_and_quiet_qualified",
+          "time_ns": 1000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "connect_while_clamped",
+          "time_ns": 10000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "protected_nodes_qualified",
+          "time_ns": 20000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "release_clamp",
+          "time_ns": 25000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "external_analogue_and_filter_qualification",
+          "time_ns": 50000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": true,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": true,
+          "filters_qualified": true
+        },
+        {
+          "event": "link_loss_with_operating_receiving_rails",
+          "time_ns": 60000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": false,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "link_returns_controls_still_default",
+          "time_ns": 100000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": true,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        }
+      ],
+      "contract_errors": [
+        "disconnect_without_qualified_clamp_guard"
+      ],
+      "note": "Modelled loss notification is external; default-LOW does not itself detect a powered controller freeze."
+    },
+    {
+      "id": "T13",
+      "title": "Brownout logic is unknown rather than asserted safe",
+      "checks": [
+        {
+          "assertion": "out_of_range_logic_not_boolean_safe",
+          "pass": true
+        },
+        {
+          "assertion": "recording_and_controller_stim_admission_invalid",
+          "pass": true
+        }
+      ],
+      "history": [
+        {
+          "event": "rails_and_quiet_qualified",
+          "time_ns": 1000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "connect_while_clamped",
+          "time_ns": 10000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "protected_nodes_qualified",
+          "time_ns": 20000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "release_clamp",
+          "time_ns": 25000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "external_analogue_and_filter_qualification",
+          "time_ns": 50000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": true,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": true,
+          "filters_qualified": true
+        },
+        {
+          "event": "rails_outside_logic_range",
+          "time_ns": 60000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": null,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": false,
+          "rails_qualified": false,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        }
+      ],
+      "contract_errors": []
+    },
+    {
+      "id": "T14",
+      "title": "Switch states cannot qualify node voltage or input signal amplitude",
+      "checks": [
+        {
+          "assertion": "conducting_switches_do_not_earn_validity",
+          "pass": true
+        },
+        {
+          "assertion": "unqualified_frame_full_mask_is_zero",
+          "pass": true
+        }
+      ],
+      "history": [
+        {
+          "event": "rails_and_quiet_qualified",
+          "time_ns": 1000,
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "connect_while_clamped",
+          "time_ns": 10000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "protected_nodes_qualified",
+          "time_ns": 20000,
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "release_clamp",
+          "time_ns": 25000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": false,
+          "filters_qualified": false
+        },
+        {
+          "event": "external_analogue_and_filter_qualification",
+          "time_ns": 50000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": true,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": true,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": true,
+          "filters_qualified": true
+        },
+        {
+          "event": "stale_voltage_or_signal_envelope",
+          "time_ns": 60000,
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "recording_valid": false,
+          "stim_contract_ready": false,
+          "request": false,
+          "logic_valid": true,
+          "rails_qualified": true,
+          "link_healthy": true,
+          "voltage_qualified": false,
+          "quiet": true,
+          "quiescent": true,
+          "driver_permissions": true,
+          "settled": true,
+          "filters_qualified": true
+        }
+      ],
+      "contract_errors": []
+    },
+    {
+      "id": "T15",
+      "title": "All four stable native mode combinations match explicit AND gating",
+      "checks": [
+        {
+          "assertion": "only11_selects_recording",
+          "pass": true
+        },
+        {
+          "assertion": "01_is_clamped",
+          "pass": true
+        }
+      ],
+      "history": [],
+      "contract_errors": [],
+      "stable_mode_truth_table": [
+        {
+          "connect_high": false,
+          "record_high": false,
+          "select_acquire": false,
+          "clamp_command": true
+        },
+        {
+          "connect_high": false,
+          "record_high": true,
+          "select_acquire": false,
+          "clamp_command": true
+        },
+        {
+          "connect_high": true,
+          "record_high": false,
+          "select_acquire": false,
+          "clamp_command": true
+        },
+        {
+          "connect_high": true,
+          "record_high": true,
+          "select_acquire": true,
+          "clamp_command": false
+        }
+      ]
+    },
+    {
+      "id": "T16",
+      "title": "Untagged plausible raw-word replay remains an undetected fault witness",
+      "checks": [
+        {
+          "assertion": "plausible_codes_without_observed_fault_can_pass_metadata_gate",
+          "pass": true
+        },
+        {
+          "assertion": "wire_has_no_channel_or_frame_tag",
+          "pass": true
+        }
+      ],
+      "history": [],
+      "contract_errors": [],
+      "note": "A replay preserving plausible 16-bit codes and current DMA metadata cannot be diagnosed by this model. Firmware ownership/counters and independent end-to-end tests remain required; no universal stale-data detection is claimed."
+    },
+    {
+      "id": "T17",
+      "title": "Commissioning keeps Vref delay and calibration distinct from pipeline flush",
+      "checks": [
+        {
+          "assertion": "qualified_register_and_startup_prerequisites_admitted",
+          "pass": true
+        },
+        {
+          "assertion": "one_ns_early_Vref_delay_rejected",
+          "pass": true
+        },
+        {
+          "assertion": "one_ns_early_initialization_delay_rejected",
+          "pass": true
+        },
+        {
+          "assertion": "eight_calibration_dummy_words_rejected",
+          "pass": true
+        },
+        {
+          "assertion": "fast_settle_register_not_normal_recording",
+          "pass": true
+        },
+        {
+          "assertion": "supply_ADC_enable_required",
+          "pass": true
+        },
+        {
+          "assertion": "calibration_completion_required",
+          "pass": true
+        }
+      ],
+      "history": [],
+      "contract_errors": [],
+      "commissioning_inputs": {
+        "vref_age_ns": 100000,
+        "initialization_age_ns": 100000,
+        "calibration_dummy_words": 9,
+        "reg0": 222,
+        "reg1": 64,
+        "calibrated": true
+      },
+      "fast_settle_recommended_duration_ns": 8333333.333333333,
+      "note": "2.5/fH is Intan's recommended fast-settle duration, not a measured or guaranteed recovery bound. The two per-frame flush words do not replace nine calibration dummy commands."
+    }
+  ]
+}

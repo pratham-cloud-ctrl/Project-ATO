@@ -1,0 +1,61 @@
+#include <zephyr/dt-bindings/pinctrl/nrf-pinctrl.h>
+/ {
+    /delete-node/ leds;
+    /delete-node/ buttons;
+    /delete-node/ pwmleds;
+    /delete-node/ nrf-gpio-forwarder;
+    aliases {
+        /delete-property/ led0;
+        /delete-property/ led1;
+        /delete-property/ led2;
+        /delete-property/ led3;
+        /delete-property/ sw0;
+        /delete-property/ sw1;
+        /delete-property/ sw2;
+        /delete-property/ sw3;
+        /delete-property/ pwm-led0;
+        /delete-property/ mcuboot-button0;
+        /delete-property/ mcuboot-led0;
+    };
+};
+&pinctrl {
+    ato_uart_default: ato_uart_default {
+        group1 { psels = <NRF_PSEL(UART_TX, 1, 12)>, <NRF_PSEL(UART_RX, 1, 13)>; };
+    };
+    ato_uart_sleep: ato_uart_sleep {
+        group1 {
+            psels = <NRF_PSEL(UART_TX, 1, 12)>, <NRF_PSEL(UART_RX, 1, 13)>;
+            low-power-enable;
+        };
+    };
+};
+&uart0 {
+    status = "okay";
+    current-speed = <1000000>;
+    pinctrl-0 = <&ato_uart_default>;
+    pinctrl-1 = <&ato_uart_sleep>;
+    pinctrl-names = "default", "sleep";
+};
+&uart1 { status = "disabled"; };
+&uart2 { status = "disabled"; };
+&uart3 { status = "disabled"; };
+&spi0 { status = "disabled"; };
+&spi1 { status = "disabled"; };
+&spi2 { status = "disabled"; };
+&spi3 { status = "disabled"; };
+&spi4 { status = "disabled"; };
+&i2c0 { status = "disabled"; };
+&i2c1 { status = "disabled"; };
+&i2c2 { status = "disabled"; };
+&i2c3 { status = "disabled"; };
+&adc { status = "disabled"; };
+&nfct { status = "disabled"; };
+&uicr { nfct-pins-as-gpios; };
+&pwm0 { status = "disabled"; };
+&qspi { status = "disabled"; };
+&ieee802154 { status = "disabled"; };
+&usbd { status = "disabled"; };
+&gpiote { status = "disabled"; };
+&timer0 { status = "disabled"; };
+&timer1 { status = "disabled"; };
+&timer2 { status = "disabled"; };

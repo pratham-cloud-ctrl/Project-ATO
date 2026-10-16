@@ -1,0 +1,23 @@
+{
+  "schema": "ato.stage3.observer-package-verification.v1",
+  "date": "2026-10-12",
+  "scope": "Standalone finite external observed-state no-dose study; not active pilot or biological evidence",
+  "package_manifest_sha256": "3e675e07c6292a0d551b324db57ccfc0e46de19e7753005dbf8753d1cf0f137f",
+  "confirmation_summary_sha256": "35b8ce93e700afc2670a6a4fc11f65aadd2c01f49e7bf3ae9414469d5bfb0330",
+  "frozen_method_sha256": "cbb2d6aa5a466261e372d1071cccf908983c8dbe8eeb8001b1d20428ed2362af",
+  "local_command": "python experiments/stage3/observed-state-observer/verify_study.py --reproduce",
+  "exact_frozen_audits_passed": 3,
+  "package_files_verified": 42,
+  "bound_source_files_verified": 21,
+  "frozen_pair_reproduction_passed": true,
+  "original_evidence_unchanged": true,
+  "independent_noise_pairs": 16,
+  "paired_grid_captures": 32,
+  "coordinate_residuals": 915200,
+  "maximum_error_plus_3mm_m": 0.011353736115715152,
+  "forecast_limit_m": 0.015,
+  "all_declared_coverage_available": true,
+  "active_pilot_replaced": false,
+  "neural_increment_or_learning_benefit_established": false,
+  "python_version": "3.12.14"
+}

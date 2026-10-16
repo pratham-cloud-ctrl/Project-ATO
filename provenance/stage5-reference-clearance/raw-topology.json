@@ -1,0 +1,98 @@
+[
+  {
+    "label": "PCB_contact_router",
+    "covered_solids": 156,
+    "native_solids": 156,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "PCB_controller_carrier",
+    "covered_solids": 136,
+    "native_solids": 136,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "PCB_current_driver",
+    "covered_solids": 165,
+    "native_solids": 165,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "PCB_monitoring_cell",
+    "covered_solids": 72,
+    "native_solids": 72,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "PCB_monitoring_transport",
+    "covered_solids": 61,
+    "native_solids": 61,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "PCB_power",
+    "covered_solids": 208,
+    "native_solids": 208,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "PCB_recording_front_end",
+    "covered_solids": 296,
+    "native_solids": 296,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "PCB_supervision",
+    "covered_solids": 574,
+    "native_solids": 574,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "Tray_contact_router",
+    "covered_solids": 1,
+    "native_solids": 1,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "Tray_controller_carrier",
+    "covered_solids": 1,
+    "native_solids": 1,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "Tray_current_driver",
+    "covered_solids": 1,
+    "native_solids": 1,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "Tray_monitoring_cell",
+    "covered_solids": 1,
+    "native_solids": 1,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "Tray_monitoring_transport",
+    "covered_solids": 1,
+    "native_solids": 1,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "Tray_power",
+    "covered_solids": 1,
+    "native_solids": 1,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "Tray_recording_front_end",
+    "covered_solids": 1,
+    "native_solids": 1,
+    "non_solid_leaves": []
+  },
+  {
+    "label": "Tray_supervision",
+    "covered_solids": 1,
+    "native_solids": 1,
+    "non_solid_leaves": []
+  }
+]

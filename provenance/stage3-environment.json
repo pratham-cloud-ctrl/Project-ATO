@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-12",
+  "scope": "Stage3 saved-model audit and local reproduction environment; underlying studies retain their own dates",
+  "python": "3.12.14",
+  "platform": "Windows",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "reportlab": "4.4.9",
+    "Pillow": "12.3.0",
+    "pypdf": "6.10.0"
+  }
+}

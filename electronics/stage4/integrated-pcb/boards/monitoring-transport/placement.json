@@ -1,0 +1,330 @@
+{
+  "schema": "ato.layout.v1",
+  "board": "monitoring-transport",
+  "pcb": "electronics/stage4/integrated-pcb/boards/monitoring-transport/monitoring_transport.kicad_pcb",
+  "system_sha256_lf": "8ae2b0bb9369c48d4f5c8440981a3dd76684e403aea3fe1d2c1bb8bbc8ee68d3",
+  "source_components": 60,
+  "mounting_holes": 4,
+  "copper_layers": 4,
+  "outline_mm": [
+    125,
+    140
+  ],
+  "nets": 60,
+  "pads": 221,
+  "tracks": 0,
+  "functional_groups": {
+    "monitoring_transport.kicad_sch": 3,
+    "root_2.kicad_sch": 3,
+    "adc.kicad_sch": 7,
+    "reference.kicad_sch": 9,
+    "inputs.kicad_sch": 16,
+    "health.kicad_sch": 4,
+    "companion.kicad_sch": 13,
+    "handoff.kicad_sch": 5
+  },
+  "missing_models": [],
+  "dsn_export": true,
+  "placements": {
+    "J70001": {
+      "x_mm": 64.905,
+      "y_mm": 65.995,
+      "angle_deg": 90.0
+    },
+    "J70002": {
+      "x_mm": 64.905,
+      "y_mm": 73.585,
+      "angle_deg": 90.0
+    },
+    "J70003": {
+      "x_mm": 64.905,
+      "y_mm": 81.175,
+      "angle_deg": 90.0
+    },
+    "J70004": {
+      "x_mm": 14.795,
+      "y_mm": 102.945,
+      "angle_deg": 90.0
+    },
+    "J70005": {
+      "x_mm": 14.795,
+      "y_mm": 110.535,
+      "angle_deg": 90.0
+    },
+    "J70006": {
+      "x_mm": 14.795,
+      "y_mm": 118.125,
+      "angle_deg": 90.0
+    },
+    "R70001": {
+      "x_mm": 17.725,
+      "y_mm": 23.435,
+      "angle_deg": 0.0
+    },
+    "R70002": {
+      "x_mm": 26.375,
+      "y_mm": 26.585,
+      "angle_deg": 90.0
+    },
+    "R70003": {
+      "x_mm": 23.725,
+      "y_mm": 23.435,
+      "angle_deg": 0.0
+    },
+    "R70004": {
+      "x_mm": 15.075,
+      "y_mm": 26.585,
+      "angle_deg": 90.0
+    },
+    "R70005": {
+      "x_mm": 27.475,
+      "y_mm": 22.705,
+      "angle_deg": 90.0
+    },
+    "R70006": {
+      "x_mm": 13.975,
+      "y_mm": 22.705,
+      "angle_deg": 90.0
+    },
+    "U70001": {
+      "x_mm": 20.725,
+      "y_mm": 30.335,
+      "angle_deg": 0.0
+    },
+    "C70001": {
+      "x_mm": 104.805,
+      "y_mm": 70.525,
+      "angle_deg": 0.0
+    },
+    "C70002": {
+      "x_mm": 104.055,
+      "y_mm": 67.375,
+      "angle_deg": 0.0
+    },
+    "C70003": {
+      "x_mm": 104.055,
+      "y_mm": 73.675,
+      "angle_deg": 0.0
+    },
+    "C70004": {
+      "x_mm": 109.105,
+      "y_mm": 69.775,
+      "angle_deg": 90.0
+    },
+    "C70005": {
+      "x_mm": 109.105,
+      "y_mm": 75.025,
+      "angle_deg": 90.0
+    },
+    "C70006": {
+      "x_mm": 98.805,
+      "y_mm": 67.375,
+      "angle_deg": 0.0
+    },
+    "C70007": {
+      "x_mm": 98.805,
+      "y_mm": 73.675,
+      "angle_deg": 0.0
+    },
+    "C70008": {
+      "x_mm": 109.105,
+      "y_mm": 64.525,
+      "angle_deg": 90.0
+    },
+    "C70009": {
+      "x_mm": 99.355,
+      "y_mm": 64.525,
+      "angle_deg": 0.0
+    },
+    "C70100": {
+      "x_mm": 42.635,
+      "y_mm": 72.175,
+      "angle_deg": 0.0
+    },
+    "C70101": {
+      "x_mm": 41.885,
+      "y_mm": 69.025,
+      "angle_deg": 0.0
+    },
+    "C70102": {
+      "x_mm": 41.885,
+      "y_mm": 75.325,
+      "angle_deg": 0.0
+    },
+    "C70103": {
+      "x_mm": 46.935,
+      "y_mm": 71.425,
+      "angle_deg": 90.0
+    },
+    "C70104": {
+      "x_mm": 46.935,
+      "y_mm": 76.675,
+      "angle_deg": 90.0
+    },
+    "C70105": {
+      "x_mm": 36.635,
+      "y_mm": 69.025,
+      "angle_deg": 0.0
+    },
+    "C70106": {
+      "x_mm": 36.635,
+      "y_mm": 75.325,
+      "angle_deg": 0.0
+    },
+    "C70107": {
+      "x_mm": 46.935,
+      "y_mm": 66.175,
+      "angle_deg": 90.0
+    },
+    "R70100": {
+      "x_mm": 37.805,
+      "y_mm": 66.175,
+      "angle_deg": 0.0
+    },
+    "R70101": {
+      "x_mm": 37.805,
+      "y_mm": 78.175,
+      "angle_deg": 0.0
+    },
+    "R70102": {
+      "x_mm": 50.135,
+      "y_mm": 68.495,
+      "angle_deg": 90.0
+    },
+    "R70103": {
+      "x_mm": 50.135,
+      "y_mm": 75.855,
+      "angle_deg": 90.0
+    },
+    "R70104": {
+      "x_mm": 47.465,
+      "y_mm": 80.425,
+      "angle_deg": 0.0
+    },
+    "R70105": {
+      "x_mm": 37.805,
+      "y_mm": 63.175,
+      "angle_deg": 0.0
+    },
+    "R70106": {
+      "x_mm": 37.805,
+      "y_mm": 81.175,
+      "angle_deg": 0.0
+    },
+    "R70107": {
+      "x_mm": 32.884999,
+      "y_mm": 68.495,
+      "angle_deg": 90.0
+    },
+    "R70120": {
+      "x_mm": 15.455,
+      "y_mm": 65.925,
+      "angle_deg": 0.0
+    },
+    "R70121": {
+      "x_mm": 18.935,
+      "y_mm": 65.175,
+      "angle_deg": 90.0
+    },
+    "R70122": {
+      "x_mm": 14.705,
+      "y_mm": 63.175,
+      "angle_deg": 0.0
+    },
+    "R70123": {
+      "x_mm": 14.705,
+      "y_mm": 68.675,
+      "angle_deg": 0.0
+    },
+    "C70020": {
+      "x_mm": 46.135,
+      "y_mm": 24.775,
+      "angle_deg": 0.0
+    },
+    "C70021": {
+      "x_mm": 54.085,
+      "y_mm": 28.725,
+      "angle_deg": 90.0
+    },
+    "C70022": {
+      "x_mm": 42.685,
+      "y_mm": 28.725,
+      "angle_deg": 90.0
+    },
+    "C70023": {
+      "x_mm": 50.635,
+      "y_mm": 34.175,
+      "angle_deg": 0.0
+    },
+    "J70007": {
+      "x_mm": 42.245,
+      "y_mm": 41.145,
+      "angle_deg": 90.0
+    },
+    "J70008": {
+      "x_mm": 57.455,
+      "y_mm": 41.145,
+      "angle_deg": 90.0
+    },
+    "R70020": {
+      "x_mm": 46.135,
+      "y_mm": 33.975,
+      "angle_deg": 0.0
+    },
+    "R70021": {
+      "x_mm": 42.885,
+      "y_mm": 33.225,
+      "angle_deg": 90.0
+    },
+    "R70022": {
+      "x_mm": 50.635,
+      "y_mm": 24.975,
+      "angle_deg": 0.0
+    },
+    "R70023": {
+      "x_mm": 55.135,
+      "y_mm": 33.975,
+      "angle_deg": 0.0
+    },
+    "R70024": {
+      "x_mm": 42.155,
+      "y_mm": 21.975,
+      "angle_deg": 0.0
+    },
+    "R70025": {
+      "x_mm": 53.885,
+      "y_mm": 24.225,
+      "angle_deg": 90.0
+    },
+    "U70020": {
+      "x_mm": 48.385,
+      "y_mm": 29.475,
+      "angle_deg": 0.0
+    },
+    "J70020": {
+      "x_mm": 80.665,
+      "y_mm": 30.225,
+      "angle_deg": 90.0
+    },
+    "J70021": {
+      "x_mm": 80.665,
+      "y_mm": 37.815,
+      "angle_deg": 90.0
+    },
+    "J70022": {
+      "x_mm": 80.675,
+      "y_mm": 45.405,
+      "angle_deg": 90.0
+    },
+    "R70030": {
+      "x_mm": 80.575,
+      "y_mm": 23.455,
+      "angle_deg": 0.0
+    },
+    "R70031": {
+      "x_mm": 84.055,
+      "y_mm": 22.705,
+      "angle_deg": 90.0
+    }
+  }
+}

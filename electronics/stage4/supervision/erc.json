@@ -1,0 +1,124 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-14T01:54:11",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6",
+            "violations": []
+        },
+        {
+            "path": "/guards/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/ff81c479-29e8-5bb6-abc6-218c318d043c",
+            "violations": []
+        },
+        {
+            "path": "/host_rails/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/7e0d37a3-6e3d-59dc-8bc2-3cb3154e0dfe",
+            "violations": []
+        },
+        {
+            "path": "/host_rails_2/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/d454dd1a-307a-5a35-a7b7-75adb90a84ad",
+            "violations": []
+        },
+        {
+            "path": "/afe_rails/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/7f3ffb77-f817-5205-8d22-f70d6e2a3ef3",
+            "violations": []
+        },
+        {
+            "path": "/afe_rails_2/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/39237f6e-f3ae-572e-a406-c842466889fe",
+            "violations": []
+        },
+        {
+            "path": "/watchdog/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/2fc34268-2501-5e04-9dca-da0fa61376b2",
+            "violations": []
+        },
+        {
+            "path": "/quiescence/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/e86809e2-e22f-5abf-a0e2-06f0feeaedfe",
+            "violations": []
+        },
+        {
+            "path": "/voltage/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/6be1b312-f8e1-5f47-9a0c-9142fd0f7502",
+            "violations": []
+        },
+        {
+            "path": "/duration/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/0a3e7cad-d0b3-5832-b25b-b33eb9393d36",
+            "violations": []
+        },
+        {
+            "path": "/admission/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/0348d755-0aa8-56c6-a1a3-3779c88ba176",
+            "violations": []
+        },
+        {
+            "path": "/admission_2/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/bce973f2-9f61-5162-ac98-0e0ed7a2c143",
+            "violations": []
+        },
+        {
+            "path": "/phase0/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/cc072a12-cfd8-53d3-9cd7-d883fc665c4e",
+            "violations": []
+        },
+        {
+            "path": "/phase1/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/3a15b415-1d03-5b7e-9455-4dc2dd0be23b",
+            "violations": []
+        },
+        {
+            "path": "/afe_bank0/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/4aa4dfc2-26a1-5609-9698-a88574c2117d",
+            "violations": []
+        },
+        {
+            "path": "/afe_bank1/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/cca46d84-f69f-5262-8d32-47c656ff31da",
+            "violations": []
+        },
+        {
+            "path": "/afe_bank2/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/b9ef93bc-e155-5ae3-81bd-f4e6b92639fe",
+            "violations": []
+        },
+        {
+            "path": "/afe_bank3/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/78cb1146-e123-5b12-80d2-a2e1cc005417",
+            "violations": []
+        },
+        {
+            "path": "/afe_bank4/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/4895efc4-0869-517a-b11f-4a5ef02f8577",
+            "violations": []
+        },
+        {
+            "path": "/afe_logic/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/e6057815-9ad2-5211-b3e5-707fadde371d",
+            "violations": []
+        },
+        {
+            "path": "/afe_logic_2/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/f7471316-6c77-5e47-977d-4ea49c2b8fb7",
+            "violations": []
+        },
+        {
+            "path": "/defaults/",
+            "uuid_path": "/2270b767-9d0c-58a9-a0aa-4cd559a0cdd6/26ab81e3-32d7-5857-9c1a-235fcc5c35ef",
+            "violations": []
+        }
+    ],
+    "source": "supervision.kicad_sch"
+}

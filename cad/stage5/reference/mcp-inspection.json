@@ -1,0 +1,34 @@
+{
+  "server": "freecad",
+  "results": [
+    {
+      "name": "execute_python",
+      "isError": false,
+      "data": {
+        "success": true,
+        "result": {
+          "document": "ATO_reference_assembly",
+          "filename": "E:/Project ATO/cad/stage5/reference/ATO_reference_assembly.FCStd",
+          "final_parts": 170,
+          "hidden_construction": 396,
+          "board_palettes": {
+            "PCB_contact_router": 11704,
+            "PCB_controller_carrier": 5284,
+            "PCB_current_driver": 10026,
+            "PCB_monitoring_cell": 4442,
+            "PCB_monitoring_transport": 3987,
+            "PCB_power": 7353,
+            "PCB_recording_front_end": 8780,
+            "PCB_supervision": 29404
+          },
+          "lid_transparency": 72
+        },
+        "stdout": "",
+        "stderr": "",
+        "execution_time_ms": 186.63229999947362,
+        "error_type": null,
+        "error_traceback": null
+      }
+    }
+  ]
+}

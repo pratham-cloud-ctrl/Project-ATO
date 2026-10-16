@@ -1,0 +1,805 @@
+{
+  "schema": "ATO-S2-budget-1",
+  "date": "2026-10-08",
+  "evidence_type": "Deterministic analytical allocations with declared assumptions; no hardware or biological measurements",
+  "compute_and_transport": {
+    "MAC_per_s": 2886400,
+    "analytical_cycles_per_s": 43198600.0,
+    "cpu_fraction_128MHz": 0.3374890625,
+    "128MHz_60pct_budget_pass": true,
+    "64MHz_60pct_budget_pass": false,
+    "archive_ring_bytes": 192000,
+    "application_ram_allocated_bytes": 404992,
+    "application_ram_headroom_fraction": 0.2275390625,
+    "20pct_ram_headroom_gate_pass": true,
+    "two_second_raw4k_ram_bytes": 596992,
+    "two_second_raw4k_fits_physical_ram": false,
+    "neural_scan_occupancy_fraction": 0.228,
+    "neural_scan_wire_fraction": 0.152,
+    "monitor_samples_per_s": 450000,
+    "monitor_ADC_utilization": 0.45,
+    "monitor_SPI_utilization_with_overhead": 0.49500000000000005
+  },
+  "quiet_noise": [
+    {
+      "id": "quiet_nominal",
+      "common_mode_mismatch_uV": 0.04523893375391538,
+      "Johnson_uV": 0.4147311442731516,
+      "intrinsic_CMRR_uV": 0.07943282347242822,
+      "total_RSS_uV": 2.510682537996811,
+      "SNR_at_10uV_dB": 12.004163959301163,
+      "quiet_10dB_gate_pass": true
+    },
+    {
+      "id": "reference_mismatch_stress",
+      "common_mode_mismatch_uV": 25.635195233299555,
+      "Johnson_uV": 2.353649645933528,
+      "intrinsic_CMRR_uV": 0.7943282347242822,
+      "total_RSS_uV": 25.93640351705817,
+      "SNR_at_10uV_dB": -8.27819508570607,
+      "quiet_10dB_gate_pass": false
+    }
+  ],
+  "filters": {
+    "archive_taps": 31,
+    "archive_DC_gain": 1.0,
+    "archive_symmetry_error": 0.0,
+    "archive_max_loss_0to300Hz_dB": 0.44184913299381595,
+    "archive_min_attenuation_1700to2000Hz_dB": 92.9528494296234,
+    "archive_causal_support_s": 0.0075,
+    "fast_band_max_ideal_group_delay_ms": 1.45539830829104,
+    "archive_0p5dB_passband_gate_pass": true,
+    "archive60dB_stopband_gate_pass": true,
+    "recursive_feature_artifact_reset_and_warmup_qualified": false
+  },
+  "channel_scaling": [
+    {
+      "streams": 8,
+      "montage": "shared_reference",
+      "total_body_ports_including18_output": 28,
+      "cycles_per_s": 24876799.999999996,
+      "RAM_bytes": 320512.0,
+      "CPU60pct_gate_pass": true,
+      "RAM20pct_headroom_gate_pass": true,
+      "task_information_sufficiency_established": false
+    },
+    {
+      "streams": 16,
+      "montage": "shared_reference",
+      "total_body_ports_including18_output": 36,
+      "cycles_per_s": 43198600.0,
+      "RAM_bytes": 404992.0,
+      "CPU60pct_gate_pass": true,
+      "RAM20pct_headroom_gate_pass": true,
+      "task_information_sufficiency_established": false
+    },
+    {
+      "streams": 32,
+      "montage": "shared_reference",
+      "total_body_ports_including18_output": 53,
+      "cycles_per_s": 81222200.0,
+      "RAM_bytes": 589952.0,
+      "CPU60pct_gate_pass": false,
+      "RAM20pct_headroom_gate_pass": false,
+      "task_information_sufficiency_established": false
+    },
+    {
+      "streams": 8,
+      "montage": "local_bipolar",
+      "total_body_ports_including18_output": 35,
+      "cycles_per_s": 24876799.999999996,
+      "RAM_bytes": 320512.0,
+      "CPU60pct_gate_pass": true,
+      "RAM20pct_headroom_gate_pass": true,
+      "task_information_sufficiency_established": false
+    }
+  ],
+  "companion_power": {
+    "selected_external_source_W": 5,
+    "base_allocation_W": 1.0,
+    "external_pressure_sensor_is_separately_powered": true,
+    "charger_and_RF_field_losses_closed": false
+  },
+  "telemetry": {
+    "normal_service_with_headroom_bps": 86528.0,
+    "normal160k_target_pass": true,
+    "raw4k_framed_bps": 1536000,
+    "raw4k_1M_target_pass": false,
+    "raw2k_framed_bps": 768000,
+    "targets_verified_through_tissue": false
+  },
+  "profiles": [
+    {
+      "id": "motor_reference",
+      "phase_charge_uC": 0.6000000000000001,
+      "phase_charge_uncertainty_uC": 0.044220703125000003,
+      "phase_charge_relative_uncertainty": 0.073701171875,
+      "charge_density_uC_per_cm2": 10.000000000000002,
+      "terminal_required_V": 7.0,
+      "terminal_available_V": 16,
+      "base_power_mW": 74.50000000000001,
+      "rail_power_mW": 2.3040000000000003,
+      "stim_battery_power_mW": 2.880000000000001,
+      "total_battery_power_mW": 77.38000000000001,
+      "bulk_load_power_mW": 0.28800000000000003,
+      "conservative_case_heat_mW": 77.09200000000001,
+      "average_cell_current_low_mA": 25.793333333333337,
+      "runtime_h_under_declared_energy": 7.443783923494443,
+      "steady_package_rise_K": 1.54184,
+      "time_from_ambient_to_target_s": null,
+      "max_thermal_resistance_for_steady_target_K_per_W": 25.943029108078658,
+      "blanked_fraction_with_preguard": 0.06400000000000003,
+      "minimum_usable_fraction_in_20ms_history": 0.9199999999999999,
+      "electrical_intervals_s": [
+        [
+          0.0,
+          0.0015000000000000013
+        ],
+        [
+          0.024900000000000002,
+          0.025
+        ]
+      ],
+      "selected_continuous_gates": {
+        "per_profile_rate": true,
+        "configured_profile_period": true,
+        "physical_source_availability": true,
+        "joint_command_charge": true,
+        "delivery_charge_with_uncertainty": true,
+        "simple_compliance": true,
+        "average_cell_current_at_low_voltage": true,
+        "steady_selected_package_rise": true
+      },
+      "all_selected_continuous_gates_pass": true,
+      "motor_observation_gates": {
+        "global_coverage": true,
+        "each_20ms_history": true
+      },
+      "qualification": "Conditional arithmetic only; recruitment, chemistry, hardware bounds and thermal resistance unqualified",
+      "archive_FIR_invalid_fraction_any_raw_invalid_rule": 0.364
+    },
+    {
+      "id": "pressure_reference",
+      "phase_charge_uC": 0.8999999999999999,
+      "phase_charge_uncertainty_uC": 0.0513310546875,
+      "phase_charge_relative_uncertainty": 0.05703450520833334,
+      "charge_density_uC_per_cm2": 14.999999999999998,
+      "terminal_required_V": 7.0,
+      "terminal_available_V": 16,
+      "base_power_mW": 74.50000000000001,
+      "rail_power_mW": 15.552,
+      "stim_battery_power_mW": 19.439999999999998,
+      "total_battery_power_mW": 93.94000000000001,
+      "bulk_load_power_mW": 1.944,
+      "conservative_case_heat_mW": 91.99600000000001,
+      "average_cell_current_low_mA": 31.31333333333334,
+      "runtime_h_under_declared_energy": 6.131573344688099,
+      "steady_package_rise_K": 1.8399200000000002,
+      "time_from_ambient_to_target_s": null,
+      "max_thermal_resistance_for_steady_target_K_per_W": 21.74007565546328,
+      "blanked_fraction_with_preguard": 0.648,
+      "minimum_usable_fraction_in_20ms_history": 0.30333333333333323,
+      "electrical_intervals_s": [
+        [
+          0.0,
+          0.0017000000000000001
+        ],
+        [
+          0.0019,
+          0.0036999999999999997
+        ],
+        [
+          0.0039000000000000003,
+          0.005700000000000001
+        ],
+        [
+          0.008233333333333334,
+          0.008333333333333333
+        ]
+      ],
+      "selected_continuous_gates": {
+        "per_profile_rate": true,
+        "configured_profile_period": true,
+        "physical_source_availability": true,
+        "joint_command_charge": true,
+        "delivery_charge_with_uncertainty": true,
+        "simple_compliance": true,
+        "average_cell_current_at_low_voltage": true,
+        "steady_selected_package_rise": true
+      },
+      "all_selected_continuous_gates_pass": true,
+      "motor_observation_gates": {
+        "global_coverage": false,
+        "each_20ms_history": false
+      },
+      "qualification": "Conditional arithmetic only; recruitment, chemistry, hardware bounds and thermal resistance unqualified",
+      "archive_FIR_invalid_fraction_any_raw_invalid_rule": 1.0
+    },
+    {
+      "id": "pressure_high_current_stress",
+      "phase_charge_uC": 5.999999999999999,
+      "phase_charge_uncertainty_uC": 0.32333105468750006,
+      "phase_charge_relative_uncertainty": 0.053888509114583344,
+      "charge_density_uC_per_cm2": 99.99999999999999,
+      "terminal_required_V": 24.0,
+      "terminal_available_V": 40,
+      "base_power_mW": 74.50000000000001,
+      "rail_power_mW": 207.35999999999996,
+      "stim_battery_power_mW": 259.19999999999993,
+      "total_battery_power_mW": 333.69999999999993,
+      "bulk_load_power_mW": 86.4,
+      "conservative_case_heat_mW": 247.29999999999993,
+      "average_cell_current_low_mA": 111.2333333333333,
+      "runtime_h_under_declared_energy": 1.7261012885825597,
+      "steady_package_rise_K": 4.945999999999999,
+      "time_from_ambient_to_target_s": 155.4392553176358,
+      "max_thermal_resistance_for_steady_target_K_per_W": 8.087343307723415,
+      "blanked_fraction_with_preguard": 0.648,
+      "minimum_usable_fraction_in_20ms_history": 0.30333333333333323,
+      "electrical_intervals_s": [
+        [
+          0.0,
+          0.0017000000000000001
+        ],
+        [
+          0.0019,
+          0.0036999999999999997
+        ],
+        [
+          0.0039000000000000003,
+          0.005700000000000001
+        ],
+        [
+          0.008233333333333334,
+          0.008333333333333333
+        ]
+      ],
+      "selected_continuous_gates": {
+        "per_profile_rate": true,
+        "configured_profile_period": true,
+        "physical_source_availability": true,
+        "joint_command_charge": true,
+        "delivery_charge_with_uncertainty": true,
+        "simple_compliance": true,
+        "average_cell_current_at_low_voltage": false,
+        "steady_selected_package_rise": false
+      },
+      "all_selected_continuous_gates_pass": false,
+      "motor_observation_gates": {
+        "global_coverage": false,
+        "each_20ms_history": false
+      },
+      "qualification": "Conditional arithmetic only; recruitment, chemistry, hardware bounds and thermal resistance unqualified",
+      "archive_FIR_invalid_fraction_any_raw_invalid_rule": 1.0
+    },
+    {
+      "id": "cartesian_max_rejected",
+      "phase_charge_uC": 10.0,
+      "phase_charge_uncertainty_uC": 0.4055517578125,
+      "phase_charge_relative_uncertainty": 0.04055517578125,
+      "charge_density_uC_per_cm2": 166.66666666666669,
+      "terminal_required_V": 24.0,
+      "terminal_available_V": 40,
+      "base_power_mW": 74.50000000000001,
+      "rail_power_mW": 288.00000000000006,
+      "stim_battery_power_mW": 360.00000000000006,
+      "total_battery_power_mW": 434.50000000000006,
+      "bulk_load_power_mW": 120.00000000000001,
+      "conservative_case_heat_mW": 314.50000000000006,
+      "average_cell_current_low_mA": 144.83333333333334,
+      "runtime_h_under_declared_energy": 1.3256616800920598,
+      "steady_package_rise_K": 6.290000000000001,
+      "time_from_ambient_to_target_s": 114.80230133172707,
+      "max_thermal_resistance_for_steady_target_K_per_W": 6.359300476947535,
+      "blanked_fraction_with_preguard": 0.3299999999999998,
+      "minimum_usable_fraction_in_20ms_history": 0.67,
+      "electrical_intervals_s": [
+        [
+          0.0,
+          0.0020999999999999986
+        ],
+        [
+          0.006566666666666667,
+          0.006666666666666667
+        ]
+      ],
+      "selected_continuous_gates": {
+        "per_profile_rate": true,
+        "configured_profile_period": true,
+        "physical_source_availability": true,
+        "joint_command_charge": false,
+        "delivery_charge_with_uncertainty": false,
+        "simple_compliance": true,
+        "average_cell_current_at_low_voltage": false,
+        "steady_selected_package_rise": false
+      },
+      "all_selected_continuous_gates_pass": false,
+      "motor_observation_gates": {
+        "global_coverage": true,
+        "each_20ms_history": true
+      },
+      "qualification": "Conditional arithmetic only; recruitment, chemistry, hardware bounds and thermal resistance unqualified",
+      "archive_FIR_invalid_fraction_any_raw_invalid_rule": 1.0
+    }
+  ],
+  "flash_and_network_memory": {
+    "application_flash": {
+      "capacity_bytes": 1048576,
+      "allocated_bytes": 827392,
+      "remaining_bytes": 221184,
+      "headroom_fraction": 0.2109375,
+      "headroom_gate_pass": true
+    },
+    "network_flash": {
+      "capacity_bytes": 262144,
+      "allocated_bytes": 180224,
+      "remaining_bytes": 81920,
+      "headroom_fraction": 0.3125,
+      "headroom_gate_pass": true
+    },
+    "network_ram": {
+      "capacity_bytes": 65536,
+      "allocated_bytes": 49152,
+      "remaining_bytes": 16384,
+      "headroom_fraction": 0.25,
+      "headroom_gate_pass": true
+    },
+    "linked_images_measured": false,
+    "resident_second_application_image_included": false
+  },
+  "output_configuration_bus": {
+    "peripheral": "SPIM1, separate from SPIM0 neural and SPIM4 delivery monitor",
+    "maximum_transaction_wire_s": 0.000128,
+    "total_admission_allocation_s": 0.00025,
+    "admission_gate_pass": true,
+    "pressure_mean_wire_utilization": 0.02304,
+    "actual_component_command_protocol_qualified": false
+  },
+  "physical_source_schedules": [
+    {
+      "id": "motor_reference",
+      "electrical_occupied_s": 0.0005,
+      "source_service_interval_s": 0.00075,
+      "per_profile_rate_gate_pass": true,
+      "configured_profile_period_gate_pass": true,
+      "logical_profiles": [
+        {
+          "profile_id": "motor_left",
+          "events_per_s": 40.0,
+          "minimum_cyclic_start_gap_s": 0.025,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        },
+        {
+          "profile_id": "motor_right",
+          "events_per_s": 40.0,
+          "minimum_cyclic_start_gap_s": 0.025,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        }
+      ],
+      "physical_sources": [
+        {
+          "source_id": 0,
+          "events_per_s": 40.0,
+          "minimum_cyclic_start_gap_s": 0.025,
+          "reserved_service_fraction": 0.03,
+          "no_service_overlap": true
+        },
+        {
+          "source_id": 1,
+          "events_per_s": 40.0,
+          "minimum_cyclic_start_gap_s": 0.025,
+          "reserved_service_fraction": 0.03,
+          "no_service_overlap": true
+        }
+      ],
+      "physical_source_schedule_gate_pass": true,
+      "qualification": "Allocated service timing only; actual rearm/route/return/polarization health still required"
+    },
+    {
+      "id": "pressure_reference",
+      "electrical_occupied_s": 0.0007,
+      "source_service_interval_s": 0.00095,
+      "per_profile_rate_gate_pass": true,
+      "configured_profile_period_gate_pass": true,
+      "logical_profiles": [
+        {
+          "profile_id": "pressure_0",
+          "events_per_s": 120.0,
+          "minimum_cyclic_start_gap_s": 0.008333333333333333,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        },
+        {
+          "profile_id": "pressure_1",
+          "events_per_s": 120.0,
+          "minimum_cyclic_start_gap_s": 0.008333333333333333,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        },
+        {
+          "profile_id": "pressure_2",
+          "events_per_s": 120.0,
+          "minimum_cyclic_start_gap_s": 0.008333333333333333,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        }
+      ],
+      "physical_sources": [
+        {
+          "source_id": 0,
+          "events_per_s": 360.0,
+          "minimum_cyclic_start_gap_s": 0.002,
+          "reserved_service_fraction": 0.342,
+          "no_service_overlap": true
+        },
+        {
+          "source_id": 1,
+          "events_per_s": 0.0,
+          "minimum_cyclic_start_gap_s": null,
+          "reserved_service_fraction": 0.0,
+          "no_service_overlap": true
+        }
+      ],
+      "physical_source_schedule_gate_pass": true,
+      "qualification": "Allocated service timing only; actual rearm/route/return/polarization health still required"
+    },
+    {
+      "id": "pressure_high_current_stress",
+      "electrical_occupied_s": 0.0007,
+      "source_service_interval_s": 0.00095,
+      "per_profile_rate_gate_pass": true,
+      "configured_profile_period_gate_pass": true,
+      "logical_profiles": [
+        {
+          "profile_id": "pressure_0",
+          "events_per_s": 120.0,
+          "minimum_cyclic_start_gap_s": 0.008333333333333333,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        },
+        {
+          "profile_id": "pressure_1",
+          "events_per_s": 120.0,
+          "minimum_cyclic_start_gap_s": 0.008333333333333333,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        },
+        {
+          "profile_id": "pressure_2",
+          "events_per_s": 120.0,
+          "minimum_cyclic_start_gap_s": 0.008333333333333333,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        }
+      ],
+      "physical_sources": [
+        {
+          "source_id": 0,
+          "events_per_s": 360.0,
+          "minimum_cyclic_start_gap_s": 0.002,
+          "reserved_service_fraction": 0.342,
+          "no_service_overlap": true
+        },
+        {
+          "source_id": 1,
+          "events_per_s": 0.0,
+          "minimum_cyclic_start_gap_s": null,
+          "reserved_service_fraction": 0.0,
+          "no_service_overlap": true
+        }
+      ],
+      "physical_source_schedule_gate_pass": true,
+      "qualification": "Allocated service timing only; actual rearm/route/return/polarization health still required"
+    },
+    {
+      "id": "cartesian_max_rejected",
+      "electrical_occupied_s": 0.0011,
+      "source_service_interval_s": 0.00135,
+      "per_profile_rate_gate_pass": true,
+      "configured_profile_period_gate_pass": true,
+      "logical_profiles": [
+        {
+          "profile_id": "corner_left",
+          "events_per_s": 150.0,
+          "minimum_cyclic_start_gap_s": 0.006666666666666667,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        },
+        {
+          "profile_id": "corner_right",
+          "events_per_s": 150.0,
+          "minimum_cyclic_start_gap_s": 0.006666666666666667,
+          "maximum_rate_gate_pass": true,
+          "configured_period_gate_pass": true
+        }
+      ],
+      "physical_sources": [
+        {
+          "source_id": 0,
+          "events_per_s": 150.0,
+          "minimum_cyclic_start_gap_s": 0.006666666666666667,
+          "reserved_service_fraction": 0.20249999999999999,
+          "no_service_overlap": true
+        },
+        {
+          "source_id": 1,
+          "events_per_s": 150.0,
+          "minimum_cyclic_start_gap_s": 0.006666666666666667,
+          "reserved_service_fraction": 0.20249999999999999,
+          "no_service_overlap": true
+        }
+      ],
+      "physical_source_schedule_gate_pass": true,
+      "qualification": "Allocated service timing only; actual rearm/route/return/polarization health still required"
+    }
+  ],
+  "compliance_sweep": [
+    {
+      "bulk_load_ohm": 500,
+      "pair_C_uF": 0.5,
+      "max_current_at500us_mA": 20.0,
+      "minimum_of_joint_voltage_bounds": true
+    },
+    {
+      "bulk_load_ohm": 500,
+      "pair_C_uF": 2.0,
+      "max_current_at500us_mA": 20.0,
+      "minimum_of_joint_voltage_bounds": true
+    },
+    {
+      "bulk_load_ohm": 500,
+      "pair_C_uF": 10.0,
+      "max_current_at500us_mA": 20.0,
+      "minimum_of_joint_voltage_bounds": true
+    },
+    {
+      "bulk_load_ohm": 1000,
+      "pair_C_uF": 0.5,
+      "max_current_at500us_mA": 19.5,
+      "minimum_of_joint_voltage_bounds": true
+    },
+    {
+      "bulk_load_ohm": 1000,
+      "pair_C_uF": 2.0,
+      "max_current_at500us_mA": 20.0,
+      "minimum_of_joint_voltage_bounds": true
+    },
+    {
+      "bulk_load_ohm": 1000,
+      "pair_C_uF": 10.0,
+      "max_current_at500us_mA": 20.0,
+      "minimum_of_joint_voltage_bounds": true
+    },
+    {
+      "bulk_load_ohm": 2000,
+      "pair_C_uF": 0.5,
+      "max_current_at500us_mA": 13.0,
+      "minimum_of_joint_voltage_bounds": true
+    },
+    {
+      "bulk_load_ohm": 2000,
+      "pair_C_uF": 2.0,
+      "max_current_at500us_mA": 17.333333333333332,
+      "minimum_of_joint_voltage_bounds": true
+    },
+    {
+      "bulk_load_ohm": 2000,
+      "pair_C_uF": 10.0,
+      "max_current_at500us_mA": 18.0,
+      "minimum_of_joint_voltage_bounds": true
+    }
+  ],
+  "pressure_blanking_sweep": [
+    {
+      "recovery_ms": 1.0,
+      "preguard_ms": 0.0,
+      "blanked_fraction": 0.6120000000000001,
+      "minimum_20ms_usable_fraction": 0.33833333333333315
+    },
+    {
+      "recovery_ms": 1.0,
+      "preguard_ms": 0.1,
+      "blanked_fraction": 0.648,
+      "minimum_20ms_usable_fraction": 0.30333333333333323
+    },
+    {
+      "recovery_ms": 3.0,
+      "preguard_ms": 0.0,
+      "blanked_fraction": 0.924,
+      "minimum_20ms_usable_fraction": 0.06333333333333313
+    },
+    {
+      "recovery_ms": 3.0,
+      "preguard_ms": 0.1,
+      "blanked_fraction": 0.936,
+      "minimum_20ms_usable_fraction": 0.05333333333333323
+    },
+    {
+      "recovery_ms": 5.0,
+      "preguard_ms": 0.0,
+      "blanked_fraction": 1.0,
+      "minimum_20ms_usable_fraction": -2.220446049250313e-16
+    },
+    {
+      "recovery_ms": 5.0,
+      "preguard_ms": 0.1,
+      "blanked_fraction": 1.0,
+      "minimum_20ms_usable_fraction": -2.220446049250313e-16
+    },
+    {
+      "recovery_ms": 13.25,
+      "preguard_ms": 0.0,
+      "blanked_fraction": 1.0,
+      "minimum_20ms_usable_fraction": -2.220446049250313e-16
+    },
+    {
+      "recovery_ms": 13.25,
+      "preguard_ms": 0.1,
+      "blanked_fraction": 1.0,
+      "minimum_20ms_usable_fraction": -2.220446049250313e-16
+    }
+  ],
+  "reactive_frame_wait": [
+    {
+      "frame_hz": 20,
+      "reactive_bound_ms": 61.85,
+      "passes25ms_chosen_deadline": false
+    },
+    {
+      "frame_hz": 40,
+      "reactive_bound_ms": 36.85,
+      "passes25ms_chosen_deadline": false
+    },
+    {
+      "frame_hz": 60,
+      "reactive_bound_ms": 28.516666666666666,
+      "passes25ms_chosen_deadline": false
+    },
+    {
+      "frame_hz": 120,
+      "reactive_bound_ms": 20.18333333333333,
+      "passes25ms_chosen_deadline": true
+    }
+  ],
+  "fast_chain_ms": 11.85,
+  "uniform20ms_history_representative_age_ms": 21.85,
+  "with_archive_representative_age_ms": 25.6,
+  "ideal_filter_group_delay_at1Hz_ms": 16.818954006317885,
+  "thermal_sensitivity": [
+    {
+      "profile": "motor_reference",
+      "Rtheta_K_per_W": 10,
+      "steady_rise_K": 0.77092,
+      "chosen2K_gate_pass": true
+    },
+    {
+      "profile": "motor_reference",
+      "Rtheta_K_per_W": 20,
+      "steady_rise_K": 1.54184,
+      "chosen2K_gate_pass": true
+    },
+    {
+      "profile": "motor_reference",
+      "Rtheta_K_per_W": 40,
+      "steady_rise_K": 3.08368,
+      "chosen2K_gate_pass": false
+    },
+    {
+      "profile": "motor_reference",
+      "Rtheta_K_per_W": 60,
+      "steady_rise_K": 4.625520000000001,
+      "chosen2K_gate_pass": false
+    },
+    {
+      "profile": "pressure_reference",
+      "Rtheta_K_per_W": 10,
+      "steady_rise_K": 0.9199600000000001,
+      "chosen2K_gate_pass": true
+    },
+    {
+      "profile": "pressure_reference",
+      "Rtheta_K_per_W": 20,
+      "steady_rise_K": 1.8399200000000002,
+      "chosen2K_gate_pass": true
+    },
+    {
+      "profile": "pressure_reference",
+      "Rtheta_K_per_W": 40,
+      "steady_rise_K": 3.6798400000000004,
+      "chosen2K_gate_pass": false
+    },
+    {
+      "profile": "pressure_reference",
+      "Rtheta_K_per_W": 60,
+      "steady_rise_K": 5.519760000000001,
+      "chosen2K_gate_pass": false
+    },
+    {
+      "profile": "pressure_high_current_stress",
+      "Rtheta_K_per_W": 10,
+      "steady_rise_K": 2.4729999999999994,
+      "chosen2K_gate_pass": false
+    },
+    {
+      "profile": "pressure_high_current_stress",
+      "Rtheta_K_per_W": 20,
+      "steady_rise_K": 4.945999999999999,
+      "chosen2K_gate_pass": false
+    },
+    {
+      "profile": "pressure_high_current_stress",
+      "Rtheta_K_per_W": 40,
+      "steady_rise_K": 9.891999999999998,
+      "chosen2K_gate_pass": false
+    },
+    {
+      "profile": "pressure_high_current_stress",
+      "Rtheta_K_per_W": 60,
+      "steady_rise_K": 14.837999999999996,
+      "chosen2K_gate_pass": false
+    },
+    {
+      "profile": "cartesian_max_rejected",
+      "Rtheta_K_per_W": 10,
+      "steady_rise_K": 3.1450000000000005,
+      "chosen2K_gate_pass": false
+    },
+    {
+      "profile": "cartesian_max_rejected",
+      "Rtheta_K_per_W": 20,
+      "steady_rise_K": 6.290000000000001,
+      "chosen2K_gate_pass": false
+    },
+    {
+      "profile": "cartesian_max_rejected",
+      "Rtheta_K_per_W": 40,
+      "steady_rise_K": 12.580000000000002,
+      "chosen2K_gate_pass": false
+    },
+    {
+      "profile": "cartesian_max_rejected",
+      "Rtheta_K_per_W": 60,
+      "steady_rise_K": 18.870000000000005,
+      "chosen2K_gate_pass": false
+    }
+  ],
+  "idle_charging": [
+    {
+      "charge_current_mA": 20.0,
+      "declared_battery_V": 4.0,
+      "received_DC_mW": 94.11764705882352,
+      "stored_power_mW": 80.0,
+      "idle_and_conversion_case_heat_mW": 24.11764705882353,
+      "steady_selected_rise_K": 0.48235294117647054,
+      "ideal_capacity_over_current_h": 10.0,
+      "status": "Idle-only assumed charging budget; coil RF loss, taper, alignment and operation while charging unresolved"
+    },
+    {
+      "charge_current_mA": 100.0,
+      "declared_battery_V": 4.0,
+      "received_DC_mW": 470.5882352941177,
+      "stored_power_mW": 400.0,
+      "idle_and_conversion_case_heat_mW": 80.58823529411767,
+      "steady_selected_rise_K": 1.6117647058823534,
+      "ideal_capacity_over_current_h": 2.0,
+      "status": "Idle-only assumed charging budget; coil RF loss, taper, alignment and operation while charging unresolved"
+    }
+  ],
+  "reservoir": {
+    "two_source_charge_uC": 40.0,
+    "droop_V": 1.2121212121212122,
+    "droop2V_gate_pass": true,
+    "energy_at48V_mJ": 38.016,
+    "capacitor_effective_at_bias_verified": false
+  },
+  "continuous_operating_claim": "Reference profiles pass selected arithmetic gates only under stated load, thermal, efficiency and signal assumptions. Passing is not clinical, circuit or electrochemical qualification.",
+  "rejected_scaling": [
+    "64MHz with selected monitor/feature workload",
+    "2s raw4k buffer in512KiB",
+    "continuous raw4k stream at1Mbit/s application target",
+    "all-max output combination",
+    "neural fast decode during dense pressure stimulation"
+  ]
+}

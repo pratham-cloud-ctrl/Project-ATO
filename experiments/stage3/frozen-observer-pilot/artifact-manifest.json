@@ -1,0 +1,91 @@
+{
+  "schema": "ato.stage3.frozen-observer-pilot.artifact-manifest.v1",
+  "hash_scope": "exact bytes; all package files except this manifest and Python bytecode caches",
+  "files": [
+    {
+      "path": "audit.json",
+      "bytes": 1575,
+      "sha256": "3bbc4454eac2c72b669416157a3000c87fb1d33f274230e92a9b46dc70214b6b"
+    },
+    {
+      "path": "preflight.json",
+      "bytes": 10747,
+      "sha256": "09a3420045af0eb80c77d7a388dd43e3229c9d133647291d874984f7f5623dc8"
+    },
+    {
+      "path": "protocol.md",
+      "bytes": 7371,
+      "sha256": "5011925071cccb2c46ab4d4dbe9917ff45fef21fc3c45f9f10f1b64e3b585c4d"
+    },
+    {
+      "path": "raw/dependent-1250us.json.gz",
+      "bytes": 584501,
+      "sha256": "60191ac2cc3a5d26d5903ea31bd59692a103cd9f907f9f66abab4bf1f65e5630"
+    },
+    {
+      "path": "raw/dependent-2500us.json.gz",
+      "bytes": 584373,
+      "sha256": "585ec9997561074ccc563ae4ad560b79b5fbe4d211412fc4301f4b66dd103aa3"
+    },
+    {
+      "path": "raw/favorable-1250us.json.gz",
+      "bytes": 583879,
+      "sha256": "ab4db83be06944d5096c5a70048a34039a26f72dbdb6484d0b9ce3a511c04cc8"
+    },
+    {
+      "path": "raw/favorable-2500us.json.gz",
+      "bytes": 584016,
+      "sha256": "9477f7ae7579f3428e0a0f7dc8e5cab2f6a91f3a16c0aba9221e8bde7ad8eba4"
+    },
+    {
+      "path": "raw/harmful-1250us.json.gz",
+      "bytes": 584030,
+      "sha256": "93c06a2dae03ee4aa47b182a06b3eb76dae929bb15fa034571ef3e42891b0e72"
+    },
+    {
+      "path": "raw/harmful-2500us.json.gz",
+      "bytes": 583873,
+      "sha256": "c9be76c7036fe3f4930a9081c377db609e14f3a093dce9a5a8f13e836c7eebd4"
+    },
+    {
+      "path": "raw/zero-1250us.json.gz",
+      "bytes": 583791,
+      "sha256": "55fe69392e46eb6beb9e6ec2ea074c5d9af10a68fb7cb5e63a24f65b6a2403ef"
+    },
+    {
+      "path": "raw/zero-2500us.json.gz",
+      "bytes": 583874,
+      "sha256": "7f736ac1dc8e86be30066864451d14dca17e6130743e04603127a9087032d749"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6304,
+      "sha256": "6caa5f849a2dd64de4d55c1d76a5950635a3e3fd4eac96a1aaf2e825af27af62"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "bytes": 27,
+      "sha256": "076aa9bde07633b47295c869fc04b3492e23cce68fece534127161d0e0274d89"
+    },
+    {
+      "path": "root-review.json",
+      "bytes": 1482,
+      "sha256": "ef6495bef21aaf94e133d75754c118b9b1d778ee40d75b2f6fca41093d54c47f"
+    },
+    {
+      "path": "study.py",
+      "bytes": 31350,
+      "sha256": "c2ec905f81057ed46286b2599b19117a280ad458306e79a2ffb137d32624e57f"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 48193,
+      "sha256": "ee4f989847e3eacb35e491431f9f3bac07bb4fb5baf6931781a1bd203e56d941"
+    },
+    {
+      "path": "verify_study.py",
+      "bytes": 24875,
+      "sha256": "01e9567c34ab31653e749e5b9a78efedf4c12ea906fb6efbb8256312c6071f9c"
+    }
+  ]
+}

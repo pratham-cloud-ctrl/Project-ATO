@@ -1,0 +1,65 @@
+{
+  "schema": "ato.stage5.actual-clearance-probe.v1",
+  "date": "2026-10-16",
+  "scope": "Byte-exact preservation of actual completed read-only clearance probe; no new run, no reconstructed completion receipt, no physical qualification",
+  "files": {
+    "executed_source": {
+      "path": "provenance/stage5-reference-clearance/executed-probe.py.txt",
+      "source_tmp": "tmp/stage5-clearance-probe-optimal.py",
+      "sha256": "e8548ec4b2bafb87c7f4e53ae9b3e455165bdfe600dd19853570a49a2627e0bc",
+      "bytes": 3460,
+      "sha256_lf": "6c3d892df0588309cdc2ad337606084b1a3398bfda9bfb5bc5bc1aac088b566d"
+    },
+    "raw_results": {
+      "path": "provenance/stage5-reference-clearance/raw-results.json",
+      "source_tmp": "tmp/stage5-clearance-probe-optimal.json",
+      "sha256": "e2eed1c565eb3420c04c8a28ed02d814996668c32b6f31b19ba53ed181674005",
+      "bytes": 8600
+    },
+    "raw_summary": {
+      "path": "provenance/stage5-reference-clearance/raw-summary.json",
+      "source_tmp": "tmp/stage5-clearance-probe-summary.json",
+      "sha256": "4b75eb0db7df664aa992b621e99741c22e3725ac8140dfa7be4a27a4e1529d73",
+      "bytes": 3064
+    },
+    "raw_topology": {
+      "path": "provenance/stage5-reference-clearance/raw-topology.json",
+      "source_tmp": "tmp/stage5-clearance-probe-topology.json",
+      "sha256": "158bddb09dc76e34930c51207ea9950eb6f20778731517691d28e22682f2426b",
+      "bytes": 2065
+    },
+    "raw_log": {
+      "path": "provenance/stage5-reference-clearance/raw-execution.log",
+      "source_tmp": "tmp/stage5-clearance-probe-optimal.log",
+      "sha256": "c5fee0d225c0ee62a7795e7abb0d55247031a37fbae8cb3e11036f2ee1c36ad2",
+      "bytes": 16378
+    }
+  },
+  "bindings": {
+    "native_path": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+    "native_sha256": "764a4e7a9ec8212fefb1c9c0deb7cab2ee76a5c9e72b2895f9199c98d0e5ae9a",
+    "contract_path": "cad/stage5/reference/contract.json",
+    "contract_canonical_sha256": "6e02bb9182e470fa4b10212b1698e890d7a93990480bccb4ce6f098eeed32409",
+    "contract_sha256_lf": "fac7dbf1b86d415f4ed852c87a726de262618e160e37c1b25dba29fb41264c56",
+    "current_bindings_verified_unchanged_at_archive": true
+  },
+  "measurements": {
+    "rows": 14,
+    "exact_queries": 1727,
+    "pruned_pairs": 1317,
+    "elapsed_seconds": 310.4682615999918,
+    "all_passed": true,
+    "topology_objects": 16,
+    "topology_solids": 1676
+  },
+  "execution_record_semantics": {
+    "executed_source": "Actual previously executed file, copied without rewriting. Its archived contents keep the original E: workspace path.",
+    "raw_results": "Primary machine-written result of that exact distance probe.",
+    "raw_log": "Actual captured output of the completed probe.",
+    "raw_summary": "Separate post-run inline hash-verification and condensation of primary results; not a second distance run.",
+    "raw_topology": "Separate actual read-only inline traversal; source was inline, not this executed-probe file. Final driver independently rechecks current coverage."
+  },
+  "algorithm": "Exact saved-shape Solid-pair distances, sorted by actual tight-AABB lower bound; remaining pairs pruned only when lower bound exceeds best+1e-9 mm. Full material topology contains only Solid leaves. Original acceptance measured>=declared minimum-2e-5 mm retained.",
+  "geometry_mutated": false,
+  "official_receipt_reconstructed": false
+}

@@ -1,0 +1,171 @@
+label,category,quantity,material_allocation,native_feature_type,physical_qualification
+Base,enclosure_panel,1,Nominal aluminium3mm,Part::Box,none
+SideLeft,enclosure_panel,1,Nominal aluminium3mm,Part::Box,none
+SideRight,enclosure_panel,1,Nominal aluminium3mm,Part::Box,none
+FrontBracket_0_0,panel_bracket,1,Nominal aluminium bracket; threads omitted,Part::Cut,none
+FrontScrew_0_0,panel_screw,1,Nominal M3; threads omitted,Part::MultiFuse,none
+FrontBracket_0_1,panel_bracket,1,Nominal aluminium bracket; threads omitted,Part::Cut,none
+FrontScrew_0_1,panel_screw,1,Nominal M3; threads omitted,Part::MultiFuse,none
+FrontBracket_1_0,panel_bracket,1,Nominal aluminium bracket; threads omitted,Part::Cut,none
+FrontScrew_1_0,panel_screw,1,Nominal M3; threads omitted,Part::MultiFuse,none
+FrontBracket_1_1,panel_bracket,1,Nominal aluminium bracket; threads omitted,Part::Cut,none
+FrontScrew_1_1,panel_screw,1,Nominal M3; threads omitted,Part::MultiFuse,none
+FrontPanel,enclosure_panel,1,Nominal removable aluminium3mm,Part::Cut,none
+RearPanel,enclosure_panel,1,Nominal aluminium3mm; ventilation allocation,Part::Cut,none
+Post_0_0,frame_post,1,Nominal aluminium6mm square bar; threads omitted,Part::Cut,none
+LidScrew_0_0,lid_screw,1,Nominal M3; threads omitted,Part::MultiFuse,none
+Post_0_1,frame_post,1,Nominal aluminium6mm square bar; threads omitted,Part::Cut,none
+LidScrew_0_1,lid_screw,1,Nominal M3; threads omitted,Part::MultiFuse,none
+Post_1_0,frame_post,1,Nominal aluminium6mm square bar; threads omitted,Part::Cut,none
+LidScrew_1_0,lid_screw,1,Nominal M3; threads omitted,Part::MultiFuse,none
+Post_1_1,frame_post,1,Nominal aluminium6mm square bar; threads omitted,Part::Cut,none
+LidScrew_1_1,lid_screw,1,Nominal M3; threads omitted,Part::MultiFuse,none
+Post_2_0,frame_post,1,Nominal aluminium6mm square bar; threads omitted,Part::Cut,none
+LidScrew_2_0,lid_screw,1,Nominal M3; threads omitted,Part::MultiFuse,none
+Post_2_1,frame_post,1,Nominal aluminium6mm square bar; threads omitted,Part::Cut,none
+LidScrew_2_1,lid_screw,1,Nominal M3; threads omitted,Part::MultiFuse,none
+Post_3_0,frame_post,1,Nominal aluminium6mm square bar; threads omitted,Part::Cut,none
+LidScrew_3_0,lid_screw,1,Nominal M3; threads omitted,Part::MultiFuse,none
+Post_3_1,frame_post,1,Nominal aluminium6mm square bar; threads omitted,Part::Cut,none
+LidScrew_3_1,lid_screw,1,Nominal M3; threads omitted,Part::MultiFuse,none
+Lid,enclosure_panel,1,Nominal clear polycarbonate3mm,Part::Cut,none
+Foot_0,foot,1,Nominal adhesive elastomer foot,Part::Cylinder,none
+Foot_1,foot,1,Nominal adhesive elastomer foot,Part::Cylinder,none
+Foot_2,foot,1,Nominal adhesive elastomer foot,Part::Cylinder,none
+Foot_3,foot,1,Nominal adhesive elastomer foot,Part::Cylinder,none
+Rail_left_0_left,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_left_0_right,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_left_1_left,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_left_1_right,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_left_2_left,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_left_2_right,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_left_3_left,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_left_3_right,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_right_0_left,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_right_0_right,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_right_1_left,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_right_1_right,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_right_2_left,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_right_2_right,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_right_3_left,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Rail_right_3_right,rail,1,Nominal aluminium angle rail,Part::MultiFuse,none
+Standoff_contact_router_H1,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_contact_router_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_contact_router_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_contact_router_H2,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_contact_router_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_contact_router_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_contact_router_H3,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_contact_router_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_contact_router_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_contact_router_H4,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_contact_router_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_contact_router_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Tray_contact_router,tray,1,Nominal insulating sheet2mm with6mm rear stop,Part::Cut,none
+Pull_contact_router,tray_pull,1,Nominal polymer grip,Part::Cut,none
+Standoff_controller_carrier_H1,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_controller_carrier_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_controller_carrier_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_controller_carrier_H2,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_controller_carrier_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_controller_carrier_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_controller_carrier_H3,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_controller_carrier_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_controller_carrier_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_controller_carrier_H4,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_controller_carrier_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_controller_carrier_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Tray_controller_carrier,tray,1,Nominal insulating sheet2mm with6mm rear stop,Part::Cut,none
+Pull_controller_carrier,tray_pull,1,Nominal polymer grip,Part::Cut,none
+Standoff_current_driver_H1,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_current_driver_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_current_driver_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_current_driver_H2,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_current_driver_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_current_driver_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_current_driver_H3,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_current_driver_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_current_driver_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_current_driver_H4,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_current_driver_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_current_driver_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Tray_current_driver,tray,1,Nominal insulating sheet2mm with6mm rear stop,Part::Cut,none
+Pull_current_driver,tray_pull,1,Nominal polymer grip,Part::Cut,none
+Standoff_monitoring_cell_H1,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_monitoring_cell_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_monitoring_cell_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_monitoring_cell_H2,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_monitoring_cell_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_monitoring_cell_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_monitoring_cell_H3,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_monitoring_cell_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_monitoring_cell_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_monitoring_cell_H4,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_monitoring_cell_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_monitoring_cell_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Tray_monitoring_cell,tray,1,Nominal insulating sheet2mm with6mm rear stop,Part::Cut,none
+Pull_monitoring_cell,tray_pull,1,Nominal polymer grip,Part::Cut,none
+Standoff_monitoring_transport_H1,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_monitoring_transport_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_monitoring_transport_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_monitoring_transport_H2,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_monitoring_transport_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_monitoring_transport_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_monitoring_transport_H3,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_monitoring_transport_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_monitoring_transport_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_monitoring_transport_H4,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_monitoring_transport_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_monitoring_transport_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Tray_monitoring_transport,tray,1,Nominal insulating sheet2mm with6mm rear stop,Part::Cut,none
+Pull_monitoring_transport,tray_pull,1,Nominal polymer grip,Part::Cut,none
+Standoff_power_H1,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_power_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_power_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_power_H2,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_power_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_power_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_power_H3,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_power_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_power_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_power_H4,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_power_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_power_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Tray_power,tray,1,Nominal insulating sheet2mm with6mm rear stop,Part::Cut,none
+Pull_power,tray_pull,1,Nominal polymer grip,Part::Cut,none
+Standoff_recording_front_end_H1,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_recording_front_end_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_recording_front_end_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_recording_front_end_H2,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_recording_front_end_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_recording_front_end_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_recording_front_end_H3,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_recording_front_end_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_recording_front_end_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_recording_front_end_H4,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_recording_front_end_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_recording_front_end_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Tray_recording_front_end,tray,1,Nominal insulating sheet2mm with6mm rear stop,Part::Cut,none
+Pull_recording_front_end,tray_pull,1,Nominal polymer grip,Part::Cut,none
+Standoff_supervision_H1,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_supervision_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_supervision_H1,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_supervision_H2,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_supervision_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_supervision_H2,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_supervision_H3,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_supervision_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_supervision_H3,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Standoff_supervision_H4,board_standoff,1,Nominal insulating M3 female/female10mm; thread detail omitted,Part::Cut,none
+UpperScrew_supervision_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+LowerScrew_supervision_H4,board_screw,1,Nominal M3×6; thread detail omitted,Part::MultiFuse,none
+Tray_supervision,tray,1,Nominal insulating sheet2mm with6mm rear stop,Part::Cut,none
+Pull_supervision,tray_pull,1,Nominal polymer grip,Part::Cut,none
+PCB_contact_router,populated_board,1,Source board compound with actual fitted packages,Part::Feature,none
+PCB_controller_carrier,populated_board,1,Source board compound with actual fitted packages,Part::Feature,none
+PCB_current_driver,populated_board,1,Source board compound with actual fitted packages,Part::Feature,none
+PCB_monitoring_cell,populated_board,1,Source board compound with actual fitted packages,Part::Feature,none
+PCB_monitoring_transport,populated_board,1,Source board compound with actual fitted packages,Part::Feature,none
+PCB_power,populated_board,1,Source board compound with actual fitted packages,Part::Feature,none
+PCB_recording_front_end,populated_board,1,Source board compound with actual fitted packages,Part::Feature,none
+PCB_supervision,populated_board,1,Source board compound with actual fitted packages,Part::Feature,none

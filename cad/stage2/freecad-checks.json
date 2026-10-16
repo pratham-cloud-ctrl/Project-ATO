@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-08",
+  "native_document": "cad/stage2/ATO_stage2_allocation.FCStd",
+  "FreeCAD_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "reopened_native_solid_count": 80,
+  "step_import_solid_count": 80,
+  "all_BRep_valid": true,
+  "input_volume_sum_mm3": 61024.827985579584,
+  "roundtrip_volume_sum_mm3": 61024.827985579606,
+  "volume_error_mm3": 2.1827872842550278e-11,
+  "scope": "STEP/native round-trip, not populated-board or anatomical verification"
+}

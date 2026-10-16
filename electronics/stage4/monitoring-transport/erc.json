@@ -1,0 +1,55 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-14T14:00:07",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/35b234b0-9e39-5b79-99d9-cf2d7bce63db",
+            "violations": []
+        },
+        {
+            "path": "/root_2/",
+            "uuid_path": "/35b234b0-9e39-5b79-99d9-cf2d7bce63db/7880434a-48bf-506a-ac9d-6b78203ec772",
+            "violations": []
+        },
+        {
+            "path": "/adc/",
+            "uuid_path": "/35b234b0-9e39-5b79-99d9-cf2d7bce63db/5d3e8d94-df0e-5999-98b6-9cb57ec7e02a",
+            "violations": []
+        },
+        {
+            "path": "/reference/",
+            "uuid_path": "/35b234b0-9e39-5b79-99d9-cf2d7bce63db/c90f0fe5-ccc0-529d-967b-355ee0d26c3a",
+            "violations": []
+        },
+        {
+            "path": "/inputs/",
+            "uuid_path": "/35b234b0-9e39-5b79-99d9-cf2d7bce63db/0a9a2965-5f72-5f9c-b91c-5debe4602283",
+            "violations": []
+        },
+        {
+            "path": "/health/",
+            "uuid_path": "/35b234b0-9e39-5b79-99d9-cf2d7bce63db/74423b4b-11de-57d0-990e-540ff5f5e5f2",
+            "violations": []
+        },
+        {
+            "path": "/companion/",
+            "uuid_path": "/35b234b0-9e39-5b79-99d9-cf2d7bce63db/5098c9ca-7662-55f9-abf2-1cee41be6148",
+            "violations": []
+        },
+        {
+            "path": "/handoff/",
+            "uuid_path": "/35b234b0-9e39-5b79-99d9-cf2d7bce63db/380c03ad-d9bb-5a11-a4b3-1c5d618b6562",
+            "violations": []
+        }
+    ],
+    "source": "monitoring_transport.kicad_sch"
+}

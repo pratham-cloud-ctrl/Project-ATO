@@ -1,0 +1,1634 @@
+{
+  "module_pins": {
+    "component_x": 254,
+    "component_y": 177.8,
+    "pins": [
+      {
+        "length_mm": 2.54,
+        "name": "P1.02",
+        "number": "1",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 137.16000000000003
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.03",
+        "number": "2",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 139.70000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "NC_XL1_INTERNAL",
+        "number": "3",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 142.24
+      },
+      {
+        "length_mm": 2.54,
+        "name": "NC_XL2_INTERNAL",
+        "number": "4",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 144.78
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.04",
+        "number": "5",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 147.32000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.05",
+        "number": "6",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 149.86
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.02",
+        "number": "7",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 152.4
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.03",
+        "number": "8",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 154.94
+      },
+      {
+        "length_mm": 2.54,
+        "name": "VDD",
+        "number": "9",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 157.48000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "GND",
+        "number": "10",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 160.02
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.09",
+        "number": "11",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 162.56
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.11",
+        "number": "12",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 165.10000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.30",
+        "number": "13",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 167.64000000000001
+      },
+      {
+        "length_mm": 2.54,
+        "name": "RESET_N",
+        "number": "14",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 170.18
+      },
+      {
+        "length_mm": 2.54,
+        "name": "SWCLK",
+        "number": "15",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 172.72
+      },
+      {
+        "length_mm": 2.54,
+        "name": "SWDIO",
+        "number": "16",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 175.26000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.09",
+        "number": "Z0",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 177.8
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.10",
+        "number": "Z1",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 180.34
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.11",
+        "number": "Z2",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 182.88000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.12",
+        "number": "Z3",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 185.42000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.13",
+        "number": "Z4",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 187.96
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.14",
+        "number": "Z5",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 190.5
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.15",
+        "number": "Z6",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 193.04000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "GND",
+        "number": "A0",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 195.58
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.06",
+        "number": "A1",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 198.12
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.07",
+        "number": "A2",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 200.66000000000003
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.08",
+        "number": "A3",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 203.20000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.16",
+        "number": "A4",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 205.74
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.00",
+        "number": "A5",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 208.28
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.08",
+        "number": "A6",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 210.82000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "GND",
+        "number": "B0",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 213.36
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.19",
+        "number": "B1",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 215.9
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.17",
+        "number": "B2",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 241.3,
+        "y": 218.44
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.14",
+        "number": "B3",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 137.16000000000003
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.15",
+        "number": "B4",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 139.70000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.12",
+        "number": "B5",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 142.24
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.13",
+        "number": "B6",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 144.78
+      },
+      {
+        "length_mm": 2.54,
+        "name": "GND",
+        "number": "C0",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 147.32000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.31",
+        "number": "C1",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 149.86
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.21",
+        "number": "C2",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 152.4
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.24",
+        "number": "C3",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 154.94
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.23",
+        "number": "C4",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 157.48000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.20",
+        "number": "C5",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 160.02
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.25",
+        "number": "C6",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 162.56
+      },
+      {
+        "length_mm": 2.54,
+        "name": "GND",
+        "number": "D0",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 165.10000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.26",
+        "number": "D1",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 167.64000000000001
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.27",
+        "number": "D2",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 170.18
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.28",
+        "number": "D3",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 172.72
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.29",
+        "number": "D4",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 175.26000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.22",
+        "number": "D5",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 177.8
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.01",
+        "number": "D6",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 180.34
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.04",
+        "number": "E0",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 182.88000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.05",
+        "number": "E1",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 185.42000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.06",
+        "number": "E2",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 187.96
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P1.07",
+        "number": "E3",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 190.5
+      },
+      {
+        "length_mm": 2.54,
+        "name": "USB_DP",
+        "number": "E4",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 193.04000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "USB_DM",
+        "number": "E5",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 195.58
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.10",
+        "number": "E6",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 198.12
+      },
+      {
+        "length_mm": 2.54,
+        "name": "P0.18",
+        "number": "F3",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 200.66000000000003
+      },
+      {
+        "length_mm": 2.54,
+        "name": "VDDH",
+        "number": "F4",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 203.20000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "NC_DCCH_INTERNAL",
+        "number": "F5",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 205.74
+      },
+      {
+        "length_mm": 2.54,
+        "name": "VBUS_UNUSED",
+        "number": "F6",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 208.28
+      },
+      {
+        "length_mm": 2.54,
+        "name": "GND",
+        "number": "H0",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 210.82000000000002
+      },
+      {
+        "length_mm": 2.54,
+        "name": "GND",
+        "number": "H1",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 213.36
+      },
+      {
+        "length_mm": 2.54,
+        "name": "GND",
+        "number": "H2",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 215.9
+      },
+      {
+        "length_mm": 2.54,
+        "name": "GND",
+        "number": "H3",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 266.7,
+        "y": 218.44
+      }
+    ],
+    "reference": "U1",
+    "rotation": 0,
+    "unit_count": 1,
+    "units": [
+      {
+        "pins": [
+          {
+            "length_mm": 2.54,
+            "name": "P1.02",
+            "number": "1",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 137.16000000000003
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.03",
+            "number": "2",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 139.70000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "NC_XL1_INTERNAL",
+            "number": "3",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 142.24
+          },
+          {
+            "length_mm": 2.54,
+            "name": "NC_XL2_INTERNAL",
+            "number": "4",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 144.78
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.04",
+            "number": "5",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 147.32000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.05",
+            "number": "6",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 149.86
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.02",
+            "number": "7",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 152.4
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.03",
+            "number": "8",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 154.94
+          },
+          {
+            "length_mm": 2.54,
+            "name": "VDD",
+            "number": "9",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 157.48000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "GND",
+            "number": "10",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 160.02
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.09",
+            "number": "11",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 162.56
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.11",
+            "number": "12",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 165.10000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.30",
+            "number": "13",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 167.64000000000001
+          },
+          {
+            "length_mm": 2.54,
+            "name": "RESET_N",
+            "number": "14",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 170.18
+          },
+          {
+            "length_mm": 2.54,
+            "name": "SWCLK",
+            "number": "15",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 172.72
+          },
+          {
+            "length_mm": 2.54,
+            "name": "SWDIO",
+            "number": "16",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 175.26000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.09",
+            "number": "Z0",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 177.8
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.10",
+            "number": "Z1",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 180.34
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.11",
+            "number": "Z2",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 182.88000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.12",
+            "number": "Z3",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 185.42000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.13",
+            "number": "Z4",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 187.96
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.14",
+            "number": "Z5",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 190.5
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.15",
+            "number": "Z6",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 193.04000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "GND",
+            "number": "A0",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 195.58
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.06",
+            "number": "A1",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 198.12
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.07",
+            "number": "A2",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 200.66000000000003
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.08",
+            "number": "A3",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 203.20000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.16",
+            "number": "A4",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 205.74
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.00",
+            "number": "A5",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 208.28
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.08",
+            "number": "A6",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 210.82000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "GND",
+            "number": "B0",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 213.36
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.19",
+            "number": "B1",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 215.9
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.17",
+            "number": "B2",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 241.3,
+            "y": 218.44
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.14",
+            "number": "B3",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 137.16000000000003
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.15",
+            "number": "B4",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 139.70000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.12",
+            "number": "B5",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 142.24
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.13",
+            "number": "B6",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 144.78
+          },
+          {
+            "length_mm": 2.54,
+            "name": "GND",
+            "number": "C0",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 147.32000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.31",
+            "number": "C1",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 149.86
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.21",
+            "number": "C2",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 152.4
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.24",
+            "number": "C3",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 154.94
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.23",
+            "number": "C4",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 157.48000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.20",
+            "number": "C5",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 160.02
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.25",
+            "number": "C6",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 162.56
+          },
+          {
+            "length_mm": 2.54,
+            "name": "GND",
+            "number": "D0",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 165.10000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.26",
+            "number": "D1",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 167.64000000000001
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.27",
+            "number": "D2",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 170.18
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.28",
+            "number": "D3",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 172.72
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.29",
+            "number": "D4",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 175.26000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.22",
+            "number": "D5",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 177.8
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.01",
+            "number": "D6",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 180.34
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.04",
+            "number": "E0",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 182.88000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.05",
+            "number": "E1",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 185.42000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.06",
+            "number": "E2",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 187.96
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P1.07",
+            "number": "E3",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 190.5
+          },
+          {
+            "length_mm": 2.54,
+            "name": "USB_DP",
+            "number": "E4",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 193.04000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "USB_DM",
+            "number": "E5",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 195.58
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.10",
+            "number": "E6",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 198.12
+          },
+          {
+            "length_mm": 2.54,
+            "name": "P0.18",
+            "number": "F3",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 200.66000000000003
+          },
+          {
+            "length_mm": 2.54,
+            "name": "VDDH",
+            "number": "F4",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 203.20000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "NC_DCCH_INTERNAL",
+            "number": "F5",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 205.74
+          },
+          {
+            "length_mm": 2.54,
+            "name": "VBUS_UNUSED",
+            "number": "F6",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 208.28
+          },
+          {
+            "length_mm": 2.54,
+            "name": "GND",
+            "number": "H0",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 210.82000000000002
+          },
+          {
+            "length_mm": 2.54,
+            "name": "GND",
+            "number": "H1",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 213.36
+          },
+          {
+            "length_mm": 2.54,
+            "name": "GND",
+            "number": "H2",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 215.9
+          },
+          {
+            "length_mm": 2.54,
+            "name": "GND",
+            "number": "H3",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 266.7,
+            "y": 218.44
+          }
+        ],
+        "rotation": 0,
+        "unit": 1,
+        "x": 254,
+        "y": 177.8
+      }
+    ],
+    "x": 254,
+    "y": 177.8
+  },
+  "nearest_pins": {
+    "component_x": 76.2,
+    "component_y": 96.52,
+    "pins": [
+      {
+        "length_mm": 2.54,
+        "name": "SH_LD_N",
+        "number": "1",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 80.00999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "CLK",
+        "number": "2",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 82.55
+      },
+      {
+        "length_mm": 2.54,
+        "name": "E",
+        "number": "3",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 85.09
+      },
+      {
+        "length_mm": 2.54,
+        "name": "F",
+        "number": "4",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 87.63
+      },
+      {
+        "length_mm": 2.54,
+        "name": "G",
+        "number": "5",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 90.17
+      },
+      {
+        "length_mm": 2.54,
+        "name": "H",
+        "number": "6",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 92.71
+      },
+      {
+        "length_mm": 2.54,
+        "name": "GND",
+        "number": "8",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 95.25
+      },
+      {
+        "length_mm": 2.54,
+        "name": "SER",
+        "number": "10",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 97.78999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "A",
+        "number": "11",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 100.33
+      },
+      {
+        "length_mm": 2.54,
+        "name": "B",
+        "number": "12",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 102.86999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "C",
+        "number": "13",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 105.41
+      },
+      {
+        "length_mm": 2.54,
+        "name": "D",
+        "number": "14",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 107.94999999999999
+      },
+      {
+        "length_mm": 2.54,
+        "name": "CLK_INH",
+        "number": "15",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 110.49
+      },
+      {
+        "length_mm": 2.54,
+        "name": "VCC",
+        "number": "16",
+        "orientation_degrees": 180,
+        "unit": 1,
+        "x": 63.5,
+        "y": 113.03
+      },
+      {
+        "length_mm": 2.54,
+        "name": "QH_N",
+        "number": "7",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 88.9,
+        "y": 95.25
+      },
+      {
+        "length_mm": 2.54,
+        "name": "QH",
+        "number": "9",
+        "orientation_degrees": 0,
+        "unit": 1,
+        "x": 88.9,
+        "y": 97.78999999999999
+      }
+    ],
+    "reference": "U10",
+    "rotation": 0,
+    "unit_count": 1,
+    "units": [
+      {
+        "pins": [
+          {
+            "length_mm": 2.54,
+            "name": "SH_LD_N",
+            "number": "1",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 80.00999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "CLK",
+            "number": "2",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 82.55
+          },
+          {
+            "length_mm": 2.54,
+            "name": "E",
+            "number": "3",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 85.09
+          },
+          {
+            "length_mm": 2.54,
+            "name": "F",
+            "number": "4",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 87.63
+          },
+          {
+            "length_mm": 2.54,
+            "name": "G",
+            "number": "5",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 90.17
+          },
+          {
+            "length_mm": 2.54,
+            "name": "H",
+            "number": "6",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 92.71
+          },
+          {
+            "length_mm": 2.54,
+            "name": "GND",
+            "number": "8",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 95.25
+          },
+          {
+            "length_mm": 2.54,
+            "name": "SER",
+            "number": "10",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 97.78999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "A",
+            "number": "11",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 100.33
+          },
+          {
+            "length_mm": 2.54,
+            "name": "B",
+            "number": "12",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 102.86999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "C",
+            "number": "13",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 105.41
+          },
+          {
+            "length_mm": 2.54,
+            "name": "D",
+            "number": "14",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 107.94999999999999
+          },
+          {
+            "length_mm": 2.54,
+            "name": "CLK_INH",
+            "number": "15",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 110.49
+          },
+          {
+            "length_mm": 2.54,
+            "name": "VCC",
+            "number": "16",
+            "orientation_degrees": 180,
+            "unit": 1,
+            "x": 63.5,
+            "y": 113.03
+          },
+          {
+            "length_mm": 2.54,
+            "name": "QH_N",
+            "number": "7",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 88.9,
+            "y": 95.25
+          },
+          {
+            "length_mm": 2.54,
+            "name": "QH",
+            "number": "9",
+            "orientation_degrees": 0,
+            "unit": 1,
+            "x": 88.9,
+            "y": 97.78999999999999
+          }
+        ],
+        "rotation": 0,
+        "unit": 1,
+        "x": 76.2,
+        "y": 96.52
+      }
+    ],
+    "x": 76.2,
+    "y": 96.52
+  },
+  "h_bit0": {
+    "net": "CH0_ADDR0",
+    "pin": "6",
+    "pin_x": 63.5,
+    "pin_y": 92.71,
+    "reference": "U10"
+  },
+  "data_pin": {
+    "net": "SIDEBAND_DATA",
+    "pin": "Z6",
+    "pin_x": 241.3,
+    "pin_y": 193.04000000000002,
+    "reference": "U1"
+  },
+  "common_drv": {
+    "net": "BOTH_DRV_REARM",
+    "pin": "E2",
+    "pin_x": 266.7,
+    "pin_y": 187.96,
+    "reference": "U1"
+  },
+  "phase0": {
+    "net": "PHASE_REARM0",
+    "pin": "Z1",
+    "pin_x": 241.3,
+    "pin_y": 180.34,
+    "reference": "U1"
+  },
+  "erc": {
+    "coordinates": {
+      "kicad_version": "10.0.6",
+      "reason": "KiCad 10.0.6 writes every ERC JSON coordinate at 1/100 of its true value (kicad#25582, fixed in 10.0.7); Konnect multiplied it back. A length quoted inside KiCad's own violation text is scaled the same way and is left as KiCad wrote it.",
+      "scale_applied": 100,
+      "status": "corrected"
+    },
+    "errors": 0,
+    "total": 0,
+    "violations": [],
+    "warnings": 0
+  },
+  "overlaps": {
+    "controller_carrier.kicad_sch": {
+      "bounds_resolved": 4,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "processor.kicad_sch": {
+      "bounds_resolved": 1,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "power.kicad_sch": {
+      "bounds_resolved": 7,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "sideband.kicad_sch": {
+      "bounds_resolved": 8,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "handoff.kicad_sch": {
+      "bounds_resolved": 4,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "handoff_2.kicad_sch": {
+      "bounds_resolved": 4,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "handoff_3.kicad_sch": {
+      "bounds_resolved": 3,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "defaults.kicad_sch": {
+      "bounds_resolved": 14,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "defaults_2.kicad_sch": {
+      "bounds_resolved": 14,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    },
+    "defaults_3.kicad_sch": {
+      "bounds_resolved": 12,
+      "bounds_unresolved": [],
+      "overlap_count": 0,
+      "overlaps": []
+    }
+  },
+  "schematic_sha256": {
+    "controller_carrier.kicad_sch": "c1539a270995d7d44e52a0994265986765e24af7762a2d8aec04c59f4df99f74",
+    "defaults.kicad_sch": "b4d0cbb6898202284c9f92c954c0da044f4372485a995a79d3e346814fbeeb90",
+    "defaults_2.kicad_sch": "de54495791d68a141fb2733dc95e01bba73763b1584ea23329eecb6ddfa4839e",
+    "defaults_3.kicad_sch": "ea6c6a25ba55f8e1e9941a081b5aaf2f76dd315c25773215e02379c16674860b",
+    "handoff.kicad_sch": "240bd5c28e0b0f75eb8802d437c79483c2f1ef5ab6fba931ec4655e65ef8214d",
+    "handoff_2.kicad_sch": "3ace911ed5add5f1fc57b9f34f266d410f2e28cc4c589f0c1d3d04b135c4a6bd",
+    "handoff_3.kicad_sch": "aea0c07a082688e6a96deff4df2eb28be31a505c5a31d032b8d0b7c8c98ccf99",
+    "power.kicad_sch": "ec7078f0fc0bd94979bf1a6df5d6c1d5581fb5bdf4fb315e03273a8c50e9bbb4",
+    "processor.kicad_sch": "f71a6339483e52198dff01569d2f9545f8dffd7365654690377f722bdd026277",
+    "sideband.kicad_sch": "2239d3e649ad7f37354a71cb7d322af0a4188abeb629de6294305d724d884441"
+  }
+}

@@ -1,0 +1,465 @@
+{
+  "schema": "ato.stage4.nrf5340-independent-verification.v1",
+  "date": "2026-10-14",
+  "passed": true,
+  "checks": 128,
+  "evidence": "independent ELF32 parser, source/export bindings, GPIO/native/XML and peripheral ownership checks; no target execution",
+  "elf_sha256": "35a692538a86174bfa080b2f0682f7982bc57d16d815fceacf25cbcd3d4806e5",
+  "entry_hex": "0x33e9",
+  "RAM_allocated_section_bytes": 97991,
+  "RAM_extent_bytes": 98000,
+  "RAM_physical_capacity_bytes": 524288,
+  "RAM_linker_capacity_bytes": 458752,
+  "RAM_20percent_headroom_pass": true,
+  "flash_LOAD_extent_bytes": 53616,
+  "compiled_core_tests": {
+    "scenarios": 75,
+    "assertions": 713,
+    "runtime_bytes": 432,
+    "fault_record_bytes": 16,
+    "passed": true
+  },
+  "GPIO_count": 46,
+  "native_endpoint_checks": 50,
+  "endpoint_bindings": [
+    {
+      "GPIO": "P0.02",
+      "signal": "ROUTE_PRELOAD",
+      "endpoint": "contact-router:J2.3",
+      "native_net": "ROUTE_PRELOAD_LATCH"
+    },
+    {
+      "GPIO": "P0.03",
+      "signal": "ROUTE_COMMIT",
+      "endpoint": "contact-router:J2.4",
+      "native_net": "ROUTE_COMMIT"
+    },
+    {
+      "GPIO": "P0.04",
+      "signal": "ROUTE_REARM",
+      "endpoint": "contact-router:J2.5",
+      "native_net": "ROUTE_REARM"
+    },
+    {
+      "GPIO": "P0.05",
+      "signal": "ACTIVE_ACK",
+      "endpoint": "contact-router:J4.7",
+      "native_net": "ROUTE_ACTIVE_BITS_VERIFIED"
+    },
+    {
+      "GPIO": "P0.06",
+      "signal": "WANT0",
+      "endpoint": "contact-router:J3.1",
+      "native_net": "CH0_WANT_ROUTE"
+    },
+    {
+      "GPIO": "P0.07",
+      "signal": "WANT1",
+      "endpoint": "contact-router:J3.2",
+      "native_net": "CH1_WANT_ROUTE"
+    },
+    {
+      "GPIO": "P0.08",
+      "signal": "RAW_SCLK",
+      "endpoint": "monitoring-transport:J3.1",
+      "native_net": "RAW_SCLK"
+    },
+    {
+      "GPIO": "P0.09",
+      "signal": "RAW_SDI",
+      "endpoint": "monitoring-transport:J3.2",
+      "native_net": "RAW_SDI"
+    },
+    {
+      "GPIO": "P0.10",
+      "signal": "RAW_SDO",
+      "endpoint": "monitoring-transport:J3.3",
+      "native_net": "RAW_SDO"
+    },
+    {
+      "GPIO": "P0.11",
+      "signal": "RAW_CS_N",
+      "endpoint": "monitoring-transport:J3.4",
+      "native_net": "RAW_CS_N"
+    },
+    {
+      "GPIO": "P0.12",
+      "signal": "RAW_RST_N",
+      "endpoint": "monitoring-transport:J3.5",
+      "native_net": "RAW_RST_N"
+    },
+    {
+      "GPIO": "P0.13",
+      "signal": "AFE_SCLK",
+      "endpoint": "recording-front-end:J2.3",
+      "native_net": "HOST_SCLK"
+    },
+    {
+      "GPIO": "P0.14",
+      "signal": "AFE_MOSI",
+      "endpoint": "recording-front-end:J2.4",
+      "native_net": "HOST_MOSI"
+    },
+    {
+      "GPIO": "P0.15",
+      "signal": "AFE_MISO",
+      "endpoint": "recording-front-end:J2.6",
+      "native_net": "HOST_MISO"
+    },
+    {
+      "GPIO": "P0.16",
+      "signal": "AFE_CS_ASSERT",
+      "endpoint": "recording-front-end:J2.5",
+      "native_net": "HOST_CS_ASSERT"
+    },
+    {
+      "GPIO": "P0.17",
+      "signal": "AFE_CONNECT",
+      "endpoint": "recording-front-end:J2.7",
+      "native_net": "HOST_CONNECT_CMD"
+    },
+    {
+      "GPIO": "P0.18",
+      "signal": "AFE_RECORD",
+      "endpoint": "recording-front-end:J2.8",
+      "native_net": "HOST_RECORD_CMD"
+    },
+    {
+      "GPIO": "P0.19",
+      "signal": "AFE_FAULT_N",
+      "endpoint": "recording-front-end:J2.9",
+      "native_net": "HOST_FAULT_N"
+    },
+    {
+      "GPIO": "P0.20",
+      "signal": "MON_SCLK",
+      "endpoint": "monitoring-transport:J22.1",
+      "native_net": "MON_SCLK"
+    },
+    {
+      "GPIO": "P0.21",
+      "signal": "MON_MISO",
+      "endpoint": "monitoring-transport:J22.2",
+      "native_net": "MON_MISO"
+    },
+    {
+      "GPIO": "P0.22",
+      "signal": "BOTH_CNV",
+      "endpoint": "monitoring-transport:J22.3",
+      "native_net": "CH0_CNV"
+    },
+    {
+      "GPIO": "P0.22",
+      "signal": "BOTH_CNV",
+      "endpoint": "monitoring-transport:J22.5",
+      "native_net": "CH1_CNV"
+    },
+    {
+      "GPIO": "P0.23",
+      "signal": "CS0",
+      "endpoint": "monitoring-transport:J22.4",
+      "native_net": "CH0_CS_N"
+    },
+    {
+      "GPIO": "P0.24",
+      "signal": "CS1",
+      "endpoint": "monitoring-transport:J22.6",
+      "native_net": "CH1_CS_N"
+    },
+    {
+      "GPIO": "P0.25",
+      "signal": "INT_RUN0",
+      "endpoint": "monitoring-transport:J20.8",
+      "native_net": "CH0_INT_RUN"
+    },
+    {
+      "GPIO": "P0.26",
+      "signal": "INT_RUN1",
+      "endpoint": "monitoring-transport:J20.9",
+      "native_net": "CH1_INT_RUN"
+    },
+    {
+      "GPIO": "P0.27",
+      "signal": "MON_REARM0",
+      "endpoint": "monitoring-transport:J20.10",
+      "native_net": "CH0_MON_REARM"
+    },
+    {
+      "GPIO": "P0.28",
+      "signal": "MON_REARM1",
+      "endpoint": "monitoring-transport:J20.11",
+      "native_net": "CH1_MON_REARM"
+    },
+    {
+      "GPIO": "P0.29",
+      "signal": "CTRL_SCLK",
+      "endpoint": "current-driver:J2.1",
+      "native_net": "DAC_SCLK"
+    },
+    {
+      "GPIO": "P0.29",
+      "signal": "CTRL_SCLK",
+      "endpoint": "contact-router:J2.2",
+      "native_net": "ROUTE_SRCLK"
+    },
+    {
+      "GPIO": "P0.30",
+      "signal": "CTRL_MOSI",
+      "endpoint": "current-driver:J2.3",
+      "native_net": "DAC_SDIN"
+    },
+    {
+      "GPIO": "P0.30",
+      "signal": "CTRL_MOSI",
+      "endpoint": "contact-router:J2.1",
+      "native_net": "ROUTE_SER"
+    },
+    {
+      "GPIO": "P0.31",
+      "signal": "DAC_SYNC_N",
+      "endpoint": "current-driver:J2.2",
+      "native_net": "DAC_SYNC_N"
+    },
+    {
+      "GPIO": "P1.00",
+      "signal": "REQ0",
+      "endpoint": "current-driver:J3.1",
+      "native_net": "CH0_REQUEST"
+    },
+    {
+      "GPIO": "P1.00",
+      "signal": "REQ0",
+      "endpoint": "supervision:J3.4",
+      "native_net": "CH0_REQUEST"
+    },
+    {
+      "GPIO": "P1.01",
+      "signal": "REQ1",
+      "endpoint": "current-driver:J3.5",
+      "native_net": "CH1_REQUEST"
+    },
+    {
+      "GPIO": "P1.01",
+      "signal": "REQ1",
+      "endpoint": "supervision:J3.5",
+      "native_net": "CH1_REQUEST"
+    },
+    {
+      "GPIO": "P1.02",
+      "signal": "PLUS0",
+      "endpoint": "current-driver:J3.2",
+      "native_net": "CH0_PLUS_RAW"
+    },
+    {
+      "GPIO": "P1.03",
+      "signal": "MINUS0",
+      "endpoint": "current-driver:J3.3",
+      "native_net": "CH0_MINUS_RAW"
+    },
+    {
+      "GPIO": "P1.04",
+      "signal": "PLUS1",
+      "endpoint": "current-driver:J3.6",
+      "native_net": "CH1_PLUS_RAW"
+    },
+    {
+      "GPIO": "P1.05",
+      "signal": "MINUS1",
+      "endpoint": "current-driver:J3.7",
+      "native_net": "CH1_MINUS_RAW"
+    },
+    {
+      "GPIO": "P1.06",
+      "signal": "BOTH_DRV_REARM",
+      "endpoint": "current-driver:J3.4",
+      "native_net": "CH0_REARM"
+    },
+    {
+      "GPIO": "P1.06",
+      "signal": "BOTH_DRV_REARM",
+      "endpoint": "current-driver:J3.8",
+      "native_net": "CH1_REARM"
+    },
+    {
+      "GPIO": "P1.07",
+      "signal": "SUP_REARM",
+      "endpoint": "supervision:J3.1",
+      "native_net": "SUP_REARM"
+    },
+    {
+      "GPIO": "P1.08",
+      "signal": "FAULT_RESET",
+      "endpoint": "supervision:J3.2",
+      "native_net": "FAULT_RESET"
+    },
+    {
+      "GPIO": "P1.09",
+      "signal": "WDI",
+      "endpoint": "supervision:J3.3",
+      "native_net": "WDI"
+    },
+    {
+      "GPIO": "P1.10",
+      "signal": "PHASE_REARM0",
+      "endpoint": "supervision:J3.10",
+      "native_net": "CH0_PHASE_REARM"
+    },
+    {
+      "GPIO": "P1.11",
+      "signal": "PHASE_REARM1",
+      "endpoint": "supervision:J3.11",
+      "native_net": "CH1_PHASE_REARM"
+    },
+    {
+      "GPIO": "P1.12",
+      "signal": "HOST_UART_TX",
+      "endpoint": "monitoring-transport:J7.1",
+      "native_net": "HOST_UART_TX"
+    },
+    {
+      "GPIO": "P1.13",
+      "signal": "HOST_UART_RX",
+      "endpoint": "monitoring-transport:J7.2",
+      "native_net": "HOST_UART_RX"
+    }
+  ],
+  "timing_review": {
+    "raw_40clock_wire_us": 2.5,
+    "raw_requested_slot_us": 100,
+    "RHD_19slot_lower_bound_us": 152,
+    "RHD_requested_frame_us": 1000,
+    "sideband_32clock_delay_allocation_us": 64,
+    "uninterrupted_RHD_fits_between_raw_slots": false,
+    "continuous_requested_cadences_proved": false,
+    "physical_WCET_or_jitter_measured": false,
+    "policy": "actual aperture brackets and missed-slot/gap counters required; never reconstruct a missed measurement as valid"
+  },
+  "linked_ato_functions": {
+    "ato_backend_init": {
+      "address": 3589,
+      "size": 1264
+    },
+    "ato_backend_now_us": {
+      "address": 2241,
+      "size": 100
+    },
+    "ato_backend_service": {
+      "address": 4853,
+      "size": 3308
+    },
+    "ato_backend_stop": {
+      "address": 2133,
+      "size": 108
+    },
+    "ato_runtime_command": {
+      "address": 9161,
+      "size": 244
+    },
+    "ato_runtime_configure": {
+      "address": 38197,
+      "size": 122
+    },
+    "ato_runtime_crc32": {
+      "address": 8405,
+      "size": 56
+    },
+    "ato_runtime_event": {
+      "address": 38959,
+      "size": 350
+    },
+    "ato_runtime_extend_ticks": {
+      "address": 40273,
+      "size": 46
+    },
+    "ato_runtime_health": {
+      "address": 38319,
+      "size": 104
+    },
+    "ato_runtime_init": {
+      "address": 38155,
+      "size": 42
+    },
+    "ato_runtime_phase_end": {
+      "address": 39527,
+      "size": 128
+    },
+    "ato_runtime_phase_ready": {
+      "address": 39309,
+      "size": 82
+    },
+    "ato_runtime_phase_start": {
+      "address": 39391,
+      "size": 136
+    },
+    "ato_runtime_queue_drain": {
+      "address": 40205,
+      "size": 32
+    },
+    "ato_runtime_queue_push": {
+      "address": 40085,
+      "size": 120
+    },
+    "ato_runtime_raw_identity": {
+      "address": 39929,
+      "size": 156
+    },
+    "ato_runtime_rearm": {
+      "address": 38541,
+      "size": 152
+    },
+    "ato_runtime_recovery_begin": {
+      "address": 38423,
+      "size": 118
+    },
+    "ato_runtime_route_prepare": {
+      "address": 38693,
+      "size": 140
+    },
+    "ato_runtime_route_readback": {
+      "address": 38833,
+      "size": 126
+    },
+    "ato_runtime_sbp": {
+      "address": 8461,
+      "size": 700
+    },
+    "ato_runtime_session": {
+      "address": 8213,
+      "size": 192
+    },
+    "ato_runtime_take_actions": {
+      "address": 40237,
+      "size": 36
+    },
+    "ato_runtime_tick": {
+      "address": 39655,
+      "size": 274
+    },
+    "ato_runtime_trip": {
+      "address": 37923,
+      "size": 166
+    },
+    "main": {
+      "address": 1093,
+      "size": 80
+    }
+  },
+  "source_sha256_lf": {
+    "firmware/nrf5340/app/app.overlay": "60d735c9ffb6858c9cb8cbd9fac5ae3351b11f9ea48ab84dc9efa2b45ac441b9",
+    "firmware/nrf5340/app/CMakeLists.txt": "ed2e9d21874abe141791a4de8c149dc928dc68d35c56c08c97acc614f725b439",
+    "firmware/nrf5340/app/prj.conf": "b10a365341c2781d3b8fee77d559feb4b2e8b51b31923219ef390c992997dfeb",
+    "firmware/nrf5340/app/README.md": "a738da556a87dc7dfed8eaf0b15bf8bc35ede55b94fc5fa6db891e7282ac3f9c",
+    "firmware/nrf5340/app/src/ato_backend.c": "74d32a85412ba735350d1fd0b1d470d0f4e8e2fb334dc448ec9c626e1cab3a90",
+    "firmware/nrf5340/app/src/ato_backend.h": "0b8f455d25b21b4b8056116615df434cffb22a96b3cde6cfe7e169e8af64ef0d",
+    "firmware/nrf5340/app/src/ato_pins.h": "bbbf274ed50d928fca8282eba663249a09365435d8a0ca100d4a847202acbb5f",
+    "firmware/nrf5340/app/src/main.c": "96bbf4534da48960a8992d710abf76919a5c76a5f023a2fefeb4b5e3dfdab523",
+    "firmware/nrf5340/core/ato_runtime.c": "ff0fe7daeb09e910d6be91840e94f717c425c30f74cc7a8fd87dab9d00be48f0",
+    "firmware/nrf5340/core/ato_runtime.h": "4717188ee12f39f4cc3d71a276dcfd654d99993b12b507399dbc6514d168e39f",
+    "firmware/nrf5340/core/README.md": "f3dd2d7ce8971bf352a2dd32710873ead8175cc6bb8d4b0e122c2333b49394d1",
+    "scripts/build_nrf5340.py": "8a3a5da3e18cf692f2b5010bef4b033d623011276187bcb01f9038171a85057d",
+    "docs/stage4/nrf5340-pin-map.csv": "8b686ffd13fa9b95776cc7d34b1bfc67e5f650be1b2d5a2ec49bcf41e6d8bbf7",
+    "docs/stage4/nrf5340-component-and-peripheral-review.md": "baa3e0594092c19da4b39aa84bc649182332edb1a4a0b2945f302f23a2cbcfd5",
+    "scripts/verify_nrf5340.py": "d9062570646e31f74d361edb3d048729c09f40ce41123d1020490fb6c8da77c0",
+    "firmware/nrf5340/runtime-tests.json": "0066f97832750e4c9515dcd35013e44cd2c781a0dbfbed57803ec8a6fbe86f69"
+  }
+}

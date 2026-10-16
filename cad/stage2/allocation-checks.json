@@ -1,0 +1,1661 @@
+{
+  "date": "2026-10-08",
+  "scope": "Nominal allocation solids, not finished implant CAD or anatomy",
+  "core_outer_with_header_mm": [
+    60,
+    58,
+    14
+  ],
+  "hub_outer_mm": [
+    100,
+    60,
+    24
+  ],
+  "ports": 36,
+  "assembly_solid_count": 80,
+  "battery_to_component_zone_gap_mm": 0.5,
+  "battery_to_lid_gap_mm": 1.0,
+  "pairwise_major_solids_intersection_checks": [
+    {
+      "a": "Core_Can_Open",
+      "b": "Core_Lid_Unsealed",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Core_Can_Open",
+      "b": "Dielectric_Header_Allocation",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Core_Can_Open",
+      "b": "Unpopulated_PCB_Allocation",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Core_Can_Open",
+      "b": "Contego_200_Bounding_Box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Core_Can_Open",
+      "b": "Effective_HV_Capacitor_Bank_Reservation",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Core_Can_Open",
+      "b": "Hub_Open_Housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Core_Can_Open",
+      "b": "Hub_Lid_Unsealed",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Core_Lid_Unsealed",
+      "b": "Dielectric_Header_Allocation",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Core_Lid_Unsealed",
+      "b": "Unpopulated_PCB_Allocation",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Core_Lid_Unsealed",
+      "b": "Contego_200_Bounding_Box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Core_Lid_Unsealed",
+      "b": "Effective_HV_Capacitor_Bank_Reservation",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Core_Lid_Unsealed",
+      "b": "Hub_Open_Housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Core_Lid_Unsealed",
+      "b": "Hub_Lid_Unsealed",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Dielectric_Header_Allocation",
+      "b": "Unpopulated_PCB_Allocation",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Dielectric_Header_Allocation",
+      "b": "Contego_200_Bounding_Box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Dielectric_Header_Allocation",
+      "b": "Effective_HV_Capacitor_Bank_Reservation",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Dielectric_Header_Allocation",
+      "b": "Hub_Open_Housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Dielectric_Header_Allocation",
+      "b": "Hub_Lid_Unsealed",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Unpopulated_PCB_Allocation",
+      "b": "Contego_200_Bounding_Box",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Unpopulated_PCB_Allocation",
+      "b": "Effective_HV_Capacitor_Bank_Reservation",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Unpopulated_PCB_Allocation",
+      "b": "Hub_Open_Housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Unpopulated_PCB_Allocation",
+      "b": "Hub_Lid_Unsealed",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Contego_200_Bounding_Box",
+      "b": "Effective_HV_Capacitor_Bank_Reservation",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Contego_200_Bounding_Box",
+      "b": "Hub_Open_Housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Contego_200_Bounding_Box",
+      "b": "Hub_Lid_Unsealed",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Effective_HV_Capacitor_Bank_Reservation",
+      "b": "Hub_Open_Housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Effective_HV_Capacitor_Bank_Reservation",
+      "b": "Hub_Lid_Unsealed",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "Hub_Open_Housing",
+      "b": "Hub_Lid_Unsealed",
+      "overlap_mm3": 0.0
+    }
+  ],
+  "interface_can_checks": [
+    {
+      "part": "Unqualified_Insulator_01",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_01",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_02",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_02",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_03",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_03",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_04",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_04",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_05",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_05",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_06",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_06",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_07",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_07",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_08",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_08",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_09",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_09",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_10",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_10",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_11",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_11",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_12",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_12",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_13",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_13",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_14",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_14",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_15",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_15",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_16",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_16",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_17",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_17",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_18",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_18",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_19",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_19",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_20",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_20",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_21",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_21",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_22",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_22",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_23",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_23",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_24",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_24",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_25",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_25",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_26",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_26",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_27",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_27",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_28",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_28",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_29",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_29",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_30",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_30",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_31",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_31",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_32",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_32",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_33",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_33",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_34",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_34",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_35",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_35",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Unqualified_Insulator_36",
+      "metal_can_overlap_mm3": 0.0
+    },
+    {
+      "part": "Interface_Port_36",
+      "metal_can_overlap_mm3": 0.0
+    }
+  ],
+  "reservation_semantics": "Header dielectric allocation contains interface pins/insulators; populated zone contains HV bank. These containment relations are intentional reservations, not an interference pass for a manufactured assembly.",
+  "parts": [
+    {
+      "name": "Core_Can_Open",
+      "volume_mm3": 6361.97479934121,
+      "bbox_min_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bbox_max_mm": [
+        60.0,
+        48.0,
+        12.8
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Core_Lid_Unsealed",
+      "volume_mm3": 3455.999999999999,
+      "bbox_min_mm": [
+        0.0,
+        0.0,
+        12.8
+      ],
+      "bbox_max_mm": [
+        60.0,
+        48.0,
+        14.0
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Dielectric_Header_Allocation",
+      "volume_mm3": 8400.0,
+      "bbox_min_mm": [
+        0.0,
+        48.0,
+        0.0
+      ],
+      "bbox_max_mm": [
+        60.0,
+        58.0,
+        14.0
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unpopulated_PCB_Allocation",
+      "volume_mm3": 1999.9999999999995,
+      "bbox_min_mm": [
+        5.0,
+        4.0,
+        1.8
+      ],
+      "bbox_max_mm": [
+        55.0,
+        44.0,
+        2.8
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Contego_200_Bounding_Box",
+      "volume_mm3": 3281.8500000000004,
+      "bbox_min_mm": [
+        12.0,
+        10.0,
+        6.3
+      ],
+      "bbox_max_mm": [
+        47.1,
+        27.0,
+        11.8
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Effective_HV_Capacitor_Bank_Reservation",
+      "volume_mm3": 1008.0,
+      "bbox_min_mm": [
+        7.0,
+        29.0,
+        2.8
+      ],
+      "bbox_max_mm": [
+        31.0,
+        43.0,
+        5.8
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Hub_Open_Housing",
+      "volume_mm3": 24480.0,
+      "bbox_min_mm": [
+        80.0,
+        0.0,
+        0.0
+      ],
+      "bbox_max_mm": [
+        180.0,
+        60.0,
+        22.0
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Hub_Lid_Unsealed",
+      "volume_mm3": 12000.0,
+      "bbox_min_mm": [
+        80.0,
+        0.0,
+        22.0
+      ],
+      "bbox_max_mm": [
+        180.0,
+        60.0,
+        24.0
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_01",
+      "volume_mm3": 0.9289061158134296,
+      "bbox_min_mm": [
+        4.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        4.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_01",
+      "volume_mm3": 0.0989601685880784,
+      "bbox_min_mm": [
+        4.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        4.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_02",
+      "volume_mm3": 0.9289061158134296,
+      "bbox_min_mm": [
+        7.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        7.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_02",
+      "volume_mm3": 0.09896016858807838,
+      "bbox_min_mm": [
+        7.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        7.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_03",
+      "volume_mm3": 0.9289061158134302,
+      "bbox_min_mm": [
+        10.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        10.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_03",
+      "volume_mm3": 0.09896016858807835,
+      "bbox_min_mm": [
+        10.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        10.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_04",
+      "volume_mm3": 0.9289061158134302,
+      "bbox_min_mm": [
+        13.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        13.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_04",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        13.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        13.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_05",
+      "volume_mm3": 0.9289061158134299,
+      "bbox_min_mm": [
+        16.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        16.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_05",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        16.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        16.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_06",
+      "volume_mm3": 0.9289061158134299,
+      "bbox_min_mm": [
+        19.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        19.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_06",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        19.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        19.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_07",
+      "volume_mm3": 0.9289061158134299,
+      "bbox_min_mm": [
+        22.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        22.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_07",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        22.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        22.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_08",
+      "volume_mm3": 0.9289061158134299,
+      "bbox_min_mm": [
+        25.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        25.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_08",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        25.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        25.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_09",
+      "volume_mm3": 0.9289061158134299,
+      "bbox_min_mm": [
+        28.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        28.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_09",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        28.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        28.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_10",
+      "volume_mm3": 0.9289061158134299,
+      "bbox_min_mm": [
+        31.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        31.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_10",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        31.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        31.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_11",
+      "volume_mm3": 0.9289061158134302,
+      "bbox_min_mm": [
+        34.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        34.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_11",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        34.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        34.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_12",
+      "volume_mm3": 0.9289061158134302,
+      "bbox_min_mm": [
+        37.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        37.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_12",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        37.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        37.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_13",
+      "volume_mm3": 0.9289061158134302,
+      "bbox_min_mm": [
+        40.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        40.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_13",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        40.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        40.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_14",
+      "volume_mm3": 0.9289061158134302,
+      "bbox_min_mm": [
+        43.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        43.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_14",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        43.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        43.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_15",
+      "volume_mm3": 0.9289061158134302,
+      "bbox_min_mm": [
+        46.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        46.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_15",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        46.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        46.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_16",
+      "volume_mm3": 0.9289061158134302,
+      "bbox_min_mm": [
+        49.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        49.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_16",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        49.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        49.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_17",
+      "volume_mm3": 0.9289061158134302,
+      "bbox_min_mm": [
+        52.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        52.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_17",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        52.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        52.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_18",
+      "volume_mm3": 0.9289061158134302,
+      "bbox_min_mm": [
+        55.01,
+        46.699999999999996,
+        4.51
+      ],
+      "bbox_max_mm": [
+        55.99,
+        48.099999999999994,
+        5.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_18",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        55.35,
+        46.699999999999996,
+        4.85
+      ],
+      "bbox_max_mm": [
+        55.65,
+        48.099999999999994,
+        5.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_19",
+      "volume_mm3": 0.9289061158134295,
+      "bbox_min_mm": [
+        4.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        4.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_19",
+      "volume_mm3": 0.09896016858807838,
+      "bbox_min_mm": [
+        4.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        4.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_20",
+      "volume_mm3": 0.9289061158134295,
+      "bbox_min_mm": [
+        7.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        7.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_20",
+      "volume_mm3": 0.09896016858807838,
+      "bbox_min_mm": [
+        7.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        7.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_21",
+      "volume_mm3": 0.9289061158134301,
+      "bbox_min_mm": [
+        10.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        10.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_21",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        10.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        10.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_22",
+      "volume_mm3": 0.9289061158134301,
+      "bbox_min_mm": [
+        13.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        13.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_22",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        13.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        13.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_23",
+      "volume_mm3": 0.9289061158134299,
+      "bbox_min_mm": [
+        16.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        16.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_23",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        16.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        16.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_24",
+      "volume_mm3": 0.9289061158134299,
+      "bbox_min_mm": [
+        19.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        19.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_24",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        19.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        19.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_25",
+      "volume_mm3": 0.9289061158134299,
+      "bbox_min_mm": [
+        22.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        22.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_25",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        22.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        22.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_26",
+      "volume_mm3": 0.9289061158134299,
+      "bbox_min_mm": [
+        25.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        25.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_26",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        25.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        25.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_27",
+      "volume_mm3": 0.9289061158134299,
+      "bbox_min_mm": [
+        28.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        28.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_27",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        28.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        28.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_28",
+      "volume_mm3": 0.9289061158134299,
+      "bbox_min_mm": [
+        31.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        31.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_28",
+      "volume_mm3": 0.09896016858807832,
+      "bbox_min_mm": [
+        31.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        31.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_29",
+      "volume_mm3": 0.9289061158134301,
+      "bbox_min_mm": [
+        34.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        34.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_29",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        34.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        34.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_30",
+      "volume_mm3": 0.9289061158134301,
+      "bbox_min_mm": [
+        37.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        37.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_30",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        37.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        37.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_31",
+      "volume_mm3": 0.9289061158134301,
+      "bbox_min_mm": [
+        40.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        40.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_31",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        40.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        40.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_32",
+      "volume_mm3": 0.9289061158134301,
+      "bbox_min_mm": [
+        43.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        43.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_32",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        43.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        43.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_33",
+      "volume_mm3": 0.9289061158134301,
+      "bbox_min_mm": [
+        46.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        46.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_33",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        46.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        46.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_34",
+      "volume_mm3": 0.9289061158134301,
+      "bbox_min_mm": [
+        49.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        49.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_34",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        49.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        49.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_35",
+      "volume_mm3": 0.9289061158134301,
+      "bbox_min_mm": [
+        52.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        52.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_35",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        52.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        52.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Unqualified_Insulator_36",
+      "volume_mm3": 0.9289061158134301,
+      "bbox_min_mm": [
+        55.01,
+        46.699999999999996,
+        8.51
+      ],
+      "bbox_max_mm": [
+        55.99,
+        48.099999999999994,
+        9.49
+      ],
+      "valid_BRep": true
+    },
+    {
+      "name": "Interface_Port_36",
+      "volume_mm3": 0.09896016858807821,
+      "bbox_min_mm": [
+        55.35,
+        46.699999999999996,
+        8.85
+      ],
+      "bbox_max_mm": [
+        55.65,
+        48.099999999999994,
+        9.15
+      ],
+      "valid_BRep": true
+    }
+  ],
+  "unestablished": [
+    "Native populated KiCad board",
+    "Hermetic feedthrough construction",
+    "Anatomical fit",
+    "RF/coil dimensions and losses",
+    "Cell insulation thickness and final tolerance stack",
+    "Real effective HV capacitor footprint"
+  ]
+}

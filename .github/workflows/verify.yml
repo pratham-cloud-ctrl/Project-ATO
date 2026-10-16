@@ -1,16 +1,66 @@
 name: Verify digital studies
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+env:
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+
 jobs:
-  verify:
+  audit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: pip
-      - run: python -m pip install -r requirements.txt
+      - run: python -m pip install -r requirements-lock.txt
       - run: python scripts/verify_manifest.py
+      - run: python scripts/verify_stage1_specification.py
+      - run: python scripts/run_architecture_budgets.py --check
+      - run: python scripts/verify_stage2_architecture.py
+      - run: python scripts/verify_stage3_foundation.py
+      - run: python scripts/verify_stage3_continuation.py
+      - run: python scripts/verify_stage3_revision.py
+      - run: python scripts/verify_frozen_pilot_portable.py --audit-only
+      - run: python experiments/stage3/conditional-concept/study.py --check
+      - run: python electronics/stage4/monitoring-cell/verify_monitoring_cell.py
+      - run: python electronics/stage4/monitoring-study/verify_study.py
+      - run: python electronics/stage4/current-driver/verify_current_driver.py
+      - run: python electronics/stage4/driver-study/verify_study.py
+      - run: python electronics/stage4/recording-front-end/verify_recording_front_end.py
+      - run: python electronics/stage4/recording-study/verify_input_network.py
+      - run: python electronics/stage4/recording-study/input_network_study.py
+      - run: python electronics/stage4/recording-study/timing_contract.py --check
+      - run: python electronics/stage4/contact-router/verify_contact_router.py
+      - run: python electronics/stage4/routing-study/route_contract.py --check
+      - run: python electronics/stage4/routing-study/verify_parasitics.py
+      - run: python electronics/stage4/routing-study/parasitic_study.py
+      - run: python electronics/stage4/supervision/verify_supervision.py
+      - run: python electronics/stage4/supervision-study/control_study.py --check
+      - run: python electronics/stage4/supervision-study/analog_study.py
+      - run: python electronics/stage4/supervision-study/verify_analog.py
+      - run: python electronics/stage4/supervision-study/verify_integration.py
+      - run: python electronics/stage4/power/verify_power.py
+      - run: python electronics/stage4/power-study/budget_study.py
+      - run: python electronics/stage4/power-study/verify_budget.py
+      - run: python electronics/stage4/power-study/sequence_study.py --check
+      - run: python electronics/stage4/power-study/verify_integration.py
+      - run: python electronics/stage4/monitoring-transport/verify_monitoring_transport.py
+      - run: python electronics/stage4/transport-study/transport_contract.py --check
+      - run: python electronics/stage4/transport-study/verify_transport.py
+      - run: python electronics/stage4/transport-study/input_study.py
+      - run: python electronics/stage4/transport-study/verify_input.py
+      - run: python electronics/stage4/transport-study/verify_integration.py
+      - run: python firmware/nrf5340/tests/check_runtime.py
+      - run: python scripts/verify_nrf5340.py
+      - run: python scripts/verify_integrated_pcb.py
       - run: python scripts/run_studies.py
       - run: python scripts/build_firmware.py
       - run: python scripts/run_adapter.py
@@ -22,3 +72,70 @@ jobs:
         with:
           name: synthetic-study-results
           path: results/
+
+  reproduce:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - study: foundation
+            commands: |
+              python scripts/run_stage3_studies.py --check --jobs 2
+              python scripts/stage3_electrical_sweep.py --check results/stage3/electrical-sweep.json
+              python scripts/stage3_pressure_convergence_probe.py --check results/stage3/pressure-convergence-probe.json
+          - study: motor-numerics
+            commands: python scripts/stage3_motor_convergence.py --check results/stage3/numerical/motor-convergence.json.gz
+          - study: pressure-numerics
+            commands: python scripts/stage3_pressure_convergence.py --check results/stage3/numerical/pressure-convergence.json.gz --summary-check results/stage3/numerical/pressure-convergence-summary.json --jobs 2
+          - study: information
+            commands: python scripts/stage3_information_comparison.py --check --jobs 2
+          - study: response-domain
+            commands: python scripts/stage3_response_validation.py --check results/stage3/response-validation/response-domain-raw.json.gz --summary-check results/stage3/response-validation/response-domain-summary.json --jobs 2
+          - study: acquisition-cue-expert
+            commands: |
+              python scripts/stage3_acquisition_qualification.py --check results/stage3/numerical/acquisition-qualification.json.gz
+              python scripts/stage3_cue_policy_study.py --check results/stage3/cue-policy/raw.json.gz
+              python scripts/stage3_expert_validation.py --check
+          - study: teacher-revision
+            commands: |
+              python scripts/stage3_teacher_library_study.py --check
+              python scripts/stage3_resolved_teacher_study.py --check
+              python scripts/stage3_delivery_requirements.py --check
+          - study: source-revision
+            commands: python scripts/stage3_source_sensitivity.py --check results/stage3/source-sensitivity/raw.json.gz --summary-check results/stage3/source-sensitivity/summary.json
+          - study: prediction-revision
+            commands: python scripts/stage3_assisted_prediction_study.py --check results/stage3/assisted-prediction/raw.json.gz
+          - study: dynamic-response-revision
+            commands: |
+              python scripts/stage3_dynamic_response_study.py --check
+              python scripts/stage3_sparse_baseline_study.py --check results/stage3/sparse-baseline/raw.json.gz
+          - study: isolated-pilot
+            commands: python scripts/stage3_isolated_pilot_study.py --check results/stage3/isolated-pilot/raw.json.gz
+          - study: observed-state-observer
+            commands: python experiments/stage3/observed-state-observer/verify_study.py --reproduce
+          - study: frozen-observer-pilot
+            commands: python scripts/verify_frozen_pilot_portable.py --reproduce
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ (matrix.study == 'observed-state-observer' || matrix.study == 'frozen-observer-pilot') && '3.12.14' || '3.12' }}
+          cache: pip
+      - run: python -m pip install -r requirements-lock.txt
+      - run: ${{ matrix.commands }}
+
+  verify:
+    if: always()
+    needs: [audit, reproduce]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require artifact audit and every study reproduction
+        env:
+          AUDIT_RESULT: ${{ needs.audit.result }}
+          REPRODUCTION_RESULT: ${{ needs.reproduce.result }}
+        run: |
+          test "$AUDIT_RESULT" = success
+          test "$REPRODUCTION_RESULT" = success

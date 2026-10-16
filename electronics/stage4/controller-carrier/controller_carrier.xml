@@ -1,0 +1,3478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>E:\Project ATO\electronics\stage4\controller-carrier\controller_carrier.kicad_sch</source>
+    <date>2026-10-14T19:43:06</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ATO S4 / Controller carrier / interface index</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>controller_carrier.kicad_sch</source>
+        <comment number="1" value="Native module carrier; physical execution and assembly qualification remain"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/processor/" tstamps="/c3f0c12c-73b2-5497-919a-c7d5d31b305f/">
+      <title_block>
+        <title>ATO S4 / BT40F / actual nRF5340 physical pads</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>processor.kicad_sch</source>
+        <comment number="1" value="Native module carrier; physical execution and assembly qualification remain"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/power/" tstamps="/c0ef80d0-6d9c-5a9b-8dcb-3844017fe984/">
+      <title_block>
+        <title>ATO S4 / Module normal-voltage supply and SWD</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>power.kicad_sch</source>
+        <comment number="1" value="Native module carrier; physical execution and assembly qualification remain"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/sideband/" tstamps="/6931257a-22a5-52cb-b29d-d20dcf362c23/">
+      <title_block>
+        <title>ATO S4 / Four physical 165 devices / parallel observations</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>sideband.kicad_sch</source>
+        <comment number="1" value="Native module carrier; physical execution and assembly qualification remain"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/handoff/" tstamps="/3ae20c75-89a0-5ae2-875a-910f64c6992a/">
+      <title_block>
+        <title>ATO S4 / Matched peripheral handoff connectors</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>handoff.kicad_sch</source>
+        <comment number="1" value="Native module carrier; physical execution and assembly qualification remain"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/handoff_2/" tstamps="/5f0b61b3-73e2-50bd-ac48-8ca1c028bfae/">
+      <title_block>
+        <title>ATO S4 / Matched peripheral handoff connectors / 2</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>handoff_2.kicad_sch</source>
+        <comment number="1" value="Native module carrier; physical execution and assembly qualification remain"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/handoff_3/" tstamps="/aadb8c04-a359-511d-877d-f66a50b6d14e/">
+      <title_block>
+        <title>ATO S4 / Matched peripheral handoff connectors / 3</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>handoff_3.kicad_sch</source>
+        <comment number="1" value="Native module carrier; physical execution and assembly qualification remain"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/">
+      <title_block>
+        <title>ATO S4 / Passive reset defaults / explicit recovery</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>defaults.kicad_sch</source>
+        <comment number="1" value="Native module carrier; physical execution and assembly qualification remain"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="9" name="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/">
+      <title_block>
+        <title>ATO S4 / Passive reset defaults / explicit recovery / 2</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>defaults_2.kicad_sch</source>
+        <comment number="1" value="Native module carrier; physical execution and assembly qualification remain"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="10" name="/defaults_3/" tstamps="/0c803b5d-fb86-5e06-9ae9-dcb014921dfd/">
+      <title_block>
+        <title>ATO S4 / Passive reset defaults / explicit recovery / 3</title>
+        <company>Project ATO</company>
+        <rev>0.1</rev>
+        <date>2026-10-14</date>
+        <source>defaults_3.kicad_sch</source>
+        <comment number="1" value="Native module carrier; physical execution and assembly qualification remain"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>HOST POWER</value>
+      <footprint>ato_controller:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J1" description=""/>
+      <property name="Sheetname" value="controller_carrier"/>
+      <property name="Sheetfile" value="controller_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>05af481d-bfe3-515d-ad07-433a7e0b05c1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>FANSTEL BT40F / nRF5340</value>
+      <footprint>ato_controller:BT40F_Manufacturer_66Pad</footprint>
+      <datasheet>https://www.fanstel.com/s/BT40F_BT40N-Product-Specifications.pdf</datasheet>
+      <fields>
+        <field name="Footprint">ato_controller:BT40F_Manufacturer_66Pad</field>
+        <field name="Datasheet">https://www.fanstel.com/s/BT40F_BT40N-Product-Specifications.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="U1" description=""/>
+      <property name="Sheetname" value="processor"/>
+      <property name="Sheetfile" value="processor.kicad_sch"/>
+      <sheetpath names="/processor/" tstamps="/c3f0c12c-73b2-5497-919a-c7d5d31b305f/"/>
+      <tstamps>dae47f36-4a99-50af-973c-22bc5d3aa2e2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="Z0"/>
+            <pin num="Z1"/>
+            <pin num="Z2"/>
+            <pin num="Z3"/>
+            <pin num="Z4"/>
+            <pin num="Z5"/>
+            <pin num="Z6"/>
+            <pin num="A0"/>
+            <pin num="A1"/>
+            <pin num="A2"/>
+            <pin num="A3"/>
+            <pin num="A4"/>
+            <pin num="A5"/>
+            <pin num="A6"/>
+            <pin num="B0"/>
+            <pin num="B1"/>
+            <pin num="B2"/>
+            <pin num="B3"/>
+            <pin num="B4"/>
+            <pin num="B5"/>
+            <pin num="B6"/>
+            <pin num="C0"/>
+            <pin num="C1"/>
+            <pin num="C2"/>
+            <pin num="C3"/>
+            <pin num="C4"/>
+            <pin num="C5"/>
+            <pin num="C6"/>
+            <pin num="D0"/>
+            <pin num="D1"/>
+            <pin num="D2"/>
+            <pin num="D3"/>
+            <pin num="D4"/>
+            <pin num="D5"/>
+            <pin num="D6"/>
+            <pin num="E0"/>
+            <pin num="E1"/>
+            <pin num="E2"/>
+            <pin num="E3"/>
+            <pin num="E4"/>
+            <pin num="E5"/>
+            <pin num="E6"/>
+            <pin num="F3"/>
+            <pin num="F4"/>
+            <pin num="F5"/>
+            <pin num="F6"/>
+            <pin num="H0"/>
+            <pin num="H1"/>
+            <pin num="H2"/>
+            <pin num="H3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C1">
+      <value>47u X7R 10V</value>
+      <footprint>ato_controller:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="C1" description=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/c0ef80d0-6d9c-5a9b-8dcb-3844017fe984/"/>
+      <tstamps>47009ab0-d7e8-5b4d-85f8-affc8bd639ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>1u X7R 10V</value>
+      <footprint>ato_controller:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="C2" description=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/c0ef80d0-6d9c-5a9b-8dcb-3844017fe984/"/>
+      <tstamps>af19bbdc-3889-54f4-a32e-fc4e9677e9bf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100n X7R 10V</value>
+      <footprint>ato_controller:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="C3" description=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/c0ef80d0-6d9c-5a9b-8dcb-3844017fe984/"/>
+      <tstamps>b8688f39-09c5-597d-9a91-23209f7ceb96</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>SWD / TARGET VREF</value>
+      <footprint>ato_controller:PinHeader_1x06_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x06_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J2" description=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/c0ef80d0-6d9c-5a9b-8dcb-3844017fe984/"/>
+      <tstamps>4b6f5cf4-30a8-5a55-93ab-5d18a7bed7d7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>RESET SHORTING HEADER</value>
+      <footprint>ato_controller:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J3" description=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/c0ef80d0-6d9c-5a9b-8dcb-3844017fe984/"/>
+      <tstamps>abafc622-5984-5c76-b220-1cf4fe052b36</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>0R</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R1" description=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/c0ef80d0-6d9c-5a9b-8dcb-3844017fe984/"/>
+      <tstamps>3f895d20-1d00-5ff7-b39e-46e26b3d4fe0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R2" description=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/c0ef80d0-6d9c-5a9b-8dcb-3844017fe984/"/>
+      <tstamps>77eb967d-8b1f-51b2-a40c-01e108683408</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100n X7R 10V</value>
+      <footprint>ato_controller:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="C10" description=""/>
+      <property name="Sheetname" value="sideband"/>
+      <property name="Sheetfile" value="sideband.kicad_sch"/>
+      <sheetpath names="/sideband/" tstamps="/6931257a-22a5-52cb-b29d-d20dcf362c23/"/>
+      <tstamps>81f57024-6d33-5253-b0a8-4f5b45b13b7d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>100n X7R 10V</value>
+      <footprint>ato_controller:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="C11" description=""/>
+      <property name="Sheetname" value="sideband"/>
+      <property name="Sheetfile" value="sideband.kicad_sch"/>
+      <sheetpath names="/sideband/" tstamps="/6931257a-22a5-52cb-b29d-d20dcf362c23/"/>
+      <tstamps>f6bb2b3d-a071-5742-bf37-4a3e3d88d960</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>100n X7R 10V</value>
+      <footprint>ato_controller:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="C12" description=""/>
+      <property name="Sheetname" value="sideband"/>
+      <property name="Sheetfile" value="sideband.kicad_sch"/>
+      <sheetpath names="/sideband/" tstamps="/6931257a-22a5-52cb-b29d-d20dcf362c23/"/>
+      <tstamps>5aafa22c-9723-5b67-9b54-2cc8c45924df</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>100n X7R 10V</value>
+      <footprint>ato_controller:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="C13" description=""/>
+      <property name="Sheetname" value="sideband"/>
+      <property name="Sheetfile" value="sideband.kicad_sch"/>
+      <sheetpath names="/sideband/" tstamps="/6931257a-22a5-52cb-b29d-d20dcf362c23/"/>
+      <tstamps>06cab1ea-8e04-5ec1-8623-d00760d73946</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>SN74LVC165APWR</value>
+      <footprint>ato_controller:TSSOP-16_4.4x5mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/gpn/sn74lvc165a</datasheet>
+      <fields>
+        <field name="Footprint">ato_controller:TSSOP-16_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/gpn/sn74lvc165a</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="U10" description=""/>
+      <property name="Sheetname" value="sideband"/>
+      <property name="Sheetfile" value="sideband.kicad_sch"/>
+      <sheetpath names="/sideband/" tstamps="/6931257a-22a5-52cb-b29d-d20dcf362c23/"/>
+      <tstamps>019bbdfa-4bf0-5d78-b886-67fcfbc970a9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="7"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U11">
+      <value>SN74LVC165APWR</value>
+      <footprint>ato_controller:TSSOP-16_4.4x5mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/gpn/sn74lvc165a</datasheet>
+      <fields>
+        <field name="Footprint">ato_controller:TSSOP-16_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/gpn/sn74lvc165a</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="U11" description=""/>
+      <property name="Sheetname" value="sideband"/>
+      <property name="Sheetfile" value="sideband.kicad_sch"/>
+      <sheetpath names="/sideband/" tstamps="/6931257a-22a5-52cb-b29d-d20dcf362c23/"/>
+      <tstamps>440bcf1d-842b-5b0b-a657-237488997710</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="7"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U12">
+      <value>SN74LVC165APWR</value>
+      <footprint>ato_controller:TSSOP-16_4.4x5mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/gpn/sn74lvc165a</datasheet>
+      <fields>
+        <field name="Footprint">ato_controller:TSSOP-16_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/gpn/sn74lvc165a</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="U12" description=""/>
+      <property name="Sheetname" value="sideband"/>
+      <property name="Sheetfile" value="sideband.kicad_sch"/>
+      <sheetpath names="/sideband/" tstamps="/6931257a-22a5-52cb-b29d-d20dcf362c23/"/>
+      <tstamps>5e9280b9-4615-5897-91d0-292b98a69a36</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="7"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U13">
+      <value>SN74LVC165APWR</value>
+      <footprint>ato_controller:TSSOP-16_4.4x5mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/gpn/sn74lvc165a</datasheet>
+      <fields>
+        <field name="Footprint">ato_controller:TSSOP-16_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/gpn/sn74lvc165a</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="U13" description=""/>
+      <property name="Sheetname" value="sideband"/>
+      <property name="Sheetfile" value="sideband.kicad_sch"/>
+      <sheetpath names="/sideband/" tstamps="/6931257a-22a5-52cb-b29d-d20dcf362c23/"/>
+      <tstamps>0c91cfc1-56c4-51d6-a461-37ac3d2b474e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="7"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J10">
+      <value>RAW MONITOR</value>
+      <footprint>ato_controller:PinHeader_1x06_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x06_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J10" description=""/>
+      <property name="Sheetname" value="handoff"/>
+      <property name="Sheetfile" value="handoff.kicad_sch"/>
+      <sheetpath names="/handoff/" tstamps="/3ae20c75-89a0-5ae2-875a-910f64c6992a/"/>
+      <tstamps>320ca906-0f4b-5a1d-a38d-30d287dfd37c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J11">
+      <value>ISOLATED RECORDING HOST</value>
+      <footprint>ato_controller:PinHeader_1x10_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x10_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J11" description=""/>
+      <property name="Sheetname" value="handoff"/>
+      <property name="Sheetfile" value="handoff.kicad_sch"/>
+      <sheetpath names="/handoff/" tstamps="/3ae20c75-89a0-5ae2-875a-910f64c6992a/"/>
+      <tstamps>856bd9d3-0771-55b2-8ffb-94e2749c5c58</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J12">
+      <value>SHARED CHARGE ENDPOINT SPI</value>
+      <footprint>ato_controller:PinHeader_1x07_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x07_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J12" description=""/>
+      <property name="Sheetname" value="handoff"/>
+      <property name="Sheetfile" value="handoff.kicad_sch"/>
+      <sheetpath names="/handoff/" tstamps="/3ae20c75-89a0-5ae2-875a-910f64c6992a/"/>
+      <tstamps>29b682a2-3a92-572b-b984-cced21113fc4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J13">
+      <value>DOSE / MONITOR REARM</value>
+      <footprint>ato_controller:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x05_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J13" description=""/>
+      <property name="Sheetname" value="handoff"/>
+      <property name="Sheetfile" value="handoff.kicad_sch"/>
+      <sheetpath names="/handoff/" tstamps="/3ae20c75-89a0-5ae2-875a-910f64c6992a/"/>
+      <tstamps>3db8dd55-76ca-5143-9be8-ed76167201b3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J14">
+      <value>DAC SERIAL</value>
+      <footprint>ato_controller:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J14" description=""/>
+      <property name="Sheetname" value="handoff_2"/>
+      <property name="Sheetfile" value="handoff_2.kicad_sch"/>
+      <sheetpath names="/handoff_2/" tstamps="/5f0b61b3-73e2-50bd-ac48-8ca1c028bfae/"/>
+      <tstamps>bb32fbe7-fd20-51a6-ad11-978745cd2b87</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J15">
+      <value>DRIVER REQUEST / POLARITY</value>
+      <footprint>ato_controller:PinHeader_1x09_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x09_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J15" description=""/>
+      <property name="Sheetname" value="handoff_2"/>
+      <property name="Sheetfile" value="handoff_2.kicad_sch"/>
+      <sheetpath names="/handoff_2/" tstamps="/5f0b61b3-73e2-50bd-ac48-8ca1c028bfae/"/>
+      <tstamps>3bb682ea-c79f-5d5d-ae85-85c3e8969cfb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J16">
+      <value>ROUTE CANDIDATE / COMMIT</value>
+      <footprint>ato_controller:PinHeader_1x09_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x09_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J16" description=""/>
+      <property name="Sheetname" value="handoff_2"/>
+      <property name="Sheetfile" value="handoff_2.kicad_sch"/>
+      <sheetpath names="/handoff_2/" tstamps="/5f0b61b3-73e2-50bd-ac48-8ca1c028bfae/"/>
+      <tstamps>0749c933-8d79-5a2e-af39-0e821e620690</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J17">
+      <value>ACTIVE ROUTE READBACK</value>
+      <footprint>ato_controller:PinHeader_1x09_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x09_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J17" description=""/>
+      <property name="Sheetname" value="handoff_2"/>
+      <property name="Sheetfile" value="handoff_2.kicad_sch"/>
+      <sheetpath names="/handoff_2/" tstamps="/5f0b61b3-73e2-50bd-ac48-8ca1c028bfae/"/>
+      <tstamps>d19df38f-1674-569f-ab3a-04e8fe9bf827</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J18">
+      <value>SUPERVISION CONTROL</value>
+      <footprint>ato_controller:PinHeader_1x08_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x08_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J18" description=""/>
+      <property name="Sheetname" value="handoff_3"/>
+      <property name="Sheetfile" value="handoff_3.kicad_sch"/>
+      <sheetpath names="/handoff_3/" tstamps="/aadb8c04-a359-511d-877d-f66a50b6d14e/"/>
+      <tstamps>ba4ee074-70dd-54e5-971b-9f39b5449dcb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J19">
+      <value>NATIVE HEALTH OBSERVATIONS</value>
+      <footprint>ato_controller:PinHeader_1x19_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x19_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J19" description=""/>
+      <property name="Sheetname" value="handoff_3"/>
+      <property name="Sheetfile" value="handoff_3.kicad_sch"/>
+      <sheetpath names="/handoff_3/" tstamps="/aadb8c04-a359-511d-877d-f66a50b6d14e/"/>
+      <tstamps>99554198-1ca1-527a-95b6-6e1c9976cc57</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J20">
+      <value>ISOLATED COMPANION HOST UART</value>
+      <footprint>ato_controller:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="J20" description=""/>
+      <property name="Sheetname" value="handoff_3"/>
+      <property name="Sheetfile" value="handoff_3.kicad_sch"/>
+      <sheetpath names="/handoff_3/" tstamps="/aadb8c04-a359-511d-877d-f66a50b6d14e/"/>
+      <tstamps>cdbc9084-b2b7-52c1-bf0f-0eda0d9f3b1b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R100">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R100" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>73f22726-6eff-55ae-958e-49cec8482f7a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R101">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R101" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>8744b280-cab7-5ae4-9519-79a882321f8b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R102">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R102" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>3d4b348e-cc2f-50dc-b7ad-948e23bfd2c2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R103">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R103" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>2f4caf1b-c446-54b4-bfc1-1b925a08fcb5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R104">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R104" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>6c89ef03-e17d-5281-ba46-c0b7a1314ee7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R105">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R105" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>8f8e638d-dc08-5522-80c9-fe43a46367e5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R106">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R106" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>108c9bbb-a9d0-5f79-aa86-217d25e10283</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R107">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R107" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>19f99d67-7649-50d3-bc1d-364b34f87e4b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R108">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R108" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>d93d0556-a514-55c1-9134-1d85e3b5c7fe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R109">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R109" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>28880abe-468a-532d-a214-b0e3047dede5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R110">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R110" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>920e2ffe-7e6a-57b5-8dc0-572b6b03746a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R111">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R111" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>3de6f03f-87c2-5f58-818b-748c0c4f2e68</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R112">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R112" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>bb03d06b-fd00-51ee-b242-cec681713268</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R113">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R113" description=""/>
+      <property name="Sheetname" value="defaults"/>
+      <property name="Sheetfile" value="defaults.kicad_sch"/>
+      <sheetpath names="/defaults/" tstamps="/48aa9fce-09d3-5139-90ec-d0823db081a9/"/>
+      <tstamps>1a9ddfc2-3241-5fd1-b7a4-a4b26f5fe0b5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R114">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R114" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>00d95312-2053-5f32-97f7-d58ba479ce5e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R115">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R115" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>d9104bc9-10ce-57d2-902a-8e68c7d42705</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R116">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R116" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>413d0c21-daf5-5974-97c5-49408778bf96</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R117">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R117" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>2dc7577f-e2b6-52e1-9877-aa78e34ed4ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R118">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R118" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>8ac3b08f-f969-50ba-b646-fe3b237cc100</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R119">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R119" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>2d6ebc6c-28b7-5ed8-9af8-47f7569a8c37</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R120">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R120" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>cbe4654d-18dd-588b-8579-0be9d0d192a2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R121">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R121" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>0fffa7b9-5770-57ae-ab7f-831ffa54bb9f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R122">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R122" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>87efbaad-d4cb-5dc7-a72c-d9e3f6c48077</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R123">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R123" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>a253734b-5dd6-5545-8984-dc47395a4a86</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R124">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R124" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>189e1afb-e121-5ef9-9966-e802383bf831</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R125">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R125" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>8d2bc380-b778-51be-a9e1-055cc9200488</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R126">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R126" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>713c7f1d-42a1-5bce-bc02-bdc881743f3c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R127">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R127" description=""/>
+      <property name="Sheetname" value="defaults_2"/>
+      <property name="Sheetfile" value="defaults_2.kicad_sch"/>
+      <sheetpath names="/defaults_2/" tstamps="/ae65c1f2-63b9-5ad2-8cea-3c7be9d4e0ae/"/>
+      <tstamps>6cac97b6-3c2b-58c2-9e45-bec1c8140e43</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R128">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R128" description=""/>
+      <property name="Sheetname" value="defaults_3"/>
+      <property name="Sheetfile" value="defaults_3.kicad_sch"/>
+      <sheetpath names="/defaults_3/" tstamps="/0c803b5d-fb86-5e06-9ae9-dcb014921dfd/"/>
+      <tstamps>7d4fad19-dc3e-56aa-a7e7-c9eafffd0474</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R129">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R129" description=""/>
+      <property name="Sheetname" value="defaults_3"/>
+      <property name="Sheetfile" value="defaults_3.kicad_sch"/>
+      <sheetpath names="/defaults_3/" tstamps="/0c803b5d-fb86-5e06-9ae9-dcb014921dfd/"/>
+      <tstamps>ab683ebc-dce8-51d1-a633-fd8768cb8df5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R130">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R130" description=""/>
+      <property name="Sheetname" value="defaults_3"/>
+      <property name="Sheetfile" value="defaults_3.kicad_sch"/>
+      <sheetpath names="/defaults_3/" tstamps="/0c803b5d-fb86-5e06-9ae9-dcb014921dfd/"/>
+      <tstamps>5edd8ed3-8114-5d5d-bef0-0398e7b8af10</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R131">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R131" description=""/>
+      <property name="Sheetname" value="defaults_3"/>
+      <property name="Sheetfile" value="defaults_3.kicad_sch"/>
+      <sheetpath names="/defaults_3/" tstamps="/0c803b5d-fb86-5e06-9ae9-dcb014921dfd/"/>
+      <tstamps>7751446e-4ad5-5dea-b52b-3143aa582af7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R132">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R132" description=""/>
+      <property name="Sheetname" value="defaults_3"/>
+      <property name="Sheetfile" value="defaults_3.kicad_sch"/>
+      <sheetpath names="/defaults_3/" tstamps="/0c803b5d-fb86-5e06-9ae9-dcb014921dfd/"/>
+      <tstamps>e840e21e-a5ca-51e3-a4da-a5d224a75d45</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R133">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R133" description=""/>
+      <property name="Sheetname" value="defaults_3"/>
+      <property name="Sheetfile" value="defaults_3.kicad_sch"/>
+      <sheetpath names="/defaults_3/" tstamps="/0c803b5d-fb86-5e06-9ae9-dcb014921dfd/"/>
+      <tstamps>b048353b-3f8d-5eea-9f6d-f4e882b29594</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R134">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R134" description=""/>
+      <property name="Sheetname" value="defaults_3"/>
+      <property name="Sheetfile" value="defaults_3.kicad_sch"/>
+      <sheetpath names="/defaults_3/" tstamps="/0c803b5d-fb86-5e06-9ae9-dcb014921dfd/"/>
+      <tstamps>e9c47099-3370-504a-98ee-7c0d5e87e74e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R135">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R135" description=""/>
+      <property name="Sheetname" value="defaults_3"/>
+      <property name="Sheetfile" value="defaults_3.kicad_sch"/>
+      <sheetpath names="/defaults_3/" tstamps="/0c803b5d-fb86-5e06-9ae9-dcb014921dfd/"/>
+      <tstamps>818da403-c50f-50c6-8f86-16b19dc9eb9b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R136">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R136" description=""/>
+      <property name="Sheetname" value="defaults_3"/>
+      <property name="Sheetfile" value="defaults_3.kicad_sch"/>
+      <sheetpath names="/defaults_3/" tstamps="/0c803b5d-fb86-5e06-9ae9-dcb014921dfd/"/>
+      <tstamps>0e2ceb72-7429-51f5-bebf-4230febdd4ed</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R137">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R137" description=""/>
+      <property name="Sheetname" value="defaults_3"/>
+      <property name="Sheetfile" value="defaults_3.kicad_sch"/>
+      <sheetpath names="/defaults_3/" tstamps="/0c803b5d-fb86-5e06-9ae9-dcb014921dfd/"/>
+      <tstamps>607d6dff-c27a-57be-9394-ec84dc198b03</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R138">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R138" description=""/>
+      <property name="Sheetname" value="defaults_3"/>
+      <property name="Sheetfile" value="defaults_3.kicad_sch"/>
+      <sheetpath names="/defaults_3/" tstamps="/0c803b5d-fb86-5e06-9ae9-dcb014921dfd/"/>
+      <tstamps>55ceb5a8-9044-56f5-bead-77d9fa3b8efe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R139">
+      <value>10k</value>
+      <footprint>ato_controller:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ATO_CONTROLLER" part="R139" description=""/>
+      <property name="Sheetname" value="defaults_3"/>
+      <property name="Sheetfile" value="defaults_3.kicad_sch"/>
+      <sheetpath names="/defaults_3/" tstamps="/0c803b5d-fb86-5e06-9ae9-dcb014921dfd/"/>
+      <tstamps>e27b69c7-8df7-5fc6-9c51-6ac12b9aee02</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="ATO_CONTROLLER" part="C1">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">47u X7R 10V</field>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="C10">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n X7R 10V</field>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="C11">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n X7R 10V</field>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="C12">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n X7R 10V</field>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="C13">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n X7R 10V</field>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="C2">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1u X7R 10V</field>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="C3">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n X7R 10V</field>
+        <field name="Footprint">ato_controller:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J1">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HOST POWER</field>
+        <field name="Footprint">ato_controller:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J10">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">RAW MONITOR</field>
+        <field name="Footprint">ato_controller:PinHeader_1x06_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J11">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">ISOLATED RECORDING HOST</field>
+        <field name="Footprint">ato_controller:PinHeader_1x10_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J12">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">SHARED CHARGE ENDPOINT SPI</field>
+        <field name="Footprint">ato_controller:PinHeader_1x07_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J13">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">DOSE / MONITOR REARM</field>
+        <field name="Footprint">ato_controller:PinHeader_1x05_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J14">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">DAC SERIAL</field>
+        <field name="Footprint">ato_controller:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J15">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">DRIVER REQUEST / POLARITY</field>
+        <field name="Footprint">ato_controller:PinHeader_1x09_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J16">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">ROUTE CANDIDATE / COMMIT</field>
+        <field name="Footprint">ato_controller:PinHeader_1x09_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J17">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">ACTIVE ROUTE READBACK</field>
+        <field name="Footprint">ato_controller:PinHeader_1x09_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J18">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">SUPERVISION CONTROL</field>
+        <field name="Footprint">ato_controller:PinHeader_1x08_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J19">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">NATIVE HEALTH OBSERVATIONS</field>
+        <field name="Footprint">ato_controller:PinHeader_1x19_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+        <pin num="11" name="11" type="passive"/>
+        <pin num="12" name="12" type="passive"/>
+        <pin num="13" name="13" type="passive"/>
+        <pin num="14" name="14" type="passive"/>
+        <pin num="15" name="15" type="passive"/>
+        <pin num="16" name="16" type="passive"/>
+        <pin num="17" name="17" type="passive"/>
+        <pin num="18" name="18" type="passive"/>
+        <pin num="19" name="19" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J2">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">SWD / TARGET VREF</field>
+        <field name="Footprint">ato_controller:PinHeader_1x06_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J20">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">ISOLATED COMPANION HOST UART</field>
+        <field name="Footprint">ato_controller:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="J3">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">RESET SHORTING HEADER</field>
+        <field name="Footprint">ato_controller:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R1">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">0R</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R100">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R101">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R102">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R103">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R104">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R105">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R106">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R107">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R108">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R109">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R110">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R111">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R112">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R113">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R114">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R115">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R116">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R117">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R118">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R119">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R120">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R121">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R122">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R123">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R124">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R125">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R126">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R127">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R128">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R129">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R130">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R131">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R132">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R133">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R134">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R135">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R136">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R137">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R138">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R139">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="R2">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">ato_controller:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="U1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">FANSTEL BT40F / nRF5340</field>
+        <field name="Footprint">ato_controller:BT40F_Manufacturer_66Pad</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="P1.02" type="bidirectional"/>
+        <pin num="2" name="P1.03" type="bidirectional"/>
+        <pin num="3" name="NC_XL1_INTERNAL" type="no_connect"/>
+        <pin num="4" name="NC_XL2_INTERNAL" type="no_connect"/>
+        <pin num="5" name="P0.04" type="bidirectional"/>
+        <pin num="6" name="P0.05" type="bidirectional"/>
+        <pin num="7" name="P0.02" type="bidirectional"/>
+        <pin num="8" name="P0.03" type="bidirectional"/>
+        <pin num="9" name="VDD" type="power_in"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="P0.09" type="bidirectional"/>
+        <pin num="12" name="P0.11" type="bidirectional"/>
+        <pin num="13" name="P0.30" type="bidirectional"/>
+        <pin num="14" name="RESET_N" type="input"/>
+        <pin num="15" name="SWCLK" type="input"/>
+        <pin num="16" name="SWDIO" type="bidirectional"/>
+        <pin num="A0" name="GND" type="power_in"/>
+        <pin num="A1" name="P0.06" type="bidirectional"/>
+        <pin num="A2" name="P0.07" type="bidirectional"/>
+        <pin num="A3" name="P0.08" type="bidirectional"/>
+        <pin num="A4" name="P0.16" type="bidirectional"/>
+        <pin num="A5" name="P1.00" type="bidirectional"/>
+        <pin num="A6" name="P1.08" type="bidirectional"/>
+        <pin num="B0" name="GND" type="power_in"/>
+        <pin num="B1" name="P0.19" type="bidirectional"/>
+        <pin num="B2" name="P0.17" type="bidirectional"/>
+        <pin num="B3" name="P0.14" type="bidirectional"/>
+        <pin num="B4" name="P0.15" type="bidirectional"/>
+        <pin num="B5" name="P0.12" type="bidirectional"/>
+        <pin num="B6" name="P0.13" type="bidirectional"/>
+        <pin num="C0" name="GND" type="power_in"/>
+        <pin num="C1" name="P0.31" type="bidirectional"/>
+        <pin num="C2" name="P0.21" type="bidirectional"/>
+        <pin num="C3" name="P0.24" type="bidirectional"/>
+        <pin num="C4" name="P0.23" type="bidirectional"/>
+        <pin num="C5" name="P0.20" type="bidirectional"/>
+        <pin num="C6" name="P0.25" type="bidirectional"/>
+        <pin num="D0" name="GND" type="power_in"/>
+        <pin num="D1" name="P0.26" type="bidirectional"/>
+        <pin num="D2" name="P0.27" type="bidirectional"/>
+        <pin num="D3" name="P0.28" type="bidirectional"/>
+        <pin num="D4" name="P0.29" type="bidirectional"/>
+        <pin num="D5" name="P0.22" type="bidirectional"/>
+        <pin num="D6" name="P1.01" type="bidirectional"/>
+        <pin num="E0" name="P1.04" type="bidirectional"/>
+        <pin num="E1" name="P1.05" type="bidirectional"/>
+        <pin num="E2" name="P1.06" type="bidirectional"/>
+        <pin num="E3" name="P1.07" type="bidirectional"/>
+        <pin num="E4" name="USB_DP" type="passive"/>
+        <pin num="E5" name="USB_DM" type="passive"/>
+        <pin num="E6" name="P0.10" type="bidirectional"/>
+        <pin num="F3" name="P0.18" type="bidirectional"/>
+        <pin num="F4" name="VDDH" type="power_in"/>
+        <pin num="F5" name="NC_DCCH_INTERNAL" type="no_connect"/>
+        <pin num="F6" name="VBUS_UNUSED" type="passive"/>
+        <pin num="H0" name="GND" type="power_in"/>
+        <pin num="H1" name="GND" type="power_in"/>
+        <pin num="H2" name="GND" type="power_in"/>
+        <pin num="H3" name="GND" type="power_in"/>
+        <pin num="Z0" name="P1.09" type="bidirectional"/>
+        <pin num="Z1" name="P1.10" type="bidirectional"/>
+        <pin num="Z2" name="P1.11" type="bidirectional"/>
+        <pin num="Z3" name="P1.12" type="bidirectional"/>
+        <pin num="Z4" name="P1.13" type="bidirectional"/>
+        <pin num="Z5" name="P1.14" type="bidirectional"/>
+        <pin num="Z6" name="P1.15" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="U10">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC165APWR</field>
+        <field name="Footprint">ato_controller:TSSOP-16_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SH_LD_N" type="input"/>
+        <pin num="2" name="CLK" type="input"/>
+        <pin num="3" name="E" type="input"/>
+        <pin num="4" name="F" type="input"/>
+        <pin num="5" name="G" type="input"/>
+        <pin num="6" name="H" type="input"/>
+        <pin num="7" name="QH_N" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="QH" type="output"/>
+        <pin num="10" name="SER" type="input"/>
+        <pin num="11" name="A" type="input"/>
+        <pin num="12" name="B" type="input"/>
+        <pin num="13" name="C" type="input"/>
+        <pin num="14" name="D" type="input"/>
+        <pin num="15" name="CLK_INH" type="input"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="U11">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC165APWR</field>
+        <field name="Footprint">ato_controller:TSSOP-16_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SH_LD_N" type="input"/>
+        <pin num="2" name="CLK" type="input"/>
+        <pin num="3" name="E" type="input"/>
+        <pin num="4" name="F" type="input"/>
+        <pin num="5" name="G" type="input"/>
+        <pin num="6" name="H" type="input"/>
+        <pin num="7" name="QH_N" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="QH" type="output"/>
+        <pin num="10" name="SER" type="input"/>
+        <pin num="11" name="A" type="input"/>
+        <pin num="12" name="B" type="input"/>
+        <pin num="13" name="C" type="input"/>
+        <pin num="14" name="D" type="input"/>
+        <pin num="15" name="CLK_INH" type="input"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="U12">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC165APWR</field>
+        <field name="Footprint">ato_controller:TSSOP-16_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SH_LD_N" type="input"/>
+        <pin num="2" name="CLK" type="input"/>
+        <pin num="3" name="E" type="input"/>
+        <pin num="4" name="F" type="input"/>
+        <pin num="5" name="G" type="input"/>
+        <pin num="6" name="H" type="input"/>
+        <pin num="7" name="QH_N" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="QH" type="output"/>
+        <pin num="10" name="SER" type="input"/>
+        <pin num="11" name="A" type="input"/>
+        <pin num="12" name="B" type="input"/>
+        <pin num="13" name="C" type="input"/>
+        <pin num="14" name="D" type="input"/>
+        <pin num="15" name="CLK_INH" type="input"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="ATO_CONTROLLER" part="U13">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC165APWR</field>
+        <field name="Footprint">ato_controller:TSSOP-16_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SH_LD_N" type="input"/>
+        <pin num="2" name="CLK" type="input"/>
+        <pin num="3" name="E" type="input"/>
+        <pin num="4" name="F" type="input"/>
+        <pin num="5" name="G" type="input"/>
+        <pin num="6" name="H" type="input"/>
+        <pin num="7" name="QH_N" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="QH" type="output"/>
+        <pin num="10" name="SER" type="input"/>
+        <pin num="11" name="A" type="input"/>
+        <pin num="12" name="B" type="input"/>
+        <pin num="13" name="C" type="input"/>
+        <pin num="14" name="D" type="input"/>
+        <pin num="15" name="CLK_INH" type="input"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="ATO_CONTROLLER">
+      <uri>${KIPRJMOD}/ATO_CONTROLLER.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="ACTIVE_ACK" class="Default">
+      <node ref="J16" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="R103" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="P0.05_6" pintype="bidirectional"/>
+    </net>
+    <net code="2" name="AFE_CONNECT" class="Default">
+      <node ref="J11" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="R113" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="B2" pinfunction="P0.17_B2" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="AFE_CS_ASSERT" class="Default">
+      <node ref="J11" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="R112" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="A4" pinfunction="P0.16_A4" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="AFE_FAULT_N" class="Default">
+      <node ref="J11" pin="9" pinfunction="9_9" pintype="passive"/>
+      <node ref="U1" pin="B1" pinfunction="P0.19_B1" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="AFE_ISOLATED_READY" class="Default">
+      <node ref="J19" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="U11" pin="3" pinfunction="E_3" pintype="input"/>
+    </net>
+    <net code="6" name="AFE_MISO" class="Default">
+      <node ref="J11" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="U1" pin="B4" pinfunction="P0.15_B4" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="AFE_MOSI" class="Default">
+      <node ref="J11" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R111" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="B3" pinfunction="P0.14_B3" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="AFE_RECORD" class="Default">
+      <node ref="J11" pin="8" pinfunction="8_8" pintype="passive"/>
+      <node ref="R114" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="F3" pinfunction="P0.18_F3" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="AFE_SCLK" class="Default">
+      <node ref="J11" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="R110" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="B6" pinfunction="P0.13_B6" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="BOTH_CNV" class="Default">
+      <node ref="J12" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="J12" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="R116" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="D5" pinfunction="P0.22_D5" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="BOTH_DRV_REARM" class="Default">
+      <node ref="J15" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="J15" pin="8" pinfunction="8_8" pintype="passive"/>
+      <node ref="R132" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="E2" pinfunction="P1.06_E2" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="CH0_ADDR0" class="Default">
+      <node ref="J17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U10" pin="6" pinfunction="H_6" pintype="input"/>
+    </net>
+    <net code="13" name="CH0_ADDR1" class="Default">
+      <node ref="J17" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U10" pin="5" pinfunction="G_5" pintype="input"/>
+    </net>
+    <net code="14" name="CH0_ADDR2" class="Default">
+      <node ref="J17" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="U10" pin="4" pinfunction="F_4" pintype="input"/>
+    </net>
+    <net code="15" name="CH0_ADDR3" class="Default">
+      <node ref="J17" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="U10" pin="3" pinfunction="E_3" pintype="input"/>
+    </net>
+    <net code="16" name="CH0_QUIESCENT_OK" class="Default">
+      <node ref="J19" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="U11" pin="14" pinfunction="D_14" pintype="input"/>
+    </net>
+    <net code="17" name="CH0_RUN" class="Default">
+      <node ref="J19" pin="12" pinfunction="12_12" pintype="passive"/>
+      <node ref="U12" pin="3" pinfunction="E_3" pintype="input"/>
+    </net>
+    <net code="18" name="CH0_TIMEOUT" class="Default">
+      <node ref="J19" pin="17" pinfunction="17_17" pintype="passive"/>
+      <node ref="U13" pin="6" pinfunction="H_6" pintype="input"/>
+    </net>
+    <net code="19" name="CH0_TIMER" class="Default">
+      <node ref="J19" pin="14" pinfunction="14_14" pintype="passive"/>
+      <node ref="U12" pin="13" pinfunction="C_13" pintype="input"/>
+    </net>
+    <net code="20" name="CH1_ADDR0" class="Default">
+      <node ref="J17" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="U10" pin="14" pinfunction="D_14" pintype="input"/>
+    </net>
+    <net code="21" name="CH1_ADDR1" class="Default">
+      <node ref="J17" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="U10" pin="13" pinfunction="C_13" pintype="input"/>
+    </net>
+    <net code="22" name="CH1_ADDR2" class="Default">
+      <node ref="J17" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="U10" pin="12" pinfunction="B_12" pintype="input"/>
+    </net>
+    <net code="23" name="CH1_ADDR3" class="Default">
+      <node ref="J17" pin="8" pinfunction="8_8" pintype="passive"/>
+      <node ref="U10" pin="11" pinfunction="A_11" pintype="input"/>
+    </net>
+    <net code="24" name="CH1_QUIESCENT_OK" class="Default">
+      <node ref="J19" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="U11" pin="13" pinfunction="C_13" pintype="input"/>
+    </net>
+    <net code="25" name="CH1_RUN" class="Default">
+      <node ref="J19" pin="13" pinfunction="13_13" pintype="passive"/>
+      <node ref="U12" pin="14" pinfunction="D_14" pintype="input"/>
+    </net>
+    <net code="26" name="CH1_TIMEOUT" class="Default">
+      <node ref="J19" pin="18" pinfunction="18_18" pintype="passive"/>
+      <node ref="U13" pin="5" pinfunction="G_5" pintype="input"/>
+    </net>
+    <net code="27" name="CH1_TIMER" class="Default">
+      <node ref="J19" pin="15" pinfunction="15_15" pintype="passive"/>
+      <node ref="U12" pin="12" pinfunction="B_12" pintype="input"/>
+    </net>
+    <net code="28" name="CS0" class="Default">
+      <node ref="J12" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R117" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="C4" pinfunction="P0.23_C4" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="CS1" class="Default">
+      <node ref="J12" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="R118" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="C3" pinfunction="P0.24_C3" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="CTRL_MOSI" class="Default">
+      <node ref="J14" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="J16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R124" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="P0.30_13" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="CTRL_SCLK" class="Default">
+      <node ref="J14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R123" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="D4" pinfunction="P0.29_D4" pintype="bidirectional"/>
+      <node ref="U10" pin="2" pinfunction="CLK_2" pintype="input"/>
+      <node ref="U11" pin="2" pinfunction="CLK_2" pintype="input"/>
+      <node ref="U12" pin="2" pinfunction="CLK_2" pintype="input"/>
+      <node ref="U13" pin="2" pinfunction="CLK_2" pintype="input"/>
+    </net>
+    <net code="32" name="DAC_SYNC_N" class="Default">
+      <node ref="J14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R125" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="C1" pinfunction="P0.31_C1" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="FAULT_RESET" class="Default">
+      <node ref="J18" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R134" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="A6" pinfunction="P1.08_A6" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="GLOBAL_GUARD_EN" class="Default">
+      <node ref="J19" pin="11" pinfunction="11_11" pintype="passive"/>
+      <node ref="U12" pin="4" pinfunction="F_4" pintype="input"/>
+    </net>
+    <net code="35" name="GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J10" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="J11" pin="10" pinfunction="10_10" pintype="passive"/>
+      <node ref="J11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J12" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="J13" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="J14" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="J15" pin="9" pinfunction="9_9" pintype="passive"/>
+      <node ref="J16" pin="9" pinfunction="9_9" pintype="passive"/>
+      <node ref="J17" pin="9" pinfunction="9_9" pintype="passive"/>
+      <node ref="J18" pin="8" pinfunction="8_8" pintype="passive"/>
+      <node ref="J19" pin="19" pinfunction="19_19" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="J2" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="J20" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R100" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R101" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R102" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R103" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R104" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R105" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R106" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R107" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R109" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R110" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R111" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R112" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R113" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R114" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R115" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R116" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R121" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R122" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R123" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R124" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R126" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R127" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R128" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R129" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R130" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R131" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R132" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R133" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R134" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R135" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R136" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R137" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="GND_10" pintype="power_in"/>
+      <node ref="U1" pin="A0" pinfunction="GND_A0" pintype="power_in"/>
+      <node ref="U1" pin="B0" pinfunction="GND_B0" pintype="power_in"/>
+      <node ref="U1" pin="C0" pinfunction="GND_C0" pintype="power_in"/>
+      <node ref="U1" pin="D0" pinfunction="GND_D0" pintype="power_in"/>
+      <node ref="U1" pin="H0" pinfunction="GND_H0" pintype="power_in"/>
+      <node ref="U1" pin="H1" pinfunction="GND_H1" pintype="power_in"/>
+      <node ref="U1" pin="H2" pinfunction="GND_H2" pintype="power_in"/>
+      <node ref="U1" pin="H3" pinfunction="GND_H3" pintype="power_in"/>
+      <node ref="U10" pin="15" pinfunction="CLK_INH_15" pintype="input"/>
+      <node ref="U10" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U11" pin="15" pinfunction="CLK_INH_15" pintype="input"/>
+      <node ref="U11" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U12" pin="15" pinfunction="CLK_INH_15" pintype="input"/>
+      <node ref="U12" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U13" pin="10" pinfunction="SER_10" pintype="input"/>
+      <node ref="U13" pin="12" pinfunction="B_12" pintype="input"/>
+      <node ref="U13" pin="14" pinfunction="D_14" pintype="input"/>
+      <node ref="U13" pin="15" pinfunction="CLK_INH_15" pintype="input"/>
+      <node ref="U13" pin="3" pinfunction="E_3" pintype="input"/>
+      <node ref="U13" pin="8" pinfunction="GND_8" pintype="power_in"/>
+    </net>
+    <net code="36" name="HOST_3V3" class="Default">
+      <node ref="C10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J20" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R108" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R117" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R118" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R119" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R120" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R125" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R138" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R139" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U10" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U11" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U12" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U13" pin="11" pinfunction="A_11" pintype="input"/>
+      <node ref="U13" pin="13" pinfunction="C_13" pintype="input"/>
+      <node ref="U13" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U13" pin="4" pinfunction="F_4" pintype="input"/>
+    </net>
+    <net code="37" name="HOST_UART_RX" class="Default">
+      <node ref="J20" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="Z4" pinfunction="P1.13_Z4" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="HOST_UART_TX" class="Default">
+      <node ref="J20" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R138" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="Z3" pinfunction="P1.12_Z3" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="INT_RUN0" class="Default">
+      <node ref="J13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R119" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="C6" pinfunction="P0.25_C6" pintype="bidirectional"/>
+    </net>
+    <net code="40" name="INT_RUN1" class="Default">
+      <node ref="J13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R120" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="D1" pinfunction="P0.26_D1" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="MCU_3V3" class="Default">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="VDD_9" pintype="power_in"/>
+      <node ref="U1" pin="F4" pinfunction="VDDH_F4" pintype="power_in"/>
+    </net>
+    <net code="42" name="MCU_RESET_N" class="Default">
+      <node ref="J2" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="RESET_N_14" pintype="input"/>
+    </net>
+    <net code="43" name="MINUS0" class="Default">
+      <node ref="J15" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="R129" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="P1.03_2" pintype="bidirectional"/>
+    </net>
+    <net code="44" name="MINUS1" class="Default">
+      <node ref="J15" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="R131" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="E1" pinfunction="P1.05_E1" pintype="bidirectional"/>
+    </net>
+    <net code="45" name="MON0_PERMIT" class="Default">
+      <node ref="J19" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="U11" pin="12" pinfunction="B_12" pintype="input"/>
+    </net>
+    <net code="46" name="MON1_PERMIT" class="Default">
+      <node ref="J19" pin="8" pinfunction="8_8" pintype="passive"/>
+      <node ref="U11" pin="11" pinfunction="A_11" pintype="input"/>
+    </net>
+    <net code="47" name="MON_MISO" class="Default">
+      <node ref="J12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="C2" pinfunction="P0.21_C2" pintype="bidirectional"/>
+    </net>
+    <net code="48" name="MON_REARM0" class="Default">
+      <node ref="J13" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="R121" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="D2" pinfunction="P0.27_D2" pintype="bidirectional"/>
+    </net>
+    <net code="49" name="MON_REARM1" class="Default">
+      <node ref="J13" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R122" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="D3" pinfunction="P0.28_D3" pintype="bidirectional"/>
+    </net>
+    <net code="50" name="MON_SCLK" class="Default">
+      <node ref="J12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R115" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="C5" pinfunction="P0.20_C5" pintype="bidirectional"/>
+    </net>
+    <net code="51" name="PHASE_REARM0" class="Default">
+      <node ref="J18" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="R136" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="Z1" pinfunction="P1.10_Z1" pintype="bidirectional"/>
+    </net>
+    <net code="52" name="PHASE_REARM1" class="Default">
+      <node ref="J18" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="R137" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="Z2" pinfunction="P1.11_Z2" pintype="bidirectional"/>
+    </net>
+    <net code="53" name="PLUS0" class="Default">
+      <node ref="J15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R128" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="P1.02_1" pintype="bidirectional"/>
+    </net>
+    <net code="54" name="PLUS1" class="Default">
+      <node ref="J15" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="R130" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="E0" pinfunction="P1.04_E0" pintype="bidirectional"/>
+    </net>
+    <net code="55" name="PWR_FAULT_N" class="Default">
+      <node ref="J19" pin="9" pinfunction="9_9" pintype="passive"/>
+      <node ref="U12" pin="6" pinfunction="H_6" pintype="input"/>
+    </net>
+    <net code="56" name="RAILS_QUALIFIED" class="Default">
+      <node ref="J19" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U11" pin="5" pinfunction="G_5" pintype="input"/>
+    </net>
+    <net code="57" name="RAW_CS_N" class="Default">
+      <node ref="J10" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R108" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="P0.11_12" pintype="bidirectional"/>
+    </net>
+    <net code="58" name="RAW_RST_N" class="Default">
+      <node ref="J10" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="R109" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="B5" pinfunction="P0.12_B5" pintype="bidirectional"/>
+    </net>
+    <net code="59" name="RAW_SCLK" class="Default">
+      <node ref="J10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R106" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="A3" pinfunction="P0.08_A3" pintype="bidirectional"/>
+    </net>
+    <net code="60" name="RAW_SDI" class="Default">
+      <node ref="J10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R107" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="P0.09_11" pintype="bidirectional"/>
+    </net>
+    <net code="61" name="RAW_SDO" class="Default">
+      <node ref="J10" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="U1" pin="E6" pinfunction="P0.10_E6" pintype="bidirectional"/>
+    </net>
+    <net code="62" name="REQ0" class="Default">
+      <node ref="J15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J18" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R126" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="A5" pinfunction="P1.00_A5" pintype="bidirectional"/>
+    </net>
+    <net code="63" name="REQ1" class="Default">
+      <node ref="J15" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="J18" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="R127" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="D6" pinfunction="P1.01_D6" pintype="bidirectional"/>
+    </net>
+    <net code="64" name="RESET_READY" class="Default">
+      <node ref="J19" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U11" pin="6" pinfunction="H_6" pintype="input"/>
+    </net>
+    <net code="65" name="ROUTE_COMMAND_READY" class="Default">
+      <node ref="J19" pin="16" pinfunction="16_16" pintype="passive"/>
+      <node ref="U12" pin="11" pinfunction="A_11" pintype="input"/>
+    </net>
+    <net code="66" name="ROUTE_COMMIT" class="Default">
+      <node ref="J16" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R101" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="P0.03_8" pintype="bidirectional"/>
+    </net>
+    <net code="67" name="ROUTE_PRELOAD" class="Default">
+      <node ref="J16" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="R100" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="P0.02_7" pintype="bidirectional"/>
+    </net>
+    <net code="68" name="ROUTE_REARM" class="Default">
+      <node ref="J16" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="R102" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="P0.04_5" pintype="bidirectional"/>
+    </net>
+    <net code="69" name="SB_Q1" class="Default">
+      <node ref="U10" pin="10" pinfunction="SER_10" pintype="input"/>
+      <node ref="U11" pin="9" pinfunction="QH_9" pintype="output"/>
+    </net>
+    <net code="70" name="SB_Q2" class="Default">
+      <node ref="U11" pin="10" pinfunction="SER_10" pintype="input"/>
+      <node ref="U12" pin="9" pinfunction="QH_9" pintype="output"/>
+    </net>
+    <net code="71" name="SB_Q3" class="Default">
+      <node ref="U12" pin="10" pinfunction="SER_10" pintype="input"/>
+      <node ref="U13" pin="9" pinfunction="QH_9" pintype="output"/>
+    </net>
+    <net code="72" name="SIDEBAND_DATA" class="Default">
+      <node ref="U1" pin="Z6" pinfunction="P1.15_Z6" pintype="bidirectional"/>
+      <node ref="U10" pin="9" pinfunction="QH_9" pintype="output"/>
+    </net>
+    <net code="73" name="SIDEBAND_LOAD_N" class="Default">
+      <node ref="R139" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="Z5" pinfunction="P1.14_Z5" pintype="bidirectional"/>
+      <node ref="U10" pin="1" pinfunction="SH_LD_N_1" pintype="input"/>
+      <node ref="U11" pin="1" pinfunction="SH_LD_N_1" pintype="input"/>
+      <node ref="U12" pin="1" pinfunction="SH_LD_N_1" pintype="input"/>
+      <node ref="U13" pin="1" pinfunction="SH_LD_N_1" pintype="input"/>
+    </net>
+    <net code="74" name="SUP_ARMED" class="Default">
+      <node ref="J19" pin="10" pinfunction="10_10" pintype="passive"/>
+      <node ref="U12" pin="5" pinfunction="G_5" pintype="input"/>
+    </net>
+    <net code="75" name="SUP_REARM" class="Default">
+      <node ref="J18" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R133" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="E3" pinfunction="P1.07_E3" pintype="bidirectional"/>
+    </net>
+    <net code="76" name="SWCLK" class="Default">
+      <node ref="J2" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="SWCLK_15" pintype="input"/>
+    </net>
+    <net code="77" name="SWDIO" class="Default">
+      <node ref="J2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="SWDIO_16" pintype="bidirectional"/>
+    </net>
+    <net code="78" name="WANT0" class="Default">
+      <node ref="J16" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="R104" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="A1" pinfunction="P0.06_A1" pintype="bidirectional"/>
+    </net>
+    <net code="79" name="WANT1" class="Default">
+      <node ref="J16" pin="8" pinfunction="8_8" pintype="passive"/>
+      <node ref="R105" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="A2" pinfunction="P0.07_A2" pintype="bidirectional"/>
+    </net>
+    <net code="80" name="WATCHDOG_OK" class="Default">
+      <node ref="J19" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="U11" pin="4" pinfunction="F_4" pintype="input"/>
+    </net>
+    <net code="81" name="WDI" class="Default">
+      <node ref="J18" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="R135" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="Z0" pinfunction="P1.09_Z0" pintype="bidirectional"/>
+    </net>
+    <net code="82" name="unconnected-(U1-NC_DCCH_INTERNAL-PadF5)" class="Default">
+      <node ref="U1" pin="F5" pinfunction="NC_DCCH_INTERNAL_F5" pintype="no_connect"/>
+    </net>
+    <net code="83" name="unconnected-(U1-NC_XL1_INTERNAL-Pad3)" class="Default">
+      <node ref="U1" pin="3" pinfunction="NC_XL1_INTERNAL_3" pintype="no_connect"/>
+    </net>
+    <net code="84" name="unconnected-(U1-NC_XL2_INTERNAL-Pad4)" class="Default">
+      <node ref="U1" pin="4" pinfunction="NC_XL2_INTERNAL_4" pintype="no_connect"/>
+    </net>
+    <net code="85" name="unconnected-(U1-USB_DM-PadE5)" class="Default">
+      <node ref="U1" pin="E5" pinfunction="USB_DM_E5" pintype="passive+no_connect"/>
+    </net>
+    <net code="86" name="unconnected-(U1-USB_DP-PadE4)" class="Default">
+      <node ref="U1" pin="E4" pinfunction="USB_DP_E4" pintype="passive+no_connect"/>
+    </net>
+    <net code="87" name="unconnected-(U1-VBUS_UNUSED-PadF6)" class="Default">
+      <node ref="U1" pin="F6" pinfunction="VBUS_UNUSED_F6" pintype="passive+no_connect"/>
+    </net>
+    <net code="88" name="unconnected-(U10-QH_N-Pad7)" class="Default">
+      <node ref="U10" pin="7" pinfunction="QH_N_7" pintype="output+no_connect"/>
+    </net>
+    <net code="89" name="unconnected-(U11-QH_N-Pad7)" class="Default">
+      <node ref="U11" pin="7" pinfunction="QH_N_7" pintype="output+no_connect"/>
+    </net>
+    <net code="90" name="unconnected-(U12-QH_N-Pad7)" class="Default">
+      <node ref="U12" pin="7" pinfunction="QH_N_7" pintype="output+no_connect"/>
+    </net>
+    <net code="91" name="unconnected-(U13-QH_N-Pad7)" class="Default">
+      <node ref="U13" pin="7" pinfunction="QH_N_7" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

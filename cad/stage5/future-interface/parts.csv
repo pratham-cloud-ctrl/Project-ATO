@@ -1,0 +1,237 @@
+name,label,category,role,port_id,material_proposal,volume_mm3,valid,solid_count
+P01_Ferrule,P01 | Ti ferrule | REC_01,physical,Conditional welded ferrule,P01,Titanium proposal,2.0106192982974687,True,1
+P01_Ceramic,P01 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P01,Alumina proposal; braze chemistry/CTE process unresolved,2.9373891311064555,True,1
+P01_Pin,P01 | REC_01 feedthrough pin,physical,recording signal,P01,Platinum/iridium proposal,0.9330530181161683,True,1
+P01_Socket,P01 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P01,Platinum/iridium proposal,0.5058592490810283,True,1
+P01_Conductor,P01 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P01,Nominal 70 micrometre Pt/Ir wire allocation,0.3913357654469313,True,1
+P01_Contact,P01 | distal REC_01,physical,recording signal,P01,Platinum/iridium contact proposal,0.7789690200129555,True,1
+P02_Ferrule,P02 | Ti ferrule | REC_02,physical,Conditional welded ferrule,P02,Titanium proposal,1.206371578978483,True,1
+P02_Ceramic,P02 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P02,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638785,True,1
+P02_Pin,P02 | REC_02 feedthrough pin,physical,recording signal,P02,Platinum/iridium proposal,0.9330530181161683,True,1
+P02_Socket,P02 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P02,Platinum/iridium proposal,0.5058592490810283,True,1
+P02_Conductor,P02 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P02,Nominal 70 micrometre Pt/Ir wire allocation,0.40360343051211034,True,1
+P02_Contact,P02 | distal REC_02,physical,recording signal,P02,Platinum/iridium contact proposal,0.7789690200129555,True,1
+P03_Ferrule,P03 | Ti ferrule | REC_03,physical,Conditional welded ferrule,P03,Titanium proposal,1.206371578978483,True,1
+P03_Ceramic,P03 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P03,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638785,True,1
+P03_Pin,P03 | REC_03 feedthrough pin,physical,recording signal,P03,Platinum/iridium proposal,0.933053018116168,True,1
+P03_Socket,P03 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P03,Platinum/iridium proposal,0.5058592490810285,True,1
+P03_Conductor,P03 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P03,Nominal 70 micrometre Pt/Ir wire allocation,0.41692101634440715,True,1
+P03_Contact,P03 | distal REC_03,physical,recording signal,P03,Platinum/iridium contact proposal,0.7789690200129555,True,1
+P04_Ferrule,P04 | Ti ferrule | REC_04,physical,Conditional welded ferrule,P04,Titanium proposal,1.206371578978483,True,1
+P04_Ceramic,P04 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P04,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638785,True,1
+P04_Pin,P04 | REC_04 feedthrough pin,physical,recording signal,P04,Platinum/iridium proposal,0.933053018116168,True,1
+P04_Socket,P04 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P04,Platinum/iridium proposal,0.5058592490810285,True,1
+P04_Conductor,P04 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P04,Nominal 70 micrometre Pt/Ir wire allocation,0.43127805176008926,True,1
+P04_Contact,P04 | distal REC_04,physical,recording signal,P04,Platinum/iridium contact proposal,0.7789690200129553,True,1
+P05_Ferrule,P05 | Ti ferrule | REC_05,physical,Conditional welded ferrule,P05,Titanium proposal,1.2063715789784826,True,1
+P05_Ceramic,P05 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P05,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638787,True,1
+P05_Pin,P05 | REC_05 feedthrough pin,physical,recording signal,P05,Platinum/iridium proposal,0.9330530181161699,True,1
+P05_Socket,P05 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P05,Platinum/iridium proposal,0.5058592490810288,True,1
+P05_Conductor,P05 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P05,Nominal 70 micrometre Pt/Ir wire allocation,0.4466458413499473,True,1
+P05_Contact,P05 | distal REC_05,physical,recording signal,P05,Platinum/iridium contact proposal,0.7789690200129555,True,1
+P06_Ferrule,P06 | Ti ferrule | REC_06,physical,Conditional welded ferrule,P06,Titanium proposal,1.2063715789784848,True,1
+P06_Ceramic,P06 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P06,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638782,True,1
+P06_Pin,P06 | REC_06 feedthrough pin,physical,recording signal,P06,Platinum/iridium proposal,0.9330530181161699,True,1
+P06_Socket,P06 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P06,Platinum/iridium proposal,0.5058592490810288,True,1
+P06_Conductor,P06 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P06,Nominal 70 micrometre Pt/Ir wire allocation,0.46297059583890254,True,1
+P06_Contact,P06 | distal REC_06,physical,recording signal,P06,Platinum/iridium contact proposal,0.7789690200129555,True,1
+P07_Ferrule,P07 | Ti ferrule | REC_07,physical,Conditional welded ferrule,P07,Titanium proposal,1.2063715789784848,True,1
+P07_Ceramic,P07 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P07,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638782,True,1
+P07_Pin,P07 | REC_07 feedthrough pin,physical,recording signal,P07,Platinum/iridium proposal,0.9330530181161699,True,1
+P07_Socket,P07 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P07,Platinum/iridium proposal,0.5058592490810288,True,1
+P07_Conductor,P07 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P07,Nominal 70 micrometre Pt/Ir wire allocation,0.48017854289286993,True,1
+P07_Contact,P07 | distal REC_07,physical,recording signal,P07,Platinum/iridium contact proposal,0.7789690200129555,True,1
+P08_Ferrule,P08 | Ti ferrule | REC_08,physical,Conditional welded ferrule,P08,Titanium proposal,1.2063715789784848,True,1
+P08_Ceramic,P08 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P08,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638782,True,1
+P08_Pin,P08 | REC_08 feedthrough pin,physical,recording signal,P08,Platinum/iridium proposal,0.9330530181161699,True,1
+P08_Socket,P08 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P08,Platinum/iridium proposal,0.5058592490810288,True,1
+P08_Conductor,P08 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P08,Nominal 70 micrometre Pt/Ir wire allocation,0.4981839336720154,True,1
+P08_Contact,P08 | distal REC_08,physical,recording signal,P08,Platinum/iridium contact proposal,0.7789690200129553,True,1
+P09_Ferrule,P09 | Ti ferrule | REC_09,physical,Conditional welded ferrule,P09,Titanium proposal,1.2063715789784848,True,1
+P09_Ceramic,P09 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P09,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638782,True,1
+P09_Pin,P09 | REC_09 feedthrough pin,physical,recording signal,P09,Platinum/iridium proposal,0.9330530181161699,True,1
+P09_Socket,P09 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P09,Platinum/iridium proposal,0.5058592490810288,True,1
+P09_Conductor,P09 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P09,Nominal 70 micrometre Pt/Ir wire allocation,0.5168967395920651,True,1
+P09_Contact,P09 | distal REC_09,physical,recording signal,P09,Platinum/iridium contact proposal,0.7789690200129553,True,1
+P10_Ferrule,P10 | Ti ferrule | REC_10,physical,Conditional welded ferrule,P10,Titanium proposal,1.206371578978484,True,1
+P10_Ceramic,P10 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P10,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638782,True,1
+P10_Pin,P10 | REC_10 feedthrough pin,physical,recording signal,P10,Platinum/iridium proposal,0.9330530181161699,True,1
+P10_Socket,P10 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P10,Platinum/iridium proposal,0.5058592490810288,True,1
+P10_Conductor,P10 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P10,Nominal 70 micrometre Pt/Ir wire allocation,0.522691896450312,True,1
+P10_Contact,P10 | distal REC_10,physical,recording signal,P10,Platinum/iridium contact proposal,0.7789690200129553,True,1
+P11_Ferrule,P11 | Ti ferrule | REC_11,physical,Conditional welded ferrule,P11,Titanium proposal,1.2063715789784832,True,1
+P11_Ceramic,P11 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P11,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638782,True,1
+P11_Pin,P11 | REC_11 feedthrough pin,physical,recording signal,P11,Platinum/iridium proposal,0.9330530181161705,True,1
+P11_Socket,P11 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P11,Platinum/iridium proposal,0.5058592490810292,True,1
+P11_Conductor,P11 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P11,Nominal 70 micrometre Pt/Ir wire allocation,0.5154872678949537,True,1
+P11_Contact,P11 | distal REC_11,physical,recording signal,P11,Platinum/iridium contact proposal,0.7789690200129553,True,1
+P12_Ferrule,P12 | Ti ferrule | REC_12,physical,Conditional welded ferrule,P12,Titanium proposal,1.2063715789784832,True,1
+P12_Ceramic,P12 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P12,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638782,True,1
+P12_Pin,P12 | REC_12 feedthrough pin,physical,recording signal,P12,Platinum/iridium proposal,0.9330530181161705,True,1
+P12_Socket,P12 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P12,Platinum/iridium proposal,0.5058592490810292,True,1
+P12_Conductor,P12 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P12,Nominal 70 micrometre Pt/Ir wire allocation,0.5087458938325534,True,1
+P12_Contact,P12 | distal REC_12,physical,recording signal,P12,Platinum/iridium contact proposal,0.7789690200129555,True,1
+P13_Ferrule,P13 | Ti ferrule | REC_13,physical,Conditional welded ferrule,P13,Titanium proposal,1.2063715789784832,True,1
+P13_Ceramic,P13 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P13,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638782,True,1
+P13_Pin,P13 | REC_13 feedthrough pin,physical,recording signal,P13,Platinum/iridium proposal,0.9330530181161705,True,1
+P13_Socket,P13 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P13,Platinum/iridium proposal,0.5058592490810292,True,1
+P13_Conductor,P13 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P13,Nominal 70 micrometre Pt/Ir wire allocation,0.5024028659080818,True,1
+P13_Contact,P13 | distal REC_13,physical,recording signal,P13,Platinum/iridium contact proposal,0.7789690200129555,True,1
+P14_Ferrule,P14 | Ti ferrule | REC_14,physical,Conditional welded ferrule,P14,Titanium proposal,1.2063715789784832,True,1
+P14_Ceramic,P14 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P14,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638782,True,1
+P14_Pin,P14 | REC_14 feedthrough pin,physical,recording signal,P14,Platinum/iridium proposal,0.9330530181161705,True,1
+P14_Socket,P14 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P14,Platinum/iridium proposal,0.5058592490810292,True,1
+P14_Conductor,P14 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P14,Nominal 70 micrometre Pt/Ir wire allocation,0.4964021970328509,True,1
+P14_Contact,P14 | distal REC_14,physical,recording signal,P14,Platinum/iridium contact proposal,0.7789690200129555,True,1
+P15_Ferrule,P15 | Ti ferrule | REC_15,physical,Conditional welded ferrule,P15,Titanium proposal,1.2063715789784832,True,1
+P15_Ceramic,P15 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P15,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638782,True,1
+P15_Pin,P15 | REC_15 feedthrough pin,physical,recording signal,P15,Platinum/iridium proposal,0.9330530181161705,True,1
+P15_Socket,P15 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P15,Platinum/iridium proposal,0.5058592490810292,True,1
+P15_Conductor,P15 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P15,Nominal 70 micrometre Pt/Ir wire allocation,0.4906963152166321,True,1
+P15_Contact,P15 | distal REC_15,physical,recording signal,P15,Platinum/iridium contact proposal,0.7789690200129553,True,1
+P16_Ferrule,P16 | Ti ferrule | REC_16,physical,Conditional welded ferrule,P16,Titanium proposal,1.2063715789784832,True,1
+P16_Ceramic,P16 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P16,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638782,True,1
+P16_Pin,P16 | REC_16 feedthrough pin,physical,recording signal,P16,Platinum/iridium proposal,0.9330530181161705,True,1
+P16_Socket,P16 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P16,Platinum/iridium proposal,0.5058592490810292,True,1
+P16_Conductor,P16 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P16,Nominal 70 micrometre Pt/Ir wire allocation,0.4852456099110618,True,1
+P16_Contact,P16 | distal REC_16,physical,recording signal,P16,Platinum/iridium contact proposal,0.7789690200129555,True,1
+P17_Ferrule,P17 | Ti ferrule | REC_REFERENCE,physical,Conditional welded ferrule,P17,Titanium proposal,1.2063715789784832,True,1
+P17_Ceramic,P17 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P17,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638782,True,1
+P17_Pin,P17 | REC_REFERENCE feedthrough pin,physical,shared recording reference,P17,Platinum/iridium proposal,0.9330530181161705,True,1
+P17_Socket,P17 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P17,Platinum/iridium proposal,0.5058592490810292,True,1
+P17_Conductor,P17 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P17,Nominal 70 micrometre Pt/Ir wire allocation,0.48001917117953713,True,1
+P17_Contact,P17 | distal REC_REFERENCE,physical,shared recording reference,P17,Platinum/iridium contact proposal,0.7789690200129555,True,1
+P18_Ferrule,P18 | Ti ferrule | BODY_BIAS,physical,Conditional welded ferrule,P18,Titanium proposal,2.0106192982974673,True,1
+P18_Ceramic,P18 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P18,Alumina proposal; braze chemistry/CTE process unresolved,2.937389131106456,True,1
+P18_Pin,P18 | BODY_BIAS feedthrough pin,physical,current-bounded body bias; not stimulation return,P18,Platinum/iridium proposal,0.9330530181161705,True,1
+P18_Socket,P18 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P18,Platinum/iridium proposal,0.5058592490810292,True,1
+P18_Conductor,P18 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P18,Nominal 70 micrometre Pt/Ir wire allocation,0.4750045383033018,True,1
+P18_Contact,P18 | distal BODY_BIAS,physical,current-bounded body bias; not stimulation return,P18,Platinum/iridium contact proposal,0.7789690200129555,True,1
+P19_Ferrule,P19 | Ti ferrule | STIM_01,physical,Conditional welded ferrule,P19,Titanium proposal,2.0106192982974678,True,1
+P19_Ceramic,P19 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P19,Alumina proposal; braze chemistry/CTE process unresolved,2.9373891311064555,True,1
+P19_Pin,P19 | STIM_01 feedthrough pin,physical,selectable stimulation contact,P19,Platinum/iridium proposal,0.9330530181161676,True,1
+P19_Socket,P19 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P19,Platinum/iridium proposal,0.5058592490810283,True,1
+P19_Conductor,P19 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P19,Nominal 70 micrometre Pt/Ir wire allocation,0.47713347634178543,True,1
+P19_Contact,P19 | distal STIM_01,physical,selectable stimulation contact,P19,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P20_Ferrule,P20 | Ti ferrule | STIM_02,physical,Conditional welded ferrule,P20,Titanium proposal,1.2063715789784837,True,1
+P20_Ceramic,P20 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P20,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638776,True,1
+P20_Pin,P20 | STIM_02 feedthrough pin,physical,selectable stimulation contact,P20,Platinum/iridium proposal,0.9330530181161676,True,1
+P20_Socket,P20 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P20,Platinum/iridium proposal,0.5058592490810283,True,1
+P20_Conductor,P20 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P20,Nominal 70 micrometre Pt/Ir wire allocation,0.4867894936202385,True,1
+P20_Contact,P20 | distal STIM_02,physical,selectable stimulation contact,P20,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P21_Ferrule,P21 | Ti ferrule | STIM_03,physical,Conditional welded ferrule,P21,Titanium proposal,1.206371578978483,True,1
+P21_Ceramic,P21 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P21,Alumina proposal; braze chemistry/CTE process unresolved,1.762433478663878,True,1
+P21_Pin,P21 | STIM_03 feedthrough pin,physical,selectable stimulation contact,P21,Platinum/iridium proposal,0.9330530181161676,True,1
+P21_Socket,P21 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P21,Platinum/iridium proposal,0.5058592490810283,True,1
+P21_Conductor,P21 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P21,Nominal 70 micrometre Pt/Ir wire allocation,0.4966315699160439,True,1
+P21_Contact,P21 | distal STIM_03,physical,selectable stimulation contact,P21,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P22_Ferrule,P22 | Ti ferrule | STIM_04,physical,Conditional welded ferrule,P22,Titanium proposal,1.206371578978483,True,1
+P22_Ceramic,P22 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P22,Alumina proposal; braze chemistry/CTE process unresolved,1.762433478663878,True,1
+P22_Pin,P22 | STIM_04 feedthrough pin,physical,selectable stimulation contact,P22,Platinum/iridium proposal,0.9330530181161676,True,1
+P22_Socket,P22 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P22,Platinum/iridium proposal,0.5058592490810283,True,1
+P22_Conductor,P22 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P22,Nominal 70 micrometre Pt/Ir wire allocation,0.5066840887932308,True,1
+P22_Contact,P22 | distal STIM_04,physical,selectable stimulation contact,P22,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P23_Ferrule,P23 | Ti ferrule | STIM_05,physical,Conditional welded ferrule,P23,Titanium proposal,1.206371578978483,True,1
+P23_Ceramic,P23 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P23,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638782,True,1
+P23_Pin,P23 | STIM_05 feedthrough pin,physical,selectable stimulation contact,P23,Platinum/iridium proposal,0.9330530181161694,True,1
+P23_Socket,P23 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P23,Platinum/iridium proposal,0.5058592490810285,True,1
+P23_Conductor,P23 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P23,Nominal 70 micrometre Pt/Ir wire allocation,0.5169785056778252,True,1
+P23_Contact,P23 | distal STIM_05,physical,selectable stimulation contact,P23,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P24_Ferrule,P24 | Ti ferrule | STIM_06,physical,Conditional welded ferrule,P24,Titanium proposal,1.206371578978484,True,1
+P24_Ceramic,P24 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P24,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638778,True,1
+P24_Pin,P24 | STIM_06 feedthrough pin,physical,selectable stimulation contact,P24,Platinum/iridium proposal,0.9330530181161694,True,1
+P24_Socket,P24 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P24,Platinum/iridium proposal,0.5058592490810285,True,1
+P24_Conductor,P24 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P24,Nominal 70 micrometre Pt/Ir wire allocation,0.5275523071806812,True,1
+P24_Contact,P24 | distal STIM_06,physical,selectable stimulation contact,P24,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P25_Ferrule,P25 | Ti ferrule | STIM_07,physical,Conditional welded ferrule,P25,Titanium proposal,1.206371578978484,True,1
+P25_Ceramic,P25 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P25,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638778,True,1
+P25_Pin,P25 | STIM_07 feedthrough pin,physical,selectable stimulation contact,P25,Platinum/iridium proposal,0.9330530181161694,True,1
+P25_Socket,P25 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P25,Platinum/iridium proposal,0.5058592490810285,True,1
+P25_Conductor,P25 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P25,Nominal 70 micrometre Pt/Ir wire allocation,0.5384494412369717,True,1
+P25_Contact,P25 | distal STIM_07,physical,selectable stimulation contact,P25,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P26_Ferrule,P26 | Ti ferrule | STIM_08,physical,Conditional welded ferrule,P26,Titanium proposal,1.206371578978484,True,1
+P26_Ceramic,P26 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P26,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638778,True,1
+P26_Pin,P26 | STIM_08 feedthrough pin,physical,selectable stimulation contact,P26,Platinum/iridium proposal,0.9330530181161694,True,1
+P26_Socket,P26 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P26,Platinum/iridium proposal,0.5058592490810285,True,1
+P26_Conductor,P26 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P26,Nominal 70 micrometre Pt/Ir wire allocation,0.5497210068905534,True,1
+P26_Contact,P26 | distal STIM_08,physical,selectable stimulation contact,P26,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P27_Ferrule,P27 | Ti ferrule | STIM_09,physical,Conditional welded ferrule,P27,Titanium proposal,1.206371578978484,True,1
+P27_Ceramic,P27 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P27,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638778,True,1
+P27_Pin,P27 | STIM_09 feedthrough pin,physical,selectable stimulation contact,P27,Platinum/iridium proposal,0.9330530181161694,True,1
+P27_Socket,P27 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P27,Platinum/iridium proposal,0.5058592490810285,True,1
+P27_Conductor,P27 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P27,Nominal 70 micrometre Pt/Ir wire allocation,0.5614257377204321,True,1
+P27_Contact,P27 | distal STIM_09,physical,selectable stimulation contact,P27,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P28_Ferrule,P28 | Ti ferrule | STIM_10,physical,Conditional welded ferrule,P28,Titanium proposal,1.206371578978484,True,1
+P28_Ceramic,P28 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P28,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638778,True,1
+P28_Pin,P28 | STIM_10 feedthrough pin,physical,selectable stimulation contact,P28,Platinum/iridium proposal,0.9330530181161694,True,1
+P28_Socket,P28 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P28,Platinum/iridium proposal,0.5058592490810285,True,1
+P28_Conductor,P28 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P28,Nominal 70 micrometre Pt/Ir wire allocation,0.5558428337874997,True,1
+P28_Contact,P28 | distal STIM_10,physical,selectable stimulation contact,P28,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P29_Ferrule,P29 | Ti ferrule | STIM_11,physical,Conditional welded ferrule,P29,Titanium proposal,1.2063715789784837,True,1
+P29_Ceramic,P29 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P29,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638773,True,1
+P29_Pin,P29 | STIM_11 feedthrough pin,physical,selectable stimulation contact,P29,Platinum/iridium proposal,0.9330530181161699,True,1
+P29_Socket,P29 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P29,Platinum/iridium proposal,0.5058592490810288,True,1
+P29_Conductor,P29 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P29,Nominal 70 micrometre Pt/Ir wire allocation,0.5330457368429604,True,1
+P29_Contact,P29 | distal STIM_11,physical,selectable stimulation contact,P29,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P30_Ferrule,P30 | Ti ferrule | STIM_12,physical,Conditional welded ferrule,P30,Titanium proposal,1.2063715789784837,True,1
+P30_Ceramic,P30 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P30,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638773,True,1
+P30_Pin,P30 | STIM_12 feedthrough pin,physical,selectable stimulation contact,P30,Platinum/iridium proposal,0.9330530181161699,True,1
+P30_Socket,P30 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P30,Platinum/iridium proposal,0.5058592490810288,True,1
+P30_Conductor,P30 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P30,Nominal 70 micrometre Pt/Ir wire allocation,0.5109002917317124,True,1
+P30_Contact,P30 | distal STIM_12,physical,selectable stimulation contact,P30,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P31_Ferrule,P31 | Ti ferrule | STIM_13,physical,Conditional welded ferrule,P31,Titanium proposal,1.2063715789784837,True,1
+P31_Ceramic,P31 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P31,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638773,True,1
+P31_Pin,P31 | STIM_13 feedthrough pin,physical,selectable stimulation contact,P31,Platinum/iridium proposal,0.9330530181161699,True,1
+P31_Socket,P31 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P31,Platinum/iridium proposal,0.5058592490810288,True,1
+P31_Conductor,P31 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P31,Nominal 70 micrometre Pt/Ir wire allocation,0.4894869545479575,True,1
+P31_Contact,P31 | distal STIM_13,physical,selectable stimulation contact,P31,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P32_Ferrule,P32 | Ti ferrule | STIM_14,physical,Conditional welded ferrule,P32,Titanium proposal,1.2063715789784837,True,1
+P32_Ceramic,P32 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P32,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638773,True,1
+P32_Pin,P32 | STIM_14 feedthrough pin,physical,selectable stimulation contact,P32,Platinum/iridium proposal,0.9330530181161699,True,1
+P32_Socket,P32 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P32,Platinum/iridium proposal,0.5058592490810288,True,1
+P32_Conductor,P32 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P32,Nominal 70 micrometre Pt/Ir wire allocation,0.46888297075336527,True,1
+P32_Contact,P32 | distal STIM_14,physical,selectable stimulation contact,P32,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P33_Ferrule,P33 | Ti ferrule | STIM_15,physical,Conditional welded ferrule,P33,Titanium proposal,1.2063715789784837,True,1
+P33_Ceramic,P33 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P33,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638773,True,1
+P33_Pin,P33 | STIM_15 feedthrough pin,physical,selectable stimulation contact,P33,Platinum/iridium proposal,0.9330530181161699,True,1
+P33_Socket,P33 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P33,Platinum/iridium proposal,0.5058592490810288,True,1
+P33_Conductor,P33 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P33,Nominal 70 micrometre Pt/Ir wire allocation,0.4491560391594955,True,1
+P33_Contact,P33 | distal STIM_15,physical,selectable stimulation contact,P33,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P34_Ferrule,P34 | Ti ferrule | STIM_16,physical,Conditional welded ferrule,P34,Titanium proposal,1.2063715789784837,True,1
+P34_Ceramic,P34 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P34,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638773,True,1
+P34_Pin,P34 | STIM_16 feedthrough pin,physical,selectable stimulation contact,P34,Platinum/iridium proposal,0.9330530181161699,True,1
+P34_Socket,P34 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P34,Platinum/iridium proposal,0.5058592490810288,True,1
+P34_Conductor,P34 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P34,Nominal 70 micrometre Pt/Ir wire allocation,0.4303573179453273,True,1
+P34_Contact,P34 | distal STIM_16,physical,selectable stimulation contact,P34,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P35_Ferrule,P35 | Ti ferrule | RETURN_00,physical,Conditional welded ferrule,P35,Titanium proposal,1.2063715789784837,True,1
+P35_Ceramic,P35 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P35,Alumina proposal; braze chemistry/CTE process unresolved,1.7624334786638773,True,1
+P35_Pin,P35 | RETURN_00 feedthrough pin,physical,dedicated isolated source return,P35,Platinum/iridium proposal,0.9330530181161699,True,1
+P35_Socket,P35 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P35,Platinum/iridium proposal,0.5058592490810288,True,1
+P35_Conductor,P35 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P35,Nominal 70 micrometre Pt/Ir wire allocation,0.41251560142649796,True,1
+P35_Contact,P35 | distal RETURN_00,physical,dedicated isolated source return,P35,Platinum/iridium contact proposal,1.7789690200129589,True,1
+P36_Ferrule,P36 | Ti ferrule | RETURN_01,physical,Conditional welded ferrule,P36,Titanium proposal,2.0106192982974678,True,1
+P36_Ceramic,P36 | isolated ceramic sleeve,physical,Nominal ceramic-to-pin and ceramic-to-ferrule interfaces,P36,Alumina proposal; braze chemistry/CTE process unresolved,2.937389131106455,True,1
+P36_Pin,P36 | RETURN_01 feedthrough pin,physical,dedicated isolated source return,P36,Platinum/iridium proposal,0.9330530181161699,True,1
+P36_Socket,P36 | nominal mating socket,physical,Nominal zero-gap electrical contact; spring/force design unresolved,P36,Platinum/iridium proposal,0.5058592490810288,True,1
+P36_Conductor,P36 | continuous illustrative lead conductor,physical,75-ish micrometre nominal routed conductor; not fatigue/electrical qualification,P36,Nominal 70 micrometre Pt/Ir wire allocation,0.39563541990937984,True,1
+P36_Contact,P36 | distal RETURN_01,physical,dedicated isolated source return,P36,Platinum/iridium contact proposal,1.7789690200129589,True,1
+Can,Titanium can | 60 x 48 x 14 envelope,physical,1.2 mm nominal wall/floor,,Titanium proposal,6106.04706268998,True,1
+Seam,Conditional weld seam | no qualified process,physical,,,Titanium nominal weld allocation,48.875043684396076,True,1
+Lid,Titanium lid | conditional RF window,physical,,,Titanium proposal,3184.101365158229,True,1
+RF_Seal,RF window seal ring | nominal unqualified,physical,"Nominal 0.15 mm radial seal allocation, process unresolved",,Unspecified glass/metal sealing system,10.266769712231373,True,1
+RF_Window,Conditional RF glass window | 20 x 10 mm,physical,Future radio window; current firmware radio remains off,,RF-transmissive glass proposal,235.8796447372311,True,1
+Header,Dielectric header | separately keyed R/S ports,physical,,,Implant-grade dielectric header proposal,5988.171313232373,True,1
+Record_Insert,Record | dielectric 18-way insert,physical,0.1 mm nominal pocket side clearance,,Conditional dielectric insert,1083.4503371137837,True,1
+Record_Plug,Record | removable keyed lead plug,physical,Distinct left/right mechanical key; spring retention/sealing unresolved,,Conditional dielectric plug,1519.9781570547884,True,1
+Record_Boot,Record | tapered strain-relief boot,physical,26 mm nominal strain-relief taper; no fatigue/strain qualification,,Silicone proposal,1635.4920826919447,True,1
+Record_Substrate,Record | insulated cable and surface paddle,physical,Separate illustrative target-specific lead; anatomy unassigned,,Silicone proposal,553.7059107951231,True,1
+Stim_Insert,Stim | dielectric 18-way insert,physical,0.1 mm nominal pocket side clearance,,Conditional dielectric insert,1083.450337113783,True,1
+Stim_Plug,Stim | removable keyed lead plug,physical,Distinct left/right mechanical key; spring retention/sealing unresolved,,Conditional dielectric plug,1519.978160045823,True,1
+Stim_Boot,Stim | tapered strain-relief boot,physical,26 mm nominal strain-relief taper; no fatigue/strain qualification,,Silicone proposal,1801.5559366204236,True,1
+Stim_Substrate,Stim | insulated cable and surface paddle,physical,Separate illustrative target-specific lead; anatomy unassigned,,Silicone proposal,1266.2536149492123,True,1
+Board_Allocation,Future substrate | unpopulated 50 x 40 mm,allocation,Reservation only; excluded from occupied-part collision claims,,,1999.999999999999,True,1
+Component_Allocation,Miniaturized components | conditional volume,allocation,Reservation only; excluded from occupied-part collision claims,,,6000.0,True,1
+HV_Bank_Allocation,HV bank | effective capacitance unresolved,allocation,Reservation only; excluded from occupied-part collision claims,,,1008.0,True,1
+Battery_Allocation,Contego 200 bounding box | isolated case-negative,allocation,Reservation only; excluded from occupied-part collision claims,,,3281.8500000000004,True,1
+Battery_Insulation_Allocation,0.15 mm insulation | nominal bounding shell,allocation,Reservation only; excluded from occupied-part collision claims,,,270.18599999999833,True,1
+Antenna_Allocation,Future antenna | RF unimplemented,allocation,Reservation only; excluded from occupied-part collision claims,,,98.28318530717935,True,1

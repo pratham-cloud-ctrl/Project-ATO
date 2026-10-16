@@ -1,0 +1,72 @@
+{
+  "schema": "ato.tmp.observer-saved-data-audit.v1",
+  "passed": true,
+  "audit_source_sha256": "a073a3f6f903f3abfdbc7408bb7ebb0b020e106ccddaba34308930222de77b29",
+  "raw_sha256": "cf3fec80ba5748ef714d73120a2f1acb742f318db0196789d85adad4e6bfcb05",
+  "summary_sha256": "02c7bcca076dd6b2739f9e31de715f3a961f69373d579f66d9d76abd36dee2ae",
+  "groups": {
+    "already_inspected_drift": {
+      "records": 16,
+      "current_supports": 8800,
+      "support_horizon_coordinate_residuals": 457600,
+      "all_supports_available": true,
+      "maximum_allocation_m": 0.012418841082632071,
+      "observed_rmse_m": 0.0015646799343839043,
+      "conditional_variance_minus_sensor_variance_minimum_m2": 6.5504908794495224e-09,
+      "conditional_standardized_residual_maximum": 3.8357370597101426,
+      "fraction_observed_components_exceeding_three_conditional_sigmas": 0.002285839160839161,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "coordinate_residuals": 12480,
+          "maximum_observed_component_error_m": 0.0052500907682453656,
+          "maximum_error_plus_3mm_m": 0.008250090768245365,
+          "observed_rmse_m": 0.0016426131797095131
+        },
+        "future_spans_reversal": {
+          "coordinate_residuals": 14560,
+          "maximum_observed_component_error_m": 0.0048508552353704396,
+          "maximum_error_plus_3mm_m": 0.007850855235370439,
+          "observed_rmse_m": 0.0014850344504929009
+        },
+        "neither_spans_reversal": {
+          "coordinate_residuals": 430560,
+          "maximum_observed_component_error_m": 0.009418841082632072,
+          "maximum_error_plus_3mm_m": 0.012418841082632071,
+          "observed_rmse_m": 0.001564989490435624
+        }
+      }
+    },
+    "temporal_calibration_holdout": {
+      "records": 8,
+      "current_supports": 6000,
+      "support_horizon_coordinate_residuals": 312000,
+      "all_supports_available": true,
+      "maximum_allocation_m": 0.009409502404841018,
+      "observed_rmse_m": 0.00153542396304805,
+      "conditional_variance_minus_sensor_variance_minimum_m2": 6.2937021610008e-09,
+      "conditional_standardized_residual_maximum": 4.1235815265768165,
+      "fraction_observed_components_exceeding_three_conditional_sigmas": 0.002746794871794872,
+      "categories": {
+        "recent_75ms_spans_reversal": {
+          "coordinate_residuals": 6240,
+          "maximum_observed_component_error_m": 0.0045999273599761775,
+          "maximum_error_plus_3mm_m": 0.007599927359976178,
+          "observed_rmse_m": 0.0016046437512623865
+        },
+        "future_spans_reversal": {
+          "coordinate_residuals": 7280,
+          "maximum_observed_component_error_m": 0.004336162744507887,
+          "maximum_error_plus_3mm_m": 0.007336162744507887,
+          "observed_rmse_m": 0.0014470388274517246
+        },
+        "neither_spans_reversal": {
+          "coordinate_residuals": 298480,
+          "maximum_observed_component_error_m": 0.006409502404841019,
+          "maximum_error_plus_3mm_m": 0.009409502404841018,
+          "observed_rmse_m": 0.0015360378063441137
+        }
+      }
+    }
+  },
+  "covariance_note": "Conditional Gaussian covariance is not an empirical bound. These standardized residual diagnostics do not tune settings or replace maximum-error gates."
+}

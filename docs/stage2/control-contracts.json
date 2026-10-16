@@ -1,0 +1,783 @@
+{
+  "schema_version": "ato.stage2.control-contracts.v1",
+  "document_id": "S2-CTRL-001",
+  "date": "2026-10-08",
+  "status": "Specified digital contracts; not implemented or validated",
+  "timing_inputs": "timing-budget-inputs.json",
+  "stage1_links": [
+    "S1-IF-05",
+    "S1-IF-06",
+    "S1-IF-07",
+    "S1-IF-08",
+    "S1-IF-09",
+    "S1-IF-10",
+    "S1-IF-11",
+    "S1-IF-12",
+    "S1-IF-14"
+  ],
+  "unit_conventions": {
+    "time": "s in Core monotonic session clock; integer tick payload allowed with explicit1us tickperiod",
+    "current": "A; commanded and independently measured fields distinct",
+    "voltage": "V",
+    "charge": "C",
+    "position": "m in named task frame",
+    "orientation": "rad with convention/frame",
+    "pressure": "Pa with reference; convert source-display mmHg using133.322387415Pa/mmHg.",
+    "fraction": "dimensionless; never implicitly a dose",
+    "frequency": "Hz"
+  },
+  "common_metadata_required": [
+    "contract_version",
+    "session_id",
+    "target_configuration_id",
+    "origin_id",
+    "sequence_number",
+    "calibration_id",
+    "sample_or_support_time",
+    "arrival_time",
+    "clock_conversion_uncertainty_s",
+    "quality_status"
+  ],
+  "online_permissions": {
+    "permitted": [
+      "past contact voltages afterAFE/ADC with timestamps/masks",
+      "permitted external observations with physical measurement support times",
+      "known task goals/cue times",
+      "frozen expert representation with provenance/applicability",
+      "calibration learned only from allowed delivered-output and sensor observations",
+      "independent modeled current/voltage/charge measurements with uncertainty"
+    ],
+    "forbidden": [
+      "true neural population or unobserved body/skill state",
+      "true plant/recruitment coefficients supplied by simulator",
+      "future observed movement,pressure,samples or disturbances",
+      "test labels or expert/learner recordings from held-out evaluation",
+      "interpolated missing samples presented as measurements"
+    ],
+    "diagnostic_oracle": "Separate visibly tagged branch allowed only for upper-bound evaluation; never counted as operational decoder."
+  },
+  "contracts": [
+    {
+      "id": "S2-C-001",
+      "name": "Raw acquisition block",
+      "stage1_interface": "S1-IF-05",
+      "fields": [
+        {
+          "name": "samples",
+          "type": "array[int]",
+          "unit": "ADCcounts",
+          "meaning": "16 streams sampled4kHz each; no already-decoded phase bypass."
+        },
+        {
+          "name": "v_per_count",
+          "type": "array[number]",
+          "unit": "V/count",
+          "meaning": "Per-stream calibrated conversion and gain/reference ID."
+        },
+        {
+          "name": "aperture_ticks",
+          "type": "array[int]",
+          "unit": "Coreticks",
+          "meaning": "Actual per-channel aperture time;45usspan is not simultaneous sampling."
+        },
+        {
+          "name": "input_bandwidth_and_filter_id",
+          "type": "string",
+          "unit": "none",
+          "meaning": "Group-delay model and calibration trace."
+        },
+        {
+          "name": "quality_mask",
+          "type": "array[enum]",
+          "unit": "none",
+          "meaning": "VALID,MISSING,CLIPPED,STIM_BLANK,RECOVERY_UNQUALIFIED,CLOCK_INVALID."
+        },
+        {
+          "name": "artifact_ledger_ids",
+          "type": "array[string]",
+          "unit": "none",
+          "meaning": "Planned and actual delivered event references; unexpected clipping remains invalid."
+        }
+      ],
+      "invariants": [
+        "Sample time <= arrival time after bounded clock conversion.",
+        "Block reordering must preserve sample identity; duplicates do not count as new observations.",
+        "Fast decoder consumes undecimated4kHz observations;2kHz archive must expose3.75msdecimator delay.",
+        "Missing/invalid values remain masked; recorded prediction fields cannot be renamed observations."
+      ],
+      "violation_action": "Invalidate affected data; update uncertainty and gate proposals if freshness/coverage fails."
+    },
+    {
+      "id": "S2-C-002",
+      "name": "Causal motor estimate",
+      "stage1_interface": "S1-IF-06",
+      "fields": [
+        {
+          "name": "estimated_state",
+          "type": "object",
+          "unit": "m,m/s,rad,rad/s,contactstatus",
+          "meaning": "Task-defined multiaxis foot/limb/contact variables, not a universal phase."
+        },
+        {
+          "name": "support_interval_s",
+          "type": "array[number]",
+          "unit": "s",
+          "meaning": "Earliest/latest allowed observation times actually used."
+        },
+        {
+          "name": "latest_valid_sample_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "Latest valid physical observation plus declared filter convention."
+        },
+        {
+          "name": "feature_representative_time_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "Defined weighted time or conservative age bound; not merely window end."
+        },
+        {
+          "name": "information_age_bound_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "Includes filter/feature age, clock uncertainty and gaps; actual calculation documented."
+        },
+        {
+          "name": "prediction_horizon_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "Forward estimate horizon; zero for state at observation time."
+        },
+        {
+          "name": "uncertainty",
+          "type": "object",
+          "unit": "stateunits or squaredunits",
+          "meaning": "Calibrated interval/covariance and meaning; not an untested probability label."
+        },
+        {
+          "name": "observability_status",
+          "type": "enum",
+          "unit": "none",
+          "meaning": "QUALIFIED,AMBIGUOUS,STALE,OUT_OF_DISTRIBUTION,INSUFFICIENT_COVERAGE."
+        },
+        {
+          "name": "model_and_expert_ids",
+          "type": "object",
+          "unit": "none",
+          "meaning": "Frozen versions and permitted task/context applicability."
+        }
+      ],
+      "numerical_gates": {
+        "history_s": 0.02,
+        "latest_valid_max_age_s": 0.005,
+        "min_global_usable_fraction": 0.65,
+        "min_history_usable_fraction": 0.65,
+        "max_gap_s": 0.005,
+        "max_prediction_horizon_s": 0.1,
+        "clock_uncertainty_max_s": 0.0005,
+        "illustrative_event_target_s": 0.025
+      },
+      "invariants": [
+        "No future observation consumed at action time.",
+        "Estimate uncertainty increases across unsupported intervals; prediction never fabricates a valid sample.",
+        "Coverage gates are screening requirements, not proof of sufficient neural information.",
+        "An estimate may fail even if electrical scheduling meets25ms.",
+        "Goal timing may be future-known; achieved contact/body state may not."
+      ],
+      "violation_action": "Reject new motor intervention; continue observation/logging if electrically healthy. Do not replace decoder with true task phase."
+    },
+    {
+      "id": "S2-C-003",
+      "name": "External motion and contact observation",
+      "stage1_interface": "S1-IF-07",
+      "fields": [
+        {
+          "name": "sensor_type",
+          "type": "enum",
+          "unit": "none",
+          "meaning": "FOOT_CONTACT,MULTIAXIS_POSE,FORCE,EMG if separately declared."
+        },
+        {
+          "name": "measurement",
+          "type": "object",
+          "unit": "m,rad,N or contactevent",
+          "meaning": "Named origin/task frame, calibration and measurement uncertainty."
+        },
+        {
+          "name": "physical_measurement_time_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "Original aperture or event time."
+        },
+        {
+          "name": "sensor_processing_delay_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "Known or bounded physical-to-payload delay; arrival is separate."
+        },
+        {
+          "name": "clock_map_id",
+          "type": "string",
+          "unit": "none",
+          "meaning": "Bounded conversion into Core session."
+        }
+      ],
+      "numerical_gates": {
+        "contact_rate_hz": 1000,
+        "kinematics_rate_hz": 200,
+        "filter_allowance_s": 0.002,
+        "transport_allowance_s": 0.005,
+        "latest_age_before_clock_uncertainty_s": 0.012
+      },
+      "comparison_rule": "Both sensing arms receive identical external sensors. Report native and latency-matched neural/external arms so latency privilege is not confused with unique neural information.",
+      "violation_action": "Missing modalities stay missing; reduce state observability or reject, rather than access true pose."
+    },
+    {
+      "id": "S2-C-004",
+      "name": "External systolic pressure observation",
+      "stage1_interface": "S1-IF-07",
+      "fields": [
+        {
+          "name": "systolic_pressure_pa",
+          "type": "number",
+          "unit": "Pa",
+          "meaning": "External calibrated measurement; not voltage-decoded pressure."
+        },
+        {
+          "name": "pressure_reference",
+          "type": "string",
+          "unit": "none",
+          "meaning": "Sensor/cuff/reference details; no clinical-grade assertion without qualification."
+        },
+        {
+          "name": "physical_peak_or_measurement_support_s",
+          "type": "array[number]",
+          "unit": "s",
+          "meaning": "Peak timestamp if provided; otherwise bounded support interval for derived1Hz value."
+        },
+        {
+          "name": "extraction_time_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "After pressure acquisition/beat processing/resampling."
+        },
+        {
+          "name": "arrival_time_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "Packet receipt; cannot replace physical measurement time."
+        },
+        {
+          "name": "sensor_uncertainty_pa",
+          "type": "number",
+          "unit": "Pa",
+          "meaning": "Includes declared bias/noise/accuracy; clinical target still unresolved."
+        },
+        {
+          "name": "quality",
+          "type": "enum",
+          "unit": "none",
+          "meaning": "VALID,MOTION_ARTIFACT,ARRHYTHMIA,CUFF_CALIBRATION,STALE,CLOCK_INVALID,MISSING."
+        }
+      ],
+      "numerical_gates": {
+        "waveform_reference_hz": 200,
+        "extracted_reference_hz": 1,
+        "controller_service_hz": 4,
+        "max_oldest_support_age_s": 2,
+        "clock_conversion_max_uncertainty_s": 0.0005
+      },
+      "invariants": [
+        "4Hz service cannot create4new pressure observations/s from1Hz extraction.",
+        "Use upper bound of support age; if sensor cannot bound it, measurement freshness is unknown and adaptation is gated.",
+        "Optional spinal biomarker may supplement only when separately qualified; missing biomarker does not invalidate a healthy external-only arm.",
+        "Clinical measurement accuracy, representativeness and actionable pressure thresholds remain unresolved."
+      ],
+      "violation_action": "Block new pressure adaptation and enter declared fallback evaluation. Inhibition/hold/ramp is not inherently a clinically safe choice."
+    },
+    {
+      "id": "S2-C-005",
+      "name": "Learner response calibration and expert transfer",
+      "stage1_interface": "S1-IF-01/02/06/08",
+      "fields": [
+        {
+          "name": "expert_representation_id",
+          "type": "string",
+          "unit": "none",
+          "meaning": "Learned from declared expert observations and task reference labels; frozen before held-out evaluation."
+        },
+        {
+          "name": "learner_map_id",
+          "type": "string",
+          "unit": "none",
+          "meaning": "Estimated from bounded calibration inputs, measured delivery and observed effects."
+        },
+        {
+          "name": "response_delay_interval_s",
+          "type": "array[number]",
+          "unit": "s",
+          "meaning": "Learned interval, not true simulator parameter."
+        },
+        {
+          "name": "response_map_uncertainty",
+          "type": "object",
+          "unit": "outputunits/electricalfeatures",
+          "meaning": "Rank/sign/context/range validity; unresolved or adverse directions explicit."
+        },
+        {
+          "name": "calibration_validity_context",
+          "type": "object",
+          "unit": "none",
+          "meaning": "Posture,task,route,geometry,session and operatingrange."
+        },
+        {
+          "name": "sensory_interference_model_id",
+          "type": "string",
+          "unit": "none",
+          "meaning": "Separate from artifact masking and recruitment cross-coupling."
+        }
+      ],
+      "gates": [
+        "Fail transfer if representation is out of task/context support or cross-person alignment is unidentifiable.",
+        "Fail intervention for unreachable corrections, uncertain sign, absent response or out-of-range recruitment.",
+        "Delay-prediction uncertainty counts against25ms event target; calibrating only mean delay is insufficient.",
+        "Expert information must beat equally resourced learner-only adaptation if that benefit is claimed; expert external-trajectory-only comparator separates neural content."
+      ],
+      "synthetic_response_stress_envelope": {
+        "motor_onset_delay_s": {
+          "nominal_assumption_range": [
+            0.02,
+            0.06
+          ],
+          "stress_range": [
+            0.005,
+            0.15
+          ],
+          "provenance": "Chosen artificial stress ranges, not published human delay; zero/absent effect separate."
+        },
+        "max_qualified_motor_prediction_horizon_s": 0.1,
+        "pressure_activation_time_constant_s": [
+          0.5,
+          10
+        ],
+        "pressure_response_time_constant_s": [
+          1,
+          30
+        ],
+        "pressure_effect_onset_delay_s": [
+          0.1,
+          10
+        ],
+        "pressure_effect_release_delay_s": [
+          0.1,
+          60
+        ],
+        "pressure_max_normalized_drive_gain_pa": [
+          0,
+          7999.3432449
+        ],
+        "pressure_adverse_gain_stress_pa": [
+          -2666.4477483,
+          0
+        ],
+        "provenance": "All physiology dynamic ranges are artificial sensitivity envelopes (0..60mmHg gain, -20..0mmHg adverse direction). They are not fitted to the cited study and cannot authorize dosing."
+      },
+      "violation_action": "Abstain or use equally declared baseline policy; preserve failure as result. No true response coefficients supplied to controller."
+    },
+    {
+      "id": "S2-C-006",
+      "name": "Application intervention request",
+      "stage1_interface": "S1-IF-08",
+      "fields": [
+        {
+          "name": "application_id",
+          "type": "enum",
+          "unit": "none",
+          "meaning": "MOTOR_PRACTICE or SBP_SUPPORT; mutually exclusive active application initially."
+        },
+        {
+          "name": "goal",
+          "type": "object",
+          "unit": "s,m,rad or Pa",
+          "meaning": "Motor event/coordination objective or externalSBP target defined by protocol."
+        },
+        {
+          "name": "estimated_response_interval",
+          "type": "object",
+          "unit": "taskunits",
+          "meaning": "Prediction from calibrated model with uncertainty."
+        },
+        {
+          "name": "electrical_profile_id",
+          "type": "string",
+          "unit": "none",
+          "meaning": "Versioned current/phase/frequency/route mapping; normalizedu is not a dose."
+        },
+        {
+          "name": "desired_first_phase_time_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "Core timestamp; not a blind immediate GPIO write."
+        },
+        {
+          "name": "latest_start_deadline_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "Finite deadline; late plans rejected rather than catch-up pulses."
+        },
+        {
+          "name": "plan_expiry_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "No indefinite replay."
+        },
+        {
+          "name": "authorized_session_lease_id",
+          "type": "string",
+          "unit": "none",
+          "meaning": "Authenticated finite authorization, not bypass of local health gates."
+        }
+      ],
+      "numerical_reference_profiles": {
+        "motor": {
+          "nominal_current_a": 0.003,
+          "nominal_phase_width_s": 0.0002,
+          "reference_frame_hz": 40,
+          "rate_sensitivity_hz": [
+            20,
+            40,
+            60
+          ],
+          "maximum_phase_width_s": 0.0005,
+          "interphase_s": 0.0001,
+          "max_concurrent_sources": 2,
+          "status": "Illustrative digital reference, not human prescription."
+        },
+        "pressure": {
+          "nominal_current_a": 0.003,
+          "nominal_phase_width_s": 0.0003,
+          "frame_hz": 120,
+          "configuration_offsets_s": [
+            0,
+            0.002,
+            0.004
+          ],
+          "stress_current_a": 0.02,
+          "maximum_phase_width_s": 0.0005,
+          "interphase_s": 0.0001,
+          "max_concurrent_sources": 2,
+          "status": "Published timing/amplitude range motivates envelope;nominal3mA and biphasic phase/gap interpretation are ATO choices, not proof of equivalent physiological action."
+        }
+      },
+      "invariants": [
+        "A signed desired task correction is not signed current polarity.",
+        "No physical current request without calibrated route/electrical mapping.",
+        "Target outside feasible pressor-only response region is reported unreachable; reducing stimulus is not independent antihypertensive actuation.",
+        "Response,energy/thermal caps and electrode/monitor limits can remove assumed authority.",
+        "Known paced goal admitted20ms before event does not provide future true movement."
+      ],
+      "violation_action": "Reject and log exact failed predicate; no silent scaling presented as original commanded response."
+    },
+    {
+      "id": "S2-C-007",
+      "name": "Locally admitted output plan",
+      "stage1_interface": "S1-IF-09",
+      "fields": [
+        {
+          "name": "source_ids",
+          "type": "array[string]",
+          "unit": "none",
+          "meaning": "Two selected independently monitored current sources;four-source expansion unsupported."
+        },
+        {
+          "name": "contact_and_return_route",
+          "type": "object",
+          "unit": "none",
+          "meaning": "No unintended shared/grounded return; full route ownership."
+        },
+        {
+          "name": "phase_edges_s",
+          "type": "array[number]",
+          "unit": "s",
+          "meaning": "Common-clock scheduled starts/ends with actual timing allocation."
+        },
+        {
+          "name": "signed_command_current_a",
+          "type": "array[number]",
+          "unit": "A",
+          "meaning": "Commanded current distinct from measured current."
+        },
+        {
+          "name": "planned_phase_charge_c",
+          "type": "array[number]",
+          "unit": "C",
+          "meaning": "Command integral; not measured delivered charge."
+        },
+        {
+          "name": "delivery_monitor_contract_id",
+          "type": "string",
+          "unit": "none",
+          "meaning": "Required current/voltage/charge/compliance monitor and independent overrun protection."
+        },
+        {
+          "name": "energy_thermal_authority_id",
+          "type": "string",
+          "unit": "none",
+          "meaning": "Admission cap may prohibit sustained stress pattern."
+        },
+        {
+          "name": "artifact_ledger_id",
+          "type": "string",
+          "unit": "none",
+          "meaning": "Planned affected channels and mask/recovery qualification."
+        },
+        {
+          "name": "expiry_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "No execution after deadline/session expiry."
+        }
+      ],
+      "gates": [
+        "Configuration/calibration/version/auth/replay checks pass.",
+        "No more than2 concurrent sources and approved independent return routes.",
+        "Planned same-frame drivers align;staggered pulses admitted only in explicitly budgeted patterns.",
+        "Per-profile minimum periods apply even for event-anchored rephasing: 25ms at40Hz motor and8.333ms at120Hz pressure; configured rate ceiling150Hz per profile.",
+        "Physical source availability is checked separately: biphasic duration plus250us zero-current reconfiguration/admission. Pressure source0 time-shares three profiles at360events/s with2ms minimum cyclic spacing; a150Hz per-source ceiling is not assumed.",
+        "Concurrent source routes own disjoint contacts and dedicated returns; recording recovery does not qualify electrode/return polarization or reuse.",
+        "Current/charge/compliance/reserve/thermal gates come from electrical budget, not task policy.",
+        "Clock/monitor health and observedstate validity hold at admission and execution.",
+        "Conflicting motor/pressor applications cannot both reserve sources;no last-writer wins."
+      ],
+      "violation_action": "Reject/cancel unstarted plans and preserve log. No automatic make-up burst for a missed timer."
+    },
+    {
+      "id": "S2-C-008",
+      "name": "Independent delivered-output evidence",
+      "stage1_interface": "S1-IF-10",
+      "fields": [
+        {
+          "name": "measured_current_a",
+          "type": "array[number]",
+          "unit": "A",
+          "meaning": "Independent modeled ADC observations with gain/bias/noise uncertainty."
+        },
+        {
+          "name": "measured_terminal_voltage_v",
+          "type": "array[number]",
+          "unit": "V",
+          "meaning": "Differential terminals/compliance reference; not assumed ground-return voltage."
+        },
+        {
+          "name": "measurement_time_s",
+          "type": "array[number]",
+          "unit": "s",
+          "meaning": "Own monitor aperture and clock validity."
+        },
+        {
+          "name": "delivered_phase_charge_c",
+          "type": "array[number]",
+          "unit": "C",
+          "meaning": "Integral over actual measured-current intervals."
+        },
+        {
+          "name": "charge_uncertainty_c",
+          "type": "array[number]",
+          "unit": "C",
+          "meaning": "Sensor,timing,missing sample and integration uncertainty."
+        },
+        {
+          "name": "actual_route_and_edge_times",
+          "type": "object",
+          "unit": "none/s",
+          "meaning": "Observed or bounded states; commandedroute alone not independent proof."
+        },
+        {
+          "name": "delivery_quality",
+          "type": "enum",
+          "unit": "none",
+          "meaning": "QUALIFIED,COMPLIANCE_CLIPPED,INTERRUPTED,MONITOR_STALE,UNKNOWN_RESIDUAL."
+        }
+      ],
+      "invariants": [
+        "Positive and negative commands do not imply zero net delivered charge.",
+        "Missing monitor data produces unknown delivery rather than zero.",
+        "Body/recruitment model uses measured modeled delivery or its uncertainty interval, not perfect commanded pulse.",
+        "Fault-caused phase interruption preserves residual-charge uncertainty;never automatic opposite correction from command memory."
+      ],
+      "violation_action": "Electrical supervision action per independently analyzed budget;new plans inhibited until requalified."
+    },
+    {
+      "id": "S2-C-009",
+      "name": "Artifact and recovery ledger",
+      "stage1_interface": "S1-IF-11",
+      "fields": [
+        {
+          "name": "planned_event_intervals_s",
+          "type": "array",
+          "unit": "s",
+          "meaning": "Used for pregating; compare actual delivered times."
+        },
+        {
+          "name": "actual_event_intervals_s",
+          "type": "array",
+          "unit": "s",
+          "meaning": "Modeled independent delivery evidence."
+        },
+        {
+          "name": "affected_stream_ids",
+          "type": "array[string]",
+          "unit": "none",
+          "meaning": "Default all16streams; qualified channel-specific isolation must be explicit."
+        },
+        {
+          "name": "recovery_qualification",
+          "type": "object",
+          "unit": "none",
+          "meaning": "Observed clipping/headroom/settling criteria and qualifiedendtime."
+        },
+        {
+          "name": "invalid_aperture_ranges",
+          "type": "array",
+          "unit": "Coreticks",
+          "meaning": "Actual perchannel masks including timinguncertainty; not average duty alone."
+        }
+      ],
+      "invariants": [
+        "Union overlapping masks including periodwrap.",
+        "Coaligned2drivers create1global interval only if delivered edges actually coincide within qualified uncertainty.",
+        "Traveling3profiles0/2/4ms create3events/frame.",
+        "5ms guessed recovery is not proof recovery completed.",
+        "Prediction over gaps retains uncertainty;artifact removal cannot reconstruct absent information without a qualified model."
+      ],
+      "violation_action": "Keep recovery unqualified until actual criteria pass;gate fast neural controller or choose external-only mode."
+    },
+    {
+      "id": "S2-C-010",
+      "name": "Application lease and fallback",
+      "stage1_interface": "S1-IF-12/14",
+      "fields": [
+        {
+          "name": "authenticated_mode_authorization",
+          "type": "object",
+          "unit": "none",
+          "meaning": "Session, application and configuration identities, replay counter and permitted outputs."
+        },
+        {
+          "name": "authorization_expiry_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "Reference maximum:0.25s motor or3s pressure; renewed only by an authenticated valid message."
+        },
+        {
+          "name": "fallback_id",
+          "type": "string_or_null",
+          "unit": "none",
+          "meaning": "Function-specific choice and duration validated within the model; null means unresolved."
+        },
+        {
+          "name": "last_trustworthy_observation_s",
+          "type": "number",
+          "unit": "s",
+          "meaning": "Physical measurement time with uncertainty, not a link heartbeat."
+        },
+        {
+          "name": "loss_of_support_state",
+          "type": "object",
+          "unit": "taskunits",
+          "meaning": "Modeled consequences of support interruption, separately from an electrical trip."
+        },
+        {
+          "name": "independent_supervisor_ack",
+          "type": "object",
+          "unit": "none",
+          "meaning": "Requested output action versus observed acknowledgment distinguished."
+        }
+      ],
+      "initial_mode_arbitration": "MOTOR_PRACTICE and SBP_SUPPORT mutually exclusive. Observe-only and archive services may coexist within explicit budgets; service/energy-transfer coexistence requires qualification.",
+      "motor_link_loss": "No new remote goal or calibration changes. A committed local plan may continue until its0.25s lease expires, only while local observations, route, monitor and energy health remain qualified. Expired or unsupported plans are rejected.",
+      "pressure_link_loss": "If the UI link is lost but an independent authenticated pressure path remains fresh, the committed local policy may continue only within its3s lease. If the lost link also carries pressure, the measurement-freshness gate applies. Continued sensor service is not assumed.",
+      "pressure_stale_rule": "Block new adaptation and enter the declared digital fallback variant. Finite hold, ramp/stop and loss-of-support consequences must be tested separately; none is labelled universally safe.",
+      "active_pressure_admission": "Requires a selected fallback_id, defined target/risk protocol, sensor accuracy and age bound, authority range, and source/monitor limits. Stage2 does not supply clinical qualification.",
+      "phase_interruption_rule": "For a nonelectrical observation fault, completion of the committed balancing phase is allowed only while clock, power, route and delivery monitor are healthy and the policy permits it. Electrical, clock or power faults may interrupt the phase; record residual uncertainty and do not supply an automatic corrective pulse.",
+      "reset_rule": "Start a new session in observe mode. No silent resume; reboot does not clear uncertain interrupted charge."
+    },
+    {
+      "id": "S2-C-011",
+      "name": "Assistance-free learning and transfer assessment",
+      "fields": [
+        {
+          "name": "study_condition",
+          "type": "enum",
+          "unit": "none",
+          "meaning": "Neural-plus-external versus external-only, crossed with expert-informed versus learner-only; include an expert external-trajectory-only comparator."
+        },
+        {
+          "name": "practice_exposure",
+          "type": "number",
+          "unit": "s/events",
+          "meaning": "Equal-budget learner practice and calibration; report expert training cost separately."
+        },
+        {
+          "name": "assistance_state",
+          "type": "enum",
+          "unit": "none",
+          "meaning": "ON, OFF_RETENTION or OFF_TRANSFER; independent monitoring confirms that output is off during probes."
+        },
+        {
+          "name": "surrogate_learning_family",
+          "type": "enum",
+          "unit": "none",
+          "meaning": "FAVORABLE,ZERO,HARMFUL_OR_DEPENDENT,NO_AUTHORITY; preregistered artificial assumptions."
+        },
+        {
+          "name": "heldout_context_and_subject_ids",
+          "type": "array",
+          "unit": "none",
+          "meaning": "No overlapping-window subject/session leakage."
+        },
+        {
+          "name": "outcomes",
+          "type": "object",
+          "unit": "s,m,rad or functionalscore",
+          "meaning": "Contact timing, spatial/coordination error, retention, transfer, effort and sensory cost; record threshold censoring."
+        }
+      ],
+      "invariants": [
+        "Controller cannot read internal learner skill or adaptation state.",
+        "Temporary assistance and retained learning are reported separately.",
+        "Positive efficacy or a1.5x/2x learning multiplier is not required.",
+        "Record null and negative comparisons; separate Monte Carlo confidence from structural model uncertainty.",
+        "Biological interpretation depends on future source evidence; additional synthetic trials do not validate the assumptions."
+      ],
+      "completion_scope": "Later model verification may show no added spinal or expert information. That is a valid result,not a failed software deliverable."
+    }
+  ],
+  "unresolved_qualification": [
+    "Causal decoding/feature information age and subject/session generalization.",
+    "Clinical external pressure accuracy,timestamp semantics and actual sensor/link delay.",
+    "Calibrated biological response onset,release,selectivity,plasticity and off-target costs.",
+    "Independent electrical protection and monitor detection timing.",
+    "Artifact recovery perchannel and simultaneous delivery route independence.",
+    "Function-specific physiological fallback and real lost-support risk.",
+    "MCU worst-case schedule,WCET evidence and sensor/radio transport benchmarks."
+  ],
+  "future_verification_links": [
+    "S1-V-102",
+    "S1-V-105",
+    "S1-V-106",
+    "S1-V-107",
+    "S1-V-109",
+    "S1-V-110",
+    "S1-V-112",
+    "S1-V-113",
+    "S1-V-114",
+    "S1-V-202",
+    "S1-V-204",
+    "S1-V-303",
+    "S1-V-304",
+    "S1-V-306",
+    "S1-V-307",
+    "S1-V-501"
+  ]
+}

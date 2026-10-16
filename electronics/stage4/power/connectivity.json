@@ -1,0 +1,5894 @@
+{
+  "schema": "ato.stage4.power.connectivity.v1",
+  "date": "2026-10-14",
+  "scope": "Nativeprotectedbattery/DC,independentSUP,hostandfloatingAFEpower;artificialsignalsandloads;notimplantqualification",
+  "parts": [
+    {
+      "ref": "J1",
+      "value": "AT31004 PROTECTED 2S PACK / 6.4 TO 8.4V",
+      "kind": "J",
+      "footprint": "ato_power:PinHeader_1x02_P2.54mm_Vertical",
+      "nets": {
+        "1": "PACK_POS",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        76.2,
+        78.74
+      ],
+      "sheet": "root",
+      "description": "External Tenergy protected7.4V2.6Ahpack; offboardTLP2000charger; use keyed power wiring in finalPCB",
+      "source_url": ""
+    },
+    {
+      "ref": "F1",
+      "value": "2A FUSE 1206",
+      "kind": "F",
+      "footprint": "ato_power:Fuse_1206_3216Metric",
+      "nets": {
+        "1": "PACK_POS",
+        "2": "PACK_FUSED"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "input",
+      "description": "2A seriesinputfuse; exactfuseI2t/inrushcoordination remainsPCB/fixturequalification",
+      "source_url": ""
+    },
+    {
+      "ref": "D1",
+      "value": "SS34-E3/57T",
+      "kind": "inputD",
+      "footprint": "ato_power:D_SMC",
+      "nets": {
+        "1": "PACK_REVERSE_OK",
+        "2": "PACK_FUSED"
+      },
+      "pins": [
+        [
+          1,
+          "K",
+          "passive",
+          "R"
+        ],
+        [
+          2,
+          "A",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "input",
+      "description": "Series reverse polarity diode; forwarddropandheatinbudget, notidealreverseprotection",
+      "source_url": "https://www.vishay.com/docs/88751/ss32.pdf"
+    },
+    {
+      "ref": "SW1",
+      "value": "MASTER SPST / OFFBOARD",
+      "kind": "SW",
+      "footprint": "ato_power:PinHeader_1x02_P2.54mm_Vertical",
+      "nets": {
+        "1": "PACK_REVERSE_OK",
+        "2": "PACK_BUS"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "input",
+      "description": "External master switch at2pinheader disconnects input; residualrailcapacitors remainenergized",
+      "source_url": ""
+    },
+    {
+      "ref": "C1",
+      "value": "100u 16V LOW ESR",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "PACK_BUS",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "input",
+      "description": "Inputbulk capacitor; effective80uFandESR0.1ohm are modelingassumptions, inrushnotunconditional",
+      "source_url": ""
+    },
+    {
+      "ref": "C2",
+      "value": "100n X7R 25V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "PACK_BUS",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        124.46000000000001
+      ],
+      "sheet": "input",
+      "description": "Localhighfrequencyinputbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "J2",
+      "value": "POWER REQUEST / STATUS",
+      "kind": "J",
+      "footprint": "ato_power:PinHeader_1x12_P2.54mm_Vertical",
+      "nets": {
+        "1": "PWR_REQUEST",
+        "2": "SUP_READY",
+        "3": "BATT_OK",
+        "4": "HOST_ENABLE",
+        "5": "BOOST_ENABLE",
+        "6": "HOST_3V3_PG",
+        "7": "HOST_5_PG",
+        "8": "SUP_3V3_PG",
+        "9": "SUP_5_PG",
+        "10": "SUP_3V3",
+        "11": "PWR_FAULT_N",
+        "12": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ],
+        [
+          6,
+          "6",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "7",
+          "passive",
+          "L"
+        ],
+        [
+          8,
+          "8",
+          "passive",
+          "L"
+        ],
+        [
+          9,
+          "9",
+          "passive",
+          "L"
+        ],
+        [
+          10,
+          "10",
+          "passive",
+          "L"
+        ],
+        [
+          11,
+          "11",
+          "passive",
+          "L"
+        ],
+        [
+          12,
+          "12",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        254.0,
+        78.74
+      ],
+      "sheet": "root",
+      "description": "PWR_REQUESTbenchjumpertoSUP3.3; activeenablehasnoARMfeedbackloop. PGdiagnosticsarenotninerailextsupervision",
+      "source_url": ""
+    },
+    {
+      "ref": "J3",
+      "value": "HOST AND SUPERVISOR RAILS",
+      "kind": "J",
+      "footprint": "ato_power:PinHeader_1x07_P2.54mm_Vertical",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "SUP_5",
+        "3": "HOST_3V3",
+        "4": "HOST_5",
+        "5": "HOST_15",
+        "6": "VH_24",
+        "7": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ],
+        [
+          6,
+          "6",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "7",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        431.8,
+        78.74
+      ],
+      "sheet": "root",
+      "description": "SameorderedrailinterfaceassupervisionJ1; noinputpinpretendsgeneratedpower",
+      "source_url": ""
+    },
+    {
+      "ref": "J4",
+      "value": "FLOATING RECORDING RAILS",
+      "kind": "J",
+      "footprint": "ato_power:PinHeader_1x04_P2.54mm_Vertical",
+      "nets": {
+        "1": "AFE_3V3",
+        "2": "AFE_P5",
+        "3": "AFE_N5",
+        "4": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        76.2,
+        200.66
+      ],
+      "sheet": "root",
+      "description": "Separatefloatingdomain; noDCgroundtie, noUSBchargingconnectionorhumanconnection",
+      "source_url": ""
+    },
+    {
+      "ref": "J6",
+      "value": "EXISTING MONITOR REFERENCES",
+      "kind": "J",
+      "footprint": "ato_power:PinHeader_1x03_P2.54mm_Vertical",
+      "nets": {
+        "1": "MON_VREF",
+        "2": "MON_VMID",
+        "3": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        254.0,
+        200.66
+      ],
+      "sheet": "root",
+      "description": "ActualexistingREF3440/OPA391voltagetaps; windowsaffectinterlock,neverconverterenable",
+      "source_url": ""
+    },
+    {
+      "ref": "J5",
+      "value": "CONVERTER TEST POINTS",
+      "kind": "J",
+      "footprint": "ato_power:PinHeader_1x05_P2.54mm_Vertical",
+      "nets": {
+        "1": "PACK_BUS",
+        "2": "ISO_P12",
+        "3": "ISO_N12",
+        "4": "AFEAGND",
+        "5": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ],
+        [
+          4,
+          "4",
+          "passive",
+          "L"
+        ],
+        [
+          5,
+          "5",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        431.8,
+        200.66
+      ],
+      "sheet": "root",
+      "description": "Testportsdonotbridgegrounds; useappropriateisolatedtestequipmentinanyfuturebenchwork",
+      "source_url": ""
+    },
+    {
+      "ref": "U100",
+      "value": "TPS62160DGKR",
+      "kind": "buck",
+      "footprint": "ato_power:VSSOP-8_3x3mm_P0.65mm",
+      "nets": {
+        "1": "GND",
+        "2": "PACK_BUS",
+        "3": "PACK_BUS",
+        "4": "GND",
+        "5": "SUP_3V3_FB",
+        "6": "SUP_3V3",
+        "7": "SUP_3V3_SW",
+        "8": "SUP_3V3_PG"
+      },
+      "pins": [
+        [
+          1,
+          "PGND",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "VIN",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "EN",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "AGND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "FB",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "VOS",
+          "input",
+          "R"
+        ],
+        [
+          7,
+          "SW",
+          "output",
+          "R"
+        ],
+        [
+          8,
+          "PG",
+          "open_collector",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "sup3",
+      "description": "1A DCS-Control buck; PG is diagnostic and hi-Z while off, not independent rail qualification",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps62160.pdf"
+    },
+    {
+      "ref": "L100",
+      "value": "2.2uH SRP5030T-2R2M",
+      "kind": "L",
+      "footprint": "ato_power:L_Bourns_SRP5030T",
+      "nets": {
+        "1": "SUP_3V3_SW",
+        "2": "SUP_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "sup3",
+      "description": "Buck energy-storage inductor; current and effective capacitance bounds require PCB characterization",
+      "source_url": ""
+    },
+    {
+      "ref": "C1000",
+      "value": "10u X7R 25V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "PACK_BUS",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "sup3",
+      "description": "Input ceramic; effective >=2.2uF under bias assumption",
+      "source_url": ""
+    },
+    {
+      "ref": "C1001",
+      "value": "22u X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "sup3",
+      "description": "Output ceramic; effective >=10uF under bias assumption",
+      "source_url": ""
+    },
+    {
+      "ref": "R1000",
+      "value": "31250R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "SUP_3V3_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        124.46000000000001
+      ],
+      "sheet": "sup3",
+      "description": "0.8V feedback upper; assembly tolerance included in study",
+      "source_url": ""
+    },
+    {
+      "ref": "R1001",
+      "value": "10000R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3_FB",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        124.46000000000001
+      ],
+      "sheet": "sup3",
+      "description": "Feedback bottom resistor",
+      "source_url": ""
+    },
+    {
+      "ref": "R1002",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "SUP_3V3_PG"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        124.46000000000001
+      ],
+      "sheet": "sup3",
+      "description": "PG output pullup to independent supervisor rail",
+      "source_url": ""
+    },
+    {
+      "ref": "R1003",
+      "value": "47k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        124.46000000000001
+      ],
+      "sheet": "sup3",
+      "description": "Finite discharge bleed; not a guaranteed shutdown time",
+      "source_url": ""
+    },
+    {
+      "ref": "U101",
+      "value": "TPS62160DGKR",
+      "kind": "buck",
+      "footprint": "ato_power:VSSOP-8_3x3mm_P0.65mm",
+      "nets": {
+        "1": "GND",
+        "2": "PACK_BUS",
+        "3": "PACK_BUS",
+        "4": "GND",
+        "5": "SUP_5_FB",
+        "6": "SUP_5",
+        "7": "SUP_5_SW",
+        "8": "SUP_5_PG"
+      },
+      "pins": [
+        [
+          1,
+          "PGND",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "VIN",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "EN",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "AGND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "FB",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "VOS",
+          "input",
+          "R"
+        ],
+        [
+          7,
+          "SW",
+          "output",
+          "R"
+        ],
+        [
+          8,
+          "PG",
+          "open_collector",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "sup5",
+      "description": "1A DCS-Control buck; PG is diagnostic and hi-Z while off, not independent rail qualification",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps62160.pdf"
+    },
+    {
+      "ref": "L101",
+      "value": "2.2uH SRP5030T-2R2M",
+      "kind": "L",
+      "footprint": "ato_power:L_Bourns_SRP5030T",
+      "nets": {
+        "1": "SUP_5_SW",
+        "2": "SUP_5"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "sup5",
+      "description": "Buck energy-storage inductor; current and effective capacitance bounds require PCB characterization",
+      "source_url": ""
+    },
+    {
+      "ref": "C1010",
+      "value": "10u X7R 25V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "PACK_BUS",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "sup5",
+      "description": "Input ceramic; effective >=2.2uF under bias assumption",
+      "source_url": ""
+    },
+    {
+      "ref": "C1011",
+      "value": "22u X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_5",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "sup5",
+      "description": "Output ceramic; effective >=10uF under bias assumption",
+      "source_url": ""
+    },
+    {
+      "ref": "R1010",
+      "value": "52500R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_5",
+        "2": "SUP_5_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        124.46000000000001
+      ],
+      "sheet": "sup5",
+      "description": "0.8V feedback upper; assembly tolerance included in study",
+      "source_url": ""
+    },
+    {
+      "ref": "R1011",
+      "value": "10000R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_5_FB",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        124.46000000000001
+      ],
+      "sheet": "sup5",
+      "description": "Feedback bottom resistor",
+      "source_url": ""
+    },
+    {
+      "ref": "R1012",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "SUP_5_PG"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        124.46000000000001
+      ],
+      "sheet": "sup5",
+      "description": "PG output pullup to independent supervisor rail",
+      "source_url": ""
+    },
+    {
+      "ref": "R1013",
+      "value": "47k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_5",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        124.46000000000001
+      ],
+      "sheet": "sup5",
+      "description": "Finite discharge bleed; not a guaranteed shutdown time",
+      "source_url": ""
+    },
+    {
+      "ref": "U102",
+      "value": "TPS62160DGKR",
+      "kind": "buck",
+      "footprint": "ato_power:VSSOP-8_3x3mm_P0.65mm",
+      "nets": {
+        "1": "GND",
+        "2": "PACK_BUS",
+        "3": "HOST_ENABLE",
+        "4": "GND",
+        "5": "HOST_3V3_FB",
+        "6": "HOST_3V3",
+        "7": "HOST_3V3_SW",
+        "8": "HOST_3V3_PG"
+      },
+      "pins": [
+        [
+          1,
+          "PGND",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "VIN",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "EN",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "AGND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "FB",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "VOS",
+          "input",
+          "R"
+        ],
+        [
+          7,
+          "SW",
+          "output",
+          "R"
+        ],
+        [
+          8,
+          "PG",
+          "open_collector",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "host3",
+      "description": "1A DCS-Control buck; PG is diagnostic and hi-Z while off, not independent rail qualification",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps62160.pdf"
+    },
+    {
+      "ref": "L102",
+      "value": "2.2uH SRP5030T-2R2M",
+      "kind": "L",
+      "footprint": "ato_power:L_Bourns_SRP5030T",
+      "nets": {
+        "1": "HOST_3V3_SW",
+        "2": "HOST_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "host3",
+      "description": "Buck energy-storage inductor; current and effective capacitance bounds require PCB characterization",
+      "source_url": ""
+    },
+    {
+      "ref": "C1020",
+      "value": "10u X7R 25V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "PACK_BUS",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "host3",
+      "description": "Input ceramic; effective >=2.2uF under bias assumption",
+      "source_url": ""
+    },
+    {
+      "ref": "C1021",
+      "value": "22u X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "host3",
+      "description": "Output ceramic; effective >=10uF under bias assumption",
+      "source_url": ""
+    },
+    {
+      "ref": "R1020",
+      "value": "31250R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_3V3",
+        "2": "HOST_3V3_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        124.46000000000001
+      ],
+      "sheet": "host3",
+      "description": "0.8V feedback upper; assembly tolerance included in study",
+      "source_url": ""
+    },
+    {
+      "ref": "R1021",
+      "value": "10000R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_3V3_FB",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        124.46000000000001
+      ],
+      "sheet": "host3",
+      "description": "Feedback bottom resistor",
+      "source_url": ""
+    },
+    {
+      "ref": "R1022",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "HOST_3V3_PG"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        124.46000000000001
+      ],
+      "sheet": "host3",
+      "description": "PG output pullup to independent supervisor rail",
+      "source_url": ""
+    },
+    {
+      "ref": "R1023",
+      "value": "47k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        124.46000000000001
+      ],
+      "sheet": "host3",
+      "description": "Finite discharge bleed; not a guaranteed shutdown time",
+      "source_url": ""
+    },
+    {
+      "ref": "U110",
+      "value": "TPS62130ARGTR",
+      "kind": "buck3",
+      "footprint": "ato_power:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm",
+      "nets": {
+        "1": "HOST_5_SW",
+        "2": "HOST_5_SW",
+        "3": "HOST_5_SW",
+        "4": "HOST_5_PG",
+        "5": "HOST_5_FB",
+        "6": "GND",
+        "7": "GND",
+        "8": "GND",
+        "9": "HOST_5_SS",
+        "10": "PACK_BUS",
+        "11": "PACK_BUS",
+        "12": "PACK_BUS",
+        "13": "HOST_ENABLE",
+        "14": "HOST_5",
+        "15": "GND",
+        "16": "GND",
+        "17": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "SW1",
+          "output",
+          "R"
+        ],
+        [
+          2,
+          "SW2",
+          "passive",
+          "R"
+        ],
+        [
+          3,
+          "SW3",
+          "passive",
+          "R"
+        ],
+        [
+          4,
+          "PG",
+          "open_collector",
+          "R"
+        ],
+        [
+          5,
+          "FB",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "AGND",
+          "power_in",
+          "L"
+        ],
+        [
+          7,
+          "FSW",
+          "input",
+          "L"
+        ],
+        [
+          8,
+          "DEF",
+          "input",
+          "L"
+        ],
+        [
+          9,
+          "SS_TR",
+          "passive",
+          "L"
+        ],
+        [
+          10,
+          "AVIN",
+          "power_in",
+          "L"
+        ],
+        [
+          11,
+          "PVIN1",
+          "power_in",
+          "L"
+        ],
+        [
+          12,
+          "PVIN2",
+          "power_in",
+          "L"
+        ],
+        [
+          13,
+          "EN",
+          "input",
+          "L"
+        ],
+        [
+          14,
+          "VOS",
+          "input",
+          "R"
+        ],
+        [
+          15,
+          "PGND1",
+          "power_in",
+          "L"
+        ],
+        [
+          16,
+          "PGND2",
+          "power_in",
+          "L"
+        ],
+        [
+          17,
+          "EP_GND",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "host5",
+      "description": "3A DCS-Controlbuck; SS3.3nFnominal; physicalphase/enablesauditedagainstTI",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps62130a.pdf"
+    },
+    {
+      "ref": "L110",
+      "value": "2.2uH SRP5030T-2R2M",
+      "kind": "L",
+      "footprint": "ato_power:L_Bourns_SRP5030T",
+      "nets": {
+        "1": "HOST_5_SW",
+        "2": "HOST_5"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "host5",
+      "description": "Buckinductor saturation/DCRandtransientlimitsinprimaryreview",
+      "source_url": ""
+    },
+    {
+      "ref": "C1100",
+      "value": "10u X7R 25V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "PACK_BUS",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "host5",
+      "description": "HOST5input/outputorsoftstartcapacitor",
+      "source_url": ""
+    },
+    {
+      "ref": "C1101",
+      "value": "22u X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_5",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "host5",
+      "description": "HOST5input/outputorsoftstartcapacitor",
+      "source_url": ""
+    },
+    {
+      "ref": "C1102",
+      "value": "100n X7R 25V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "PACK_BUS",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        124.46000000000001
+      ],
+      "sheet": "host5",
+      "description": "HOST5input/outputorsoftstartcapacitor",
+      "source_url": ""
+    },
+    {
+      "ref": "C1103",
+      "value": "3.3n C0G 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_5_SS",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        124.46000000000001
+      ],
+      "sheet": "host5",
+      "description": "HOST5input/outputorsoftstartcapacitor",
+      "source_url": ""
+    },
+    {
+      "ref": "R1100",
+      "value": "52.5k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_5",
+        "2": "HOST_5_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        124.46000000000001
+      ],
+      "sheet": "host5",
+      "description": "0.8Vupperfeedbackresistor",
+      "source_url": ""
+    },
+    {
+      "ref": "R1101",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_5_FB",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        124.46000000000001
+      ],
+      "sheet": "host5",
+      "description": "Feedbackbottom",
+      "source_url": ""
+    },
+    {
+      "ref": "R1102",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "HOST_5_PG"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        180.34
+      ],
+      "sheet": "host5",
+      "description": "PGpullup; mustANDwithHOST_ENABLEbecauseoff-statePGishiZ",
+      "source_url": ""
+    },
+    {
+      "ref": "R1103",
+      "value": "47k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_5",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        180.34
+      ],
+      "sheet": "host5",
+      "description": "Finiteoutputbleed, moduleinputloadchangesactualdecay",
+      "source_url": ""
+    },
+    {
+      "ref": "U200",
+      "value": "TPS3700DDCR",
+      "kind": "rail",
+      "footprint": "ato_power:SOT-23-6",
+      "nets": {
+        "1": "BATT_WINDOW_OK",
+        "2": "GND",
+        "3": "BATT_UV",
+        "4": "BATT_OV",
+        "5": "SUP_3V3",
+        "6": "BATT_WINDOW_OK"
+      },
+      "pins": [
+        [
+          1,
+          "OUTA_UV_N",
+          "open_collector",
+          "R"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "INA_UV",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "INB_OV",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VDD",
+          "power_in",
+          "L"
+        ],
+        [
+          6,
+          "OUTB_OV_N",
+          "open_collector",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "enable",
+      "description": "Native400mVUV/OVwindow; startuphysteresis/bias/referencecornersarefinite",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf"
+    },
+    {
+      "ref": "R2000",
+      "value": "155000R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "PACK_POS",
+        "2": "BATT_UV"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "enable",
+      "description": "Windowupperdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2001",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "BATT_UV",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "enable",
+      "description": "Windowbottomdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2002",
+      "value": "205000R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "PACK_POS",
+        "2": "BATT_OV"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "enable",
+      "description": "Windowupperdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2003",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "BATT_OV",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        124.46000000000001
+      ],
+      "sheet": "enable",
+      "description": "Windowbottomdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2004",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "BATT_WINDOW_OK"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        124.46000000000001
+      ],
+      "sheet": "enable",
+      "description": "Wired-ANDUV/OVoutputpullup",
+      "source_url": ""
+    },
+    {
+      "ref": "C200",
+      "value": "100n X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        124.46000000000001
+      ],
+      "sheet": "enable",
+      "description": "Railmonitorbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "U201",
+      "value": "TPS3700DDCR",
+      "kind": "rail",
+      "footprint": "ato_power:SOT-23-6",
+      "nets": {
+        "1": "S3_WINDOW_OK",
+        "2": "GND",
+        "3": "S3_UV",
+        "4": "S3_OV",
+        "5": "SUP_3V3",
+        "6": "S3_WINDOW_OK"
+      },
+      "pins": [
+        [
+          1,
+          "OUTA_UV_N",
+          "open_collector",
+          "R"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "INA_UV",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "INB_OV",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VDD",
+          "power_in",
+          "L"
+        ],
+        [
+          6,
+          "OUTB_OV_N",
+          "open_collector",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        124.46000000000001
+      ],
+      "sheet": "enable",
+      "description": "Native400mVUV/OVwindow; startuphysteresis/bias/referencecornersarefinite",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf"
+    },
+    {
+      "ref": "R2010",
+      "value": "67500R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "S3_UV"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        180.34
+      ],
+      "sheet": "enable",
+      "description": "Windowupperdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2011",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "S3_UV",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        180.34
+      ],
+      "sheet": "enable",
+      "description": "Windowbottomdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2012",
+      "value": "77500R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "S3_OV"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        180.34
+      ],
+      "sheet": "enable",
+      "description": "Windowupperdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2013",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "S3_OV",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        180.34
+      ],
+      "sheet": "enable",
+      "description": "Windowbottomdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2014",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "S3_WINDOW_OK"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        236.22000000000003
+      ],
+      "sheet": "enable",
+      "description": "Wired-ANDUV/OVoutputpullup",
+      "source_url": ""
+    },
+    {
+      "ref": "C201",
+      "value": "100n X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        236.22000000000003
+      ],
+      "sheet": "enable",
+      "description": "Railmonitorbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "U202",
+      "value": "TPS3700DDCR",
+      "kind": "rail",
+      "footprint": "ato_power:SOT-23-6",
+      "nets": {
+        "1": "S5_WINDOW_OK",
+        "2": "GND",
+        "3": "S5_UV",
+        "4": "S5_OV",
+        "5": "SUP_3V3",
+        "6": "S5_WINDOW_OK"
+      },
+      "pins": [
+        [
+          1,
+          "OUTA_UV_N",
+          "open_collector",
+          "R"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "INA_UV",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "INB_OV",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VDD",
+          "power_in",
+          "L"
+        ],
+        [
+          6,
+          "OUTB_OV_N",
+          "open_collector",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        236.22000000000003
+      ],
+      "sheet": "enable",
+      "description": "Native400mVUV/OVwindow; startuphysteresis/bias/referencecornersarefinite",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf"
+    },
+    {
+      "ref": "R2020",
+      "value": "108750R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_5",
+        "2": "S5_UV"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        236.22000000000003
+      ],
+      "sheet": "enable",
+      "description": "Windowupperdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2021",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "S5_UV",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        292.1
+      ],
+      "sheet": "enable",
+      "description": "Windowbottomdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2022",
+      "value": "121250R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_5",
+        "2": "S5_OV"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        292.1
+      ],
+      "sheet": "enable",
+      "description": "Windowupperdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2023",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "S5_OV",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        292.1
+      ],
+      "sheet": "enable",
+      "description": "Windowbottomdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2024",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "S5_WINDOW_OK"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        292.1
+      ],
+      "sheet": "enable",
+      "description": "Wired-ANDUV/OVoutputpullup",
+      "source_url": ""
+    },
+    {
+      "ref": "C202",
+      "value": "100n X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "enable_2",
+      "description": "Railmonitorbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "U203",
+      "value": "TPS3700DDCR",
+      "kind": "rail",
+      "footprint": "ato_power:SOT-23-6",
+      "nets": {
+        "1": "MREF_WINDOW_OK",
+        "2": "GND",
+        "3": "MREF_UV",
+        "4": "MREF_OV",
+        "5": "SUP_3V3",
+        "6": "MREF_WINDOW_OK"
+      },
+      "pins": [
+        [
+          1,
+          "OUTA_UV_N",
+          "open_collector",
+          "R"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "INA_UV",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "INB_OV",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VDD",
+          "power_in",
+          "L"
+        ],
+        [
+          6,
+          "OUTB_OV_N",
+          "open_collector",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "enable_2",
+      "description": "Native400mVUV/OVwindow; startuphysteresis/bias/referencecornersarefinite",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf"
+    },
+    {
+      "ref": "R2030",
+      "value": "89500R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "MON_VREF",
+        "2": "MREF_UV"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "enable_2",
+      "description": "Windowupperdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2031",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "MREF_UV",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "enable_2",
+      "description": "Windowbottomdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2032",
+      "value": "95500R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "MON_VREF",
+        "2": "MREF_OV"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        124.46000000000001
+      ],
+      "sheet": "enable_2",
+      "description": "Windowupperdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2033",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "MREF_OV",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        124.46000000000001
+      ],
+      "sheet": "enable_2",
+      "description": "Windowbottomdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2034",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "MREF_WINDOW_OK"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        124.46000000000001
+      ],
+      "sheet": "enable_2",
+      "description": "Wired-ANDUV/OVoutputpullup",
+      "source_url": ""
+    },
+    {
+      "ref": "C203",
+      "value": "100n X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        124.46000000000001
+      ],
+      "sheet": "enable_2",
+      "description": "Railmonitorbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "U204",
+      "value": "TPS3700DDCR",
+      "kind": "rail",
+      "footprint": "ato_power:SOT-23-6",
+      "nets": {
+        "1": "MID_WINDOW_OK",
+        "2": "GND",
+        "3": "MID_UV",
+        "4": "MID_OV",
+        "5": "SUP_3V3",
+        "6": "MID_WINDOW_OK"
+      },
+      "pins": [
+        [
+          1,
+          "OUTA_UV_N",
+          "open_collector",
+          "R"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "INA_UV",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "INB_OV",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "VDD",
+          "power_in",
+          "L"
+        ],
+        [
+          6,
+          "OUTB_OV_N",
+          "open_collector",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        180.34
+      ],
+      "sheet": "enable_2",
+      "description": "Native400mVUV/OVwindow; startuphysteresis/bias/referencecornersarefinite",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf"
+    },
+    {
+      "ref": "R2040",
+      "value": "39500R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "MON_VMID",
+        "2": "MID_UV"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        180.34
+      ],
+      "sheet": "enable_2",
+      "description": "Windowupperdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2041",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "MID_UV",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        180.34
+      ],
+      "sheet": "enable_2",
+      "description": "Windowbottomdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2042",
+      "value": "43000R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "MON_VMID",
+        "2": "MID_OV"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        180.34
+      ],
+      "sheet": "enable_2",
+      "description": "Windowupperdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2043",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "MID_OV",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        236.22000000000003
+      ],
+      "sheet": "enable_2",
+      "description": "Windowbottomdivider",
+      "source_url": ""
+    },
+    {
+      "ref": "R2044",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "MID_WINDOW_OK"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        236.22000000000003
+      ],
+      "sheet": "enable_2",
+      "description": "Wired-ANDUV/OVoutputpullup",
+      "source_url": ""
+    },
+    {
+      "ref": "C204",
+      "value": "100n X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        236.22000000000003
+      ],
+      "sheet": "enable_2",
+      "description": "Railmonitorbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "R230",
+      "value": "100k 1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "PWR_START_RC"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        236.22000000000003
+      ],
+      "sheet": "enable_2",
+      "description": "Hardwarestartuphold",
+      "source_url": ""
+    },
+    {
+      "ref": "C230",
+      "value": "47n X7R 10%",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "PWR_START_RC",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        292.1
+      ],
+      "sheet": "enable_2",
+      "description": "Startupqualificationcapacitor",
+      "source_url": ""
+    },
+    {
+      "ref": "D230",
+      "value": "BAT54WS-7-F",
+      "kind": "smallD",
+      "footprint": "ato_power:D_SOD-323",
+      "nets": {
+        "1": "PWR_START_DIS",
+        "2": "PWR_START_RC"
+      },
+      "pins": [
+        [
+          1,
+          "K",
+          "passive",
+          "R"
+        ],
+        [
+          2,
+          "A",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        200.66,
+        292.1
+      ],
+      "sheet": "enable_2",
+      "description": "Faststartupnode discharge afterrailfall; diodeleakageretainedaslimitation",
+      "source_url": "https://www.diodes.com/assets/Datasheets/BAT54WS.pdf"
+    },
+    {
+      "ref": "R231",
+      "value": "100R",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "PWR_START_DIS",
+        "2": "SUP_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        292.1
+      ],
+      "sheet": "enable_2",
+      "description": "Dischargecurrentlimit",
+      "source_url": ""
+    },
+    {
+      "ref": "U230",
+      "value": "SN74LVC1G17DBVR",
+      "kind": "schmitt",
+      "footprint": "ato_power:SOT-23-5",
+      "nets": {
+        "1": null,
+        "2": "PWR_START_RC",
+        "3": "GND",
+        "4": "PWR_START_OK",
+        "5": "SUP_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "NC",
+          "no_connect",
+          "L"
+        ],
+        [
+          2,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ]
+      ],
+      "xy": [
+        474.98,
+        292.1
+      ],
+      "sheet": "enable_2",
+      "description": "Hardwarepoweronhold; noMCUcreditedforqualification",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf"
+    },
+    {
+      "ref": "U231",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_power:SOT-23-6",
+      "nets": {
+        "1": "S3_WINDOW_OK",
+        "2": "GND",
+        "3": "S5_WINDOW_OK",
+        "4": "SUP_READY",
+        "5": "SUP_3V3",
+        "6": "PWR_START_OK"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "enable_3",
+      "description": "NativeSUPrailwindowsANDstartuphold",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf"
+    },
+    {
+      "ref": "U232",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_power:SOT-23-5",
+      "nets": {
+        "1": "BATT_WINDOW_OK",
+        "2": "PWR_START_OK",
+        "3": "GND",
+        "4": "BATT_OK",
+        "5": "SUP_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "enable_3",
+      "description": "Batteryhealthgatedbyhardwarestartup",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"
+    },
+    {
+      "ref": "U233",
+      "value": "SN74LVC1G11DBVR",
+      "kind": "and3",
+      "footprint": "ato_power:SOT-23-6",
+      "nets": {
+        "1": "PWR_REQUEST",
+        "2": "GND",
+        "3": "BATT_OK",
+        "4": "HOST_ENABLE",
+        "5": "SUP_3V3",
+        "6": "SUP_READY"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ],
+        [
+          6,
+          "C",
+          "input",
+          "L"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "enable_3",
+      "description": "ExplicitrequestANDbatteryANDsupervisorreadiness; nocircularsystemARMcondition",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf"
+    },
+    {
+      "ref": "U234",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_power:SOT-23-5",
+      "nets": {
+        "1": "HOST_ENABLE",
+        "2": "HOST_5_PG",
+        "3": "GND",
+        "4": "BOOST_ENABLE",
+        "5": "SUP_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "enable_3",
+      "description": "BothHOST_ENABLEandactualHOST5PGrequired; PGhi-Zoffcannotenableboost",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"
+    },
+    {
+      "ref": "C240",
+      "value": "100n X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        124.46000000000001
+      ],
+      "sheet": "enable_3",
+      "description": "Logiclocalbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C241",
+      "value": "100n X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        124.46000000000001
+      ],
+      "sheet": "enable_3",
+      "description": "Logiclocalbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C242",
+      "value": "100n X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        124.46000000000001
+      ],
+      "sheet": "enable_3",
+      "description": "Logiclocalbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C243",
+      "value": "100n X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        124.46000000000001
+      ],
+      "sheet": "enable_3",
+      "description": "Logiclocalbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C244",
+      "value": "100n X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        180.34
+      ],
+      "sheet": "enable_3",
+      "description": "Logiclocalbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "R240",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "PWR_REQUEST",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        180.34
+      ],
+      "sheet": "enable_3",
+      "description": "Passiveabsent-controldefaultlow; power-offbackfeedstillrequiresPCBtest",
+      "source_url": ""
+    },
+    {
+      "ref": "R241",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_ENABLE",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        180.34
+      ],
+      "sheet": "enable_3",
+      "description": "Passiveabsent-controldefaultlow; power-offbackfeedstillrequiresPCBtest",
+      "source_url": ""
+    },
+    {
+      "ref": "R242",
+      "value": "10k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "BOOST_ENABLE",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        180.34
+      ],
+      "sheet": "enable_3",
+      "description": "Passiveabsent-controldefaultlow; power-offbackfeedstillrequiresPCBtest",
+      "source_url": ""
+    },
+    {
+      "ref": "U235",
+      "value": "SN74LVC1G07DBVR",
+      "kind": "odbuf",
+      "footprint": "ato_power:SOT-23-5",
+      "nets": {
+        "1": null,
+        "2": "POWER_RUN_OK",
+        "3": "GND",
+        "4": "PWR_FAULT_N",
+        "5": "SUP_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "NC",
+          "no_connect",
+          "L"
+        ],
+        [
+          2,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y_OPEN_DRAIN",
+          "open_collector",
+          "R"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ]
+      ],
+      "xy": [
+        63.5,
+        236.22000000000003
+      ],
+      "sheet": "enable_3",
+      "description": "Open-drain LOW on power-request/qualificationloss immediatelyconsumesexistingglobalARM; releaseisnotrearm",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf"
+    },
+    {
+      "ref": "C245",
+      "value": "100n X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        236.22000000000003
+      ],
+      "sheet": "enable_3",
+      "description": "Powerinterlocklocalbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "U236",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_power:SOT-23-5",
+      "nets": {
+        "1": "MREF_WINDOW_OK",
+        "2": "MID_WINDOW_OK",
+        "3": "GND",
+        "4": "REF_OK",
+        "5": "SUP_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ]
+      ],
+      "xy": [
+        337.82,
+        236.22000000000003
+      ],
+      "sheet": "enable_3",
+      "description": "Existing4.096Vreferenceand2.048Vmidpointbothqualified; noweakindependentaccuracyclaim",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"
+    },
+    {
+      "ref": "U237",
+      "value": "SN74LVC1G08DBVR",
+      "kind": "and2",
+      "footprint": "ato_power:SOT-23-5",
+      "nets": {
+        "1": "BOOST_ENABLE",
+        "2": "REF_OK",
+        "3": "GND",
+        "4": "POWER_RUN_OK",
+        "5": "SUP_3V3"
+      },
+      "pins": [
+        [
+          1,
+          "A",
+          "input",
+          "L"
+        ],
+        [
+          2,
+          "B",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          4,
+          "Y",
+          "output",
+          "R"
+        ],
+        [
+          5,
+          "VCC",
+          "power_in",
+          "L"
+        ]
+      ],
+      "xy": [
+        474.98,
+        236.22000000000003
+      ],
+      "sheet": "enable_3",
+      "description": "Referencequalificationonlyinhibitsguardinterlock; neverblocksconverterstartup",
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"
+    },
+    {
+      "ref": "C246",
+      "value": "100n X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        292.1
+      ],
+      "sheet": "enable_3",
+      "description": "Referencestatuslogicbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "C247",
+      "value": "100n X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "SUP_3V3",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        292.1
+      ],
+      "sheet": "enable_3",
+      "description": "Power-runlogicbypass",
+      "source_url": ""
+    },
+    {
+      "ref": "U300",
+      "value": "LT8330ES6#TRPBF",
+      "kind": "boost",
+      "footprint": "ato_power:TSOT-23-6",
+      "nets": {
+        "1": "HOST_15_SW",
+        "2": "GND",
+        "3": "HOST_15_FB",
+        "4": "BOOST_ENABLE",
+        "5": "HOST_15_INTVCC",
+        "6": "PACK_BUS"
+      },
+      "pins": [
+        [
+          1,
+          "SW",
+          "open_collector",
+          "R"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "FBX",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "EN_UVLO",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "INTVCC",
+          "power_out",
+          "R"
+        ],
+        [
+          6,
+          "VIN",
+          "power_in",
+          "L"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "boost15",
+      "description": "40Vinternal switch2MHzboost. ENlowstopsconversionbutdoesnotdisconnectdiodepathorresidualcharge",
+      "source_url": "https://www.analog.com/media/en/technical-documentation/data-sheets/8330f.pdf"
+    },
+    {
+      "ref": "L300",
+      "value": "4.7uH SRP5030T-4R7M",
+      "kind": "L",
+      "footprint": "ato_power:L_Bourns_SRP5030T",
+      "nets": {
+        "1": "PACK_BUS",
+        "2": "HOST_15_SW"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "boost15",
+      "description": "Boostinductortopology; finiteCCM/DCMcurrentbudgetdoesnotreplacephysicalloopstability",
+      "source_url": ""
+    },
+    {
+      "ref": "D300",
+      "value": "PMEG6010CEJ",
+      "kind": "boostD",
+      "footprint": "ato_power:D_SOD-323F",
+      "nets": {
+        "1": "HOST_15",
+        "2": "HOST_15_SW"
+      },
+      "pins": [
+        [
+          1,
+          "K",
+          "passive",
+          "R"
+        ],
+        [
+          2,
+          "A",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "boost15",
+      "description": "60V1ArectifyingSchottky; surgeandlayoutqualificationremain",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/PMEG6010CEJ.pdf"
+    },
+    {
+      "ref": "C3000",
+      "value": "10u X7R 25V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "PACK_BUS",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "boost15",
+      "description": "Boostinputceramic",
+      "source_url": ""
+    },
+    {
+      "ref": "C3001",
+      "value": "22u X7R 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_15",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        124.46000000000001
+      ],
+      "sheet": "boost15",
+      "description": "Reservoir1; combinedeffective30uFminimumassumed",
+      "source_url": ""
+    },
+    {
+      "ref": "C3002",
+      "value": "22u X7R 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_15",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        124.46000000000001
+      ],
+      "sheet": "boost15",
+      "description": "Reservoir2; combinedESR0.1ohmassumed",
+      "source_url": ""
+    },
+    {
+      "ref": "C3003",
+      "value": "1u X7R 10V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_15_INTVCC",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        124.46000000000001
+      ],
+      "sheet": "boost15",
+      "description": "Internal5Vregulatorbypassperdatasheet",
+      "source_url": ""
+    },
+    {
+      "ref": "R3000",
+      "value": "418750R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_15",
+        "2": "HOST_15_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        124.46000000000001
+      ],
+      "sheet": "boost15",
+      "description": "1.6Vboostreferenceupperdivider; provisionalexactresistance",
+      "source_url": ""
+    },
+    {
+      "ref": "C3004",
+      "value": "4.7p C0G 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_15",
+        "2": "HOST_15_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        180.34
+      ],
+      "sheet": "boost15",
+      "description": "FeedforwardupperresistorcapperLT8330boostexample; layoutdependent",
+      "source_url": ""
+    },
+    {
+      "ref": "R3001",
+      "value": "50k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_15_FB",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        180.34
+      ],
+      "sheet": "boost15",
+      "description": "Lowerfeedback; 25k..1Mohmdatasheetrange",
+      "source_url": ""
+    },
+    {
+      "ref": "R3002",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "HOST_15",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        180.34
+      ],
+      "sheet": "boost15",
+      "description": "Outputbleeddoesnotguaranteezerooutputwithbatteryconnected",
+      "source_url": ""
+    },
+    {
+      "ref": "U301",
+      "value": "LT8330ES6#TRPBF",
+      "kind": "boost",
+      "footprint": "ato_power:TSOT-23-6",
+      "nets": {
+        "1": "VH_24_SW",
+        "2": "GND",
+        "3": "VH_24_FB",
+        "4": "BOOST_ENABLE",
+        "5": "VH_24_INTVCC",
+        "6": "PACK_BUS"
+      },
+      "pins": [
+        [
+          1,
+          "SW",
+          "open_collector",
+          "R"
+        ],
+        [
+          2,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "FBX",
+          "input",
+          "L"
+        ],
+        [
+          4,
+          "EN_UVLO",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "INTVCC",
+          "power_out",
+          "R"
+        ],
+        [
+          6,
+          "VIN",
+          "power_in",
+          "L"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "boost24",
+      "description": "40Vinternal switch2MHzboost. ENlowstopsconversionbutdoesnotdisconnectdiodepathorresidualcharge",
+      "source_url": "https://www.analog.com/media/en/technical-documentation/data-sheets/8330f.pdf"
+    },
+    {
+      "ref": "L301",
+      "value": "4.7uH SRP5030T-4R7M",
+      "kind": "L",
+      "footprint": "ato_power:L_Bourns_SRP5030T",
+      "nets": {
+        "1": "PACK_BUS",
+        "2": "VH_24_SW"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "boost24",
+      "description": "Boostinductortopology; finiteCCM/DCMcurrentbudgetdoesnotreplacephysicalloopstability",
+      "source_url": ""
+    },
+    {
+      "ref": "D301",
+      "value": "PMEG6010CEJ",
+      "kind": "boostD",
+      "footprint": "ato_power:D_SOD-323F",
+      "nets": {
+        "1": "VH_24",
+        "2": "VH_24_SW"
+      },
+      "pins": [
+        [
+          1,
+          "K",
+          "passive",
+          "R"
+        ],
+        [
+          2,
+          "A",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "boost24",
+      "description": "60V1ArectifyingSchottky; surgeandlayoutqualificationremain",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/PMEG6010CEJ.pdf"
+    },
+    {
+      "ref": "C3010",
+      "value": "10u X7R 25V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "PACK_BUS",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "boost24",
+      "description": "Boostinputceramic",
+      "source_url": ""
+    },
+    {
+      "ref": "C3011",
+      "value": "22u X7R 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "VH_24",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        124.46000000000001
+      ],
+      "sheet": "boost24",
+      "description": "Reservoir1; combinedeffective30uFminimumassumed",
+      "source_url": ""
+    },
+    {
+      "ref": "C3012",
+      "value": "22u X7R 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "VH_24",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        124.46000000000001
+      ],
+      "sheet": "boost24",
+      "description": "Reservoir2; combinedESR0.1ohmassumed",
+      "source_url": ""
+    },
+    {
+      "ref": "C3013",
+      "value": "1u X7R 10V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "VH_24_INTVCC",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        124.46000000000001
+      ],
+      "sheet": "boost24",
+      "description": "Internal5Vregulatorbypassperdatasheet",
+      "source_url": ""
+    },
+    {
+      "ref": "R3010",
+      "value": "700000R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "VH_24",
+        "2": "VH_24_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        124.46000000000001
+      ],
+      "sheet": "boost24",
+      "description": "1.6Vboostreferenceupperdivider; provisionalexactresistance",
+      "source_url": ""
+    },
+    {
+      "ref": "C3014",
+      "value": "4.7p C0G 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "VH_24",
+        "2": "VH_24_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        180.34
+      ],
+      "sheet": "boost24",
+      "description": "FeedforwardupperresistorcapperLT8330boostexample; layoutdependent",
+      "source_url": ""
+    },
+    {
+      "ref": "R3011",
+      "value": "50k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "VH_24_FB",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        180.34
+      ],
+      "sheet": "boost24",
+      "description": "Lowerfeedback; 25k..1Mohmdatasheetrange",
+      "source_url": ""
+    },
+    {
+      "ref": "R3012",
+      "value": "100k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "VH_24",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        180.34
+      ],
+      "sheet": "boost24",
+      "description": "Outputbleeddoesnotguaranteezerooutputwithbatteryconnected",
+      "source_url": ""
+    },
+    {
+      "ref": "U400",
+      "value": "TMR3-0522",
+      "kind": "iso",
+      "footprint": "ato_power:TRACO_TMR3_SIP8_21.8x9.1_P2.54",
+      "nets": {
+        "1": "GND",
+        "2": "HOST_5",
+        "3": null,
+        "5": null,
+        "6": "ISO_P12",
+        "7": "AFEAGND",
+        "8": "ISO_N12"
+      },
+      "pins": [
+        [
+          1,
+          "VIN_MINUS",
+          "power_in",
+          "L"
+        ],
+        [
+          2,
+          "VIN_PLUS",
+          "power_in",
+          "L"
+        ],
+        [
+          3,
+          "REMOTE_CURRENT",
+          "input",
+          "L"
+        ],
+        [
+          5,
+          "NC",
+          "no_connect",
+          "R"
+        ],
+        [
+          6,
+          "VOUT_PLUS",
+          "power_out",
+          "R"
+        ],
+        [
+          7,
+          "AFE_RETURN",
+          "power_out",
+          "R"
+        ],
+        [
+          8,
+          "VOUT_MINUS",
+          "power_out",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "island",
+      "description": "Regulated5Vto+/-12V125mAeachfunctional-isolationmodule. RemoteNCmeansON; removeHOST5toendinputpower",
+      "source_url": "https://www.tracopower.com/products/tmr3.pdf"
+    },
+    {
+      "ref": "C400",
+      "value": "22u X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "HOST_5",
+        "2": "GND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "island",
+      "description": "Moduleinputbypassandlocalenergy",
+      "source_url": ""
+    },
+    {
+      "ref": "C401",
+      "value": "10u X7R 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "ISO_P12",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "island",
+      "description": "Positiveisolatedoutputceramic",
+      "source_url": ""
+    },
+    {
+      "ref": "C402",
+      "value": "10u X7R 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "ISO_N12",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "island",
+      "description": "Negativeisolatedoutputceramic; noelectrolyticpolarityerror",
+      "source_url": ""
+    },
+    {
+      "ref": "U410",
+      "value": "TPS7A4901DGNR",
+      "kind": "pos",
+      "footprint": "ato_power:Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm",
+      "nets": {
+        "1": "AFE_3V3",
+        "2": "AFE_3V3_FB",
+        "3": null,
+        "4": "AFEAGND",
+        "5": "ISO_P12",
+        "6": "AFE_3V3_NR",
+        "7": null,
+        "8": "ISO_P12",
+        "9": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "OUT",
+          "power_out",
+          "R"
+        ],
+        [
+          2,
+          "FB",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "NC",
+          "no_connect",
+          "L"
+        ],
+        [
+          4,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "EN",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "NR_SS",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "DNC",
+          "no_connect",
+          "L"
+        ],
+        [
+          8,
+          "IN",
+          "power_in",
+          "L"
+        ],
+        [
+          9,
+          "EP_GND",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "afe3",
+      "description": "AdjustablelownoiseLDO; ENtiedowninput(negativepolarityforTPS7A30); full+/-2.5%cornercansafelyinhibituntilquiescenttrim",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps7a49.pdf"
+    },
+    {
+      "ref": "C4100",
+      "value": "10u X7R 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "ISO_P12",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "afe3",
+      "description": "LDOlocalinputcap",
+      "source_url": ""
+    },
+    {
+      "ref": "C4101",
+      "value": "10u X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "AFE_3V3",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "afe3",
+      "description": "LDOpulseloadoutputcap; effective>=2.2uFminimumassumed",
+      "source_url": ""
+    },
+    {
+      "ref": "C4102",
+      "value": "10n C0G 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "AFE_3V3_NR",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "afe3",
+      "description": "Noise-reduction/softstart",
+      "source_url": ""
+    },
+    {
+      "ref": "C4103",
+      "value": "10n C0G 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "AFE_3V3",
+        "2": "AFE_3V3_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        124.46000000000001
+      ],
+      "sheet": "afe3",
+      "description": "Feedforwardcapperlow-noiseapplication",
+      "source_url": ""
+    },
+    {
+      "ref": "R4100",
+      "value": "19113.924R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "AFE_3V3",
+        "2": "AFE_3V3_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        124.46000000000001
+      ],
+      "sheet": "afe3",
+      "description": "Replaceabletrimselectionupperresistor; nominalisnotfull-toleranceguarantee",
+      "source_url": ""
+    },
+    {
+      "ref": "R4101",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "AFE_3V3_FB",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        124.46000000000001
+      ],
+      "sheet": "afe3",
+      "description": "Feedbackbottom>5uAminimumfornegativeLDO",
+      "source_url": ""
+    },
+    {
+      "ref": "R4102",
+      "value": "47k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "AFE_3V3",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        124.46000000000001
+      ],
+      "sheet": "afe3",
+      "description": "Finiteislandrailbleed",
+      "source_url": ""
+    },
+    {
+      "ref": "J410",
+      "value": "QUIESCENT TRIM / TEST ONLY",
+      "kind": "J",
+      "footprint": "ato_power:PinHeader_1x03_P2.54mm_Vertical",
+      "nets": {
+        "1": "AFE_3V3",
+        "2": "AFE_3V3_FB",
+        "3": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        63.5,
+        180.34
+      ],
+      "sheet": "afe3",
+      "description": "MeasureandselectRtopwithbodydisconnectedtoachievetarget+/-0.5%qualificationcondition; nocalibrationwhilearmed",
+      "source_url": ""
+    },
+    {
+      "ref": "U411",
+      "value": "TPS7A4901DGNR",
+      "kind": "pos",
+      "footprint": "ato_power:Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm",
+      "nets": {
+        "1": "AFE_P5",
+        "2": "AFE_P5_FB",
+        "3": null,
+        "4": "AFEAGND",
+        "5": "ISO_P12",
+        "6": "AFE_P5_NR",
+        "7": null,
+        "8": "ISO_P12",
+        "9": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "OUT",
+          "power_out",
+          "R"
+        ],
+        [
+          2,
+          "FB",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "NC",
+          "no_connect",
+          "L"
+        ],
+        [
+          4,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "EN",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "NR_SS",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "DNC",
+          "no_connect",
+          "L"
+        ],
+        [
+          8,
+          "IN",
+          "power_in",
+          "L"
+        ],
+        [
+          9,
+          "EP_GND",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "afep",
+      "description": "AdjustablelownoiseLDO; ENtiedowninput(negativepolarityforTPS7A30); full+/-2.5%cornercansafelyinhibituntilquiescenttrim",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps7a49.pdf"
+    },
+    {
+      "ref": "C4110",
+      "value": "10u X7R 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "ISO_P12",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "afep",
+      "description": "LDOlocalinputcap",
+      "source_url": ""
+    },
+    {
+      "ref": "C4111",
+      "value": "10u X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "AFE_P5",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "afep",
+      "description": "LDOpulseloadoutputcap; effective>=2.2uFminimumassumed",
+      "source_url": ""
+    },
+    {
+      "ref": "C4112",
+      "value": "10n C0G 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "AFE_P5_NR",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "afep",
+      "description": "Noise-reduction/softstart",
+      "source_url": ""
+    },
+    {
+      "ref": "C4113",
+      "value": "10n C0G 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "AFE_P5",
+        "2": "AFE_P5_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        124.46000000000001
+      ],
+      "sheet": "afep",
+      "description": "Feedforwardcapperlow-noiseapplication",
+      "source_url": ""
+    },
+    {
+      "ref": "R4110",
+      "value": "34725.738R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "AFE_P5",
+        "2": "AFE_P5_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        124.46000000000001
+      ],
+      "sheet": "afep",
+      "description": "Replaceabletrimselectionupperresistor; nominalisnotfull-toleranceguarantee",
+      "source_url": ""
+    },
+    {
+      "ref": "R4111",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "AFE_P5_FB",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        124.46000000000001
+      ],
+      "sheet": "afep",
+      "description": "Feedbackbottom>5uAminimumfornegativeLDO",
+      "source_url": ""
+    },
+    {
+      "ref": "R4112",
+      "value": "47k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "AFE_P5",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        124.46000000000001
+      ],
+      "sheet": "afep",
+      "description": "Finiteislandrailbleed",
+      "source_url": ""
+    },
+    {
+      "ref": "J411",
+      "value": "QUIESCENT TRIM / TEST ONLY",
+      "kind": "J",
+      "footprint": "ato_power:PinHeader_1x03_P2.54mm_Vertical",
+      "nets": {
+        "1": "AFE_P5",
+        "2": "AFE_P5_FB",
+        "3": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        63.5,
+        180.34
+      ],
+      "sheet": "afep",
+      "description": "MeasureandselectRtopwithbodydisconnectedtoachievetarget+/-0.5%qualificationcondition; nocalibrationwhilearmed",
+      "source_url": ""
+    },
+    {
+      "ref": "U412",
+      "value": "TPS7A3001DGNR",
+      "kind": "neg",
+      "footprint": "ato_power:Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm",
+      "nets": {
+        "1": "AFE_N5",
+        "2": "AFE_N5_FB",
+        "3": null,
+        "4": "AFEAGND",
+        "5": "ISO_N12",
+        "6": "AFE_N5_NR",
+        "7": null,
+        "8": "ISO_N12",
+        "9": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "OUT",
+          "power_out",
+          "R"
+        ],
+        [
+          2,
+          "FB",
+          "input",
+          "L"
+        ],
+        [
+          3,
+          "NC",
+          "no_connect",
+          "L"
+        ],
+        [
+          4,
+          "GND",
+          "power_in",
+          "L"
+        ],
+        [
+          5,
+          "EN",
+          "input",
+          "L"
+        ],
+        [
+          6,
+          "NR_SS",
+          "passive",
+          "L"
+        ],
+        [
+          7,
+          "DNC",
+          "no_connect",
+          "L"
+        ],
+        [
+          8,
+          "IN",
+          "power_in",
+          "L"
+        ],
+        [
+          9,
+          "EP_GND",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        63.5,
+        68.58
+      ],
+      "sheet": "afen",
+      "description": "AdjustablelownoiseLDO; ENtiedowninput(negativepolarityforTPS7A30); full+/-2.5%cornercansafelyinhibituntilquiescenttrim",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps7a30.pdf"
+    },
+    {
+      "ref": "C4120",
+      "value": "10u X7R 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "ISO_N12",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        68.58
+      ],
+      "sheet": "afen",
+      "description": "LDOlocalinputcap",
+      "source_url": ""
+    },
+    {
+      "ref": "C4121",
+      "value": "10u X7R 16V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "AFE_N5",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        68.58
+      ],
+      "sheet": "afen",
+      "description": "LDOpulseloadoutputcap; effective>=2.2uFminimumassumed",
+      "source_url": ""
+    },
+    {
+      "ref": "C4122",
+      "value": "10n C0G 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "AFE_N5_NR",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        68.58
+      ],
+      "sheet": "afen",
+      "description": "Noise-reduction/softstart",
+      "source_url": ""
+    },
+    {
+      "ref": "C4123",
+      "value": "10n C0G 50V",
+      "kind": "C",
+      "footprint": "ato_power:C_1206_3216Metric",
+      "nets": {
+        "1": "AFE_N5",
+        "2": "AFE_N5_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        63.5,
+        124.46000000000001
+      ],
+      "sheet": "afen",
+      "description": "Feedforwardcapperlow-noiseapplication",
+      "source_url": ""
+    },
+    {
+      "ref": "R4120",
+      "value": "33367.347R 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "AFE_N5",
+        "2": "AFE_N5_FB"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        200.66,
+        124.46000000000001
+      ],
+      "sheet": "afen",
+      "description": "Replaceabletrimselectionupperresistor; nominalisnotfull-toleranceguarantee",
+      "source_url": ""
+    },
+    {
+      "ref": "R4121",
+      "value": "10k 0.1%",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "AFE_N5_FB",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        337.82,
+        124.46000000000001
+      ],
+      "sheet": "afen",
+      "description": "Feedbackbottom>5uAminimumfornegativeLDO",
+      "source_url": ""
+    },
+    {
+      "ref": "R4122",
+      "value": "47k",
+      "kind": "R",
+      "footprint": "ato_power:R_0805_2012Metric",
+      "nets": {
+        "1": "AFE_N5",
+        "2": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "R"
+        ]
+      ],
+      "xy": [
+        474.98,
+        124.46000000000001
+      ],
+      "sheet": "afen",
+      "description": "Finiteislandrailbleed",
+      "source_url": ""
+    },
+    {
+      "ref": "J412",
+      "value": "QUIESCENT TRIM / TEST ONLY",
+      "kind": "J",
+      "footprint": "ato_power:PinHeader_1x03_P2.54mm_Vertical",
+      "nets": {
+        "1": "AFE_N5",
+        "2": "AFE_N5_FB",
+        "3": "AFEAGND"
+      },
+      "pins": [
+        [
+          1,
+          "1",
+          "passive",
+          "L"
+        ],
+        [
+          2,
+          "2",
+          "passive",
+          "L"
+        ],
+        [
+          3,
+          "3",
+          "passive",
+          "L"
+        ]
+      ],
+      "xy": [
+        63.5,
+        180.34
+      ],
+      "sheet": "afen",
+      "description": "MeasureandselectRtopwithbodydisconnectedtoachievetarget+/-0.5%qualificationcondition; nocalibrationwhilearmed",
+      "source_url": ""
+    }
+  ],
+  "source_documents": {
+    "buck": "https://www.ti.com/lit/ds/symlink/tps62160.pdf",
+    "buck3": "https://www.ti.com/lit/ds/symlink/tps62130a.pdf",
+    "boost": "https://www.analog.com/media/en/technical-documentation/data-sheets/8330f.pdf",
+    "pos": "https://www.ti.com/lit/ds/symlink/tps7a49.pdf",
+    "neg": "https://www.ti.com/lit/ds/symlink/tps7a30.pdf",
+    "iso": "https://www.tracopower.com/products/tmr3.pdf",
+    "D": "https://www.diodes.com/assets/Datasheets/ds13003.pdf",
+    "rail": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+    "and2": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+    "and3": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+    "schmitt": "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf",
+    "smallD": "https://www.diodes.com/assets/Datasheets/BAT54WS.pdf",
+    "inputD": "https://www.vishay.com/docs/88751/ss32.pdf",
+    "boostD": "https://assets.nexperia.com/documents/data-sheet/PMEG6010CEJ.pdf",
+    "odbuf": "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf"
+  },
+  "rail_specs": [
+    {
+      "name": "BATT",
+      "node": "PACK_POS",
+      "low_V": 6.6,
+      "high_V": 8.6
+    },
+    {
+      "name": "S3",
+      "node": "SUP_3V3",
+      "low_V": 3.1,
+      "high_V": 3.5
+    },
+    {
+      "name": "S5",
+      "node": "SUP_5",
+      "low_V": 4.75,
+      "high_V": 5.25
+    },
+    {
+      "name": "MREF",
+      "node": "MON_VREF",
+      "low_V": 3.98,
+      "high_V": 4.22
+    },
+    {
+      "name": "MID",
+      "node": "MON_VMID",
+      "low_V": 1.98,
+      "high_V": 2.12
+    }
+  ],
+  "nominal": {
+    "PACK_nominal_V": 7.4,
+    "PACK_min_V": 6.4,
+    "PACK_max_V": 8.4,
+    "PACK_capacity_Ah": 2.6,
+    "PACK_energy_Wh": 19.24,
+    "SUP_3V3_V": 3.3,
+    "SUP_5_V": 5,
+    "HOST_3V3_V": 3.3,
+    "HOST_5_V": 5,
+    "HOST_15_V": 15,
+    "VH_24_V": 24,
+    "ISO_P12_V": 12,
+    "ISO_N12_V": -12,
+    "AFE_3V3_V": 3.45,
+    "AFE_P5_V": 5.3,
+    "AFE_N5_V": -5.1,
+    "boost_reservoir_effective_F": 3e-05,
+    "boost_reservoir_ESR_ohm": 0.1,
+    "input_bulk_effective_F": 8e-05,
+    "AFE_trim_target_fraction": 0.005
+  },
+  "control_contract": {
+    "SUP_READY": "S3_WINDOW_OK&S5_WINDOW_OK&PWR_START_OK",
+    "BATT_OK": "BATT_WINDOW_OK&PWR_START_OK",
+    "HOST_ENABLE": "PWR_REQUEST&BATT_OK&SUP_READY",
+    "BOOST_ENABLE": "HOST_ENABLE&HOST_5_PG",
+    "REF_OK": "MREF_WINDOW_OK&MID_WINDOW_OK",
+    "POWER_RUN_OK": "BOOST_ENABLE&REF_OK",
+    "PWR_FAULT_N": "SN74LVC1G07open-drainoutputLOWif!POWER_RUN_OK;wiretosupervisionGUARD_FAULT_N",
+    "TMR_remote": "NC/open=ON;HOST5buckinputremovalendsinputpower;notTTL",
+    "LDO_enable": "tiedownrawinput;negativepolarityTPS7A30",
+    "supervision": "allninefinalrailsstillqualifiedbyhistoricalsupervisionpackage;noARMfeedbackloop"
+  },
+  "external_unimplemented": [
+    "ActualbatteryprotectionI2t/fuse/charge/inrushbenchqualification",
+    "Converterloopstabilityandtransient/ripple/EMIphysicalmeasurements",
+    "FullLDO+/-2.5%cornerscanfailAFEwindows;quiescentresistorselection+/-0.5%operatingrailisanexplicitcondition",
+    "BoostENdoesnotdisconnectinputdiodepath;storedenergyandmoduledecayremain",
+    "Functionalmoduleisolationratingdoesnotproveclinicalleakageorbodyisolation",
+    "ExactpassiveMPNs/resistorseriesselectionandPCBthermalassemblyqualification",
+    "Transportfirmware,integratedPCB,populatedCADandbiologicalefficacy"
+  ]
+}

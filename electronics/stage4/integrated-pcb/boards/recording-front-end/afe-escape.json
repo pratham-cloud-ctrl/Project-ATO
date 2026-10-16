@@ -1,0 +1,186 @@
+{
+  "schema": "ato.afe-pad-escape.v1",
+  "before_sha256_lf": "fb4d315cc5a04c847ab1e94e8f67ac4a7e29b0dc400898c675b176c028cab085",
+  "after_sha256_lf": "f85c30d167a33bb426cd7936b4cef06e44047567f7ec43a96bdd060a70383566",
+  "escapes": [
+    {
+      "reference": "U30021",
+      "pin": "2",
+      "net": "SYS_d73cd2ee__AFE_N5",
+      "outward_length_mm": 0.8,
+      "start_mm": [
+        81.145,
+        26.15
+      ],
+      "via_mm": [
+        80.345,
+        26.15
+      ],
+      "removed_foreign_segments": [
+        {
+          "uuid": "37da2041-6d5e-4dfe-a84e-31bc55a6945a",
+          "net": "SYS_fca1c340__AFEAGND",
+          "layer": "In2.Cu",
+          "start_mm": [
+            80.3426,
+            27.0026
+          ],
+          "end_mm": [
+            80.3426,
+            23.7911
+          ]
+        },
+        {
+          "uuid": "881e4006-31e8-4de4-9aab-8f8c0690f00f",
+          "net": "SYS_3fdd5066__AFE_P5",
+          "layer": "In1.Cu",
+          "start_mm": [
+            90.8746,
+            25.7762
+          ],
+          "end_mm": [
+            79.6638,
+            25.7762
+          ]
+        },
+        {
+          "uuid": "88923342-f2a0-4da1-be8c-f4030a8c765c",
+          "net": "recording-front-end__AFE_FAULT_N",
+          "layer": "In1.Cu",
+          "start_mm": [
+            80.0272,
+            26.3642
+          ],
+          "end_mm": [
+            85.2905,
+            26.3642
+          ]
+        },
+        {
+          "uuid": "8b96b0e9-d87f-4933-9a0a-e371e71dc366",
+          "net": "recording-front-end__AFE_FAULT_N",
+          "layer": "In1.Cu",
+          "start_mm": [
+            79.2664,
+            27.125
+          ],
+          "end_mm": [
+            80.0272,
+            26.3642
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "U30010",
+      "pin": "53",
+      "net": "SYS_380216f6__AFE_IN06_P",
+      "outward_length_mm": 1.0,
+      "start_mm": [
+        18.835,
+        24.535
+      ],
+      "via_mm": [
+        18.835,
+        23.535
+      ],
+      "removed_foreign_segments": [
+        {
+          "uuid": "402e38da-31ab-4310-ba38-4e3602fbe977",
+          "net": "SYS_86b728f8__AFE_REF",
+          "layer": "F.Cu",
+          "start_mm": [
+            17.9243,
+            22.9537
+          ],
+          "end_mm": [
+            18.335,
+            23.3644
+          ]
+        },
+        {
+          "uuid": "406420bf-e87c-4669-b414-f1d15fabf256",
+          "net": "SYS_86b728f8__AFE_REF",
+          "layer": "F.Cu",
+          "start_mm": [
+            18.335,
+            23.3644
+          ],
+          "end_mm": [
+            18.335,
+            23.7833
+          ]
+        },
+        {
+          "uuid": "d896070d-de83-4cb6-acb8-06f2e820ed71",
+          "net": "SYS_86b728f8__AFE_REF",
+          "layer": "F.Cu",
+          "start_mm": [
+            18.335,
+            23.7833
+          ],
+          "end_mm": [
+            19.3335,
+            23.7833
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "U30010",
+      "pin": "43",
+      "net": "SYS_b6a4cd67__AFE_IN11_P",
+      "outward_length_mm": 1.0,
+      "start_mm": [
+        23.835,
+        24.535
+      ],
+      "via_mm": [
+        23.835,
+        23.535
+      ],
+      "removed_foreign_segments": [
+        {
+          "uuid": "5240880b-9f15-4b20-9886-aef4bd096f86",
+          "net": "SYS_86b728f8__AFE_REF",
+          "layer": "F.Cu",
+          "start_mm": [
+            23.0599,
+            22.6517
+          ],
+          "end_mm": [
+            23.8753,
+            23.4671
+          ]
+        },
+        {
+          "uuid": "714360a7-9779-476c-a963-1d31bfd99d50",
+          "net": "SYS_86b728f8__AFE_REF",
+          "layer": "F.Cu",
+          "start_mm": [
+            23.335,
+            24.0074
+          ],
+          "end_mm": [
+            23.8753,
+            23.4671
+          ]
+        },
+        {
+          "uuid": "992366e4-77fb-4ab7-8b8a-57509627d1af",
+          "net": "SYS_86b728f8__AFE_REF",
+          "layer": "F.Cu",
+          "start_mm": [
+            23.8753,
+            23.4671
+          ],
+          "end_mm": [
+            24.635,
+            24.2268
+          ]
+        }
+      ]
+    }
+  ],
+  "native_DRC_required": true
+}

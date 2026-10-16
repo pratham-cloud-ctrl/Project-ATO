@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-08",
+  "scope": "Stage2 analytical architecture and nominal allocation geometry; not independent licensed audit, clinical safety or efficacy validation",
+  "reviewers": "AI-assisted research/electronics/control workstreams; root arithmetic, contract, source-boundary and integration review",
+  "resolved_findings": [
+    "200Hz decoder and0.75ms policy allowance aligned to43.1986Mcycle/s budget",
+    "404992byte RAM total leaves22.75percent; immutable policy flash does not create hidden extra RAM",
+    "16 sampled streams distinguished from18 recording contacts,18 output/return contacts and2 sources",
+    "Global masks account for preguard, overlaps and frame wrap; archive FIR invalidity propagates through7.5ms support",
+    "Dense pressure stimulation disqualifies fast neural/archived observations; external SBP remains distinct",
+    "Fixed-frame motor deadline failure replaced by conditional paced-goal advance admission, not arbitrary rate evasion",
+    "9uC command cap and10uC delivery cap distinguish uncertainty and reject all-max requests",
+    "Finite base and monitor power; load deposition separated from conservative package heat; thermal/current stress rejections retained",
+    "Per-variant contact inventory does not claim motor/pressor anatomical coexistence with unchanged leads",
+    "Catalog parts and6mm2 example contacts not relabelled as qualified implant/electrode chemistry",
+    "Native STEP import parent aggregates excluded from solid count;80 leaf solids preserved on FreeCAD reopen",
+    "32-stream prose RAM corrected to589952bytes; expanded frame/features/DMA counted",
+    "Per-profile150Hz ceiling separated from physical-source service; pressure360events/s on source0 fits0.95ms service and2ms cyclic spacing",
+    "Finite single-image application flash and independent network flash/RAM; no hidden OTA image/cache",
+    "Third SPIM1 bus reserves128us wire and122us local admission work; local pulse edges remain separate",
+    "All36 functional port roles mapped to nominal CAD labels; exact net/anatomy mapping remains later",
+    "Full nominal native CAD pair inspection and twelve scoped exit criteria added; stale next-stage wording and brief typography corrected",
+    "Logical profile identities separately checked; repeating one profile atthree offsets cannot evade its repetition limit",
+    "Fresh Linux CI caught Windows newline drift in a text-receipt hash; canonical JSON binding and a tamper-sensitive portability regression replace raw checkout-byte hashing"
+  ],
+  "pdf_visual_review": {
+    "artifact": "output/pdf/ATO_stage2_architecture_budgets.pdf",
+    "sha256": "7e9bae978b23fba44ef27e2cbba51678b8853580f64fd0912feaea0d785e2d4c",
+    "page_count": 8,
+    "renderer": "Bundled Poppler pdftoppm, final115dpi",
+    "review": "All eight final pages inspected in two 115dpi contact sheets; final timing page inspected individually. Revised flash/source-scheduling text and scientific figures checked after typography cleanup; no clipping or overlap found.",
+    "status": "Passed readability, glyphs, unclipped tables/figures, distinct labels and1/8 through8/8 numbering"
+  },
+  "cad_artifacts_sha256": {
+    "ATO_stage2_allocation.step": "e178c38187a48e985a44baa57340705dffdefd9305d34ac6a54bbc3a5c3a0aa3",
+    "ATO_stage2_allocation.FCStd": "93968c7d3c975ed00d8fb8e1670e5e9f02ab9c25882e7cf78b63bc150da8981a"
+  },
+  "cad_execution": "Original allocation generation and native round-trip, followed by read-only native/STEP inspection:80 valid parts;3088 nominal pairs,2977 bounding-box exclusions and111 exact BRep intersections;72 intentional header/interface reservation pairs excluded explicitly.",
+  "remaining_gates": [
+    "Identified biological response/functional reachability (S1-V-204)",
+    "Causal task information and retained learning",
+    "Real artifact recovery and recursive-filter warm-up",
+    "Actual circuits/firmware and component error/peak limits",
+    "Thermal coupling, tissue hotspots and charging/RF losses",
+    "Electrode electrochemistry and chronic materials",
+    "Populated CAD, anatomical fit, qualified feedthroughs and tolerances"
+  ],
+  "owner_status": "Owner authorized continuation; engineering choices remain provisional and reviewable",
+  "local_test_execution": {
+    "suite": "python -m unittest discover -s tests -v",
+    "all_repository_tests_passed": 28,
+    "new_stage2_tests_passed": 14,
+    "scope": "Architecture unit tests plus historical surrogate/sequencer regressions; not full-SCCI integration or efficacy"
+  },
+  "stage2_exit_audit": {
+    "date": "2026-10-08",
+    "requested_by": "Project owner",
+    "criteria_document": "docs/stage2/exit-review.md",
+    "criteria_count": 12,
+    "inspection_receipt": "cad/stage2/inspection-checks.json",
+    "verdict": "Complete for the declared quantitative architecture, contracts and allocation-CAD scope. Biological identification, complete circuits/firmware and populated implant CAD remain later gates.",
+    "stage3_started": false,
+    "review_scope": "AI-assisted engineering consistency and goal-alignment review; no guarantee of perfection or independent professional/biological qualification"
+  }
+}
