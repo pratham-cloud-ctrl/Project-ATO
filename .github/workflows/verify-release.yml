@@ -1,29 +1,65 @@
-name: Verify integrated digital release
+name: Transfer verified v2.0.0 release assets
 on:
-  pull_request:
-  push:
-    tags: ['v2.*']
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: ato-v2-release-asset-transfer
+  cancel-in-progress: false
+
 jobs:
-  integrated-release:
+  package-and-transfer:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: v2.0.0
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install document inspection dependency
-        run: python -m pip install pypdf==6.10.0 numpy==2.3.5
-      - name: Verify exact committed Git blobs
-        run: python scripts/verify_manifest.py
-      - name: Verify manuscript, release entries and preserved sources
-        run: python scripts/verify_stage6_release.py
-      - name: Reproduce both conditional paths through the production C core
-        run: python scripts/stage6/verify_digital_path.py
-      - name: Preserve integrated electronics checkpoint
-        run: python scripts/verify_integrated_pcb.py
-      - name: Preserve mechanical source and native inspection evidence
-        run: python scripts/verify_stage5_mechanics.py
+      - name: Install tagged document inspection dependency
+        run: python -m pip install pypdf==6.10.0
+      - name: Build and verify exact tagged source archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          expected_commit=68bf839e94e4789f8fa994473618cb1bb31eb8d5
+          test "$(git rev-parse HEAD)" = "$expected_commit"
+          test "$(git rev-parse 'v2.0.0^{commit}')" = "$expected_commit"
+          release_dir="$RUNNER_TEMP/ato-release"
+          mkdir -p "$release_dir"
+          python scripts/verify_manifest.py
+          git -c core.autocrlf=false -c core.eol=lf archive --format=zip --output="$release_dir/Project_ATO_v2.0.0_source.zip" "$expected_commit"
+          python scripts/verify_stage6_release.py --archive "$release_dir/Project_ATO_v2.0.0_source.zip" | tee "$release_dir/source-archive-verification.json"
+          cp output/pdf/Project_ATO_Integrated_Manuscript.pdf "$release_dir/Project_ATO_Integrated_Manuscript.pdf"
+          cp cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf "$release_dir/ATO_Stage5_Mechanical_Review.pdf"
+          (
+            cd "$release_dir"
+            sha256sum Project_ATO_Integrated_Manuscript.pdf ATO_Stage5_Mechanical_Review.pdf Project_ATO_v2.0.0_source.zip > SHA256SUMS.txt
+            cat SHA256SUMS.txt
+            stat --printf='Source archive bytes: %s\n' Project_ATO_v2.0.0_source.zip
+          )
+      - name: Upload verified archive and replace checksum asset on existing draft
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          release_dir="$RUNNER_TEMP/ato-release"
+          gh release upload v2.0.0 "$release_dir/Project_ATO_v2.0.0_source.zip" "$release_dir/SHA256SUMS.txt" --repo "$GITHUB_REPOSITORY" --clobber
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/v2.0.0" --jq '{tag_name, draft, target_commitish, assets: [.assets[] | {name, size, digest, state}]}' | tee "$release_dir/github-release-assets.json"
+      - name: Retain small verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ato-v2-release-transfer-verification
+          if-no-files-found: error
+          retention-days: 14
+          path: |
+            ${{ runner.temp }}/ato-release/source-archive-verification.json
+            ${{ runner.temp }}/ato-release/SHA256SUMS.txt
+            ${{ runner.temp }}/ato-release/github-release-assets.json
