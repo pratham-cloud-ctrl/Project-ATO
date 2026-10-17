@@ -4,9 +4,13 @@
 finite checks. Biological efficacy and physical implant qualification remain
 unestablished. Video and website work remain parked.
 
+The 17 October [whole-project correction review](../review-v2.0.1/README.md)
+updates the integrated paper to 28 pages, adds the corrected current UART image
+and portable CAD entry, and retains the original completed engineering baseline.
+
 | Completion item | Delivered evidence | Scope |
 |---|---|---|
-| Integrated illustrated account | 27-page manuscript, editable Markdown, deterministic builder and source-derived figures | Connects both applications to mechanisms, evidence, code, native engineering and future premises |
+| Integrated illustrated account | 28-page manuscript, editable Markdown, deterministic builder and source-derived figures | Connects both applications to mechanisms, evidence, code, native engineering and future premises |
 | Primary-source audit | 18 references, population/access register and 30 classified claims | Narrative audit; no healthy expert-transfer multiplier inferred |
 | Executed digital path | Unchanged production C runtime behind a narrow host bridge; 114,426 assertions / 28 groups | Conditional feature/body adapters; no simultaneous live target neural feedback while armed |
 | Original requirements | All 36 IDs with explicit final dispositions | Conditional biological/physical requirements remain conditional |
@@ -31,6 +35,6 @@ the historical negative findings and reports favorable, neutral and adverse
 conditional outcomes. No favorable biological result is required to claim the
 specified digital work complete.
 
-The private `v2.0.0` release is the current integrated project. Historical
+The public `v2.0.1` correction release supersedes the preserved `v2.0.0` snapshot. Historical
 `v1.0.0` remains available as a subsystem reference. Subsequent empirical studies,
 target execution or compact hardware redesign are new work packages.

@@ -1,0 +1,31 @@
+{
+  "schema": "ato.uart-frame-regression.v1",
+  "date": "2026-10-17",
+  "passed": true,
+  "scope": "Actual C callbacks with FIFO/interrupt stubs; no target execution or physical UART proof",
+  "historical": {
+    "scenarios": 1172,
+    "failed": 334,
+    "passed": 838
+  },
+  "current": {
+    "scenarios": 1172,
+    "failed": 0,
+    "passed": 1172
+  },
+  "covered": [
+    "raw interrupted by new normal frame",
+    "normal interrupted by new raw frame",
+    "all partial-frame byte positions",
+    "1/3/128-byte FIFO fills",
+    "ring-buffer wrap",
+    "uint32 queue-index wrap",
+    "normal priority at frame boundary",
+    "temporarily full FIFO"
+  ],
+  "source_sha256_lf": {
+    "firmware/nrf5340/app/src/ato_backend.c": "74d32a85412ba735350d1fd0b1d470d0f4e8e2fb334dc448ec9c626e1cab3a90",
+    "firmware/nrf5340/uart-revision/src/ato_backend.c": "88b5d4c5063fb1affadde97394b2edbd725cd48d8451b8387697559cb4e8621c",
+    "firmware/nrf5340/uart-revision/tests/check_uart_framing.py": "c05d4896fcceaa81cbe6dc460f157f6387798173e74112d9e737454cb1fa1d36"
+  }
+}

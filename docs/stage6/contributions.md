@@ -65,7 +65,7 @@ Clinical efficacy and faster retained human learning have not been established.
 ## Third-party material and licensing
 
 The repository's [license](../../LICENSE) reserves original project material for
-the private portfolio and preserves third-party rights. Cited literature is
+the all-rights-reserved portfolio and preserves third-party rights. Cited literature is
 attributed rather than reproduced in full. Component libraries and models retain
 their applicable notices in the electrical packages. Installed tools are not
 redistributed as project-owned software.

@@ -25,6 +25,7 @@ HERE=Path(__file__).resolve().parent
 PDF=ROOT/'output/pdf/Project_ATO_Integrated_Manuscript.pdf'
 SOURCE=HERE/'manuscript.md'
 REFS=ROOT/'docs/stage6/references.json'
+RELEASE=json.loads((ROOT/'docs/stage6/release-contract.json').read_text(encoding='utf-8'))
 W,H=595.2756,841.8898
 LEFT=50; RIGHT=50; TOP=53; BOTTOM=52; WIDTH=W-LEFT-RIGHT
 NAVY=colors.HexColor('#172d45'); TEAL=colors.HexColor('#087f8c')
@@ -83,6 +84,9 @@ def table(rows):
        ('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7),
        ('LINEBELOW',(0,0),(-1,0),.7,TEAL),('LINEBELOW',(0,1),(-1,-1),.25,colors.HexColor('#d2dce2')),
        ('ROWBACKGROUNDS',(0,1),(-1,-1),[colors.white,colors.HexColor('#f7fafb')])]))
+    # Compact comparisons should not strand one data row on the preceding page.
+    if len(rows) <= 5:
+        return [KeepTogether([t,Spacer(1,10)])]
     return [t,Spacer(1,10)]
 
 def parse(text):
@@ -110,14 +114,20 @@ def parse(text):
         joined=' '.join(paragraph)
         if joined.startswith('`') and joined.endswith('`'):
             out.append(Paragraph(html.escape(joined[1:-1]),styles['equation']))
-        else:out.append(Paragraph(inline(joined),styles['body']))
+        else:
+            paragraph=Paragraph(inline(joined),styles['body'])
+            following=i
+            while following<len(lines) and not lines[following].strip():following+=1
+            if following<len(lines) and lines[following].strip().startswith('`'):
+                paragraph.keepWithNext=True
+            out.append(paragraph)
     return out
 
 def footer(c,doc):
     c.saveState()
     c.setStrokeColor(colors.HexColor('#cbd8e0'));c.setLineWidth(.5);c.line(LEFT,39,W-RIGHT,39)
     c.setFillColor(MUTED);c.setFont('Sans',6.8)
-    c.drawString(LEFT,26,'PROJECT ATO  /  INTEGRATED DIGITAL RESEARCH AND ENGINEERING  /  v2.0.0')
+    c.drawString(LEFT,26,'PROJECT ATO  /  INTEGRATED DIGITAL RESEARCH AND ENGINEERING  /  '+RELEASE['tag'])
     c.drawRightString(W-RIGHT,26,str(doc.page));c.restoreState()
 
 class Document(BaseDocTemplate):
@@ -137,7 +147,7 @@ def main():
     cover=ROOT/'cad/stage5/renders/future_assembled.png'
     FIGURES[cover.relative_to(ROOT).as_posix()]=sha(cover)
     w,h=PILImage.open(cover).size;story.append(Image(str(cover),400,400*h/w))
-    story.extend([Spacer(1,10),Paragraph('<b>Pratham Varma</b><br/>AI-assisted student research and engineering<br/>Integrated digital release 2.0.0 | 16 October 2026',styles['small']),
+    story.extend([Spacer(1,10),Paragraph('<b>Pratham Varma</b><br/>AI-assisted student research and engineering<br/>Integrated digital release '+RELEASE['version']+' | '+RELEASE['date'],styles['small']),
       Paragraph('Theory, computational studies, native electronics, compiled control software and mechanical CAD. Future biological capabilities remain explicit hypotheses. No original human or animal experiment, physical hardware execution or implanted qualification is reported.',styles['small']),PageBreak()])
     story.append(Paragraph('Contents',ParagraphStyle('ContentsTitle',parent=styles['h1'])))
     toc=TableOfContents();toc.levelStyles=[ParagraphStyle('TOC0',fontName='Sans',fontSize=9.4,leading=14,spaceBefore=7,textColor=NAVY,leftIndent=0,firstLineIndent=0)]
@@ -160,7 +170,8 @@ def main():
     doc.addPageTemplates(PageTemplate(id='main',frames=[Frame(LEFT,BOTTOM,WIDTH,H-TOP-BOTTOM,id='normal',leftPadding=0,rightPadding=0,topPadding=0,bottomPadding=0)],onPage=footer))
     doc.multiBuild(story,canvasmaker=Canvas)
     reader=PdfReader(str(PDF))
-    report={'schema':'ato.stage6.manuscript-build.v1','version':'2.0.0','date':'2026-10-16',
+    report={'schema':'ato.stage6.manuscript-build.v1','version':RELEASE['version'],'date':RELEASE['date'],
+      'release_contract_sha256_lf':sha(ROOT/'docs/stage6/release-contract.json',True),
       'source_path':SOURCE.relative_to(ROOT).as_posix(),'source_sha256_lf':sha(SOURCE,True),
       'builder_path':Path(__file__).relative_to(ROOT).as_posix(),'builder_sha256_lf':sha(Path(__file__),True),
       'pdf_path':PDF.relative_to(ROOT).as_posix(),'pdf_sha256':sha(PDF),'pages':len(reader.pages),

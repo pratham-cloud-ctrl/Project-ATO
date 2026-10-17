@@ -1,6 +1,13 @@
 # Project ATO: integrated digital completion status
 
-Updated: **16 October 2026**. Current release: **v2.0.0**.
+Updated: **17 October 2026**. Current release: **v2.0.1**.
+
+The [whole-project review](docs/review-v2.0.1/README.md) preserves the original
+goals and fixes a confirmed UART frame-interleaving defect, one bibliography
+duplication and current handoff/documentation issues. Use the
+[corrected carrier image](firmware/nrf5340/uart-revision/README.md) and
+[portable CAD entry](cad/CURRENT_CAD.md). The old v2.0.0 source and native evidence
+remain available at their immutable tag; source-preservation checks remain in force.
 
 The specified six-stage digital research and engineering project is complete
 within its stated scope. The authoritative entry is [START_HERE](START_HERE.md)
@@ -28,7 +35,7 @@ from future vision to inspectable engineering, with explicit credit.
 | 3: computational mechanisms | Conservative qualification investigation closed with interventions withheld; separate conditional concept, 128 scenarios and favorable/neutral/adverse OFF learning |
 | 4: electronics/firmware | Eight routed native boards; 80-sheet master; 1,298 positions / 1,296 fitted; 4,781 pin identities; 21,039 segments / 2,335 vias; source-bound zero native ERC/DRC/unconnected/parity/ignored findings; actual carrier-specific linked image |
 | 5: mechanical assembly | 260-part combined native reference; actual board scale and 32 mounting axes; 83 mating housings; separate 230-part future interface with 36 ports; independent native/STEP/interference/clearance evidence |
-| 6: integrated manuscript/release | 27-page illustrated paper, 18 references, 30 scientific/design claims, all 36 requirement dispositions, production-core digital replay, defence/contribution material and reproducible versioned release |
+| 6: integrated manuscript/release | 28-page illustrated paper, 18 references, 30 scientific/design claims, all 36 requirement dispositions, production-core digital replay, defence/contribution material and reproducible versioned release |
 
 ## Final integration results
 
@@ -49,11 +56,16 @@ current delivery, neural quality and biological efficacy remain unmeasured.
 
 ## Actual target and physical-identity boundaries
 
-The saved BT40F/nRF5340 image has a 53,648-byte flash LOAD extent and 98,000-byte
+The preserved v2.0.0 BT40F/nRF5340 image has a 53,648-byte flash LOAD extent and 98,000-byte
 RAM extent, with the manufacturer's 11 pF HFXO setting. It is compiled and linked,
 not flashed or executed. Neural acquisition occurs in OBSERVE and is inhibited
 while stimulation is armed. No radio image or simultaneous live spinal decoding
 during target MOTOR is implemented.
+
+The current additive UART correction has a 53,776-byte flash LOAD extent and the
+same 98,000-byte RAM extent. Its 70 independent image/source checks and 1,172
+host framing scenarios pass. It is compiled and linked, unflashed; the framing
+fix does not establish target timing or physical peripheral performance.
 
 The reference keeps its eight boards at 1:1 scale in a 600 x 310 x 240 mm chassis.
 The separate future can/header is 60 x 58 x 14 mm before leads and depends on

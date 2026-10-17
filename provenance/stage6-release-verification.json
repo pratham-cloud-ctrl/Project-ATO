@@ -1,10 +1,10 @@
 {
   "schema": "ato.stage6.release-verification.v1",
   "passed": true,
-  "version": "2.0.0",
-  "date": "2026-10-16",
+  "version": "2.0.1",
+  "date": "2026-10-17",
   "scope": "Entirely digital integrated SCCI research and engineering concept; native modular reference and separate conditional future implanted interface",
-  "checks": 6309,
+  "checks": 6506,
   "baseline": {
     "commit": "736015848cf581df66488bf53aa6360152eb767b",
     "preserved_files": 2733,
@@ -20,8 +20,8 @@
     ]
   },
   "manuscript": {
-    "pages": 27,
-    "pdf_sha256": "b2e700f44ee4342c15806e72abe20aa70280d459fe4d8f9a1331babe57a69418",
+    "pages": 28,
+    "pdf_sha256": "794abbd003d620ac901e1ccfdca49adf4ea04e7d060533a2b620718144935ed9",
     "all_pages_visually_reviewed": true,
     "primary_and_inspiration_references": 18,
     "figure_stems": [
@@ -36,7 +36,7 @@
       "09_runtime"
     ]
   },
-  "local_entry_links": 122,
+  "local_entry_links": 169,
   "external_links_recorded_not_live_revalidated_here": [
     "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
     "https://doi.org/10.1002/advs.202303377",
@@ -56,14 +56,19 @@
     "https://doi.org/10.1523/JNEUROSCI.1688-13.2013",
     "https://doi.org/10.1523/JNEUROSCI.3968-12.2013",
     "https://doi.org/10.3390/jcm15166287",
-    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/START_HERE.md",
-    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf",
-    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/docs/stage6/contributions.md",
-    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/docs/stage6/defence-guide.md",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/START_HERE.md",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/docs/review-v2.0.1/README.md",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/docs/stage6/contributions.md",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/docs/stage6/defence-guide.md",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/firmware/nrf5340/uart-revision/README.md",
     "https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v1.0.0",
-    "https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.0",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.1",
     "https://github.com/pratham-cloud-ctrl/Project-ATO/tree/v1.0.0",
     "https://github.com/sam-astro/Mind-link",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12443590/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9668750/",
+    "https://www.nature.com/articles/s41586-022-05385-7",
     "https://www.youtube.com/watch?v=5YxrpcqkTYA"
   ],
   "preserved_scope": {
@@ -80,8 +85,24 @@
     "physical_or_biological_execution": false
   },
   "artifacts": {
+    ".github/workflows/package-release.yml": {
+      "sha256": "0557972b6a8ff09c332ff996fd9f77b4b854cba531a54e3c0b6073a395a8c813",
+      "text_normalized": true
+    },
     ".github/workflows/verify-release.yml": {
-      "sha256": "dc2255498ac39f23e9c29c1ca9cd889fc3848fa96f39d7d6ef3210b9afea5a2b",
+      "sha256": "92108f897060c503dadb6cb95f263f616582874de550d2402202b43d11517255",
+      "text_normalized": true
+    },
+    "cad/CURRENT_CAD.md": {
+      "sha256": "c4aaa697545b1984bf7c4a58647347ba34f745f7ffea906e494c2ebe0a3237e1",
+      "text_normalized": true
+    },
+    "cad/open-current-cad.ps1": {
+      "sha256": "483a20b07172846f2a2bce662e16ef21cf20ea2a9cf44d0445a5b1b43737cc2f",
+      "text_normalized": true
+    },
+    "cad/OPEN_CURRENT_CAD.cmd": {
+      "sha256": "717b93196a8e3cca6c696238fc5bddcdd7d30612ac53deb67d2513193687c989",
       "text_normalized": true
     },
     "cad/stage5/ATO_stage5_reference_full.FCStd": {
@@ -100,16 +121,52 @@
       "sha256": "5da5498ba6a62ac457a7af58056db6358baa3edb2532bfb21a2bc6c26f071d36",
       "text_normalized": true
     },
+    "cad/test-current-cad.ps1": {
+      "sha256": "ecf10fbbd353de837ef925a422ea94c9c265498355774d3b3fa2fce4dc4955f4",
+      "text_normalized": true
+    },
     "CITATION.cff": {
-      "sha256": "55f076937125295870d1f373008e55db8b711426b9e0dc1d90bb0c5b36f6bde5",
+      "sha256": "5c5baf5f1854fe3751dc974990f6c38cc7d8f0d6cf88aa62ea2ca0d5da4e9c61",
       "text_normalized": true
     },
     "CURRENT_STATUS.md": {
-      "sha256": "53570a8984b1597f97d22c2f531c42c81bd97e08aa96d9d3e130fcb5969d2505",
+      "sha256": "9310a99445634c76498de9612857763a3c2f64cc015708a96dacc8ce72c6499d",
+      "text_normalized": true
+    },
+    "docs/review-v2.0.1/electronics-review.md": {
+      "sha256": "6cbaa7a4356fd3a5235b24d81e2aaf85447e07154284d04b11e4e472d0e17b22",
+      "text_normalized": true
+    },
+    "docs/review-v2.0.1/mechanics-future-native.png": {
+      "sha256": "fc46bdf35709ceccd7ef8d1f7e1488fce6555b5d9a05fa0d49f1ada7ee3adedc",
+      "text_normalized": false
+    },
+    "docs/review-v2.0.1/mechanics-native-review.json": {
+      "sha256": "3cca9d697704f24f956716dfaeb8f1f6cb044b18073b96452a4d47789f28147f",
+      "text_normalized": true
+    },
+    "docs/review-v2.0.1/mechanics-reference-native.png": {
+      "sha256": "913ab513b57d779f4fa7ed1c6096bf32e4cff87392e7b455d22f1569898640a6",
+      "text_normalized": false
+    },
+    "docs/review-v2.0.1/mechanics-review.md": {
+      "sha256": "500cb3bbd5e3d67dde7806cbddb2e8840e3660c105e01dfa26c91fd73918b9de",
+      "text_normalized": true
+    },
+    "docs/review-v2.0.1/native-electronics-checks.json": {
+      "sha256": "47f647f345d3de5f4566f8e87623d760ed4c9ebbd3e4ee614f6dc17d0b65dace",
+      "text_normalized": true
+    },
+    "docs/review-v2.0.1/README.md": {
+      "sha256": "9d530cffb777052430b99e8b04af1ea42b268ac92797dcfde22c1f3835784b99",
+      "text_normalized": true
+    },
+    "docs/review-v2.0.1/science-review.md": {
+      "sha256": "cb22f100bc605238e5aad0477dc74237bcb99fe1de4499e6d13f0b53c42862c1",
       "text_normalized": true
     },
     "docs/stage6/contributions.md": {
-      "sha256": "52d03124426b3a3dd9fd6ab6714d3052fcb50749a258d5af94d35dcd0015a502",
+      "sha256": "b2781b48874e42c809ede3ab062356ffe5472bfebbaf965913d03fac7864bf05",
       "text_normalized": true
     },
     "docs/stage6/defence-guide.md": {
@@ -125,7 +182,7 @@
       "text_normalized": true
     },
     "docs/stage6/exit-review.md": {
-      "sha256": "f8d09c832562c8a1d6dcb40d2b557c5ecb5c2fc3c6654674ed473acb9f6e7762",
+      "sha256": "a38541e5e37bfee7e29272dfba9f66249e50ce9d8ccfa8c8f1b98ed240549934",
       "text_normalized": true
     },
     "docs/stage6/integration-verification.md": {
@@ -141,23 +198,23 @@
       "text_normalized": false
     },
     "docs/stage6/README.md": {
-      "sha256": "a04cb86d5490dfc8e44f1ec6eaf1c45c35f7a1d7d71f7b52f3d6a910042803e8",
+      "sha256": "d3c1c28e100b4af435e5ae40796067c0fa0184e8772f4723acf84965dac07285",
       "text_normalized": true
     },
     "docs/stage6/references.json": {
-      "sha256": "0ea7b9fd3607fddd0c824bb0763b8c229767a42cfb53448d441f4b6f5c4c04e9",
+      "sha256": "e8efacedd176a40bcb3262da185c5e891a94df9485c09ee6588e238fdb59f789",
       "text_normalized": true
     },
     "docs/stage6/release-contract.json": {
-      "sha256": "92fa6a99e24aaa0238dab2c1f6ecd24bb955946bf54c66408f46dea85cc95754",
+      "sha256": "6adb943caedf99b9cf100e98cf0fca3226dfd8b9fda44e057d733274bbea2a51",
       "text_normalized": true
     },
     "docs/stage6/release-notes.md": {
-      "sha256": "d3323c52a68acffca4869aa5c8598fff500b8a3fdcc988662df914011e6d3ece",
+      "sha256": "876cd75c59d9e1ba6017da62337c144c8aea198f4683bae674141dcb9b811d91",
       "text_normalized": true
     },
     "docs/stage6/release-plan.md": {
-      "sha256": "72c8c2ec7e443f9f6654046ce45ebb513656f83eee61b1fd952079542da00d88",
+      "sha256": "fec20dca8081884fee5a7686c3346e268f9ec24e8eafe9211d43331c9698232a",
       "text_normalized": true
     },
     "docs/stage6/requirements-claims-trace.csv": {
@@ -172,12 +229,84 @@
       "sha256": "6e5162e0cff65e95d94ee4939b21c8b284949fc5397c9aeb15f0a4ddc8a1aa62",
       "text_normalized": true
     },
+    "firmware/nrf5340/uart-revision/artifacts/ato.bin": {
+      "sha256": "f5c658884399dcdc2e1ae4eb37e02835f52cacf4e85e525d872189a189b6ffb4",
+      "text_normalized": false
+    },
+    "firmware/nrf5340/uart-revision/artifacts/ato.elf": {
+      "sha256": "ab441a6d4905c140bc9377635945a31cdd3c478dc47b4e6a6ee4176a3ae6d77c",
+      "text_normalized": false
+    },
+    "firmware/nrf5340/uart-revision/artifacts/ato.hex": {
+      "sha256": "e1ac1a85a1d499138f17d7cfae7858c32f3a7531af83142671b3ec700fa56f3b",
+      "text_normalized": false
+    },
+    "firmware/nrf5340/uart-revision/artifacts/ato.map": {
+      "sha256": "a5b5c394be83dc65657294c9643aebd5f465b95806530650bf33971a994ecf57",
+      "text_normalized": false
+    },
+    "firmware/nrf5340/uart-revision/artifacts/build.config": {
+      "sha256": "de367434a36c722868387979e23d2fea634f1a3e46ff12437788b87876707f09",
+      "text_normalized": false
+    },
+    "firmware/nrf5340/uart-revision/artifacts/compile-records.json": {
+      "sha256": "47cbe9171b6972910a747201400101e0677c4089dd9fd64e5801172556b2d8fa",
+      "text_normalized": true
+    },
+    "firmware/nrf5340/uart-revision/artifacts/sections.txt": {
+      "sha256": "043d38fadb59787bcfc75ee059a6a0252c09a206d4eb3de3a09ac05725eb1aba",
+      "text_normalized": true
+    },
+    "firmware/nrf5340/uart-revision/artifacts/symbols.txt": {
+      "sha256": "fbd29e0b8dc9f5d7c3d4b79ea182715d151d656ae962fed104220204fa3c2ba4",
+      "text_normalized": true
+    },
+    "firmware/nrf5340/uart-revision/artifacts/zephyr.dts": {
+      "sha256": "4cc693daefe278ab48667a65c50c8769f8ecd24ca111d6f70f2adc4a06d31063",
+      "text_normalized": false
+    },
+    "firmware/nrf5340/uart-revision/build-receipt.json": {
+      "sha256": "ebab0d2412e684a4d9f30f586d62c3588762d9e984bec4952ed8d5280e4dca92",
+      "text_normalized": true
+    },
+    "firmware/nrf5340/uart-revision/build_revision.py": {
+      "sha256": "c5313b67a11a7610ec17ba2a049da93cc516901c7e45881fd2cfff24fae84b77",
+      "text_normalized": true
+    },
+    "firmware/nrf5340/uart-revision/CMakeLists.txt": {
+      "sha256": "5eafe21182c126a5dd80083060a2b70ba89bdcae6fea6502ace68a63d206bfd4",
+      "text_normalized": true
+    },
+    "firmware/nrf5340/uart-revision/README.md": {
+      "sha256": "361c0f4000cded36199abcd1a39861e8070cdfae47bc23af11d1c851faacc5d7",
+      "text_normalized": true
+    },
+    "firmware/nrf5340/uart-revision/src/ato_backend.c": {
+      "sha256": "88b5d4c5063fb1affadde97394b2edbd725cd48d8451b8387697559cb4e8621c",
+      "text_normalized": true
+    },
+    "firmware/nrf5340/uart-revision/tests/check_uart_framing.py": {
+      "sha256": "c05d4896fcceaa81cbe6dc460f157f6387798173e74112d9e737454cb1fa1d36",
+      "text_normalized": true
+    },
+    "firmware/nrf5340/uart-revision/uart-framing-tests.json": {
+      "sha256": "09ecc8e6a51db13817e414ba97f882d91574ee5040ded8bee1dfd1e2104ea3ec",
+      "text_normalized": true
+    },
+    "firmware/nrf5340/uart-revision/verification.json": {
+      "sha256": "4d4e5eba940ad98d754b7340d72a451efe1963c3c0bd454ec712759bd9e7523c",
+      "text_normalized": true
+    },
+    "firmware/nrf5340/uart-revision/verify_revision.py": {
+      "sha256": "4508333d6fa1c75b590f23292c42131fe79f86ddcd6e447812f414370da4f48a",
+      "text_normalized": true
+    },
     "LICENSE": {
       "sha256": "bf57184149c97e390ba754e0b5751d4d7ba9115fe6b3b9adac18367c90d6b739",
       "text_normalized": true
     },
     "manuscript/stage6/build-manifest.json": {
-      "sha256": "fee1b8e1927335506e1f0e331165e16bbecfb7640df7fefd1366350cce297223",
+      "sha256": "2c909ad83a1e77e4497f3f22536e1fbf48727e8f526ffb1efaabbdc57e48d312",
       "text_normalized": true
     },
     "manuscript/stage6/build_figures.py": {
@@ -185,7 +314,7 @@
       "text_normalized": true
     },
     "manuscript/stage6/build_manuscript.py": {
-      "sha256": "0f875a3e325c09d8246289faba3f8ca18afc2543df6229c22e348b3e463e6cfb",
+      "sha256": "eea07d24090f3315a82d5f802582fd3241a5c208720a23904af13b2f84fc4f63",
       "text_normalized": true
     },
     "manuscript/stage6/figures/01_system.png": {
@@ -265,11 +394,11 @@
       "text_normalized": true
     },
     "manuscript/stage6/manuscript.md": {
-      "sha256": "9d1b116349b070336b76c3fa8bd544e01433b1c7c7ecf10fab9be1349ddd98c2",
+      "sha256": "805d9c5138ade770c13d5af177ee6e3de113dbb5a9a9ecc5b36faca8af5424b9",
       "text_normalized": true
     },
     "output/pdf/Project_ATO_Integrated_Manuscript.pdf": {
-      "sha256": "b2e700f44ee4342c15806e72abe20aa70280d459fe4d8f9a1331babe57a69418",
+      "sha256": "794abbd003d620ac901e1ccfdca49adf4ea04e7d060533a2b620718144935ed9",
       "text_normalized": false
     },
     "provenance/stage3-conditional-concept-review.json": {
@@ -289,11 +418,11 @@
       "text_normalized": true
     },
     "provenance/stage6-document-review.json": {
-      "sha256": "2c6402cbc12140cab1fa8813647cc388a3d6c2683d6d6c9f31316de92bb31c2a",
+      "sha256": "4463e12ca64af2197d44eb5e212c8279b8341b350914978a0baa3e5d569e8cc0",
       "text_normalized": true
     },
     "README.md": {
-      "sha256": "b3be1a363cecf32d6e4979c9b5540102d984e4ec5ea986bc0f2e31844fe5c3c2",
+      "sha256": "8e0b191ccf4bb9cc7feed5e00e6c41a90f65a5df5e284ef79d461bb99c0d0ffc",
       "text_normalized": true
     },
     "results/stage6/digital-path-verification.json": {
@@ -313,11 +442,11 @@
       "text_normalized": true
     },
     "scripts/verify_stage6_release.py": {
-      "sha256": "6e8561e1b3f759521ed196e5b7cf1759240456d3e799fe4d7a496c2d407040f9",
+      "sha256": "d6ef8495e7da214f06b00618da458cc7313bb75f332f29e943766ac5398b1204",
       "text_normalized": true
     },
     "START_HERE.md": {
-      "sha256": "f050d917bbb10a6963d5ca4043a157534d0efbc5804d4c3a625f6c3b748c0090",
+      "sha256": "4d6d41121e3a7a736e4961a7e3800217a5f8133b77a0706ac39101cd740aa81e",
       "text_normalized": true
     }
   },

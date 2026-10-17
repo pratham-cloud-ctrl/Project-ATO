@@ -2,7 +2,12 @@
 
 **An invasive spinal cord-computer interface concept for expert-informed practice and function-specific physiological feedback.**
 
-[Read the integrated manuscript](output/pdf/Project_ATO_Integrated_Manuscript.pdf) · [Start here](START_HERE.md) · [Native CAD](cad/stage5/README.md) · [KiCad boards](electronics/stage4/integrated-pcb/BOARD_INDEX.md) · [v2.0.0 release](https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.0)
+[Read the integrated manuscript](output/pdf/Project_ATO_Integrated_Manuscript.pdf) · [Start here](START_HERE.md) · [Native CAD](cad/stage5/README.md) · [KiCad boards](electronics/stage4/integrated-pcb/BOARD_INDEX.md) · [v2.0.1 release](https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.1)
+
+**17 October quality review:** [findings and corrections](docs/review-v2.0.1/README.md).
+The current [carrier firmware revision](firmware/nrf5340/uart-revision/README.md)
+fixes UART frame interleaving; the [portable CAD launcher](cad/CURRENT_CAD.md)
+opens the unchanged native assemblies. The v2.0.0 tag preserves the prior snapshot.
 
 ![Conditional future spinal-interface package, generated from native CAD](cad/stage5/renders/future_assembled.png)
 
@@ -13,7 +18,7 @@ inspired that progression; the spinal architecture and engineering here are
 ATO's own documented, substantially AI-assisted contribution.
 
 **The six-stage digital research and engineering package is complete within its
-stated scope.** It includes a 27-page illustrated manuscript, 18 verified
+stated scope.** It includes a 28-page illustrated manuscript, 18 verified
 references, both application mechanisms, an executed production-core replay,
 eight routed boards, a target-linked image and editable FreeCAD assemblies.
 Useful human spinal decoding, accelerated healthy learning, physical performance
@@ -37,11 +42,11 @@ sensor faults and withdrawal tails. Universal body control is not assumed.
 
 | Entry | What it contains |
 |---|---|
-| [Integrated manuscript](output/pdf/Project_ATO_Integrated_Manuscript.pdf) / [editable source](manuscript/stage6/manuscript.md) | 27 pages; evidence, equations, results, engineering, limitations and population/access register |
+| [Integrated manuscript](output/pdf/Project_ATO_Integrated_Manuscript.pdf) / [editable source](manuscript/stage6/manuscript.md) | 28 pages; evidence, equations, results, engineering, limitations and population/access register |
 | [Evidence and references](docs/stage6/evidence-review.md) | 17 original research reports plus official Mind-Link credit; access, cohort, inference and limits |
 | [Integrated digital verification](docs/stage6/integration-verification.md) | Unchanged production C admission/phase code plus declared companion and body adapters |
 | [Native electrical system](electronics/stage4/integrated-pcb/BOARD_INDEX.md) | Eight genuinely routed populated boards; 80-sheet master, 1,296 fitted positions and 258 harness rows |
-| [Carrier-specific firmware](electronics/stage4/integrated-pcb/firmware-profile/README.md) | nRF5340 ELF/HEX/BIN, configuration, source and byte-level audit; compiled and linked, unflashed |
+| [Current carrier firmware](firmware/nrf5340/uart-revision/README.md) | Corrected nRF5340 UART scheduler, regression test, target-linked image and independent byte audit; compiled and linked, unflashed |
 | [Mechanical CAD](cad/stage5/README.md) / [review sheets](cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf) | Full-scale 260-part reference assembly; separate 230-part future package with 36 functional ports; STEP/STL/BOM/launchers |
 | [Requirements and claims](docs/stage6/requirements-claims-trace.csv) | All 36 original requirements with current evidence-scoped dispositions |
 | [Contributions](docs/stage6/contributions.md) / [defence guide](docs/stage6/defence-guide.md) | Authorship, AI assistance and explanations the student can learn and defend |
@@ -80,13 +85,14 @@ interfaces. Native CAD fit and ERC/DRC do not supply those physical measurements
 
 ## Reproduce
 
-Use a full Git clone at tag `v2.0.0`; install [pinned dependencies](requirements-lock.txt)
+Use a full Git clone at tag `v2.0.1`; install [pinned dependencies](requirements-lock.txt)
 in Python 3.12. The [integration entry](experiments/stage6/README.md) explains the
 C11 compiler requirement.
 
 ```text
 python scripts/verify_manifest.py
 python scripts/verify_stage6_release.py
+python firmware/nrf5340/uart-revision/verify_revision.py
 python scripts/stage6/verify_digital_path.py
 python scripts/verify_stage5_mechanics.py
 python scripts/verify_integrated_pcb.py
@@ -104,6 +110,12 @@ Pratham Varma conceived and steered the project. AI assistance contributed
 substantially to research synthesis, modeling, implementation, CAD, verification
 and writing; see the [contribution record](docs/stage6/contributions.md).
 [LICENSE](LICENSE) and component/SDK notices retain the applicable rights.
+The repository became public on 17 October 2026 at the owner's request.
+Public visibility does not grant a new redistribution license; the original
+all-rights-reserved terms and third-party notices remain in force. Dated Stage 1-5
+documents retain their original checkpoint descriptions, including private-repo
+wording and superseded application/packaging plans. Current entry documents and
+the correction dossier identify the delivered configuration.
 
 The [v1.0.0 subsystem reference](https://github.com/pratham-cloud-ctrl/Project-ATO/tree/v1.0.0)
 and earlier papers remain historical artifacts, not the current full-system

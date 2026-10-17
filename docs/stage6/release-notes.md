@@ -1,4 +1,14 @@
-# Project ATO 2.0 — Integrated Digital Research and Engineering Release
+# Project ATO 2.0.1 — Whole-project Review and Corrections
+
+This correction release follows a bounded review against the original project
+brief. It fixes confirmed UART frame interleaving, removes a duplicate author
+from reference R17 and the rebuilt manuscript, adds a portable current CAD
+launcher, and updates current navigation for the public repository. See the
+[review dossier](https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/docs/review-v2.0.1/README.md)
+and [current firmware](https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/firmware/nrf5340/uart-revision/README.md).
+The prior v2.0.0 tag, all 2,733 protected Stage 1-5 files, original board/CAD
+geometry, studies and production core remain unchanged. The corrected UART
+application is an explicit additive revision with a fresh target build.
 
 Project ATO now connects its proposed invasive spinal interface to a complete,
 inspectable digital research and engineering account: scientific foundations,
@@ -15,13 +25,13 @@ and artifacts; it incorporates no Mind-Link code or geometry.
 ## Start here
 
 - Read the **integrated illustrated manuscript** attached to this release.
-- Use the [engineering entry guide](https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/START_HERE.md)
+- Use the [engineering entry guide](https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/START_HERE.md)
   to find the native KiCad/FreeCAD files, models, firmware, source evidence and
   reproduction instructions.
-- Review the [six-sheet mechanical drawing set](https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf),
+- Review the [six-sheet mechanical drawing set](https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf),
   also attached as a PDF.
-- Use the [contribution record](https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/docs/stage6/contributions.md)
-  and [defence guide](https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/docs/stage6/defence-guide.md)
+- Use the [contribution record](https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/docs/stage6/contributions.md)
+  and [defence guide](https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/docs/stage6/defence-guide.md)
   to understand the project's ownership, assumptions and questions worth testing.
 
 ## Included engineering
@@ -31,7 +41,7 @@ and artifacts; it incorporates no Mind-Link code or geometry.
 | Evidence and mechanisms | Focused 18-reference primary/inspiration audit; 30 classified claims; all 36 original requirements receive a scoped final disposition |
 | Computational work | Preserved conservative negative results; separate 128-scenario conditional mechanism study; new compiled-core integration replay for both applications |
 | Native electronics | Eight routed populated boards; 1,298 positions / 1,296 fitted; 80-sheet master and 258 harness rows; current saved ERC/DRC/parity/unconnected checks pass |
-| Target firmware | Actual nRF5340/BT40F-linked image, source, configuration and binary audit; 53,648-byte flash and 98,000-byte RAM extents |
+| Target firmware | Corrected nRF5340/BT40F UART image, actual-callback regression, source/configuration and independent binary audit; original image retained |
 | Full-size mechanical reference | 260-part combined native assembly; actual eight-board geometry at 1:1 scale; 600 x 310 x 240 mm chassis including feet; 83 mating housings and mapped wiring interfaces |
 | Future implanted interface | Separate 60 x 58 x 14 mm can/header before leads; 230 physical solids, six explicit internal allocations and 36 mapped body ports; fitted/exploded editable CAD and exchange files |
 | Reproducible release | Source archive, manuscript, drawing sheets, external SHA-256 checksums, committed Git-blob manifest and source-bound verification receipts |
@@ -77,13 +87,13 @@ verification and writing assistance. Personal learning and later revisions shoul
 be recorded honestly; the release does not certify completed student mastery or
 external expert review.
 
-Original project material remains a private portfolio under the repository's
+Original project material remains an all-rights-reserved portfolio under the repository's
 proprietary license. Third-party libraries, linked firmware and references retain
 their own notices and rights. The prior `v1.0.0` single-channel desktop subsystem,
 dated studies and adverse findings remain preserved. Website and video revision
 are parked.
 
-Use a **full Git clone at `v2.0.0`** for history-dependent verification. The source
+Use a **full Git clone at `v2.0.1`** for history-dependent verification. The source
 ZIP is convenient for inspecting files and contains no `.git` history. Compare
 downloaded assets with the attached `SHA256SUMS.txt`; the checksum list excludes
 itself. Large populated STEP files are supplied as lossless ZIPs with verified

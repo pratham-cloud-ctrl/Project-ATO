@@ -23,7 +23,12 @@ jobs:
         run: python scripts/verify_stage6_release.py
       - name: Reproduce both conditional paths through the production C core
         run: python scripts/stage6/verify_digital_path.py
+      - name: Verify current UART revision and target-linked artifacts
+        run: python firmware/nrf5340/uart-revision/verify_revision.py
       - name: Preserve integrated electronics checkpoint
         run: python scripts/verify_integrated_pcb.py
       - name: Preserve mechanical source and native inspection evidence
         run: python scripts/verify_stage5_mechanics.py
+      - name: Exercise portable CAD executable resolution
+        shell: pwsh
+        run: ./cad/test-current-cad.ps1

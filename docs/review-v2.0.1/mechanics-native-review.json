@@ -1,0 +1,321 @@
+{
+  "schema": "ato.current-mechanical-review.v1",
+  "date": "2026-10-17",
+  "application": "FreeCAD 1.1.4",
+  "method": "Fresh saved documents opened and inspected through the installed genuine FreeCAD MCP bridge; no source saved or modified",
+  "passed": true,
+  "reference": {
+    "scope": "Fresh saved native application review; source-bound prior clearance receipts replayed separately",
+    "document": {
+      "name": "ATO_stage5_reference_full",
+      "file": "cad/stage5/ATO_stage5_reference_full.FCStd",
+      "objects": 825
+    },
+    "physical_count": 260,
+    "physical_solids": 1920,
+    "invalid": [],
+    "null": [],
+    "boards": [
+      {
+        "label": "PCB_contact_router",
+        "solids": 156,
+        "bounds_mm": [
+          24.0,
+          30.0,
+          176.615,
+          199.0,
+          185.0,
+          188.155
+        ],
+        "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+        "source_object": "PCB_contact_router"
+      },
+      {
+        "label": "PCB_controller_carrier",
+        "solids": 136,
+        "bounds_mm": [
+          390.0,
+          30.0,
+          176.615,
+          545.0,
+          180.0,
+          188.155
+        ],
+        "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+        "source_object": "PCB_controller_carrier"
+      },
+      {
+        "label": "PCB_current_driver",
+        "solids": 165,
+        "bounds_mm": [
+          24.0,
+          30.0,
+          126.61500000000001,
+          199.0,
+          185.0,
+          138.155
+        ],
+        "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+        "source_object": "PCB_current_driver"
+      },
+      {
+        "label": "PCB_monitoring_cell",
+        "solids": 72,
+        "bounds_mm": [
+          390.0,
+          30.0,
+          76.615,
+          510.0,
+          175.0,
+          88.155
+        ],
+        "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+        "source_object": "PCB_monitoring_cell"
+      },
+      {
+        "label": "PCB_monitoring_transport",
+        "solids": 61,
+        "bounds_mm": [
+          390.0,
+          30.0,
+          126.61500000000001,
+          515.0,
+          170.0,
+          138.155
+        ],
+        "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+        "source_object": "PCB_monitoring_transport"
+      },
+      {
+        "label": "PCB_power",
+        "solids": 208,
+        "bounds_mm": [
+          24.0,
+          30.0,
+          76.615,
+          199.0,
+          215.0,
+          91.21499999999999
+        ],
+        "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+        "source_object": "PCB_power"
+      },
+      {
+        "label": "PCB_recording_front_end",
+        "solids": 296,
+        "bounds_mm": [
+          390.0,
+          30.0,
+          26.615,
+          545.0,
+          220.0,
+          38.155
+        ],
+        "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+        "source_object": "PCB_recording_front_end"
+      },
+      {
+        "label": "PCB_supervision",
+        "solids": 574,
+        "bounds_mm": [
+          24.0,
+          30.0,
+          26.615,
+          324.0,
+          280.0,
+          38.155
+        ],
+        "source_document": "cad/stage5/reference/ATO_reference_assembly.FCStd",
+        "source_object": "PCB_supervision"
+      }
+    ],
+    "chassis": [
+      {
+        "label": "Base",
+        "bounds_mm": [
+          0.0,
+          0.0,
+          8.0,
+          600.0,
+          310.0,
+          11.0
+        ]
+      },
+      {
+        "label": "SideLeft",
+        "bounds_mm": [
+          0.0,
+          3.0,
+          11.0,
+          3.0,
+          307.0,
+          237.0
+        ]
+      },
+      {
+        "label": "SideRight",
+        "bounds_mm": [
+          597.0,
+          3.0,
+          11.0,
+          600.0,
+          307.0,
+          237.0
+        ]
+      },
+      {
+        "label": "Lid",
+        "bounds_mm": [
+          0.0,
+          0.0,
+          237.0,
+          600.0,
+          310.0,
+          240.0
+        ]
+      },
+      {
+        "label": "Foot_0",
+        "bounds_mm": [
+          15.0,
+          15.0,
+          0.0,
+          35.0,
+          35.0,
+          8.0
+        ]
+      },
+      {
+        "label": "Foot_1",
+        "bounds_mm": [
+          565.0,
+          15.0,
+          0.0,
+          585.0,
+          35.0,
+          8.0
+        ]
+      },
+      {
+        "label": "Foot_2",
+        "bounds_mm": [
+          15.0,
+          275.0,
+          0.0,
+          35.0,
+          295.0,
+          8.0
+        ]
+      },
+      {
+        "label": "Foot_3",
+        "bounds_mm": [
+          565.0,
+          275.0,
+          0.0,
+          585.0,
+          295.0,
+          8.0
+        ]
+      }
+    ],
+    "source_sha256": "b4323834775d269d458726106929aa30a197aebb93b7eb6c6f7e9e23f49f386b"
+  },
+  "future": {
+    "scope": "Fresh read-only native application review, not mechanical qualification",
+    "before": [],
+    "document": {
+      "name": "ATO_future_interface",
+      "file": "cad/stage5/future-interface/ATO_future_interface.FCStd",
+      "objects": 251
+    },
+    "physical_count": 230,
+    "physical_solids": 230,
+    "invalid": [],
+    "null": [],
+    "ports": [
+      {
+        "name": "P01_Ferrule",
+        "label": "P01 | Ti ferrule | REC_01"
+      },
+      {
+        "name": "P01_Ceramic",
+        "label": "P01 | isolated ceramic sleeve"
+      },
+      {
+        "name": "P01_Pin",
+        "label": "P01 | REC_01 feedthrough pin"
+      },
+      {
+        "name": "P01_Socket",
+        "label": "P01 | nominal mating socket"
+      },
+      {
+        "name": "P01_Conductor",
+        "label": "P01 | continuous illustrative lead conductor"
+      },
+      {
+        "name": "P01_Contact",
+        "label": "P01 | distal REC_01"
+      },
+      {
+        "name": "P36_Ferrule",
+        "label": "P36 | Ti ferrule | RETURN_01"
+      },
+      {
+        "name": "P36_Ceramic",
+        "label": "P36 | isolated ceramic sleeve"
+      },
+      {
+        "name": "P36_Pin",
+        "label": "P36 | RETURN_01 feedthrough pin"
+      },
+      {
+        "name": "P36_Socket",
+        "label": "P36 | nominal mating socket"
+      },
+      {
+        "name": "P36_Conductor",
+        "label": "P36 | continuous illustrative lead conductor"
+      },
+      {
+        "name": "P36_Contact",
+        "label": "P36 | distal RETURN_01"
+      }
+    ],
+    "shape_categories": {
+      "physical": 230,
+      "construction": 4,
+      "allocation": 6
+    },
+    "source_sha256": "b148467eac2c00497052cd0e4f5290d8ea1290199ef06559fb583aaac3b5499c"
+  },
+  "screenshots": {
+    "mechanics-reference-native.png": {
+      "sha256": "913ab513b57d779f4fa7ed1c6096bf32e4cff87392e7b455d22f1569898640a6",
+      "visually_reviewed": true
+    },
+    "mechanics-future-native.png": {
+      "sha256": "fc46bdf35709ceccd7ef8d1f7e1488fce6555b5d9a05fa0d49f1ada7ee3adedc",
+      "visually_reviewed": true
+    }
+  },
+  "portable_checkpoint": {
+    "script": "scripts/verify_stage5_mechanics.py",
+    "checks": 12996,
+    "passed": true,
+    "meaning": "Replays exact source-bound prior native inspection receipts; expensive interference comparisons were not remeasured in this current pass"
+  },
+  "handoff": {
+    "launcher": "cad/OPEN_CURRENT_CAD.cmd",
+    "resolver": "cad/open-current-cad.ps1",
+    "tests": "cad/test-current-cad.ps1",
+    "scenarios": 5,
+    "windows_powershell": "5.1",
+    "powershell": "7.6.5",
+    "both_passed": true,
+    "probe_only": true
+  },
+  "source_geometry_changes": false,
+  "physical_qualification": false
+}

@@ -88,7 +88,8 @@ def audit():
         checks += 1
 
     check(contract['schema'] == 'ato.stage6.release-contract.v1', 'release schema')
-    check(contract['version'] == '2.0.0' and contract['tag'] == 'v2.0.0',
+    check(re.fullmatch(r'2\.0\.\d+', contract['version']) and
+          contract['tag'] == 'v' + contract['version'],
           'new release leaves historical v1 tag distinct')
     check(contract['limitations']['assumptions_permitted_when_explicit_and_defensible'],
           'conditional future interface is permitted')
@@ -135,6 +136,9 @@ def audit():
     # are preserved snapshots and are not rewritten by this finite entry audit.
     docs = [ROOT / 'README.md', ROOT / 'START_HERE.md', ROOT / 'CURRENT_STATUS.md',
             *sorted((ROOT / 'docs/stage6').rglob('*.md')),
+            *sorted((ROOT / 'docs/review-v2.0.1').rglob('*.md')),
+            ROOT / 'cad/CURRENT_CAD.md',
+            ROOT / 'firmware/nrf5340/uart-revision/README.md',
             ROOT / manuscript['source']]
     links = 0
     external_links = set()
@@ -159,7 +163,8 @@ def audit():
             links += 1
 
     citation = (ROOT / 'CITATION.cff').read_text(encoding='utf-8-sig')
-    check(re.search(r'^version:\s*["\']?2\.0\.0["\']?\s*$', citation, re.M),
+    check(re.search(r'^version:\s*["\']?' + re.escape(contract['version']) +
+                    r'["\']?\s*$', citation, re.M),
           'citation metadata uses integrated release version')
     check('date-released: ' + contract['date'] in citation,
           'citation metadata uses actual release date')
@@ -179,6 +184,8 @@ def audit():
     check(build['schema'] == 'ato.stage6.manuscript-build.v1' and
           build['version'] == contract['version'] and build['date'] == contract['date'],
           'current manuscript build identity')
+    check(build['release_contract_sha256_lf'] == sha(CONTRACT, True),
+          'manuscript binds the release metadata used by its cover and footer')
     check(build['physical_qualification'] is False, 'manuscript is a digital artifact')
     check(build['source_path'] == manuscript['source'] and
           build['source_sha256_lf'] == sha(ROOT / manuscript['source'], True),
@@ -289,6 +296,10 @@ def audit():
     bound.update(path for path in (ROOT / 'manuscript/stage6').rglob('*')
                  if path.is_file() and '__pycache__' not in path.parts)
     bound.update(path for path in (ROOT / 'docs/stage6').rglob('*')
+                 if path.is_file() and '__pycache__' not in path.parts)
+    bound.update(path for path in (ROOT / 'docs/review-v2.0.1').rglob('*')
+                 if path.is_file() and '__pycache__' not in path.parts)
+    bound.update(path for path in (ROOT / 'firmware/nrf5340/uart-revision').rglob('*')
                  if path.is_file() and '__pycache__' not in path.parts)
     for directory in ('results/stage6', 'experiments/stage6', 'scripts/stage6'):
         bound.update(path for path in (ROOT / directory).rglob('*')

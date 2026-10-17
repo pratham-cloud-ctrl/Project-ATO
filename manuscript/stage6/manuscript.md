@@ -239,9 +239,11 @@ The selected four-layer process includes ordinary and fine vias. Five controller
 
 ### 7.1 Actual target image and host execution
 
-The application uses an nRF5340 application-core target and a BT40F carrier configuration. The saved ELF, HEX, BIN, map and configuration are independently cross-checked. Flash LOAD extent is 53,648 bytes; RAM address extent is 98,000 bytes within the 458,752-byte linker allocation. These extents differ from physical application-core RAM and from earlier architecture reservations.
+The application uses an nRF5340 application-core target and a BT40F carrier configuration. The original v2.0.0 ELF, HEX, BIN, map and configuration remain preserved and independently cross-checked: 53,648-byte flash LOAD and 98,000-byte RAM address extents within the 458,752-byte linker allocation. These extents differ from physical application-core RAM and from earlier architecture reservations.
 
 The carrier configuration uses the manufacturer's 11 pF HFXO load setting. The image is compiled and linked, with no flashing or physical target execution. Host tests execute the shared production core. They exercise actual C control logic, while clocks, GPIO, SPI, analog observations and peripheral timing remain separate evidence responsibilities.
+
+The 17 October follow-up review confirmed a UART scheduling defect: normal telemetry could interrupt a partly transmitted raw frame. The additive current application under firmware/nrf5340/uart-revision retains queue ownership until the complete frame is sent. Its compiled actual-callback regression exercises 1,172 finite scenarios; the historical callback fails 334 and the corrected callback passes all 1,172. A fresh carrier build and independent image audit accompany that revision. The production policy core, pins and native boards are unchanged. These host and linkage checks do not execute a physical UART.
 
 ### 7.2 Observation and stimulation are separated in the current target
 
@@ -259,7 +261,7 @@ Consequently, simultaneous live spinal-feature feedback during MOTOR is a future
 | Raw output observation | 450 kword/s reservation | Dedicated transport design and lower-rate target opportunities |
 | Radio | Future network/telemetry allocation | Current image uses wired interfaces; no implemented radio image |
 | Pressure train | Historical three profiles at 120 Hz | Separate Stage 6 adapter uses 40 Hz events; no equivalence claim |
-| Application memory | Architecture reservation | Actual linked 53,648-byte flash / 98,000-byte RAM extents |
+| Original application memory | Architecture reservation | Preserved v2.0.0 image: 53,648-byte flash / 98,000-byte RAM extents; current UART revision carries its own image audit |
 | Input power/runtime | Earlier additive ledgers | Latest conditional 3.154150 W / 4.879920 h |
 
 The purpose of this table is to make design evolution inspectable. Earlier studies remain reproducible records of their own inputs. A later successful build or board route does not retrospectively validate an earlier capacity assumption.
@@ -366,7 +368,7 @@ This distinction also governs the word independent. Source-independent checkers 
 
 The frozen Stage 1-5 engineering baseline is commit 736015848cf581df66488bf53aa6360152eb767b. Stage 6 adds integration, evidence synthesis, the manuscript, defence material and release checks. Prior native sources, studies, results and workflows remain protected; only approved current entry and citation/manifest files evolve. The original synced hypothesis paper remains read-only.
 
-A full Git clone at the v2.0.0 tag is the authoritative reproducibility entry. Git history is required for baseline and committed-blob checks. A source ZIP is a convenient exchange archive, with the absence of its .git history stated explicitly. The manuscript, mechanical review, source archive and release checksum list provide separate inspection paths.
+A full Git clone at the v2.0.1 tag is the authoritative reproducibility entry. Git history is required for baseline and committed-blob checks. A source ZIP is a convenient exchange archive, with the absence of its .git history stated explicitly. The manuscript, mechanical review, source archive and release checksum list provide separate inspection paths.
 
 The main entry guides readers from the paper to mechanisms, native KiCad, firmware, FreeCAD assemblies and results. Stage 6's portable release verifier binds references, manuscript source, figures, final PDF, actual visual review, integration reports and preserved baseline content. Native CAD regeneration requires the installed application runtimes. The project uses available free tools; optional commercial/student tools are not prerequisites for reproducing the released evidence.
 
@@ -406,7 +408,7 @@ The central contribution is therefore a defensible bridge from an ambitious idea
 | Original mechanism/studies | docs/stage3/conditional-concept.md and experiments/stage3 | Protocols, model equations, preserved negative and conditional results |
 | Integrated replay | docs/stage6/integration-verification.md | Compiled-core path, adapters, fault cases and outputs |
 | Native electronics | electronics/stage4/integrated-pcb/BOARD_INDEX.md | Eight saved routed boards and full hierarchy |
-| Target image | electronics/stage4/integrated-pcb/firmware-profile | ELF/HEX/BIN/configuration and carrier audit |
+| Target image | firmware/nrf5340/uart-revision | Current corrected application, ELF/HEX/BIN and regression audit |
 | Native mechanical package | cad/stage5/README.md | Combined assembly, future interface, mating and source CAD |
 | Mechanical review | cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf | Six dimensioned and illustrated sheets |
 | Release/defence | docs/stage6 | Contributions, limits, reproducibility and explanation guide |

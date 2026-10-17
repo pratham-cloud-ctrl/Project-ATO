@@ -68,3 +68,6 @@ cad/stage5/reference/extract_board_datums.py whitespace=-blank-at-eof
 docs/stage5/future-package-design.md whitespace=-blank-at-eof
 # Source-derived manuscript SVG path spacing is generated and visually reviewed.
 manuscript/stage6/figures/*.svg whitespace=-blank-at-eol
+firmware/nrf5340/uart-revision/artifacts/*.elf binary
+firmware/nrf5340/uart-revision/artifacts/*.bin binary
+firmware/nrf5340/uart-revision/artifacts/ato.map text eol=lf whitespace=-blank-at-eol

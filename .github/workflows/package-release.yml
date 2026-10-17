@@ -1,0 +1,78 @@
+name: Package verified correction release
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing reviewed release tag
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ato-release-package
+  cancel-in-progress: false
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pypdf==6.10.0 numpy==2.3.5
+      - name: Verify source, software revision and mechanical checkpoint
+        run: |
+          python scripts/verify_manifest.py
+          python scripts/verify_stage6_release.py
+          python firmware/nrf5340/uart-revision/verify_revision.py
+          python scripts/verify_integrated_pcb.py
+          python scripts/verify_stage5_mechanics.py
+      - name: Package exact tagged blobs
+        env:
+          RELEASE_TAG: ${{ inputs.tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os, re, subprocess
+          tag = os.environ['RELEASE_TAG']
+          assert re.fullmatch(r'v2\.0\.\d+', tag)
+          contract = json.load(open('docs/stage6/release-contract.json'))
+          assert tag == contract['tag']
+          assert subprocess.check_output(['git','rev-parse','HEAD']).strip() == subprocess.check_output(['git','rev-parse',tag+'^{commit}']).strip()
+          PY
+          release_dir="$RUNNER_TEMP/ato-release"
+          mkdir -p "$release_dir"
+          archive="Project_ATO_${RELEASE_TAG}_source.zip"
+          git -c core.autocrlf=false -c core.eol=lf archive --format=zip --output="$release_dir/$archive" HEAD
+          python scripts/verify_stage6_release.py --archive "$release_dir/$archive" | tee "$release_dir/source-archive-verification.json"
+          cp output/pdf/Project_ATO_Integrated_Manuscript.pdf "$release_dir/"
+          cp cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf "$release_dir/"
+          (cd "$release_dir" && sha256sum Project_ATO_Integrated_Manuscript.pdf ATO_Stage5_Mechanical_Review.pdf "$archive" > SHA256SUMS.txt)
+      - name: Upload to existing draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --json isDraft --jq .isDraft)" = true
+          release_dir="$RUNNER_TEMP/ato-release"
+          gh release upload "$RELEASE_TAG" "$release_dir/Project_ATO_Integrated_Manuscript.pdf" "$release_dir/ATO_Stage5_Mechanical_Review.pdf" "$release_dir/Project_ATO_${RELEASE_TAG}_source.zip" "$release_dir/SHA256SUMS.txt" --repo "$GITHUB_REPOSITORY" --clobber
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$RELEASE_TAG" --jq '{tag_name,draft,target_commitish,assets:[.assets[]|{name,size,digest,state}]}' > "$release_dir/github-release-assets.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ato-correction-release-verification
+          if-no-files-found: error
+          path: |
+            ${{ runner.temp }}/ato-release/source-archive-verification.json
+            ${{ runner.temp }}/ato-release/SHA256SUMS.txt
+            ${{ runner.temp }}/ato-release/github-release-assets.json

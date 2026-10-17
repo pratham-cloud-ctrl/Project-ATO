@@ -1,6 +1,6 @@
 # Project ATO integrated digital release plan
 
-**Release target: v2.0.0, 16 October 2026.** This is the full-system digital
+**Release target: v2.0.1, 17 October 2026.** This is the full-system digital
 research and engineering release. The existing `v1.0.0` remains a historical
 single-channel desktop subsystem and is not silently replaced or retagged.
 
@@ -10,7 +10,7 @@ The release joins the proposed spinal recording, interpretation, individualized
 stimulation, independent delivery monitoring and bodily feedback mechanism to
 two application arguments, reproducible studies, native circuits, target-linked
 firmware and editable mechanical assemblies. It includes an integrated
-illustrated manuscript and an inspectable private repository. AstroSam's
+illustrated manuscript and an inspectable public repository. AstroSam's
 [Mind-Link](https://github.com/sam-astro/Mind-link) inspired the progression from
 future concept to tangible engineering; its source and geometry are not copied
 into ATO.
@@ -59,11 +59,11 @@ and video revision are outside this release task.
    verify it against the index, and check the staged diff. The manifest excludes
    itself. Do not put an archive inside its own source tree or include a
    receipt's own hash in the receipt.
-5. Commit and push the existing private working branch, update its draft review,
+5. Commit and push the review working branch, update its draft review,
    then independently fetch/check out the exact pushed commit. Run the manifest,
    Stage 6 and preserved electrical/mechanical checks from that clean copy.
    Verify remote branch identity and GitHub workflow conclusions.
-6. Create the new `v2.0.0` tag at the reviewed commit and a private GitHub digital
+6. Create the new `v2.0.1` tag at the reviewed commit and a public GitHub digital
    engineering release. Upload the manuscript, mechanical drawing set, a full
    source archive, and an external SHA-256 checksum list. Verify that the remote
    tag resolves to the intended commit and that downloaded asset bytes or GitHub

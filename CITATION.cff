@@ -5,10 +5,10 @@ type: software
 authors:
   - family-names: Varma
     given-names: Pratham
-version: 2.0.0
-date-released: 2026-10-16
+version: 2.0.1
+date-released: 2026-10-17
 repository-code: "https://github.com/pratham-cloud-ctrl/Project-ATO"
-url: "https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.0"
+url: "https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.1"
 abstract: >-
   An AI-assisted, entirely digital project connecting conditional spinal-interface
   mechanisms for expert-informed retained motor learning and selected physiological
@@ -22,6 +22,6 @@ preferred-citation:
   authors:
     - family-names: Varma
       given-names: Pratham
-  version: 2.0.0
-  date-released: 2026-10-16
-  url: "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.0/output/pdf/Project_ATO_Integrated_Manuscript.pdf"
+  version: 2.0.1
+  date-released: 2026-10-17
+  url: "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/output/pdf/Project_ATO_Integrated_Manuscript.pdf"

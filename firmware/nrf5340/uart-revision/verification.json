@@ -1,0 +1,75 @@
+{
+  "schema": "ato.uart-revision.independent-verification.v1",
+  "date": "2026-10-17",
+  "passed": true,
+  "checks": 70,
+  "hardware_carrier": "Fanstel BT40F",
+  "flash_LOAD_extent_bytes": 53776,
+  "RAM_extent_bytes": 98000,
+  "RAM_linker_capacity_bytes": 458752,
+  "flash_capacity_bytes": 1048576,
+  "elf_sha256": "ab441a6d4905c140bc9377635945a31cdd3c478dc47b4e6a6ee4176a3ae6d77c",
+  "intel_hex_records": 3369,
+  "load_segments": [
+    {
+      "physical_address": 0,
+      "virtual_address": 0,
+      "bytes": 53288
+    },
+    {
+      "physical_address": 53296,
+      "virtual_address": 536872128,
+      "bytes": 476
+    },
+    {
+      "physical_address": 53772,
+      "virtual_address": 53772,
+      "bytes": 4
+    }
+  ],
+  "linked_ato_functions": [
+    "ato_backend_init",
+    "ato_backend_now_us",
+    "ato_backend_service",
+    "ato_backend_stop",
+    "ato_runtime_command",
+    "ato_runtime_configure",
+    "ato_runtime_crc32",
+    "ato_runtime_event",
+    "ato_runtime_extend_ticks",
+    "ato_runtime_health",
+    "ato_runtime_init",
+    "ato_runtime_phase_end",
+    "ato_runtime_phase_ready",
+    "ato_runtime_phase_start",
+    "ato_runtime_queue_drain",
+    "ato_runtime_queue_push",
+    "ato_runtime_raw_identity",
+    "ato_runtime_rearm",
+    "ato_runtime_recovery_begin",
+    "ato_runtime_route_prepare",
+    "ato_runtime_route_readback",
+    "ato_runtime_sbp",
+    "ato_runtime_session",
+    "ato_runtime_take_actions",
+    "ato_runtime_tick",
+    "ato_runtime_trip",
+    "main"
+  ],
+  "hardware_configuration_unchanged": true,
+  "historical_bindings_preserved": true,
+  "historical_failing_host_scenarios": 334,
+  "current_passing_host_scenarios": 1172,
+  "flashed_or_executed": false,
+  "hardware_timing_verified": false,
+  "evidence": "Actual corrected target image/source binding; independent ELF/HEX/BIN audit; finite actual-callback FIFO-stub regression",
+  "source_sha256_lf": {
+    "firmware/nrf5340/uart-revision/verify_revision.py": "4508333d6fa1c75b590f23292c42131fe79f86ddcd6e447812f414370da4f48a",
+    "firmware/nrf5340/uart-revision/README.md": "361c0f4000cded36199abcd1a39861e8070cdfae47bc23af11d1c851faacc5d7",
+    "firmware/nrf5340/uart-revision/build-receipt.json": "ebab0d2412e684a4d9f30f586d62c3588762d9e984bec4952ed8d5280e4dca92",
+    "firmware/nrf5340/uart-revision/uart-framing-tests.json": "09ecc8e6a51db13817e414ba97f882d91574ee5040ded8bee1dfd1e2104ea3ec",
+    "firmware/nrf5340/uart-revision/tests/check_uart_framing.py": "c05d4896fcceaa81cbe6dc460f157f6387798173e74112d9e737454cb1fa1d36",
+    "scripts/verify_nrf5340.py": "d9062570646e31f74d361edb3d048729c09f40ce41123d1020490fb6c8da77c0",
+    "electronics/stage4/integrated-pcb/firmware-profile/verify_bt40f.py": "154024c2c57a3b93ddb616e37d7f3d62ab13b0b1d49b92a31f4fab7433b3da0b"
+  }
+}

@@ -8,7 +8,7 @@ future idea to inspectable engineering; ATO contributes its own spinal design.
 
 ## 1. Read the integrated account
 
-- [Integrated illustrated manuscript](output/pdf/Project_ATO_Integrated_Manuscript.pdf): 27 pages connecting scientific premises, mathematical models, actual engineering and verification.
+- [Integrated illustrated manuscript](output/pdf/Project_ATO_Integrated_Manuscript.pdf): 28 pages connecting scientific premises, mathematical models, actual engineering and verification.
 - [Editable manuscript and builder](manuscript/stage6/manuscript.md): complete source, figures and reproducible typesetting alongside it.
 - [Current scope and completed stages](CURRENT_STATUS.md): what exists and which capabilities remain conditional.
 - [Primary-source evidence audit](docs/stage6/evidence-review.md): 18 references, populations, access methods and limits.
@@ -26,8 +26,9 @@ pressure feedback and selected pressor authority; it is not universal body contr
 
 ## 3. Open the actual electronics and software
 
+- [Current corrected carrier firmware](firmware/nrf5340/uart-revision/README.md): UART frame scheduling fix, regression evidence and rebuilt target image; the original image remains a historical checkpoint.
 - [KiCad board index](electronics/stage4/integrated-pcb/BOARD_INDEX.md): eight routed populated boards, the 80-sheet hierarchy, fabrication references and native files.
-- [Target-linked BT40F/nRF5340 image](electronics/stage4/integrated-pcb/firmware-profile/README.md): ELF/HEX/BIN, configuration and exact carrier scope.
+- [Preserved BT40F/nRF5340 image checkpoint](electronics/stage4/integrated-pcb/firmware-profile/README.md): original ELF/HEX/BIN, configuration and exact historical carrier scope.
 - [Integrated replay methods](docs/stage6/integration-verification.md): compiled production C core, companion/body adapters, actual results and fault boundaries.
 - [Integration experiment entry](experiments/stage6/README.md): runnable reproduction and compiler requirements.
 
@@ -40,6 +41,8 @@ have been physically executed.
 
 Start with the [native CAD package](cad/stage5/README.md). Its explicit Windows
 launchers open FreeCAD directly without relying on file associations.
+Use the [portable current launcher](cad/CURRENT_CAD.md) on another Windows computer
+or to select your installed FreeCAD executable.
 
 - [Complete reference launcher](cad/stage5/OPEN_REFERENCE_ASSEMBLY.cmd): actual eight-board assembly, 260 physical objects, session-only cutaway.
 - [Future implanted-interface source](cad/stage5/future-interface/README.md): 230 physical parts, 36 mapped ports, separate leads and six allocations.
@@ -53,13 +56,14 @@ existing boards fit inside it.
 
 ## 5. Reproduce and check
 
-Use a full Git clone at tag `v2.0.0` for history/blob verification. Install the
+Use a full Git clone at tag `v2.0.1` for history/blob verification. Install the
 dependencies in [requirements-lock.txt](requirements-lock.txt) in a Python 3.12
 environment. Read the experiment entry for a C11 compiler, then run:
 
 ```text
 python scripts/verify_manifest.py
 python scripts/verify_stage6_release.py
+python firmware/nrf5340/uart-revision/verify_revision.py
 python scripts/stage6/verify_digital_path.py
 python scripts/verify_stage5_mechanics.py
 python scripts/verify_integrated_pcb.py
@@ -78,5 +82,8 @@ checksum list verifies the downloadable PDFs and ZIP separately.
 - [Digital exit review](docs/stage6/exit-review.md): finite completion criteria.
 
 The original negative studies and historical v1.0.0 subsystem remain preserved.
+
+The [17 October whole-project review](docs/review-v2.0.1/README.md) records the
+scope, concrete corrections, current verification and accepted future premises.
 Current engineering values take precedence over superseded allocations. Video
 and website revision were parked and are not current release deliverables.

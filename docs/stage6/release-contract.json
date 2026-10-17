@@ -1,9 +1,9 @@
 {
   "schema": "ato.stage6.release-contract.v1",
-  "version": "2.0.0",
-  "tag": "v2.0.0",
-  "date": "2026-10-16",
-  "release_title": "Project ATO 2.0 — Integrated Digital Research and Engineering Release",
+  "version": "2.0.1",
+  "tag": "v2.0.1",
+  "date": "2026-10-17",
+  "release_title": "Project ATO 2.0.1 — Whole-project review and corrections",
   "scope": "Entirely digital integrated SCCI research and engineering concept; native modular reference and separate conditional future implanted interface",
   "baseline_commit": "736015848cf581df66488bf53aa6360152eb767b",
   "baseline_tracked_files": 2740,
@@ -57,7 +57,18 @@
     "provenance/stage3-conditional-concept-review.json",
     "provenance/stage4-integrated-pcb-verification.json",
     "provenance/stage5-mechanical-verification.json",
-    "provenance/stage5-delivery-review.json"
+    "provenance/stage5-delivery-review.json",
+    "docs/review-v2.0.1/README.md",
+    "docs/review-v2.0.1/science-review.md",
+    "docs/review-v2.0.1/electronics-review.md",
+    "docs/review-v2.0.1/mechanics-review.md",
+    "cad/CURRENT_CAD.md",
+    "cad/OPEN_CURRENT_CAD.cmd",
+    "cad/open-current-cad.ps1",
+    "cad/test-current-cad.ps1",
+    "firmware/nrf5340/uart-revision/README.md",
+    "firmware/nrf5340/uart-revision/verify_revision.py",
+    ".github/workflows/package-release.yml"
   ],
   "limitations": {
     "human_or_animal_data_collected": false,
@@ -76,7 +87,7 @@
   "release_assets": [
     "Project_ATO_Integrated_Manuscript.pdf",
     "ATO_Stage5_Mechanical_Review.pdf",
-    "Project_ATO_v2.0.0_source.zip",
+    "Project_ATO_v2.0.1_source.zip",
     "SHA256SUMS.txt"
   ],
   "checksum_policy": "Tracked Git-blob manifest excludes itself; external release checksum list excludes itself; archives generated outside tracked source tree"
