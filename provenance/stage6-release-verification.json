@@ -86,7 +86,7 @@
   },
   "artifacts": {
     ".github/workflows/package-release.yml": {
-      "sha256": "0557972b6a8ff09c332ff996fd9f77b4b854cba531a54e3c0b6073a395a8c813",
+      "sha256": "fe35a838a0a37d4a6065ea44e0010e005adc0cf200942836f26c7c2a3bd40538",
       "text_normalized": true
     },
     ".github/workflows/verify-release.yml": {

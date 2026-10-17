@@ -66,7 +66,9 @@ jobs:
           test "$(gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --json isDraft --jq .isDraft)" = true
           release_dir="$RUNNER_TEMP/ato-release"
           gh release upload "$RELEASE_TAG" "$release_dir/Project_ATO_Integrated_Manuscript.pdf" "$release_dir/ATO_Stage5_Mechanical_Review.pdf" "$release_dir/Project_ATO_${RELEASE_TAG}_source.zip" "$release_dir/SHA256SUMS.txt" --repo "$GITHUB_REPOSITORY" --clobber
-          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$RELEASE_TAG" --jq '{tag_name,draft,target_commitish,assets:[.assets[]|{name,size,digest,state}]}' > "$release_dir/github-release-assets.json"
+          # The by-tag REST endpoint can return 404 for an unpublished draft.
+          # Use the same draft-aware lookup that already passed the upload guard.
+          gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --json tagName,isDraft,targetCommitish,assets > "$release_dir/github-release-assets.json"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
