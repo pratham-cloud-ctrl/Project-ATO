@@ -41,6 +41,7 @@ without falsely claiming they have already been demonstrated by ATO.
 | R17 repeated one author in full and abbreviated metadata | Removed the duplicate, checked the publisher roster, rebuilt and visually reviewed the manuscript | [Scientific review](science-review.md) |
 | Most historical CAD launchers depended on this laptop's executable location | New current launcher resolves an explicit setting, PATH or installed FreeCAD and opens the existing native files | [Portable CAD entry](../../cad/CURRENT_CAD.md), [mechanical review](mechanics-review.md) |
 | Current release entries retained private-repository wording and superseded directions | Updated current entries for public visibility, the corrected application, portable CAD and v2.0.1 reproduction | [Current status](../../CURRENT_STATUS.md), [release plan](../stage6/release-plan.md) |
+| Generated HEX/map/configuration/device-tree text had raw Windows line-ending hashes in the new release receipt | Use explicit LF-normalized text hashes, consistent with Git and the independent firmware audit; ELF/BIN bytes remain exact | [Current release verifier](../../scripts/verify_stage6_release.py) |
 
 ## Review coverage and retained evidence
 

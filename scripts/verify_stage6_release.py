@@ -23,7 +23,8 @@ ROOT = Path(__file__).resolve().parents[1]
 CONTRACT = ROOT / 'docs/stage6/release-contract.json'
 REPORT = ROOT / 'provenance/stage6-release-verification.json'
 TEXT_SUFFIXES = {'.py', '.c', '.h', '.md', '.json', '.yml', '.yaml', '.txt', '.csv',
-                 '.cff', '.bib', '.svg', '.ps1', '.cmd', '.css', '.html'}
+                 '.cff', '.bib', '.svg', '.ps1', '.cmd', '.css', '.html',
+                 '.hex', '.map', '.config', '.dts'}
 
 
 def sha(path: Path, normalized=False):
@@ -76,6 +77,27 @@ def inspect_archive(path):
             'commit': git('rev-parse', 'HEAD').decode().strip(),
             'sha256': sha(path), 'bytes': path.stat().st_size,
             'exact_git_blob_comparison': True}
+
+
+def inspect_bound_git_blobs(artifacts, staged=False):
+    """Catch checkout/Git-filter disagreement before publication, including EOLs."""
+    prefix = ':' if staged else 'HEAD:'
+    names = sorted(artifacts)
+    data = git('cat-file', '--batch',
+               input=''.join(prefix + name + '\n' for name in names).encode('utf-8'))
+    offset = 0
+    for name in names:
+        end = data.index(b'\n', offset)
+        header = data[offset:end].decode('ascii')
+        assert not header.endswith(' missing'), 'Missing bound Git blob: ' + name
+        size = int(header.rsplit(' ', 1)[1])
+        content = data[end + 1:end + 1 + size]
+        offset = end + size + 2
+        if artifacts[name]['text_normalized']:
+            content = content.replace(b'\r\n', b'\n')
+        assert hashlib.sha256(content).hexdigest() == artifacts[name]['sha256'], (
+            'Bound artifact differs from canonical Git blob: ' + name)
+    return len(names)
 
 
 def audit():
@@ -350,6 +372,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write-report', action='store_true')
     parser.add_argument('--archive', type=Path)
+    parser.add_argument('--index', action='store_true',
+                        help='verify staged rather than committed artifact blobs before committing')
     args = parser.parse_args()
     result = audit()
     if args.write_report:
@@ -357,8 +381,17 @@ def main():
                           encoding='utf-8')
     else:
         previous = json.loads(REPORT.read_text(encoding='utf-8-sig'))
-        assert result == previous, 'Stage 6 changed after review; inspect before --write-report'
+        if result != previous:
+            fields = sorted(key for key in set(result) | set(previous)
+                            if result.get(key) != previous.get(key))
+            artifacts = sorted(key for key in set(result['artifacts']) | set(previous['artifacts'])
+                               if result['artifacts'].get(key) != previous['artifacts'].get(key))
+            raise AssertionError('Stage 6 changed after review; inspect before --write-report. '
+                                 'Fields: ' + ', '.join(fields) +
+                                 '; differing artifacts: ' + ', '.join(artifacts))
     summary = {key: result[key] for key in ('passed', 'version', 'checks', 'baseline', 'manuscript')}
+    if not args.write_report:
+        summary['bound_git_blobs_verified'] = inspect_bound_git_blobs(result['artifacts'], args.index)
     if args.archive:
         summary['archive'] = inspect_archive(args.archive.resolve())
     print(json.dumps(summary, sort_keys=True))

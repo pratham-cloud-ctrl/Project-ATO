@@ -4,7 +4,7 @@
   "version": "2.0.1",
   "date": "2026-10-17",
   "scope": "Entirely digital integrated SCCI research and engineering concept; native modular reference and separate conditional future implanted interface",
-  "checks": 6506,
+  "checks": 6509,
   "baseline": {
     "commit": "736015848cf581df66488bf53aa6360152eb767b",
     "preserved_files": 2733,
@@ -36,7 +36,7 @@
       "09_runtime"
     ]
   },
-  "local_entry_links": 169,
+  "local_entry_links": 170,
   "external_links_recorded_not_live_revalidated_here": [
     "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
     "https://doi.org/10.1002/advs.202303377",
@@ -158,7 +158,7 @@
       "text_normalized": true
     },
     "docs/review-v2.0.1/README.md": {
-      "sha256": "9d530cffb777052430b99e8b04af1ea42b268ac92797dcfde22c1f3835784b99",
+      "sha256": "007f92c7d712535df043580192fd2a7e25c7b0e873bf95933723cfe5b42d1feb",
       "text_normalized": true
     },
     "docs/review-v2.0.1/science-review.md": {
@@ -238,16 +238,16 @@
       "text_normalized": false
     },
     "firmware/nrf5340/uart-revision/artifacts/ato.hex": {
-      "sha256": "e1ac1a85a1d499138f17d7cfae7858c32f3a7531af83142671b3ec700fa56f3b",
-      "text_normalized": false
+      "sha256": "aa8d505974801f9fe0e24e39a60c659826ffa6c3beab9aff7154745aa3b1bc6d",
+      "text_normalized": true
     },
     "firmware/nrf5340/uart-revision/artifacts/ato.map": {
-      "sha256": "a5b5c394be83dc65657294c9643aebd5f465b95806530650bf33971a994ecf57",
-      "text_normalized": false
+      "sha256": "7eb9c3f7dc987b576aaad4f7dc361e35306055fc5b31a2a4d1a1110fae2b9de0",
+      "text_normalized": true
     },
     "firmware/nrf5340/uart-revision/artifacts/build.config": {
-      "sha256": "de367434a36c722868387979e23d2fea634f1a3e46ff12437788b87876707f09",
-      "text_normalized": false
+      "sha256": "8e0585321b1c97edaf5c3d90e137b9fb3d52b757734682075ad2dde5691b3036",
+      "text_normalized": true
     },
     "firmware/nrf5340/uart-revision/artifacts/compile-records.json": {
       "sha256": "47cbe9171b6972910a747201400101e0677c4089dd9fd64e5801172556b2d8fa",
@@ -262,8 +262,8 @@
       "text_normalized": true
     },
     "firmware/nrf5340/uart-revision/artifacts/zephyr.dts": {
-      "sha256": "4cc693daefe278ab48667a65c50c8769f8ecd24ca111d6f70f2adc4a06d31063",
-      "text_normalized": false
+      "sha256": "36d53f51636a8a39a9e56c5e96da8704ce9bdfb5e18ef63d8e0f066867e7efd8",
+      "text_normalized": true
     },
     "firmware/nrf5340/uart-revision/build-receipt.json": {
       "sha256": "ebab0d2412e684a4d9f30f586d62c3588762d9e984bec4952ed8d5280e4dca92",
@@ -442,7 +442,7 @@
       "text_normalized": true
     },
     "scripts/verify_stage6_release.py": {
-      "sha256": "d6ef8495e7da214f06b00618da458cc7313bb75f332f29e943766ac5398b1204",
+      "sha256": "c019266be065cb1382a765f563a50431e09b7553cd02691521fee8e7c5871b39",
       "text_normalized": true
     },
     "START_HERE.md": {
