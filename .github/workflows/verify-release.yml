@@ -15,6 +15,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Install document inspection dependency
         run: python -m pip install pypdf==6.10.0 numpy==2.3.5
       - name: Verify exact committed Git blobs
@@ -23,6 +26,10 @@ jobs:
         run: python scripts/verify_stage6_release.py
       - name: Check reader guides, anchors and preserved engineering
         run: python scripts/verify_viewer_navigation.py
+      - name: Verify browser inspection geometry, circuits and complete downloads
+        run: |
+          python scripts/inspector/verify_inspector.py
+          node scripts/inspector/check_three_loader.mjs
       - name: Reproduce both conditional paths through the production C core
         run: python scripts/stage6/verify_digital_path.py
       - name: Verify current UART revision and target-linked artifacts

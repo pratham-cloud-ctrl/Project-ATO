@@ -8,6 +8,13 @@ KiCad electronics and current firmware. This is a documentation/navigation
 update on the default branch; the paper, native designs, firmware and published
 v2.0.1 engineering artifacts retain their verified bytes and release identities.
 
+**Browser inspection added: 21 October 2026.** The
+[public build inspector](https://pratham-cloud-ctrl.github.io/Project-ATO/)
+adds selectable source-derived 3D assemblies/boards, interactive PCB component
+lookup, all four copper layers, 80 searchable current schematic sheets and
+complete native/STEP downloads. This is an inspection layer; the original
+engineering sources and integrated paper retain their released identities.
+
 
 The [whole-project review](docs/review-v2.0.1/README.md) preserves the original
 goals and fixes a confirmed UART frame-interleaving defect, one bibliography

@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/openscopeproject/InteractiveHtmlBom",
+  "commit": "d1eb5b79a52a2ddc1ce270b63920346463c19b05",
+  "license": "MIT",
+  "retrieved": "2026-10-21",
+  "modifications": "None. The upstream plugin is invoked through its CLI. Its exact source and embedded third-party notices are retained."
+}

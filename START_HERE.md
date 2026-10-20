@@ -1,5 +1,10 @@
 # Start here: Project ATO
 
+**[Inspect the actual build in your browser](https://pratham-cloud-ctrl.github.io/Project-ATO/)**
+or use its [standard/native downloads](https://pratham-cloud-ctrl.github.io/Project-ATO/?view=downloads).
+The browser view requires no CAD installation; the downloads support local
+engineering inspection and editing.
+
 **[Open the visual Explore hub](docs/explore/README.md)** for the easiest reading
 route. Choose [theory](docs/explore/theory.md), [CAD & 3D](docs/explore/cad.md),
 [electronics & KiCad](docs/explore/electronics.md), or [firmware](docs/explore/firmware.md).

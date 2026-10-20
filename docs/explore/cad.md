@@ -4,15 +4,25 @@
 
 ATO has two connected physical identities: a full-size electronics reference and a separate proposed implanted interface. The images below come from the saved CAD solids. You can inspect the design here before installing any software.
 
+**View now:** [future interface in interactive 3D](https://pratham-cloud-ctrl.github.io/Project-ATO/?design=future&view=model) · [complete reference in interactive 3D](https://pratham-cloud-ctrl.github.io/Project-ATO/?design=reference&view=model).
+Rotate, select/isolate named parts, hide covers and use the explode slider. Six
+nonphysical allocation volumes in the future package default off. Browser
+meshes are source-derived display copies; use STEP for solid CAD interchange.
+
+**Open in your CAD software:** [complete native FreeCAD ZIP](https://pratham-cloud-ctrl.github.io/Project-ATO/downloads/ATO_CAD_Native.zip) · [complete 260-object reference STEP ZIP](https://pratham-cloud-ctrl.github.io/Project-ATO/downloads/ATO_Reference_Complete_STEP.zip) · [future fitted STEP](https://pratham-cloud-ctrl.github.io/Project-ATO/downloads/ATO_Future_Interface.step).
+The native ZIP includes the feature module and opening launchers. STEP is the
+standard interchange route for compatible CAD applications; editable feature
+history remains in FreeCAD.
+
 **Start with the [six-page mechanical drawing set](../../cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf)** for dimensions, assembly, ports and engineering boundaries.
 
 ## Full-scale reference assembly
 
-[![Full-size eight-board reference assembly with the covers opened for inspection](assets/cad-reference-assembled.jpg)](../../cad/stage5/renders/reference_assembled.png)
+[![Full-size eight-board reference assembly with the covers opened for inspection](assets/cad-reference-assembled.jpg)](https://raw.githubusercontent.com/pratham-cloud-ctrl/Project-ATO/main/cad/stage5/renders/reference_assembled.png)
 
 The **600 × 310 × 240 mm** chassis, including feet, holds the eight populated boards at their original **1:1 scale**. The combined native assembly contains **260 physical objects**: board compounds, enclosure parts, mounts and mating interfaces. Individual electronic components remain part of the board compounds.
 
-[![Exploded view of the reference chassis, populated trays and mating interfaces](assets/cad-reference-exploded.jpg)](../../cad/stage5/renders/reference_exploded.png)
+[![Exploded view of the reference chassis, populated trays and mating interfaces](assets/cad-reference-exploded.jpg)](https://raw.githubusercontent.com/pratham-cloud-ctrl/Project-ATO/main/cad/stage5/renders/reference_exploded.png)
 
 Removable trays, covers and separate standoffs expose how the boards mount and connect. The drawing set shows their service arrangement and all 32 original board mounting axes.
 
@@ -25,15 +35,15 @@ Removable trays, covers and separate standoffs expose how the boards mount and c
 | Part identities and quantities | [Combined mechanical BOM](../../cad/stage5/MECHANICAL_BOM.csv) |
 | Mating housings and wiring plan | [Harness guide](../../cad/stage5/harness/README.md) · [36-port bridge](../../cad/stage5/harness/body-port-bridge.csv) |
 
-The populated STEP files are supplied losslessly compressed because the raw exports exceed GitHub's individual-file size limit. After downloading the complete repository on Windows, run the [hash-checking extractor](../../cad/stage5/reference/EXTRACT_STEP.cmd). The [reference inspection STL](../../cad/stage5/ATO_reference_inspection.stl) is a downloadable 36.8 MB display mesh; use the rendered views above for browser inspection.
+The older populated STEP links above describe the **170-object chassis/board subassembly**. The new complete reference STEP download includes all **260 objects**, adding the mating and harness pieces shown in the complete browser model. Both sets remain available with explicit scope. Large STEP files are supplied losslessly compressed; extract before opening. The older [hash-checking extractor](../../cad/stage5/reference/EXTRACT_STEP.cmd) applies to the preserved chassis exports. The [reference inspection STL](../../cad/stage5/ATO_reference_inspection.stl) is a 36.8 MB display mesh; use the interactive inspector for browser exploration.
 
 ## Future implanted interface
 
-[![Proposed compact spinal interface with separate recording and stimulation leads](assets/cad-future-assembled.jpg)](../../cad/stage5/renders/future_assembled.png)
+[![Proposed compact spinal interface with separate recording and stimulation leads](assets/cad-future-assembled.jpg)](https://raw.githubusercontent.com/pratham-cloud-ctrl/Project-ATO/main/cad/stage5/renders/future_assembled.png)
 
 The separate **60 × 58 × 14 mm** can/header, before leads, gives the future concept a detailed physical identity. It contains **230 physical parts and six internal allocation objects**. Its **36 ports** comprise 16 recording inputs, a recording reference, a separate body-bias contact, 16 selectable stimulation contacts and two stimulation returns.
 
-[![Exploded view of the conditional package, lead interfaces and labelled internal allocations](assets/cad-future-exploded.jpg)](../../cad/stage5/renders/future_exploded.png)
+[![Exploded view of the conditional package, lead interfaces and labelled internal allocations](assets/cad-future-exploded.jpg)](https://raw.githubusercontent.com/pratham-cloud-ctrl/Project-ATO/main/cad/stage5/renders/future_exploded.png)
 
 **[Rotate the future model in GitHub's STL viewer](../../cad/stage5/future-interface/ATO_future_interface.stl).** This 4.8 MB mesh is within GitHub's documented 10 MB viewer limit; see the [viewer controls and limits](https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files#3d-file-viewer). The mesh shows material geometry; use the images and native model for colours, identities and internal allocations.
 

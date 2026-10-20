@@ -24,7 +24,7 @@ CONTRACT = ROOT / 'docs/stage6/release-contract.json'
 REPORT = ROOT / 'provenance/stage6-release-verification.json'
 TEXT_SUFFIXES = {'.py', '.c', '.h', '.md', '.json', '.yml', '.yaml', '.txt', '.csv',
                  '.cff', '.bib', '.svg', '.ps1', '.cmd', '.css', '.html',
-                 '.hex', '.map', '.config', '.dts'}
+                 '.hex', '.map', '.config', '.dts', '.js', '.mjs'}
 
 
 def sha(path: Path, normalized=False):
@@ -323,8 +323,13 @@ def audit():
                  if path.is_file() and '__pycache__' not in path.parts)
     bound.update(path for path in (ROOT / 'docs/explore').rglob('*')
                  if path.is_file() and '__pycache__' not in path.parts)
+    for directory in ('inspector', 'scripts/inspector'):
+        bound.update(path for path in (ROOT / directory).rglob('*')
+                     if path.is_file() and '__pycache__' not in path.parts)
     bound.update({ROOT / 'docs/README.md', ROOT / 'scripts/verify_viewer_navigation.py',
                   ROOT / 'scripts/build_reader_previews.py',
+                  ROOT / '.github/workflows/deploy-inspector.yml',
+                  ROOT / 'provenance/browser-inspector-verification.json',
                   ROOT / 'provenance/viewer-navigation-verification.json'})
     bound.update(path for path in (ROOT / 'docs/review-v2.0.1').rglob('*')
                  if path.is_file() and '__pycache__' not in path.parts)

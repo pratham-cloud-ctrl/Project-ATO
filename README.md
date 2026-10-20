@@ -9,9 +9,17 @@ select an individualized intervention, and observe the response.
 **Two ambitions:** expert-informed practice that could improve retained motor
 learning, and feedback over a selected physiological function.
 
-**[Explore the project](docs/explore/README.md)** ·
+**[Inspect the build in your browser](https://pratham-cloud-ctrl.github.io/Project-ATO/)** ·
+[Explore the project](docs/explore/README.md) ·
 [Read the paper](output/pdf/Project_ATO_Integrated_Manuscript.pdf) ·
 [Download the engineering release](https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.1)
+
+**No CAD software needed to inspect:** the browser inspector provides selectable
+3D assemblies, all eight populated boards, interactive component/net lookup,
+all four copper layers and 80 searchable schematic sheets. The
+[download panel](https://pratham-cloud-ctrl.github.io/Project-ATO/?view=downloads)
+also supplies standard **STEP solids**, complete **FreeCAD** files and complete
+**KiCad** projects for local inspection and editing.
 
 | Future implanted-interface concept | Full-scale engineering reference |
 |:---:|:---:|
@@ -28,9 +36,10 @@ learning, and feedback over a selected physiological function.
 | **04 · Firmware & software** | [Follow the implemented logic](docs/explore/firmware.md) | Current nRF5340 image, production control code, packet handling and runnable verification |
 | **05 · Evidence & reproduction** | [Review the work](docs/explore/reviewer-guide.md) | A short reviewer walkthrough, results, requirements, source records and reproduction commands |
 
-**No software is needed to read the paper or browse the images.** Native editing
-requires FreeCAD or KiCad and a complete local copy. The guides explain which
-files to open and how to preserve the released originals.
+Use the browser inspector for viewing. Links labelled **native source** lead to
+engineering files that GitHub may offer only as downloads. Use the complete
+packages in the inspector to open them locally; the guides explain the required
+software, dependencies and how to preserve the released originals.
 
 ## The project in one loop
 
@@ -79,6 +88,7 @@ future vision to inspectable engineering; ATO develops its own spinal architectu
 and artifacts. Substantial AI assistance is documented in the contribution record.
 
 **Engineering release:** [v2.0.1](https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.1).
-**Repository guide refresh:** 20 October 2026. The paper and verified engineering
+**Browser inspection and guide refresh:** 21 October 2026. The paper and verified engineering
 files retain their release identities. Historical stage records remain available;
-use the guides above for the current reading order. Website and video work remain parked.
+use the guides above for the current reading order. The technical inspector
+supports engineering review; presentation website and video work remain parked.

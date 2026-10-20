@@ -6,6 +6,12 @@ Project ATO asks what implanted spinal recording, interpretation and selective
 stimulation could enable. This guide connects that future idea to the actual
 research, code, circuits and mechanical files you can inspect today.
 
+**[Open the interactive build inspector](https://pratham-cloud-ctrl.github.io/Project-ATO/)**
+for 3D assemblies, eight boards, all copper layers and 80 schematic sheets.
+No CAD installation or viewer account is required. Use its
+[download panel](https://pratham-cloud-ctrl.github.io/Project-ATO/?view=downloads)
+for standard STEP solids and complete native FreeCAD/KiCad packages.
+
 ## Start with your interest
 
 | Guide | You will find | First thing to open |
@@ -23,10 +29,11 @@ research, code, circuits and mechanical files you can inspect today.
 | [![Conditional future interface with separate leads](assets/cad-future-exploded.jpg)](cad.md#future-implanted-interface) | [![Reference chassis and boards in exploded view](assets/cad-reference-exploded.jpg)](cad.md#full-scale-reference-assembly) |
 | Proposed compact can, internal allocations and 36 mapped ports. | Actual board-scale electronics, enclosure, mounting and mating interfaces. |
 
-The guides provide image previews and source links side by side. You can read
-PDFs and view images in your browser. To edit native CAD or KiCad files, download
-the **complete project**, including its local libraries and feature modules.
-Opening a native-file link on GitHub does not launch a local CAD application.
+The guides provide image previews, browser inspection and native source links
+side by side. GitHub may show a size warning instead of rendering a native file;
+use the inspector for viewing and the complete downloads for local editing.
+The supplied packages preserve local libraries and feature modules. Opening a
+native-file link on GitHub does not launch a local CAD application.
 
 ## Three ways through the project
 

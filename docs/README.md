@@ -1,5 +1,9 @@
 # Project ATO documentation
 
+**[Open the browser build inspector](https://pratham-cloud-ctrl.github.io/Project-ATO/)**
+for 3D models, PCB/component lookup, all four copper layers, schematic sheets
+and standard/native downloads.
+
 **[Open the Explore hub](explore/README.md)** for the current viewer guides.
 
 | I want to… | Start here |

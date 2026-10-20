@@ -186,7 +186,7 @@ def inspect():
     file_bindings['scripts/verify_viewer_navigation.py'] = digest(Path(__file__))
     file_bindings['.github/workflows/verify-release.yml'] = digest(ROOT / '.github/workflows/verify-release.yml')
     return {
-        'schema': 'ato.reader-navigation.v1', 'date': '2026-10-20', 'passed': True,
+        'schema': 'ato.reader-navigation.v1', 'date': '2026-10-21', 'passed': True,
         'scope': 'GitHub documentation, local links, section anchors and existing preview assets; no redesigned engineering',
         'documents': len(documents), 'local_links': local_links,
         'local_markdown_fragments': fragment_links, 'external_links_recorded': external_links,

@@ -1,0 +1,2750 @@
+{
+  "status": "pass",
+  "native_pad_position_net_comparison": true,
+  "review": "Bounded vector extents and interactive native pad/net payloads; no electrical redesign or qualification.",
+  "schematic_sheets": [
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        594.0044,
+        419.989
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        594.0044,
+        0.0,
+        419.989
+      ],
+      "primitives": 9325,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-01",
+      "page": 1,
+      "file": "assets/schematics/ATO_integrated.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 27589,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-02",
+      "page": 2,
+      "file": "assets/schematics/ATO_integrated-monitoring-cell.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 32600,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-03",
+      "page": 3,
+      "file": "assets/schematics/ATO_integrated-monitoring-cell-Source0_monitor.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 32296,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-04",
+      "page": 4,
+      "file": "assets/schematics/ATO_integrated-monitoring-cell-Source1_monitor.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 5595,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-05",
+      "page": 5,
+      "file": "assets/schematics/ATO_integrated-monitoring-cell-Integrated_component_taps.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 26828,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-06",
+      "page": 6,
+      "file": "assets/schematics/ATO_integrated-current-driver.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 25137,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-07",
+      "page": 7,
+      "file": "assets/schematics/ATO_integrated-current-driver-Source0_analog.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 59308,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-08",
+      "page": 8,
+      "file": "assets/schematics/ATO_integrated-current-driver-Source0_permission.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 24700,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-09",
+      "page": 9,
+      "file": "assets/schematics/ATO_integrated-current-driver-Source1_analog.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 58134,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-10",
+      "page": 10,
+      "file": "assets/schematics/ATO_integrated-current-driver-Source1_permission.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 42148,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-11",
+      "page": 11,
+      "file": "assets/schematics/ATO_integrated-recording-front-end.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 25099,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-12",
+      "page": 12,
+      "file": "assets/schematics/ATO_integrated-recording-front-end-acquisition.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 36253,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-13",
+      "page": 13,
+      "file": "assets/schematics/ATO_integrated-recording-front-end-bank0.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 35974,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-14",
+      "page": 14,
+      "file": "assets/schematics/ATO_integrated-recording-front-end-bank1.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 36101,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-15",
+      "page": 15,
+      "file": "assets/schematics/ATO_integrated-recording-front-end-bank2.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 35134,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-16",
+      "page": 16,
+      "file": "assets/schematics/ATO_integrated-recording-front-end-bank3.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 18948,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-17",
+      "page": 17,
+      "file": "assets/schematics/ATO_integrated-recording-front-end-reference.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 10325,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-18",
+      "page": 18,
+      "file": "assets/schematics/ATO_integrated-recording-front-end-Integrated_component_taps.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 28674,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-19",
+      "page": 19,
+      "file": "assets/schematics/ATO_integrated-contact-router.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 24675,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-20",
+      "page": 20,
+      "file": "assets/schematics/ATO_integrated-contact-router-source0.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 24225,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-21",
+      "page": 21,
+      "file": "assets/schematics/ATO_integrated-contact-router-source1.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 48901,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-22",
+      "page": 22,
+      "file": "assets/schematics/ATO_integrated-contact-router-address.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 62896,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-23",
+      "page": 23,
+      "file": "assets/schematics/ATO_integrated-contact-router-admission.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 47466,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-24",
+      "page": 24,
+      "file": "assets/schematics/ATO_integrated-contact-router-collision.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 25718,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-25",
+      "page": 25,
+      "file": "assets/schematics/ATO_integrated-supervision.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 46885,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-26",
+      "page": 26,
+      "file": "assets/schematics/ATO_integrated-supervision-guards.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 21507,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-27",
+      "page": 27,
+      "file": "assets/schematics/ATO_integrated-supervision-host_rails.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 20915,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-28",
+      "page": 28,
+      "file": "assets/schematics/ATO_integrated-supervision-host_rails_2.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 17855,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-29",
+      "page": 29,
+      "file": "assets/schematics/ATO_integrated-supervision-afe_rails.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 15384,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-30",
+      "page": 30,
+      "file": "assets/schematics/ATO_integrated-supervision-afe_rails_2.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 31221,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-31",
+      "page": 31,
+      "file": "assets/schematics/ATO_integrated-supervision-watchdog.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 29479,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-32",
+      "page": 32,
+      "file": "assets/schematics/ATO_integrated-supervision-quiescence.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 27737,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-33",
+      "page": 33,
+      "file": "assets/schematics/ATO_integrated-supervision-voltage.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 27143,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-34",
+      "page": 34,
+      "file": "assets/schematics/ATO_integrated-supervision-duration.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 33106,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-35",
+      "page": 35,
+      "file": "assets/schematics/ATO_integrated-supervision-admission.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 32669,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-36",
+      "page": 36,
+      "file": "assets/schematics/ATO_integrated-supervision-admission_2.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 35628,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-37",
+      "page": 37,
+      "file": "assets/schematics/ATO_integrated-supervision-phase0.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 35485,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-38",
+      "page": 38,
+      "file": "assets/schematics/ATO_integrated-supervision-phase1.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 32163,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-39",
+      "page": 39,
+      "file": "assets/schematics/ATO_integrated-supervision-afe_bank0.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 31974,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-40",
+      "page": 40,
+      "file": "assets/schematics/ATO_integrated-supervision-afe_bank1.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 32010,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-41",
+      "page": 41,
+      "file": "assets/schematics/ATO_integrated-supervision-afe_bank2.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 30940,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-42",
+      "page": 42,
+      "file": "assets/schematics/ATO_integrated-supervision-afe_bank3.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 12310,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-43",
+      "page": 43,
+      "file": "assets/schematics/ATO_integrated-supervision-afe_bank4.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 23699,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-44",
+      "page": 44,
+      "file": "assets/schematics/ATO_integrated-supervision-afe_logic.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 28161,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-45",
+      "page": 45,
+      "file": "assets/schematics/ATO_integrated-supervision-afe_logic_2.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 13262,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-46",
+      "page": 46,
+      "file": "assets/schematics/ATO_integrated-supervision-defaults.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 5986,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-47",
+      "page": 47,
+      "file": "assets/schematics/ATO_integrated-supervision-Integrated_component_taps.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 15991,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-48",
+      "page": 48,
+      "file": "assets/schematics/ATO_integrated-power.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 9441,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-49",
+      "page": 49,
+      "file": "assets/schematics/ATO_integrated-power-input.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 12386,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-50",
+      "page": 50,
+      "file": "assets/schematics/ATO_integrated-power-sup3.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 12310,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-51",
+      "page": 51,
+      "file": "assets/schematics/ATO_integrated-power-sup5.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 12330,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-52",
+      "page": 52,
+      "file": "assets/schematics/ATO_integrated-power-host3.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 15424,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-53",
+      "page": 53,
+      "file": "assets/schematics/ATO_integrated-power-host5.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 19439,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-54",
+      "page": 54,
+      "file": "assets/schematics/ATO_integrated-power-enable.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 19004,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-55",
+      "page": 55,
+      "file": "assets/schematics/ATO_integrated-power-enable_2.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 20946,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-56",
+      "page": 56,
+      "file": "assets/schematics/ATO_integrated-power-enable_3.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 13426,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-57",
+      "page": 57,
+      "file": "assets/schematics/ATO_integrated-power-boost15.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 13123,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-58",
+      "page": 58,
+      "file": "assets/schematics/ATO_integrated-power-boost24.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 9509,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-59",
+      "page": 59,
+      "file": "assets/schematics/ATO_integrated-power-island.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 12288,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-60",
+      "page": 60,
+      "file": "assets/schematics/ATO_integrated-power-afe3.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 12152,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-61",
+      "page": 61,
+      "file": "assets/schematics/ATO_integrated-power-afep.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 11861,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-62",
+      "page": 62,
+      "file": "assets/schematics/ATO_integrated-power-afen.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 11078,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-63",
+      "page": 63,
+      "file": "assets/schematics/ATO_integrated-monitoring-transport.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 12324,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-64",
+      "page": 64,
+      "file": "assets/schematics/ATO_integrated-monitoring-transport-root_2.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 19888,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-65",
+      "page": 65,
+      "file": "assets/schematics/ATO_integrated-monitoring-transport-adc.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 11590,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-66",
+      "page": 66,
+      "file": "assets/schematics/ATO_integrated-monitoring-transport-reference.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 16091,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-67",
+      "page": 67,
+      "file": "assets/schematics/ATO_integrated-monitoring-transport-inputs.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 8602,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-68",
+      "page": 68,
+      "file": "assets/schematics/ATO_integrated-monitoring-transport-health.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 18416,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-69",
+      "page": 69,
+      "file": "assets/schematics/ATO_integrated-monitoring-transport-companion.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 14948,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-70",
+      "page": 70,
+      "file": "assets/schematics/ATO_integrated-monitoring-transport-handoff.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 7527,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-71",
+      "page": 71,
+      "file": "assets/schematics/ATO_integrated-controller-carrier.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 24050,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-72",
+      "page": 72,
+      "file": "assets/schematics/ATO_integrated-controller-carrier-processor.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 11270,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-73",
+      "page": 73,
+      "file": "assets/schematics/ATO_integrated-controller-carrier-power.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 25317,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-74",
+      "page": 74,
+      "file": "assets/schematics/ATO_integrated-controller-carrier-sideband.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 13502,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-75",
+      "page": 75,
+      "file": "assets/schematics/ATO_integrated-controller-carrier-handoff.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 14719,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-76",
+      "page": 76,
+      "file": "assets/schematics/ATO_integrated-controller-carrier-handoff_2.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 15034,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-77",
+      "page": 77,
+      "file": "assets/schematics/ATO_integrated-controller-carrier-handoff_3.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 14165,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-78",
+      "page": 78,
+      "file": "assets/schematics/ATO_integrated-controller-carrier-defaults.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 14131,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-79",
+      "page": 79,
+      "file": "assets/schematics/ATO_integrated-controller-carrier-defaults_2.svg"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        840.994,
+        594.0044
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        840.994,
+        0.0,
+        594.0044
+      ],
+      "primitives": 12983,
+      "outside_mm_lrtb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "sheet-80",
+      "page": 80,
+      "file": "assets/schematics/ATO_integrated-controller-carrier-defaults_3.svg"
+    }
+  ],
+  "copper_layers": [
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        154.9908,
+        189.992
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        155.0,
+        0.0,
+        190.0
+      ],
+      "primitives": 3263,
+      "outside_mm_lrtb": [
+        0,
+        0.00919999999999277,
+        0,
+        0.008000000000009777
+      ],
+      "board": "recording-front-end",
+      "layer": "F.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        154.9908,
+        189.992
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        155.0,
+        0.0,
+        190.0
+      ],
+      "primitives": 1334,
+      "outside_mm_lrtb": [
+        0,
+        0.00919999999999277,
+        0,
+        0.008000000000009777
+      ],
+      "board": "recording-front-end",
+      "layer": "In1.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        154.9908,
+        189.992
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        155.0,
+        0.0,
+        190.0
+      ],
+      "primitives": 1190,
+      "outside_mm_lrtb": [
+        0,
+        0.00919999999999277,
+        0,
+        0.008000000000009777
+      ],
+      "board": "recording-front-end",
+      "layer": "In2.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        154.9908,
+        189.992
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        155.0,
+        0.0,
+        190.0
+      ],
+      "primitives": 842,
+      "outside_mm_lrtb": [
+        0,
+        0.00919999999999277,
+        0,
+        0.008000000000009777
+      ],
+      "board": "recording-front-end",
+      "layer": "B.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        154.9908,
+        149.987
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        155.0,
+        0.0,
+        150.0
+      ],
+      "primitives": 1485,
+      "outside_mm_lrtb": [
+        0,
+        0.00919999999999277,
+        0,
+        0.01300000000000523
+      ],
+      "board": "controller-carrier",
+      "layer": "F.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        154.9908,
+        149.987
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        155.0,
+        0.0,
+        150.0
+      ],
+      "primitives": 1183,
+      "outside_mm_lrtb": [
+        0,
+        0.00919999999999277,
+        0,
+        0.01300000000000523
+      ],
+      "board": "controller-carrier",
+      "layer": "In1.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        154.9908,
+        149.987
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        155.0,
+        0.0,
+        150.0
+      ],
+      "primitives": 1288,
+      "outside_mm_lrtb": [
+        0,
+        0.00919999999999277,
+        0,
+        0.01300000000000523
+      ],
+      "board": "controller-carrier",
+      "layer": "In2.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        154.9908,
+        149.987
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        155.0,
+        0.0,
+        150.0
+      ],
+      "primitives": 854,
+      "outside_mm_lrtb": [
+        0,
+        0.00919999999999277,
+        0,
+        0.01300000000000523
+      ],
+      "board": "controller-carrier",
+      "layer": "B.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        174.9806,
+        154.9908
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        175.0,
+        0.0,
+        155.0
+      ],
+      "primitives": 2574,
+      "outside_mm_lrtb": [
+        0,
+        0.019399999999990314,
+        0,
+        0.00919999999999277
+      ],
+      "board": "current-driver",
+      "layer": "F.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        174.9806,
+        154.9908
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        175.0,
+        0.0,
+        155.0
+      ],
+      "primitives": 901,
+      "outside_mm_lrtb": [
+        0,
+        0.019399999999990314,
+        0,
+        0.00919999999999277
+      ],
+      "board": "current-driver",
+      "layer": "In1.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        174.9806,
+        154.9908
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        175.0,
+        0.0,
+        155.0
+      ],
+      "primitives": 1108,
+      "outside_mm_lrtb": [
+        0,
+        0.019399999999990314,
+        0,
+        0.00919999999999277
+      ],
+      "board": "current-driver",
+      "layer": "In2.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        174.9806,
+        154.9908
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        175.0,
+        0.0,
+        155.0
+      ],
+      "primitives": 625,
+      "outside_mm_lrtb": [
+        0,
+        0.019399999999990314,
+        0,
+        0.00919999999999277
+      ],
+      "board": "current-driver",
+      "layer": "B.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        174.9806,
+        154.9908
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        175.0,
+        0.0,
+        155.0
+      ],
+      "primitives": 3008,
+      "outside_mm_lrtb": [
+        0,
+        0.019399999999990314,
+        0,
+        0.00919999999999277
+      ],
+      "board": "contact-router",
+      "layer": "F.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        174.9806,
+        154.9908
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        175.0,
+        0.0,
+        155.0
+      ],
+      "primitives": 1396,
+      "outside_mm_lrtb": [
+        0,
+        0.019399999999990314,
+        0,
+        0.00919999999999277
+      ],
+      "board": "contact-router",
+      "layer": "In1.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        174.9806,
+        154.9908
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        175.0,
+        0.0,
+        155.0
+      ],
+      "primitives": 1848,
+      "outside_mm_lrtb": [
+        0,
+        0.019399999999990314,
+        0,
+        0.00919999999999277
+      ],
+      "board": "contact-router",
+      "layer": "In2.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        174.9806,
+        154.9908
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        175.0,
+        0.0,
+        155.0
+      ],
+      "primitives": 835,
+      "outside_mm_lrtb": [
+        0,
+        0.019399999999990314,
+        0,
+        0.00919999999999277
+      ],
+      "board": "contact-router",
+      "layer": "B.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        119.9896,
+        144.9832
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        120.0,
+        0.0,
+        145.0
+      ],
+      "primitives": 1015,
+      "outside_mm_lrtb": [
+        0,
+        0.010400000000004184,
+        0,
+        0.016799999999989268
+      ],
+      "board": "monitoring-cell",
+      "layer": "F.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        119.9896,
+        144.9832
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        120.0,
+        0.0,
+        145.0
+      ],
+      "primitives": 456,
+      "outside_mm_lrtb": [
+        0,
+        0.010400000000004184,
+        0,
+        0.016799999999989268
+      ],
+      "board": "monitoring-cell",
+      "layer": "In1.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        119.9896,
+        144.9832
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        120.0,
+        0.0,
+        145.0
+      ],
+      "primitives": 500,
+      "outside_mm_lrtb": [
+        0,
+        0.010400000000004184,
+        0,
+        0.016799999999989268
+      ],
+      "board": "monitoring-cell",
+      "layer": "In2.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        119.9896,
+        144.9832
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        120.0,
+        0.0,
+        145.0
+      ],
+      "primitives": 284,
+      "outside_mm_lrtb": [
+        0,
+        0.010400000000004184,
+        0,
+        0.016799999999989268
+      ],
+      "board": "monitoring-cell",
+      "layer": "B.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        299.9994,
+        249.9868
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        300.0,
+        0.0,
+        250.0
+      ],
+      "primitives": 7876,
+      "outside_mm_lrtb": [
+        0,
+        0.0006000000000199179,
+        0,
+        0.013200000000011869
+      ],
+      "board": "supervision",
+      "layer": "F.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        299.9994,
+        249.9868
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        300.0,
+        0.0,
+        250.0
+      ],
+      "primitives": 3591,
+      "outside_mm_lrtb": [
+        0,
+        0.0006000000000199179,
+        0,
+        0.013200000000011869
+      ],
+      "board": "supervision",
+      "layer": "In1.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        299.9994,
+        249.9868
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        300.0,
+        0.0,
+        250.0
+      ],
+      "primitives": 3392,
+      "outside_mm_lrtb": [
+        0,
+        0.0006000000000199179,
+        0,
+        0.013200000000011869
+      ],
+      "board": "supervision",
+      "layer": "In2.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        299.9994,
+        249.9868
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        300.0,
+        0.0,
+        250.0
+      ],
+      "primitives": 2152,
+      "outside_mm_lrtb": [
+        0,
+        0.0006000000000199179,
+        0,
+        0.013200000000011869
+      ],
+      "board": "supervision",
+      "layer": "B.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        124.9934,
+        139.9794
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        125.0,
+        0.0,
+        140.0
+      ],
+      "primitives": 808,
+      "outside_mm_lrtb": [
+        0,
+        0.0066000000000059345,
+        0,
+        0.020600000000001728
+      ],
+      "board": "monitoring-transport",
+      "layer": "F.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        124.9934,
+        139.9794
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        125.0,
+        0.0,
+        140.0
+      ],
+      "primitives": 545,
+      "outside_mm_lrtb": [
+        0,
+        0.0066000000000059345,
+        0,
+        0.020600000000001728
+      ],
+      "board": "monitoring-transport",
+      "layer": "In1.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        124.9934,
+        139.9794
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        125.0,
+        0.0,
+        140.0
+      ],
+      "primitives": 557,
+      "outside_mm_lrtb": [
+        0,
+        0.0066000000000059345,
+        0,
+        0.020600000000001728
+      ],
+      "board": "monitoring-transport",
+      "layer": "In2.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        124.9934,
+        139.9794
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        125.0,
+        0.0,
+        140.0
+      ],
+      "primitives": 343,
+      "outside_mm_lrtb": [
+        0,
+        0.0066000000000059345,
+        0,
+        0.020600000000001728
+      ],
+      "board": "monitoring-transport",
+      "layer": "B.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        174.9806,
+        184.9882
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        175.0,
+        0.0,
+        185.0
+      ],
+      "primitives": 1734,
+      "outside_mm_lrtb": [
+        0,
+        0.019399999999990314,
+        0,
+        0.011799999999993815
+      ],
+      "board": "power",
+      "layer": "F.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        174.9806,
+        184.9882
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        175.0,
+        0.0,
+        185.0
+      ],
+      "primitives": 730,
+      "outside_mm_lrtb": [
+        0,
+        0.019399999999990314,
+        0,
+        0.011799999999993815
+      ],
+      "board": "power",
+      "layer": "In1.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        174.9806,
+        184.9882
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        175.0,
+        0.0,
+        185.0
+      ],
+      "primitives": 567,
+      "outside_mm_lrtb": [
+        0,
+        0.019399999999990314,
+        0,
+        0.011799999999993815
+      ],
+      "board": "power",
+      "layer": "In2.Cu"
+    },
+    {
+      "viewBox": [
+        0.0,
+        0.0,
+        174.9806,
+        184.9882
+      ],
+      "vector_extents_xxyy": [
+        0.0,
+        175.0,
+        0.0,
+        185.0
+      ],
+      "primitives": 399,
+      "outside_mm_lrtb": [
+        0,
+        0.019399999999990314,
+        0,
+        0.011799999999993815
+      ],
+      "board": "power",
+      "layer": "B.Cu"
+    }
+  ],
+  "boards": [
+    {
+      "id": "recording-front-end",
+      "fitted": 153,
+      "drawn_footprints": 157,
+      "native_net_names": 101,
+      "native_pads": 619,
+      "non_copper_apertures_outside_interactive_copper_scope": 54,
+      "dnp_omitted_from_fitted_bom": [],
+      "ibom_version": "v2.12.0"
+    },
+    {
+      "id": "controller-carrier",
+      "fitted": 68,
+      "drawn_footprints": 72,
+      "native_net_names": 92,
+      "native_pads": 332,
+      "non_copper_apertures_outside_interactive_copper_scope": 0,
+      "dnp_omitted_from_fitted_bom": [],
+      "ibom_version": "v2.12.0"
+    },
+    {
+      "id": "current-driver",
+      "fitted": 154,
+      "drawn_footprints": 160,
+      "native_net_names": 107,
+      "native_pads": 576,
+      "non_copper_apertures_outside_interactive_copper_scope": 0,
+      "dnp_omitted_from_fitted_bom": [
+        "C20100",
+        "C20200"
+      ],
+      "ibom_version": "v2.12.0"
+    },
+    {
+      "id": "contact-router",
+      "fitted": 155,
+      "drawn_footprints": 159,
+      "native_net_names": 129,
+      "native_pads": 654,
+      "non_copper_apertures_outside_interactive_copper_scope": 0,
+      "dnp_omitted_from_fitted_bom": [],
+      "ibom_version": "v2.12.0"
+    },
+    {
+      "id": "monitoring-cell",
+      "fitted": 71,
+      "drawn_footprints": 75,
+      "native_net_names": 47,
+      "native_pads": 251,
+      "non_copper_apertures_outside_interactive_copper_scope": 0,
+      "dnp_omitted_from_fitted_bom": [],
+      "ibom_version": "v2.12.0"
+    },
+    {
+      "id": "supervision",
+      "fitted": 479,
+      "drawn_footprints": 483,
+      "native_net_names": 353,
+      "native_pads": 1707,
+      "non_copper_apertures_outside_interactive_copper_scope": 45,
+      "dnp_omitted_from_fitted_bom": [],
+      "ibom_version": "v2.12.0"
+    },
+    {
+      "id": "monitoring-transport",
+      "fitted": 60,
+      "drawn_footprints": 64,
+      "native_net_names": 61,
+      "native_pads": 221,
+      "non_copper_apertures_outside_interactive_copper_scope": 0,
+      "dnp_omitted_from_fitted_bom": [],
+      "ibom_version": "v2.12.0"
+    },
+    {
+      "id": "power",
+      "fitted": 156,
+      "drawn_footprints": 160,
+      "native_net_names": 81,
+      "native_pads": 453,
+      "non_copper_apertures_outside_interactive_copper_scope": 10,
+      "dnp_omitted_from_fitted_bom": [],
+      "ibom_version": "v2.12.0"
+    }
+  ]
+}

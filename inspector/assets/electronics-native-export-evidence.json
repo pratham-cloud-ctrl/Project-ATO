@@ -1,0 +1,220 @@
+{
+  "schema": "ato-browser-native-electrical-exports-v1",
+  "date": "2026-10-21",
+  "mcp": {
+    "server": "kicad / Konnect",
+    "version": "0.13.0",
+    "commit": "6bbe3e4f890ba1d37c0e5d5f38ccd03d90958c9e",
+    "kicad_cli": "10.0.6",
+    "read_only_tools": [
+      "get_installation_info",
+      "get_sheet_hierarchy"
+    ],
+    "schematic_export": {
+      "tool": "export_schematic_svg",
+      "source": "electronics/stage4/integrated-pcb/integration/master/ATO_integrated.kicad_sch",
+      "result": "success",
+      "sheets": 80
+    },
+    "copper_trials": [
+      {
+        "board": "monitoring-cell",
+        "layer": "F.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "monitoring-cell",
+        "layer": "In1.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "monitoring-cell",
+        "layer": "In2.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "monitoring-cell",
+        "layer": "B.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "current-driver",
+        "layer": "F.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "current-driver",
+        "layer": "In1.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "current-driver",
+        "layer": "In2.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "current-driver",
+        "layer": "B.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "recording-front-end",
+        "layer": "F.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "recording-front-end",
+        "layer": "In1.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "recording-front-end",
+        "layer": "In2.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "recording-front-end",
+        "layer": "B.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "contact-router",
+        "layer": "F.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "contact-router",
+        "layer": "In1.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "contact-router",
+        "layer": "In2.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "contact-router",
+        "layer": "B.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "supervision",
+        "layer": "F.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "supervision",
+        "layer": "In1.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "supervision",
+        "layer": "In2.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "supervision",
+        "layer": "B.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "power",
+        "layer": "F.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "power",
+        "layer": "In1.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "power",
+        "layer": "In2.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "power",
+        "layer": "B.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "monitoring-transport",
+        "layer": "F.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "monitoring-transport",
+        "layer": "In1.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "monitoring-transport",
+        "layer": "In2.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "monitoring-transport",
+        "layer": "B.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "controller-carrier",
+        "layer": "F.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "controller-carrier",
+        "layer": "In1.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "controller-carrier",
+        "layer": "In2.Cu",
+        "tool": "export_svg",
+        "success": true
+      },
+      {
+        "board": "controller-carrier",
+        "layer": "B.Cu",
+        "tool": "export_svg",
+        "success": true
+      }
+    ]
+  },
+  "correction": {
+    "finding": "The MCP copper SVG wrapper uses KiCad's default A4 drawing sheet. The 300 by 250 mm supervision board extends beyond that 297 by 210 mm viewport.",
+    "resolution": "Re-exported copper from the identical saved board through native KiCad CLI 10.0.6 with --mode-single --page-size-mode 2 --exclude-drawing-sheet, then checked every layer's viewport against native board-edge bounds. No native source changed.",
+    "generated_by": "scripts/inspector/build_electronics_assets.py"
+  },
+  "limits": "MCP/native rendering establishes saved source fidelity, not electrical or manufacturing performance."
+}
