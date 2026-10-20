@@ -21,6 +21,8 @@ jobs:
         run: python scripts/verify_manifest.py
       - name: Verify manuscript, release entries and preserved sources
         run: python scripts/verify_stage6_release.py
+      - name: Check reader guides, anchors and preserved engineering
+        run: python scripts/verify_viewer_navigation.py
       - name: Reproduce both conditional paths through the production C core
         run: python scripts/stage6/verify_digital_path.py
       - name: Verify current UART revision and target-linked artifacts

@@ -4,7 +4,7 @@
   "version": "2.0.1",
   "date": "2026-10-17",
   "scope": "Entirely digital integrated SCCI research and engineering concept; native modular reference and separate conditional future implanted interface",
-  "checks": 6509,
+  "checks": 7136,
   "baseline": {
     "commit": "736015848cf581df66488bf53aa6360152eb767b",
     "preserved_files": 2733,
@@ -36,9 +36,10 @@
       "09_runtime"
     ]
   },
-  "local_entry_links": 170,
+  "local_entry_links": 371,
   "external_links_recorded_not_live_revalidated_here": [
     "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
+    "https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files#3d-file-viewer",
     "https://doi.org/10.1002/advs.202303377",
     "https://doi.org/10.1016/S1474-4422(19",
     "https://doi.org/10.1016/j.neuron.2013.08.028",
@@ -62,9 +63,9 @@
     "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/docs/stage6/contributions.md",
     "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/docs/stage6/defence-guide.md",
     "https://github.com/pratham-cloud-ctrl/Project-ATO/blob/v2.0.1/firmware/nrf5340/uart-revision/README.md",
+    "https://github.com/pratham-cloud-ctrl/Project-ATO/releases/latest",
     "https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v1.0.0",
     "https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.1",
-    "https://github.com/pratham-cloud-ctrl/Project-ATO/tree/v1.0.0",
     "https://github.com/sam-astro/Mind-link",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12443590/",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC9668750/",
@@ -90,7 +91,7 @@
       "text_normalized": true
     },
     ".github/workflows/verify-release.yml": {
-      "sha256": "92108f897060c503dadb6cb95f263f616582874de550d2402202b43d11517255",
+      "sha256": "cd54bd5a2cf2c5713d713ad41653b2c767dfce938fe1ff4b5339f6d3abfea438",
       "text_normalized": true
     },
     "cad/CURRENT_CAD.md": {
@@ -130,7 +131,91 @@
       "text_normalized": true
     },
     "CURRENT_STATUS.md": {
-      "sha256": "9310a99445634c76498de9612857763a3c2f64cc015708a96dacc8ce72c6499d",
+      "sha256": "d85185c5dd8bbe418fddfa59852d6ed512220b75d6af553a92c2c448e18b84bc",
+      "text_normalized": true
+    },
+    "docs/explore/assets/cad-future-assembled.jpg": {
+      "sha256": "408a2fb7edbe2c0fdcbe4f46fd1b7b3bd3160056a006eccc61b09a6af0b04ed0",
+      "text_normalized": false
+    },
+    "docs/explore/assets/cad-future-exploded.jpg": {
+      "sha256": "92291db240799ad7d90a58c1f2163a53513b7b188c170dbffb0c1bf7463e6a2f",
+      "text_normalized": false
+    },
+    "docs/explore/assets/cad-reference-assembled.jpg": {
+      "sha256": "cdf0316eacee5cdd084de72ac084bd4c15ff18eaf0aac1c1ffe7c2834fb0effa",
+      "text_normalized": false
+    },
+    "docs/explore/assets/cad-reference-exploded.jpg": {
+      "sha256": "3a22c8db3aa9d1af0770f520374826a409fa4afa6565be4c09cf8b0f142c0100",
+      "text_normalized": false
+    },
+    "docs/explore/assets/manifest.json": {
+      "sha256": "242d5bcd5b5f8fc2c717219b996d38ddca3ab5aa632bf15ffd55b2d3c57eb993",
+      "text_normalized": true
+    },
+    "docs/explore/assets/pcb-contact-router.jpg": {
+      "sha256": "f44d42c6b9351c241e49f7821f216c000e52a449edf1550dd5cdbfe717b8e4ea",
+      "text_normalized": false
+    },
+    "docs/explore/assets/pcb-controller-carrier.jpg": {
+      "sha256": "44670c9d5d8cb6dc4eca044f7e49ddf0dc210bb322c2578880ce7b552197b042",
+      "text_normalized": false
+    },
+    "docs/explore/assets/pcb-current-driver.jpg": {
+      "sha256": "f2e15995e447dab041768b510ea6f33d15169991016d56c1b29ca94683fccf3a",
+      "text_normalized": false
+    },
+    "docs/explore/assets/pcb-monitoring-cell.jpg": {
+      "sha256": "a754d4d96e3dc0c54cae0c60e8d29bd5f24cee4bd39afd98d6522ce7c9a2839d",
+      "text_normalized": false
+    },
+    "docs/explore/assets/pcb-monitoring-transport.jpg": {
+      "sha256": "bec1ebaf61e2480a80c7034c3803a514dde783a0278fb58c268a5893ad0ea33a",
+      "text_normalized": false
+    },
+    "docs/explore/assets/pcb-power.jpg": {
+      "sha256": "aedd69223f5982c7bd884c0b45df41182c59809e37d2aa8a5307f3d0f75c65d5",
+      "text_normalized": false
+    },
+    "docs/explore/assets/pcb-recording-front-end.jpg": {
+      "sha256": "fc2f6e03d8a3a058acc997e44c51c5d8da48a6b42fd05db6e11e029bd12f115e",
+      "text_normalized": false
+    },
+    "docs/explore/assets/pcb-supervision.jpg": {
+      "sha256": "1d67a23eef8360a7ea4e6d74a9104b8cfe675735dcb3b781fb10cda024612095",
+      "text_normalized": false
+    },
+    "docs/explore/cad.md": {
+      "sha256": "98a8af55a9a09a8f0dacd3d54fea057777c85645d151e395d9927061e896e7c4",
+      "text_normalized": true
+    },
+    "docs/explore/electronics.md": {
+      "sha256": "0d5d1a2a309a9a485d7536daa87ae4cdb25fc1c1e5a7ff190cf920a0c35eec60",
+      "text_normalized": true
+    },
+    "docs/explore/firmware.md": {
+      "sha256": "d97bea72fb8bc34f48cc185a73f7af220a1bb766beb91c6c0deba884bd93716b",
+      "text_normalized": true
+    },
+    "docs/explore/README.md": {
+      "sha256": "97abcc1a8c8626b7aab8e7e10b6e87e5bfde1cb9bdf2f14942905754360ce8da",
+      "text_normalized": true
+    },
+    "docs/explore/repository-map.md": {
+      "sha256": "ae205153b1e17d39d90f1549f020324a277d170037065d1706b3c4af65471bd9",
+      "text_normalized": true
+    },
+    "docs/explore/reviewer-guide.md": {
+      "sha256": "3d562101f3f863811df5220f475ef9d6a8b3f72082a6a9b6aeff89a71e585e08",
+      "text_normalized": true
+    },
+    "docs/explore/theory.md": {
+      "sha256": "94ccfab5bc070049c481e87572d13aba269c94ea667877d99a91872819e1589d",
+      "text_normalized": true
+    },
+    "docs/README.md": {
+      "sha256": "83510eaf3cccc0303dcd2a596c1f6b9346aebfcd44abd1994c7b7a1c36717ff9",
       "text_normalized": true
     },
     "docs/review-v2.0.1/electronics-review.md": {
@@ -421,8 +506,12 @@
       "sha256": "4463e12ca64af2197d44eb5e212c8279b8341b350914978a0baa3e5d569e8cc0",
       "text_normalized": true
     },
+    "provenance/viewer-navigation-verification.json": {
+      "sha256": "153bb387589531a97a3a05849fd2c2bbc283ee76d112579464b8b9fdfc4b3d42",
+      "text_normalized": true
+    },
     "README.md": {
-      "sha256": "8e0b191ccf4bb9cc7feed5e00e6c41a90f65a5df5e284ef79d461bb99c0d0ffc",
+      "sha256": "f8f64ff76bdb5fa7398d52e22f34f3845a02f8fd1cf0a5027956a37d642b0fbb",
       "text_normalized": true
     },
     "results/stage6/digital-path-verification.json": {
@@ -431,6 +520,10 @@
     },
     "results/stage6/integration-summary.json": {
       "sha256": "c5e329cd5b6b1e314096572487f3e37f1d030ad055000dfa3e364ac19805bfdf",
+      "text_normalized": true
+    },
+    "scripts/build_reader_previews.py": {
+      "sha256": "98ea3fcd3c8f93d6fbb90cbfb6e45e6c6fb679a694d8c3dd58aada7e246ff9ac",
       "text_normalized": true
     },
     "scripts/stage6/runtime_bridge.c": {
@@ -442,11 +535,15 @@
       "text_normalized": true
     },
     "scripts/verify_stage6_release.py": {
-      "sha256": "c019266be065cb1382a765f563a50431e09b7553cd02691521fee8e7c5871b39",
+      "sha256": "c997431124b4325d21addddd85c3a6c8d1b8a0e6be741891de4f78f676387300",
+      "text_normalized": true
+    },
+    "scripts/verify_viewer_navigation.py": {
+      "sha256": "5fe4be83374084ee1c084b0ef49878415d8fbe49fdddb491f4fe74f4bf38a451",
       "text_normalized": true
     },
     "START_HERE.md": {
-      "sha256": "4d6d41121e3a7a736e4961a7e3800217a5f8133b77a0706ac39101cd740aa81e",
+      "sha256": "0dfe944c9c1af4f69471119bbbdc326c96277860382aa29885e5118273a49bca",
       "text_normalized": true
     }
   },

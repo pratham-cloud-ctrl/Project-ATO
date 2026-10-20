@@ -157,6 +157,8 @@ def audit():
     # Validate current navigation, including image inputs; historical documents
     # are preserved snapshots and are not rewritten by this finite entry audit.
     docs = [ROOT / 'README.md', ROOT / 'START_HERE.md', ROOT / 'CURRENT_STATUS.md',
+            ROOT / 'docs/README.md',
+            *sorted((ROOT / 'docs/explore').rglob('*.md')),
             *sorted((ROOT / 'docs/stage6').rglob('*.md')),
             *sorted((ROOT / 'docs/review-v2.0.1').rglob('*.md')),
             ROOT / 'cad/CURRENT_CAD.md',
@@ -319,6 +321,11 @@ def audit():
                  if path.is_file() and '__pycache__' not in path.parts)
     bound.update(path for path in (ROOT / 'docs/stage6').rglob('*')
                  if path.is_file() and '__pycache__' not in path.parts)
+    bound.update(path for path in (ROOT / 'docs/explore').rglob('*')
+                 if path.is_file() and '__pycache__' not in path.parts)
+    bound.update({ROOT / 'docs/README.md', ROOT / 'scripts/verify_viewer_navigation.py',
+                  ROOT / 'scripts/build_reader_previews.py',
+                  ROOT / 'provenance/viewer-navigation-verification.json'})
     bound.update(path for path in (ROOT / 'docs/review-v2.0.1').rglob('*')
                  if path.is_file() and '__pycache__' not in path.parts)
     bound.update(path for path in (ROOT / 'firmware/nrf5340/uart-revision').rglob('*')

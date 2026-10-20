@@ -1,0 +1,224 @@
+{
+  "schema": "ato.reader-previews.v1",
+  "purpose": "Lightweight GitHub reader images; original native-render PNGs remain authoritative and unchanged",
+  "generator": "scripts/build_reader_previews.py",
+  "generator_sha256_lf": "98ea3fcd3c8f93d6fbb90cbfb6e45e6c6fb679a694d8c3dd58aada7e246ff9ac",
+  "image_processing": {
+    "maximum_width": 1000,
+    "resize": "LANCZOS; preserve aspect ratio with nearest integer output height; no enlargement",
+    "color_space": "sRGB; untagged inputs assumed sRGB; embedded ICC inputs converted to sRGB",
+    "mode": "RGB",
+    "alpha_background": "#ffffff",
+    "quality": 86,
+    "optimize": true,
+    "progressive": true,
+    "subsampling": 2,
+    "exif_retained": false,
+    "icc_profile_embedded": false
+  },
+  "build_environment": {
+    "Pillow": "12.3.0",
+    "JPEG_codec": "8.0",
+    "libjpeg_turbo": "3.1.4.1"
+  },
+  "totals": {
+    "images": 12,
+    "source_bytes": 19163163,
+    "output_bytes": 533402,
+    "saved_bytes": 18629761
+  },
+  "images": [
+    {
+      "source": "cad/stage5/renders/reference_assembled.png",
+      "source_sha256": "9005fbef213d4e590561e7c9fe4f134931ff8692c30fc34b329e9ef3e733375f",
+      "source_dimensions": [
+        1900,
+        1350
+      ],
+      "source_bytes": 2954942,
+      "output": "docs/explore/assets/cad-reference-assembled.jpg",
+      "output_sha256": "cdf0316eacee5cdd084de72ac084bd4c15ff18eaf0aac1c1ffe7c2834fb0effa",
+      "output_dimensions": [
+        1000,
+        711
+      ],
+      "output_bytes": 58463
+    },
+    {
+      "source": "cad/stage5/renders/reference_exploded.png",
+      "source_sha256": "93b60c6dcb89f456bd139c5013f0c2033d82deb3bf538114e5419d6283965cc6",
+      "source_dimensions": [
+        1900,
+        1350
+      ],
+      "source_bytes": 2628174,
+      "output": "docs/explore/assets/cad-reference-exploded.jpg",
+      "output_sha256": "3a22c8db3aa9d1af0770f520374826a409fa4afa6565be4c09cf8b0f142c0100",
+      "output_dimensions": [
+        1000,
+        711
+      ],
+      "output_bytes": 31034
+    },
+    {
+      "source": "cad/stage5/renders/future_assembled.png",
+      "source_sha256": "560e4aeb86e7da100118a57085c97d11f4ea89354ab3058bcbee3ca8be3de95f",
+      "source_dimensions": [
+        1900,
+        1350
+      ],
+      "source_bytes": 2491017,
+      "output": "docs/explore/assets/cad-future-assembled.jpg",
+      "output_sha256": "408a2fb7edbe2c0fdcbe4f46fd1b7b3bd3160056a006eccc61b09a6af0b04ed0",
+      "output_dimensions": [
+        1000,
+        711
+      ],
+      "output_bytes": 18993
+    },
+    {
+      "source": "cad/stage5/renders/future_exploded.png",
+      "source_sha256": "0b900b3027a9c391703304e992a6e66e99856d360922a55c96c7d6a49790bb1d",
+      "source_dimensions": [
+        1900,
+        1350
+      ],
+      "source_bytes": 2522253,
+      "output": "docs/explore/assets/cad-future-exploded.jpg",
+      "output_sha256": "92291db240799ad7d90a58c1f2163a53513b7b188c170dbffb0c1bf7463e6a2f",
+      "output_dimensions": [
+        1000,
+        711
+      ],
+      "output_bytes": 23383
+    },
+    {
+      "source": "electronics/stage4/integrated-pcb/exports/recording-front-end/isometric.png",
+      "source_sha256": "d44be0e86e848e436673005bfa550c224e060668ebd8798d4b72bbfa86d5e45f",
+      "source_dimensions": [
+        1768,
+        1376
+      ],
+      "source_bytes": 1005373,
+      "output": "docs/explore/assets/pcb-recording-front-end.jpg",
+      "output_sha256": "fc2f6e03d8a3a058acc997e44c51c5d8da48a6b42fd05db6e11e029bd12f115e",
+      "output_dimensions": [
+        1000,
+        778
+      ],
+      "output_bytes": 46576
+    },
+    {
+      "source": "electronics/stage4/integrated-pcb/exports/controller-carrier/isometric.png",
+      "source_sha256": "dbc8d910c7e2aa9838250f898e67bb7067638c2bf3a6935691fe1f8954890953",
+      "source_dimensions": [
+        1768,
+        1376
+      ],
+      "source_bytes": 1159585,
+      "output": "docs/explore/assets/pcb-controller-carrier.jpg",
+      "output_sha256": "44670c9d5d8cb6dc4eca044f7e49ddf0dc210bb322c2578880ce7b552197b042",
+      "output_dimensions": [
+        1000,
+        778
+      ],
+      "output_bytes": 52420
+    },
+    {
+      "source": "electronics/stage4/integrated-pcb/exports/current-driver/isometric.png",
+      "source_sha256": "53db4c11b9151c200758f854908e0674fc5773f73ed91d62b39200c9cb321663",
+      "source_dimensions": [
+        1768,
+        1376
+      ],
+      "source_bytes": 1076885,
+      "output": "docs/explore/assets/pcb-current-driver.jpg",
+      "output_sha256": "f2e15995e447dab041768b510ea6f33d15169991016d56c1b29ca94683fccf3a",
+      "output_dimensions": [
+        1000,
+        778
+      ],
+      "output_bytes": 50055
+    },
+    {
+      "source": "electronics/stage4/integrated-pcb/exports/contact-router/isometric.png",
+      "source_sha256": "3a0150bbd04452fe84fb3b7c96bd1f83a7e696f0a57da4c2fb1ed11ebf47dc48",
+      "source_dimensions": [
+        1768,
+        1376
+      ],
+      "source_bytes": 1123874,
+      "output": "docs/explore/assets/pcb-contact-router.jpg",
+      "output_sha256": "f44d42c6b9351c241e49f7821f216c000e52a449edf1550dd5cdbfe717b8e4ea",
+      "output_dimensions": [
+        1000,
+        778
+      ],
+      "output_bytes": 54637
+    },
+    {
+      "source": "electronics/stage4/integrated-pcb/exports/monitoring-cell/isometric.png",
+      "source_sha256": "63fc319128fd96f43b091fd1da984154e96e929309cf335f281a940fb123112b",
+      "source_dimensions": [
+        1768,
+        1376
+      ],
+      "source_bytes": 956943,
+      "output": "docs/explore/assets/pcb-monitoring-cell.jpg",
+      "output_sha256": "a754d4d96e3dc0c54cae0c60e8d29bd5f24cee4bd39afd98d6522ce7c9a2839d",
+      "output_dimensions": [
+        1000,
+        778
+      ],
+      "output_bytes": 42635
+    },
+    {
+      "source": "electronics/stage4/integrated-pcb/exports/supervision/isometric.png",
+      "source_sha256": "73db25d6d25be56d226a378120c636e6aa518e826abbced6aeb3ef8a870580a0",
+      "source_dimensions": [
+        1768,
+        1376
+      ],
+      "source_bytes": 1089946,
+      "output": "docs/explore/assets/pcb-supervision.jpg",
+      "output_sha256": "1d67a23eef8360a7ea4e6d74a9104b8cfe675735dcb3b781fb10cda024612095",
+      "output_dimensions": [
+        1000,
+        778
+      ],
+      "output_bytes": 56442
+    },
+    {
+      "source": "electronics/stage4/integrated-pcb/exports/monitoring-transport/isometric.png",
+      "source_sha256": "abc2ba2797c3b9968cb71815fa7e7436475961e61f02ac287c50ee7fb9519f2b",
+      "source_dimensions": [
+        1768,
+        1376
+      ],
+      "source_bytes": 1063460,
+      "output": "docs/explore/assets/pcb-monitoring-transport.jpg",
+      "output_sha256": "bec1ebaf61e2480a80c7034c3803a514dde783a0278fb58c268a5893ad0ea33a",
+      "output_dimensions": [
+        1000,
+        778
+      ],
+      "output_bytes": 49653
+    },
+    {
+      "source": "electronics/stage4/integrated-pcb/exports/power/isometric.png",
+      "source_sha256": "1d6331cff168bf172c965b0a2fabfa7f7912d0247e6b07665792d74e98720897",
+      "source_dimensions": [
+        1768,
+        1376
+      ],
+      "source_bytes": 1090711,
+      "output": "docs/explore/assets/pcb-power.jpg",
+      "output_sha256": "aedd69223f5982c7bd884c0b45df41182c59809e37d2aa8a5307f3d0f75c65d5",
+      "output_dimensions": [
+        1000,
+        778
+      ],
+      "output_bytes": 49111
+    }
+  ]
+}

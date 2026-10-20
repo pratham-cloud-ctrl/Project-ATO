@@ -1,4 +1,13 @@
-# Start here: Project ATO 2.0
+# Start here: Project ATO
+
+**[Open the visual Explore hub](docs/explore/README.md)** for the easiest reading
+route. Choose [theory](docs/explore/theory.md), [CAD & 3D](docs/explore/cad.md),
+[electronics & KiCad](docs/explore/electronics.md), or [firmware](docs/explore/firmware.md).
+The [reviewer guide](docs/explore/reviewer-guide.md) offers a five-minute overview
+and reproduction instructions; the [repository map](docs/explore/repository-map.md)
+locates the current source files.
+
+The detailed engineering reading order follows below.
 
 Project ATO is an entirely digital research and engineering concept for invasive
 spinal recording, interpretation, selective stimulation and feedback. Both

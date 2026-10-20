@@ -1,6 +1,13 @@
 # Project ATO: integrated digital completion status
 
-Updated: **17 October 2026**. Current release: **v2.0.1**.
+Updated: **17 October 2026**. Current engineering release: **v2.0.1**.
+
+**Reader navigation refreshed: 20 October 2026.** The new
+[Explore hub](docs/explore/README.md) provides visual guides to theory, CAD,
+KiCad electronics and current firmware. This is a documentation/navigation
+update on the default branch; the paper, native designs, firmware and published
+v2.0.1 engineering artifacts retain their verified bytes and release identities.
+
 
 The [whole-project review](docs/review-v2.0.1/README.md) preserves the original
 goals and fixes a confirmed UART frame-interleaving defect, one bibliography

@@ -1,124 +1,84 @@
 # Project ATO
 
-**An invasive spinal cord-computer interface concept for expert-informed practice and function-specific physiological feedback.**
+### A spinal interface concept, from scientific question to inspectable engineering
 
-[Read the integrated manuscript](output/pdf/Project_ATO_Integrated_Manuscript.pdf) · [Start here](START_HERE.md) · [Native CAD](cad/stage5/README.md) · [KiCad boards](electronics/stage4/integrated-pcb/BOARD_INDEX.md) · [v2.0.1 release](https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.1)
+An entirely digital research and engineering project exploring **invasive spinal
+cord–computer interfaces (SCCI)**: record relevant activity, interpret it,
+select an individualized intervention, and observe the response.
 
-**17 October quality review:** [findings and corrections](docs/review-v2.0.1/README.md).
-The current [carrier firmware revision](firmware/nrf5340/uart-revision/README.md)
-fixes UART frame interleaving; the [portable CAD launcher](cad/CURRENT_CAD.md)
-opens the unchanged native assemblies. The v2.0.0 tag preserves the prior snapshot.
+**Two ambitions:** expert-informed practice that could improve retained motor
+learning, and feedback over a selected physiological function.
 
-![Conditional future spinal-interface package, generated from native CAD](cad/stage5/renders/future_assembled.png)
+**[Explore the project](docs/explore/README.md)** ·
+[Read the paper](output/pdf/Project_ATO_Integrated_Manuscript.pdf) ·
+[Download the engineering release](https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.1)
 
-Project ATO connects a future vision to supported reasoning, explicit assumptions,
-computational experiments, native electronics, compiled control software and
-mechanical design. AstroSam's [Mind-Link](https://github.com/sam-astro/Mind-link)
-inspired that progression; the spinal architecture and engineering here are
-ATO's own documented, substantially AI-assisted contribution.
+| Future implanted-interface concept | Full-scale engineering reference |
+|:---:|:---:|
+| [![Future can, header and separate recording/stimulation leads](docs/explore/assets/cad-future-assembled.jpg)](docs/explore/cad.md#future-implanted-interface) | [![Eight populated boards in the complete reference chassis](docs/explore/assets/cad-reference-assembled.jpg)](docs/explore/cad.md#full-scale-reference-assembly) |
+| **60 × 58 × 14 mm**, before leads. A proposed miniaturized package. | **600 × 310 × 240 mm**, including feet. Actual board geometry at 1:1 scale. |
 
-**The six-stage digital research and engineering package is complete within its
-stated scope.** It includes a 28-page illustrated manuscript, 18 verified
-references, both application mechanisms, an executed production-core replay,
-eight routed boards, a target-linked image and editable FreeCAD assemblies.
-Useful human spinal decoding, accelerated healthy learning, physical performance
-and a miniaturized implanted implementation remain explicit future conditions.
-No original human/animal experiment or physical device execution is claimed.
+## Choose what you want to explore
 
-## The two mechanisms
+| | Open the guide | What you can inspect |
+|---|---|---|
+| **01 · Theory & mechanisms** | [Understand the idea](docs/explore/theory.md) | Both application mechanisms, the assumptions behind them, evidence and mathematical models |
+| **02 · CAD & 3D models** | [Explore the mechanical design](docs/explore/cad.md) | Assembled/exploded views, rotatable meshes, editable FreeCAD files, STEP exports and drawings |
+| **03 · Electronics & KiCad** | [Browse the eight boards](docs/explore/electronics.md) | Board gallery, circuit roles, schematic PDF, native projects, layouts and component lists |
+| **04 · Firmware & software** | [Follow the implemented logic](docs/explore/firmware.md) | Current nRF5340 image, production control code, packet handling and runnable verification |
+| **05 · Evidence & reproduction** | [Review the work](docs/explore/reviewer-guide.md) | A short reviewer walkthrough, results, requirements, source records and reproduction commands |
 
-**Expert-informed practice.** Expert performance supplies a task-conditioned
-coordination reference. Learner-specific calibration aligns the reference,
-observations and reachable stimulation programmes. Active practice and later
-stimulation-OFF retention are evaluated separately. Expert voltage is not replayed
-as a skill, and temporary assistance is not a measured learning multiplier.
+**No software is needed to read the paper or browse the images.** Native editing
+requires FreeCAD or KiCad and a complete local copy. The guides explain which
+files to open and how to preserve the released originals.
 
-**Selected physiological feedback.** A function-specific configuration observes
-a state and adjusts bounded spinal stimulation. The pressure reference uses
-external pressure sensing and positive pressor authority. It includes saturation,
-sensor faults and withdrawal tails. Universal body control is not assumed.
+## The project in one loop
 
-## Review the finished package
+**Observe → interpret → calibrate → request stimulation → supervise delivery → observe response.**
 
-| Entry | What it contains |
-|---|---|
-| [Integrated manuscript](output/pdf/Project_ATO_Integrated_Manuscript.pdf) / [editable source](manuscript/stage6/manuscript.md) | 28 pages; evidence, equations, results, engineering, limitations and population/access register |
-| [Evidence and references](docs/stage6/evidence-review.md) | 17 original research reports plus official Mind-Link credit; access, cohort, inference and limits |
-| [Integrated digital verification](docs/stage6/integration-verification.md) | Unchanged production C admission/phase code plus declared companion and body adapters |
-| [Native electrical system](electronics/stage4/integrated-pcb/BOARD_INDEX.md) | Eight genuinely routed populated boards; 80-sheet master, 1,296 fitted positions and 258 harness rows |
-| [Current carrier firmware](firmware/nrf5340/uart-revision/README.md) | Corrected nRF5340 UART scheduler, regression test, target-linked image and independent byte audit; compiled and linked, unflashed |
-| [Mechanical CAD](cad/stage5/README.md) / [review sheets](cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf) | Full-scale 260-part reference assembly; separate 230-part future package with 36 functional ports; STEP/STL/BOM/launchers |
-| [Requirements and claims](docs/stage6/requirements-claims-trace.csv) | All 36 original requirements with current evidence-scoped dispositions |
-| [Contributions](docs/stage6/contributions.md) / [defence guide](docs/stage6/defence-guide.md) | Authorship, AI assistance and explanations the student can learn and defend |
-| [Release dossier](docs/stage6/README.md) / [current status](CURRENT_STATUS.md) | Completion evidence, reproducibility and remaining research questions |
+For motor learning, expert performance informs a task-conditioned reference;
+learner-specific calibration determines a reachable intervention during practice.
+Later stimulation-OFF probes assess retention separately from assisted performance.
+Expert voltage is not replayed as a skill.
 
-## Concrete results and their limits
+For physiological feedback, a function-specific configuration observes a selected
+state and requests bounded support. The worked pressure example uses an external
+pressure sensor and positive spinal pressor authority. It is a selected pathway,
+not a universal body-control mechanism.
 
-The new integration replay passes **114,426 repeated software assertions across
-28 scenario groups**. It includes **5,184 modeled motor events** and **1,200
-pressure events**, compiled-core boundary/fault cases and separate ideal
-supervisor/feature-validity cases. These are finite software/model results.
+## What has been delivered
 
-| Conditional motor replay | First ON error | Final OFF error |
-|---|---:|---:|
-| Unassisted | 31.414 mm | 5.605 mm |
-| Neutral teaching | 16.668 mm | 5.605 mm |
-| Favorable teaching | 16.668 mm | 2.897 mm |
-| Adverse teaching | 16.668 mm | 34.845 mm |
+| Research | Electrical & software | Mechanical |
+|---|---|---|
+| [28-page illustrated paper](output/pdf/Project_ATO_Integrated_Manuscript.pdf) | [Eight routed, populated KiCad boards](docs/explore/electronics.md) | [Editable reference and future-interface CAD](docs/explore/cad.md) |
+| [18 primary/inspiration references](docs/stage6/evidence-review.md) | [Target-linked nRF5340 firmware](firmware/nrf5340/uart-revision/README.md) | [Six mechanical review sheets](cad/stage5/drawings/ATO_Stage5_Mechanical_Review.pdf) |
+| [Conditional studies and retained negative findings](docs/explore/theory.md) | [Executed production-core digital replay](docs/stage6/integration-verification.md) | [Mapped interfaces, parts and exchange files](docs/explore/cad.md) |
 
-The assumed teaching law controls retained benefit. The earlier 128-scenario
-conditional study and all-withheld conservative investigation remain preserved,
-with their original protocols and results. No unique spinal-information advantage
-or healthy acquisition multiplier has been established.
+The integrated replay passes **114,426 finite software assertions** and includes
+**5,184 modeled motor events** and **1,200 pressure events**. Favorable, neutral
+and adverse learning assumptions are retained. These are software/model results;
+their implications are explained in the [theory guide](docs/explore/theory.md).
 
-The actual target acquires neural data in **OBSERVE** and inhibits acquisition
-while stimulation is armed. Simultaneous live spinal decoding during MOTOR is
-not implemented. Synthetic phase features, recruitment and body dynamics in the
-host replay are explicit adapters, and the current image has no radio firmware.
+This is a completed **digital concept and engineering reference**. No physical
+device execution or original human/animal experiment is claimed. Useful chronic
+spinal decoding, retained human benefit and a miniaturized implanted implementation
+remain conditional. The current target records in OBSERVE, inhibits neural
+acquisition while armed, and has no radio image. The reference boards do not fit
+the future can.
 
-![Full-scale eight-board reference assembly, generated from saved native BReps](cad/stage5/renders/reference_assembled.png)
+## Start, inspect, or contribute
 
-The reference chassis is **600 x 310 x 240 mm**, including feet, and keeps the
-boards at **1:1 scale**. The separate **60 x 58 x 14 mm** future can/header requires
-redesigned integrated electronics, energy storage, thermal closure and qualified
-interfaces. Native CAD fit and ERC/DRC do not supply those physical measurements.
+- **First visit:** use the [Explore hub](docs/explore/README.md) or the [five-minute route](docs/explore/reviewer-guide.md#five-minute-overview).
+- **Find a file:** use the [repository map](docs/explore/repository-map.md) to distinguish current entry points from historical studies.
+- **Check the engineering:** use [verification and reproduction](docs/explore/reviewer-guide.md#reproduce-the-current-engineering).
+- **Understand authorship:** read the [contributions](docs/stage6/contributions.md), [defence guide](docs/stage6/defence-guide.md) and [LICENSE](LICENSE).
 
-## Reproduce
+Pratham Varma conceived and steered Project ATO. AstroSam’s
+[Mind-Link](https://github.com/sam-astro/Mind-link) inspired the progression from
+future vision to inspectable engineering; ATO develops its own spinal architecture
+and artifacts. Substantial AI assistance is documented in the contribution record.
 
-Use a full Git clone at tag `v2.0.1`; install [pinned dependencies](requirements-lock.txt)
-in Python 3.12. The [integration entry](experiments/stage6/README.md) explains the
-C11 compiler requirement.
-
-```text
-python scripts/verify_manifest.py
-python scripts/verify_stage6_release.py
-python firmware/nrf5340/uart-revision/verify_revision.py
-python scripts/stage6/verify_digital_path.py
-python scripts/verify_stage5_mechanics.py
-python scripts/verify_integrated_pcb.py
-```
-
-Native application inspection receipts are source-bound and separate from their
-portable replay. The [release plan](docs/stage6/release-plan.md) explains full
-clones, source ZIPs and external release checksums. The manuscript can be rebuilt
-with `python manuscript/stage6/build_figures.py` followed by
-`python manuscript/stage6/build_manuscript.py` in the recorded environment.
-
-## Provenance and historical material
-
-Pratham Varma conceived and steered the project. AI assistance contributed
-substantially to research synthesis, modeling, implementation, CAD, verification
-and writing; see the [contribution record](docs/stage6/contributions.md).
-[LICENSE](LICENSE) and component/SDK notices retain the applicable rights.
-The repository became public on 17 October 2026 at the owner's request.
-Public visibility does not grant a new redistribution license; the original
-all-rights-reserved terms and third-party notices remain in force. Dated Stage 1-5
-documents retain their original checkpoint descriptions, including private-repo
-wording and superseded application/packaging plans. Current entry documents and
-the correction dossier identify the delivered configuration.
-
-The [v1.0.0 subsystem reference](https://github.com/pratham-cloud-ctrl/Project-ATO/tree/v1.0.0)
-and earlier papers remain historical artifacts, not the current full-system
-specification. Prior Stage 1-5 studies, native designs and negative findings are
-preserved at their source identities. Video and website revision were parked;
-the old site/media files are historical material.
+**Engineering release:** [v2.0.1](https://github.com/pratham-cloud-ctrl/Project-ATO/releases/tag/v2.0.1).
+**Repository guide refresh:** 20 October 2026. The paper and verified engineering
+files retain their release identities. Historical stage records remain available;
+use the guides above for the current reading order. Website and video work remain parked.
